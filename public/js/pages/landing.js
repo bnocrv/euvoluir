@@ -2,6 +2,18 @@
 import { Header, bindHeaderEvents } from "../components/header.js";
 
 export function LandingPage(app) {
+  const targetRoute = "#/dashboard";
+  const highlights = [
+    {
+      title: "Trilha guiada",
+      description: "Aulas longas, bem explicadas, e exercícios no final para fixar.",
+    },
+    {
+      title: "Prática",
+      description: "Você pratica de verdade: quiz, completar código e desafios progressivos.",
+    },
+  ];
+
   app.innerHTML = `
     <div class="page">
       ${Header()}
@@ -14,19 +26,16 @@ export function LandingPage(app) {
             </p>
 
             <div class="grid-2 mt-14">
-              <a class="card pad landing-option" href="#/dashboard">
-                <h3 class="m-0">Trilha guiada</h3>
-                <p class="muted mt-10">
-                  Aulas longas, bem explicadas, e exercícios no final para fixar.
-                </p>
-              </a>
-
-              <a class="card pad landing-option" href="#/dashboard">
-                <h3 class="m-0">Prática</h3>
-                <p class="muted mt-10">
-                  Você pratica de verdade: quiz, completar código e desafios progressivos.
-                </p>
-              </a>
+              ${highlights
+                .map(
+                  (item) => `
+                <a class="card pad landing-option" href="${targetRoute}">
+                  <h3 class="m-0">${item.title}</h3>
+                  <p class="muted mt-10">${item.description}</p>
+                </a>
+              `
+                )
+                .join("")}
             </div>
           </section>
         </div>

@@ -21,9 +21,9 @@ export function Header() {
   return `
     <header class="header">
       <div class="container header-inner">
-        <a class="brand" href="#/">
+        <a class="brand" href="#/dashboard">
           <span class="brand-dot"></span>
-          <span>Fina Dev Academy</span>
+          <span>EuVoluir Por Bruno S. Carvalho</span>
         </a>
         ${right}
       </div>
