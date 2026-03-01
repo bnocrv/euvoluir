@@ -1,0 +1,152 @@
+{
+  "id": "17-formularios-avancados",
+  "title": "Aula 17 — Formulários avançados e acessíveis (fieldset, autocomplete, inputmode)",
+  "steps": [
+    {
+      "title": "Por que essa aula existe (e por que ela te deixa acima da média)",
+      "body": "Até aqui você já sabe criar formulários.\n\nAgora vamos fazer do jeito **profissional**:\n- melhorar a experiência no celular\n- deixar os campos mais fáceis de preencher\n- organizar formulários grandes\n- ajudar leitor de tela com contexto\n\nIsso é o tipo de detalhe que faz alguém falar: “esse formulário é bom de usar”."
+    },
+    {
+      "title": "fieldset e legend (organizar por grupos)",
+      "body": "Quando um formulário tem partes (ex.: dados pessoais, endereço, pagamento), use:\n\n- `<fieldset>` para agrupar\n- `<legend>` para o título do grupo\n\nExemplo:\n`<fieldset>`\n  `<legend>Dados pessoais</legend>`\n  ...inputs...\n`</fieldset>`\n\nIsso ajuda:\n- organização\n- acessibilidade (leitor de tela entende o grupo)\n- manutenção do código"
+    },
+    {
+      "title": "Autocomplete: o navegador preenche por você",
+      "body": "Você pode ajudar o navegador a sugerir/preencher dados com `autocomplete`.\n\nExemplos úteis:\n- `autocomplete=\"name\"`\n- `autocomplete=\"email\"`\n- `autocomplete=\"username\"`\n- `autocomplete=\"current-password\"` (login)\n- `autocomplete=\"new-password\"` (cadastro)\n\nIsso melhora muito a experiência no celular."
+    },
+    {
+      "title": "Inputmode: teclado certo no celular (detalhe muito forte)",
+      "body": "Além do `type`, existe `inputmode`.\n\nEle ajuda a escolher o teclado no celular.\n\nExemplos:\n- `inputmode=\"numeric\"` (só números)\n- `inputmode=\"decimal\"` (número com vírgula/ponto)\n- `inputmode=\"email\"`\n\nExemplo:\n- `<input name=\"cpf\" inputmode=\"numeric\">`\n\nIsso é UX puro."
+    },
+    {
+      "title": "pattern + title (mensagem clara)",
+      "body": "Se você usar `pattern`, dê uma dica com `title`.\n\nExemplo CEP sem hífen:\n- `pattern=\"[0-9]{8}\"`\n- `title=\"Digite 8 números, sem hífen\"`\n\nIsso reduz erro e frustração."
+    },
+    {
+      "title": "aria-describedby: ajuda extra sem bagunçar a tela",
+      "body": "Às vezes você quer um texto de ajuda para um campo.\n\nVocê pode criar um texto e “ligar” ao input:\n\n- `<small id=\"senhaHelp\">Mínimo 8 caracteres.</small>`\n- `<input aria-describedby=\"senhaHelp\" ...>`\n\nIsso ajuda leitores de tela a lerem a dica junto do campo."
+    },
+    {
+      "title": "placeholder NÃO substitui label (reforço importante)",
+      "body": "Regra:\n- sempre tenha `<label>`\n- placeholder é só exemplo de formato\n\nSe você usar só placeholder:\n- some quando o usuário digita\n- atrapalha revisão\n- prejudica acessibilidade"
+    },
+    {
+      "title": "required em grupos (radio e checkbox)",
+      "body": "Radio em grupo:\n- use o mesmo `name`\n- marque `required` em um deles (em geral funciona como “grupo obrigatório”)\n\nCheckbox de termos:\n- `required` é perfeito, porque obriga marcar antes do submit.\n\nO objetivo é garantir que o usuário não envie algo incompleto."
+    },
+    {
+      "title": "Exemplo modelo (pedaços prontos)",
+      "body": "Exemplo de grupo com fieldset:\n\n`<fieldset>`\n  `<legend>Conta</legend>`\n  `<label for=\"email\">Email</label>`\n  `<input id=\"email\" name=\"email\" type=\"email\" autocomplete=\"email\" required>`\n\n  `<label for=\"senha\">Senha</label>`\n  `<input id=\"senha\" name=\"senha\" type=\"password\" minlength=\"8\" autocomplete=\"new-password\" aria-describedby=\"senhaHelp\" required>`\n  `<small id=\"senhaHelp\">Mínimo 8 caracteres.</small>`\n`</fieldset>`\n\nIsso já é nível “form bem feito”."
+    },
+    {
+      "title": "Resumo",
+      "body": "- `fieldset/legend` organizam e ajudam acessibilidade\n- `autocomplete` melhora preenchimento\n- `inputmode` melhora teclado no celular\n- `aria-describedby` liga dicas ao campo\n- `pattern + title` reduz erro\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 17",
+    "instructions": "A ou B. Leia a explicação para consolidar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "fieldset e legend servem para…",
+        "options": [
+          { "key": "A", "text": "Agrupar campos e dar contexto ao grupo" },
+          { "key": "B", "text": "Criar links externos" }
+        ],
+        "answer": "A",
+        "explain": "fieldset agrupa e legend nomeia o grupo (ótimo para a11y)."
+      },
+      {
+        "id": 2,
+        "question": "autocomplete ajuda porque…",
+        "options": [
+          { "key": "A", "text": "Permite sugestões e preenchimento automático do navegador" },
+          { "key": "B", "text": "Criptografa os dados automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Autocomplete melhora UX. Criptografia é outra camada (HTTPS/servidor)."
+      },
+      {
+        "id": 3,
+        "question": "Para cadastro de senha nova, autocomplete ideal é:",
+        "options": [
+          { "key": "A", "text": "new-password" },
+          { "key": "B", "text": "current-password" }
+        ],
+        "answer": "A",
+        "explain": "new-password é para criar senha. current-password é para login."
+      },
+      {
+        "id": 4,
+        "question": "inputmode é útil principalmente para:",
+        "options": [
+          { "key": "A", "text": "Escolher teclado correto no celular" },
+          { "key": "B", "text": "Adicionar cor no input" }
+        ],
+        "answer": "A",
+        "explain": "inputmode orienta o teclado em dispositivos móveis."
+      },
+      {
+        "id": 5,
+        "question": "aria-describedby serve para:",
+        "options": [
+          { "key": "A", "text": "Ligar um texto de ajuda ao campo (a11y)" },
+          { "key": "B", "text": "Trocar o type do input" }
+        ],
+        "answer": "A",
+        "explain": "Ele faz o leitor de tela ler a dica junto do input."
+      },
+      {
+        "id": 6,
+        "question": "placeholder pode substituir label?",
+        "options": [
+          { "key": "A", "text": "Não, label é necessário" },
+          { "key": "B", "text": "Sim, label é dispensável" }
+        ],
+        "answer": "A",
+        "explain": "Label é base para acessibilidade e clareza."
+      },
+      {
+        "id": 7,
+        "question": "pattern valida um campo usando:",
+        "options": [
+          { "key": "A", "text": "Uma regra (regex)" },
+          { "key": "B", "text": "Uma cor definida no CSS" }
+        ],
+        "answer": "A",
+        "explain": "pattern usa regex para validar formato."
+      },
+      {
+        "id": 8,
+        "question": "title em um input com pattern serve para:",
+        "options": [
+          { "key": "A", "text": "Explicar o formato esperado" },
+          { "key": "B", "text": "Definir o título da aba" }
+        ],
+        "answer": "A",
+        "explain": "title mostra dica do formato. Título da aba é <title> no head."
+      },
+      {
+        "id": 9,
+        "question": "Para teclado numérico no celular, inputmode comum é:",
+        "options": [
+          { "key": "A", "text": "numeric" },
+          { "key": "B", "text": "picture" }
+        ],
+        "answer": "A",
+        "explain": "numeric sugere teclado numérico."
+      },
+      {
+        "id": 10,
+        "question": "Radio em grupo funciona corretamente quando…",
+        "options": [
+          { "key": "A", "text": "Todos têm o mesmo name" },
+          { "key": "B", "text": "Todos têm o mesmo id" }
+        ],
+        "answer": "A",
+        "explain": "name agrupa radios para escolha única."
+      }
+    ]
+  }
+}

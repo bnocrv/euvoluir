@@ -1,0 +1,152 @@
+{
+  "id": "05-menu-navegacao",
+  "title": "Aula 05 — Menu de navegação (nav + ul + li + a) do jeito certo",
+  "steps": [
+    {
+      "title": "Por que aprender menu agora?",
+      "body": "Menu é uma das partes mais comuns de qualquer site.\n\nQuase todo site tem:\n- um topo (header)\n- um menu (nav)\n- links para páginas/seções\n\nQuando você aprende o menu, seu HTML começa a parecer **site de verdade**.\n\nHoje o foco é **estrutura correta**. O design vem no CSS depois."
+    },
+    {
+      "title": "A estrutura clássica: nav + ul + li + a",
+      "body": "Um menu semântico normalmente é assim:\n\n- `<nav>`: diz “isso é navegação”\n- `<ul>`: lista de opções\n- `<li>`: cada opção\n- `<a>`: o link clicável\n\nExemplo:\n`<nav><ul><li><a href=\"/\">Início</a></li></ul></nav>`"
+    },
+    {
+      "title": "Onde o menu costuma ficar (header)",
+      "body": "Em páginas reais, o menu normalmente fica dentro do `<header>`.\n\nEstrutura comum:\n- `<header>`\n  - logo ou título\n  - `<nav>` (menu)\n\nIsso ajuda a organização e a leitura do código."
+    },
+    {
+      "title": "Textos de link: nada de “clique aqui”",
+      "body": "O texto do link deve dizer exatamente o que acontece.\n\nRuim:\n- \"Clique aqui\"\n\nBom:\n- \"Ver produtos\"\n- \"Contato\"\n- \"Sobre a empresa\"\n\nIsso é melhor para:\n- usuário\n- acessibilidade\n- SEO"
+    },
+    {
+      "title": "Links internos (âncora) no menu",
+      "body": "Você pode usar o menu para navegar dentro da página.\n\nExemplo:\n- `<a href=\"#contato\">Contato</a>`\n\nE você precisa ter um elemento com:\n- `id=\"contato\"`\n\nExemplo:\n- `<section id=\"contato\">...</section>`"
+    },
+    {
+      "title": "Links externos no menu (quando faz sentido)",
+      "body": "Se algum link do menu for para fora do seu site:\n\n- use `target=\"_blank\"`\n- e também `rel=\"noopener noreferrer\"`\n\nExemplo:\n`<a href=\"https://github.com\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>`"
+    },
+    {
+      "title": "Acessibilidade básica: aria-label no nav (bem simples)",
+      "body": "Quando você tem mais de um `<nav>` (por exemplo: menu principal e menu do rodapé), pode ajudar usar `aria-label`.\n\nExemplo:\n- `<nav aria-label=\"Menu principal\">...</nav>`\n\nIsso ajuda leitores de tela a entenderem que navegação é aquela."
+    },
+    {
+      "title": "Erros mais comuns em menus",
+      "body": "- Colocar links soltos sem `<nav>`\n- Fazer menu com `<div>` sem necessidade\n- Esquecer o `href`\n- Colocar texto ruim no link\n\nRegra: se é navegação, use `<nav>`."
+    },
+    {
+      "title": "Exemplo completo (modelo base de topo)",
+      "body": "Modelo simples que você pode copiar e entender:\n\n`<header>`\n  `<h1>Meu Site</h1>`\n  `<nav aria-label=\"Menu principal\">`\n    `<ul>`\n      `<li><a href=\"#inicio\">Início</a></li>`\n      `<li><a href=\"#aulas\">Aulas</a></li>`\n      `<li><a href=\"#contato\">Contato</a></li>`\n    `</ul>`\n  `</nav>`\n`</header>`\n\nDepois o CSS transforma isso num menu horizontal."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Menu padrão: `nav > ul > li > a`\n- Use textos claros nos links\n- Link interno: `href=\"#id\"`\n- Link externo com `target` + `rel`\n- Se quiser, use `aria-label` no nav\n\nAgora faça o quiz e tente acertar tudo com consciência."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 05",
+    "instructions": "A ou B. Leia o porquê. Se errar, volte no passo correspondente.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Qual tag indica que um bloco é navegação?",
+        "options": [
+          { "key": "A", "text": "<nav>" },
+          { "key": "B", "text": "<menu>" }
+        ],
+        "answer": "A",
+        "explain": "A tag semântica padrão para navegação é <nav>. (Existe <menu>, mas não é o padrão para navegação de sites.)"
+      },
+      {
+        "id": 2,
+        "question": "Estrutura clássica de menu semântico é:",
+        "options": [
+          { "key": "A", "text": "nav > ul > li > a" },
+          { "key": "B", "text": "nav > p > a" }
+        ],
+        "answer": "A",
+        "explain": "Menu normalmente é uma lista de opções (ul/li) com links."
+      },
+      {
+        "id": 3,
+        "question": "Texto de link bom é:",
+        "options": [
+          { "key": "A", "text": "Contato" },
+          { "key": "B", "text": "Clique aqui" }
+        ],
+        "answer": "A",
+        "explain": "O link deve dizer para onde vai. “Clique aqui” não informa nada."
+      },
+      {
+        "id": 4,
+        "question": "Para navegar dentro da página (âncora), você usa:",
+        "options": [
+          { "key": "A", "text": "href=\"#contato\"" },
+          { "key": "B", "text": "src=\"#contato\"" }
+        ],
+        "answer": "A",
+        "explain": "Âncora usa href com #, apontando para um id existente."
+      },
+      {
+        "id": 5,
+        "question": "Se o menu aponta para #contato, deve existir:",
+        "options": [
+          { "key": "A", "text": "Um elemento com id=\"contato\"" },
+          { "key": "B", "text": "Um elemento com class=\"contato\" obrigatoriamente" }
+        ],
+        "answer": "A",
+        "explain": "Âncora procura id, não class."
+      },
+      {
+        "id": 6,
+        "question": "Para abrir link externo em nova aba, você usa:",
+        "options": [
+          { "key": "A", "text": "target=\"_blank\"" },
+          { "key": "B", "text": "alt=\"_blank\"" }
+        ],
+        "answer": "A",
+        "explain": "target controla onde abre. alt é para imagem."
+      },
+      {
+        "id": 7,
+        "question": "Com target=\"_blank\", a boa prática é incluir:",
+        "options": [
+          { "key": "A", "text": "rel=\"noopener noreferrer\"" },
+          { "key": "B", "text": "rel=\"nofollow\"" }
+        ],
+        "answer": "A",
+        "explain": "noopener/noreferrer é segurança. nofollow é outra coisa (SEO/relacionamento)."
+      },
+      {
+        "id": 8,
+        "question": "Um menu costuma ficar dentro de:",
+        "options": [
+          { "key": "A", "text": "<header>" },
+          { "key": "B", "text": "<title>" }
+        ],
+        "answer": "A",
+        "explain": "<header> é topo do conteúdo. <title> fica no head e não aparece na página."
+      },
+      {
+        "id": 9,
+        "question": "Se você tiver mais de um nav, pode ajudar usar:",
+        "options": [
+          { "key": "A", "text": "aria-label" },
+          { "key": "B", "text": "data-title" }
+        ],
+        "answer": "A",
+        "explain": "aria-label ajuda leitores de tela a identificar qual navegação é aquela."
+      },
+      {
+        "id": 10,
+        "question": "Um erro comum em menu é:",
+        "options": [
+          { "key": "A", "text": "Esquecer o href do link" },
+          { "key": "B", "text": "Usar li dentro de ul" }
+        ],
+        "answer": "A",
+        "explain": "li dentro de ul é o correto. O problema é link sem href (não navega)."
+      }
+    ]
+  }
+}

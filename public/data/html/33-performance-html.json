@@ -1,0 +1,148 @@
+{
+  "id": "33-performance-html",
+  "title": "Aula 33 — Performance no HTML (LCP, imagens, scripts) sem mito",
+  "steps": [
+    {
+      "title": "Por que performance é parte do “ser profissional”",
+      "body": "Site rápido não é luxo: é requisito.\n\nUm site lento:\n- faz o aluno desistir\n- piora a experiência no celular\n- piora SEO\n\nHoje você vai aprender o que dá para melhorar só com HTML e escolhas certas:\n- imagens\n- scripts\n- fontes\n- layout shift\n\nSem papo de “hack”, só prática."
+    },
+    {
+      "title": "1) A maior vilã: imagens grandes",
+      "body": "Imagem pesada é o motivo nº1 de site lento.\n\nBoas práticas:\n- use o tamanho certo (não envie 4000px se aparece com 400px)\n- comprima imagens\n- use formatos modernos quando possível (WebP)\n\nNo HTML, você já pode ajudar com:\n- `width` e `height`\n- `loading=\"lazy\"` (para imagens fora do topo)\n- `alt` (a11y)"
+    },
+    {
+      "title": "2) Evite layout pular (CLS): use width/height",
+      "body": "Quando a página “pula” enquanto carrega, isso é ruim.\n\nA causa comum:\n- imagens sem tamanho definido\n\nSolução simples:\n- coloque `width` e `height` em `<img>`\n\nExemplo:\n- `<img src=\"banner.jpg\" width=\"800\" height=\"400\" alt=\"...\">`"
+    },
+    {
+      "title": "3) Lazy loading: use onde faz sentido",
+      "body": "`loading=\"lazy\"` ajuda quando:\n- a imagem está abaixo da dobra (fora da tela inicial)\n\nEvite lazy na imagem principal (hero), porque pode atrasar a renderização mais importante.\n\nRegra prática:\n- primeira imagem importante → sem lazy\n- imagens longas → lazy"
+    },
+    {
+      "title": "4) Scripts: module/defer para não travar o HTML",
+      "body": "JS pode travar a renderização se for carregado de forma bloqueante.\n\nPadrões bons:\n- `type=\"module\"` para seu script principal\n- ou `defer` se não for módulo\n\nExemplo:\n- `<script type=\"module\" src=\"./js/app.js\"></script>`\n\nEvite muitos scripts no head sem defer."
+    },
+    {
+      "title": "5) Menos é mais (reduza o que você carrega)",
+      "body": "Performance também é:\n- carregar menos coisas\n\nPergunta simples:\n- “Eu realmente preciso disso agora?”\n\nExemplos:\n- scripts de terceiros\n- bibliotecas gigantes\n\nNa sua plataforma, mantenha o core simples."
+    },
+    {
+      "title": "6) Fontes (noção): cuidado com fontes externas",
+      "body": "Fontes externas podem:\n- atrasar renderização\n\nSe usar fontes do Google/externas:\n- isso pode impactar performance\n\nVocê pode ver coisas como `preconnect`.\n\nMas regra prática:\n- comece com fontes do sistema\n- só depois adicione fontes externas"
+    },
+    {
+      "title": "7) Checklist prático (toda página)",
+      "body": "Antes de publicar:\n\n- [ ] Imagens otimizadas (tamanho correto)\n- [ ] `width/height` em imagens\n- [ ] `lazy` só para imagens fora do topo\n- [ ] Script principal com `type=module` (ou `defer`)\n- [ ] Evitar excesso de scripts externos\n\nIsso já melhora MUITO."
+    },
+    {
+      "title": "Resumo",
+      "body": "- Imagem é o principal peso\n- width/height evita layout shift\n- lazy em imagens fora da tela\n- module/defer para scripts\n- evite excesso de coisas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 33",
+    "instructions": "A ou B. Leia a explicação para consolidar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A maior causa comum de site lento é:",
+        "options": [
+          { "key": "A", "text": "Imagens muito grandes/pesadas" },
+          { "key": "B", "text": "Ter um h1 na página" }
+        ],
+        "answer": "A",
+        "explain": "Imagens pesadas são o vilão nº1 em muitos sites."
+      },
+      {
+        "id": 2,
+        "question": "width/height em imagens ajuda a:",
+        "options": [
+          { "key": "A", "text": "Evitar layout pular (reservar espaço)" },
+          { "key": "B", "text": "Trocar a cor do fundo" }
+        ],
+        "answer": "A",
+        "explain": "O navegador reserva espaço e reduz CLS."
+      },
+      {
+        "id": 3,
+        "question": "loading=\"lazy\" é melhor para imagens:",
+        "options": [
+          { "key": "A", "text": "Fora da tela inicial (abaixo da dobra)" },
+          { "key": "B", "text": "A imagem principal do topo" }
+        ],
+        "answer": "A",
+        "explain": "Lazy é ótimo para conteúdo abaixo do topo."
+      },
+      {
+        "id": 4,
+        "question": "Evitar lazy na imagem principal porque:",
+        "options": [
+          { "key": "A", "text": "Pode atrasar o conteúdo mais importante" },
+          { "key": "B", "text": "É proibido pelo HTML" }
+        ],
+        "answer": "A",
+        "explain": "A imagem principal deve carregar rápido."
+      },
+      {
+        "id": 5,
+        "question": "Para script principal com import/export, use:",
+        "options": [
+          { "key": "A", "text": "type=\"module\"" },
+          { "key": "B", "text": "download" }
+        ],
+        "answer": "A",
+        "explain": "Modules permitem import/export e executam depois do parse."
+      },
+      {
+        "id": 6,
+        "question": "Um script no head sem defer/module pode:",
+        "options": [
+          { "key": "A", "text": "Bloquear a renderização do HTML" },
+          { "key": "B", "text": "Acelerar o site sempre" }
+        ],
+        "answer": "A",
+        "explain": "Sem defer/module, ele pode bloquear o parse."
+      },
+      {
+        "id": 7,
+        "question": "Performance também envolve:",
+        "options": [
+          { "key": "A", "text": "Carregar menos recursos desnecessários" },
+          { "key": "B", "text": "Colocar mais scripts externos" }
+        ],
+        "answer": "A",
+        "explain": "Menos peso = mais rápido."
+      },
+      {
+        "id": 8,
+        "question": "Fontes externas podem:",
+        "options": [
+          { "key": "A", "text": "Atrasar a renderização" },
+          { "key": "B", "text": "Eliminar a necessidade de CSS" }
+        ],
+        "answer": "A",
+        "explain": "Fontes externas geram mais downloads."
+      },
+      {
+        "id": 9,
+        "question": "Um checklist útil inclui:",
+        "options": [
+          { "key": "A", "text": "Imagens otimizadas + module/defer" },
+          { "key": "B", "text": "Remover alt das imagens" }
+        ],
+        "answer": "A",
+        "explain": "Alt é acessibilidade e não pesa performance."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo principal dessas boas práticas é:",
+        "options": [
+          { "key": "A", "text": "Carregar rápido e melhorar experiência" },
+          { "key": "B", "text": "Deixar o HTML mais longo" }
+        ],
+        "answer": "A",
+        "explain": "Performance é experiência do usuário."
+      }
+    ]
+  }
+}

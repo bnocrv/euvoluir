@@ -1,0 +1,152 @@
+{
+  "id": "31-web-components-intro",
+  "title": "Aula 31 — Web Components (introdução): sua própria tag no HTML",
+  "steps": [
+    {
+      "title": "O que é a ideia de Web Components",
+      "body": "Imagine poder criar uma tag no HTML como:\n\n- `<app-header></app-header>`\n- `<lesson-card></lesson-card>`\n\nE essa tag “se comporta” como um componente.\n\nIsso existe e chama Web Components.\n\nÉ uma forma padrão do navegador (sem React/Vue) de criar componentes reutilizáveis.\n\nHoje a aula é **introdução**: entender o conceito e ver um exemplo simples."
+    },
+    {
+      "title": "Peça 1: Custom Elements (criar uma tag nova)",
+      "body": "O navegador permite registrar uma tag personalizada com:\n\n- `customElements.define('nome-da-tag', Classe)`\n\nRegra importante:\n- o nome da tag precisa ter um hífen (`-`)\n\nExemplos válidos:\n- `app-header`\n- `lesson-card`\n\nExemplos inválidos:\n- `header2` (sem hífen)\n- `card` (sem hífen)"
+    },
+    {
+      "title": "A classe do componente (extends HTMLElement)",
+      "body": "Um custom element é uma classe que estende `HTMLElement`.\n\nExemplo (conceito):\n- `class AppHeader extends HTMLElement { ... }`\n\nA classe controla o que vai aparecer dentro da sua tag."
+    },
+    {
+      "title": "connectedCallback: quando o componente entra na página",
+      "body": "Quando seu componente aparece no DOM, o navegador chama:\n- `connectedCallback()`\n\nÉ aqui que você geralmente faz:\n- `this.innerHTML = ...`\n- adiciona eventos\n\nPensa: “quando eu apareço na tela, faça isso”."
+    },
+    {
+      "title": "Atributos: deixar o componente configurável",
+      "body": "Você pode passar informações como atributos:\n\n- `<lesson-card title=\"Aula 01\"></lesson-card>`\n\nDentro da classe, você lê com:\n- `this.getAttribute('title')`\n\nIsso permite reutilizar o mesmo componente com textos diferentes."
+    },
+    {
+      "title": "observedAttributes (conceito) e attributeChangedCallback",
+      "body": "Se você quer reagir quando um atributo muda, existe:\n\n- `static get observedAttributes() { return ['title']; }`\n- `attributeChangedCallback(name, oldValue, newValue) { ... }`\n\nIsso é mais avançado.\n\nPor enquanto, entenda que:\n- dá pra “ouvir” mudanças de atributos."
+    },
+    {
+      "title": "Shadow DOM e CSS isolado (apenas noção)",
+      "body": "Web Components podem usar Shadow DOM para isolar:\n- HTML interno\n- CSS interno\n\nIsso evita conflitos de estilo.\n\nMas isso já é um passo além.\n\nHoje, a ideia é: entender Custom Elements e começar simples."
+    },
+    {
+      "title": "Quando faz sentido usar Web Components",
+      "body": "Faz sentido quando você quer:\n- componentes reutilizáveis\n- sem framework\n- padrões nativos\n\nExemplos:\n- `<app-header>`\n- `<quiz-box>`\n- `<course-nav>`\n\nMas lembre:\n- nem sempre é obrigatório\n- às vezes seu sistema de componentes em JS já resolve"
+    },
+    {
+      "title": "Exemplo mínimo (conceito, para entender)",
+      "body": "Exemplo (bem simples):\n\n- você registra `app-badge`\n- ele lê um atributo `text`\n- e mostra um badge\n\nVocê não precisa memorizar agora.\nO importante é entender que o navegador permite isso."
+    },
+    {
+      "title": "Resumo",
+      "body": "- Web Components permitem criar tags próprias\n- `customElements.define` registra\n- nome precisa ter `-`\n- `connectedCallback` roda quando entra no DOM\n- atributos deixam configurável\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 31",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Web Components permitem:",
+        "options": [
+          { "key": "A", "text": "Criar componentes reutilizáveis com tags próprias" },
+          { "key": "B", "text": "Substituir o CSS automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Web Components são para componentes, não para substituir CSS."
+      },
+      {
+        "id": 2,
+        "question": "Para registrar uma tag custom, você usa:",
+        "options": [
+          { "key": "A", "text": "customElements.define" },
+          { "key": "B", "text": "document.defineTag" }
+        ],
+        "answer": "A",
+        "explain": "A API é customElements.define."
+      },
+      {
+        "id": 3,
+        "question": "O nome de um custom element precisa:",
+        "options": [
+          { "key": "A", "text": "Ter um hífen (-)" },
+          { "key": "B", "text": "Ser somente números" }
+        ],
+        "answer": "A",
+        "explain": "Regra do padrão: custom element tem hífen."
+      },
+      {
+        "id": 4,
+        "question": "A classe do componente normalmente estende:",
+        "options": [
+          { "key": "A", "text": "HTMLElement" },
+          { "key": "B", "text": "HTMLTableElement sempre" }
+        ],
+        "answer": "A",
+        "explain": "O básico é estender HTMLElement."
+      },
+      {
+        "id": 5,
+        "question": "connectedCallback é chamado quando:",
+        "options": [
+          { "key": "A", "text": "O elemento entra no DOM/página" },
+          { "key": "B", "text": "O usuário fecha a aba" }
+        ],
+        "answer": "A",
+        "explain": "É o ciclo de vida de conexão."
+      },
+      {
+        "id": 6,
+        "question": "Para ler um atributo como title, você usa:",
+        "options": [
+          { "key": "A", "text": "getAttribute('title')" },
+          { "key": "B", "text": "readTitle()" }
+        ],
+        "answer": "A",
+        "explain": "getAttribute lê atributos HTML."
+      },
+      {
+        "id": 7,
+        "question": "observedAttributes serve para:",
+        "options": [
+          { "key": "A", "text": "Definir quais atributos o componente observa" },
+          { "key": "B", "text": "Definir cor do botão" }
+        ],
+        "answer": "A",
+        "explain": "Ele diz quais atributos disparam attributeChangedCallback."
+      },
+      {
+        "id": 8,
+        "question": "attributeChangedCallback é chamado quando:",
+        "options": [
+          { "key": "A", "text": "Um atributo observado muda" },
+          { "key": "B", "text": "O CSS carrega" }
+        ],
+        "answer": "A",
+        "explain": "Ele reage a mudanças de atributos observados."
+      },
+      {
+        "id": 9,
+        "question": "Shadow DOM é usado principalmente para:",
+        "options": [
+          { "key": "A", "text": "Isolar HTML/CSS do componente" },
+          { "key": "B", "text": "Criar tabelas mais rápidas" }
+        ],
+        "answer": "A",
+        "explain": "Shadow DOM isola e evita conflitos."
+      },
+      {
+        "id": 10,
+        "question": "Web Components são:",
+        "options": [
+          { "key": "A", "text": "Padrão nativo do navegador, sem framework" },
+          { "key": "B", "text": "Um recurso exclusivo do React" }
+        ],
+        "answer": "A",
+        "explain": "Web Components são padrão web, não dependem de framework."
+      }
+    ]
+  }
+}

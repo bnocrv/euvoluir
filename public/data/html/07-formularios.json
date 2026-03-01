@@ -1,0 +1,156 @@
+{
+  "id": "07-formularios",
+  "title": "Aula 07 — Formulários (form, label, input, button) do jeito certo",
+  "steps": [
+    {
+      "title": "Por que formulários são um marco",
+      "body": "Formulários são como o usuário “fala” com o site.\n\nExemplos reais:\n- login\n- cadastro\n- buscar um produto\n- enviar mensagem\n\nMesmo antes do JavaScript, você precisa dominar a **estrutura** do formulário, principalmente **label + input** (acessibilidade)."
+    },
+    {
+      "title": "A tag <form> (o contêiner do envio)",
+      "body": "Um formulário começa com `<form>`.\n\nEle normalmente tem dois atributos importantes:\n- `action`: para onde os dados serão enviados\n- `method`: como serão enviados (`GET` ou `POST`)\n\nNo começo, você pode usar:\n- `action=\"#\"` (só para testar)\n\nMais pra frente você conecta com backend/JS."
+    },
+    {
+      "title": "GET vs POST (bem simples, sem drama)",
+      "body": "Métodos mais comuns:\n\n- **GET**: envia dados na URL (bom para busca)\n  Ex.: `?q=tenis`\n\n- **POST**: envia dados “no corpo” (bom para login/cadastro)\n\nRegra prática:\n- Busca → GET\n- Login/Cadastro → POST"
+    },
+    {
+      "title": "Label: o que deixa seu formulário profissional",
+      "body": "O `label` é o texto que descreve um campo.\n\nO jeito correto é conectar `label` com `input`:\n\n1) `input` com `id`\n2) `label` com `for` igual ao `id`\n\nExemplo:\n- `<label for=\"email\">Email</label>`\n- `<input id=\"email\" ...>`\n\nIsso ajuda:\n- acessibilidade\n- clique no label foca o input\n- leitor de tela entende melhor"
+    },
+    {
+      "title": "Input: name, type e required (trio básico)",
+      "body": "Três coisas importantes no input:\n\n- `type`: tipo do dado (text, email, password, number…)\n- `name`: nome do campo no envio (quase sempre necessário)\n- `required`: obriga preencher\n\nExemplo:\n`<input type=\"email\" name=\"email\" required>`"
+    },
+    {
+      "title": "Tipos de input mais usados no começo",
+      "body": "Tipos comuns:\n- `text` (texto)\n- `email` (valida email)\n- `password` (esconde)\n- `number` (número)\n- `date` (data)\n\nDica: use o tipo correto — isso melhora a experiência no celular (teclado certo)."
+    },
+    {
+      "title": "Placeholder vs Label (erro comum)",
+      "body": "Iniciante costuma usar placeholder no lugar de label.\n\nErrado:\n- só placeholder e nenhum label\n\nCerto:\n- label sempre\n- placeholder só como exemplo do formato\n\nLabel é obrigatório na prática (acessibilidade)."
+    },
+    {
+      "title": "Textarea: campo de texto grande",
+      "body": "Para mensagens grandes (comentário, contato) use:\n- `<textarea></textarea>`\n\nEla também deve ter:\n- `id` + label\n- `name`\n- `required` se precisar"
+    },
+    {
+      "title": "Button: submit vs button",
+      "body": "Dentro do form:\n\n- `<button type=\"submit\">` envia o formulário\n- `<button type=\"button\">` não envia (bom para JS)\n\nSe você não colocar `type`, o padrão pode ser `submit` em muitos casos.\n\nRegra: sempre escreva o `type` para não ter surpresa."
+    },
+    {
+      "title": "Modelo completo (pra copiar e entender)",
+      "body": "Modelo simples de contato:\n\n`<form action=\"#\" method=\"post\">`\n  `<label for=\"nome\">Nome</label>`\n  `<input id=\"nome\" name=\"nome\" type=\"text\" required>`\n\n  `<label for=\"email\">Email</label>`\n  `<input id=\"email\" name=\"email\" type=\"email\" required>`\n\n  `<label for=\"msg\">Mensagem</label>`\n  `<textarea id=\"msg\" name=\"mensagem\" rows=\"5\" required></textarea>`\n\n  `<button type=\"submit\">Enviar</button>`\n`</form>`\n\nDepois o CSS deixa bonito."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- `form` agrupa campos\n- `label for` deve bater com `input id`\n- `name` é o nome do dado enviado\n- `type` correto melhora a experiência\n- `required` valida preenchimento\n- `submit` envia o form\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 07",
+    "instructions": "A ou B. Leia a explicação. Se errar, revise o passo.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Qual tag é o contêiner principal de um formulário?",
+        "options": [
+          { "key": "A", "text": "<form>" },
+          { "key": "B", "text": "<input>" }
+        ],
+        "answer": "A",
+        "explain": "<form> agrupa os campos e controla o envio. <input> é apenas um campo."
+      },
+      {
+        "id": 2,
+        "question": "Qual atributo define para onde o form envia os dados?",
+        "options": [
+          { "key": "A", "text": "action" },
+          { "key": "B", "text": "href" }
+        ],
+        "answer": "A",
+        "explain": "action define o destino do envio. href é de links (<a>)."
+      },
+      {
+        "id": 3,
+        "question": "Qual method é mais comum para busca (dados na URL)?",
+        "options": [
+          { "key": "A", "text": "GET" },
+          { "key": "B", "text": "POST" }
+        ],
+        "answer": "A",
+        "explain": "GET coloca parâmetros na URL, ótimo para busca."
+      },
+      {
+        "id": 4,
+        "question": "Qual method é mais comum para login/cadastro?",
+        "options": [
+          { "key": "A", "text": "POST" },
+          { "key": "B", "text": "GET" }
+        ],
+        "answer": "A",
+        "explain": "POST envia no corpo. Login/cadastro geralmente usa POST."
+      },
+      {
+        "id": 5,
+        "question": "Para conectar um label ao input corretamente você usa:",
+        "options": [
+          { "key": "A", "text": "label for + input id" },
+          { "key": "B", "text": "label href + input src" }
+        ],
+        "answer": "A",
+        "explain": "for no label deve ser igual ao id do input."
+      },
+      {
+        "id": 6,
+        "question": "Qual atributo do input define o nome do campo no envio?",
+        "options": [
+          { "key": "A", "text": "name" },
+          { "key": "B", "text": "class" }
+        ],
+        "answer": "A",
+        "explain": "name é o nome do dado enviado. class é para CSS."
+      },
+      {
+        "id": 7,
+        "question": "Qual atributo obriga o preenchimento do campo?",
+        "options": [
+          { "key": "A", "text": "required" },
+          { "key": "B", "text": "disabled" }
+        ],
+        "answer": "A",
+        "explain": "required obriga preencher. disabled desativa o campo."
+      },
+      {
+        "id": 8,
+        "question": "Placeholder pode substituir label?",
+        "options": [
+          { "key": "A", "text": "Não, label ainda é necessário" },
+          { "key": "B", "text": "Sim, label é opcional e dispensável" }
+        ],
+        "answer": "A",
+        "explain": "Label é importante para acessibilidade. Placeholder é só uma dica de formato."
+      },
+      {
+        "id": 9,
+        "question": "Para texto grande (mensagem), você usa:",
+        "options": [
+          { "key": "A", "text": "<textarea>" },
+          { "key": "B", "text": "<input type=\"text\">" }
+        ],
+        "answer": "A",
+        "explain": "textarea é própria para textos longos."
+      },
+      {
+        "id": 10,
+        "question": "Qual botão envia o form?",
+        "options": [
+          { "key": "A", "text": "<button type=\"submit\">" },
+          { "key": "B", "text": "<button type=\"button\">" }
+        ],
+        "answer": "A",
+        "explain": "submit envia o form. button não envia (é para JS)."
+      }
+    ]
+  }
+}

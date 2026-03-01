@@ -1,0 +1,155 @@
+{
+  "id": "30-mini-projeto-artigo",
+  "title": "Aula 30 — Mini-projeto 2: Página de artigo completa (semântica + SEO + a11y)",
+  "steps": [
+    {
+      "title": "Objetivo do mini-projeto",
+      "body": "Hoje você vai montar uma **página de artigo completa**, como um blog/tutorial profissional.\n\nVocê vai praticar:\n- estrutura semântica (`header`, `nav`, `main`, `article`, `aside`, `footer`)\n- headings corretos (`h1`, `h2`, `h3`)\n- SEO básico no `head` (`title`, `meta description`)\n- acessibilidade (alt, links claros, aria-label onde precisa)\n- `time datetime`\n- `figure/figcaption`\n- `blockquote` e `code`\n- `details/summary` para dicas\n\nNo fim, você terá um HTML que dá para usar como template em qualquer conteúdo."
+    },
+    {
+      "title": "Estrutura recomendada (esqueleto)",
+      "body": "Pense no layout assim:\n\n- `<header>`: título do site + navegação\n- `<main>`: conteúdo principal\n  - `<article>`: o post/aula\n  - `<aside>`: links relacionados/dicas\n- `<footer>`: rodapé\n\nIsso é o padrão clássico de sites de conteúdo."
+    },
+    {
+      "title": "SEO mínimo no head (só o essencial)",
+      "body": "No `head`, inclua:\n- `<meta charset=\"UTF-8\">`\n- `<meta name=\"viewport\" ...>`\n- `<title>...` (claro e específico)\n- `<meta name=\"description\" ...>` (resumo real)\n\nIsso já deixa a página com cara profissional."
+    },
+    {
+      "title": "Artigo bem organizado (h1/h2/h3 + parágrafos)",
+      "body": "Dentro do `<article>`:\n- 1 `h1` (tema do artigo)\n- seções `h2`\n- subtópicos `h3`\n\nE parágrafos curtos (um por ideia).\n\nIsso melhora leitura e ajuda SEO/a11y."
+    },
+    {
+      "title": "Data do artigo com time (semântica)",
+      "body": "Use:\n- `<time datetime=\"YYYY-MM-DD\">texto</time>`\n\nIsso ajuda máquinas e leitores.\n\nExemplo:\n- `<time datetime=\"2026-02-28\">28/02/2026</time>`"
+    },
+    {
+      "title": "Imagem com figure + legenda (profissional)",
+      "body": "Se a imagem tem contexto, use:\n\n- `<figure>`\n- `<img alt=\"...\">`\n- `<figcaption>`\n\nIsso deixa o conteúdo muito mais organizado."
+    },
+    {
+      "title": "Trechos de código (pre+code) e inline code",
+      "body": "Use:\n- `<code>` para código curto no meio do texto\n- `<pre><code>...</code></pre>` para blocos\n\nIsso casa perfeitamente com o syntax highlight da plataforma."
+    },
+    {
+      "title": "Dicas/Respostas com details/summary",
+      "body": "Use `<details>` para esconder dicas extras.\n\nIsso ajuda a não poluir o texto e ainda mantém o conteúdo acessível.\n\nExemplo:\n- `Ver dica` → abre e mostra conteúdo."
+    },
+    {
+      "title": "Aside (conteúdo relacionado)",
+      "body": "No `<aside>`, coloque:\n- links para aulas relacionadas\n- lembretes\n- checklist\n\nIsso melhora navegação e deixa o artigo mais completo."
+    },
+    {
+      "title": "Modelo completo (use como base)",
+      "body": "Abaixo tem um modelo completo.\n\nSua missão:\n1) ler o HTML e identificar as partes\n2) alterar o texto para um tema que você goste (ex.: \"Como criar um menu\")\n3) manter a estrutura semântica\n\nEsse modelo vira um template para suas próximas aulas."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 30",
+    "instructions": "A ou B. O objetivo é consolidar o mini-projeto.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O conteúdo principal da página deve ficar em:",
+        "options": [
+          { "key": "A", "text": "<main>" },
+          { "key": "B", "text": "<head>" }
+        ],
+        "answer": "A",
+        "explain": "main representa a região principal. head é configuração."
+      },
+      {
+        "id": 2,
+        "question": "Um post/artigo independente deve ser:",
+        "options": [
+          { "key": "A", "text": "<article>" },
+          { "key": "B", "text": "<span>" }
+        ],
+        "answer": "A",
+        "explain": "article é conteúdo independente."
+      },
+      {
+        "id": 3,
+        "question": "Uma imagem com legenda deve usar:",
+        "options": [
+          { "key": "A", "text": "<figure> + <figcaption>" },
+          { "key": "B", "text": "<img> + <title>" }
+        ],
+        "answer": "A",
+        "explain": "figure agrupa e figcaption é a legenda."
+      },
+      {
+        "id": 4,
+        "question": "A tag correta para data semântica é:",
+        "options": [
+          { "key": "A", "text": "<time datetime=\"...\">" },
+          { "key": "B", "text": "<date>" }
+        ],
+        "answer": "A",
+        "explain": "time é a tag semântica para data/hora."
+      },
+      {
+        "id": 5,
+        "question": "Para bloco de código (várias linhas), o padrão é:",
+        "options": [
+          { "key": "A", "text": "<pre><code>...</code></pre>" },
+          { "key": "B", "text": "<p><code>...</code></p>" }
+        ],
+        "answer": "A",
+        "explain": "pre preserva formatação, code marca como código."
+      },
+      {
+        "id": 6,
+        "question": "SEO básico no head inclui:",
+        "options": [
+          { "key": "A", "text": "<title> e meta description" },
+          { "key": "B", "text": "<button> e <input>" }
+        ],
+        "answer": "A",
+        "explain": "Title/description são do head. Button/input ficam no body."
+      },
+      {
+        "id": 7,
+        "question": "details/summary é ótimo para:",
+        "options": [
+          { "key": "A", "text": "Dicas/FAQ que abrem e fecham sem JS" },
+          { "key": "B", "text": "Criar tabelas" }
+        ],
+        "answer": "A",
+        "explain": "details cria conteúdo expansível."
+      },
+      {
+        "id": 8,
+        "question": "No artigo, boa prática é ter:",
+        "options": [
+          { "key": "A", "text": "1 h1 principal e h2/h3 para organizar" },
+          { "key": "B", "text": "Vários h1 para qualquer seção" }
+        ],
+        "answer": "A",
+        "explain": "H1 define o tema e h2/h3 organizam."
+      },
+      {
+        "id": 9,
+        "question": "Links devem ter texto claro porque:",
+        "options": [
+          { "key": "A", "text": "Melhora acessibilidade e entendimento" },
+          { "key": "B", "text": "Aumenta FPS do navegador" }
+        ],
+        "answer": "A",
+        "explain": "Texto claro melhora UX/a11y/SEO."
+      },
+      {
+        "id": 10,
+        "question": "Aside normalmente é usado para:",
+        "options": [
+          { "key": "A", "text": "Conteúdo relacionado/lateral" },
+          { "key": "B", "text": "Título principal da página" }
+        ],
+        "answer": "A",
+        "explain": "Aside é conteúdo não principal, mas útil."
+      }
+    ]
+  },
+  "extra": {
+    "modelHtml": "<!doctype html>\n<html lang=\"pt-br\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Como escrever um artigo HTML semântico — Mini-projeto</title>\n    <meta name=\"description\" content=\"Exemplo de página de artigo completa com semântica, SEO e acessibilidade.\" />\n  </head>\n  <body>\n    <header>\n      <h1>Plataforma HTML/CSS/JS</h1>\n      <nav aria-label=\"Menu principal\">\n        <ul>\n          <li><a href=\"#artigo\">Artigo</a></li>\n          <li><a href=\"#relacionados\">Relacionados</a></li>\n          <li><a href=\"#rodape\">Rodapé</a></li>\n        </ul>\n      </nav>\n    </header>\n\n    <main id=\"artigo\">\n      <article>\n        <header>\n          <h1>Como escrever um artigo HTML semântico</h1>\n          <p>\n            Publicado em\n            <time datetime=\"2026-02-28\">28/02/2026</time>\n            • por <strong>Seu Nome</strong>\n          </p>\n        </header>\n\n        <section>\n          <h2>1) Estrutura básica</h2>\n          <p>\n            Um artigo bem feito usa <code>header</code>, <code>main</code>, <code>article</code> e <code>footer</code>.\n          </p>\n\n          <details>\n            <summary>Ver dica</summary>\n            <p>Use semântica primeiro. Só depois pense em ARIA.</p>\n          </details>\n        </section>\n\n        <section>\n          <h2>2) Imagem com contexto</h2>\n          <figure>\n            <img src=\"./assets/img/exemplo.png\" alt=\"Exemplo de estrutura semântica com header e main\" loading=\"lazy\" width=\"800\" height=\"400\" />\n            <figcaption>Uma imagem com legenda deixa o conteúdo mais claro.</figcaption>\n          </figure>\n        </section>\n\n        <section>\n          <h2>3) Bloco de código</h2>\n          <p>Quando precisar mostrar várias linhas, use <code>pre</code> + <code>code</code>:</p>\n          <pre><code class=\"language-html\">&lt;main&gt;\n  &lt;article&gt;\n    &lt;h1&gt;Título&lt;/h1&gt;\n  &lt;/article&gt;\n&lt;/main&gt;</code></pre>\n        </section>\n\n        <section>\n          <h2>4) Citação</h2>\n          <blockquote>\n            <p>HTML é a linguagem que descreve o significado do conteúdo.</p>\n          </blockquote>\n          <p>Fonte: <cite>Documentação HTML</cite>.</p>\n        </section>\n\n        <footer>\n          <p>Gostou? Continue para as próximas aulas e pratique.</p>\n        </footer>\n      </article>\n\n      <aside id=\"relacionados\">\n        <h2>Relacionados</h2>\n        <ul>\n          <li><a href=\"#\">Aula 11 — Estrutura semântica</a></li>\n          <li><a href=\"#\">Aula 12 — Acessibilidade</a></li>\n          <li><a href=\"#\">Aula 13 — SEO básico</a></li>\n        </ul>\n      </aside>\n    </main>\n\n    <footer id=\"rodape\">\n      <address>\n        Contato: <a href=\"mailto:contato@exemplo.com\">contato@exemplo.com</a>\n      </address>\n      <p>&copy; 2026 — Plataforma de estudos</p>\n    </footer>\n  </body>\n</html>"
+  }
+}

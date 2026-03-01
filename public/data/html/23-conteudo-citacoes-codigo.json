@@ -1,0 +1,152 @@
+{
+  "id": "23-conteudo-citacoes-codigo",
+  "title": "Aula 23 — Conteúdo: citações e código (blockquote, q, cite, pre/code, kbd)",
+  "steps": [
+    {
+      "title": "Por que essas tags existem",
+      "body": "Quando você escreve aulas, artigos e documentação, você precisa representar:\n- citações\n- trechos de código\n- teclas do teclado\n- fonte/autor de uma informação\n\nSe você usar as tags certas, seu conteúdo fica:\n- mais semântico\n- mais fácil de ler\n- mais acessível\n- com cara de plataforma profissional"
+    },
+    {
+      "title": "blockquote: citação em bloco",
+      "body": "Use `<blockquote>` para uma citação longa (em bloco).\n\nExemplo:\n`<blockquote>`\n  `<p>Aprender HTML é aprender a estruturar o conteúdo.</p>`\n`</blockquote>`\n\nNormalmente você coloca o texto dentro de um `<p>`.\n\nIsso é diferente de só colocar aspas em um parágrafo comum."
+    },
+    {
+      "title": "q: citação curta dentro do texto",
+      "body": "Use `<q>` para citações curtas dentro de uma frase.\n\nExemplo:\n`<p>Como diz o professor: <q>pratique todos os dias</q>.</p>`\n\nO navegador pode colocar aspas automaticamente (dependendo do estilo)."
+    },
+    {
+      "title": "cite: a fonte/obra citada (conceito)",
+      "body": "`<cite>` representa o título de uma obra/fonte (livro, artigo, filme, etc.).\n\nExemplo:\n`<p>Segundo <cite>HTML Living Standard</cite>...</p>`\n\nEle não é “link automático” — é semântica.\n\nVocê pode combinar com link:\n`<a href=\"...\"> <cite>Fonte</cite> </a>`"
+    },
+    {
+      "title": "address: contato (não é para ‘qualquer rodapé’)",
+      "body": "Use `<address>` para informações de contato do autor/empresa.\n\nExemplo:\n`<address>`\n  Email: <a href=\"mailto:contato@site.com\">contato@site.com</a>\n`</address>`\n\nNão use address para qualquer texto no rodapé. É específico para contato."
+    },
+    {
+      "title": "code: trechos curtos de código",
+      "body": "Use `<code>` para palavras/trechos curtos de código no meio do texto.\n\nExemplo:\n`<p>Use a tag <code>p</code> para parágrafos.</p>`\n\nIsso deixa claro que aquilo é código e não texto normal."
+    },
+    {
+      "title": "pre + code: blocos de código (várias linhas)",
+      "body": "Para código em várias linhas, use `<pre><code>...</code></pre>`.\n\n- `<pre>` preserva espaços e quebras de linha\n- `<code>` diz “isso é código”\n\nExemplo:\n`<pre><code>`\n`<h1>Olá</h1>`\n`<p>Texto</p>`\n`</code></pre>`\n\nIsso é exatamente o que sua plataforma está usando com syntax highlight."
+    },
+    {
+      "title": "kbd: teclas do teclado (muito usado em tutoriais)",
+      "body": "Use `<kbd>` para representar teclas.\n\nExemplo:\n`<p>Pressione <kbd>Ctrl</kbd> + <kbd>S</kbd> para salvar.</p>`\n\nIsso melhora a leitura e deixa a aula mais didática."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "- Usar `<blockquote>` para qualquer texto destacado (sem ser citação)\n- Usar `<cite>` como se fosse “autor” (é mais para obra/fonte)\n- Usar `<address>` para qualquer rodapé\n- Colocar bloco de código sem `<pre>` e perder formatação\n\nSe você usar as tags certas, seu conteúdo fica muito mais limpo."
+    },
+    {
+      "title": "Resumo",
+      "body": "- `blockquote` = citação em bloco\n- `q` = citação curta\n- `cite` = obra/fonte\n- `address` = contato\n- `code` = código curto\n- `pre+code` = bloco de código\n- `kbd` = teclas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 23",
+    "instructions": "A ou B. Leia a explicação para consolidar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Para uma citação longa em bloco, use:",
+        "options": [
+          { "key": "A", "text": "<blockquote>" },
+          { "key": "B", "text": "<q>" }
+        ],
+        "answer": "A",
+        "explain": "blockquote é citação em bloco. q é citação curta inline."
+      },
+      {
+        "id": 2,
+        "question": "Para uma citação curta dentro de uma frase, use:",
+        "options": [
+          { "key": "A", "text": "<q>" },
+          { "key": "B", "text": "<pre>" }
+        ],
+        "answer": "A",
+        "explain": "q é para citações curtas. pre é para preservar formatação."
+      },
+      {
+        "id": 3,
+        "question": "cite representa principalmente:",
+        "options": [
+          { "key": "A", "text": "O título de uma obra/fonte citada" },
+          { "key": "B", "text": "Um botão de enviar formulário" }
+        ],
+        "answer": "A",
+        "explain": "cite é semântica para fonte/obra."
+      },
+      {
+        "id": 4,
+        "question": "address deve ser usado para:",
+        "options": [
+          { "key": "A", "text": "Informações de contato" },
+          { "key": "B", "text": "Qualquer texto no rodapé" }
+        ],
+        "answer": "A",
+        "explain": "address é específico para contato."
+      },
+      {
+        "id": 5,
+        "question": "Para um trecho curto de código no meio do texto, use:",
+        "options": [
+          { "key": "A", "text": "<code>" },
+          { "key": "B", "text": "<kbd>" }
+        ],
+        "answer": "A",
+        "explain": "code representa código. kbd representa teclas."
+      },
+      {
+        "id": 6,
+        "question": "Para bloco de código (várias linhas), o padrão é:",
+        "options": [
+          { "key": "A", "text": "<pre><code>...</code></pre>" },
+          { "key": "B", "text": "<p><code>...</code></p>" }
+        ],
+        "answer": "A",
+        "explain": "pre preserva quebras e espaços; code indica que é código."
+      },
+      {
+        "id": 7,
+        "question": "kbd é usado para:",
+        "options": [
+          { "key": "A", "text": "Mostrar teclas do teclado" },
+          { "key": "B", "text": "Mostrar imagens" }
+        ],
+        "answer": "A",
+        "explain": "kbd representa entradas do teclado."
+      },
+      {
+        "id": 8,
+        "question": "Sem <pre>, um bloco de código pode perder:",
+        "options": [
+          { "key": "A", "text": "Quebras de linha e espaços" },
+          { "key": "B", "text": "O título da página" }
+        ],
+        "answer": "A",
+        "explain": "pre preserva formatação."
+      },
+      {
+        "id": 9,
+        "question": "Qual tag é melhor para indicar “Ctrl + S” em tutorial?",
+        "options": [
+          { "key": "A", "text": "<kbd>" },
+          { "key": "B", "text": "<cite>" }
+        ],
+        "answer": "A",
+        "explain": "kbd é para teclas."
+      },
+      {
+        "id": 10,
+        "question": "Qual opção está correta para citação curta?",
+        "options": [
+          { "key": "A", "text": "Use <q> dentro do parágrafo" },
+          { "key": "B", "text": "Use <blockquote> dentro de uma palavra" }
+        ],
+        "answer": "A",
+        "explain": "q é inline (curta). blockquote é bloco."
+      }
+    ]
+  }
+}

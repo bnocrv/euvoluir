@@ -1,0 +1,152 @@
+{
+  "id": "13-seo-basico",
+  "title": "Aula 13 — SEO básico no HTML (title, meta, headings, semântica)",
+  "steps": [
+    {
+      "title": "O que é SEO (sem mito)",
+      "body": "SEO é **ajudar mecanismos de busca** (Google) a entenderem seu conteúdo.\n\nSEO não é “truque”. É clareza.\n\nO básico do SEO começa com:\n- HTML bem estruturado\n- títulos corretos\n- conteúdo claro\n- semântica\n\nSe você fizer o HTML direito, você já está na frente da maioria."
+    },
+    {
+      "title": "Title: o título da aba (e do Google)",
+      "body": "`<title>` fica no `<head>`.\n\nEle aparece:\n- na aba do navegador\n- como título do resultado do Google\n\nBoas práticas:\n- seja específico\n- evite só “Home”\n\nExemplo:\n- `Loja Fina Estampa — Moda Feminina em SP`"
+    },
+    {
+      "title": "Meta description: o “resumo” do resultado",
+      "body": "A meta description é um resumo da página.\n\nExemplo:\n`<meta name=\"description\" content=\"Cursos completos de HTML, CSS e JS do básico ao avançado.\">`\n\nNem sempre o Google usa exatamente sua description, mas ela ajuda muito.\n\nBoas práticas:\n- resumo real\n- sem spam\n- combine com o conteúdo"
+    },
+    {
+      "title": "Headings: h1/h2/h3 organizam o conteúdo",
+      "body": "O Google e leitores entendem sua estrutura pelos títulos.\n\nRegra prática:\n- 1 `h1` principal\n- seções com `h2`\n- subtópicos com `h3`\n\nSe você pula níveis sem motivo, o conteúdo fica confuso."
+    },
+    {
+      "title": "Semântica ajuda SEO (nav/main/article)",
+      "body": "Tags semânticas ajudam a entender as regiões:\n- `<main>`: conteúdo principal\n- `<article>`: conteúdo independente\n- `<nav>`: navegação\n\nIsso não “garante rank”, mas melhora compreensão e estrutura.\n\nE SEO bom começa com compreensão."
+    },
+    {
+      "title": "Links internos: navegação e estrutura",
+      "body": "Links internos ajudam:\n- o usuário a encontrar coisas\n- o robô a descobrir páginas\n\nBoas práticas:\n- texto do link claro\n- menus consistentes\n\nRuim:\n- \"clique aqui\"\n\nBom:\n- \"Ver preços\"\n- \"Aula 04 — Listas\""
+    },
+    {
+      "title": "Imagens: alt ajuda SEO e acessibilidade",
+      "body": "Alt descreve a imagem.\n\nIsso ajuda:\n- acessibilidade\n- contexto para mecanismos\n\nExemplo:\n- `<img src=\"vestido.jpg\" alt=\"Vestido floral azul em tecido leve\">`\n\nSe a imagem for só decoração:\n- `alt=\"\"`"
+    },
+    {
+      "title": "URL e organização (conceito)",
+      "body": "Mesmo sem backend, pense em URLs limpas.\n\nEm sites reais:\n- `/cursos/html`\n- `/blog/como-usar-flexbox`\n\nIsso ajuda usuário e SEO.\n\nAqui no seu projeto SPA, a URL é hash (`#/...`). Depois, quando migrar para um framework/SSR, você aplica isso."
+    },
+    {
+      "title": "Canonical (muito básico, só pra você saber que existe)",
+      "body": "Em sites maiores, pode existir conteúdo duplicado.\n\nA tag canonical indica qual URL é a “principal”:\n- `<link rel=\"canonical\" href=\"https://site.com/pagina\">`\n\nVocê não precisa usar agora, mas é bom saber que existe."
+    },
+    {
+      "title": "Resumo (o SEO básico que você já consegue fazer)",
+      "body": "- Title bom\n- meta description real\n- h1/h2/h3 bem usados\n- semântica (main/article)\n- links internos claros\n- imagens com alt\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 13",
+    "instructions": "A ou B. Leia o porquê. Se errar, revise o passo.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "SEO significa principalmente…",
+        "options": [
+          { "key": "A", "text": "Ajudar buscadores a entenderem seu conteúdo" },
+          { "key": "B", "text": "Usar truques para enganar o Google" }
+        ],
+        "answer": "A",
+        "explain": "SEO bom é clareza e estrutura, não truque."
+      },
+      {
+        "id": 2,
+        "question": "O `<title>` fica em:",
+        "options": [
+          { "key": "A", "text": "<head>" },
+          { "key": "B", "text": "<body>" }
+        ],
+        "answer": "A",
+        "explain": "Title é configuração da página e aparece na aba/resultados."
+      },
+      {
+        "id": 3,
+        "question": "A meta description serve para:",
+        "options": [
+          { "key": "A", "text": "Resumir a página nos resultados" },
+          { "key": "B", "text": "Mudar a cor do site" }
+        ],
+        "answer": "A",
+        "explain": "Description é resumo; cor é CSS."
+      },
+      {
+        "id": 4,
+        "question": "Boa prática comum é ter:",
+        "options": [
+          { "key": "A", "text": "1 h1 principal por página" },
+          { "key": "B", "text": "Vários h1 para cada parágrafo" }
+        ],
+        "answer": "A",
+        "explain": "1 h1 define o tema principal, e h2/h3 organizam seções."
+      },
+      {
+        "id": 5,
+        "question": "Semântica ajuda SEO porque:",
+        "options": [
+          { "key": "A", "text": "Melhora a compreensão da estrutura da página" },
+          { "key": "B", "text": "Garante 1º lugar no Google automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Não garante ranking, mas ajuda clareza e estrutura."
+      },
+      {
+        "id": 6,
+        "question": "Texto de link bom é:",
+        "options": [
+          { "key": "A", "text": "Aula 04 — Listas" },
+          { "key": "B", "text": "Clique aqui" }
+        ],
+        "answer": "A",
+        "explain": "Texto claro melhora UX, a11y e estrutura."
+      },
+      {
+        "id": 7,
+        "question": "Alt em imagem ajuda:",
+        "options": [
+          { "key": "A", "text": "Acessibilidade e contexto do conteúdo" },
+          { "key": "B", "text": "Aumentar FPS do navegador" }
+        ],
+        "answer": "A",
+        "explain": "Alt descreve a imagem e dá contexto."
+      },
+      {
+        "id": 8,
+        "question": "Se a imagem é apenas decorativa, o melhor alt é:",
+        "options": [
+          { "key": "A", "text": "alt=\"\"" },
+          { "key": "B", "text": "alt=\"imagem\"" }
+        ],
+        "answer": "A",
+        "explain": "Alt vazio indica imagem decorativa (não precisa ser lida)."
+      },
+      {
+        "id": 9,
+        "question": "URLs limpas ajudam porque:",
+        "options": [
+          { "key": "A", "text": "Facilitam entendimento para usuários e buscadores" },
+          { "key": "B", "text": "Substituem conteúdo de qualidade" }
+        ],
+        "answer": "A",
+        "explain": "URL boa ajuda organização, mas conteúdo continua sendo essencial."
+      },
+      {
+        "id": 10,
+        "question": "Canonical serve para:",
+        "options": [
+          { "key": "A", "text": "Indicar a URL principal quando há duplicidade" },
+          { "key": "B", "text": "Criar links dentro da página (#id)" }
+        ],
+        "answer": "A",
+        "explain": "Canonical aponta a versão principal do conteúdo."
+      }
+    ]
+  }
+}

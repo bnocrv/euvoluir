@@ -1,0 +1,152 @@
+{
+  "id": "14-midias-embed",
+  "title": "Aula 14 — Mídias (audio/video) e Embed (iframe) com boas práticas",
+  "steps": [
+    {
+      "title": "Por que mídias e embed são importantes",
+      "body": "Sites reais usam muito:\n- vídeo (aulas, demonstrações)\n- áudio (podcast, narração)\n- embed (mapa, YouTube, formulário externo)\n\nO HTML tem tags próprias para áudio e vídeo.\n\nHoje você vai aprender o essencial para usar isso **sem bagunça**."
+    },
+    {
+      "title": "Áudio: <audio> com controls",
+      "body": "Para tocar áudio no HTML:\n- use `<audio>`\n\nO atributo mais comum:\n- `controls` (mostra os controles)\n\nExemplo:\n`<audio controls src=\"audio.mp3\"></audio>`\n\nSe o arquivo não existir, não toca. Por isso é comum usar `<source>`."
+    },
+    {
+      "title": "Áudio com <source> (compatibilidade)",
+      "body": "Nem todo navegador suporta todos os formatos.\n\nUma forma mais completa:\n`<audio controls>`\n  `<source src=\"audio.mp3\" type=\"audio/mpeg\">`\n  `<source src=\"audio.ogg\" type=\"audio/ogg\">`\n  `Seu navegador não suporta áudio.`\n`</audio>`\n\nO navegador tenta o primeiro formato que suportar."
+    },
+    {
+      "title": "Vídeo: <video> com controls",
+      "body": "Para vídeo:\n- use `<video>`\n\nO básico:\n- `controls`\n- `width` (opcional)\n\nExemplo:\n`<video controls width=\"480\" src=\"video.mp4\"></video>`\n\nAssim como no áudio, é comum usar `<source>`."
+    },
+    {
+      "title": "Vídeo com source e poster",
+      "body": "Um modelo mais “pro”:\n\n`<video controls width=\"640\" poster=\"capa.jpg\">`\n  `<source src=\"video.mp4\" type=\"video/mp4\">`\n  `<source src=\"video.webm\" type=\"video/webm\">`\n  `Seu navegador não suporta vídeo.`\n`</video>`\n\n`poster` é a imagem de capa antes de dar play."
+    },
+    {
+      "title": "Autoplay, muted e loop (use com cuidado)",
+      "body": "Atributos comuns:\n- `autoplay`: tenta tocar sozinho\n- `muted`: mudo\n- `loop`: repete\n\nA maioria dos navegadores bloqueia autoplay com som.\n\nRegra:\n- se for usar autoplay, geralmente precisa de `muted`.\n\nMas cuidado: autoplay pode irritar o usuário."
+    },
+    {
+      "title": "Acessibilidade em mídia (conceito)",
+      "body": "Boas práticas:\n- se o vídeo tem fala importante, ideal ter legenda/transcrição\n- não dependa só de som para transmitir informação\n\nNo começo, só lembre disso: mídia precisa ser acessível."
+    },
+    {
+      "title": "Embed: o que é <iframe>",
+      "body": "`<iframe>` permite colocar outra página dentro da sua.\n\nExemplos comuns:\n- vídeo do YouTube\n- Google Maps\n- formulário externo\n\nExemplo genérico:\n`<iframe src=\"https://example.com\" title=\"Conteúdo externo\"></iframe>`\n\nO `title` é importante para acessibilidade."
+    },
+    {
+      "title": "Boas práticas com iframe (segurança e controle)",
+      "body": "Dicas importantes:\n\n1) Sempre use `title`.\n2) Defina largura/altura ou use CSS depois.\n3) Quando possível, use `loading=\"lazy\"` para performance.\n\nExemplo:\n`<iframe src=\"...\" title=\"Mapa\" loading=\"lazy\"></iframe>`"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- áudio: `<audio>` + `controls`\n- vídeo: `<video>` + `controls` + `poster`\n- `<source>` melhora compatibilidade\n- autoplay só com cuidado\n- iframe embute conteúdo externo\n- iframe deve ter title\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 14",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Qual tag é usada para tocar áudio no HTML?",
+        "options": [
+          { "key": "A", "text": "<audio>" },
+          { "key": "B", "text": "<sound>" }
+        ],
+        "answer": "A",
+        "explain": "A tag padrão é <audio>. <sound> não existe."
+      },
+      {
+        "id": 2,
+        "question": "Qual atributo mostra controles de play/pausa?",
+        "options": [
+          { "key": "A", "text": "controls" },
+          { "key": "B", "text": "control" }
+        ],
+        "answer": "A",
+        "explain": "O atributo é controls (com s)."
+      },
+      {
+        "id": 3,
+        "question": "Para vídeo, a tag correta é:",
+        "options": [
+          { "key": "A", "text": "<video>" },
+          { "key": "B", "text": "<movie>" }
+        ],
+        "answer": "A",
+        "explain": "A tag padrão é <video>."
+      },
+      {
+        "id": 4,
+        "question": "O elemento <source> serve para:",
+        "options": [
+          { "key": "A", "text": "Oferecer mais de um formato/arquivo" },
+          { "key": "B", "text": "Criar legendas automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "source permite listar diferentes arquivos/formatos para compatibilidade."
+      },
+      {
+        "id": 5,
+        "question": "No <video>, o atributo poster serve para:",
+        "options": [
+          { "key": "A", "text": "Imagem de capa antes do play" },
+          { "key": "B", "text": "Aumentar o volume do vídeo" }
+        ],
+        "answer": "A",
+        "explain": "poster define a capa (thumbnail) antes de iniciar."
+      },
+      {
+        "id": 6,
+        "question": "Autoplay com som geralmente…",
+        "options": [
+          { "key": "A", "text": "É bloqueado por navegadores" },
+          { "key": "B", "text": "Sempre funciona sem restrições" }
+        ],
+        "answer": "A",
+        "explain": "Browsers costumam bloquear autoplay com áudio."
+      },
+      {
+        "id": 7,
+        "question": "Se for usar autoplay, geralmente precisa de:",
+        "options": [
+          { "key": "A", "text": "muted" },
+          { "key": "B", "text": "download" }
+        ],
+        "answer": "A",
+        "explain": "Autoplay costuma funcionar apenas se estiver muted."
+      },
+      {
+        "id": 8,
+        "question": "Qual tag embute uma página dentro de outra?",
+        "options": [
+          { "key": "A", "text": "<iframe>" },
+          { "key": "B", "text": "<embedpage>" }
+        ],
+        "answer": "A",
+        "explain": "iframe embute conteúdo externo."
+      },
+      {
+        "id": 9,
+        "question": "No iframe, o title é importante para:",
+        "options": [
+          { "key": "A", "text": "Acessibilidade (identificar o conteúdo)" },
+          { "key": "B", "text": "Aumentar a velocidade do Wi-Fi" }
+        ],
+        "answer": "A",
+        "explain": "title descreve o iframe para leitores de tela."
+      },
+      {
+        "id": 10,
+        "question": "loading=\"lazy\" no iframe serve para:",
+        "options": [
+          { "key": "A", "text": "Carregar apenas quando precisar (performance)" },
+          { "key": "B", "text": "Desativar o iframe" }
+        ],
+        "answer": "A",
+        "explain": "Lazy loading ajuda performance, carregando mais tarde."
+      }
+    ]
+  }
+}

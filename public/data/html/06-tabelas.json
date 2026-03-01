@@ -1,0 +1,152 @@
+{
+  "id": "06-tabelas",
+  "title": "Aula 06 — Tabelas (table, tr, th, td, thead, tbody) sem confusão",
+  "steps": [
+    {
+      "title": "Quando usar tabela (e quando NÃO usar)",
+      "body": "Tabela é para **dados tabulares** (linhas e colunas).\n\nUse tabela para:\n- lista de preços\n- horários\n- relatórios\n- dados de produtos\n\nNão use tabela para:\n- fazer layout do site (isso é CSS)\n\nRegra: se é “dado”, tabela. Se é “layout”, CSS."
+    },
+    {
+      "title": "Estrutura mínima: table > tr > td",
+      "body": "Uma tabela é composta por:\n\n- `<table>`: a tabela\n- `<tr>`: uma linha (table row)\n- `<td>`: uma célula de dado (table data)\n\nExemplo mínimo:\n`<table>`\n  `<tr>`\n    `<td>Bruno</td>`\n    `<td>25</td>`\n  `</tr>`\n`</table>`"
+    },
+    {
+      "title": "Cabeçalho de coluna: <th> (e por que é importante)",
+      "body": "Quando uma célula é **título** de uma coluna (ou linha), use `<th>`.\n\n- `<th>` = table header (cabeçalho)\n- `<td>` = dado\n\nIsso é semântico e melhora acessibilidade.\n\nExemplo:\n`<tr><th>Nome</th><th>Idade</th></tr>`"
+    },
+    {
+      "title": "thead, tbody, tfoot (organização)",
+      "body": "Você pode organizar a tabela em partes:\n\n- `<thead>`: cabeçalho\n- `<tbody>`: corpo (dados)\n- `<tfoot>`: rodapé (total, resumo)\n\nIsso ajuda a leitura do código e estilização com CSS."
+    },
+    {
+      "title": "Exemplo completo (modelo profissional)",
+      "body": "Modelo comum:\n\n`<table>`\n  `<thead>`\n    `<tr>`\n      `<th>Produto</th>`\n      `<th>Preço</th>`\n    `</tr>`\n  `</thead>`\n  `<tbody>`\n    `<tr>`\n      `<td>Camiseta</td>`\n      `<td>R$ 59,90</td>`\n    `</tr>`\n  `</tbody>`\n`</table>`"
+    },
+    {
+      "title": "caption: título da tabela (bem recomendado)",
+      "body": "Você pode colocar um título na tabela com `<caption>`.\n\nExemplo:\n`<table>`\n  `<caption>Lista de preços</caption>`\n  ...\n`</table>`\n\nIsso ajuda acessibilidade e deixa claro o contexto do que a tabela mostra."
+    },
+    {
+      "title": "Acessibilidade: scope no th (bem simples)",
+      "body": "Quando você usa `<th>`, é comum indicar o `scope`:\n\n- `scope=\"col\"` para cabeçalho de coluna\n- `scope=\"row\"` para cabeçalho de linha\n\nExemplo:\n- `<th scope=\"col\">Produto</th>`\n\nNo começo, só use `scope=\"col\"` nos cabeçalhos do thead."
+    },
+    {
+      "title": "Erros comuns em tabela",
+      "body": "- colocar `<td>` direto dentro de `<table>` (tem que ter `<tr>`)\n- usar tabela para layout\n- esquecer cabeçalhos `<th>`\n- não usar `<thead>`/`<tbody>` (não é obrigatório, mas ajuda muito)\n\nSe a tabela parecer confusa, volte para: table → thead/tbody → tr → th/td."
+    },
+    {
+      "title": "Dica prática: tabela é só estrutura (CSS deixa bonita)",
+      "body": "No HTML, a tabela vai parecer “feia” sem CSS.\n\nIsso é normal.\n\nDepois no CSS você aprende:\n- bordas\n- espaçamento\n- zebra striping (linhas alternadas)\n- responsividade\n\nPor enquanto, o objetivo é a **estrutura correta**."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- `table` = tabela\n- `tr` = linha\n- `td` = dado\n- `th` = cabeçalho\n- `thead/tbody/tfoot` = organização\n- `caption` = título\n\nAgora faça o quiz e tente acertar tudo sem chutar."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 06",
+    "instructions": "A ou B. Se errar, volte no passo correspondente.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Tabelas devem ser usadas principalmente para…",
+        "options": [
+          { "key": "A", "text": "Dados em linhas e colunas" },
+          { "key": "B", "text": "Fazer layout do site" }
+        ],
+        "answer": "A",
+        "explain": "Tabela é para dados tabulares. Layout é responsabilidade do CSS."
+      },
+      {
+        "id": 2,
+        "question": "Qual tag representa uma linha da tabela?",
+        "options": [
+          { "key": "A", "text": "<tr>" },
+          { "key": "B", "text": "<td>" }
+        ],
+        "answer": "A",
+        "explain": "<tr> é a linha. <td> é uma célula (dado) dentro da linha."
+      },
+      {
+        "id": 3,
+        "question": "Qual tag representa uma célula de dado comum?",
+        "options": [
+          { "key": "A", "text": "<td>" },
+          { "key": "B", "text": "<th>" }
+        ],
+        "answer": "A",
+        "explain": "<td> é dado. <th> é cabeçalho."
+      },
+      {
+        "id": 4,
+        "question": "Qual tag é usada para cabeçalho de coluna/linha?",
+        "options": [
+          { "key": "A", "text": "<th>" },
+          { "key": "B", "text": "<tc>" }
+        ],
+        "answer": "A",
+        "explain": "<th> é table header. <tc> não existe."
+      },
+      {
+        "id": 5,
+        "question": "Qual organização agrupa o cabeçalho da tabela?",
+        "options": [
+          { "key": "A", "text": "<thead>" },
+          { "key": "B", "text": "<tbody>" }
+        ],
+        "answer": "A",
+        "explain": "<thead> guarda o cabeçalho. <tbody> guarda os dados."
+      },
+      {
+        "id": 6,
+        "question": "Qual parte guarda os dados principais?",
+        "options": [
+          { "key": "A", "text": "<tbody>" },
+          { "key": "B", "text": "<thead>" }
+        ],
+        "answer": "A",
+        "explain": "<tbody> é o corpo com os dados."
+      },
+      {
+        "id": 7,
+        "question": "Qual tag adiciona um título para a tabela?",
+        "options": [
+          { "key": "A", "text": "<caption>" },
+          { "key": "B", "text": "<title>" }
+        ],
+        "answer": "A",
+        "explain": "<caption> é o título da tabela. <title> é título da aba e fica no head."
+      },
+      {
+        "id": 8,
+        "question": "É correto colocar <td> diretamente dentro de <table> sem <tr>?",
+        "options": [
+          { "key": "A", "text": "Não, precisa estar dentro de uma <tr>" },
+          { "key": "B", "text": "Sim, tanto faz" }
+        ],
+        "answer": "A",
+        "explain": "A estrutura correta é table → tr → td/th."
+      },
+      {
+        "id": 9,
+        "question": "O atributo scope em <th> ajuda principalmente em:",
+        "options": [
+          { "key": "A", "text": "Acessibilidade (leitores de tela)" },
+          { "key": "B", "text": "Carregar imagem mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "scope define relação do cabeçalho (col/row), ajudando leitores de tela."
+      },
+      {
+        "id": 10,
+        "question": "thead/tbody são:",
+        "options": [
+          { "key": "A", "text": "Organização semântica útil (mesmo não sendo obrigatória)" },
+          { "key": "B", "text": "Obrigatórias sempre, senão HTML não funciona" }
+        ],
+        "answer": "A",
+        "explain": "Não são obrigatórias, mas ajudam muito na organização e no CSS."
+      }
+    ]
+  }
+}

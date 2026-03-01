@@ -1,0 +1,152 @@
+{
+  "id": "08-inputs-avancados",
+  "title": "Aula 08 — Checkbox, Radio, Select e Inputs avançados",
+  "steps": [
+    {
+      "title": "Por que essa aula é importante",
+      "body": "Agora você já entende `form`, `label`, `input` e `submit`.\n\nNesta aula você vai aprender os campos que aparecem em quase todo cadastro real:\n- **checkbox** (marcar opções)\n- **radio** (escolher 1 entre várias)\n- **select** (lista suspensa)\n- inputs úteis: `tel`, `url`, `date`, `color`, `range`\n\nO objetivo é você saber escolher o campo certo e montar HTML correto."
+    },
+    {
+      "title": "Checkbox: marcar 0, 1 ou várias opções",
+      "body": "Checkbox é `input type=\"checkbox\"`.\n\nEle serve quando o usuário pode marcar **mais de uma opção**.\n\nExemplo:\n- aceitar termos\n- escolher interesses\n\nEstrutura típica:\n- `<input type=\"checkbox\" id=\"news\" name=\"news\">`\n- `<label for=\"news\">Receber novidades</label>`"
+    },
+    {
+      "title": "Checkbox: dica importante sobre label (clique mais fácil)",
+      "body": "Para o checkbox ficar fácil de clicar, conecte `label` com `for` e `id`.\n\nAssim, clicar no texto também marca/desmarca.\n\nIsso melhora acessibilidade e usabilidade."
+    },
+    {
+      "title": "Radio: escolher 1 entre várias opções",
+      "body": "Radio é `input type=\"radio\"`.\n\nEle serve quando o usuário deve escolher **apenas uma opção**.\n\nA regra mais importante:\n- radios do mesmo grupo devem ter o **mesmo `name`**.\n\nExemplo (mesmo name):\n- `name=\"pagamento\"` em todos."
+    },
+    {
+      "title": "Radio: exemplo (grupo correto)",
+      "body": "Exemplo:\n\n- `<input type=\"radio\" id=\"pix\" name=\"pagamento\" value=\"pix\">`\n- `<label for=\"pix\">PIX</label>`\n\n- `<input type=\"radio\" id=\"cartao\" name=\"pagamento\" value=\"cartao\">`\n- `<label for=\"cartao\">Cartão</label>`\n\nComo o `name` é o mesmo, só 1 pode ficar marcado."
+    },
+    {
+      "title": "Select: escolher 1 opção (ou mais) em lista",
+      "body": "Select é uma tag própria: `<select>`.\n\nDentro dela você coloca opções com `<option>`.\n\nExemplo:\n- `<select name=\"estado\">`\n  `<option value=\"sp\">SP</option>`\n  `<option value=\"rj\">RJ</option>`\n`</select>`\n\nSelect é útil quando a lista é longa."
+    },
+    {
+      "title": "Select: label e opção padrão",
+      "body": "Boas práticas:\n\n1) Use `label` com `for` e `select` com `id`.\n\n2) Você pode criar uma opção inicial como:\n- \"Selecione…\"\n\nExemplo:\n- `<option value=\"\" selected>Selecione…</option>`\n\nDepois você valida se o valor está vazio."
+    },
+    {
+      "title": "Inputs úteis (o navegador ajuda muito)",
+      "body": "Alguns types que melhoram a experiência:\n\n- `email`: valida formato de email\n- `tel`: teclado de telefone no celular\n- `url`: valida formato de link\n- `date`: seletor de data\n- `number`: números\n- `range`: barra deslizante\n- `color`: seletor de cor\n\nUsar type certo é um detalhe que separa iniciante de profissional."
+    },
+    {
+      "title": "required, disabled e checked (trio comum)",
+      "body": "Três atributos que você vai usar muito:\n\n- `required`: obrigatório\n- `disabled`: desativado (não envia)\n- `checked`: começa marcado (checkbox/radio)\n\nUse `checked` com cuidado: marcar coisas por padrão pode irritar o usuário (ex.: newsletter)."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Checkbox: 0 a várias escolhas\n- Radio: 1 escolha (mesmo `name`)\n- Select: lista de opções\n- Types certos melhoram celular e validação\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 08",
+    "instructions": "A ou B. Leia a explicação. Se errar, volte no passo que ensina.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Checkbox é usado quando o usuário pode…",
+        "options": [
+          { "key": "A", "text": "Marcar várias opções" },
+          { "key": "B", "text": "Escolher apenas uma opção" }
+        ],
+        "answer": "A",
+        "explain": "Checkbox permite marcar 0, 1 ou várias opções."
+      },
+      {
+        "id": 2,
+        "question": "Radio é usado quando o usuário deve…",
+        "options": [
+          { "key": "A", "text": "Escolher apenas uma opção" },
+          { "key": "B", "text": "Marcar várias opções ao mesmo tempo" }
+        ],
+        "answer": "A",
+        "explain": "Radio é seleção única dentro de um grupo."
+      },
+      {
+        "id": 3,
+        "question": "Para radios fazerem parte do mesmo grupo, eles precisam ter o mesmo…",
+        "options": [
+          { "key": "A", "text": "name" },
+          { "key": "B", "text": "id" }
+        ],
+        "answer": "A",
+        "explain": "O mesmo name agrupa radios para escolher só 1."
+      },
+      {
+        "id": 4,
+        "question": "Qual é a tag principal do select?",
+        "options": [
+          { "key": "A", "text": "<select>" },
+          { "key": "B", "text": "<input type=\"select\">" }
+        ],
+        "answer": "A",
+        "explain": "Select é uma tag própria (<select>), não um type do input."
+      },
+      {
+        "id": 5,
+        "question": "Dentro do select, as opções são criadas com:",
+        "options": [
+          { "key": "A", "text": "<option>" },
+          { "key": "B", "text": "<choice>" }
+        ],
+        "answer": "A",
+        "explain": "A tag correta é <option>."
+      },
+      {
+        "id": 6,
+        "question": "Qual atributo faz um checkbox começar marcado?",
+        "options": [
+          { "key": "A", "text": "checked" },
+          { "key": "B", "text": "selected" }
+        ],
+        "answer": "A",
+        "explain": "checked marca checkbox/radio. selected é usado em option do select."
+      },
+      {
+        "id": 7,
+        "question": "Qual atributo faz o campo ser obrigatório?",
+        "options": [
+          { "key": "A", "text": "required" },
+          { "key": "B", "text": "readonly" }
+        ],
+        "answer": "A",
+        "explain": "required obriga preencher. readonly permite ver mas não editar."
+      },
+      {
+        "id": 8,
+        "question": "O type que ajuda no teclado de celular para telefone é:",
+        "options": [
+          { "key": "A", "text": "tel" },
+          { "key": "B", "text": "text" }
+        ],
+        "answer": "A",
+        "explain": "type=\"tel\" sugere teclado numérico/telefone no celular."
+      },
+      {
+        "id": 9,
+        "question": "O atributo disabled faz o campo:",
+        "options": [
+          { "key": "A", "text": "Ficar desativado e não ser enviado" },
+          { "key": "B", "text": "Virar obrigatório" }
+        ],
+        "answer": "A",
+        "explain": "disabled desativa e impede envio do valor."
+      },
+      {
+        "id": 10,
+        "question": "Qual é melhor: usar type correto (email/tel/url) ou deixar tudo como text?",
+        "options": [
+          { "key": "A", "text": "Usar type correto" },
+          { "key": "B", "text": "Deixar tudo como text" }
+        ],
+        "answer": "A",
+        "explain": "Type correto melhora validação e a experiência no celular."
+      }
+    ]
+  }
+}

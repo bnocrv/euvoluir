@@ -1,0 +1,152 @@
+{
+  "id": "04-listas",
+  "title": "Aula 04 — Listas (ul/ol/li) + listas aninhadas",
+  "steps": [
+    {
+      "title": "Por que listas são tão importantes",
+      "body": "Listas estão em todo lugar:\n- menus\n- checklists\n- tópicos de um conteúdo\n- passos de um tutorial\n\nQuando você usa lista corretamente, o HTML fica mais **organizado**, mais **semântico** e mais fácil de estilizar depois com CSS."
+    },
+    {
+      "title": "Os 3 elementos que você precisa decorar",
+      "body": "Listas em HTML giram em torno de 3 tags:\n\n- `<ul>`: lista **não ordenada** (sem ordem, geralmente com bolinhas)\n- `<ol>`: lista **ordenada** (tem ordem, geralmente 1, 2, 3)\n- `<li>`: item da lista (fica dentro do ul/ol)\n\nRegra: **ul/ol só pode ter li como filho direto** (boa prática)."
+    },
+    {
+      "title": "Lista não ordenada (ul) — quando usar",
+      "body": "Use `<ul>` quando a ordem não importa.\n\nExemplos:\n- lista de compras\n- tecnologias que você quer aprender\n- links do menu (mais comum)\n\nExemplo:\n- `<ul><li>HTML</li><li>CSS</li></ul>`"
+    },
+    {
+      "title": "Lista ordenada (ol) — quando usar",
+      "body": "Use `<ol>` quando existe uma sequência.\n\nExemplos:\n- passo a passo de uma receita\n- etapas de um cadastro\n- ranking\n\nExemplo:\n- `<ol><li>Abrir o VS Code</li><li>Criar index.html</li></ol>`"
+    },
+    {
+      "title": "Boas práticas com listas (pra ficar profissional)",
+      "body": "1) Não coloque `<p>` como filho direto de `<ul>`.\n2) Cada item tem que ser `<li>`.\n3) Texto muito longo pode ficar dentro do li.\n\nExemplo correto:\n- `<ul><li><p>Texto</p></li></ul>`\n\nExemplo comum (ruim):\n- `<ul><p>Texto</p></ul>`"
+    },
+    {
+      "title": "Listas aninhadas (lista dentro de lista)",
+      "body": "Você pode colocar uma lista dentro de um `<li>`.\n\nIsso serve para subitens.\n\nExemplo clássico:\n- HTML\n  - tags\n  - atributos\n\nA regra é: a lista “filha” fica **dentro** do li do item “pai”."
+    },
+    {
+      "title": "Exemplo de lista aninhada bem feita",
+      "body": "Exemplo:\n\n`<ul>`\n- `<li>Frontend`\n  - `<ul>`\n    - `<li>HTML</li>`\n    - `<li>CSS</li>`\n  - `</ul>`\n- `</li>`\n`</ul>`\n\nPerceba: a lista interna está dentro do `<li>` do Frontend."
+    },
+    {
+      "title": "Listas em menus (spoiler de CSS)",
+      "body": "Muitos menus são:\n- `<nav>` + `<ul>` + `<li>` + `<a>`\n\nDepois, no CSS, você remove as bolinhas e coloca lado a lado.\n\nPor enquanto, foque na estrutura correta — o estilo vem depois."
+    },
+    {
+      "title": "Erros que mais travam iniciantes",
+      "body": "- Esquecer o `<li>`\n- Colocar texto solto dentro do `<ul>`\n- Fazer lista aninhada fora do `<li>`\n\nSe der ruim, volte na regra:\n**ul/ol → li → (dentro do li pode ter outra ul/ol)**"
+    },
+    {
+      "title": "Resumo da aula (pra fixar rápido)",
+      "body": "- `ul` = ordem não importa\n- `ol` = ordem importa\n- `li` = item da lista\n- lista aninhada fica dentro de um `li`\n\nAgora faça o quiz e tente acertar tudo sem chutar."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 04",
+    "instructions": "Escolha A ou B e leia a explicação. Se errar, volte no passo que fala disso.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Qual tag cria uma lista NÃO ordenada?",
+        "options": [
+          { "key": "A", "text": "<ul>" },
+          { "key": "B", "text": "<ol>" }
+        ],
+        "answer": "A",
+        "explain": "<ul> é unordered list (ordem não importa). <ol> é ordered list."
+      },
+      {
+        "id": 2,
+        "question": "Qual tag cria uma lista ORDENADA?",
+        "options": [
+          { "key": "A", "text": "<ol>" },
+          { "key": "B", "text": "<ul>" }
+        ],
+        "answer": "A",
+        "explain": "<ol> é ordered list (1,2,3…)."
+      },
+      {
+        "id": 3,
+        "question": "Qual tag representa um ITEM de lista?",
+        "options": [
+          { "key": "A", "text": "<li>" },
+          { "key": "B", "text": "<item>" }
+        ],
+        "answer": "A",
+        "explain": "O item é <li>. Não existe <item> em HTML padrão."
+      },
+      {
+        "id": 4,
+        "question": "Quando a ordem NÃO importa, você usa:",
+        "options": [
+          { "key": "A", "text": "<ul>" },
+          { "key": "B", "text": "<ol>" }
+        ],
+        "answer": "A",
+        "explain": "Se a ordem não importa (lista de compras), use <ul>."
+      },
+      {
+        "id": 5,
+        "question": "Quando existe uma sequência (passos), você usa:",
+        "options": [
+          { "key": "A", "text": "<ol>" },
+          { "key": "B", "text": "<ul>" }
+        ],
+        "answer": "A",
+        "explain": "Se é passo a passo (ordem importa), use <ol>."
+      },
+      {
+        "id": 6,
+        "question": "Boa prática: um <ul> deve ter como filho direto principalmente:",
+        "options": [
+          { "key": "A", "text": "<li>" },
+          { "key": "B", "text": "<p>" }
+        ],
+        "answer": "A",
+        "explain": "O correto é ul/ol conter li como itens. Parágrafos podem existir dentro do li."
+      },
+      {
+        "id": 7,
+        "question": "Lista aninhada (sublista) deve ficar:",
+        "options": [
+          { "key": "A", "text": "Dentro de um <li> (do item pai)" },
+          { "key": "B", "text": "Depois do </ul> (fora da lista)" }
+        ],
+        "answer": "A",
+        "explain": "A sublista pertence a um item. Portanto fica dentro do li do item pai."
+      },
+      {
+        "id": 8,
+        "question": "Menus em sites geralmente usam:",
+        "options": [
+          { "key": "A", "text": "<nav> + <ul> + <li> + <a>" },
+          { "key": "B", "text": "<footer> + <p> + <hr>" }
+        ],
+        "answer": "A",
+        "explain": "Menu é navegação: <nav> com lista de links."
+      },
+      {
+        "id": 9,
+        "question": "Qual exemplo está mais correto?",
+        "options": [
+          { "key": "A", "text": "<ul><li>Item</li></ul>" },
+          { "key": "B", "text": "<ul>Item</ul>" }
+        ],
+        "answer": "A",
+        "explain": "Itens devem estar dentro de <li>."
+      },
+      {
+        "id": 10,
+        "question": "Se você colocar texto solto dentro de <ul> sem <li>…",
+        "options": [
+          { "key": "A", "text": "Está errado/semântico ruim; use <li>" },
+          { "key": "B", "text": "Está perfeito e recomendado" }
+        ],
+        "answer": "A",
+        "explain": "A estrutura correta é ul/ol → li. Texto solto quebra a semântica."
+      }
+    ]
+  }
+}

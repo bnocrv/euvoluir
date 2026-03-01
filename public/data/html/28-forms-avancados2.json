@@ -1,0 +1,152 @@
+{
+  "id": "28-forms-avancados2",
+  "title": "Aula 28 — Formulários: datalist, upload, progress/meter, output",
+  "steps": [
+    {
+      "title": "Por que essa aula deixa o aluno animado",
+      "body": "Agora você vai aprender elementos que fazem o formulário parecer “aplicação de verdade”.\n\nVocê vai ver:\n- `datalist` (sugestões tipo autocomplete)\n- `input type=\"file\"` (upload)\n- `multiple` e `accept`\n- `progress` e `meter` (indicadores)\n- `output` (mostrar resultado)\n\nMesmo sem backend, você já entende como montar a estrutura certa."
+    },
+    {
+      "title": "datalist: sugestões para um input",
+      "body": "`datalist` cria uma lista de sugestões para um `<input>`.\n\nVocê liga usando o atributo `list`.\n\nExemplo:\n`<label for=\"ling\">Linguagem</label>`\n`<input id=\"ling\" name=\"linguagem\" list=\"langs\">`\n\n`<datalist id=\"langs\">`\n  `<option value=\"HTML\">`\n  `<option value=\"CSS\">`\n  `<option value=\"JavaScript\">`\n`</datalist>`\n\nO usuário pode escolher uma sugestão ou digitar outra."
+    },
+    {
+      "title": "Upload: input type=\"file\"",
+      "body": "Para permitir upload:\n\n`<input type=\"file\" name=\"arquivo\">`\n\nEsse input seleciona arquivos do computador.\n\nImportante:\n- o HTML sozinho não envia para lugar nenhum sem backend\n- mas a estrutura é essa"
+    },
+    {
+      "title": "multiple: selecionar vários arquivos",
+      "body": "Se você quer permitir vários:\n\n`<input type=\"file\" name=\"arquivos\" multiple>`\n\nIsso é muito usado para:\n- galeria de fotos\n- anexos\n\nDepois o backend/JS trata os arquivos."
+    },
+    {
+      "title": "accept: limitar tipos de arquivo (UX)",
+      "body": "Você pode sugerir tipos aceitos:\n\n- só imagens: `accept=\"image/*\"`\n- só PDF: `accept=\"application/pdf\"`\n- imagens específicas: `accept=\"image/png, image/jpeg\"`\n\nExemplo:\n`<input type=\"file\" accept=\"image/*\">`\n\nIsso ajuda o usuário a não escolher arquivo errado."
+    },
+    {
+      "title": "progress: barra de progresso (conceito)",
+      "body": "`<progress>` mostra progresso de algo (ex.: upload).\n\nExemplo:\n`<progress value=\"30\" max=\"100\">30%</progress>`\n\nSem JS, isso é só estático.\n\nMas a tag existe e é semântica."
+    },
+    {
+      "title": "meter: indicador de “nível” (diferente de progress)",
+      "body": "`<meter>` é para um valor dentro de um intervalo.\n\nExemplos:\n- qualidade de senha\n- nível de bateria\n- porcentagem de algo\n\nExemplo:\n`<meter value=\"0.7\" min=\"0\" max=\"1\">0.7</meter>`\n\nDiferença simples:\n- `progress` = progresso de tarefa\n- `meter` = medição de um estado"
+    },
+    {
+      "title": "output: mostrar resultado de cálculo/form (conceito)",
+      "body": "`<output>` é usado para mostrar um resultado.\n\nExemplo mental:\n- você tem um range (0 a 10)\n- e mostra o valor em output\n\nSem JS, fica parado.\n\nCom JS, fica dinâmico e bem legal."
+    },
+    {
+      "title": "Modelo mini (para visualizar tudo junto)",
+      "body": "Modelo (conceito):\n\n- input com datalist\n- upload com accept\n- progress\n- meter\n- output\n\nVocê não precisa fazer funcionar tudo agora.\nO objetivo é conhecer as tags e saber onde usar."
+    },
+    {
+      "title": "Resumo",
+      "body": "- datalist = sugestões\n- file = upload\n- multiple = vários arquivos\n- accept = limita tipos\n- progress = progresso\n- meter = nível\n- output = resultado\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 28",
+    "instructions": "A ou B. Leia a explicação para consolidar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "datalist serve para:",
+        "options": [
+          { "key": "A", "text": "Oferecer sugestões para um input" },
+          { "key": "B", "text": "Criar uma tabela" }
+        ],
+        "answer": "A",
+        "explain": "datalist cria sugestões ligadas a um input."
+      },
+      {
+        "id": 2,
+        "question": "Você liga input com datalist usando o atributo:",
+        "options": [
+          { "key": "A", "text": "list" },
+          { "key": "B", "text": "href" }
+        ],
+        "answer": "A",
+        "explain": "input list=\"id-do-datalist\"."
+      },
+      {
+        "id": 3,
+        "question": "Upload de arquivo é feito com:",
+        "options": [
+          { "key": "A", "text": "input type=\"file\"" },
+          { "key": "B", "text": "input type=\"upload\"" }
+        ],
+        "answer": "A",
+        "explain": "O type correto é file."
+      },
+      {
+        "id": 4,
+        "question": "multiple em input file permite:",
+        "options": [
+          { "key": "A", "text": "Selecionar vários arquivos" },
+          { "key": "B", "text": "Selecionar várias senhas" }
+        ],
+        "answer": "A",
+        "explain": "multiple permite múltiplos arquivos."
+      },
+      {
+        "id": 5,
+        "question": "accept=\"image/*\" significa:",
+        "options": [
+          { "key": "A", "text": "Sugerir/limitar seleção para imagens" },
+          { "key": "B", "text": "Bloquear todas as imagens" }
+        ],
+        "answer": "A",
+        "explain": "Accept sugere tipos permitidos."
+      },
+      {
+        "id": 6,
+        "question": "progress representa:",
+        "options": [
+          { "key": "A", "text": "Progresso de uma tarefa" },
+          { "key": "B", "text": "Um termo e sua definição" }
+        ],
+        "answer": "A",
+        "explain": "progress é barra de progresso."
+      },
+      {
+        "id": 7,
+        "question": "meter representa:",
+        "options": [
+          { "key": "A", "text": "Um nível/medição dentro de um intervalo" },
+          { "key": "B", "text": "Uma lista ordenada" }
+        ],
+        "answer": "A",
+        "explain": "meter é um indicador de valor em intervalo."
+      },
+      {
+        "id": 8,
+        "question": "Qual é a diferença principal entre progress e meter?",
+        "options": [
+          { "key": "A", "text": "progress = tarefa; meter = estado/nível" },
+          { "key": "B", "text": "Nenhuma, são a mesma coisa" }
+        ],
+        "answer": "A",
+        "explain": "Progress indica tarefa em andamento, meter indica nível."
+      },
+      {
+        "id": 9,
+        "question": "output é usado para:",
+        "options": [
+          { "key": "A", "text": "Mostrar um resultado (geralmente com JS)" },
+          { "key": "B", "text": "Carregar um script" }
+        ],
+        "answer": "A",
+        "explain": "output mostra saída/resultado."
+      },
+      {
+        "id": 10,
+        "question": "Sem backend/JS, upload no HTML:",
+        "options": [
+          { "key": "A", "text": "Só seleciona arquivo; não envia sozinho" },
+          { "key": "B", "text": "Já salva automaticamente no servidor" }
+        ],
+        "answer": "A",
+        "explain": "Precisa de backend ou JS para enviar/processar."
+      }
+    ]
+  }
+}

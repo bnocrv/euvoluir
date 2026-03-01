@@ -1,0 +1,152 @@
+{
+  "id": "12-acessibilidade-basica",
+  "title": "Aula 12 — Acessibilidade básica no HTML (alt, label, aria, teclado)",
+  "steps": [
+    {
+      "title": "O que é acessibilidade (de forma simples)",
+      "body": "Acessibilidade (a11y) é fazer seu site funcionar bem para **todas as pessoas**.\n\nIsso inclui:\n- pessoas com baixa visão (leitor de tela)\n- pessoas que usam só teclado\n- pessoas com daltonismo\n- pessoas com dificuldades motoras\n\nA parte boa: **HTML bem feito já resolve grande parte**."
+    },
+    {
+      "title": "1) Imagens: alt é obrigatório na prática",
+      "body": "Toda `<img>` deve ter `alt`.\n\n- Se a imagem é importante: descreva.\n- Se é decorativa: use `alt=\"\"` (vazio).\n\nExemplos:\n- `<img src=\"logo.png\" alt=\"Logo da Fina Estampa\">`\n- `<img src=\"decoracao.png\" alt=\"\">`\n\nSem alt, o leitor de tela fica perdido."
+    },
+    {
+      "title": "2) Formulários: label + for/id (não é opcional)",
+      "body": "Input sem label é um dos maiores erros.\n\nO certo:\n- `<label for=\"email\">Email</label>`\n- `<input id=\"email\" name=\"email\" type=\"email\">`\n\nBenefícios:\n- leitor de tela entende o campo\n- clicar no label foca o input\n- melhora usabilidade em geral"
+    },
+    {
+      "title": "3) Botões e links: texto claro (nada de “clique aqui”)",
+      "body": "Leitores de tela muitas vezes listam links/botões.\n\nSe vários elementos dizem \"clique aqui\", ninguém entende nada.\n\nPrefira:\n- \"Ver carrinho\"\n- \"Abrir aula 03\"\n- \"Baixar PDF\"\n\nTexto claro é acessibilidade + UX."
+    },
+    {
+      "title": "4) Landmarks: header/nav/main/footer ajudam leitores de tela",
+      "body": "Tags semânticas criam “pontos de referência” (landmarks).\n\nExemplos:\n- `<nav>` é navegação\n- `<main>` é conteúdo principal\n\nIsso permite pular direto para partes da página.\n\nOu seja: semântica = acessibilidade."
+    },
+    {
+      "title": "5) Idioma da página (lang)",
+      "body": "Use `lang` no `<html>`.\n\nExemplo:\n- `<html lang=\"pt-br\">`\n\nIsso ajuda leitor de tela a usar pronúncia correta.\n\nParece pequeno, mas é um detalhe profissional."
+    },
+    {
+      "title": "6) aria-label (quando usar de verdade)",
+      "body": "Regra de ouro:\n- **Primeiro** use HTML correto.\n- Use aria quando o HTML não consegue expressar bem.\n\nExemplo comum:\n- você tem 2 navs:\n  - `<nav aria-label=\"Menu principal\">...` \n  - `<nav aria-label=\"Menu do rodapé\">...`\n\nIsso ajuda o leitor de tela a diferenciar."
+    },
+    {
+      "title": "7) Teclado: tudo precisa ser alcançável com Tab",
+      "body": "Muita gente não usa mouse.\n\nTeste básico:\n- aperte Tab\n- você consegue chegar em links, inputs e botões?\n\nDica:\n- Evite fazer elementos clicáveis com `<div>`.\n- Use `<button>` para ações.\n- Use `<a>` para navegação."
+    },
+    {
+      "title": "8) Foco visível (não remova sem saber)",
+      "body": "Quando você navega com Tab, o navegador mostra o foco.\n\nIsso é essencial.\n\nNo CSS, iniciante remove `outline` e quebra acessibilidade.\n\nRegra:\n- não remova foco\n- se for personalizar, personalize, mas mantenha visível."
+    },
+    {
+      "title": "Resumo (checklist rápido)",
+      "body": "- img tem alt (ou alt=\"\" se decorativa)\n- input tem label (for/id)\n- links/botões com texto claro\n- use semântica (nav/main/footer)\n- `<html lang=\"pt-br\">`\n- aria-label só quando necessário\n- teclado (Tab) tem que funcionar\n- foco visível\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 12",
+    "instructions": "A ou B. Marque e leia o porquê.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O alt da imagem serve principalmente para…",
+        "options": [
+          { "key": "A", "text": "Descrever a imagem para acessibilidade e quando não carrega" },
+          { "key": "B", "text": "Mudar o tamanho da imagem" }
+        ],
+        "answer": "A",
+        "explain": "Alt é descrição. Tamanho é CSS ou atributos width/height."
+      },
+      {
+        "id": 2,
+        "question": "Se a imagem for decorativa, o recomendado é:",
+        "options": [
+          { "key": "A", "text": "alt=\"\" (vazio)" },
+          { "key": "B", "text": "Remover o atributo alt" }
+        ],
+        "answer": "A",
+        "explain": "Alt vazio indica que a imagem não deve ser lida pelo leitor de tela."
+      },
+      {
+        "id": 3,
+        "question": "A ligação correta entre label e input é:",
+        "options": [
+          { "key": "A", "text": "label for = input id" },
+          { "key": "B", "text": "label id = input for" }
+        ],
+        "answer": "A",
+        "explain": "for aponta para id."
+      },
+      {
+        "id": 4,
+        "question": "Texto “clique aqui” é ruim porque…",
+        "options": [
+          { "key": "A", "text": "Não diz para onde vai / o que faz" },
+          { "key": "B", "text": "É obrigatório usar em HTML" }
+        ],
+        "answer": "A",
+        "explain": "Texto claro é melhor para leitor de tela e para todo mundo."
+      },
+      {
+        "id": 5,
+        "question": "Tags semânticas (nav/main/footer) ajudam em:",
+        "options": [
+          { "key": "A", "text": "Landmarks para leitores de tela" },
+          { "key": "B", "text": "Compressão automática de imagens" }
+        ],
+        "answer": "A",
+        "explain": "Landmarks ajudam navegar por regiões."
+      },
+      {
+        "id": 6,
+        "question": "O atributo lang no <html> serve para:",
+        "options": [
+          { "key": "A", "text": "Definir o idioma para pronúncia/leitor de tela" },
+          { "key": "B", "text": "Definir a cor do site" }
+        ],
+        "answer": "A",
+        "explain": "Lang indica idioma. Cor é CSS."
+      },
+      {
+        "id": 7,
+        "question": "aria-label deve ser usado…",
+        "options": [
+          { "key": "A", "text": "Quando falta contexto e o HTML não resolve sozinho" },
+          { "key": "B", "text": "Em todo elemento sempre" }
+        ],
+        "answer": "A",
+        "explain": "Primeiro HTML correto, aria quando necessário."
+      },
+      {
+        "id": 8,
+        "question": "Para ações, você deve preferir:",
+        "options": [
+          { "key": "A", "text": "<button>" },
+          { "key": "B", "text": "<div onclick>" }
+        ],
+        "answer": "A",
+        "explain": "button é semântico e acessível. div clicável costuma quebrar teclado/a11y."
+      },
+      {
+        "id": 9,
+        "question": "Um teste simples de acessibilidade é:",
+        "options": [
+          { "key": "A", "text": "Navegar com Tab e ver se chega em tudo" },
+          { "key": "B", "text": "Aumentar o volume do computador" }
+        ],
+        "answer": "A",
+        "explain": "Teclado (Tab) é um teste básico e rápido."
+      },
+      {
+        "id": 10,
+        "question": "Remover o foco (outline) no CSS…",
+        "options": [
+          { "key": "A", "text": "Pode quebrar acessibilidade se não substituir por outro foco visível" },
+          { "key": "B", "text": "É sempre recomendado" }
+        ],
+        "answer": "A",
+        "explain": "Foco visível é essencial para quem usa teclado."
+      }
+    ]
+  }
+}

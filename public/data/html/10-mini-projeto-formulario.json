@@ -1,0 +1,155 @@
+{
+  "id": "10-mini-projeto-formulario",
+  "title": "Aula 10 — Mini-projeto: Formulário de cadastro completo (HTML)",
+  "steps": [
+    {
+      "title": "Objetivo do mini-projeto",
+      "body": "Hoje você vai montar um formulário completo, do jeito que aparece em sites reais.\n\nVocê vai treinar:\n- estrutura (`form`)\n- campos (`input`, `select`, `textarea`)\n- tipos corretos (`email`, `password`, `date`, `tel`)\n- validação HTML (`required`, `minlength`, `pattern`)\n- grupos (`radio` com mesmo `name`)\n- termos (`checkbox`)\n\nNo final, você vai ter um HTML que dá orgulho."
+    },
+    {
+      "title": "Estrutura base do formulário",
+      "body": "Comece com:\n- `<form action=\"#\" method=\"post\">`\n\nPor enquanto, o `action` pode ser `#` (só para testar). Mais tarde você liga no backend ou JS.\n\nDica: mantenha tudo organizado em blocos (um campo por vez)."
+    },
+    {
+      "title": "Campos essenciais (nome, email, senha)",
+      "body": "Comece com os campos que quase todo cadastro tem:\n\n- Nome (text)\n- Email (email)\n- Senha (password)\n\nBoas práticas:\n- `label` com `for`\n- `input` com `id`\n- `name` para enviar o dado\n- `required` para obrigar\n\nSenha: use `minlength=\"8\"`."
+    },
+    {
+      "title": "Campos opcionais comuns (telefone e data de nascimento)",
+      "body": "Agora adicione:\n\n- Telefone: `type=\"tel\"`\n- Nascimento: `type=\"date\"`\n\nTelefone não tem padrão universal, mas você pode começar simples e validar depois.\n\nSe quiser validar um formato básico (ex.: 10 ou 11 dígitos), você pode usar `pattern` mais tarde."
+    },
+    {
+      "title": "Select: estado/cidade/nível (você escolhe o tema)",
+      "body": "Agora adicione um `<select>`.\n\nExemplo prático:\n- Estado (SP/RJ/MG…)\n\nBoas práticas:\n- `label` + `id`\n- `name`\n- uma opção inicial “Selecione…” com value vazio\n- `required` para obrigar o usuário a escolher"
+    },
+    {
+      "title": "Radio: escolher 1 opção (mesmo name)",
+      "body": "Agora adicione um grupo de `radio`.\n\nExemplo:\n- Tipo de conta: Pessoal / Empresa\n\nRegra:\n- os dois radios precisam ter o mesmo `name`.\n- cada radio precisa de um `value`.\n\nIsso garante seleção única."
+    },
+    {
+      "title": "Checkbox: aceitar termos (obrigatório)",
+      "body": "Cadastros reais quase sempre pedem aceite de termos.\n\nUse checkbox com:\n- `required` (obrigatório)\n- `id` + `label for`\n\nExemplo:\n- \"Eu aceito os termos\""
+    },
+    {
+      "title": "Textarea: mensagem ou observação",
+      "body": "Agora adicione um `<textarea>` para observações.\n\nUse:\n- label\n- id\n- name\n- rows (ex.: 4 ou 5)\n\nEsse campo pode ser opcional."
+    },
+    {
+      "title": "Botões: submit e reset (com cuidado)",
+      "body": "Botões comuns:\n\n- `type=\"submit\"` → enviar\n- `type=\"reset\"` → limpar\n\nDica:\n- reset pode ser perigoso (apaga tudo sem querer). Mas aqui é projeto de treino.\n\nSempre defina o `type` explicitamente."
+    },
+    {
+      "title": "HTML final (modelo completo para você comparar)",
+      "body": "Abaixo está um modelo completo.\n\nNão é para decorar.\nÉ para você olhar e entender a estrutura:\n- label ligado ao input\n- names corretos\n- required nos campos certos\n- radio com mesmo name\n- checkbox required\n\nDepois do HTML, você pode estilizar com CSS."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 10",
+    "instructions": "A ou B. O objetivo é consolidar o mini-projeto.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Em um cadastro real, é importante ter `name` nos inputs porque…",
+        "options": [
+          { "key": "A", "text": "É o nome do dado enviado no formulário" },
+          { "key": "B", "text": "É apenas para mudar a cor do input" }
+        ],
+        "answer": "A",
+        "explain": "Sem name, o dado pode não ser enviado de forma útil. Cor é CSS."
+      },
+      {
+        "id": 2,
+        "question": "A ligação correta entre label e input é feita com:",
+        "options": [
+          { "key": "A", "text": "label for = input id" },
+          { "key": "B", "text": "label id = input for" }
+        ],
+        "answer": "A",
+        "explain": "for no label aponta para o id do input."
+      },
+      {
+        "id": 3,
+        "question": "Para senha com no mínimo 8 caracteres, você usa:",
+        "options": [
+          { "key": "A", "text": "minlength=\"8\"" },
+          { "key": "B", "text": "min=\"8\"" }
+        ],
+        "answer": "A",
+        "explain": "minlength é para texto. min é para number/date."
+      },
+      {
+        "id": 4,
+        "question": "Radio (escolher 1) funciona como grupo quando todos têm o mesmo:",
+        "options": [
+          { "key": "A", "text": "name" },
+          { "key": "B", "text": "placeholder" }
+        ],
+        "answer": "A",
+        "explain": "O mesmo name cria o grupo de seleção única."
+      },
+      {
+        "id": 5,
+        "question": "Checkbox obrigatório para termos usa:",
+        "options": [
+          { "key": "A", "text": "required" },
+          { "key": "B", "text": "checked" }
+        ],
+        "answer": "A",
+        "explain": "required obriga marcar antes de enviar. checked só marca por padrão."
+      },
+      {
+        "id": 6,
+        "question": "Uma opção “Selecione…” no select normalmente deve ter:",
+        "options": [
+          { "key": "A", "text": "value vazio (\"\")" },
+          { "key": "B", "text": "value com um estado válido" }
+        ],
+        "answer": "A",
+        "explain": "value vazio permite detectar que o usuário não escolheu algo válido ainda."
+      },
+      {
+        "id": 7,
+        "question": "O botão que envia um form é:",
+        "options": [
+          { "key": "A", "text": "button type=\"submit\"" },
+          { "key": "B", "text": "button type=\"button\"" }
+        ],
+        "answer": "A",
+        "explain": "submit envia. button não envia (normalmente usado para JS)."
+      },
+      {
+        "id": 8,
+        "question": "Textarea é usada quando:",
+        "options": [
+          { "key": "A", "text": "Você precisa de texto longo (mensagem/observação)" },
+          { "key": "B", "text": "Você precisa escolher uma data" }
+        ],
+        "answer": "A",
+        "explain": "Textarea é para textos longos. Data é input type=date."
+      },
+      {
+        "id": 9,
+        "question": "Validação HTML ajuda o usuário, mas segurança real exige:",
+        "options": [
+          { "key": "A", "text": "Validação no servidor (backend)" },
+          { "key": "B", "text": "Somente placeholder bem escrito" }
+        ],
+        "answer": "A",
+        "explain": "Front-end pode ser burlado. Segurança real é no servidor."
+      },
+      {
+        "id": 10,
+        "question": "É boa prática sempre definir o type do button porque…",
+        "options": [
+          { "key": "A", "text": "Evita comportamento inesperado (submit sem querer)" },
+          { "key": "B", "text": "É obrigatório senão o HTML não funciona" }
+        ],
+        "answer": "A",
+        "explain": "Se não definir, o padrão pode ser submit, causando envio inesperado."
+      }
+    ]
+  },
+  "extra": {
+    "modelHtml": "<form action=\"#\" method=\"post\">\n  <h2>Cadastro</h2>\n\n  <label for=\"nome\">Nome</label>\n  <input id=\"nome\" name=\"nome\" type=\"text\" required />\n\n  <label for=\"email\">Email</label>\n  <input id=\"email\" name=\"email\" type=\"email\" required />\n\n  <label for=\"senha\">Senha</label>\n  <input id=\"senha\" name=\"senha\" type=\"password\" minlength=\"8\" required />\n\n  <label for=\"tel\">Telefone</label>\n  <input id=\"tel\" name=\"telefone\" type=\"tel\" />\n\n  <label for=\"nasc\">Nascimento</label>\n  <input id=\"nasc\" name=\"nascimento\" type=\"date\" />\n\n  <label for=\"estado\">Estado</label>\n  <select id=\"estado\" name=\"estado\" required>\n    <option value=\"\" selected>Selecione...</option>\n    <option value=\"sp\">SP</option>\n    <option value=\"rj\">RJ</option>\n    <option value=\"mg\">MG</option>\n  </select>\n\n  <p>Tipo de conta</p>\n  <input id=\"pessoal\" name=\"tipo\" type=\"radio\" value=\"pessoal\" required />\n  <label for=\"pessoal\">Pessoal</label>\n\n  <input id=\"empresa\" name=\"tipo\" type=\"radio\" value=\"empresa\" required />\n  <label for=\"empresa\">Empresa</label>\n\n  <input id=\"termos\" name=\"termos\" type=\"checkbox\" required />\n  <label for=\"termos\">Eu aceito os termos</label>\n\n  <label for=\"obs\">Observações</label>\n  <textarea id=\"obs\" name=\"observacoes\" rows=\"4\"></textarea>\n\n  <button type=\"submit\">Enviar</button>\n  <button type=\"reset\">Limpar</button>\n</form>"
+  }
+}

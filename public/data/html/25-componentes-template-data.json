@@ -1,0 +1,152 @@
+{
+  "id": "25-componentes-template-data",
+  "title": "Aula 25 — Componentes no HTML (data-*, template) e padrão de reutilização",
+  "steps": [
+    {
+      "title": "Por que falar de ‘componentes’ sem framework",
+      "body": "Você está construindo uma plataforma.\n\nEm plataformas, você repete padrões:\n- cards\n- botões\n- alertas\n- itens de lista\n\nSe você não organizar isso, vira bagunça.\n\nHoje você vai aprender duas ferramentas do HTML/DOM que ajudam MUITO:\n- `data-*` (atributos de dados)\n- `<template>` (modelo de HTML que não renderiza)\n\nSem framework, mas com mentalidade profissional."
+    },
+    {
+      "title": "data-* (atributos de dados)",
+      "body": "`data-*` permite guardar informação no HTML.\n\nExemplos:\n- `data-course=\"html\"`\n- `data-lesson=\"05\"`\n- `data-action=\"open\"`\n\nIsso é ótimo para JavaScript, porque você consegue:\n- saber “qual botão foi clicado”\n- carregar a aula certa\n\nExemplo:\n`<button data-action=\"go\" data-course=\"html\" data-lesson=\"01-introducao\">Abrir</button>`"
+    },
+    {
+      "title": "Como o JS lê data-* (conceito)",
+      "body": "No JavaScript, você acessa via:\n- `element.dataset`\n\nExemplo:\n- `btn.dataset.course` → \"html\"\n- `btn.dataset.lesson` → \"01-introducao\"\n\nIsso deixa o código mais organizado do que ficar criando vários ids únicos."
+    },
+    {
+      "title": "template: HTML que não aparece automaticamente",
+      "body": "`<template>` é um bloco de HTML que o navegador **não renderiza**.\n\nVocê usa isso como “molde”.\n\nExemplo:\n`<template id=\"card\">`\n  `<div class=\"card\"><h3></h3><p></p></div>`\n`</template>`\n\nDepois o JS clona e preenche.\n\nIsso evita você escrever HTML gigante em string no JS (ou pelo menos reduz)."
+    },
+    {
+      "title": "Como usar template (conceito simples)",
+      "body": "Passos:\n\n1) pega o template:\n- `document.querySelector('#card')`\n\n2) clona o conteúdo:\n- `template.content.cloneNode(true)`\n\n3) altera textos/atributos\n\n4) adiciona na página:\n- `container.appendChild(clone)`\n\nVocê não precisa decorar agora — só entender a ideia."
+    },
+    {
+      "title": "Padrão mental: componente = estrutura + dados + comportamento",
+      "body": "Um componente “de verdade” tem:\n\n- estrutura (HTML)\n- estilo (CSS)\n- dados (textos, ids, data-*)\n- comportamento (JS)\n\nMesmo sem React/Vue, você pode organizar assim.\n\nSua plataforma já faz isso com header, páginas e router."
+    },
+    {
+      "title": "Quando usar id vs class vs data-*",
+      "body": "Regra prática:\n\n- `id`: único (uma vez por página)\n- `class`: estilo/reutilização\n- `data-*`: informação para o JS\n\nExemplo:\n- class para o visual do botão\n- data-action para o comportamento\n\nIsso deixa seu código escalável."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "- Colocar tudo em id e virar caos\n- Não usar data-*, aí precisa de mil listeners diferentes\n- Fazer HTML todo em string gigante no JS\n\nSe você tem vários botões parecidos:\n- use 1 listener e leia data-action/dataset"
+    },
+    {
+      "title": "Mini exemplo (mental, sem copiar agora)",
+      "body": "Imagine uma lista de aulas:\n\n- cada item tem `data-lesson=\"...\"`\n- você coloca 1 listener no container\n- quando clica, você lê `event.target.dataset.lesson`\n- navega para a aula\n\nIsso se chama **event delegation** (você vai aprender no JS)."
+    },
+    {
+      "title": "Resumo",
+      "body": "- `data-*` guarda dados no HTML para o JS\n- `dataset` lê esses dados\n- `<template>` é HTML molde (não renderiza sozinho)\n- componente = estrutura + dados + comportamento\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 25",
+    "instructions": "A ou B. Leia a explicação.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "data-* serve para:",
+        "options": [
+          { "key": "A", "text": "Guardar dados no HTML para o JavaScript usar" },
+          { "key": "B", "text": "Criar estilos automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "data-* é para dados/atributos. Estilo é CSS."
+      },
+      {
+        "id": 2,
+        "question": "No JS, você lê data-course através de:",
+        "options": [
+          { "key": "A", "text": "element.dataset.course" },
+          { "key": "B", "text": "element.style.course" }
+        ],
+        "answer": "A",
+        "explain": "dataset acessa data-*."
+      },
+      {
+        "id": 3,
+        "question": "O <template> é:",
+        "options": [
+          { "key": "A", "text": "Um molde de HTML que não renderiza automaticamente" },
+          { "key": "B", "text": "Um tipo de CSS" }
+        ],
+        "answer": "A",
+        "explain": "Template guarda estrutura para clonar via JS."
+      },
+      {
+        "id": 4,
+        "question": "template é útil porque:",
+        "options": [
+          { "key": "A", "text": "Facilita criar elementos repetidos sem string gigante" },
+          { "key": "B", "text": "Substitui o <head>" }
+        ],
+        "answer": "A",
+        "explain": "Você cria um molde e clona."
+      },
+      {
+        "id": 5,
+        "question": "Quando usar id é melhor:",
+        "options": [
+          { "key": "A", "text": "Quando o elemento é único na página" },
+          { "key": "B", "text": "Quando você quer repetir várias vezes" }
+        ],
+        "answer": "A",
+        "explain": "id deve ser único."
+      },
+      {
+        "id": 6,
+        "question": "Quando usar class é melhor:",
+        "options": [
+          { "key": "A", "text": "Para estilo e reutilização" },
+          { "key": "B", "text": "Para armazenar senha do usuário" }
+        ],
+        "answer": "A",
+        "explain": "class é para classes de estilo/organização."
+      },
+      {
+        "id": 7,
+        "question": "Um componente pode ser visto como:",
+        "options": [
+          { "key": "A", "text": "Estrutura + dados + comportamento" },
+          { "key": "B", "text": "Apenas um <div>" }
+        ],
+        "answer": "A",
+        "explain": "Componente é um conjunto com responsabilidade."
+      },
+      {
+        "id": 8,
+        "question": "Se você tem muitos botões parecidos, um padrão melhor é:",
+        "options": [
+          { "key": "A", "text": "Usar data-action e um listener mais genérico" },
+          { "key": "B", "text": "Criar um id diferente e um listener para cada botão" }
+        ],
+        "answer": "A",
+        "explain": "Data-* + lógica centralizada escalabilidade."
+      },
+      {
+        "id": 9,
+        "question": "dataset no JS é:",
+        "options": [
+          { "key": "A", "text": "A forma de ler data-* do elemento" },
+          { "key": "B", "text": "A forma de ler CSS do elemento" }
+        ],
+        "answer": "A",
+        "explain": "dataset aponta para os atributos data-."
+      },
+      {
+        "id": 10,
+        "question": "O template é renderizado automaticamente na página?",
+        "options": [
+          { "key": "A", "text": "Não, só quando você clona e insere via JS" },
+          { "key": "B", "text": "Sim, sempre aparece como um card" }
+        ],
+        "answer": "A",
+        "explain": "Template é um molde invisível até ser clonado."
+      }
+    ]
+  }
+}

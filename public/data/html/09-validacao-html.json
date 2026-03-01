@@ -1,0 +1,152 @@
+{
+  "id": "09-validacao-html",
+  "title": "Aula 09 — Validação no HTML (required, minlength, pattern, min/max)",
+  "steps": [
+    {
+      "title": "Por que validar (e por que não confiar só nisso)",
+      "body": "Validação é impedir (ou avisar) quando um dado está inválido.\n\nO HTML já tem validações prontas — isso deixa seu formulário melhor **sem precisar de JavaScript**.\n\nMas atenção:\n- validação do HTML ajuda o usuário\n- **não é segurança** (qualquer pessoa pode burlar)\n\nSegurança de verdade só existe com validação no servidor (backend)."
+    },
+    {
+      "title": "required: campo obrigatório",
+      "body": "O atributo `required` torna o campo obrigatório.\n\nExemplo:\n- `<input type=\"text\" name=\"nome\" required>`\n\nSe o usuário tentar enviar sem preencher, o navegador mostra uma mensagem."
+    },
+    {
+      "title": "minlength e maxlength (tamanho de texto)",
+      "body": "Para texto (ex.: nome, senha) você pode limitar:\n\n- `minlength=\"N\"` (mínimo)\n- `maxlength=\"N\"` (máximo)\n\nExemplo (senha):\n- `<input type=\"password\" minlength=\"8\" maxlength=\"20\" required>`\n\nIsso evita senha curta demais."
+    },
+    {
+      "title": "min e max (números e datas)",
+      "body": "Para números (`type=\"number\"`) e datas (`type=\"date\"`) você pode limitar:\n\n- `min=\"...\"`\n- `max=\"...\"`\n\nExemplo número:\n- `<input type=\"number\" min=\"1\" max=\"99\">`\n\nExemplo data:\n- `<input type=\"date\" min=\"2026-01-01\" max=\"2026-12-31\">`"
+    },
+    {
+      "title": "type ajuda a validar automaticamente (email e url)",
+      "body": "Só de escolher o type certo você já ganha validação:\n\n- `type=\"email\"` valida formato de email\n- `type=\"url\"` valida formato de link\n\nExemplo:\n- `<input type=\"email\" required>`\n\nIsso melhora também o teclado no celular."
+    },
+    {
+      "title": "pattern: validação por regra (regex) — com calma",
+      "body": "`pattern` permite validar com uma regra.\n\nEle usa **regex** (expressão regular). No começo, use só padrões simples.\n\nExemplo: validar 8 dígitos (tipo CEP sem hífen):\n- `pattern=\"[0-9]{8}\"`\n\nEntão:\n- `<input name=\"cep\" pattern=\"[0-9]{8}\" required>`\n\nSe não bater, não envia."
+    },
+    {
+      "title": "title: mensagem de dica para o pattern",
+      "body": "Quando você usa pattern, é bom usar `title` para explicar o formato.\n\nExemplo:\n- `<input pattern=\"[0-9]{8}\" title=\"Digite 8 números, sem hífen\">`"
+    },
+    {
+      "title": "placeholder não valida nada (é só exemplo)",
+      "body": "Muita gente confunde.\n\n- placeholder = exemplo visual\n- required/minlength/pattern = validação real\n\nEntão placeholder sozinho não impede envio."
+    },
+    {
+      "title": "novalidate: quando você quer validar no JavaScript",
+      "body": "Se você quiser desativar as validações do navegador:\n- use `novalidate` no form\n\nExemplo:\n- `<form novalidate> ... </form>`\n\nIsso é útil quando você quer controlar as mensagens com JS.\n\nNo começo, **não use**. Aproveite o que o HTML dá."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- `required` obriga\n- `minlength/maxlength` controlam texto\n- `min/max` controlam número/data\n- `type=email/url` já valida\n- `pattern` cria regra\n- `title` ajuda a explicar\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 09",
+    "instructions": "A ou B. Leia a explicação. Se errar, revise o passo.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Validação do HTML serve principalmente para…",
+        "options": [
+          { "key": "A", "text": "Ajudar o usuário a preencher corretamente" },
+          { "key": "B", "text": "Garantir segurança total contra ataques" }
+        ],
+        "answer": "A",
+        "explain": "HTML melhora a experiência, mas segurança real exige validação no backend."
+      },
+      {
+        "id": 2,
+        "question": "Qual atributo torna um campo obrigatório?",
+        "options": [
+          { "key": "A", "text": "required" },
+          { "key": "B", "text": "readonly" }
+        ],
+        "answer": "A",
+        "explain": "required obriga preencher. readonly só impede editar."
+      },
+      {
+        "id": 3,
+        "question": "Qual atributo define o tamanho MÍNIMO de texto?",
+        "options": [
+          { "key": "A", "text": "minlength" },
+          { "key": "B", "text": "min" }
+        ],
+        "answer": "A",
+        "explain": "minlength é para texto. min é para número/data."
+      },
+      {
+        "id": 4,
+        "question": "Qual atributo define o tamanho MÁXIMO de texto?",
+        "options": [
+          { "key": "A", "text": "maxlength" },
+          { "key": "B", "text": "max" }
+        ],
+        "answer": "A",
+        "explain": "maxlength é para texto. max é para número/data."
+      },
+      {
+        "id": 5,
+        "question": "Para limitar um input type=\"number\" de 1 até 10 você usa:",
+        "options": [
+          { "key": "A", "text": "min=\"1\" e max=\"10\"" },
+          { "key": "B", "text": "minlength=\"1\" e maxlength=\"10\"" }
+        ],
+        "answer": "A",
+        "explain": "min/max controlam número/data. minlength/maxlength controlam texto."
+      },
+      {
+        "id": 6,
+        "question": "type=\"email\" faz:",
+        "options": [
+          { "key": "A", "text": "O navegador validar formato de email" },
+          { "key": "B", "text": "O navegador criptografar automaticamente o email" }
+        ],
+        "answer": "A",
+        "explain": "Ele valida formato. Criptografia não acontece por type."
+      },
+      {
+        "id": 7,
+        "question": "pattern é usado para:",
+        "options": [
+          { "key": "A", "text": "Validar com uma regra (regex)" },
+          { "key": "B", "text": "Mudar o estilo do input" }
+        ],
+        "answer": "A",
+        "explain": "pattern define uma regra de validação."
+      },
+      {
+        "id": 8,
+        "question": "O atributo title em um input com pattern serve para:",
+        "options": [
+          { "key": "A", "text": "Explicar ao usuário o formato esperado" },
+          { "key": "B", "text": "Trocar o título da aba do navegador" }
+        ],
+        "answer": "A",
+        "explain": "title dá uma dica do formato. Título da aba é <title> no head."
+      },
+      {
+        "id": 9,
+        "question": "placeholder…",
+        "options": [
+          { "key": "A", "text": "Não valida nada, é só exemplo visual" },
+          { "key": "B", "text": "Valida automaticamente o input" }
+        ],
+        "answer": "A",
+        "explain": "placeholder não impede envio. É só um exemplo."
+      },
+      {
+        "id": 10,
+        "question": "novalidate no form faz:",
+        "options": [
+          { "key": "A", "text": "Desativar validação padrão do navegador" },
+          { "key": "B", "text": "Ativar validação extra automática" }
+        ],
+        "answer": "A",
+        "explain": "novalidate desliga a validação do browser para você validar via JS/servidor."
+      }
+    ]
+  }
+}

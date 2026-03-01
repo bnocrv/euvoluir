@@ -1,0 +1,152 @@
+{
+  "id": "20-links-avancados",
+  "title": "Aula 20 — Links avançados (mailto, tel, download, âncoras, segurança)",
+  "steps": [
+    {
+      "title": "Por que ‘links avançados’ existem",
+      "body": "Link é a alma da web.\n\nVocê já sabe `<a href=\"...\">`.\n\nAgora vamos aprender casos reais que aparecem em sites profissionais:\n- link para email (mailto)\n- link para telefone (tel)\n- link para baixar arquivo (download)\n- âncoras (pular para seção)\n- abrir em nova aba com segurança (`rel`)\n\nEsses detalhes deixam seu site muito mais completo."
+    },
+    {
+      "title": "mailto: abrir o app de email",
+      "body": "Você pode criar um link que abre o email do usuário:\n\n`<a href=\"mailto:contato@exemplo.com\">Enviar email</a>`\n\nVocê também pode (opcionalmente) definir assunto e corpo:\n\n`mailto:contato@exemplo.com?subject=Assunto&body=Mensagem`\n\nCuidado: espaços devem virar `%20` em URLs (isso é encoding)."
+    },
+    {
+      "title": "tel: abrir discador no celular",
+      "body": "Para telefone:\n\n`<a href=\"tel:+5511999999999\">Ligar</a>`\n\nIsso é ótimo em celular.\n\nEm desktop, pode abrir apps (WhatsApp Desktop, Skype, etc.) dependendo do sistema."
+    },
+    {
+      "title": "download: sugerir download de arquivo",
+      "body": "Se você quer sugerir que o navegador baixe um arquivo:\n\n`<a href=\"/arquivos/guia.pdf\" download>Baixar PDF</a>`\n\nVocê pode sugerir um nome:\n\n`<a href=\"/arquivos/guia.pdf\" download=\"guia-html.pdf\">Baixar</a>`\n\nObservação: nem sempre funciona em links externos (depende do servidor)."
+    },
+    {
+      "title": "Âncoras (pular para uma parte da página)",
+      "body": "Link interno usa `#`.\n\nPasso 1: um elemento com id:\n- `<h2 id=\"contato\">Contato</h2>`\n\nPasso 2: link para esse id:\n- `<a href=\"#contato\">Ir para Contato</a>`\n\nIsso funciona muito bem em páginas longas."
+    },
+    {
+      "title": "URL absoluta vs relativa (revisão importante)",
+      "body": "Dois tipos comuns:\n\n- Absoluta: `https://site.com/pagina`\n- Relativa: `./sobre.html` ou `../img/foto.jpg`\n\nRegra:\n- `http/https` = externo (absoluto)\n- caminhos com `./` ou arquivo = interno (relativo)"
+    },
+    {
+      "title": "target=\"_blank\" abre em nova aba",
+      "body": "Para abrir em outra aba:\n\n`<a href=\"https://exemplo.com\" target=\"_blank\">Abrir</a>`\n\nIsso é comum para links externos.\n\n⚠️ Mas existe um detalhe de segurança: use `rel`."
+    },
+    {
+      "title": "rel=\"noopener noreferrer\" (segurança)",
+      "body": "Quando você usa `target=\"_blank\"`, é recomendado usar:\n\n- `rel=\"noopener noreferrer\"`\n\nExemplo:\n\n`<a href=\"https://exemplo.com\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir</a>`\n\nIsso evita que a página aberta consiga mexer na sua (proteção contra ataques)."
+    },
+    {
+      "title": "Texto do link: clareza sempre",
+      "body": "Texto de link precisa ser claro.\n\nRuim:\n- “clique aqui”\n\nBom:\n- “Baixar guia em PDF”\n- “Falar no WhatsApp”\n- “Ver aula 20 — Links avançados”\n\nIsso é melhor para:\n- acessibilidade\n- SEO\n- experiência do usuário"
+    },
+    {
+      "title": "Resumo",
+      "body": "- `mailto:` abre email\n- `tel:` abre discador\n- `download` sugere baixar\n- `#id` pula para seção\n- `_blank` abre nova aba\n- `rel=\"noopener noreferrer\"` é segurança\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 20",
+    "instructions": "A ou B. Leia a explicação para consolidar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "mailto serve para:",
+        "options": [
+          { "key": "A", "text": "Abrir o aplicativo de email do usuário" },
+          { "key": "B", "text": "Fazer download automático de arquivo" }
+        ],
+        "answer": "A",
+        "explain": "mailto cria um link para email."
+      },
+      {
+        "id": 2,
+        "question": "tel serve para:",
+        "options": [
+          { "key": "A", "text": "Abrir o discador (principalmente no celular)" },
+          { "key": "B", "text": "Criar um link interno (#id)" }
+        ],
+        "answer": "A",
+        "explain": "tel é link para telefone."
+      },
+      {
+        "id": 3,
+        "question": "O atributo download em <a> serve para:",
+        "options": [
+          { "key": "A", "text": "Sugerir download do arquivo" },
+          { "key": "B", "text": "Mudar o tamanho do link" }
+        ],
+        "answer": "A",
+        "explain": "download sugere que o navegador baixe."
+      },
+      {
+        "id": 4,
+        "question": "Link interno para seção usa:",
+        "options": [
+          { "key": "A", "text": "href=\"#id\"" },
+          { "key": "B", "text": "src=\"#id\"" }
+        ],
+        "answer": "A",
+        "explain": "Âncora usa href com #."
+      },
+      {
+        "id": 5,
+        "question": "Para a âncora funcionar, precisa existir:",
+        "options": [
+          { "key": "A", "text": "Um elemento com id igual ao do link" },
+          { "key": "B", "text": "Um elemento com class igual ao do link" }
+        ],
+        "answer": "A",
+        "explain": "Âncora navega por id."
+      },
+      {
+        "id": 6,
+        "question": "target=\"_blank\" faz:",
+        "options": [
+          { "key": "A", "text": "Abrir o link em nova aba/janela" },
+          { "key": "B", "text": "Baixar o link como arquivo" }
+        ],
+        "answer": "A",
+        "explain": "target controla onde abrir."
+      },
+      {
+        "id": 7,
+        "question": "Com target=\"_blank\", é recomendado usar:",
+        "options": [
+          { "key": "A", "text": "rel=\"noopener noreferrer\"" },
+          { "key": "B", "text": "rel=\"table\"" }
+        ],
+        "answer": "A",
+        "explain": "Isso é uma boa prática de segurança."
+      },
+      {
+        "id": 8,
+        "question": "Um link absoluto normalmente começa com:",
+        "options": [
+          { "key": "A", "text": "http:// ou https://" },
+          { "key": "B", "text": "#/" }
+        ],
+        "answer": "A",
+        "explain": "http/https indica URL completa."
+      },
+      {
+        "id": 9,
+        "question": "Texto de link bom é:",
+        "options": [
+          { "key": "A", "text": "Baixar guia em PDF" },
+          { "key": "B", "text": "Clique aqui" }
+        ],
+        "answer": "A",
+        "explain": "Texto claro melhora UX, a11y e SEO."
+      },
+      {
+        "id": 10,
+        "question": "Se você quer link para WhatsApp, normalmente você usa:",
+        "options": [
+          { "key": "A", "text": "Um link https (URL do WhatsApp)" },
+          { "key": "B", "text": "Um input type=\"whatsapp\"" }
+        ],
+        "answer": "A",
+        "explain": "WhatsApp é acessado por URL (https). Não existe type whatsapp."
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "id": "22-caminhos-e-pastas",
+  "title": "Aula 22 — Caminhos (./ ../) e organização de pastas (assets) sem dor",
+  "steps": [
+    {
+      "title": "Por que isso evita 80% dos bugs de iniciante",
+      "body": "Quando algo “não carrega” (imagem não aparece, CSS não entra), quase sempre é:\n- caminho errado\n\nSe você dominar caminhos, você resolve muita dor.\n\nHoje você vai entender:\n- caminho relativo (`./` e `../`)\n- caminho absoluto (URL completa)\n- organização de pastas (`assets`)\n- erros comuns e como debuggar"
+    },
+    {
+      "title": "Caminho absoluto (URL completa)",
+      "body": "Um caminho absoluto é um endereço completo:\n- `https://site.com/imagem.jpg`\n\nIsso é usado quando o recurso está em outro domínio.\n\nExemplo:\n- `<img src=\"https://exemplo.com/foto.jpg\" alt=\"Foto\">`"
+    },
+    {
+      "title": "Caminho relativo (dentro do seu projeto)",
+      "body": "Caminho relativo depende de onde o arquivo atual está.\n\nSe o seu `index.html` está em `public/`, então:\n- `./css/base.css` significa “pasta css dentro da mesma pasta do index”\n\nRelativo é o mais comum no seu projeto."
+    },
+    {
+      "title": "O que significa ./ (mesma pasta)",
+      "body": "`./` significa “a pasta atual”.\n\nExemplos (se você está em `public/index.html`):\n- `./css/base.css`\n- `./data/html/manifest.json`\n- `./assets/img/logo.png`\n\nDica: `./arquivo` e `arquivo` muitas vezes funcionam igual, mas usar `./` deixa claro."
+    },
+    {
+      "title": "O que significa ../ (voltar uma pasta)",
+      "body": "`../` significa “voltar uma pasta”.\n\nExemplo:\nSe você está em `public/pages/aula.html` e quer pegar `public/assets/logo.png`, você usa:\n- `../assets/logo.png`\n\nSe precisar voltar duas pastas:\n- `../../assets/logo.png`"
+    },
+    {
+      "title": "Pasta assets (organização profissional)",
+      "body": "Uma organização comum:\n- `assets/img` para imagens\n- `assets/icons` para ícones\n- `assets/media` para áudio/vídeo\n\nExemplo:\n- `<img src=\"./assets/img/logo.png\" alt=\"Logo\">`\n\nIsso evita arquivos soltos e bagunça."
+    },
+    {
+      "title": "Caminhos em href e src (onde usa)",
+      "body": "Caminhos aparecem muito em:\n\n- `<link href=\"...\">` (CSS, favicon)\n- `<script src=\"...\">` (JS)\n- `<img src=\"...\">`\n- `<a href=\"...\">`\n\nSe algo falha, o primeiro suspeito é o caminho."
+    },
+    {
+      "title": "Como debuggar rápido (sem chutar)",
+      "body": "Três jeitos rápidos:\n\n1) Abra o DevTools (F12) → Network → veja o arquivo que deu 404.\n2) Clique no erro e veja qual URL ele tentou.\n3) Compare com sua estrutura de pastas.\n\nSe o navegador tentou:\n- `/assets/img/logo.png`\nmas seu arquivo está em:\n- `./assets/img/logo.png`\n\nEntão você ajusta o caminho."
+    },
+    {
+      "title": "Erro comum: começar caminho com / (raiz)",
+      "body": "Quando você usa `/algo`, isso significa “a partir da raiz do site”.\n\nEm deploy, isso pode ser diferente do que você imagina.\n\nNo seu projeto, prefira caminhos relativos:\n- `./assets/...`\n\nAssim você reduz problemas ao mover pastas."
+    },
+    {
+      "title": "Resumo",
+      "body": "- Absoluto = URL completa (http/https)\n- Relativo = dentro do projeto\n- `./` = pasta atual\n- `../` = volta uma pasta\n- organize em `assets/`\n- debug: veja 404 no Network\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 22",
+    "instructions": "A ou B. Leia a explicação para consolidar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um caminho absoluto geralmente começa com:",
+        "options": [
+          { "key": "A", "text": "http:// ou https://" },
+          { "key": "B", "text": "./" }
+        ],
+        "answer": "A",
+        "explain": "Absoluto é URL completa."
+      },
+      {
+        "id": 2,
+        "question": "./ significa:",
+        "options": [
+          { "key": "A", "text": "Pasta atual" },
+          { "key": "B", "text": "Voltar uma pasta" }
+        ],
+        "answer": "A",
+        "explain": "./ aponta para a pasta onde você está."
+      },
+      {
+        "id": 3,
+        "question": "../ significa:",
+        "options": [
+          { "key": "A", "text": "Voltar uma pasta" },
+          { "key": "B", "text": "Entrar em uma subpasta" }
+        ],
+        "answer": "A",
+        "explain": "../ volta para a pasta anterior."
+      },
+      {
+        "id": 4,
+        "question": "Para voltar duas pastas, você usa:",
+        "options": [
+          { "key": "A", "text": "../../" },
+          { "key": "B", "text": "////" }
+        ],
+        "answer": "A",
+        "explain": "../../ volta duas pastas."
+      },
+      {
+        "id": 5,
+        "question": "Uma pasta comum para imagens é:",
+        "options": [
+          { "key": "A", "text": "assets/img" },
+          { "key": "B", "text": "pages/js" }
+        ],
+        "answer": "A",
+        "explain": "assets/img é uma convenção para imagens."
+      },
+      {
+        "id": 6,
+        "question": "Se uma imagem não carrega, o mais comum é:",
+        "options": [
+          { "key": "A", "text": "Caminho (src) errado" },
+          { "key": "B", "text": "Falta de <title> no head" }
+        ],
+        "answer": "A",
+        "explain": "A causa mais comum é path errado."
+      },
+      {
+        "id": 7,
+        "question": "No DevTools, um arquivo que não foi encontrado aparece como:",
+        "options": [
+          { "key": "A", "text": "404" },
+          { "key": "B", "text": "200" }
+        ],
+        "answer": "A",
+        "explain": "404 significa Not Found."
+      },
+      {
+        "id": 8,
+        "question": "Um caminho que começa com / significa:",
+        "options": [
+          { "key": "A", "text": "A partir da raiz do site" },
+          { "key": "B", "text": "A partir da pasta atual" }
+        ],
+        "answer": "A",
+        "explain": "/ aponta para a raiz (root) do site."
+      },
+      {
+        "id": 9,
+        "question": "Caminhos aparecem em:",
+        "options": [
+          { "key": "A", "text": "href e src" },
+          { "key": "B", "text": "Apenas em h1 e p" }
+        ],
+        "answer": "A",
+        "explain": "href (links/CSS) e src (imagens/scripts) usam caminhos."
+      },
+      {
+        "id": 10,
+        "question": "Qual abordagem reduz problemas ao mover o projeto?",
+        "options": [
+          { "key": "A", "text": "Usar caminhos relativos quando possível" },
+          { "key": "B", "text": "Sempre usar caminhos começando com /" }
+        ],
+        "answer": "A",
+        "explain": "Relativos tendem a quebrar menos quando muda a base."
+      }
+    ]
+  }
+}

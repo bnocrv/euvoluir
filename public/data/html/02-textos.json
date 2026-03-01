@@ -1,0 +1,156 @@
+{
+  "id": "02-textos",
+  "title": "Aula 02 — Textos, títulos e parágrafos (pra escrever HTML direito)",
+  "steps": [
+    {
+      "title": "Por que aprender textos bem é a base de tudo",
+      "body": "A maior parte da internet é **texto**.\n\nSe você dominar bem:\n- títulos (`h1` a `h6`)\n- parágrafos (`p`)\n- quebras e separações\n- ênfase (negrito/itálico semântico)\n\nVocê já consegue criar páginas organizadas e profissionais, mesmo sem CSS.\n\nNesta aula, o foco é: **escrever HTML claro e bem estruturado**."
+    },
+    {
+      "title": "Títulos: h1 até h6 (hierarquia, não estética)",
+      "body": "Você tem 6 níveis de título:\n- `h1` (mais importante)\n- `h2`\n- `h3`\n- `h4`\n- `h5`\n- `h6` (menos importante)\n\nO erro de iniciante é achar que isso é “tamanho de fonte”. Não é.\n\nTítulos são **hierarquia do conteúdo**.\n\nRegra prática:\n- Use **1 `h1` por página** (o tema principal)\n- Use `h2` para as seções principais\n- Use `h3` para subtópicos dentro de um `h2`\n\nSe você pular níveis (ex.: usar `h4` sem ter `h2/h3`), você bagunça a estrutura."
+    },
+    {
+      "title": "Exemplo de hierarquia bem feita (modelo mental)",
+      "body": "Pense na página como um livro:\n\n- `h1` = título do livro\n- `h2` = capítulos\n- `h3` = seções dentro do capítulo\n\nExemplo:\n- `h1`: Curso de HTML\n- `h2`: Introdução\n- `h3`: O que é HTML?\n- `h3`: Como o navegador lê a página?\n- `h2`: Textos\n- `h3`: Títulos\n- `h3`: Parágrafos\n\nIsso ajuda o leitor (e o Google) a entender sua página."
+    },
+    {
+      "title": "Parágrafos com <p> (um por ideia)",
+      "body": "Use `<p>` para parágrafos.\n\nRegra simples:\n- **um parágrafo por ideia**\n\nExemplo:\n- um `<p>` para explicar um conceito\n- outro `<p>` para dar um exemplo\n- outro `<p>` para resumir\n\nEvite jogar tudo em um parágrafo enorme. Fica ruim de ler e ruim de manter."
+    },
+    {
+      "title": "Quebra de linha <br> vs parágrafo <p>",
+      "body": "⚠️ Isso pega muita gente.\n\n- `<p>` cria um bloco de texto (parágrafo)\n- `<br>` só quebra a linha **dentro do mesmo bloco**\n\nUse `<br>` em casos específicos:\n- endereço\n- poesia\n- lista de linhas curtas dentro do mesmo contexto\n\nPara texto normal, prefira `<p>`."
+    },
+    {
+      "title": "Separação com <hr> (mudança de assunto)",
+      "body": "`<hr>` cria uma linha de separação **temática**.\n\nEle significa: “aqui muda o assunto”.\n\nUse com moderação.\n\nExemplo:\n- separar um conteúdo do resumo\n- separar seções muito diferentes\n\nNão use `<hr>` só por enfeite (depois o CSS cuida do visual)."
+    },
+    {
+      "title": "Negrito e itálico do jeito certo (semântica)",
+      "body": "Existem duas formas para “negrito/itálico”:\n\n1) Visual (não semântico):\n- `<b>` e `<i>`\n\n2) Semântico (recomendado):\n- `<strong>` (importância)\n- `<em>` (ênfase)\n\nRegra prática:\n- Use `<strong>` quando algo é importante\n- Use `<em>` quando quer dar ênfase\n\nIsso melhora acessibilidade e deixa o HTML mais correto."
+    },
+    {
+      "title": "Outras tags úteis para texto (bem comuns)",
+      "body": "Algumas tags muito usadas:\n\n- `<small>`: texto menor (ex.: observações)\n- `<mark>`: destaque (marca-texto)\n- `<code>`: trechos de código no meio do texto\n\nExemplo:\n- \"Use a tag `<code>p</code>` para parágrafos.\""
+    },
+    {
+      "title": "Exemplo completo juntando tudo (pra visualizar)",
+      "body": "Exemplo de texto bem estruturado:\n\n`<h1>Minha Página</h1>`\n\n`<h2>Introdução</h2>`\n`<p>Este site ensina HTML do básico ao avançado.</p>`\n`<p><strong>Importante:</strong> pratique todos os dias.</p>`\n\n`<hr>`\n\n`<h2>Conteúdo</h2>`\n`<h3>Títulos</h3>`\n`<p>Use h1, h2 e h3 com hierarquia.</p>`\n\nIsso é base para qualquer site profissional."
+    },
+    {
+      "title": "Erros comuns e como corrigir",
+      "body": "Erros típicos:\n\n- Usar `h1` várias vezes só para deixar grande\n  → Corrija usando `h2/h3` para seções\n\n- Fazer “parágrafo” usando `<br><br>`\n  → Corrija usando `<p>`\n\n- Usar `<b>` e `<i>` para tudo\n  → Prefira `<strong>` e `<em>`\n\nRegra de ouro: HTML é significado. CSS é aparência."
+    },
+    {
+      "title": "Resumo da aula (pra fixar rápido)",
+      "body": "- Títulos (`h1..h6`) = hierarquia\n- Parágrafo (`p`) = um por ideia\n- `<br>` = quebra pontual (não parágrafo)\n- `<hr>` = mudança de assunto\n- `<strong>` e `<em>` = semântica (recomendado)\n\nAgora faça o quiz e tente acertar sem chutar."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 02",
+    "instructions": "Marque A ou B. Leia a explicação após responder (é aí que você aprende).",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Os títulos h1…h6 servem principalmente para…",
+        "options": [
+          { "key": "A", "text": "Definir hierarquia/estrutura do conteúdo" },
+          { "key": "B", "text": "Apenas mudar o tamanho da fonte" }
+        ],
+        "answer": "A",
+        "explain": "Títulos têm significado semântico. Tamanho/estilo é papel do CSS."
+      },
+      {
+        "id": 2,
+        "question": "Boa prática comum para iniciantes em uma página é:",
+        "options": [
+          { "key": "A", "text": "Usar 1 <h1> como título principal" },
+          { "key": "B", "text": "Usar vários <h1> para cada seção" }
+        ],
+        "answer": "A",
+        "explain": "1 h1 define o tema principal; seções normalmente usam h2/h3."
+      },
+      {
+        "id": 3,
+        "question": "Para separar ideias em texto normal, você deve usar:",
+        "options": [
+          { "key": "A", "text": "<p>" },
+          { "key": "B", "text": "<br>" }
+        ],
+        "answer": "A",
+        "explain": "<p> cria parágrafo (bloco). <br> é só quebra de linha dentro do mesmo bloco."
+      },
+      {
+        "id": 4,
+        "question": "<br> é mais adequado para:",
+        "options": [
+          { "key": "A", "text": "Endereço/poesia (quebra dentro do mesmo texto)" },
+          { "key": "B", "text": "Criar parágrafos longos" }
+        ],
+        "answer": "A",
+        "explain": "Para parágrafos use <p>. <br> é quebra pontual."
+      },
+      {
+        "id": 5,
+        "question": "O <hr> indica:",
+        "options": [
+          { "key": "A", "text": "Mudança/separação temática de assunto" },
+          { "key": "B", "text": "Um título invisível" }
+        ],
+        "answer": "A",
+        "explain": "<hr> é separador temático; não substitui títulos."
+      },
+      {
+        "id": 6,
+        "question": "Qual é mais semântico para indicar algo importante?",
+        "options": [
+          { "key": "A", "text": "<strong>" },
+          { "key": "B", "text": "<b>" }
+        ],
+        "answer": "A",
+        "explain": "<strong> indica importância (semântica). <b> é só visual."
+      },
+      {
+        "id": 7,
+        "question": "Qual é mais semântico para dar ênfase?",
+        "options": [
+          { "key": "A", "text": "<em>" },
+          { "key": "B", "text": "<i>" }
+        ],
+        "answer": "A",
+        "explain": "<em> indica ênfase. <i> é só itálico visual."
+      },
+      {
+        "id": 8,
+        "question": "Se você tem um h2 e quer criar um subtópico, você usa:",
+        "options": [
+          { "key": "A", "text": "<h3>" },
+          { "key": "B", "text": "<h1>" }
+        ],
+        "answer": "A",
+        "explain": "A sequência normal é h2 → h3 → h4… mantendo hierarquia."
+      },
+      {
+        "id": 9,
+        "question": "Texto muito grande em um único <p>…",
+        "options": [
+          { "key": "A", "text": "Geralmente fica ruim de ler e manter" },
+          { "key": "B", "text": "É a forma profissional recomendada" }
+        ],
+        "answer": "A",
+        "explain": "O ideal é quebrar em parágrafos por ideia."
+      },
+      {
+        "id": 10,
+        "question": "Se você usa <br> para separar parágrafos, isso significa:",
+        "options": [
+          { "key": "A", "text": "Provavelmente está usando errado e deveria usar <p>" },
+          { "key": "B", "text": "Está perfeito e é o padrão" }
+        ],
+        "answer": "A",
+        "explain": "Parágrafos são blocos semânticos. <br> é quebra de linha pontual."
+      }
+    ]
+  }
+}

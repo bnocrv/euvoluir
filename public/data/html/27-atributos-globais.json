@@ -1,0 +1,152 @@
+{
+  "id": "27-atributos-globais",
+  "title": "Aula 27 — Atributos globais (id, class, title, hidden, tabindex…)",
+  "steps": [
+    {
+      "title": "O que são atributos globais",
+      "body": "Atributos globais são atributos que funcionam em **quase qualquer elemento**.\n\nEles não são “só do input” ou “só do link”.\n\nNesta aula você vai aprender os mais úteis:\n- `id`\n- `class`\n- `title`\n- `hidden`\n- `tabindex`\n- `contenteditable`\n- `draggable`\n- `spellcheck`\n\nE principalmente: quando usar (e quando evitar)."
+    },
+    {
+      "title": "id: identificador único",
+      "body": "`id` identifica um elemento de forma única na página.\n\nUso comum:\n- ligar `label for` com `input id`\n- âncoras `href=\"#id\"`\n- selecionar um elemento específico no JS\n\nRegra:\n- id deve ser **único** por página."
+    },
+    {
+      "title": "class: estilo e reutilização",
+      "body": "`class` serve para:\n- aplicar CSS em vários elementos\n- reutilizar estilos\n- criar variações (ex.: `btn primary`)\n\nExemplo:\n- `<button class=\"btn primary\">Entrar</button>`\n\nAo contrário do id, class pode repetir quantas vezes quiser."
+    },
+    {
+      "title": "title: dica (tooltip) e contexto",
+      "body": "`title` mostra uma dica quando passa o mouse.\n\nExemplo:\n- `<button title=\"Salvar alterações\">Salvar</button>`\n\nCuidado:\n- não dependa só de title para informação importante\n- em celular não funciona igual\n\nUse como “extra”, não como única explicação."
+    },
+    {
+      "title": "hidden: esconder elemento (sem CSS)",
+      "body": "`hidden` esconde o elemento.\n\nExemplo:\n- `<p hidden>Mensagem secreta</p>`\n\nIsso pode ser útil quando você vai mostrar/esconder via JS.\n\nImportante:\n- hidden remove do fluxo e também não fica acessível por leitores de tela como conteúdo visível.\n\nPara avisos importantes, pense bem antes de esconder."
+    },
+    {
+      "title": "tabindex: ordem de foco (use com muito cuidado)",
+      "body": "`tabindex` controla se um elemento pode receber foco pelo teclado.\n\nCasos:\n- `tabindex=\"0\"`: elemento entra na ordem normal de Tab\n- `tabindex=\"-1\"`: pode receber foco via JS, mas não via Tab\n\n⚠️ Evite usar números positivos (1,2,3…), porque bagunça a navegação.\n\nRegra prática:\n- use `0` e `-1` quando realmente precisar."
+    },
+    {
+      "title": "contenteditable: transformar texto em editável",
+      "body": "Com `contenteditable`, um elemento vira editável.\n\nExemplo:\n- `<div contenteditable=\"true\">Edite aqui</div>`\n\nIsso é útil para demos, editores simples, protótipos.\n\nMas atenção:\n- exige cuidado com segurança se você salvar o conteúdo\n- pode gerar HTML inesperado"
+    },
+    {
+      "title": "draggable: arrastar (conceito)",
+      "body": "`draggable=\"true\"` permite arrastar um elemento.\n\nExemplo:\n- `<div draggable=\"true\">Arraste</div>`\n\nPor si só, isso não cria toda a lógica — normalmente você usa com eventos no JS.\n\nHoje, só saiba que existe."
+    },
+    {
+      "title": "spellcheck: corretor ortográfico",
+      "body": "`spellcheck` controla correção ortográfica.\n\nExemplo:\n- `<textarea spellcheck=\"true\"></textarea>`\n\nÀs vezes você quer desativar em:\n- campos de código\n- campos de usuário/IDs\n\nExemplo:\n- `<input name=\"username\" spellcheck=\"false\">`"
+    },
+    {
+      "title": "Resumo (regra de ouro)",
+      "body": "- id: único, liga label e âncora\n- class: estilo e reutilização\n- title: dica extra\n- hidden: esconder (com cuidado)\n- tabindex: foco (com cuidado)\n- contenteditable: editável\n- draggable: arrastar (com JS)\n- spellcheck: corretor\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 27",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "id deve ser:",
+        "options": [
+          { "key": "A", "text": "Único na página" },
+          { "key": "B", "text": "Repetido em vários elementos" }
+        ],
+        "answer": "A",
+        "explain": "id é identificador único."
+      },
+      {
+        "id": 2,
+        "question": "class é usada principalmente para:",
+        "options": [
+          { "key": "A", "text": "Estilo e reutilização" },
+          { "key": "B", "text": "Guardar senhas" }
+        ],
+        "answer": "A",
+        "explain": "class é para CSS/organização."
+      },
+      {
+        "id": 3,
+        "question": "title serve para:",
+        "options": [
+          { "key": "A", "text": "Dica extra (tooltip) ao passar o mouse" },
+          { "key": "B", "text": "Definir o título da aba no navegador" }
+        ],
+        "answer": "A",
+        "explain": "Título da aba é <title> no head."
+      },
+      {
+        "id": 4,
+        "question": "hidden faz:",
+        "options": [
+          { "key": "A", "text": "Esconder o elemento" },
+          { "key": "B", "text": "Transformar em link" }
+        ],
+        "answer": "A",
+        "explain": "hidden remove da visualização."
+      },
+      {
+        "id": 5,
+        "question": "tabindex=\"0\" faz o elemento:",
+        "options": [
+          { "key": "A", "text": "Entrar na navegação por Tab" },
+          { "key": "B", "text": "Virar invisível" }
+        ],
+        "answer": "A",
+        "explain": "0 inclui no fluxo normal de foco."
+      },
+      {
+        "id": 6,
+        "question": "tabindex=\"-1\" significa:",
+        "options": [
+          { "key": "A", "text": "Pode receber foco via JS, mas não pelo Tab" },
+          { "key": "B", "text": "Sempre aparece no topo da página" }
+        ],
+        "answer": "A",
+        "explain": "-1 remove do Tab, mas permite foco programático."
+      },
+      {
+        "id": 7,
+        "question": "contenteditable=\"true\" faz:",
+        "options": [
+          { "key": "A", "text": "O texto ficar editável" },
+          { "key": "B", "text": "O elemento virar imagem" }
+        ],
+        "answer": "A",
+        "explain": "contenteditable permite editar o conteúdo."
+      },
+      {
+        "id": 8,
+        "question": "draggable é usado para:",
+        "options": [
+          { "key": "A", "text": "Permitir arrastar um elemento (com JS normalmente)" },
+          { "key": "B", "text": "Validar email automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Arrastar envolve eventos no JS."
+      },
+      {
+        "id": 9,
+        "question": "spellcheck serve para:",
+        "options": [
+          { "key": "A", "text": "Controlar correção ortográfica" },
+          { "key": "B", "text": "Trocar cor do botão" }
+        ],
+        "answer": "A",
+        "explain": "Correção ortográfica é do navegador."
+      },
+      {
+        "id": 10,
+        "question": "Usar tabindex com números positivos (1,2,3…) é:",
+        "options": [
+          { "key": "A", "text": "Arriscado; pode bagunçar a navegação" },
+          { "key": "B", "text": "Sempre recomendado" }
+        ],
+        "answer": "A",
+        "explain": "Pode quebrar a lógica natural de foco; prefira 0 e -1."
+      }
+    ]
+  }
+}

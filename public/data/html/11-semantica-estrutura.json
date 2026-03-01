@@ -1,0 +1,156 @@
+{
+  "id": "11-semantica-estrutura",
+  "title": "Aula 11 — Estrutura semântica de página (header/nav/main/section/article/aside/footer)",
+  "steps": [
+    {
+      "title": "Por que semântica deixa você “profissional”",
+      "body": "Semântica é usar a **tag certa** para o **significado certo**.\n\nIsso melhora:\n- **Acessibilidade** (leitores de tela)\n- **SEO** (Google entende melhor)\n- **Manutenção** (código mais claro)\n\nIniciante usa `div` pra tudo.\nProfissional usa `div` quando **não existe** uma tag melhor."
+    },
+    {
+      "title": "As 6 tags que você precisa dominar agora",
+      "body": "As tags de “estrutura de site” mais comuns são:\n\n- `<header>`: topo do conteúdo (logo/título)\n- `<nav>`: navegação (menus)\n- `<main>`: conteúdo principal (o “miolo”)\n- `<section>`: seção por tema\n- `<article>`: conteúdo independente (post, notícia, card que faz sentido sozinho)\n- `<aside>`: conteúdo lateral (dica, relacionados)\n- `<footer>`: rodapé\n\nHoje você vai entender quando usar cada uma."
+    },
+    {
+      "title": "header (topo) não é “sempre no topo da tela”",
+      "body": "`<header>` é o topo de um bloco de conteúdo.\n\nVocê pode ter:\n- header da página\n- header de um artigo\n\nExemplo:\n- Um `<article>` pode ter um `<header>` com título e data."
+    },
+    {
+      "title": "nav (menu) — semântico e claro",
+      "body": "Se é um menu de navegação, use `<nav>`.\n\nDentro dele, o padrão é:\n- `nav > ul > li > a`\n\nSe tiver mais de um nav, use `aria-label`:\n- `<nav aria-label=\"Menu principal\">`"
+    },
+    {
+      "title": "main — normalmente 1 por página",
+      "body": "`<main>` representa o conteúdo principal.\n\nBoa prática:\n- geralmente **apenas 1 `<main>`** por página\n\nO main não deve conter coisas repetidas em todas as páginas (ex.: menu fixo)."
+    },
+    {
+      "title": "section vs article (a diferença que confunde)",
+      "body": "Pensa assim:\n\n- `<section>`: um **tema** dentro da página\n- `<article>`: um conteúdo que faz sentido sozinho, fora do contexto\n\nExemplo:\n- Página de blog:\n  - section “Últimos posts”\n  - cada post = article\n\nSe você copiar o `<article>` e colar em outro lugar, ele ainda faz sentido."
+    },
+    {
+      "title": "aside (lateral) — dicas e relacionados",
+      "body": "Use `<aside>` para conteúdos “não principais”, mas úteis:\n- links relacionados\n- dica do professor\n- propaganda\n- resumo\n\nEle não é “obrigatório”, mas deixa o HTML mais semântico."
+    },
+    {
+      "title": "footer — rodapé da página ou do artigo",
+      "body": "`<footer>` pode aparecer:\n- no final da página (copyright, links)\n- no final de um article (autor, tags, links)\n\nAssim como o header, pode existir mais de uma vez dependendo do contexto."
+    },
+    {
+      "title": "H1, H2, H3… junto da semântica",
+      "body": "Semântica também é hierarquia de títulos.\n\nRegras práticas:\n- 1 `h1` principal (tema)\n- seções com `h2`\n- subtópicos com `h3`\n\nVocê pode usar títulos dentro de section/article para dar estrutura."
+    },
+    {
+      "title": "Modelo completo (estrutura de site real)",
+      "body": "Modelo (pense como esqueleto):\n\n`<header>` (logo + nav)\n`<main>`\n  `<section>` (tema)\n    `<article>` (conteúdo independente)\n    `<aside>` (relacionados)\n`<footer>` (rodapé)\n\nDepois você deixa bonito no CSS."
+    },
+    {
+      "title": "Resumo",
+      "body": "- Semântica = significado\n- nav é menu\n- main é o conteúdo principal\n- section é tema\n- article é conteúdo independente\n- aside é lateral/relacionado\n- header/footer podem existir por bloco\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 11",
+    "instructions": "A ou B. Se errar, volte no passo que explica.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Semântica no HTML significa…",
+        "options": [
+          { "key": "A", "text": "Usar tags pelo significado correto" },
+          { "key": "B", "text": "Usar tags apenas pelo tamanho/visual" }
+        ],
+        "answer": "A",
+        "explain": "Semântica é significado. Aparência é CSS."
+      },
+      {
+        "id": 2,
+        "question": "Qual tag representa navegação/menu?",
+        "options": [
+          { "key": "A", "text": "<nav>" },
+          { "key": "B", "text": "<main>" }
+        ],
+        "answer": "A",
+        "explain": "<nav> é navegação. <main> é conteúdo principal."
+      },
+      {
+        "id": 3,
+        "question": "Qual tag representa o conteúdo principal da página?",
+        "options": [
+          { "key": "A", "text": "<main>" },
+          { "key": "B", "text": "<aside>" }
+        ],
+        "answer": "A",
+        "explain": "<main> é o miolo principal. <aside> é conteúdo lateral/relacionado."
+      },
+      {
+        "id": 4,
+        "question": "Boa prática comum é ter quantos <main> por página?",
+        "options": [
+          { "key": "A", "text": "Normalmente 1" },
+          { "key": "B", "text": "Vários, um para cada parágrafo" }
+        ],
+        "answer": "A",
+        "explain": "Geralmente existe 1 main, representando a região principal."
+      },
+      {
+        "id": 5,
+        "question": "Qual é mais apropriado para um post de blog independente?",
+        "options": [
+          { "key": "A", "text": "<article>" },
+          { "key": "B", "text": "<section>" }
+        ],
+        "answer": "A",
+        "explain": "Article faz sentido sozinho (post/notícia). Section é um tema dentro da página."
+      },
+      {
+        "id": 6,
+        "question": "Section é mais adequado quando você quer…",
+        "options": [
+          { "key": "A", "text": "Agrupar um tema dentro da página" },
+          { "key": "B", "text": "Criar um conteúdo que faz sentido fora do contexto" }
+        ],
+        "answer": "A",
+        "explain": "Section é agrupamento por tema."
+      },
+      {
+        "id": 7,
+        "question": "Qual tag você usa para conteúdo relacionado/lateral?",
+        "options": [
+          { "key": "A", "text": "<aside>" },
+          { "key": "B", "text": "<footer>" }
+        ],
+        "answer": "A",
+        "explain": "Aside é lateral/relacionado. Footer é rodapé."
+      },
+      {
+        "id": 8,
+        "question": "header/footer podem existir mais de uma vez?",
+        "options": [
+          { "key": "A", "text": "Sim, dependendo do contexto (ex.: article)" },
+          { "key": "B", "text": "Não, é proibido pelo HTML" }
+        ],
+        "answer": "A",
+        "explain": "Eles podem existir em blocos (page header e article header, por exemplo)."
+      },
+      {
+        "id": 9,
+        "question": "O principal benefício da semântica é:",
+        "options": [
+          { "key": "A", "text": "Acessibilidade/SEO/manutenção" },
+          { "key": "B", "text": "Deixar automaticamente bonito sem CSS" }
+        ],
+        "answer": "A",
+        "explain": "Semântica não estiliza. Ela dá significado e melhora compreensão."
+      },
+      {
+        "id": 10,
+        "question": "Se não existir uma tag semântica específica, você pode usar:",
+        "options": [
+          { "key": "A", "text": "<div>" },
+          { "key": "B", "text": "<nav>" }
+        ],
+        "answer": "A",
+        "explain": "Div é genérica e serve quando não há tag melhor."
+      }
+    ]
+  }
+}

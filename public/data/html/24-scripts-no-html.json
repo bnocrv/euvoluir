@@ -1,0 +1,152 @@
+{
+  "id": "24-scripts-no-html",
+  "title": "Aula 24 — Scripts no HTML (defer, async, module) sem confusão",
+  "steps": [
+    {
+      "title": "Por que scripts “quebram” sites de iniciante",
+      "body": "Você já viu que HTML carrega coisas como CSS e JS.\n\nO problema clássico:\n- você coloca um script no lugar errado\n- ele roda antes do HTML existir\n- aparece erro no console (ex.: `Cannot read properties of null`)\n\nHoje você vai entender:\n- onde colocar `<script>`\n- diferença entre `defer` e `async`\n- por que `type=\"module\"` é tão usado\n\nDepois dessa aula, você para de sofrer com isso."
+    },
+    {
+      "title": "O básico: <script src=\"...\">",
+      "body": "Para carregar um JS externo:\n\n`<script src=\"./js/app.js\"></script>`\n\nSe você colocar o script no `<head>` sem cuidado, ele pode rodar antes do HTML carregar.\n\nIsso não é “bug do JS” — é ordem de carregamento."
+    },
+    {
+      "title": "Opção 1 (clássica): script no final do body",
+      "body": "Uma forma simples e antiga:\n\nColocar o script no final do `<body>`:\n\n`<body>`\n  ...conteúdo...\n  `<script src=\"app.js\"></script>`\n`</body>`\n\nAssim, o HTML vem primeiro, e o JS roda depois.\n\nFunciona bem e é fácil de entender."
+    },
+    {
+      "title": "Opção 2 (profissional): defer no head",
+      "body": "`defer` faz o navegador:\n- baixar o arquivo em paralelo\n- **esperar o HTML terminar de parsear**\n- executar o JS **no final**, em ordem\n\nExemplo:\n`<script src=\"./js/app.js\" defer></script>`\n\nEsse é um padrão muito usado hoje."
+    },
+    {
+      "title": "async (cuidado)",
+      "body": "`async` faz o navegador:\n- baixar o script em paralelo\n- executar assim que terminar de baixar\n\nO problema:\n- a execução pode acontecer antes do HTML estar pronto\n- a ordem entre scripts async pode ficar imprevisível\n\nUse async geralmente para scripts independentes (ex.: analytics)."
+    },
+    {
+      "title": "type=\"module\" (o padrão moderno)",
+      "body": "Quando você usa ES Modules (import/export), precisa de:\n\n`<script type=\"module\" src=\"./js/app.js\"></script>`\n\nCaracterísticas importantes:\n- `type=\"module\"` já se comporta como `defer` (ele espera o parse do HTML)\n- você pode usar `import` e `export`\n\nNo seu projeto você já usa módulos — então isso é essencial."
+    },
+    {
+      "title": "Ordem de execução (resumo simples)",
+      "body": "Pense assim:\n\n- script no head (sem defer/async): bloqueia HTML e executa na hora\n- script no body final: executa depois do conteúdo\n- defer: executa depois do HTML, mantendo ordem\n- async: executa quando baixar, pode quebrar ordem\n- module: parecido com defer (executa depois) e permite imports"
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "- Usar script no head sem defer → JS roda cedo demais\n- Usar async em scripts que dependem de outros → ordem quebra\n- Esquecer `type=\"module\"` e tentar usar `import` → erro\n\nDica prática:\n- se você usa import/export → `type=\"module\"`\n- se não usa módulos, mas quer no head → `defer`"
+    },
+    {
+      "title": "Mini exemplo (padrão recomendado)",
+      "body": "Modelo moderno no head:\n\n`<head>`\n  ...meta/cs...\n  `<script type=\"module\" src=\"./js/app.js\"></script>`\n`</head>`\n\nOu, se não for module:\n\n`<script src=\"./js/app.js\" defer></script>`\n\nEsses dois padrões resolvem 95% dos casos."
+    },
+    {
+      "title": "Resumo",
+      "body": "- script no fim do body funciona\n- `defer` é ótimo para scripts que dependem do DOM e precisam manter ordem\n- `async` é para scripts independentes\n- `type=\"module\"` é padrão moderno (import/export) e já é defer-like\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 24",
+    "instructions": "A ou B. Leia a explicação para consolidar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um erro comum é o JS rodar antes do HTML existir porque…",
+        "options": [
+          { "key": "A", "text": "O script foi executado antes do DOM estar pronto" },
+          { "key": "B", "text": "O HTML não suporta JavaScript" }
+        ],
+        "answer": "A",
+        "explain": "É questão de ordem de carregamento/execução."
+      },
+      {
+        "id": 2,
+        "question": "Colocar <script> no final do body faz o JS rodar…",
+        "options": [
+          { "key": "A", "text": "Depois do HTML carregar (na prática)" },
+          { "key": "B", "text": "Antes do HTML existir" }
+        ],
+        "answer": "A",
+        "explain": "O browser já parseou o conteúdo quando chega no script."
+      },
+      {
+        "id": 3,
+        "question": "defer faz o navegador:",
+        "options": [
+          { "key": "A", "text": "Executar o script após parsear o HTML (mantendo ordem)" },
+          { "key": "B", "text": "Executar imediatamente assim que encontrar o script" }
+        ],
+        "answer": "A",
+        "explain": "Defer baixa em paralelo e executa depois do HTML, em ordem."
+      },
+      {
+        "id": 4,
+        "question": "async é mais indicado para:",
+        "options": [
+          { "key": "A", "text": "Scripts independentes (ex.: analytics)" },
+          { "key": "B", "text": "Scripts que dependem de outros e do DOM" }
+        ],
+        "answer": "A",
+        "explain": "Async pode quebrar ordem e rodar cedo demais."
+      },
+      {
+        "id": 5,
+        "question": "Para usar import/export no browser, você precisa de:",
+        "options": [
+          { "key": "A", "text": "type=\"module\"" },
+          { "key": "B", "text": "async" }
+        ],
+        "answer": "A",
+        "explain": "Modules habilitam import/export."
+      },
+      {
+        "id": 6,
+        "question": "Scripts type=\"module\" se comportam como:",
+        "options": [
+          { "key": "A", "text": "defer (executam após o HTML ser parseado)" },
+          { "key": "B", "text": "inline (executam antes do HTML)" }
+        ],
+        "answer": "A",
+        "explain": "Modules são defer-like por padrão."
+      },
+      {
+        "id": 7,
+        "question": "Um script no head sem defer/async costuma:",
+        "options": [
+          { "key": "A", "text": "Bloquear o parse do HTML enquanto carrega/executa" },
+          { "key": "B", "text": "Rodar sempre depois do body" }
+        ],
+        "answer": "A",
+        "explain": "Sem defer/async, ele bloqueia a renderização."
+      },
+      {
+        "id": 8,
+        "question": "Se você usa async em dois scripts dependentes, o problema é:",
+        "options": [
+          { "key": "A", "text": "A ordem de execução pode ficar imprevisível" },
+          { "key": "B", "text": "Eles viram CSS automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Async roda quando baixar, não garante ordem."
+      },
+      {
+        "id": 9,
+        "question": "O padrão mais comum hoje em projetos modernos é:",
+        "options": [
+          { "key": "A", "text": "type=\"module\" para o script principal" },
+          { "key": "B", "text": "Script no head sem atributos" }
+        ],
+        "answer": "A",
+        "explain": "Projetos modernos usam módulos."
+      },
+      {
+        "id": 10,
+        "question": "Se você não usa módulos, mas quer script no head sem quebrar DOM, use:",
+        "options": [
+          { "key": "A", "text": "defer" },
+          { "key": "B", "text": "async" }
+        ],
+        "answer": "A",
+        "explain": "Defer é o mais seguro para scripts dependentes do DOM."
+      }
+    ]
+  }
+}

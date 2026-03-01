@@ -1,0 +1,156 @@
+{
+  "id": "34-checklist-html-profissional",
+  "title": "Aula 34 — Checklist final: HTML profissional (semântica, a11y, SEO, perf)",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Essa aula é uma revisão “profissional”.\n\nA ideia é: você abre qualquer página HTML e consegue avaliar:\n- está semântica?\n- está acessível?\n- tem SEO básico?\n- não vai ficar lenta?\n\nVocê vai levar um checklist simples para o resto da vida."
+    },
+    {
+      "title": "Checklist 1 — Estrutura mínima correta",
+      "body": "Antes de tudo, confira:\n\n- `<!doctype html>`\n- `<html lang=\"pt-br\">`\n- `<meta charset=\"UTF-8\">`\n- `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`\n\nSe isso estiver errado, o resto começa torto."
+    },
+    {
+      "title": "Checklist 2 — Head (SEO básico)",
+      "body": "No `<head>`, confira:\n\n- `<title>` específico\n- `meta description` real\n- favicon (opcional, mas profissional)\n\nSe o título for “Home”, já é sinal de descuido."
+    },
+    {
+      "title": "Checklist 3 — Semântica de layout",
+      "body": "No body, procure:\n\n- `<header>`\n- `<nav>` (menu)\n- `<main>` (principal)\n- `<article>` (conteúdo independente)\n- `<section>` (tema)\n- `<aside>` (relacionado)\n- `<footer>`\n\nUse `div` só quando não existe tag melhor."
+    },
+    {
+      "title": "Checklist 4 — Headings (h1/h2/h3)",
+      "body": "Regras práticas:\n\n- 1 `h1` principal\n- seções em `h2`\n- subtópicos em `h3`\n\nSe você vê `h4` sem `h2/h3`, provavelmente está bagunçado."
+    },
+    {
+      "title": "Checklist 5 — Acessibilidade (a11y)",
+      "body": "Cheque:\n\n- imagens com `alt` (ou `alt=\"\"` se decorativa)\n- inputs com `label for` + `id`\n- botões/links com texto claro (nada de “clique aqui”)\n- navegação por Tab funciona\n- não remover foco visível\n\nARIA:\n- só quando necessário (aria-label para botão ícone, por exemplo)."
+    },
+    {
+      "title": "Checklist 6 — Formulários (UX + validação)",
+      "body": "Cheque:\n\n- `type` correto (`email`, `password`, `date`…)\n- `required` onde precisa\n- `minlength/maxlength` quando faz sentido\n- radio com mesmo `name`\n- checkbox de termos com `required`\n- fieldset/legend para grupos grandes\n\nForm bem feito dá menos erro e menos frustração."
+    },
+    {
+      "title": "Checklist 7 — Conteúdo rico (quando for aula/artigo)",
+      "body": "Se for conteúdo, procure:\n\n- `figure/figcaption` quando tem legenda\n- `time datetime` em datas\n- `pre+code` para blocos de código\n- `details/summary` para dicas/FAQ\n- `blockquote` para citações\n\nIsso dá cara de plataforma séria."
+    },
+    {
+      "title": "Checklist 8 — Performance (o básico do básico)",
+      "body": "Cheque:\n\n- imagens otimizadas\n- `width/height` em imagens\n- `loading=\"lazy\"` para imagens fora da tela\n- script principal com `type=\"module\"` (ou `defer`)\n\nIsso já melhora muito."
+    },
+    {
+      "title": "Como usar esse checklist na prática",
+      "body": "Pegue uma página sua e revise:\n\n1) Head ok?\n2) Semântica ok?\n3) Headings ok?\n4) A11y ok?\n5) Form ok?\n6) Performance ok?\n\nSe você fizer isso toda vez, você evolui muito rápido."
+    },
+    {
+      "title": "Resumo final",
+      "body": "HTML profissional é:\n- estrutura correta\n- semântica\n- headings organizados\n- acessível\n- SEO básico no head\n- performance básica\n\nAgora faça o quiz como um “simulado rápido”."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 34 (simulado)",
+    "instructions": "A ou B. Se errar, volte no checklist correspondente.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O atributo que define idioma da página é:",
+        "options": [
+          { "key": "A", "text": "lang no <html>" },
+          { "key": "B", "text": "href no <html>" }
+        ],
+        "answer": "A",
+        "explain": "lang ajuda acessibilidade e pronúncia."
+      },
+      {
+        "id": 2,
+        "question": "O conteúdo principal deve ficar em:",
+        "options": [
+          { "key": "A", "text": "<main>" },
+          { "key": "B", "text": "<meta>" }
+        ],
+        "answer": "A",
+        "explain": "main é a região principal."
+      },
+      {
+        "id": 3,
+        "question": "Uma boa prática de headings é:",
+        "options": [
+          { "key": "A", "text": "1 h1 principal e h2/h3 para seções" },
+          { "key": "B", "text": "Vários h1 para qualquer coisa" }
+        ],
+        "answer": "A",
+        "explain": "Hierarquia organiza o conteúdo."
+      },
+      {
+        "id": 4,
+        "question": "Imagem decorativa deve ter:",
+        "options": [
+          { "key": "A", "text": "alt=\"\"" },
+          { "key": "B", "text": "alt=\"decorativa\"" }
+        ],
+        "answer": "A",
+        "explain": "Alt vazio indica que não precisa ser lida."
+      },
+      {
+        "id": 5,
+        "question": "Input acessível deve ter:",
+        "options": [
+          { "key": "A", "text": "label for + input id" },
+          { "key": "B", "text": "placeholder apenas" }
+        ],
+        "answer": "A",
+        "explain": "Label é essencial; placeholder não substitui."
+      },
+      {
+        "id": 6,
+        "question": "SEO básico no head inclui:",
+        "options": [
+          { "key": "A", "text": "<title> e meta description" },
+          { "key": "B", "text": "<ul> e <li>" }
+        ],
+        "answer": "A",
+        "explain": "Title/description são metadados."
+      },
+      {
+        "id": 7,
+        "question": "Para evitar layout “pular”, use em imagens:",
+        "options": [
+          { "key": "A", "text": "width e height" },
+          { "key": "B", "text": "download" }
+        ],
+        "answer": "A",
+        "explain": "Reservar espaço reduz CLS."
+      },
+      {
+        "id": 8,
+        "question": "Para blocos de código, o padrão é:",
+        "options": [
+          { "key": "A", "text": "<pre><code>...</code></pre>" },
+          { "key": "B", "text": "<q>...</q>" }
+        ],
+        "answer": "A",
+        "explain": "pre preserva formatação, code marca como código."
+      },
+      {
+        "id": 9,
+        "question": "ARIA deve ser usado:",
+        "options": [
+          { "key": "A", "text": "Quando o HTML não consegue expressar bem sozinho" },
+          { "key": "B", "text": "Em todo elemento sempre" }
+        ],
+        "answer": "A",
+        "explain": "ARIA mal usado piora acessibilidade."
+      },
+      {
+        "id": 10,
+        "question": "Para navegação/menu, use:",
+        "options": [
+          { "key": "A", "text": "<nav>" },
+          { "key": "B", "text": "<span>" }
+        ],
+        "answer": "A",
+        "explain": "nav é semântico para navegação."
+      }
+    ]
+  }
+}

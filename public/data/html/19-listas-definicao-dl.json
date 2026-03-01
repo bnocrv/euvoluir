@@ -1,0 +1,152 @@
+{
+  "id": "19-listas-definicao-dl",
+  "title": "Aula 19 — Listas avançadas + Lista de definição (dl/dt/dd)",
+  "steps": [
+    {
+      "title": "Por que existe dl/dt/dd",
+      "body": "Você já aprendeu:\n- `ul/li` (lista sem ordem)\n- `ol/li` (lista com ordem)\n\nAgora vem a terceira família de listas:\n- `dl` (definition list)\n- `dt` (termo)\n- `dd` (definição/descrição)\n\nIsso é perfeito para:\n- glossário\n- perguntas e respostas (FAQ)\n- lista de propriedades (Produto: cor, tamanho, material)\n- documentação\n\nOu seja: conteúdo bem organizado."
+    },
+    {
+      "title": "O que é dl (definition list)",
+      "body": "`<dl>` é uma lista de termos e descrições.\n\nDentro dela você usa pares:\n- `<dt>` termo\n- `<dd>` descrição\n\nPense: Termo → explicação."
+    },
+    {
+      "title": "Exemplo simples (glossário)",
+      "body": "Exemplo:\n\n`<dl>`\n  `<dt>HTML</dt>`\n  `<dd>Linguagem de marcação para estruturar páginas.</dd>`\n\n  `<dt>CSS</dt>`\n  `<dd>Linguagem de estilos para aparência e layout.</dd>`\n`</dl>`\n\nIsso é mais semântico do que usar várias divs."
+    },
+    {
+      "title": "1 termo pode ter mais de 1 descrição",
+      "body": "Você pode ter:\n- 1 `<dt>` e vários `<dd>`.\n\nIsso é útil quando um termo tem mais de uma explicação.\n\nExemplo:\n`<dt>JavaScript</dt>`\n`<dd>Linguagem de programação do navegador.</dd>`\n`<dd>Usada para interação e lógica.</dd>`"
+    },
+    {
+      "title": "Vários termos podem compartilhar 1 descrição (conceito)",
+      "body": "Também dá para ter vários `<dt>` seguidos e depois um `<dd>`.\n\nExemplo:\n`<dt>CEP</dt>`\n`<dt>Código Postal</dt>`\n`<dd>Identificador numérico de endereços.</dd>`\n\nIsso é útil para sinônimos."
+    },
+    {
+      "title": "dl não é para lista de navegação",
+      "body": "Muita gente usa dl errado.\n\nRegra:\n- Menu → `nav + ul + li + a`\n- Passo a passo → `ol`\n- Itens comuns → `ul`\n- Termo e explicação → `dl`\n\nSe você usar o tipo certo, o HTML fica mais claro e profissional."
+    },
+    {
+      "title": "Listas aninhadas (revisão avançada)",
+      "body": "Você já viu lista dentro de lista.\n\nReforço:\n- lista aninhada deve ficar dentro de um `<li>`\n\nExemplo:\n`<ul>`\n  `<li>Frontend`\n    `<ul>`\n      `<li>HTML</li>`\n      `<li>CSS</li>`\n    `</ul>`\n  `</li>`\n`</ul>`\n\nIsso é o padrão correto."
+    },
+    {
+      "title": "Listas e acessibilidade",
+      "body": "Listas são ótimas para acessibilidade porque indicam estrutura.\n\nDicas:\n- Não quebre listas com texto solto no meio\n- Não use `<br>` para simular lista\n\nSe é uma lista, use as tags de lista."
+    },
+    {
+      "title": "Exemplo real: propriedades de produto",
+      "body": "Um exemplo perfeito de dl:\n\n`<dl>`\n  `<dt>Material</dt>`\n  `<dd>Algodão 100%</dd>`\n\n  `<dt>Cor</dt>`\n  `<dd>Preto</dd>`\n\n  `<dt>Tamanhos</dt>`\n  `<dd>P, M, G</dd>`\n`</dl>`\n\nIsso fica semântico e fácil de estilizar com CSS."
+    },
+    {
+      "title": "Resumo",
+      "body": "- `ul` = itens sem ordem\n- `ol` = passos/ordem\n- `dl` = termo + descrição\n- `dt` = termo\n- `dd` = descrição\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 19",
+    "instructions": "A ou B. Leia a explicação para consolidar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "dl/dt/dd são usados principalmente para:",
+        "options": [
+          { "key": "A", "text": "Termo e descrição (glossário, propriedades)" },
+          { "key": "B", "text": "Menu de navegação" }
+        ],
+        "answer": "A",
+        "explain": "dl é lista de definição: termo → descrição."
+      },
+      {
+        "id": 2,
+        "question": "Qual tag representa o termo?",
+        "options": [
+          { "key": "A", "text": "<dt>" },
+          { "key": "B", "text": "<dd>" }
+        ],
+        "answer": "A",
+        "explain": "dt = definition term (termo)."
+      },
+      {
+        "id": 3,
+        "question": "Qual tag representa a descrição do termo?",
+        "options": [
+          { "key": "A", "text": "<dd>" },
+          { "key": "B", "text": "<li>" }
+        ],
+        "answer": "A",
+        "explain": "dd = definition description (descrição)."
+      },
+      {
+        "id": 4,
+        "question": "Menu de navegação deve ser feito com:",
+        "options": [
+          { "key": "A", "text": "nav > ul > li > a" },
+          { "key": "B", "text": "dl > dt > dd" }
+        ],
+        "answer": "A",
+        "explain": "Menu é navegação; dl é termo/descrição."
+      },
+      {
+        "id": 5,
+        "question": "Passo a passo (ordem importa) é melhor usar:",
+        "options": [
+          { "key": "A", "text": "<ol>" },
+          { "key": "B", "text": "<ul>" }
+        ],
+        "answer": "A",
+        "explain": "ol é lista ordenada (sequência)."
+      },
+      {
+        "id": 6,
+        "question": "Lista sem ordem (itens comuns) é melhor usar:",
+        "options": [
+          { "key": "A", "text": "<ul>" },
+          { "key": "B", "text": "<ol>" }
+        ],
+        "answer": "A",
+        "explain": "ul é lista não ordenada."
+      },
+      {
+        "id": 7,
+        "question": "Um termo pode ter mais de uma descrição?",
+        "options": [
+          { "key": "A", "text": "Sim (1 dt e vários dd)" },
+          { "key": "B", "text": "Não, é proibido" }
+        ],
+        "answer": "A",
+        "explain": "É comum ter 1 dt com vários dd."
+      },
+      {
+        "id": 8,
+        "question": "Listas aninhadas devem ficar:",
+        "options": [
+          { "key": "A", "text": "Dentro de um <li>" },
+          { "key": "B", "text": "Depois do </ul> (fora)" }
+        ],
+        "answer": "A",
+        "explain": "A sublista pertence ao item pai, então fica dentro do li."
+      },
+      {
+        "id": 9,
+        "question": "Usar <br> para simular uma lista é:",
+        "options": [
+          { "key": "A", "text": "Ruim; melhor usar tags de lista" },
+          { "key": "B", "text": "Recomendado" }
+        ],
+        "answer": "A",
+        "explain": "Listas são semânticas e ajudam acessibilidade/estrutura."
+      },
+      {
+        "id": 10,
+        "question": "Um caso perfeito para dl é:",
+        "options": [
+          { "key": "A", "text": "Propriedades de produto (Material, Cor, Tamanho)" },
+          { "key": "B", "text": "Um menu com links para páginas" }
+        ],
+        "answer": "A",
+        "explain": "dl é ótimo para termo/valor (propriedades)."
+      }
+    ]
+  }
+}

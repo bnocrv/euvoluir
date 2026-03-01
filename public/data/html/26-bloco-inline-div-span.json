@@ -1,0 +1,152 @@
+{
+  "id": "26-bloco-inline-div-span",
+  "title": "Aula 26 — Bloco vs Inline + div/span (quando usar) e por quê",
+  "steps": [
+    {
+      "title": "Por que isso é a ponte perfeita para CSS",
+      "body": "Muita gente chega no CSS e trava porque não entende uma coisa simples:\n\n- Existem elementos que ocupam a linha inteira (bloco)\n- E existem elementos que ficam dentro da linha (inline)\n\nSe você entender isso, conceitos como `display`, `flex` e `grid` ficam muito mais fáceis.\n\nHoje você vai aprender:\n- o que é bloco e inline\n- quando usar `div`\n- quando usar `span`\n- quando NÃO usar (usar tags semânticas no lugar)"
+    },
+    {
+      "title": "Elementos de bloco (block) — ocupam a linha toda",
+      "body": "Um elemento de bloco normalmente:\n- começa em uma nova linha\n- ocupa a largura toda disponível\n\nExemplos comuns:\n- `<h1>`, `<h2>`, `<p>`\n- `<div>`, `<section>`, `<article>`\n- `<ul>`, `<ol>`\n\nPor isso parágrafos “quebram linha” automaticamente."
+    },
+    {
+      "title": "Elementos inline — ficam dentro da linha",
+      "body": "Um elemento inline normalmente:\n- não quebra a linha\n- ocupa apenas o espaço do conteúdo\n\nExemplos comuns:\n- `<a>` (link)\n- `<strong>`, `<em>`\n- `<span>`\n- `<code>`\n\nPor isso você consegue colocar um link dentro de um parágrafo sem quebrar."
+    },
+    {
+      "title": "div: o bloco genérico (use quando não houver tag melhor)",
+      "body": "`<div>` é um contêiner genérico de **bloco**.\n\nUse quando:\n- você precisa agrupar elementos\n- não existe uma tag semântica melhor\n\nExemplo:\n- agrupar um card\n\nMas lembre:\n- se é navegação, use `<nav>`\n- se é seção temática, use `<section>`\n\nDiv é o “plano B”."
+    },
+    {
+      "title": "span: o inline genérico (para pequenos trechos)",
+      "body": "`<span>` é um contêiner genérico **inline**.\n\nUse quando:\n- você quer marcar uma parte pequena do texto\n- para estilizar depois com CSS\n\nExemplo:\n- `<p>Preço: <span class=\"price\">R$ 59,90</span></p>`\n\nVocê não deve usar span para estruturar página inteira."
+    },
+    {
+      "title": "Exemplo prático (diferença visível)",
+      "body": "Exemplo mental:\n\n- `<p>Olá <span>Mundo</span>!</p>`\n\nspan não quebra a linha.\n\nAgora:\n- `<div>Olá</div><div>Mundo</div>`\n\ndiv normalmente quebra e vira um embaixo do outro.\n\nDepois, com CSS, você muda esse comportamento — mas o padrão é esse."
+    },
+    {
+      "title": "Não confunda: bloco/inline ≠ semântica",
+      "body": "Uma tag pode ser bloco e ainda ser semântica.\n\nExemplo:\n- `<article>` é bloco e semântico.\n\nUma tag pode ser inline e semântica.\n\nExemplo:\n- `<em>` é inline e semântico.\n\nDiv/span são genéricos (sem significado)."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "- Fazer tudo com div e esquecer semântica\n- Colocar div dentro de p (evite)\n- Usar span para fazer layout inteiro\n\nRegra prática:\n- estrutura de página: tags semânticas (header/nav/main/section/footer)\n- agrupamento sem tag melhor: div\n- marcar pedaço de texto: span"
+    },
+    {
+      "title": "Como isso aparece no CSS (spoiler)",
+      "body": "No CSS você vai ver:\n- `display: block` e `display: inline`\n- `display: inline-block`\n- `display: flex` e `display: grid`\n\nO CSS muda o comportamento.\n\nMas entender o padrão do HTML é o que te dá base."
+    },
+    {
+      "title": "Resumo",
+      "body": "- Block: ocupa a linha toda\n- Inline: fica dentro da linha\n- Div: bloco genérico\n- Span: inline genérico\n- Prefira tags semânticas quando existir uma melhor\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 26",
+    "instructions": "A ou B. Leia a explicação para consolidar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Elementos de bloco geralmente…",
+        "options": [
+          { "key": "A", "text": "Começam em nova linha e ocupam a largura disponível" },
+          { "key": "B", "text": "Ficam sempre dentro da mesma linha" }
+        ],
+        "answer": "A",
+        "explain": "Block normalmente quebra linha e ocupa largura."
+      },
+      {
+        "id": 2,
+        "question": "Elementos inline geralmente…",
+        "options": [
+          { "key": "A", "text": "Não quebram linha e ocupam só o conteúdo" },
+          { "key": "B", "text": "Sempre ocupam a tela toda" }
+        ],
+        "answer": "A",
+        "explain": "Inline fica dentro da linha."
+      },
+      {
+        "id": 3,
+        "question": "div é:",
+        "options": [
+          { "key": "A", "text": "Um contêiner genérico de bloco" },
+          { "key": "B", "text": "Um contêiner genérico inline" }
+        ],
+        "answer": "A",
+        "explain": "Div é block por padrão."
+      },
+      {
+        "id": 4,
+        "question": "span é:",
+        "options": [
+          { "key": "A", "text": "Um contêiner genérico inline" },
+          { "key": "B", "text": "Uma tabela" }
+        ],
+        "answer": "A",
+        "explain": "Span é inline por padrão."
+      },
+      {
+        "id": 5,
+        "question": "Para marcar um pedaço do texto e estilizar depois, use:",
+        "options": [
+          { "key": "A", "text": "<span>" },
+          { "key": "B", "text": "<div>" }
+        ],
+        "answer": "A",
+        "explain": "Span é ideal para trechos inline."
+      },
+      {
+        "id": 6,
+        "question": "Se é navegação/menu, a tag mais adequada é:",
+        "options": [
+          { "key": "A", "text": "<nav>" },
+          { "key": "B", "text": "<div>" }
+        ],
+        "answer": "A",
+        "explain": "Nav é semântico para navegação."
+      },
+      {
+        "id": 7,
+        "question": "Block/inline é a mesma coisa que semântica?",
+        "options": [
+          { "key": "A", "text": "Não. Semântica é significado, block/inline é comportamento" },
+          { "key": "B", "text": "Sim, são sinônimos" }
+        ],
+        "answer": "A",
+        "explain": "Semântica é significado. Block/inline é layout padrão."
+      },
+      {
+        "id": 8,
+        "question": "Um exemplo de inline semântico é:",
+        "options": [
+          { "key": "A", "text": "<em>" },
+          { "key": "B", "text": "<section>" }
+        ],
+        "answer": "A",
+        "explain": "em é inline. section é bloco."
+      },
+      {
+        "id": 9,
+        "question": "Usar span para fazer layout inteiro é:",
+        "options": [
+          { "key": "A", "text": "Ruim; span é para trechos pequenos" },
+          { "key": "B", "text": "Recomendado para páginas profissionais" }
+        ],
+        "answer": "A",
+        "explain": "Span é inline e serve para pequenos trechos."
+      },
+      {
+        "id": 10,
+        "question": "CSS pode mudar block/inline usando:",
+        "options": [
+          { "key": "A", "text": "display" },
+          { "key": "B", "text": "href" }
+        ],
+        "answer": "A",
+        "explain": "display controla o comportamento de layout."
+      }
+    ]
+  }
+}

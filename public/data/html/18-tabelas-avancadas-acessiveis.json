@@ -1,0 +1,148 @@
+{
+  "id": "18-tabelas-avancadas-acessiveis",
+  "title": "Aula 18 — Tabelas avançadas e acessíveis (caption, scope, tfoot)",
+  "steps": [
+    {
+      "title": "Por que ‘tabela acessível’ importa",
+      "body": "Tabela é ótima para dados — mas para leitor de tela ela pode virar um caos se você não der contexto.\n\nNesta aula você vai aprender:\n- `caption` (título da tabela)\n- `thead/tbody/tfoot` (organização)\n- `th` com `scope` (associação correta)\n\nIsso deixa a tabela mais clara para humanos e máquinas."
+    },
+    {
+      "title": "caption: título da tabela (contexto imediato)",
+      "body": "Use `<caption>` para dizer o que a tabela representa.\n\nExemplo:\n`<table>`\n  `<caption>Lista de preços (2026)</caption>`\n  ...\n`</table>`\n\nIsso ajuda muito em acessibilidade e leitura."
+    },
+    {
+      "title": "thead, tbody, tfoot: estrutura profissional",
+      "body": "Organização comum:\n\n- `<thead>`: cabeçalho (nomes das colunas)\n- `<tbody>`: dados\n- `<tfoot>`: resumo/total\n\nMesmo quando não é obrigatório, é altamente recomendado.\n\nIsso facilita:\n- manutenção\n- CSS\n- compreensão"
+    },
+    {
+      "title": "th vs td: cabeçalho x dado",
+      "body": "Relembrando:\n\n- `<th>`: cabeçalho (título)\n- `<td>`: dado\n\nSe você coloca tudo como `td`, você perde semântica.\n\nPara leitor de tela, `th` é uma referência importante."
+    },
+    {
+      "title": "scope: o detalhe que muda tudo",
+      "body": "Quando você usa `th`, pode indicar o `scope`:\n\n- `scope=\"col\"` → cabeçalho de coluna\n- `scope=\"row\"` → cabeçalho de linha\n\nExemplo no thead:\n- `<th scope=\"col\">Produto</th>`\n\nExemplo em linha:\n- `<th scope=\"row\">Camiseta</th>`\n\nIsso ajuda o leitor de tela a saber “qual título vale para qual célula”."
+    },
+    {
+      "title": "Exemplo completo (modelo recomendado)",
+      "body": "Modelo:\n\n`<table>`\n  `<caption>Vendas por mês</caption>`\n\n  `<thead>`\n    `<tr>`\n      `<th scope=\"col\">Mês</th>`\n      `<th scope=\"col\">Total</th>`\n    `</tr>`\n  `</thead>`\n\n  `<tbody>`\n    `<tr>`\n      `<th scope=\"row\">Janeiro</th>`\n      `<td>R$ 10.000</td>`\n    `</tr>`\n  `</tbody>`\n\n  `<tfoot>`\n    `<tr>`\n      `<th scope=\"row\">Total</th>`\n      `<td>R$ 120.000</td>`\n    `</tr>`\n  `</tfoot>`\n`</table>`"
+    },
+    {
+      "title": "Tabelas complexas (só o conceito)",
+      "body": "Algumas tabelas têm:\n- cabeçalhos em múltiplas linhas\n- agrupamentos de colunas\n\nAí entram atributos como `colspan` e `rowspan`.\n\nIsso é mais avançado e pode confundir no começo.\n\nPor enquanto, guarde:\n- use `scope` sempre que puder\n- use caption\n- organize com thead/tbody/tfoot\n\nIsso resolve 90% dos casos."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "- usar tabela para layout\n- não usar caption\n- não usar th\n- esquecer scope\n- td direto dentro de table (sem tr)\n\nRegra: table → (caption) → thead/tbody/tfoot → tr → th/td."
+    },
+    {
+      "title": "Resumo",
+      "body": "- caption dá contexto\n- thead/tbody/tfoot organizam\n- th é cabeçalho\n- scope liga cabeçalho a linha/coluna\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 18",
+    "instructions": "A ou B. Leia a explicação para consolidar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "caption serve para…",
+        "options": [
+          { "key": "A", "text": "Dar um título/contexto para a tabela" },
+          { "key": "B", "text": "Criar uma borda automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "caption descreve o assunto da tabela; bordas são CSS."
+      },
+      {
+        "id": 2,
+        "question": "thead normalmente guarda:",
+        "options": [
+          { "key": "A", "text": "Cabeçalhos (nomes das colunas)" },
+          { "key": "B", "text": "Somente o rodapé/total" }
+        ],
+        "answer": "A",
+        "explain": "thead é o cabeçalho. tfoot é rodapé."
+      },
+      {
+        "id": 3,
+        "question": "tbody guarda:",
+        "options": [
+          { "key": "A", "text": "Os dados principais da tabela" },
+          { "key": "B", "text": "Somente o título da tabela" }
+        ],
+        "answer": "A",
+        "explain": "tbody é o corpo com dados."
+      },
+      {
+        "id": 4,
+        "question": "tfoot é usado para:",
+        "options": [
+          { "key": "A", "text": "Resumo/total/rodapé da tabela" },
+          { "key": "B", "text": "Criar links do menu" }
+        ],
+        "answer": "A",
+        "explain": "tfoot costuma conter totais/resumo."
+      },
+      {
+        "id": 5,
+        "question": "th representa:",
+        "options": [
+          { "key": "A", "text": "Cabeçalho (título)" },
+          { "key": "B", "text": "Dado comum" }
+        ],
+        "answer": "A",
+        "explain": "td é dado. th é cabeçalho."
+      },
+      {
+        "id": 6,
+        "question": "scope=\"col\" significa:",
+        "options": [
+          { "key": "A", "text": "Cabeçalho de coluna" },
+          { "key": "B", "text": "Cabeçalho de linha" }
+        ],
+        "answer": "A",
+        "explain": "col = coluna."
+      },
+      {
+        "id": 7,
+        "question": "scope=\"row\" significa:",
+        "options": [
+          { "key": "A", "text": "Cabeçalho de linha" },
+          { "key": "B", "text": "Cabeçalho de coluna" }
+        ],
+        "answer": "A",
+        "explain": "row = linha."
+      },
+      {
+        "id": 8,
+        "question": "Uma boa prática para acessibilidade em tabelas é:",
+        "options": [
+          { "key": "A", "text": "Usar caption + th + scope" },
+          { "key": "B", "text": "Colocar tudo em td para simplificar" }
+        ],
+        "answer": "A",
+        "explain": "caption dá contexto; th/scope criam associações corretas."
+      },
+      {
+        "id": 9,
+        "question": "Tabelas complexas podem usar:",
+        "options": [
+          { "key": "A", "text": "colspan/rowspan" },
+          { "key": "B", "text": "href/target" }
+        ],
+        "answer": "A",
+        "explain": "colspan/rowspan mesclam células."
+      },
+      {
+        "id": 10,
+        "question": "Tabela deve ser usada para:",
+        "options": [
+          { "key": "A", "text": "Dados em linhas e colunas" },
+          { "key": "B", "text": "Layout do site" }
+        ],
+        "answer": "A",
+        "explain": "Layout é CSS. Tabela é para dados tabulares."
+      }
+    ]
+  }
+}

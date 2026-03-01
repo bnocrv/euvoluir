@@ -1,0 +1,148 @@
+{
+  "id": "29-aria-essencial",
+  "title": "Aula 29 — ARIA essencial (aria-label, labelledby, live) sem gambiarra",
+  "steps": [
+    {
+      "title": "Regra de ouro do ARIA (grave isso)",
+      "body": "ARIA é para acessibilidade.\n\n✅ Regra número 1:\n- **Use HTML semântico primeiro.**\n\n✅ Regra número 2:\n- Use ARIA **só quando o HTML não consegue expressar** o que você precisa.\n\nMotivo:\n- ARIA mal usado piora acessibilidade.\n\nHoje você vai aprender o ARIA que realmente aparece em projetos:\n- `aria-label`\n- `aria-labelledby`\n- `aria-describedby`\n- `aria-live`\n- noção de `role`"
+    },
+    {
+      "title": "aria-label: dar um nome acessível",
+      "body": "Use `aria-label` quando o elemento precisa de um nome, mas não tem texto visível.\n\nExemplo clássico:\n- botão só com ícone:\n\n`<button aria-label=\"Abrir menu\">☰</button>`\n\nSem aria-label, leitor de tela pode anunciar “button” sem contexto."
+    },
+    {
+      "title": "aria-labelledby: apontar para um texto já existente",
+      "body": "Se você já tem um texto visível na página, prefira `aria-labelledby`.\n\nExemplo:\n`<h2 id=\"tituloAula\">Aula 29</h2>`\n`<section aria-labelledby=\"tituloAula\">...</section>`\n\nAqui o nome do section vem do h2.\n\nIsso evita duplicar texto em aria-label."
+    },
+    {
+      "title": "aria-describedby: texto de ajuda/descrição",
+      "body": "Quando você tem uma explicação/dica, use `aria-describedby`.\n\nExemplo:\n`<label for=\"senha\">Senha</label>`\n`<input id=\"senha\" type=\"password\" aria-describedby=\"senhaHelp\">`\n`<small id=\"senhaHelp\">Mínimo 8 caracteres.</small>`\n\nLeitores de tela vão ler a dica junto do campo."
+    },
+    {
+      "title": "aria-live: avisos dinâmicos (mensagens de erro/sucesso)",
+      "body": "Quando você mostra mensagens que aparecem depois (ex.: erro no login), use `aria-live` no elemento que recebe o texto.\n\nExemplo:\n`<div aria-live=\"polite\" id=\"status\"></div>`\n\n- `polite`: anuncia quando puder (não interrompe)\n- `assertive`: interrompe (use com cuidado)\n\nIsso é muito útil em formulários com JS."
+    },
+    {
+      "title": "role: quando faz sentido (com cuidado)",
+      "body": "Muitos elementos semânticos já têm role implícito.\n\nExemplo:\n- `<button>` já é um botão\n- `<nav>` já é navegação\n\nVocê geralmente NÃO precisa de role.\n\nRole é mais usado quando você cria componente customizado (ex.: uma div que se comporta como botão — mas o recomendado é usar `<button>` mesmo).\n\nSe você precisar:\n- `role=\"button\"` + `tabindex=\"0\"` + eventos de teclado\n\nMas isso é mais avançado (e fácil de errar)."
+    },
+    {
+      "title": "Padrões comuns em sites reais",
+      "body": "Você vai ver muito:\n\n- Botão de ícone:\n  `aria-label=\"Fechar\"`\n\n- Dois menus:\n  `<nav aria-label=\"Menu principal\">` e `<nav aria-label=\"Rodapé\">`\n\n- Mensagem de formulário:\n  `<div aria-live=\"polite\">Erro...</div>`\n\nIsso é ARIA útil e simples."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "- Usar ARIA para tentar “consertar” HTML mal feito\n- Colocar aria-label diferente do texto visível (inconsistente)\n- Esconder texto importante sem alternativa\n- Usar role desnecessário\n\nRegra:\n- HTML primeiro. ARIA só quando faltar informação."
+    },
+    {
+      "title": "Resumo",
+      "body": "- aria-label: nome quando não há texto\n- aria-labelledby: usa texto existente como nome\n- aria-describedby: descrição/dica\n- aria-live: mensagens dinâmicas\n- role: raramente, com cuidado\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 29",
+    "instructions": "A ou B. Leia o porquê.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A regra de ouro do ARIA é:",
+        "options": [
+          { "key": "A", "text": "Usar HTML semântico primeiro; ARIA só quando necessário" },
+          { "key": "B", "text": "Usar ARIA em todo elemento sempre" }
+        ],
+        "answer": "A",
+        "explain": "ARIA mal usado pode piorar acessibilidade."
+      },
+      {
+        "id": 2,
+        "question": "aria-label é útil quando:",
+        "options": [
+          { "key": "A", "text": "O elemento não tem texto visível (ex.: botão só com ícone)" },
+          { "key": "B", "text": "Você quer trocar a cor do elemento" }
+        ],
+        "answer": "A",
+        "explain": "aria-label dá nome acessível."
+      },
+      {
+        "id": 3,
+        "question": "aria-labelledby serve para:",
+        "options": [
+          { "key": "A", "text": "Usar um texto existente (id) como rótulo/nome" },
+          { "key": "B", "text": "Bloquear cliques" }
+        ],
+        "answer": "A",
+        "explain": "Ele aponta para outro elemento que contém o nome."
+      },
+      {
+        "id": 4,
+        "question": "Quando há texto visível, geralmente é melhor preferir:",
+        "options": [
+          { "key": "A", "text": "aria-labelledby (ou label correto)" },
+          { "key": "B", "text": "aria-label duplicando o texto" }
+        ],
+        "answer": "A",
+        "explain": "Evita duplicação e inconsistência."
+      },
+      {
+        "id": 5,
+        "question": "aria-describedby é usado para:",
+        "options": [
+          { "key": "A", "text": "Dicas/descrição extra do campo" },
+          { "key": "B", "text": "Baixar arquivos" }
+        ],
+        "answer": "A",
+        "explain": "Ele liga um texto de ajuda ao elemento."
+      },
+      {
+        "id": 6,
+        "question": "aria-live serve para:",
+        "options": [
+          { "key": "A", "text": "Mensagens dinâmicas (erro/sucesso) serem anunciadas" },
+          { "key": "B", "text": "Criar links internos (#id)" }
+        ],
+        "answer": "A",
+        "explain": "Leitor de tela anuncia mudanças no conteúdo."
+      },
+      {
+        "id": 7,
+        "question": "aria-live=\"polite\" significa:",
+        "options": [
+          { "key": "A", "text": "Anunciar quando puder, sem interromper" },
+          { "key": "B", "text": "Interromper imediatamente sempre" }
+        ],
+        "answer": "A",
+        "explain": "Polite é mais “calmo”."
+      },
+      {
+        "id": 8,
+        "question": "role geralmente é:",
+        "options": [
+          { "key": "A", "text": "Desnecessário quando você usa tags semânticas corretas" },
+          { "key": "B", "text": "Obrigatório em todo site" }
+        ],
+        "answer": "A",
+        "explain": "Tags semânticas já têm role implícito."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum é:",
+        "options": [
+          { "key": "A", "text": "Usar ARIA para consertar HTML mal feito" },
+          { "key": "B", "text": "Usar <button> para ações" }
+        ],
+        "answer": "A",
+        "explain": "A base é HTML correto."
+      },
+      {
+        "id": 10,
+        "question": "Botão de ícone (sem texto) deve ter:",
+        "options": [
+          { "key": "A", "text": "aria-label com uma descrição clara" },
+          { "key": "B", "text": "Somente class=\"btn\"" }
+        ],
+        "answer": "A",
+        "explain": "Sem texto visível, aria-label dá contexto ao leitor de tela."
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "id": "15-elementos-semanticos-uteis",
+  "title": "Aula 15 — Elementos semânticos úteis (figure, details, time, mark, abbr)",
+  "steps": [
+    {
+      "title": "Por que aprender essas tags agora",
+      "body": "Você já domina a base: estrutura, textos, links, imagens, formulários, semântica e a11y.\n\nAgora você vai aprender algumas tags que deixam seu HTML mais **rico**, mais **organizado** e mais **profissional**, principalmente em páginas de conteúdo (aulas, artigos, documentação).\n\nHoje você vai aprender:\n- `figure` e `figcaption`\n- `details` e `summary`\n- `time`\n- `mark`\n- `abbr`\n\nSão detalhes que fazem diferença."
+    },
+    {
+      "title": "figure e figcaption (imagem com legenda)",
+      "body": "Quando uma imagem tem uma legenda (ou precisa de contexto), use:\n\n- `<figure>` para agrupar a mídia\n- `<figcaption>` para a legenda\n\nExemplo:\n`<figure>`\n  `<img src=\"grafico.png\" alt=\"Gráfico de vendas\">`\n  `<figcaption>Vendas cresceram 20% em 2026.</figcaption>`\n`</figure>`\n\nIsso é mais semântico do que uma imagem solta + um `<p>` embaixo."
+    },
+    {
+      "title": "details e summary (FAQ / conteúdo escondido)",
+      "body": "`<details>` cria um bloco que abre/fecha.\n\n`<summary>` é o título clicável.\n\nIsso é perfeito para:\n- FAQ (perguntas frequentes)\n- dicas extras\n- respostas de exercícios\n\nExemplo:\n`<details>`\n  `<summary>Ver resposta</summary>`\n  `<p>A resposta é...</p>`\n`</details>`\n\nO navegador já faz o comportamento sem JavaScript."
+    },
+    {
+      "title": "time (data/horário com significado)",
+      "body": "Use `<time>` para datas e horários.\n\nEle pode ter o atributo `datetime` para formato padrão:\n\nExemplo:\n`<time datetime=\"2026-02-28\">28/02/2026</time>`\n\nPor que isso é bom?\n- semântica\n- máquinas entendem a data\n- melhora consistência\n\nMesmo se você mostrar “28/02/2026”, o `datetime` fica padronizado."
+    },
+    {
+      "title": "mark (destaque de trecho)",
+      "body": "`<mark>` destaca um trecho como se fosse marca-texto.\n\nUse quando o destaque tem sentido.\n\nExemplo:\n`<p>O comando <mark>required</mark> torna o campo obrigatório.</p>`\n\nNão use como decoração aleatória (CSS depois)."
+    },
+    {
+      "title": "abbr (abreviação com explicação)",
+      "body": "`<abbr>` serve para abreviações.\n\nVocê coloca a explicação no atributo `title`.\n\nExemplo:\n`<abbr title=\"HyperText Markup Language\">HTML</abbr>`\n\nQuando a pessoa passa o mouse, aparece a explicação.\n\nIsso ajuda:\n- clareza\n- acessibilidade\n- aprendizado"
+    },
+    {
+      "title": "Quando usar cada um (regra rápida)",
+      "body": "Regras práticas:\n\n- `figure/figcaption`: imagem/vídeo com legenda ou contexto\n- `details/summary`: conteúdo que abre/fecha (FAQ, resposta)\n- `time`: datas e horários\n- `mark`: destacar um trecho importante\n- `abbr`: abreviações com explicação\n\nSe você usar isso bem, seu HTML fica muito mais \"arrumado\" e com cara de produto."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "- Usar `mark` para decorar (em vez de destacar algo importante)\n- Fazer FAQ com `div` + JS sem necessidade (details já resolve)\n- Escrever datas sem `time datetime`\n- Usar `abbr` sem `title` (perde o sentido)\n\nNo começo, foque no significado."
+    },
+    {
+      "title": "Modelo completo (conteúdo rico e semântico)",
+      "body": "Um exemplo juntando tudo:\n\n`<article>`\n  `<h2>O que é HTML?</h2>`\n\n  `<p><abbr title=\"HyperText Markup Language\">HTML</abbr> é uma linguagem de marcação.</p>`\n\n  `<figure>`\n    `<img src=\"exemplo.png\" alt=\"Exemplo de estrutura HTML\">`\n    `<figcaption>Estrutura mínima de uma página.</figcaption>`\n  `</figure>`\n\n  `<p>Use <mark>semântica</mark> para deixar o código profissional.</p>`\n\n  `<p>Publicado em <time datetime=\"2026-02-28\">28/02/2026</time></p>`\n\n  `<details>`\n    `<summary>Ver dica</summary>`\n    `<p>Não use div para tudo. Procure tags melhores.</p>`\n  `</details>`\n`</article>`"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- `figure/figcaption`: mídia com legenda\n- `details/summary`: abre/fecha sem JS\n- `time`: data/hora semântica (`datetime`)\n- `mark`: destaque com sentido\n- `abbr`: abreviação com title\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 15",
+    "instructions": "A ou B. Se errar, revise o passo correspondente.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Para agrupar uma imagem com legenda, você usa:",
+        "options": [
+          { "key": "A", "text": "<figure> e <figcaption>" },
+          { "key": "B", "text": "<img> e <title>" }
+        ],
+        "answer": "A",
+        "explain": "figure agrupa a mídia e figcaption é a legenda."
+      },
+      {
+        "id": 2,
+        "question": "Qual tag guarda a legenda da figure?",
+        "options": [
+          { "key": "A", "text": "<figcaption>" },
+          { "key": "B", "text": "<caption>" }
+        ],
+        "answer": "A",
+        "explain": "figcaption é para figure. caption é para tabelas."
+      },
+      {
+        "id": 3,
+        "question": "details/summary é útil para:",
+        "options": [
+          { "key": "A", "text": "FAQ e conteúdo que abre/fecha" },
+          { "key": "B", "text": "Criar links externos" }
+        ],
+        "answer": "A",
+        "explain": "details cria um bloco expansível sem JavaScript."
+      },
+      {
+        "id": 4,
+        "question": "O título clicável do details é:",
+        "options": [
+          { "key": "A", "text": "<summary>" },
+          { "key": "B", "text": "<header>" }
+        ],
+        "answer": "A",
+        "explain": "summary é a parte clicável."
+      },
+      {
+        "id": 5,
+        "question": "A tag <time> é usada para:",
+        "options": [
+          { "key": "A", "text": "Datas e horários com significado" },
+          { "key": "B", "text": "Criar um timer que conta segundos" }
+        ],
+        "answer": "A",
+        "explain": "time é semântico (não cria cronômetro)."
+      },
+      {
+        "id": 6,
+        "question": "O atributo datetime no <time> serve para:",
+        "options": [
+          { "key": "A", "text": "Guardar a data em formato padrão para máquinas" },
+          { "key": "B", "text": "Mudar a cor da data" }
+        ],
+        "answer": "A",
+        "explain": "datetime padroniza a data/hora."
+      },
+      {
+        "id": 7,
+        "question": "mark é usado para:",
+        "options": [
+          { "key": "A", "text": "Destacar um trecho importante (marca-texto)" },
+          { "key": "B", "text": "Criar um parágrafo" }
+        ],
+        "answer": "A",
+        "explain": "mark destaca trechos."
+      },
+      {
+        "id": 8,
+        "question": "abbr é usado para:",
+        "options": [
+          { "key": "A", "text": "Abreviações com explicação (title)" },
+          { "key": "B", "text": "Imagens com legenda" }
+        ],
+        "answer": "A",
+        "explain": "abbr explica abreviações via title."
+      },
+      {
+        "id": 9,
+        "question": "caption (sem fig) é usado em:",
+        "options": [
+          { "key": "A", "text": "Tabelas (<table>)" },
+          { "key": "B", "text": "Links (<a>)" }
+        ],
+        "answer": "A",
+        "explain": "caption é título de tabela."
+      },
+      {
+        "id": 10,
+        "question": "Qual opção é mais correta para FAQ sem JavaScript?",
+        "options": [
+          { "key": "A", "text": "<details><summary>Pergunta</summary>Resposta</details>" },
+          { "key": "B", "text": "<div onclick=\"...\"><p>Pergunta</p></div>" }
+        ],
+        "answer": "A",
+        "explain": "details/summary já fornece o comportamento acessível por padrão."
+      }
+    ]
+  }
+}

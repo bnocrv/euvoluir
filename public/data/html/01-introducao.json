@@ -1,0 +1,152 @@
+{
+  "id": "01-introducao",
+  "title": "Aula 01 — O que é HTML + como uma página funciona",
+  "steps": [
+    {
+      "title": "Antes de tudo: o que você está aprendendo?",
+      "body": "Você vai aprender a construir páginas na web.\n\nA web funciona assim:\n- Você escreve arquivos (ex.: `index.html`)\n- O navegador (Chrome) lê esses arquivos\n- Ele interpreta as **tags** e desenha a página\n\nTrês tecnologias trabalham juntas:\n- **HTML**: estrutura e significado (o que é cada parte)\n- **CSS**: aparência (cores, layout, responsivo)\n- **JavaScript**: comportamento (interação, lógica)\n\nNo começo, seu foco é dominar HTML. Sem isso, CSS e JS viram bagunça."
+    },
+    {
+      "title": "O que é HTML (de um jeito que não confunde)",
+      "body": "HTML significa HyperText Markup Language.\n\n**Markup** = marcação.\nVocê “marca” partes do conteúdo para dizer ao navegador o que elas são.\n\nExemplos de marcação:\n- `h1` = título principal\n- `p` = parágrafo\n- `a` = link\n\nHTML não faz conta, não tem lógica, não tem if/else. Ele descreve conteúdo."
+    },
+    {
+      "title": "Tag, elemento e atributo (3 palavras que você precisa entender)",
+      "body": "Esses termos aparecem sempre:\n\n- **Tag**: o nome entre `<>` (ex.: `<p>`)\n- **Elemento**: tag + conteúdo + (fechamento, quando existe)\n- **Atributo**: informação extra na tag (ex.: `href`, `src`)\n\nExemplo:\n- `<a href=\"https://google.com\">Google</a>`\n\nAqui:\n- tag: `a`\n- atributo: `href`\n- conteúdo: `Google`"
+    },
+    {
+      "title": "Como as tags funcionam (abertura e fechamento)",
+      "body": "A maioria das tags tem:\n- abertura: `<p>`\n- fechamento: `</p>`\n\nIsso forma um elemento.\n\nExemplo:\n- `<p>Olá</p>`\n\nAlgumas tags são “vazias” (não têm fechamento), por exemplo:\n- `<img>` (imagem)\n- `<br>` (quebra de linha)\n\nPense assim: o HTML é uma árvore. Elementos podem estar dentro de outros."
+    },
+    {
+      "title": "Estrutura mínima de uma página (você vai usar sempre)",
+      "body": "Uma página HTML bem formada tem:\n\n- `<!doctype html>`: diz ao navegador o padrão do documento\n- `<html>`: elemento raiz\n- `<head>`: configurações (não aparece na página)\n- `<body>`: conteúdo visível\n\nE duas metas importantes:\n- `<meta charset=\"UTF-8\">` para acentos\n- `<meta name=\"viewport\" ...>` para celular (responsividade)"
+    },
+    {
+      "title": "Head vs Body (isso evita 100 bugs)",
+      "body": "**HEAD** é a “área de configuração”:\n- `<title>` (título da aba)\n- `meta` (charset, viewport)\n- links para CSS\n\n**BODY** é o que o usuário vê:\n- títulos, textos, imagens, links\n\nSe você colocar conteúdo no head, fica errado (ou o navegador ignora)."
+    },
+    {
+      "title": "A primeira página completa (modelo que funciona)",
+      "body": "Aqui está o esqueleto completo:\n\n`<!doctype html>`\n`<html lang=\"pt-br\">`\n  `<head>`\n    `<meta charset=\"UTF-8\">`\n    `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`\n    `<title>Minha página</title>`\n  `</head>`\n  `<body>`\n    `<h1>Olá, mundo!</h1>`\n    `<p>Meu primeiro parágrafo.</p>`\n  `</body>`\n`</html>`\n\nVocê vai repetir isso MUITO. Então entenda o porquê de cada parte."
+    },
+    {
+      "title": "Semântica (o que separa iniciante de profissional)",
+      "body": "Semântica é usar a tag certa para o significado certo.\n\nExemplos:\n- `<header>` topo\n- `<nav>` navegação\n- `<main>` conteúdo principal\n- `<footer>` rodapé\n\nVocê até pode fazer tudo com `<div>`, mas fica menos claro.\n\nSemântica melhora:\n- acessibilidade (leitor de tela)\n- SEO (Google entende melhor)\n- manutenção do código"
+    },
+    {
+      "title": "Erros comuns de iniciante (pra evitar hoje)",
+      "body": "- Esquecer de fechar tags (ex.: `<p>texto`)\n- Fazer tudo com `<div>` e sem títulos\n- Misturar CSS/JS antes de entender o HTML\n- Não usar `viewport` e depois reclamar do celular\n\nRegra de ouro: HTML primeiro bem feito. Depois CSS. Depois JS."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- HTML = estrutura/meaning\n- CSS = aparência\n- JS = comportamento\n- Tag/Elemento/Atributo\n- Estrutura base: doctype + html + head + body\n- `meta viewport` é essencial\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 01",
+    "instructions": "Responda as 10 perguntas. Cada uma tem 2 opções (A/B). Ao final, você vê seu resultado.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "HTML serve principalmente para…",
+        "options": [
+          { "key": "A", "text": "Estruturar e dar significado ao conteúdo" },
+          { "key": "B", "text": "Criar lógica e cálculos (if/else)" }
+        ],
+        "answer": "A",
+        "explain": "HTML é marcação/estrutura. Lógica e comportamento ficam no JavaScript."
+      },
+      {
+        "id": 2,
+        "question": "Qual parte da página contém o que o usuário vê?",
+        "options": [
+          { "key": "A", "text": "<head>" },
+          { "key": "B", "text": "<body>" }
+        ],
+        "answer": "B",
+        "explain": "O <body> guarda o conteúdo visível (textos, imagens, links, etc.)."
+      },
+      {
+        "id": 3,
+        "question": "O que significa ‘tag de fechamento’?",
+        "options": [
+          { "key": "A", "text": "Uma tag com /, como </p>" },
+          { "key": "B", "text": "Uma tag com !, como <!doctype>" }
+        ],
+        "answer": "A",
+        "explain": "Fechamento geralmente tem /: </p>, </h1>, etc."
+      },
+      {
+        "id": 4,
+        "question": "Qual tag é mais apropriada para o título principal da página?",
+        "options": [
+          { "key": "A", "text": "<h1>" },
+          { "key": "B", "text": "<p>" }
+        ],
+        "answer": "A",
+        "explain": "<h1> representa o título principal. <p> é parágrafo."
+      },
+      {
+        "id": 5,
+        "question": "O `meta viewport` é importante porque…",
+        "options": [
+          { "key": "A", "text": "Ajuda a página se adaptar bem no celular" },
+          { "key": "B", "text": "Cria animações automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Viewport controla escala/layout no mobile. Animações são CSS/JS."
+      },
+      {
+        "id": 6,
+        "question": "Semântica no HTML significa…",
+        "options": [
+          { "key": "A", "text": "Usar a tag correta para o significado correto" },
+          { "key": "B", "text": "Colocar tudo em <div> para ficar padrão" }
+        ],
+        "answer": "A",
+        "explain": "Semântica melhora acessibilidade, SEO e organização."
+      },
+      {
+        "id": 7,
+        "question": "Qual conjunto está mais semântico?",
+        "options": [
+          { "key": "A", "text": "<div><div>Menu</div></div>" },
+          { "key": "B", "text": "<header><nav>Menu</nav></header>" }
+        ],
+        "answer": "B",
+        "explain": "<header> e <nav> dão significado real às partes da página."
+      },
+      {
+        "id": 8,
+        "question": "Qual tecnologia é responsável por aparência (cores/layout)?",
+        "options": [
+          { "key": "A", "text": "CSS" },
+          { "key": "B", "text": "HTML" }
+        ],
+        "answer": "A",
+        "explain": "HTML estrutura. CSS estiliza."
+      },
+      {
+        "id": 9,
+        "question": "Qual tecnologia adiciona comportamento (interação)?",
+        "options": [
+          { "key": "A", "text": "JavaScript" },
+          { "key": "B", "text": "CSS" }
+        ],
+        "answer": "A",
+        "explain": "JS lida com eventos, lógica e interação."
+      },
+      {
+        "id": 10,
+        "question": "O que é um ‘elemento’ em HTML?",
+        "options": [
+          { "key": "A", "text": "A combinação de tag + conteúdo (geralmente com abertura/fechamento)" },
+          { "key": "B", "text": "Um arquivo .css" }
+        ],
+        "answer": "A",
+        "explain": "Elemento é a unidade de estrutura: tag(s) + conteúdo."
+      }
+    ]
+  }
+}

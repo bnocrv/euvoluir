@@ -1,0 +1,139 @@
+{
+  "id": "32-mini-projeto-header-reutilizavel",
+  "title": "Aula 32 — Mini-projeto 3: Header/Nav reutilizável (template + data-*)",
+  "steps": [
+    {
+      "title": "Objetivo do mini-projeto",
+      "body": "Você vai criar um **Header reutilizável** com:\n- `<template>` como molde\n- `data-*` para dizer para onde cada item vai\n- **1 listener** no menu (delegação de eventos)\n\nIsso é mentalidade de projeto escalável:\n- você não cria 20 listeners para 20 botões\n- você cria 1 listener e lê `data-action` / `data-to`"
+    },
+    {
+      "title": "O molde do header (template)",
+      "body": "Você cria um `<template id=\"tpl-header\">` com:\n- logo/título\n- `<nav>`\n- links/botões do menu\n\nEsse template não aparece automaticamente. Ele é um molde."
+    },
+    {
+      "title": "data-to: para onde navegar",
+      "body": "Cada item do menu recebe um `data-to`.\n\nExemplo:\n- `data-to=\"#/dashboard\"`\n- `data-to=\"#/course/html/01-introducao\"`\n\nAssim, o JS não precisa “adivinhar” nada.\nEle só lê o dataset."
+    },
+    {
+      "title": "Delegação de eventos (1 listener só)",
+      "body": "Em vez de colocar evento em cada link, você coloca 1 evento no `<nav>`.\n\nQuando clicar, você:\n- pega `event.target`\n- procura o elemento mais próximo com `data-to`\n- lê `dataset.to`\n- navega\n\nIsso é escalável e mais limpo."
+    },
+    {
+      "title": "Acessibilidade rápida",
+      "body": "Boas práticas:\n- `nav` com `aria-label=\"Menu principal\"`\n- links com texto claro\n- botão de menu (se tiver) com `aria-label`\n\nUm header reutilizável bom já nasce acessível."
+    },
+    {
+      "title": "Resumo do que você treinou",
+      "body": "- template (molde)\n- data-* (dados no HTML)\n- 1 listener (delegação)\n- nav semântico\n\nAbaixo tem um modelo completo de HTML (com JS inline só para demonstrar a ideia)."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 32",
+    "instructions": "A ou B. O objetivo é fixar o padrão mental do mini-projeto.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O <template> serve para:",
+        "options": [
+          { "key": "A", "text": "Guardar um molde de HTML que não renderiza sozinho" },
+          { "key": "B", "text": "Criar CSS automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Template é molde invisível até ser clonado."
+      },
+      {
+        "id": 2,
+        "question": "data-* é usado para:",
+        "options": [
+          { "key": "A", "text": "Guardar informações no HTML para o JS usar" },
+          { "key": "B", "text": "Criar links externos automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "dataset lê data-*."
+      },
+      {
+        "id": 3,
+        "question": "Delegação de eventos significa:",
+        "options": [
+          { "key": "A", "text": "1 listener no container para vários itens" },
+          { "key": "B", "text": "1 listener para cada item sempre" }
+        ],
+        "answer": "A",
+        "explain": "Você trata cliques “subindo” pelo container."
+      },
+      {
+        "id": 4,
+        "question": "Para saber para onde navegar, um padrão é usar:",
+        "options": [
+          { "key": "A", "text": "data-to" },
+          { "key": "B", "text": "data-color" }
+        ],
+        "answer": "A",
+        "explain": "data-to guarda o destino."
+      },
+      {
+        "id": 5,
+        "question": "Para menu, a tag semântica correta é:",
+        "options": [
+          { "key": "A", "text": "<nav>" },
+          { "key": "B", "text": "<span>" }
+        ],
+        "answer": "A",
+        "explain": "nav representa navegação."
+      },
+      {
+        "id": 6,
+        "question": "aria-label no nav é útil quando:",
+        "options": [
+          { "key": "A", "text": "Você quer nomear a navegação (menu principal/rodapé)" },
+          { "key": "B", "text": "Você quer trocar a cor do menu" }
+        ],
+        "answer": "A",
+        "explain": "aria-label dá contexto para leitores de tela."
+      },
+      {
+        "id": 7,
+        "question": "O benefício de 1 listener é:",
+        "options": [
+          { "key": "A", "text": "Código mais escalável e fácil de manter" },
+          { "key": "B", "text": "Mais bugs e mais repetição" }
+        ],
+        "answer": "A",
+        "explain": "Menos repetição e manutenção mais simples."
+      },
+      {
+        "id": 8,
+        "question": "O JS lê data-to com:",
+        "options": [
+          { "key": "A", "text": "element.dataset.to" },
+          { "key": "B", "text": "element.style.to" }
+        ],
+        "answer": "A",
+        "explain": "dataset lê data-*."
+      },
+      {
+        "id": 9,
+        "question": "Se você tem um botão só com ícone, você deve usar:",
+        "options": [
+          { "key": "A", "text": "aria-label" },
+          { "key": "B", "text": "download" }
+        ],
+        "answer": "A",
+        "explain": "aria-label dá nome acessível ao botão."
+      },
+      {
+        "id": 10,
+        "question": "template + data-* + delegação é um padrão que ajuda:",
+        "options": [
+          { "key": "A", "text": "Escalabilidade do projeto" },
+          { "key": "B", "text": "Evitar usar HTML semântico" }
+        ],
+        "answer": "A",
+        "explain": "Esse padrão organiza e escala."
+      }
+    ]
+  },
+  "extra": {
+    "modelHtml": "<!doctype html>\n<html lang=\"pt-br\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Mini-projeto: Header reutilizável</title>\n    <meta name=\"description\" content=\"Exemplo de template + data-* + delegação de eventos para um header reutilizável.\" />\n  </head>\n  <body>\n    <!-- TEMPLATE: não renderiza sozinho -->\n    <template id=\"tpl-header\">\n      <header>\n        <div>\n          <strong>Minha Plataforma</strong>\n        </div>\n\n        <nav aria-label=\"Menu principal\" data-nav>\n          <ul>\n            <li><a href=\"#\" data-to=\"#/dashboard\">Dashboard</a></li>\n            <li><a href=\"#\" data-to=\"#/course/html/01-introducao\">Começar HTML</a></li>\n            <li><a href=\"#\" data-to=\"#/course/html/10-mini-projeto-formulario\">Mini-projeto</a></li>\n          </ul>\n        </nav>\n      </header>\n    </template>\n\n    <main id=\"app\">\n      <h1>Página de exemplo</h1>\n      <p>O header abaixo foi criado a partir de um template.</p>\n    </main>\n\n    <script>\n      // EXEMPLO DIDÁTICO (inline só para entender a ideia)\n      const app = document.querySelector('#app');\n      const tpl = document.querySelector('#tpl-header');\n\n      // 1) clonar o template\n      const clone = tpl.content.cloneNode(true);\n\n      // 2) inserir no topo do body\n      document.body.insertBefore(clone, app);\n\n      // 3) delegação de eventos: 1 listener no nav\n      const nav = document.querySelector('[data-nav]');\n      nav.addEventListener('click', (e) => {\n        const link = e.target.closest('[data-to]');\n        if (!link) return;\n        e.preventDefault();\n\n        const to = link.dataset.to;\n        // aqui você chamaria seu router/navigate\n        // navigate(to)\n        console.log('Navegar para:', to);\n      });\n    </script>\n  </body>\n</html>"
+  }
+}

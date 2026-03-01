@@ -1,0 +1,139 @@
+{
+  "id": "35-projeto-final-html",
+  "title": "Aula 35 — Projeto final: Landing + Conteúdo + Form (HTML profissional)",
+  "steps": [
+    {
+      "title": "O que você vai construir",
+      "body": "Esse é o **projeto final do módulo de HTML**.\n\nVocê vai montar uma página única (tipo landing page) com:\n- header + nav\n- seção hero (chamada principal)\n- seção de conteúdo (artigo curto)\n- cards (lista de recursos)\n- formulário de inscrição\n- FAQ com details/summary\n- rodapé com contato\n\nE tudo com:\n- semântica\n- acessibilidade\n- SEO básico\n- performance básica\n\nO objetivo é sair com um HTML que dá para mostrar com orgulho."
+    },
+    {
+      "title": "Regras do projeto (simples e profissionais)",
+      "body": "Siga essas regras:\n\n1) Use **tags semânticas** (header/nav/main/section/article/footer).\n2) Use **1 h1** na página.\n3) Imagens com `alt` (ou `alt=\"\"` se decorativas).\n4) Links com texto claro.\n5) Form com `label` + `for/id`.\n6) Use `time datetime` para data.\n7) Use `width/height` em imagens.\n8) Use `loading=\"lazy\"` em imagens fora do topo.\n\nSe você cumprir isso, seu HTML está no nível certo."
+    },
+    {
+      "title": "Estrutura sugerida (mapa da página)",
+      "body": "Estrutura:\n\n- `<header>`\n  - logo + nav\n- `<main>`\n  - `<section>` Hero\n  - `<section>` Recursos (cards)\n  - `<article>` Conteúdo (mini-artigo)\n  - `<section>` Formulário\n  - `<section>` FAQ (details)\n- `<footer>` Contato\n\nVocê vai ver tudo isso no modelo final."
+    },
+    {
+      "title": "Formulário (o coração da landing)",
+      "body": "O formulário vai ter:\n- nome\n- email\n- nível (select)\n- checkbox de termos (required)\n- botão submit\n\nTudo com label e validação básica."
+    },
+    {
+      "title": "FAQ com details (profissional sem JS)",
+      "body": "FAQ vai usar:\n- `<details>`\n- `<summary>`\n\nIsso é leve, acessível e organizado."
+    },
+    {
+      "title": "Checklist final (antes de considerar pronto)",
+      "body": "- [ ] head com title + description\n- [ ] 1 h1\n- [ ] nav com aria-label\n- [ ] imagens com alt + width/height\n- [ ] lazy apenas fora do topo\n- [ ] form com label/for/id\n- [ ] termos com required\n- [ ] sections com h2\n\nAgora veja o modelo completo e compare."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 35 (final HTML)",
+    "instructions": "A ou B. Esse quiz é o check final do módulo.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Uma landing page profissional deve ter:",
+        "options": [
+          { "key": "A", "text": "Semântica + a11y + SEO básico" },
+          { "key": "B", "text": "Só divs e br" }
+        ],
+        "answer": "A",
+        "explain": "O diferencial está nos fundamentos bem feitos."
+      },
+      {
+        "id": 2,
+        "question": "Boa prática comum de headings é:",
+        "options": [
+          { "key": "A", "text": "1 h1 e h2 para seções" },
+          { "key": "B", "text": "Vários h1 para tudo" }
+        ],
+        "answer": "A",
+        "explain": "Hierarquia clara melhora leitura e SEO."
+      },
+      {
+        "id": 3,
+        "question": "Form acessível precisa de:",
+        "options": [
+          { "key": "A", "text": "label for + input id" },
+          { "key": "B", "text": "placeholder apenas" }
+        ],
+        "answer": "A",
+        "explain": "Label é essencial."
+      },
+      {
+        "id": 4,
+        "question": "FAQ sem JS pode ser feito com:",
+        "options": [
+          { "key": "A", "text": "details/summary" },
+          { "key": "B", "text": "table/tr/td" }
+        ],
+        "answer": "A",
+        "explain": "details/summary já dá abre/fecha."
+      },
+      {
+        "id": 5,
+        "question": "Imagens devem ter:",
+        "options": [
+          { "key": "A", "text": "alt (ou alt=\"\" se decorativa)" },
+          { "key": "B", "text": "Somente class" }
+        ],
+        "answer": "A",
+        "explain": "Alt é acessibilidade."
+      },
+      {
+        "id": 6,
+        "question": "width/height em imagens ajuda a:",
+        "options": [
+          { "key": "A", "text": "Evitar layout pular" },
+          { "key": "B", "text": "Criar um link" }
+        ],
+        "answer": "A",
+        "explain": "Reserva espaço e reduz CLS."
+      },
+      {
+        "id": 7,
+        "question": "Lazy loading é melhor para imagens:",
+        "options": [
+          { "key": "A", "text": "Fora da tela inicial" },
+          { "key": "B", "text": "A principal do topo" }
+        ],
+        "answer": "A",
+        "explain": "Lazy é para abaixo da dobra."
+      },
+      {
+        "id": 8,
+        "question": "Nav com aria-label serve para:",
+        "options": [
+          { "key": "A", "text": "Dar contexto de menu para leitores de tela" },
+          { "key": "B", "text": "Trocar cor do menu" }
+        ],
+        "answer": "A",
+        "explain": "Acessibilidade."
+      },
+      {
+        "id": 9,
+        "question": "Meta description no head serve para:",
+        "options": [
+          { "key": "A", "text": "Resumo do conteúdo (SEO)" },
+          { "key": "B", "text": "Estilizar botões" }
+        ],
+        "answer": "A",
+        "explain": "Description é metadado."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo final do HTML é:",
+        "options": [
+          { "key": "A", "text": "Significado/estrutura do conteúdo" },
+          { "key": "B", "text": "Fazer animações complexas" }
+        ],
+        "answer": "A",
+        "explain": "Animações são CSS/JS; HTML é estrutura."
+      }
+    ]
+  },
+  "extra": {
+    "modelHtml": "<!doctype html>\n<html lang=\"pt-br\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Aprenda HTML do zero — Projeto final</title>\n    <meta name=\"description\" content=\"Landing page exemplo com semântica, acessibilidade, SEO básico e formulário — projeto final do módulo de HTML.\" />\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n  </head>\n  <body>\n    <header>\n      <div>\n        <strong>Minha Plataforma</strong>\n      </div>\n\n      <nav aria-label=\"Menu principal\">\n        <ul>\n          <li><a href=\"#inicio\">Início</a></li>\n          <li><a href=\"#recursos\">Recursos</a></li>\n          <li><a href=\"#conteudo\">Conteúdo</a></li>\n          <li><a href=\"#inscricao\">Inscrição</a></li>\n          <li><a href=\"#faq\">FAQ</a></li>\n        </ul>\n      </nav>\n    </header>\n\n    <main id=\"inicio\">\n      <section>\n        <h1>Aprenda HTML do zero, do jeito certo</h1>\n        <p>\n          Uma trilha completa com aulas, quizzes e projetos.\n          Comece hoje e evolua com consistência.\n        </p>\n        <p>\n          <a href=\"#inscricao\">Quero me inscrever</a>\n        </p>\n        <figure>\n          <img src=\"./assets/img/hero.png\" alt=\"Ilustração de uma página HTML com estrutura semântica\" width=\"900\" height=\"450\" />\n          <figcaption>Estrutura bem feita deixa tudo mais fácil no CSS e no JS.</figcaption>\n        </figure>\n      </section>\n\n      <section id=\"recursos\">\n        <h2>O que você vai dominar</h2>\n        <ul>\n          <li><strong>Semântica:</strong> header, nav, main, article, footer.</li>\n          <li><strong>Acessibilidade:</strong> alt, labels, ARIA essencial.</li>\n          <li><strong>SEO básico:</strong> title e description no head.</li>\n          <li><strong>Performance:</strong> imagens otimizadas e carregamento correto.</li>\n        </ul>\n      </section>\n\n      <article id=\"conteudo\">\n        <header>\n          <h2>Mini-artigo: por que HTML bem feito muda tudo</h2>\n          <p>\n            Publicado em <time datetime=\"2026-02-28\">28/02/2026</time>\n          </p>\n        </header>\n\n        <p>\n          HTML é a base. Se você estrutura bem, o CSS fica fácil e o JS fica limpo.\n          Se você estrutura mal, tudo vira gambiarra.\n        </p>\n\n        <details>\n          <summary>Ver exemplo de estrutura</summary>\n          <pre><code class=\"language-html\">&lt;main&gt;\n  &lt;article&gt;\n    &lt;h1&gt;Título&lt;/h1&gt;\n    &lt;p&gt;Texto&lt;/p&gt;\n  &lt;/article&gt;\n&lt;/main&gt;</code></pre>\n        </details>\n\n        <blockquote>\n          <p>HTML não é sobre aparência. É sobre significado.</p>\n        </blockquote>\n\n        <footer>\n          <p>Fonte: <cite>Conceitos fundamentais de HTML</cite>.</p>\n        </footer>\n      </article>\n\n      <section id=\"inscricao\">\n        <h2>Inscreva-se para receber as próximas aulas</h2>\n        <form action=\"#\" method=\"post\">\n          <label for=\"nome\">Nome</label>\n          <input id=\"nome\" name=\"nome\" type=\"text\" autocomplete=\"name\" required />\n\n          <label for=\"email\">Email</label>\n          <input id=\"email\" name=\"email\" type=\"email\" autocomplete=\"email\" required />\n\n          <label for=\"nivel\">Nível</label>\n          <select id=\"nivel\" name=\"nivel\" required>\n            <option value=\"\" selected>Selecione...</option>\n            <option value=\"iniciante\">Iniciante</option>\n            <option value=\"intermediario\">Intermediário</option>\n            <option value=\"avancado\">Avançado</option>\n          </select>\n\n          <input id=\"termos\" name=\"termos\" type=\"checkbox\" required />\n          <label for=\"termos\">Eu aceito os termos</label>\n\n          <button type=\"submit\">Enviar</button>\n        </form>\n      </section>\n\n      <section id=\"faq\">\n        <h2>FAQ</h2>\n\n        <details>\n          <summary>Preciso saber CSS antes?</summary>\n          <p>Não. Primeiro HTML bem feito, depois CSS.</p>\n        </details>\n\n        <details>\n          <summary>Posso aprender rápido?</summary>\n          <p>Sim, se praticar um pouco todo dia e fizer os projetos.</p>\n        </details>\n\n        <details>\n          <summary>Isso serve para trabalho?</summary>\n          <p>Sim. Fundamentos bem feitos são o que mais faltam em iniciantes.</p>\n        </details>\n      </section>\n    </main>\n\n    <footer>\n      <address>\n        Contato: <a href=\"mailto:contato@exemplo.com\">contato@exemplo.com</a>\n      </address>\n      <p>&copy; 2026 — Minha Plataforma</p>\n      <p><a href=\"#inicio\">Voltar ao topo</a></p>\n    </footer>\n  </body>\n</html>"
+  }
+}

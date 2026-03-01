@@ -1,0 +1,148 @@
+{
+  "id": "21-imagens-avancadas",
+  "title": "Aula 21 — Imagens avançadas (lazy, width/height, srcset, picture)",
+  "steps": [
+    {
+      "title": "Por que ‘imagem avançada’ existe",
+      "body": "Imagem é uma das maiores causas de site lento.\n\nQuando você aprende alguns detalhes, você ganha:\n- performance (carrega mais rápido)\n- menos “pulo” de layout\n- melhor experiência no celular\n- melhor acessibilidade\n\nHoje você vai aprender:\n- `loading=\"lazy\"`\n- `width/height` (evitar layout shift)\n- `srcset/sizes` (conceito)\n- `picture/source` (formatos e responsivo)\n- boas práticas de `alt` e `figure`"
+    },
+    {
+      "title": "alt (revisão rápida, porque é obrigatório)",
+      "body": "Regra:\n- imagem importante → alt descreve\n- imagem decorativa → `alt=\"\"`\n\nExemplo:\n- `<img src=\"produto.jpg\" alt=\"Vestido floral azul\">`\n\nSem alt, leitor de tela perde contexto."
+    },
+    {
+      "title": "loading=\"lazy\" (carregar só quando precisar)",
+      "body": "Você pode adiar o carregamento de imagens fora da tela com:\n\n- `loading=\"lazy\"`\n\nExemplo:\n- `<img src=\"foto.jpg\" alt=\"...\" loading=\"lazy\">`\n\nIsso melhora performance em páginas longas.\n\nImportante:\n- Para a primeira imagem (acima da dobra), geralmente NÃO use lazy."
+    },
+    {
+      "title": "width e height (evita o ‘pulo’ da página)",
+      "body": "Quando o navegador sabe o tamanho da imagem antes de baixar, ele reserva espaço.\n\nIsso evita o layout “pular” quando a imagem carrega.\n\nExemplo:\n- `<img src=\"banner.jpg\" alt=\"Banner\" width=\"800\" height=\"400\">`\n\nDepois o CSS pode deixar responsivo.\n\nRegra:\n- sempre que puder, defina width e height."
+    },
+    {
+      "title": "Figure/figcaption (imagem com legenda)",
+      "body": "Se a imagem precisa de legenda/contexto, use:\n\n`<figure>`\n  `<img ...>`\n  `<figcaption>Legenda…</figcaption>`\n`</figure>`\n\nIsso deixa o HTML mais semântico do que usar um parágrafo solto."
+    },
+    {
+      "title": "srcset e sizes (conceito — imagem certa para cada tela)",
+      "body": "`srcset` permite oferecer várias resoluções da mesma imagem.\n\nA ideia:\n- telas pequenas baixam uma imagem menor\n- telas grandes baixam uma maior\n\nExemplo (conceito):\n`<img src=\"foto-800.jpg\"`\n`     srcset=\"foto-400.jpg 400w, foto-800.jpg 800w, foto-1200.jpg 1200w\"`\n`     sizes=\"(max-width: 600px) 400px, 800px\"`\n`     alt=\"...\">`\n\nIsso é mais avançado, mas muito usado em sites grandes."
+    },
+    {
+      "title": "picture/source (formatos e variações)",
+      "body": "O `<picture>` permite escolher fontes diferentes dependendo de condições.\n\nUso comum:\n- servir WebP/AVIF quando suportado\n- cair para JPG/PNG como fallback\n\nExemplo:\n`<picture>`\n  `<source srcset=\"foto.webp\" type=\"image/webp\">`\n  `<img src=\"foto.jpg\" alt=\"...\">`\n`</picture>`\n\nSe o navegador suportar WebP, ele usa. Se não, usa JPG."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "- não colocar alt\n- usar lazy na imagem principal (piora o LCP)\n- não informar width/height e o layout fica pulando\n- colocar imagem gigante para todo mundo\n\nRegra prática:\n- imagem principal bem otimizada\n- demais imagens com lazy\n- sempre que puder: width/height"
+    },
+    {
+      "title": "Mini-checklist profissional",
+      "body": "Antes de publicar, confira:\n- alt correto\n- lazy só para imagens fora do topo\n- width/height definidos (se possível)\n- arquivos otimizados (tamanho correto)\n- figure/figcaption se precisa de legenda\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 21",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "loading=\"lazy\" serve para:",
+        "options": [
+          { "key": "A", "text": "Carregar imagens mais tarde (quando necessário)" },
+          { "key": "B", "text": "Aumentar a qualidade da imagem automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Lazy loading adia carregamento de imagens fora da tela."
+      },
+      {
+        "id": 2,
+        "question": "Você deve evitar lazy na imagem principal porque…",
+        "options": [
+          { "key": "A", "text": "Pode atrasar a imagem mais importante (piora performance percebida)" },
+          { "key": "B", "text": "Lazy é proibido pelo HTML" }
+        ],
+        "answer": "A",
+        "explain": "A imagem principal deve carregar rápido (LCP)."
+      },
+      {
+        "id": 3,
+        "question": "width/height em imagens ajuda a:",
+        "options": [
+          { "key": "A", "text": "Evitar o layout ‘pular’ quando a imagem carrega" },
+          { "key": "B", "text": "Criar um link automático" }
+        ],
+        "answer": "A",
+        "explain": "O navegador reserva espaço e reduz layout shift."
+      },
+      {
+        "id": 4,
+        "question": "Se a imagem é decorativa, o alt recomendado é:",
+        "options": [
+          { "key": "A", "text": "alt=\"\"" },
+          { "key": "B", "text": "Remover alt" }
+        ],
+        "answer": "A",
+        "explain": "Alt vazio indica imagem decorativa para leitores de tela."
+      },
+      {
+        "id": 5,
+        "question": "Para imagem com legenda/contexto, use:",
+        "options": [
+          { "key": "A", "text": "<figure> e <figcaption>" },
+          { "key": "B", "text": "<hr> e <br>" }
+        ],
+        "answer": "A",
+        "explain": "Figure agrupa e figcaption dá legenda."
+      },
+      {
+        "id": 6,
+        "question": "srcset/sizes servem para:",
+        "options": [
+          { "key": "A", "text": "Entregar tamanhos diferentes da imagem conforme a tela" },
+          { "key": "B", "text": "Trocar a cor do fundo da página" }
+        ],
+        "answer": "A",
+        "explain": "Isso melhora performance em mobile/desktop."
+      },
+      {
+        "id": 7,
+        "question": "picture/source é usado com frequência para:",
+        "options": [
+          { "key": "A", "text": "Servir formatos modernos (WebP/AVIF) com fallback" },
+          { "key": "B", "text": "Criar tabelas automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Picture permite escolher fonte por tipo/suporte."
+      },
+      {
+        "id": 8,
+        "question": "Qual é a tag correta para imagem?",
+        "options": [
+          { "key": "A", "text": "<img>" },
+          { "key": "B", "text": "<image>" }
+        ],
+        "answer": "A",
+        "explain": "<img> é a tag padrão."
+      },
+      {
+        "id": 9,
+        "question": "O maior erro de acessibilidade em imagens é:",
+        "options": [
+          { "key": "A", "text": "Não usar alt (ou usar alt errado)" },
+          { "key": "B", "text": "Usar width e height" }
+        ],
+        "answer": "A",
+        "explain": "Alt dá contexto para leitor de tela."
+      },
+      {
+        "id": 10,
+        "question": "Em páginas longas, uma boa prática é:",
+        "options": [
+          { "key": "A", "text": "Usar lazy nas imagens fora da tela" },
+          { "key": "B", "text": "Desativar todas as imagens" }
+        ],
+        "answer": "A",
+        "explain": "Lazy melhora performance sem remover conteúdo."
+      }
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+{
+    "id": "03-links-imagens",
+    "title": "Aula 03 — Links e Imagens (começa a virar site de verdade)",
+    "steps": [
+        {
+            "title": "Por que links e imagens mudam o jogo",
+            "body": "Até agora você viu estrutura e texto.\n\nQuando você aprende **links** e **imagens**, seu HTML começa a parecer um site real.\n\n- Link conecta páginas e conteúdos (web = hipertexto)\n- Imagem dá contexto, identidade e comunicação visual\n\nHoje você vai aprender o essencial sem confusão."
+        },
+        {
+            "title": "A tag <a> (link) — a base da web",
+            "body": "Um link é a tag `<a>`.\n\nEla tem um atributo obrigatório na prática: `href`.\n\nExemplo:\n- `<a href=\"https://google.com\">Ir para o Google</a>`\n\nO texto entre `<a>...</a>` é o que aparece clicável."
+        },
+        {
+            "title": "href: absoluto vs relativo (isso confunde iniciantes)",
+            "body": "Existem dois tipos comuns de endereço no `href`:\n\n1) **Absoluto** (URL completa):\n- `https://meusite.com/pagina`\n\n2) **Relativo** (caminho dentro do seu projeto):\n- `./sobre.html` (na mesma pasta)\n- `./pages/contato.html` (dentro de outra pasta)\n\nRegra simples:\n- Se começa com `http`, é absoluto.\n- Se começa com `./` ou `../` ou um nome de arquivo, é relativo."
+        },
+        {
+            "title": "target=\"_blank\" e rel (segurança básica)",
+            "body": "Se você quer abrir o link em outra aba:\n- `target=\"_blank\"`\n\nBoa prática de segurança junto:\n- `rel=\"noopener noreferrer\"`\n\nExemplo:\n- `<a href=\"https://example.com\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir</a>`"
+        },
+        {
+            "title": "Links internos (âncoras) — navegar dentro da página",
+            "body": "Você pode criar links que pulam para uma parte da própria página.\n\nPasso 1: dê um `id` para um elemento:\n- `<h2 id=\"contato\">Contato</h2>`\n\nPasso 2: link para esse id usando `#`:\n- `<a href=\"#contato\">Ir para Contato</a>`\n\nIsso é muito usado em páginas longas."
+        },
+        {
+            "title": "A tag <img> (imagem) — atributos essenciais",
+            "body": "Imagem é a tag `<img>`.\n\nEla não tem fechamento e usa atributos:\n- `src` = caminho da imagem\n- `alt` = texto alternativo (acessibilidade)\n\nExemplo:\n- `<img src=\"./assets/img/logo.png\" alt=\"Logo da empresa\">`\n\nO `alt` é obrigatório na prática: ajuda leitores de tela e também quando a imagem não carrega."
+        },
+        {
+            "title": "Caminho da imagem (src) — relativo na maioria dos casos",
+            "body": "No seu projeto, normalmente você vai usar caminhos relativos.\n\nExemplos:\n- `src=\"./img/foto.jpg\"` (pasta img dentro da mesma pasta)\n- `src=\"./assets/img/foto.jpg\"` (mais organizado)\n\nDica de organização:\n- guarde imagens em `assets/img`.\n\nSe a imagem não aparecer, 90% das vezes é caminho errado."
+        },
+        {
+            "title": "Tamanho: width/height (só pra começar) + CSS depois",
+            "body": "Você pode controlar tamanho no HTML com:\n- `width=\"300\"`\n- `height=\"200\"`\n\nMas o mais profissional é controlar pelo CSS.\n\nPor enquanto, use width quando precisar testar rapidamente.\n\nExemplo:\n- `<img src=\"...\" alt=\"...\" width=\"240\">`"
+        },
+        {
+            "title": "Erro comum: imagem sem alt e link sem texto claro",
+            "body": "Dois erros comuns:\n\n1) Imagem sem `alt`:\n- ruim pra acessibilidade.\n\n2) Link com texto ruim:\n- “clique aqui” é fraco.\n\nPrefira:\n- “Ver catálogo de produtos”\n- “Abrir documentação do HTML”\n\nIsso deixa seu site mais profissional."
+        },
+        {
+            "title": "Mini modelo pronto (pra copiar e entender)",
+            "body": "Um exemplo completo juntando tudo:\n\n- Link externo com segurança\n- Link interno\n- Imagem com alt\n\nVocê vai praticar isso no quiz agora."
+        }
+    ],
+    "quiz": {
+        "title": "Quiz (10 perguntas) — Aula 03",
+        "instructions": "A ou B. Responda e leia a explicação. O objetivo é entender o porquê.",
+        "questions": [
+            {
+                "id": 1,
+                "question": "Qual tag cria um link clicável?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "<a>"
+                    },
+                    {
+                        "key": "B",
+                        "text": "<link>"
+                    }
+                ],
+                "answer": "A",
+                "explain": "<a> cria link no conteúdo da página. <link> é usado no <head> (ex.: CSS)."
+            },
+            {
+                "id": 2,
+                "question": "Qual atributo define o destino de um link?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "href"
+                    },
+                    {
+                        "key": "B",
+                        "text": "src"
+                    }
+                ],
+                "answer": "A",
+                "explain": "href é para links (<a>). src é para recursos como imagens (<img>)."
+            },
+            {
+                "id": 3,
+                "question": "Um link absoluto normalmente começa com…",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "http:// ou https://"
+                    },
+                    {
+                        "key": "B",
+                        "text": "./"
+                    }
+                ],
+                "answer": "A",
+                "explain": "URL completa (http/https) é endereço absoluto."
+            },
+            {
+                "id": 4,
+                "question": "Um link relativo é mais comum quando…",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Aponta para páginas dentro do seu projeto"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Aponta para um site externo"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Relativo é caminho interno do projeto (./pagina.html)."
+            },
+            {
+                "id": 5,
+                "question": "Para abrir um link em nova aba, você usa:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "target=\"_blank\""
+                    },
+                    {
+                        "key": "B",
+                        "text": "alt=\"_blank\""
+                    }
+                ],
+                "answer": "A",
+                "explain": "target controla onde abre. alt é texto alternativo de imagem."
+            },
+            {
+                "id": 6,
+                "question": "Com target=\"_blank\", uma boa prática de segurança é usar:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "rel=\"noopener noreferrer\""
+                    },
+                    {
+                        "key": "B",
+                        "text": "rel=\"download\""
+                    }
+                ],
+                "answer": "A",
+                "explain": "noopener/noreferrer evita problemas de segurança ao abrir nova aba."
+            },
+            {
+                "id": 7,
+                "question": "Qual tag exibe uma imagem?",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "<img>"
+                    },
+                    {
+                        "key": "B",
+                        "text": "<image>"
+                    }
+                ],
+                "answer": "A",
+                "explain": "A tag correta é <img>. Não existe <image> em HTML padrão."
+            },
+            {
+                "id": 8,
+                "question": "O atributo alt serve para…",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Descrever a imagem (acessibilidade) e aparecer se ela não carregar"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Definir o endereço da imagem"
+                    }
+                ],
+                "answer": "A",
+                "explain": "alt é descrição. O endereço é src."
+            },
+            {
+                "id": 9,
+                "question": "Link interno (âncora) usa:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "href=\"#id\""
+                    },
+                    {
+                        "key": "B",
+                        "text": "src=\"#id\""
+                    }
+                ],
+                "answer": "A",
+                "explain": "Âncora é href com #, apontando para um id existente."
+            },
+            {
+                "id": 10,
+                "question": "Se a imagem não aparece, o motivo mais comum é:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Caminho (src) errado"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Faltou <title> no head"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Na maioria das vezes é path errado. Confira pastas e nomes."
+            }
+        ]
+    }
+}

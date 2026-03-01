@@ -1,0 +1,156 @@
+{
+  "id": "16-head-metadados",
+  "title": "Aula 16 — Head e Metadados (charset, viewport, favicon, OG, robots)",
+  "steps": [
+    {
+      "title": "Por que o <head> é importante",
+      "body": "O `<head>` é a parte da página que **não aparece** diretamente no conteúdo, mas controla:\n- título da aba\n- responsividade\n- descrição para Google\n- ícone (favicon)\n- como a página é compartilhada (Open Graph)\n\nUm head bem feito dá cara de site profissional."
+    },
+    {
+      "title": "1) charset: acentos e caracteres",
+      "body": "Use sempre:\n- `<meta charset=\"UTF-8\">`\n\nIsso evita problemas com acentos (ç, ã, é…).\n\nBoa prática: coloque isso no começo do head."
+    },
+    {
+      "title": "2) viewport: responsividade no celular",
+      "body": "Use sempre:\n- `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`\n\nSem isso, o site pode ficar “zoom estranho” no celular.\n\nMesmo antes do CSS responsivo, isso é obrigatório na prática."
+    },
+    {
+      "title": "3) title: título da aba (e do resultado no Google)",
+      "body": "`<title>` define o título:\n- da aba do navegador\n- muitas vezes do resultado do Google\n\nEvite títulos genéricos como “Home”.\n\nExemplo bom:\n- `Curso de HTML — Aula 16 (Head e Metadados)`"
+    },
+    {
+      "title": "4) meta description: resumo para busca",
+      "body": "Uma meta muito útil:\n\n`<meta name=\"description\" content=\"Aprenda HTML do básico ao avançado com aulas e quizzes.\">`\n\nEla pode aparecer como o “texto” do resultado no Google.\n\nBoas práticas:\n- descreva o conteúdo real\n- não faça spam\n- seja claro"
+    },
+    {
+      "title": "5) favicon: o ícone da aba",
+      "body": "Favicon é o ícone pequeno na aba.\n\nComum:\n`<link rel=\"icon\" href=\"/favicon.ico\">`\n\nOu PNG:\n`<link rel=\"icon\" type=\"image/png\" href=\"/assets/favicon.png\">`\n\nDepois você coloca o arquivo dentro do seu projeto."
+    },
+    {
+      "title": "6) robots: permitir ou bloquear indexação (conceito)",
+      "body": "Você pode orientar robôs com:\n`<meta name=\"robots\" content=\"index,follow\">`\n\nOu bloquear:\n`<meta name=\"robots\" content=\"noindex,nofollow\">`\n\n⚠️ Em projetos reais, isso é sensível. Não use `noindex` sem saber.\n\nNo seu caso (plataforma privada), pode fazer sentido bloquear."
+    },
+    {
+      "title": "7) Open Graph: como aparece ao compartilhar no WhatsApp",
+      "body": "Open Graph define a “capa” quando você compartilha o link.\n\nExemplos:\n- `og:title`\n- `og:description`\n- `og:image`\n\nExemplo:\n`<meta property=\"og:title\" content=\"Curso de HTML\">`\n\nIsso deixa o compartilhamento bem mais profissional."
+    },
+    {
+      "title": "8) preconnect/preload (noção, sem exagero)",
+      "body": "Em performance, existem links úteis:\n\n- `preconnect`: prepara conexão com domínio\n- `preload`: carrega um recurso cedo\n\nIsso é avançado.\n\nPor enquanto, só saiba que existe e que você deve usar com cuidado (porque pode piorar se usar errado)."
+    },
+    {
+      "title": "Modelo de head profissional (base)",
+      "body": "Modelo que você pode copiar (adaptando):\n\n`<head>`\n  `<meta charset=\"UTF-8\">`\n  `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`\n  `<title>Minha Página</title>`\n  `<meta name=\"description\" content=\"Descrição curta e real da página.\">`\n  `<link rel=\"icon\" href=\"/favicon.ico\">`\n\n  `<meta property=\"og:title\" content=\"Minha Página\">`\n  `<meta property=\"og:description\" content=\"Descrição para compartilhamento.\">`\n  `<meta property=\"og:image\" content=\"https://site.com/capa.png\">`\n`</head>`"
+    },
+    {
+      "title": "Resumo",
+      "body": "- charset (UTF-8)\n- viewport (responsivo)\n- title (aba/Google)\n- description (resumo)\n- favicon (ícone)\n- robots (index/noindex)\n- Open Graph (compartilhamento)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 16",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O <head> serve principalmente para…",
+        "options": [
+          { "key": "A", "text": "Configurações/metadados da página" },
+          { "key": "B", "text": "Conteúdo visível (texto, imagens)" }
+        ],
+        "answer": "A",
+        "explain": "Conteúdo visível fica no body. Head é configuração."
+      },
+      {
+        "id": 2,
+        "question": "Qual meta evita problemas com acentos?",
+        "options": [
+          { "key": "A", "text": "<meta charset=\"UTF-8\">" },
+          { "key": "B", "text": "<meta name=\"accent\" content=\"on\">" }
+        ],
+        "answer": "A",
+        "explain": "UTF-8 define codificação correta."
+      },
+      {
+        "id": 3,
+        "question": "Qual meta é essencial para responsividade no celular?",
+        "options": [
+          { "key": "A", "text": "meta viewport" },
+          { "key": "B", "text": "meta robots" }
+        ],
+        "answer": "A",
+        "explain": "Viewport controla escala/layout no mobile."
+      },
+      {
+        "id": 4,
+        "question": "O <title> aparece em:",
+        "options": [
+          { "key": "A", "text": "Aba do navegador (e muitas vezes no Google)" },
+          { "key": "B", "text": "Dentro do texto da página automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Title não aparece no body (a menos que você escreva)."
+      },
+      {
+        "id": 5,
+        "question": "Meta description serve para:",
+        "options": [
+          { "key": "A", "text": "Resumo da página para busca" },
+          { "key": "B", "text": "Definir cor do fundo" }
+        ],
+        "answer": "A",
+        "explain": "Description é resumo; cor é CSS."
+      },
+      {
+        "id": 6,
+        "question": "Favicon é:",
+        "options": [
+          { "key": "A", "text": "Ícone da aba do navegador" },
+          { "key": "B", "text": "Um botão de enviar formulário" }
+        ],
+        "answer": "A",
+        "explain": "Favicon é o ícone pequeno da aba."
+      },
+      {
+        "id": 7,
+        "question": "Meta robots noindex faz:",
+        "options": [
+          { "key": "A", "text": "Pedir para não indexar a página" },
+          { "key": "B", "text": "Aumentar performance automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Robots controla indexação/crawling."
+      },
+      {
+        "id": 8,
+        "question": "Open Graph serve para:",
+        "options": [
+          { "key": "A", "text": "Definir como a página aparece ao compartilhar" },
+          { "key": "B", "text": "Validar formulário automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "OG controla título/descrição/imagem do compartilhamento."
+      },
+      {
+        "id": 9,
+        "question": "Qual atributo é usado em meta Open Graph?",
+        "options": [
+          { "key": "A", "text": "property=\"og:...\"" },
+          { "key": "B", "text": "name=\"og:...\"" }
+        ],
+        "answer": "A",
+        "explain": "OG usa property (ex.: og:title)."
+      },
+      {
+        "id": 10,
+        "question": "preconnect/preload são:",
+        "options": [
+          { "key": "A", "text": "Técnicas de performance que exigem cuidado" },
+          { "key": "B", "text": "Tags obrigatórias em todo site" }
+        ],
+        "answer": "A",
+        "explain": "São avançadas e não obrigatórias; usar errado pode piorar."
+      }
+    ]
+  }
+}
