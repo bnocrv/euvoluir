@@ -52,3 +52,34 @@ code, pre { font-family: var(--mono); }
   outline: 2px solid rgba(139,233,253,.72);
   outline-offset: 2px;
 }
+
+@media (max-width: 980px){
+  html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  :where(
+    h1, h2, h3, h4, h5, h6,
+    p, span, a, button, label, li,
+    strong, em, small, blockquote, cite, figcaption, summary,
+    td, th,
+    .muted, .badge, .btn, .brand, .course-title,
+    .course-code, .lesson-title, .step-heading, .step-title,
+    .quiz-question, .quiz-feedback, .quiz-summary
+  ){
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .badge,
+  .btn{
+    white-space: normal;
+  }
+
+  pre{
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
