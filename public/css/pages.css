@@ -87,6 +87,10 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  min-width: 0;
+}
+.lesson-main > div{
+  min-width: 0;
 }
 .lesson-state{
   display: inline-flex;
@@ -228,5 +232,26 @@
   }
   .mobile-trail-backdrop.open{
     display: block;
+  }
+
+  /* evita overflow horizontal e garante quebra de linha no mobile */
+  .lesson-title,
+  .step-heading,
+  .course-code,
+  .lesson-state-text,
+  .quiz-question,
+  .quiz-feedback,
+  .quiz-summary,
+  .md p,
+  .md li,
+  .md strong{
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .lesson-shell .badge{
+    white-space: normal;
+    text-align: center;
   }
 }
