@@ -244,14 +244,39 @@ export async function LessonPage(app) {
 
             ${quizHTML}
           </section>
-
         </div>
+        <button class="mobile-trail-fab" id="btn-toggle-sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Abrir trilha de aulas">></button>
+        <div class="mobile-trail-backdrop" id="mobile-trail-backdrop"></div>
       </main>
     </div>
   `;
 
   highlightAllInside(app);
   bindHeaderEvents(app);
+
+  const sidebar = app.querySelector("#sidebar");
+  const toggleSidebarBtn = app.querySelector("#btn-toggle-sidebar");
+  const mobileTrailBackdrop = app.querySelector("#mobile-trail-backdrop");
+  if (sidebar && toggleSidebarBtn) {
+    const syncToggleUI = (isOpen) => {
+      toggleSidebarBtn.textContent = isOpen ? "<" : ">";
+      toggleSidebarBtn.setAttribute("aria-expanded", String(isOpen));
+      toggleSidebarBtn.setAttribute("aria-label", isOpen ? "Fechar trilha de aulas" : "Abrir trilha de aulas");
+      if (mobileTrailBackdrop) mobileTrailBackdrop.classList.toggle("open", isOpen);
+    };
+
+    toggleSidebarBtn.addEventListener("click", () => {
+      const isOpen = sidebar.classList.toggle("open");
+      syncToggleUI(isOpen);
+    });
+
+    if (mobileTrailBackdrop) {
+      mobileTrailBackdrop.addEventListener("click", () => {
+        sidebar.classList.remove("open");
+        syncToggleUI(false);
+      });
+    }
+  }
 
   app.querySelector("#back-dashboard").addEventListener("click", () => navigate("/dashboard"));
 
