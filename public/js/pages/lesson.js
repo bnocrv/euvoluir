@@ -106,7 +106,7 @@ export async function LessonPage(app) {
       const statusText = done ? "Aula concluída" : "Aula pendente";
       return `
         <a class="nav-item ${active}" href="#/course/${courseId}/${l.id}">
-          <div class="row row-between items-start">
+          <div class="row items-start">
             <div class="lesson-main">
               <span class="lesson-state ${statusClass}" aria-hidden="true">${statusIcon}</span>
               <div>
@@ -114,7 +114,6 @@ export async function LessonPage(app) {
                 <span class="lesson-state-text">${statusText}</span>
               </div>
             </div>
-            <span class="badge">${esc(l.id)}</span>
           </div>
         </a>
       `;
@@ -228,7 +227,6 @@ export async function LessonPage(app) {
                     Leia com calma. No final, faça o quiz para fixar.
                   </div>
                 </div>
-                <span class="badge">${esc(lesson.id)}</span>
               </div>
 
               <div class="row row-wrap mt-12">
