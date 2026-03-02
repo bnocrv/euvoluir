@@ -1,0 +1,151 @@
+{
+  "id": "34-manipulacao-avancada-dom",
+  "title": "Aula 34 — Renderização: criar HTML por JS (sem bagunça) + templates",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a renderizar UI com JavaScript de forma organizada.\n\nNo final você vai conseguir:\n1) Entender 2 formas de render: DOM API vs template string\n2) Evitar innerHTML perigoso/caótico\n3) Usar DocumentFragment para performance\n4) Fazer funções de template (componentes simples)\n5) Montar render com estados (vazio/loading/erro)\n\nIsso é o que frameworks fazem. Você vai aprender a base manual."
+    },
+    {
+      "title": "Dois jeitos de renderizar (e por que isso importa)",
+      "body": "Você pode criar UI de 2 jeitos:\n\nA) DOM API (createElement/append)\n- mais verboso\n- mais seguro\n- evita injeção\n\nB) Template string (innerHTML)\n- rápido de escrever\n- pode virar bagunça\n- perigoso com conteúdo do usuário\n\nRegra prática:\n- dados do usuário → prefira textContent / DOM API\n- templates controlados → pode usar innerHTML com cuidado"
+    },
+    {
+      "title": "Padrão: função render única que chama templates menores",
+      "body": "Em vez de montar tudo numa função gigante:\n\n- render() decide o estado (loading/erro/vazio/sucesso)\n- renderLista(items) desenha a lista\n- templateItem(item) cria um item\n\nIsso é 'componentização' simples."
+    },
+    {
+      "title": "DocumentFragment: montar tudo fora da tela e só depois colocar",
+      "body": "Quando você adiciona muitos elementos um por um no DOM,\n- pode ficar mais lento\n\nDocumentFragment é um 'container invisível'.\nVocê monta tudo nele, e no final faz 1 append.\n\nExemplo:\nconst frag = document.createDocumentFragment();\nfor (...) frag.appendChild(li);\nlista.innerHTML = '';\nlista.appendChild(frag);\n\nIsso reduz trabalho do navegador."
+    },
+    {
+      "title": "Template com DOM API (seguro e legível)",
+      "body": "Exemplo de item:\n\nfunction createUserItem(u) {\n  const li = document.createElement('li');\n  li.className = 'item';\n  li.dataset.id = String(u.id);\n\n  const strong = document.createElement('strong');\n  strong.textContent = u.name;\n\n  const email = document.createElement('span');\n  email.className = 'muted';\n  email.textContent = u.email;\n\n  li.append(strong, email);\n  return li;\n}\n\nIsso é seguro porque:\n- textContent não interpreta HTML."
+    },
+    {
+      "title": "Template string (quando faz sentido) + escape mental",
+      "body": "Template string é rápido:\n\nfunction userHTML(u) {\n  return `\n    <li class=\"item\" data-id=\"${u.id}\">\n      <strong>${u.name}</strong>\n      <span class=\"muted\">${u.email}</span>\n    </li>\n  `;\n}\n\nMas cuidado:\n- se u.name vier do usuário e tiver '<script>'...\n- innerHTML pode executar/injetar\n\nRegra prática:\n- se o dado é externo/não confiável, use DOM API.\n\nHoje, vamos preferir DOM API."
+    },
+    {
+      "title": "Render com estados (o que deixa 'app real')",
+      "body": "Seu render deve considerar:\n\n1) loading\n- mostra 'Carregando...'\n\n2) error\n- mostra mensagem\n\n3) vazio\n- 'Nenhum item'\n\n4) sucesso\n- lista\n\nIsso evita tela silenciosa e confusa."
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — refatorar o projeto 33",
+      "body": "Pegue o projeto da aula 33 (lista + detalhe) e:\n\n1) Crie função createUserItem(u)\n- retorna um <li>\n\n2) No render da lista:\n- use DocumentFragment\n- para cada user, frag.appendChild(createUserItem(u))\n- depois append frag\n\n3) Garanta que:\n- não usa innerHTML com dados do usuário\n- usa textContent\n\n4) Extra:\n- crie createDetalhes(u) que retorna um fragment/elemento para detalhes\n\nMeta: você tem que explicar:\n- por que fragment melhora\n- por que textContent é mais seguro\n- como separar em funções deixa mais fácil manter"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Render pode ser DOM API ou template string\n- DOM API é mais seguro (textContent)\n- DocumentFragment melhora performance em listas\n- Separar templates em funções = componentes simples\n- Render deve lidar com loading/erro/vazio/sucesso"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 34 (Render organizado)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "DOM API (createElement) é geralmente:",
+        "options": [
+          { "key": "A", "text": "Mais segura (textContent) e previsível" },
+          { "key": "B", "text": "Sempre mais perigosa que innerHTML" }
+        ],
+        "answer": "A",
+        "explain": "textContent não interpreta HTML."
+      },
+      {
+        "id": 2,
+        "question": "innerHTML pode ser perigoso porque:",
+        "options": [
+          { "key": "A", "text": "Pode injetar HTML/script se o dado não for confiável" },
+          { "key": "B", "text": "Não funciona no navegador" }
+        ],
+        "answer": "A",
+        "explain": "É risco de XSS."
+      },
+      {
+        "id": 3,
+        "question": "DocumentFragment serve para:",
+        "options": [
+          { "key": "A", "text": "Montar elementos fora do DOM e inserir de uma vez" },
+          { "key": "B", "text": "Salvar dados no localStorage" }
+        ],
+        "answer": "A",
+        "explain": "Melhora performance em listas grandes."
+      },
+      {
+        "id": 4,
+        "question": "Boas práticas de render incluem:",
+        "options": [
+          { "key": "A", "text": "Separar templates em funções pequenas" },
+          { "key": "B", "text": "Um render gigante com 300 linhas" }
+        ],
+        "answer": "A",
+        "explain": "Componentização simples ajuda manutenção."
+      },
+      {
+        "id": 5,
+        "question": "textContent é melhor para:",
+        "options": [
+          { "key": "A", "text": "Inserir texto sem interpretar HTML" },
+          { "key": "B", "text": "Inserir HTML com tags" }
+        ],
+        "answer": "A",
+        "explain": "Para HTML você usaria outra estratégia."
+      },
+      {
+        "id": 6,
+        "question": "Um render profissional deve lidar com:",
+        "options": [
+          { "key": "A", "text": "loading/erro/vazio/sucesso" },
+          { "key": "B", "text": "Apenas sucesso" }
+        ],
+        "answer": "A",
+        "explain": "UX mínima exige estados."
+      },
+      {
+        "id": 7,
+        "question": "Template string com dados externos é arriscado porque:",
+        "options": [
+          { "key": "A", "text": "Pode inserir conteúdo malicioso" },
+          { "key": "B", "text": "Sempre quebra o JS" }
+        ],
+        "answer": "A",
+        "explain": "Injeção/XSS."
+      },
+      {
+        "id": 8,
+        "question": "Criar createUserItem(u) é exemplo de:",
+        "options": [
+          { "key": "A", "text": "Componente/template simples" },
+          { "key": "B", "text": "Promise" }
+        ],
+        "answer": "A",
+        "explain": "Você encapsula a criação do item."
+      },
+      {
+        "id": 9,
+        "question": "Append de fragment no final é melhor porque:",
+        "options": [
+          { "key": "A", "text": "Reduz múltiplas atualizações no DOM" },
+          { "key": "B", "text": "Muda o CSS automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Menos trabalho para o navegador."
+      },
+      {
+        "id": 10,
+        "question": "Para dados do usuário, a escolha mais segura é:",
+        "options": [
+          { "key": "A", "text": "DOM API + textContent" },
+          { "key": "B", "text": "innerHTML sempre" }
+        ],
+        "answer": "A",
+        "explain": "Evita interpretar conteúdo."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 34 — modelJs: render com fragment + templates por função */\n\nconst listaEl = document.querySelector('#lista');\n\nfunction createUserItem(u, selectedId) {\n  const li = document.createElement('li');\n  li.className = 'item';\n  li.dataset.id = String(u.id);\n  if (u.id === selectedId) li.classList.add('ativo');\n\n  const box = document.createElement('div');\n  box.className = 'stack';\n\n  const strong = document.createElement('strong');\n  strong.textContent = u.name;\n\n  const email = document.createElement('span');\n  email.className = 'muted';\n  email.textContent = u.email;\n\n  box.append(strong, email);\n  li.appendChild(box);\n  return li;\n}\n\nfunction renderLista(users, selectedId) {\n  if (!listaEl) return;\n  listaEl.innerHTML = '';\n\n  const frag = document.createDocumentFragment();\n  for (const u of users) {\n    frag.appendChild(createUserItem(u, selectedId));\n  }\n  listaEl.appendChild(frag);\n}\n"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "20-eventos-1",
+  "title": "Aula 20 — Eventos 1: click, submit, input + preventDefault",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai fazer a página reagir ao usuário.\n\nNo final você vai conseguir:\n1) Entender o que é evento (algo acontece)\n2) Usar addEventListener para escutar eventos\n3) Tratar click e input\n4) Tratar submit de formulário\n5) Entender e usar preventDefault (pra não recarregar a página)\n\nIsso é a base de qualquer interação: botão, formulário, menu, modal."
+    },
+    {
+      "title": "O que é um evento",
+      "body": "Evento é uma ocorrência no navegador.\n\nExemplos:\n- click (clicou)\n- input (digitou)\n- submit (enviou formulário)\n- keydown (apertou tecla)\n\nVocê não 'chama' o evento.\nO navegador dispara.\n\nSeu trabalho é:\n- escutar (listener)\n- reagir com uma função (handler)"
+    },
+    {
+      "title": "addEventListener: a forma padrão",
+      "body": "Sintaxe:\n\nelemento.addEventListener('evento', funcao);\n\nExemplo:\nbtn.addEventListener('click', () => {\n  console.log('clicou');\n});\n\nTradução:\n- 'Quando acontecer click nesse elemento, rode essa função.'\n\nImportante:\n- você passa a função, não executa ela na hora\n- ou seja, NÃO é btn.addEventListener('click', minhaFuncao())"
+    },
+    {
+      "title": "Click: o evento mais comum",
+      "body": "Exemplo:\n\nconst btn = document.querySelector('#btn');\nbtn.addEventListener('click', () => {\n  console.log('botão clicado');\n});\n\nVocê pode usar isso para:\n- abrir/fechar modal\n- alternar tema\n- adicionar item numa lista"
+    },
+    {
+      "title": "O parâmetro event (e): informação do que aconteceu",
+      "body": "A função do evento recebe um objeto:\n\nelemento.addEventListener('click', (event) => {\n  console.log(event);\n});\n\nEle tem dados como:\n- tipo do evento (event.type)\n- elemento alvo (event.target)\n\nPor enquanto, guarde:\n- event.target é quem gerou o evento (onde você clicou/digitou)"
+    },
+    {
+      "title": "Input: reagir enquanto digita",
+      "body": "O evento 'input' dispara quando o usuário digita/edita.\n\nconst campo = document.querySelector('#nome');\n\ncampo.addEventListener('input', (e) => {\n  console.log('valor:', e.target.value);\n});\n\nVocê vai usar isso para:\n- validação em tempo real\n- mostrar contador de caracteres\n- atualizar preview"
+    },
+    {
+      "title": "Submit: o evento do formulário",
+      "body": "Quando você envia um form, o navegador por padrão:\n- recarrega a página\n\nNo começo isso atrapalha.\n\nEntão você faz:\n\nform.addEventListener('submit', (e) => {\n  e.preventDefault();\n  // pegar valores e tratar\n});\n\npreventDefault = 'não faz o comportamento padrão'.\n\nAqui, o padrão é recarregar.\nVocê cancela e assume o controle."
+    },
+    {
+      "title": "Mini laboratório: HTML para treinar",
+      "body": "Crie um HTML simples:\n\n<body>\n  <button id=\"btn\" class=\"btn\">Clique</button>\n\n  <form id=\"form\">\n    <input id=\"nome\" class=\"input\" placeholder=\"Seu nome\" />\n    <button class=\"btn primary\" type=\"submit\">Enviar</button>\n  </form>\n\n  <p class=\"msg\">...</p>\n</body>\n\nHoje a ideia é:\n- click muda mensagem\n- input atualiza preview\n- submit mostra o nome e não recarrega"
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — 3 eventos funcionando",
+      "body": "Com o HTML acima:\n\n1) Click\n- ao clicar no botão #btn, altere o texto do .msg para 'Clicou!'\n\n2) Input\n- enquanto digita no #nome, atualize .msg com:\n  'Digitando: X'\n\n3) Submit\n- ao enviar o form, use preventDefault\n- pegue o valor do #nome\n- se estiver vazio (trim), mostre 'Digite um nome'\n- senão, mostre 'Olá, NOME!'\n\nMeta: você tem que explicar:\n- por que preventDefault é necessário no submit\n- por que e.target.value funciona no input"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Evento = algo que acontece no navegador\n- addEventListener escuta e roda uma função\n- click: interação básica\n- input: reage enquanto digita (e.target.value)\n- submit: envia formulário\n- preventDefault impede o recarregamento padrão"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 20 (Eventos 1)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Evento é:",
+        "options": [
+          { "key": "A", "text": "Uma ocorrência (click, input, submit...) disparada pelo navegador" },
+          { "key": "B", "text": "Um tipo de variável" }
+        ],
+        "answer": "A",
+        "explain": "O navegador dispara; você reage."
+      },
+      {
+        "id": 2,
+        "question": "addEventListener serve para:",
+        "options": [
+          { "key": "A", "text": "Escutar um evento e executar uma função quando acontecer" },
+          { "key": "B", "text": "Criar um elemento HTML" }
+        ],
+        "answer": "A",
+        "explain": "É o padrão moderno de eventos."
+      },
+      {
+        "id": 3,
+        "question": "O correto é:",
+        "options": [
+          { "key": "A", "text": "btn.addEventListener('click', minhaFuncao)" },
+          { "key": "B", "text": "btn.addEventListener('click', minhaFuncao())" }
+        ],
+        "answer": "A",
+        "explain": "Você passa a função; não executa na hora."
+      },
+      {
+        "id": 4,
+        "question": "event.target é:",
+        "options": [
+          { "key": "A", "text": "O elemento que gerou o evento" },
+          { "key": "B", "text": "O CSS do elemento" }
+        ],
+        "answer": "A",
+        "explain": "No input/click, normalmente é onde aconteceu."
+      },
+      {
+        "id": 5,
+        "question": "O evento input dispara quando:",
+        "options": [
+          { "key": "A", "text": "O valor do campo muda enquanto digita" },
+          { "key": "B", "text": "A página recarrega" }
+        ],
+        "answer": "A",
+        "explain": "É ótimo para feedback em tempo real."
+      },
+      {
+        "id": 6,
+        "question": "No input, você pega o valor com:",
+        "options": [
+          { "key": "A", "text": "e.target.value" },
+          { "key": "B", "text": "e.value.target" }
+        ],
+        "answer": "A",
+        "explain": "target é o input, value é o texto."
+      },
+      {
+        "id": 7,
+        "question": "Submit em formulário, por padrão:",
+        "options": [
+          { "key": "A", "text": "Recarrega a página (comportamento padrão)" },
+          { "key": "B", "text": "Sempre abre um modal" }
+        ],
+        "answer": "A",
+        "explain": "Por isso a gente cancela no JS."
+      },
+      {
+        "id": 8,
+        "question": "preventDefault serve para:",
+        "options": [
+          { "key": "A", "text": "Impedir o comportamento padrão do navegador" },
+          { "key": "B", "text": "Apagar o elemento da página" }
+        ],
+        "answer": "A",
+        "explain": "No submit, evita recarregar."
+      },
+      {
+        "id": 9,
+        "question": "Um bom uso de click é:",
+        "options": [
+          { "key": "A", "text": "Abrir/fechar algo, alternar estado" },
+          { "key": "B", "text": "Criar banco de dados" }
+        ],
+        "answer": "A",
+        "explain": "Click controla UI."
+      },
+      {
+        "id": 10,
+        "question": "Em eventos, a função handler é:",
+        "options": [
+          { "key": "A", "text": "A função que roda quando o evento acontece" },
+          { "key": "B", "text": "Um tipo de JSON" }
+        ],
+        "answer": "A",
+        "explain": "Handler = reação ao evento."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 20 — modelJs: click, input, submit */\n\nconst btn = document.querySelector('#btn');\nconst form = document.querySelector('#form');\nconst nomeInput = document.querySelector('#nome');\nconst msg = document.querySelector('.msg');\n\nif (btn && form && nomeInput && msg) {\n  // 1) click\n  btn.addEventListener('click', () => {\n    msg.textContent = 'Clicou!';\n  });\n\n  // 2) input\n  nomeInput.addEventListener('input', (e) => {\n    msg.textContent = `Digitando: ${e.target.value}`;\n  });\n\n  // 3) submit\n  form.addEventListener('submit', (e) => {\n    e.preventDefault();\n\n    const nome = nomeInput.value.trim();\n    if (nome.length === 0) {\n      msg.textContent = 'Digite um nome';\n      return;\n    }\n\n    msg.textContent = `Olá, ${nome}!`;\n  });\n}\n"
+  }
+}

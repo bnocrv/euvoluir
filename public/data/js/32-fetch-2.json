@@ -1,0 +1,151 @@
+{
+  "id": "32-fetch-2",
+  "title": "Aula 32 — Fetch 2: POST/PUT/DELETE + padrões de API",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai além do GET e aprende a enviar dados.\n\nNo final você vai conseguir:\n1) Entender métodos: POST, PUT/PATCH, DELETE\n2) Enviar JSON no body com headers corretos\n3) Tratar resposta e erros (res.ok)\n4) Entender padrões comuns de API (CRUD)\n5) Fazer um mini CRUD fake usando JSONPlaceholder\n\nIsso é base para qualquer sistema: cadastro, edição e remoção."
+    },
+    {
+      "title": "Métodos HTTP (o mapa do CRUD)",
+      "body": "Um padrão comum:\n\n- GET    /items        → listar\n- GET    /items/:id    → detalhes\n- POST   /items        → criar\n- PUT    /items/:id    → atualizar (substitui)\n- PATCH  /items/:id    → atualizar (parcial)\n- DELETE /items/:id    → remover\n\nVocê vai ver isso em quase toda API REST."
+    },
+    {
+      "title": "POST: criar (enviar dados no body)",
+      "body": "POST envia dados para criar algo.\n\nVocê precisa:\n- method: 'POST'\n- headers: { 'Content-Type': 'application/json' }\n- body: JSON.stringify(obj)\n\nExemplo:\n\nawait fetch(url, {\n  method: 'POST',\n  headers: { 'Content-Type': 'application/json' },\n  body: JSON.stringify({ title: 'Nova tarefa', completed: false })\n});"
+    },
+    {
+      "title": "PUT vs PATCH (diferença prática)",
+      "body": "PUT (substitui):\n- você manda o objeto “completo”\n\nPATCH (parcial):\n- você manda só campos que mudaram\n\nEm APIs reais:\n- PATCH é comum para mudanças pequenas\n\nNo seu código:\n- os dois são iguais na estrutura do fetch, só muda method."
+    },
+    {
+      "title": "DELETE: remover",
+      "body": "DELETE normalmente não precisa de body.\n\nExemplo:\n\nawait fetch(url + '/1', {\n  method: 'DELETE'\n});\n\nA resposta pode ser:\n- 200/204 (ok)\n\nSempre cheque res.ok."
+    },
+    {
+      "title": "Padrão profissional: requestJSON (função helper)",
+      "body": "Para não repetir toda hora, faça um helper:\n\nasync function requestJSON(url, options = {}) {\n  const res = await fetch(url, options);\n  if (!res.ok) throw new Error(`HTTP ${res.status}`);\n\n  // algumas APIs respondem 204 sem body\n  const text = await res.text();\n  return text ? JSON.parse(text) : null;\n}\n\nIsso te dá:\n- tratamento de erro\n- parse seguro\n\nDepois você usa para POST/PUT/DELETE."
+    },
+    {
+      "title": "Mini laboratório: JSONPlaceholder (API de testes)",
+      "body": "Vamos usar a API pública:\n- https://jsonplaceholder.typicode.com\n\nEla NÃO salva de verdade no servidor,\nmas simula respostas.\n\nRotas úteis:\n- POST /posts\n- PUT /posts/1\n- PATCH /posts/1\n- DELETE /posts/1\n\nIsso é perfeito para treinar."
+    },
+    {
+      "title": "Mini tarefa (30 minutos) — CRUD fake (sem UI complexa)",
+      "body": "Faça no Console (ou num app simples):\n\n1) Crie requestJSON(url, options)\n\n2) POST\n- crie um post:\n  { title: 'Meu post', body: 'Olá', userId: 1 }\n- mostre a resposta\n\n3) PUT\n- atualize /posts/1 com:\n  { id: 1, title: 'Atualizado', body: 'Novo', userId: 1 }\n\n4) PATCH\n- atualize /posts/1 só com { title: 'Só título' }\n\n5) DELETE\n- delete /posts/1\n\nMeta: você tem que explicar:\n- por que Content-Type é necessário\n- por que body precisa de JSON.stringify\n- por que res.ok é obrigatório"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- POST cria, PUT/PATCH atualizam, DELETE remove\n- Enviar JSON: headers + JSON.stringify\n- Checar res.ok sempre\n- Helper requestJSON evita repetição\n- Padrão CRUD é base de APIs REST"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 32 (Fetch 2)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "POST é usado para:",
+        "options": [
+          { "key": "A", "text": "Criar/enviar dados" },
+          { "key": "B", "text": "Apenas listar dados" }
+        ],
+        "answer": "A",
+        "explain": "POST normalmente cria um recurso."
+      },
+      {
+        "id": 2,
+        "question": "Para enviar JSON no body, você precisa:",
+        "options": [
+          { "key": "A", "text": "JSON.stringify e Content-Type application/json" },
+          { "key": "B", "text": "toUpperCase" }
+        ],
+        "answer": "A",
+        "explain": "Servidor precisa entender o formato."
+      },
+      {
+        "id": 3,
+        "question": "PUT geralmente:",
+        "options": [
+          { "key": "A", "text": "Substitui o recurso (manda objeto completo)" },
+          { "key": "B", "text": "Nunca muda nada" }
+        ],
+        "answer": "A",
+        "explain": "PUT é atualização completa no padrão REST."
+      },
+      {
+        "id": 4,
+        "question": "PATCH geralmente:",
+        "options": [
+          { "key": "A", "text": "Atualiza parcialmente (manda só o que mudou)" },
+          { "key": "B", "text": "Apaga o recurso" }
+        ],
+        "answer": "A",
+        "explain": "PATCH é update parcial."
+      },
+      {
+        "id": 5,
+        "question": "DELETE é usado para:",
+        "options": [
+          { "key": "A", "text": "Remover" },
+          { "key": "B", "text": "Formatar JSON" }
+        ],
+        "answer": "A",
+        "explain": "É o método de remoção."
+      },
+      {
+        "id": 6,
+        "question": "Mesmo em POST/PUT, é importante:",
+        "options": [
+          { "key": "A", "text": "Checar res.ok" },
+          { "key": "B", "text": "Ignorar status sempre" }
+        ],
+        "answer": "A",
+        "explain": "Erro HTTP não cai no catch automaticamente."
+      },
+      {
+        "id": 7,
+        "question": "Content-Type application/json indica:",
+        "options": [
+          { "key": "A", "text": "O body está em formato JSON" },
+          { "key": "B", "text": "O site é de CSS" }
+        ],
+        "answer": "A",
+        "explain": "É um header de formato."
+      },
+      {
+        "id": 8,
+        "question": "Um helper requestJSON é útil porque:",
+        "options": [
+          { "key": "A", "text": "Evita repetir res.ok + parse em todo fetch" },
+          { "key": "B", "text": "Faz o servidor ficar mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "Reuso e consistência."
+      },
+      {
+        "id": 9,
+        "question": "Resposta 204 significa:",
+        "options": [
+          { "key": "A", "text": "Sem conteúdo (pode não ter body)" },
+          { "key": "B", "text": "Erro obrigatório" }
+        ],
+        "answer": "A",
+        "explain": "Por isso às vezes você lê res.text()."
+      },
+      {
+        "id": 10,
+        "question": "O padrão CRUD em REST é:",
+        "options": [
+          { "key": "A", "text": "GET/POST/PUT(PATCH)/DELETE" },
+          { "key": "B", "text": "HTML/CSS/JS" }
+        ],
+        "answer": "A",
+        "explain": "É o mapa básico de operações."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 32 — modelJs: POST/PUT/PATCH/DELETE com helper */\n\nasync function requestJSON(url, options = {}) {\n  const res = await fetch(url, options);\n  if (!res.ok) throw new Error(`HTTP ${res.status}`);\n\n  // pode ser 204 (sem body)\n  const text = await res.text();\n  return text ? JSON.parse(text) : null;\n}\n\nconst base = 'https://jsonplaceholder.typicode.com/posts';\n\nasync function demoCRUD() {\n  try {\n    // POST\n    const criado = await requestJSON(base, {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ title: 'Meu post', body: 'Olá', userId: 1 })\n    });\n    console.log('criado:', criado);\n\n    // PUT\n    const put = await requestJSON(base + '/1', {\n      method: 'PUT',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ id: 1, title: 'Atualizado', body: 'Novo', userId: 1 })\n    });\n    console.log('put:', put);\n\n    // PATCH\n    const patch = await requestJSON(base + '/1', {\n      method: 'PATCH',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ title: 'Só título' })\n    });\n    console.log('patch:', patch);\n\n    // DELETE\n    const del = await requestJSON(base + '/1', { method: 'DELETE' });\n    console.log('delete:', del); // pode ser null\n\n  } catch (err) {\n    console.error('erro:', err.message);\n  }\n}\n\ndemoCRUD();\n"
+  }
+}

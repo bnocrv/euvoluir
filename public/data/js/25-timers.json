@@ -1,0 +1,151 @@
+{
+  "id": "25-timers",
+  "title": "Aula 25 — Timers (setTimeout/setInterval) e cuidados",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a rodar código no tempo.\n\nNo final você vai conseguir:\n1) Usar setTimeout (rodar depois)\n2) Usar setInterval (rodar repetindo)\n3) Cancelar timers (clearTimeout/clearInterval)\n4) Entender por que timers podem causar bugs\n5) Fazer mini casos reais: debounce simples, contador, auto-hide de mensagem"
+    },
+    {
+      "title": "O que são timers",
+      "body": "Timers são funções do navegador (Web APIs) que permitem:\n- rodar algo depois de X tempo\n- ou rodar algo repetidamente\n\nImportante:\n- JS é single-thread (uma coisa por vez)\n- timer não garante execução exata no milissegundo\n- ele agenda para rodar 'quando der' depois do tempo"
+    },
+    {
+      "title": "setTimeout: roda uma vez depois de um tempo",
+      "body": "Sintaxe:\n\nconst id = setTimeout(() => {\n  console.log('rodou depois');\n}, 1000);\n\n- 1000 = 1 segundo\n- retorna um id (número)\n\nSe você quiser cancelar antes de rodar:\nclearTimeout(id);\n\nUso comum:\n- esconder mensagem após 2s\n- adiar uma ação\n- simular loading"
+    },
+    {
+      "title": "setInterval: roda repetindo",
+      "body": "Sintaxe:\n\nconst id = setInterval(() => {\n  console.log('rodando...');\n}, 1000);\n\nIsso roda a cada 1 segundo.\n\nPara parar:\nclearInterval(id);\n\nUso comum:\n- relógio\n- contador regressivo\n- polling (checar algo de tempos em tempos)\n\nCuidado:\n- se você esquecer de parar, ele roda para sempre."
+    },
+    {
+      "title": "Exemplo real 1: esconder mensagem automaticamente",
+      "body": "Você mostra uma mensagem e depois apaga:\n\nmsg.textContent = 'Salvo!';\nsetTimeout(() => {\n  msg.textContent = '';\n}, 2000);\n\nIsso dá UX melhor.\n\nCuidado:\n- se o usuário salvar de novo antes de 2s, você pode ter timers competindo.\n\nSolução:\n- guardar o id e cancelar o anterior antes de criar outro."
+    },
+    {
+      "title": "Exemplo real 2: contador regressivo (interval + parar)",
+      "body": "Você quer contar 5, 4, 3, 2, 1, 0.\n\nlet n = 5;\nconst id = setInterval(() => {\n  console.log(n);\n  n--;\n  if (n < 0) {\n    clearInterval(id);\n    console.log('acabou');\n  }\n}, 1000);\n\nRepare:\n- você precisa de uma condição de parada"
+    },
+    {
+      "title": "Debounce simples (conceito muito importante)",
+      "body": "Debounce = esperar o usuário parar de digitar para executar.\n\nPor que?\n- digitar dispara muitos eventos input\n- você não quer rodar lógica pesada a cada tecla\n\nIdeia:\n- a cada input, cancela o timeout anterior\n- cria um novo\n- só roda quando parar por X ms\n\nIsso é base para:\n- busca\n- autocomplete\n- validação mais pesada"
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — 3 timers na prática",
+      "body": "Crie um HTML simples:\n\n<input id=\"busca\" class=\"input\" placeholder=\"digite...\" />\n<p id=\"status\" class=\"msg\"></p>\n<button id=\"start\" class=\"btn primary\">Start</button>\n<button id=\"stop\" class=\"btn danger\">Stop</button>\n<p id=\"contador\"></p>\n\nFaça:\n\n1) Auto-hide\n- ao digitar no input, mostre 'digitando...'\n- depois de 800ms sem digitar, mude para 'parou'\n(dica: debounce com setTimeout)\n\n2) Contador\n- ao clicar Start, comece a contar 0,1,2,3...\n- ao clicar Stop, pare\n(dica: setInterval + clearInterval)\n\n3) Proteção\n- se clicar Start duas vezes, não deve criar 2 intervals rodando\n\nMeta: você tem que explicar:\n- por que guardar o id do timer\n- como cancelar evita bugs"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- setTimeout roda uma vez depois\n- setInterval roda repetindo\n- clearTimeout/clearInterval cancelam\n- guarde os ids para evitar timers competindo\n- debounce é padrão em input\n- sempre tenha condição de parada para interval"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 25 (Timers)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "setTimeout:",
+        "options": [
+          { "key": "A", "text": "Executa uma vez depois de um tempo" },
+          { "key": "B", "text": "Executa repetidamente para sempre" }
+        ],
+        "answer": "A",
+        "explain": "É um agendamento único."
+      },
+      {
+        "id": 2,
+        "question": "setInterval:",
+        "options": [
+          { "key": "A", "text": "Executa repetidamente a cada intervalo" },
+          { "key": "B", "text": "Executa só uma vez" }
+        ],
+        "answer": "A",
+        "explain": "Ele repete até você parar."
+      },
+      {
+        "id": 3,
+        "question": "Para cancelar setTimeout você usa:",
+        "options": [
+          { "key": "A", "text": "clearTimeout(id)" },
+          { "key": "B", "text": "clearInterval(id)" }
+        ],
+        "answer": "A",
+        "explain": "Timeout cancela com clearTimeout."
+      },
+      {
+        "id": 4,
+        "question": "Para cancelar setInterval você usa:",
+        "options": [
+          { "key": "A", "text": "clearInterval(id)" },
+          { "key": "B", "text": "JSON.parse(id)" }
+        ],
+        "answer": "A",
+        "explain": "Interval cancela com clearInterval."
+      },
+      {
+        "id": 5,
+        "question": "Timers retornam:",
+        "options": [
+          { "key": "A", "text": "Um id para você poder cancelar" },
+          { "key": "B", "text": "Um objeto Date automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Esse id é essencial para controle."
+      },
+      {
+        "id": 6,
+        "question": "Debounce é:",
+        "options": [
+          { "key": "A", "text": "Esperar parar de digitar para executar" },
+          { "key": "B", "text": "Executar a cada tecla sem parar" }
+        ],
+        "answer": "A",
+        "explain": "Reduz execuções desnecessárias."
+      },
+      {
+        "id": 7,
+        "question": "Em interval, você deve sempre:",
+        "options": [
+          { "key": "A", "text": "Ter uma forma de parar (clearInterval)" },
+          { "key": "B", "text": "Nunca parar, é normal" }
+        ],
+        "answer": "A",
+        "explain": "Senão vira loop infinito no tempo."
+      },
+      {
+        "id": 8,
+        "question": "Se você cria vários intervals sem querer:",
+        "options": [
+          { "key": "A", "text": "Seu código pode ficar duplicando ações e bugando" },
+          { "key": "B", "text": "Nada muda" }
+        ],
+        "answer": "A",
+        "explain": "Você terá várias execuções simultâneas."
+      },
+      {
+        "id": 9,
+        "question": "Para evitar timers competindo, você deve:",
+        "options": [
+          { "key": "A", "text": "Guardar o id e cancelar antes de criar outro" },
+          { "key": "B", "text": "Ignorar e torcer" }
+        ],
+        "answer": "A",
+        "explain": "Controle explícito evita bagunça."
+      },
+      {
+        "id": 10,
+        "question": "Timer não garante milissegundo exato porque:",
+        "options": [
+          { "key": "A", "text": "Ele agenda para rodar depois, dependendo do event loop" },
+          { "key": "B", "text": "O JS não entende tempo" }
+        ],
+        "answer": "A",
+        "explain": "O navegador executa quando a fila permite."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 25 — modelJs: timers, debounce, contador */\n\nconst busca = document.querySelector('#busca');\nconst status = document.querySelector('#status');\nconst start = document.querySelector('#start');\nconst stop = document.querySelector('#stop');\nconst contadorEl = document.querySelector('#contador');\n\nlet debounceId = null;\nlet intervalId = null;\nlet count = 0;\n\nif (busca && status) {\n  busca.addEventListener('input', () => {\n    status.textContent = 'digitando...';\n\n    // debounce: cancela o anterior\n    if (debounceId) clearTimeout(debounceId);\n\n    debounceId = setTimeout(() => {\n      status.textContent = 'parou';\n      debounceId = null;\n    }, 800);\n  });\n}\n\nfunction iniciarContador() {\n  if (intervalId) return; // proteção: não cria 2\n  count = 0;\n  if (contadorEl) contadorEl.textContent = String(count);\n\n  intervalId = setInterval(() => {\n    count++;\n    if (contadorEl) contadorEl.textContent = String(count);\n  }, 1000);\n}\n\nfunction pararContador() {\n  if (!intervalId) return;\n  clearInterval(intervalId);\n  intervalId = null;\n}\n\nif (start) start.addEventListener('click', iniciarContador);\nif (stop) stop.addEventListener('click', pararContador);\n"
+  }
+}

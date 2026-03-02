@@ -1,0 +1,151 @@
+{
+  "id": "04-strings-numeros",
+  "title": "Aula 04 — Strings e números (métodos úteis e armadilhas)",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a mexer com os dois tipos mais usados do mundo: texto e número.\n\nNo final você vai conseguir:\n1) Entender a diferença entre string e number sem confundir\n2) Usar métodos de string (toUpperCase, trim, includes, slice)\n3) Converter string ↔ number (Number, String, parseInt, parseFloat)\n4) Evitar bugs clássicos de concatenação\n5) Formatar números (toFixed) e entender arredondamento"
+    },
+    {
+      "title": "String vs Number (o erro mais comum do começo)",
+      "body": "Em JS:\n- string = texto (entre aspas)\n- number = número (sem aspas)\n\nExemplos:\n- '10'  é string\n- 10    é number\n\nRegra de ouro:\n- Se tem aspas, é texto.\n\nIsso importa porque:\n- '10' + 5 vira '105' (texto)\n- 10 + 5 vira 15 (número)\n\nO + tem dois papéis:\n- soma (number)\n- concatena (string)\n\nEntão: quando envolve string, o JS tende a virar “modo texto”."
+    },
+    {
+      "title": "Métodos de string: ferramentas do dia a dia",
+      "body": "Strings têm métodos (funções prontas) para manipular texto.\n\nOs mais úteis:\n\n1) .toUpperCase() / .toLowerCase()\n- 'Bruno'.toUpperCase() → 'BRUNO'\n\n2) .trim()\n- remove espaços nas pontas\n- '  oi  '.trim() → 'oi'\n\n3) .includes('x')\n- verifica se contém\n- 'abc'.includes('b') → true\n\n4) .slice(inicio, fim)\n- recorta parte do texto\n- 'abcdef'.slice(0, 3) → 'abc'\n\n5) .replace('a', 'b')\n- troca a primeira ocorrência\n- 'casa'.replace('a', 'o') → 'cosa'\n\nDica: método sempre vem depois do valor, com ponto."
+    },
+    {
+      "title": "Template string (texto com variáveis sem dor)",
+      "body": "Quando você quer montar frases com variáveis, o melhor jeito é template string.\n\nUsa crase: ` (acento grave)\n\nExemplo:\n- const nome = 'Bruno'\n- const idade = 27\n- `Meu nome é ${nome} e tenho ${idade} anos.`\n\nPor que isso é melhor?\n- evita um monte de +\n- fica legível\n- você não se perde nas aspas"
+    },
+    {
+      "title": "Converter texto para número (e por que isso é necessário)",
+      "body": "Muito valor chega como string:\n- input de formulário\n- dados de API\n- localStorage\n\nAí você precisa converter.\n\nFormas comuns:\n\n1) Number('10') → 10\n- bom para inteiros e decimais\n\n2) parseInt('10') → 10\n- pega inteiro\n- parseInt('10.9') → 10\n\n3) parseFloat('10.9') → 10.9\n- pega decimal\n\nArmadilha:\n- Number('10a') → NaN\n- parseInt('10a') → 10 (para no 'a')\n\nNaN significa: Not a Number (não é um número válido)."
+    },
+    {
+      "title": "Converter número para texto",
+      "body": "Quando você precisa juntar com texto ou salvar:\n\n- String(10) → '10'\n- (10).toString() → '10'\n\nVocê vai usar isso bastante quando trabalhar com IDs e exibição."
+    },
+    {
+      "title": "Números: toFixed e o problema dos decimais",
+      "body": "toFixed formata casas decimais:\n\n- const preco = 10.5\n- preco.toFixed(2) → '10.50'\n\nAtenção:\n- toFixed retorna STRING.\n\nSe você precisar virar número de novo:\n- Number(preco.toFixed(2))\n\nOutra armadilha real:\n- 0.1 + 0.2 → 0.30000000000000004\n\nIsso acontece por como o computador guarda decimais (binário).\nNo front, normalmente você resolve formatando (toFixed) e evitando comparar decimais “crus”."
+    },
+    {
+      "title": "Mini tarefa (15 minutos) — limpar e calcular",
+      "body": "Faça no Console:\n\n1) Limpar nome\n- const nomeSujo = '  bruno carvalho  '\n- crie nomeLimpo usando trim()\n- depois transforme em MAIÚSCULO\n\n2) Verificar e-mail\n- const email = 'bruno@gmail.com'\n- use includes('@') para checar se tem @\n\n3) Converter e somar\n- const n1 = '10'\n- const n2 = '25'\n- converta para número e some (resultado deve ser 35)\n\n4) Preço com 2 casas\n- const preco = 19.9\n- mostre 'R$ 19.90' usando toFixed(2) + template string\n\n5) Pegadinha\n- teste: '10' + 5\n- teste: Number('10') + 5\nExplique por que dá diferente."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- string é texto (com aspas), number é número (sem aspas)\n- métodos úteis: toUpperCase, trim, includes, slice, replace\n- template string (`...${}...`) deixa frases legíveis\n- conversões: Number, parseInt, parseFloat, String\n- toFixed formata, mas devolve string\n- cuidado com decimais (0.1 + 0.2)"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 04 (Strings e Números)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "'10' é:",
+        "options": [
+          { "key": "A", "text": "string" },
+          { "key": "B", "text": "number" }
+        ],
+        "answer": "A",
+        "explain": "Tem aspas → é texto."
+      },
+      {
+        "id": 2,
+        "question": "10 + 5 resulta em:",
+        "options": [
+          { "key": "A", "text": "15" },
+          { "key": "B", "text": "'105'" }
+        ],
+        "answer": "A",
+        "explain": "Sem string no meio, o + soma."
+      },
+      {
+        "id": 3,
+        "question": "'10' + 5 resulta em:",
+        "options": [
+          { "key": "A", "text": "'105'" },
+          { "key": "B", "text": "15" }
+        ],
+        "answer": "A",
+        "explain": "Com string, o + concatena."
+      },
+      {
+        "id": 4,
+        "question": "trim() serve para:",
+        "options": [
+          { "key": "A", "text": "Remover espaços nas pontas do texto" },
+          { "key": "B", "text": "Somar números" }
+        ],
+        "answer": "A",
+        "explain": "Ele limpa espaços no começo e no fim."
+      },
+      {
+        "id": 5,
+        "question": "includes('@') é usado para:",
+        "options": [
+          { "key": "A", "text": "Verificar se um texto contém '@'" },
+          { "key": "B", "text": "Transformar texto em número" }
+        ],
+        "answer": "A",
+        "explain": "includes retorna true/false se contém."
+      },
+      {
+        "id": 6,
+        "question": "Template string usa:",
+        "options": [
+          { "key": "A", "text": "Crase (`) e ${variavel}" },
+          { "key": "B", "text": "Apenas aspas simples e +" }
+        ],
+        "answer": "A",
+        "explain": "É o jeito moderno e legível."
+      },
+      {
+        "id": 7,
+        "question": "Number('10') retorna:",
+        "options": [
+          { "key": "A", "text": "10 (number)" },
+          { "key": "B", "text": "'10' (string)" }
+        ],
+        "answer": "A",
+        "explain": "Converte string numérica para number."
+      },
+      {
+        "id": 8,
+        "question": "parseInt('10.9') retorna:",
+        "options": [
+          { "key": "A", "text": "10" },
+          { "key": "B", "text": "10.9" }
+        ],
+        "answer": "A",
+        "explain": "parseInt pega só a parte inteira."
+      },
+      {
+        "id": 9,
+        "question": "toFixed(2) retorna:",
+        "options": [
+          { "key": "A", "text": "Uma string formatada com 2 casas" },
+          { "key": "B", "text": "Sempre um number" }
+        ],
+        "answer": "A",
+        "explain": "toFixed formata e devolve texto."
+      },
+      {
+        "id": 10,
+        "question": "0.1 + 0.2 às vezes não dá exatamente 0.3 porque:",
+        "options": [
+          { "key": "A", "text": "Computadores representam decimais em binário, com aproximação" },
+          { "key": "B", "text": "JavaScript não sabe somar" }
+        ],
+        "answer": "A",
+        "explain": "É um detalhe de representação numérica, não “burro” do JS."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 04 — modelJs: Strings e Números */\n\n// 1) Limpar e transformar nome\nconst nomeSujo = '  bruno carvalho  ';\nconst nomeLimpo = nomeSujo.trim();\nconst nomeMaiusculo = nomeLimpo.toUpperCase();\nconsole.log('nomeLimpo:', nomeLimpo);\nconsole.log('nomeMaiusculo:', nomeMaiusculo);\n\n// 2) Verificar email\nconst email = 'bruno@gmail.com';\nconsole.log('tem @ ?', email.includes('@'));\n\n// 3) Converter e somar\nconst n1 = '10';\nconst n2 = '25';\nconsole.log('soma:', Number(n1) + Number(n2)); // 35\n\n// 4) Formatar preço\nconst preco = 19.9;\nconsole.log(`R$ ${preco.toFixed(2)}`); // 'R$ 19.90'\n\n// 5) Pegadinha\nconsole.log('10' + 5);          // '105'\nconsole.log(Number('10') + 5);  // 15\n"
+  }
+}

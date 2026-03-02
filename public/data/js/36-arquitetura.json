@@ -1,0 +1,155 @@
+{
+  "id": "36-arquitetura",
+  "title": "Aula 36 — Arquitetura simples: separar (data, ui, events) na prática",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a organizar um app sem framework.\n\nNo final você vai conseguir:\n1) Separar responsabilidades (data/state, ui/render, events/controllers)\n2) Evitar “arquivo monstro”\n3) Criar uma arquitetura simples repetível\n4) Fazer seu código ficar fácil de manter e evoluir\n\nIsso é o que te permite criar projetos maiores sem se perder."
+    },
+    {
+      "title": "O problema do código misturado",
+      "body": "Quando você mistura tudo:\n- fetch\n- DOM\n- validação\n- storage\n- estado\n- render\n\nem um arquivo só,\nvira difícil:\n- achar bug\n- adicionar feature\n- reaproveitar código\n\nA solução é separar por missão."
+    },
+    {
+      "title": "As 3 camadas (modelo mental)",
+      "body": "Pensa assim:\n\n1) Data/State (dados)\n- onde o estado vive\n- funções CRUD\n- regras de atualização\n\n2) UI (render)\n- ler state e desenhar a tela\n- criar elementos\n- mostrar loading/erro/vazio\n\n3) Events/Controller (orquestra)\n- escuta eventos\n- chama funções de data\n- chama render\n- chama fetch/storage quando necessário\n\nRegra:\n- UI não decide regra\n- Data não mexe no DOM\n- Controller liga tudo"
+    },
+    {
+      "title": "Exemplo real: To-do organizado",
+      "body": "Data:\n- addTask, toggleTask, removeTask\n\nUI:\n- renderList(tasks)\n\nController:\n- listeners de submit e click\n- chama data\n- chama render\n\nIsso deixa o fluxo previsível:\n- evento → data → render"
+    },
+    {
+      "title": "Estrutura de arquivos recomendada (sem exagero)",
+      "body": "Para apps pequenos/médios:\n\n/src\n  app.js        (controller)\n  state.js      (data + regras)\n  ui.js         (render + templates)\n  storage.js    (load/save)\n  api.js        (fetch/requestJSON)\n\nVocê nem sempre precisa de todos.\nMas esse padrão te dá um esqueleto repetível."
+    },
+    {
+      "title": "Contrato entre camadas (regras simples)",
+      "body": "Regras para evitar bagunça:\n\n1) state.js não pode usar document.\n2) ui.js não pode chamar fetch.\n3) app.js é o único que coloca addEventListener.\n\nIsso evita dependências circulares.\n\nE você sempre sabe:\n- onde procurar cada coisa."
+    },
+    {
+      "title": "Exemplo prático (mini): contador com arquitetura",
+      "body": "state.js\n- let count\n- inc/reset\n\nui.js\n- renderCount(count)\n\napp.js\n- listeners\n- chama inc/reset\n- chama render\n\nResultado:\n- fácil trocar UI sem mexer no estado\n- fácil trocar estado sem mexer na UI"
+    },
+    {
+      "title": "Como evoluir sem quebrar (padrões que ajudam)",
+      "body": "1) Funções pequenas e nomeadas\n2) Uma função render principal\n3) Um objeto state central\n4) Helpers (requestJSON, load/save)\n\nEsses quatro pilares deixam o projeto escalável."
+    },
+    {
+      "title": "Mini tarefa (30 minutos) — refatorar o To-do em 3 arquivos",
+      "body": "Pegue o To-do (aula 23) e separe em:\n\n1) state.js\n- export let tarefas\n- export function addTask(texto)\n- export function toggleTask(id)\n- export function removeTask(id)\n\n2) ui.js\n- export function render(tarefas)\n- cria elementos com createElement\n\n3) app.js\n- importa state/ui\n- seleciona elementos\n- listeners de submit e click\n- chama render\n\nExtra:\n- se quiser, deixe storage.js separado também\n\nMeta:\n- seu app deve funcionar igual\n- mas com código mais limpo\n\nVocê vai sentir o ganho de manutenção na prática."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Arquitetura simples = separar responsabilidades\n- Camadas: Data/State, UI, Controller\n- Regras de contrato entre camadas\n- Estrutura de arquivos repetível\n- Refatorar melhora manutenção sem mudar comportamento"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 36 (Arquitetura simples)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Separar responsabilidades ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Deixa o código mais fácil de manter e evoluir" },
+          { "key": "B", "text": "Deixa tudo mais confuso" }
+        ],
+        "answer": "A",
+        "explain": "Você sabe onde mexer sem quebrar todo o app."
+      },
+      {
+        "id": 2,
+        "question": "Camada Data/State deve:",
+        "options": [
+          { "key": "A", "text": "Conter dados e regras, sem mexer no DOM" },
+          { "key": "B", "text": "Dar querySelector em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Data não deve conhecer UI."
+      },
+      {
+        "id": 3,
+        "question": "Camada UI deve:",
+        "options": [
+          { "key": "A", "text": "Renderizar com base no state, sem chamar fetch" },
+          { "key": "B", "text": "Decidir regras de negócio" }
+        ],
+        "answer": "A",
+        "explain": "UI mostra; regras ficam no state."
+      },
+      {
+        "id": 4,
+        "question": "Controller (app.js) deve:",
+        "options": [
+          { "key": "A", "text": "Ligar eventos, chamar state e render" },
+          { "key": "B", "text": "Ser vazio" }
+        ],
+        "answer": "A",
+        "explain": "Ele orquestra o fluxo."
+      },
+      {
+        "id": 5,
+        "question": "Regra útil: addEventListener fica em:",
+        "options": [
+          { "key": "A", "text": "app.js (controller)" },
+          { "key": "B", "text": "state.js" }
+        ],
+        "answer": "A",
+        "explain": "Evita dependências e bagunça."
+      },
+      {
+        "id": 6,
+        "question": "Um arquivo monstro geralmente:",
+        "options": [
+          { "key": "A", "text": "Fica difícil de debugar e evoluir" },
+          { "key": "B", "text": "Sempre é melhor que modularizar" }
+        ],
+        "answer": "A",
+        "explain": "Mistura tudo e vira caos."
+      },
+      {
+        "id": 7,
+        "question": "Contratos entre camadas servem para:",
+        "options": [
+          { "key": "A", "text": "Evitar dependências erradas e circular imports" },
+          { "key": "B", "text": "Impedir o projeto de funcionar" }
+        ],
+        "answer": "A",
+        "explain": "Direção clara de dependência."
+      },
+      {
+        "id": 8,
+        "question": "Ao refatorar mantendo comportamento, você está:",
+        "options": [
+          { "key": "A", "text": "Melhorando arquitetura sem mudar o resultado" },
+          { "key": "B", "text": "Apagando features" }
+        ],
+        "answer": "A",
+        "explain": "Refactor = melhorar estrutura."
+      },
+      {
+        "id": 9,
+        "question": "Estrutura /src com state/ui/app é:",
+        "options": [
+          { "key": "A", "text": "Um padrão simples repetível para projetos" },
+          { "key": "B", "text": "Obrigatória por lei" }
+        ],
+        "answer": "A",
+        "explain": "É recomendação prática."
+      },
+      {
+        "id": 10,
+        "question": "Fluxo correto numa arquitetura simples é:",
+        "options": [
+          { "key": "A", "text": "Evento → State → Render" },
+          { "key": "B", "text": "Render → Evento → State (às vezes)" }
+        ],
+        "answer": "A",
+        "explain": "Isso mantém consistência."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 36 — modelJs: esqueleto de arquitetura (exemplo) */\n\n// state.js\n// export let tarefas = []\n// export function addTask(texto) { ... }\n// export function toggleTask(id) { ... }\n// export function removeTask(id) { ... }\n\n// ui.js\n// export function render(tarefas) { ... }\n\n// app.js\n// import { tarefas, addTask, toggleTask, removeTask } from './state.js'\n// import { render } from './ui.js'\n// listeners aqui\n// render(tarefas)\n"
+  }
+}

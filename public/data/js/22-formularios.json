@@ -1,0 +1,155 @@
+{
+  "id": "22-formularios",
+  "title": "Aula 22 — Formulários: validação, mensagens de erro e UX mínima",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a fazer formulário de verdade (não só pegar valor).\n\nNo final você vai conseguir:\n1) Ler valores do form com segurança\n2) Validar campos (regras) sem gambiarra\n3) Mostrar mensagens de erro (UX mínima)\n4) Marcar inputs com classe de erro/sucesso\n5) Evitar bugs comuns (trim, números, submit)\n\nIsso é base de login, cadastro, checkout, qualquer sistema."
+    },
+    {
+      "title": "O que é 'validar' (regra de negócio)",
+      "body": "Validar é checar se os dados obedecem regras.\n\nExemplos:\n- nome obrigatório\n- email precisa ter @\n- senha >= 8\n- idade precisa ser número >= 18\n\nImportante:\n- validação é esperado (não é exceção)\n- então é if/else, não try/catch"
+    },
+    {
+      "title": "Estrutura mínima de um form (HTML de treino)",
+      "body": "Use este HTML:\n\n<form id=\"form\">\n  <label>\n    Nome\n    <input id=\"nome\" class=\"input\" />\n    <small class=\"erro\" id=\"erro-nome\"></small>\n  </label>\n\n  <label>\n    Email\n    <input id=\"email\" class=\"input\" />\n    <small class=\"erro\" id=\"erro-email\"></small>\n  </label>\n\n  <label>\n    Senha\n    <input id=\"senha\" class=\"input\" type=\"password\" />\n    <small class=\"erro\" id=\"erro-senha\"></small>\n  </label>\n\n  <button class=\"btn primary\" type=\"submit\">Entrar</button>\n</form>\n\n<p class=\"msg\" id=\"msg\"></p>\n\nE no CSS (do seu design system):\n- .input-error { border-color: var(--danger); }\n- .input-success { border-color: var(--success); }"
+    },
+    {
+      "title": "Passo 1: pegar valores (sempre com trim)",
+      "body": "Dados do usuário vêm com espaços.\n\nEntão:\n- const nome = nomeInput.value.trim()\n\nIsso evita:\n- '   ' passar como válido\n\nPara senha, às vezes você não usa trim (depende), mas aqui vamos usar para simplificar."
+    },
+    {
+      "title": "Passo 2: criar funções pequenas de validação",
+      "body": "Em vez de if gigante, crie funções:\n\n- validarNome(nome)\n- validarEmail(email)\n- validarSenha(senha)\n\nCada uma retorna:\n- string vazia '' se está ok\n- uma mensagem de erro se está inválido\n\nIsso deixa o código:\n- testável\n- organizado\n- reaproveitável"
+    },
+    {
+      "title": "Passo 3: mostrar erro e marcar input",
+      "body": "Você quer duas coisas:\n\n1) Mensagem visível\n- erroEl.textContent = '...'\n\n2) Estado visual\n- input.classList.add('input-error')\n- input.classList.remove('input-success')\n\nQuando está ok:\n- mensagem some\n- input fica success\n\nIsso dá UX mínima profissional."
+    },
+    {
+      "title": "Passo 4: no submit, validar tudo e decidir",
+      "body": "No submit:\n1) preventDefault\n2) limpar mensagens antigas\n3) validar cada campo\n4) se tiver erro, não envia\n5) se tudo ok, mostra sucesso\n\nImportante:\n- não recarregar a página\n- mostrar feedback claro"
+    },
+    {
+      "title": "Regras simples (para este treino)",
+      "body": "Vamos usar regras simples:\n\nNome:\n- obrigatório\n- >= 2 caracteres\n\nEmail:\n- obrigatório\n- precisa ter '@' e '.' (bem simples)\n\nSenha:\n- obrigatório\n- >= 8 caracteres\n\nDepois você aprende regex e validações melhores.\nAqui o foco é estrutura e UX."
+    },
+    {
+      "title": "Mini tarefa (30 minutos) — login com validação",
+      "body": "Implemente:\n\n1) Ao digitar (input):\n- se o campo ficar válido, marque como success\n- se ficar inválido, marque como error\n\n2) Ao enviar (submit):\n- valide todos\n- se algum erro, mostre as mensagens\n- se tudo ok, mostre em #msg: 'Login ok!' e limpe o form\n\nMeta: você tem que conseguir explicar:\n- por que trim\n- por que separar validações em funções\n- como classes controlam o visual"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Validação é regra esperada (if/else)\n- Sempre use trim para textos\n- Mostre mensagem + estado visual (erro/sucesso)\n- Separe em funções pequenas\n- No submit: preventDefault → validar → decidir"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 22 (Formulários e validação)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Validação é melhor feita com:",
+        "options": [
+          { "key": "A", "text": "if/else e regras claras (esperado)" },
+          { "key": "B", "text": "try/catch para qualquer coisa" }
+        ],
+        "answer": "A",
+        "explain": "Validação é caso esperado, não exceção."
+      },
+      {
+        "id": 2,
+        "question": "No submit do form, é comum usar preventDefault para:",
+        "options": [
+          { "key": "A", "text": "Evitar recarregar a página" },
+          { "key": "B", "text": "Apagar o CSS do site" }
+        ],
+        "answer": "A",
+        "explain": "Você assume o controle do envio."
+      },
+      {
+        "id": 3,
+        "question": "trim é importante porque:",
+        "options": [
+          { "key": "A", "text": "Evita que '   ' passe como preenchido" },
+          { "key": "B", "text": "Transforma texto em número" }
+        ],
+        "answer": "A",
+        "explain": "Espaço não deve contar como valor."
+      },
+      {
+        "id": 4,
+        "question": "Uma boa UX de formulário inclui:",
+        "options": [
+          { "key": "A", "text": "Mensagem de erro + estado visual no input" },
+          { "key": "B", "text": "Nenhuma mensagem, usuário que adivinhe" }
+        ],
+        "answer": "A",
+        "explain": "Feedback reduz frustração."
+      },
+      {
+        "id": 5,
+        "question": "Separar validações em funções ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Organiza e permite reaproveitar/testar" },
+          { "key": "B", "text": "Deixa o código maior sem motivo" }
+        ],
+        "answer": "A",
+        "explain": "Funções pequenas deixam tudo mais claro."
+      },
+      {
+        "id": 6,
+        "question": "Para mostrar mensagem de erro, você pode usar:",
+        "options": [
+          { "key": "A", "text": "erroEl.textContent = '...'" },
+          { "key": "B", "text": "erroEl = '...'" }
+        ],
+        "answer": "A",
+        "explain": "Você altera o conteúdo do elemento."
+      },
+      {
+        "id": 7,
+        "question": "Para marcar input com erro visual, você usa:",
+        "options": [
+          { "key": "A", "text": "classList.add('input-error')" },
+          { "key": "B", "text": "JSON.stringify('input-error')" }
+        ],
+        "answer": "A",
+        "explain": "Classe controla o visual via CSS."
+      },
+      {
+        "id": 8,
+        "question": "Se todos os campos estão válidos, o submit deve:",
+        "options": [
+          { "key": "A", "text": "Mostrar sucesso e prosseguir com a ação" },
+          { "key": "B", "text": "Sempre bloquear" }
+        ],
+        "answer": "A",
+        "explain": "Validação existe para permitir quando está ok."
+      },
+      {
+        "id": 9,
+        "question": "Email válido (neste treino simples) precisa ter:",
+        "options": [
+          { "key": "A", "text": "'@' e '.'" },
+          { "key": "B", "text": "Apenas letras maiúsculas" }
+        ],
+        "answer": "A",
+        "explain": "É uma regra simples didática."
+      },
+      {
+        "id": 10,
+        "question": "CSS e JS juntos no form funcionam melhor quando:",
+        "options": [
+          { "key": "A", "text": "JS adiciona classes e CSS define o visual dessas classes" },
+          { "key": "B", "text": "JS escreve todo o CSS no style em cada digitação" }
+        ],
+        "answer": "A",
+        "explain": "Separa responsabilidades e mantém escalável."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 22 — modelJs: Form com validação + UX mínima */\n\nconst form = document.querySelector('#form');\nconst nomeInput = document.querySelector('#nome');\nconst emailInput = document.querySelector('#email');\nconst senhaInput = document.querySelector('#senha');\n\nconst erroNome = document.querySelector('#erro-nome');\nconst erroEmail = document.querySelector('#erro-email');\nconst erroSenha = document.querySelector('#erro-senha');\nconst msg = document.querySelector('#msg');\n\nfunction setErro(input, erroEl, mensagem) {\n  erroEl.textContent = mensagem;\n  input.classList.add('input-error');\n  input.classList.remove('input-success');\n}\n\nfunction setOk(input, erroEl) {\n  erroEl.textContent = '';\n  input.classList.remove('input-error');\n  input.classList.add('input-success');\n}\n\nfunction validarNome(nome) {\n  if (nome.length === 0) return 'Nome é obrigatório';\n  if (nome.length < 2) return 'Nome muito curto';\n  return '';\n}\n\nfunction validarEmail(email) {\n  if (email.length === 0) return 'Email é obrigatório';\n  if (!email.includes('@') || !email.includes('.')) return 'Email inválido';\n  return '';\n}\n\nfunction validarSenha(senha) {\n  if (senha.length === 0) return 'Senha é obrigatória';\n  if (senha.length < 8) return 'Senha precisa ter 8+ caracteres';\n  return '';\n}\n\nfunction validarCampo(input, erroEl, fnValidar) {\n  const valor = input.value.trim();\n  const erro = fnValidar(valor);\n  if (erro) {\n    setErro(input, erroEl, erro);\n    return false;\n  }\n  setOk(input, erroEl);\n  return true;\n}\n\nif (form && nomeInput && emailInput && senhaInput && erroNome && erroEmail && erroSenha && msg) {\n  // validação ao digitar\n  nomeInput.addEventListener('input', () => validarCampo(nomeInput, erroNome, validarNome));\n  emailInput.addEventListener('input', () => validarCampo(emailInput, erroEmail, validarEmail));\n  senhaInput.addEventListener('input', () => validarCampo(senhaInput, erroSenha, validarSenha));\n\n  // submit\n  form.addEventListener('submit', (e) => {\n    e.preventDefault();\n    msg.textContent = '';\n\n    const okNome = validarCampo(nomeInput, erroNome, validarNome);\n    const okEmail = validarCampo(emailInput, erroEmail, validarEmail);\n    const okSenha = validarCampo(senhaInput, erroSenha, validarSenha);\n\n    if (!okNome || !okEmail || !okSenha) {\n      msg.textContent = 'Corrija os campos acima.';\n      return;\n    }\n\n    msg.textContent = 'Login ok!';\n    form.reset();\n\n    // limpar estados visuais após reset\n    [nomeInput, emailInput, senhaInput].forEach((i) => {\n      i.classList.remove('input-error');\n      i.classList.remove('input-success');\n    });\n  });\n}\n"
+  }
+}

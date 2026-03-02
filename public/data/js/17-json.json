@@ -1,0 +1,155 @@
+{
+  "id": "17-json",
+  "title": "Aula 17 — JSON (parse/stringify) e por que isso é tão usado",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai entender JSON de um jeito definitivo.\n\nNo final você vai conseguir:\n1) Explicar o que é JSON e por que existe\n2) Diferenciar JSON de objeto JavaScript\n3) Usar JSON.parse para transformar texto em objeto\n4) Usar JSON.stringify para transformar objeto em texto\n5) Entender por que localStorage e APIs usam JSON\n6) Evitar erros comuns (aspas, vírgulas, undefined, funções)"
+    },
+    {
+      "title": "O que é JSON (e por que ele existe)",
+      "body": "JSON significa: JavaScript Object Notation.\n\nMas não se engane:\n- JSON não é JavaScript\n- JSON é um FORMATO DE TEXTO (string)\n\nEle existe para:\n- trocar dados entre sistemas\n- salvar dados de forma padronizada\n\nÉ como um “idioma” que quase todo sistema entende."
+    },
+    {
+      "title": "JSON vs Objeto JavaScript (diferença crucial)",
+      "body": "Objeto JS:\nconst user = { nome: 'Bruno', ativo: true }\n\nJSON (texto):\n\"{ \\\"nome\\\": \\\"Bruno\\\", \\\"ativo\\\": true }\"\n\nRegras do JSON:\n- sempre texto\n- chaves em aspas duplas\n- strings em aspas duplas\n- sem trailing comma (vírgula sobrando)\n- não permite funções\n- não permite undefined\n\nJSON é mais 'rigoroso' que objeto JS."
+    },
+    {
+      "title": "JSON.parse: texto → objeto",
+      "body": "Quando você recebe um JSON (texto), você converte para objeto:\n\nconst texto = '{\"nome\":\"Bruno\",\"ativo\":true}';\nconst obj = JSON.parse(texto);\n\nAgora você pode acessar:\n- obj.nome\n- obj.ativo\n\nAtenção:\n- se o texto não for JSON válido, JSON.parse lança erro\n- por isso muitas vezes você usa try/catch (aula 16)"
+    },
+    {
+      "title": "JSON.stringify: objeto → texto",
+      "body": "Quando você quer salvar/enviar dados, você transforma objeto em texto:\n\nconst obj = { nome: 'Bruno', ativo: true };\nconst texto = JSON.stringify(obj);\n\nAgora texto é uma string JSON.\n\nPor que isso é útil?\n- localStorage só salva strings\n- requisições HTTP enviam texto no corpo\n- logs e exportações usam texto"
+    },
+    {
+      "title": "Pretty print (deixar JSON legível)",
+      "body": "JSON.stringify aceita argumentos para formatar:\n\nconst textoBonito = JSON.stringify(obj, null, 2);\n\n- null: sem replacer\n- 2: identação de 2 espaços\n\nIsso é ótimo para:\n- debug\n- arquivos .json\n- logs legíveis"
+    },
+    {
+      "title": "Armadilhas comuns (e como pensar)",
+      "body": "1) Aspas\n- JSON exige aspas duplas.\n\n2) undefined e funções somem\n\nExemplo:\nconst x = { a: 1, b: undefined, c: () => 1 };\nJSON.stringify(x) → '{\"a\":1}'\n\nOu seja:\n- b e c não entram no JSON.\n\n3) Datas viram string\n- new Date() vira texto.\n\n4) Circular (quebra)\nSe um objeto referencia ele mesmo:\nconst a = {};\na.self = a;\nJSON.stringify(a) lança erro.\n\nRegra: JSON é para dados simples."
+    },
+    {
+      "title": "Caso real: localStorage (por que JSON aparece tanto)",
+      "body": "localStorage só guarda string.\n\nSe você quer guardar um objeto:\n\nconst usuario = { nome: 'Bruno', pontos: 10 };\nlocalStorage.setItem('usuario', JSON.stringify(usuario));\n\nPara ler:\nconst texto = localStorage.getItem('usuario');\nconst usuarioLido = JSON.parse(texto);\n\nSe você não usar JSON:\n- você perde estrutura\n- vira uma bagunça de strings"
+    },
+    {
+      "title": "Mini tarefa (20 minutos) — salvar e recuperar",
+      "body": "Faça no Console do navegador (em uma página qualquer):\n\n1) Crie:\nconst config = { tema: 'dark', fonte: 16, animacoes: false };\n\n2) Transforme em JSON bonito:\n- JSON.stringify(config, null, 2)\n\n3) Salve no localStorage:\n- setItem('config', ...)\n\n4) Leia de volta:\n- getItem('config')\n- parse\n\n5) Confirme:\n- console.log(configLida.tema)\n\nExtra (treino de robustez):\n- tente fazer JSON.parse em um texto inválido dentro de try/catch."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- JSON é texto padronizado para dados\n- Objeto JS ≠ JSON (JSON é mais rígido)\n- JSON.parse: string → objeto\n- JSON.stringify: objeto → string\n- localStorage e APIs usam JSON porque é universal\n- cuidado com aspas duplas, undefined, funções e circular"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 17 (JSON)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "JSON é:",
+        "options": [
+          { "key": "A", "text": "Um formato de texto para trocar/salvar dados" },
+          { "key": "B", "text": "Um tipo especial de objeto JavaScript" }
+        ],
+        "answer": "A",
+        "explain": "JSON é string com regras específicas."
+      },
+      {
+        "id": 2,
+        "question": "JSON.parse faz:",
+        "options": [
+          { "key": "A", "text": "Converte texto JSON em objeto/valor JS" },
+          { "key": "B", "text": "Converte objeto em texto" }
+        ],
+        "answer": "A",
+        "explain": "parse lê texto e cria estrutura."
+      },
+      {
+        "id": 3,
+        "question": "JSON.stringify faz:",
+        "options": [
+          { "key": "A", "text": "Converte objeto/valor JS em texto JSON" },
+          { "key": "B", "text": "Converte texto em objeto" }
+        ],
+        "answer": "A",
+        "explain": "stringify gera string JSON."
+      },
+      {
+        "id": 4,
+        "question": "No JSON, as chaves devem estar:",
+        "options": [
+          { "key": "A", "text": "Em aspas duplas" },
+          { "key": "B", "text": "Sem aspas" }
+        ],
+        "answer": "A",
+        "explain": "JSON é rigoroso com aspas duplas."
+      },
+      {
+        "id": 5,
+        "question": "localStorage armazena:",
+        "options": [
+          { "key": "A", "text": "Apenas strings" },
+          { "key": "B", "text": "Objetos diretamente" }
+        ],
+        "answer": "A",
+        "explain": "Por isso usamos JSON.stringify."
+      },
+      {
+        "id": 6,
+        "question": "Se JSON.parse receber texto inválido:",
+        "options": [
+          { "key": "A", "text": "Ele lança erro" },
+          { "key": "B", "text": "Ele retorna null automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Por isso try/catch é comum."
+      },
+      {
+        "id": 7,
+        "question": "Funções em objetos ao usar JSON.stringify:",
+        "options": [
+          { "key": "A", "text": "Não entram no JSON (são ignoradas)" },
+          { "key": "B", "text": "Viraram texto automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "JSON é para dados, não comportamento."
+      },
+      {
+        "id": 8,
+        "question": "undefined em propriedades ao stringify:",
+        "options": [
+          { "key": "A", "text": "Geralmente some (não é serializado)" },
+          { "key": "B", "text": "Vira 0" }
+        ],
+        "answer": "A",
+        "explain": "undefined não é representável em JSON."
+      },
+      {
+        "id": 9,
+        "question": "JSON.stringify(obj, null, 2) serve para:",
+        "options": [
+          { "key": "A", "text": "Formatar o JSON com indentação (mais legível)" },
+          { "key": "B", "text": "Aumentar performance" }
+        ],
+        "answer": "A",
+        "explain": "Ajuda em debug e leitura."
+      },
+      {
+        "id": 10,
+        "question": "Circular reference em stringify:",
+        "options": [
+          { "key": "A", "text": "Lança erro" },
+          { "key": "B", "text": "Funciona normal" }
+        ],
+        "answer": "A",
+        "explain": "JSON não suporta referência circular."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 17 — modelJs: JSON + localStorage */\n\n// 1) Objeto normal\nconst config = { tema: 'dark', fonte: 16, animacoes: false };\n\n// 2) Objeto -> JSON (texto)\nconst configJsonBonito = JSON.stringify(config, null, 2);\nconsole.log('JSON bonito:\\n', configJsonBonito);\n\n// 3) Salvar no localStorage (string)\nlocalStorage.setItem('config', configJsonBonito);\n\n// 4) Ler e converter de volta\nconst textoLido = localStorage.getItem('config');\nconsole.log('textoLido:', textoLido);\n\nconst configLida = JSON.parse(textoLido);\nconsole.log('configLida:', configLida);\nconsole.log('tema:', configLida.tema);\n\n// 5) Parse com erro (try/catch)\ntry {\n  JSON.parse('{ ok: true }');\n} catch (err) {\n  console.error('Parse falhou:', err.message);\n}\n"
+  }
+}

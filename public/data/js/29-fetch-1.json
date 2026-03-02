@@ -1,0 +1,155 @@
+{
+  "id": "29-fetch-1",
+  "title": "Aula 29 — HTTP e Fetch 1: GET, headers, JSON e erros comuns",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a buscar dados de uma API usando fetch.\n\nNo final você vai conseguir:\n1) Entender o básico de HTTP (request/response)\n2) Fazer GET com fetch\n3) Converter resposta para JSON\n4) Tratar erros comuns (404, 500, rede)\n5) Mostrar loading e mensagens na UI\n\nIsso é a ponte entre sua UI e o mundo real (APIs)."
+    },
+    {
+      "title": "O que é HTTP (visão simples)",
+      "body": "HTTP é o 'jeito padrão' de um cliente pedir algo para um servidor.\n\nVocê manda:\n- Request (pedido)\n  - método (GET, POST...)\n  - URL\n  - headers\n  - body (às vezes)\n\nVocê recebe:\n- Response (resposta)\n  - status (200, 404, 500...)\n  - headers\n  - body (dados)\n\nNo navegador, fetch é a ferramenta para fazer essas requests."
+    },
+    {
+      "title": "GET: buscar dados",
+      "body": "GET é usado para 'pegar' dados.\n\nExemplo:\nfetch('https://jsonplaceholder.typicode.com/todos/1')\n\nfetch retorna uma Promise.\n\nVocê não tem o dado na hora.\nVocê precisa esperar (aula 30/31 aprofunda).\n\nPor enquanto, vamos usar .then/.catch."
+    },
+    {
+      "title": "Ler JSON da resposta",
+      "body": "Uma response tem um método .json() que também é async.\n\nfetch(url)\n  .then((res) => res.json())\n  .then((data) => {\n    console.log(data);\n  });\n\nPor que res.json() é async?\n- porque o corpo da resposta precisa ser lido e convertido.\n\nRegra:\n- fetch → response → response.json() → data"
+    },
+    {
+      "title": "Status HTTP e o erro comum: fetch NÃO quebra em 404",
+      "body": "Pegadinha:\n- fetch só cai no catch quando tem erro de rede\n- 404 e 500 ainda chegam como resposta\n\nEntão você precisa checar:\n- res.ok (true para 200-299)\n\nExemplo:\nfetch(url)\n  .then((res) => {\n    if (!res.ok) throw new Error(`HTTP ${res.status}`);\n    return res.json();\n  })\n  .then(...)\n  .catch(...)\n\nIsso é MUITO importante."
+    },
+    {
+      "title": "Headers (o básico)",
+      "body": "Headers são metadados.\n\nEm GET simples você raramente precisa.\nMas é bom saber que existe.\n\nExemplo de header que aparece:\n- Content-Type: application/json\n\nEm requests com body (POST), você vai usar:\n- 'Content-Type': 'application/json'\n\nHoje: só conheça o conceito."
+    },
+    {
+      "title": "Loading e erro na UI (mínimo profissional)",
+      "body": "Você quer 3 estados:\n\n1) loading\n- 'Carregando...'\n\n2) sucesso\n- mostrar dados\n\n3) erro\n- 'Não foi possível carregar'\n\nIsso é UX mínima.\nSem isso, o usuário acha que travou."
+    },
+    {
+      "title": "Mini laboratório: HTML simples",
+      "body": "Use:\n\n<button id=\"carregar\" class=\"btn primary\">Carregar</button>\n<p id=\"status\" class=\"muted\"></p>\n<pre id=\"saida\" class=\"card\"></pre>\n\nA ideia:\n- clicou → mostra loading\n- busca uma API\n- mostra o JSON formatado\n- se erro → mostra mensagem"
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — buscar e mostrar",
+      "body": "Faça no navegador:\n\n1) Ao clicar no botão:\n- status = 'Carregando...'\n- saida = ''\n\n2) Faça fetch GET em:\nhttps://jsonplaceholder.typicode.com/todos/1\n\n3) Se res.ok for false:\n- throw new Error\n\n4) Converta para JSON e mostre em <pre>:\n- JSON.stringify(data, null, 2)\n\n5) No catch:\n- status = 'Erro: ...'\n\nMeta: você tem que explicar:\n- por que res.ok é necessário\n- por que res.json() precisa de then\n- diferença entre erro HTTP e erro de rede"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- HTTP: request/response\n- GET busca dados\n- fetch retorna Promise\n- precisa fazer res.json() para ler JSON\n- fetch não cai no catch em 404/500 (cheque res.ok)\n- UI mínima: loading/sucesso/erro"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 29 (Fetch 1)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "HTTP é:",
+        "options": [
+          { "key": "A", "text": "Um protocolo de request/response entre cliente e servidor" },
+          { "key": "B", "text": "Um método de array" }
+        ],
+        "answer": "A",
+        "explain": "Você pede e recebe resposta."
+      },
+      {
+        "id": 2,
+        "question": "GET é usado para:",
+        "options": [
+          { "key": "A", "text": "Buscar dados" },
+          { "key": "B", "text": "Apagar dados" }
+        ],
+        "answer": "A",
+        "explain": "GET é leitura."
+      },
+      {
+        "id": 3,
+        "question": "fetch retorna:",
+        "options": [
+          { "key": "A", "text": "Uma Promise" },
+          { "key": "B", "text": "O JSON pronto imediatamente" }
+        ],
+        "answer": "A",
+        "explain": "É assíncrono."
+      },
+      {
+        "id": 4,
+        "question": "Para obter o JSON do response, você usa:",
+        "options": [
+          { "key": "A", "text": "res.json()" },
+          { "key": "B", "text": "res.textContent" }
+        ],
+        "answer": "A",
+        "explain": "json() lê e converte o corpo."
+      },
+      {
+        "id": 5,
+        "question": "fetch cai no catch em 404?",
+        "options": [
+          { "key": "A", "text": "Não, 404 é response (cheque res.ok)" },
+          { "key": "B", "text": "Sim, sempre" }
+        ],
+        "answer": "A",
+        "explain": "Catch é mais para erro de rede/exceções."
+      },
+      {
+        "id": 6,
+        "question": "res.ok é true quando:",
+        "options": [
+          { "key": "A", "text": "Status está entre 200 e 299" },
+          { "key": "B", "text": "Qualquer status" }
+        ],
+        "answer": "A",
+        "explain": "É um atalho para sucesso HTTP."
+      },
+      {
+        "id": 7,
+        "question": "Tratar erro HTTP corretamente envolve:",
+        "options": [
+          { "key": "A", "text": "Checar res.ok e lançar erro se false" },
+          { "key": "B", "text": "Ignorar status e sempre parsear" }
+        ],
+        "answer": "A",
+        "explain": "Senão você mostra dados errados/bug."
+      },
+      {
+        "id": 8,
+        "question": "Headers são:",
+        "options": [
+          { "key": "A", "text": "Metadados da request/response" },
+          { "key": "B", "text": "Elementos do DOM" }
+        ],
+        "answer": "A",
+        "explain": "Ex.: Content-Type."
+      },
+      {
+        "id": 9,
+        "question": "UX mínima ao buscar dados inclui:",
+        "options": [
+          { "key": "A", "text": "Loading, sucesso e erro" },
+          { "key": "B", "text": "Só console.log" }
+        ],
+        "answer": "A",
+        "explain": "Usuário precisa de feedback."
+      },
+      {
+        "id": 10,
+        "question": "Erro de rede difere de erro HTTP porque:",
+        "options": [
+          { "key": "A", "text": "Erro de rede impede response; erro HTTP ainda tem response" },
+          { "key": "B", "text": "São a mesma coisa" }
+        ],
+        "answer": "A",
+        "explain": "404/500 chegam; rede pode nem responder."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 29 — modelJs: GET com fetch + UI de loading/erro */\n\nconst btn = document.querySelector('#carregar');\nconst statusEl = document.querySelector('#status');\nconst saida = document.querySelector('#saida');\n\nfunction setStatus(txt) {\n  if (statusEl) statusEl.textContent = txt;\n}\n\nfunction setSaida(obj) {\n  if (!saida) return;\n  saida.textContent = obj ? JSON.stringify(obj, null, 2) : '';\n}\n\nif (btn) {\n  btn.addEventListener('click', () => {\n    setStatus('Carregando...');\n    setSaida(null);\n\n    fetch('https://jsonplaceholder.typicode.com/todos/1')\n      .then((res) => {\n        if (!res.ok) throw new Error(`HTTP ${res.status}`);\n        return res.json();\n      })\n      .then((data) => {\n        setStatus('OK');\n        setSaida(data);\n      })\n      .catch((err) => {\n        setStatus(`Erro: ${err.message}`);\n      });\n  });\n}\n"
+  }
+}

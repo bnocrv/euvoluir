@@ -1,0 +1,159 @@
+{
+  "id": "38-testes-mentais-e-debug",
+  "title": "Aula 38 — Debug profissional: reproduzir, isolar, logs úteis e checklist",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a debugar como dev de verdade: método, não sorte.\n\nNo final você vai conseguir:\n1) Reproduzir bug de forma consistente\n2) Isolar a causa (reduzir o problema)\n3) Usar logs úteis (com contexto)\n4) Usar breakpoints e watch\n5) Criar um checklist de debug (pra usar sempre)\n\nQuem sabe debugar, aprende mais rápido e evolui mais rápido."
+    },
+    {
+      "title": "Regra #1: bug que você não consegue reproduzir não existe (ainda)",
+      "body": "Se você não consegue fazer o bug acontecer quando quer,\nvocê não consegue provar que corrigiu.\n\nEntão o primeiro passo é:\n- escrever os passos exatos para reproduzir\n\nExemplo:\n1) abrir página\n2) clicar X\n3) digitar Y\n4) salvar\n5) aparece erro Z\n\nIsso vira sua 'receita do bug'."
+    },
+    {
+      "title": "Isolar: reduzir até sobrar só o essencial",
+      "body": "Quando um bug acontece, tem muita coisa envolvida.\n\nIsolar significa:\n- remover tudo que não importa\n- ficar com o menor caso que ainda quebra\n\nExemplos:\n- se é bug no render, teste render com 1 item\n- se é bug em validação, teste com input mínimo\n- se é bug em fetch, simule com dados fixos\n\nIsso acelera MUITO."
+    },
+    {
+      "title": "Logs úteis: não é 'console.log(1)'",
+      "body": "Log bom tem:\n- rótulo\n- valor\n- contexto\n\nExemplo ruim:\nconsole.log(x)\n\nExemplo bom:\nconsole.log('[submit] nome:', nome)\nconsole.log('[state] depois:', structuredClone(state))\n\nDica:\n- padronize tags entre colchetes\n- você bate o olho e sabe de onde veio."
+    },
+    {
+      "title": "Log antes e depois (padrão ouro)",
+      "body": "Para achar onde muda errado:\n\nconsole.log('ANTES', ...)\n// ação\nconsole.log('DEPOIS', ...)\n\nEm estado:\n- log state antes de update\n- log state depois\n\nSe o bug é 'sumiu item', você descobre em qual passo ele some."
+    },
+    {
+      "title": "Use breakpoints como microscópio",
+      "body": "Quando log não é suficiente:\n\n1) DevTools → Sources\n2) clique na linha (breakpoint)\n3) faça a ação\n\nQuando parar:\n- veja Scope (variáveis)\n- use Watch (expressões)\n- Step over/into\n\nDica pro:\n- breakpoint em pontos de decisão (ifs)\n- breakpoint antes de mutações de state\n- breakpoint antes do render"
+    },
+    {
+      "title": "Watch expressions (olhar variável mudando)",
+      "body": "No DevTools, você pode adicionar Watch:\n- state.selectedId\n- tarefas.length\n- input.value\n\nVocê vê em tempo real enquanto dá step.\n\nIsso evita log spam."
+    },
+    {
+      "title": "Checklist de debug (use sempre)",
+      "body": "Checklist pro:\n\nA) Reproduzir\n- [ ] passo a passo anotado\n- [ ] acontece sempre?\n\nB) Isolar\n- [ ] menor caso que quebra\n- [ ] remover partes até sobrar o mínimo\n\nC) Medir\n- [ ] logs com rótulo\n- [ ] antes/depois\n\nD) Inspecionar\n- [ ] breakpoint no ponto suspeito\n- [ ] watch nas variáveis\n\nE) Corrigir e provar\n- [ ] correção mínima\n- [ ] reproduzir de novo\n- [ ] teste de regressão (não quebrou outra coisa)\n\nSe você faz isso, você vira muito mais rápido."
+    },
+    {
+      "title": "Bugs comuns em JS front (pra você ficar atento)",
+      "body": "1) null em querySelector\n- elemento não existe\n\n2) string vs number\n- id de dataset é string\n- Number(item.dataset.id)\n\n3) esquecer await\n- data vira Promise\n\n4) state e UI fora de sync\n- mudou state e não renderizou\n\n5) mutação estranha\n- mexeu no array original sem querer\n\nEssa lista sozinha já resolve metade dos bugs do início."
+    },
+    {
+      "title": "Mini tarefa (20 minutos) — caça-bug guiado",
+      "body": "Cole esse código (tem bugs) e conserte usando checklist:\n\nconst itens = [];\n\nfunction addItem(texto) {\n  if (texto) {\n    itens.push({ id: Date.now(), texto, done: false });\n  }\n}\n\nfunction toggle(id) {\n  const item = itens.find(x => x.id === id);\n  item.done = !item.done;\n}\n\naddItem('   ');\naddItem('estudar');\n\nconsole.log(itens);\n\n// bug 1: deveria ignorar string só com espaço\n// bug 2: toggle pode quebrar se id não existir\n// bug 3: id vindo do dataset seria string\n\nTarefas:\n1) Ajuste addItem para usar trim\n2) Ajuste toggle para checar item (se não achar, não quebra)\n3) Ajuste toggle para aceitar id string (converter)\n\nMeta: você precisa mostrar no console:\n- antes/depois\n- que não quebra\n- que itens só tem 'estudar'"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Debug é método: reproduzir → isolar → medir → inspecionar → provar\n- Logs úteis com rótulo e contexto\n- Breakpoints + watch são microscópio\n- Checklist evita ficar 'tentando coisas'\n- Bugs comuns: null, tipo, await, state/render, mutação"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 38 (Debug pro)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Primeiro passo do debug é:",
+        "options": [
+          { "key": "A", "text": "Conseguir reproduzir o bug" },
+          { "key": "B", "text": "Chutar a correção" }
+        ],
+        "answer": "A",
+        "explain": "Sem reproduzir, você não prova."
+      },
+      {
+        "id": 2,
+        "question": "Isolar significa:",
+        "options": [
+          { "key": "A", "text": "Reduzir ao menor caso que ainda quebra" },
+          { "key": "B", "text": "Adicionar mais código para ver se melhora" }
+        ],
+        "answer": "A",
+        "explain": "Menor caso = mais rápido achar causa."
+      },
+      {
+        "id": 3,
+        "question": "Log útil tem:",
+        "options": [
+          { "key": "A", "text": "Rótulo + valor + contexto" },
+          { "key": "B", "text": "Apenas número 1" }
+        ],
+        "answer": "A",
+        "explain": "Você precisa entender de onde veio."
+      },
+      {
+        "id": 4,
+        "question": "Padrão 'antes/depois' serve para:",
+        "options": [
+          { "key": "A", "text": "Ver onde o estado muda errado" },
+          { "key": "B", "text": "Deixar o console mais bonito" }
+        ],
+        "answer": "A",
+        "explain": "Mostra a transformação."
+      },
+      {
+        "id": 5,
+        "question": "Breakpoint serve para:",
+        "options": [
+          { "key": "A", "text": "Pausar e inspecionar variáveis passo a passo" },
+          { "key": "B", "text": "Acelerar a internet" }
+        ],
+        "answer": "A",
+        "explain": "É um microscópio."
+      },
+      {
+        "id": 6,
+        "question": "Watch serve para:",
+        "options": [
+          { "key": "A", "text": "Ver valores de expressões enquanto dá step" },
+          { "key": "B", "text": "Criar loops" }
+        ],
+        "answer": "A",
+        "explain": "Você acompanha variáveis sem log spam."
+      },
+      {
+        "id": 7,
+        "question": "Um bug comum com dataset é:",
+        "options": [
+          { "key": "A", "text": "id vem como string, precisa Number()" },
+          { "key": "B", "text": "id vem sempre como number" }
+        ],
+        "answer": "A",
+        "explain": "dataset sempre retorna string."
+      },
+      {
+        "id": 8,
+        "question": "Esquecer await geralmente faz:",
+        "options": [
+          { "key": "A", "text": "Você lidar com uma Promise em vez do dado" },
+          { "key": "B", "text": "O dado aparecer instantaneamente" }
+        ],
+        "answer": "A",
+        "explain": "Você vê Promise no console."
+      },
+      {
+        "id": 9,
+        "question": "Correção boa é aquela que:",
+        "options": [
+          { "key": "A", "text": "É mínima e você prova que resolveu (reprodução)" },
+          { "key": "B", "text": "É gigante e muda tudo" }
+        ],
+        "answer": "A",
+        "explain": "Mudança mínima reduz risco."
+      },
+      {
+        "id": 10,
+        "question": "Debug profissional é:",
+        "options": [
+          { "key": "A", "text": "Processo repetível (checklist) para achar causa" },
+          { "key": "B", "text": "Sorte e intuição" }
+        ],
+        "answer": "A",
+        "explain": "Método ganha de sorte."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 38 — modelJs: caça-bug (solução) */\n\nconst itens = [];\n\nfunction addItem(texto) {\n  const limpo = String(texto ?? '').trim();\n  if (!limpo) return;\n  itens.push({ id: Date.now(), texto: limpo, done: false });\n}\n\nfunction toggle(id) {\n  const numId = Number(id);\n  const item = itens.find(x => x.id === numId);\n  if (!item) return; // não quebra\n  item.done = !item.done;\n}\n\nconsole.log('ANTES add:', itens);\naddItem('   ');\naddItem('estudar');\nconsole.log('DEPOIS add:', itens);\n\ntoggle('id-invalido');\nconsole.log('DEPOIS toggle inválido (não quebra):', itens);\n"
+  }
+}

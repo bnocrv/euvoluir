@@ -1,0 +1,151 @@
+{
+  "id": "15-strings-arrays-pratica",
+  "title": "Aula 15 — Prática guiada: transformar dados (strings + arrays) como um dev",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje é aula 100% prática: você vai treinar o que mais aparece no mundo real.\n\nNo final você vai conseguir:\n1) Limpar e padronizar textos (trim, lower/upper)\n2) Quebrar e juntar strings (split/join)\n3) Transformar listas com map/filter\n4) Combinar tudo para resolver problemas reais (dados sujos)\n\nEssa aula é o tipo de coisa que você vai fazer em API, planilha, cadastro, relatórios."
+    },
+    {
+      "title": "Problema real: dados chegam sujos",
+      "body": "No mundo real, dados chegam assim:\n- nomes com espaços\n- emails com letras maiúsculas\n- listas em texto (separadas por vírgula)\n- duplicados\n\nVocê como dev precisa:\n- limpar\n- padronizar\n- transformar\n\nA regra é: 'entrada suja, saída limpa'."
+    },
+    {
+      "title": "Ferramentas de string que a gente vai usar",
+      "body": "1) trim()\n- tira espaços nas pontas\n\n2) toLowerCase() / toUpperCase()\n- padroniza letra\n\n3) split(separador)\n- transforma texto em array\n\n4) join(separador)\n- transforma array em texto\n\nExemplo:\nconst texto = 'maçã, banana, uva';\nconst arr = texto.split(',');\n// ['maçã', ' banana', ' uva'] (ainda sujo)\n\nAí você limpa com map + trim."
+    },
+    {
+      "title": "Exemplo 1: lista de tags (texto → array limpo)",
+      "body": "Entrada (usuário digita):\n'  css, JavaScript,  html , CSS  '\n\nSaída desejada:\n['css', 'javascript', 'html']\n\nPassos:\n1) trim geral\n2) split(',')\n3) map(item => item.trim().toLowerCase())\n4) remover vazios\n5) remover duplicados (extra)\n\nIsso é vida real: tags, categorias, filtros."
+    },
+    {
+      "title": "Exemplo 2: normalizar nomes (capitalização simples)",
+      "body": "Entrada:\n'  bRUNo   cArValHo '\n\nSaída desejada:\n'Bruno Carvalho'\n\nPassos:\n1) trim\n2) toLowerCase\n3) quebrar por espaços\n4) filtrar vazios (porque pode ter 3 espaços)\n5) map para capitalizar cada palavra\n6) join(' ')\n\nCapitalizar palavra:\n- palavra[0].toUpperCase() + palavra.slice(1)"
+    },
+    {
+      "title": "Exemplo 3: somar valores que chegam como string",
+      "body": "Entrada:\n['10', ' 20', '30 ', 'x']\n\nSaída desejada:\n- somar só os válidos (10+20+30 = 60)\n\nPassos:\n1) map trim\n2) map Number\n3) filter para tirar NaN\n4) reduce para somar\n\nIsso aparece quando:\n- vem de formulário\n- vem de CSV\n- vem do localStorage"
+    },
+    {
+      "title": "Mini projeto da aula: 'limpador de dados' (3 funções)",
+      "body": "Você vai criar 3 funções pequenas (bem pro) e testar.\n\n1) limparTags(texto)\nEntrada: string com vírgulas\nSaída: array de tags minúsculas, sem repetição, sem vazios\n\n2) normalizarNome(texto)\nEntrada: nome bagunçado\nSaída: nome padronizado (capitalizado)\n\n3) somarNumerosValidos(lista)\nEntrada: array de strings\nSaída: soma só dos números válidos\n\nIsso te dá um kit de 'data cleaning'."
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — implemente e teste",
+      "body": "Faça no Console:\n\nA) limparTags\nTeste com:\n- '  css, JavaScript,  html , CSS  '\nSaída esperada:\n- ['css','javascript','html']\n\nB) normalizarNome\nTeste com:\n- '  bRUNo   cArValHo '\nSaída esperada:\n- 'Bruno Carvalho'\n\nC) somarNumerosValidos\nTeste com:\n- ['10', ' 20', '30 ', 'x']\nSaída esperada:\n- 60\n\nMeta: você tem que explicar o pipeline:\n- split → map → filter → reduce\n\nSe você conseguir fazer isso, você já está mexendo com dados como dev."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Dados reais chegam sujos\n- Strings: trim, lower/upper, split/join\n- Arrays: map transforma, filter filtra, reduce resume\n- Pipeline: quebrar → limpar → filtrar → juntar\n- Mini kit: limparTags, normalizarNome, somarNumerosValidos"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 15 (Prática strings + arrays)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "split serve para:",
+        "options": [
+          { "key": "A", "text": "Transformar string em array, separando por um delimitador" },
+          { "key": "B", "text": "Somar números" }
+        ],
+        "answer": "A",
+        "explain": "split quebra texto em partes."
+      },
+      {
+        "id": 2,
+        "question": "join serve para:",
+        "options": [
+          { "key": "A", "text": "Transformar array em string, juntando com um separador" },
+          { "key": "B", "text": "Apagar itens do array" }
+        ],
+        "answer": "A",
+        "explain": "join junta em texto."
+      },
+      {
+        "id": 3,
+        "question": "trim é usado para:",
+        "options": [
+          { "key": "A", "text": "Remover espaços nas pontas" },
+          { "key": "B", "text": "Criar arrays" }
+        ],
+        "answer": "A",
+        "explain": "Ele limpa as bordas do texto."
+      },
+      {
+        "id": 4,
+        "question": "O pipeline split → map → filter geralmente significa:",
+        "options": [
+          { "key": "A", "text": "Quebrar, limpar/transformar, remover o que não serve" },
+          { "key": "B", "text": "Converter tudo em CSS" }
+        ],
+        "answer": "A",
+        "explain": "É um fluxo de transformação de dados."
+      },
+      {
+        "id": 5,
+        "question": "Para remover duplicados de um array simples, um jeito comum é:",
+        "options": [
+          { "key": "A", "text": "Usar Set e depois converter de volta" },
+          { "key": "B", "text": "Usar switch" }
+        ],
+        "answer": "A",
+        "explain": "Set guarda valores únicos."
+      },
+      {
+        "id": 6,
+        "question": "Para transformar cada item, você usa:",
+        "options": [
+          { "key": "A", "text": "map" },
+          { "key": "B", "text": "filter" }
+        ],
+        "answer": "A",
+        "explain": "map transforma item por item."
+      },
+      {
+        "id": 7,
+        "question": "Para manter só os válidos, você usa:",
+        "options": [
+          { "key": "A", "text": "filter" },
+          { "key": "B", "text": "map" }
+        ],
+        "answer": "A",
+        "explain": "filter remove o que não passa."
+      },
+      {
+        "id": 8,
+        "question": "Para somar valores de uma lista, você usa:",
+        "options": [
+          { "key": "A", "text": "reduce" },
+          { "key": "B", "text": "includes" }
+        ],
+        "answer": "A",
+        "explain": "reduce acumula em um resultado."
+      },
+      {
+        "id": 9,
+        "question": "Para capitalizar 'bruno' para 'Bruno', você pode fazer:",
+        "options": [
+          { "key": "A", "text": "palavra[0].toUpperCase() + palavra.slice(1)" },
+          { "key": "B", "text": "Number(palavra)" }
+        ],
+        "answer": "A",
+        "explain": "Primeira letra maiúscula + resto."
+      },
+      {
+        "id": 10,
+        "question": "Trabalhar com dados como dev normalmente envolve:",
+        "options": [
+          { "key": "A", "text": "Limpar, padronizar e transformar antes de usar" },
+          { "key": "B", "text": "Confiar que sempre vem perfeito" }
+        ],
+        "answer": "A",
+        "explain": "Dados reais quase nunca vêm prontos."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 15 — modelJs: Limpador de dados */\n\n// A) limparTags\nfunction limparTags(texto) {\n  return [...new Set(\n    texto\n      .trim()\n      .split(',')\n      .map(t => t.trim().toLowerCase())\n      .filter(t => t.length > 0)\n  )];\n}\n\n// B) normalizarNome\nfunction normalizarNome(texto) {\n  return texto\n    .trim()\n    .toLowerCase()\n    .split(' ')\n    .filter(p => p.length > 0)\n    .map(p => p[0].toUpperCase() + p.slice(1))\n    .join(' ');\n}\n\n// C) somarNumerosValidos\nfunction somarNumerosValidos(lista) {\n  return lista\n    .map(s => s.trim())\n    .map(s => Number(s))\n    .filter(n => Number.isFinite(n))\n    .reduce((acc, n) => acc + n, 0);\n}\n\nconsole.log(limparTags('  css, JavaScript,  html , CSS  '));\nconsole.log(normalizarNome('  bRUNo   cArValHo '));\nconsole.log(somarNumerosValidos(['10', ' 20', '30 ', 'x']));\n"
+  }
+}

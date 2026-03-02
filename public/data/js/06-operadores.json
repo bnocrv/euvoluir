@@ -1,0 +1,155 @@
+{
+  "id": "06-operadores",
+  "title": "Aula 06 — Operadores (== vs ===, lógico, ternário)",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai dominar os operadores que controlam comparações e decisões.\n\nNo final você vai conseguir:\n1) Entender de verdade == vs === (e por que isso dá bug)\n2) Usar operadores lógicos: &&, ||, !\n3) Usar o operador ternário ? : para decisões simples\n4) Evitar armadilhas de coerção (conversão automática)\n5) Escrever validações mais claras"
+    },
+    {
+      "title": "Operadores: o que são?",
+      "body": "Operador é um símbolo/palavra que faz uma operação.\n\nExemplos:\n- +  (soma/concatenação)\n- >  (maior que)\n- === (igualdade estrita)\n- && (E lógico)\n\nEles são a “gramática” das condições do seu código."
+    },
+    {
+      "title": "== vs === (a diferença que separa iniciante de pro)",
+      "body": "Existem dois jeitos de comparar igualdade:\n\n1) == (igualdade solta)\n- ele tenta converter tipos antes de comparar (coerção)\n\n2) === (igualdade estrita)\n- compara valor E tipo\n- não converte\n\nExemplos:\n- 5 == '5'   → true  (converte)\n- 5 === '5'  → false (tipos diferentes)\n\nRegra de ouro:\n- use === (quase sempre)\n\nPor que?\n- você evita comparações “mágicas” que parecem funcionar até quebrar."
+    },
+    {
+      "title": "Coerção: quando o JS tenta “ajudar”",
+      "body": "Coerção é o JS convertendo automaticamente.\n\nExemplos perigosos:\n- '' == 0      → true\n- false == 0   → true\n- null == undefined → true\n\nIsso confunde muito.\n\nQuando você usa ===, essas “mágicas” param de acontecer.\nPor isso o padrão profissional é ===."
+    },
+    {
+      "title": "Operadores de comparação (os mais usados)",
+      "body": "Você vai usar o tempo todo:\n\n- >   maior que\n- <   menor que\n- >=  maior ou igual\n- <=  menor ou igual\n- !== diferente estrito\n\nExemplos:\n- idade >= 18\n- senha.length < 8\n- status !== 'ativo'"
+    },
+    {
+      "title": "Operadores lógicos (&&, ||, !)",
+      "body": "Eles combinam condições:\n\n1) && (E)\n- true && true → true\n- se uma parte for false, tudo vira false\n\nExemplo:\n- if (emailTemArroba && senhaOk) { ... }\n\n2) || (OU)\n- false || true → true\n- se uma parte for true, já basta\n\nExemplo:\n- const nomeFinal = apelido || nome;\n(Se apelido estiver vazio, usa nome)\n\n3) ! (NÃO)\n- !true → false\n- !false → true\n\nExemplo:\n- if (!usuarioLogado) { ... }"
+    },
+    {
+      "title": "Atalho importante: && e || retornam valores (não só true/false)",
+      "body": "Isso é um detalhe poderoso:\n\n1) A && B\n- se A for falsy, retorna A\n- senão, retorna B\n\n2) A || B\n- se A for truthy, retorna A\n- senão, retorna B\n\nExemplos práticos:\n- const nome = input.trim() && input.trim();\n- const tema = temaSalvo || 'dark';\n\nMais simples:\n- const tema = temaSalvo || 'dark';\n\"Se não tiver tema salvo, usa dark.\""
+    },
+    {
+      "title": "Operador ternário (? :) — if pequeno e limpo",
+      "body": "Ternário é um if em uma linha:\n\ncondicao ? valorSeVerdadeiro : valorSeFalso\n\nExemplo:\n- const acesso = idade >= 18 ? 'liberado' : 'bloqueado';\n\nUse quando:\n- a decisão é simples\n\nEvite quando:\n- vira uma frase gigante difícil de ler\n\nSe ficar confuso, volte para if/else."
+    },
+    {
+      "title": "Mini tarefa (15 minutos) — comparações e escolhas",
+      "body": "Faça no Console:\n\n1) Teste == vs ===\n- 5 == '5'\n- 5 === '5'\n- '' == 0\n- '' === 0\n\n2) Crie:\n- const idade = 17\nCrie:\n- const podeEntrar = idade >= 18\nMostre no console.\n\n3) Crie:\n- const temCupom = true\n- const compraMinima = false\nCrie:\n- const desconto = temCupom && compraMinima\nExplique o resultado.\n\n4) Use || como fallback:\n- const apelido = ''\n- const nome = 'Bruno'\n- const nomeExibido = apelido || nome\n\n5) Ternário:\n- const status = podeEntrar ? 'Acesso liberado' : 'Acesso negado'\n\nMeta: você tem que conseguir explicar cada resultado sem falar “porque sim”."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Prefira === e !== (evita coerção)\n- == tenta converter e pode gerar bugs\n- Comparações: >, <, >=, <=\n- Lógicos: && (E), || (OU), ! (NÃO)\n- && e || retornam valores (atalhos úteis)\n- Ternário ajuda em decisões simples"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 06 (Operadores)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "=== compara:",
+        "options": [
+          { "key": "A", "text": "Valor e tipo (estrito)" },
+          { "key": "B", "text": "Só o valor, convertendo tipos" }
+        ],
+        "answer": "A",
+        "explain": "=== não faz coerção."
+      },
+      {
+        "id": 2,
+        "question": "5 == '5' retorna:",
+        "options": [
+          { "key": "A", "text": "true" },
+          { "key": "B", "text": "false" }
+        ],
+        "answer": "A",
+        "explain": "== converte a string '5' em número 5."
+      },
+      {
+        "id": 3,
+        "question": "5 === '5' retorna:",
+        "options": [
+          { "key": "A", "text": "false" },
+          { "key": "B", "text": "true" }
+        ],
+        "answer": "A",
+        "explain": "Tipos diferentes: number vs string."
+      },
+      {
+        "id": 4,
+        "question": "Operador && significa:",
+        "options": [
+          { "key": "A", "text": "E lógico" },
+          { "key": "B", "text": "OU lógico" }
+        ],
+        "answer": "A",
+        "explain": "As duas condições precisam ser verdadeiras."
+      },
+      {
+        "id": 5,
+        "question": "Operador || significa:",
+        "options": [
+          { "key": "A", "text": "OU lógico" },
+          { "key": "B", "text": "E lógico" }
+        ],
+        "answer": "A",
+        "explain": "Basta uma condição ser verdadeira."
+      },
+      {
+        "id": 6,
+        "question": "!true retorna:",
+        "options": [
+          { "key": "A", "text": "false" },
+          { "key": "B", "text": "true" }
+        ],
+        "answer": "A",
+        "explain": "O ! inverte o boolean."
+      },
+      {
+        "id": 7,
+        "question": "apelido || nome serve para:",
+        "options": [
+          { "key": "A", "text": "Usar apelido se existir, senão usar nome" },
+          { "key": "B", "text": "Somar duas strings" }
+        ],
+        "answer": "A",
+        "explain": "|| é ótimo como fallback."
+      },
+      {
+        "id": 8,
+        "question": "Ternário tem a forma:",
+        "options": [
+          { "key": "A", "text": "condicao ? A : B" },
+          { "key": "B", "text": "condicao -> A <- B" }
+        ],
+        "answer": "A",
+        "explain": "É um if compacto."
+      },
+      {
+        "id": 9,
+        "question": "É recomendado, no geral, usar:",
+        "options": [
+          { "key": "A", "text": "=== ao invés de ==" },
+          { "key": "B", "text": "== ao invés de ===" }
+        ],
+        "answer": "A",
+        "explain": "Evita conversões automáticas confusas."
+      },
+      {
+        "id": 10,
+        "question": "Coerção é:",
+        "options": [
+          { "key": "A", "text": "Conversão automática de tipos feita pelo JS" },
+          { "key": "B", "text": "Um método para criar variáveis" }
+        ],
+        "answer": "A",
+        "explain": "Acontece muito com ==."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 06 — modelJs: Operadores e decisões */\n\n// 1) == vs ===\nconsole.log(5 == '5');   // true\nconsole.log(5 === '5');  // false\nconsole.log('' == 0);    // true (coerção)\nconsole.log('' === 0);   // false\n\n// 2) Comparação\nconst idade = 17;\nconst podeEntrar = idade >= 18;\nconsole.log('podeEntrar:', podeEntrar);\n\n// 3) Lógicos\nconst temCupom = true;\nconst compraMinima = false;\nconst desconto = temCupom && compraMinima;\nconsole.log('desconto:', desconto); // false\n\n// 4) Fallback com ||\nconst apelido = '';\nconst nome = 'Bruno';\nconst nomeExibido = apelido || nome;\nconsole.log('nomeExibido:', nomeExibido);\n\n// 5) Ternário\nconst status = podeEntrar ? 'Acesso liberado' : 'Acesso negado';\nconsole.log('status:', status);\n"
+  }
+}

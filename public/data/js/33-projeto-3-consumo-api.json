@@ -1,0 +1,163 @@
+{
+  "id": "33-projeto-3-consumo-api",
+  "title": "Aula 33 — Projeto 3: consumir uma API (lista + detalhes + loading/erro)",
+  "steps": [
+    {
+      "title": "Objetivo do projeto",
+      "body": "Hoje você vai fazer um projeto completo consumindo API:\n\n1) Buscar uma LISTA\n2) Clicar em um item e ver DETALHES\n3) Ter estados de UI: loading / erro / vazio\n4) (extra) Cache simples em memória\n\nVocê vai juntar:\n- fetch + async/await\n- DOM + eventos + delegation\n- estado (lista e item selecionado)\n- render por funções\n\nIsso é a base de catálogo, listagem de pedidos, clientes, produtos, etc."
+    },
+    {
+      "title": "API de treino (JSONPlaceholder)",
+      "body": "Vamos usar:\n- https://jsonplaceholder.typicode.com/users\n\nE para detalhes:\n- https://jsonplaceholder.typicode.com/users/:id\n\nPor que users?\n- tem dados suficientes (nome, email, empresa)\n- fácil de visualizar\n\nObs: é API de teste, mas o fluxo é real."
+    },
+    {
+      "title": "HTML base (layout simples)",
+      "body": "Crie um HTML assim:\n\n<div class=\"container stack\">\n  <h1>Usuários</h1>\n\n  <div class=\"card\">\n    <div class=\"card-inner stack\">\n      <div class=\"row\">\n        <button id=\"reload\" class=\"btn ghost\" type=\"button\">Recarregar</button>\n        <span id=\"status\" class=\"muted\"></span>\n      </div>\n\n      <div class=\"grid\">\n        <div>\n          <h2>Lista</h2>\n          <ul id=\"lista\" class=\"stack\"></ul>\n        </div>\n\n        <div>\n          <h2>Detalhes</h2>\n          <div id=\"detalhes\" class=\"stack\"></div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\nCSS (se quiser):\n- .grid { display:grid; gap:16px; }\n- @media(min-width:900px){ .grid{ grid-template-columns: 1fr 1fr; } }\n\nVocê pode reaproveitar seus tokens/btn/card/input."
+    },
+    {
+      "title": "Estado do app (fonte única da verdade)",
+      "body": "Você vai ter estado assim:\n\nlet state = {\n  users: [],\n  selectedId: null,\n  loading: false,\n  error: ''\n};\n\nRegra:\n- eventos mudam state\n- render desenha a tela baseada em state"
+    },
+    {
+      "title": "Helper de request (padrão que você vai usar sempre)",
+      "body": "Crie:\n\nasync function requestJSON(url) {\n  const res = await fetch(url);\n  if (!res.ok) throw new Error(`HTTP ${res.status}`);\n  return await res.json();\n}\n\nIsso centraliza:\n- res.ok\n- parse\n\nDeixa seu app limpo."
+    },
+    {
+      "title": "Carregar lista (com loading/erro)",
+      "body": "Fluxo:\n\nasync function carregarLista() {\n  set loading true, error ''\n  render\n\n  try:\n    users = await requestJSON('/users')\n    selectedId = primeiro user (ou null)\n  catch:\n    error = err.message\n  finally:\n    loading false\n  render\n}\n\nVocê renderiza duas vezes:\n- quando começa (mostra loading)\n- quando termina (mostra resultado)"
+    },
+    {
+      "title": "Render da lista",
+      "body": "Para cada user:\n- li com data-id\n- mostra nome e email\n- se for selecionado, marca classe 'ativo'\n\nExemplo:\n<li class=\"item\" data-id=\"3\">\n  <strong>Nome</strong>\n  <span class=\"muted\">email</span>\n</li>\n\nVocê pode usar classList para 'ativo'."
+    },
+    {
+      "title": "Detalhes: 2 jeitos (escolha simples)",
+      "body": "Jeito A (mais simples):\n- já vem tudo na lista /users\n- você só mostra detalhes do user selecionado localmente\n\nJeito B (mais realista):\n- ao clicar, faz fetch /users/:id\n- mostra detalhes atualizados\n\nHoje vamos fazer o meio-termo:\n- usar a lista para mostrar detalhes\n- (extra) opcional fazer fetch de detalhe"
+    },
+    {
+      "title": "Delegation na lista (clique para selecionar)",
+      "body": "Listener único no UL.\n\nNo click:\n- const item = e.target.closest('[data-id]')\n- if (!item) return\n- state.selectedId = Number(item.dataset.id)\n- render\n\nIsso é leve e funciona sempre."
+    },
+    {
+      "title": "Extra: cache simples em memória (pra detalhe por fetch)",
+      "body": "Se você for fazer /users/:id:\n\nconst cache = new Map();\n\nasync function getUser(id) {\n  if (cache.has(id)) return cache.get(id);\n  const u = await requestJSON(`/users/${id}`);\n  cache.set(id, u);\n  return u;\n}\n\nIsso evita repetir requests.\nMas é bônus."
+    },
+    {
+      "title": "Checklist do projeto",
+      "body": "- [ ] Botão Recarregar chama carregarLista\n- [ ] Loading aparece enquanto busca\n- [ ] Erro aparece se falhar\n- [ ] Lista renderiza nomes/emails\n- [ ] Clique seleciona item (delegation)\n- [ ] Detalhes mostram info do selecionado\n- [ ] Estado centralizado (state)\n- [ ] (extra) cache para detalhes"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Projeto lista+detalhe consumindo API\n- async/await + fetch + res.ok\n- Estado centralizado\n- Render em funções\n- Delegation para clique\n- Loading/erro/vazio como UX mínima"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 33 (Consumo de API)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A base do projeto é:",
+        "options": [
+          { "key": "A", "text": "Buscar lista e mostrar detalhes com estados de UI" },
+          { "key": "B", "text": "Só fazer console.log e pronto" }
+        ],
+        "answer": "A",
+        "explain": "Projeto real tem UI e estados."
+      },
+      {
+        "id": 2,
+        "question": "Um bom helper requestJSON serve para:",
+        "options": [
+          { "key": "A", "text": "Centralizar res.ok e res.json para não repetir" },
+          { "key": "B", "text": "Trocar CSS automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Evita duplicação e erros."
+      },
+      {
+        "id": 3,
+        "question": "Loading deve aparecer:",
+        "options": [
+          { "key": "A", "text": "Enquanto a request está em andamento" },
+          { "key": "B", "text": "Só depois que termina" }
+        ],
+        "answer": "A",
+        "explain": "Usuário precisa de feedback durante."
+      },
+      {
+        "id": 4,
+        "question": "Erro HTTP é tratado quando você:",
+        "options": [
+          { "key": "A", "text": "Checa res.ok e lança erro se false" },
+          { "key": "B", "text": "Ignora status e assume sucesso" }
+        ],
+        "answer": "A",
+        "explain": "Fetch não cai no catch por 404/500 sozinho."
+      },
+      {
+        "id": 5,
+        "question": "Delegation na lista é:",
+        "options": [
+          { "key": "A", "text": "Um listener no UL e usar closest/data-id" },
+          { "key": "B", "text": "Um listener em cada LI" }
+        ],
+        "answer": "A",
+        "explain": "Mais leve e simples."
+      },
+      {
+        "id": 6,
+        "question": "selectedId no state serve para:",
+        "options": [
+          { "key": "A", "text": "Saber qual item está selecionado para renderizar detalhes" },
+          { "key": "B", "text": "Salvar o CSS do botão" }
+        ],
+        "answer": "A",
+        "explain": "É parte do estado de seleção."
+      },
+      {
+        "id": 7,
+        "question": "Render baseado em state significa:",
+        "options": [
+          { "key": "A", "text": "A UI reflete os dados do state (fonte única da verdade)" },
+          { "key": "B", "text": "A UI manda nos dados sempre" }
+        ],
+        "answer": "A",
+        "explain": "Estado manda, UI obedece."
+      },
+      {
+        "id": 8,
+        "question": "Se a lista vier vazia, é bom:",
+        "options": [
+          { "key": "A", "text": "Mostrar estado 'vazio' ao usuário" },
+          { "key": "B", "text": "Deixar tudo branco sem mensagem" }
+        ],
+        "answer": "A",
+        "explain": "UX mínima inclui vazio."
+      },
+      {
+        "id": 9,
+        "question": "Cache em memória (Map) é útil porque:",
+        "options": [
+          { "key": "A", "text": "Evita repetir requests para o mesmo detalhe" },
+          { "key": "B", "text": "Faz o HTML virar JSON" }
+        ],
+        "answer": "A",
+        "explain": "Reuso de dados já buscados."
+      },
+      {
+        "id": 10,
+        "question": "Fluxo recomendado é:",
+        "options": [
+          { "key": "A", "text": "Evento → set loading → fetch → set data/erro → render" },
+          { "key": "B", "text": "Render → fetch → esquecer erro/loading" }
+        ],
+        "answer": "A",
+        "explain": "Controle claro de estados."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 33 — modelJs: lista + detalhe (state + render + delegation) */\n\nconst reloadBtn = document.querySelector('#reload');\nconst statusEl = document.querySelector('#status');\nconst listaEl = document.querySelector('#lista');\nconst detalhesEl = document.querySelector('#detalhes');\n\nlet state = {\n  users: [],\n  selectedId: null,\n  loading: false,\n  error: ''\n};\n\nasync function requestJSON(url) {\n  const res = await fetch(url);\n  if (!res.ok) throw new Error(`HTTP ${res.status}`);\n  return await res.json();\n}\n\nfunction render() {\n  // status\n  if (statusEl) {\n    if (state.loading) statusEl.textContent = 'Carregando...';\n    else if (state.error) statusEl.textContent = `Erro: ${state.error}`;\n    else statusEl.textContent = state.users.length ? 'OK' : 'Vazio';\n  }\n\n  // lista\n  if (listaEl) {\n    listaEl.innerHTML = '';\n\n    for (const u of state.users) {\n      const li = document.createElement('li');\n      li.className = 'item';\n      li.dataset.id = String(u.id);\n\n      if (u.id === state.selectedId) li.classList.add('ativo');\n\n      const strong = document.createElement('strong');\n      strong.textContent = u.name;\n\n      const email = document.createElement('span');\n      email.className = 'muted';\n      email.textContent = u.email;\n\n      const box = document.createElement('div');\n      box.className = 'stack';\n      box.append(strong, email);\n\n      li.appendChild(box);\n      listaEl.appendChild(li);\n    }\n  }\n\n  // detalhes\n  if (detalhesEl) {\n    detalhesEl.innerHTML = '';\n\n    const u = state.users.find(x => x.id === state.selectedId);\n    if (!u) {\n      detalhesEl.textContent = state.users.length ? 'Selecione um usuário' : 'Sem dados';\n      return;\n    }\n\n    const nome = document.createElement('h3');\n    nome.textContent = u.name;\n\n    const info = document.createElement('p');\n    info.className = 'muted';\n    info.textContent = `${u.email} • ${u.phone}`;\n\n    const empresa = document.createElement('p');\n    empresa.textContent = `Empresa: ${u.company?.name || '-'}`;\n\n    detalhesEl.append(nome, info, empresa);\n  }\n}\n\nasync function carregarLista() {\n  state.loading = true;\n  state.error = '';\n  render();\n\n  try {\n    const users = await requestJSON('https://jsonplaceholder.typicode.com/users');\n    state.users = users;\n    state.selectedId = users.length ? users[0].id : null;\n  } catch (err) {\n    state.error = err.message;\n    state.users = [];\n    state.selectedId = null;\n  } finally {\n    state.loading = false;\n    render();\n  }\n}\n\nif (reloadBtn) reloadBtn.addEventListener('click', carregarLista);\n\nif (listaEl) {\n  listaEl.addEventListener('click', (e) => {\n    const item = e.target.closest('.item');\n    if (!item) return;\n    state.selectedId = Number(item.dataset.id);\n    render();\n  });\n}\n\ncarregarLista();\n"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "41-projeto-final-js",
+  "title": "Aula 41 — Final JS: checklist pro + mini projeto (tema + arquitetura + API)",
+  "steps": [
+    {
+      "title": "Objetivo da última aula de JS",
+      "body": "Você chegou no final do curso de JS.\n\nAqui você vai fechar com:\n\n1) Checklist profissional antes de considerar seu app “pronto”\n2) Um mini projeto final que junta tudo (state/ui/events + storage + fetch)\n3) Um padrão de organização que você pode repetir em qualquer projeto\n\nA meta é sair com um projeto organizado, escalável e com UX mínima pro."
+    },
+    {
+      "title": "Checklist profissional (use sempre antes de entregar)",
+      "body": "Passe por isso antes de chamar de pronto:\n\nA) Estado e arquitetura\n- [ ] Estado é a fonte única da verdade (não o DOM)\n- [ ] Código separado em camadas (state/ui/app)\n- [ ] Funções pequenas e nomeadas\n\nB) UX mínima\n- [ ] Loading visível em requests\n- [ ] Mensagem de erro amigável\n- [ ] Estado vazio (lista vazia) com mensagem\n- [ ] Botões desabilitam quando necessário\n\nC) Dados e persistência\n- [ ] localStorage com load/save + fallback\n- [ ] JSON parse seguro (try/catch)\n- [ ] IDs consistentes (dataset string → Number)\n\nD) Eventos\n- [ ] delegation em listas\n- [ ] preventDefault em forms\n- [ ] teclado funciona no essencial\n\nE) Qualidade\n- [ ] sem erro no console\n- [ ] sem código duplicado\n- [ ] nomes claros\n\nSe seu projeto passa nisso, ele está “produto real”."
+    },
+    {
+      "title": "Mini projeto final: Catálogo + Favoritos",
+      "body": "Você vai fazer um mini app com:\n\n1) Busca e lista de usuários (API)\n2) Seleção de detalhes\n3) Favoritar/desfavoritar usuários\n4) Persistir favoritos no localStorage\n\nFunciona assim:\n- carrega /users\n- lista os usuários\n- ao clicar, mostra detalhes\n- botão “Favoritar” adiciona/remove do estado\n- favoritos ficam salvos após recarregar\n\nIsso junta:\n- fetch (API)\n- state\n- render\n- delegation\n- localStorage"
+    },
+    {
+      "title": "Modelo de state (padrão repetível)",
+      "body": "Use um state único:\n\nlet state = {\n  users: [],\n  selectedId: null,\n  favorites: [],\n  loading: false,\n  error: '',\n  query: ''\n};\n\nRegras:\n- favorites guarda ids (números)\n- query filtra a lista\n- selectedId define o detalhe\n\nUI só olha para o state e desenha."
+    },
+    {
+      "title": "Estrutura de arquivos recomendada (final)",
+      "body": "Padrão:\n\n/src\n  app.js        (eventos + fluxo)\n  state.js      (state + setters)\n  ui.js         (render)\n  storage.js    (load/save)\n  api.js        (requestJSON)\n\nSe você não quiser módulos agora, dá para fazer em 1 arquivo,\nmas o padrão certo é esse."
+    },
+    {
+      "title": "API (requestJSON) e carregamento",
+      "body": "api.js:\n\nasync function requestJSON(url) {\n  const res = await fetch(url);\n  if (!res.ok) throw new Error(`HTTP ${res.status}`);\n  return await res.json();\n}\n\ncarregarUsers:\n- set loading true\n- try buscar\n- set users\n- set error se falhar\n- finally loading false\n- render\n\nSempre mostre loading na UI."
+    },
+    {
+      "title": "Favoritos: lógica (toggle) + persistência",
+      "body": "Regras:\n- se id está em favorites, remover\n- senão, adicionar\n\nDepois:\n- save('favorites', favorites)\n\nAo iniciar:\n- favorites = load('favorites', [])\n\nIsso faz persistir."
+    },
+    {
+      "title": "Render (3 áreas): status, lista, detalhes",
+      "body": "Render deve desenhar:\n\n1) Status\n- loading/erro/ok\n\n2) Lista filtrada\n- mostra nome + email\n- indica favorito (ex.: ★)\n- item selecionado com classe\n\n3) Detalhes\n- mostra dados do usuário selecionado\n- botão Favoritar\n\nTudo vem do state."
+    },
+    {
+      "title": "Eventos (delegation + input + botões)",
+      "body": "Eventos principais:\n\n- click na lista (delegation)\n  - seleciona usuário\n\n- click no botão Favoritar\n  - toggle favorites\n\n- input de busca\n  - atualiza query e re-renderiza\n\n- botão Recarregar\n  - chama carregarUsers\n\nSempre:\n- dataset id é string → converta para Number."
+    },
+    {
+      "title": "Mini tarefa (40 minutos) — implementar o app",
+      "body": "HTML sugerido:\n\n<input id=\"q\" class=\"input\" placeholder=\"Buscar...\" />\n<button id=\"reload\" class=\"btn ghost\">Recarregar</button>\n<p id=\"status\" class=\"muted\"></p>\n\n<div class=\"grid\">\n  <ul id=\"lista\" class=\"stack\"></ul>\n  <div id=\"detalhes\" class=\"stack\"></div>\n</div>\n\nRequisitos:\n1) Carregar users da API\n2) Filtrar por query (nome/email)\n3) Selecionar e mostrar detalhes\n4) Favoritar/desfavoritar e persistir\n5) Loading/erro/vazio\n\nMeta:\n- recarregou a página, favoritos continuam."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Checklist pro (arquitetura, UX, dados, eventos, qualidade)\n- Mini projeto final: catálogo + favoritos\n- State único manda, UI obedece\n- Fetch com async/await + res.ok\n- localStorage com load/save\n- delegation e filtro\n\nFim do JS: agora você tem base pra evoluir para Node, React e backend."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 41 (Final JS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Checklist final ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Evita bugs e garante qualidade antes de entregar" },
+          { "key": "B", "text": "É só enfeite" }
+        ],
+        "answer": "A",
+        "explain": "Reduz erro humano e aumenta consistência."
+      },
+      {
+        "id": 2,
+        "question": "Fonte única da verdade deve ser:",
+        "options": [
+          { "key": "A", "text": "O state (dados)" },
+          { "key": "B", "text": "O DOM (tela)" }
+        ],
+        "answer": "A",
+        "explain": "Tela é só representação."
+      },
+      {
+        "id": 3,
+        "question": "UX mínima em requests inclui:",
+        "options": [
+          { "key": "A", "text": "Loading + erro + vazio" },
+          { "key": "B", "text": "Apenas console.log" }
+        ],
+        "answer": "A",
+        "explain": "Usuário precisa de feedback."
+      },
+      {
+        "id": 4,
+        "question": "Persistir favoritos no localStorage exige:",
+        "options": [
+          { "key": "A", "text": "JSON.stringify ao salvar e JSON.parse ao ler" },
+          { "key": "B", "text": "split/join" }
+        ],
+        "answer": "A",
+        "explain": "Storage guarda string."
+      },
+      {
+        "id": 5,
+        "question": "Delegation em listas é bom porque:",
+        "options": [
+          { "key": "A", "text": "Um listener no pai trata itens dinâmicos" },
+          { "key": "B", "text": "Exige um listener por item" }
+        ],
+        "answer": "A",
+        "explain": "Mais leve e simples."
+      },
+      {
+        "id": 6,
+        "question": "dataset.id vem como:",
+        "options": [
+          { "key": "A", "text": "string (converta para Number)" },
+          { "key": "B", "text": "number sempre" }
+        ],
+        "answer": "A",
+        "explain": "dataset sempre retorna string."
+      },
+      {
+        "id": 7,
+        "question": "Fetch robusto inclui:",
+        "options": [
+          { "key": "A", "text": "Checar res.ok e tratar erro" },
+          { "key": "B", "text": "Assumir sucesso sempre" }
+        ],
+        "answer": "A",
+        "explain": "404/500 não caem no catch sozinhos."
+      },
+      {
+        "id": 8,
+        "question": "Separar em state/ui/app ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Deixa o projeto escalável e fácil de manter" },
+          { "key": "B", "text": "Deixa o código mais confuso" }
+        ],
+        "answer": "A",
+        "explain": "Responsabilidades claras."
+      },
+      {
+        "id": 9,
+        "question": "Filtro por query deve:",
+        "options": [
+          { "key": "A", "text": "Usar state.query e re-renderizar a lista" },
+          { "key": "B", "text": "Apagar dados do state" }
+        ],
+        "answer": "A",
+        "explain": "Filtro é estado de UI."
+      },
+      {
+        "id": 10,
+        "question": "Projeto 'produto real' tende a ter:",
+        "options": [
+          { "key": "A", "text": "Sem erros no console, código claro, UX mínima" },
+          { "key": "B", "text": "Bugs e classes aleatórias" }
+        ],
+        "answer": "A",
+        "explain": "Qualidade é manutenção + UX."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 41 — modelJs: skeleton do mini app (catalogo + favoritos) */\n\n// storage.js\nfunction save(key, value) {\n  localStorage.setItem(key, JSON.stringify(value));\n}\nfunction load(key, fallback) {\n  try {\n    const raw = localStorage.getItem(key);\n    if (raw === null) return fallback;\n    return JSON.parse(raw);\n  } catch {\n    return fallback;\n  }\n}\n\n// api.js\nasync function requestJSON(url) {\n  const res = await fetch(url);\n  if (!res.ok) throw new Error(`HTTP ${res.status}`);\n  return await res.json();\n}\n\n// state\nlet state = {\n  users: [],\n  selectedId: null,\n  favorites: load('favorites', []),\n  loading: false,\n  error: '',\n  query: ''\n};\n\nfunction toggleFavorite(id) {\n  const n = Number(id);\n  const has = state.favorites.includes(n);\n  state.favorites = has\n    ? state.favorites.filter(x => x !== n)\n    : [...state.favorites, n];\n  save('favorites', state.favorites);\n}\n"
+  }
+}

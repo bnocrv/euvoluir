@@ -1,0 +1,151 @@
+{
+  "id": "01-introducao-js",
+  "title": "Aula 01 — O que é JavaScript + como ele roda (browser, engine, console)",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Nesta aula você vai entender (de verdade) o que é JavaScript e onde ele roda.\n\nNo final você vai conseguir:\n1) Explicar a diferença entre HTML, CSS e JS\n2) Entender como o navegador executa JS (engine)\n3) Usar o Console como seu “laboratório”\n4) Rodar seus primeiros comandos e prever o resultado\n\nA ideia é tirar o mistério: JS não é magia — é execução de instruções, uma por uma."
+    },
+    {
+      "title": "O que é JavaScript (sem enrolação)",
+      "body": "JavaScript é a linguagem que dá comportamento para a página.\n\nPensa assim:\n- HTML = estrutura (o esqueleto)\n- CSS = aparência (roupa/visual)\n- JS = comportamento (ações e lógica)\n\nExemplos reais:\n- clicar num botão e abrir um modal\n- validar um formulário antes de enviar\n- buscar dados de uma API e mostrar na tela\n- salvar coisas no navegador (localStorage)\n\nJS é uma linguagem de propósito geral, mas no front a gente usa muito para controlar o DOM (os elementos da página)."
+    },
+    {
+      "title": "Onde o JavaScript roda",
+      "body": "JS pode rodar em dois lugares principais:\n\n1) No navegador (front-end)\n- Ele roda dentro do browser.\n- Acesso ao DOM (document), eventos (click), window, etc.\n\n2) No servidor (Node.js)\n- Ele roda fora do navegador.\n- Acesso a arquivos, banco, rede, etc.\n\nNesta fase do curso, o foco é navegador.\n\nRegra de ouro:\n- No browser, JS conversa com a página.\n- No Node, JS conversa com o sistema/servidor."
+    },
+    {
+      "title": "O que é a Engine (o “motor” que executa JS)",
+      "body": "Seu código JS é texto.\nA engine é o motor que lê esse texto e executa.\n\nNo Chrome/Edge a engine se chama V8.\n\nA engine faz, de forma simples:\n1) Lê seu código\n2) Entende (interpreta/compila)\n3) Executa linha por linha\n\nPonto importante:\n- O computador NÃO “adivinha”.\n- Ele só faz exatamente o que você mandou.\n\nPor isso programar é escrever instruções claras."
+    },
+    {
+      "title": "Console = seu laboratório (você vai morar aqui)",
+      "body": "O Console do DevTools serve para:\n- testar ideias rápidas\n- ver erros\n- inspecionar valores\n- debugar (entender onde quebrou)\n\nComo abrir:\n- Chrome/Edge: F12 → aba Console\n- ou Ctrl+Shift+I (Windows/Linux)\n- ou Cmd+Option+I (Mac)\n\nDica: você pode digitar comandos e apertar Enter.\nIsso te dá feedback imediato, ótimo pra aprender."
+    },
+    {
+      "title": "Primeiros comandos (pra sentir o “estilo” da linguagem)",
+      "body": "Digite no Console e veja o resultado:\n\n1) Matemática\n- 2 + 2\n- 10 * 3\n- 10 / 4\n\n2) Texto (string)\n- 'oi'\n- \"bruno\"\n- 'Bruno' + ' Carvalho'\n\n3) Boolean (verdade/falso)\n- true\n- false\n- 2 > 1\n- 2 === 2\n\nAqui você já percebe:\n- JS tem tipos diferentes\n- O operador + pode somar ou concatenar texto\n\nNa próxima aula a gente aprende a observar isso com debug de verdade."
+    },
+    {
+      "title": "O que significa “programar” na prática",
+      "body": "Programar é:\n- pegar um problema\n- quebrar em passos pequenos\n- escrever esses passos em instruções\n\nExemplo simples (mental):\n“Se o usuário não digitou nome, mostrar erro.”\n\nIsso vira:\n1) Ler valor do nome\n2) Verificar se está vazio\n3) Se vazio, mostrar mensagem\n\nVocê ainda não precisa de DOM hoje.\nHoje é entender o terreno e se sentir confortável usando o Console."
+    },
+    {
+      "title": "Mini tarefa (5 minutos) — seu primeiro ritual",
+      "body": "Faça no Console:\n\n1) Some 15 + 27\n2) Veja se 100 é maior que 99\n3) Junte seu nome e sobrenome com +\n4) Teste uma comparação com igualdade:\n   - 5 == '5'\n   - 5 === '5'\n\nAnote:\n- Qual foi a diferença entre == e ===?\n\n(Essa diferença é MUITO importante e vai aparecer sempre.)"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- JS é comportamento e lógica\n- Roda no navegador (DOM) e no servidor (Node)\n- Engine executa seu código (ex.: V8)\n- Console é laboratório: testar, ver erros e aprender rápido\n- Você já testou números, strings e booleanos"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 01 (JavaScript)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "JavaScript serve principalmente para:",
+        "options": [
+          { "key": "A", "text": "Dar comportamento e lógica para a página" },
+          { "key": "B", "text": "Definir apenas cores e fontes do site" }
+        ],
+        "answer": "A",
+        "explain": "CSS cuida do visual; JS cuida das ações e regras."
+      },
+      {
+        "id": 2,
+        "question": "HTML, CSS e JS são melhor entendidos como:",
+        "options": [
+          { "key": "A", "text": "Estrutura, aparência e comportamento" },
+          { "key": "B", "text": "Três jeitos diferentes de fazer a mesma coisa" }
+        ],
+        "answer": "A",
+        "explain": "Separar responsabilidades deixa o projeto mais organizado."
+      },
+      {
+        "id": 3,
+        "question": "No navegador, JavaScript consegue:",
+        "options": [
+          { "key": "A", "text": "Acessar e alterar elementos da página (DOM)" },
+          { "key": "B", "text": "Trocar a placa de vídeo do computador" }
+        ],
+        "answer": "A",
+        "explain": "No browser você controla a página via DOM e eventos."
+      },
+      {
+        "id": 4,
+        "question": "Engine é:",
+        "options": [
+          { "key": "A", "text": "O motor que lê e executa o código JavaScript" },
+          { "key": "B", "text": "Um tipo de banco de dados" }
+        ],
+        "answer": "A",
+        "explain": "Sem a engine, seu código seria só texto."
+      },
+      {
+        "id": 5,
+        "question": "O Console serve para:",
+        "options": [
+          { "key": "A", "text": "Testar código, ver resultados e erros rapidamente" },
+          { "key": "B", "text": "Desenhar layouts responsivos" }
+        ],
+        "answer": "A",
+        "explain": "Console é o lugar mais rápido para aprender e depurar."
+      },
+      {
+        "id": 6,
+        "question": "Em JavaScript, 'Bruno' + ' Carvalho' resulta em:",
+        "options": [
+          { "key": "A", "text": "Um texto unido (concatenação)" },
+          { "key": "B", "text": "Um número" }
+        ],
+        "answer": "A",
+        "explain": "Com strings, o + junta textos."
+      },
+      {
+        "id": 7,
+        "question": "2 > 1 retorna:",
+        "options": [
+          { "key": "A", "text": "true" },
+          { "key": "B", "text": "false" }
+        ],
+        "answer": "A",
+        "explain": "2 é maior que 1, então é verdadeiro."
+      },
+      {
+        "id": 8,
+        "question": "Programar é melhor definido como:",
+        "options": [
+          { "key": "A", "text": "Escrever passos claros para resolver um problema" },
+          { "key": "B", "text": "Digitar rápido sem pensar" }
+        ],
+        "answer": "A",
+        "explain": "Código bom é código claro e previsível."
+      },
+      {
+        "id": 9,
+        "question": "JavaScript pode rodar no servidor usando:",
+        "options": [
+          { "key": "A", "text": "Node.js" },
+          { "key": "B", "text": "Apenas CSS" }
+        ],
+        "answer": "A",
+        "explain": "Node permite JS fora do navegador."
+      },
+      {
+        "id": 10,
+        "question": "Sobre == e ===:",
+        "options": [
+          { "key": "A", "text": "=== compara valor e tipo; == tenta converter (coerção)" },
+          { "key": "B", "text": "São exatamente iguais sempre" }
+        ],
+        "answer": "A",
+        "explain": "Essa é uma das maiores fontes de bugs para iniciantes."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 01 — modelJs: seu kit mínimo no Console */\n\n// 1) Testes rápidos\n2 + 2;\n10 * 3;\n'Bruno' + ' Carvalho';\n\n// 2) Comparações\n2 > 1;\n5 == '5';   // true (converte)\n5 === '5';  // false (tipo diferente)\n\n// 3) Seu primeiro \"log\" (você vai usar sempre)\nconsole.log('Olá, Console!');\nconsole.log('Resultado:', 15 + 27);\n"
+  }
+}

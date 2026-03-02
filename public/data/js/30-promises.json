@@ -1,0 +1,155 @@
+{
+  "id": "30-promises",
+  "title": "Aula 30 — Promises (then/catch/finally) sem sofrimento",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai entender Promises de verdade, sem decorar.\n\nNo final você vai conseguir:\n1) Explicar o que é uma Promise (e por que existe)\n2) Entender estados: pending/fulfilled/rejected\n3) Usar then/catch/finally corretamente\n4) Encadear Promises (cadeia)\n5) Evitar bugs comuns (não retornar, catch no lugar errado)\n\nIsso é a base de fetch, timers, leitura de dados, qualquer coisa assíncrona."
+    },
+    {
+      "title": "A ideia central: “isso vai ficar pronto depois”",
+      "body": "Promise é um objeto que representa um valor que ainda não chegou.\n\nPensa como um recibo:\n- você pediu uma pizza\n- você tem a promessa de que vai chegar\n\nEstados:\n1) pending = esperando\n2) fulfilled = deu certo (tem valor)\n3) rejected = deu errado (tem erro)\n\nO código assíncrono NÃO bloqueia o resto.\nEle continua, e quando terminar, você trata o resultado."
+    },
+    {
+      "title": "then: o que fazer quando der certo",
+      "body": "then recebe uma função que roda quando a promise é fulfilled.\n\nExemplo simples:\nPromise.resolve(10)\n  .then((valor) => {\n    console.log('chegou:', valor);\n  });\n\nNo fetch:\n- fetch(...) retorna promise\n- res.json() retorna promise\nEntão a gente usa then para esperar."
+    },
+    {
+      "title": "catch: o que fazer quando der errado",
+      "body": "catch trata rejeições (rejected) ou erros lançados no then.\n\nExemplo:\nPromise.reject(new Error('falhou'))\n  .catch((err) => {\n    console.log('erro:', err.message);\n  });\n\nImportante:\n- catch pega também throw dentro do then.\n\nExemplo:\nPromise.resolve(1)\n  .then(() => { throw new Error('boom'); })\n  .catch((err) => console.log(err.message));"
+    },
+    {
+      "title": "finally: sempre roda (limpar estado)",
+      "body": "finally roda sempre:\n- sucesso ou erro\n\nExemplo:\nfetch(url)\n  .then(...)\n  .catch(...)\n  .finally(() => {\n    // esconder loading\n  });\n\nUse para:\n- desligar spinner\n- reabilitar botão\n- limpar estado temporário"
+    },
+    {
+      "title": "Encadeamento: Promise chain (o ponto que mais dá bug)",
+      "body": "Regra de ouro:\n- se você quer passar um resultado para o próximo then, você precisa retornar.\n\nCerto:\nPromise.resolve(2)\n  .then((n) => {\n    return n * 2;\n  })\n  .then((n2) => {\n    console.log(n2); // 4\n  });\n\nErrado (não retorna):\nPromise.resolve(2)\n  .then((n) => {\n    n * 2;\n  })\n  .then((n2) => {\n    console.log(n2); // undefined\n  });\n\nSem return, o próximo then recebe undefined."
+    },
+    {
+      "title": "Promises dentro de Promises: retorne a promise!",
+      "body": "Se dentro do then você chamar algo que retorna promise, retorne ela.\n\nExemplo com fetch:\nfetch(url)\n  .then((res) => {\n    if (!res.ok) throw new Error('HTTP ' + res.status);\n    return res.json(); // retorna promise\n  })\n  .then((data) => {\n    console.log('data:', data);\n  })\n  .catch((err) => {\n    console.log('erro:', err.message);\n  });\n\nSe você não retornar res.json(),\n- o próximo then roda com undefined."
+    },
+    {
+      "title": "Criar uma Promise (só para entender)",
+      "body": "Você pode criar manualmente:\n\nconst p = new Promise((resolve, reject) => {\n  setTimeout(() => {\n    const ok = true;\n    if (ok) resolve('deu certo');\n    else reject(new Error('deu ruim'));\n  }, 1000);\n});\n\np.then(console.log).catch(err => console.log(err.message));\n\nVocê não vai criar isso toda hora,\nmas entender resolve/reject ajuda a entender fetch."
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — 3 exercícios de Promise",
+      "body": "Faça no Console:\n\n1) Encadeamento\n- Promise.resolve(5)\n- no primeiro then, retorne n * 2\n- no segundo then, retorne n + 1\n- no terceiro, console.log (esperado: 11)\n\n2) Erro com throw\n- Promise.resolve('ok')\n- no then, faça throw new Error('falhou')\n- no catch, mostre err.message\n\n3) finally\n- faça uma promise que resolve depois de 1s (setTimeout)\n- antes, console.log('loading on')\n- no then/catch, mostre resultado\n- no finally, console.log('loading off')\n\nMeta: você tem que explicar:\n- o que é pending/fulfilled/rejected\n- por que return é necessário no chain"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Promise representa um valor que chega depois\n- Estados: pending, fulfilled, rejected\n- then trata sucesso\n- catch trata erro/throw\n- finally roda sempre\n- Encadeamento exige return\n- Se uma função retorna promise, retorne ela no then"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 30 (Promises)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Promise representa:",
+        "options": [
+          { "key": "A", "text": "Um valor que pode chegar no futuro (assíncrono)" },
+          { "key": "B", "text": "Um valor sempre disponível imediatamente" }
+        ],
+        "answer": "A",
+        "explain": "É um 'recibo' de algo que vai chegar."
+      },
+      {
+        "id": 2,
+        "question": "Estado pending significa:",
+        "options": [
+          { "key": "A", "text": "Ainda esperando" },
+          { "key": "B", "text": "Já deu erro" }
+        ],
+        "answer": "A",
+        "explain": "Ainda não resolveu nem rejeitou."
+      },
+      {
+        "id": 3,
+        "question": "then é usado para:",
+        "options": [
+          { "key": "A", "text": "Tratar quando a promise dá certo (fulfilled)" },
+          { "key": "B", "text": "Criar CSS" }
+        ],
+        "answer": "A",
+        "explain": "then roda no sucesso."
+      },
+      {
+        "id": 4,
+        "question": "catch é usado para:",
+        "options": [
+          { "key": "A", "text": "Tratar rejeição/erro (rejected/throw)" },
+          { "key": "B", "text": "Aumentar performance" }
+        ],
+        "answer": "A",
+        "explain": "catch pega erros e rejeições."
+      },
+      {
+        "id": 5,
+        "question": "finally:",
+        "options": [
+          { "key": "A", "text": "Roda sempre (sucesso ou erro)" },
+          { "key": "B", "text": "Roda só no sucesso" }
+        ],
+        "answer": "A",
+        "explain": "Ideal para limpar loading."
+      },
+      {
+        "id": 6,
+        "question": "Em chain, se você não retornar, o próximo then recebe:",
+        "options": [
+          { "key": "A", "text": "undefined" },
+          { "key": "B", "text": "Sempre o valor original" }
+        ],
+        "answer": "A",
+        "explain": "Return é obrigatório para passar valor."
+      },
+      {
+        "id": 7,
+        "question": "throw dentro do then:",
+        "options": [
+          { "key": "A", "text": "Vai para o catch" },
+          { "key": "B", "text": "É ignorado" }
+        ],
+        "answer": "A",
+        "explain": "catch trata exceções na cadeia."
+      },
+      {
+        "id": 8,
+        "question": "res.json() no fetch retorna:",
+        "options": [
+          { "key": "A", "text": "Uma Promise" },
+          { "key": "B", "text": "O objeto pronto imediatamente" }
+        ],
+        "answer": "A",
+        "explain": "Ler/parsear body é assíncrono."
+      },
+      {
+        "id": 9,
+        "question": "Para passar res.json() ao próximo then, você deve:",
+        "options": [
+          { "key": "A", "text": "return res.json()" },
+          { "key": "B", "text": "console.log(res.json())" }
+        ],
+        "answer": "A",
+        "explain": "Return encadeia a promise."
+      },
+      {
+        "id": 10,
+        "question": "Promise fulfilled significa:",
+        "options": [
+          { "key": "A", "text": "Resolvida com valor (deu certo)" },
+          { "key": "B", "text": "Cancelada" }
+        ],
+        "answer": "A",
+        "explain": "Resolve = sucesso."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 30 — modelJs: Promises na prática */\n\n// 1) Chain\nPromise.resolve(5)\n  .then((n) => n * 2)\n  .then((n) => n + 1)\n  .then((n) => console.log('resultado esperado 11:', n));\n\n// 2) Throw cai no catch\nPromise.resolve('ok')\n  .then(() => {\n    throw new Error('falhou');\n  })\n  .catch((err) => console.log('catch:', err.message));\n\n// 3) finally (loading on/off)\nconsole.log('loading on');\nconst p = new Promise((resolve) => {\n  setTimeout(() => resolve('deu certo depois de 1s'), 1000);\n});\n\np.then((msg) => console.log('then:', msg))\n  .catch((err) => console.log('catch:', err.message))\n  .finally(() => console.log('loading off'));\n"
+  }
+}

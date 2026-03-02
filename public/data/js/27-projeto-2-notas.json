@@ -1,0 +1,159 @@
+{
+  "id": "27-projeto-2-notas",
+  "title": "Aula 27 — Projeto 2: app de notas (CRUD + localStorage)",
+  "steps": [
+    {
+      "title": "Objetivo do projeto",
+      "body": "Hoje você vai construir um app de notas completo (CRUD) com persistência.\n\nVocê vai treinar:\n- DOM (render)\n- eventos (submit, click, delegation)\n- estado (array de notas)\n- CRUD (Create, Read, Update, Delete)\n- localStorage (salvar/carregar)\n\nNo final seu app terá:\n1) Criar nota\n2) Listar notas\n3) Editar nota\n4) Apagar nota\n5) Salvar no localStorage\n\nIsso é um projeto real de portfolio."
+    },
+    {
+      "title": "Modelo de dados (nota)",
+      "body": "Cada nota é um objeto:\n\n{ id, titulo, conteudo, updatedAt }\n\n- id: identifica único\n- titulo/conteudo: texto\n- updatedAt: timestamp (Date.now())\n\nA lista toda é:\nlet notas = [];\n\nRegra:\n- notas é a fonte única da verdade."
+    },
+    {
+      "title": "HTML base do projeto",
+      "body": "Crie algo assim:\n\n<div class=\"container stack\">\n  <h1>Notas</h1>\n\n  <form id=\"form\" class=\"stack\">\n    <input id=\"titulo\" class=\"input\" placeholder=\"Título\" />\n    <textarea id=\"conteudo\" class=\"input\" rows=\"4\" placeholder=\"Escreva...\"></textarea>\n    <button class=\"btn primary\" type=\"submit\">Salvar</button>\n    <small id=\"erro\" class=\"muted\"></small>\n  </form>\n\n  <div class=\"card\">\n    <div class=\"card-inner stack\">\n      <h2>Lista</h2>\n      <ul id=\"lista\" class=\"stack\"></ul>\n    </div>\n  </div>\n</div>\n\nDica:\n- use seus tokens + componentes (container/stack/card/input/btn)."
+    },
+    {
+      "title": "CRUD no estado (funções pequenas)",
+      "body": "Crie funções para mexer no array:\n\nCreate:\n- addNota(titulo, conteudo)\n\nRead:\n- render()\n\nUpdate:\n- updateNota(id, titulo, conteudo)\n\nDelete:\n- deleteNota(id)\n\nCada ação:\n- altera notas\n- salva no storage\n- chama render"
+    },
+    {
+      "title": "Persistência (load/save)",
+      "body": "No start:\n- notas = load('notas', [])\n\nEm cada mudança:\n- save('notas', notas)\n\nDica:\n- se quiser, use versionamento igual aula 26\n\nMas para o projeto, o padrão load/save já resolve."
+    },
+    {
+      "title": "Render: desenhar a lista de notas",
+      "body": "Para cada nota, renderize um item com:\n- título\n- preview do conteúdo (primeiras 60 letras)\n- data atualizada formatada (opcional)\n- botão Editar\n- botão Excluir\n\nExemplo:\n<li class=\"item\" data-id=\"123\">\n  <div class=\"stack\">\n    <strong>Meu título</strong>\n    <span class=\"muted\">preview...</span>\n  </div>\n  <div>\n    <button class=\"btn ghost edit\" type=\"button\">Editar</button>\n    <button class=\"btn danger del\" type=\"button\">Excluir</button>\n  </div>\n</li>\n\n(Se quiser, use flex para alinhar.)"
+    },
+    {
+      "title": "Editar: estado 'modo edição'",
+      "body": "Você precisa saber se está editando.\n\nCrie:\n- let editingId = null;\n\nQuando clicar Editar:\n- acha a nota\n- preenche inputs\n- editingId = id\n- muda texto do botão para 'Atualizar'\n\nNo submit:\n- se editingId existe → update\n- senão → add\n\nDepois:\n- editingId = null\n- limpar form\n- botão volta a 'Salvar'"
+    },
+    {
+      "title": "Delegation: 1 listener na lista",
+      "body": "Coloque 1 listener na UL.\n\nNo click:\n- pega item com closest('.item')\n- pega id via dataset.id\n- se clicou em .edit → entrar em modo edição\n- se clicou em .del → remover\n\nIsso funciona com bubbling e é mais limpo."
+    },
+    {
+      "title": "Validação mínima (UX)",
+      "body": "Regras simples:\n- título obrigatório\n- conteúdo opcional (ou obrigatório, você escolhe)\n\nSe inválido:\n- mostra mensagem em #erro\n- não salva\n\nQuando salvar:\n- apaga erro\n\nIsso dá sensação de app real."
+    },
+    {
+      "title": "Checklist do projeto",
+      "body": "- [ ] Criar nota\n- [ ] Listar notas\n- [ ] Editar nota (modo edição)\n- [ ] Excluir nota\n- [ ] Persistir no localStorage\n- [ ] Delegation na lista\n- [ ] Validação mínima e mensagem\n- [ ] Código com funções pequenas"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Projeto Notas com CRUD\n- Estado: array de objetos\n- Modo edição com editingId\n- Render da lista\n- Delegation para botões\n- localStorage para persistência"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 27 (Projeto Notas)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "CRUD significa:",
+        "options": [
+          { "key": "A", "text": "Create, Read, Update, Delete" },
+          { "key": "B", "text": "Copy, Run, Undo, Debug" }
+        ],
+        "answer": "A",
+        "explain": "É o ciclo básico de dados em apps."
+      },
+      {
+        "id": 2,
+        "question": "A fonte única da verdade no app é:",
+        "options": [
+          { "key": "A", "text": "O array notas (estado)" },
+          { "key": "B", "text": "O HTML renderizado" }
+        ],
+        "answer": "A",
+        "explain": "UI é só representação do estado."
+      },
+      {
+        "id": 3,
+        "question": "Persistir no localStorage exige:",
+        "options": [
+          { "key": "A", "text": "JSON.stringify e JSON.parse" },
+          { "key": "B", "text": "Math.random" }
+        ],
+        "answer": "A",
+        "explain": "localStorage guarda strings."
+      },
+      {
+        "id": 4,
+        "question": "Modo edição é controlado por:",
+        "options": [
+          { "key": "A", "text": "Uma variável (ex.: editingId)" },
+          { "key": "B", "text": "Um CSS obrigatório" }
+        ],
+        "answer": "A",
+        "explain": "Você precisa saber se é update ou create."
+      },
+      {
+        "id": 5,
+        "question": "Delegation na lista é:",
+        "options": [
+          { "key": "A", "text": "Um listener no pai para tratar cliques dos itens" },
+          { "key": "B", "text": "Um listener em cada botão sempre" }
+        ],
+        "answer": "A",
+        "explain": "Mais leve e funciona com itens dinâmicos."
+      },
+      {
+        "id": 6,
+        "question": "Para descobrir o item clicado, você usa:",
+        "options": [
+          { "key": "A", "text": "closest('.item') e dataset.id" },
+          { "key": "B", "text": "typeof e getMonth()" }
+        ],
+        "answer": "A",
+        "explain": "closest acha o item correto."
+      },
+      {
+        "id": 7,
+        "question": "No submit, se editingId existe, você deve:",
+        "options": [
+          { "key": "A", "text": "Atualizar nota (Update)" },
+          { "key": "B", "text": "Sempre criar nova nota" }
+        ],
+        "answer": "A",
+        "explain": "Senão você duplica."
+      },
+      {
+        "id": 8,
+        "question": "Uma validação mínima boa é:",
+        "options": [
+          { "key": "A", "text": "Não permitir título vazio e mostrar mensagem" },
+          { "key": "B", "text": "Salvar qualquer coisa sem feedback" }
+        ],
+        "answer": "A",
+        "explain": "Usuário precisa de feedback."
+      },
+      {
+        "id": 9,
+        "question": "Depois de salvar/atualizar, é bom:",
+        "options": [
+          { "key": "A", "text": "Limpar form e sair do modo edição" },
+          { "key": "B", "text": "Deixar editingId preso para sempre" }
+        ],
+        "answer": "A",
+        "explain": "Evita confusão."
+      },
+      {
+        "id": 10,
+        "question": "A sequência ideal do app é:",
+        "options": [
+          { "key": "A", "text": "Evento → atualiza estado → salva → render" },
+          { "key": "B", "text": "Render → esquecer estado" }
+        ],
+        "answer": "A",
+        "explain": "Previsível e escalável."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 27 — modelJs: Notas (CRUD + storage + delegation) */\n\nconst form = document.querySelector('#form');\nconst tituloInput = document.querySelector('#titulo');\nconst conteudoInput = document.querySelector('#conteudo');\nconst erro = document.querySelector('#erro');\nconst lista = document.querySelector('#lista');\n\nfunction save(key, value) {\n  localStorage.setItem(key, JSON.stringify(value));\n}\n\nfunction load(key, fallback) {\n  try {\n    const raw = localStorage.getItem(key);\n    if (raw === null) return fallback;\n    return JSON.parse(raw);\n  } catch {\n    return fallback;\n  }\n}\n\nlet notas = load('notas', []);\nlet editingId = null;\n\nfunction render() {\n  lista.innerHTML = '';\n\n  for (const n of notas) {\n    const li = document.createElement('li');\n    li.className = 'item';\n    li.dataset.id = String(n.id);\n\n    const box = document.createElement('div');\n    box.className = 'stack';\n\n    const strong = document.createElement('strong');\n    strong.textContent = n.titulo;\n\n    const preview = document.createElement('span');\n    preview.className = 'muted';\n    preview.textContent = (n.conteudo || '').slice(0, 60);\n\n    box.append(strong, preview);\n\n    const actions = document.createElement('div');\n\n    const btnEdit = document.createElement('button');\n    btnEdit.type = 'button';\n    btnEdit.className = 'btn ghost edit';\n    btnEdit.textContent = 'Editar';\n\n    const btnDel = document.createElement('button');\n    btnDel.type = 'button';\n    btnDel.className = 'btn danger del';\n    btnDel.textContent = 'Excluir';\n\n    actions.append(btnEdit, btnDel);\n\n    li.append(box, actions);\n    lista.appendChild(li);\n  }\n}\n\nfunction persistir() {\n  save('notas', notas);\n}\n\nfunction addNota(titulo, conteudo) {\n  notas.unshift({\n    id: Date.now(),\n    titulo,\n    conteudo,\n    updatedAt: Date.now()\n  });\n  persistir();\n  render();\n}\n\nfunction updateNota(id, titulo, conteudo) {\n  const n = notas.find(x => x.id === id);\n  if (!n) return;\n  n.titulo = titulo;\n  n.conteudo = conteudo;\n  n.updatedAt = Date.now();\n  persistir();\n  render();\n}\n\nfunction deleteNota(id) {\n  notas = notas.filter(x => x.id !== id);\n  persistir();\n  render();\n}\n\nfunction entrarEdicao(id) {\n  const n = notas.find(x => x.id === id);\n  if (!n) return;\n\n  tituloInput.value = n.titulo;\n  conteudoInput.value = n.conteudo || '';\n  editingId = id;\n\n  const btn = form.querySelector('button[type=\"submit\"]');\n  if (btn) btn.textContent = 'Atualizar';\n}\n\nfunction sairEdicao() {\n  editingId = null;\n  form.reset();\n  const btn = form.querySelector('button[type=\"submit\"]');\n  if (btn) btn.textContent = 'Salvar';\n}\n\nif (form && tituloInput && conteudoInput && erro && lista) {\n  form.addEventListener('submit', (e) => {\n    e.preventDefault();\n    erro.textContent = '';\n\n    const titulo = tituloInput.value.trim();\n    const conteudo = conteudoInput.value.trim();\n\n    if (!titulo) {\n      erro.textContent = 'Título é obrigatório';\n      return;\n    }\n\n    if (editingId) {\n      updateNota(editingId, titulo, conteudo);\n      sairEdicao();\n      return;\n    }\n\n    addNota(titulo, conteudo);\n    form.reset();\n  });\n\n  // delegation\n  lista.addEventListener('click', (e) => {\n    const item = e.target.closest('.item');\n    if (!item) return;\n\n    const id = Number(item.dataset.id);\n\n    if (e.target.classList.contains('edit')) {\n      entrarEdicao(id);\n      return;\n    }\n\n    if (e.target.classList.contains('del')) {\n      // se estiver editando essa nota, sai da edição\n      if (editingId === id) sairEdicao();\n      deleteNota(id);\n      return;\n    }\n  });\n\n  render();\n}\n"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "14-arrays-2",
+  "title": "Aula 14 — Arrays 2: map/filter/reduce na prática (sem decorar)",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender o trio mais usado para trabalhar com listas de dados:\n\n- map (transformar)\n- filter (filtrar)\n- reduce (resumir/acumular)\n\nNo final você vai conseguir:\n1) Entender a diferença entre map, filter e reduce\n2) Ler código com callbacks (funções dentro de funções)\n3) Criar transformações sem loops gigantes\n4) Evitar mutação do array original\n\nIsso aqui aparece em TODO lugar: APIs, listas de produtos, dashboards, relatórios."
+    },
+    {
+      "title": "A ideia central: você tem uma lista e quer gerar outra",
+      "body": "Pensa em uma lista de preços:\n[10, 20, 30]\n\nVocê pode querer:\n- transformar: aplicar desconto → map\n- filtrar: só os maiores que 15 → filter\n- resumir: somar tudo → reduce\n\nEsses métodos:\n- não mudam o array original (se usados normalmente)\n- devolvem um novo resultado\n- deixam o código mais declarativo (fala o que quer, não como)"
+    },
+    {
+      "title": "Callback: a função que roda para cada item",
+      "body": "map/filter/reduce recebem uma função (callback).\n\nEssa função recebe:\n- item (valor atual)\n- index (posição)\n- array (o array inteiro)\n\nVocê geralmente usa só o item.\n\nExemplo rápido:\n[1,2,3].map(n => n * 2)\n\nA callback roda 3 vezes:\n- n=1\n- n=2\n- n=3"
+    },
+    {
+      "title": "map: transformar cada item e devolver um novo array",
+      "body": "map = 'pegue cada item e transforme'.\n\nExemplo:\nconst nums = [1, 2, 3];\nconst dobro = nums.map(n => n * 2);\n\nResultado:\n- dobro = [2, 4, 6]\n- nums continua [1, 2, 3]\n\nRegra mental:\n- map sempre retorna array do mesmo tamanho."
+    },
+    {
+      "title": "filter: manter só alguns itens",
+      "body": "filter = 'deixe passar só o que for true'.\n\nExemplo:\nconst nums = [5, 12, 3, 20];\nconst maioresQue10 = nums.filter(n => n > 10);\n\nResultado:\n- [12, 20]\n\nRegra mental:\n- filter retorna array com tamanho igual ou menor."
+    },
+    {
+      "title": "reduce: acumular para virar 1 resultado",
+      "body": "reduce = 'junte tudo em um valor final'.\n\nExemplo somar:\nconst nums = [10, 20, 30];\nconst total = nums.reduce((acc, n) => acc + n, 0);\n\nComo pensar:\n- acc começa em 0 (valor inicial)\n- cada item soma no acc\n- no final, acc vira o resultado\n\nReduce pode virar:\n- number (soma)\n- string (montar texto)\n- object (agrupar dados)\n- array (construir lista)\n\nMas no começo, foque em soma/contagem."
+    },
+    {
+      "title": "Exemplo real com objetos (produtos)",
+      "body": "const produtos = [\n  { nome: 'Camisa', preco: 50, estoque: 10 },\n  { nome: 'Calça', preco: 120, estoque: 0 },\n  { nome: 'Tênis', preco: 200, estoque: 3 }\n];\n\n1) map: só nomes\nconst nomes = produtos.map(p => p.nome);\n\n2) filter: só em estoque\nconst disponiveis = produtos.filter(p => p.estoque > 0);\n\n3) reduce: total do estoque\nconst totalEstoque = produtos.reduce((acc, p) => acc + p.estoque, 0);\n\nIsso é literalmente o que um dashboard faz."
+    },
+    {
+      "title": "Erros comuns (e como não cair)",
+      "body": "1) Esquecer o return (quando usa { })\n\nErrado:\nnums.map(n => { n * 2 })\n\nCerto:\nnums.map(n => n * 2)\nou\nnums.map(n => { return n * 2 })\n\n2) Usar map quando queria filter\n- map transforma, não filtra\n\n3) Confundir reduce\n- comece com soma e conte quantas vezes ele roda"
+    },
+    {
+      "title": "Mini tarefa (20 minutos) — mini dashboard",
+      "body": "Faça no Console:\n\nUse este array:\nconst pedidos = [\n  { id: 1, total: 120.5, status: 'pago' },\n  { id: 2, total: 80, status: 'pendente' },\n  { id: 3, total: 50, status: 'pago' },\n  { id: 4, total: 200, status: 'cancelado' }\n];\n\n1) map: crie um array só com os ids\n\n2) filter: pegue só os pedidos com status 'pago'\n\n3) reduce: some o total de todos os pedidos\n\n4) reduce (extra): some o total apenas dos pagos\n(dica: filtre antes e reduza depois)\n\nMeta: você deve imprimir:\n- ids\n- pagos\n- somaTotal\n- somaPagos"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- map transforma e mantém o tamanho\n- filter filtra e pode reduzir o tamanho\n- reduce acumula e vira um resultado final\n- callbacks rodam para cada item\n- cuidado com return quando usar { }\n- isso é base para trabalhar com dados reais"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 14 (map/filter/reduce)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "map serve para:",
+        "options": [
+          { "key": "A", "text": "Transformar cada item e devolver um novo array" },
+          { "key": "B", "text": "Remover itens do array original" }
+        ],
+        "answer": "A",
+        "explain": "map cria um array novo com itens transformados."
+      },
+      {
+        "id": 2,
+        "question": "filter serve para:",
+        "options": [
+          { "key": "A", "text": "Manter só os itens que passam numa condição (true)" },
+          { "key": "B", "text": "Somar valores automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "filter só deixa passar o que retorna true."
+      },
+      {
+        "id": 3,
+        "question": "reduce serve para:",
+        "options": [
+          { "key": "A", "text": "Acumular e gerar um resultado final" },
+          { "key": "B", "text": "Ordenar arrays" }
+        ],
+        "answer": "A",
+        "explain": "reduce resume a lista em um valor."
+      },
+      {
+        "id": 4,
+        "question": "map normalmente retorna um array de tamanho:",
+        "options": [
+          { "key": "A", "text": "Igual ao original" },
+          { "key": "B", "text": "Sempre menor" }
+        ],
+        "answer": "A",
+        "explain": "Transforma 1 item em 1 item."
+      },
+      {
+        "id": 5,
+        "question": "filter pode retornar um array:",
+        "options": [
+          { "key": "A", "text": "Menor ou igual ao original" },
+          { "key": "B", "text": "Sempre maior" }
+        ],
+        "answer": "A",
+        "explain": "Ele pode remover itens."
+      },
+      {
+        "id": 6,
+        "question": "No reduce, acc é:",
+        "options": [
+          { "key": "A", "text": "O acumulador (resultado parcial)" },
+          { "key": "B", "text": "O índice do array" }
+        ],
+        "answer": "A",
+        "explain": "acc vai juntando os resultados."
+      },
+      {
+        "id": 7,
+        "question": "Erro comum: nums.map(n => { n * 2 }) dá errado porque:",
+        "options": [
+          { "key": "A", "text": "Com { } você precisa de return" },
+          { "key": "B", "text": "map não funciona com números" }
+        ],
+        "answer": "A",
+        "explain": "Sem return, a callback retorna undefined."
+      },
+      {
+        "id": 8,
+        "question": "Para pegar só nomes de produtos em objetos, você usa:",
+        "options": [
+          { "key": "A", "text": "map" },
+          { "key": "B", "text": "filter" }
+        ],
+        "answer": "A",
+        "explain": "Você quer transformar em uma lista de nomes."
+      },
+      {
+        "id": 9,
+        "question": "Para pegar só produtos com estoque > 0, você usa:",
+        "options": [
+          { "key": "A", "text": "filter" },
+          { "key": "B", "text": "map" }
+        ],
+        "answer": "A",
+        "explain": "Você quer manter alguns e remover outros."
+      },
+      {
+        "id": 10,
+        "question": "Boas práticas com map/filter/reduce incluem:",
+        "options": [
+          { "key": "A", "text": "Não mutar o array original e manter código legível" },
+          { "key": "B", "text": "Fazer tudo em uma linha gigante sempre" }
+        ],
+        "answer": "A",
+        "explain": "Legibilidade e previsibilidade importam."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 14 — modelJs: map / filter / reduce */\n\nconst pedidos = [\n  { id: 1, total: 120.5, status: 'pago' },\n  { id: 2, total: 80, status: 'pendente' },\n  { id: 3, total: 50, status: 'pago' },\n  { id: 4, total: 200, status: 'cancelado' }\n];\n\n// 1) map: ids\nconst ids = pedidos.map(p => p.id);\nconsole.log('ids:', ids);\n\n// 2) filter: pagos\nconst pagos = pedidos.filter(p => p.status === 'pago');\nconsole.log('pagos:', pagos);\n\n// 3) reduce: soma total\nconst somaTotal = pedidos.reduce((acc, p) => acc + p.total, 0);\nconsole.log('somaTotal:', somaTotal);\n\n// 4) total dos pagos (filter + reduce)\nconst somaPagos = pagos.reduce((acc, p) => acc + p.total, 0);\nconsole.log('somaPagos:', somaPagos);\n"
+  }
+}

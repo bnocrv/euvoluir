@@ -1,0 +1,155 @@
+{
+  "id": "13-arrays-1",
+  "title": "Aula 13 — Arrays 1: criar, acessar, push/pop, slice/splice",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a trabalhar com LISTAS.\n\nNo final você vai conseguir:\n1) Criar arrays (listas)\n2) Acessar itens por índice\n3) Usar push/pop (fim da lista)\n4) Usar shift/unshift (começo da lista)\n5) Entender slice (cópia) vs splice (edição)\n6) Evitar erros clássicos (índice fora, mutação sem perceber)"
+    },
+    {
+      "title": "O que é um array (e por que ele existe)",
+      "body": "Array é uma lista ordenada de valores.\n\nExemplo real:\n- lista de produtos\n- lista de pedidos\n- lista de nomes\n\nSem array, você teria:\nconst n1 = 'Ana'\nconst n2 = 'Bruno'\nconst n3 = 'Caio'\n\nCom array:\nconst nomes = ['Ana', 'Bruno', 'Caio'];\n\nVocê consegue:\n- percorrer com loop\n- adicionar/remover\n- filtrar, transformar, etc."
+    },
+    {
+      "title": "Índice: a posição de cada item (começa do 0)",
+      "body": "A primeira posição é 0.\n\nconst nomes = ['Ana', 'Bruno', 'Caio'];\n\n- nomes[0] → 'Ana'\n- nomes[1] → 'Bruno'\n- nomes[2] → 'Caio'\n\nO último item é:\n- nomes[nomes.length - 1]\n\nlength é o tamanho da lista."
+    },
+    {
+      "title": "Adicionar e remover no fim: push e pop",
+      "body": "push adiciona no final:\n- nomes.push('Duda')\n\npop remove do final e RETORNA o removido:\n- const removido = nomes.pop()\n\nPor que é útil que pop retorna?\n- você pode guardar o que saiu."
+    },
+    {
+      "title": "Adicionar e remover no começo: unshift e shift",
+      "body": "unshift adiciona no começo:\n- nomes.unshift('Zeca')\n\nshift remove do começo e retorna:\n- const primeiro = nomes.shift()\n\nAtenção:\n- mexer no começo geralmente é mais “caro” (reorganiza índices)\n- mas para listas pequenas, tudo bem."
+    },
+    {
+      "title": "slice: pegar uma parte sem mexer no original",
+      "body": "slice cria uma CÓPIA de um pedaço.\n\nconst letras = ['a', 'b', 'c', 'd', 'e'];\n\n- letras.slice(0, 2) → ['a', 'b']\n- letras.slice(2) → ['c', 'd', 'e']\n\nImportante:\n- slice NÃO altera o array original\n\nPensa em slice como:\n- “me dá uma fatia” (cópia)."
+    },
+    {
+      "title": "splice: remover/colocar alterando o array original",
+      "body": "splice EDITA o array original.\n\nSintaxe:\narray.splice(inicio, quantidadeRemover, ...itensParaAdicionar)\n\nExemplo:\nconst nomes = ['Ana', 'Bruno', 'Caio', 'Duda'];\n\n// remover 1 item a partir do índice 1\nnomes.splice(1, 1);\n// agora: ['Ana', 'Caio', 'Duda']\n\n// remover 0 e inserir no índice 1\nnomes.splice(1, 0, 'Bia');\n// agora: ['Ana', 'Bia', 'Caio', 'Duda']\n\nImportante:\n- splice MUDA o array\n- use com cuidado"
+    },
+    {
+      "title": "Mutação: quando você muda o original sem perceber",
+      "body": "push/pop/shift/unshift/splice mudam o array original.\n\nslice NÃO muda.\n\nPor que isso importa?\n- às vezes você quer preservar o original\n- em apps, mutação pode causar bug difícil\n\nRegra simples:\n- se quer mexer sem risco, prefira criar cópia (slice/spread)\n\nExemplo de cópia do array inteiro:\nconst copia = [...nomes];"
+    },
+    {
+      "title": "Mini tarefa (20 minutos) — lista de tarefas",
+      "body": "Faça no Console:\n\n1) Crie:\n- const tarefas = ['estudar', 'treinar', 'dormir']\n\n2) Adicione no fim:\n- 'beber água' (push)\n\n3) Remova do fim e guarde:\n- const ultima = tarefas.pop()\nMostre ultima.\n\n4) Adicione no começo:\n- 'acordar' (unshift)\n\n5) Remova do começo e guarde:\n- const primeira = tarefas.shift()\n\n6) Use slice para pegar as 2 primeiras sem alterar o original.\n\n7) Use splice para remover 1 item do meio.\n\nMeta: depois de cada passo, dê console.log(tarefas) e explique o que mudou."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Array = lista ordenada\n- Índice começa em 0\n- push/pop mexem no fim\n- unshift/shift mexem no começo\n- slice copia (não altera)\n- splice edita (altera)\n- cuidado com mutação do array original"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 13 (Arrays 1)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Array é:",
+        "options": [
+          { "key": "A", "text": "Uma lista ordenada de valores" },
+          { "key": "B", "text": "Uma função que soma números" }
+        ],
+        "answer": "A",
+        "explain": "Array representa listas (itens em ordem)."
+      },
+      {
+        "id": 2,
+        "question": "O primeiro índice de um array é:",
+        "options": [
+          { "key": "A", "text": "0" },
+          { "key": "B", "text": "1" }
+        ],
+        "answer": "A",
+        "explain": "Arrays começam em 0."
+      },
+      {
+        "id": 3,
+        "question": "push faz:",
+        "options": [
+          { "key": "A", "text": "Adiciona no final" },
+          { "key": "B", "text": "Remove do final" }
+        ],
+        "answer": "A",
+        "explain": "push empurra para o fim."
+      },
+      {
+        "id": 4,
+        "question": "pop faz:",
+        "options": [
+          { "key": "A", "text": "Remove do final e retorna o removido" },
+          { "key": "B", "text": "Adiciona no começo" }
+        ],
+        "answer": "A",
+        "explain": "pop tira do fim."
+      },
+      {
+        "id": 5,
+        "question": "shift faz:",
+        "options": [
+          { "key": "A", "text": "Remove do começo e retorna" },
+          { "key": "B", "text": "Copia um pedaço sem alterar" }
+        ],
+        "answer": "A",
+        "explain": "shift tira o primeiro item."
+      },
+      {
+        "id": 6,
+        "question": "unshift faz:",
+        "options": [
+          { "key": "A", "text": "Adiciona no começo" },
+          { "key": "B", "text": "Remove do começo" }
+        ],
+        "answer": "A",
+        "explain": "unshift coloca na frente."
+      },
+      {
+        "id": 7,
+        "question": "slice:",
+        "options": [
+          { "key": "A", "text": "Copia parte do array sem alterar o original" },
+          { "key": "B", "text": "Edita e altera o array original" }
+        ],
+        "answer": "A",
+        "explain": "slice é “fatia” (cópia)."
+      },
+      {
+        "id": 8,
+        "question": "splice:",
+        "options": [
+          { "key": "A", "text": "Edita o array original (remove/insere)" },
+          { "key": "B", "text": "Só lê valores" }
+        ],
+        "answer": "A",
+        "explain": "splice muda o array."
+      },
+      {
+        "id": 9,
+        "question": "Para pegar o último item, você usa:",
+        "options": [
+          { "key": "A", "text": "arr[arr.length - 1]" },
+          { "key": "B", "text": "arr[0]" }
+        ],
+        "answer": "A",
+        "explain": "Último índice é length - 1."
+      },
+      {
+        "id": 10,
+        "question": "Mutação significa:",
+        "options": [
+          { "key": "A", "text": "Alterar o array original" },
+          { "key": "B", "text": "Copiar sem mexer no original" }
+        ],
+        "answer": "A",
+        "explain": "push/pop/splice mutam."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 13 — modelJs: Arrays 1 */\n\nconst tarefas = ['estudar', 'treinar', 'dormir'];\nconsole.log('inicio:', tarefas);\n\n// push\ntarefas.push('beber água');\nconsole.log('depois push:', tarefas);\n\n// pop\nconst ultima = tarefas.pop();\nconsole.log('pop removeu:', ultima);\nconsole.log('depois pop:', tarefas);\n\n// unshift\ntarefas.unshift('acordar');\nconsole.log('depois unshift:', tarefas);\n\n// shift\nconst primeira = tarefas.shift();\nconsole.log('shift removeu:', primeira);\nconsole.log('depois shift:', tarefas);\n\n// slice (cópia)\nconst duasPrimeiras = tarefas.slice(0, 2);\nconsole.log('duasPrimeiras (copia):', duasPrimeiras);\nconsole.log('original intacto:', tarefas);\n\n// splice (edita)\n// remove 1 item do meio (índice 1)\ntarefas.splice(1, 1);\nconsole.log('depois splice:', tarefas);\n"
+  }
+}

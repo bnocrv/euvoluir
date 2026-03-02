@@ -1,0 +1,151 @@
+{
+  "id": "05-boolean-null-undefined",
+  "title": "Aula 05 — Boolean, null, undefined e truthy/falsy",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai entender o “coração” das decisões no JavaScript: valores que viram verdadeiro ou falso.\n\nNo final você vai conseguir:\n1) Diferenciar boolean, null e undefined\n2) Entender truthy/falsy (sem decorar lista gigante)\n3) Usar !! para converter para boolean\n4) Evitar bugs de validação (campo vazio, zero, string vazia)\n5) Fazer checagens seguras no dia a dia"
+    },
+    {
+      "title": "Boolean: o tipo do SIM/NÃO",
+      "body": "Boolean é um tipo com só dois valores:\n- true\n- false\n\nEle aparece quando você compara coisas:\n- 2 > 1 → true\n- 5 === 3 → false\n\nE ele manda no fluxo do código:\n- if (condicao) { ... }\n\nSe a condição for true → entra.\nSe for false → não entra."
+    },
+    {
+      "title": "undefined vs null (a diferença que confunde)",
+      "body": "São dois jeitos de representar “vazio”, mas com sentidos diferentes.\n\n1) undefined\n- a variável existe, mas ainda não recebeu valor\n- comum quando você declara e não atribui\n\nExemplo:\n- let nome;\n- console.log(nome); // undefined\n\n2) null\n- você define intencionalmente como “vazio”\n- é uma escolha sua\n\nExemplo:\n- let usuario = null; // “ainda não tem usuário”\n\nDica mental:\n- undefined = 'não chegou'\n- null = 'eu zerei de propósito'"
+    },
+    {
+      "title": "Truthy/Falsy: o JS decide o que conta como verdadeiro",
+      "body": "Em JS, o if não aceita só boolean.\nEle aceita QUALQUER valor e converte para true/false.\n\nIsso é útil, mas dá pegadinhas.\n\nFalsy (viram false) — os principais:\n- false\n- 0\n- '' (string vazia)\n- null\n- undefined\n- NaN\n\nTodo o resto é truthy (vira true):\n- '0' (texto com zero) é truthy\n- [] (array vazio) é truthy\n- {} (objeto vazio) é truthy\n\nRegra curta:\n- vazio “de verdade” (0, '', null, undefined) costuma ser falsy\n- estruturas ([], {}) costumam ser truthy"
+    },
+    {
+      "title": "Converter para boolean: Boolean() e !!",
+      "body": "Duas formas comuns:\n\n1) Boolean(valor)\n- Boolean('oi') → true\n- Boolean('') → false\n\n2) !!valor\n- !!'oi' → true\n- !!'' → false\n\nPor que !! funciona?\n- O primeiro ! inverte\n- O segundo ! inverte de novo\nResultado: vira um boolean real.\n\nVocê vai ver isso muito em validações."
+    },
+    {
+      "title": "Validações reais (onde a maioria erra)",
+      "body": "Exemplo: validar idade.\n\nSe você fizer:\n- if (idade) { ... }\n\nE idade = 0, isso dá false.\nMas 0 pode ser um valor válido dependendo do contexto.\n\nEntão você escolhe a regra certa:\n\n1) Quer aceitar 0 como válido?\n- if (idade !== null && idade !== undefined)\n\n2) Quer bloquear vazio e zero?\n- if (idade > 0)\n\nOutro exemplo: texto\n- if (nome) bloqueia '' (vazio)\n- mas '   ' (só espaço) é truthy\n\nPra texto, use trim:\n- if (nome.trim())"
+    },
+    {
+      "title": "Checagens seguras que você vai usar sempre",
+      "body": "1) Checar se existe (não é null/undefined)\n- valor != null\n\nEsse é um truque do bem:\n- valor != null é true para qualquer coisa exceto null e undefined\n- (porque != aqui faz um caso especial)\n\n2) Checar string preenchida\n- texto.trim().length > 0\n\n3) Checar número válido\n- Number.isNaN(n) → true se for NaN\n- Number.isFinite(n) → true se for número finito\n\nVocê não precisa decorar tudo hoje, mas precisa entender o motivo."
+    },
+    {
+      "title": "Mini tarefa (15 minutos) — validar do jeito certo",
+      "body": "Faça no Console:\n\n1) Teste truthy/falsy\n- console.log(Boolean(0))\n- console.log(Boolean('0'))\n- console.log(Boolean(''))\n- console.log(Boolean([]))\n- console.log(Boolean({}))\n\n2) Crie uma variável:\n- let nome = '   '\nVerifique se está “preenchido de verdade” usando trim.\n\n3) Crie:\n- let idade = 0\nFaça duas validações:\nA) 'idade foi informada' (aceita 0)\nB) 'idade válida' (maior que 0)\n\n4) Crie:\n- const valor = Number('10a')\nMostre no console:\n- valor\n- Number.isNaN(valor)\n\nMeta: você tem que explicar por que cada resultado deu true/false."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Boolean é true/false\n- undefined = não definido ainda\n- null = vazio intencional\n- if converte valores para boolean (truthy/falsy)\n- falsy principais: false, 0, '', null, undefined, NaN\n- use Boolean() ou !! para converter\n- validação boa depende da regra (0 pode ser válido!)"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 05 (Boolean, null, undefined)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Boolean é um tipo que pode ser:",
+        "options": [
+          { "key": "A", "text": "true ou false" },
+          { "key": "B", "text": "apenas números" }
+        ],
+        "answer": "A",
+        "explain": "Boolean representa decisões: sim/não."
+      },
+      {
+        "id": 2,
+        "question": "undefined normalmente significa:",
+        "options": [
+          { "key": "A", "text": "A variável existe, mas ainda não recebeu valor" },
+          { "key": "B", "text": "Um texto vazio" }
+        ],
+        "answer": "A",
+        "explain": "Você declarou, mas não atribuiu."
+      },
+      {
+        "id": 3,
+        "question": "null normalmente significa:",
+        "options": [
+          { "key": "A", "text": "Vazio intencional (você definiu assim)" },
+          { "key": "B", "text": "Sempre a mesma coisa que undefined" }
+        ],
+        "answer": "A",
+        "explain": "null é uma escolha explícita."
+      },
+      {
+        "id": 4,
+        "question": "Qual destes é falsy?",
+        "options": [
+          { "key": "A", "text": "0" },
+          { "key": "B", "text": "'0'" }
+        ],
+        "answer": "A",
+        "explain": "0 (número) é falsy; '0' (texto) é truthy."
+      },
+      {
+        "id": 5,
+        "question": "String vazia '' é:",
+        "options": [
+          { "key": "A", "text": "falsy" },
+          { "key": "B", "text": "truthy" }
+        ],
+        "answer": "A",
+        "explain": "'' vira false em condições."
+      },
+      {
+        "id": 6,
+        "question": "Array vazio [] é:",
+        "options": [
+          { "key": "A", "text": "truthy" },
+          { "key": "B", "text": "falsy" }
+        ],
+        "answer": "A",
+        "explain": "Estruturas vazias ainda são valores existentes."
+      },
+      {
+        "id": 7,
+        "question": "!!valor serve para:",
+        "options": [
+          { "key": "A", "text": "Converter um valor para boolean" },
+          { "key": "B", "text": "Somar dois números" }
+        ],
+        "answer": "A",
+        "explain": "Dá true/false real."
+      },
+      {
+        "id": 8,
+        "question": "Se nome = '   ', então if (nome) é:",
+        "options": [
+          { "key": "A", "text": "true (porque não é string vazia)" },
+          { "key": "B", "text": "false" }
+        ],
+        "answer": "A",
+        "explain": "Espaço é caractere; para validar texto, use trim()."
+      },
+      {
+        "id": 9,
+        "question": "Para validar texto preenchido de verdade, é melhor usar:",
+        "options": [
+          { "key": "A", "text": "nome.trim()" },
+          { "key": "B", "text": "nome + 1" }
+        ],
+        "answer": "A",
+        "explain": "trim remove espaços e ajuda a checar vazio real."
+      },
+      {
+        "id": 10,
+        "question": "NaN significa:",
+        "options": [
+          { "key": "A", "text": "Not a Number (não é número válido)" },
+          { "key": "B", "text": "Número normal" }
+        ],
+        "answer": "A",
+        "explain": "Acontece quando a conversão falha (ex.: Number('10a'))."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 05 — modelJs: truthy/falsy e validações */\n\n// 1) Truthy/Falsy na prática\nconsole.log('0 ->', Boolean(0));\nconsole.log(\"'0' ->\", Boolean('0'));\nconsole.log(\"'' ->\", Boolean(''));\nconsole.log('[] ->', Boolean([]));\nconsole.log('{} ->', Boolean({}));\n\n// 2) Texto: validar preenchido de verdade\nlet nome = '   ';\nconsole.log('nome (cru) é truthy?', Boolean(nome));\nconsole.log('nome (trim) é truthy?', Boolean(nome.trim()));\n\n// 3) Número: 0 pode ser válido dependendo da regra\nlet idade = 0;\nconst idadeFoiInformada = idade !== null && idade !== undefined; // aceita 0\nconst idadeValida = idade > 0; // exige > 0\nconsole.log('idadeFoiInformada:', idadeFoiInformada);\nconsole.log('idadeValida:', idadeValida);\n\n// 4) NaN\nconst valor = Number('10a');\nconsole.log('valor:', valor);\nconsole.log('isNaN:', Number.isNaN(valor));\n"
+  }
+}

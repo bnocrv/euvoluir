@@ -1,0 +1,155 @@
+{
+  "id": "12-objetos-2",
+  "title": "Aula 12 — Objetos 2: métodos, this (do jeito certo), destructuring",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai deixar objetos mais poderosos.\n\nNo final você vai conseguir:\n1) Colocar funções dentro de objetos (métodos)\n2) Entender o que é this na prática (sem misticismo)\n3) Usar destructuring para pegar propriedades sem ficar repetindo obj.\n4) Usar spread (...) para copiar/atualizar objetos sem bagunça\n\nIsso é base para organizar código e trabalhar com dados do mundo real."
+    },
+    {
+      "title": "Métodos: função dentro do objeto",
+      "body": "Quando um objeto tem uma função como propriedade, chamamos de método.\n\nExemplo:\nconst usuario = {\n  nome: 'Bruno',\n  dizerOi: function () {\n    console.log('Oi!');\n  }\n};\n\nusuario.dizerOi();\n\nUm método geralmente faz algo usando dados do próprio objeto."
+    },
+    {
+      "title": "this: 'este objeto aqui'",
+      "body": "this, dentro de um método, normalmente significa:\n- o objeto que está chamando o método\n\nExemplo:\nconst usuario = {\n  nome: 'Bruno',\n  apresentar: function () {\n    console.log(`Eu sou ${this.nome}`);\n  }\n};\n\nusuario.apresentar(); // Eu sou Bruno\n\nPor que usar this?\n- porque se você trocar o nome, o método continua certo\n- porque você não precisa 'hardcode' (fixar) valores"
+    },
+    {
+      "title": "Armadilha importante: arrow function e this",
+      "body": "Para começar, use function normal para métodos.\n\nPor quê?\n- arrow function não tem seu próprio this\n- ela 'pega emprestado' o this de fora\n\nIsso pode confundir muito no começo.\n\nRegra simples por agora:\n- método do objeto: use function () { ... }\n- funções soltas/callbacks: arrow é ok"
+    },
+    {
+      "title": "Destructuring: pegar várias propriedades rápido",
+      "body": "Sem destructuring:\nconst nome = usuario.nome;\nconst email = usuario.email;\n\nCom destructuring:\nconst { nome, email } = usuario;\n\nIsso cria variáveis nome e email.\n\nTambém dá para renomear:\nconst { nome: nomeUsuario } = usuario;\n\nE colocar valor padrão:\nconst { telefone = 'não informado' } = usuario;"
+    },
+    {
+      "title": "Destructuring em parâmetros (muito usado)",
+      "body": "Você pode receber um objeto e já tirar as chaves que precisa:\n\nfunction mostrarUsuario({ nome, email }) {\n  console.log(nome, email);\n}\n\nmostrarUsuario(usuario);\n\nIsso deixa claro o que a função usa."
+    },
+    {
+      "title": "Spread (...) para copiar e atualizar objeto",
+      "body": "Quando você quer copiar um objeto e mudar só uma parte:\n\nconst usuario = { nome: 'Bruno', pontos: 0 };\n\nconst atualizado = {\n  ...usuario,\n  pontos: usuario.pontos + 10\n};\n\nPor que isso é bom?\n- você não muda o objeto original\n- isso evita efeitos colaterais\n\nEm apps, isso é muito importante (state)."
+    },
+    {
+      "title": "Cuidado: spread é cópia rasa (shallow)",
+      "body": "Se tiver objeto dentro de objeto:\n\nconst a = { cliente: { nome: 'Ana' } };\nconst b = { ...a };\n\nb.cliente.nome = 'Bia';\n\nAgora a.cliente.nome também muda.\n\nPorque spread copia só a camada de cima.\n\nPor enquanto, só saiba que isso existe.\nMais pra frente a gente fala de cópia profunda."
+    },
+    {
+      "title": "Mini tarefa (20 minutos) — usuário completo",
+      "body": "Faça no Console:\n\n1) Crie um objeto usuario com:\n- nome\n- email\n- pontos\n- ativo\n\n2) Crie um método:\n- usuario.addPontos(qtd)\n  - soma qtd em this.pontos\n\n3) Chame:\n- usuario.addPontos(10)\n- usuario.addPontos(5)\nMostre usuario.pontos\n\n4) Use destructuring:\n- const { nome, email } = usuario\nMostre nome e email\n\n5) Crie uma cópia atualizada sem mutar:\n- const usuario2 = { ...usuario, ativo: false }\nMostre os dois e explique:\n- o que mudou?\n- qual ficou igual?"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Método = função dentro do objeto\n- this em método aponta para o objeto que chamou\n- Evite arrow como método no começo\n- Destructuring tira chaves sem repetir obj.\n- Spread copia/atualiza criando novo objeto\n- Spread é cópia rasa (shallow)"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 12 (Objetos 2)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Método é:",
+        "options": [
+          { "key": "A", "text": "Uma função dentro de um objeto" },
+          { "key": "B", "text": "Um tipo de loop" }
+        ],
+        "answer": "A",
+        "explain": "É uma propriedade cujo valor é uma função."
+      },
+      {
+        "id": 2,
+        "question": "Em usuario.apresentar(), dentro do método this normalmente é:",
+        "options": [
+          { "key": "A", "text": "O próprio objeto usuario (quem chamou)" },
+          { "key": "B", "text": "Sempre o window" }
+        ],
+        "answer": "A",
+        "explain": "this aponta para o objeto que executou o método."
+      },
+      {
+        "id": 3,
+        "question": "Para métodos no começo, é melhor usar:",
+        "options": [
+          { "key": "A", "text": "function () { ... }" },
+          { "key": "B", "text": "arrow function sempre" }
+        ],
+        "answer": "A",
+        "explain": "Arrow não tem this próprio e confunde."
+      },
+      {
+        "id": 4,
+        "question": "Destructuring const { nome } = usuario faz:",
+        "options": [
+          { "key": "A", "text": "Cria uma variável nome com usuario.nome" },
+          { "key": "B", "text": "Apaga a chave nome do objeto" }
+        ],
+        "answer": "A",
+        "explain": "Ele só 'tira' o valor para uma variável."
+      },
+      {
+        "id": 5,
+        "question": "Spread {...usuario, ativo:false} serve para:",
+        "options": [
+          { "key": "A", "text": "Criar um novo objeto copiando usuario e mudando ativo" },
+          { "key": "B", "text": "Modificar usuario automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Você cria uma cópia com alterações."
+      },
+      {
+        "id": 6,
+        "question": "Spread é uma cópia:",
+        "options": [
+          { "key": "A", "text": "Rasa (shallow)" },
+          { "key": "B", "text": "Sempre profunda" }
+        ],
+        "answer": "A",
+        "explain": "Só copia a camada de cima."
+      },
+      {
+        "id": 7,
+        "question": "Renomear no destructuring const { nome: n } = usuario faz:",
+        "options": [
+          { "key": "A", "text": "Cria variável n com usuario.nome" },
+          { "key": "B", "text": "Muda a chave nome para n no objeto" }
+        ],
+        "answer": "A",
+        "explain": "Só muda o nome da variável, não do objeto."
+      },
+      {
+        "id": 8,
+        "question": "Valor padrão no destructuring const { tel='x' } = usuario acontece quando:",
+        "options": [
+          { "key": "A", "text": "usuario.tel é undefined" },
+          { "key": "B", "text": "usuario.tel é 0" }
+        ],
+        "answer": "A",
+        "explain": "O padrão entra quando a propriedade não existe (undefined)."
+      },
+      {
+        "id": 9,
+        "question": "this.nome dentro de método é útil porque:",
+        "options": [
+          { "key": "A", "text": "Usa o dado do próprio objeto sem hardcode" },
+          { "key": "B", "text": "Transforma texto em número" }
+        ],
+        "answer": "A",
+        "explain": "Mantém o método ligado ao estado do objeto."
+      },
+      {
+        "id": 10,
+        "question": "Destructuring em parâmetros function f({a}) {} é útil para:",
+        "options": [
+          { "key": "A", "text": "Deixar claro quais chaves a função usa" },
+          { "key": "B", "text": "Rodar o código mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "Melhora legibilidade e manutenção."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 12 — modelJs: Métodos, this, destructuring, spread */\n\nconst usuario = {\n  nome: 'Bruno',\n  email: 'bruno@gmail.com',\n  pontos: 0,\n  ativo: true,\n  addPontos: function (qtd) {\n    this.pontos = this.pontos + qtd;\n  }\n};\n\nusuario.addPontos(10);\nusuario.addPontos(5);\nconsole.log('pontos:', usuario.pontos);\n\n// Destructuring\nconst { nome, email } = usuario;\nconsole.log('nome:', nome);\nconsole.log('email:', email);\n\n// Spread (cópia atualizada)\nconst usuario2 = { ...usuario, ativo: false };\nconsole.log('usuario:', usuario);\nconsole.log('usuario2:', usuario2);\n"
+  }
+}

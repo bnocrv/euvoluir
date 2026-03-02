@@ -1,0 +1,155 @@
+{
+  "id": "18-dom-1",
+  "title": "Aula 18 — DOM 1: selecionar elementos (querySelector) e entender a árvore",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você começa a parte mais divertida do JS no front: controlar a página.\n\nNo final você vai conseguir:\n1) Entender o que é DOM (a árvore da página)\n2) Selecionar elementos com querySelector/querySelectorAll\n3) Ler e alterar texto (textContent) e HTML (innerHTML) com cuidado\n4) Entender diferença entre NodeList e Array\n5) Fazer um mini exercício de “mexer na tela”"
+    },
+    {
+      "title": "O que é DOM (a árvore da página)",
+      "body": "DOM = Document Object Model.\n\nÉ a representação da sua página como uma árvore de objetos.\n\nPensa assim:\n- o HTML é um texto\n- o navegador lê esse texto\n- e cria uma árvore (nós) na memória\n\nCada tag vira um nó/elemento.\n\nExemplo mental:\n<html>\n  <body>\n    <h1>...</h1>\n    <button>...</button>\n  </body>\n</html>\n\nEssa hierarquia é a árvore.\n\nE o JavaScript consegue:\n- encontrar nós\n- ler conteúdo\n- alterar conteúdo\n- reagir a eventos (próximas aulas)"
+    },
+    {
+      "title": "document: sua porta de entrada",
+      "body": "No navegador, você tem o objeto global document.\n\nEle representa o documento atual (a página).\n\nTudo de DOM começa com document.\n\nExemplos:\n- document.title\n- document.body\n- document.querySelector(...)"
+    },
+    {
+      "title": "Selecionar um elemento: querySelector",
+      "body": "querySelector pega o PRIMEIRO elemento que bater com o seletor CSS.\n\nExemplos:\n- document.querySelector('h1')\n- document.querySelector('.btn')\n- document.querySelector('#login')\n- document.querySelector('[data-role=\"menu\"]')\n\nSe não encontrar, retorna null.\n\nIsso é importante:\n- se for null e você tentar usar, dá erro.\nEntão você checa antes."
+    },
+    {
+      "title": "Selecionar vários: querySelectorAll",
+      "body": "querySelectorAll pega TODOS que baterem.\n\nExemplo:\nconst itens = document.querySelectorAll('.item');\n\nEle retorna uma NodeList.\n\nNodeList parece array (tem length e dá para for...of),\nmas não é um array de verdade.\n\nVocê pode percorrer:\nfor (const el of itens) { ... }\n\nSe quiser virar array:\nconst arr = Array.from(itens);\nou\nconst arr = [...itens];"
+    },
+    {
+      "title": "Ler e alterar texto: textContent",
+      "body": "textContent mexe com texto puro.\n\nExemplo:\nconst titulo = document.querySelector('h1');\nconsole.log(titulo.textContent);\n\ntitulo.textContent = 'Novo título';\n\nPor que textContent é bom?\n- não interpreta HTML\n- é mais seguro contra injeção\n\nRegra:\n- para texto, prefira textContent."
+    },
+    {
+      "title": "innerHTML: poderoso, mas perigoso",
+      "body": "innerHTML lê/escreve HTML dentro do elemento.\n\nExemplo:\nconst caixa = document.querySelector('#caixa');\ncaixa.innerHTML = '<strong>Olá</strong>';\n\nCuidado:\n- se você colocar texto vindo de usuário no innerHTML, pode abrir brecha de segurança.\n\nRegra simples:\n- use innerHTML quando você controla o conteúdo\n- para texto, use textContent"
+    },
+    {
+      "title": "Criando um 'laboratório DOM' rápido",
+      "body": "Para treinar, crie um HTML simples e abra no navegador:\n\n<body>\n  <h1 id=\"titulo\">Olá</h1>\n  <p class=\"msg\">mensagem</p>\n  <ul>\n    <li class=\"item\">A</li>\n    <li class=\"item\">B</li>\n    <li class=\"item\">C</li>\n  </ul>\n</body>\n\nDepois abra o Console e teste querySelector/All.\n\nVocê vai sentir o DOM \"ao vivo\"."
+    },
+    {
+      "title": "Mini tarefa (20 minutos) — mexer na página",
+      "body": "Crie o HTML acima (arquivo .html) e no Console faça:\n\n1) Selecione o h1 pelo id e troque o texto\n- '#titulo'\n\n2) Selecione o p pela classe e troque o texto\n- '.msg'\n\n3) Selecione todos os .item e:\n- mostre quantos existem (length)\n- percorra com for...of e mostre o textContent\n\n4) Extra:\n- mude o texto do item 'B' para 'B (alterado)'\n\nMeta: você tem que conseguir explicar:\n- por que querySelector retorna 1 e querySelectorAll retorna vários\n- o que acontece quando não acha (null)\n- por que textContent é mais seguro"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- DOM é a árvore de elementos da página\n- document é a porta de entrada\n- querySelector pega o primeiro; querySelectorAll pega todos\n- querySelector pode retornar null (cheque antes)\n- textContent altera texto com segurança\n- innerHTML altera HTML, mas use com cuidado"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 18 (DOM 1)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "DOM é:",
+        "options": [
+          { "key": "A", "text": "A representação da página como uma árvore de objetos" },
+          { "key": "B", "text": "Um tipo de arquivo CSS" }
+        ],
+        "answer": "A",
+        "explain": "O navegador cria uma árvore na memória."
+      },
+      {
+        "id": 2,
+        "question": "document é:",
+        "options": [
+          { "key": "A", "text": "O objeto que representa a página no JS do navegador" },
+          { "key": "B", "text": "Um método de array" }
+        ],
+        "answer": "A",
+        "explain": "É a porta de entrada do DOM."
+      },
+      {
+        "id": 3,
+        "question": "querySelector retorna:",
+        "options": [
+          { "key": "A", "text": "O primeiro elemento que bate com o seletor" },
+          { "key": "B", "text": "Todos os elementos que batem" }
+        ],
+        "answer": "A",
+        "explain": "Ele para no primeiro match."
+      },
+      {
+        "id": 4,
+        "question": "querySelectorAll retorna:",
+        "options": [
+          { "key": "A", "text": "Uma lista (NodeList) com todos os matches" },
+          { "key": "B", "text": "Apenas um elemento" }
+        ],
+        "answer": "A",
+        "explain": "Ele coleta todos os elementos."
+      },
+      {
+        "id": 5,
+        "question": "Se querySelector não encontra nada, ele retorna:",
+        "options": [
+          { "key": "A", "text": "null" },
+          { "key": "B", "text": "0" }
+        ],
+        "answer": "A",
+        "explain": "E usar null como elemento dá erro."
+      },
+      {
+        "id": 6,
+        "question": "textContent é melhor para:",
+        "options": [
+          { "key": "A", "text": "Alterar texto puro de forma segura" },
+          { "key": "B", "text": "Inserir HTML vindo do usuário" }
+        ],
+        "answer": "A",
+        "explain": "Ele não interpreta HTML."
+      },
+      {
+        "id": 7,
+        "question": "innerHTML:",
+        "options": [
+          { "key": "A", "text": "Interpreta HTML e pode ser perigoso com conteúdo externo" },
+          { "key": "B", "text": "Só altera texto puro" }
+        ],
+        "answer": "A",
+        "explain": "Se você inserir conteúdo não confiável, pode abrir brecha."
+      },
+      {
+        "id": 8,
+        "question": "NodeList:",
+        "options": [
+          { "key": "A", "text": "Parece array e dá para percorrer, mas não é array real" },
+          { "key": "B", "text": "É sempre um objeto JSON" }
+        ],
+        "answer": "A",
+        "explain": "Você pode converter com Array.from ou [...]."
+      },
+      {
+        "id": 9,
+        "question": "Para selecionar por id, você usa:",
+        "options": [
+          { "key": "A", "text": "#id" },
+          { "key": "B", "text": ".id" }
+        ],
+        "answer": "A",
+        "explain": "# é id, . é classe."
+      },
+      {
+        "id": 10,
+        "question": "Boas práticas no DOM incluem:",
+        "options": [
+          { "key": "A", "text": "Checar null e preferir textContent para texto" },
+          { "key": "B", "text": "Usar innerHTML para qualquer coisa sempre" }
+        ],
+        "answer": "A",
+        "explain": "Evita erros e riscos."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 18 — modelJs: Seleção e texto no DOM */\n\n// 1) Selecionar um\nconst titulo = document.querySelector('#titulo');\nif (titulo) {\n  console.log('antes:', titulo.textContent);\n  titulo.textContent = 'Novo título (JS)';\n}\n\n// 2) Selecionar por classe\nconst msg = document.querySelector('.msg');\nif (msg) {\n  msg.textContent = 'Mensagem atualizada pelo JS';\n}\n\n// 3) Selecionar vários\nconst itens = document.querySelectorAll('.item');\nconsole.log('quantidade de itens:', itens.length);\n\nfor (const el of itens) {\n  console.log('item:', el.textContent);\n}\n\n// 4) Extra: alterar o item B\nfor (const el of itens) {\n  if (el.textContent === 'B') {\n    el.textContent = 'B (alterado)';\n  }\n}\n"
+  }
+}

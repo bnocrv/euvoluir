@@ -1,0 +1,155 @@
+{
+  "id": "31-async-await",
+  "title": "Aula 31 — Async/Await (o jeito moderno) + try/catch",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender o jeito moderno de escrever código assíncrono: async/await.\n\nNo final você vai conseguir:\n1) Entender o que async e await fazem\n2) Converter código com then/catch para async/await\n3) Tratar erros com try/catch (no async)\n4) Fazer UI com loading/sucesso/erro de forma limpa\n5) Evitar armadilhas comuns (esquecer await, não checar res.ok)"
+    },
+    {
+      "title": "A ideia central: await é 'espera sem travar o navegador'",
+      "body": "await só funciona dentro de função async.\n\nQuando você usa await:\n- o JS pausa aquela função\n- mas o navegador NÃO trava\n- o resto do app continua\n\nVocê escreve assíncrono com cara de síncrono.\n\nIsso melhora:\n- legibilidade\n- manutenção\n- debug"
+    },
+    {
+      "title": "async: função que sempre retorna Promise",
+      "body": "Se você marca uma função como async:\n\nasync function exemplo() {\n  return 10;\n}\n\nMesmo retornando 10, ela retorna uma Promise que resolve 10.\n\nexemplo().then(console.log) // 10\n\nRegra:\n- async embrulha o return em Promise."
+    },
+    {
+      "title": "await: esperar uma Promise resolver",
+      "body": "Se você tem uma promise:\n\nconst p = Promise.resolve('ok');\n\nCom then:\np.then((v) => console.log(v));\n\nCom await:\nasync function rodar() {\n  const v = await p;\n  console.log(v);\n}\nrodar();\n\nawait pega o valor resolvido.\n\nSe a promise rejeitar:\n- await lança erro (como throw)\n- você trata com try/catch."
+    },
+    {
+      "title": "Converter fetch para async/await (padrão profissional)",
+      "body": "Antes (then):\nfetch(url)\n  .then(res => {\n    if (!res.ok) throw new Error('HTTP ' + res.status);\n    return res.json();\n  })\n  .then(data => ...)\n  .catch(err => ...)\n\nAgora (async/await):\n\nasync function carregar() {\n  try {\n    const res = await fetch(url);\n    if (!res.ok) throw new Error('HTTP ' + res.status);\n    const data = await res.json();\n    // sucesso\n  } catch (err) {\n    // erro\n  }\n}\n\nVocê vê o fluxo claramente:\n- request → checa ok → parse → usa data."
+    },
+    {
+      "title": "try/catch no async: trata erro de rede + erro HTTP (se você lançar)",
+      "body": "Lembre:\n- fetch só falha no catch por rede, a não ser que você lance erro.\n\nEntão você faz:\nif (!res.ok) throw new Error(...)\n\nAí sim o catch pega.\n\nNo catch, use:\n- err.message\nE dê feedback ao usuário."
+    },
+    {
+      "title": "Estado de UI: loading / sucesso / erro (limpo)",
+      "body": "Uma função boa de carregar dados cuida de:\n\n1) loading on\n- desabilita botão\n- mostra 'Carregando...'\n\n2) tenta\n- fetch\n- parse\n\n3) sucesso\n- renderiza data\n\n4) erro\n- mensagem\n\n5) finally\n- loading off\n\nIsso vira padrão de app."
+    },
+    {
+      "title": "Armadilhas comuns (pra não sofrer)",
+      "body": "1) Esquecer await\n- const data = res.json(); // isso é Promise, não é o objeto\n\n2) Usar await fora de async\n- dá erro de sintaxe\n\n3) Não checar res.ok\n- você parseia erro 404 como se fosse sucesso\n\n4) Não tratar UI no finally\n- botão fica travado / loading eterno"
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — GET com async/await",
+      "body": "Use o mesmo HTML da aula 29:\n\n<button id=\"carregar\" class=\"btn primary\">Carregar</button>\n<p id=\"status\" class=\"muted\"></p>\n<pre id=\"saida\" class=\"card\"></pre>\n\nFaça:\n\n1) Crie async function carregarTodo()\n\n2) Dentro:\n- status = 'Carregando...'\n- desabilite o botão\n\n3) try:\n- await fetch('https://jsonplaceholder.typicode.com/todos/1')\n- if !ok → throw\n- const data = await res.json()\n- mostre JSON bonito no <pre>\n- status = 'OK'\n\n4) catch:\n- status = 'Erro: ...'\n\n5) finally:\n- habilite o botão\n\nMeta: você tem que explicar:\n- por que await deixa mais legível\n- por que res.json precisa de await\n- por que res.ok ainda é necessário"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- async cria função que retorna Promise\n- await espera Promise e pega valor\n- await só dentro de async\n- erros com await vão para try/catch\n- fetch com async/await fica mais legível\n- padrão UI: loading/try/catch/finally"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 31 (Async/Await)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "async function sempre retorna:",
+        "options": [
+          { "key": "A", "text": "Uma Promise" },
+          { "key": "B", "text": "Um número direto" }
+        ],
+        "answer": "A",
+        "explain": "Mesmo retornando valor simples, vira Promise."
+      },
+      {
+        "id": 2,
+        "question": "await só pode ser usado:",
+        "options": [
+          { "key": "A", "text": "Dentro de função async" },
+          { "key": "B", "text": "Dentro de um if" }
+        ],
+        "answer": "A",
+        "explain": "Fora disso dá erro."
+      },
+      {
+        "id": 3,
+        "question": "await faz:",
+        "options": [
+          { "key": "A", "text": "Espera a Promise resolver e pega o valor" },
+          { "key": "B", "text": "Cria um loop automático" }
+        ],
+        "answer": "A",
+        "explain": "Ele 'desembrulha' o valor."
+      },
+      {
+        "id": 4,
+        "question": "Se a Promise rejeitar, await:",
+        "options": [
+          { "key": "A", "text": "Lança erro (vai para try/catch)" },
+          { "key": "B", "text": "Retorna null sempre" }
+        ],
+        "answer": "A",
+        "explain": "Por isso você usa try/catch."
+      },
+      {
+        "id": 5,
+        "question": "res.json() precisa de await porque:",
+        "options": [
+          { "key": "A", "text": "Ele retorna uma Promise (parse do corpo é assíncrono)" },
+          { "key": "B", "text": "Ele retorna number" }
+        ],
+        "answer": "A",
+        "explain": "Ler body leva tempo."
+      },
+      {
+        "id": 6,
+        "question": "fetch cai no catch em 404 automaticamente?",
+        "options": [
+          { "key": "A", "text": "Não, você deve checar res.ok e lançar erro" },
+          { "key": "B", "text": "Sim, sempre" }
+        ],
+        "answer": "A",
+        "explain": "Erro HTTP ainda é response."
+      },
+      {
+        "id": 7,
+        "question": "finally é útil porque:",
+        "options": [
+          { "key": "A", "text": "Roda sempre para limpar loading/estado" },
+          { "key": "B", "text": "Roda só quando dá erro" }
+        ],
+        "answer": "A",
+        "explain": "Evita botão travado."
+      },
+      {
+        "id": 8,
+        "question": "Esquecer await em res.json() faz data virar:",
+        "options": [
+          { "key": "A", "text": "Uma Promise, não o objeto" },
+          { "key": "B", "text": "Um array pronto" }
+        ],
+        "answer": "A",
+        "explain": "Você vai ver Promise no console."
+      },
+      {
+        "id": 9,
+        "question": "Vantagem do async/await:",
+        "options": [
+          { "key": "A", "text": "Código mais legível e fluxo mais claro" },
+          { "key": "B", "text": "Remove necessidade de try/catch" }
+        ],
+        "answer": "A",
+        "explain": "Try/catch ainda existe."
+      },
+      {
+        "id": 10,
+        "question": "Padrão profissional para fetch inclui:",
+        "options": [
+          { "key": "A", "text": "loading + try/catch + res.ok + await res.json + finally" },
+          { "key": "B", "text": "Só fetch e console.log" }
+        ],
+        "answer": "A",
+        "explain": "Isso dá UX e robustez."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 31 — modelJs: fetch com async/await + UI */\n\nconst btn = document.querySelector('#carregar');\nconst statusEl = document.querySelector('#status');\nconst saida = document.querySelector('#saida');\n\nfunction setStatus(txt) {\n  if (statusEl) statusEl.textContent = txt;\n}\n\nfunction setSaida(obj) {\n  if (!saida) return;\n  saida.textContent = obj ? JSON.stringify(obj, null, 2) : '';\n}\n\nasync function carregarTodo() {\n  if (!btn) return;\n\n  setStatus('Carregando...');\n  setSaida(null);\n  btn.disabled = true;\n\n  try {\n    const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');\n    if (!res.ok) throw new Error(`HTTP ${res.status}`);\n\n    const data = await res.json();\n    setStatus('OK');\n    setSaida(data);\n  } catch (err) {\n    setStatus(`Erro: ${err.message}`);\n  } finally {\n    btn.disabled = false;\n  }\n}\n\nif (btn) {\n  btn.addEventListener('click', carregarTodo);\n}\n"
+  }
+}

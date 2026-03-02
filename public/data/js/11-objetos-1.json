@@ -1,0 +1,155 @@
+{
+  "id": "11-objetos-1",
+  "title": "Aula 11 — Objetos 1: chaves, valores, leitura e escrita",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender o tipo mais importante para representar “coisas” do mundo real: objetos.\n\nNo final você vai conseguir:\n1) Criar objetos com { }\n2) Entender chave → valor (propriedades)\n3) Ler valores (obj.chave e obj['chave'])\n4) Alterar e adicionar propriedades\n5) Evitar erros comuns (undefined e propriedade inexistente)\n\nObjetos são a base de: usuários, produtos, pedidos, telas, configurações… tudo."
+    },
+    {
+      "title": "O que é um objeto (mentalidade certa)",
+      "body": "Objeto é uma coleção de informações sobre uma coisa.\n\nPensa em um usuário:\n- nome\n- idade\n- email\n- ativo\n\nEm vez de ter várias variáveis soltas:\nconst nome = 'Bruno'\nconst idade = 27\nconst email = '...'\n\nVocê agrupa:\nconst usuario = { nome: 'Bruno', idade: 27, email: '...' }\n\nIsso deixa o código:\n- organizado\n- fácil de passar pra funções\n- fácil de evoluir"
+    },
+    {
+      "title": "Criando um objeto (chave: valor)",
+      "body": "Sintaxe:\n\nconst produto = {\n  nome: 'Camisa',\n  preco: 59.9,\n  emEstoque: true\n};\n\nRegras:\n- chave: nome da propriedade\n- valor: pode ser string, number, boolean, array, outro objeto, função…\n\nChaves geralmente são em camelCase:\n- precoTotal\n- dataEntrega"
+    },
+    {
+      "title": "Ler valores: ponto (.) e colchetes ([ ])",
+      "body": "Você tem duas formas principais:\n\n1) Notação ponto (mais comum)\n- produto.nome\n- produto.preco\n\n2) Notação colchetes (quando a chave é dinâmica)\n- produto['nome']\n\nQuando você precisa de colchetes?\nQuando a chave está em uma variável:\n\nconst chave = 'preco';\nconsole.log(produto[chave]); // 59.9\n\nCom ponto, isso NÃO funciona:\n- produto.chave (vai procurar a chave literal 'chave')"
+    },
+    {
+      "title": "Alterar e adicionar propriedades",
+      "body": "Mesmo sendo const, você pode mudar propriedades internas.\n\nconst usuario = { nome: 'Bruno', pontos: 0 };\n\nusuario.pontos = 10; // alterou\nusuario.ativo = true; // adicionou\n\nPor que pode?\n- const impede reatribuir o objeto inteiro\n- mas permite mudar o conteúdo do objeto\n\nO que NÃO pode:\n- usuario = { ... }  (reatribuição) → erro"
+    },
+    {
+      "title": "Remover propriedade (delete) e cuidado",
+      "body": "Você pode remover com delete:\n\ndelete usuario.ativo;\n\nMas cuidado:\n- apagar propriedade pode causar bugs\n- muitas vezes é melhor manter e setar null\n\nExemplo:\nusuario.ativo = null;\n\nNo mundo real, você geralmente evita delete em estruturas importantes."
+    },
+    {
+      "title": "Propriedade inexistente e undefined (como não cair na armadilha)",
+      "body": "Se você tenta acessar uma chave que não existe:\n\nconsole.log(usuario.telefone);\n\nIsso retorna undefined.\nNão quebra sozinho.\n\nMas quebra se você tentar usar como se existisse:\n\nusuario.telefone.trim()\n// TypeError porque telefone é undefined\n\nEntão você checa antes:\n\nif (usuario.telefone) {\n  console.log(usuario.telefone.trim());\n}\n\nMais pra frente a gente aprende optional chaining (?.), que ajuda muito."
+    },
+    {
+      "title": "Objetos com objetos (estrutura real de sistemas)",
+      "body": "Um pedido real pode ter estrutura:\n\nconst pedido = {\n  id: 123,\n  cliente: { nome: 'Ana', cpf: '...' },\n  itens: 3,\n  status: 'pago'\n};\n\nAcesso:\n- pedido.cliente.nome\n\nIsso é muito comum em APIs e bancos."
+    },
+    {
+      "title": "Mini tarefa (20 minutos) — modelar e atualizar",
+      "body": "Faça no Console:\n\n1) Crie um objeto usuario:\n- nome (string)\n- email (string)\n- idade (number)\n- ativo (boolean)\n- pontos (number)\n\n2) Mostre no console:\n- usuario.nome\n- usuario['email']\n\n3) Atualize:\n- some +10 em pontos\n- mude ativo para false\n\n4) Crie uma variável chave = 'idade'\n- mostre usuario[chave]\n\n5) Crie um objeto pedido com cliente dentro:\n- pedido.cliente.nome\n\nMeta: você tem que explicar quando usar ponto e quando usar colchetes."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Objeto agrupa informações (chave → valor)\n- Ler: obj.nome (ponto) ou obj['nome'] (colchetes)\n- Colchetes são essenciais quando a chave é dinâmica\n- const não impede alterar propriedades internas\n- Propriedade inexistente vira undefined\n- Objetos podem conter objetos (estrutura real de dados)"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 11 (Objetos 1)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Objeto é usado para:",
+        "options": [
+          { "key": "A", "text": "Agrupar informações sobre uma coisa (chave/valor)" },
+          { "key": "B", "text": "Repetir código como um loop" }
+        ],
+        "answer": "A",
+        "explain": "Objetos organizam dados do mundo real."
+      },
+      {
+        "id": 2,
+        "question": "A forma correta de criar objeto é:",
+        "options": [
+          { "key": "A", "text": "const x = { nome: 'Ana' }" },
+          { "key": "B", "text": "const x = ( nome = 'Ana' )" }
+        ],
+        "answer": "A",
+        "explain": "{ } é a sintaxe de objeto literal."
+      },
+      {
+        "id": 3,
+        "question": "Para acessar propriedade com ponto:",
+        "options": [
+          { "key": "A", "text": "obj.nome" },
+          { "key": "B", "text": "obj->nome" }
+        ],
+        "answer": "A",
+        "explain": "JavaScript usa ponto ou colchetes."
+      },
+      {
+        "id": 4,
+        "question": "Para acessar propriedade com chave em variável, use:",
+        "options": [
+          { "key": "A", "text": "obj[chave]" },
+          { "key": "B", "text": "obj.chave" }
+        ],
+        "answer": "A",
+        "explain": "obj.chave procura a chave literal 'chave'."
+      },
+      {
+        "id": 5,
+        "question": "Se uma propriedade não existe, acessar retorna:",
+        "options": [
+          { "key": "A", "text": "undefined" },
+          { "key": "B", "text": "error automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Só dá erro se você tentar usar undefined como função/método."
+      },
+      {
+        "id": 6,
+        "question": "Mesmo com const, você pode:",
+        "options": [
+          { "key": "A", "text": "Alterar propriedades internas do objeto" },
+          { "key": "B", "text": "Reatribuir o objeto para outro" }
+        ],
+        "answer": "A",
+        "explain": "const trava reatribuição, não o conteúdo."
+      },
+      {
+        "id": 7,
+        "question": "usuario = { ... } (reatribuir) quando usuario é const:",
+        "options": [
+          { "key": "A", "text": "Dá erro" },
+          { "key": "B", "text": "Funciona normal" }
+        ],
+        "answer": "A",
+        "explain": "const não deixa reatribuir."
+      },
+      {
+        "id": 8,
+        "question": "delete usuario.ativo:",
+        "options": [
+          { "key": "A", "text": "Remove a propriedade ativo" },
+          { "key": "B", "text": "Transforma ativo em true" }
+        ],
+        "answer": "A",
+        "explain": "delete remove a chave do objeto."
+      },
+      {
+        "id": 9,
+        "question": "pedido.cliente.nome é exemplo de:",
+        "options": [
+          { "key": "A", "text": "Objeto dentro de objeto (aninhamento)" },
+          { "key": "B", "text": "Loop" }
+        ],
+        "answer": "A",
+        "explain": "Estruturas aninhadas são comuns em dados reais."
+      },
+      {
+        "id": 10,
+        "question": "Notação colchetes é útil quando:",
+        "options": [
+          { "key": "A", "text": "A chave é dinâmica (vem de variável)" },
+          { "key": "B", "text": "Você quer somar números" }
+        ],
+        "answer": "A",
+        "explain": "É o caso clássico para usar [ ]."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 11 — modelJs: Objetos 1 */\n\n// 1) Criar objeto\nconst usuario = {\n  nome: 'Bruno',\n  email: 'bruno@gmail.com',\n  idade: 27,\n  ativo: true,\n  pontos: 0\n};\n\n// 2) Ler\nconsole.log('nome:', usuario.nome);\nconsole.log('email:', usuario['email']);\n\n// 3) Alterar/adicionar\nusuario.pontos = usuario.pontos + 10;\nusuario.ativo = false;\nusuario.telefone = '1199999-9999';\nconsole.log('usuario atualizado:', usuario);\n\n// 4) Chave dinâmica\nconst chave = 'idade';\nconsole.log('idade via chave dinâmica:', usuario[chave]);\n\n// 5) Objeto dentro de objeto\nconst pedido = {\n  id: 123,\n  cliente: { nome: 'Ana', cpf: '000.000.000-00' },\n  itens: 3,\n  status: 'pago'\n};\nconsole.log('cliente:', pedido.cliente.nome);\n"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "35-state",
+  "title": "Aula 35 — Estado da aplicação: fonte única da verdade + re-render",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai entender o conceito que separa 'scriptzinho' de 'aplicação': estado.\n\nNo final você vai conseguir:\n1) Definir o que é estado (state)\n2) Separar estado de DOM (tela não é estado)\n3) Criar funções para atualizar estado com segurança\n4) Re-renderizar a UI com base no estado\n5) Evitar bugs clássicos: mutação confusa, UI desatualizada\n\nIsso é literalmente a base de React/Vue, só que aqui você aprende na raiz."
+    },
+    {
+      "title": "O que é estado (state)",
+      "body": "Estado é o conjunto de dados que representa a situação atual do app.\n\nExemplos de estado:\n- lista de tarefas\n- usuário logado (ou não)\n- item selecionado\n- loading (true/false)\n- erro atual\n- filtro ativo\n\nRegra:\n- Se a UI precisa saber disso para desenhar, isso é estado."
+    },
+    {
+      "title": "A tela (DOM) NÃO é a fonte da verdade",
+      "body": "Erro clássico:\n- ler o texto do DOM para saber o que tem\n- e tentar manter tudo 'na mão'\n\nIsso quebra fácil.\n\nRegra profissional:\n- estado manda\n- UI obedece\n\nOu seja:\n- você não pergunta para a tela\n- você pergunta para o state\n\nA tela é só uma projeção."
+    },
+    {
+      "title": "Fluxo correto: evento → updateState → render",
+      "body": "Quando usuário faz algo:\n\n1) Evento acontece (click, submit...)\n2) Você atualiza o estado\n3) Você chama render()\n\nIsso cria previsibilidade.\n\nExemplo:\n- click 'concluir'\n  → muda tarefa.done\n  → render\n\nSe você muda o state e esquece render:\n- o dado mudou, mas a tela não.\n\nSe você muda a tela sem mudar state:\n- a tela fica mentindo."
+    },
+    {
+      "title": "Estado como objeto único (padrão prático)",
+      "body": "Em vez de 20 variáveis soltas:\n\nlet users = [];\nlet selectedId = null;\nlet loading = false;\nlet error = '';\n\nVocê centraliza:\n\nlet state = {\n  users: [],\n  selectedId: null,\n  loading: false,\n  error: ''\n};\n\nIsso facilita:\n- debugar (console.log(state))\n- passar para funções\n- evoluir"
+    },
+    {
+      "title": "Atualizar estado com funções (não 'mexer em qualquer lugar')",
+      "body": "Se qualquer parte do código pode alterar state, vira bagunça.\n\nCrie funções de update:\n\nfunction setLoading(v) {\n  state.loading = v;\n  render();\n}\n\nfunction setError(msg) {\n  state.error = msg;\n  render();\n}\n\nfunction setUsers(users) {\n  state.users = users;\n  state.selectedId = users.length ? users[0].id : null;\n  render();\n}\n\nAgora você controla a entrada do estado.\n\nIsso é um passo na direção de 'arquitetura'."
+    },
+    {
+      "title": "Mutação vs imutabilidade (conceito importante)",
+      "body": "Você pode atualizar estado de dois jeitos:\n\n1) Mutação (mudar o objeto/array direto)\n- state.loading = true\n- state.users.push(...)\n\n2) Imutabilidade (criar cópia)\n- state = { ...state, loading: true }\n- state = { ...state, users: [...state.users, novo] }\n\nNo JS puro, mutação é ok se for controlada.\n\nMas para evitar bugs, uma regra boa é:\n- para arrays, prefira criar novos (filter/map)\n- para objetos, prefira spread\n\nO importante é:\n- update claro\n- render depois"
+    },
+    {
+      "title": "Debug de state: logar antes/depois",
+      "body": "Quando algo der errado:\n\nconsole.log('antes', structuredClone(state));\n\n// muda state\n\nconsole.log('depois', structuredClone(state));\n\nstructuredClone copia objetos/arrays.\nSe não tiver suporte no navegador, use:\n- JSON.parse(JSON.stringify(state)) (com limitações)\n\nIsso te mostra:\n- quem mudou o quê"
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — mini app de filtro",
+      "body": "Crie um mini app:\n\nHTML:\n<input id=\"q\" class=\"input\" placeholder=\"filtrar...\" />\n<ul id=\"lista\" class=\"stack\"></ul>\n\nDados:\nconst base = ['Ana', 'Bruno', 'Caio', 'Duda', 'Bia'];\n\nState:\nstate = { items: base, query: '' }\n\nRegras:\n- quando digitar, atualiza state.query\n- render deve mostrar apenas itens que incluem query (case-insensitive)\n\nMeta: você tem que usar:\n- evento input → updateState → render\n\nExtra:\n- se query for vazia, mostra todos"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Estado = dados que representam o app agora\n- UI (DOM) não é fonte da verdade\n- Fluxo: evento → updateState → render\n- Centralize state em um objeto\n- Atualize state por funções (controle)\n- Arrays: prefira filter/map; Objetos: prefira spread\n- Debug: log antes/depois"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 35 (Estado)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Estado (state) é:",
+        "options": [
+          { "key": "A", "text": "Os dados que representam a situação atual do app" },
+          { "key": "B", "text": "A cor do botão no CSS" }
+        ],
+        "answer": "A",
+        "explain": "State é tudo que a UI precisa para desenhar."
+      },
+      {
+        "id": 2,
+        "question": "A tela (DOM) deve ser:",
+        "options": [
+          { "key": "A", "text": "Uma representação do estado, não a fonte da verdade" },
+          { "key": "B", "text": "A fonte principal de dados" }
+        ],
+        "answer": "A",
+        "explain": "Se a tela 'manda', você perde controle."
+      },
+      {
+        "id": 3,
+        "question": "Fluxo recomendado é:",
+        "options": [
+          { "key": "A", "text": "Evento → updateState → render" },
+          { "key": "B", "text": "Render → evento → esquecer o estado" }
+        ],
+        "answer": "A",
+        "explain": "Previsibilidade."
+      },
+      {
+        "id": 4,
+        "question": "Centralizar state em um objeto ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Facilita debugar e evoluir o app" },
+          { "key": "B", "text": "Diminui o HTML" }
+        ],
+        "answer": "A",
+        "explain": "Você consegue ver tudo em um lugar."
+      },
+      {
+        "id": 5,
+        "question": "Se você muda o state e não chama render:",
+        "options": [
+          { "key": "A", "text": "A UI pode ficar desatualizada" },
+          { "key": "B", "text": "A UI atualiza sozinha sempre" }
+        ],
+        "answer": "A",
+        "explain": "Sem render, a tela não reflete o dado."
+      },
+      {
+        "id": 6,
+        "question": "Se você muda a UI sem mudar state:",
+        "options": [
+          { "key": "A", "text": "A UI pode 'mentir' (estado real diferente)" },
+          { "key": "B", "text": "Fica sempre correto" }
+        ],
+        "answer": "A",
+        "explain": "Depois qualquer render sobrescreve e dá bug."
+      },
+      {
+        "id": 7,
+        "question": "Atualizar state via funções é bom porque:",
+        "options": [
+          { "key": "A", "text": "Controla como e onde mudanças acontecem" },
+          { "key": "B", "text": "Deixa tudo aleatório" }
+        ],
+        "answer": "A",
+        "explain": "Menos bagunça, mais previsibilidade."
+      },
+      {
+        "id": 8,
+        "question": "Para arrays, uma abordagem comum para atualizar é:",
+        "options": [
+          { "key": "A", "text": "filter/map para criar novo array" },
+          { "key": "B", "text": "Sempre mexer no DOM direto" }
+        ],
+        "answer": "A",
+        "explain": "Evita mutação confusa."
+      },
+      {
+        "id": 9,
+        "question": "Debug de state pode ser feito com:",
+        "options": [
+          { "key": "A", "text": "console.log antes e depois, usando clone" },
+          { "key": "B", "text": "Apenas mudar CSS" }
+        ],
+        "answer": "A",
+        "explain": "Você vê exatamente o que mudou."
+      },
+      {
+        "id": 10,
+        "question": "A ideia 'estado manda, UI obedece' significa:",
+        "options": [
+          { "key": "A", "text": "Dados são a base; render desenha a tela" },
+          { "key": "B", "text": "A tela decide quais dados existem" }
+        ],
+        "answer": "A",
+        "explain": "É o coração de apps previsíveis."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 35 — modelJs: mini filtro (state -> render) */\n\nconst q = document.querySelector('#q');\nconst lista = document.querySelector('#lista');\n\nconst base = ['Ana', 'Bruno', 'Caio', 'Duda', 'Bia'];\n\nlet state = {\n  items: base,\n  query: ''\n};\n\nfunction render() {\n  if (!lista) return;\n\n  const term = state.query.trim().toLowerCase();\n  const filtrado = term\n    ? state.items.filter(x => x.toLowerCase().includes(term))\n    : state.items;\n\n  lista.innerHTML = '';\n  for (const nome of filtrado) {\n    const li = document.createElement('li');\n    li.textContent = nome;\n    lista.appendChild(li);\n  }\n}\n\nfunction setQuery(v) {\n  state.query = v;\n  render();\n}\n\nif (q) {\n  q.addEventListener('input', (e) => {\n    setQuery(e.target.value);\n  });\n}\n\nrender();\n"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "26-storage",
+  "title": "Aula 26 — localStorage: salvar, carregar e versionar dados",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a persistir dados no navegador.\n\nNo final você vai conseguir:\n1) Entender o que é localStorage\n2) Salvar e ler strings (setItem/getItem)\n3) Salvar objetos/arrays com JSON (stringify/parse)\n4) Remover e limpar (removeItem/clear)\n5) Criar um 'load/save' padrão\n6) Fazer versionamento simples para não quebrar quando o formato mudar"
+    },
+    {
+      "title": "O que é localStorage (e quando usar)",
+      "body": "localStorage é um armazenamento simples do navegador.\n\nCaracterísticas:\n- guarda pares chave/valor\n- valor é sempre string\n- persiste mesmo fechando o navegador\n- é por domínio (site)\n\nUse para:\n- tema (dark/light)\n- preferências\n- rascunhos\n- to-do list\n\nNão use para:\n- senhas\n- dados sensíveis\n\nRegra: é armazenamento do lado do cliente."
+    },
+    {
+      "title": "API básica: setItem e getItem",
+      "body": "Salvar:\nlocalStorage.setItem('chave', 'valor');\n\nLer:\nconst v = localStorage.getItem('chave');\n\nSe não existir:\n- getItem retorna null\n\nIsso importa:\n- JSON.parse(null) quebra\nEntão você sempre coloca fallback."
+    },
+    {
+      "title": "Salvar objetos/arrays: JSON obrigatório",
+      "body": "Como localStorage só guarda string, você faz:\n\nSalvar:\nlocalStorage.setItem('tarefas', JSON.stringify(tarefas));\n\nLer:\nconst texto = localStorage.getItem('tarefas');\nconst tarefas = JSON.parse(texto);\n\nMas lembre:\n- texto pode ser null\n- JSON pode estar corrompido\n\nEntão você faz com fallback + try/catch."
+    },
+    {
+      "title": "Padrão profissional: load e save",
+      "body": "Crie duas funções:\n\nfunction save(key, value) {\n  localStorage.setItem(key, JSON.stringify(value));\n}\n\nfunction load(key, fallback) {\n  try {\n    const raw = localStorage.getItem(key);\n    if (raw === null) return fallback;\n    return JSON.parse(raw);\n  } catch {\n    return fallback;\n  }\n}\n\nIsso vira um 'kit de persistência'.\n\nVocê usa assim:\n- const tarefas = load('tarefas', [])\n- save('tarefas', tarefas)"
+    },
+    {
+      "title": "Remover e limpar",
+      "body": "Remover uma chave:\n- localStorage.removeItem('tarefas')\n\nLimpar tudo do domínio:\n- localStorage.clear()\n\nCuidado com clear:\n- ele apaga tudo do seu site\n- use só em 'reset geral'"
+    },
+    {
+      "title": "Versionamento: quando o formato muda",
+      "body": "Problema real:\n- hoje você salva tarefas como array\n- amanhã você muda o formato\n- usuários antigos têm dados no formato antigo\n\nSolução simples:\n- guardar versão junto\n\nExemplo:\nconst payload = { version: 1, data: tarefas };\nlocalStorage.setItem('tarefas', JSON.stringify(payload));\n\nAo carregar:\n- se não tiver version, trate como antigo\n- se version for diferente, faça migração\n\nIsso evita quebrar o app quando você evolui."
+    },
+    {
+      "title": "Migração simples (exemplo didático)",
+      "body": "Imagine:\n- v1: data = array de strings ['estudar', 'dormir']\n- v2: data = array de objetos [{id,texto,done}]\n\nAo carregar v1:\n- converte para v2\n\nIsso é migração.\n\nVocê não precisa fazer gigante, só entender a ideia."
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — Preferences + migração",
+      "body": "Faça no Console (navegador):\n\n1) Crie load/save genéricos (com try/catch)\n\n2) Salve preferências:\nconst prefs = { theme: 'dark', fontSize: 16 };\n- save('prefs', prefs)\n- load('prefs', { theme:'light', fontSize: 14 })\n\n3) Versionamento:\n- salve { version: 1, data: ['a', 'b'] } em 'lista'\n- depois, simule que seu app quer version 2:\n  se version 1, converta data para [{ id, texto, done:false }]\n\nMeta: você tem que explicar:\n- por que localStorage precisa de JSON\n- por que fallback evita crash\n- por que versão evita quebrar app no futuro"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- localStorage guarda strings e persiste\n- getItem retorna null se não existe\n- use JSON.stringify/parse para objetos\n- crie funções save/load com fallback + try/catch\n- removeItem remove uma chave; clear apaga tudo\n- versionamento evita quebrar quando formato muda"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 26 (localStorage)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "localStorage guarda valores como:",
+        "options": [
+          { "key": "A", "text": "Strings" },
+          { "key": "B", "text": "Objetos diretamente" }
+        ],
+        "answer": "A",
+        "explain": "Por isso usamos JSON para objetos."
+      },
+      {
+        "id": 2,
+        "question": "getItem retorna quando a chave não existe:",
+        "options": [
+          { "key": "A", "text": "null" },
+          { "key": "B", "text": "undefined" }
+        ],
+        "answer": "A",
+        "explain": "E JSON.parse(null) é problema."
+      },
+      {
+        "id": 3,
+        "question": "Para salvar um objeto no localStorage, você deve:",
+        "options": [
+          { "key": "A", "text": "JSON.stringify(obj)" },
+          { "key": "B", "text": "obj.toUpperCase()" }
+        ],
+        "answer": "A",
+        "explain": "Transforma em texto."
+      },
+      {
+        "id": 4,
+        "question": "Para ler um objeto do localStorage, você usa:",
+        "options": [
+          { "key": "A", "text": "JSON.parse(texto)" },
+          { "key": "B", "text": "textContent" }
+        ],
+        "answer": "A",
+        "explain": "Transforma texto em estrutura."
+      },
+      {
+        "id": 5,
+        "question": "Uma boa prática é ter:",
+        "options": [
+          { "key": "A", "text": "Funções load/save com fallback e try/catch" },
+          { "key": "B", "text": "JSON.parse sem checar nada" }
+        ],
+        "answer": "A",
+        "explain": "Evita crash com null/corrupção."
+      },
+      {
+        "id": 6,
+        "question": "removeItem faz:",
+        "options": [
+          { "key": "A", "text": "Remove uma chave específica" },
+          { "key": "B", "text": "Apaga tudo do domínio" }
+        ],
+        "answer": "A",
+        "explain": "Para apagar tudo, é clear()."
+      },
+      {
+        "id": 7,
+        "question": "clear faz:",
+        "options": [
+          { "key": "A", "text": "Apaga todas as chaves do domínio" },
+          { "key": "B", "text": "Apaga só a última chave" }
+        ],
+        "answer": "A",
+        "explain": "Use com cuidado."
+      },
+      {
+        "id": 8,
+        "question": "Versionamento é útil porque:",
+        "options": [
+          { "key": "A", "text": "Evita quebrar quando o formato dos dados muda" },
+          { "key": "B", "text": "Deixa o CSS mais bonito" }
+        ],
+        "answer": "A",
+        "explain": "Permite migração."
+      },
+      {
+        "id": 9,
+        "question": "Fallback serve para:",
+        "options": [
+          { "key": "A", "text": "Ter um valor padrão quando não existe dado ou está inválido" },
+          { "key": "B", "text": "Aumentar a velocidade do PC" }
+        ],
+        "answer": "A",
+        "explain": "Evita null e parse quebrado."
+      },
+      {
+        "id": 10,
+        "question": "localStorage é indicado para:",
+        "options": [
+          { "key": "A", "text": "Preferências e dados simples do usuário no navegador" },
+          { "key": "B", "text": "Guardar senhas e dados sensíveis" }
+        ],
+        "answer": "A",
+        "explain": "Dados sensíveis não devem ficar no storage do cliente."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 26 — modelJs: save/load + versionamento */\n\nfunction save(key, value) {\n  localStorage.setItem(key, JSON.stringify(value));\n}\n\nfunction load(key, fallback) {\n  try {\n    const raw = localStorage.getItem(key);\n    if (raw === null) return fallback;\n    return JSON.parse(raw);\n  } catch (err) {\n    console.error('load falhou:', err.message);\n    return fallback;\n  }\n}\n\n// 1) Preferências\nconst prefs = { theme: 'dark', fontSize: 16 };\nsave('prefs', prefs);\nconst prefsLidas = load('prefs', { theme: 'light', fontSize: 14 });\nconsole.log('prefsLidas:', prefsLidas);\n\n// 2) Versionamento / migração didática\n// v1: data = ['a','b']\nsave('lista', { version: 1, data: ['a', 'b'] });\n\nfunction loadListaV2() {\n  const payload = load('lista', { version: 2, data: [] });\n\n  // se já for v2, retorna\n  if (payload.version === 2) return payload;\n\n  // migrar v1 -> v2\n  if (payload.version === 1 && Array.isArray(payload.data)) {\n    const migrado = {\n      version: 2,\n      data: payload.data.map((texto, idx) => ({\n        id: Date.now() + idx,\n        texto,\n        done: false\n      }))\n    };\n    save('lista', migrado);\n    return migrado;\n  }\n\n  // formato desconhecido\n  return { version: 2, data: [] };\n}\n\nconsole.log('lista v2:', loadListaV2());\n"
+  }
+}

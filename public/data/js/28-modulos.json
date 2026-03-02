@@ -1,0 +1,159 @@
+{
+  "id": "28-modulos",
+  "title": "Aula 28 — Módulos (import/export) e organização de projeto",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a organizar JavaScript como gente grande.\n\nNo final você vai conseguir:\n1) Entender o que é módulo (arquivo com responsabilidades)\n2) Usar export e import\n3) Separar código em: data, ui, storage, events\n4) Evitar variáveis globais\n5) Montar uma estrutura simples de pastas/arquivos\n\nIsso é o que faz seu projeto escalar sem virar um monstro."
+    },
+    {
+      "title": "O que é um módulo (e por que usar)",
+      "body": "Módulo é um arquivo JS que exporta coisas e pode importar de outros arquivos.\n\nPor que isso é importante?\n- evita um arquivo gigante\n- separa responsabilidades\n- facilita testar e manter\n\nMentalidade:\n- cada arquivo tem uma 'missão'.\n\nExemplo:\n- storage.js cuida de localStorage\n- state.js cuida do array de dados\n- ui.js cuida do render\n- app.js liga tudo"
+    },
+    {
+      "title": "Como ativar módulos no navegador",
+      "body": "No HTML, você precisa marcar o script como module:\n\n<script type=\"module\" src=\"./app.js\"></script>\n\nSem isso:\n- import/export não funcionam\n\nCom isso:\n- cada arquivo vira um módulo\n- variáveis não vazam para o global\n\nObs:\n- para alguns navegadores/ambientes, abrir pelo file:// pode dar problemas.\n- o ideal é usar um servidor local.\n\nNo começo, se você não tiver servidor:\n- use VS Code + Live Server\n- ou qualquer servidor simples.\n\n(Quando você for pra Node/Vite, isso fica padrão.)"
+    },
+    {
+      "title": "export: o que o módulo oferece",
+      "body": "Você pode exportar:\n- funções\n- constantes\n- objetos\n- classes\n\nExemplo:\n\n// math.js\nexport function somar(a, b) {\n  return a + b;\n}\n\nexport const PI = 3.14;\n\nVocê também pode exportar no final:\n\nfunction sub(a,b){ return a-b }\nexport { sub };"
+    },
+    {
+      "title": "import: o que você usa de outro módulo",
+      "body": "Você importa pelo caminho do arquivo:\n\n// app.js\nimport { somar, PI } from './math.js';\n\nconsole.log(somar(2,3), PI);\n\nRegras importantes:\n- caminho precisa ter ./ ou ../\n- no browser, normalmente você precisa incluir a extensão .js\n\nSe você errar o caminho:\n- dá erro de módulo não encontrado."
+    },
+    {
+      "title": "default export (um principal por arquivo)",
+      "body": "Você pode ter 1 export default por arquivo.\n\n// format.js\nexport default function formatarMoeda(n) {\n  return `R$ ${n.toFixed(2)}`;\n}\n\nImportando:\nimport formatarMoeda from './format.js';\n\nDiferença:\n- default não usa chaves\n- o nome você escolhe ao importar\n\nRegra prática:\n- use named exports para várias coisas\n- use default quando o arquivo tem uma função principal."
+    },
+    {
+      "title": "Como organizar um projeto real (padrão simples)",
+      "body": "Sugestão de estrutura (para seus projetos de DOM):\n\n/src\n  app.js\n  state.js\n  ui.js\n  storage.js\n  validators.js\n\nOnde:\n- state.js: dados + funções CRUD\n- ui.js: render + seleção de elementos\n- storage.js: load/save localStorage\n- validators.js: validações\n- app.js: liga tudo (event listeners e fluxo)\n\nIsso te dá clareza:\n- cada arquivo faz uma coisa."
+    },
+    {
+      "title": "Exemplo: dividir o app de notas em módulos (bem simples)",
+      "body": "Você pode fazer:\n\nstorage.js\n- export function save(key, value)\n- export function load(key, fallback)\n\nstate.js\n- export let notas\n- export function addNota(...)\n- export function updateNota(...)\n\nui.js\n- export function render(notas)\n\napp.js\n- importa tudo\n- coloca listeners\n- chama render\n\nA lógica fica menos embolada."
+    },
+    {
+      "title": "Armadilha comum: circular imports",
+      "body": "Se A importa B e B importa A, pode dar confusão.\n\nRegra para evitar:\n- defina uma direção:\n  app.js importa todo mundo\n  e os outros não importam app.js\n\nOu seja:\n- app.js é o 'orquestrador'."
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — projeto mini modular",
+      "body": "Crie 4 arquivos:\n\n1) storage.js\n- export function save(key, value)\n- export function load(key, fallback)\n\n2) state.js\n- export let contador = load('contador', 0)\n- export function inc() { contador++; save('contador', contador); }\n- export function reset() { contador=0; save('contador', contador); }\n\n3) ui.js\n- export function render(contador)\n  (coloca o número na tela)\n\n4) app.js\n- importa state e ui\n- liga botões: + e reset\n- chama render\n\nHTML:\n- <button id=\"inc\">+</button>\n- <button id=\"reset\">reset</button>\n- <p id=\"n\"></p>\n\nMeta: seu contador deve persistir após recarregar.\n\nVocê vai sentir o poder de separar responsabilidades."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Módulo = arquivo com import/export\n- No browser, use <script type=\"module\">\n- export/import (named) e export default\n- Organização por responsabilidade (storage/state/ui/app)\n- Evite circular import (app como orquestrador)\n- Modularizar deixa projeto escalável"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 28 (Módulos)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Módulo é:",
+        "options": [
+          { "key": "A", "text": "Um arquivo JS que pode exportar/importar coisas" },
+          { "key": "B", "text": "Um tipo de variável boolean" }
+        ],
+        "answer": "A",
+        "explain": "Módulos organizam código em arquivos."
+      },
+      {
+        "id": 2,
+        "question": "Para usar import/export no navegador, você precisa:",
+        "options": [
+          { "key": "A", "text": "script type=\"module\"" },
+          { "key": "B", "text": "script type=\"css\"" }
+        ],
+        "answer": "A",
+        "explain": "Sem module, import/export não funciona."
+      },
+      {
+        "id": 3,
+        "question": "Named import usa:",
+        "options": [
+          { "key": "A", "text": "Chaves: import { x } from './a.js'" },
+          { "key": "B", "text": "Parênteses: import (x) from './a.js'" }
+        ],
+        "answer": "A",
+        "explain": "Named exports/imports usam { }."
+      },
+      {
+        "id": 4,
+        "question": "Default import:",
+        "options": [
+          { "key": "A", "text": "Não usa chaves e o nome pode ser escolhido" },
+          { "key": "B", "text": "Sempre precisa de { }" }
+        ],
+        "answer": "A",
+        "explain": "Default é 1 por arquivo."
+      },
+      {
+        "id": 5,
+        "question": "No browser, normalmente o import precisa:",
+        "options": [
+          { "key": "A", "text": "Do caminho com ./ e extensão .js" },
+          { "key": "B", "text": "Apenas do nome do arquivo sem extensão" }
+        ],
+        "answer": "A",
+        "explain": "No navegador, é comum exigir .js."
+      },
+      {
+        "id": 6,
+        "question": "Benefício de módulos:",
+        "options": [
+          { "key": "A", "text": "Separar responsabilidades e evitar arquivo gigante" },
+          { "key": "B", "text": "Deixar o código sempre menor que 10 linhas" }
+        ],
+        "answer": "A",
+        "explain": "Organização é o ganho real."
+      },
+      {
+        "id": 7,
+        "question": "Estrutura storage/state/ui/app é boa porque:",
+        "options": [
+          { "key": "A", "text": "Cada parte tem uma missão clara" },
+          { "key": "B", "text": "Mistura tudo no mesmo arquivo" }
+        ],
+        "answer": "A",
+        "explain": "Responsabilidade única por arquivo ajuda manutenção."
+      },
+      {
+        "id": 8,
+        "question": "Circular import (A importa B e B importa A):",
+        "options": [
+          { "key": "A", "text": "Pode causar problemas e confusão" },
+          { "key": "B", "text": "É sempre obrigatório" }
+        ],
+        "answer": "A",
+        "explain": "Melhor ter direção clara de dependência."
+      },
+      {
+        "id": 9,
+        "question": "O app.js costuma ser:",
+        "options": [
+          { "key": "A", "text": "O orquestrador que liga tudo" },
+          { "key": "B", "text": "O arquivo que só guarda CSS" }
+        ],
+        "answer": "A",
+        "explain": "Ele conecta state/ui/storage e eventos."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa prática é:",
+        "options": [
+          { "key": "A", "text": "Evitar variáveis globais, usando módulos" },
+          { "key": "B", "text": "Colocar tudo no window" }
+        ],
+        "answer": "A",
+        "explain": "Módulos reduzem vazamento global."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 28 — modelJs: mini projeto modular (arquivos) */\n\n// storage.js\n// export function save(key, value) { localStorage.setItem(key, JSON.stringify(value)); }\n// export function load(key, fallback) { ... }\n\n// state.js\n// import { save, load } from './storage.js'\n// export let contador = load('contador', 0)\n// export function inc() { contador++; save('contador', contador); }\n// export function reset() { contador=0; save('contador', contador); }\n\n// ui.js\n// export function render(contador) { document.querySelector('#n').textContent = contador; }\n\n// app.js\n// import { contador, inc, reset } from './state.js'\n// import { render } from './ui.js'\n// render(contador)\n// document.querySelector('#inc').addEventListener('click', () => { inc(); render(contador); })\n// document.querySelector('#reset').addEventListener('click', () => { reset(); render(contador); })\n"
+  }
+}

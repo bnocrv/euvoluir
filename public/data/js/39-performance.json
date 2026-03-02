@@ -1,0 +1,159 @@
+{
+  "id": "39-performance-front",
+  "title": "Aula 39 — Performance no front: reflow, repaint, render eficiente",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a deixar seu app mais leve e responsivo.\n\nNo final você vai conseguir:\n1) Entender reflow vs repaint (por que UI fica lenta)\n2) Evitar padrões que travam a tela\n3) Renderizar listas de forma eficiente (fragment, batch)\n4) Fazer micro-otimizações úteis (sem paranoia)\n5) Medir com DevTools (Performance)\n\nPerformance é UX: se trava, o usuário abandona."
+    },
+    {
+      "title": "Reflow vs Repaint (o que isso significa)",
+      "body": "Simplificando:\n\n1) Reflow (layout)\n- navegador recalcula tamanhos/posições\n- custa caro\n\n2) Repaint (pintura)\n- navegador redesenha pixels\n- geralmente custa menos que reflow, mas ainda pesa\n\nMudanças que causam reflow:\n- width/height\n- padding/margin\n- font-size\n- display\n\nMudanças mais leves:\n- transform\n- opacity\n\nVocê já viu isso no CSS (transforms são mais leves)."
+    },
+    {
+      "title": "O maior vilão: mexer no DOM muitas vezes",
+      "body": "Se você faz:\n- append em loop sem fragment\n- altera style em 200 elementos um por um\n\nVocê força o navegador a recalcular/pintar várias vezes.\n\nRegra:\n- agrupe mudanças\n- atualize de uma vez"
+    },
+    {
+      "title": "Batch updates: fragment + troca única",
+      "body": "Padrão bom para listas:\n\nconst frag = document.createDocumentFragment();\nfor (...) frag.appendChild(item);\n\nlista.innerHTML = '';\nlista.appendChild(frag);\n\nIsso reduz trabalho do navegador.\n\nOutra técnica:\n- montar HTML string e setar 1 vez\nMas cuidado com segurança.\n\nNo seu caso, fragment + textContent é ótimo."
+    },
+    {
+      "title": "Evite 'layout thrashing' (ler e escrever intercalado)",
+      "body": "Bug de performance clássico:\n- ler medidas (offsetHeight)\n- escrever estilo\n- ler de novo\n- escrever...\n\nIsso faz o navegador recalcular layout repetidamente.\n\nRegra:\n- primeiro leia tudo que precisa\n- depois escreva tudo\n\nVocê nem vai usar muito agora,\nmas é bom saber que existe."
+    },
+    {
+      "title": "Event delegation ajuda performance também",
+      "body": "Listener em cada item:\n- 1000 itens = 1000 listeners\n\nDelegation:\n- 1 listener no pai\n\nIsso:\n- economiza memória\n- facilita itens dinâmicos\n\nVocê já domina isso (aula 21)."
+    },
+    {
+      "title": "Debounce/throttle para eventos rápidos",
+      "body": "Eventos como:\n- input\n- scroll\n- resize\n\ndisparam MUITO.\n\nEntão você usa:\n- debounce (espera parar)\n- throttle (limita frequência)\n\nVocê já fez debounce na aula 25.\nIsso evita travar."
+    },
+    {
+      "title": "Render incremental (quando a lista é gigante)",
+      "body": "Se você tiver 10.000 itens:\n- render tudo de uma vez pode travar\n\nUma técnica simples:\n- render em pedaços (chunks) com setTimeout(0)\n\nExemplo:\nrender 200 itens\nagenda render do próximo chunk\n\nIsso mantém UI responsiva.\n\nVocê não vai precisar agora, mas é bom conhecer."
+    },
+    {
+      "title": "Medir com DevTools (sem achismo)",
+      "body": "Performance é medida, não opinião.\n\nUse:\n- DevTools → Performance\n- Grave (Record)\n- Faça a ação (ex.: render lista)\n- Pare\n\nObserve:\n- long tasks (tarefas longas)\n- tempo de script\n- layout/pain\n\nVocê não precisa virar especialista hoje.\nSó aprender a olhar."
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — render rápido vs lento",
+      "body": "Crie uma página com:\n\n<button id=\"lento\" class=\"btn danger\">Render lento</button>\n<button id=\"rapido\" class=\"btn primary\">Render rápido</button>\n<ul id=\"lista\"></ul>\n\nGere 2000 itens:\nconst dados = Array.from({length:2000}, (_,i)=>`Item ${i}`)\n\n1) Render lento:\n- faz lista.innerHTML += `<li>...</li>` dentro do loop\n\n2) Render rápido:\n- usa DocumentFragment + createElement + 1 append no final\n\nCompare:\n- sensação de travamento\n- tempo (console.time/console.timeEnd)\n\nMeta:\n- você deve conseguir explicar por que o lento é pior."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Reflow (layout) é caro, repaint (pintura) também pesa\n- Evite mexer no DOM muitas vezes\n- Use fragment e batch updates\n- Evite layout thrashing\n- Delegation e debounce ajudam performance\n- Se lista for gigante, use chunks\n- Meça com DevTools e console.time"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 39 (Performance)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Reflow é:",
+        "options": [
+          { "key": "A", "text": "Recalcular layout (tamanhos/posições)" },
+          { "key": "B", "text": "Converter JSON" }
+        ],
+        "answer": "A",
+        "explain": "Layout custa caro."
+      },
+      {
+        "id": 2,
+        "question": "Um vilão comum de performance é:",
+        "options": [
+          { "key": "A", "text": "Fazer muitas alterações pequenas no DOM" },
+          { "key": "B", "text": "Usar textContent" }
+        ],
+        "answer": "A",
+        "explain": "Muitas alterações causam trabalho repetido."
+      },
+      {
+        "id": 3,
+        "question": "DocumentFragment ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Agrupa criação e reduz atualizações no DOM" },
+          { "key": "B", "text": "Salva no localStorage" }
+        ],
+        "answer": "A",
+        "explain": "Batch updates."
+      },
+      {
+        "id": 4,
+        "question": "Event delegation melhora porque:",
+        "options": [
+          { "key": "A", "text": "Reduz número de listeners" },
+          { "key": "B", "text": "Aumenta o CSS" }
+        ],
+        "answer": "A",
+        "explain": "Menos memória e mais simples."
+      },
+      {
+        "id": 5,
+        "question": "Debounce serve para:",
+        "options": [
+          { "key": "A", "text": "Evitar rodar lógica a cada evento rápido (input/scroll)" },
+          { "key": "B", "text": "Criar classes CSS" }
+        ],
+        "answer": "A",
+        "explain": "Executa só quando para."
+      },
+      {
+        "id": 6,
+        "question": "Transform/opacity no CSS tendem a ser:",
+        "options": [
+          { "key": "A", "text": "Mais leves do que mexer em width/height" },
+          { "key": "B", "text": "Sempre mais pesadas" }
+        ],
+        "answer": "A",
+        "explain": "Menos reflow."
+      },
+      {
+        "id": 7,
+        "question": "Layout thrashing é:",
+        "options": [
+          { "key": "A", "text": "Ler medidas e escrever estilo intercalando, forçando reflow repetido" },
+          { "key": "B", "text": "Usar fetch com await" }
+        ],
+        "answer": "A",
+        "explain": "Causa recalculações desnecessárias."
+      },
+      {
+        "id": 8,
+        "question": "Para medir tempo de uma função, você pode usar:",
+        "options": [
+          { "key": "A", "text": "console.time/console.timeEnd" },
+          { "key": "B", "text": "typeof" }
+        ],
+        "answer": "A",
+        "explain": "Medição simples."
+      },
+      {
+        "id": 9,
+        "question": "Performance deve ser baseada em:",
+        "options": [
+          { "key": "A", "text": "Medição (DevTools), não achismo" },
+          { "key": "B", "text": "Opinião" }
+        ],
+        "answer": "A",
+        "explain": "Você mede antes de otimizar."
+      },
+      {
+        "id": 10,
+        "question": "Render em chunks é útil quando:",
+        "options": [
+          { "key": "A", "text": "A lista é gigante e render total trava a UI" },
+          { "key": "B", "text": "Você tem 2 itens" }
+        ],
+        "answer": "A",
+        "explain": "Evita long task."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 39 — modelJs: render lento vs rápido */\n\nconst lentoBtn = document.querySelector('#lento');\nconst rapidoBtn = document.querySelector('#rapido');\nconst lista = document.querySelector('#lista');\n\nconst dados = Array.from({ length: 2000 }, (_, i) => `Item ${i}`);\n\nfunction limpar() {\n  if (lista) lista.innerHTML = '';\n}\n\nfunction renderLento() {\n  if (!lista) return;\n  limpar();\n\n  console.time('renderLento');\n  for (const txt of dados) {\n    // pior padrão: mexe no innerHTML em loop\n    lista.innerHTML += `<li>${txt}</li>`;\n  }\n  console.timeEnd('renderLento');\n}\n\nfunction renderRapido() {\n  if (!lista) return;\n  limpar();\n\n  console.time('renderRapido');\n  const frag = document.createDocumentFragment();\n  for (const txt of dados) {\n    const li = document.createElement('li');\n    li.textContent = txt;\n    frag.appendChild(li);\n  }\n  lista.appendChild(frag);\n  console.timeEnd('renderRapido');\n}\n\nif (lentoBtn) lentoBtn.addEventListener('click', renderLento);\nif (rapidoBtn) rapidoBtn.addEventListener('click', renderRapido);\n"
+  }
+}

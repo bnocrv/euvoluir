@@ -1,0 +1,163 @@
+{
+  "id": "23-projeto-1-todo",
+  "title": "Aula 23 — Projeto 1: To-do list (DOM + eventos + estados)",
+  "steps": [
+    {
+      "title": "Objetivo do projeto",
+      "body": "Hoje é seu primeiro projeto completo em JavaScript: uma To-do List.\n\nVocê vai juntar:\n- DOM (seleção e render)\n- eventos (submit, click, delegation)\n- arrays/objetos (lista de tarefas)\n- estado (fonte única da verdade)\n\nNo final você terá:\n1) Adicionar tarefa\n2) Marcar como concluída\n3) Remover tarefa\n4) (extra) Persistir com localStorage\n\nA meta é aprender a construir UI com dados, sem bagunça."
+    },
+    {
+      "title": "A regra de ouro do projeto: estado manda, UI obedece",
+      "body": "Você vai manter um array tarefas.\n\nEsse array é o estado (dados).\n\nA tela NÃO é o estado.\nA tela é só uma representação.\n\nEntão o ciclo é:\n1) evento do usuário (add/complete/delete)\n2) atualiza o estado (array)\n3) re-renderiza a lista (DOM)\n\nQuando você pensa assim, seu código fica previsível."
+    },
+    {
+      "title": "Estrutura de dados (modelo de tarefa)",
+      "body": "Cada tarefa vai ser um objeto:\n\n{ id: 1, texto: 'estudar JS', done: false }\n\nPor que id?\n- porque texto pode repetir\n- id identifica de forma única\n\nComo gerar id simples:\n- Date.now() (número grande e único na prática)\n\nIsso é suficiente para este projeto."
+    },
+    {
+      "title": "HTML base do projeto",
+      "body": "Crie um index.html com:\n\n<div class=\"container stack\">\n  <h1>To-do</h1>\n\n  <form id=\"form\" class=\"stack\">\n    <input id=\"texto\" class=\"input\" placeholder=\"Nova tarefa\" />\n    <button class=\"btn primary\" type=\"submit\">Adicionar</button>\n    <small id=\"erro\" class=\"muted\"></small>\n  </form>\n\n  <div class=\"card\">\n    <div class=\"card-inner stack\">\n      <h2>Tarefas</h2>\n      <ul id=\"lista\" class=\"stack\"></ul>\n    </div>\n  </div>\n</div>\n\nVocê pode usar seu CSS tokens + components (btn/card/input/stack/container)."
+    },
+    {
+      "title": "Render: transformar estado em HTML",
+      "body": "A função render() vai:\n- limpar a lista\n- criar LI para cada tarefa\n\nCada item deve ter:\n- texto\n- botão de concluir\n- botão de deletar\n- data-id para identificar\n\nExemplo de HTML gerado:\n<li class=\"item\" data-id=\"123\">\n  <span class=\"text\">estudar</span>\n  <button class=\"btn ghost done\" type=\"button\">Concluir</button>\n  <button class=\"btn danger del\" type=\"button\">Excluir</button>\n</li>\n\nImportante:\n- Se tarefa.done for true, marque visualmente (classe 'checked' no span ou no li)."
+    },
+    {
+      "title": "Delegation: um listener para a lista toda",
+      "body": "Você vai colocar 1 listener na UL.\n\nQuando clicar:\n- descobrir o item com closest('[data-id]')\n- pegar o id\n- ver se clicou em .done ou .del\n\nAí atualiza o estado e chama render.\n\nIsso permite:\n- lista dinâmica\n- código simples"
+    },
+    {
+      "title": "Adicionar tarefa (submit)",
+      "body": "No submit:\n1) preventDefault\n2) pegar texto (trim)\n3) validar vazio\n4) push no array\n5) limpar input\n6) render\n\nSe vazio:\n- mostrar mensagem no #erro\n- não adicionar"
+    },
+    {
+      "title": "Marcar concluída (toggle done)",
+      "body": "Para concluir:\n- achar tarefa pelo id\n- inverter done\n\nExemplo:\nconst t = tarefas.find(t => t.id === id);\nif (t) t.done = !t.done;\n\nDepois:\n- render()"
+    },
+    {
+      "title": "Remover tarefa (delete)",
+      "body": "Para remover:\n- filtrar o array\n\ntarefas = tarefas.filter(t => t.id !== id);\n\nDepois:\n- render()"
+    },
+    {
+      "title": "Extra: persistência com localStorage (mini bônus)",
+      "body": "Para salvar:\n- localStorage.setItem('tarefas', JSON.stringify(tarefas))\n\nPara carregar ao abrir:\n- const salvo = JSON.parse(localStorage.getItem('tarefas') || '[]')\n\nAí tarefas começa com salvo.\n\nRegra:\n- sempre que mudar tarefas, salve.\n\nIsso transforma sua todo em app de verdade."
+    },
+    {
+      "title": "Checklist do projeto (antes de considerar pronto)",
+      "body": "- [ ] Não adiciona tarefa vazia\n- [ ] Adiciona tarefa e renderiza\n- [ ] Concluir alterna done e muda visual\n- [ ] Excluir remove da lista\n- [ ] Usa delegation (1 listener)\n- [ ] Estado é o array, não o DOM\n- [ ] (extra) Salva e carrega do localStorage"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Projeto To-do com DOM + eventos\n- Estado em array de objetos\n- Render para desenhar UI\n- Delegation para clicks\n- Toggle done e delete\n- (extra) localStorage para persistência"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 23 (Projeto To-do)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "No projeto, o 'estado' é:",
+        "options": [
+          { "key": "A", "text": "O array de tarefas (dados)" },
+          { "key": "B", "text": "O HTML renderizado na tela" }
+        ],
+        "answer": "A",
+        "explain": "A tela é só uma representação do estado."
+      },
+      {
+        "id": 2,
+        "question": "A ideia de render() é:",
+        "options": [
+          { "key": "A", "text": "Transformar estado em HTML visível" },
+          { "key": "B", "text": "Salvar no banco de dados" }
+        ],
+        "answer": "A",
+        "explain": "Render desenha a UI com base nos dados."
+      },
+      {
+        "id": 3,
+        "question": "Delegation funciona porque:",
+        "options": [
+          { "key": "A", "text": "Eventos borbulham (bubbling) até o container" },
+          { "key": "B", "text": "O JS roda mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "O listener no pai recebe o click que subiu."
+      },
+      {
+        "id": 4,
+        "question": "id na tarefa é importante porque:",
+        "options": [
+          { "key": "A", "text": "Texto pode repetir, id identifica único" },
+          { "key": "B", "text": "Deixa o botão mais bonito" }
+        ],
+        "answer": "A",
+        "explain": "Você precisa de um identificador confiável."
+      },
+      {
+        "id": 5,
+        "question": "Para alternar done de uma tarefa, você pode:",
+        "options": [
+          { "key": "A", "text": "Achar a tarefa e inverter o boolean" },
+          { "key": "B", "text": "Criar outro HTML sem mudar dados" }
+        ],
+        "answer": "A",
+        "explain": "Dados mudam, depois re-render."
+      },
+      {
+        "id": 6,
+        "question": "Para remover tarefa por id, um jeito comum é:",
+        "options": [
+          { "key": "A", "text": "tarefas = tarefas.filter(t => t.id !== id)" },
+          { "key": "B", "text": "tarefas.push(id)" }
+        ],
+        "answer": "A",
+        "explain": "filter cria novo array sem o item."
+      },
+      {
+        "id": 7,
+        "question": "No submit do form, você usa preventDefault para:",
+        "options": [
+          { "key": "A", "text": "Evitar recarregar a página" },
+          { "key": "B", "text": "Transformar texto em número" }
+        ],
+        "answer": "A",
+        "explain": "Sem isso, o form recarrega."
+      },
+      {
+        "id": 8,
+        "question": "Para pegar qual item foi clicado na lista, você usa:",
+        "options": [
+          { "key": "A", "text": "closest('[data-id]') e dataset.id" },
+          { "key": "B", "text": "typeof e JSON.parse" }
+        ],
+        "answer": "A",
+        "explain": "closest encontra o item correto e dataset pega o id."
+      },
+      {
+        "id": 9,
+        "question": "Persistir no localStorage exige:",
+        "options": [
+          { "key": "A", "text": "JSON.stringify ao salvar e JSON.parse ao ler" },
+          { "key": "B", "text": "Apenas console.log" }
+        ],
+        "answer": "A",
+        "explain": "localStorage só guarda string."
+      },
+      {
+        "id": 10,
+        "question": "O ciclo correto do app é:",
+        "options": [
+          { "key": "A", "text": "Evento → atualiza estado → render" },
+          { "key": "B", "text": "Render → evento → esquecer o estado" }
+        ],
+        "answer": "A",
+        "explain": "Isso deixa previsível e escalável."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 23 — modelJs: To-do list (estado + render + delegation + storage) */\n\nconst form = document.querySelector('#form');\nconst input = document.querySelector('#texto');\nconst erro = document.querySelector('#erro');\nconst lista = document.querySelector('#lista');\n\nlet tarefas = [];\n\n// (extra) carregar do storage\ntry {\n  tarefas = JSON.parse(localStorage.getItem('tarefas') || '[]');\n} catch {\n  tarefas = [];\n}\n\nfunction salvar() {\n  localStorage.setItem('tarefas', JSON.stringify(tarefas));\n}\n\nfunction render() {\n  lista.innerHTML = '';\n\n  for (const t of tarefas) {\n    const li = document.createElement('li');\n    li.className = 'item';\n    li.dataset.id = String(t.id);\n\n    const span = document.createElement('span');\n    span.className = 'text';\n    span.textContent = t.texto;\n    if (t.done) span.style.textDecoration = 'line-through';\n\n    const btnDone = document.createElement('button');\n    btnDone.type = 'button';\n    btnDone.className = 'btn ghost done';\n    btnDone.textContent = t.done ? 'Desfazer' : 'Concluir';\n\n    const btnDel = document.createElement('button');\n    btnDel.type = 'button';\n    btnDel.className = 'btn danger del';\n    btnDel.textContent = 'Excluir';\n\n    li.append(span, btnDone, btnDel);\n    lista.appendChild(li);\n  }\n}\n\nfunction adicionar(texto) {\n  tarefas.push({ id: Date.now(), texto, done: false });\n  salvar();\n  render();\n}\n\nfunction toggleDone(id) {\n  const t = tarefas.find(x => x.id === id);\n  if (t) {\n    t.done = !t.done;\n    salvar();\n    render();\n  }\n}\n\nfunction remover(id) {\n  tarefas = tarefas.filter(x => x.id !== id);\n  salvar();\n  render();\n}\n\n// submit: adicionar\nif (form && input && erro && lista) {\n  form.addEventListener('submit', (e) => {\n    e.preventDefault();\n    erro.textContent = '';\n\n    const texto = input.value.trim();\n    if (!texto) {\n      erro.textContent = 'Digite uma tarefa';\n      return;\n    }\n\n    adicionar(texto);\n    input.value = '';\n    input.focus();\n  });\n\n  // delegation: concluir/excluir\n  lista.addEventListener('click', (e) => {\n    const item = e.target.closest('.item');\n    if (!item) return;\n\n    const id = Number(item.dataset.id);\n\n    if (e.target.classList.contains('done')) {\n      toggleDone(id);\n      return;\n    }\n\n    if (e.target.classList.contains('del')) {\n      remover(id);\n      return;\n    }\n  });\n\n  render();\n}\n"
+  }
+}

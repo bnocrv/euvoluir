@@ -1,0 +1,155 @@
+{
+  "id": "03-variaveis",
+  "title": "Aula 03 — Variáveis (let, const) + tipos básicos",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai dominar a base da base: variáveis.\n\nNo final você vai conseguir:\n1) Explicar o que é variável sem decorar\n2) Usar let e const do jeito certo\n3) Entender tipos básicos (string, number, boolean, null, undefined)\n4) Usar typeof para inspecionar o tipo\n5) Evitar os erros mais comuns de iniciante"
+    },
+    {
+      "title": "O que é uma variável (sem misticismo)",
+      "body": "Variável é um nome que aponta para um valor na memória.\n\nPensa como uma etiqueta numa caixa:\n- a etiqueta é o nome (ex.: idade)\n- dentro da caixa tem o valor (ex.: 27)\n\nVocê usa variáveis para:\n- guardar valores\n- reaproveitar valores\n- deixar seu código legível\n\nSem variável, você repete valores e vira bagunça."
+    },
+    {
+      "title": "let vs const (a regra de ouro)",
+      "body": "No JavaScript moderno, você vai usar quase sempre:\n\n1) const\n- quando você NÃO pretende reatribuir (trocar) o valor\n\n2) let\n- quando você VAI reatribuir (trocar) o valor\n\nExemplo simples:\n- const nome = 'Bruno'  (nome não muda)\n- let saldo = 100       (saldo pode mudar)\n\nRegra prática:\n- comece com const\n- só troque para let se precisar"
+    },
+    {
+      "title": "Reatribuição (o que pode e o que não pode)",
+      "body": "Reatribuir é fazer a variável apontar para outro valor.\n\nCom let, pode:\n- let x = 10\n- x = 20\n\nCom const, NÃO pode:\n- const y = 10\n- y = 20  (erro)\n\nImportante:\n- const bloqueia reatribuição, não “congela” tudo.\n\nIsso vai fazer sentido quando chegarmos em objetos e arrays."
+    },
+    {
+      "title": "Tipos básicos (os 5 que você mais usa)",
+      "body": "Os tipos básicos mais comuns:\n\n1) string (texto)\n- 'Bruno'\n- \"Olá\"\n\n2) number (número)\n- 10\n- 3.14\n\n3) boolean (verdade/falso)\n- true\n- false\n\n4) undefined (a variável existe, mas não tem valor)\n- let x;\n\n5) null (valor vazio INTENCIONAL)\n- let usuario = null;\n\nDica mental:\n- undefined = “ainda não defini”\n- null = “eu defini como vazio”"
+    },
+    {
+      "title": "typeof: seu detector de tipo",
+      "body": "typeof é um operador que te diz o tipo do valor.\n\nExemplos:\n- typeof 'oi'      → 'string'\n- typeof 10        → 'number'\n- typeof true      → 'boolean'\n- typeof undefined → 'undefined'\n\nCuriosidade importante (pegadinha clássica):\n- typeof null → 'object'\n\nIsso é uma bizarrice histórica do JS. A gente só aceita e segue o jogo."
+    },
+    {
+      "title": "Nomes de variáveis (padrão profissional simples)",
+      "body": "Boas regras:\n- use nomes claros: precoTotal, nomeUsuario\n- use camelCase: minhaVariavel\n- evite nomes genéricos: a, b, coisa\n\nExemplos bons:\n- const precoProduto = 59.9\n- const usuarioLogado = true\n- let quantidadeItens = 0\n\nCódigo bom é código que você entende amanhã."
+    },
+    {
+      "title": "Erros comuns de iniciante (e como evitar)",
+      "body": "1) Esquecer de declarar\n- idade = 10 (ruim)\n- let idade = 10 (certo)\n\n2) Tentar mudar const\n- const pi = 3.14\n- pi = 3.1415 (erro)\n\n3) Confundir número com texto\n- '10' + 5 → '105'\n- 10 + 5 → 15\n\n4) Usar var (por enquanto, evite)\n- var tem escopo diferente e causa confusão.\n- foque em let/const."
+    },
+    {
+      "title": "Mini tarefa (10 minutos) — 5 variáveis reais",
+      "body": "Faça no Console:\n\n1) Crie 3 const:\n- seuNome (string)\n- suaIdade (number)\n- estaEstudando (boolean)\n\n2) Mostre tudo com console.log usando rótulos.\n\n3) Crie 1 let:\n- pontos = 0\n\n4) Some 10 pontos, depois mais 5.\n- pontos = pontos + 10\n- pontos = pontos + 5\n\n5) Use typeof em todas e anote os resultados.\n\nMeta: você tem que conseguir explicar por que cada uma é const ou let."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Variável = nome que aponta para um valor\n- const: não reatribui (padrão)\n- let: reatribui quando precisar\n- Tipos básicos: string, number, boolean, undefined, null\n- typeof ajuda a inspecionar tipos\n- Evite var no começo"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 03 (Variáveis e Tipos)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Variável é:",
+        "options": [
+          { "key": "A", "text": "Um nome que aponta para um valor na memória" },
+          { "key": "B", "text": "Um tipo de tag HTML" }
+        ],
+        "answer": "A",
+        "explain": "Ela guarda/referencia valores para você usar no código."
+      },
+      {
+        "id": 2,
+        "question": "A regra prática entre const e let é:",
+        "options": [
+          { "key": "A", "text": "Comece com const e só use let se precisar reatribuir" },
+          { "key": "B", "text": "Use sempre let, const não serve" }
+        ],
+        "answer": "A",
+        "explain": "Isso reduz bugs e deixa sua intenção clara."
+      },
+      {
+        "id": 3,
+        "question": "Com const:",
+        "options": [
+          { "key": "A", "text": "Você não pode reatribuir o valor" },
+          { "key": "B", "text": "Você pode reatribuir quando quiser" }
+        ],
+        "answer": "A",
+        "explain": "const bloqueia reatribuição."
+      },
+      {
+        "id": 4,
+        "question": "undefined significa:",
+        "options": [
+          { "key": "A", "text": "A variável existe, mas ainda não tem valor" },
+          { "key": "B", "text": "Um texto vazio" }
+        ],
+        "answer": "A",
+        "explain": "Você declarou, mas não atribuiu."
+      },
+      {
+        "id": 5,
+        "question": "null é usado quando:",
+        "options": [
+          { "key": "A", "text": "Você quer indicar vazio de forma intencional" },
+          { "key": "B", "text": "Você quer somar números" }
+        ],
+        "answer": "A",
+        "explain": "null é vazio “de propósito”."
+      },
+      {
+        "id": 6,
+        "question": "typeof serve para:",
+        "options": [
+          { "key": "A", "text": "Descobrir o tipo de um valor" },
+          { "key": "B", "text": "Criar uma variável automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ele retorna strings como 'number', 'string', etc."
+      },
+      {
+        "id": 7,
+        "question": "typeof null retorna:",
+        "options": [
+          { "key": "A", "text": "'object' (pegadinha histórica do JS)" },
+          { "key": "B", "text": "'null'" }
+        ],
+        "answer": "A",
+        "explain": "É um comportamento antigo do JavaScript."
+      },
+      {
+        "id": 8,
+        "question": "Em JS, '10' + 5 resulta em:",
+        "options": [
+          { "key": "A", "text": "'105' (concatenação)" },
+          { "key": "B", "text": "15 (soma)" }
+        ],
+        "answer": "A",
+        "explain": "Com string, o + junta textos."
+      },
+      {
+        "id": 9,
+        "question": "Um nome bom de variável tende a ser:",
+        "options": [
+          { "key": "A", "text": "Descritivo e em camelCase (ex.: precoTotal)" },
+          { "key": "B", "text": "Genérico (ex.: x, coisa)" }
+        ],
+        "answer": "A",
+        "explain": "Legibilidade é parte do profissionalismo."
+      },
+      {
+        "id": 10,
+        "question": "No começo, é melhor evitar:",
+        "options": [
+          { "key": "A", "text": "var, porque confunde escopo" },
+          { "key": "B", "text": "const, porque é moderno demais" }
+        ],
+        "answer": "A",
+        "explain": "let/const são o padrão moderno e mais previsível."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 03 — modelJs: Variáveis e Tipos */\n\n// 1) const (não reatribui)\nconst seuNome = 'Bruno';\nconst suaIdade = 27;\nconst estaEstudando = true;\n\nconsole.log('nome:', seuNome);\nconsole.log('idade:', suaIdade);\nconsole.log('estudando:', estaEstudando);\n\n// 2) let (reatribui)\nlet pontos = 0;\nconsole.log('pontos inicial:', pontos);\n\npontos = pontos + 10;\nconsole.log('pontos depois de +10:', pontos);\n\npontos = pontos + 5;\nconsole.log('pontos depois de +5:', pontos);\n\n// 3) typeof (inspecionar tipo)\nconsole.log('typeof nome:', typeof seuNome);\nconsole.log('typeof idade:', typeof suaIdade);\nconsole.log('typeof estudando:', typeof estaEstudando);\nconsole.log('typeof pontos:', typeof pontos);\n\n// 4) undefined e null\nlet x;\nlet usuario = null;\nconsole.log('x:', x, 'typeof:', typeof x);\nconsole.log('usuario:', usuario, 'typeof:', typeof usuario); // pegadinha: object\n"
+  }
+}

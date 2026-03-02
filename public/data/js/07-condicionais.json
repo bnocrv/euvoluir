@@ -1,0 +1,155 @@
+{
+  "id": "07-condicionais",
+  "title": "Aula 07 — Condicionais (if/else e switch) sem confusão",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a controlar o caminho do seu programa.\n\nNo final você vai conseguir:\n1) Usar if / else / else if com clareza\n2) Escrever condições legíveis (sem gambiarra)\n3) Evitar if aninhado demais\n4) Entender quando usar switch\n5) Montar validações reais (login, status, permissões)"
+    },
+    {
+      "title": "O que é uma condicional (o porquê)",
+      "body": "Condicional é uma bifurcação:\n- se acontecer X, faça A\n- senão, faça B\n\nIsso é literalmente como a lógica humana funciona:\n- Se está chovendo, levo guarda-chuva.\n- Senão, vou sem.\n\nNo código, isso vira if/else."
+    },
+    {
+      "title": "if / else (a forma base)",
+      "body": "Sintaxe:\n\nif (condicao) {\n  // roda se for true\n} else {\n  // roda se for false\n}\n\nExemplo:\nconst idade = 20;\nif (idade >= 18) {\n  console.log('Pode entrar');\n} else {\n  console.log('Não pode');\n}\n\nRegras:\n- a condição precisa virar true/false (lembra truthy/falsy)\n- use { } sempre (evita bugs)"
+    },
+    {
+      "title": "else if (quando existem vários caminhos)",
+      "body": "Quando você tem mais de duas possibilidades:\n\nif (nota >= 9) {\n  'A'\n} else if (nota >= 7) {\n  'B'\n} else if (nota >= 5) {\n  'C'\n} else {\n  'D'\n}\n\nDica mental:\n- o JS testa de cima pra baixo\n- no primeiro true, ele entra e para"
+    },
+    {
+      "title": "Evite bagunça: condição clara > condição esperta",
+      "body": "Iniciante tenta fazer condição “criativa” e vira confusão.\n\nPrefira:\n- condições pequenas\n- nomes bons\n\nExemplo:\nconst senhaOk = senha.length >= 8;\nconst emailOk = email.includes('@');\n\nif (emailOk && senhaOk) { ... }\n\nIsso lê como português:\n- “se email ok e senha ok”"
+    },
+    {
+      "title": "Early return / Guard clause (o segredo para não aninhar if)",
+      "body": "Às vezes você cria isso:\nif (usuarioLogado) {\n  if (temPermissao) {\n    if (status === 'ativo') {\n      ...\n    }\n  }\n}\n\nIsso vira um labirinto.\n\nSolução: guard clause (bloqueia cedo):\n\nif (!usuarioLogado) {\n  console.log('Faça login');\n  return;\n}\n\nif (!temPermissao) {\n  console.log('Sem permissão');\n  return;\n}\n\nif (status !== 'ativo') {\n  console.log('Conta inativa');\n  return;\n}\n\nconsole.log('Pode continuar');\n\nMesmo sem funções ainda, entenda o conceito:\n- barrar o erro cedo deixa o fluxo limpo."
+    },
+    {
+      "title": "switch (bom para múltiplos casos fixos)",
+      "body": "switch é útil quando você compara um mesmo valor com vários casos.\n\nExemplo:\nconst plano = 'pro';\n\nswitch (plano) {\n  case 'free':\n    console.log('Recursos básicos');\n    break;\n  case 'pro':\n    console.log('Recursos avançados');\n    break;\n  case 'enterprise':\n    console.log('Tudo + suporte');\n    break;\n  default:\n    console.log('Plano desconhecido');\n}\n\nRegras importantes:\n- sempre use break (senão ele “cai” no próximo caso)\n- default é o “else” do switch"
+    },
+    {
+      "title": "Quando usar if/else vs switch",
+      "body": "Use if/else quando:\n- você tem condições com comparações (>, <, &&, etc.)\n- a lógica depende de intervalos\n\nUse switch quando:\n- você compara o MESMO valor contra opções fixas\n- fica mais legível do que vários else if\n\nExemplo de intervalo (melhor if/else):\n- nota >= 7\n\nExemplo de opção fixa (melhor switch):\n- cor = 'vermelho' | 'azul' | 'verde'"
+    },
+    {
+      "title": "Mini tarefa (15 minutos) — login e status",
+      "body": "Faça no Console:\n\n1) Login simples\n- const email = 'bruno@gmail.com'\n- const senha = '12345678'\n\nCrie:\n- const emailOk = email.includes('@')\n- const senhaOk = senha.length >= 8\n\nSe os dois forem true, mostre 'Login ok', senão 'Login inválido'.\n\n2) Nota\n- const nota = 6\nFaça:\n- >= 7 aprovado\n- >= 5 recuperação\n- senão reprovado\n\n3) Switch\n- const dia = 'sab'\nUse switch para:\n- 'seg'...'sex' → 'dia útil'\n- 'sab' ou 'dom' → 'fim de semana'\n- default → 'dia inválido'\n\nMeta: seu código tem que ficar legível, sem condição monstruosa."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- if/else controla caminhos\n- else if resolve múltiplos caminhos\n- condições claras > condições espertas\n- guard clause evita if aninhado\n- switch é bom para casos fixos\n- use break e default no switch"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 07 (Condicionais)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "if executa o bloco quando a condição é:",
+        "options": [
+          { "key": "A", "text": "true (ou truthy)" },
+          { "key": "B", "text": "sempre" }
+        ],
+        "answer": "A",
+        "explain": "if depende da condição ser verdadeira."
+      },
+      {
+        "id": 2,
+        "question": "else executa quando a condição do if é:",
+        "options": [
+          { "key": "A", "text": "false (ou falsy)" },
+          { "key": "B", "text": "true" }
+        ],
+        "answer": "A",
+        "explain": "else é o caminho alternativo."
+      },
+      {
+        "id": 3,
+        "question": "else if serve para:",
+        "options": [
+          { "key": "A", "text": "Testar várias condições em sequência" },
+          { "key": "B", "text": "Criar variáveis automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "É para múltiplos caminhos."
+      },
+      {
+        "id": 4,
+        "question": "O JS testa um else if:",
+        "options": [
+          { "key": "A", "text": "De cima para baixo e para no primeiro true" },
+          { "key": "B", "text": "De baixo para cima" }
+        ],
+        "answer": "A",
+        "explain": "Ele entra no primeiro bloco válido."
+      },
+      {
+        "id": 5,
+        "question": "Um switch é mais indicado quando:",
+        "options": [
+          { "key": "A", "text": "Você compara o mesmo valor com várias opções fixas" },
+          { "key": "B", "text": "Você precisa comparar intervalos (>=, <=)" }
+        ],
+        "answer": "A",
+        "explain": "Switch é ótimo para casos fixos."
+      },
+      {
+        "id": 6,
+        "question": "No switch, break serve para:",
+        "options": [
+          { "key": "A", "text": "Evitar cair no próximo case" },
+          { "key": "B", "text": "Transformar string em number" }
+        ],
+        "answer": "A",
+        "explain": "Sem break, ele continua executando cases seguintes."
+      },
+      {
+        "id": 7,
+        "question": "default no switch é como:",
+        "options": [
+          { "key": "A", "text": "O else final" },
+          { "key": "B", "text": "Um loop" }
+        ],
+        "answer": "A",
+        "explain": "Roda quando nenhum case bate."
+      },
+      {
+        "id": 8,
+        "question": "Guard clause ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Evita if aninhado e deixa o fluxo limpo" },
+          { "key": "B", "text": "Deixa o código mais confuso" }
+        ],
+        "answer": "A",
+        "explain": "Você bloqueia cedo e segue com o caminho principal."
+      },
+      {
+        "id": 9,
+        "question": "Condições claras são melhores porque:",
+        "options": [
+          { "key": "A", "text": "São mais legíveis e menos propensas a bugs" },
+          { "key": "B", "text": "São mais longas e difíceis" }
+        ],
+        "answer": "A",
+        "explain": "Código bom é código que você entende rápido."
+      },
+      {
+        "id": 10,
+        "question": "Para validar login com emailOk e senhaOk, você usa:",
+        "options": [
+          { "key": "A", "text": "emailOk && senhaOk" },
+          { "key": "B", "text": "emailOk || senhaOk" }
+        ],
+        "answer": "A",
+        "explain": "Login só é ok se os dois estiverem ok."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 07 — modelJs: Condicionais */\n\n// 1) Login simples\nconst email = 'bruno@gmail.com';\nconst senha = '12345678';\n\nconst emailOk = email.includes('@');\nconst senhaOk = senha.length >= 8;\n\nif (emailOk && senhaOk) {\n  console.log('Login ok');\n} else {\n  console.log('Login inválido');\n}\n\n// 2) Nota\nconst nota = 6;\nif (nota >= 7) {\n  console.log('Aprovado');\n} else if (nota >= 5) {\n  console.log('Recuperação');\n} else {\n  console.log('Reprovado');\n}\n\n// 3) Switch\nconst dia = 'sab';\n\nswitch (dia) {\n  case 'seg':\n  case 'ter':\n  case 'qua':\n  case 'qui':\n  case 'sex':\n    console.log('Dia útil');\n    break;\n  case 'sab':\n  case 'dom':\n    console.log('Fim de semana');\n    break;\n  default:\n    console.log('Dia inválido');\n}\n"
+  }
+}

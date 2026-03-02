@@ -41,10 +41,10 @@ export function DashboardPage(app) {
             <div class="card pad course-card">
               <div class="row row-between">
                 <h3 class="m-0">JavaScript</h3>
-                <span class="badge">Em breve</span>
+                <span class="badge">Trilha</span>
               </div>
               <p class="muted">DOM, lógica, async, APIs e projetos reais.</p>
-              <button class="btn" disabled>Em breve</button>
+              <button class="btn primary" id="go-js">Começar JS</button>
             </div>
 
             <div class="card pad course-card">
@@ -69,5 +69,9 @@ export function DashboardPage(app) {
 
   app.querySelector("#go-css").addEventListener("click", () => {
     navigate("/course/css");
+  });
+
+  app.querySelector("#go-js").addEventListener("click", () => {
+    navigate("/course/js");
   });
 }

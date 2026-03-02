@@ -1,0 +1,159 @@
+{
+  "id": "37-poo-prototipos",
+  "title": "Aula 37 — Protótipos e POO: classes, factory, quando usar (sem fanatismo)",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai entender POO no JavaScript do jeito certo: como ferramenta, não religião.\n\nNo final você vai conseguir:\n1) Entender o que é protótipo (prototype) e herança prototipal\n2) Saber o que class faz por trás (açúcar sintático)\n3) Criar classes simples com métodos\n4) Entender quando usar factory vs class\n5) Evitar armadilhas comuns (this, métodos, estado compartilhado)\n\nIsso aparece em libs, frameworks e alguns projetos maiores."
+    },
+    {
+      "title": "Antes de POO: JS é prototipal",
+      "body": "JavaScript não nasceu como 'classe' como Java/C#.\nEle nasceu com protótipos.\n\nIdeia:\n- um objeto pode 'apontar' para outro objeto como base\n- se não achar uma propriedade nele, procura no protótipo\n\nIsso forma uma cadeia:\nobj -> prototype -> prototype -> ...\n\nPor isso existe:\n- Object.getPrototypeOf(obj)\n\nVocê não precisa dominar tudo agora,\nmas precisa entender a ideia para não achar que class é magia."
+    },
+    {
+      "title": "Prototype na prática (bem simples)",
+      "body": "Exemplo:\n\nconst base = {\n  falar() {\n    console.log('oi');\n  }\n};\n\nconst a = Object.create(base);\na.falar();\n\nPor que funciona?\n- a não tem falar\n- o JS procura no protótipo (base)\n\nIsso é herança prototipal: compartilhar comportamento."
+    },
+    {
+      "title": "Constructor function (histórico) e prototype",
+      "body": "Antes de class, se fazia assim:\n\nfunction Pessoa(nome) {\n  this.nome = nome;\n}\n\nPessoa.prototype.apresentar = function () {\n  return `Eu sou ${this.nome}`;\n};\n\nconst p = new Pessoa('Bruno');\nconsole.log(p.apresentar());\n\nIsso cria instâncias:\n- cada instância tem seus dados\n- os métodos ficam no prototype (compartilhados)\n\nO importante:\n- métodos no prototype economizam memória."
+    },
+    {
+      "title": "class: açúcar sintático (jeito moderno e legível)",
+      "body": "class é uma forma mais bonita de escrever o mesmo conceito.\n\nclass Pessoa {\n  constructor(nome) {\n    this.nome = nome;\n  }\n\n  apresentar() {\n    return `Eu sou ${this.nome}`;\n  }\n}\n\nconst p = new Pessoa('Bruno');\nconsole.log(p.apresentar());\n\nPor baixo, continua usando prototype.\n\nEntão:\n- class não é 'novo sistema'\n- é sintaxe mais amigável."
+    },
+    {
+      "title": "this em classes: atenção total",
+      "body": "Dentro de métodos, this é a instância.\n\nMas se você 'soltar' o método:\n\nconst fn = p.apresentar;\nfn();\n\nPode dar undefined ou erro, porque this se perde.\n\nComo evitar no começo:\n- chame sempre como p.apresentar()\n\nMais tarde você aprende bind e arrow em classe."
+    },
+    {
+      "title": "Factory function: alternativa simples (muito usada)",
+      "body": "Factory é uma função que cria e retorna um objeto.\n\nfunction criarPessoa(nome) {\n  return {\n    nome,\n    apresentar() {\n      return `Eu sou ${nome}`;\n    }\n  };\n}\n\nconst p = criarPessoa('Bruno');\n\nVantagens:\n- simples\n- sem new\n- fácil de ler\n\nDesvantagem:\n- métodos ficam duplicados por instância (dependendo de como você escreve)\n\nNa prática, para apps pequenos, factory é ótima."
+    },
+    {
+      "title": "Quando usar o quê (regra prática, sem fanatismo)",
+      "body": "Use objeto literal/factory quando:\n- é simples\n- poucas instâncias\n- foco em clareza\n\nUse class quando:\n- você vai criar muitas instâncias\n- quer um 'tipo' bem definido\n- vai usar herança/composição\n- você quer interoperar com libs que esperam class\n\nE lembre:\n- em DOM apps comuns, você muitas vezes nem precisa de class.\n- separar state/ui/app já resolve muito."
+    },
+    {
+      "title": "Armadilha: estado compartilhado sem querer",
+      "body": "Cuidado com coisas fora da instância.\n\nExemplo ruim:\nclass X {\n  static lista = [];\n}\n\nSe você acha que cada instância tem uma lista, mas na verdade é uma só.\n\nOu:\nconst shared = [];\nfunction criar() { return { items: shared } }\n\nAí todo mundo compartilha.\n\nRegra:\n- dados de instância devem ser criados no constructor (ou na factory) dentro da função."
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — modelar e comparar",
+      "body": "Faça no Console:\n\n1) Class\n- Crie class Contador com:\n  - constructor() inicia this.valor = 0\n  - inc() soma 1\n  - dec() subtrai 1\n  - toString() retorna `Valor: X`\n\n2) Factory\n- Crie criarContador() com as mesmas funções.\n\n3) Teste:\n- crie 2 contadores\n- incremente um deles\n- confirme que o outro não mudou\n\nMeta: você tem que explicar:\n- diferença de class vs factory\n- por que métodos em class ficam no prototype"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- JS usa protótipos (cadeia de prototype)\n- class é sintaxe mais bonita para prototype\n- métodos ficam no prototype (compartilhados)\n- this aponta para instância (cuidado ao soltar método)\n- factory é alternativa simples\n- escolha ferramenta pelo contexto, não por moda\n- cuidado com estado compartilhado sem querer"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 37 (POO e Protótipos)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "JavaScript é originalmente:",
+        "options": [
+          { "key": "A", "text": "Prototipal (prototype chain)" },
+          { "key": "B", "text": "Obrigatoriamente baseado em classes" }
+        ],
+        "answer": "A",
+        "explain": "Classes vieram como sintaxe depois."
+      },
+      {
+        "id": 2,
+        "question": "Se uma propriedade não existe no objeto, o JS:",
+        "options": [
+          { "key": "A", "text": "Procura no protótipo (cadeia)" },
+          { "key": "B", "text": "Cria automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Isso é a base da herança prototipal."
+      },
+      {
+        "id": 3,
+        "question": "class no JS é:",
+        "options": [
+          { "key": "A", "text": "Açúcar sintático sobre prototype" },
+          { "key": "B", "text": "Um sistema totalmente diferente" }
+        ],
+        "answer": "A",
+        "explain": "Por baixo continua sendo prototype."
+      },
+      {
+        "id": 4,
+        "question": "Métodos em class ficam geralmente:",
+        "options": [
+          { "key": "A", "text": "No prototype (compartilhados)" },
+          { "key": "B", "text": "Copiados em cada instância automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Isso economiza memória."
+      },
+      {
+        "id": 5,
+        "question": "Factory function é:",
+        "options": [
+          { "key": "A", "text": "Uma função que retorna um objeto" },
+          { "key": "B", "text": "Um tipo de loop" }
+        ],
+        "answer": "A",
+        "explain": "É um criador de objetos."
+      },
+      {
+        "id": 6,
+        "question": "this dentro de método normalmente aponta para:",
+        "options": [
+          { "key": "A", "text": "O objeto/instância que chamou o método" },
+          { "key": "B", "text": "Sempre o document" }
+        ],
+        "answer": "A",
+        "explain": "this depende de como você chama."
+      },
+      {
+        "id": 7,
+        "question": "Soltar um método (const fn = obj.metodo) pode:",
+        "options": [
+          { "key": "A", "text": "Perder o this e causar bug" },
+          { "key": "B", "text": "Sempre funcionar igual" }
+        ],
+        "answer": "A",
+        "explain": "this se define pelo chamador."
+      },
+      {
+        "id": 8,
+        "question": "Para apps pequenos, geralmente é ok usar:",
+        "options": [
+          { "key": "A", "text": "Objetos/factories e boa separação de camadas" },
+          { "key": "B", "text": "Herança complexa sempre" }
+        ],
+        "answer": "A",
+        "explain": "Clareza > complexidade."
+      },
+      {
+        "id": 9,
+        "question": "Estado compartilhado sem querer acontece quando:",
+        "options": [
+          { "key": "A", "text": "Você reutiliza a mesma referência entre instâncias" },
+          { "key": "B", "text": "Você usa trim()" }
+        ],
+        "answer": "A",
+        "explain": "Referência compartilhada = bug sutil."
+      },
+      {
+        "id": 10,
+        "question": "A melhor escolha entre class e factory depende:",
+        "options": [
+          { "key": "A", "text": "Do contexto e necessidade do projeto" },
+          { "key": "B", "text": "Da moda do momento" }
+        ],
+        "answer": "A",
+        "explain": "Ferramenta certa para o problema."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 37 — modelJs: class vs factory */\n\n// 1) Class\nclass Contador {\n  constructor() {\n    this.valor = 0;\n  }\n  inc() {\n    this.valor++;\n  }\n  dec() {\n    this.valor--;\n  }\n  toString() {\n    return `Valor: ${this.valor}`;\n  }\n}\n\nconst c1 = new Contador();\nconst c2 = new Contador();\n\nc1.inc();\nc1.inc();\nconsole.log('c1:', c1.toString());\nconsole.log('c2:', c2.toString());\n\n// 2) Factory\nfunction criarContador() {\n  let valor = 0;\n  return {\n    inc() { valor++; },\n    dec() { valor--; },\n    toString() { return `Valor: ${valor}`; }\n  };\n}\n\nconst f1 = criarContador();\nconst f2 = criarContador();\n\nf1.inc();\nconsole.log('f1:', f1.toString());\nconsole.log('f2:', f2.toString());\n"
+  }
+}

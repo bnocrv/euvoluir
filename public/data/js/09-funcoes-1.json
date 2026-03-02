@@ -1,0 +1,151 @@
+{
+  "id": "09-funcoes-1",
+  "title": "Aula 09 — Funções 1: declaração, parâmetros, retorno",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a ferramenta mais importante da programação: funções.\n\nNo final você vai conseguir:\n1) Entender por que funções existem (reuso + organização)\n2) Criar funções (function)\n3) Passar parâmetros (entradas)\n4) Entender retorno (saída) com return\n5) Diferenciar 'printar no console' vs 'retornar valor'\n6) Fazer funções pequenas e previsíveis"
+    },
+    {
+      "title": "O que é uma função (sem mistério)",
+      "body": "Função é um pedaço de código com nome, que você pode executar quando quiser.\n\nPensa como uma máquina:\n- você coloca entrada (parâmetros)\n- a máquina processa\n- você recebe uma saída (return)\n\nExemplo do mundo real:\n- Entrada: preço e desconto\n- Saída: preço final\n\nO benefício principal:\n- você não repete código\n- você dá um nome para uma lógica\n- seu código vira “blocos” fáceis de entender"
+    },
+    {
+      "title": "Como declarar uma função",
+      "body": "Forma clássica:\n\nfunction dizerOi() {\n  console.log('Oi!');\n}\n\nPara executar (chamar):\n\ndizerOi();\n\nDetalhes:\n- dizerOi é o nome\n- () é a chamada\n- { } é o corpo\n\nSe você não chamar, ela não roda."
+    },
+    {
+      "title": "Parâmetros: entradas da função",
+      "body": "Parâmetros são valores que você passa para a função usar.\n\nfunction cumprimentar(nome) {\n  console.log(`Olá, ${nome}!`);\n}\n\ncumprimentar('Bruno');\ncumprimentar('Ana');\n\nO nome é um parâmetro.\nQuando você chama, você passa o argumento.\n\nPensa:\n- parâmetro = \"slot\"\n- argumento = \"valor que entra no slot\""
+    },
+    {
+      "title": "Retorno (return): saída da função",
+      "body": "Return devolve um valor para quem chamou.\n\nfunction somar(a, b) {\n  return a + b;\n}\n\nconst resultado = somar(10, 5);\nconsole.log(resultado); // 15\n\nImportante:\n- return encerra a função naquela linha\n- depois do return, nada abaixo roda\n\nSe não tiver return, a função retorna undefined."
+    },
+    {
+      "title": "Console.log vs Return (a confusão clássica)",
+      "body": "console.log só MOSTRA na tela.\nreturn ENTREGA um valor.\n\nExemplo:\n\nfunction dobrarComLog(n) {\n  console.log(n * 2);\n}\n\nconst x = dobrarComLog(5);\nconsole.log('x:', x);\n\nSaída:\n- imprime 10\n- x vira undefined\n\nPorque a função não retornou.\n\nAgora com return:\n\nfunction dobrar(n) {\n  return n * 2;\n}\n\nconst y = dobrar(5);\nconsole.log('y:', y); // 10\n\nRegra:\n- para reutilizar resultado, use return."
+    },
+    {
+      "title": "Funções pequenas (regra de ouro para não virar bagunça)",
+      "body": "Uma função boa geralmente:\n- faz uma coisa só\n- tem nome claro\n- recebe entradas\n- devolve uma saída\n\nExemplos de nomes bons:\n- calcularTotal\n- validarEmail\n- formatarPreco\n\nSe a função faz 10 coisas, fica difícil testar e manter."
+    },
+    {
+      "title": "Mini tarefa (20 minutos) — 4 funções úteis",
+      "body": "Crie e teste no Console:\n\n1) somar(a, b)\n- retorna a + b\n\n2) ehMaiorDeIdade(idade)\n- retorna true se idade >= 18\n\n3) formatarNome(nome)\n- recebe um nome com espaços\n- retorna nome limpo (trim) e em 'PrimeiraLetraMaiúscula' simples\n  (dica: toLowerCase + slice)\n\n4) calcularDesconto(preco, porcentagem)\n- retorna preco com desconto\n- exemplo: calcularDesconto(100, 10) → 90\n\nMeta: para cada função, você deve:\n- chamar\n- guardar o retorno em uma variável\n- mostrar a variável no console"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Função = bloco reutilizável com nome\n- Parâmetros = entradas\n- return = saída (valor reutilizável)\n- console.log só mostra, não devolve\n- Funções pequenas e claras são mais fáceis de manter"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 09 (Funções 1)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Funções existem principalmente para:",
+        "options": [
+          { "key": "A", "text": "Reutilizar e organizar lógica" },
+          { "key": "B", "text": "Criar HTML automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Função evita repetição e dá nome para um pedaço de lógica."
+      },
+      {
+        "id": 2,
+        "question": "Uma função só roda quando:",
+        "options": [
+          { "key": "A", "text": "Você chama ela (ex.: minhaFuncao())" },
+          { "key": "B", "text": "Você declara ela" }
+        ],
+        "answer": "A",
+        "explain": "Declarar não executa."
+      },
+      {
+        "id": 3,
+        "question": "Parâmetros são:",
+        "options": [
+          { "key": "A", "text": "Entradas que a função recebe" },
+          { "key": "B", "text": "Erros do JavaScript" }
+        ],
+        "answer": "A",
+        "explain": "Parâmetros são valores que entram para a função usar."
+      },
+      {
+        "id": 4,
+        "question": "Return serve para:",
+        "options": [
+          { "key": "A", "text": "Devolver um valor para quem chamou" },
+          { "key": "B", "text": "Somente imprimir no console" }
+        ],
+        "answer": "A",
+        "explain": "Return entrega uma saída reutilizável."
+      },
+      {
+        "id": 5,
+        "question": "console.log faz:",
+        "options": [
+          { "key": "A", "text": "Mostra algo, mas não devolve valor automaticamente" },
+          { "key": "B", "text": "Sempre retorna o valor impresso" }
+        ],
+        "answer": "A",
+        "explain": "Log não é retorno."
+      },
+      {
+        "id": 6,
+        "question": "Se uma função não tem return, ela retorna:",
+        "options": [
+          { "key": "A", "text": "undefined" },
+          { "key": "B", "text": "0" }
+        ],
+        "answer": "A",
+        "explain": "Sem return, o retorno padrão é undefined."
+      },
+      {
+        "id": 7,
+        "question": "Após um return, o que acontece?",
+        "options": [
+          { "key": "A", "text": "A função termina ali" },
+          { "key": "B", "text": "O código continua rodando normalmente" }
+        ],
+        "answer": "A",
+        "explain": "Return encerra a função."
+      },
+      {
+        "id": 8,
+        "question": "Uma função boa tende a:",
+        "options": [
+          { "key": "A", "text": "Fazer uma coisa só, com nome claro" },
+          { "key": "B", "text": "Fazer 10 coisas para economizar linhas" }
+        ],
+        "answer": "A",
+        "explain": "Funções pequenas são mais fáceis de testar e manter."
+      },
+      {
+        "id": 9,
+        "question": "Argumento é:",
+        "options": [
+          { "key": "A", "text": "O valor que você passa ao chamar a função" },
+          { "key": "B", "text": "O nome da função" }
+        ],
+        "answer": "A",
+        "explain": "Parâmetro é o 'slot', argumento é o valor que entra."
+      },
+      {
+        "id": 10,
+        "question": "Para reutilizar o resultado de uma conta, você deve:",
+        "options": [
+          { "key": "A", "text": "Usar return e guardar em variável" },
+          { "key": "B", "text": "Apenas console.log e pronto" }
+        ],
+        "answer": "A",
+        "explain": "Return permite usar o valor em outras partes do código."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 09 — modelJs: Funções 1 */\n\nfunction somar(a, b) {\n  return a + b;\n}\n\nfunction ehMaiorDeIdade(idade) {\n  return idade >= 18;\n}\n\nfunction formatarNome(nome) {\n  const limpo = nome.trim().toLowerCase();\n  if (limpo.length === 0) return '';\n  return limpo[0].toUpperCase() + limpo.slice(1);\n}\n\nfunction calcularDesconto(preco, porcentagem) {\n  const desconto = (preco * porcentagem) / 100;\n  return preco - desconto;\n}\n\nconst r1 = somar(10, 5);\nconsole.log('somar:', r1);\n\nconst r2 = ehMaiorDeIdade(17);\nconsole.log('maior de idade?', r2);\n\nconst r3 = formatarNome('  bRUNo  ');\nconsole.log('formatarNome:', r3);\n\nconst r4 = calcularDesconto(100, 10);\nconsole.log('calcularDesconto:', r4);\n"
+  }
+}

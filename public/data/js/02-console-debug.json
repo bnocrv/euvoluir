@@ -1,0 +1,155 @@
+{
+  "id": "02-console-debug",
+  "title": "Aula 02 — Console e debug (log, error, table, breakpoints)",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a investigar código como um dev de verdade.\n\nNo final você vai conseguir:\n1) Usar console.log / warn / error do jeito certo\n2) Enxergar dados melhor com console.table\n3) Entender por que erros aparecem e como ler a mensagem\n4) Usar breakpoints (pausar o código) e ver valores passo a passo\n\nA meta é simples: parar de “chutar” e começar a provar o que o código está fazendo."
+    },
+    {
+      "title": "O Console não é enfeite — é seu microscópio",
+      "body": "Quando você programa, você tem hipóteses:\n- “acho que essa variável tem tal valor”\n\nO console serve para confirmar:\n- “ela tem esse valor mesmo”\n\nIsso evita a armadilha clássica:\n- ficar alterando código aleatoriamente até “funcionar”\n\nProgramador bom investiga."
+    },
+    {
+      "title": "console.log: ver valores e o fluxo",
+      "body": "O console.log mostra valores.\n\nUse para duas coisas:\n1) Ver valor de uma variável\n2) Ver se o código passou por um ponto\n\nExemplos:\n- console.log('cheguei aqui')\n- console.log('idade:', idade)\n\nDica pro: sempre coloque rótulo (texto) junto.\nSem rótulo você se perde fácil."
+    },
+    {
+      "title": "console.error e console.warn: separar o que é sério",
+      "body": "Você pode usar:\n- console.warn('algo estranho') → alerta (amarelo)\n- console.error('deu ruim') → erro (vermelho)\n\nIsso é ótimo pra você mesmo:\n- warning = “não quebrou, mas cuidado”\n- error = “quebrou ou está inválido”\n\nEm projetos reais, isso ajuda a identificar problemas mais rápido."
+    },
+    {
+      "title": "console.table: enxergar listas e objetos como tabela",
+      "body": "Quando você tem arrays/objetos, console.log vira bagunça.\nconsole.table organiza.\n\nExemplo mental:\n- uma lista de produtos\n- uma lista de usuários\n\nconsole.table(lista)\n\nVocê vai usar MUITO quando começar a trabalhar com dados."
+    },
+    {
+      "title": "Como ler um erro (sem medo)",
+      "body": "Erro tem 3 partes importantes:\n\n1) Tipo do erro\n- ReferenceError, TypeError, SyntaxError...\n\n2) Mensagem\n- explica o que aconteceu\n\n3) Linha/arquivo\n- onde aconteceu\n\nExemplo comum:\n- ReferenceError: x is not defined\nSignifica:\n- você tentou usar a variável x sem criar ela.\n\nOutro comum:\n- TypeError: ... is not a function\nSignifica:\n- você tentou chamar como função algo que não é função."
+    },
+    {
+      "title": "Breakpoints: pausar o código e olhar por dentro",
+      "body": "Breakpoint é quando você fala:\n“para aqui, quero olhar o estado das variáveis agora.”\n\nComo usar (browser):\n1) F12 → aba Sources\n2) Abra o arquivo\n3) Clique no número da linha (fica azul)\n4) Rode a ação que executa o código\n5) O código pausa naquele ponto\n\nQuando pausa, você pode:\n- passar linha por linha (Step)\n- inspecionar variáveis\n- ver Call Stack (quem chamou quem)\n\nIsso é o debug de verdade."
+    },
+    {
+      "title": "debugger: o breakpoint escrito no código",
+      "body": "Você também pode escrever:\n\ndebugger;\n\nQuando o navegador chegar nessa linha, ele pausa.\n\nVantagem:\n- você não precisa clicar na linha\n- ótimo pra debug rápido\n\nDepois você remove."
+    },
+    {
+      "title": "Mini tarefa (10 minutos) — “investigador”",
+      "body": "No Console (ou num arquivo .js), faça isso:\n\n1) Crie duas variáveis:\n- let a = 10\n- let b = 0\n\n2) Antes de dividir, logue:\n- console.log('a:', a)\n- console.log('b:', b)\n\n3) Faça uma verificação:\n- se b for 0, console.error('Divisão por zero!')\n- senão, console.log(a / b)\n\n4) Crie um array de 3 objetos (id, nome) e use console.table.\n\n5) Coloque um debugger antes do if e veja o código pausando.\n\nMeta: você tem que conseguir explicar o que está acontecendo, não só “ver funcionar”."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- console.log para ver fluxo e valores\n- console.warn e console.error para destacar problemas\n- console.table para enxergar dados melhor\n- Ler erros: tipo + mensagem + linha\n- Breakpoints e debugger para pausar e investigar"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 02 (Console e Debug)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O console é útil porque:",
+        "options": [
+          { "key": "A", "text": "Ajuda a confirmar valores e entender o fluxo do código" },
+          { "key": "B", "text": "Serve só para enfeitar o navegador" }
+        ],
+        "answer": "A",
+        "explain": "Você usa o console para investigar, não para adivinhar."
+      },
+      {
+        "id": 2,
+        "question": "Boa prática ao usar console.log é:",
+        "options": [
+          { "key": "A", "text": "Adicionar rótulos (ex.: 'idade:', idade)" },
+          { "key": "B", "text": "Logar tudo sem texto nenhum" }
+        ],
+        "answer": "A",
+        "explain": "Sem rótulo você se perde fácil em muitos logs."
+      },
+      {
+        "id": 3,
+        "question": "console.error é melhor para:",
+        "options": [
+          { "key": "A", "text": "Indicar um problema grave/estado inválido" },
+          { "key": "B", "text": "Mudar a cor do site" }
+        ],
+        "answer": "A",
+        "explain": "Ele destaca erros em vermelho e chama atenção."
+      },
+      {
+        "id": 4,
+        "question": "console.table é indicado quando você tem:",
+        "options": [
+          { "key": "A", "text": "Arrays/objetos e quer visualizar organizado" },
+          { "key": "B", "text": "Somente números soltos" }
+        ],
+        "answer": "A",
+        "explain": "Tabela facilita enxergar coleções."
+      },
+      {
+        "id": 5,
+        "question": "Uma mensagem 'ReferenceError: x is not defined' significa:",
+        "options": [
+          { "key": "A", "text": "Você usou x sem declarar/criar antes" },
+          { "key": "B", "text": "x é um número inválido" }
+        ],
+        "answer": "A",
+        "explain": "ReferenceError é referência a algo que não existe."
+      },
+      {
+        "id": 6,
+        "question": "Um breakpoint serve para:",
+        "options": [
+          { "key": "A", "text": "Pausar a execução e inspecionar variáveis" },
+          { "key": "B", "text": "Deixar o código mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "Breakpoints são para investigar passo a passo."
+      },
+      {
+        "id": 7,
+        "question": "A instrução debugger; faz:",
+        "options": [
+          { "key": "A", "text": "Pausa a execução quando a linha é alcançada" },
+          { "key": "B", "text": "Apaga erros automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "É um breakpoint escrito no próprio código."
+      },
+      {
+        "id": 8,
+        "question": "Um erro tem como partes úteis:",
+        "options": [
+          { "key": "A", "text": "Tipo, mensagem e linha/arquivo" },
+          { "key": "B", "text": "Só a cor do texto" }
+        ],
+        "answer": "A",
+        "explain": "Isso te guia direto para o problema."
+      },
+      {
+        "id": 9,
+        "question": "console.warn é melhor quando:",
+        "options": [
+          { "key": "A", "text": "Algo não quebrou, mas merece atenção" },
+          { "key": "B", "text": "Você quer esconder um erro" }
+        ],
+        "answer": "A",
+        "explain": "Warning é alerta, não falha."
+      },
+      {
+        "id": 10,
+        "question": "Debug profissional significa:",
+        "options": [
+          { "key": "A", "text": "Investigar com evidências (logs/breakpoints), não chutar" },
+          { "key": "B", "text": "Mudar o código aleatoriamente até funcionar" }
+        ],
+        "answer": "A",
+        "explain": "A diferença entre iniciante e pro é método."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 02 — modelJs: Console e Debug */\n\n// 1) Logs com rótulo\nlet a = 10;\nlet b = 0;\nconsole.log('a:', a);\nconsole.log('b:', b);\n\n// 2) Checagem antes de dividir\nif (b === 0) {\n  console.error('Divisão por zero!');\n} else {\n  console.log('resultado:', a / b);\n}\n\n// 3) Tabela de dados\nconst pessoas = [\n  { id: 1, nome: 'Ana' },\n  { id: 2, nome: 'Bruno' },\n  { id: 3, nome: 'Caio' }\n];\nconsole.table(pessoas);\n\n// 4) Pausar no ponto exato\n// (Abra o DevTools; quando chegar aqui, vai pausar)\ndebugger;\nconsole.log('Depois do pause');\n"
+  }
+}

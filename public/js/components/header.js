@@ -31,7 +31,7 @@ export function Header() {
 
   const backTarget = getBackTarget(route, session);
   const left = backTarget
-    ? `<button class="btn header-back-link" id="btn-header-back" data-target="${backTarget}" aria-label="Voltar para a tela anterior de navegação">EuVoluir Academy</button>`
+    ? `<button class="btn header-back-link" id="btn-header-back" data-target="${backTarget}" aria-label="Voltar para a tela anterior de navegação">Fina Skills</button>`
     : "";
 
   return `

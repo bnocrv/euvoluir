@@ -1,0 +1,155 @@
+{
+  "id": "08-loops",
+  "title": "Aula 08 — Loops (for, while, for...of) e quando usar cada um",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a repetir ações sem copiar e colar código.\n\nNo final você vai conseguir:\n1) Entender o que é loop (repetição) e por que existe\n2) Usar for (quando você sabe quantas vezes)\n3) Usar while (quando depende de uma condição)\n4) Usar for...of (para percorrer arrays de forma limpa)\n5) Usar break e continue sem se perder\n6) Evitar loop infinito"
+    },
+    {
+      "title": "O que é loop (e por que você precisa)",
+      "body": "Loop é repetição controlada.\n\nSem loop, você faria isso:\n- console.log(1)\n- console.log(2)\n- console.log(3)\n\nCom loop, você descreve a regra:\n- “mostre do 1 ao 3”\n\nIsso deixa seu código:\n- menor\n- mais fácil de manter\n- escalável"
+    },
+    {
+      "title": "for: quando você sabe quantas vezes",
+      "body": "Estrutura do for:\n\nfor (inicio; condicao; passo) {\n  // repete\n}\n\nExemplo (1 a 5):\nfor (let i = 1; i <= 5; i++) {\n  console.log(i);\n}\n\nComo pensar:\n- inicio: começa em 1\n- condição: enquanto i <= 5\n- passo: i++ (soma 1)\n\nA variável i normalmente é “índice” (contador)."
+    },
+    {
+      "title": "while: quando você não sabe quantas vezes",
+      "body": "while repete ENQUANTO a condição for true:\n\nlet i = 1;\nwhile (i <= 5) {\n  console.log(i);\n  i++;\n}\n\nUse while quando:\n- a repetição depende de uma condição que muda\n\nExemplo real:\n- tentar login até acertar\n- ler dados até acabar"
+    },
+    {
+      "title": "for...of: o jeito limpo de percorrer arrays",
+      "body": "Quando você tem um array, você quer passar item por item.\n\nconst nomes = ['Ana', 'Bruno', 'Caio'];\n\nfor (const nome of nomes) {\n  console.log(nome);\n}\n\nVantagens:\n- não precisa lidar com índice\n- mais legível\n\nRegra:\n- for...of é para coleções iteráveis (arrays, strings, etc.)"
+    },
+    {
+      "title": "break e continue (controle do loop)",
+      "body": "1) break\n- para o loop imediatamente\n\nExemplo:\nfor (let i = 1; i <= 10; i++) {\n  if (i === 4) break;\n  console.log(i);\n}\n// imprime 1,2,3\n\n2) continue\n- pula a iteração atual e continua\n\nExemplo:\nfor (let i = 1; i <= 5; i++) {\n  if (i === 3) continue;\n  console.log(i);\n}\n// imprime 1,2,4,5"
+    },
+    {
+      "title": "Loop infinito (o bug clássico)",
+      "body": "Um loop vira infinito quando:\n- a condição nunca fica false\n\nExemplo perigoso:\nlet i = 1;\nwhile (i <= 5) {\n  console.log(i);\n  // esqueceu i++\n}\n\nResultado: trava / roda pra sempre.\n\nDica pro: em while, sempre pergunte:\n- \"o que muda aqui dentro para a condição parar?\""
+    },
+    {
+      "title": "Quando usar cada um (decisão rápida)",
+      "body": "Use for quando:\n- tem começo/fim claro\n- sabe o número de repetições\n\nUse while quando:\n- depende de condição\n- não sabe quantas vezes\n\nUse for...of quando:\n- quer percorrer um array (itens)\n- quer legibilidade\n\nMais pra frente você vai usar map/filter/reduce também, mas primeiro entenda loop raiz."
+    },
+    {
+      "title": "Mini tarefa (15 minutos) — treino de repetição",
+      "body": "Faça no Console:\n\n1) for: imprimir 1 a 10\n\n2) for: somar de 1 a 5\n- crie let soma = 0\n- some dentro do loop\n- no final mostre soma (deve dar 15)\n\n3) for...of: percorrer um array\n- const frutas = ['maçã', 'banana', 'uva']\n- imprima cada fruta\n\n4) break: pare quando achar 'banana'\n\n5) continue: em um loop 1..6, pule o 4\n\nMeta: você tem que explicar por que o break para e por que o continue pula."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Loop = repetição controlada\n- for: início/condição/passo (contador)\n- while: repete enquanto condição for true\n- for...of: percorrer arrays com legibilidade\n- break para o loop; continue pula a rodada\n- cuidado com loop infinito (condição precisa parar)"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 08 (Loops)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Loop serve para:",
+        "options": [
+          { "key": "A", "text": "Repetir ações sem copiar e colar código" },
+          { "key": "B", "text": "Criar CSS automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Loop descreve uma regra de repetição."
+      },
+      {
+        "id": 2,
+        "question": "for é mais indicado quando:",
+        "options": [
+          { "key": "A", "text": "Você sabe o começo e o fim da repetição" },
+          { "key": "B", "text": "Você não sabe quantas vezes vai repetir" }
+        ],
+        "answer": "A",
+        "explain": "for tem contador e limites claros."
+      },
+      {
+        "id": 3,
+        "question": "while repete enquanto:",
+        "options": [
+          { "key": "A", "text": "A condição for true" },
+          { "key": "B", "text": "A condição for false" }
+        ],
+        "answer": "A",
+        "explain": "while depende da condição continuar verdadeira."
+      },
+      {
+        "id": 4,
+        "question": "for...of é usado para:",
+        "options": [
+          { "key": "A", "text": "Percorrer itens de um array de forma simples" },
+          { "key": "B", "text": "Declarar variáveis const" }
+        ],
+        "answer": "A",
+        "explain": "Você pega item por item do array."
+      },
+      {
+        "id": 5,
+        "question": "break faz:",
+        "options": [
+          { "key": "A", "text": "Para o loop imediatamente" },
+          { "key": "B", "text": "Pula só a iteração atual" }
+        ],
+        "answer": "A",
+        "explain": "break encerra o loop."
+      },
+      {
+        "id": 6,
+        "question": "continue faz:",
+        "options": [
+          { "key": "A", "text": "Pula a iteração atual e continua" },
+          { "key": "B", "text": "Encerra o loop" }
+        ],
+        "answer": "A",
+        "explain": "continue não encerra o loop."
+      },
+      {
+        "id": 7,
+        "question": "Um loop infinito acontece quando:",
+        "options": [
+          { "key": "A", "text": "A condição nunca fica false" },
+          { "key": "B", "text": "Você usa console.log" }
+        ],
+        "answer": "A",
+        "explain": "A condição precisa parar em algum momento."
+      },
+      {
+        "id": 8,
+        "question": "No for (let i=1; i<=5; i++), i++ significa:",
+        "options": [
+          { "key": "A", "text": "Somar 1 ao i a cada volta" },
+          { "key": "B", "text": "Multiplicar i por 2" }
+        ],
+        "answer": "A",
+        "explain": "i++ incrementa 1."
+      },
+      {
+        "id": 9,
+        "question": "Para somar números dentro do loop, você geralmente usa:",
+        "options": [
+          { "key": "A", "text": "Uma variável acumuladora (ex.: soma)" },
+          { "key": "B", "text": "Uma tag HTML" }
+        ],
+        "answer": "A",
+        "explain": "Você acumula valores ao longo das iterações."
+      },
+      {
+        "id": 10,
+        "question": "Para percorrer um array sem índice, é melhor:",
+        "options": [
+          { "key": "A", "text": "for...of" },
+          { "key": "B", "text": "switch" }
+        ],
+        "answer": "A",
+        "explain": "for...of é direto e legível."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 08 — modelJs: Loops */\n\n// 1) for: 1 a 10\nfor (let i = 1; i <= 10; i++) {\n  console.log('i:', i);\n}\n\n// 2) somar 1 a 5\nlet soma = 0;\nfor (let i = 1; i <= 5; i++) {\n  soma = soma + i;\n}\nconsole.log('soma 1..5:', soma); // 15\n\n// 3) for...of em array\nconst frutas = ['maçã', 'banana', 'uva'];\nfor (const fruta of frutas) {\n  console.log('fruta:', fruta);\n}\n\n// 4) break ao achar banana\nfor (const fruta of frutas) {\n  if (fruta === 'banana') break;\n  console.log('antes da banana:', fruta);\n}\n\n// 5) continue: pular o 4\nfor (let i = 1; i <= 6; i++) {\n  if (i === 4) continue;\n  console.log('sem o 4:', i);\n}\n"
+  }
+}

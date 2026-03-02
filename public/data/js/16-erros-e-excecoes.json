@@ -1,0 +1,159 @@
+{
+  "id": "16-erros-e-excecoes",
+  "title": "Aula 16 — Erros e exceções (try/catch) + mensagens úteis",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a lidar com falhas sem quebrar tudo.\n\nNo final você vai conseguir:\n1) Entender diferença entre erro e validação\n2) Usar try/catch para capturar erros\n3) Criar mensagens úteis para você e para o usuário\n4) Usar finally quando fizer sentido\n5) Criar funções mais seguras (falham bem)"
+    },
+    {
+      "title": "Erro vs validação (não misture as coisas)",
+      "body": "Dois cenários diferentes:\n\n1) Validação (regra de negócio)\n- usuário digitou vazio\n- senha curta\n- email sem @\n\nIsso NÃO é “erro do sistema”.\nVocê trata com if/else e mensagens amigáveis.\n\n2) Erro (exceção)\n- você tentou acessar algo undefined\n- JSON inválido\n- falha inesperada\n\nIsso pode quebrar o código se você não tratar.\n\nResumo:\n- validação = esperado\n- erro = inesperado (exceção)"
+    },
+    {
+      "title": "try/catch: capturar erro sem derrubar tudo",
+      "body": "Sintaxe:\n\ntry {\n  // código que pode dar erro\n} catch (err) {\n  // o que fazer se der erro\n}\n\nSe der erro dentro do try:\n- o JS pula para o catch\n- err contém informação do erro\n\nVocê usa isso para:\n- mostrar mensagem\n- registrar log\n- impedir que a aplicação morra"
+    },
+    {
+      "title": "Exemplo clássico: chamar método em undefined",
+      "body": "Isso dá erro:\n\nconst usuario = {};\nusuario.nome.trim();\n\nPorque usuario.nome é undefined.\n\nCom try/catch:\n\ntry {\n  const usuario = {};\n  usuario.nome.trim();\n} catch (err) {\n  console.error('Falha ao ler nome:', err.message);\n}\n\nRepara:\n- você não 'corrige' o erro\n- você evita que ele destrua o resto"
+    },
+    {
+      "title": "err.message e stack (o que olhar)",
+      "body": "O objeto err geralmente tem:\n- err.name (tipo do erro)\n- err.message (mensagem)\n- err.stack (rastreamento)\n\nNo começo, foque em:\n- err.message\n\nExemplo:\nconsole.error(err.name, err.message)"
+    },
+    {
+      "title": "finally: roda sempre (use com moderação)",
+      "body": "finally roda:\n- tenha erro ou não\n\nExemplo:\n\ntry {\n  console.log('tentar');\n} catch (err) {\n  console.log('falhou');\n} finally {\n  console.log('sempre roda');\n}\n\nQuando faz sentido?\n- finalizar loading\n- liberar recurso\n- limpar estado\n\nNo browser, você usa muito para 'desligar spinner'."
+    },
+    {
+      "title": "Quando NÃO usar try/catch",
+      "body": "Não use try/catch para esconder bug.\n\nErrado:\ntry { ... } catch { }\n\nIsso cala o erro e você perde a pista.\n\nUse try/catch quando:\n- realmente pode falhar (ex.: JSON.parse)\n- você quer controlar a experiência (mostrar mensagem)\n- você quer evitar crash"
+    },
+    {
+      "title": "Caso real: JSON.parse pode explodir",
+      "body": "JSON.parse('...') quebra se o texto não for JSON válido.\n\nExemplo:\nconst texto = '{\"ok\": true}';\nconst obj = JSON.parse(texto);\n\nMas isso quebra:\nconst textoRuim = '{ ok: true }';\nJSON.parse(textoRuim);\n\nEntão:\n\nfunction parseSeguro(texto) {\n  try {\n    return JSON.parse(texto);\n  } catch (err) {\n    return null;\n  }\n}\n\nAqui você decide:\n- se der erro, devolve null (valor controlado)."
+    },
+    {
+      "title": "Criar erros (throw) para regras importantes",
+      "body": "Às vezes você quer forçar um erro quando algo está inválido para continuar.\n\nfunction dividir(a, b) {\n  if (b === 0) {\n    throw new Error('Divisão por zero não permitida');\n  }\n  return a / b;\n}\n\nAí você usa try/catch onde chama.\n\nIsso é útil quando:\n- a função precisa garantir contrato\n- você quer centralizar a regra"
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — funções seguras",
+      "body": "Faça no Console:\n\n1) parseSeguro(texto)\n- tenta JSON.parse\n- se falhar, retorna null\nTeste com JSON bom e ruim.\n\n2) dividir(a, b)\n- se b === 0, throw new Error(...)\n- senão, retorna a/b\nChame dentro de try/catch e mostre:\n- resultado quando dá certo\n- err.message quando dá erro\n\n3) (extra) mensagem pro usuário\n- no catch, em vez de só console.error, faça:\n  console.log('Ops! Algo deu errado. Tente novamente.')\n\nMeta: você precisa saber dizer:\n- o que é validação\n- o que é exceção\n- por que JSON.parse precisa de try/catch"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Validação é esperado (if/else)\n- Erro/exceção é inesperado (try/catch)\n- try/catch captura erro e evita crash\n- err.message ajuda a entender\n- finally roda sempre (use para limpar)\n- JSON.parse é caso clássico\n- throw cria erro proposital para garantir regra"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 16 (Erros e Exceções)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Validação é:",
+        "options": [
+          { "key": "A", "text": "Checar regras esperadas (ex.: campo vazio) com if/else" },
+          { "key": "B", "text": "Sempre um crash inesperado do JS" }
+        ],
+        "answer": "A",
+        "explain": "Validação é regra do sistema, não falha inesperada."
+      },
+      {
+        "id": 2,
+        "question": "try/catch serve para:",
+        "options": [
+          { "key": "A", "text": "Capturar erros e controlar o que acontece" },
+          { "key": "B", "text": "Acelerar o código" }
+        ],
+        "answer": "A",
+        "explain": "Ele evita que um erro derrube o resto."
+      },
+      {
+        "id": 3,
+        "question": "Se der erro dentro do try, o JS:",
+        "options": [
+          { "key": "A", "text": "Pula para o catch" },
+          { "key": "B", "text": "Ignora e continua normalmente" }
+        ],
+        "answer": "A",
+        "explain": "O fluxo vai direto para o catch."
+      },
+      {
+        "id": 4,
+        "question": "err.message é:",
+        "options": [
+          { "key": "A", "text": "A mensagem do erro" },
+          { "key": "B", "text": "O nome de uma variável" }
+        ],
+        "answer": "A",
+        "explain": "É a descrição do erro."
+      },
+      {
+        "id": 5,
+        "question": "finally:",
+        "options": [
+          { "key": "A", "text": "Roda sempre, com erro ou sem erro" },
+          { "key": "B", "text": "Só roda quando dá erro" }
+        ],
+        "answer": "A",
+        "explain": "É útil para limpar estados."
+      },
+      {
+        "id": 6,
+        "question": "É ruim fazer catch vazio porque:",
+        "options": [
+          { "key": "A", "text": "Você esconde bug e perde informação" },
+          { "key": "B", "text": "Deixa o código mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "Você quer ver/registrar o erro."
+      },
+      {
+        "id": 7,
+        "question": "JSON.parse precisa de try/catch porque:",
+        "options": [
+          { "key": "A", "text": "Ele lança erro se o texto não for JSON válido" },
+          { "key": "B", "text": "Ele sempre retorna null" }
+        ],
+        "answer": "A",
+        "explain": "Texto inválido faz o parse explodir."
+      },
+      {
+        "id": 8,
+        "question": "throw new Error(...) serve para:",
+        "options": [
+          { "key": "A", "text": "Criar um erro proposital quando algo está inválido" },
+          { "key": "B", "text": "Transformar string em number" }
+        ],
+        "answer": "A",
+        "explain": "Você força a falha para garantir regra."
+      },
+      {
+        "id": 9,
+        "question": "Divisão por zero é melhor tratada com:",
+        "options": [
+          { "key": "A", "text": "Validação/erro controlado (if + throw ou if + mensagem)" },
+          { "key": "B", "text": "Ignorar e continuar" }
+        ],
+        "answer": "A",
+        "explain": "Você precisa controlar o resultado."
+      },
+      {
+        "id": 10,
+        "question": "Um bom uso de try/catch é:",
+        "options": [
+          { "key": "A", "text": "Onde algo realmente pode falhar (parse, acesso incerto, etc.)" },
+          { "key": "B", "text": "Em todo lugar só por garantia" }
+        ],
+        "answer": "A",
+        "explain": "Try/catch em tudo pode esconder problemas e virar bagunça."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 16 — modelJs: try/catch, finally, throw */\n\n// 1) JSON.parse seguro\nfunction parseSeguro(texto) {\n  try {\n    return JSON.parse(texto);\n  } catch (err) {\n    console.error('JSON inválido:', err.message);\n    return null;\n  }\n}\n\nconsole.log('parse ok:', parseSeguro('{\"ok\": true}'));\nconsole.log('parse ruim:', parseSeguro('{ ok: true }'));\n\n// 2) Função que lança erro\nfunction dividir(a, b) {\n  if (b === 0) {\n    throw new Error('Divisão por zero não permitida');\n  }\n  return a / b;\n}\n\ntry {\n  console.log('dividir certo:', dividir(10, 2));\n  console.log('dividir errado:', dividir(10, 0));\n} catch (err) {\n  console.log('Ops! Algo deu errado. Tente novamente.');\n  console.error('Detalhe:', err.message);\n} finally {\n  console.log('Finalizou a tentativa de divisão');\n}\n"
+  }
+}

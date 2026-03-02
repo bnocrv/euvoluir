@@ -1,0 +1,159 @@
+{
+  "id": "24-datas-e-tempo",
+  "title": "Aula 24 — Datas (Date) + formatação + casos reais",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a lidar com tempo — que é uma fonte clássica de bug.\n\nNo final você vai conseguir:\n1) Criar datas com Date\n2) Pegar partes (ano, mês, dia, hora)\n3) Entender timestamp (ms desde 1970)\n4) Formatar data para humano (pt-BR)\n5) Fazer casos reais: “quanto tempo passou”, “prazo”, “hoje/amanhã”"
+    },
+    {
+      "title": "Date é um objeto (e guarda um timestamp por trás)",
+      "body": "No JS, Date representa um ponto no tempo.\n\nPor baixo dos panos, Date guarda um número:\n- timestamp em milissegundos desde 01/01/1970 (UTC)\n\nExemplo:\nconst agora = new Date();\n\nagora é um objeto, mas você pode obter o número:\nagora.getTime()\n\nIsso é útil para:\n- comparar datas\n- calcular diferença\n- salvar no storage"
+    },
+    {
+      "title": "Criando datas",
+      "body": "Formas comuns:\n\n1) Agora:\nconst agora = new Date();\n\n2) Por string (cuidado com formato):\nconst d1 = new Date('2026-03-02');\n\n3) Por partes (ano, mês, dia...)\nconst d2 = new Date(2026, 2, 2);\n\nAtenção:\n- no construtor por partes, o mês começa em 0\n  0=jan, 1=fev, 2=mar...\n\nEntão new Date(2026, 2, 2) é 2 de março de 2026."
+    },
+    {
+      "title": "Pegando partes da data (getFullYear, getMonth...)",
+      "body": "Os getters mais usados:\n- getFullYear() → ano\n- getMonth() → mês (0 a 11)\n- getDate() → dia do mês (1 a 31)\n- getDay() → dia da semana (0=dom a 6=sáb)\n- getHours(), getMinutes(), getSeconds()\n\nExemplo:\nconst d = new Date();\nconsole.log(d.getFullYear());\nconsole.log(d.getMonth());\nconsole.log(d.getDate());"
+    },
+    {
+      "title": "Comparar datas: compare timestamps",
+      "body": "Comparar Date direto pode confundir.\nO jeito mais simples:\n- comparar getTime()\n\nExemplo:\nconst a = new Date('2026-03-01');\nconst b = new Date('2026-03-02');\n\nconsole.log(a.getTime() < b.getTime()); // true\n\nVocê também pode usar +a e +b (vira número), mas getTime é mais explícito."
+    },
+    {
+      "title": "Diferença entre datas (quanto tempo passou)",
+      "body": "Diferença em ms:\nconst diffMs = b.getTime() - a.getTime();\n\nConverter:\n- segundos: diffMs / 1000\n- minutos: diffMs / (1000 * 60)\n- horas: diffMs / (1000 * 60 * 60)\n- dias: diffMs / (1000 * 60 * 60 * 24)\n\nNormalmente você arredonda:\n- Math.floor para 'já passou'\n- Math.ceil para 'prazo'\n\nExemplo:\nconst dias = Math.floor(diffMs / 86400000);"
+    },
+    {
+      "title": "Formatar para humano (pt-BR) com Intl",
+      "body": "Você não precisa montar data na mão.\nUse Intl.DateTimeFormat:\n\nconst d = new Date();\nconst formatado = new Intl.DateTimeFormat('pt-BR').format(d);\n\nCom opções:\nconst formatado2 = new Intl.DateTimeFormat('pt-BR', {\n  dateStyle: 'full',\n  timeStyle: 'short'\n}).format(d);\n\nIsso respeita:\n- idioma\n- formato local\n- fuso do navegador"
+    },
+    {
+      "title": "Caso real 1: 'prazo em dias'",
+      "body": "Você quer dizer quantos dias faltam para uma data:\n\nfunction diasAte(dataAlvo) {\n  const agora = new Date();\n  const alvo = new Date(dataAlvo);\n  const diff = alvo.getTime() - agora.getTime();\n  return Math.ceil(diff / 86400000);\n}\n\nSe der negativo, já passou.\n\nIsso é útil para:\n- vencimento\n- entrega\n- lembretes"
+    },
+    {
+      "title": "Caso real 2: 'hoje/amanhã' (bem simples)",
+      "body": "Uma forma simples de comparar dias é zerar o horário.\n\nfunction soData(d) {\n  const x = new Date(d);\n  x.setHours(0, 0, 0, 0);\n  return x.getTime();\n}\n\nconst hoje = soData(new Date());\nconst amanha = soData(new Date(Date.now() + 86400000));\n\nSe você receber uma data, compara soData(data) com hoje/amanha."
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — datas úteis",
+      "body": "Faça no Console:\n\n1) Crie const agora = new Date()\n- mostre agora\n- mostre agora.getTime()\n\n2) Crie uma data de aniversário fictícia:\n- new Date(2026, 11, 25) (25 de dezembro de 2026)\n- mostre ano/mês/dia\n\n3) Diferença em dias:\n- entre hoje e essa data (use Math.ceil)\n\n4) Formate a data atual:\n- Intl.DateTimeFormat('pt-BR', { dateStyle:'full', timeStyle:'short' }).format(agora)\n\n5) Extra:\n- faça uma função diasAte('YYYY-MM-DD') e teste com uma data próxima\n\nMeta: você tem que explicar:\n- por que mês começa em 0 no construtor\n- por que a gente usa ms para comparar"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Date guarda timestamp (ms desde 1970)\n- new Date() cria agora\n- new Date(ano, mes0, dia) tem mês começando em 0\n- compare datas usando getTime()\n- diferença em ms e conversões para dias\n- formatação com Intl.DateTimeFormat (pt-BR)\n- casos reais: dias até prazo, hoje/amanhã"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 24 (Datas)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Date no JS representa:",
+        "options": [
+          { "key": "A", "text": "Um ponto no tempo (com timestamp por trás)" },
+          { "key": "B", "text": "Um array de números" }
+        ],
+        "answer": "A",
+        "explain": "Date guarda ms desde 1970 internamente."
+      },
+      {
+        "id": 2,
+        "question": "getTime() retorna:",
+        "options": [
+          { "key": "A", "text": "Timestamp em milissegundos" },
+          { "key": "B", "text": "O mês em texto" }
+        ],
+        "answer": "A",
+        "explain": "É o número base para comparar."
+      },
+      {
+        "id": 3,
+        "question": "No construtor new Date(ano, mes, dia), o mês começa em:",
+        "options": [
+          { "key": "A", "text": "0 (jan) até 11 (dez)" },
+          { "key": "B", "text": "1 (jan) até 12 (dez)" }
+        ],
+        "answer": "A",
+        "explain": "É uma pegadinha clássica."
+      },
+      {
+        "id": 4,
+        "question": "Para comparar datas, o jeito mais simples é:",
+        "options": [
+          { "key": "A", "text": "Comparar timestamps (getTime)" },
+          { "key": "B", "text": "Comparar strings sempre" }
+        ],
+        "answer": "A",
+        "explain": "Número é mais direto e confiável."
+      },
+      {
+        "id": 5,
+        "question": "Diferença entre datas em ms é:",
+        "options": [
+          { "key": "A", "text": "b.getTime() - a.getTime()" },
+          { "key": "B", "text": "a.getMonth() + b.getMonth()" }
+        ],
+        "answer": "A",
+        "explain": "Subtração de timestamps."
+      },
+      {
+        "id": 6,
+        "question": "Para transformar ms em dias, você divide por:",
+        "options": [
+          { "key": "A", "text": "86400000" },
+          { "key": "B", "text": "1000" }
+        ],
+        "answer": "A",
+        "explain": "1000*60*60*24."
+      },
+      {
+        "id": 7,
+        "question": "Intl.DateTimeFormat é usado para:",
+        "options": [
+          { "key": "A", "text": "Formatar datas respeitando idioma/país" },
+          { "key": "B", "text": "Criar arrays de datas" }
+        ],
+        "answer": "A",
+        "explain": "Ele formata no padrão local."
+      },
+      {
+        "id": 8,
+        "question": "Math.ceil em dias até prazo é útil porque:",
+        "options": [
+          { "key": "A", "text": "Arredonda para cima (ainda falta um pouco → conta como 1 dia)" },
+          { "key": "B", "text": "Sempre devolve 0" }
+        ],
+        "answer": "A",
+        "explain": "Para prazos, ceil costuma ser mais intuitivo."
+      },
+      {
+        "id": 9,
+        "question": "Zerar horário (setHours(0,0,0,0)) ajuda a:",
+        "options": [
+          { "key": "A", "text": "Comparar só a data (ignorar horas)" },
+          { "key": "B", "text": "Apagar o objeto Date" }
+        ],
+        "answer": "A",
+        "explain": "Você compara dias, não instantes."
+      },
+      {
+        "id": 10,
+        "question": "Um timestamp é bom para salvar porque:",
+        "options": [
+          { "key": "A", "text": "É um número fácil de comparar e persistir" },
+          { "key": "B", "text": "É sempre mais bonito para o usuário" }
+        ],
+        "answer": "A",
+        "explain": "Usuário quer formato; sistema quer número."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 24 — modelJs: Datas */\n\nconst agora = new Date();\nconsole.log('agora:', agora);\nconsole.log('timestamp(ms):', agora.getTime());\n\n// 25 de dezembro de 2026 (mês 11 = dezembro)\nconst natal2026 = new Date(2026, 11, 25);\nconsole.log('natal2026:', natal2026);\nconsole.log('ano:', natal2026.getFullYear());\nconsole.log('mes (0-11):', natal2026.getMonth());\nconsole.log('dia:', natal2026.getDate());\n\n// diferença em dias\nconst diffMs = natal2026.getTime() - agora.getTime();\nconst dias = Math.ceil(diffMs / 86400000);\nconsole.log('dias até natal 2026:', dias);\n\n// formatação pt-BR\nconst formatado = new Intl.DateTimeFormat('pt-BR', {\n  dateStyle: 'full',\n  timeStyle: 'short'\n}).format(agora);\nconsole.log('formatado:', formatado);\n\n// função diasAte\nfunction diasAte(dataIso) {\n  const alvo = new Date(dataIso);\n  const diff = alvo.getTime() - Date.now();\n  return Math.ceil(diff / 86400000);\n}\n\nconsole.log('dias até 2026-03-10:', diasAte('2026-03-10'));\n"
+  }
+}

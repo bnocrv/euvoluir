@@ -1,0 +1,155 @@
+{
+  "id": "21-eventos-2",
+  "title": "Aula 21 — Eventos 2: event bubbling/capturing e delegation",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender por que eventos às vezes parecem “misteriosos”.\n\nNo final você vai conseguir:\n1) Entender event bubbling (borbulhamento)\n2) Entender capturing (captura) e quando isso importa\n3) Usar stopPropagation com consciência\n4) Fazer event delegation (delegação) para listas dinâmicas\n\nIsso é MUITO usado em listas: todo, cards, tabelas, menus."
+    },
+    {
+      "title": "Bubbling: o evento sobe pela árvore",
+      "body": "Quando você clica em um botão dentro de uma div:\n- o click acontece no botão\n- e depois “sobe” para o pai\n- e depois para o pai do pai… até o document\n\nIsso se chama bubbling (borbulhamento).\n\nPor isso às vezes:\n- você clica num item\n- e o listener do container também dispara\n\nIsso não é bug, é como o DOM funciona."
+    },
+    {
+      "title": "Capturing: o evento desce antes de subir",
+      "body": "A fase de captura (capturing) é o caminho inverso:\n- começa no topo (document)\n- desce até o alvo\n\nDepois disso, vem a fase normal (bubbling), subindo de volta.\n\nNa prática, você quase sempre usa bubbling.\nCapturing é usado quando você quer interceptar antes.\n\nPara ativar capturing no listener:\naddEventListener('click', handler, true)\n\nMas no dia a dia, você quase sempre deixa o terceiro parâmetro como padrão (false)."
+    },
+    {
+      "title": "event.target vs event.currentTarget (diferença MUITO importante)",
+      "body": "Isso resolve muita confusão.\n\n- event.target: o elemento REAL que foi clicado\n  (o alvo original)\n\n- event.currentTarget: o elemento que está executando o listener\n  (onde o listener foi colocado)\n\nExemplo:\nVocê colocou listener na UL, mas clicou no LI.\n- target = LI\n- currentTarget = UL\n\nEsse detalhe é a base da delegação."
+    },
+    {
+      "title": "stopPropagation: cortar a subida (use com cuidado)",
+      "body": "Se você quer impedir que o evento suba:\n\nbtn.addEventListener('click', (e) => {\n  e.stopPropagation();\n});\n\nUse quando:\n- você realmente precisa evitar que o container reaja\n\nEvite usar sem entender, porque:\n- você pode quebrar outros comportamentos da página.\n\nRegra:\n- prefira resolver com lógica (checagens) e delegation\n- use stopPropagation como último recurso."
+    },
+    {
+      "title": "Delegation: 1 listener para muitos itens",
+      "body": "Problema real:\n- você tem 100 itens em uma lista\n- colocar 100 listeners é chato e pesado\n- e itens podem ser criados depois (dinâmicos)\n\nSolução: delegation.\n\nVocê coloca UM listener no pai:\n- ul.addEventListener('click', ...)\n\nE dentro você descobre qual item foi clicado usando event.target.\n\nIsso funciona POR CAUSA do bubbling."
+    },
+    {
+      "title": "Delegation com dataset (combo perfeito)",
+      "body": "Você marca cada item com data-id:\n<li class=\"item\" data-id=\"3\">Item</li>\n\nNo listener do pai:\n- pega o elemento clicado\n- sobe até o item certo (se clicar num filho)\n- lê dataset.id\n\nPara subir até o item certo, use:\n- e.target.closest('.item')\n\nclosest procura o elemento mais próximo para cima que bate com o seletor.\nIsso é MUITO útil."
+    },
+    {
+      "title": "Mini laboratório: HTML para treinar",
+      "body": "Crie:\n\n<ul id=\"lista\">\n  <li class=\"item\" data-id=\"1\">Tarefa 1 <button class=\"del\">X</button></li>\n  <li class=\"item\" data-id=\"2\">Tarefa 2 <button class=\"del\">X</button></li>\n  <li class=\"item\" data-id=\"3\">Tarefa 3 <button class=\"del\">X</button></li>\n</ul>\n\nA ideia:\n- clicou no LI: mostrar o data-id\n- clicou no botão X: remover o item\n\nSem colocar listener em cada li ou cada botão."
+    },
+    {
+      "title": "Mini tarefa (25 minutos) — lista com delegação",
+      "body": "Com o HTML acima:\n\n1) Selecione a UL:\n- const lista = document.querySelector('#lista')\n\n2) Adicione UM listener de click na UL.\n\n3) Dentro do handler:\n- descubra qual .item foi clicado usando closest('.item')\n- se não existir item, return\n\n4) Se o clique veio no botão .del:\n- remova o item (item.remove())\n\n5) Senão:\n- mostre no console: 'clicou no item id X'\n\nMeta: você tem que explicar:\n- por que isso funciona (bubbling)\n- diferença entre target e currentTarget\n- por que closest ajuda"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Bubbling: evento sobe na árvore\n- Capturing: evento desce antes (raro)\n- target = onde clicou; currentTarget = onde está o listener\n- stopPropagation corta a propagação (use com cuidado)\n- Delegation: 1 listener no pai para vários itens\n- closest + dataset = combo para listas dinâmicas"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 21 (Bubbling e Delegation)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Bubbling significa que o evento:",
+        "options": [
+          { "key": "A", "text": "Sobe do alvo para os pais na árvore DOM" },
+          { "key": "B", "text": "Desce do document para o alvo e para aí" }
+        ],
+        "answer": "A",
+        "explain": "No bubbling, ele vai do elemento clicado para cima."
+      },
+      {
+        "id": 2,
+        "question": "Capturing é a fase em que o evento:",
+        "options": [
+          { "key": "A", "text": "Desce do topo até o alvo (antes do bubbling)" },
+          { "key": "B", "text": "Nunca acontece no navegador" }
+        ],
+        "answer": "A",
+        "explain": "Existe, mas é menos usada."
+      },
+      {
+        "id": 3,
+        "question": "event.target é:",
+        "options": [
+          { "key": "A", "text": "O elemento real onde o evento aconteceu" },
+          { "key": "B", "text": "O elemento onde o listener foi colocado" }
+        ],
+        "answer": "A",
+        "explain": "O alvo original."
+      },
+      {
+        "id": 4,
+        "question": "event.currentTarget é:",
+        "options": [
+          { "key": "A", "text": "O elemento que está executando o listener" },
+          { "key": "B", "text": "Sempre o elemento clicado" }
+        ],
+        "answer": "A",
+        "explain": "Pode ser diferente do target."
+      },
+      {
+        "id": 5,
+        "question": "Delegation funciona porque:",
+        "options": [
+          { "key": "A", "text": "O evento borbulha até o pai (bubbling)" },
+          { "key": "B", "text": "O JS adivinha o item clicado" }
+        ],
+        "answer": "A",
+        "explain": "O pai recebe o evento que subiu."
+      },
+      {
+        "id": 6,
+        "question": "closest('.item') serve para:",
+        "options": [
+          { "key": "A", "text": "Achar o elemento mais próximo acima que bate com o seletor" },
+          { "key": "B", "text": "Criar um novo elemento" }
+        ],
+        "answer": "A",
+        "explain": "Ele “sobe” no DOM até achar."
+      },
+      {
+        "id": 7,
+        "question": "stopPropagation:",
+        "options": [
+          { "key": "A", "text": "Impede o evento de continuar subindo" },
+          { "key": "B", "text": "Impede o clique de acontecer" }
+        ],
+        "answer": "A",
+        "explain": "Corta a propagação para os pais."
+      },
+      {
+        "id": 8,
+        "question": "Melhor prática em listas grandes/dinâmicas:",
+        "options": [
+          { "key": "A", "text": "Um listener no pai (delegation)" },
+          { "key": "B", "text": "Um listener em cada item sempre" }
+        ],
+        "answer": "A",
+        "explain": "Mais leve e funciona com itens novos."
+      },
+      {
+        "id": 9,
+        "question": "dataset é útil na delegation porque:",
+        "options": [
+          { "key": "A", "text": "Permite identificar itens (data-id) sem gambiarra" },
+          { "key": "B", "text": "Deixa o CSS mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "Você guarda info no HTML e lê no JS."
+      },
+      {
+        "id": 10,
+        "question": "Capturing no addEventListener é ativado quando:",
+        "options": [
+          { "key": "A", "text": "Você passa true como terceiro parâmetro" },
+          { "key": "B", "text": "Você usa querySelectorAll" }
+        ],
+        "answer": "A",
+        "explain": "addEventListener('click', fn, true)."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 21 — modelJs: Delegation com closest + dataset */\n\nconst lista = document.querySelector('#lista');\n\nif (lista) {\n  lista.addEventListener('click', (e) => {\n    // acha o LI mais próximo\n    const item = e.target.closest('.item');\n    if (!item) return;\n\n    // se clicou no botão X\n    if (e.target.classList.contains('del')) {\n      item.remove();\n      return;\n    }\n\n    console.log('clicou no item id', item.dataset.id);\n    // target vs currentTarget (debug)\n    // console.log('target:', e.target);\n    // console.log('currentTarget:', e.currentTarget);\n  });\n}\n"
+  }
+}

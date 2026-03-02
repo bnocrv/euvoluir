@@ -1,0 +1,159 @@
+{
+  "id": "40-acessibilidade-front",
+  "title": "Aula 40 — Acessibilidade no front: foco, teclado, ARIA e UX real",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender acessibilidade (a11y) na prática, do jeito que realmente melhora seu app.\n\nNo final você vai conseguir:\n1) Entender por que acessibilidade é obrigatória (usuário real)\n2) Garantir navegação por teclado (Tab/Enter/Escape)\n3) Trabalhar com foco (focus, focus-visible)\n4) Usar atributos ARIA básicos quando necessário\n5) Fazer um mini componente acessível (modal simples)\n\nA11y não é “extra”. É parte de qualidade."
+    },
+    {
+      "title": "A ideia central: seu app precisa funcionar sem mouse",
+      "body": "Se alguém usar:\n- teclado\n- leitor de tela\n- navegação por voz\n\nSeu app ainda precisa funcionar.\n\nChecklist mínimo:\n- dá para chegar em tudo com Tab?\n- dá para ativar com Enter/Espaço?\n- o foco é visível?\n- o usuário entende o que está acontecendo?"
+    },
+    {
+      "title": "Semântica vem antes de ARIA",
+      "body": "Regra de ouro:\n- primeiro use HTML certo\n- depois, se faltar, use ARIA\n\nExemplos:\n- use <button> para botões (não div)\n- use <a> para links\n- use <label> + input\n\nSe você usa div como botão:\n- teclado não funciona direito\n- leitor de tela não entende\n\nEntão: semântica resolve 80%."
+    },
+    {
+      "title": "Foco: a 'seta' do teclado",
+      "body": "Quem navega por teclado precisa ver onde está.\n\nCSS mínimo:\n.btn:focus-visible,\n.input:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\nPor que focus-visible?\n- mostra outline para teclado\n- não fica aparecendo para todo clique de mouse\n\nNunca faça:\noutline: none;\nsem colocar uma alternativa.\nIsso quebra teclado."
+    },
+    {
+      "title": "Teclas essenciais (padrão de UI)",
+      "body": "Padrões comuns:\n\n- Enter/Espaço ativa botão\n- Escape fecha modal\n- Tab navega\n- Shift+Tab volta\n\nSe você cria componente custom:\n- você precisa garantir essas teclas\n\nSe você usa elementos semânticos (<button>, <input>),\n- o navegador já te dá muita coisa pronta."
+    },
+    {
+      "title": "ARIA básico (quando precisa)",
+      "body": "ARIA ajuda leitores de tela quando o HTML não descreve o suficiente.\n\nTrês coisas úteis:\n\n1) aria-label\n- quando o botão não tem texto\n<button aria-label=\"Fechar\">X</button>\n\n2) aria-expanded\n- para menus/accordions\n<button aria-expanded=\"true\">Menu</button>\n\n3) role + aria-modal (em modal)\n<div role=\"dialog\" aria-modal=\"true\">...\n\nRegra:\n- ARIA não conserta semântica errada.\n- Ele complementa."
+    },
+    {
+      "title": "Modal acessível (o mínimo real)",
+      "body": "Um modal acessível precisa:\n\n1) Foco ir para dentro quando abrir\n2) Ter botão fechar (e Escape fechar)\n3) Voltar foco para o botão que abriu\n4) Bloquear scroll (opcional)\n\nBônus avançado:\n- 'focus trap' (não deixar Tab sair do modal)\nHoje faremos o mínimo, mas já com foco correto."
+    },
+    {
+      "title": "Mini laboratório: HTML do modal",
+      "body": "Crie:\n\n<button id=\"open\" class=\"btn primary\">Abrir modal</button>\n\n<div id=\"overlay\" hidden>\n  <div id=\"modal\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"titulo-modal\" class=\"card\">\n    <div class=\"card-inner stack\">\n      <h2 id=\"titulo-modal\">Título do modal</h2>\n      <p class=\"muted\">Conteúdo...</p>\n      <button id=\"close\" class=\"btn ghost\" aria-label=\"Fechar modal\">Fechar</button>\n    </div>\n  </div>\n</div>\n\nCSS mínimo:\n#overlay { position: fixed; inset: 0; display: grid; place-items: center; }\n#overlay[hidden] { display: none; }\n"
+    },
+    {
+      "title": "JS do modal (foco + Escape + voltar foco)",
+      "body": "Pontos:\n- guardar quem abriu (openBtn)\n- ao abrir, remover hidden e focar no botão fechar\n- ao fechar, voltar foco para open\n- escutar Escape\n\nIsso já cria UX real para teclado."
+    },
+    {
+      "title": "Mini tarefa (30 minutos) — modal acessível mínimo",
+      "body": "Implemente:\n\n1) Clique em Abrir → mostra modal e foca no botão Fechar\n\n2) Clique em Fechar → esconde modal e volta foco para Abrir\n\n3) Pressionar Escape → fecha modal\n\n4) Extra:\n- clique fora do modal (overlay) fecha\n\nMeta: teste usando só teclado:\n- Tab até Abrir\n- Enter para abrir\n- foco já vai para Fechar\n- Escape fecha\n- foco volta para Abrir\n\nSe isso funciona, você fez a base da acessibilidade."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- A11y começa com teclado (sem mouse)\n- Semântica HTML resolve muito\n- Foco visível (focus-visible) é obrigatório\n- ARIA complementa quando necessário\n- Modal acessível: foco entra, Escape fecha, foco volta"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 40 (Acessibilidade)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Acessibilidade importa porque:",
+        "options": [
+          { "key": "A", "text": "Usuários reais dependem de teclado/leitor de tela" },
+          { "key": "B", "text": "Só serve para enfeite" }
+        ],
+        "answer": "A",
+        "explain": "É qualidade e inclusão."
+      },
+      {
+        "id": 2,
+        "question": "Regra: antes de ARIA, use:",
+        "options": [
+          { "key": "A", "text": "HTML semântico correto (button, label, etc.)" },
+          { "key": "B", "text": "Div para tudo" }
+        ],
+        "answer": "A",
+        "explain": "Semântica resolve muito."
+      },
+      {
+        "id": 3,
+        "question": "Foco visível é essencial para:",
+        "options": [
+          { "key": "A", "text": "Navegação por teclado" },
+          { "key": "B", "text": "Aumentar FPS do jogo" }
+        ],
+        "answer": "A",
+        "explain": "Sem foco, usuário se perde."
+      },
+      {
+        "id": 4,
+        "question": "outline: none sem alternativa:",
+        "options": [
+          { "key": "A", "text": "Quebra acessibilidade" },
+          { "key": "B", "text": "É recomendado sempre" }
+        ],
+        "answer": "A",
+        "explain": "Você remove o indicador do teclado."
+      },
+      {
+        "id": 5,
+        "question": "focus-visible é útil porque:",
+        "options": [
+          { "key": "A", "text": "Mostra foco principalmente para teclado" },
+          { "key": "B", "text": "Transforma HTML em JSON" }
+        ],
+        "answer": "A",
+        "explain": "Melhora UX sem poluir para mouse."
+      },
+      {
+        "id": 6,
+        "question": "Escape geralmente serve para:",
+        "options": [
+          { "key": "A", "text": "Fechar modal/menus" },
+          { "key": "B", "text": "Salvar formulário" }
+        ],
+        "answer": "A",
+        "explain": "Padrão de interface."
+      },
+      {
+        "id": 7,
+        "question": "aria-label é útil quando:",
+        "options": [
+          { "key": "A", "text": "O botão não tem texto claro, só ícone" },
+          { "key": "B", "text": "Você quer mudar a cor do botão" }
+        ],
+        "answer": "A",
+        "explain": "Ajuda leitor de tela."
+      },
+      {
+        "id": 8,
+        "question": "Um modal acessível mínimo precisa:",
+        "options": [
+          { "key": "A", "text": "Foco entrar, poder fechar com Escape e voltar foco" },
+          { "key": "B", "text": "Apenas ficar bonito" }
+        ],
+        "answer": "A",
+        "explain": "Teclado precisa funcionar."
+      },
+      {
+        "id": 9,
+        "question": "Usar <button> em vez de div ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Teclado e acessibilidade já vêm prontos" },
+          { "key": "B", "text": "Faz fetch mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "Elemento semântico traz comportamento."
+      },
+      {
+        "id": 10,
+        "question": "ARIA:",
+        "options": [
+          { "key": "A", "text": "Complementa semântica, não conserta tudo sozinho" },
+          { "key": "B", "text": "Substitui HTML semântico" }
+        ],
+        "answer": "A",
+        "explain": "Semântica primeiro."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 40 — modelJs: modal acessível mínimo (foco + Escape) */\n\nconst openBtn = document.querySelector('#open');\nconst overlay = document.querySelector('#overlay');\nconst closeBtn = document.querySelector('#close');\nconst modal = document.querySelector('#modal');\n\nlet lastFocus = null;\n\nfunction abrirModal() {\n  if (!overlay || !closeBtn) return;\n  lastFocus = document.activeElement;\n  overlay.hidden = false;\n  closeBtn.focus();\n}\n\nfunction fecharModal() {\n  if (!overlay) return;\n  overlay.hidden = true;\n  if (lastFocus && typeof lastFocus.focus === 'function') {\n    lastFocus.focus();\n  } else if (openBtn) {\n    openBtn.focus();\n  }\n}\n\nif (openBtn) openBtn.addEventListener('click', abrirModal);\nif (closeBtn) closeBtn.addEventListener('click', fecharModal);\n\n// Escape fecha\ndocument.addEventListener('keydown', (e) => {\n  if (e.key === 'Escape' && overlay && !overlay.hidden) {\n    fecharModal();\n  }\n});\n\n// Extra: clique fora do modal fecha\nif (overlay) {\n  overlay.addEventListener('click', (e) => {\n    if (modal && !modal.contains(e.target)) {\n      fecharModal();\n    }\n  });\n}\n"
+  }
+}

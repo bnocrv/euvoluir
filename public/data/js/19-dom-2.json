@@ -1,0 +1,155 @@
+{
+  "id": "19-dom-2",
+  "title": "Aula 19 — DOM 2: classes, atributos, estilos e dataset",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai aprender a mexer no 'visual' e no 'estado' dos elementos via JavaScript.\n\nNo final você vai conseguir:\n1) Adicionar/remover/trocar classes (classList)\n2) Ler/alterar atributos (getAttribute/setAttribute)\n3) Alterar estilos inline (style) sem bagunçar\n4) Usar dataset (data-*) para guardar informações no HTML\n5) Fazer um mini exercício de “toggle” (liga/desliga)"
+    },
+    {
+      "title": "Por que classe é melhor do que style direto",
+      "body": "Regra profissional:\n- JS controla estado\n- CSS controla aparência\n\nEntão, em vez de fazer:\nel.style.background = 'red'\n\nVocê prefere:\n- adicionar uma classe\n- e a classe tem o CSS\n\nExemplo:\n.el { }\n.el.ativo { background: ... }\n\nIsso deixa o projeto:\n- escalável\n- consistente\n- fácil de manter"
+    },
+    {
+      "title": "classList: o controle de classes (o jeito certo)",
+      "body": "Todo elemento tem classList.\n\nPrincipais métodos:\n\n1) add\n- el.classList.add('ativo')\n\n2) remove\n- el.classList.remove('ativo')\n\n3) toggle (liga/desliga)\n- el.classList.toggle('ativo')\n\n4) contains (tem ou não tem?)\n- el.classList.contains('ativo')\n\ntoggle é perfeito para:\n- menu hambúrguer\n- modal\n- tema dark\n- expandir/colapsar"
+    },
+    {
+      "title": "Atributos: getAttribute e setAttribute",
+      "body": "Atributo é coisa do HTML:\n- id\n- href\n- src\n- disabled\n- aria-label\n\nVocê lê com:\n- el.getAttribute('href')\n\nVocê define com:\n- el.setAttribute('href', 'https://...')\n\nVocê remove com:\n- el.removeAttribute('disabled')\n\nObs:\n- Para alguns atributos comuns existe propriedade direta (ex.: el.disabled = true)\n- Mas get/setAttribute funciona para qualquer atributo."
+    },
+    {
+      "title": "Atributos booleanos (disabled, checked, hidden)",
+      "body": "Alguns atributos funcionam assim:\n- se existe, é true\n- se não existe, é false\n\nExemplo:\n<input disabled>\n\nNo JS:\n- input.disabled = true\n- input.disabled = false\n\nOu via atributo:\n- setAttribute('disabled','')\n- removeAttribute('disabled')\n\nNo dia a dia, prefira a propriedade:\n- el.disabled = true/false"
+    },
+    {
+      "title": "style: estilo inline (use com moderação)",
+      "body": "Você pode alterar estilo direto:\n- el.style.color = 'red'\n- el.style.padding = '10px'\n\nMas cuidado:\n- você cria regras espalhadas\n- dificulta manutenção\n\nQuando faz sentido:\n- valores calculados (ex.: largura baseada em número)\n- animações simples com transform\n\nRegra:\n- se for aparência padrão, use classe.\n- se for valor dinâmico, style pode ajudar."
+    },
+    {
+      "title": "dataset: data-* para guardar dados no HTML",
+      "body": "Você pode colocar no HTML:\n<button data-id=\"42\" data-role=\"delete\">Apagar</button>\n\nNo JS:\nconst btn = document.querySelector('button');\nconsole.log(btn.dataset.id);   // '42'\nconsole.log(btn.dataset.role); // 'delete'\n\nRegras:\n- data-qualquer-coisa vira dataset.qualquerCoisa (camelCase)\n\nExemplo:\ndata-user-id → dataset.userId\n\nIsso é MUITO usado para:\n- identificar itens em listas\n- botões de editar/apagar\n- associar dados sem inventar id maluco"
+    },
+    {
+      "title": "Laboratório: HTML para treinar",
+      "body": "Crie um arquivo HTML simples:\n\n<body>\n  <h1 id=\"titulo\" class=\"title\">Painel</h1>\n\n  <button id=\"toggle\" class=\"btn\" data-mode=\"off\">Alternar</button>\n\n  <div id=\"card\" class=\"card\" data-id=\"99\">\n    <p class=\"msg\">Estado: OFF</p>\n  </div>\n</body>\n\nNo seu CSS, crie:\n.card { padding: 12px; border: 1px solid #ccc; }\n.card.ativo { border-color: green; }\n\nHoje você vai trocar classe e atributos via console."
+    },
+    {
+      "title": "Mini tarefa (20 minutos) — toggle manual pelo Console",
+      "body": "Com o HTML acima aberto, faça no Console:\n\n1) Selecione:\n- const btn = document.querySelector('#toggle')\n- const card = document.querySelector('#card')\n- const msg = document.querySelector('.msg')\n\n2) Toggle de classe:\n- card.classList.toggle('ativo')\n\n3) Dataset:\n- veja btn.dataset.mode\n- troque para 'on' e depois 'off'\n\n4) Atualize o texto:\n- msg.textContent = 'Estado: ON' ou 'Estado: OFF'\n\n5) Extra:\n- use card.getAttribute('data-id') e mostre no console\n\nMeta: você tem que explicar a diferença entre:\n- classe (estado visual)\n- atributo (informação no HTML)\n- dataset (atalho para data-*)"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Preferir classes para aparência (CSS manda)\n- classList: add/remove/toggle/contains\n- atributos: getAttribute/setAttribute/removeAttribute\n- style inline só quando valor é dinâmico\n- dataset acessa data-* (ótimo para listas e ids)"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 19 (Classes e Atributos)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Boa prática no front é:",
+        "options": [
+          { "key": "A", "text": "JS controlar estado e CSS controlar aparência via classes" },
+          { "key": "B", "text": "Fazer toda aparência só com el.style em todo lugar" }
+        ],
+        "answer": "A",
+        "explain": "Classes deixam o projeto escalável."
+      },
+      {
+        "id": 2,
+        "question": "classList.toggle('ativo') faz:",
+        "options": [
+          { "key": "A", "text": "Liga/desliga a classe 'ativo'" },
+          { "key": "B", "text": "Remove todas as classes" }
+        ],
+        "answer": "A",
+        "explain": "Se tem, remove; se não tem, adiciona."
+      },
+      {
+        "id": 3,
+        "question": "classList.contains('x') retorna:",
+        "options": [
+          { "key": "A", "text": "true/false" },
+          { "key": "B", "text": "O texto do elemento" }
+        ],
+        "answer": "A",
+        "explain": "É uma checagem."
+      },
+      {
+        "id": 4,
+        "question": "Para ler um atributo qualquer, você usa:",
+        "options": [
+          { "key": "A", "text": "getAttribute" },
+          { "key": "B", "text": "JSON.parse" }
+        ],
+        "answer": "A",
+        "explain": "Atributos são do HTML."
+      },
+      {
+        "id": 5,
+        "question": "dataset serve para:",
+        "options": [
+          { "key": "A", "text": "Acessar data-* (informações no HTML) com facilidade" },
+          { "key": "B", "text": "Criar CSS automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "data-* vira dataset.*."
+      },
+      {
+        "id": 6,
+        "question": "data-user-id no HTML vira no JS:",
+        "options": [
+          { "key": "A", "text": "dataset.userId" },
+          { "key": "B", "text": "dataset.user-id" }
+        ],
+        "answer": "A",
+        "explain": "Vira camelCase."
+      },
+      {
+        "id": 7,
+        "question": "Alterar style inline é melhor quando:",
+        "options": [
+          { "key": "A", "text": "O valor é dinâmico/calculado" },
+          { "key": "B", "text": "Você quer padronizar o site inteiro" }
+        ],
+        "answer": "A",
+        "explain": "Para padronizar, use classes."
+      },
+      {
+        "id": 8,
+        "question": "Atributos booleanos como disabled funcionam como:",
+        "options": [
+          { "key": "A", "text": "Se existe no HTML, é true; se não, é false" },
+          { "key": "B", "text": "Sempre precisam de valor 'true'/'false' no HTML" }
+        ],
+        "answer": "A",
+        "explain": "Só a presença já significa ativo."
+      },
+      {
+        "id": 9,
+        "question": "Para remover um atributo do elemento:",
+        "options": [
+          { "key": "A", "text": "removeAttribute('nome')" },
+          { "key": "B", "text": "classList.remove('nome')" }
+        ],
+        "answer": "A",
+        "explain": "Uma coisa remove atributo, outra remove classe."
+      },
+      {
+        "id": 10,
+        "question": "Diferença básica: classe vs atributo é:",
+        "options": [
+          { "key": "A", "text": "Classe geralmente controla visual/estado; atributo guarda informação/configuração" },
+          { "key": "B", "text": "Não existe diferença" }
+        ],
+        "answer": "A",
+        "explain": "São conceitos diferentes, usados juntos."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 19 — modelJs: classList, atributos, dataset */\n\nconst btn = document.querySelector('#toggle');\nconst card = document.querySelector('#card');\nconst msg = document.querySelector('.msg');\n\nif (btn && card && msg) {\n  // 1) Toggle visual\n  card.classList.toggle('ativo');\n\n  // 2) Dataset: ler e trocar\n  const atual = btn.dataset.mode; // 'off' ou 'on'\n  const novo = atual === 'off' ? 'on' : 'off';\n  btn.dataset.mode = novo;\n\n  // 3) Atualizar texto\n  msg.textContent = `Estado: ${novo.toUpperCase()}`;\n\n  // 4) Ler atributo data-id do card\n  console.log('card data-id:', card.getAttribute('data-id'));\n}\n"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "10-funcoes-2",
+  "title": "Aula 10 — Funções 2: arrow function + escopo",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Hoje você vai evoluir funções com dois temas que aparecem o tempo todo:\n\n1) Arrow functions (função flecha)\n2) Escopo (onde a variável existe)\n\nNo final você vai conseguir:\n- escrever funções no formato arrow\n- entender quando usar function vs arrow\n- entender escopo global, de função e de bloco\n- evitar bugs tipo “por que essa variável não existe aqui?”"
+    },
+    {
+      "title": "Arrow function: a forma curta de escrever função",
+      "body": "A mesma função pode ser escrita de jeitos diferentes.\n\nForma clássica:\nfunction somar(a, b) {\n  return a + b;\n}\n\nForma arrow:\nconst somar = (a, b) => {\n  return a + b;\n};\n\nO que muda?\n- arrow é mais curto\n- geralmente usado para funções pequenas\n- muito comum em callbacks (map/filter/etc.)"
+    },
+    {
+      "title": "Arrow: retorno implícito (quando é 1 linha)",
+      "body": "Se a função tem UMA expressão, você pode omitir { } e return:\n\nconst dobrar = (n) => n * 2;\n\nIsso é igual a:\nconst dobrar = (n) => {\n  return n * 2;\n};\n\nRegras:\n- só funciona quando é uma expressão única\n- se tiver várias linhas, use { } e return"
+    },
+    {
+      "title": "Parênteses nos parâmetros (atalhos)",
+      "body": "Se tiver 1 parâmetro, pode tirar os parênteses:\n\nconst gritar = texto => texto.toUpperCase();\n\nSe tiver 0 ou 2+, precisa de parênteses:\n\nconst agora = () => Date.now();\nconst somar = (a, b) => a + b;"
+    },
+    {
+      "title": "Escopo: onde a variável 'vive'",
+      "body": "Escopo é o 'território' onde uma variável pode ser usada.\n\nTrês ideias principais:\n\n1) Escopo global\n- variável criada fora de funções/blocos\n- existe “no arquivo todo” (ou na janela, dependendo)\n\n2) Escopo de função\n- variável criada dentro de uma função\n- só existe dentro daquela função\n\n3) Escopo de bloco\n- variável criada dentro de { }\n- existe só naquele bloco\n- isso vale para let e const"
+    },
+    {
+      "title": "let/const respeitam escopo de bloco (e isso é bom)",
+      "body": "Exemplo:\n\nif (true) {\n  const msg = 'oi';\n}\n\nconsole.log(msg); // ERRO\n\nPorque msg só existe dentro do bloco do if.\n\nIsso protege você:\n- evita sobrescrever variáveis sem querer\n- deixa o código mais previsível"
+    },
+    {
+      "title": "var (por que ele confunde)",
+      "body": "var NÃO respeita escopo de bloco, só de função.\n\nExemplo:\n\nif (true) {\n  var x = 10;\n}\nconsole.log(x); // 10 (vazou)\n\nPor isso, no começo:\n- use let/const\n- evite var"
+    },
+    {
+      "title": "Escopo e sombra (shadowing)",
+      "body": "Shadowing é quando você cria uma variável com o mesmo nome em um escopo interno.\n\nconst nome = 'Bruno';\n\nfunction teste() {\n  const nome = 'Ana';\n  console.log(nome); // Ana\n}\n\nconsole.log(nome); // Bruno\n\nIsso não é “erro”, mas pode confundir.\nDica: evite repetir nomes sem necessidade."
+    },
+    {
+      "title": "Quando usar function vs arrow (regra prática)",
+      "body": "Para começar, use assim:\n\n- function: quando você quer declarar de forma tradicional, ou para funções “principais”\n- arrow: para funções curtas, principalmente callbacks\n\nMais tarde tem detalhe de 'this' em arrow vs function.\nPor enquanto, foque em sintaxe e escopo."
+    },
+    {
+      "title": "Mini tarefa (20 minutos) — converter e testar escopo",
+      "body": "Faça no Console:\n\n1) Converta para arrow:\n- function somar(a,b) { return a+b }\n\n2) Crie arrow com retorno implícito:\n- triplicar(n) → n*3\n\n3) Teste escopo de bloco:\n- dentro de um if, crie const segredo = 'x'\n- tente usar fora (tem que dar erro)\n\n4) Teste escopo de função:\n- crie function mostrar() { const interna = 1; }\n- tente acessar interna fora (erro)\n\n5) Shadowing:\n- const cor = 'azul'\n- dentro de um bloco, crie const cor = 'vermelho'\n- logue dentro e fora e explique\n\nMeta: você precisa conseguir dizer “onde cada variável vive e por quê”."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Arrow function é uma sintaxe curta para funções\n- Pode ter retorno implícito em 1 linha\n- Escopo define onde variável pode ser usada\n- let/const têm escopo de bloco\n- var vaza bloco (evite)\n- Shadowing é repetir nome em escopos diferentes"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 10 (Arrow e Escopo)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Arrow function é:",
+        "options": [
+          { "key": "A", "text": "Uma forma mais curta de escrever função" },
+          { "key": "B", "text": "Um tipo de variável" }
+        ],
+        "answer": "A",
+        "explain": "É só sintaxe diferente para função."
+      },
+      {
+        "id": 2,
+        "question": "Em arrow de 1 linha, você pode:",
+        "options": [
+          { "key": "A", "text": "Omitir { } e return (retorno implícito)" },
+          { "key": "B", "text": "Omitir os parâmetros sempre" }
+        ],
+        "answer": "A",
+        "explain": "Funciona quando é uma única expressão."
+      },
+      {
+        "id": 3,
+        "question": "Se a função tiver 2 parâmetros, a arrow precisa:",
+        "options": [
+          { "key": "A", "text": "De parênteses (a, b)" },
+          { "key": "B", "text": "Nunca usar parênteses" }
+        ],
+        "answer": "A",
+        "explain": "2+ parâmetros exigem parênteses."
+      },
+      {
+        "id": 4,
+        "question": "Escopo é:",
+        "options": [
+          { "key": "A", "text": "O lugar onde a variável existe e pode ser usada" },
+          { "key": "B", "text": "Um método de string" }
+        ],
+        "answer": "A",
+        "explain": "Escopo define o território da variável."
+      },
+      {
+        "id": 5,
+        "question": "let/const têm escopo de:",
+        "options": [
+          { "key": "A", "text": "Bloco ( { } )" },
+          { "key": "B", "text": "Sempre global" }
+        ],
+        "answer": "A",
+        "explain": "Variáveis dentro do bloco não existem fora."
+      },
+      {
+        "id": 6,
+        "question": "var normalmente:",
+        "options": [
+          { "key": "A", "text": "Não respeita bloco e pode “vazar”" },
+          { "key": "B", "text": "É mais seguro que const" }
+        ],
+        "answer": "A",
+        "explain": "Por isso var confunde iniciantes."
+      },
+      {
+        "id": 7,
+        "question": "Variável declarada dentro de função:",
+        "options": [
+          { "key": "A", "text": "Só existe dentro da função" },
+          { "key": "B", "text": "Existe em qualquer lugar do arquivo" }
+        ],
+        "answer": "A",
+        "explain": "Escopo de função."
+      },
+      {
+        "id": 8,
+        "question": "Shadowing é:",
+        "options": [
+          { "key": "A", "text": "Declarar variável com mesmo nome em escopo interno" },
+          { "key": "B", "text": "Apagar uma variável" }
+        ],
+        "answer": "A",
+        "explain": "Pode confundir se abusar."
+      },
+      {
+        "id": 9,
+        "question": "const dobrar = n => n * 2 é:",
+        "options": [
+          { "key": "A", "text": "Arrow com retorno implícito" },
+          { "key": "B", "text": "Um loop" }
+        ],
+        "answer": "A",
+        "explain": "Uma expressão única sem { }."
+      },
+      {
+        "id": 10,
+        "question": "No começo, é melhor:",
+        "options": [
+          { "key": "A", "text": "Usar let/const e evitar var" },
+          { "key": "B", "text": "Usar var em tudo" }
+        ],
+        "answer": "A",
+        "explain": "let/const são mais previsíveis."
+      }
+    ]
+  },
+  "extra": {
+    "modelJs": "/* Aula 10 — modelJs: Arrow e Escopo */\n\n// 1) Arrow normal\nconst somar = (a, b) => {\n  return a + b;\n};\nconsole.log('somar:', somar(2, 3));\n\n// 2) Retorno implícito\nconst triplicar = n => n * 3;\nconsole.log('triplicar:', triplicar(4));\n\n// 3) Escopo de bloco\nif (true) {\n  const segredo = 'x';\n  console.log('dentro do bloco:', segredo);\n}\n// console.log(segredo); // ERRO (descomente para ver)\n\n// 4) Escopo de função\nfunction mostrar() {\n  const interna = 1;\n  console.log('dentro da função:', interna);\n}\nmostrar();\n// console.log(interna); // ERRO (descomente para ver)\n\n// 5) Shadowing\nconst cor = 'azul';\n{\n  const cor = 'vermelho';\n  console.log('dentro:', cor);\n}\nconsole.log('fora:', cor);\n"
+  }
+}
