@@ -16,7 +16,6 @@ export function Header() {
   const session = getSession();
   const route = getRoute();
 
-  // Se já estiver na tela de login, não mostra o botão "Entrar"
   const isLoginPage = route === "/login";
   const isLandingPage = route === "/";
 
@@ -31,7 +30,13 @@ export function Header() {
 
   const backTarget = getBackTarget(route, session);
   const left = backTarget
-    ? `<button class="btn header-back-link" id="btn-header-back" data-target="${backTarget}" aria-label="Voltar para a tela anterior de navegação">Fina Skills</button>`
+    ? `<button class="btn header-back-link" id="btn-header-back" data-target="${backTarget}" aria-label="Voltar para a tela anterior de navegação">
+         <span class="brand-mark" aria-hidden="true">
+           <span class="brand-f">F</span>
+           <span class="brand-f-underline"></span>
+         </span>
+         <span class="brand-text">Skills</span>
+       </button>`
     : "";
 
   return `

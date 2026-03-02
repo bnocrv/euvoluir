@@ -5,12 +5,12 @@
   position: relative;
   overflow: hidden;
   padding: clamp(22px, 4vw, 34px);
-  border: 1px solid rgba(139,233,253,.26);
+  border: 1px solid rgba(255,255,255,.16);
   border-radius: calc(var(--radius) + 2px);
   background:
-    radial-gradient(580px 220px at 14% 0%, rgba(255,121,198,.18), transparent 70%),
-    radial-gradient(500px 250px at 92% 0%, rgba(139,233,253,.14), transparent 74%),
-    linear-gradient(145deg, rgba(17,20,37,.98), rgba(12,15,28,.96));
+    radial-gradient(580px 220px at 14% 0%, rgba(216,19,36,.2), transparent 70%),
+    radial-gradient(500px 250px at 92% 0%, rgba(255,255,255,.06), transparent 74%),
+    linear-gradient(145deg, rgba(31,34,38,.98), rgba(23,25,27,.96));
   box-shadow: 0 24px 44px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.08);
 }
 .hero::before{
@@ -19,22 +19,22 @@
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(115deg, transparent 0 26%, rgba(139,233,253,.08) 26% 27%, transparent 27% 56%, rgba(255,121,198,.08) 56% 57%, transparent 57% 100%);
+    linear-gradient(115deg, transparent 0 26%, rgba(255,255,255,.05) 26% 27%, transparent 27% 56%, rgba(216,19,36,.12) 56% 57%, transparent 57% 100%);
 }
 .hero h1{
   margin: 0;
   font-size: clamp(1.45rem, 3.2vw, 2.35rem);
   line-height: 1.15;
-  text-shadow: 0 0 24px rgba(139,233,253,.18);
+  text-shadow: 0 0 24px rgba(216,19,36,.2);
 }
 .hero p{
   max-width: 72ch;
-  color: #c8d0ee;
+  color: #cfd4da;
 }
 .landing-about-title{
   margin-bottom: 0;
   font-size: clamp(1.1rem, 2.2vw, 1.5rem);
-  color: var(--cyan);
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: .8px;
 }
@@ -60,9 +60,9 @@
 }
 .landing-option:hover{
   transform: translateY(-2px);
-  border-color: rgba(139,233,253,.74);
-  background: linear-gradient(180deg, rgba(255,121,198,.1), rgba(139,233,253,.08)), var(--surface2);
-  box-shadow: 0 0 20px rgba(139,233,253,.2);
+  border-color: rgba(216,19,36,.75);
+  background: linear-gradient(180deg, rgba(216,19,36,.14), rgba(255,255,255,.05)), var(--surface2);
+  box-shadow: 0 0 20px rgba(216,19,36,.2);
 }
 
 /* Lesson */
@@ -70,17 +70,17 @@
   display:block;
   padding: 10px 12px;
   border-radius: 12px;
-  border: 1px solid rgba(139,233,253,.28);
-  background: linear-gradient(180deg, rgba(139,233,253,.08), rgba(17,20,37,.95));
+  border: 1px solid rgba(255,255,255,.18);
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(23,25,27,.95));
   transition: background .18s ease, border-color .18s ease;
 }
 .nav-item:hover{
-  background: linear-gradient(180deg, rgba(139,233,253,.16), rgba(20,24,43,.98));
-  border-color: rgba(139,233,253,.72);
+  background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(23,25,27,.98));
+  border-color: rgba(255,255,255,.38);
 }
 .nav-item.active{
-  border-color: rgba(255,121,198,.75);
-  background: linear-gradient(180deg, rgba(255,121,198,.25), rgba(189,147,249,.15));
+  border-color: rgba(216,19,36,.8);
+  background: linear-gradient(180deg, rgba(216,19,36,.34), rgba(216,19,36,.18));
 }
 
 .lesson-title{

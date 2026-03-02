@@ -1,76 +1,155 @@
 ﻿{
-    "id":  "01-introducao",
-    "title":  "Aula 01 - Introdução prática",
-    "steps":  [
-                  {
-                      "title":  "Visão geral",
-                      "body":  "Nesta aula você inicia a trilha de Word.\n\nObjetivo:\n- Entender os conceitos base\n- Aplicar no contexto da empresa\n- Criar rotina de uso no dia a dia"
-                  },
-                  {
-                      "title":  "Conceitos essenciais",
-                      "body":  "Base da aula:\n- Termos principais\n- Fluxo de trabalho recomendado\n- Erros comuns para evitar no começo"
-                  },
-                  {
-                      "title":  "Primeira prática guiada",
-                      "body":  "Passo a passo sugerido:\n- Abrir o ambiente de trabalho\n- Executar uma tarefa simples\n- Revisar resultado e ajustar"
-                  },
-                  {
-                      "title":  "Resumo",
-                      "body":  "Você concluiu a primeira aula e já tem uma base inicial para evoluir nas próximas etapas da trilha."
-                  }
-              ],
-    "quiz":  {
-                 "title":  "Quiz rápido - Aula 01",
-                 "instructions":  "Responda A ou B para fixar os conceitos principais.",
-                 "questions":  [
-                                   {
-                                       "id":  1,
-                                       "question":  "Qual é o foco desta aula?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Criar base prática inicial"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Cobrir todos os tópicos avançados"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Aula 01 foca em fundamentos e início prático."
-                                   },
-                                   {
-                                       "id":  2,
-                                       "question":  "Qual abordagem gera melhor aprendizado no início?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Prática com passos simples"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Pular direto para tarefas complexas"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Evoluir por etapas reduz erros e melhora retenção."
-                                   },
-                                   {
-                                       "id":  3,
-                                       "question":  "Depois da aula 01, o próximo passo é...",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Continuar a trilha e praticar"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Parar de revisar"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Continuidade e prática consolidam o aprendizado."
-                                   }
-                               ]
-             }
+  "id": "01-introducao",
+  "title": "Aula 01 — O que é o Word + para que serve (visão geral)",
+  "steps": [
+    {
+      "title": "O que é o Microsoft Word",
+      "body": "O Microsoft Word é um editor de documentos.\n\nPense nele como uma “fábrica de documentos”:\n- você escreve (conteúdo)\n- organiza (títulos, parágrafos)\n- dá aparência profissional (formatação)\n- gera versões finais (PDF, impressão)\n\nEle é muito usado porque ajuda a criar documentos claros, padronizados e fáceis de atualizar."
+    },
+    {
+      "title": "Para que o Word é usado (na prática)",
+      "body": "Exemplos comuns de uso:\n- Currículo\n- Carta/declaração\n- Contrato simples\n- Relatório (com capa, sumário e páginas)\n- Documentos longos (TCC, manuais)\n- Documentos com tabela e imagens\n\nO Word é forte quando você precisa de:\n- padronização\n- boa apresentação\n- documento fácil de revisar e corrigir"
+    },
+    {
+      "title": "Word não é só “digitar”",
+      "body": "Muita gente usa o Word como se fosse um bloco de notas.\n\nMas o poder real do Word está em:\n- estilos (títulos padronizados)\n- sumário automático\n- seções (formatos diferentes no mesmo arquivo)\n- revisão (comentários e controlar alterações)\n- mala direta (gerar muitos documentos de uma vez)\n\nOu seja: menos trabalho manual e mais consistência."
+    },
+    {
+      "title": "O que é um arquivo .DOCX",
+      "body": "O formato padrão do Word é o `.DOCX`.\n\nEle é diferente do `.DOC` antigo:\n- `.DOCX` é mais moderno\n- costuma ser mais leve\n- guarda melhor recursos atuais (imagens, estilos, etc.)\n\nResumo prático:\n- se for criar documento novo, use `.DOCX`."
+    },
+    {
+      "title": "Como pensar em documento profissional",
+      "body": "Um documento profissional normalmente tem:\n- estrutura (títulos e subtítulos)\n- consistência (mesma fonte, mesmo padrão)\n- espaçamento agradável\n- páginas numeradas quando faz sentido\n\nA ideia é: o leitor entende rápido e o documento “parece sério”."
+    },
+    {
+      "title": "Erros comuns de iniciante",
+      "body": "1) Usar ENTER várias vezes para “empurrar” texto.\n2) Usar espaços para alinhar coisas (fica torto em outros PCs).\n3) Fazer título só com fonte grande e negrito (em vez de usar Estilos).\n4) Copiar/colar de internet e ficar com formatação toda quebrada.\n\nRegra de ouro:\n- no Word, o jeito certo costuma ser usando ferramenta própria (estilos, parágrafo, recuo, quebra)."
+    },
+    {
+      "title": "O que você vai dominar neste curso",
+      "body": "Você vai evoluir em camadas:\n- básico: digitação, formatação e parágrafos\n- intermediário: página, cabeçalho/rodapé, tabelas, imagens\n- avançado: estilos, sumário, campos, mala direta, revisão e colaboração\n\nNo final, você consegue criar um documento longo profissional (com padrão e sem sofrimento)."
+    },
+    {
+      "title": "Mini prática (5 minutos)",
+      "body": "Abra o Word e faça isso:\n1) Crie um documento em branco\n2) Digite um título: \"Meu Documento\"\n3) Embaixo, digite um parágrafo de 3 linhas\n4) Salve como: `Teste-Word.docx`\n\nObjetivo:\n- só garantir que você sabe criar e salvar um documento."
+    },
+    {
+      "title": "Checklist rápido (mental)",
+      "body": "Antes de terminar um documento, pergunte:\n- Está fácil de ler?\n- Tem títulos claros?\n- Está consistente?\n- Precisa de páginas numeradas?\n\nIsso já te coloca acima da média."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Word é ferramenta de documentos profissionais\n- O poder está em estrutura + consistência\n- DOCX é o padrão moderno\n- Evite gambiarras (enter e espaços)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 01 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O Word é principalmente:",
+        "options": [
+          { "key": "A", "text": "Um editor de documentos para criar arquivos bem estruturados" },
+          { "key": "B", "text": "Um programa feito só para digitar textos simples" }
+        ],
+        "answer": "A",
+        "explain": "O Word é forte porque ajuda a estruturar e padronizar documentos, não apenas digitar."
+      },
+      {
+        "id": 2,
+        "question": "Um uso comum do Word é:",
+        "options": [
+          { "key": "A", "text": "Criar relatórios e currículos" },
+          { "key": "B", "text": "Editar planilhas com fórmulas" }
+        ],
+        "answer": "A",
+        "explain": "Planilhas com fórmulas é mais o Excel; Word é para documentos."
+      },
+      {
+        "id": 3,
+        "question": "O formato moderno padrão do Word é:",
+        "options": [
+          { "key": "A", "text": ".DOCX" },
+          { "key": "B", "text": ".TXT" }
+        ],
+        "answer": "A",
+        "explain": "DOCX é o formato padrão moderno do Word; TXT é texto simples sem formatação."
+      },
+      {
+        "id": 4,
+        "question": "O poder real do Word (produtividade) aparece quando você usa:",
+        "options": [
+          { "key": "A", "text": "Estilos e recursos automáticos (sumário, seções, revisão)" },
+          { "key": "B", "text": "Muitos espaços e muitos ENTER para alinhar tudo" }
+        ],
+        "answer": "A",
+        "explain": "Espaços/ENTER viram gambiarra; estilos e ferramentas próprias mantêm consistência."
+      },
+      {
+        "id": 5,
+        "question": "Usar ENTER várias vezes para “descer” texto é:",
+        "options": [
+          { "key": "A", "text": "Um erro comum, porque quebra o layout" },
+          { "key": "B", "text": "A melhor prática profissional" }
+        ],
+        "answer": "A",
+        "explain": "O certo é usar espaçamento de parágrafo, quebras e configuração de página."
+      },
+      {
+        "id": 6,
+        "question": "Documento profissional normalmente precisa de:",
+        "options": [
+          { "key": "A", "text": "Estrutura e consistência" },
+          { "key": "B", "text": "Várias fontes diferentes na mesma página" }
+        ],
+        "answer": "A",
+        "explain": "Consistência ajuda leitura e aparência profissional."
+      },
+      {
+        "id": 7,
+        "question": "Word é mais adequado do que um bloco de notas quando você precisa:",
+        "options": [
+          { "key": "A", "text": "Formatação, páginas, tabelas e padrão visual" },
+          { "key": "B", "text": "Somente texto puro, sem nenhuma formatação" }
+        ],
+        "answer": "A",
+        "explain": "Para texto puro, qualquer editor serve; Word é para documentos formatados."
+      },
+      {
+        "id": 8,
+        "question": "Um exemplo de recurso avançado do Word é:",
+        "options": [
+          { "key": "A", "text": "Mala direta para gerar muitos documentos" },
+          { "key": "B", "text": "Criar gráficos de ações em tempo real" }
+        ],
+        "answer": "A",
+        "explain": "Mala direta é recurso clássico do Word para produção em lote."
+      },
+      {
+        "id": 9,
+        "question": "Quando você usa espaços para alinhar texto, o risco é:",
+        "options": [
+          { "key": "A", "text": "Ficar desorganizado em outro computador ou fonte" },
+          { "key": "B", "text": "Ficar sempre perfeito em qualquer situação" }
+        ],
+        "answer": "A",
+        "explain": "Mudança de fonte/tamanho quebra alinhamento feito com espaços."
+      },
+      {
+        "id": 10,
+        "question": "A ideia do curso é que você aprenda:",
+        "options": [
+          { "key": "A", "text": "O jeito certo (ferramentas do Word) para evitar gambiarras" },
+          { "key": "B", "text": "Truques de copiar e colar sem entender" }
+        ],
+        "answer": "A",
+        "explain": "Você vai entender o porquê das coisas e usar recursos corretos do Word."
+      }
+    ]
+  },
+  "extra": {
+    "modelDoc": "Checklist profissional (começo rápido)\n\n1) Título claro no topo\n2) Parágrafos com espaçamento agradável\n3) Consistência (mesma fonte/padrão)\n4) Salvar em .DOCX\n5) Se for enviar: exportar PDF\n\nMini modelo (copie e adapte):\nTÍTULO DO DOCUMENTO\n\n1. Introdução\n(Escreva um parágrafo curto explicando o objetivo.)\n\n2. Desenvolvimento\n(Escreva os pontos principais em 2 a 4 parágrafos.)\n\n3. Conclusão\n(Feche com um resumo e próximo passo.)\n"
+  }
 }
