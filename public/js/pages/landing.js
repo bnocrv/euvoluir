@@ -1,8 +1,8 @@
 // public/js/pages/landing.js
 import { Header, bindHeaderEvents } from "../components/header.js";
+import { navigate } from "../router.js";
 
 export function LandingPage(app) {
-  const targetRoute = "#/dashboard";
   const highlights = [
    {
   title: "Aprenda sem atalhos",
@@ -22,17 +22,23 @@ export function LandingPage(app) {
               Uma plataforma simples, bonita e direta ao ponto, feita para estudar de verdade.
             </p>
 
-            <div class="grid-2 mt-14">
+            <h2 class="landing-about-title mt-16">Sobre o curso</h2>
+
+            <div class="grid-2 mt-14 landing-grid">
               ${highlights
                 .map(
                   (item) => `
-                <a class="card pad landing-option" href="${targetRoute}">
+                <div class="card pad landing-option">
                   <h3 class="m-0">${item.title}</h3>
                   <p class="muted mt-10">${item.description}</p>
-                </a>
+                </div>
               `
                 )
                 .join("")}
+            </div>
+
+            <div class="row mt-16">
+              <button class="btn primary mx-auto" id="landing-enter">Entrar</button>
             </div>
           </section>
         </div>
@@ -41,4 +47,5 @@ export function LandingPage(app) {
   `;
 
   bindHeaderEvents(app);
+  app.querySelector("#landing-enter").addEventListener("click", () => navigate("/login"));
 }

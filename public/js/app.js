@@ -10,6 +10,7 @@ const routes = {
   "/": () => LandingPage(app),
   "/login": () => LoginPage(app),
   "/dashboard": () => DashboardPage(app),
+  "/course/:courseId": () => LessonPage(app),
   "/course/:courseId/:lessonId": () => LessonPage(app),
 };
 

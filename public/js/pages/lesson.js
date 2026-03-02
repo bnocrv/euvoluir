@@ -56,10 +56,12 @@ function renderMD(text) {
   return `<div class="md">${html}</div>`;
 }
 
-function parseLessonRoute(path) {
+function parseCourseRoute(path) {
   const parts = path.split("/").filter(Boolean);
-  if (parts.length < 3) return null;
-  return { courseId: parts[1], lessonId: parts[2] };
+  if (parts[0] !== "course") return null;
+  if (parts.length === 2) return { courseId: parts[1], lessonId: null };
+  if (parts.length === 3) return { courseId: parts[1], lessonId: parts[2] };
+  return null;
 }
 
 function renderCodeBlock(code, lang = "html") {
@@ -84,26 +86,14 @@ function highlightAllInside(root) {
   });
 }
 
-export async function LessonPage(app) {
-  const session = requireAuth();
-  if (!session) return navigate("/login");
-
-  const parsed = parseLessonRoute(getRoute());
-  if (!parsed) return navigate("/dashboard");
-
-  const { courseId, lessonId } = parsed;
-
-  const manifest = await loadCourseManifest(courseId);
-  const lesson = await loadLesson(courseId, lessonId);
-  const completedNow = isCompleted(courseId, lessonId);
-
-  const navHTML = manifest.lessons
+function buildLessonNavHTML(manifest, courseId, activeLessonId = null) {
+  return manifest.lessons
     .map((l) => {
-      const active = l.id === lessonId ? "active" : "";
+      const active = l.id === activeLessonId ? "active" : "";
       const done = isCompleted(courseId, l.id);
       const statusClass = done ? "is-done" : "is-pending";
-      const statusIcon = done ? "✓" : "•";
-      const statusText = done ? "Aula concluída" : "Aula pendente";
+      const statusIcon = done ? "&#10003;" : "&bull;";
+      const statusText = done ? "Aula concluida" : "Aula pendente";
       return `
         <a class="nav-item ${active}" href="#/course/${courseId}/${l.id}">
           <div class="row items-start">
@@ -119,6 +109,100 @@ export async function LessonPage(app) {
       `;
     })
     .join("");
+}
+
+function renderCourseLessonsListPage(app, courseId, manifest) {
+  const navHTML = buildLessonNavHTML(manifest, courseId);
+
+  app.innerHTML = `
+    <div class="page">
+      ${Header()}
+      <main class="main">
+        <div class="container stack">
+          <div class="card pad">
+            <div class="row row-between items-start">
+              <div>
+                <span class="badge">${esc(courseId.toUpperCase())}</span>
+                <h2 class="m-0 mt-10">Aulas disponíveis</h2>
+                <p class="muted mt-8">Escolha uma aula para abrir o conteúdo.</p>
+              </div>
+              <span class="badge">${manifest.lessons.length} aulas</span>
+            </div>
+          </div>
+
+          <div class="card pad stack lessons-only-list">
+            ${navHTML}
+          </div>
+
+          <div class="row">
+            <button class="btn" id="back-dashboard">Voltar para cursos</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  `;
+
+  bindHeaderEvents(app);
+  const backBtn = app.querySelector("#back-dashboard");
+  if (backBtn) backBtn.addEventListener("click", () => navigate("/dashboard"));
+}
+
+function bindMobileSidebar(app) {
+  const sidebar = app.querySelector("#sidebar");
+  const toggleSidebarBtn = app.querySelector("#btn-toggle-sidebar");
+  const mobileTrailBackdrop = app.querySelector("#mobile-trail-backdrop");
+  if (!sidebar || !toggleSidebarBtn) return;
+
+  const syncToggleUI = (isOpen) => {
+    toggleSidebarBtn.textContent = isOpen ? "<" : ">";
+    toggleSidebarBtn.setAttribute("aria-expanded", String(isOpen));
+    toggleSidebarBtn.setAttribute("aria-label", isOpen ? "Fechar trilha de aulas" : "Abrir trilha de aulas");
+    if (mobileTrailBackdrop) mobileTrailBackdrop.classList.toggle("open", isOpen);
+  };
+
+  toggleSidebarBtn.addEventListener("click", () => {
+    const isOpen = sidebar.classList.toggle("open");
+    syncToggleUI(isOpen);
+  });
+
+  if (mobileTrailBackdrop) {
+    mobileTrailBackdrop.addEventListener("click", () => {
+      sidebar.classList.remove("open");
+      syncToggleUI(false);
+    });
+  }
+}
+
+export async function LessonPage(app) {
+  const session = requireAuth();
+  if (!session) return navigate("/login");
+
+  const parsed = parseCourseRoute(getRoute());
+  if (!parsed) return navigate("/dashboard");
+
+  const { courseId, lessonId } = parsed;
+
+  let manifest;
+  try {
+    manifest = await loadCourseManifest(courseId);
+  } catch {
+    return navigate("/dashboard");
+  }
+
+  if (!lessonId) {
+    renderCourseLessonsListPage(app, courseId, manifest);
+    return;
+  }
+
+  let lesson;
+  try {
+    lesson = await loadLesson(courseId, lessonId);
+  } catch {
+    return navigate(`/course/${courseId}`);
+  }
+
+  const completedNow = isCompleted(courseId, lessonId);
+  const navHTML = buildLessonNavHTML(manifest, courseId, lessonId);
 
   const stepsHTML = (lesson.steps || [])
     .map(
@@ -140,7 +224,7 @@ export async function LessonPage(app) {
             <div>
               <strong>Modelo do Projeto (HTML completo)</strong>
               <div class="muted mt-6">
-                Compare com o seu. Não copie sem entender: labels, ids, names, required e radios com mesmo name.
+                Compare com o seu. Nao copie sem entender: labels, ids, names, required e radios com mesmo name.
               </div>
             </div>
             <span class="badge">modelo</span>
@@ -160,7 +244,7 @@ export async function LessonPage(app) {
     <div class="card pad">
       <div class="row row-between">
         <strong>${esc(quiz.title)}</strong>
-        <span class="badge">${quiz.questions.length} questões</span>
+        <span class="badge">${quiz.questions.length} questoes</span>
       </div>
       <div class="mt-10">${renderMD(quiz.instructions)}</div>
 
@@ -171,7 +255,7 @@ export async function LessonPage(app) {
           <div class="card soft pad quiz-card">
             <div class="row row-between">
               <strong>Q${q.id}.</strong>
-              <span class="badge" id="qbadge-${q.id}">Não respondida</span>
+              <span class="badge" id="qbadge-${q.id}">Nao respondida</span>
             </div>
 
             <div class="quiz-question">${renderMD(q.question)}</div>
@@ -205,7 +289,6 @@ export async function LessonPage(app) {
       ${Header()}
       <main class="main">
         <div class="container lesson-shell">
-
           <aside class="card pad sticky" id="sidebar">
             <div>
               <div class="badge">${esc(courseId.toUpperCase())}</div>
@@ -215,7 +298,7 @@ export async function LessonPage(app) {
             <hr class="hr"/>
             <div class="stack">${navHTML}</div>
             <hr class="hr"/>
-            <button class="btn" id="back-dashboard">Voltar</button>
+            <button class="btn" id="back-lessons">Voltar para aulas</button>
           </aside>
 
           <section class="stack">
@@ -223,23 +306,19 @@ export async function LessonPage(app) {
               <div class="row row-between items-start">
                 <div>
                   <h2 class="lesson-title">${esc(lesson.title)}</h2>
-                  <div class="muted mt-6">
-                    Leia com calma. No final, faça o quiz para fixar.
-                  </div>
+                  <div class="muted mt-6">Leia com calma. No final, faca o quiz para fixar.</div>
                 </div>
               </div>
 
               <div class="row row-wrap mt-12">
                 <button class="btn primary" id="btn-complete">
-                  ${completedNow ? "↩ Marcar aula como pendente" : "✓ Marcar aula como concluída"}
+                  ${completedNow ? "Marcar aula como pendente" : "Marcar aula como concluida"}
                 </button>
               </div>
             </div>
 
             ${stepsHTML}
-
             ${extraModelHTML}
-
             ${quizHTML}
           </section>
         </div>
@@ -251,32 +330,10 @@ export async function LessonPage(app) {
 
   highlightAllInside(app);
   bindHeaderEvents(app);
+  bindMobileSidebar(app);
 
-  const sidebar = app.querySelector("#sidebar");
-  const toggleSidebarBtn = app.querySelector("#btn-toggle-sidebar");
-  const mobileTrailBackdrop = app.querySelector("#mobile-trail-backdrop");
-  if (sidebar && toggleSidebarBtn) {
-    const syncToggleUI = (isOpen) => {
-      toggleSidebarBtn.textContent = isOpen ? "<" : ">";
-      toggleSidebarBtn.setAttribute("aria-expanded", String(isOpen));
-      toggleSidebarBtn.setAttribute("aria-label", isOpen ? "Fechar trilha de aulas" : "Abrir trilha de aulas");
-      if (mobileTrailBackdrop) mobileTrailBackdrop.classList.toggle("open", isOpen);
-    };
-
-    toggleSidebarBtn.addEventListener("click", () => {
-      const isOpen = sidebar.classList.toggle("open");
-      syncToggleUI(isOpen);
-    });
-
-    if (mobileTrailBackdrop) {
-      mobileTrailBackdrop.addEventListener("click", () => {
-        sidebar.classList.remove("open");
-        syncToggleUI(false);
-      });
-    }
-  }
-
-  app.querySelector("#back-dashboard").addEventListener("click", () => navigate("/dashboard"));
+  const backLessonsBtn = app.querySelector("#back-lessons");
+  if (backLessonsBtn) backLessonsBtn.addEventListener("click", () => navigate(`/course/${courseId}`));
 
   app.querySelector("#btn-complete").addEventListener("click", () => {
     markCompleted(courseId, lessonId, !isCompleted(courseId, lessonId));
@@ -322,13 +379,13 @@ export async function LessonPage(app) {
 
         const summary = app.querySelector("#quiz-summary");
         if (Object.keys(answers).length < total) {
-          summary.textContent = `Você respondeu ${Object.keys(answers).length}/${total}. Responda todas para medir seu nível.`;
+          summary.textContent = `Voce respondeu ${Object.keys(answers).length}/${total}. Responda todas para medir seu nivel.`;
           return;
         }
 
-        if (score === total) summary.textContent = "Perfeito! Você fixou muito bem.";
-        else if (score >= 7) summary.textContent = "Muito bom! Reforce as que você errou e avance.";
-        else summary.textContent = "Normal no começo. Releia os passos e tente de novo.";
+        if (score === total) summary.textContent = "Perfeito! Voce fixou muito bem.";
+        else if (score >= 7) summary.textContent = "Muito bom! Reforce as que voce errou e avance.";
+        else summary.textContent = "Normal no comeco. Releia os passos e tente de novo.";
       });
     }
   }

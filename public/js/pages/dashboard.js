@@ -64,10 +64,10 @@ export function DashboardPage(app) {
   bindHeaderEvents(app);
 
   app.querySelector("#go-html").addEventListener("click", () => {
-    navigate("/course/html/01-introducao");
+    navigate("/course/html");
   });
 
   app.querySelector("#go-css").addEventListener("click", () => {
-    navigate("/course/css/01-introducao");
+    navigate("/course/css");
   });
 }
