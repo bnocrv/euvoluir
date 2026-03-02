@@ -1,0 +1,151 @@
+{
+  "id": "33-projeto-landing",
+  "title": "Aula 33 — Projeto 1: Landing page responsiva (CSS)",
+  "steps": [
+    {
+      "title": "Objetivo do projeto",
+      "body": "Você vai montar o CSS de uma landing page **profissional e responsiva**.\n\nSeções típicas:\n- Navbar\n- Hero (headline + texto + CTA)\n- Features (cards)\n- Depoimentos\n- CTA final\n- Footer\n\nVocê vai aplicar tudo que já aprendeu:\n- container + espaçamento\n- tipografia\n- grid responsivo (auto-fit + minmax)\n- botões e cards (design system)\n- acessibilidade (focus-visible)\n- microinterações (transform/opacity)\n\nMeta final:\n- ficar bonito no mobile e no desktop."
+    },
+    {
+      "title": "Estrutura recomendada (classes)",
+      "body": "Você vai usar essas classes (padrão):\n\n- `.container`\n- `.navbar`, `.brand`, `.nav-links`, `.nav-link`\n- `.hero`, `.hero__content`, `.hero__media`\n- `.section`\n- `.grid-cards`, `.card`\n- `.testimonial`\n- `.cta`\n- `.footer`\n\nRegra:\n- layout com classes (não por tag)\n- deixa escalável e fácil de manter."
+    },
+    {
+      "title": "Base do layout (container + seções)",
+      "body": "Um layout pro começa com:\n\n- `max-width`\n- `margin: 0 auto`\n- `padding` responsivo\n\nE cada seção com:\n- padding vertical\n\nPadrão:\n- mobile: padding menor\n- desktop: padding maior"
+    },
+    {
+      "title": "Hero responsivo (mobile-first)",
+      "body": "No mobile:\n- texto em cima\n- imagem/ilustração embaixo\n\nNo desktop:\n- 2 colunas\n\nPadrão pro:\n- `display: grid`\n- mobile: 1 coluna\n- desktop: `grid-template-columns: 1.2fr 1fr`\n\nE limite de leitura:\n- use `max-width: 65ch` no texto."
+    },
+    {
+      "title": "Features: grid de cards (auto-fit + minmax)",
+      "body": "Use o padrão ouro:\n\n`grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));`\n\nIsso faz:\n- desktop: várias colunas\n- mobile: 1 coluna\n\nDica:\n- cards com borda sutil + radius + padding\n- hover só se for clicável."
+    },
+    {
+      "title": "Depoimentos: layout simples e elegante",
+      "body": "Depoimento geralmente é:\n- card\n- nome\n- cargo\n- texto\n\nPadrão:\n- `.testimonial` como card\n- grid igual ao de features (pode reutilizar `.grid-cards`)\n\nConsistência é o que faz parecer profissional."
+    },
+    {
+      "title": "CTA final: destaque sem gritar",
+      "body": "CTA final é uma seção com:\n- fundo diferente\n- borda/sombra sutil\n- botão primary\n\nRegra:\n- contraste bom\n- texto claro\n- botão óbvio\n\nE não esqueça:\n- foco visível no botão."
+    },
+    {
+      "title": "Checklist final (antes de considerar pronto)",
+      "body": "- [ ] Mobile: nada estoura na horizontal\n- [ ] Texto legível (line-height e max-width)\n- [ ] Botões com hover e focus-visible\n- [ ] Cards com espaçamento consistente (gap)\n- [ ] Seções com padding confortável\n- [ ] Desktop: hero em 2 colunas\n\nSe passar nisso, sua landing já parece de produto real."
+    },
+    {
+      "title": "Resumo do projeto",
+      "body": "- Container + seções\n- Hero responsivo com grid\n- Features com auto-fit/minmax\n- Componentes (btn/card)\n- Acessibilidade e microinterações\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 33 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Uma landing page profissional normalmente tem:",
+        "options": [
+          { "key": "A", "text": "Navbar, Hero, Features, CTA e Footer" },
+          { "key": "B", "text": "Só um texto gigante sem seções" }
+        ],
+        "answer": "A",
+        "explain": "Seções guiam o usuário e criam hierarquia."
+      },
+      {
+        "id": 2,
+        "question": "O container serve para:",
+        "options": [
+          { "key": "A", "text": "Limitar largura e centralizar conteúdo" },
+          { "key": "B", "text": "Criar animações automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Max-width + margin auto evitam linhas longas."
+      },
+      {
+        "id": 3,
+        "question": "Hero responsivo geralmente é:",
+        "options": [
+          { "key": "A", "text": "1 coluna no mobile e 2 colunas no desktop" },
+          { "key": "B", "text": "Sempre 2 colunas mesmo no celular" }
+        ],
+        "answer": "A",
+        "explain": "Mobile-first melhora leitura e organização."
+      },
+      {
+        "id": 4,
+        "question": "O padrão ouro de cards responsivos no Grid é:",
+        "options": [
+          { "key": "A", "text": "repeat(auto-fit, minmax(240px, 1fr))" },
+          { "key": "B", "text": "repeat(6, 300px)" }
+        ],
+        "answer": "A",
+        "explain": "Auto-fit + minmax adapta às telas."
+      },
+      {
+        "id": 5,
+        "question": "Para melhorar leitura em textos longos, é bom usar:",
+        "options": [
+          { "key": "A", "text": "max-width em ch (ex.: 65ch)" },
+          { "key": "B", "text": "width: 2000px no parágrafo" }
+        ],
+        "answer": "A",
+        "explain": "Limitar linha reduz cansaço visual."
+      },
+      {
+        "id": 6,
+        "question": "Microinteração leve e profissional geralmente usa:",
+        "options": [
+          { "key": "A", "text": "transform e opacity" },
+          { "key": "B", "text": "animar width/height sempre" }
+        ],
+        "answer": "A",
+        "explain": "Transform/opacity tendem a ser mais leves."
+      },
+      {
+        "id": 7,
+        "question": "Acessibilidade nos botões inclui:",
+        "options": [
+          { "key": "A", "text": "focus-visible com outline claro" },
+          { "key": "B", "text": "remover outline sem substituir" }
+        ],
+        "answer": "A",
+        "explain": "Teclado precisa enxergar o foco."
+      },
+      {
+        "id": 8,
+        "question": "Se um card NÃO é clicável, o ideal é:",
+        "options": [
+          { "key": "A", "text": "Não usar hover que sugira interação" },
+          { "key": "B", "text": "Colocar hover forte em todos os cards" }
+        ],
+        "answer": "A",
+        "explain": "Hover comunica interatividade."
+      },
+      {
+        "id": 9,
+        "question": "Consistência de espaçamento em landing costuma ser feita com:",
+        "options": [
+          { "key": "A", "text": "gap consistente e padding por seção" },
+          { "key": "B", "text": "margens aleatórias em cada item" }
+        ],
+        "answer": "A",
+        "explain": "Gap/padding repetidos deixam o layout limpo."
+      },
+      {
+        "id": 10,
+        "question": "Um bom checklist final inclui:",
+        "options": [
+          { "key": "A", "text": "Sem overflow no mobile e hero bem organizado no desktop" },
+          { "key": "B", "text": "usar 10 fontes diferentes para parecer pro" }
+        ],
+        "answer": "A",
+        "explain": "Layout e leitura são prioridade."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Landing page (CSS base do projeto) */\n\n:root {\n  --bg: #0b0f19;\n  --panel: #111827;\n  --text: #e5e7eb;\n  --muted: #9ca3af;\n  --accent: #60a5fa;\n  --border: rgba(255, 255, 255, 0.10);\n  --radius: 14px;\n  --shadow-1: 0 6px 16px rgba(0, 0, 0, 0.12);\n  --shadow-2: 0 16px 40px rgba(0, 0, 0, 0.16);\n}\n\nbody {\n  background: var(--bg);\n  color: var(--text);\n  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\n  line-height: 1.6;\n}\n\n.container {\n  max-width: 1100px;\n  margin: 0 auto;\n  padding: 16px;\n}\n\n@media (min-width: 768px) {\n  .container { padding: 24px; }\n}\n\n@media (min-width: 1024px) {\n  .container { padding: 32px; }\n}\n\n.section {\n  padding: 24px 0;\n}\n\n@media (min-width: 768px) {\n  .section { padding: 40px 0; }\n}\n\n/* Navbar */\n.navbar {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 12px;\n  padding: 12px 16px;\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  background: rgba(255, 255, 255, 0.02);\n}\n\n.brand { font-weight: 800; }\n\n.nav-links {\n  display: flex;\n  gap: 10px;\n  flex-wrap: wrap;\n}\n\n.nav-link {\n  text-decoration: none;\n  color: var(--text);\n  padding: 10px 12px;\n  border-radius: 12px;\n}\n\n.nav-link:hover,\n.nav-link:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\n/* Hero */\n.hero {\n  display: grid;\n  gap: 20px;\n  align-items: center;\n}\n\n.hero__content {\n  max-width: 65ch;\n}\n\n.hero__title {\n  font-size: 2rem;\n  line-height: 1.2;\n  margin: 0;\n}\n\n@media (min-width: 1024px) {\n  .hero {\n    grid-template-columns: 1.2fr 1fr;\n  }\n  .hero__title {\n    font-size: 2.6rem;\n  }\n}\n\n.hero__subtitle {\n  color: var(--muted);\n}\n\n/* Buttons */\n.btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  padding: 10px 14px;\n  border-radius: 12px;\n  border: 1px solid transparent;\n  font-weight: 700;\n  cursor: pointer;\n  transition: transform 150ms ease, opacity 150ms ease;\n}\n\n.btn:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\n.btn:hover {\n  transform: translateY(-1px);\n  opacity: 0.95;\n}\n\n.btn.primary {\n  background: var(--accent);\n  color: #0b0f19;\n}\n\n.btn.ghost {\n  background: transparent;\n  color: var(--text);\n  border-color: var(--border);\n}\n\n/* Features grid */\n.grid-cards {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\n  gap: 16px;\n}\n\n.card {\n  background: var(--panel);\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  box-shadow: var(--shadow-1);\n}\n\n.card-inner {\n  padding: 16px;\n  display: grid;\n  gap: 10px;\n}\n\n/* CTA */\n.cta {\n  background: rgba(96, 165, 250, 0.10);\n  border: 1px solid rgba(96, 165, 250, 0.25);\n  border-radius: var(--radius);\n  padding: 16px;\n  display: grid;\n  gap: 12px;\n}\n\n@media (min-width: 768px) {\n  .cta {\n    padding: 24px;\n  }\n}\n\n.footer {\n  padding: 24px 0;\n  color: var(--muted);\n}\n\n@media (prefers-reduced-motion: reduce) {\n  * {\n    transition: none !important;\n    animation: none !important;\n  }\n}\n"
+  }
+}

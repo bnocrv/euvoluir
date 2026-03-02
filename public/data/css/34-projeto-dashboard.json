@@ -1,0 +1,159 @@
+{
+  "id": "34-projeto-dashboard",
+  "title": "Aula 34 — Projeto 2: Dashboard (cards + grid + responsivo)",
+  "steps": [
+    {
+      "title": "Objetivo do projeto",
+      "body": "Você vai montar o CSS de um dashboard moderno (tipo app).\n\nComponentes típicos:\n- Topbar (header fixo ou sticky)\n- Sidebar (menu)\n- Área principal (cards, tabelas, widgets)\n\nVocê vai aplicar:\n- Grid por áreas (layout de página)\n- Cards com consistência (radius/border/shadow)\n- Responsivo (sidebar vira seção no mobile)\n- Estados (hover/focus)\n- Performance (transform/opacity)\n\nMeta: um dashboard com cara de produto real."
+    },
+    {
+      "title": "Estrutura recomendada (classes)",
+      "body": "Use uma estrutura clara e repetível:\n\n- `.app-shell` (layout geral)\n- `.topbar`\n- `.sidebar`\n- `.main`\n\nDentro do main:\n- `.stats` (grid de cards pequenos)\n- `.card`\n- `.table-card` (card com tabela)\n- `.actions` (botões)\n\nRegra:\n- layout por classe (não por tag)\n- evita quebra por cascata."
+    },
+    {
+      "title": "Layout base mobile-first (1 coluna)",
+      "body": "No mobile:\n- tudo em 1 coluna\n\nOrdem comum:\n- topbar\n- sidebar (vira seção)\n- main\n\nGrid mobile:\n- `grid-template-columns: 1fr`\n- `grid-template-areas: \"topbar\" \"sidebar\" \"main\"`"
+    },
+    {
+      "title": "Upgrade desktop (sidebar ao lado)",
+      "body": "No desktop:\n- sidebar fixa na esquerda\n- main na direita\n\nGrid desktop:\n- `grid-template-columns: 280px 1fr`\n- `grid-template-areas: \"topbar topbar\" \"sidebar main\"`\n\nIsso é um layout padrão em dashboards."
+    },
+    {
+      "title": "Topbar sticky (opcional, mas fica pro)",
+      "body": "Uma topbar que gruda no topo melhora a UX.\n\nPadrão:\n- `position: sticky; top: 0; z-index: 10;`\n\nE fundo com leve transparência:\n- `background: rgba(..., 0.7)`\n- `backdrop-filter` é bonito, mas use com cuidado (pode pesar)\n\nSe quiser manter leve:\n- use fundo sólido + border."
+    },
+    {
+      "title": "Sidebar (menu) com links clicáveis e estado ativo",
+      "body": "Sidebar profissional:\n- links com padding confortável\n- estado ativo (página atual)\n- foco visível\n\nPadrão:\n- `.nav-link.active { color: var(--accent); background: rgba(...); }`\n\nIsso ajuda o aluno a não se perder."
+    },
+    {
+      "title": "Cards de estatísticas (grid responsivo)",
+      "body": "Dashboard tem cards pequenos tipo:\n- Aulas concluídas\n- Progresso\n- Última aula\n\nUse o padrão ouro para cards:\n\n`.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }`\n\nIsso adapta automaticamente."
+    },
+    {
+      "title": "Tabela dentro de card (sem quebrar no mobile)",
+      "body": "Tabelas estouram fácil no mobile.\n\nPadrão:\n- coloque tabela dentro de um wrapper com scroll horizontal:\n\n`.table-wrap { overflow-x: auto; }`\n\nE a tabela com:\n- `min-width` para não esmagar\n\nAssim:\n- no mobile, você rola a tabela horizontalmente\n- sem quebrar a página inteira."
+    },
+    {
+      "title": "Estados de interação (hover/focus) sem exagero",
+      "body": "Dashboard bom é “vivo”, mas sutil.\n\nPadrão:\n- hover em links e cards clicáveis\n- focus-visible em tudo clicável\n\nUse:\n- `transform` e `opacity`\n\nE reduced-motion para acessibilidade."
+    },
+    {
+      "title": "Checklist final do dashboard",
+      "body": "- [ ] Layout: 1 coluna no mobile, 2 colunas no desktop\n- [ ] Topbar não cobre conteúdo\n- [ ] Sidebar com links confortáveis\n- [ ] Cards em grid responsivo\n- [ ] Tabela não estoura (wrapper com overflow-x)\n- [ ] Foco visível\n\nSe passar nisso, seu dashboard fica pro."
+    },
+    {
+      "title": "Resumo do projeto",
+      "body": "- App shell com Grid por áreas\n- Mobile-first\n- Desktop com sidebar fixa\n- Stats com auto-fit/minmax\n- Tabela com overflow controlado\n- Interação com transform/opacity\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 34 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um dashboard típico tem:",
+        "options": [
+          { "key": "A", "text": "Topbar, Sidebar e Main" },
+          { "key": "B", "text": "Só um parágrafo gigante" }
+        ],
+        "answer": "A",
+        "explain": "Dashboard organiza navegação e conteúdo."
+      },
+      {
+        "id": 2,
+        "question": "Mobile-first no dashboard significa:",
+        "options": [
+          { "key": "A", "text": "Começar com 1 coluna e depois virar 2 colunas no desktop" },
+          { "key": "B", "text": "Começar com 2 colunas e apertar no celular" }
+        ],
+        "answer": "A",
+        "explain": "Mobile-first é base simples e upgrades com min-width."
+      },
+      {
+        "id": 3,
+        "question": "Grid por áreas ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Deixa o layout legível e fácil de manter" },
+          { "key": "B", "text": "Cria banco de dados automático" }
+        ],
+        "answer": "A",
+        "explain": "Áreas viram um “desenho” do layout."
+      },
+      {
+        "id": 4,
+        "question": "Topbar sticky usa:",
+        "options": [
+          { "key": "A", "text": "position: sticky; top: 0; z-index" },
+          { "key": "B", "text": "display: none para grudar" }
+        ],
+        "answer": "A",
+        "explain": "Sticky cola ao rolar."
+      },
+      {
+        "id": 5,
+        "question": "Para cards de estatísticas responsivos, um padrão é:",
+        "options": [
+          { "key": "A", "text": "repeat(auto-fit, minmax(220px, 1fr))" },
+          { "key": "B", "text": "repeat(8, 400px)" }
+        ],
+        "answer": "A",
+        "explain": "Auto-fit/minmax adapta ao espaço."
+      },
+      {
+        "id": 6,
+        "question": "Tabelas quebrando no mobile são resolvidas com:",
+        "options": [
+          { "key": "A", "text": "Wrapper com overflow-x: auto" },
+          { "key": "B", "text": "transform: translateY" }
+        ],
+        "answer": "A",
+        "explain": "Você rola a tabela sem quebrar a página."
+      },
+      {
+        "id": 7,
+        "question": "Links da sidebar devem ter:",
+        "options": [
+          { "key": "A", "text": "Padding confortável + foco visível + estado ativo" },
+          { "key": "B", "text": "Links minúsculos sem foco" }
+        ],
+        "answer": "A",
+        "explain": "Isso melhora UX e acessibilidade."
+      },
+      {
+        "id": 8,
+        "question": "Hover profissional em cards clicáveis usa:",
+        "options": [
+          { "key": "A", "text": "transform/opacity e sombra sutil" },
+          { "key": "B", "text": "animar width/height sempre" }
+        ],
+        "answer": "A",
+        "explain": "Transform/opacity são mais leves e bonitas."
+      },
+      {
+        "id": 9,
+        "question": "Um dashboard consistente depende de:",
+        "options": [
+          { "key": "A", "text": "Tokens (variáveis) e componentes reutilizáveis" },
+          { "key": "B", "text": "CSS aleatório por página" }
+        ],
+        "answer": "A",
+        "explain": "Tokens + componentes mantêm o design coerente."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo do projeto é:",
+        "options": [
+          { "key": "A", "text": "Criar um layout de app real com responsivo e componentes" },
+          { "key": "B", "text": "Só mudar a cor do body" }
+        ],
+        "answer": "A",
+        "explain": "Projeto junta várias técnicas em um layout real."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Dashboard (CSS do projeto) */\n\n:root {\n  --bg: #0b0f19;\n  --panel: #111827;\n  --text: #e5e7eb;\n  --muted: #9ca3af;\n  --accent: #60a5fa;\n  --border: rgba(255, 255, 255, 0.10);\n  --radius: 14px;\n  --shadow-1: 0 6px 16px rgba(0, 0, 0, 0.12);\n  --shadow-2: 0 16px 40px rgba(0, 0, 0, 0.16);\n}\n\nbody {\n  background: var(--bg);\n  color: var(--text);\n  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\n  line-height: 1.6;\n}\n\n.container {\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 16px;\n}\n\n@media (min-width: 768px) {\n  .container { padding: 24px; }\n}\n\n@media (min-width: 1024px) {\n  .container { padding: 32px; }\n}\n\n.app-shell {\n  display: grid;\n  grid-template-columns: 1fr;\n  grid-template-areas:\n    \"topbar\"\n    \"sidebar\"\n    \"main\";\n  gap: 16px;\n  align-items: start;\n}\n\n.topbar {\n  grid-area: topbar;\n  position: sticky;\n  top: 0;\n  z-index: 10;\n  background: rgba(11, 15, 25, 0.92);\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n}\n\n.topbar-inner {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 12px;\n  padding: 12px 16px;\n}\n\n.sidebar {\n  grid-area: sidebar;\n  background: var(--panel);\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n}\n\n.sidebar-inner {\n  display: grid;\n  gap: 8px;\n  padding: 12px;\n}\n\n.nav-link {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 10px 12px;\n  border-radius: 12px;\n  color: var(--text);\n  text-decoration: none;\n}\n\n.nav-link:hover {\n  background: rgba(255, 255, 255, 0.04);\n}\n\n.nav-link:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\n.nav-link.active {\n  color: var(--accent);\n  background: rgba(96, 165, 250, 0.10);\n  border: 1px solid rgba(96, 165, 250, 0.20);\n}\n\n.main {\n  grid-area: main;\n  display: grid;\n  gap: 16px;\n}\n\n.stats {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));\n  gap: 16px;\n}\n\n.card {\n  background: var(--panel);\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  box-shadow: var(--shadow-1);\n}\n\n.card-inner {\n  padding: 16px;\n  display: grid;\n  gap: 10px;\n}\n\n.card.clickable {\n  transition: transform 180ms ease, box-shadow 180ms ease;\n}\n\n.card.clickable:hover,\n.card.clickable:focus-visible {\n  transform: translateY(-2px);\n  box-shadow: var(--shadow-2);\n}\n\n.table-card .table-wrap {\n  overflow-x: auto;\n}\n\n.table-card table {\n  width: 100%;\n  border-collapse: collapse;\n  min-width: 640px;\n}\n\n.table-card th,\n.table-card td {\n  text-align: left;\n  padding: 10px 12px;\n  border-bottom: 1px solid var(--border);\n}\n\n.muted {\n  color: var(--muted);\n}\n\n@media (min-width: 1024px) {\n  .app-shell {\n    grid-template-columns: 280px 1fr;\n    grid-template-areas:\n      \"topbar topbar\"\n      \"sidebar main\";\n  }\n}\n\n@media (prefers-reduced-motion: reduce) {\n  * {\n    transition: none !important;\n    animation: none !important;\n  }\n}\n"
+  }
+}

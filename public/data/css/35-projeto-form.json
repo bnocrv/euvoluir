@@ -1,0 +1,155 @@
+{
+  "id": "35-projeto-form",
+  "title": "Aula 35 — Projeto 3: Formulário bonito + estados (erro/sucesso)",
+  "steps": [
+    {
+      "title": "Objetivo do projeto",
+      "body": "Você vai montar um formulário com cara de produto real.\n\nO foco aqui é UI e experiência:\n- inputs consistentes\n- labels claras\n- mensagem de erro/sucesso\n- foco acessível\n- layout responsivo\n\nVamos fazer um exemplo clássico:\n- Login/Cadastro\n\nE aplicar:\n- tokens (variáveis)\n- componentes (input, button, card)\n- estados (focus, error, success, disabled)\n- acessibilidade (focus-visible)\n\nMeta final:\n- o aluno olhar e pensar “isso parece profissional”."
+    },
+    {
+      "title": "Estrutura recomendada (classes)",
+      "body": "Use uma estrutura simples e escalável:\n\n- `.auth` (página)\n- `.auth-card` (card)\n- `.auth-header`\n- `.auth-form` (grid)\n- `.field` (label + input + help)\n- `.label`\n- `.input`\n- `.help`\n- `.help-error` / `.help-success`\n- `.actions` (botões)\n\nRegra:\n- espaçamento no container com grid + gap\n- evita briga com margin."
+    },
+    {
+      "title": "Layout do card (centralizado e responsivo)",
+      "body": "Padrão pro:\n- centralizar com grid/flex\n- limitar largura\n\nExemplo:\n- `.auth { min-height: 100vh; display: grid; place-items: center; padding: 16px; }`\n- `.auth-card { width: 100%; max-width: 460px; }`\n\nNo mobile:\n- ocupa quase toda a largura\n\nNo desktop:\n- fica com um tamanho elegante."
+    },
+    {
+      "title": "Inputs: base consistente",
+      "body": "Input pro precisa:\n- padding confortável\n- border sutil\n- radius\n- background correto\n\nE nunca esquecer:\n- `font: inherit` (reset/base)\n\nDepois:\n- foco com outline\n- estados com classes."
+    },
+    {
+      "title": "Foco: foco bonito e forte (a11y)",
+      "body": "Padrão:\n- `outline` com cor de destaque\n- `outline-offset`\n\nExemplo:\n`.input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }`\n\nIsso faz teclado funcionar perfeitamente."
+    },
+    {
+      "title": "Erro e sucesso: padrão de classes",
+      "body": "Nunca dependa só de cor.\n\nErro:\n- `.input-error` no input\n- `.help-error` na mensagem\n\nSucesso:\n- `.input-success`\n- `.help-success`\n\nE idealmente:\n- texto curto e claro\n\nExemplos:\n- \"Campo obrigatório\"\n- \"Senha deve ter no mínimo 6 caracteres\""
+    },
+    {
+      "title": "Botões: hierarquia de ações",
+      "body": "Uma tela de form geralmente tem:\n- ação principal (Entrar/Salvar)\n- ação secundária (Criar conta/Voltar)\n\nPadrão:\n- primary para ação principal\n- ghost para secundária\n\nE:\n- foco visível\n- disabled claro"
+    },
+    {
+      "title": "Mensagem geral do formulário (alerta)",
+      "body": "Além dos erros por campo, às vezes existe erro geral:\n- \"Usuário ou senha inválidos\"\n\nPadrão pro:\n- um alert no topo do form\n- com background sutil e borda\n\nExemplo:\n- `.alert.error`"
+    },
+    {
+      "title": "Checklist final do formulário",
+      "body": "- [ ] Labels claros\n- [ ] Inputs com padding confortável\n- [ ] Foco visível com teclado\n- [ ] Mensagens de erro e sucesso\n- [ ] Botão primary destacado\n- [ ] Não estoura no mobile\n\nSe passar nisso, seu form está pronto pra produto real."
+    },
+    {
+      "title": "Resumo do projeto",
+      "body": "- Card centralizado e responsivo\n- Kit de inputs\n- Foco acessível\n- Estados de erro/sucesso\n- Botões com hierarquia\n- Alertas gerais\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 35 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um formulário profissional precisa de:",
+        "options": [
+          { "key": "A", "text": "Estados claros (foco, erro, disabled)" },
+          { "key": "B", "text": "Nenhum estado visual" }
+        ],
+        "answer": "A",
+        "explain": "Estados guiam o usuário e evitam confusão."
+      },
+      {
+        "id": 2,
+        "question": "Centralizar o card do formulário pode ser feito com:",
+        "options": [
+          { "key": "A", "text": "display: grid e place-items: center" },
+          { "key": "B", "text": "Colocar vários <br> no HTML" }
+        ],
+        "answer": "A",
+        "explain": "Grid + place-items centraliza de forma limpa."
+      },
+      {
+        "id": 3,
+        "question": "O foco do input deve:",
+        "options": [
+          { "key": "A", "text": "Ser visível (outline) para teclado" },
+          { "key": "B", "text": "Ser removido sempre (outline: none)" }
+        ],
+        "answer": "A",
+        "explain": "Remover foco quebra acessibilidade."
+      },
+      {
+        "id": 4,
+        "question": "Erro por campo deve ter:",
+        "options": [
+          { "key": "A", "text": "Borda de erro + mensagem (não só cor)" },
+          { "key": "B", "text": "Apenas mudar o fundo e não dizer nada" }
+        ],
+        "answer": "A",
+        "explain": "Mensagem é essencial para clareza e a11y."
+      },
+      {
+        "id": 5,
+        "question": "Ação principal do formulário deve ser:",
+        "options": [
+          { "key": "A", "text": "Um botão primary (mais destacado)" },
+          { "key": "B", "text": "Um link escondido sem destaque" }
+        ],
+        "answer": "A",
+        "explain": "Hierarquia visual melhora a decisão do usuário."
+      },
+      {
+        "id": 6,
+        "question": "Disabled em botão deve:",
+        "options": [
+          { "key": "A", "text": "Parecer desativado (opacidade/cursor)" },
+          { "key": "B", "text": "Parecer normal para confundir" }
+        ],
+        "answer": "A",
+        "explain": "O usuário precisa entender que não pode clicar."
+      },
+      {
+        "id": 7,
+        "question": "Mensagens de erro e sucesso devem ser:",
+        "options": [
+          { "key": "A", "text": "Curtas e claras" },
+          { "key": "B", "text": "Sempre longas e sem objetivo" }
+        ],
+        "answer": "A",
+        "explain": "Clareza é UX."
+      },
+      {
+        "id": 8,
+        "question": "Um alert geral do form serve para:",
+        "options": [
+          { "key": "A", "text": "Erros que não são de um campo específico (ex.: login inválido)" },
+          { "key": "B", "text": "Trocar fonte automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Erro geral fica melhor em um bloco no topo."
+      },
+      {
+        "id": 9,
+        "question": "No mobile, o card do form deve:",
+        "options": [
+          { "key": "A", "text": "Caber na tela e ter padding confortável" },
+          { "key": "B", "text": "Ter largura fixa de 900px" }
+        ],
+        "answer": "A",
+        "explain": "Mobile-first evita overflow horizontal."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo do projeto é:",
+        "options": [
+          { "key": "A", "text": "Construir um form com cara de produto real e estados completos" },
+          { "key": "B", "text": "Apenas mudar a cor do input" }
+        ],
+        "answer": "A",
+        "explain": "Projeto junta UI, acessibilidade e consistência."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Form pro (Login/Cadastro) */\n\n:root {\n  --bg: #0b0f19;\n  --panel: #111827;\n  --text: #e5e7eb;\n  --muted: #9ca3af;\n  --accent: #60a5fa;\n  --border: rgba(255, 255, 255, 0.10);\n  --danger: #ef4444;\n  --success: #22c55e;\n  --radius: 14px;\n}\n\n.auth {\n  min-height: 100vh;\n  display: grid;\n  place-items: center;\n  padding: 16px;\n}\n\n.auth-card {\n  width: 100%;\n  max-width: 460px;\n  background: var(--panel);\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n}\n\n.auth-inner {\n  padding: 18px;\n  display: grid;\n  gap: 14px;\n}\n\n.auth-header {\n  display: grid;\n  gap: 6px;\n}\n\n.muted {\n  color: var(--muted);\n}\n\n.auth-form {\n  display: grid;\n  gap: 14px;\n}\n\n.field {\n  display: grid;\n  gap: 6px;\n}\n\n.label {\n  font-size: 0.875rem;\n}\n\n.input {\n  width: 100%;\n  padding: 10px 12px;\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  background: rgba(255, 255, 255, 0.02);\n  color: var(--text);\n}\n\n.input:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 2px;\n  border-color: rgba(96, 165, 250, 0.60);\n}\n\n.help {\n  font-size: 0.875rem;\n  color: var(--muted);\n}\n\n.input-error {\n  border-color: var(--danger);\n}\n\n.help-error {\n  color: var(--danger);\n}\n\n.input-success {\n  border-color: var(--success);\n}\n\n.help-success {\n  color: var(--success);\n}\n\n.alert {\n  padding: 10px 12px;\n  border-radius: 12px;\n  border: 1px solid var(--border);\n  background: rgba(255, 255, 255, 0.02);\n}\n\n.alert.error {\n  border-color: rgba(239, 68, 68, 0.35);\n  background: rgba(239, 68, 68, 0.10);\n}\n\n.actions {\n  display: grid;\n  gap: 10px;\n}\n\n.btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  padding: 10px 14px;\n  border-radius: 12px;\n  border: 1px solid transparent;\n  font-weight: 700;\n  cursor: pointer;\n  transition: transform 150ms ease, opacity 150ms ease;\n}\n\n.btn:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\n.btn:hover {\n  transform: translateY(-1px);\n  opacity: 0.95;\n}\n\n.btn.primary {\n  background: var(--accent);\n  color: #0b0f19;\n}\n\n.btn.ghost {\n  background: transparent;\n  color: var(--text);\n  border-color: var(--border);\n}\n\n.btn:disabled {\n  opacity: 0.55;\n  cursor: not-allowed;\n  transform: none;\n}\n\n@media (min-width: 768px) {\n  .auth-inner {\n    padding: 22px;\n  }\n}\n\n@media (prefers-reduced-motion: reduce) {\n  * {\n    transition: none !important;\n    animation: none !important;\n  }\n}\n"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "id": "32-css-debug",
+  "title": "Aula 32 — Debug de CSS (DevTools: box model, flex, grid)",
+  "steps": [
+    {
+      "title": "Por que aprender debug te faz evoluir 10x mais rápido",
+      "body": "CSS não é adivinhação.\n\nQuem aprende a debugar:\n- resolve problema rápido\n- entende por que aconteceu\n- para de copiar e colar no desespero\n\nHoje você vai aprender um método profissional usando DevTools:\n\n1) Inspecionar elemento\n2) Ver Box Model\n3) Ver regras aplicadas e riscadas\n4) Debugar Flex\n5) Debugar Grid\n6) Encontrar overflow (estouro horizontal)\n\nNo final você vai ter um checklist que resolve 90% dos bugs."
+    },
+    {
+      "title": "Ferramenta principal: DevTools (Inspecionar)",
+      "body": "Passo 1:\n- aperte F12\n- selecione o ícone de selecionar elemento (cursor)\n- clique no elemento com problema\n\nAgora você tem acesso a:\n- HTML real\n- CSS aplicado\n- regras que perderam (riscadas)\n\nIsso é o seu \"raio-x\"."
+    },
+    {
+      "title": "Regras aplicadas vs regras riscadas (o segredo do CSS)",
+      "body": "Na aba Styles:\n- regras ativas aparecem normais\n- regras que perderam a disputa aparecem riscadas\n\nSe está riscado, a resposta é:\n- outra regra mais forte venceu\n\nAí você verifica:\n- ordem\n- especificidade\n- arquivo que vem depois\n\nIsso conecta direto com a Aula 04 (cascata/especificidade)."
+    },
+    {
+      "title": "Box Model no DevTools (margin/padding/border)",
+      "body": "Aba Computed ou o painel de Box Model mostra:\n- margin\n- border\n- padding\n- content\n\nUse quando:\n- algo está \"colado\"\n- algo está \"longe demais\"\n- tamanho não bate\n\nRegra rápida:\n- texto colado na borda → padding\n- elementos colados entre si → margin ou gap\n- tamanho estranho → box-sizing"
+    },
+    {
+      "title": "Como descobrir de onde veio um estilo (arquivo e linha)",
+      "body": "Na aba Styles, cada regra mostra:\n- o seletor\n- o arquivo\n- a linha\n\nClique no link do arquivo/linha.\n\nIsso te leva direto para onde corrigir.\n\nIsso evita:\n- sair caçando no projeto inteiro."
+    },
+    {
+      "title": "Debug de Flex (o que olhar primeiro)",
+      "body": "Quando algo com flex está estranho, verifique nesta ordem:\n\n1) O pai tem `display: flex`?\n2) `flex-direction` é row ou column?\n3) `justify-content` (eixo principal)\n4) `align-items` (eixo cruzado)\n5) Tem `gap`?\n6) Existe `flex-wrap`? (se estoura no mobile)\n\nDica:\n- DevTools mostra um badge \"flex\" no container.\n- Clique para ver overlays (varia por navegador)."
+    },
+    {
+      "title": "Debug de Grid (o que olhar primeiro)",
+      "body": "Para Grid, verifique:\n\n1) O pai tem `display: grid`?\n2) `grid-template-columns`\n3) `gap`\n4) `grid-template-areas` (se estiver usando)\n\nDica:\n- DevTools mostra um badge \"grid\".\n- Ative overlay para ver as linhas e colunas.\n\nIsso é perfeito para detectar:\n- colunas erradas\n- itens fora do lugar\n- áreas mal definidas."
+    },
+    {
+      "title": "Bug clássico: overflow horizontal (tela “esticando” no mobile)",
+      "body": "Quando a página dá scroll lateral no mobile, geralmente é:\n\n- um elemento com width fixa grande\n- uma imagem sem max-width\n- uma palavra/URL muito longa\n\nMétodo rápido:\n1) No CSS, temporariamente:\n`* { outline: 1px solid rgba(255,0,0,0.2); }`\n2) Role e veja qual elemento passa da borda\n\nOu:\n- no DevTools, procure o elemento com tamanho maior que a viewport."
+    },
+    {
+      "title": "Bug clássico: centralização que não funciona",
+      "body": "Quando alguém fala \"não centraliza\", geralmente é:\n\n- tentou usar `justify-content` sem ter `display: flex`\n- confundiu eixo (row vs column)\n- elemento inline que não aceita width\n\nChecklist:\n- o pai tem flex?\n- qual é o eixo principal?\n- precisa de align-items ou justify-content?\n- o elemento é block/inline-block?"
+    },
+    {
+      "title": "Bug clássico: z-index não funciona",
+      "body": "Quase sempre é por:\n\n1) o elemento não está posicionado (`position: static`)\n2) outro elemento está em outro contexto de empilhamento\n\nChecklist:\n- tem `position: relative/absolute/fixed/sticky`?\n- `z-index` está no elemento certo?\n\nRegra prática:\n- aplique z-index em elementos posicionados."
+    },
+    {
+      "title": "Método profissional (checklist de 90% dos bugs)",
+      "body": "Sempre siga essa ordem:\n\n1) O seletor está pegando o elemento?\n2) A regra está aplicada ou riscada?\n3) Se riscada: quem venceu e por quê?\n4) Box model: margin/padding/border\n5) Layout: flex/grid (pai correto?)\n6) Responsivo: estourou? (wrap, widths, imagens)\n\nSe você fizer isso, você resolve quase tudo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- DevTools é seu raio-x\n- Regras riscadas explicam o bug\n- Box model resolve spacing\n- Flex: check pai, eixos, justify/align, gap, wrap\n- Grid: columns, gap, areas, overlay\n- Overflow: geralmente width fixa/imagem/URL\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 32 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A melhor ferramenta para debugar CSS no navegador é:",
+        "options": [
+          { "key": "A", "text": "DevTools (Inspecionar)" },
+          { "key": "B", "text": "Adivinhar e recarregar 50 vezes" }
+        ],
+        "answer": "A",
+        "explain": "DevTools mostra o CSS real aplicado."
+      },
+      {
+        "id": 2,
+        "question": "Quando uma regra aparece riscada no DevTools, significa:",
+        "options": [
+          { "key": "A", "text": "Ela perdeu para outra regra (cascata/especificidade)" },
+          { "key": "B", "text": "Ela sempre vence" }
+        ],
+        "answer": "A",
+        "explain": "Riscada = não está valendo naquele elemento."
+      },
+      {
+        "id": 3,
+        "question": "Se o texto está colado na borda do card, o ajuste comum é:",
+        "options": [
+          { "key": "A", "text": "padding" },
+          { "key": "B", "text": "opacity" }
+        ],
+        "answer": "A",
+        "explain": "Padding é espaço interno."
+      },
+      {
+        "id": 4,
+        "question": "Se elementos estão colados entre si, o ajuste comum é:",
+        "options": [
+          { "key": "A", "text": "margin ou gap" },
+          { "key": "B", "text": "font-weight" }
+        ],
+        "answer": "A",
+        "explain": "Separação externa é margin; em flex/grid use gap."
+      },
+      {
+        "id": 5,
+        "question": "Se justify-content não funciona, um motivo comum é:",
+        "options": [
+          { "key": "A", "text": "O container não está com display: flex/grid" },
+          { "key": "B", "text": "O navegador não suporta CSS" }
+        ],
+        "answer": "A",
+        "explain": "Justify/align funcionam em flex/grid."
+      },
+      {
+        "id": 6,
+        "question": "Para descobrir qual elemento causa overflow horizontal, uma técnica é:",
+        "options": [
+          { "key": "A", "text": "Aplicar outline temporário em todos os elementos" },
+          { "key": "B", "text": "Aumentar a fonte até sumir" }
+        ],
+        "answer": "A",
+        "explain": "Outline ajuda a enxergar o elemento que ultrapassa."
+      },
+      {
+        "id": 7,
+        "question": "Para debugar Grid, DevTools pode mostrar:",
+        "options": [
+          { "key": "A", "text": "Overlay com linhas e colunas" },
+          { "key": "B", "text": "Banco de dados do site" }
+        ],
+        "answer": "A",
+        "explain": "Overlay facilita ver a grade."
+      },
+      {
+        "id": 8,
+        "question": "Um motivo comum de z-index não funcionar é:",
+        "options": [
+          { "key": "A", "text": "O elemento não está posicionado (position: static)" },
+          { "key": "B", "text": "O elemento tem padding" }
+        ],
+        "answer": "A",
+        "explain": "Z-index geralmente precisa de elemento posicionado."
+      },
+      {
+        "id": 9,
+        "question": "Overflow horizontal no mobile geralmente vem de:",
+        "options": [
+          { "key": "A", "text": "Width fixa grande ou imagem sem max-width" },
+          { "key": "B", "text": "gap em grid" }
+        ],
+        "answer": "A",
+        "explain": "Esses são os culpados mais comuns."
+      },
+      {
+        "id": 10,
+        "question": "O método profissional de debug começa por:",
+        "options": [
+          { "key": "A", "text": "Ver se a regra está aplicada ou riscada e quem venceu" },
+          { "key": "B", "text": "Copiar CSS aleatório da internet" }
+        ],
+        "answer": "A",
+        "explain": "Riscado indica conflito de cascata/especificidade."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Debug helper (use só temporariamente) */\n\n/* 1) Enxergar caixas */\n/* * { outline: 1px solid rgba(255, 0, 0, 0.2); } */\n\n/* 2) Padrões que ajudam a evitar bugs */\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n  display: block;\n}\n\n/* 3) Layout base com gap (mais previsível) */\n.stack {\n  display: grid;\n  gap: 16px;\n}\n"
+  }
+}

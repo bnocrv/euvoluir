@@ -1,0 +1,147 @@
+{
+  "id": "38-final-projeto-css",
+  "title": "Aula 38 — Final CSS: checklist pro + mini projeto (tema completo)",
+  "steps": [
+    {
+      "title": "Objetivo da última aula de CSS",
+      "body": "Você chegou na última aula de CSS (parabéns por ter insistido).\n\nAqui você vai fechar com:\n\n1) Checklist profissional para revisar seu projeto\n2) Um “tema completo” (tokens) para você usar no site todo\n3) Um mini projeto final: padronizar a plataforma inteira\n\nA ideia é sair com CSS organizado, bonito e pronto para escalar."
+    },
+    {
+      "title": "Checklist profissional (use sempre antes de deploy)",
+      "body": "Passe por isso antes de considerar pronto:\n\nA) Layout\n- [ ] Mobile-first funciona (1 coluna, nada estoura)\n- [ ] Desktop tem respiro (container + padding maior)\n- [ ] Grid/Flex com `gap` (não margin aleatória)\n\nB) Tipografia\n- [ ] line-height confortável (1.5–1.7)\n- [ ] títulos com hierarquia clara\n- [ ] parágrafos com largura de leitura (65ch) quando for texto longo\n\nC) Componentes\n- [ ] botões consistentes (base + variações)\n- [ ] cards consistentes (radius/border/shadow)\n- [ ] formulários com estados (focus/error/disabled)\n\nD) Acessibilidade\n- [ ] foco visível (focus-visible)\n- [ ] contraste ok\n- [ ] prefers-reduced-motion respeitado\n\nE) Performance\n- [ ] microinterações com transform/opacity\n- [ ] sem animações pesadas\n\nSe seu projeto passa nisso, ele está “produto real”."
+    },
+    {
+      "title": "Tema completo (tokens) — o coração do design",
+      "body": "Tokens são variáveis que centralizam decisões.\n\nUm tema bom tem:\n- cores de fundo e texto\n- cores de destaque\n- bordas\n- radius\n- sombras\n- espaçamentos\n\nA partir disso, componentes não inventam valores.\n\nVocê muda o tema e o projeto inteiro acompanha."
+    },
+    {
+      "title": "Tokens sugeridos (o mínimo forte)",
+      "body": "Um conjunto mínimo (bem forte):\n\nCores:\n- `--bg`, `--panel`, `--text`, `--muted`, `--accent`\n- `--danger`, `--success`\n\nUI:\n- `--border`, `--radius`\n- `--shadow-1`, `--shadow-2`\n\nEspaço:\n- `--space-1` (8px)\n- `--space-2` (12px)\n- `--space-3` (16px)\n- `--space-4` (24px)\n\nTipografia:\n- `--font-sans`, `--font-mono`\n\nIsso já te dá consistência total."
+    },
+    {
+      "title": "Mini projeto final: padronizar 4 componentes (a tarefa)",
+      "body": "Você vai pegar seu projeto e garantir que:\n\n1) `.container` existe e é usada em todas páginas\n2) `.btn` existe com:\n- `.btn.primary`\n- `.btn.ghost`\n- `.btn.danger`\n\n3) `.card` existe com `.card-inner`\n\n4) `.input` existe com estados:\n- `.input-error`\n- `.input-success`\n\nE que tudo usa tokens.\n\nSe você fizer isso, sua plataforma fica escalável de verdade."
+    },
+    {
+      "title": "Regra final: menos classes inventadas, mais reutilização",
+      "body": "Ao crescer o projeto, o erro clássico é:\n- criar classe nova para tudo\n\nO certo é:\n- reutilizar componentes\n- criar utilitários pequenos para padrões\n\nExemplos de utilitários úteis:\n- `.stack` (grid + gap)\n- `.muted`\n- `.center`\n\nPoucos utilitários já resolvem muita coisa."
+    },
+    {
+      "title": "Padrão de arquivos (recomendação final)",
+      "body": "Se você quiser fechar perfeito:\n\n- `base.css` (reset + tokens + tipografia)\n- `layout.css` (container, stack, grids)\n- `components.css` (btn, card, input, navbar)\n- `pages.css` (ajustes específicos)\n\nOrdem:\n- base → layout → components → pages\n\nIsso é escalável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Checklist pro (layout, tipografia, componentes, a11y, performance)\n- Tokens (tema) como base do design\n- Mini projeto: padronizar container, btn, card, input\n- Organização de arquivos por camadas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 38 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um checklist final ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Evita bugs e melhora consistência antes do deploy" },
+          { "key": "B", "text": "É só enfeite e não serve para nada" }
+        ],
+        "answer": "A",
+        "explain": "Checklist reduz erro humano e deixa o projeto mais pro."
+      },
+      {
+        "id": 2,
+        "question": "Tokens (variáveis) servem para:",
+        "options": [
+          { "key": "A", "text": "Centralizar decisões de design (cores, radius, etc.)" },
+          { "key": "B", "text": "Criar HTML automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Mudou token, muda o sistema todo."
+      },
+      {
+        "id": 3,
+        "question": "Um projeto escalável deve:",
+        "options": [
+          { "key": "A", "text": "Reutilizar componentes (btn/card/input) no site todo" },
+          { "key": "B", "text": "Criar CSS diferente em cada página para tudo" }
+        ],
+        "answer": "A",
+        "explain": "Reutilização é o coração do design system."
+      },
+      {
+        "id": 4,
+        "question": "Acessibilidade mínima inclui:",
+        "options": [
+          { "key": "A", "text": "Foco visível e contraste bom" },
+          { "key": "B", "text": "Remover outline sempre" }
+        ],
+        "answer": "A",
+        "explain": "Teclado e leitura precisam funcionar."
+      },
+      {
+        "id": 5,
+        "question": "Performance em microinterações deve preferir:",
+        "options": [
+          { "key": "A", "text": "transform/opacity" },
+          { "key": "B", "text": "Animar width/height em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Transform/opacity tendem a ser mais leves."
+      },
+      {
+        "id": 6,
+        "question": "Uma boa tipografia base tem:",
+        "options": [
+          { "key": "A", "text": "Line-height confortável e hierarquia de títulos" },
+          { "key": "B", "text": "Texto minúsculo e sem espaçamento" }
+        ],
+        "answer": "A",
+        "explain": "Leitura é prioridade."
+      },
+      {
+        "id": 7,
+        "question": "Um utilitário bom é aquele que:",
+        "options": [
+          { "key": "A", "text": "Faz uma coisa repetível (ex.: stack/muted)" },
+          { "key": "B", "text": "Faz 10 coisas ao mesmo tempo" }
+        ],
+        "answer": "A",
+        "explain": "Utilitário pequeno é mais previsível."
+      },
+      {
+        "id": 8,
+        "question": "Ordem de camadas recomendada é:",
+        "options": [
+          { "key": "A", "text": "base → layout → components → pages" },
+          { "key": "B", "text": "pages → components → layout → base" }
+        ],
+        "answer": "A",
+        "explain": "Camadas garantem sobrescrita previsível."
+      },
+      {
+        "id": 9,
+        "question": "Um mini projeto final bom é:",
+        "options": [
+          { "key": "A", "text": "Padronizar container, btn, card, input com tokens" },
+          { "key": "B", "text": "Criar 50 classes novas para cada tela" }
+        ],
+        "answer": "A",
+        "explain": "Padronizar deixa escalável."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo final do CSS do seu projeto é:",
+        "options": [
+          { "key": "A", "text": "Ser consistente, acessível e fácil de manter" },
+          { "key": "B", "text": "Ser confuso para ninguém mexer" }
+        ],
+        "answer": "A",
+        "explain": "Projeto bom é o que você consegue evoluir."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Tema completo (tokens) + componentes base */\n\n:root {\n  --bg: #0b0f19;\n  --panel: #111827;\n  --text: #e5e7eb;\n  --muted: #9ca3af;\n  --accent: #60a5fa;\n  --danger: #ef4444;\n  --success: #22c55e;\n\n  --border: rgba(255, 255, 255, 0.10);\n  --radius: 14px;\n\n  --shadow-1: 0 6px 16px rgba(0, 0, 0, 0.12);\n  --shadow-2: 0 16px 40px rgba(0, 0, 0, 0.16);\n\n  --space-1: 8px;\n  --space-2: 12px;\n  --space-3: 16px;\n  --space-4: 24px;\n\n  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\n  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n}\n\nbody {\n  background: var(--bg);\n  color: var(--text);\n  font-family: var(--font-sans);\n  line-height: 1.6;\n}\n\n.container {\n  max-width: 1100px;\n  margin: 0 auto;\n  padding: var(--space-3);\n}\n\n@media (min-width: 768px) {\n  .container { padding: var(--space-4); }\n}\n\n.stack {\n  display: grid;\n  gap: var(--space-3);\n}\n\n.muted {\n  color: var(--muted);\n}\n\n.btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  padding: 10px 14px;\n  border-radius: 12px;\n  border: 1px solid transparent;\n  font-weight: 700;\n  cursor: pointer;\n  transition: transform 150ms ease, opacity 150ms ease;\n}\n\n.btn:hover {\n  transform: translateY(-1px);\n  opacity: 0.95;\n}\n\n.btn:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\n.btn.primary {\n  background: var(--accent);\n  color: #0b0f19;\n}\n\n.btn.ghost {\n  background: transparent;\n  color: var(--text);\n  border-color: var(--border);\n}\n\n.btn.danger {\n  background: var(--danger);\n  color: #0b0f19;\n}\n\n.btn:disabled {\n  opacity: 0.55;\n  cursor: not-allowed;\n  transform: none;\n}\n\n.card {\n  background: var(--panel);\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  box-shadow: var(--shadow-1);\n}\n\n.card-inner {\n  padding: var(--space-3);\n  display: grid;\n  gap: 10px;\n}\n\n.input {\n  width: 100%;\n  padding: 10px 12px;\n  border-radius: 12px;\n  border: 1px solid var(--border);\n  background: rgba(255, 255, 255, 0.02);\n  color: var(--text);\n  font-family: var(--font-sans);\n}\n\n.input:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 2px;\n  border-color: rgba(96, 165, 250, 0.60);\n}\n\n.input-error {\n  border-color: var(--danger);\n}\n\n.input-success {\n  border-color: var(--success);\n}\n\n@media (prefers-reduced-motion: reduce) {\n  * {\n    transition: none !important;\n    animation: none !important;\n  }\n}\n"
+  }
+}

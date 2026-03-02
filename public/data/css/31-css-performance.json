@@ -1,0 +1,163 @@
+{
+  "id": "31-css-performance",
+  "title": "Aula 31 — Performance no CSS (reflow, paint, dicas práticas)",
+  "steps": [
+    {
+      "title": "Por que performance no CSS importa",
+      "body": "Performance não é só “site rápido”. É:\n- scroll suave\n- animações sem travar\n- cliques com resposta rápida\n- menos gasto de bateria no celular\n\nE o CSS pode ajudar ou atrapalhar.\n\nHoje você vai entender, de forma simples:\n- o que é reflow (layout)\n- o que é paint (pintura)\n- o que é composite (camada)\n- quais coisas deixam pesado\n- o que fazer no seu projeto pra ficar leve"
+    },
+    {
+      "title": "A sequência do navegador (versão simples)",
+      "body": "Quando a página renderiza, o navegador faz (bem resumido):\n\n1) **Layout (reflow)**: calcula tamanhos e posições\n2) **Paint**: pinta pixels (cores, bordas, sombras)\n3) **Composite**: junta camadas e mostra na tela\n\nO objetivo da performance é:\n- evitar refazer layout e paint toda hora\n- preferir mudanças que vão direto para composite"
+    },
+    {
+      "title": "Reflow (layout): o que costuma ser caro",
+      "body": "Reflow é caro porque mexe na estrutura do layout.\n\nMudanças que podem disparar reflow:\n- mudar `width` e `height`\n- mudar `padding` e `margin`\n- mudar `top/left` (quando posicionamento influencia layout)\n- mudar `display`\n- mudar fonte/tamanho que afete o fluxo\n\nRegra prática:\n- não anime essas coisas em hover/scroll.\n- para microinteração, prefira transform/opacity."
+    },
+    {
+      "title": "Paint: o que costuma pesar",
+      "body": "Paint é quando o navegador precisa repintar.\n\nCoisas que podem custar mais:\n- sombras muito grandes e escuras\n- filtros (`filter: blur(...)`, `drop-shadow(...)`)\n- backgrounds complexos\n- bordas e efeitos em muitos elementos\n\nRegra prática:\n- sombra sutil\n- evite filtro pesado em listas grandes\n- não exagere em efeitos."
+    },
+    {
+      "title": "Composite: o caminho “leve”",
+      "body": "Composite costuma ser o caminho mais suave.\n\nMudanças que geralmente vão bem para composite:\n- `transform`\n- `opacity`\n\nPor isso o padrão profissional de microinteração é:\n- `transform: translateY(...)`\n- `opacity: ...`\n\nVocê já aplicou isso nas aulas 21 e 23."
+    },
+    {
+      "title": "Regra de ouro: não anime layout, anime transform",
+      "body": "Comparação prática:\n\nRuim (pode pesar):\n- `top: -2px`\n\nBom (geralmente leve):\n- `transform: translateY(-2px)`\n\nO efeito visual é parecido, mas o custo pode ser bem diferente."
+    },
+    {
+      "title": "Cuidado com sombras em listas de cards",
+      "body": "Sombra em 1 card é ok.\nSombra em 50 cards pode pesar (depende do dispositivo).\n\nSe você tiver muitas cards, preferir:\n- borda sutil + contraste de fundo\n- sombra menor\n\nE usar sombra mais forte só no hover do card (quando o usuário interage)."
+    },
+    {
+      "title": "Seletores: evite coisas difíceis de manter (e de calcular)",
+      "body": "Em performance e manutenção, seletores muito profundos são ruins:\n\nEvite:\n`.page .main .content .list .card .title span { ... }`\n\nPrefira:\n`.card__title { ... }`\n\nIsso ajuda:\n- o navegador\n- você no futuro\n\n(E combina com a Aula 30: arquitetura CSS.)"
+    },
+    {
+      "title": "will-change (use com moderação)",
+      "body": "`will-change` avisa o navegador que algo vai mudar.\n\nExemplo:\n`.card { will-change: transform; }`\n\n⚠️ Mas cuidado:\n- usar will-change em muitos elementos pode piorar (memória)\n\nRegra prática:\n- use só em elementos que realmente animam com frequência\n- e de preferência em poucos itens (ou em hover/focus, quando fizer sentido)."
+    },
+    {
+      "title": "Responsivo também é performance",
+      "body": "Responsivo bem feito melhora performance porque:\n- evita coisas gigantes no mobile\n- reduz necessidade de layout quebrado\n\nBoas práticas:\n- imagens com `max-width: 100%`\n- evitar widths fixas grandes\n- usar grid/auto-fit/minmax para adaptar"
+    },
+    {
+      "title": "Checklist pro seu projeto (CSS leve)",
+      "body": "Antes de considerar pronto:\n\n- [ ] Microinterações usam `transform`/`opacity`\n- [ ] Nada anima `width/height/top/left`\n- [ ] Sombras são sutis e consistentes\n- [ ] Evita `filter` pesado em listas\n- [ ] Seletores curtos (BEM)\n- [ ] Prefers-reduced-motion respeitado\n\nSe você seguir isso, sua UI fica suave."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Render = layout (reflow) + paint + composite\n- Reflow e paint costumam ser caros\n- Transform e opacity costumam ser mais leves\n- Evite sombras/filtros pesados em massa\n- Seletor simples ajuda\n- will-change é útil, mas use pouco\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 31 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A sequência simplificada do navegador inclui:",
+        "options": [
+          { "key": "A", "text": "Layout (reflow), paint e composite" },
+          { "key": "B", "text": "Banco de dados, servidor e API" }
+        ],
+        "answer": "A",
+        "explain": "Esses são passos básicos do pipeline de renderização."
+      },
+      {
+        "id": 2,
+        "question": "Reflow (layout) costuma acontecer quando você muda:",
+        "options": [
+          { "key": "A", "text": "width/height/padding/margin" },
+          { "key": "B", "text": "apenas a cor do texto sempre" }
+        ],
+        "answer": "A",
+        "explain": "Mudanças de tamanho/posicionamento afetam o layout."
+      },
+      {
+        "id": 3,
+        "question": "Para microinterações leves, prefira animar:",
+        "options": [
+          { "key": "A", "text": "transform e opacity" },
+          { "key": "B", "text": "width e height" }
+        ],
+        "answer": "A",
+        "explain": "Transform/opacity geralmente vão melhor para composite."
+      },
+      {
+        "id": 4,
+        "question": "Comparando top vs transform, o padrão recomendado é:",
+        "options": [
+          { "key": "A", "text": "transform: translate(...) no lugar de top/left" },
+          { "key": "B", "text": "top/left sempre em qualquer hover" }
+        ],
+        "answer": "A",
+        "explain": "Transform costuma ser mais suave e barato."
+      },
+      {
+        "id": 5,
+        "question": "Sombras muito grandes em muitos cards podem:",
+        "options": [
+          { "key": "A", "text": "Custar performance (paint)" },
+          { "key": "B", "text": "Melhorar automaticamente a velocidade" }
+        ],
+        "answer": "A",
+        "explain": "Paint pode ficar pesado com muitas sombras."
+      },
+      {
+        "id": 6,
+        "question": "Filter (blur/drop-shadow) em massa tende a:",
+        "options": [
+          { "key": "A", "text": "Ser mais pesado" },
+          { "key": "B", "text": "Ser sempre mais leve que tudo" }
+        ],
+        "answer": "A",
+        "explain": "Filtros podem custar bastante em renderização."
+      },
+      {
+        "id": 7,
+        "question": "Seletores muito profundos são ruins porque:",
+        "options": [
+          { "key": "A", "text": "Dificultam manutenção e podem aumentar custo de cálculo" },
+          { "key": "B", "text": "São sempre a melhor prática" }
+        ],
+        "answer": "A",
+        "explain": "Seletores curtos e previsíveis são melhores."
+      },
+      {
+        "id": 8,
+        "question": "will-change deve ser usado:",
+        "options": [
+          { "key": "A", "text": "Com moderação, em poucos elementos que animam" },
+          { "key": "B", "text": "Em todos os elementos para ficar mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "Will-change em excesso pode piorar (memória)."
+      },
+      {
+        "id": 9,
+        "question": "Uma prática boa para listas grandes é:",
+        "options": [
+          { "key": "A", "text": "Borda sutil e sombra forte só no hover" },
+          { "key": "B", "text": "Sombra enorme em todos os itens sempre" }
+        ],
+        "answer": "A",
+        "explain": "Você reduz paint constante e mantém feedback no hover."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo final de performance no CSS é:",
+        "options": [
+          { "key": "A", "text": "UI suave e previsível em qualquer dispositivo" },
+          { "key": "B", "text": "Remover todo CSS do site" }
+        ],
+        "answer": "A",
+        "explain": "Performance é experiência: fluidez e resposta rápida."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Padrões leves de UI */\n\n.card {\n  border: 1px solid rgba(17, 24, 39, 0.12);\n  border-radius: 14px;\n  transition: transform 180ms ease, box-shadow 180ms ease;\n}\n\n.card:hover,\n.card:focus-visible {\n  transform: translateY(-2px);\n  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16);\n}\n\n/* Evite animar layout (top/left/width/height). Prefira transform/opacity. */\n\n@media (prefers-reduced-motion: reduce) {\n  .card {\n    transition: none !important;\n  }\n}\n"
+  }
+}

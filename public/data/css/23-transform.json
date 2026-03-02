@@ -1,0 +1,163 @@
+{
+  "id": "23-transform",
+  "title": "Aula 23 — Transform (scale/rotate/translate) e performance",
+  "steps": [
+    {
+      "title": "Por que transform é tão importante",
+      "body": "`transform` é uma das ferramentas mais usadas em UI moderna.\n\nEle permite mover e transformar elementos sem bagunçar o layout.\n\nVocê usa transform para:\n- microinterações (hover bonito)\n- animações leves\n- mover elementos sem mexer em margin/top/left\n\nE o melhor: geralmente é mais leve (performance) do que animar propriedades de layout."
+    },
+    {
+      "title": "As 3 transformações principais",
+      "body": "As mais usadas:\n\n1) `translate` (mover)\n2) `scale` (aumentar/diminuir)\n3) `rotate` (girar)\n\nExemplos:\n- `transform: translateY(-2px);`\n- `transform: scale(1.03);`\n- `transform: rotate(2deg);`"
+    },
+    {
+      "title": "translate (mover sem mexer no fluxo)",
+      "body": "`translate` move o elemento visualmente.\n\nExemplos:\n- `translateX(10px)` move para a direita\n- `translateY(-6px)` move para cima\n\nMuito usado em hover:\n- `transform: translateY(-2px)`\n\nDiferença importante:\n- `translate` não muda a posição no fluxo do layout.\n- o espaço original continua lá."
+    },
+    {
+      "title": "scale (zoom) com moderação",
+      "body": "`scale()` aumenta ou diminui.\n\nExemplos:\n- `scale(1.0)` normal\n- `scale(1.05)` +5%\n- `scale(0.95)` -5%\n\nUso típico:\n- dar sensação de “botão pressionando”\n\nCuidado:\n- escala grande demais fica brega e pode causar tremedeira visual."
+    },
+    {
+      "title": "rotate (girar) para detalhes",
+      "body": "`rotate()` gira o elemento.\n\nExemplos:\n- `rotate(2deg)` giro leve\n- `rotate(45deg)` giro grande\n\nUso típico:\n- ícone de seta girando ao abrir/fechar\n- pequenos efeitos decorativos\n\nRegra:\n- na UI, normalmente use graus pequenos."
+    },
+    {
+      "title": "Transform composto (várias coisas ao mesmo tempo)",
+      "body": "Você pode combinar transformações:\n\n`transform: translateY(-2px) scale(1.02);`\n\nOrdem importa.\n\nRegra prática:\n- combine pouco e com sutileza."
+    },
+    {
+      "title": "Transform + transition (combo profissional)",
+      "body": "O padrão de microinteração mais comum:\n\n1) define transition no estado normal\n2) aplica transform no hover/focus\n\nExemplo:\n`.card { transition: transform 180ms ease; }`\n`.card:hover { transform: translateY(-2px); }`\n\nDica:\n- faça o mesmo no foco:\n`.card:focus-visible { transform: translateY(-2px); }`"
+    },
+    {
+      "title": "Performance: por que transform é “melhor” que top/left",
+      "body": "Regra prática (bem importante):\n\n- animar `transform` e `opacity` costuma ser mais leve\n- animar `top`, `left`, `width`, `height` costuma ser mais pesado\n\nPor quê?\n- `top/left/width/height` podem forçar recálculo de layout\n- `transform` geralmente evita isso\n\nResultado:\n- animações mais suaves, especialmente no celular."
+    },
+    {
+      "title": "transform-origin (ponto de transformação)",
+      "body": "`transform-origin` define de onde a transformação acontece.\n\nExemplos:\n- padrão é o centro\n- `transform-origin: left center;` (origem na esquerda)\n\nÚtil para:\n- menus que “abrem” a partir de um lado\n- efeitos de escala que parecem naturais"
+    },
+    {
+      "title": "Acessibilidade: respeite prefers-reduced-motion",
+      "body": "Transform costuma estar em hover/transitions/animations.\n\nPara quem prefere menos movimento:\n\n`@media (prefers-reduced-motion: reduce) {`\n  `.card, .btn { transition: none !important; }`\n`}`\n\nIsso mantém a UI confortável."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Usar scale alto demais.\n2) Colocar transform em tudo e deixar a página “pulando”.\n3) Esquecer foco (só hover).\n4) Animar layout (top/left) quando podia usar transform.\n\nRegra:\n- transform é tempero: sutil e consistente."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- `translate` move sem mexer no fluxo\n- `scale` dá zoom (use pouco)\n- `rotate` gira (detalhes)\n- Transform + transition é padrão de UI\n- Performance: prefira transform/opacity\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 23 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "transform é muito usado porque:",
+        "options": [
+          { "key": "A", "text": "Permite efeitos visuais sem bagunçar o fluxo do layout" },
+          { "key": "B", "text": "Substitui a necessidade de HTML" }
+        ],
+        "answer": "A",
+        "explain": "Transform move visualmente sem reorganizar o layout como margin/top/left fariam."
+      },
+      {
+        "id": 2,
+        "question": "translateY(-2px) faz o elemento:",
+        "options": [
+          { "key": "A", "text": "Subir 2px visualmente" },
+          { "key": "B", "text": "Descer 2px visualmente" }
+        ],
+        "answer": "A",
+        "explain": "Y negativo sobe; Y positivo desce."
+      },
+      {
+        "id": 3,
+        "question": "scale(1.05) significa:",
+        "options": [
+          { "key": "A", "text": "Aumentar em 5%" },
+          { "key": "B", "text": "Diminuir em 5%" }
+        ],
+        "answer": "A",
+        "explain": "Valores acima de 1 aumentam; abaixo de 1 diminuem."
+      },
+      {
+        "id": 4,
+        "question": "rotate(2deg) é:",
+        "options": [
+          { "key": "A", "text": "Um giro leve" },
+          { "key": "B", "text": "Um zoom leve" }
+        ],
+        "answer": "A",
+        "explain": "Rotate gira; scale dá zoom."
+      },
+      {
+        "id": 5,
+        "question": "O combo profissional para hover bonito é:",
+        "options": [
+          { "key": "A", "text": "transition no estado normal + transform no hover" },
+          { "key": "B", "text": "position: absolute no hover" }
+        ],
+        "answer": "A",
+        "explain": "Transition suaviza e transform cria o efeito."
+      },
+      {
+        "id": 6,
+        "question": "Em performance, geralmente é melhor animar:",
+        "options": [
+          { "key": "A", "text": "transform e opacity" },
+          { "key": "B", "text": "width e height" }
+        ],
+        "answer": "A",
+        "explain": "Transform/opacity costumam ser mais leves do que propriedades que mexem no layout."
+      },
+      {
+        "id": 7,
+        "question": "translate altera o espaço ocupado no layout?",
+        "options": [
+          { "key": "A", "text": "Não, só muda visualmente" },
+          { "key": "B", "text": "Sim, muda o fluxo e empurra outros elementos" }
+        ],
+        "answer": "A",
+        "explain": "Translate não muda o espaço reservado no fluxo."
+      },
+      {
+        "id": 8,
+        "question": "transform-origin serve para:",
+        "options": [
+          { "key": "A", "text": "Definir o ponto de origem da transformação" },
+          { "key": "B", "text": "Definir a cor do texto" }
+        ],
+        "answer": "A",
+        "explain": "Ele muda de onde a rotação/escala “parte”."
+      },
+      {
+        "id": 9,
+        "question": "Boa prática de acessibilidade é:",
+        "options": [
+          { "key": "A", "text": "Aplicar efeitos também em :focus-visible, não só em :hover" },
+          { "key": "B", "text": "Remover todo foco visível" }
+        ],
+        "answer": "A",
+        "explain": "Teclado precisa do mesmo feedback que mouse."
+      },
+      {
+        "id": 10,
+        "question": "prefers-reduced-motion é importante porque:",
+        "options": [
+          { "key": "A", "text": "Algumas pessoas têm desconforto com movimento" },
+          { "key": "B", "text": "Deixa o CSS mais curto" }
+        ],
+        "answer": "A",
+        "explain": "Respeita a preferência do usuário e melhora conforto."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Transform + transition (padrão pro) */\n\n.btn {\n  transition: transform 150ms ease, opacity 150ms ease;\n}\n\n.btn:hover,\n.btn:focus-visible {\n  transform: translateY(-1px);\n  opacity: 0.95;\n}\n\n.card {\n  transition: transform 180ms ease;\n}\n\n.card:hover,\n.card:focus-visible {\n  transform: translateY(-2px);\n}\n\n/* Ajustando origem */\n.menu {\n  transform-origin: left center;\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .btn,\n  .card {\n    transition: none !important;\n  }\n}\n"
+  }
+}

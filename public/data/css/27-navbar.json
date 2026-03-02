@@ -1,0 +1,155 @@
+{
+  "id": "27-navbar",
+  "title": "Aula 27 — Navbar responsiva (sem framework)",
+  "steps": [
+    {
+      "title": "Objetivo da aula (navbar de verdade)",
+      "body": "Navbar é um dos componentes mais importantes de qualquer site.\n\nUma navbar responsiva precisa:\n- funcionar no mobile sem estourar\n- ter boa área clicável\n- manter foco acessível\n- organizar links com clareza\n\nHoje você vai aprender 2 padrões:\n\n1) Padrão simples: menu quebra com wrap (sem JS)\n2) Padrão pro: menu colapsável com botão (com CSS + classe)\n\nComo sua plataforma é SPA e já usa JS, o padrão 2 vai ser o mais útil."
+    },
+    {
+      "title": "Estrutura HTML recomendada (sem framework)",
+      "body": "Uma estrutura clássica:\n\n- `.navbar`\n  - `.brand` (logo/título)\n  - botão `.nav-toggle` (mobile)\n  - `.nav-links` (lista de links)\n\nE links em lista:\n- `ul > li > a`\n\nIsso é semântico e escalável."
+    },
+    {
+      "title": "Padrão 1 (sem JS): wrap no mobile",
+      "body": "A versão mais simples:\n\n- `display: flex`\n- `flex-wrap: wrap`\n\nExemplo:\n`.nav-links { display: flex; flex-wrap: wrap; gap: 10px; }`\n\nIsso evita estourar no mobile.\n\nLimitação:\n- se tiver muitos links, vira uma “nuvem” grande.\n\nPor isso existe o padrão colapsável."
+    },
+    {
+      "title": "Padrão 2 (pro): menu colapsável (classe .open)",
+      "body": "Aqui a ideia é:\n\n- no mobile, os links ficam escondidos\n- quando clica no botão, você adiciona `.open` na navbar\n\nCSS faz o resto.\n\nVocê consegue isso sem framework e sem hack.\n\nA navbar fica assim:\n- mobile: brand + botão\n- ao abrir: links aparecem em coluna\n- desktop: links aparecem em linha sempre"
+    },
+    {
+      "title": "CSS mobile-first (navbar base)",
+      "body": "Mobile-first:\n\n- `.navbar` em linha\n- `.nav-toggle` visível\n- `.nav-links` escondido (display none)\n\nQuando `.navbar.open`:\n- `.nav-links` aparece (display flex) em coluna\n\nIsso dá controle total no mobile."
+    },
+    {
+      "title": "Desktop upgrade (a partir de 768px)",
+      "body": "No desktop:\n\n- `nav-toggle` some\n- `nav-links` aparece sempre\n- links em linha\n\nIsso é feito com media query:\n\n`@media (min-width: 768px) { ... }`"
+    },
+    {
+      "title": "Acessibilidade: foco e área clicável",
+      "body": "Regras rápidas:\n\n- links e botão com `:focus-visible`\n- padding suficiente (alvo de toque)\n- `aria-label` no botão (ex.: \"Abrir menu\")\n\nNo CSS:\n- não remova outline\n- personalize com outline bonito."
+    },
+    {
+      "title": "Dica pro: estado ativo (página atual)",
+      "body": "Quando a pessoa está numa página, o link ativo deve destacar.\n\nPadrão:\n- `.nav-link.active { color: var(--accent); }`\n- underline ou background sutil\n\nIsso ajuda o aluno a não se perder."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Menu estourando horizontalmente no mobile (sem wrap/colapso).\n2) Links pequenos demais para clicar.\n3) Remover foco e quebrar navegação por teclado.\n4) Navbar fixa cobrindo conteúdo (precisa padding no topo).\n\nRegra:\n- mobile-first\n- foco visível\n- alvos grandes"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Navbar responsiva pode ser simples (wrap) ou pro (colapsável)\n- Mobile-first: links escondidos, botão visível\n- `.open` controla abrir/fechar\n- Desktop: links sempre visíveis, botão some\n- Foco e área clicável importam\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 27 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Uma navbar responsiva precisa:",
+        "options": [
+          { "key": "A", "text": "Funcionar bem no mobile e no desktop" },
+          { "key": "B", "text": "Funcionar só no desktop" }
+        ],
+        "answer": "A",
+        "explain": "A maioria acessa via celular; precisa adaptar."
+      },
+      {
+        "id": 2,
+        "question": "Um padrão simples para evitar estouro no mobile é usar:",
+        "options": [
+          { "key": "A", "text": "flex-wrap: wrap nos links" },
+          { "key": "B", "text": "width fixa gigante em px" }
+        ],
+        "answer": "A",
+        "explain": "Wrap impede overflow horizontal."
+      },
+      {
+        "id": 3,
+        "question": "No padrão colapsável, no mobile os links ficam:",
+        "options": [
+          { "key": "A", "text": "Escondidos e aparecem quando a navbar tem .open" },
+          { "key": "B", "text": "Sempre visíveis em linha" }
+        ],
+        "answer": "A",
+        "explain": "O objetivo é economizar espaço no mobile."
+      },
+      {
+        "id": 4,
+        "question": "Em mobile-first, a media query mais comum para upgrade é:",
+        "options": [
+          { "key": "A", "text": "@media (min-width: 768px)" },
+          { "key": "B", "text": "@media (max-width: 9999px)" }
+        ],
+        "answer": "A",
+        "explain": "768px é um breakpoint prático para tablet/desktop."
+      },
+      {
+        "id": 5,
+        "question": "No desktop, geralmente o botão de menu (toggle):",
+        "options": [
+          { "key": "A", "text": "Some (display: none)" },
+          { "key": "B", "text": "Fica sempre ocupando espaço" }
+        ],
+        "answer": "A",
+        "explain": "No desktop há espaço para mostrar os links sempre."
+      },
+      {
+        "id": 6,
+        "question": "Acessibilidade na navbar inclui:",
+        "options": [
+          { "key": "A", "text": "Foco visível em links e no botão" },
+          { "key": "B", "text": "Remover outline sem substituir" }
+        ],
+        "answer": "A",
+        "explain": "Teclado precisa enxergar onde está."
+      },
+      {
+        "id": 7,
+        "question": "Alvo de toque confortável significa:",
+        "options": [
+          { "key": "A", "text": "Links/botões com padding suficiente" },
+          { "key": "B", "text": "Links minúsculos sem padding" }
+        ],
+        "answer": "A",
+        "explain": "No mobile, clique precisa ser fácil."
+      },
+      {
+        "id": 8,
+        "question": "Um link ativo (página atual) ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Mostra onde o usuário está e reduz confusão" },
+          { "key": "B", "text": "Deixa o site mais lento sempre" }
+        ],
+        "answer": "A",
+        "explain": "Orientação melhora UX."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum em navbar é:",
+        "options": [
+          { "key": "A", "text": "Estourar horizontalmente no mobile" },
+          { "key": "B", "text": "Usar gap entre links" }
+        ],
+        "answer": "A",
+        "explain": "Overflow horizontal é bug clássico."
+      },
+      {
+        "id": 10,
+        "question": "O padrão colapsável geralmente controla abrir/fechar com:",
+        "options": [
+          { "key": "A", "text": "Uma classe (ex.: .open) no container" },
+          { "key": "B", "text": "Um <br> extra no HTML" }
+        ],
+        "answer": "A",
+        "explain": "Classe no container é simples e escalável."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Navbar responsiva (mobile-first) */\n\n:root {\n  --accent: #60a5fa;\n  --border: rgba(255, 255, 255, 0.10);\n  --radius: 14px;\n}\n\n.navbar {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 12px;\n  padding: 12px 16px;\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n}\n\n.brand {\n  font-weight: 700;\n}\n\n.nav-toggle {\n  width: 44px;\n  height: 44px;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  border-radius: 12px;\n  border: 1px solid var(--border);\n  background: transparent;\n  cursor: pointer;\n}\n\n.nav-toggle:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\n.nav-links {\n  display: none;\n  flex-direction: column;\n  gap: 10px;\n  padding: 12px 0 0;\n}\n\n.nav-link {\n  display: inline-flex;\n  align-items: center;\n  padding: 10px 12px;\n  border-radius: 12px;\n  text-decoration: none;\n}\n\n.nav-link:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\n.nav-link.active {\n  color: var(--accent);\n}\n\n/* Quando abrir no mobile */\n.navbar.open {\n  flex-wrap: wrap;\n}\n\n.navbar.open .nav-links {\n  display: flex;\n  width: 100%;\n}\n\n/* Desktop */\n@media (min-width: 768px) {\n  .nav-toggle {\n    display: none;\n  }\n\n  .nav-links {\n    display: flex;\n    flex-direction: row;\n    padding: 0;\n  }\n}\n"
+  }
+}

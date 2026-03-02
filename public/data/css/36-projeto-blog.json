@@ -1,0 +1,159 @@
+{
+  "id": "36-projeto-aula-layout",
+  "title": "Aula 36 — Projeto 4: Página de aula (conteúdo + índice + editor)",
+  "steps": [
+    {
+      "title": "Objetivo do projeto",
+      "body": "Sua plataforma é de aulas. Então essa é uma das páginas mais importantes.\n\nVocê vai criar o layout de uma página de aula estilo plataforma profissional:\n\n- Coluna principal: conteúdo da aula\n- Coluna lateral: índice (sumário) e progresso\n- Área de exercício: editor/caixa de resposta\n\nRequisitos:\n- mobile-first\n- leitura confortável (largura de linha)\n- índice fixo no desktop (sticky)\n- editor com espaço bom\n\nMeta final:\n- o aluno estudar com prazer e não se perder."
+    },
+    {
+      "title": "Estrutura recomendada (classes)",
+      "body": "Use classes claras:\n\n- `.lesson-page`\n- `.lesson-layout`\n- `.lesson-main`\n- `.lesson-aside`\n- `.prose` (texto com largura de leitura)\n- `.toc` (table of contents)\n- `.toc__title`, `.toc__list`, `.toc__link`\n- `.exercise`\n- `.editor`\n- `.feedback`\n\nRegra:\n- use Grid para o layout principal\n- use componentes (card, btn, input) reutilizáveis."
+    },
+    {
+      "title": "Mobile-first: 1 coluna (sem sidebar lateral)",
+      "body": "No mobile:\n- índice e exercícios aparecem embaixo do conteúdo\n\nLayout base:\n- `grid-template-columns: 1fr`\n- gap confortável\n\nIsso evita:\n- colunas apertadas\n- texto estreito\n\nMobile-first garante que o aluno consiga ler bem no celular."
+    },
+    {
+      "title": "Desktop: 2 colunas (conteúdo + aside)",
+      "body": "No desktop:\n- main cresce (conteúdo)\n- aside tem largura fixa\n\nPadrão:\n- `grid-template-columns: 1fr 320px`\n\nIsso funciona muito bem para:\n- índice\n- notas\n- progresso\n\nE mantém o conteúdo com boa largura."
+    },
+    {
+      "title": "Largura de leitura (prose) — regra de ouro",
+      "body": "Aulas são muito texto.\n\nEntão limite a largura do texto:\n\n- `max-width: 65ch`\n\nIsso evita:\n- linhas gigantes no desktop\n- cansaço visual\n\nPadrão:\n- `.prose { max-width: 65ch; }`\n\nE use:\n- `line-height: 1.6`"
+    },
+    {
+      "title": "Índice (TOC) com sticky no desktop",
+      "body": "O índice deve ficar visível enquanto rola (no desktop).\n\nUse:\n- `position: sticky`\n- `top: 16px` (ou o tamanho da topbar)\n\nExemplo:\n`.toc { position: sticky; top: 16px; }`\n\nNo mobile, sticky não é necessário.\n\nE sempre:\n- links com foco visível."
+    },
+    {
+      "title": "Editor/caixa de exercício (confortável)",
+      "body": "O editor precisa:\n- padding bom\n- fonte monoespaçada\n- altura mínima\n- borda e radius\n\nPadrão:\n- `.editor { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; min-height: 160px; }`\n\nDica:\n- use `resize: vertical` em textarea, para o aluno ajustar."
+    },
+    {
+      "title": "Feedback de exercício (sucesso/erro)",
+      "body": "Depois de enviar a resposta, o aluno precisa ver feedback claro.\n\nPadrão:\n- `.feedback` como bloco\n- variações:\n  - `.feedback.success`\n  - `.feedback.error`\n\nE nunca depender só de cor:\n- texto claro + título curto."
+    },
+    {
+      "title": "Títulos e espaçamento (ritmo visual)",
+      "body": "Para a aula ficar agradável:\n- use espaçamento consistente\n- use hierarquia de títulos\n\nPadrão:\n- `gap` no layout\n- `margin` só onde necessário\n\nUma classe útil:\n- `.stack { display: grid; gap: 16px; }`"
+    },
+    {
+      "title": "Checklist final da página de aula",
+      "body": "- [ ] Texto com max-width (65ch)\n- [ ] Mobile: 1 coluna e confortável\n- [ ] Desktop: 2 colunas\n- [ ] Índice sticky no desktop\n- [ ] Editor com fonte mono e espaço bom\n- [ ] Feedback claro (success/error)\n- [ ] Foco visível em links/botões\n\nSe passar nisso, sua aula fica nível plataforma real."
+    },
+    {
+      "title": "Resumo do projeto",
+      "body": "- Layout de aula com Grid\n- Prose com largura de leitura\n- Aside com TOC sticky\n- Editor confortável\n- Feedback de exercício\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 36 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Uma página de aula profissional costuma ter:",
+        "options": [
+          { "key": "A", "text": "Conteúdo principal + índice/aside + exercícios" },
+          { "key": "B", "text": "Tudo em uma única linha sem organização" }
+        ],
+        "answer": "A",
+        "explain": "Isso orienta o aluno e melhora estudo."
+      },
+      {
+        "id": 2,
+        "question": "Mobile-first significa começar com:",
+        "options": [
+          { "key": "A", "text": "1 coluna no mobile e depois 2 colunas no desktop" },
+          { "key": "B", "text": "2 colunas no mobile sempre" }
+        ],
+        "answer": "A",
+        "explain": "Mobile tem pouco espaço; 1 coluna é base."
+      },
+      {
+        "id": 3,
+        "question": "Uma boa largura de leitura para texto é:",
+        "options": [
+          { "key": "A", "text": "max-width: 65ch" },
+          { "key": "B", "text": "width: 2000px" }
+        ],
+        "answer": "A",
+        "explain": "Limita linha e melhora legibilidade."
+      },
+      {
+        "id": 4,
+        "question": "O índice sticky no desktop é feito com:",
+        "options": [
+          { "key": "A", "text": "position: sticky e top" },
+          { "key": "B", "text": "display: none" }
+        ],
+        "answer": "A",
+        "explain": "Sticky cola ao rolar sem sair do fluxo como fixed."
+      },
+      {
+        "id": 5,
+        "question": "No desktop, um layout comum para aula é:",
+        "options": [
+          { "key": "A", "text": "1fr 320px (conteúdo + aside)" },
+          { "key": "B", "text": "800px 800px sempre" }
+        ],
+        "answer": "A",
+        "explain": "Main flexível e aside fixo é padrão."
+      },
+      {
+        "id": 6,
+        "question": "Editor/textarea de exercício deve ter:",
+        "options": [
+          { "key": "A", "text": "Fonte monoespaçada e altura mínima" },
+          { "key": "B", "text": "Fonte aleatória e altura 10px" }
+        ],
+        "answer": "A",
+        "explain": "Monoespaçada ajuda leitura de código."
+      },
+      {
+        "id": 7,
+        "question": "Feedback de exercício deve:",
+        "options": [
+          { "key": "A", "text": "Ser claro e não depender só de cor" },
+          { "key": "B", "text": "Ser apenas uma cor sem mensagem" }
+        ],
+        "answer": "A",
+        "explain": "Texto e estrutura são essenciais para a11y."
+      },
+      {
+        "id": 8,
+        "question": "Um bom jeito de espaçar blocos é usar:",
+        "options": [
+          { "key": "A", "text": "Grid + gap (ex.: .stack)" },
+          { "key": "B", "text": "Muitos <br> no HTML" }
+        ],
+        "answer": "A",
+        "explain": "Gap é consistente e escalável."
+      },
+      {
+        "id": 9,
+        "question": "Links do índice (TOC) devem ter:",
+        "options": [
+          { "key": "A", "text": "Focus-visible (foco visível)" },
+          { "key": "B", "text": "outline removido sempre" }
+        ],
+        "answer": "A",
+        "explain": "Teclado precisa enxergar o foco."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo final do layout de aula é:",
+        "options": [
+          { "key": "A", "text": "Deixar o estudo confortável e organizado" },
+          { "key": "B", "text": "Colocar tudo colado para caber" }
+        ],
+        "answer": "A",
+        "explain": "Conforto e clareza aumentam aprendizado."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Página de aula (layout pro) */\n\n:root {\n  --bg: #0b0f19;\n  --panel: #111827;\n  --text: #e5e7eb;\n  --muted: #9ca3af;\n  --accent: #60a5fa;\n  --border: rgba(255, 255, 255, 0.10);\n  --danger: #ef4444;\n  --success: #22c55e;\n  --radius: 14px;\n}\n\n.lesson-page {\n  padding: 16px 0;\n}\n\n.lesson-layout {\n  display: grid;\n  grid-template-columns: 1fr;\n  gap: 16px;\n  align-items: start;\n}\n\n@media (min-width: 1024px) {\n  .lesson-layout {\n    grid-template-columns: 1fr 320px;\n    gap: 24px;\n  }\n}\n\n.lesson-main {\n  display: grid;\n  gap: 16px;\n}\n\n.prose {\n  max-width: 65ch;\n}\n\n.card {\n  background: var(--panel);\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n}\n\n.card-inner {\n  padding: 16px;\n  display: grid;\n  gap: 12px;\n}\n\n.lesson-aside {\n  display: grid;\n  gap: 16px;\n}\n\n.toc {\n  position: static;\n}\n\n@media (min-width: 1024px) {\n  .toc {\n    position: sticky;\n    top: 16px;\n  }\n}\n\n.toc__title {\n  font-weight: 800;\n  margin: 0;\n}\n\n.toc__list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  display: grid;\n  gap: 8px;\n}\n\n.toc__link {\n  display: block;\n  padding: 10px 12px;\n  border-radius: 12px;\n  color: var(--text);\n  text-decoration: none;\n  border: 1px solid transparent;\n}\n\n.toc__link:hover {\n  background: rgba(255, 255, 255, 0.04);\n}\n\n.toc__link:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\n.exercise {\n  display: grid;\n  gap: 12px;\n}\n\n.editor {\n  width: 100%;\n  min-height: 180px;\n  padding: 12px;\n  border-radius: 12px;\n  border: 1px solid var(--border);\n  background: rgba(255, 255, 255, 0.02);\n  color: var(--text);\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n  line-height: 1.5;\n  resize: vertical;\n}\n\n.editor:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 2px;\n  border-color: rgba(96, 165, 250, 0.60);\n}\n\n.feedback {\n  padding: 10px 12px;\n  border-radius: 12px;\n  border: 1px solid var(--border);\n  background: rgba(255, 255, 255, 0.02);\n}\n\n.feedback.success {\n  border-color: rgba(34, 197, 94, 0.35);\n  background: rgba(34, 197, 94, 0.10);\n}\n\n.feedback.error {\n  border-color: rgba(239, 68, 68, 0.35);\n  background: rgba(239, 68, 68, 0.10);\n}\n\n.btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  padding: 10px 14px;\n  border-radius: 12px;\n  border: 1px solid transparent;\n  font-weight: 700;\n  cursor: pointer;\n}\n\n.btn.primary {\n  background: var(--accent);\n  color: #0b0f19;\n}\n\n.btn.ghost {\n  background: transparent;\n  color: var(--text);\n  border-color: var(--border);\n}\n\n.btn:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\n.stack {\n  display: grid;\n  gap: 16px;\n}\n"
+  }
+}

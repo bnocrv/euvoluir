@@ -1,0 +1,159 @@
+{
+  "id": "26-botoes-cards",
+  "title": "Aula 26 — Componentes: botões e cards (design system básico)",
+  "steps": [
+    {
+      "title": "O que é um mini design system (e por que isso te deixa pro)",
+      "body": "Design system é um conjunto de regras e componentes reutilizáveis.\n\nVocê não cria um botão diferente em cada página.\nVocê cria:\n- 1 botão base\n- variações (primary, ghost, danger)\n\nE usa isso no projeto todo.\n\nHoje você vai montar os 2 componentes mais importantes:\n- Botões\n- Cards\n\nCom:\n- estados (hover, focus, disabled)\n- consistência (radius, cores, sombras)\n- acessibilidade (focus-visible)\n\nIsso transforma seu CSS em algo escalável."
+    },
+    {
+      "title": "1) Botão base: uma classe só para a estrutura",
+      "body": "Você cria uma classe `.btn` com:\n- display\n- padding\n- radius\n- border\n- font-weight\n- cursor\n- transição\n\nE depois cria variações.\n\nRegra pro:\n- `.btn` define o “corpo” do botão\n- `.btn.primary`, `.btn.ghost` definem a “pele”"
+    },
+    {
+      "title": "Botão base (o que não pode faltar)",
+      "body": "Um botão base normalmente tem:\n\n- `display: inline-flex` (alinha texto/ícone)\n- `align-items: center`\n- `justify-content: center`\n- `gap` para ícone\n- padding confortável\n- radius consistente\n- focus-visible\n- transition com transform/opacity\n\nIsso dá cara de UI profissional."
+    },
+    {
+      "title": "2) Variações de botão (primary, ghost, danger)",
+      "body": "Variações comuns:\n\n- Primary: botão principal (ação mais importante)\n- Ghost: botão discreto (secundário)\n- Danger: ação perigosa (ex.: deletar)\n\nRegra prática:\n- na tela, escolha 1 ação principal (primary)\n- o resto vira ghost/secondary\n\nIsso melhora hierarquia visual."
+    },
+    {
+      "title": "Estados do botão (hover, focus, disabled)",
+      "body": "Botão bom precisa de estados claros:\n\n- hover (feedback)\n- focus-visible (teclado)\n- disabled (sem interação)\n\nPadrão:\n- hover: leve translate + ajuste de opacidade\n- focus-visible: outline forte\n- disabled: opacidade + cursor not-allowed\n\nE lembre:\n- não dependa só de cor."
+    },
+    {
+      "title": "3) Card base: o container mais usado do projeto",
+      "body": "Card é um bloco que agrupa conteúdo.\n\nUm card profissional tem:\n- background\n- border suave\n- radius\n- padding\n- (opcional) shadow\n\nE pode ter:\n- header\n- body\n- footer\n\nA ideia é padronizar isso para o site todo."
+    },
+    {
+      "title": "Card com partes (header/body/footer)",
+      "body": "Padrão muito usado:\n\n- `.card` (container)\n- `.card-header`\n- `.card-body`\n- `.card-footer`\n\nVocê define espaçamento com:\n- `display: grid`\n- `gap`\n\nAssim tudo fica alinhado e consistente."
+    },
+    {
+      "title": "Hover em card (sutil, opcional)",
+      "body": "Se o card é clicável, um hover sutil ajuda:\n\n- transition\n- transform leve\n- sombra um pouco maior\n\nMas se o card não é clicável:\n- não faça hover\n\nRegra pro:\n- hover comunica “isso é interativo”."
+    },
+    {
+      "title": "Tokens (variáveis) para consistência",
+      "body": "O segredo do design system é usar tokens:\n\n- `--radius`\n- `--border`\n- `--shadow-1/2`\n- `--accent`\n- `--panel`\n\nAssim o componente não “hardcode” tudo.\n\nMudou o tema?\n- os componentes se adaptam."
+    },
+    {
+      "title": "Checklist rápido de componente pronto",
+      "body": "Antes de considerar pronto:\n\nBotão:\n- [ ] padding confortável\n- [ ] hover e focus-visible\n- [ ] disabled claro\n- [ ] variações\n\nCard:\n- [ ] padding e radius\n- [ ] border/shadow sutil\n- [ ] estrutura interna (grid + gap)\n\nSe passar nesse checklist, você está no caminho pro."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Design system = componentes reutilizáveis\n- `.btn` base + variações\n- Estados: hover, focus-visible, disabled\n- `.card` base + partes\n- Tokens/variáveis deixam escalável\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 26 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A ideia de um design system é:",
+        "options": [
+          { "key": "A", "text": "Reutilizar componentes e manter consistência" },
+          { "key": "B", "text": "Criar estilos diferentes em cada página" }
+        ],
+        "answer": "A",
+        "explain": "Consistência torna o projeto escalável."
+      },
+      {
+        "id": 2,
+        "question": "Um botão base (.btn) deve:",
+        "options": [
+          { "key": "A", "text": "Definir estrutura (padding, radius, display) e ter variações" },
+          { "key": "B", "text": "Ser um estilo único sem estados" }
+        ],
+        "answer": "A",
+        "explain": "Base define corpo; variações definem aparência."
+      },
+      {
+        "id": 3,
+        "question": "Um padrão bom para botão com ícone é usar:",
+        "options": [
+          { "key": "A", "text": "inline-flex + gap" },
+          { "key": "B", "text": "float + margin em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Inline-flex alinha ícone e texto com facilidade."
+      },
+      {
+        "id": 4,
+        "question": "Focus-visible é importante para:",
+        "options": [
+          { "key": "A", "text": "Navegação por teclado (acessibilidade)" },
+          { "key": "B", "text": "Mudar o HTML automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Teclado precisa de indicador de foco."
+      },
+      {
+        "id": 5,
+        "question": "Um card profissional geralmente tem:",
+        "options": [
+          { "key": "A", "text": "background + border suave + radius + padding" },
+          { "key": "B", "text": "Nenhum padding e borda grossa 6px" }
+        ],
+        "answer": "A",
+        "explain": "Card moderno é confortável e sutil."
+      },
+      {
+        "id": 6,
+        "question": "Hover em card deve ser usado quando:",
+        "options": [
+          { "key": "A", "text": "O card é interativo/clicável" },
+          { "key": "B", "text": "O card é apenas texto estático" }
+        ],
+        "answer": "A",
+        "explain": "Hover comunica interação."
+      },
+      {
+        "id": 7,
+        "question": "Disabled em botão deve:",
+        "options": [
+          { "key": "A", "text": "Parecer desativado (opacidade + cursor) e não responder" },
+          { "key": "B", "text": "Parecer normal para confundir" }
+        ],
+        "answer": "A",
+        "explain": "O usuário precisa entender que não pode clicar."
+      },
+      {
+        "id": 8,
+        "question": "Variações de botão ajudam a:",
+        "options": [
+          { "key": "A", "text": "Criar hierarquia de ações (primary vs secundário)" },
+          { "key": "B", "text": "Quebrar consistência do site" }
+        ],
+        "answer": "A",
+        "explain": "Primary deve ser a ação principal."
+      },
+      {
+        "id": 9,
+        "question": "Tokens (variáveis) são úteis porque:",
+        "options": [
+          { "key": "A", "text": "Centralizam decisões de cor/raio/sombra" },
+          { "key": "B", "text": "Obrigam cada componente a inventar valores diferentes" }
+        ],
+        "answer": "A",
+        "explain": "Mudou o token, muda o sistema todo."
+      },
+      {
+        "id": 10,
+        "question": "Um componente bem feito é aquele que:",
+        "options": [
+          { "key": "A", "text": "Você usa em várias páginas sem reescrever CSS" },
+          { "key": "B", "text": "Você precisa copiar CSS diferente toda vez" }
+        ],
+        "answer": "A",
+        "explain": "Reutilização é o objetivo."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Botões e Cards (design system básico) */\n\n:root {\n  --bg: #0b0f19;\n  --panel: #111827;\n  --text: #e5e7eb;\n  --muted: #9ca3af;\n  --accent: #60a5fa;\n  --danger: #ef4444;\n  --border: rgba(255, 255, 255, 0.10);\n  --radius: 14px;\n  --shadow-1: 0 6px 16px rgba(0, 0, 0, 0.12);\n  --shadow-2: 0 16px 40px rgba(0, 0, 0, 0.16);\n}\n\n.btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  padding: 10px 14px;\n  border-radius: 12px;\n  border: 1px solid transparent;\n  font-weight: 600;\n  cursor: pointer;\n  transition: transform 150ms ease, opacity 150ms ease;\n}\n\n.btn:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\n.btn:hover {\n  transform: translateY(-1px);\n  opacity: 0.95;\n}\n\n.btn:disabled {\n  opacity: 0.55;\n  cursor: not-allowed;\n  transform: none;\n}\n\n.btn.primary {\n  background: var(--accent);\n  color: #0b0f19;\n}\n\n.btn.ghost {\n  background: transparent;\n  color: var(--text);\n  border-color: var(--border);\n}\n\n.btn.danger {\n  background: var(--danger);\n  color: #0b0f19;\n}\n\n.card {\n  background: var(--panel);\n  color: var(--text);\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  box-shadow: var(--shadow-1);\n  overflow: hidden;\n}\n\n.card-inner {\n  display: grid;\n  gap: 10px;\n  padding: 16px;\n}\n\n.card.clickable {\n  transition: transform 180ms ease, box-shadow 180ms ease;\n}\n\n.card.clickable:hover,\n.card.clickable:focus-visible {\n  transform: translateY(-2px);\n  box-shadow: var(--shadow-2);\n}\n\n.muted {\n  color: var(--muted);\n}\n"
+  }
+}

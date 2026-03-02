@@ -1,0 +1,159 @@
+{
+  "id": "24-sombras-bordas",
+  "title": "Aula 24 — Bordas, sombras e profundidade (UI moderna)",
+  "steps": [
+    {
+      "title": "Por que borda e sombra mudam a “sensação” do site",
+      "body": "Bordas e sombras fazem parte do que dá aparência moderna:\n- separa áreas (card vs fundo)\n- cria hierarquia (o que é clicável)\n- dá sensação de profundidade\n\nMas tem um detalhe:\n- sombra exagerada deixa amador\n\nHoje você vai aprender:\n- borda (border) e variações\n- border-radius (raio)\n- box-shadow (sombra)\n- padrões prontos de UI moderna\n- hover com sombra (sem exagero)\n- como combinar com tema (variáveis)"
+    },
+    {
+      "title": "Borda: border (a separação mais simples)",
+      "body": "A borda mais comum:\n\n`border: 1px solid #ddd;`\n\nIsso define:\n- espessura: 1px\n- estilo: solid\n- cor: #ddd\n\nEm UI moderna, borda costuma ser:\n- bem sutil\n- quase “invisível”\n\nPor isso, usar `rgba` é ótimo:\n`border: 1px solid rgba(255,255,255,0.10);` (tema escuro)\n`border: 1px solid rgba(17,24,39,0.12);` (tema claro)"
+    },
+    {
+      "title": "Border-radius: arredondamento (use com consistência)",
+      "body": "Border-radius define quão arredondado é o componente.\n\nExemplos:\n- `border-radius: 8px;` (leve)\n- `border-radius: 14px;` (moderno)\n- `border-radius: 999px;` (pill/badge)\n\nRegra profissional:\n- escolha 1 ou 2 raios e repita no projeto.\n\nExemplo com variável:\n- `--radius: 14px;`\n- `border-radius: var(--radius);`"
+    },
+    {
+      "title": "Sombra: box-shadow (profundidade sem gritar)",
+      "body": "Uma sombra é definida por:\n\n`box-shadow: offsetX offsetY blur spread color;`\n\nExemplo:\n`box-shadow: 0 10px 30px rgba(0,0,0,0.25);`\n\nSignificado:\n- X: 0\n- Y: 10px (pra baixo)\n- blur: 30px (difusão)\n- spread: opcional\n- cor: rgba\n\nRegra:\n- use sombras suaves, com blur alto e opacidade baixa."
+    },
+    {
+      "title": "UI moderna: border + shadow leve (padrão de card)",
+      "body": "Padrão comum para card:\n\n- fundo (panel)\n- borda sutil\n- sombra sutil\n\nExemplo:\n`.card {`\n  `background: var(--panel);`\n  `border: 1px solid var(--border);`\n  `border-radius: var(--radius);`\n  `box-shadow: 0 10px 30px rgba(0,0,0,0.12);`\n`}`\n\nEm tema escuro, a sombra pode ser mais discreta e a borda faz mais trabalho."
+    },
+    {
+      "title": "Hover profissional: subir 2px + sombra um pouco maior",
+      "body": "O hover moderno costuma ser:\n- um micro-movimento (translate)\n- uma sombra um pouco mais forte\n\nExemplo:\n`.card { transition: transform 180ms ease, box-shadow 180ms ease; }`\n`.card:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(0,0,0,0.16); }`\n\nRegra:\n- aumente pouco, só para dar feedback."
+    },
+    {
+      "title": "Inset shadow (sombra interna) — use pouco",
+      "body": "Sombra interna:\n\n`box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);`\n\nBom para:\n- inputs\n- áreas internas\n\nMas use com moderação."
+    },
+    {
+      "title": "Separação sem sombra (estilo mais minimalista)",
+      "body": "Nem todo design precisa de sombra.\n\nUm estilo moderno e clean pode usar só:\n- borda\n- contraste de fundo\n\nExemplo:\n- fundo do site mais escuro\n- card um pouco mais claro\n- borda sutil\n\nIsso já cria profundidade sem shadow."
+    },
+    {
+      "title": "Padrões prontos (3 níveis de elevação)",
+      "body": "Uma prática pro é ter níveis de sombra:\n\n- `--shadow-1` (bem leve)\n- `--shadow-2` (normal)\n- `--shadow-3` (mais forte)\n\nE aplicar conforme o componente.\n\nAssim você mantém consistência."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Shadow muito escura e dura (parece antigo).\n2) Usar sombras diferentes em cada componente.\n3) Border grossa demais (2px, 3px) sem motivo.\n4) Radius diferente em tudo.\n\nRegra:\n- consistência\n- sutileza\n- poucas variações."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Border separa e é sutil\n- Radius dá identidade (repita valores)\n- Shadow cria profundidade (sombra suave)\n- Hover profissional: translate + shadow leve\n- Tenha níveis (shadow-1/2/3)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 24 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Em UI moderna, bordas costumam ser:",
+        "options": [
+          { "key": "A", "text": "Sutis (1px com cor suave)" },
+          { "key": "B", "text": "Grossas e muito escuras sempre" }
+        ],
+        "answer": "A",
+        "explain": "Borda sutil separa sem poluir."
+      },
+      {
+        "id": 2,
+        "question": "border-radius serve para:",
+        "options": [
+          { "key": "A", "text": "Arredondar cantos" },
+          { "key": "B", "text": "Aumentar a fonte" }
+        ],
+        "answer": "A",
+        "explain": "Radius controla o arredondamento."
+      },
+      {
+        "id": 3,
+        "question": "box-shadow serve para:",
+        "options": [
+          { "key": "A", "text": "Criar profundidade/sombra" },
+          { "key": "B", "text": "Criar validação de formulário" }
+        ],
+        "answer": "A",
+        "explain": "Sombra cria sensação de elevação."
+      },
+      {
+        "id": 4,
+        "question": "Uma sombra profissional costuma ser:",
+        "options": [
+          { "key": "A", "text": "Suave (blur alto e opacidade baixa)" },
+          { "key": "B", "text": "Dura (blur baixo e opacidade alta)" }
+        ],
+        "answer": "A",
+        "explain": "Sombra suave parece moderna e elegante."
+      },
+      {
+        "id": 5,
+        "question": "Um hover moderno em card costuma usar:",
+        "options": [
+          { "key": "A", "text": "translate leve + sombra um pouco maior" },
+          { "key": "B", "text": "rotate(45deg) no card inteiro" }
+        ],
+        "answer": "A",
+        "explain": "Microinteração sutil dá feedback sem exagero."
+      },
+      {
+        "id": 6,
+        "question": "box-shadow inset significa:",
+        "options": [
+          { "key": "A", "text": "Sombra interna" },
+          { "key": "B", "text": "Sombra externa sempre" }
+        ],
+        "answer": "A",
+        "explain": "Inset aplica a sombra por dentro."
+      },
+      {
+        "id": 7,
+        "question": "Um bom padrão profissional é ter:",
+        "options": [
+          { "key": "A", "text": "Níveis de sombra (shadow-1/2/3) com variáveis" },
+          { "key": "B", "text": "Uma sombra diferente para cada botão" }
+        ],
+        "answer": "A",
+        "explain": "Consistência deixa o design mais pro."
+      },
+      {
+        "id": 8,
+        "question": "Em tema escuro, muitas vezes quem separa melhor é:",
+        "options": [
+          { "key": "A", "text": "Borda sutil + contraste de fundo" },
+          { "key": "B", "text": "Sombra super forte sempre" }
+        ],
+        "answer": "A",
+        "explain": "Borda e contraste funcionam muito bem no dark."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum é:",
+        "options": [
+          { "key": "A", "text": "Usar sombras muito fortes e diferentes em todo lugar" },
+          { "key": "B", "text": "Usar variáveis para radius e border" }
+        ],
+        "answer": "A",
+        "explain": "Sombra exagerada e inconsistente parece amador."
+      },
+      {
+        "id": 10,
+        "question": "O segredo para um visual moderno é:",
+        "options": [
+          { "key": "A", "text": "Sutileza e consistência" },
+          { "key": "B", "text": "Exagerar em tudo para “aparecer”" }
+        ],
+        "answer": "A",
+        "explain": "Design moderno é limpo, repetível e confortável."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Bordas, radius e sombras (UI moderna) */\n\n:root {\n  --radius: 14px;\n  --border: rgba(17, 24, 39, 0.12);\n  --shadow-1: 0 6px 16px rgba(0, 0, 0, 0.08);\n  --shadow-2: 0 10px 30px rgba(0, 0, 0, 0.12);\n  --shadow-3: 0 16px 40px rgba(0, 0, 0, 0.16);\n}\n\n.card {\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  box-shadow: var(--shadow-2);\n  transition: transform 180ms ease, box-shadow 180ms ease;\n}\n\n.card:hover,\n.card:focus-visible {\n  transform: translateY(-2px);\n  box-shadow: var(--shadow-3);\n}\n\n/* Badge pill */\n.badge {\n  display: inline-block;\n  padding: 6px 10px;\n  border-radius: 999px;\n  border: 1px solid var(--border);\n}\n\n/* Input com sombra interna sutil */\n.input {\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);\n}\n"
+  }
+}

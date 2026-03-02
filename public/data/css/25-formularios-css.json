@@ -1,0 +1,159 @@
+{
+  "id": "25-formularios-css",
+  "title": "Aula 25 — Estilizando formulários (inputs, focus, erros)",
+  "steps": [
+    {
+      "title": "Por que formulário bonito é difícil (e como resolver)",
+      "body": "Formulários são uma das partes mais chatas do CSS porque:\n- cada navegador estiliza diferente\n- inputs têm estados (normal, foco, erro, disabled)\n- pequenos detalhes mudam a UX\n\nHoje você vai aprender um padrão profissional para sua plataforma:\n- base consistente para inputs\n- foco acessível e bonito\n- erro e sucesso (sem depender só de cor)\n- disabled\n- espaçamento e alinhamento\n\nA ideia é: você criar um “kit de formulário” e reutilizar para sempre."
+    },
+    {
+      "title": "Base: faça inputs herdarem a fonte",
+      "body": "Você já viu isso no reset:\n\n`input, button, textarea, select { font: inherit; }`\n\nIsso faz tudo parecer parte do mesmo design.\n\nSem isso, o navegador pode usar outra fonte e fica feio."
+    },
+    {
+      "title": "A classe base do input (o padrão do projeto)",
+      "body": "Crie uma classe base, por exemplo `.input`.\n\nRegras que quase sempre entram:\n- width 100%\n- padding confortável\n- border suave\n- radius consistente\n- background\n\nExemplo:\n`.input { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; }`"
+    },
+    {
+      "title": "Foco: use :focus-visible (acessível e profissional)",
+      "body": "Foco não pode sumir.\n\nPadrão:\n- outline ou ring claro\n- com offset\n\nExemplo:\n`.input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }`\n\nDica:\n- você pode também mudar a borda no foco:\n`.input:focus-visible { border-color: rgba(96,165,250,0.6); }`\n\nMas o mais importante:\n- foco visível."
+    },
+    {
+      "title": "Estado de erro (sem depender só de cor)",
+      "body": "Para erro, você precisa de:\n\n1) borda em cor de erro\n2) mensagem de erro em texto\n\nExemplo:\n- `.input-error { border-color: var(--danger); }`\n- `.help-error { color: var(--danger); }`\n\nE idealmente:\n- um ícone ou texto \"Campo obrigatório\".\n\nAssim quem não enxerga cor ainda entende."
+    },
+    {
+      "title": "Estado de sucesso (quando fizer sentido)",
+      "body": "Sucesso é opcional.\n\nMas se usar:\n- borda verde\n- mensagem\n\nExemplo:\n- `.input-success { border-color: var(--success); }`\n- `.help-success { color: var(--success); }`\n\nRegra:\n- use sucesso com moderação, senão vira carnaval."
+    },
+    {
+      "title": "Disabled e Readonly (deixar claro visualmente)",
+      "body": "Um input disabled precisa parecer desativado.\n\nExemplo:\n`.input:disabled { opacity: 0.6; cursor: not-allowed; }`\n\nReadonly é diferente (dá pra selecionar, mas não editar).\n\nExemplo:\n`.input[readonly] { background: rgba(0,0,0,0.04); }`"
+    },
+    {
+      "title": "Label e espaçamento (form bonito é layout)",
+      "body": "Form bonito não é só input.\n\nVocê precisa de:\n- label claro\n- espaçamento entre campos\n\nPadrão simples:\n- `.field { display: grid; gap: 6px; }`\n- `.form { display: grid; gap: 14px; }`\n\nIsso cria alinhamento e ritmo visual."
+    },
+    {
+      "title": "Textarea e Select (o mesmo padrão)",
+      "body": "Textarea e select devem usar a mesma classe base.\n\nExemplo:\n- `<textarea class=\"input\" ...></textarea>`\n- `<select class=\"input\" ...></select>`\n\nPara textarea:\n- defina min-height:\n`.textarea { min-height: 120px; resize: vertical; }`\n\nIsso evita textarea microscópico."
+    },
+    {
+      "title": "Botão do formulário (consistente com o design system)",
+      "body": "Botão precisa:\n- padding\n- radius\n- hover\n- focus\n\nPadrão:\n`.btn { padding: 10px 14px; border-radius: 12px; }`\n`.btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }`\n\nAssim form fica com cara profissional."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Use uma classe base `.input`\n- Foco visível com :focus-visible\n- Erro e sucesso com classes + mensagem\n- Disabled claro\n- Layout do form com grid + gap\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 25 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Uma boa prática base para inputs é:",
+        "options": [
+          { "key": "A", "text": "font: inherit em inputs/botões" },
+          { "key": "B", "text": "Cada input com uma fonte diferente" }
+        ],
+        "answer": "A",
+        "explain": "Herdar fonte deixa tudo consistente."
+      },
+      {
+        "id": 2,
+        "question": "Para foco acessível e bonito, é recomendado usar:",
+        "options": [
+          { "key": "A", "text": ":focus-visible com outline" },
+          { "key": "B", "text": "outline: none em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Nunca remova foco sem substituir."
+      },
+      {
+        "id": 3,
+        "question": "Um input base profissional costuma ter:",
+        "options": [
+          { "key": "A", "text": "padding confortável + border suave + radius" },
+          { "key": "B", "text": "Nenhum padding e borda 5px" }
+        ],
+        "answer": "A",
+        "explain": "Padding e border sutis são padrão de UI moderna."
+      },
+      {
+        "id": 4,
+        "question": "Estado de erro bom precisa:",
+        "options": [
+          { "key": "A", "text": "Borda de erro e mensagem (não só cor)" },
+          { "key": "B", "text": "Apenas cor vermelha sem texto" }
+        ],
+        "answer": "A",
+        "explain": "Não dependa só de cor (a11y)."
+      },
+      {
+        "id": 5,
+        "question": "Para organizar espaçamento entre campos, um padrão simples é:",
+        "options": [
+          { "key": "A", "text": "display: grid e gap no form" },
+          { "key": "B", "text": "Colocar muitos <br> no HTML" }
+        ],
+        "answer": "A",
+        "explain": "Grid + gap é limpo e escalável."
+      },
+      {
+        "id": 6,
+        "question": "Um input disabled deve:",
+        "options": [
+          { "key": "A", "text": "Parecer desativado (opacidade e cursor)" },
+          { "key": "B", "text": "Parecer normal para confundir" }
+        ],
+        "answer": "A",
+        "explain": "O usuário precisa entender que não pode interagir."
+      },
+      {
+        "id": 7,
+        "question": "Select e textarea devem:",
+        "options": [
+          { "key": "A", "text": "Reutilizar a mesma classe base do input" },
+          { "key": "B", "text": "Ter estilos aleatórios diferentes" }
+        ],
+        "answer": "A",
+        "explain": "Reutilizar dá consistência."
+      },
+      {
+        "id": 8,
+        "question": "Readonly significa:",
+        "options": [
+          { "key": "A", "text": "Dá para ler/selecionar, mas não editar" },
+          { "key": "B", "text": "O input desaparece do layout" }
+        ],
+        "answer": "A",
+        "explain": "Readonly é diferente de disabled."
+      },
+      {
+        "id": 9,
+        "question": "O botão do formulário também precisa de:",
+        "options": [
+          { "key": "A", "text": "Focus-visible (foco acessível)" },
+          { "key": "B", "text": "Nenhum foco e nenhum feedback" }
+        ],
+        "answer": "A",
+        "explain": "Teclado precisa ver o foco."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo de um “kit de formulário” é:",
+        "options": [
+          { "key": "A", "text": "Reutilizar estilos e manter consistência no projeto" },
+          { "key": "B", "text": "Repetir CSS diferente em cada página" }
+        ],
+        "answer": "A",
+        "explain": "Reutilização = projeto escalável."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Kit de formulário (profissional e reutilizável) */\n\n:root {\n  --border: rgba(17, 24, 39, 0.12);\n  --accent: #60a5fa;\n  --danger: #ef4444;\n  --success: #22c55e;\n}\n\n.form {\n  display: grid;\n  gap: 14px;\n}\n\n.field {\n  display: grid;\n  gap: 6px;\n}\n\n.label {\n  font-size: 0.875rem;\n}\n\n.input {\n  width: 100%;\n  padding: 10px 12px;\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  background: transparent;\n}\n\n.input:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 2px;\n  border-color: rgba(96, 165, 250, 0.6);\n}\n\n.input-error {\n  border-color: var(--danger);\n}\n\n.help {\n  font-size: 0.875rem;\n  opacity: 0.85;\n}\n\n.help-error {\n  color: var(--danger);\n}\n\n.input-success {\n  border-color: var(--success);\n}\n\n.help-success {\n  color: var(--success);\n}\n\n.input:disabled {\n  opacity: 0.6;\n  cursor: not-allowed;\n}\n\n.input[readonly] {\n  background: rgba(0, 0, 0, 0.04);\n}\n\n.textarea {\n  min-height: 120px;\n  resize: vertical;\n}\n\n.btn {\n  padding: 10px 14px;\n  border-radius: 12px;\n}\n\n.btn:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n"
+  }
+}

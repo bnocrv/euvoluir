@@ -1,0 +1,151 @@
+{
+  "id": "28-grid-layouts",
+  "title": "Aula 28 — Layouts completos com Grid (páginas reais)",
+  "steps": [
+    {
+      "title": "Objetivo da aula (página real com Grid)",
+      "body": "Agora você já sabe Grid.\n\nNesta aula você vai montar layouts reais com Grid:\n\n1) Layout de dashboard (sidebar + header + main)\n2) Layout de landing (seções e cards)\n3) Layout de página com duas colunas (conteúdo + aside)\n\nO foco é aprender padrões que você reutiliza no seu projeto sem “inventar layout” toda vez."
+    },
+    {
+      "title": "Padrão 1: Dashboard com áreas (o mais profissional)",
+      "body": "Dashboard típico tem:\n- header (topo)\n- sidebar (menu)\n- main (conteúdo)\n\nO jeito mais legível é:\n- `grid-template-areas`\n\nVocê lê como desenho:\n\n\"header header\"\n\"sidebar main\"\n\nIsso dá manutenção fácil."
+    },
+    {
+      "title": "Dashboard (base mobile-first)",
+      "body": "No mobile, a regra é simples:\n- tudo em 1 coluna\n\nEntão:\n- header\n- sidebar\n- main\n\nGrid mobile:\n- `grid-template-columns: 1fr`\n- áreas em coluna:\n\n\"header\"\n\"sidebar\"\n\"main\""
+    },
+    {
+      "title": "Dashboard (upgrade desktop)",
+      "body": "No desktop:\n- sidebar do lado\n\nGrid desktop:\n- `grid-template-columns: 280px 1fr`\n- áreas:\n\n\"header header\"\n\"sidebar main\"\n\nIsso vira layout profissional com pouquíssimo CSS."
+    },
+    {
+      "title": "Padrão 2: Landing com seções e grid de cards",
+      "body": "Landing page geralmente tem:\n- hero\n- seção de benefícios (cards)\n- seção de depoimentos\n\nPadrão:\n- seções com `padding`\n- cards em Grid com auto-fit + minmax\n\nIsso cria um layout elegante e responsivo sem sofrimento."
+    },
+    {
+      "title": "Padrão 3: Conteúdo + Aside (blog/article)",
+      "body": "Página de artigo profissional costuma ter:\n- conteúdo principal\n- aside com links/índice\n\nNo desktop:\n- 2 colunas (main + aside)\n\nNo mobile:\n- vira 1 coluna (aside vai para baixo)\n\nIsso é perfeito para sua plataforma (aulas + índice)."
+    },
+    {
+      "title": "O segredo da consistência: container + gap + alinhamento",
+      "body": "Em layouts reais, 3 coisas mandam:\n\n1) `max-width` no container\n2) `gap` consistente\n3) alinhamento vertical com `align-items: start`\n\nExemplo:\n- `gap: 16px` ou `24px`\n\nRegra:\n- use poucos valores e repita."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Definir colunas fixas demais e quebrar no mobile.\n2) Esquecer de fazer mobile-first.\n3) Misturar grid e position para layout (bagunça).\n4) Não usar áreas e deixar layout difícil de ler.\n\nRegra:\n- mobile-first\n- áreas para layout de página\n- auto-fit + minmax para cards"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Grid resolve layout de página (2D)\n- Dashboard com `grid-template-areas` é muito pro\n- Mobile-first: 1 coluna\n- Desktop: sidebar + main\n- Cards: auto-fit + minmax\n- Conteúdo + aside: 1 coluna no mobile, 2 no desktop\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 28 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Grid é excelente para:",
+        "options": [
+          { "key": "A", "text": "Layout de páginas com linhas e colunas (2D)" },
+          { "key": "B", "text": "Apenas mudar cor de texto" }
+        ],
+        "answer": "A",
+        "explain": "Grid organiza layout em duas dimensões."
+      },
+      {
+        "id": 2,
+        "question": "Um padrão muito profissional para dashboard é:",
+        "options": [
+          { "key": "A", "text": "grid-template-areas" },
+          { "key": "B", "text": "Usar <br> para alinhar tudo" }
+        ],
+        "answer": "A",
+        "explain": "Áreas deixam o layout legível e fácil de manter."
+      },
+      {
+        "id": 3,
+        "question": "No mobile-first, o layout base geralmente começa com:",
+        "options": [
+          { "key": "A", "text": "1 coluna (grid-template-columns: 1fr)" },
+          { "key": "B", "text": "3 colunas fixas sempre" }
+        ],
+        "answer": "A",
+        "explain": "Mobile tem pouco espaço, então 1 coluna é base."
+      },
+      {
+        "id": 4,
+        "question": "Um desktop típico de dashboard usa:",
+        "options": [
+          { "key": "A", "text": "280px 1fr (sidebar + main)" },
+          { "key": "B", "text": "100vw 100vh em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Sidebar fixa e main flexível é padrão."
+      },
+      {
+        "id": 5,
+        "question": "Para cards responsivos, o melhor padrão é:",
+        "options": [
+          { "key": "A", "text": "repeat(auto-fit, minmax(...))" },
+          { "key": "B", "text": "position: fixed em cada card" }
+        ],
+        "answer": "A",
+        "explain": "Auto-fit + minmax cria colunas automáticas."
+      },
+      {
+        "id": 6,
+        "question": "Para artigo com aside, o esperado é:",
+        "options": [
+          { "key": "A", "text": "1 coluna no mobile e 2 colunas no desktop" },
+          { "key": "B", "text": "Aside sempre fixo no mobile" }
+        ],
+        "answer": "A",
+        "explain": "No mobile, 2 colunas ficam apertadas."
+      },
+      {
+        "id": 7,
+        "question": "O que dá consistência em layouts reais é:",
+        "options": [
+          { "key": "A", "text": "Container com max-width + gap consistente" },
+          { "key": "B", "text": "Valores aleatórios em cada seção" }
+        ],
+        "answer": "A",
+        "explain": "Repetir padrões evita bagunça."
+      },
+      {
+        "id": 8,
+        "question": "Em layouts de página, áreas ajudam porque:",
+        "options": [
+          { "key": "A", "text": "Você lê o layout como um desenho" },
+          { "key": "B", "text": "Elas aumentam o tamanho do HTML automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Grid por áreas é legível e fácil de ajustar."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum é:",
+        "options": [
+          { "key": "A", "text": "Colunas fixas demais e quebra no mobile" },
+          { "key": "B", "text": "Usar gap entre itens" }
+        ],
+        "answer": "A",
+        "explain": "PX fixo demais tende a estourar em telas pequenas."
+      },
+      {
+        "id": 10,
+        "question": "O melhor caminho para layout pro é:",
+        "options": [
+          { "key": "A", "text": "Mobile-first + padrões repetíveis (áreas, auto-fit, gap)" },
+          { "key": "B", "text": "Resolver tudo com position: absolute" }
+        ],
+        "answer": "A",
+        "explain": "Grid resolve layout; position é para detalhes."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Layout 1: Dashboard com áreas (mobile-first) */\n\n.dashboard {\n  display: grid;\n  grid-template-columns: 1fr;\n  grid-template-areas:\n    \"header\"\n    \"sidebar\"\n    \"main\";\n  gap: 16px;\n  align-items: start;\n}\n\n.d-header { grid-area: header; }\n.d-sidebar { grid-area: sidebar; }\n.d-main { grid-area: main; }\n\n@media (min-width: 1024px) {\n  .dashboard {\n    grid-template-columns: 280px 1fr;\n    grid-template-areas:\n      \"header header\"\n      \"sidebar main\";\n  }\n}\n\n/* Layout 2: Cards responsivos (auto-fit + minmax) */\n\n.cards {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\n  gap: 16px;\n}\n\n/* Layout 3: Article + Aside */\n\n.article-layout {\n  display: grid;\n  grid-template-columns: 1fr;\n  gap: 24px;\n  align-items: start;\n}\n\n@media (min-width: 1024px) {\n  .article-layout {\n    grid-template-columns: 1fr 320px;\n  }\n}\n\n/* Container pro */\n.container {\n  max-width: 1100px;\n  margin: 0 auto;\n  padding: 16px;\n}\n\n@media (min-width: 768px) {\n  .container { padding: 24px; }\n}\n\n@media (min-width: 1024px) {\n  .container { padding: 32px; }\n}\n"
+  }
+}

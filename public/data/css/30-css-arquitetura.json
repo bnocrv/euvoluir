@@ -1,0 +1,159 @@
+{
+  "id": "30-css-arquitetura",
+  "title": "Aula 30 — Arquitetura CSS (BEM, utilitários, organização)",
+  "steps": [
+    {
+      "title": "Por que arquitetura CSS é o que separa projeto bom de bagunça",
+      "body": "Quando o projeto cresce, o CSS vira caos se você não tiver regras.\n\nSinais de caos:\n- classes repetidas com nomes diferentes\n- estilos quebrando outras telas\n- você muda uma coisa e quebra outra\n- arquivo gigante impossível de manter\n\nArquitetura CSS é um conjunto de decisões para manter o projeto escalável.\n\nHoje você vai aprender um modelo simples e eficiente para sua plataforma:\n- organização de arquivos\n- naming (BEM)\n- utilitários (classes pequenas)\n- componentes (botões, cards)\n- regras de ouro para não virar zona"
+    },
+    {
+      "title": "Organização de arquivos (padrão escalável)",
+      "body": "Um padrão simples e pro:\n\n- `base.css` → reset, variáveis, tipografia\n- `layout.css` → container, grids, stacks, espaçamentos macro\n- `components.css` → botões, cards, forms, navbar\n- `pages.css` → ajustes específicos de páginas\n\nRegra:\n- nunca jogue tudo em um arquivo só.\n- mas também não crie 50 arquivos sem necessidade."
+    },
+    {
+      "title": "Regras de ouro para evitar conflito",
+      "body": "1) Evite estilizar por tag em excesso.\n- `p {}` pode existir para base, mas não para componente.\n\n2) Prefira classes para componentes.\n\n3) Evite seletores profundos tipo:\n`.page .main .content .card p span { ... }`\n\nIsso vira pesadelo.\n\nRegra pro:\n- seletores curtos e previsíveis."
+    },
+    {
+      "title": "BEM (naming) — um padrão simples de nomes",
+      "body": "BEM significa:\n- Block\n- Element\n- Modifier\n\nFormato:\n- bloco: `.card`\n- elemento: `.card__title`, `.card__body`\n- modificador: `.card--featured`, `.btn--primary`\n\nExemplo:\n- `.btn` (bloco)\n- `.btn--primary` (modificador)\n- `.card__header` (elemento)\n\nO benefício:\n- nomes previsíveis\n- menos conflito\n- você entende a classe só de ler."
+    },
+    {
+      "title": "Como pensar em componentes (blocos)",
+      "body": "Componente é um bloco reutilizável.\n\nExemplos de blocos:\n- `btn`\n- `card`\n- `navbar`\n- `form`\n\nCada bloco deve:\n- ter estilo próprio\n- não depender de estar “dentro de outra tela”\n\nRegra:\n- componente deve funcionar em qualquer página."
+    },
+    {
+      "title": "Elementos (parte do componente)",
+      "body": "Elementos são partes internas.\n\nExemplo:\n- `.card__header`\n- `.card__body`\n- `.card__footer`\n\nIsso te evita fazer:\n- `.card h3 { ... }`\n\nPorque:\n- nem todo card tem h3\n- e o h3 pode mudar\n\nCom BEM, você controla pela classe do elemento."
+    },
+    {
+      "title": "Modificadores (variações sem duplicar CSS)",
+      "body": "Modificadores criam variações sem criar outro componente.\n\nExemplo:\n- `.btn--primary`\n- `.btn--ghost`\n- `.card--clickable`\n\nRegra:\n- base define estrutura\n- modificador define aparência/comportamento\n\nIsso reduz duplicação."
+    },
+    {
+      "title": "Utilitários (classes pequenas) — quando usar",
+      "body": "Utilitários são classes pequenas que fazem 1 coisa.\n\nExemplos:\n- `.mt-2` (margin-top)\n- `.text-muted`\n- `.center`\n\nVocê não precisa fazer um sistema gigante.\n\nUm conjunto pequeno já ajuda muito:\n- `.stack` (layout com gap)\n- `.container`\n- `.muted`\n- `.sr-only` (acessibilidade)\n\nRegra:\n- utilitário é bom para coisas repetidas.\n- não exagere para não virar “framework caseiro” difícil."
+    },
+    {
+      "title": "Camadas (base → layout → componentes → páginas)",
+      "body": "Pense em camadas:\n\n1) Base (reset, variáveis)\n2) Layout (estrutura macro)\n3) Components (peças reutilizáveis)\n4) Pages (ajustes finais)\n\nOrdem de importação (importante):\n- base.css\n- layout.css\n- components.css\n- pages.css\n\nAssim pages consegue sobrescrever o que precisa sem briga."
+    },
+    {
+      "title": "Checklist anti-caos (pra usar sempre)",
+      "body": "Antes de criar CSS novo, pergunte:\n\n1) Já existe um componente que faz isso?\n2) Isso é um utilitário repetível?\n3) Isso pertence a uma página específica?\n\nE regra final:\n- se você precisou de `!important`, provavelmente o design está mal organizado.\n\n(Existem exceções, mas é um ótimo alarme.)"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Organize CSS por arquivos (base/layout/components/pages)\n- Use classes, evite seletores profundos\n- Use BEM (block__element--modifier)\n- Use utilitários pequenos com moderação\n- Respeite camadas e ordem de importação\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 30 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Arquitetura CSS serve para:",
+        "options": [
+          { "key": "A", "text": "Manter o projeto escalável e fácil de manter" },
+          { "key": "B", "text": "Deixar o CSS aleatório e difícil" }
+        ],
+        "answer": "A",
+        "explain": "Sem arquitetura, projeto grande vira bagunça."
+      },
+      {
+        "id": 2,
+        "question": "Uma boa organização de arquivos é:",
+        "options": [
+          { "key": "A", "text": "base/layout/components/pages" },
+          { "key": "B", "text": "Colocar tudo em um único arquivo gigante" }
+        ],
+        "answer": "A",
+        "explain": "Separar responsabilidades facilita manutenção."
+      },
+      {
+        "id": 3,
+        "question": "BEM significa:",
+        "options": [
+          { "key": "A", "text": "Block, Element, Modifier" },
+          { "key": "B", "text": "Bold, Em, Margin" }
+        ],
+        "answer": "A",
+        "explain": "BEM é um padrão de naming."
+      },
+      {
+        "id": 4,
+        "question": "Um exemplo de elemento em BEM é:",
+        "options": [
+          { "key": "A", "text": ".card__title" },
+          { "key": "B", "text": ".card--title" }
+        ],
+        "answer": "A",
+        "explain": "__ indica elemento; -- indica modificador."
+      },
+      {
+        "id": 5,
+        "question": "Um exemplo de modificador em BEM é:",
+        "options": [
+          { "key": "A", "text": ".btn--primary" },
+          { "key": "B", "text": ".btn__primary" }
+        ],
+        "answer": "A",
+        "explain": "-- indica variação do bloco."
+      },
+      {
+        "id": 6,
+        "question": "Seletores muito profundos são ruins porque:",
+        "options": [
+          { "key": "A", "text": "Ficam frágeis e difíceis de manter" },
+          { "key": "B", "text": "São sempre mais rápidos" }
+        ],
+        "answer": "A",
+        "explain": "Mudou a estrutura, quebra o CSS."
+      },
+      {
+        "id": 7,
+        "question": "Utilitários são:",
+        "options": [
+          { "key": "A", "text": "Classes pequenas que fazem uma coisa" },
+          { "key": "B", "text": "Componentes enormes com muitas regras" }
+        ],
+        "answer": "A",
+        "explain": "Utilitário é atalho para padrões repetidos."
+      },
+      {
+        "id": 8,
+        "question": "A ordem de importação ideal é:",
+        "options": [
+          { "key": "A", "text": "base → layout → components → pages" },
+          { "key": "B", "text": "pages → components → layout → base" }
+        ],
+        "answer": "A",
+        "explain": "Camadas garantem previsibilidade e sobrescrita correta."
+      },
+      {
+        "id": 9,
+        "question": "Se você precisou usar !important em tudo, isso geralmente indica:",
+        "options": [
+          { "key": "A", "text": "Arquitetura confusa ou especificidade alta demais" },
+          { "key": "B", "text": "Que o CSS está perfeito" }
+        ],
+        "answer": "A",
+        "explain": "Important é um alarme: algo está mal organizado."
+      },
+      {
+        "id": 10,
+        "question": "Componentes devem:",
+        "options": [
+          { "key": "A", "text": "Ser reutilizáveis e funcionar em qualquer página" },
+          { "key": "B", "text": "Depender da estrutura específica de uma única tela" }
+        ],
+        "answer": "A",
+        "explain": "Componente bom é portátil."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Exemplo de arquitetura (conceitual) */\n\n/* base.css */\n:root {\n  --radius: 14px;\n  --border: rgba(17, 24, 39, 0.12);\n  --accent: #2563eb;\n}\n\n/* layout.css */\n.container {\n  max-width: 1100px;\n  margin: 0 auto;\n  padding: 16px;\n}\n\n.stack {\n  display: grid;\n  gap: 16px;\n}\n\n/* components.css (BEM) */\n.btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  padding: 10px 14px;\n  border-radius: 12px;\n}\n\n.btn--primary {\n  background: var(--accent);\n  color: #ffffff;\n}\n\n.card {\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n}\n\n.card__header {\n  padding: 16px;\n}\n\n.card__body {\n  padding: 0 16px 16px;\n}\n\n.card--clickable {\n  cursor: pointer;\n}\n\n/* utilitários pequenos */\n.muted {\n  opacity: 0.75;\n}\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border: 0;\n}\n"
+  }
+}

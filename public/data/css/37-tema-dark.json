@@ -1,0 +1,155 @@
+{
+  "id": "37-padrao-codigo",
+  "title": "Aula 37 — Código bonito: bloco, inline e highlight (estilo VSCode)",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Sua plataforma é de programação, então o jeito que o código aparece é MUITO importante.\n\nVocê vai aprender a estilizar:\n- código inline (no meio do texto)\n- bloco de código (pre)\n- área de “copy” (opcional)\n- line-height e fonte mono\n- scroll horizontal sem quebrar a página\n\nE vamos preparar o caminho para syntax highlight estilo VSCode.\n\nImportante:\n- o highlight real (cores por token) geralmente precisa de uma biblioteca (Prism/Shiki/Highlight.js).\n- hoje você vai deixar o visual pro e pronto para receber o highlight."
+    },
+    {
+      "title": "Fonte monoespaçada (padrão pro)",
+      "body": "Código deve usar fonte mono.\n\nUm stack seguro:\n`ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace`\n\nIsso garante:\n- aparência consistente\n- boa leitura\n- familiaridade com editores."
+    },
+    {
+      "title": "Inline code (code dentro do texto)",
+      "body": "Inline code deve:\n- destacar sem gritar\n- ter padding pequeno\n- ter borda sutil\n\nPadrão:\n- `code { padding: 0.12em 0.35em; }`\n- `border-radius: 8px;`\n- fundo sutil\n\nRegra:\n- não use fundo muito forte, senão atrapalha leitura do parágrafo."
+    },
+    {
+      "title": "Bloco de código (pre > code)",
+      "body": "Bloco de código precisa:\n- padding confortável\n- fundo escuro (ou claro, dependendo do tema)\n- borda\n- radius\n- scroll horizontal\n\nPadrão:\n- `pre { overflow-x: auto; }`\n- `pre code { display: block; }`\n\nAssim:\n- linhas grandes não quebram o layout\n- o aluno pode rolar horizontal."
+    },
+    {
+      "title": "Line-height e tamanho (leitura estilo editor)",
+      "body": "Código fica mais legível com:\n- line-height 1.5\n- font-size um pouco menor que texto (opcional)\n\nExemplo:\n- `pre code { font-size: 0.95rem; line-height: 1.55; }`\n\nIsso deixa parecido com editor."
+    },
+    {
+      "title": "Scroll horizontal bonito (sem estourar a página)",
+      "body": "O erro clássico é:\n- código grande criar overflow na página inteira\n\nSolução:\n- `pre { overflow-x: auto; }`\n- `max-width: 100%;`\n\nE um detalhe:\n- `-webkit-overflow-scrolling: touch;` melhora no iPhone."
+    },
+    {
+      "title": "Botão copiar (opcional, mas fica muito pro)",
+      "body": "Um bloco de código profissional costuma ter:\n- um botão \"Copiar\"\n\nIsso envolve HTML/JS, mas o CSS precisa prever:\n- container relativo\n- botão absoluto no canto\n\nExemplo:\n- `.codeblock { position: relative; }`\n- `.codeblock__copy { position: absolute; top: 10px; right: 10px; }`"
+    },
+    {
+      "title": "Preparando o highlight estilo VSCode (classes de token)",
+      "body": "Bibliotecas de highlight geralmente geram spans assim:\n\n`<span class=\"token keyword\">...</span>`\n`<span class=\"token string\">...</span>`\n`<span class=\"token comment\">...</span>`\n\nVocê pode estilizar essas classes.\n\nHoje você vai criar um tema base inspirado em VSCode Dark.\n\nDepois, quando você adicionar uma biblioteca, as cores já funcionam."
+    },
+    {
+      "title": "Cores base (tema escuro de código)",
+      "body": "Um tema estilo VSCode Dark costuma ter:\n- fundo: azul bem escuro\n- texto: cinza claro\n- comentários: cinza esverdeado\n- keywords: roxo/azul\n- strings: verde\n- numbers: laranja\n\nVocê não precisa ser perfeito.\nVocê precisa ser consistente e legível."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Código usa fonte mono\n- Inline code: fundo e borda sutil\n- Bloco: pre > code com padding e overflow-x\n- Linha e tamanho confortáveis\n- Pronto para highlight com `.token.*`\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 37 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Código deve usar fonte:",
+        "options": [
+          { "key": "A", "text": "Monoespaçada (mono)" },
+          { "key": "B", "text": "Cursiva sempre" }
+        ],
+        "answer": "A",
+        "explain": "Mono facilita leitura e lembra editores."
+      },
+      {
+        "id": 2,
+        "question": "Para evitar overflow da página por causa do código, use:",
+        "options": [
+          { "key": "A", "text": "overflow-x: auto no pre" },
+          { "key": "B", "text": "width: 2000px no code" }
+        ],
+        "answer": "A",
+        "explain": "Pre com scroll horizontal protege o layout."
+      },
+      {
+        "id": 3,
+        "question": "Bloco de código normalmente é:",
+        "options": [
+          { "key": "A", "text": "pre > code" },
+          { "key": "B", "text": "div > span sempre" }
+        ],
+        "answer": "A",
+        "explain": "A estrutura semântica é pre e code."
+      },
+      {
+        "id": 4,
+        "question": "Inline code deve:",
+        "options": [
+          { "key": "A", "text": "Destacar de forma sutil (fundo leve)" },
+          { "key": "B", "text": "Ter fundo super forte e gigante" }
+        ],
+        "answer": "A",
+        "explain": "Sutil melhora leitura do texto."
+      },
+      {
+        "id": 5,
+        "question": "Para o código ser mais legível, é bom usar:",
+        "options": [
+          { "key": "A", "text": "line-height ~1.5" },
+          { "key": "B", "text": "line-height 0.8" }
+        ],
+        "answer": "A",
+        "explain": "Linha confortável melhora leitura."
+      },
+      {
+        "id": 6,
+        "question": "Um bloco pro pode ter:",
+        "options": [
+          { "key": "A", "text": "Botão de copiar no canto" },
+          { "key": "B", "text": "Copiar só com print da tela" }
+        ],
+        "answer": "A",
+        "explain": "Copy melhora estudo e prática."
+      },
+      {
+        "id": 7,
+        "question": "Highlight real (cores por token) geralmente precisa de:",
+        "options": [
+          { "key": "A", "text": "Uma biblioteca (Prism/Shiki/Highlight.js)" },
+          { "key": "B", "text": "Apenas border-radius" }
+        ],
+        "answer": "A",
+        "explain": "CSS sozinho não sabe quais partes são keyword/string."
+      },
+      {
+        "id": 8,
+        "question": "Classes como .token.keyword aparecem porque:",
+        "options": [
+          { "key": "A", "text": "Uma lib de highlight coloca spans com classes" },
+          { "key": "B", "text": "O HTML cria sozinho sempre" }
+        ],
+        "answer": "A",
+        "explain": "O parser da biblioteca separa tokens."
+      },
+      {
+        "id": 9,
+        "question": "Para scroll suave no iPhone em áreas roláveis, use:",
+        "options": [
+          { "key": "A", "text": "-webkit-overflow-scrolling: touch" },
+          { "key": "B", "text": "text-decoration: underline" }
+        ],
+        "answer": "A",
+        "explain": "Melhora o comportamento de scroll."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo final do CSS de código é:",
+        "options": [
+          { "key": "A", "text": "Código legível, bonito e pronto para highlight" },
+          { "key": "B", "text": "Deixar o código quebrar o layout" }
+        ],
+        "answer": "A",
+        "explain": "Leitura e estudo são prioridade."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Código bonito (pronto para highlight) */\n\n:root {\n  --code-bg: #0d1117;\n  --code-panel: #0f172a;\n  --code-text: #c9d1d9;\n  --code-border: rgba(255, 255, 255, 0.10);\n  --code-muted: #8b949e;\n  --code-keyword: #c586c0;\n  --code-string: #98c379;\n  --code-number: #d19a66;\n  --code-fn: #61afef;\n  --code-type: #4ec9b0;\n  --code-operator: #56b6c2;\n}\n\n/* Inline code */\n.prose code {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n  font-size: 0.95em;\n  padding: 0.12em 0.35em;\n  border-radius: 8px;\n  border: 1px solid var(--code-border);\n  background: rgba(255, 255, 255, 0.04);\n}\n\n/* Code block wrapper (opcional) */\n.codeblock {\n  position: relative;\n  border: 1px solid var(--code-border);\n  border-radius: 14px;\n  background: var(--code-panel);\n}\n\n.codeblock pre {\n  margin: 0;\n  padding: 14px;\n  overflow-x: auto;\n  max-width: 100%;\n  -webkit-overflow-scrolling: touch;\n}\n\n.codeblock pre code {\n  display: block;\n  color: var(--code-text);\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n  font-size: 0.95rem;\n  line-height: 1.55;\n  white-space: pre;\n}\n\n/* Botão copiar (CSS pronto) */\n.codeblock__copy {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  padding: 8px 10px;\n  border-radius: 10px;\n  border: 1px solid var(--code-border);\n  background: rgba(255, 255, 255, 0.06);\n  color: var(--code-text);\n  cursor: pointer;\n}\n\n.codeblock__copy:focus-visible {\n  outline: 3px solid #60a5fa;\n  outline-offset: 3px;\n}\n\n/* Token classes (para quando você integrar highlight) */\n.token.comment { color: var(--code-muted); }\n.token.keyword { color: var(--code-keyword); }\n.token.string { color: var(--code-string); }\n.token.number { color: var(--code-number); }\n.token.function { color: var(--code-fn); }\n.token.class-name { color: var(--code-type); }\n.token.operator { color: var(--code-operator); }\n"
+  }
+}

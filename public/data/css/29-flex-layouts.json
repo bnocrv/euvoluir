@@ -1,0 +1,155 @@
+{
+  "id": "29-flex-layouts",
+  "title": "Aula 29 — Layouts completos com Flexbox (páginas reais)",
+  "steps": [
+    {
+      "title": "Objetivo da aula (layout real com Flexbox)",
+      "body": "Grid é ótimo para layout de página (2D).\nFlexbox é perfeito para:\n- barras (header, toolbar)\n- alinhamento de itens\n- listas em linha\n- layouts 1D (linha OU coluna)\n\nNesta aula você vai aplicar Flexbox em padrões reais:\n\n1) Header com logo + menu + ações\n2) Toolbar com filtros\n3) Lista de cards (linha que quebra)\n4) Layout “media object” (ícone + texto)\n\nO foco é deixar você rápido e consistente."
+    },
+    {
+      "title": "Padrão 1: Header (logo à esquerda, ações à direita)",
+      "body": "Esse é o padrão mais comum do mundo.\n\nEstratégia:\n- container: `display: flex`\n- `justify-content: space-between`\n- `align-items: center`\n- `gap` para respirar\n\nNo mobile:\n- pode virar coluna\n- menu pode quebrar linha (wrap) ou virar toggle (Aula 27)."
+    },
+    {
+      "title": "Header responsivo com Flex (mobile-first)",
+      "body": "Mobile-first:\n- header em coluna\n\n`flex-direction: column;`\n\nDepois em telas maiores:\n- `flex-direction: row;`\n- `justify-content: space-between;`\n- `align-items: center;`\n\nIsso é simples e muito pro."
+    },
+    {
+      "title": "Padrão 2: Toolbar (filtros e busca)",
+      "body": "Toolbar é aquela barra com:\n- filtro (select)\n- busca (input)\n- botões\n\nPadrão:\n- `display: flex;`\n- `gap`\n- `flex-wrap: wrap` (para não estourar no mobile)\n\nE um truque:\n- input de busca pode crescer com `flex: 1;`"
+    },
+    {
+      "title": "Padrão 3: Cards em linha com wrap (Flex + basis)",
+      "body": "Flex também consegue fazer cards responsivos usando:\n\n- container: `display: flex; flex-wrap: wrap; gap: 16px;`\n- card: `flex: 1 1 260px;`\n\nResultado:\n- desktop: vários por linha\n- mobile: 1 por linha\n\nIsso é ótimo quando você quer comportamento flexível e simples."
+    },
+    {
+      "title": "Padrão 4: Media object (ícone + texto alinhado)",
+      "body": "Esse padrão aparece em:\n- listas de recursos\n- cards de feature\n- notificações\n\nEstrutura:\n- ícone fixo\n- texto flexível\n\nCSS:\n- container com flex\n- `gap`\n- `align-items: flex-start` (ou center)\n\nE o texto ocupa o resto."
+    },
+    {
+      "title": "Truques que você vai usar sempre",
+      "body": "1) Empurrar item para a direita:\n- use `margin-left: auto;` no item\n\nExemplo:\n- logo\n- menu\n- e um botão no final\n\nColoque no botão:\n- `margin-left: auto;`\n\n2) Fazer um item crescer:\n- `flex: 1;`\n\nIsso é perfeito para input de busca na toolbar."
+    },
+    {
+      "title": "Consistência: gap e alinhamento",
+      "body": "Layout pro tem:\n- `gap` consistente (10, 12, 16, 24)\n- `align-items` correto\n- `wrap` quando necessário\n\nEvite:\n- margin aleatória em cada item\n\nRegra:\n- container controla espaçamento (`gap`)."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Esquecer `flex-wrap: wrap` e estourar no mobile.\n2) Tentar alinhar tudo com margin individual.\n3) Confundir eixo principal e cruzado.\n4) Não usar `flex: 1` quando um item deve ocupar o resto.\n\nRegra:\n- use wrap\n- use gap\n- use flex: 1 quando precisa"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Flex é layout 1D e alinhamento\n- Header: space-between + center\n- Toolbar: wrap + input com flex: 1\n- Cards: wrap + flex: 1 1 260px\n- Media object: ícone fixo + texto flexível\n- Truque: margin-left: auto\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 29 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Flexbox é mais indicado para layout:",
+        "options": [
+          { "key": "A", "text": "1D (linha ou coluna) e alinhamentos" },
+          { "key": "B", "text": "2D (linhas e colunas ao mesmo tempo)" }
+        ],
+        "answer": "A",
+        "explain": "Flex é 1D; Grid é 2D."
+      },
+      {
+        "id": 2,
+        "question": "Um header clássico com logo e menu usa:",
+        "options": [
+          { "key": "A", "text": "justify-content: space-between e align-items: center" },
+          { "key": "B", "text": "position: fixed em todos os itens" }
+        ],
+        "answer": "A",
+        "explain": "Space-between separa; center alinha verticalmente."
+      },
+      {
+        "id": 3,
+        "question": "Para não estourar toolbar no mobile, é comum usar:",
+        "options": [
+          { "key": "A", "text": "flex-wrap: wrap" },
+          { "key": "B", "text": "width fixa enorme" }
+        ],
+        "answer": "A",
+        "explain": "Wrap permite quebrar linha com segurança."
+      },
+      {
+        "id": 4,
+        "question": "Para o input de busca ocupar o resto do espaço, use:",
+        "options": [
+          { "key": "A", "text": "flex: 1" },
+          { "key": "B", "text": "display: none" }
+        ],
+        "answer": "A",
+        "explain": "Flex 1 faz o item crescer."
+      },
+      {
+        "id": 5,
+        "question": "Um padrão de cards responsivos com Flex é:",
+        "options": [
+          { "key": "A", "text": "Container com wrap e card com flex: 1 1 260px" },
+          { "key": "B", "text": "Cards com position: absolute" }
+        ],
+        "answer": "A",
+        "explain": "Wrap + basis cria adaptação ao espaço."
+      },
+      {
+        "id": 6,
+        "question": "O padrão “media object” é:",
+        "options": [
+          { "key": "A", "text": "Ícone fixo ao lado e texto flexível" },
+          { "key": "B", "text": "Duas colunas fixas em px sempre" }
+        ],
+        "answer": "A",
+        "explain": "Ícone não cresce; texto ocupa o resto."
+      },
+      {
+        "id": 7,
+        "question": "O jeito mais limpo de espaçar itens em flex é:",
+        "options": [
+          { "key": "A", "text": "gap no container" },
+          { "key": "B", "text": "margin diferente em cada item" }
+        ],
+        "answer": "A",
+        "explain": "Gap é consistente e mais fácil de manter."
+      },
+      {
+        "id": 8,
+        "question": "Para empurrar um item para a direita em flex, um truque é:",
+        "options": [
+          { "key": "A", "text": "margin-left: auto" },
+          { "key": "B", "text": "font-weight: 700" }
+        ],
+        "answer": "A",
+        "explain": "Auto ocupa o espaço restante e empurra o item."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum é esquecer wrap e:",
+        "options": [
+          { "key": "A", "text": "O layout estourar horizontalmente no mobile" },
+          { "key": "B", "text": "O CSS parar de existir" }
+        ],
+        "answer": "A",
+        "explain": "Sem wrap, itens tentam ficar na mesma linha."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo da aula é:",
+        "options": [
+          { "key": "A", "text": "Aprender padrões de flex para usar em páginas reais" },
+          { "key": "B", "text": "Decorar propriedades sem aplicar" }
+        ],
+        "answer": "A",
+        "explain": "Padrões repetíveis te dão velocidade e consistência."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Layouts reais com Flexbox */\n\n.header {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n}\n\n@media (min-width: 768px) {\n  .header {\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-between;\n  }\n}\n\n.toolbar {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 12px;\n  align-items: center;\n}\n\n.search {\n  flex: 1;\n  min-width: 220px;\n}\n\n.cards {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 16px;\n}\n\n.card {\n  flex: 1 1 260px;\n  padding: 16px;\n  border: 1px solid rgba(17, 24, 39, 0.12);\n  border-radius: 14px;\n}\n\n.media {\n  display: flex;\n  gap: 12px;\n  align-items: flex-start;\n}\n\n.media-icon {\n  width: 44px;\n  height: 44px;\n  flex: 0 0 44px;\n}\n\n.media-body {\n  flex: 1;\n}\n\n.push-right {\n  margin-left: auto;\n}\n"
+  }
+}
