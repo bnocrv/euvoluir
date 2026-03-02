@@ -1,0 +1,159 @@
+{
+  "id": "20-acessibilidade-css",
+  "title": "Aula 20 — Acessibilidade no CSS (foco, contraste, prefers-reduced-motion)",
+  "steps": [
+    {
+      "title": "Por que acessibilidade no CSS é coisa de profissional",
+      "body": "Acessibilidade (a11y) não é “opcional”.\n\nUm site pode ficar lindo, mas se:\n- não dá pra navegar pelo teclado\n- o foco some\n- o contraste é fraco\n- animações deixam pessoas enjoarem\n\n...muita gente simplesmente não consegue usar.\n\nHoje você vai aprender o essencial e prático no CSS:\n- foco visível (`:focus`, `:focus-visible`)\n- contraste (regras simples)\n- hover + foco (não depender só do mouse)\n- `prefers-reduced-motion`\n- tamanhos clicáveis (touch targets)\n\nSem papo teórico — só o que você aplica na sua plataforma."
+    },
+    {
+      "title": "1) Foco visível: nunca apague o outline sem substituir",
+      "body": "Quando você navega com Tab, o navegador mostra onde você está (foco).\n\nIniciante faz isso:\n`*:focus { outline: none; }`\n\nIsso é péssimo.\n\nRegra profissional:\n- você pode personalizar o foco\n- mas NUNCA remover sem colocar outro indicador.\n\nExemplo bom:\n`:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }`"
+    },
+    {
+      "title": ":focus vs :focus-visible (diferença prática)",
+      "body": "`:focus` ativa sempre que o elemento recebe foco (mouse ou teclado).\n\n`:focus-visible` aparece principalmente quando faz sentido (teclado).\n\nNa prática:\n- use `:focus-visible` para um foco bonito sem “poluir” no clique.\n\nExemplo:\n`.btn:focus-visible { outline: 3px solid var(--accent); }`"
+    },
+    {
+      "title": "2) Contraste: regra simples para não errar",
+      "body": "Contraste é diferença entre texto e fundo.\n\nRegras práticas (para não errar):\n- texto principal em fundo claro: use #111/#222/#333\n- texto em fundo escuro: use quase branco (#f5f5f5)\n- evite cinza claro em fundo branco\n\nDica profissional:\n- use cor “muted” só para texto secundário\n- nunca para conteúdo importante."
+    },
+    {
+      "title": "3) Não dependa só do hover (teclado e mobile existem)",
+      "body": "Hover é mouse.\n\nMas:\n- no mobile não tem hover\n- no teclado também não\n\nRegra:\n- tudo que você faz em `:hover`, você deve fazer em `:focus-visible` também.\n\nExemplo:\n`.link:hover, .link:focus-visible { text-decoration: underline; }`"
+    },
+    {
+      "title": "4) Área clicável: tamanho mínimo (touch targets)",
+      "body": "No celular, botão pequeno é impossível.\n\nRegra prática:\n- botões/links devem ter altura confortável\n\nExemplo:\n`.btn { padding: 10px 14px; }`\n\nSe for um ícone clicável:\n- coloque padding no botão\n\nExemplo:\n`.icon-btn { width: 44px; height: 44px; }`\n\n44px é um número clássico para alvo de toque."
+    },
+    {
+      "title": "5) prefers-reduced-motion: respeite quem não quer animação",
+      "body": "Algumas pessoas têm desconforto com animação.\n\nO sistema operacional pode sinalizar:\n- “prefiro reduzir movimento”\n\nNo CSS:\n\n`@media (prefers-reduced-motion: reduce) {`\n  `* { transition: none !important; animation: none !important; }`\n`}`\n\nVocê não precisa tirar tudo do mundo.\nMas pelo menos:\n- reduzir duração\n- remover animações exageradas."
+    },
+    {
+      "title": "6) Estados de formulário: foco e erro precisam ser claros",
+      "body": "Form acessível tem estados visuais claros:\n\n- foco: mostra onde está\n- erro: mostra que está errado\n- sucesso (quando existir)\n\nExemplo:\n`input:focus-visible { outline: 3px solid var(--accent); }`\n`.input-error { border-color: var(--danger); }`\n\nE sempre que possível:\n- não dependa só de cor (use texto, ícone, mensagem)."
+    },
+    {
+      "title": "7) Links e botões: aparência e intenção",
+      "body": "Regra simples:\n- link parece link\n- botão parece botão\n\nLink:\n- sublinhado ou algum estilo consistente\n\nBotão:\n- background, padding, borda/raio\n\nIsso evita confusão e melhora usabilidade."
+    },
+    {
+      "title": "Kit acessível mínimo (cola pro seu projeto)",
+      "body": "Um kit mínimo (muito bom) para sua plataforma:\n\n- `:focus-visible` com outline forte\n- links com hover + focus-visible\n- botões com padding confortável\n- `prefers-reduced-motion` reduzindo animações\n- contraste com variáveis bem definidas\n\nVocê aplica isso no seu `base.css` e `components.css`."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Nunca remova foco sem substituir\n- Prefira `:focus-visible` para foco bonito\n- Contraste é essencial\n- Hover deve ter equivalente no foco\n- Alvo clicável confortável\n- Respeitar `prefers-reduced-motion`\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 20 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Remover outline sem substituir é:",
+        "options": [
+          { "key": "A", "text": "Ruim (quebra navegação por teclado)" },
+          { "key": "B", "text": "Sempre recomendado para ficar bonito" }
+        ],
+        "answer": "A",
+        "explain": "Sem foco visível, teclado fica impossível."
+      },
+      {
+        "id": 2,
+        "question": "Uma forma boa de foco é usar:",
+        "options": [
+          { "key": "A", "text": ":focus-visible com outline" },
+          { "key": "B", "text": "display: none no elemento focado" }
+        ],
+        "answer": "A",
+        "explain": "Focus-visible dá foco bonito e útil."
+      },
+      {
+        "id": 3,
+        "question": "Contraste bom serve para:",
+        "options": [
+          { "key": "A", "text": "Leitura e acessibilidade" },
+          { "key": "B", "text": "Aumentar FPS do navegador" }
+        ],
+        "answer": "A",
+        "explain": "Contraste impacta leitura e inclusão."
+      },
+      {
+        "id": 4,
+        "question": "Hover é um estado ligado principalmente a:",
+        "options": [
+          { "key": "A", "text": "Mouse" },
+          { "key": "B", "text": "Teclado sempre" }
+        ],
+        "answer": "A",
+        "explain": "Mobile/teclado precisam de foco, não hover."
+      },
+      {
+        "id": 5,
+        "question": "Boa prática: o que você faz em :hover deve existir também em:",
+        "options": [
+          { "key": "A", "text": ":focus-visible" },
+          { "key": "B", "text": "<meta>" }
+        ],
+        "answer": "A",
+        "explain": "Teclado precisa do mesmo feedback."
+      },
+      {
+        "id": 6,
+        "question": "prefers-reduced-motion serve para:",
+        "options": [
+          { "key": "A", "text": "Respeitar usuários que preferem menos animação" },
+          { "key": "B", "text": "Aumentar saturação das cores" }
+        ],
+        "answer": "A",
+        "explain": "É uma preferência do sistema para reduzir movimento."
+      },
+      {
+        "id": 7,
+        "question": "Um tamanho clássico de alvo de toque confortável é perto de:",
+        "options": [
+          { "key": "A", "text": "44px" },
+          { "key": "B", "text": "10px" }
+        ],
+        "answer": "A",
+        "explain": "44px é um valor clássico para touch target."
+      },
+      {
+        "id": 8,
+        "question": "Em formulários, é importante ter:",
+        "options": [
+          { "key": "A", "text": "Estados claros de foco e erro" },
+          { "key": "B", "text": "Inputs sem label e sem foco" }
+        ],
+        "answer": "A",
+        "explain": "Foco e erro claros melhoram muito UX e a11y."
+      },
+      {
+        "id": 9,
+        "question": "Depender só de cor para indicar erro é ruim porque:",
+        "options": [
+          { "key": "A", "text": "Pessoas podem não perceber (daltonismo/visão)" },
+          { "key": "B", "text": "O CSS não suporta cores" }
+        ],
+        "answer": "A",
+        "explain": "Use também texto/ícone/mensagem."
+      },
+      {
+        "id": 10,
+        "question": "Um kit acessível mínimo inclui:",
+        "options": [
+          { "key": "A", "text": "Foco visível + contraste bom + reduzir motion quando necessário" },
+          { "key": "B", "text": "Remover todos os estados e deixar tudo igual" }
+        ],
+        "answer": "A",
+        "explain": "Isso cobre base de teclado, leitura e conforto."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Kit mínimo de acessibilidade (CSS) */\n\n:root {\n  --accent: #60a5fa;\n  --danger: #ef4444;\n}\n\n/* Foco visível e bonito */\n:focus-visible {\n  outline: 3px solid var(--accent);\n  outline-offset: 3px;\n}\n\n/* Hover e foco com o mesmo feedback */\n.link:hover,\n.link:focus-visible {\n  text-decoration: underline;\n}\n\n/* Botão com alvo confortável */\n.btn {\n  padding: 10px 14px;\n  border-radius: 12px;\n}\n\n.icon-btn {\n  width: 44px;\n  height: 44px;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n}\n\n/* Estado de erro */\n.input-error {\n  border-color: var(--danger);\n}\n\n/* Respeitar redução de movimento */\n@media (prefers-reduced-motion: reduce) {\n  * {\n    animation: none !important;\n    transition: none !important;\n    scroll-behavior: auto !important;\n  }\n}\n"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "11-flexbox-1",
+  "title": "Aula 11 — Flexbox 1: eixo, alinhamento e gap (base)",
+  "steps": [
+    {
+      "title": "Por que Flexbox muda tudo",
+      "body": "Flexbox é o jeito moderno e simples de alinhar elementos.\n\nEle resolve coisas que eram um inferno antigamente:\n- centralizar algo\n- colocar itens em linha\n- espaçar itens igualmente\n- alinhar verticalmente\n\nFlexbox serve para **layout em 1 direção**:\n- linha (row) OU coluna (column)\n\nHoje você vai dominar a base:\n- container flex\n- eixo principal e eixo cruzado\n- `justify-content`\n- `align-items`\n- `gap`\n\nSem isso, o resto do Flexbox vira chute."
+    },
+    {
+      "title": "Como ligar o Flexbox (no container)",
+      "body": "Flexbox começa no **pai** (container):\n\n`.row { display: flex; }`\n\nA partir daí, os filhos viram “flex items”.\n\nRegra:\n- `display: flex` quase sempre vai no elemento pai."
+    },
+    {
+      "title": "Eixos do Flexbox (a parte mais importante)",
+      "body": "Flexbox tem 2 eixos:\n\n1) **Eixo principal (main axis)**\n2) **Eixo cruzado (cross axis)**\n\nQuando `flex-direction` é `row` (padrão):\n- eixo principal = horizontal\n- eixo cruzado = vertical\n\nQuando `flex-direction` é `column`:\n- eixo principal = vertical\n- eixo cruzado = horizontal\n\nSe você entende isso, alinhamento fica fácil."
+    },
+    {
+      "title": "flex-direction (row e column)",
+      "body": "Padrão:\n- `flex-direction: row;` (um do lado do outro)\n\nPara coluna:\n- `flex-direction: column;` (um embaixo do outro)\n\nExemplos:\n`.row { display: flex; flex-direction: row; }`\n`.col { display: flex; flex-direction: column; }`"
+    },
+    {
+      "title": "justify-content (alinha no eixo principal)",
+      "body": "`justify-content` alinha os itens no **eixo principal**.\n\nValores mais usados:\n- `flex-start` (no começo)\n- `center` (no centro)\n- `flex-end` (no fim)\n- `space-between` (primeiro e último nas pontas)\n- `space-around` / `space-evenly` (espaçamento distribuído)\n\nExemplo:\n`.nav { display: flex; justify-content: space-between; }`"
+    },
+    {
+      "title": "align-items (alinha no eixo cruzado)",
+      "body": "`align-items` alinha os itens no **eixo cruzado**.\n\nValores mais usados:\n- `stretch` (padrão, estica)\n- `center` (centraliza)\n- `flex-start`\n- `flex-end`\n\nExemplo:\n`.bar { display: flex; align-items: center; }`\n\nÉ isso que deixa ícone e texto alinhados verticalmente."
+    },
+    {
+      "title": "gap (espaço entre os itens) — o jeito certo",
+      "body": "Para espaçar itens em flex, use `gap`.\n\nExemplo:\n`.actions { display: flex; gap: 12px; }`\n\nPor que gap é melhor que margin em cada item?\n- é mais limpo\n- não dá “margem extra” no último item\n- funciona em row e column\n\nRegra prática:\n- layout moderno: use `gap`."
+    },
+    {
+      "title": "Centralizar perfeito (o clássico)",
+      "body": "Centralizar no meio da tela:\n\n`.center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}`\n\nLembre:\n- justify-content = eixo principal\n- align-items = eixo cruzado\n\nSe mudar para column, o eixo principal muda."
+    },
+    {
+      "title": "Dica prática: Flexbox para header/nav",
+      "body": "Flexbox é perfeito para:\n- header com logo + menu\n- barra com botões\n- cards alinhados\n\nExemplo típico:\n`.header { display: flex; justify-content: space-between; align-items: center; }`\n\nIsso é layout real."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Colocar `display: flex` no filho em vez do pai.\n2) Confundir justify vs align.\n3) Esquecer que o eixo muda no `flex-direction: column`.\n4) Usar margin em todo item quando podia usar gap.\n\nRegra:\n- pense em eixos.\n- use gap."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Flexbox: layout 1D\n- `display: flex` no pai\n- eixo principal vs cruzado\n- `justify-content` = eixo principal\n- `align-items` = eixo cruzado\n- `gap` = espaçamento limpo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 11 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Para ativar Flexbox, você coloca:",
+        "options": [
+          { "key": "A", "text": "display: flex no elemento pai" },
+          { "key": "B", "text": "display: flex no elemento filho" }
+        ],
+        "answer": "A",
+        "explain": "O container vira flex; os filhos viram flex items."
+      },
+      {
+        "id": 2,
+        "question": "Flexbox é melhor descrito como layout:",
+        "options": [
+          { "key": "A", "text": "1D (uma direção por vez: linha ou coluna)" },
+          { "key": "B", "text": "2D (linhas e colunas ao mesmo tempo)" }
+        ],
+        "answer": "A",
+        "explain": "Flex é 1D. Grid é 2D."
+      },
+      {
+        "id": 3,
+        "question": "justify-content alinha no:",
+        "options": [
+          { "key": "A", "text": "Eixo principal" },
+          { "key": "B", "text": "Eixo cruzado" }
+        ],
+        "answer": "A",
+        "explain": "Justify = main axis."
+      },
+      {
+        "id": 4,
+        "question": "align-items alinha no:",
+        "options": [
+          { "key": "A", "text": "Eixo cruzado" },
+          { "key": "B", "text": "Eixo principal" }
+        ],
+        "answer": "A",
+        "explain": "Align-items = cross axis."
+      },
+      {
+        "id": 5,
+        "question": "No padrão flex-direction: row, o eixo principal é:",
+        "options": [
+          { "key": "A", "text": "Horizontal" },
+          { "key": "B", "text": "Vertical" }
+        ],
+        "answer": "A",
+        "explain": "Row = main axis horizontal."
+      },
+      {
+        "id": 6,
+        "question": "Se você mudar para flex-direction: column, o eixo principal vira:",
+        "options": [
+          { "key": "A", "text": "Vertical" },
+          { "key": "B", "text": "Horizontal" }
+        ],
+        "answer": "A",
+        "explain": "Column = main axis vertical."
+      },
+      {
+        "id": 7,
+        "question": "Para dar espaço entre itens flex, o mais limpo é:",
+        "options": [
+          { "key": "A", "text": "gap" },
+          { "key": "B", "text": "border-color" }
+        ],
+        "answer": "A",
+        "explain": "Gap cria espaçamento consistente entre itens."
+      },
+      {
+        "id": 8,
+        "question": "Para centralizar perfeitamente em flex, você usa:",
+        "options": [
+          { "key": "A", "text": "justify-content: center e align-items: center" },
+          { "key": "B", "text": "margin: 0 e padding: 0" }
+        ],
+        "answer": "A",
+        "explain": "Um centraliza no main axis e o outro no cross axis."
+      },
+      {
+        "id": 9,
+        "question": "space-between faz:",
+        "options": [
+          { "key": "A", "text": "Primeiro e último vão para as pontas, com espaço no meio" },
+          { "key": "B", "text": "Coloca todos no centro" }
+        ],
+        "answer": "A",
+        "explain": "Space-between distribui deixando bordas nas pontas."
+      },
+      {
+        "id": 10,
+        "question": "Um uso clássico de flex é:",
+        "options": [
+          { "key": "A", "text": "Header com logo e menu alinhados" },
+          { "key": "B", "text": "Criar um banco de dados" }
+        ],
+        "answer": "A",
+        "explain": "Flex é perfeito para barras, menus e alinhamentos."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Flexbox base */\n\n.header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 12px;\n}\n\n.actions {\n  display: flex;\n  gap: 12px;\n}\n\n.center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n"
+  }
+}

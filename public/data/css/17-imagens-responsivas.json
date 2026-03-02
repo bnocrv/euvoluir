@@ -1,0 +1,159 @@
+{
+  "id": "17-imagens-responsivas",
+  "title": "Aula 17 — Imagens responsivas (max-width, height, object-fit)",
+  "steps": [
+    {
+      "title": "Por que imagem quebra layout (e como evitar)",
+      "body": "Imagem é um dos motivos mais comuns de layout quebrado no mobile.\n\nProblemas clássicos:\n- imagem estoura a largura da tela\n- imagem fica distorcida (achatada)\n- imagem não se encaixa no card\n\nHoje você vai aprender o kit essencial para imagem responsiva:\n- `max-width: 100%`\n- `height: auto`\n- `display: block`\n- `object-fit` (cover/contain)\n- imagens dentro de cards com “corte bonito”\n\nIsso é UI profissional."
+    },
+    {
+      "title": "Regra nº 1: imagem nunca deve estourar o container",
+      "body": "O padrão mais famoso (e obrigatório) é:\n\n`img { max-width: 100%; height: auto; }`\n\nO que isso faz:\n- `max-width: 100%` impede a imagem de ficar maior que o pai\n- `height: auto` mantém a proporção\n\nResultado:\n- não estoura no mobile\n- não distorce"
+    },
+    {
+      "title": "Por que usar display: block em imagens",
+      "body": "Por padrão, `img` é inline.\n\nIsso pode criar um “espacinho” estranho embaixo (linha de base do texto).\n\nPadrão profissional:\n\n`img { display: block; }`\n\nAssim a imagem se comporta como bloco e evita aquele espaço fantasma."
+    },
+    {
+      "title": "Imagens de “hero” e banners (largura 100%)",
+      "body": "Quando você quer um banner dentro do layout:\n\n`.hero img { width: 100%; height: auto; }`\n\n⚠️ Dica:\n- se o container tem `max-width`, a imagem vai respeitar isso.\n- se você quer full-bleed (ocupar a tela toda), aí é outra estratégia (mais avançada)."
+    },
+    {
+      "title": "Imagens em cards: o problema do corte",
+      "body": "Em cards, você geralmente quer:\n- mesma altura para todas as imagens\n- sem distorcer\n\nSe você fizer só `width: 100%`, cada imagem pode ter altura diferente.\n\nA solução é:\n- definir uma altura\n- usar `object-fit`"
+    },
+    {
+      "title": "object-fit: cover (corta sem distorcer)",
+      "body": "`object-fit` controla como a imagem se encaixa quando você define width/height.\n\n`cover`:\n- preenche o espaço\n- pode cortar\n- NÃO distorce\n\nExemplo:\n`.card img { width: 100%; height: 180px; object-fit: cover; }`\n\nIsso é padrão em cards de blog, produtos, etc."
+    },
+    {
+      "title": "object-fit: contain (mostra tudo, pode sobrar espaço)",
+      "body": "`contain`:\n- mostra a imagem inteira\n- NÃO corta\n- pode sobrar espaço “vazio”\n\nBom para:\n- logos\n- imagens que não podem ser cortadas\n\nExemplo:\n`.logo { width: 120px; height: 40px; object-fit: contain; }`"
+    },
+    {
+      "title": "border-radius em imagem (para combinar com card)",
+      "body": "Se seu card tem bordas arredondadas, a imagem também deve acompanhar.\n\nDuas formas:\n\n1) Aplicar no img:\n`.card img { border-radius: 12px; }`\n\n2) Melhor (padrão pro):\n- wrapper com `overflow: hidden`\n\n`.media { border-radius: 12px; overflow: hidden; }`\n`.media img { width: 100%; height: 180px; object-fit: cover; }`\n\nIsso garante corte perfeito."
+    },
+    {
+      "title": "Imagem como background? (quando faz sentido)",
+      "body": "Às vezes você quer uma imagem só decorativa.\n\nAí faz sentido usar `background-image` no CSS.\n\nMas regra importante:\n- se a imagem é conteúdo (importante), use `<img>`\n- se é só decoração, pode ser background\n\nAssim você mantém semântica e acessibilidade."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Esquecer `max-width: 100%` e a imagem estourar.\n2) Definir `width` e `height` sem object-fit e distorcer.\n3) Usar background-image para conteúdo importante.\n4) Não tratar imagens de card e ficar tudo desalinhado.\n\nRegra:\n- imagens normais: max-width + height auto\n- cards: height fixa + object-fit: cover"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- `img { max-width: 100%; height: auto; display: block; }` é base\n- cards: `height` + `object-fit: cover`\n- logos: `object-fit: contain`\n- wrapper com `overflow: hidden` corta bonito\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 17 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A regra base para imagem não estourar o container é:",
+        "options": [
+          { "key": "A", "text": "max-width: 100% e height: auto" },
+          { "key": "B", "text": "width: 2000px e height: 50px" }
+        ],
+        "answer": "A",
+        "explain": "Isso mantém proporção e impede overflow."
+      },
+      {
+        "id": 2,
+        "question": "height: auto em imagens serve para:",
+        "options": [
+          { "key": "A", "text": "Manter a proporção (não distorcer)" },
+          { "key": "B", "text": "Deixar a imagem quadrada sempre" }
+        ],
+        "answer": "A",
+        "explain": "Auto preserva o aspecto."
+      },
+      {
+        "id": 3,
+        "question": "display: block em img é usado para:",
+        "options": [
+          { "key": "A", "text": "Evitar espaço estranho embaixo e tratar como bloco" },
+          { "key": "B", "text": "Criar animação automática" }
+        ],
+        "answer": "A",
+        "explain": "Img inline pode gerar um gap de baseline."
+      },
+      {
+        "id": 4,
+        "question": "object-fit: cover faz:",
+        "options": [
+          { "key": "A", "text": "Preencher o espaço, podendo cortar sem distorcer" },
+          { "key": "B", "text": "Mostrar tudo sempre sem cortar" }
+        ],
+        "answer": "A",
+        "explain": "Cover preenche e pode cortar."
+      },
+      {
+        "id": 5,
+        "question": "object-fit: contain faz:",
+        "options": [
+          { "key": "A", "text": "Mostrar tudo sem cortar, podendo sobrar espaço" },
+          { "key": "B", "text": "Preencher e cortar sempre" }
+        ],
+        "answer": "A",
+        "explain": "Contain preserva tudo e pode sobrar área vazia."
+      },
+      {
+        "id": 6,
+        "question": "Para padronizar altura de imagens em cards, é comum usar:",
+        "options": [
+          { "key": "A", "text": "height fixa + object-fit" },
+          { "key": "B", "text": "Só aumentar font-weight" }
+        ],
+        "answer": "A",
+        "explain": "Altura fixa + object-fit resolve alinhamento."
+      },
+      {
+        "id": 7,
+        "question": "Uma técnica pro para cortar imagem dentro de borda arredondada é:",
+        "options": [
+          { "key": "A", "text": "Wrapper com overflow: hidden" },
+          { "key": "B", "text": "display: inline sempre" }
+        ],
+        "answer": "A",
+        "explain": "Overflow hidden garante corte limpo."
+      },
+      {
+        "id": 8,
+        "question": "Se a imagem é conteúdo importante, o correto é:",
+        "options": [
+          { "key": "A", "text": "Usar <img> (semântica) e alt" },
+          { "key": "B", "text": "Usar background-image sempre" }
+        ],
+        "answer": "A",
+        "explain": "Conteúdo importante deve ser img para a11y/SEO."
+      },
+      {
+        "id": 9,
+        "question": "O erro comum que estoura no mobile é:",
+        "options": [
+          { "key": "A", "text": "Imagem sem max-width: 100%" },
+          { "key": "B", "text": "Usar gap em flex" }
+        ],
+        "answer": "A",
+        "explain": "Sem max-width, ela pode ultrapassar o container."
+      },
+      {
+        "id": 10,
+        "question": "Um padrão base profissional para img é:",
+        "options": [
+          { "key": "A", "text": "max-width: 100%; height: auto; display: block;" },
+          { "key": "B", "text": "height: 20px em todas as imagens" }
+        ],
+        "answer": "A",
+        "explain": "Isso previne overflow e melhora o layout."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Imagens responsivas: padrão base */\n\nimg {\n  max-width: 100%;\n  height: auto;\n  display: block;\n}\n\n/* Card com imagem cortada bonita */\n.card {\n  border: 1px solid #ddd;\n  border-radius: 14px;\n  overflow: hidden;\n}\n\n.card .media img {\n  width: 100%;\n  height: 180px;\n  object-fit: cover;\n}\n\n/* Logo: não cortar */\n.logo {\n  width: 140px;\n  height: 48px;\n  object-fit: contain;\n}\n"
+  }
+}

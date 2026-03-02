@@ -32,10 +32,10 @@ export function DashboardPage(app) {
             <div class="card pad course-card">
               <div class="row row-between">
                 <h3 class="m-0">CSS</h3>
-                <span class="badge">Em breve</span>
+                <span class="badge">Trilha</span>
               </div>
               <p class="muted">Layout responsivo, flex, grid, design system e animações.</p>
-              <button class="btn" disabled>Em breve</button>
+              <button class="btn primary" id="go-css">Começar CSS</button>
             </div>
 
             <div class="card pad course-card">
@@ -65,5 +65,9 @@ export function DashboardPage(app) {
 
   app.querySelector("#go-html").addEventListener("click", () => {
     navigate("/course/html/01-introducao");
+  });
+
+  app.querySelector("#go-css").addEventListener("click", () => {
+    navigate("/course/css/01-introducao");
   });
 }

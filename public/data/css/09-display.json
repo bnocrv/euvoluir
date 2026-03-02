@@ -1,0 +1,151 @@
+{
+  "id": "09-display",
+  "title": "Aula 09 — Display (block, inline, inline-block, none)",
+  "steps": [
+    {
+      "title": "Por que display é um divisor de águas",
+      "body": "`display` controla **como um elemento se comporta no layout**.\n\nMuita confusão de iniciante vem de:\n- “por que esse elemento não aceita width?”\n- “por que isso quebra a linha?”\n- “por que não consigo alinhar?”\n\nA resposta quase sempre envolve `display`.\n\nHoje você vai dominar:\n- `block`\n- `inline`\n- `inline-block`\n- `none`\n\nE entender quando usar cada um."
+    },
+    {
+      "title": "display: block (ocupa a linha toda)",
+      "body": "Um elemento `block` normalmente:\n- começa em uma nova linha\n- ocupa a largura disponível\n- aceita `width` e `height`\n\nExemplos comuns:\n- `div`, `p`, `h1`, `section`\n\nExemplo:\n`.box { display: block; width: 300px; }`"
+    },
+    {
+      "title": "display: inline (fica dentro da linha)",
+      "body": "Um elemento `inline` normalmente:\n- NÃO quebra a linha\n- ocupa só o tamanho do conteúdo\n- NÃO respeita `width` e `height` do jeito que você espera\n\nExemplos comuns:\n- `span`, `a`, `strong`, `em`\n\nPor isso:\n- link (`a`) fica no meio do texto\n- `width: 300px` em `a` pode não funcionar como você imagina"
+    },
+    {
+      "title": "display: inline-block (o melhor dos dois mundos)",
+      "body": "`inline-block`:\n- fica na mesma linha (como inline)\n- mas aceita `width` e `height` (como block)\n\n✅ Ótimo para:\n- botões\n- badges\n- elementos pequenos que precisam de tamanho\n\nExemplo:\n`.badge { display: inline-block; padding: 6px 10px; }`"
+    },
+    {
+      "title": "display: none (some do layout)",
+      "body": "`display: none`:\n- remove o elemento da tela\n- remove o espaço dele do layout\n\nExemplo:\n`.hidden { display: none; }`\n\n⚠️ Importante:\n- diferente de `visibility: hidden` (que esconde mas mantém o espaço)\n\nUse `display: none` quando:\n- você quer esconder algo de verdade (sem ocupar espaço)."
+    },
+    {
+      "title": "Diferença entre display none e visibility hidden",
+      "body": "Comparação simples:\n\n- `display: none` → some e o layout “fecha” o buraco\n- `visibility: hidden` → some, mas deixa o espaço reservado\n\nExemplo mental:\n- botão escondido:\n  - com display none, os outros sobem\n  - com visibility hidden, fica um “vazio” no lugar"
+    },
+    {
+      "title": "Exemplo clássico: por que seu link não aceita padding direito?",
+      "body": "Links (`a`) são inline por padrão.\n\nSe você quer que um link pareça botão:\n- coloque `display: inline-block` (ou `block`)\n\nExemplo:\n`.btn { display: inline-block; padding: 10px 14px; border-radius: 10px; }`\n\nIsso muda completamente o comportamento."
+    },
+    {
+      "title": "Dica profissional: você quase nunca muda h1/p pra inline",
+      "body": "Em UI real:\n- textos grandes (h1/p/section) continuam block\n- elementos pequenos (badge/button/link) viram inline-block\n\nOu então você vai para Flex/Grid (a partir da aula 11).\n\nMas entender block/inline te dá base para flex/grid fazer sentido."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- block: quebra linha e aceita width/height\n- inline: não quebra linha e não trabalha bem com width/height\n- inline-block: fica na linha e aceita width/height\n- none: remove do layout\n- visibility hidden: esconde, mas mantém espaço\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 09 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Elementos block normalmente:",
+        "options": [
+          { "key": "A", "text": "Quebram linha e ocupam a largura disponível" },
+          { "key": "B", "text": "Ficam sempre dentro da mesma linha" }
+        ],
+        "answer": "A",
+        "explain": "Block começa em nova linha e ocupa espaço disponível."
+      },
+      {
+        "id": 2,
+        "question": "Elementos inline normalmente:",
+        "options": [
+          { "key": "A", "text": "Não quebram linha e ocupam só o conteúdo" },
+          { "key": "B", "text": "Sempre aceitam width/height perfeitamente" }
+        ],
+        "answer": "A",
+        "explain": "Inline não quebra linha e width/height não funcionam como em block."
+      },
+      {
+        "id": 3,
+        "question": "inline-block é útil porque:",
+        "options": [
+          { "key": "A", "text": "Fica na linha e aceita width/height" },
+          { "key": "B", "text": "Remove o elemento do layout" }
+        ],
+        "answer": "A",
+        "explain": "Inline-block mistura comportamento de inline e block."
+      },
+      {
+        "id": 4,
+        "question": "display: none faz o elemento:",
+        "options": [
+          { "key": "A", "text": "Sumir e não ocupar espaço" },
+          { "key": "B", "text": "Sumir mas manter o espaço" }
+        ],
+        "answer": "A",
+        "explain": "Display none remove do layout."
+      },
+      {
+        "id": 5,
+        "question": "visibility: hidden faz o elemento:",
+        "options": [
+          { "key": "A", "text": "Sumir, mas manter o espaço reservado" },
+          { "key": "B", "text": "Sumir e não ocupar espaço" }
+        ],
+        "answer": "A",
+        "explain": "Visibility hidden não remove do layout."
+      },
+      {
+        "id": 6,
+        "question": "Por padrão, <a> é:",
+        "options": [
+          { "key": "A", "text": "inline" },
+          { "key": "B", "text": "block" }
+        ],
+        "answer": "A",
+        "explain": "Links são inline por padrão."
+      },
+      {
+        "id": 7,
+        "question": "Para transformar <a> em botão, é comum usar:",
+        "options": [
+          { "key": "A", "text": "display: inline-block" },
+          { "key": "B", "text": "display: none" }
+        ],
+        "answer": "A",
+        "explain": "Inline-block permite padding e formato de botão."
+      },
+      {
+        "id": 8,
+        "question": "Um exemplo de elemento block por padrão é:",
+        "options": [
+          { "key": "A", "text": "<div>" },
+          { "key": "B", "text": "<span>" }
+        ],
+        "answer": "A",
+        "explain": "div é block; span é inline."
+      },
+      {
+        "id": 9,
+        "question": "Um exemplo de elemento inline por padrão é:",
+        "options": [
+          { "key": "A", "text": "<span>" },
+          { "key": "B", "text": "<section>" }
+        ],
+        "answer": "A",
+        "explain": "span é inline; section é block."
+      },
+      {
+        "id": 10,
+        "question": "Entender block/inline ajuda porque:",
+        "options": [
+          { "key": "A", "text": "É base para flex/grid e para debugar layout" },
+          { "key": "B", "text": "Substitui a necessidade de CSS" }
+        ],
+        "answer": "A",
+        "explain": "Display é base do layout e te prepara para flex/grid."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Display na prática */\n\n.box {\n  display: block;\n  width: 280px;\n  padding: 16px;\n  border: 1px solid #ddd;\n}\n\n.link-as-btn {\n  display: inline-block;\n  padding: 10px 14px;\n  border-radius: 10px;\n  background: #111;\n  color: #fff;\n}\n\n.hidden {\n  display: none;\n}\n\n.invisible {\n  visibility: hidden;\n}\n"
+  }
+}

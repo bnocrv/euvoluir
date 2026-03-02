@@ -4,14 +4,11 @@ import { Header, bindHeaderEvents } from "../components/header.js";
 export function LandingPage(app) {
   const targetRoute = "#/dashboard";
   const highlights = [
-    {
-      title: "Trilha guiada",
-      description: "Aulas longas, bem explicadas, e exercícios no final para fixar.",
-    },
-    {
-      title: "Prática",
-      description: "Você pratica de verdade: quiz, completar código e desafios progressivos.",
-    },
+   {
+  title: "Aprenda sem atalhos",
+  description:
+    "Conteúdo detalhado para você entender fundamentos e raciocínio, não só decorar. Pratique com quizzes, completar trechos e desafios graduais a cada etapa. No fim, certificado de conclusão e grupo no WhatsApp para suporte e comunidade.",
+}
   ];
 
   app.innerHTML = `

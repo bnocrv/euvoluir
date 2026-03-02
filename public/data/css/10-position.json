@@ -1,0 +1,155 @@
+{
+  "id": "10-position",
+  "title": "Aula 10 — Position (relative, absolute, fixed, sticky)",
+  "steps": [
+    {
+      "title": "O que position realmente controla",
+      "body": "`position` controla **como um elemento é posicionado** na página e como ele interage com o fluxo do layout.\n\nPensa assim:\n- Por padrão, os elementos seguem o fluxo normal (um abaixo do outro).\n- Com `position`, você pode \"mexer\" o elemento com `top/right/bottom/left`.\n\nHoje você vai dominar os 4 mais importantes:\n- `relative`\n- `absolute`\n- `fixed`\n- `sticky`\n\nE vai entender quando usar cada um sem bagunçar o layout."
+    },
+    {
+      "title": "Antes de tudo: top/right/bottom/left só funcionam com position",
+      "body": "Se um elemento está com `position: static` (padrão), essas propriedades não movem nada:\n- `top`, `right`, `bottom`, `left`\n\nElas só passam a funcionar quando você define:\n- `position: relative/absolute/fixed/sticky`\n\nIsso sozinho já resolve muita dúvida."
+    },
+    {
+      "title": "position: relative (mexe sem sair do lugar “reservado”)",
+      "body": "`relative` mantém o elemento no fluxo normal, mas permite deslocar visualmente.\n\nExemplo:\n`.box { position: relative; top: 10px; left: 10px; }`\n\nO ponto mais importante:\n- o espaço original continua reservado\n\n✅ Use para:\n- pequenos ajustes\n- criar “referência” para um filho `absolute` (isso é MUITO comum)."
+    },
+    {
+      "title": "position: absolute (sai do fluxo e cola em um “referencial”)",
+      "body": "`absolute` tira o elemento do fluxo normal.\n\nEle vai se posicionar em relação ao **ancestor posicionado** mais próximo.\n\nO que é “ancestor posicionado”?\n- o primeiro pai acima que tenha `position` diferente de `static` (geralmente `relative`).\n\nSe não existir nenhum:\n- ele usa a página (viewport/documento) como referência.\n\n✅ Use para:\n- badges no canto do card\n- ícones dentro de input\n- dropdowns/menus flutuantes (com cuidado)\n\nRegra prática:\n- pai `relative`, filho `absolute`."
+    },
+    {
+      "title": "Exemplo clássico: badge no canto do card",
+      "body": "Padrão profissional:\n\n- Card: `position: relative;`\n- Badge: `position: absolute; top: 12px; right: 12px;`\n\nAssim o badge se posiciona em relação ao card, não em relação à página."
+    },
+    {
+      "title": "position: fixed (gruda na tela)",
+      "body": "`fixed` posiciona em relação ao viewport (a tela).\n\nEle:\n- sai do fluxo normal\n- fica preso mesmo quando você dá scroll\n\n✅ Use para:\n- botão flutuante\n- barra fixa (header)\n- “voltar ao topo”\n\n⚠️ Cuidado:\n- pode cobrir conteúdo (precisa de padding/margin no layout)."
+    },
+    {
+      "title": "position: sticky (mistura de relative e fixed)",
+      "body": "`sticky` se comporta como `relative` até um ponto.\n\nQuando chega no limite, ele \"cola\" como `fixed`.\n\nExemplo:\n`.topbar { position: sticky; top: 0; }`\n\n✅ Use para:\n- header que cola no topo\n- sidebar que cola quando rola\n\n⚠️ Pegadinha:\n- sticky precisa de um `top` (ou bottom)\n- e depende do container (se o pai tiver overflow estranho, pode quebrar)."
+    },
+    {
+      "title": "z-index (quem fica por cima)",
+      "body": "Quando você começa a usar `position`, elementos podem se sobrepor.\n\n`z-index` controla a ordem de empilhamento.\n\nExemplo:\n`.header { position: sticky; top: 0; z-index: 10; }`\n\nRegras rápidas:\n- geralmente só funciona em elementos “posicionados” (`relative/absolute/fixed/sticky`).\n- números maiores ficam na frente."
+    },
+    {
+      "title": "Erros comuns (pra você evitar)",
+      "body": "1) Usar `absolute` sem pai `relative` e o elemento vai parar no canto da página.\n2) Usar `fixed` e esquecer que ele cobre conteúdo.\n3) Usar `sticky` sem `top: 0` e não acontecer nada.\n4) Resolver layout inteiro com absolute (vira pesadelo).\n\nRegra:\n- layout geral → flex/grid\n- position → detalhes e elementos flutuantes"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- `relative`: ajusta sem sair do fluxo; ótimo como referência\n- `absolute`: sai do fluxo; cola no pai posicionado\n- `fixed`: cola na tela\n- `sticky`: cola ao rolar (com top)\n- `z-index`: controla camadas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 10 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "top/left/right/bottom funcionam quando position é:",
+        "options": [
+          { "key": "A", "text": "relative/absolute/fixed/sticky" },
+          { "key": "B", "text": "static apenas" }
+        ],
+        "answer": "A",
+        "explain": "Com static (padrão), top/left não movem o elemento."
+      },
+      {
+        "id": 2,
+        "question": "position: relative significa que o elemento:",
+        "options": [
+          { "key": "A", "text": "Fica no fluxo e pode ser deslocado visualmente" },
+          { "key": "B", "text": "Sai do fluxo e não ocupa espaço" }
+        ],
+        "answer": "A",
+        "explain": "Relative mantém o espaço reservado."
+      },
+      {
+        "id": 3,
+        "question": "position: absolute:",
+        "options": [
+          { "key": "A", "text": "Sai do fluxo e se posiciona pelo ancestor posicionado" },
+          { "key": "B", "text": "Sempre fica preso no topo da tela" }
+        ],
+        "answer": "A",
+        "explain": "Absolute busca o pai (ancestor) com position diferente de static."
+      },
+      {
+        "id": 4,
+        "question": "O padrão correto para posicionar um badge no canto do card é:",
+        "options": [
+          { "key": "A", "text": "Pai relative, filho absolute" },
+          { "key": "B", "text": "Pai inline, filho block" }
+        ],
+        "answer": "A",
+        "explain": "Isso faz o absolute usar o card como referência."
+      },
+      {
+        "id": 5,
+        "question": "position: fixed:",
+        "options": [
+          { "key": "A", "text": "Fica preso ao viewport mesmo com scroll" },
+          { "key": "B", "text": "Só funciona dentro do pai" }
+        ],
+        "answer": "A",
+        "explain": "Fixed é relativo ao viewport."
+      },
+      {
+        "id": 6,
+        "question": "position: sticky funciona como:",
+        "options": [
+          { "key": "A", "text": "relative até um ponto e depois fixa" },
+          { "key": "B", "text": "none (sempre invisível)" }
+        ],
+        "answer": "A",
+        "explain": "Sticky “cola” quando chega no limite."
+      },
+      {
+        "id": 7,
+        "question": "Para sticky funcionar, normalmente você precisa definir:",
+        "options": [
+          { "key": "A", "text": "top (ex.: top: 0)" },
+          { "key": "B", "text": "font-weight" }
+        ],
+        "answer": "A",
+        "explain": "Sticky precisa de um offset (top/bottom)."
+      },
+      {
+        "id": 8,
+        "question": "z-index serve para:",
+        "options": [
+          { "key": "A", "text": "Controlar quem fica por cima quando há sobreposição" },
+          { "key": "B", "text": "Aumentar o tamanho da fonte" }
+        ],
+        "answer": "A",
+        "explain": "Z-index define a ordem de empilhamento."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum com absolute é:",
+        "options": [
+          { "key": "A", "text": "Não definir pai relative e ele se posicionar na página" },
+          { "key": "B", "text": "Ele nunca funciona em navegadores modernos" }
+        ],
+        "answer": "A",
+        "explain": "Sem referência, absolute pode usar a página/viewport."
+      },
+      {
+        "id": 10,
+        "question": "Para layout geral (colunas, cards), o mais indicado é:",
+        "options": [
+          { "key": "A", "text": "Flexbox/Grid" },
+          { "key": "B", "text": "Resolver tudo com absolute" }
+        ],
+        "answer": "A",
+        "explain": "Position é para detalhes; layout é flex/grid."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Exemplos de position */\n\n.card {\n  position: relative; /* referência para absolute */\n  padding: 16px;\n  border: 1px solid #ddd;\n  border-radius: 14px;\n}\n\n.badge {\n  position: absolute;\n  top: 12px;\n  right: 12px;\n  padding: 6px 10px;\n  border-radius: 999px;\n  background: #111;\n  color: #fff;\n  font-size: 0.875rem;\n}\n\n.topbar {\n  position: sticky;\n  top: 0;\n  z-index: 10;\n}\n\n.floating {\n  position: fixed;\n  right: 16px;\n  bottom: 16px;\n}\n"
+  }
+}

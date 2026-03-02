@@ -1,0 +1,151 @@
+{
+  "id": "06-unidades",
+  "title": "Aula 06 — Unidades (px, %, em, rem, vw, vh) e quando usar",
+  "steps": [
+    {
+      "title": "Por que unidades importam tanto",
+      "body": "Unidade é o “tamanho” das coisas no CSS.\n\nSe você escolher unidade errada:\n- o site fica ruim no celular\n- texto fica pequeno demais\n- layout quebra\n\nHoje você vai entender as unidades mais usadas e quando usar cada uma:\n- `px`\n- `%`\n- `em`\n- `rem`\n- `vw` e `vh`\n\nNo fim você vai parar de chutar."
+    },
+    {
+      "title": "px (pixel) — simples, mas não é sempre o melhor",
+      "body": "`px` é a unidade mais direta.\n\nExemplo:\n- `padding: 16px;`\n- `border-radius: 12px;`\n\n✅ Bom para:\n- bordas\n- sombras\n- pequenos espaçamentos\n- detalhes de UI\n\n⚠️ Cuidado:\n- usar px para tudo pode atrapalhar acessibilidade de texto\n\nRegra prática:\n- UI/spacing pode ser px\n- tipografia costuma ficar melhor com rem."
+    },
+    {
+      "title": "% (porcentagem) — depende do “pai”",
+      "body": "Porcentagem é relativa a alguma coisa (geralmente o container pai).\n\nExemplos:\n- `width: 100%` → ocupa toda a largura do pai\n- `width: 50%` → metade do pai\n\n✅ Bom para:\n- larguras fluidas\n- imagens responsivas\n\n⚠️ Importante:\n- `%` em height pode confundir, porque depende da altura do pai estar definida."
+    },
+    {
+      "title": "em — relativo ao tamanho de fonte do elemento (ou do pai)",
+      "body": "`em` muda conforme o `font-size`.\n\nExemplo simples:\n- se o elemento tem `font-size: 20px`\n- então `1em = 20px`\n\n✅ Bom para:\n- espaçamento que deve crescer junto com o texto\n\n⚠️ Cuidado clássico:\n- `em` pode \"multiplicar\" em elementos aninhados.\n\nExemplo:\n- pai 20px\n- filho 1.2em → 24px\n- neto 1.2em → 28.8px\n\nPor isso, para tipografia base, `rem` é mais previsível."
+    },
+    {
+      "title": "rem — relativo ao tamanho de fonte do root (html)",
+      "body": "`rem` é relativo ao `font-size` do `html`.\n\nPor padrão, muitos browsers usam:\n- `html { font-size: 16px; }`\n\nEntão:\n- `1rem = 16px`\n- `1.25rem = 20px`\n- `0.875rem = 14px`\n\n✅ Bom para:\n- fonte (tipografia)\n- espaçamentos consistentes\n- escalabilidade (se mudar o root, tudo escala)\n\nRegra prática:\n- use `rem` para texto e espaçamentos principais."
+    },
+    {
+      "title": "vw e vh — relativos ao tamanho da tela (viewport)",
+      "body": "Viewport = a área visível do navegador.\n\n- `1vw` = 1% da largura da tela\n- `1vh` = 1% da altura da tela\n\nExemplos:\n- `height: 100vh;` → ocupa a altura toda da tela\n- `width: 100vw;` → ocupa a largura toda\n\n✅ Bom para:\n- seções hero (tela cheia)\n- layouts que dependem da tela\n\n⚠️ Cuidado:\n- em mobile, 100vh pode ser estranho por causa da barra do navegador.\n\nPara agora, use com cuidado e teste no celular."
+    },
+    {
+      "title": "Qual unidade usar? (guia rápido)",
+      "body": "Use este guia prático:\n\n- **Tipografia (font-size)**: `rem`\n- **Padding/margin de componentes**: `rem` ou `px` (se for detalhe)\n- **Borda (border)**: `px`\n- **Border radius**: `px` (ou rem se quiser escalar)\n- **Larguras fluidas**: `%`\n- **Imagens responsivas**: `%` + `max-width`\n- **Hero/tela cheia**: `vh` (com cautela)\n\nO objetivo é previsibilidade + responsividade."
+    },
+    {
+      "title": "Exemplo prático (padrão profissional simples)",
+      "body": "Um padrão comum:\n\n- Definir base no `html`\n- Usar rem no texto\n\nExemplo:\n`html { font-size: 16px; }`\n`body { font-size: 1rem; }`\n`h1 { font-size: 2rem; }`\n`p { font-size: 1rem; }`\n\nAgora tudo escala de forma consistente."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- px: detalhes e medidas fixas\n- %: relativo ao pai (larguras fluidas)\n- em: relativo ao font-size do elemento (cuidado com aninhamento)\n- rem: relativo ao html (previsível)\n- vw/vh: relativo à tela\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 06 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "rem é relativo a:",
+        "options": [
+          { "key": "A", "text": "font-size do html (root)" },
+          { "key": "B", "text": "font-size do próprio elemento sempre" }
+        ],
+        "answer": "A",
+        "explain": "rem usa o root (html), por isso é previsível."
+      },
+      {
+        "id": 2,
+        "question": "em é relativo a:",
+        "options": [
+          { "key": "A", "text": "font-size do elemento (e pode acumular em aninhamento)" },
+          { "key": "B", "text": "largura da tela sempre" }
+        ],
+        "answer": "A",
+        "explain": "em depende do font-size do contexto."
+      },
+      {
+        "id": 3,
+        "question": "1vw significa:",
+        "options": [
+          { "key": "A", "text": "1% da largura do viewport" },
+          { "key": "B", "text": "1% da altura do viewport" }
+        ],
+        "answer": "A",
+        "explain": "vw = viewport width."
+      },
+      {
+        "id": 4,
+        "question": "1vh significa:",
+        "options": [
+          { "key": "A", "text": "1% da altura do viewport" },
+          { "key": "B", "text": "1% da largura do viewport" }
+        ],
+        "answer": "A",
+        "explain": "vh = viewport height."
+      },
+      {
+        "id": 5,
+        "question": "% em width geralmente é relativo:",
+        "options": [
+          { "key": "A", "text": "À largura do elemento pai" },
+          { "key": "B", "text": "À altura da tela" }
+        ],
+        "answer": "A",
+        "explain": "width: 50% → metade do pai."
+      },
+      {
+        "id": 6,
+        "question": "Uma boa prática comum para font-size é usar:",
+        "options": [
+          { "key": "A", "text": "rem" },
+          { "key": "B", "text": "px em tudo sempre" }
+        ],
+        "answer": "A",
+        "explain": "rem melhora escalabilidade e previsibilidade."
+      },
+      {
+        "id": 7,
+        "question": "px é mais indicado para:",
+        "options": [
+          { "key": "A", "text": "bordas (border) e detalhes finos" },
+          { "key": "B", "text": "larguras fluidas responsivas" }
+        ],
+        "answer": "A",
+        "explain": "Bordas finas normalmente são px."
+      },
+      {
+        "id": 8,
+        "question": "Para seção hero ocupar a tela toda, é comum usar:",
+        "options": [
+          { "key": "A", "text": "height: 100vh" },
+          { "key": "B", "text": "height: 100% sempre funciona" }
+        ],
+        "answer": "A",
+        "explain": "100vh ocupa a altura do viewport (com cautela no mobile)."
+      },
+      {
+        "id": 9,
+        "question": "Cuidado clássico do em é:",
+        "options": [
+          { "key": "A", "text": "Pode acumular em elementos aninhados (multiplicar tamanhos)" },
+          { "key": "B", "text": "Não funciona em nenhum navegador" }
+        ],
+        "answer": "A",
+        "explain": "Em depende do contexto e pode crescer em cascata."
+      },
+      {
+        "id": 10,
+        "question": "Um guia simples e profissional é:",
+        "options": [
+          { "key": "A", "text": "rem para tipografia e % para larguras fluidas" },
+          { "key": "B", "text": "Usar só px para tudo em qualquer caso" }
+        ],
+        "answer": "A",
+        "explain": "Isso tende a ficar mais responsivo e consistente."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Unidades na prática */\n\nhtml {\n  font-size: 16px; /* 1rem = 16px */\n}\n\n.card {\n  padding: 1rem;        /* 16px */\n  border: 1px solid #ddd; /* px é perfeito aqui */\n  border-radius: 12px;\n  max-width: 90%;       /* % relativo ao pai */\n}\n\n.hero {\n  min-height: 60vh;     /* relativo à altura da tela */\n}\n\nh1 {\n  font-size: 2rem;      /* 32px */\n}\n\np {\n  font-size: 1rem;      /* 16px */\n  line-height: 1.6;\n}\n"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "03-seletores-basicos",
+  "title": "Aula 03 — Seletores básicos (tag, class, id) e especificidade",
+  "steps": [
+    {
+      "title": "O que é um seletor (a pergunta mais importante do CSS)",
+      "body": "Seletor é a parte do CSS que diz: **quem vai receber o estilo**.\n\nExemplo:\n`p { color: red; }`\n\n- seletor: `p`\n- regra: tudo que for `<p>` vai ficar vermelho.\n\nSe você erra o seletor, nada acontece (ou acontece no lugar errado)."
+    },
+    {
+      "title": "1) Seletor por TAG (elemento)",
+      "body": "Você seleciona pelo nome da tag:\n\n`p { ... }`\n`h1 { ... }`\n`button { ... }`\n\n✅ Bom para:\n- estilos globais (ex.: tipografia básica)\n\n⚠️ Cuidado:\n- pode afetar muita coisa de uma vez\n\nRegra prática:\n- use tag para \"base\".\n- use class para componentes."
+    },
+    {
+      "title": "2) Seletor por CLASS (o padrão profissional)",
+      "body": "Class é o que você mais vai usar.\n\nNo HTML:\n`<div class=\"card\">...</div>`\n\nNo CSS:\n`.card { ... }`\n\n✅ Vantagens:\n- reutilizável\n- fácil de manter\n- controla bem o que você está estilizando\n\nRegra prática:\n- para layout e componentes: **class**."
+    },
+    {
+      "title": "3) Seletor por ID (use pouco)",
+      "body": "ID é único.\n\nNo HTML:\n`<header id=\"top\">...</header>`\n\nNo CSS:\n`#top { ... }`\n\n✅ Serve para:\n- coisas realmente únicas\n\n⚠️ Problema:\n- ID tem especificidade alta\n- pode dificultar sobrescrever depois\n\nRegra prática:\n- use id para âncora/JS.\n- para estilo, prefira class."
+    },
+    {
+      "title": "Seletores combinados (muito comum)",
+      "body": "Você pode selecionar **elementos dentro de outros**:\n\n`.card p { ... }`\n\nIsso significa:\n- todo `<p>` que estiver dentro de um elemento com class `card`.\n\n✅ Útil para:\n- estilos específicos de um componente\n\n⚠️ Cuidado:\n- se exagerar, o CSS fica difícil de manter."
+    },
+    {
+      "title": "Seletor de múltiplos (lista de seletores)",
+      "body": "Você pode aplicar a mesma regra a vários seletores:\n\n`h1, h2, h3 { font-family: system-ui; }`\n\nIsso é ótimo para evitar repetição."
+    },
+    {
+      "title": "Pseudo-classes (primeiro contato)",
+      "body": "Pseudo-classes são “estados”.\n\nExemplo clássico:\n- `:hover` (quando passa o mouse)\n\n`.btn:hover { opacity: 0.9; }`\n\nOutros exemplos (vamos aprofundar depois):\n- `:focus`\n- `:active`\n- `:disabled`"
+    },
+    {
+      "title": "Especificidade (quem é mais forte?) — versão simples",
+      "body": "Quando duas regras brigam, o navegador decide pela força do seletor.\n\nOrdem simplificada (mais fraco → mais forte):\n1) tag (`p`)\n2) class (`.card`)\n3) id (`#top`)\n\nExemplo:\n- `p { color: blue; }`\n- `.card p { color: red; }`\n\nDentro do card, vence o vermelho porque `.card p` é mais específico que só `p`."
+    },
+    {
+      "title": "O erro número 1 (por que não funcionou?)",
+      "body": "Quando o CSS “não funciona”, geralmente é por:\n\n1) seletor errado\n2) arquivo CSS não está carregando\n3) outra regra mais forte venceu (especificidade)\n\nDica prática:\n- abra o DevTools\n- clique no elemento\n- veja quais regras estão aplicando e quais foram riscadas"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Seletor define QUEM recebe estilo\n- Tag: base global\n- Class: padrão profissional\n- Id: use pouco (força alta)\n- Combinações e lista ajudam muito\n- Especificidade decide quem vence\n\nAgora faça o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 03 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um seletor serve para…",
+        "options": [
+          { "key": "A", "text": "Escolher quais elementos recebem o estilo" },
+          { "key": "B", "text": "Criar lógica (if/else)" }
+        ],
+        "answer": "A",
+        "explain": "Seletor define o alvo do CSS."
+      },
+      {
+        "id": 2,
+        "question": "O seletor `p` seleciona:",
+        "options": [
+          { "key": "A", "text": "Todos os elementos <p>" },
+          { "key": "B", "text": "Elementos com class=\"p\"" }
+        ],
+        "answer": "A",
+        "explain": "Sem ponto/cerquilha, é seletor de tag."
+      },
+      {
+        "id": 3,
+        "question": "O seletor `.card` seleciona:",
+        "options": [
+          { "key": "A", "text": "Elementos com class=\"card\"" },
+          { "key": "B", "text": "Um elemento com id=\"card\"" }
+        ],
+        "answer": "A",
+        "explain": "Ponto (.) é class."
+      },
+      {
+        "id": 4,
+        "question": "O seletor `#top` seleciona:",
+        "options": [
+          { "key": "A", "text": "Um elemento com id=\"top\"" },
+          { "key": "B", "text": "Todos os elementos <top>" }
+        ],
+        "answer": "A",
+        "explain": "Cerquilha (#) é id."
+      },
+      {
+        "id": 5,
+        "question": "Qual é a melhor prática para a maioria dos estilos?",
+        "options": [
+          { "key": "A", "text": "Usar classes" },
+          { "key": "B", "text": "Usar id para tudo" }
+        ],
+        "answer": "A",
+        "explain": "Classes são reutilizáveis e controlam melhor a especificidade."
+      },
+      {
+        "id": 6,
+        "question": "`.card p` significa:",
+        "options": [
+          { "key": "A", "text": "Todo p dentro de um elemento .card" },
+          { "key": "B", "text": "Um elemento com class=\"card p\"" }
+        ],
+        "answer": "A",
+        "explain": "Espaço significa descendente (dentro)."
+      },
+      {
+        "id": 7,
+        "question": "Qual seletor é mais forte (em geral)?",
+        "options": [
+          { "key": "A", "text": "#id" },
+          { "key": "B", "text": ".class" }
+        ],
+        "answer": "A",
+        "explain": "ID tem especificidade maior que class."
+      },
+      {
+        "id": 8,
+        "question": "Se duas regras têm mesma força, geralmente vence:",
+        "options": [
+          { "key": "A", "text": "A que aparece por último no arquivo" },
+          { "key": "B", "text": "A primeira sempre" }
+        ],
+        "answer": "A",
+        "explain": "Com mesma especificidade, a ordem decide."
+      },
+      {
+        "id": 9,
+        "question": "`:hover` é um exemplo de:",
+        "options": [
+          { "key": "A", "text": "Pseudo-classe (estado)" },
+          { "key": "B", "text": "Atributo HTML" }
+        ],
+        "answer": "A",
+        "explain": ":hover representa um estado do elemento."
+      },
+      {
+        "id": 10,
+        "question": "Quando o CSS “não funciona”, a causa mais comum é:",
+        "options": [
+          { "key": "A", "text": "Seletor errado ou regra mais forte vencendo" },
+          { "key": "B", "text": "O HTML não suporta CSS" }
+        ],
+        "answer": "A",
+        "explain": "Normalmente é seletor/cascata/especificidade."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Exemplos de seletores */\n\n/* TAG (base) */\nbody {\n  font-family: system-ui;\n}\n\n/* CLASS (padrão) */\n.card {\n  padding: 16px;\n  border: 1px solid #ddd;\n  border-radius: 12px;\n}\n\n/* ID (use pouco) */\n#top {\n  position: sticky;\n  top: 0;\n}\n\n/* Combinado (p dentro do card) */\n.card p {\n  color: #333;\n}\n\n/* Estado */\n.btn:hover {\n  opacity: 0.9;\n}\n"
+  }
+}

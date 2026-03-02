@@ -1,0 +1,159 @@
+{
+  "id": "08-tipografia",
+  "title": "Aula 08 — Tipografia (font-size, line-height, peso, hierarquia)",
+  "steps": [
+    {
+      "title": "Por que tipografia é o que mais dá “cara profissional”",
+      "body": "Um site pode ter layout simples, mas se a tipografia for boa, ele parece profissional.\n\nTipografia boa =\n- leitura fácil\n- hierarquia clara (o que é título, o que é texto)\n- ritmo visual (espaçamento confortável)\n\nHoje você vai dominar o essencial:\n- `font-family`\n- `font-size`\n- `font-weight`\n- `line-height`\n- `letter-spacing`\n- hierarquia (h1/h2/p)\n- largura de linha (line length)\n\nSem firula — só o que funciona."
+    },
+    {
+      "title": "font-family: escolha simples e eficiente",
+      "body": "Para começar profissional, use **fontes do sistema**.\n\nExemplo:\n`body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }`\n\n✅ Vantagens:\n- carrega rápido\n- funciona em todo lugar\n- não depende de fonte externa\n\nFontes externas (Google Fonts) a gente usa depois, com cuidado."
+    },
+    {
+      "title": "font-size: use rem e pense em escala",
+      "body": "Boa prática:\n- use `rem` para fonte\n\nPadrão comum:\n- base: `1rem` (16px)\n- texto pequeno: `0.875rem` (14px)\n- título: `2rem` (32px)\n\nDica:\n- não precisa inventar 20 tamanhos.\n- use uma escala pequena (3 a 6 tamanhos) e repita."
+    },
+    {
+      "title": "line-height: o segredo da leitura confortável",
+      "body": "Line-height é a altura da linha.\n\nSe for baixo demais:\n- texto fica apertado\n\nSe for alto demais:\n- texto fica “esparramado”\n\nRegra prática:\n- para parágrafo: `line-height: 1.5` a `1.8`\n\nExemplo:\n`p { line-height: 1.6; }`\n\nObservação:\n- `line-height` sem unidade (1.6) é ótimo porque escala junto com o font-size."
+    },
+    {
+      "title": "font-weight: peso com moderação",
+      "body": "Peso define quão “grosso” é o texto.\n\nComuns:\n- 400 normal\n- 500 médio\n- 600 semibold\n- 700 bold\n\nRegra prática:\n- body: 400\n- títulos: 600 ou 700\n- evite usar bold em tudo (cansa)"
+    },
+    {
+      "title": "letter-spacing: cuidado (quase sempre pouco)",
+      "body": "Letter-spacing aumenta/diminui espaço entre letras.\n\n✅ Útil em:\n- letras MAIÚSCULAS\n- pequenos títulos\n\nExemplo:\n`.label { letter-spacing: 0.08em; text-transform: uppercase; }`\n\n⚠️ Em parágrafos, geralmente piora a leitura."
+    },
+    {
+      "title": "Hierarquia: o leitor precisa entender rápido",
+      "body": "Hierarquia é:\n- título chama mais atenção\n- subtítulo explica\n- parágrafo é leitura\n\nUm padrão simples:\n- h1: 2rem – 2.5rem\n- h2: 1.5rem – 1.75rem\n- p: 1rem\n- texto auxiliar: 0.875rem\n\nSe tudo tem o mesmo tamanho e peso, tudo vira “uma parede de texto”."
+    },
+    {
+      "title": "Largura da linha (line length): não deixe o texto atravessar a tela",
+      "body": "Parágrafos muito largos cansam.\n\nRegra prática:\n- limite o texto com `max-width`\n\nExemplo:\n`.prose { max-width: 65ch; }`\n\n`ch` é uma unidade baseada no caractere “0”.\n\n65ch é um valor clássico para leitura confortável."
+    },
+    {
+      "title": "Um setup profissional rápido (copy mental)",
+      "body": "Um bom setup base:\n\n- fonte do sistema\n- cor boa\n- line-height confortável\n- largura de leitura\n\nExemplo:\n`body { font-family: system-ui,...; line-height: 1.6; color: #111; }`\n`.container { max-width: 1100px; margin: 0 auto; padding: 24px; }`\n`.prose { max-width: 65ch; }`"
+    },
+    {
+      "title": "Erros comuns",
+      "body": "- usar fonte muito pequena (12px)\n- não definir line-height\n- títulos sem hierarquia (tudo igual)\n- parágrafo com linha longa demais\n\nTipografia boa é repetição e consistência."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- fonte do sistema é ótima para começar\n- use rem em font-size\n- parágrafos com line-height ~1.6\n- hierarquia clara (tamanhos/pesos)\n- limite linha com `max-width: 65ch`\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 08 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Uma boa prática para começar é usar:",
+        "options": [
+          { "key": "A", "text": "fontes do sistema (system-ui)" },
+          { "key": "B", "text": "10 Google Fonts ao mesmo tempo" }
+        ],
+        "answer": "A",
+        "explain": "Fontes do sistema carregam rápido e são estáveis."
+      },
+      {
+        "id": 2,
+        "question": "Para font-size, uma unidade recomendada é:",
+        "options": [
+          { "key": "A", "text": "rem" },
+          { "key": "B", "text": "px em tudo sempre" }
+        ],
+        "answer": "A",
+        "explain": "rem é previsível e escalável."
+      },
+      {
+        "id": 3,
+        "question": "Line-height serve para:",
+        "options": [
+          { "key": "A", "text": "Controlar a altura das linhas de texto" },
+          { "key": "B", "text": "Controlar a largura da tela" }
+        ],
+        "answer": "A",
+        "explain": "Line-height afeta legibilidade."
+      },
+      {
+        "id": 4,
+        "question": "Um valor comum e confortável para parágrafos é:",
+        "options": [
+          { "key": "A", "text": "1.5 a 1.8" },
+          { "key": "B", "text": "1.0 sempre" }
+        ],
+        "answer": "A",
+        "explain": "1.6 costuma ser um ótimo padrão."
+      },
+      {
+        "id": 5,
+        "question": "font-weight controla:",
+        "options": [
+          { "key": "A", "text": "O peso (grossura) do texto" },
+          { "key": "B", "text": "A cor do texto" }
+        ],
+        "answer": "A",
+        "explain": "Peso é quão grosso o texto é."
+      },
+      {
+        "id": 6,
+        "question": "Usar bold em tudo é ruim porque:",
+        "options": [
+          { "key": "A", "text": "Cansa e perde hierarquia" },
+          { "key": "B", "text": "Aumenta performance" }
+        ],
+        "answer": "A",
+        "explain": "Se tudo é destaque, nada é destaque."
+      },
+      {
+        "id": 7,
+        "question": "letter-spacing é mais útil em:",
+        "options": [
+          { "key": "A", "text": "Textos curtos/uppercase (labels)" },
+          { "key": "B", "text": "Parágrafos longos" }
+        ],
+        "answer": "A",
+        "explain": "Em parágrafo geralmente piora a leitura."
+      },
+      {
+        "id": 8,
+        "question": "Para evitar parágrafos muito largos, você usa:",
+        "options": [
+          { "key": "A", "text": "max-width (ex.: 65ch)" },
+          { "key": "B", "text": "border-radius" }
+        ],
+        "answer": "A",
+        "explain": "Limitar largura melhora leitura."
+      },
+      {
+        "id": 9,
+        "question": "Hierarquia tipográfica significa:",
+        "options": [
+          { "key": "A", "text": "Títulos, subtítulos e texto com pesos/tamanhos diferentes" },
+          { "key": "B", "text": "Todas as letras do mesmo tamanho" }
+        ],
+        "answer": "A",
+        "explain": "Hierarquia guia o olhar do leitor."
+      },
+      {
+        "id": 10,
+        "question": "Uma base profissional de tipografia busca:",
+        "options": [
+          { "key": "A", "text": "Consistência e legibilidade" },
+          { "key": "B", "text": "O máximo de estilos diferentes" }
+        ],
+        "answer": "A",
+        "explain": "Consistência dá cara profissional."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Tipografia base profissional */\n\n:root {\n  --text: #111827;\n  --muted: #6b7280;\n}\n\nbody {\n  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\n  color: var(--text);\n  line-height: 1.6;\n}\n\nh1 {\n  font-size: 2.25rem;\n  line-height: 1.2;\n  font-weight: 700;\n}\n\nh2 {\n  font-size: 1.5rem;\n  line-height: 1.25;\n  font-weight: 600;\n}\n\np {\n  font-size: 1rem;\n}\n\n.small {\n  font-size: 0.875rem;\n  color: var(--muted);\n}\n\n.prose {\n  max-width: 65ch;\n}\n\n.label {\n  font-size: 0.75rem;\n  letter-spacing: 0.08em;\n  text-transform: uppercase;\n}\n"
+  }
+}

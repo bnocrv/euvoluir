@@ -1,0 +1,159 @@
+{
+  "id": "05-box-model",
+  "title": "Aula 05 — Box Model (margin, padding, border) na prática",
+  "steps": [
+    {
+      "title": "O que é Box Model (a base do layout)",
+      "body": "No CSS, praticamente tudo é uma **caixa**.\n\nUma caixa tem 4 camadas (de dentro para fora):\n1) **content** (conteúdo)\n2) **padding** (espaço interno)\n3) **border** (borda)\n4) **margin** (espaço externo)\n\nSe você dominar isso, você para de “empurrar” coisas no chute."
+    },
+    {
+      "title": "1) Content: o conteúdo da caixa",
+      "body": "É onde fica:\n- o texto\n- a imagem\n- o conteúdo do elemento\n\nQuando você define `width` e `height`, normalmente está controlando a área do conteúdo (já vamos melhorar isso com `box-sizing`)."
+    },
+    {
+      "title": "2) Padding: espaço interno (afasta o conteúdo da borda)",
+      "body": "Padding é o “acolchoamento” interno.\n\nExemplo:\n`.card { padding: 16px; }`\n\nIsso faz o texto ficar afastado da borda da caixa.\n\n✅ Regra prática:\n- quando algo está “colado na borda”, é **padding**."
+    },
+    {
+      "title": "3) Border: a borda da caixa",
+      "body": "Border é a borda em volta do padding/content.\n\nExemplo:\n`.card { border: 1px solid #ddd; }`\n\nVocê pode controlar:\n- espessura (1px)\n- estilo (solid)\n- cor (#ddd)"
+    },
+    {
+      "title": "4) Margin: espaço externo (separa elementos)",
+      "body": "Margin é o espaço **fora** da caixa.\n\nExemplo:\n`.card { margin: 16px 0; }`\n\n✅ Regra prática:\n- quando elementos estão “grudados um no outro”, é **margin** (ou gap em flex/grid)."
+    },
+    {
+      "title": "Atalho: como escrever padding/margin (1, 2, 3, 4 valores)",
+      "body": "Você pode escrever assim:\n\n1 valor:\n- `padding: 16px;` → todos os lados\n\n2 valores:\n- `padding: 16px 24px;` → vertical / horizontal\n  (top+bottom = 16px, left+right = 24px)\n\n3 valores:\n- `padding: 10px 20px 30px;` → top / horizontal / bottom\n\n4 valores:\n- `padding: 10px 20px 30px 40px;` → top / right / bottom / left\n\nMesma regra para `margin`."
+    },
+    {
+      "title": "Propriedades individuais (quando você precisa de controle fino)",
+      "body": "Você pode fazer lado por lado:\n\n- `margin-top`, `margin-right`, `margin-bottom`, `margin-left`\n- `padding-top`, `padding-right`, `padding-bottom`, `padding-left`\n\nExemplo:\n`.box { padding-left: 24px; }`\n\nÚtil quando você quer mexer só em um lado."
+    },
+    {
+      "title": "O pulo do gato: box-sizing (evita dor de cabeça)",
+      "body": "Por padrão, `width` controla só o content.\n\nEntão isso:\n- `width: 300px; padding: 20px; border: 2px;`\n\nFaz a caixa ficar MAIOR que 300px (porque soma padding e border).\n\nSolução profissional:\n- `box-sizing: border-box;`\n\nCom border-box, `width` inclui:\n- content + padding + border\n\nPadrão em projetos reais:\n`* { box-sizing: border-box; }`"
+    },
+    {
+      "title": "Margin colapsing (colapso de margens) — noção importante",
+      "body": "Às vezes duas margens verticais “viram uma só”.\n\nExemplo:\n- um `<h1>` com `margin-bottom: 20px`\n- um `<p>` com `margin-top: 16px`\n\nVocê imagina 36px, mas pode virar só 20px (a maior).\n\nIsso acontece em margens verticais de elementos de bloco.\n\nDica prática:\n- em layouts modernos, você pode preferir `gap` em containers (flex/grid) para espaçamento entre itens."
+    },
+    {
+      "title": "Exercício mental (o que você deve enxergar)",
+      "body": "Quando você olha um card e sente:\n- “o texto está colado” → aumente padding\n- “os cards estão colados” → aumente margin (ou use gap)\n- “o card não aparece” → coloque border temporária para enxergar\n\nIsso é como um “radar” de layout."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Tudo é caixa\n- padding = espaço interno\n- border = borda\n- margin = espaço externo\n- atalhos (1-4 valores)\n- `box-sizing: border-box` é padrão profissional\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 05 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "No Box Model, padding é:",
+        "options": [
+          { "key": "A", "text": "Espaço interno entre conteúdo e borda" },
+          { "key": "B", "text": "Espaço externo entre elementos" }
+        ],
+        "answer": "A",
+        "explain": "Padding é interno. Margin é externo."
+      },
+      {
+        "id": 2,
+        "question": "No Box Model, margin é:",
+        "options": [
+          { "key": "A", "text": "Espaço externo que separa elementos" },
+          { "key": "B", "text": "A borda do elemento" }
+        ],
+        "answer": "A",
+        "explain": "Margin separa caixas."
+      },
+      {
+        "id": 3,
+        "question": "A ordem de camadas (de dentro para fora) é:",
+        "options": [
+          { "key": "A", "text": "content → padding → border → margin" },
+          { "key": "B", "text": "margin → border → padding → content" }
+        ],
+        "answer": "A",
+        "explain": "Essa é a ordem clássica do box model."
+      },
+      {
+        "id": 4,
+        "question": "`padding: 10px 20px;` significa:",
+        "options": [
+          { "key": "A", "text": "10px em cima/baixo e 20px esquerda/direita" },
+          { "key": "B", "text": "10px esquerda/direita e 20px em cima/baixo" }
+        ],
+        "answer": "A",
+        "explain": "2 valores: vertical / horizontal."
+      },
+      {
+        "id": 5,
+        "question": "`margin: 10px 20px 30px 40px;` é:",
+        "options": [
+          { "key": "A", "text": "top / right / bottom / left" },
+          { "key": "B", "text": "left / bottom / right / top" }
+        ],
+        "answer": "A",
+        "explain": "4 valores seguem sentido horário começando no topo."
+      },
+      {
+        "id": 6,
+        "question": "Border serve para:",
+        "options": [
+          { "key": "A", "text": "Criar uma borda ao redor do elemento" },
+          { "key": "B", "text": "Mudar a cor do texto" }
+        ],
+        "answer": "A",
+        "explain": "Border é a borda da caixa."
+      },
+      {
+        "id": 7,
+        "question": "Se o texto está colado na borda do card, você ajusta:",
+        "options": [
+          { "key": "A", "text": "padding" },
+          { "key": "B", "text": "margin" }
+        ],
+        "answer": "A",
+        "explain": "Padding afasta conteúdo da borda."
+      },
+      {
+        "id": 8,
+        "question": "Se os cards estão colados um no outro, você ajusta:",
+        "options": [
+          { "key": "A", "text": "margin (ou gap)" },
+          { "key": "B", "text": "padding" }
+        ],
+        "answer": "A",
+        "explain": "Separação externa é margin ou gap no container."
+      },
+      {
+        "id": 9,
+        "question": "box-sizing: border-box faz:",
+        "options": [
+          { "key": "A", "text": "Width incluir padding e border no cálculo" },
+          { "key": "B", "text": "Ignorar border e padding sempre" }
+        ],
+        "answer": "A",
+        "explain": "Com border-box, a largura final não estoura."
+      },
+      {
+        "id": 10,
+        "question": "Margin collapsing é:",
+        "options": [
+          { "key": "A", "text": "Quando margens verticais podem se juntar (virar uma)" },
+          { "key": "B", "text": "Quando padding some do elemento" }
+        ],
+        "answer": "A",
+        "explain": "Margens verticais de blocos podem colapsar."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Box model na prática */\n\n* {\n  box-sizing: border-box;\n}\n\n.card {\n  padding: 16px;          /* espaço interno */\n  border: 1px solid #ddd; /* borda */\n  border-radius: 14px;\n  margin: 16px 0;         /* espaço externo */\n}\n\n.badge {\n  display: inline-block;\n  padding: 6px 10px;\n  border: 1px solid #bbb;\n  border-radius: 999px;\n}\n"
+  }
+}

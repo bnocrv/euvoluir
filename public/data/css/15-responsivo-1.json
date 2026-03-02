@@ -1,0 +1,159 @@
+{
+  "id": "15-responsivo-1",
+  "title": "Aula 15 — Responsivo 1: media queries e estratégia mobile-first",
+  "steps": [
+    {
+      "title": "O que é “responsivo” de verdade",
+      "body": "Responsivo é quando o site se adapta bem a:\n- celular\n- tablet\n- desktop\n\nNão é só “diminuir tudo”.\nÉ reorganizar layout e melhorar leitura.\n\nHoje você vai aprender:\n- o que é viewport\n- por que `meta viewport` importa\n- o que é media query\n- a estratégia **mobile-first**\n- breakpoints práticos (sem superstição)"
+    },
+    {
+      "title": "A base: meta viewport (sem isso, mobile fica estranho)",
+      "body": "No HTML, a tag é essencial:\n\n`<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`\n\nSem isso, o celular pode:\n- “simular” uma tela maior\n- deixar tudo minúsculo\n\nSe seu projeto já tem essa meta, ótimo."
+    },
+    {
+      "title": "Mobile-first: o jeito profissional de pensar",
+      "body": "Mobile-first significa:\n\n1) Você escreve o CSS pensando no celular primeiro.\n2) Depois, com media queries, você melhora para telas maiores.\n\nPor que isso é profissional?\n- celular é o caso mais difícil (pouco espaço)\n- você garante que o básico funciona\n- você vai adicionando melhorias com mais espaço\n\nRegra prática:\n- CSS padrão = mobile\n- media query = upgrades para tablet/desktop"
+    },
+    {
+      "title": "Media query: o “if” do CSS",
+      "body": "Uma media query é uma condição.\n\nExemplo:\n`@media (min-width: 768px) { ... }`\n\nIsso significa:\n- “se a tela tiver pelo menos 768px, aplique essas regras”\n\nO mais comum no mobile-first:\n- usar `min-width` (crescendo)."
+    },
+    {
+      "title": "Breakpoints práticos (sem decorar números mágicos)",
+      "body": "Não existe um único padrão perfeito.\n\nMas um conjunto prático e comum é:\n- 480px (celular maior)\n- 768px (tablet)\n- 1024px (desktop)\n- 1280px (desktop grande)\n\nRegra mais importante:\n- escolha breakpoints quando o layout “pede”, não porque alguém falou."
+    },
+    {
+      "title": "Exemplo 1: cards (1 coluna no mobile, 3 no desktop)",
+      "body": "Mobile (padrão):\n- 1 coluna\n\nDesktop (upgrade):\n- 3 colunas\n\nExemplo com Grid:\n\n`.cards { display: grid; grid-template-columns: 1fr; gap: 16px; }`\n\n`@media (min-width: 768px) {`\n  `.cards { grid-template-columns: repeat(2, 1fr); }`\n`}`\n\n`@media (min-width: 1024px) {`\n  `.cards { grid-template-columns: repeat(3, 1fr); }`\n`}`"
+    },
+    {
+      "title": "Exemplo 2: header (coluna no mobile, linha no desktop)",
+      "body": "Mobile:\n- logo em cima\n- menu embaixo\n\nDesktop:\n- logo à esquerda\n- menu à direita\n\nFlex mobile-first:\n\n`.header { display: flex; flex-direction: column; gap: 12px; }`\n\n`@media (min-width: 768px) {`\n  `.header { flex-direction: row; justify-content: space-between; align-items: center; }`\n`}`"
+    },
+    {
+      "title": "Dica: container e espaçamento também são responsivos",
+      "body": "Em mobile, padding menor.\nEm desktop, padding maior.\n\nExemplo:\n`.container { padding: 16px; }`\n\n`@media (min-width: 768px) {`\n  `.container { padding: 24px; }`\n`}`\n\n`@media (min-width: 1024px) {`\n  `.container { padding: 32px; }`\n`}`\n\nIsso dá sensação de “site bem cuidado”."
+    },
+    {
+      "title": "Erros comuns em responsivo",
+      "body": "1) Começar pelo desktop e tentar “apertar” no mobile (vira dor).\n2) Usar muitos breakpoints sem necessidade.\n3) Usar unidades fixas demais (px em tudo, inclusive para layout).\n4) Não testar de verdade (só redimensionar uma vez).\n\nRegra:\n- mobile-first\n- poucos breakpoints\n- teste sempre."
+    },
+    {
+      "title": "Como testar responsivo (modo profissional)",
+      "body": "1) DevTools → Toggle device toolbar (ícone de celular)\n2) Teste:\n- 360px (celular comum)\n- 390px (celular maior)\n- 768px (tablet)\n- 1024px (desktop)\n\n3) Veja:\n- textos legíveis?\n- botões clicáveis?\n- nada estoura lateral?\n\nSe estourar lateral, quase sempre é:\n- um elemento com width fixo grande\n- uma imagem sem max-width\n- um padding/margin exagerado."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Responsivo = adaptar layout e leitura\n- Meta viewport é essencial\n- Mobile-first = padrão no mobile, upgrades com min-width\n- Media query é o “if” do CSS\n- Breakpoints são práticos, não mágicos\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 15 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Responsivo significa:",
+        "options": [
+          { "key": "A", "text": "Adaptar layout para diferentes tamanhos de tela" },
+          { "key": "B", "text": "Ter sempre o mesmo layout em qualquer tela" }
+        ],
+        "answer": "A",
+        "explain": "Responsivo adapta organização e espaçamento."
+      },
+      {
+        "id": 2,
+        "question": "A meta viewport serve para:",
+        "options": [
+          { "key": "A", "text": "Fazer o mobile usar a largura real do dispositivo" },
+          { "key": "B", "text": "Criar animações no CSS" }
+        ],
+        "answer": "A",
+        "explain": "Sem viewport, o mobile pode simular outra escala."
+      },
+      {
+        "id": 3,
+        "question": "Mobile-first significa:",
+        "options": [
+          { "key": "A", "text": "Escrever o CSS base para mobile e melhorar para telas maiores" },
+          { "key": "B", "text": "Escrever primeiro para desktop e depois apertar para mobile" }
+        ],
+        "answer": "A",
+        "explain": "Mobile-first começa pelo caso mais restrito."
+      },
+      {
+        "id": 4,
+        "question": "Em mobile-first, media queries geralmente usam:",
+        "options": [
+          { "key": "A", "text": "min-width" },
+          { "key": "B", "text": "max-width sempre" }
+        ],
+        "answer": "A",
+        "explain": "Min-width vai adicionando melhorias conforme aumenta a tela."
+      },
+      {
+        "id": 5,
+        "question": "@media (min-width: 768px) significa:",
+        "options": [
+          { "key": "A", "text": "Aplicar regras quando a tela tiver pelo menos 768px" },
+          { "key": "B", "text": "Aplicar regras somente abaixo de 768px" }
+        ],
+        "answer": "A",
+        "explain": "Min-width é \"no mínimo\"."
+      },
+      {
+        "id": 6,
+        "question": "Breakpoints devem ser escolhidos:",
+        "options": [
+          { "key": "A", "text": "Quando o layout pede, não por superstição" },
+          { "key": "B", "text": "Copiando números aleatórios sempre" }
+        ],
+        "answer": "A",
+        "explain": "O layout manda, não os números mágicos."
+      },
+      {
+        "id": 7,
+        "question": "Um padrão comum é ter cards 1 coluna no mobile e mais colunas em telas grandes usando:",
+        "options": [
+          { "key": "A", "text": "grid-template-columns mudando nas media queries" },
+          { "key": "B", "text": "border-radius mudando nas media queries" }
+        ],
+        "answer": "A",
+        "explain": "Colunas são layout, não borda."
+      },
+      {
+        "id": 8,
+        "question": "Uma boa prática para espaçamento responsivo é:",
+        "options": [
+          { "key": "A", "text": "Aumentar padding do container em telas maiores" },
+          { "key": "B", "text": "Remover todo padding em telas maiores" }
+        ],
+        "answer": "A",
+        "explain": "Mais espaço em telas grandes melhora leitura."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum é:",
+        "options": [
+          { "key": "A", "text": "Começar pelo desktop e tentar consertar no mobile" },
+          { "key": "B", "text": "Testar no DevTools" }
+        ],
+        "answer": "A",
+        "explain": "Desktop-first costuma virar dor no mobile."
+      },
+      {
+        "id": 10,
+        "question": "Quando algo estoura na horizontal no mobile, a causa comum é:",
+        "options": [
+          { "key": "A", "text": "Um elemento com largura fixa grande ou imagem sem max-width" },
+          { "key": "B", "text": "O browser não suporta CSS responsivo" }
+        ],
+        "answer": "A",
+        "explain": "Quase sempre é width fixa ou imagem sem controle."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Mobile-first: base no mobile */\n\n.container {\n  padding: 16px;\n}\n\n.header {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n}\n\n.cards {\n  display: grid;\n  grid-template-columns: 1fr;\n  gap: 16px;\n}\n\n/* Tablet */\n@media (min-width: 768px) {\n  .container {\n    padding: 24px;\n  }\n\n  .header {\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n  }\n\n  .cards {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n\n/* Desktop */\n@media (min-width: 1024px) {\n  .container {\n    padding: 32px;\n  }\n\n  .cards {\n    grid-template-columns: repeat(3, 1fr);\n  }\n}\n"
+  }
+}

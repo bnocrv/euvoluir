@@ -1,0 +1,159 @@
+{
+  "id": "12-flexbox-2",
+  "title": "Aula 12 — Flexbox 2: flex-grow/shrink/basis e layouts reais",
+  "steps": [
+    {
+      "title": "O que essa aula destrava",
+      "body": "Na Aula 11 você aprendeu a alinhar.\n\nAgora você vai aprender a **controlar tamanho e comportamento** dos itens:\n- quem cresce\n- quem encolhe\n- qual o tamanho inicial\n\nIsso é o que faz você criar layouts reais:\n- sidebar + conteúdo\n- cards que se ajustam\n- botões que ocupam espaço certo\n\nHoje você vai dominar:\n- `flex-wrap`\n- `flex-basis`\n- `flex-grow`\n- `flex-shrink`\n- atalho `flex`\n\nE vai entender com exemplos simples."
+    },
+    {
+      "title": "flex-wrap: quando os itens quebram linha",
+      "body": "Por padrão, flex tenta colocar tudo em uma linha:\n- `flex-wrap: nowrap` (padrão)\n\nPara permitir quebrar:\n- `flex-wrap: wrap`\n\nExemplo:\n`.cards { display: flex; flex-wrap: wrap; gap: 16px; }`\n\nIsso é essencial para listas de cards responsivas."
+    },
+    {
+      "title": "flex-basis: o tamanho inicial do item",
+      "body": "`flex-basis` define o “tamanho base” do item antes de crescer/encolher.\n\nExemplo:\n`.card { flex-basis: 260px; }`\n\nInterpretação:\n- “tente começar com 260px”\n\nDepois o grow/shrink decide o ajuste."
+    },
+    {
+      "title": "flex-grow: quem pode crescer quando sobra espaço",
+      "body": "`flex-grow` é um número.\n\n- `0` = não cresce (padrão)\n- `1` = cresce para ocupar espaço extra\n- `2` = cresce o dobro (comparado a 1)\n\nExemplo:\n`.main { flex-grow: 1; }`\n\nIsso faz o conteúdo principal ocupar o espaço que sobra."
+    },
+    {
+      "title": "flex-shrink: quem pode encolher quando falta espaço",
+      "body": "`flex-shrink` controla o quanto o item encolhe.\n\n- `1` = pode encolher (padrão)\n- `0` = não encolhe\n\nExemplo clássico:\n- sidebar com largura fixa:\n`.sidebar { flex-shrink: 0; width: 280px; }`\n\nIsso evita a sidebar virar “um fiapo” em telas menores (mas você ainda precisa de responsivo)."
+    },
+    {
+      "title": "Atalho flex (o jeito mais usado)",
+      "body": "A propriedade `flex` é um atalho:\n\n`flex: grow shrink basis`\n\nExemplos úteis:\n\n1) Item que cresce:\n- `flex: 1;` (equivale a `flex: 1 1 0%` em muitos casos)\n\n2) Cards com base e wrap:\n- `flex: 1 1 260px;`\n\n3) Item fixo:\n- `flex: 0 0 280px;` (não cresce, não encolhe, base 280px)\n\nRegra prática:\n- para cards responsivos: `flex: 1 1 260px` + `flex-wrap: wrap` no container."
+    },
+    {
+      "title": "Exemplo 1 (real): Sidebar + Conteúdo",
+      "body": "Layout comum:\n\n- Sidebar fixa\n- Conteúdo cresce\n\nCSS mental:\n- container: `display:flex`\n- sidebar: `flex: 0 0 280px`\n- main: `flex: 1`\n\nIsso cria um layout profissional em segundos."
+    },
+    {
+      "title": "Exemplo 2 (real): Cards responsivos com wrap",
+      "body": "Padrão para cards:\n\n- container: `display:flex; flex-wrap:wrap; gap:16px;`\n- card: `flex: 1 1 260px;`\n\nEfeito:\n- em telas grandes: vários cards por linha\n- em telas pequenas: cai para 1 por linha\n\nIsso é responsivo sem media query (até certo ponto)."
+    },
+    {
+      "title": "Dica de debug no DevTools",
+      "body": "Se o flex está estranho:\n\n1) Inspecione o container\n2) Veja se `wrap` está ligado\n3) Veja o tamanho base (basis)\n4) Veja se algum item está com shrink 0 e empurrando tudo\n\nFlex é previsível quando você olha os números."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Esquecer `flex-wrap: wrap` e achar que cards vão quebrar sozinhos.\n2) Não definir base (basis) e os cards ficarem minúsculos.\n3) Travar tudo com width e perder flexibilidade.\n4) Usar shrink 0 em tudo e estourar layout.\n\nRegra:\n- wrap no container\n- basis nos itens\n- grow para quem deve crescer"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- `flex-wrap: wrap` deixa itens quebrarem linha\n- `flex-basis` define tamanho inicial\n- `flex-grow` define quem cresce\n- `flex-shrink` define quem encolhe\n- `flex` é atalho poderoso\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 12 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Para permitir que itens quebrem linha no flex, você usa:",
+        "options": [
+          { "key": "A", "text": "flex-wrap: wrap" },
+          { "key": "B", "text": "flex-wrap: nowrap" }
+        ],
+        "answer": "A",
+        "explain": "Wrap permite quebrar linha."
+      },
+      {
+        "id": 2,
+        "question": "flex-basis é:",
+        "options": [
+          { "key": "A", "text": "O tamanho inicial do item antes de ajustar" },
+          { "key": "B", "text": "A cor do item" }
+        ],
+        "answer": "A",
+        "explain": "Basis define a base de tamanho."
+      },
+      {
+        "id": 3,
+        "question": "flex-grow controla:",
+        "options": [
+          { "key": "A", "text": "Quanto o item cresce quando sobra espaço" },
+          { "key": "B", "text": "Quanto o item gira (rotate)" }
+        ],
+        "answer": "A",
+        "explain": "Grow é crescimento."
+      },
+      {
+        "id": 4,
+        "question": "flex-shrink controla:",
+        "options": [
+          { "key": "A", "text": "Quanto o item encolhe quando falta espaço" },
+          { "key": "B", "text": "Quanto o item fica transparente" }
+        ],
+        "answer": "A",
+        "explain": "Shrink é encolhimento."
+      },
+      {
+        "id": 5,
+        "question": "flex-shrink: 0 significa:",
+        "options": [
+          { "key": "A", "text": "O item não encolhe" },
+          { "key": "B", "text": "O item não cresce" }
+        ],
+        "answer": "A",
+        "explain": "Shrink 0 trava o encolhimento."
+      },
+      {
+        "id": 6,
+        "question": "O atalho flex representa:",
+        "options": [
+          { "key": "A", "text": "grow shrink basis" },
+          { "key": "B", "text": "color background border" }
+        ],
+        "answer": "A",
+        "explain": "Flex é um atalho para os 3."
+      },
+      {
+        "id": 7,
+        "question": "Um padrão bom para cards responsivos é:",
+        "options": [
+          { "key": "A", "text": "Container com wrap e itens com flex: 1 1 260px" },
+          { "key": "B", "text": "Todos com position: absolute" }
+        ],
+        "answer": "A",
+        "explain": "Wrap + basis cria cards que se adaptam."
+      },
+      {
+        "id": 8,
+        "question": "Para sidebar fixa e main crescendo, é comum usar:",
+        "options": [
+          { "key": "A", "text": "Sidebar flex: 0 0 280px e main flex: 1" },
+          { "key": "B", "text": "Sidebar flex: 1 e main flex: 0" }
+        ],
+        "answer": "A",
+        "explain": "Sidebar fixa, main ocupa o resto."
+      },
+      {
+        "id": 9,
+        "question": "Sem flex-wrap, o flex tende a:",
+        "options": [
+          { "key": "A", "text": "Tentar colocar tudo na mesma linha" },
+          { "key": "B", "text": "Sempre quebrar em várias linhas" }
+        ],
+        "answer": "A",
+        "explain": "Padrão é nowrap."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo de basis + grow/shrink é:",
+        "options": [
+          { "key": "A", "text": "Controlar tamanho e adaptação dos itens" },
+          { "key": "B", "text": "Mudar a semântica do HTML" }
+        ],
+        "answer": "A",
+        "explain": "Flex controla layout/tamanho, não semântica."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Flexbox 2: tamanhos e wrap */\n\n.layout {\n  display: flex;\n  gap: 16px;\n}\n\n.sidebar {\n  flex: 0 0 280px; /* fixo */\n}\n\n.main {\n  flex: 1; /* cresce */\n}\n\n.cards {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 16px;\n}\n\n.card {\n  flex: 1 1 260px; /* cresce, encolhe, base */\n  padding: 16px;\n  border: 1px solid #ddd;\n  border-radius: 14px;\n}\n"
+  }
+}

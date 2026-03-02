@@ -1,0 +1,155 @@
+{
+  "id": "07-cores",
+  "title": "Aula 07 — Cores (hex, rgb, hsl) e contraste profissional",
+  "steps": [
+    {
+      "title": "Por que cor é mais do que “ficar bonito”",
+      "body": "Cor em site profissional não é só estética.\n\nCor afeta:\n- **leitura** (contraste)\n- **acessibilidade** (pessoas com baixa visão)\n- **hierarquia visual** (o que chama atenção)\n\nHoje você vai dominar:\n- formatos de cor (hex, rgb/rgba, hsl/hsla)\n- quando usar cada um\n- contraste (a parte profissional)\n- paleta simples e consistente (sem virar carnaval)"
+    },
+    {
+      "title": "Onde a cor aparece no CSS",
+      "body": "As propriedades mais usadas:\n\n- `color` → cor do texto\n- `background` / `background-color` → cor de fundo\n- `border-color` → cor da borda\n\nExemplo:\n`.card { background: #fff; border: 1px solid #ddd; }`\n`.card p { color: #333; }`"
+    },
+    {
+      "title": "HEX (#RRGGBB) — o mais comum",
+      "body": "Hex é o formato mais usado no dia a dia.\n\nExemplos:\n- `#000000` (preto)\n- `#ffffff` (branco)\n- `#ff0000` (vermelho)\n\nAtalho de 3 dígitos (quando repetido):\n- `#fff` = `#ffffff`\n- `#000` = `#000000`\n- `#333` = `#333333`"
+    },
+    {
+      "title": "RGB e RGBA — quando você precisa de transparência",
+      "body": "RGB:\n- `rgb(255, 0, 0)` (vermelho)\n\nRGBA (com alpha/transparência):\n- `rgba(0, 0, 0, 0.4)` → preto com 40% de opacidade\n\n✅ Ótimo para:\n- sombras suaves\n- overlays (fundo escurecido)\n\nExemplo:\n`.overlay { background: rgba(0,0,0,0.5); }`"
+    },
+    {
+      "title": "HSL e HSLA — o jeito “designer” de mexer em cor",
+      "body": "HSL separa a cor em:\n\n- H (Hue): tom (0–360)\n- S (Saturation): saturação (0–100%)\n- L (Lightness): luminosidade (0–100%)\n\nExemplo:\n- `hsl(220, 90%, 56%)` (azul vivo)\n- `hsl(220, 20%, 20%)` (azul escuro)\n\nHSLA é igual, mas com alpha:\n- `hsla(220, 90%, 56%, 0.3)`\n\n✅ HSL é muito bom para criar tema:\n- mesmo hue\n- muda só o lightness para variações"
+    },
+    {
+      "title": "Contraste: o que separa amador de profissional",
+      "body": "Contraste é a diferença entre texto e fundo.\n\nSe o contraste é fraco:\n- o usuário força os olhos\n- no celular fica pior\n- acessibilidade cai\n\nRegra prática para começar:\n- texto em fundo claro: use cinza escuro (`#111`, `#222`, `#333`)\n- texto em fundo escuro: use quase branco (`#f5f5f5`, `#fff`)\n\nEvite:\n- cinza claro em fundo branco\n- texto colorido saturado em fundo claro (cansa)"
+    },
+    {
+      "title": "Paleta simples (3 cores) — padrão de UI moderna",
+      "body": "Um jeito MUITO profissional (e simples) é usar:\n\n1) Cor de fundo (background)\n2) Cor de texto (foreground)\n3) Cor de destaque (accent)\n\nExemplo:\n- background: `#0b0f19`\n- foreground: `#e5e7eb`\n- accent: `#60a5fa`\n\nVocê repete isso no site todo.\n\nResultado: consistente e bonito."
+    },
+    {
+      "title": "A melhor prática: usar variáveis (prévia)",
+      "body": "Você ainda vai aprender variáveis na Aula 18, mas já entende a ideia:\n\n`:root {`\n  `--bg: #0b0f19;`\n  `--text: #e5e7eb;`\n  `--accent: #60a5fa;`\n`}`\n\nDepois:\n`body { background: var(--bg); color: var(--text); }`\n`a { color: var(--accent); }`\n\nIsso deixa o tema MUITO fácil de manter."
+    },
+    {
+      "title": "Erros comuns com cores",
+      "body": "- usar 10 cores diferentes\n- usar vermelho/verde como única forma de indicar erro/sucesso (pessoas daltônicas sofrem)\n- usar contraste fraco\n- usar fundo muito chamativo com texto chamativo\n\nRegra:\n- menos é mais\n- contraste sempre"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- HEX é o mais comum\n- RGBA/HSLA dão transparência\n- HSL é ótimo para criar variações\n- contraste é requisito\n- paleta simples deixa profissional\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 07 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A propriedade que muda a cor do texto é:",
+        "options": [
+          { "key": "A", "text": "color" },
+          { "key": "B", "text": "background-color" }
+        ],
+        "answer": "A",
+        "explain": "color afeta texto. background-color afeta fundo."
+      },
+      {
+        "id": 2,
+        "question": "#fff é o mesmo que:",
+        "options": [
+          { "key": "A", "text": "#ffffff" },
+          { "key": "B", "text": "#ffff00" }
+        ],
+        "answer": "A",
+        "explain": "Atalho 3 dígitos repete os pares."
+      },
+      {
+        "id": 3,
+        "question": "RGBA é útil principalmente para:",
+        "options": [
+          { "key": "A", "text": "Transparência (alpha)" },
+          { "key": "B", "text": "Criar links" }
+        ],
+        "answer": "A",
+        "explain": "O A do RGBA é alpha."
+      },
+      {
+        "id": 4,
+        "question": "HSL separa a cor em:",
+        "options": [
+          { "key": "A", "text": "tom, saturação e luminosidade" },
+          { "key": "B", "text": "largura, altura e sombra" }
+        ],
+        "answer": "A",
+        "explain": "Hue/Saturation/Lightness."
+      },
+      {
+        "id": 5,
+        "question": "Contraste ruim causa:",
+        "options": [
+          { "key": "A", "text": "Dificuldade de leitura e pior acessibilidade" },
+          { "key": "B", "text": "Aumento automático de performance" }
+        ],
+        "answer": "A",
+        "explain": "Contraste é essencial para leitura."
+      },
+      {
+        "id": 6,
+        "question": "Uma boa paleta inicial é ter:",
+        "options": [
+          { "key": "A", "text": "fundo + texto + destaque" },
+          { "key": "B", "text": "10 cores aleatórias" }
+        ],
+        "answer": "A",
+        "explain": "Consistência vem de poucas cores bem escolhidas."
+      },
+      {
+        "id": 7,
+        "question": "Texto em fundo branco geralmente fica melhor com:",
+        "options": [
+          { "key": "A", "text": "cinza escuro (#111/#222/#333)" },
+          { "key": "B", "text": "cinza bem claro (#ddd/#eee)" }
+        ],
+        "answer": "A",
+        "explain": "Cinza claro em branco dá contraste fraco."
+      },
+      {
+        "id": 8,
+        "question": "HSLA é igual a HSL, mas com:",
+        "options": [
+          { "key": "A", "text": "alpha (transparência)" },
+          { "key": "B", "text": "font-size" }
+        ],
+        "answer": "A",
+        "explain": "A = alpha."
+      },
+      {
+        "id": 9,
+        "question": "Usar vermelho/verde como única forma de indicar estado é ruim porque:",
+        "options": [
+          { "key": "A", "text": "Pessoas daltônicas podem não diferenciar" },
+          { "key": "B", "text": "O CSS quebra em mobile" }
+        ],
+        "answer": "A",
+        "explain": "Acessibilidade: não dependa só de cor."
+      },
+      {
+        "id": 10,
+        "question": "O que deixa um site mais profissional em cores?",
+        "options": [
+          { "key": "A", "text": "Consistência + contraste bom" },
+          { "key": "B", "text": "Muitas cores diferentes em cada página" }
+        ],
+        "answer": "A",
+        "explain": "Consistência e contraste são base de UI boa."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Paleta simples e consistente */\n\n:root {\n  --bg: #0b0f19;\n  --panel: #111827;\n  --text: #e5e7eb;\n  --muted: #9ca3af;\n  --accent: #60a5fa;\n  --border: rgba(255, 255, 255, 0.10);\n}\n\nbody {\n  background: var(--bg);\n  color: var(--text);\n}\n\n.card {\n  background: var(--panel);\n  border: 1px solid var(--border);\n  border-radius: 14px;\n  padding: 16px;\n}\n\n.muted {\n  color: var(--muted);\n}\n\na {\n  color: var(--accent);\n}\n\n/* Overlay com transparência */\n.overlay {\n  background: rgba(0, 0, 0, 0.5);\n}\n"
+  }
+}

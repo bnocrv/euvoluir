@@ -1,0 +1,159 @@
+{
+  "id": "18-variaveis-css",
+  "title": "Aula 18 — Variáveis CSS (:root, var) e tema claro/escuro",
+  "steps": [
+    {
+      "title": "Por que variáveis deixam seu CSS profissional",
+      "body": "Variáveis CSS resolvem um problema enorme:\n\n- Você tem a mesma cor repetida 30 vezes\n- Aí você decide mudar o tema\n- Você precisa caçar tudo manualmente\n\nCom variáveis, você define uma vez e usa em todo lugar.\n\nHoje você vai aprender:\n- como criar variáveis (`--nome`)\n- onde colocar (`:root`)\n- como usar (`var(--nome)`)\n- como criar tema claro/escuro\n- como fazer var com “fallback” (plano B)\n\nIsso é base de design system."
+    },
+    {
+      "title": "O que é uma variável CSS",
+      "body": "Variável CSS é uma propriedade customizada.\n\nEla sempre começa com `--`.\n\nExemplo:\n`:root { --accent: #60a5fa; }`\n\nDepois você usa:\n`a { color: var(--accent); }`\n\nPronto: mudou em 1 lugar, muda no site todo."
+    },
+    {
+      "title": "Onde declarar: :root (o lugar padrão)",
+      "body": "`:root` representa o elemento raiz (html).\n\nQuando você define variáveis no `:root`, elas ficam disponíveis no site todo.\n\nExemplo:\n`:root {`\n  `--bg: #0b0f19;`\n  `--text: #e5e7eb;`\n  `--muted: #9ca3af;`\n  `--accent: #60a5fa;`\n`}`\n\nIsso é o padrão mais comum em projetos reais."
+    },
+    {
+      "title": "Como usar: var(--nome)",
+      "body": "Você usa variáveis com `var()`.\n\nExemplo:\n`body { background: var(--bg); color: var(--text); }`\n`.muted { color: var(--muted); }`\n`a { color: var(--accent); }`\n\nVocê pode usar em praticamente qualquer propriedade:\n- cor\n- espaçamento\n- bordas\n- sombras\n- fontes\n\nExemplo:\n`--radius: 14px;` → `border-radius: var(--radius);`"
+    },
+    {
+      "title": "Fallback: var(--x, valorPadrao)",
+      "body": "Você pode dar um valor reserva caso a variável não exista.\n\nExemplo:\n`color: var(--link, #2563eb);`\n\nSe `--link` não existir, usa `#2563eb`.\n\nIsso é útil quando:\n- você está migrando CSS antigo\n- ou quer garantir um padrão"
+    },
+    {
+      "title": "Escopo: variáveis podem mudar por seção",
+      "body": "Variáveis não precisam ficar só no :root.\n\nVocê pode definir em um container:\n\n`.card { --bg: #111827; }`\n\nE dentro do card:\n`.card { background: var(--bg); }`\n\nIsso permite criar variações por componente.\n\nMas regra prática:\n- tema geral no `:root`\n- variação local em componentes quando precisar"
+    },
+    {
+      "title": "Tema claro/escuro: estratégia simples com data-theme",
+      "body": "Uma estratégia excelente é usar um atributo no HTML:\n\n`<html data-theme=\"dark\">`\n\nE no CSS:\n\n`:root { ... tema padrão ... }`\n\n`html[data-theme=\"dark\"] { ... sobrescreve variáveis ... }`\n\nAssim você muda só variáveis, não o CSS inteiro.\n\nIsso é MUITO profissional."
+    },
+    {
+      "title": "Exemplo de tema (claro e escuro)",
+      "body": "Tema claro (padrão):\n\n`:root {`\n  `--bg: #ffffff;`\n  `--panel: #f3f4f6;`\n  `--text: #111827;`\n  `--muted: #6b7280;`\n  `--accent: #2563eb;`\n  `--border: rgba(17, 24, 39, 0.12);`\n`}`\n\nTema escuro:\n\n`html[data-theme=\"dark\"] {`\n  `--bg: #0b0f19;`\n  `--panel: #111827;`\n  `--text: #e5e7eb;`\n  `--muted: #9ca3af;`\n  `--accent: #60a5fa;`\n  `--border: rgba(255, 255, 255, 0.10);`\n`}`\n\nRepare:\n- o CSS dos componentes não muda\n- só as variáveis mudam"
+    },
+    {
+      "title": "Como usar no CSS dos componentes",
+      "body": "Depois você escreve componentes assim:\n\n`body { background: var(--bg); color: var(--text); }`\n\n`.card {`\n  `background: var(--panel);`\n  `border: 1px solid var(--border);`\n  `border-radius: var(--radius);`\n`}`\n\n`.btn { background: var(--accent); color: white; }`\n\nQuando mudar o tema, tudo muda junto."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Criar variáveis demais sem padrão.\n2) Misturar nomes confusos.\n3) Usar variáveis para tudo, até o que não precisa.\n\nRegra prática para nomear:\n- cores: `--bg`, `--panel`, `--text`, `--muted`, `--accent`\n- borda/sombra: `--border`, `--shadow`\n- raio/espaço: `--radius`, `--space-1`, `--space-2`"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Variáveis começam com `--`\n- Declare no `:root` para valer no site todo\n- Use com `var(--nome)`\n- Fallback: `var(--nome, padrao)`\n- Temas funcionam sobrescrevendo variáveis\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 18 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Variáveis CSS começam com:",
+        "options": [
+          { "key": "A", "text": "--" },
+          { "key": "B", "text": "##" }
+        ],
+        "answer": "A",
+        "explain": "Custom properties sempre começam com --."
+      },
+      {
+        "id": 2,
+        "question": "O lugar mais comum para declarar variáveis globais é:",
+        "options": [
+          { "key": "A", "text": ":root" },
+          { "key": "B", "text": "<script>" }
+        ],
+        "answer": "A",
+        "explain": ":root (html) é a raiz e aplica globalmente."
+      },
+      {
+        "id": 3,
+        "question": "Para usar uma variável você escreve:",
+        "options": [
+          { "key": "A", "text": "var(--nome)" },
+          { "key": "B", "text": "use(--nome)" }
+        ],
+        "answer": "A",
+        "explain": "A função do CSS é var()."
+      },
+      {
+        "id": 4,
+        "question": "Fallback em var significa:",
+        "options": [
+          { "key": "A", "text": "Um valor reserva caso a variável não exista" },
+          { "key": "B", "text": "Um valor que sempre substitui a variável" }
+        ],
+        "answer": "A",
+        "explain": "var(--x, valor) usa valor se --x não existir."
+      },
+      {
+        "id": 5,
+        "question": "O objetivo principal de variáveis é:",
+        "options": [
+          { "key": "A", "text": "Facilitar manutenção e consistência do tema" },
+          { "key": "B", "text": "Criar HTML automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Mudou uma variável, muda o site todo."
+      },
+      {
+        "id": 6,
+        "question": "Uma estratégia simples para tema é:",
+        "options": [
+          { "key": "A", "text": "Sobrescrever variáveis com html[data-theme=\"dark\"]" },
+          { "key": "B", "text": "Duplicar todo o CSS em outro arquivo e trocar tudo manualmente" }
+        ],
+        "answer": "A",
+        "explain": "O CSS dos componentes fica igual; só as variáveis mudam."
+      },
+      {
+        "id": 7,
+        "question": "Variáveis podem ser definidas:",
+        "options": [
+          { "key": "A", "text": "No :root e também em componentes (escopo)" },
+          { "key": "B", "text": "Somente dentro de <style> no HTML" }
+        ],
+        "answer": "A",
+        "explain": "Você pode definir variáveis em qualquer seletor."
+      },
+      {
+        "id": 8,
+        "question": "Um bom conjunto inicial de variáveis é:",
+        "options": [
+          { "key": "A", "text": "--bg, --panel, --text, --muted, --accent" },
+          { "key": "B", "text": "50 cores diferentes para cada botão" }
+        ],
+        "answer": "A",
+        "explain": "Poucas variáveis bem definidas criam consistência."
+      },
+      {
+        "id": 9,
+        "question": "Se você usa border-radius: var(--radius), isso significa:",
+        "options": [
+          { "key": "A", "text": "O raio é controlado por uma variável" },
+          { "key": "B", "text": "O raio não pode mais ser mudado" }
+        ],
+        "answer": "A",
+        "explain": "Mudando --radius, muda o raio em todos os componentes."
+      },
+      {
+        "id": 10,
+        "question": "A vantagem do tema por variáveis é:",
+        "options": [
+          { "key": "A", "text": "Mudar o tema sem reescrever o CSS dos componentes" },
+          { "key": "B", "text": "Deixar o site mais pesado sempre" }
+        ],
+        "answer": "A",
+        "explain": "Você troca variáveis e mantém os componentes."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Variáveis + tema claro/escuro */\n\n:root {\n  --bg: #ffffff;\n  --panel: #f3f4f6;\n  --text: #111827;\n  --muted: #6b7280;\n  --accent: #2563eb;\n  --border: rgba(17, 24, 39, 0.12);\n  --radius: 14px;\n}\n\nhtml[data-theme=\"dark\"] {\n  --bg: #0b0f19;\n  --panel: #111827;\n  --text: #e5e7eb;\n  --muted: #9ca3af;\n  --accent: #60a5fa;\n  --border: rgba(255, 255, 255, 0.10);\n}\n\nbody {\n  background: var(--bg);\n  color: var(--text);\n}\n\n.card {\n  background: var(--panel);\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  padding: 16px;\n}\n\na {\n  color: var(--accent);\n}\n\n.muted {\n  color: var(--muted);\n}\n"
+  }
+}

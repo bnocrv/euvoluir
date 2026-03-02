@@ -1,0 +1,159 @@
+{
+  "id": "19-reset-normalize",
+  "title": "Aula 19 — Reset/Normalize + base profissional de CSS",
+  "steps": [
+    {
+      "title": "Por que seu site “muda” de um navegador para outro",
+      "body": "Cada navegador vem com um CSS padrão (user-agent stylesheet).\n\nIsso causa diferenças tipo:\n- margens diferentes em `h1`, `p`\n- tamanho de fonte diferente\n- inputs e botões com estilos diferentes\n\nO resultado é:\n- você faz no Chrome e no outro fica diferente\n\nPara deixar consistente, usamos:\n- **reset** (zera estilos padrão)\n- **normalize** (padroniza mantendo coisas úteis)\n\nHoje você vai aprender um setup moderno e simples que funciona muito bem."
+    },
+    {
+      "title": "Reset vs Normalize (diferença simples)",
+      "body": "✅ Reset:\n- remove quase tudo que o navegador coloca\n- você começa do zero\n\n✅ Normalize:\n- tenta deixar consistente entre navegadores\n- preserva alguns padrões úteis\n\nNa prática, muita gente usa:\n- um \"reset moderno\" pequeno (que é meio termo)\n\nÉ isso que vamos fazer."
+    },
+    {
+      "title": "O “reset moderno” que eu recomendo (curto e eficiente)",
+      "body": "Esse reset faz coisas essenciais:\n\n1) `box-sizing: border-box` em tudo\n2) remove margens padrão\n3) imagens responsivas por padrão\n4) fontes herdadas em inputs/botões\n5) evita overflow por textos longos\n\nIsso já dá 90% do benefício sem exagero."
+    },
+    {
+      "title": "1) box-sizing em tudo (obrigatório)",
+      "body": "Regra profissional:\n\n`*, *::before, *::after { box-sizing: border-box; }`\n\nIsso evita dor de cabeça com largura + padding + borda.\n\nVocê já viu isso na Aula 05 — aqui vira base do projeto."
+    },
+    {
+      "title": "2) Remover margens padrão (controle total)",
+      "body": "O navegador dá margem padrão para `body`, `h1`, `p` etc.\n\nSe você quer controle:\n\n`body { margin: 0; }`\n\nE um reset moderno comum:\n\n`* { margin: 0; }`\n\nMas atenção:\n- se você zera tudo, precisa adicionar espaçamento com classes/stack/gap.\n\nIsso é ótimo em projetos organizados (como sua plataforma)."
+    },
+    {
+      "title": "3) Imagens responsivas por padrão",
+      "body": "Padrão pro (da Aula 17):\n\n`img { max-width: 100%; height: auto; display: block; }`\n\nIsso evita:\n- imagem estourando layout\n- espaço estranho de inline\n\nColocar isso no reset/base te salva sempre."
+    },
+    {
+      "title": "4) Inputs e botões herdarem fonte (parecerem parte do site)",
+      "body": "Por padrão, alguns navegadores colocam fonte diferente em form.\n\nPadrão pro:\n\n`input, button, textarea, select { font: inherit; }`\n\nAssim o formulário usa a mesma tipografia do site."
+    },
+    {
+      "title": "5) Melhorar legibilidade e acessibilidade base",
+      "body": "Um bom base:\n\n- `line-height: 1.5` ou `1.6` no body\n- cor de texto\n- background\n\nE isso aqui é ouro:\n\n`body { min-height: 100vh; }`\n\nAjuda layouts que precisam ocupar a altura toda."
+    },
+    {
+      "title": "Normalize: quando faz sentido usar biblioteca",
+      "body": "Você pode usar um normalize pronto (arquivo externo).\n\nMas como sua plataforma é simples e didática, eu recomendo:\n- começar com o reset moderno interno no seu `base.css`\n\nMais pra frente, se quiser, você adiciona normalize.\n\nO importante é:\n- consistência e previsibilidade."
+    },
+    {
+      "title": "Base profissional do seu projeto (padrão sugerido)",
+      "body": "Onde colocar:\n- `public/css/base.css`\n\nO que entra lá:\n- reset moderno\n- variáveis do tema\n- tipografia base\n\nDepois:\n- layout/components/pages\n\nIsso mantém seu projeto escalável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Navegadores têm estilos padrões diferentes\n- Reset/Normalize deixam consistente\n- Use um reset moderno pequeno\n- box-sizing border-box em tudo\n- remover margens padrão e controlar espaçamento\n- imagens responsivas por padrão\n- forms herdarem fonte\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 19 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Reset/Normalize são usados para:",
+        "options": [
+          { "key": "A", "text": "Deixar estilos mais consistentes entre navegadores" },
+          { "key": "B", "text": "Criar lógica de login" }
+        ],
+        "answer": "A",
+        "explain": "Browsers têm estilos padrão diferentes."
+      },
+      {
+        "id": 2,
+        "question": "Um reset moderno geralmente inclui:",
+        "options": [
+          { "key": "A", "text": "box-sizing: border-box em tudo" },
+          { "key": "B", "text": "position: absolute em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Border-box evita problemas de tamanho."
+      },
+      {
+        "id": 3,
+        "question": "Zerar margens padrão ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Você controla espaçamento de forma consistente" },
+          { "key": "B", "text": "O CSS fica proibido no mobile" }
+        ],
+        "answer": "A",
+        "explain": "Sem reset, cada elemento vem com margem padrão."
+      },
+      {
+        "id": 4,
+        "question": "Uma regra base boa para imagens é:",
+        "options": [
+          { "key": "A", "text": "max-width: 100% e height: auto" },
+          { "key": "B", "text": "height: 20px para todas as imagens" }
+        ],
+        "answer": "A",
+        "explain": "Isso evita overflow e mantém proporção."
+      },
+      {
+        "id": 5,
+        "question": "input, button, textarea, select { font: inherit; } serve para:",
+        "options": [
+          { "key": "A", "text": "Formulários usarem a mesma fonte do site" },
+          { "key": "B", "text": "Formulários ficarem invisíveis" }
+        ],
+        "answer": "A",
+        "explain": "Sem isso, o navegador pode aplicar outra fonte."
+      },
+      {
+        "id": 6,
+        "question": "Reset significa:",
+        "options": [
+          { "key": "A", "text": "Remover/zerar estilos padrões" },
+          { "key": "B", "text": "Adicionar mais estilos padrões" }
+        ],
+        "answer": "A",
+        "explain": "Reset começa do zero (ou quase)."
+      },
+      {
+        "id": 7,
+        "question": "Normalize significa:",
+        "options": [
+          { "key": "A", "text": "Padronizar entre navegadores mantendo coisas úteis" },
+          { "key": "B", "text": "Apagar todas as tags HTML" }
+        ],
+        "answer": "A",
+        "explain": "Normalize ajusta diferenças sem zerar tudo."
+      },
+      {
+        "id": 8,
+        "question": "Um bom lugar para reset + variáveis + tipografia base é:",
+        "options": [
+          { "key": "A", "text": "base.css" },
+          { "key": "B", "text": "index.html dentro de um style gigante" }
+        ],
+        "answer": "A",
+        "explain": "Base reúne fundamentos do tema e consistência."
+      },
+      {
+        "id": 9,
+        "question": "min-height: 100vh no body ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Garante altura mínima da tela para layout" },
+          { "key": "B", "text": "Faz o site carregar mais lento sempre" }
+        ],
+        "answer": "A",
+        "explain": "Ajuda em layouts que precisam ocupar a tela."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo final de um reset moderno é:",
+        "options": [
+          { "key": "A", "text": "Previsibilidade (menos surpresa no CSS)" },
+          { "key": "B", "text": "Mais confusão e diferenças" }
+        ],
+        "answer": "A",
+        "explain": "Previsibilidade é o que torna o projeto escalável."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Reset moderno + base profissional */\n\n/* 1) Box sizing em tudo */\n*, *::before, *::after {\n  box-sizing: border-box;\n}\n\n/* 2) Remover margens padrão */\n* {\n  margin: 0;\n}\n\n/* 3) Base do body */\nbody {\n  min-height: 100vh;\n  line-height: 1.6;\n}\n\n/* 4) Imagens responsivas */\nimg {\n  max-width: 100%;\n  height: auto;\n  display: block;\n}\n\n/* 5) Form controls herdarem fonte */\ninput, button, textarea, select {\n  font: inherit;\n}\n\n/* 6) Evitar overflow por textos longos */\nbody {\n  overflow-wrap: break-word;\n}\n"
+  }
+}

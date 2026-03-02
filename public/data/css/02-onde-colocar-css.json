@@ -1,0 +1,153 @@
+﻿{
+  "id": "02-onde-colocar-css",
+  "title": "Aula 02 — CSS inline, interno e externo (boa prática)",
+  "steps": [
+    {
+      "title": "O problema real que essa aula resolve",
+      "body": "Todo iniciante faz isso:\n- coloca `style=\"...\"` em tudo\n- depois precisa mudar a cor em 20 lugares\n- vira bagunça\n\nNesta aula você vai entender:\n- 3 formas de colocar CSS\n- quando cada uma faz sentido\n- qual é a forma profissional\n\nNo fim, você vai saber organizar seu projeto sem caos."
+    },
+    {
+      "title": "1) CSS inline (dentro da tag) — evite",
+      "body": "CSS inline é quando você escreve estilo direto no HTML:\n\n`<p style=\"color: red;\">Texto</p>`\n\n✅ Vantagem:\n- rápido para testar algo\n\n❌ Desvantagens (graves):\n- difícil de manter\n- repete demais\n- mistura estrutura (HTML) com aparência (CSS)\n\nRegra prática:\n- use inline só para testes rápidos ou casos MUITO específicos."
+    },
+    {
+      "title": "2) CSS interno (dentro do <style>) — bom para testes e páginas únicas",
+      "body": "CSS interno fica dentro do HTML, no `<head>`:\n\n`<style>`\n  `p { color: red; }`\n`</style>`\n\n✅ Vantagens:\n- ótimo para testar\n- bom para exemplos em aula\n\n❌ Desvantagens:\n- se você tiver várias páginas, precisa copiar esse style\n- cresce rápido e fica difícil de organizar\n\nRegra prática:\n- use interno em protótipos ou páginas isoladas.\n- para um site de verdade, prefira externo."
+    },
+    {
+      "title": "3) CSS externo (arquivo .css) — padrão profissional",
+      "body": "CSS externo é quando você cria um arquivo `.css` e conecta no HTML:\n\n`<link rel=\"stylesheet\" href=\"./css/styles.css\">`\n\n✅ Vantagens:\n- reutiliza em várias páginas\n- organização total\n- manutenção fácil\n- separa responsabilidades (HTML estrutura, CSS aparência)\n\nRegra prática:\n- para projeto real: **CSS externo** quase sempre."
+    },
+    {
+      "title": "Como o browser carrega CSS externo",
+      "body": "Quando o browser encontra:\n\n`<link rel=\"stylesheet\" href=\"...\">`\n\nEle:\n1) baixa o arquivo\n2) aplica os estilos\n\nSe o CSS for muito grande, pode impactar o carregamento.\n\nMas calma: a gente resolve isso com organização e performance mais pra frente."
+    },
+    {
+      "title": "Ordem dos arquivos importa (cascata)",
+      "body": "Se você linkar dois CSS:\n\n`<link rel=\"stylesheet\" href=\"base.css\">`\n`<link rel=\"stylesheet\" href=\"pages.css\">`\n\nE ambos mudarem a mesma coisa, normalmente vence o que vem por último.\n\nPor isso projetos bons costumam ter:\n- `base.css` primeiro\n- `components.css` depois\n- `pages.css` por último"
+    },
+    {
+      "title": "Padrão recomendado para o seu projeto (bem prático)",
+      "body": "Para sua plataforma, um padrão simples e escalável é:\n\n- `css/base.css` (variáveis, reset, tipografia)\n- `css/layout.css` (container, grids, espaçamentos)\n- `css/components.css` (botões, cards, forms)\n- `css/pages.css` (ajustes específicos)\n\nE no HTML:\n`<link rel=\"stylesheet\" href=\"./css/base.css\">`\n`<link rel=\"stylesheet\" href=\"./css/layout.css\">`\n`<link rel=\"stylesheet\" href=\"./css/components.css\">`\n`<link rel=\"stylesheet\" href=\"./css/pages.css\">`"
+    },
+    {
+      "title": "Quando quebrar a regra e usar inline?",
+      "body": "Quase nunca.\n\nMas exemplos reais:\n- email marketing (HTML de email tem limitações)\n- um valor dinâmico muito específico (gerado por JS)\n\nMesmo assim, em web normal, prefira classes e arquivos CSS."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Inline: evite (difícil manter)\n- Interno: bom para testes\n- Externo: padrão profissional\n- Ordem dos links importa\n\nAgora faça o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 02 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "CSS inline é quando você…",
+        "options": [
+          { "key": "A", "text": "Coloca style=\"...\" direto na tag" },
+          { "key": "B", "text": "Cria um arquivo .css separado" }
+        ],
+        "answer": "A",
+        "explain": "Inline fica dentro da própria tag."
+      },
+      {
+        "id": 2,
+        "question": "A principal desvantagem do inline é:",
+        "options": [
+          { "key": "A", "text": "Manutenção ruim e repetição" },
+          { "key": "B", "text": "Ele é mais rápido que CSS externo" }
+        ],
+        "answer": "A",
+        "explain": "Inline espalha estilo e vira bagunça."
+      },
+      {
+        "id": 3,
+        "question": "CSS interno é colocado dentro de:",
+        "options": [
+          { "key": "A", "text": "Uma tag <style> no HTML" },
+          { "key": "B", "text": "Uma tag <script>" }
+        ],
+        "answer": "A",
+        "explain": "<style> guarda CSS interno."
+      },
+      {
+        "id": 4,
+        "question": "CSS externo é recomendado porque:",
+        "options": [
+          { "key": "A", "text": "É organizado e reutilizável" },
+          { "key": "B", "text": "Só funciona em desktop" }
+        ],
+        "answer": "A",
+        "explain": "CSS externo separa responsabilidades e escala."
+      },
+      {
+        "id": 5,
+        "question": "Para conectar CSS externo você usa:",
+        "options": [
+          { "key": "A", "text": "<link rel=\"stylesheet\" href=\"...\">" },
+          { "key": "B", "text": "<meta rel=\"css\" href=\"...\">" }
+        ],
+        "answer": "A",
+        "explain": "A forma correta é link rel=stylesheet."
+      },
+      {
+        "id": 6,
+        "question": "Se dois arquivos CSS mudam a mesma coisa, geralmente vence:",
+        "options": [
+          { "key": "A", "text": "O link que aparece por último (mesma especificidade)" },
+          { "key": "B", "text": "O primeiro sempre" }
+        ],
+        "answer": "A",
+        "explain": "Com mesma força, a ordem (o último) vence."
+      },
+      {
+        "id": 7,
+        "question": "Um padrão bom é carregar primeiro:",
+        "options": [
+          { "key": "A", "text": "base.css" },
+          { "key": "B", "text": "pages.css" }
+        ],
+        "answer": "A",
+        "explain": "Base vem primeiro, páginas por último."
+      },
+      {
+        "id": 8,
+        "question": "Para um projeto com várias páginas, o melhor é:",
+        "options": [
+          { "key": "A", "text": "CSS externo" },
+          { "key": "B", "text": "Um <style> enorme em cada p�gina" }
+        ],
+        "answer": "A",
+        "explain": "Externo evita repetição e facilita manutenção."
+      },
+      {
+        "id": 9,
+        "question": "Inline geralmente deve ser usado:",
+        "options": [
+          { "key": "A", "text": "Quase nunca (só casos específicos)" },
+          { "key": "B", "text": "Em todo elemento" }
+        ],
+        "answer": "A",
+        "explain": "Para web normal, classes + CSS externo são melhores."
+      },
+      {
+        "id": 10,
+        "question": "Separar HTML (estrutura) e CSS (aparência) é importante para:",
+        "options": [
+          { "key": "A", "text": "Organização e escalabilidade" },
+          { "key": "B", "text": "Deixar o site mais confuso" }
+        ],
+        "answer": "A",
+        "explain": "Separação deixa o projeto fácil de evoluir."
+      }
+    ]
+  },
+  "extra": {
+    "modelHtml": "<!doctype html>\n<html lang=\"pt-br\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Exemplo: CSS externo</title>\n\n    <!-- Padrão profissional: CSS externo -->\n    <link rel=\"stylesheet\" href=\"./css/base.css\" />\n    <link rel=\"stylesheet\" href=\"./css/layout.css\" />\n    <link rel=\"stylesheet\" href=\"./css/components.css\" />\n    <link rel=\"stylesheet\" href=\"./css/pages.css\" />\n  </head>\n  <body>\n    <h1 class=\"title\">Título</h1>\n    <p class=\"text\">Parágrafo de exemplo.</p>\n  </body>\n</html>"
+  }
+}
+
+

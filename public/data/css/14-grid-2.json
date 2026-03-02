@@ -1,0 +1,155 @@
+{
+  "id": "14-grid-2",
+  "title": "Aula 14 — Grid 2: áreas, auto-fit, minmax (responsivo de verdade)",
+  "steps": [
+    {
+      "title": "O que essa aula destrava (Grid responsivo de verdade)",
+      "body": "Na Aula 13 você aprendeu a montar a grade.\n\nAgora você vai aprender o que deixa Grid \"mágico\" para responsivo:\n- `minmax()` (tamanho mínimo e máximo)\n- `auto-fit` / `auto-fill` (colunas automáticas)\n- `grid-template-areas` (layout por nomes)\n\nCom isso você consegue:\n- cards que se adaptam sem media query\n- layout de página tipo dashboard/landing\n- deixar seu CSS MUITO mais limpo."
+    },
+    {
+      "title": "minmax(min, max): o coração do Grid responsivo",
+      "body": "`minmax()` define um intervalo:\n- mínimo\n- máximo\n\nExemplo:\n`grid-template-columns: repeat(3, minmax(200px, 1fr));`\n\nSignifica:\n- cada coluna não pode ficar menor que 200px\n- mas pode crescer até ocupar espaço (1fr)\n\nIsso impede cards de virarem “micro-cards” em telas menores."
+    },
+    {
+      "title": "auto-fit: cria quantas colunas couberem",
+      "body": "Agora vem o combo perfeito:\n\n`grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));`\n\nInterpretação:\n- o Grid cria automaticamente o número de colunas que cabem\n- cada coluna tem pelo menos 240px\n- e cresce para preencher o espaço\n\nResultado:\n- desktop: 4 colunas\n- tablet: 2 colunas\n- celular: 1 coluna\n\nTudo sem escrever media query."
+    },
+    {
+      "title": "auto-fill vs auto-fit (diferença simples)",
+      "body": "Ambos tentam criar colunas automáticas.\n\nDiferença prática:\n- `auto-fit` “encolhe” colunas vazias e distribui melhor\n- `auto-fill` mantém o “espaço” das colunas mesmo quando não tem itens\n\nRegra prática:\n- para cards responsivos: use **auto-fit** na maioria dos casos."
+    },
+    {
+      "title": "grid-template-areas: layout por nomes (muito profissional)",
+      "body": "Em vez de pensar em linhas/colunas, você dá nomes para áreas:\n\n- header\n- sidebar\n- main\n- footer\n\nExemplo:\n`.layout {`\n  `display: grid;`\n  `grid-template-columns: 280px 1fr;`\n  `grid-template-areas:`\n    `\"header header\"`\n    `\"sidebar main\"`\n    `\"footer footer\";`\n`}`\n\nDepois você posiciona:\n- `.header { grid-area: header; }`\n- `.sidebar { grid-area: sidebar; }`"
+    },
+    {
+      "title": "Por que áreas deixam o CSS mais legível",
+      "body": "Com áreas, você lê o layout como um desenho:\n\n`\"header header\"`\n`\"sidebar main\"`\n`\"footer footer\"`\n\nIsso é excelente para:\n- dashboards\n- landing pages\n- páginas com sidebar\n\nE fica MUITO mais fácil de manter."
+    },
+    {
+      "title": "Responsivo com áreas (ideia)",
+      "body": "Você pode mudar o desenho em telas pequenas:\n\nDesktop:\n- sidebar ao lado\n\nMobile:\n- sidebar vira uma seção embaixo\n\nVocê faz isso com media query depois (Aula 15), mas o Grid por áreas deixa a mudança muito mais simples."
+    },
+    {
+      "title": "Cards responsivos: o padrão ouro",
+      "body": "Se você guardar um único padrão do Grid responsivo, é esse:\n\n`.cards {`\n  `display: grid;`\n  `grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));`\n  `gap: 16px;`\n`}`\n\nIsso sozinho já te dá layout de site profissional."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Usar `repeat(3, 1fr)` e achar que vai ser responsivo sozinho.\n2) Não colocar um mínimo (minmax) e os cards ficarem apertados.\n3) Usar áreas sem entender que elas precisam “combinar” com colunas/linhas.\n\nRegra:\n- cards: auto-fit + minmax\n- layout: áreas para clareza"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- `minmax()` define mínimo e máximo\n- `auto-fit` cria colunas automáticas que se ajustam\n- `auto-fill` é parecido, mas menos usado para cards\n- `grid-template-areas` deixa layout legível\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 14 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "minmax(a, b) serve para:",
+        "options": [
+          { "key": "A", "text": "Definir um tamanho mínimo e máximo" },
+          { "key": "B", "text": "Definir a cor e a fonte" }
+        ],
+        "answer": "A",
+        "explain": "Minmax controla intervalo de tamanho."
+      },
+      {
+        "id": 2,
+        "question": "O padrão mais usado para cards responsivos em Grid é:",
+        "options": [
+          { "key": "A", "text": "repeat(auto-fit, minmax(240px, 1fr))" },
+          { "key": "B", "text": "repeat(3, 1fr) sempre" }
+        ],
+        "answer": "A",
+        "explain": "Auto-fit + minmax se adapta ao espaço."
+      },
+      {
+        "id": 3,
+        "question": "auto-fit faz:",
+        "options": [
+          { "key": "A", "text": "Criar automaticamente quantas colunas couberem" },
+          { "key": "B", "text": "Fixar sempre 12 colunas" }
+        ],
+        "answer": "A",
+        "explain": "Auto-fit ajusta o número de colunas."
+      },
+      {
+        "id": 4,
+        "question": "A diferença prática mais comum é que auto-fit:",
+        "options": [
+          { "key": "A", "text": "Distribui melhor o espaço quando sobram colunas" },
+          { "key": "B", "text": "Sempre cria mais colunas do que o container suporta" }
+        ],
+        "answer": "A",
+        "explain": "Auto-fit tende a \"fechar\" colunas vazias."
+      },
+      {
+        "id": 5,
+        "question": "grid-template-areas serve para:",
+        "options": [
+          { "key": "A", "text": "Desenhar o layout usando nomes de áreas" },
+          { "key": "B", "text": "Criar animações automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Áreas deixam o layout legível."
+      },
+      {
+        "id": 6,
+        "question": "Para associar um elemento a uma área nomeada, você usa:",
+        "options": [
+          { "key": "A", "text": "grid-area" },
+          { "key": "B", "text": "grid-color" }
+        ],
+        "answer": "A",
+        "explain": "grid-area conecta o item à área."
+      },
+      {
+        "id": 7,
+        "question": "Sem minmax, um grid de cards pode:",
+        "options": [
+          { "key": "A", "text": "Apertar demais os cards em telas menores" },
+          { "key": "B", "text": "Melhorar a tipografia automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Minmax define o mínimo aceitável."
+      },
+      {
+        "id": 8,
+        "question": "Um uso típico de áreas é:",
+        "options": [
+          { "key": "A", "text": "header/sidebar/main/footer" },
+          { "key": "B", "text": "bold/italic/underline" }
+        ],
+        "answer": "A",
+        "explain": "Áreas são para regiões do layout."
+      },
+      {
+        "id": 9,
+        "question": "Grid é melhor que flex quando você precisa de:",
+        "options": [
+          { "key": "A", "text": "linhas e colunas ao mesmo tempo" },
+          { "key": "B", "text": "Alinhar 2 itens numa barra simples" }
+        ],
+        "answer": "A",
+        "explain": "Grid é 2D."
+      },
+      {
+        "id": 10,
+        "question": "O “padrão ouro” de cards responsivos é:",
+        "options": [
+          { "key": "A", "text": "auto-fit + minmax + gap" },
+          { "key": "B", "text": "position: absolute em cada card" }
+        ],
+        "answer": "A",
+        "explain": "Esse combo dá responsivo limpo."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Cards responsivos (padrão ouro) */\n\n.cards {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));\n  gap: 16px;\n}\n\n.card {\n  padding: 16px;\n  border: 1px solid #ddd;\n  border-radius: 14px;\n}\n\n/* Layout por áreas */\n.layout {\n  display: grid;\n  grid-template-columns: 280px 1fr;\n  grid-template-areas:\n    \"header header\"\n    \"sidebar main\"\n    \"footer footer\";\n  gap: 16px;\n}\n\n.header { grid-area: header; }\n.sidebar { grid-area: sidebar; }\n.main { grid-area: main; }\n.footer { grid-area: footer; }\n"
+  }
+}

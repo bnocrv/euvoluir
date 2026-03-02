@@ -1,0 +1,163 @@
+{
+  "id": "22-animacoes-2",
+  "title": "Aula 22 — Animations e keyframes (com moderação)",
+  "steps": [
+    {
+      "title": "Transition vs Animation (diferença sem confusão)",
+      "body": "✅ Transition (Aula 21):\n- suaviza uma mudança (hover, focus, classe)\n- precisa de um “gatilho”\n\n✅ Animation:\n- roda sozinha (automaticamente)\n- pode repetir\n- você define o movimento com `@keyframes`\n\nHoje você vai aprender animação do jeito certo:\n- usar para microefeitos\n- sem deixar o site cansativo\n- respeitando acessibilidade"
+    },
+    {
+      "title": "Como funciona Animation (as peças)",
+      "body": "Uma animação tem:\n\n1) `@keyframes nome { ... }` (o roteiro)\n2) `animation: nome duração timing ...` (aplicar no elemento)\n\nExemplo:\n`@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }`\n\n`.panel { animation: fadeIn 200ms ease; }`"
+    },
+    {
+      "title": "Keyframes: from/to (o jeito mais simples)",
+      "body": "O formato mais simples é:\n\n`@keyframes fadeIn {`\n  `from { opacity: 0; }`\n  `to { opacity: 1; }`\n`}`\n\nIsso cria um fade suave.\n\nRegra pro:\n- use `opacity` e `transform` quando possível."
+    },
+    {
+      "title": "Keyframes com porcentagem (0% a 100%)",
+      "body": "Você pode criar mais etapas:\n\n`@keyframes pop {`\n  `0% { transform: scale(0.98); opacity: 0; }`\n  `100% { transform: scale(1); opacity: 1; }`\n`}`\n\nIsso dá sensação de “aparecer” de forma elegante."
+    },
+    {
+      "title": "Propriedades da animação (as principais)",
+      "body": "As mais importantes:\n\n- `animation-name` (nome)\n- `animation-duration` (tempo)\n- `animation-timing-function` (curva)\n- `animation-delay` (atraso)\n- `animation-iteration-count` (quantas vezes)\n- `animation-direction` (sentido)\n- `animation-fill-mode` (estado antes/depois)\n\nVocê quase sempre usa o atalho `animation:`."
+    },
+    {
+      "title": "Atalho animation (padrão)",
+      "body": "Formato comum:\n\n`animation: nome duração timing delay count direction fill;`\n\nMas você não precisa usar tudo.\n\nExemplo básico:\n`.toast { animation: slideIn 220ms ease-out; }`\n\nExemplo com fill-mode:\n`.toast { animation: slideIn 220ms ease-out both; }`\n\n`both` = aplica estilos do começo e do fim conforme necessário."
+    },
+    {
+      "title": "fill-mode (por que isso existe)",
+      "body": "Sem `fill-mode`, depois da animação o elemento volta ao estado original.\n\nCom `animation-fill-mode: both;`, você diz:\n- “use o estado inicial no começo”\n- “e mantenha o estado final no fim”\n\nIsso evita flicker e deixa a animação previsível."
+    },
+    {
+      "title": "Repetição (iteration-count) — use com cuidado",
+      "body": "Você pode repetir:\n\n- `animation-iteration-count: 3;`\n- `animation-iteration-count: infinite;`\n\n⚠️ Cuidado:\n- animação infinita pode cansar\n- pode distrair\n- pode incomodar pessoas sensíveis a movimento\n\nRegra pro:\n- infinito só para algo MUITO sutil (ex.: loading).\n- e sempre com reduced-motion."
+    },
+    {
+      "title": "Animação boa para UI (2 exemplos prontos)",
+      "body": "1) Fade + leve subida:\n- ótimo para painel, modal, tooltip\n\n2) Slide-in:\n- ótimo para toast/alert\n\nAmbas usam:\n- opacity\n- transform\n\nIsso é o padrão profissional."
+    },
+    {
+      "title": "Acessibilidade: prefers-reduced-motion (obrigatório)",
+      "body": "Para animações, é essencial respeitar:\n\n`@media (prefers-reduced-motion: reduce) {`\n  `* { animation: none !important; transition: none !important; }`\n`}`\n\nOu pelo menos:\n- remover animações não essenciais\n- reduzir duração\n\nRegra:\n- nunca force animação pesada em todo mundo."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Animar layout (width/height/top/left) e ficar pesado.\n2) Usar muitas animações ao mesmo tempo.\n3) Animação infinita em tudo.\n4) Esquecer reduced-motion.\n\nRegra:\n- animação é tempero.\n- use pouco e bem."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Transition suaviza mudanças; animation roda sozinha\n- `@keyframes` define o roteiro\n- Prefira `opacity` e `transform`\n- `fill-mode` evita voltar ao estado antigo\n- Repetição com cuidado\n- Respeitar reduced-motion\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 22 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A principal diferença é que animation:",
+        "options": [
+          { "key": "A", "text": "Pode rodar automaticamente (sem hover/focus)" },
+          { "key": "B", "text": "Só funciona no hover" }
+        ],
+        "answer": "A",
+        "explain": "Transition depende de mudança; animation pode rodar sozinha."
+      },
+      {
+        "id": 2,
+        "question": "O roteiro de uma animação é definido com:",
+        "options": [
+          { "key": "A", "text": "@keyframes" },
+          { "key": "B", "text": "@media" }
+        ],
+        "answer": "A",
+        "explain": "Keyframes definem os frames da animação."
+      },
+      {
+        "id": 3,
+        "question": "Boas propriedades para animar em UI são:",
+        "options": [
+          { "key": "A", "text": "opacity e transform" },
+          { "key": "B", "text": "width e height em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Opacity/transform são mais leves e comuns."
+      },
+      {
+        "id": 4,
+        "question": "animation-fill-mode: both ajuda a:",
+        "options": [
+          { "key": "A", "text": "Evitar voltar ao estado original e reduzir flicker" },
+          { "key": "B", "text": "Mudar o HTML automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Both aplica o estado inicial e mantém o final."
+      },
+      {
+        "id": 5,
+        "question": "animation-iteration-count: infinite deve ser:",
+        "options": [
+          { "key": "A", "text": "Usado com cuidado (pode cansar/distrair)" },
+          { "key": "B", "text": "Usado em todo elemento sempre" }
+        ],
+        "answer": "A",
+        "explain": "Infinito é ok para loading sutil; fora isso, cuidado."
+      },
+      {
+        "id": 6,
+        "question": "Uma animação profissional para UI costuma ser:",
+        "options": [
+          { "key": "A", "text": "Curta e sutil" },
+          { "key": "B", "text": "Longa e chamativa em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Animação é detalhe, não show."
+      },
+      {
+        "id": 7,
+        "question": "prefers-reduced-motion serve para:",
+        "options": [
+          { "key": "A", "text": "Respeitar usuários que preferem menos movimento" },
+          { "key": "B", "text": "Criar mais animações automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "É uma preferência do sistema."
+      },
+      {
+        "id": 8,
+        "question": "Keyframes podem ser escritos como:",
+        "options": [
+          { "key": "A", "text": "from/to ou 0% a 100%" },
+          { "key": "B", "text": "Apenas com HTML" }
+        ],
+        "answer": "A",
+        "explain": "Ambos são formatos válidos."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum é animar:",
+        "options": [
+          { "key": "A", "text": "Propriedades de layout pesadas sem necessidade" },
+          { "key": "B", "text": "Transform e opacity com moderação" }
+        ],
+        "answer": "A",
+        "explain": "Width/height/top/left podem custar mais."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo de animation em UI é:",
+        "options": [
+          { "key": "A", "text": "Dar feedback e polimento, sem distrair" },
+          { "key": "B", "text": "Substituir o conteúdo do site" }
+        ],
+        "answer": "A",
+        "explain": "Animação é para polir e comunicar, não para confundir."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Animations (keyframes) profissionais */\n\n@keyframes fadeUp {\n  from {\n    opacity: 0;\n    transform: translateY(6px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n\n@keyframes slideIn {\n  from {\n    opacity: 0;\n    transform: translateX(10px);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n\n.panel {\n  animation: fadeUp 220ms ease-out both;\n}\n\n.toast {\n  animation: slideIn 220ms ease-out both;\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .panel,\n  .toast {\n    animation: none !important;\n  }\n}\n"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "id": "01-introducao",
+  "title": "Aula 01 — O que é CSS + como ele funciona (cascata e seletor)",
+  "steps": [
+    {
+      "title": "O que é CSS (sem enrolação)",
+      "body": "CSS significa **Cascading Style Sheets**.\n\n- **HTML** diz o que existe (título, parágrafo, botão).\n- **CSS** diz como isso aparece (cores, tamanho, espaçamento, layout).\n\nSe HTML é o “esqueleto”, CSS é a “roupa” e o “acabamento”."
+    },
+    {
+      "title": "Por que chama “Cascading” (cascata)",
+      "body": "Cascata significa que várias regras podem competir, e o navegador decide qual vence.\n\nExemplo:\n- você define `p { color: blue; }`\n- depois define `p { color: red; }`\n\nA última regra (no mesmo nível de força) vence.\n\nIsso é a base do CSS: **ordem + força da regra**."
+    },
+    {
+      "title": "A estrutura de uma regra CSS",
+      "body": "Uma regra CSS tem:\n\n- **Seletor**: quem vai receber o estilo\n- **Propriedade**: o que você quer mudar\n- **Valor**: para qual valor\n\nExemplo:\n`p { color: red; }`\n\n- seletor: `p`\n- propriedade: `color`\n- valor: `red`"
+    },
+    {
+      "title": "Seletores: quem você está estilizando",
+      "body": "Você pode selecionar elementos de várias formas. As 3 mais importantes agora:\n\n1) **Tag** (elemento):\n- `p { ... }`\n\n2) **Class** (reutilizável):\n- `.card { ... }`\n\n3) **Id** (único):\n- `#header { ... }`\n\nRegra prática:\n- use **class** para quase tudo.\n- id só quando realmente precisa ser único."
+    },
+    {
+      "title": "Propriedades mais comuns (pra começar)",
+      "body": "Algumas propriedades que você vai usar todo dia:\n\n- `color` (cor do texto)\n- `background` / `background-color` (fundo)\n- `font-size` (tamanho da fonte)\n- `padding` (espaço interno)\n- `margin` (espaço externo)\n- `border` (borda)\n\nVocê não precisa decorar tudo. Precisa entender o que é **propriedade** e **valor**."
+    },
+    {
+      "title": "Três formas de colocar CSS (visão geral)",
+      "body": "Existem 3 formas:\n\n1) Inline: `style=\"...\"` (evite)\n2) Interno: `<style> ... </style>` (bom para testes)\n3) Externo: arquivo `.css` (padrão profissional)\n\nAula 02 vai entrar nisso a fundo."
+    },
+    {
+      "title": "Como o navegador decide quem vence (prévia de especificidade)",
+      "body": "Quando duas regras brigam, o navegador olha, nessa ordem:\n\n1) **Força do seletor** (especificidade)\n2) **Ordem** (quem veio por último)\n\nId geralmente é mais forte que class.\nClass geralmente é mais forte que tag.\n\nMas calma: vamos dominar isso na Aula 03 e 04."
+    },
+    {
+      "title": "Exemplo completo (pra você enxergar)",
+      "body": "Imagine esse HTML:\n\n`<h1 class=\"title\">Título</h1>`\n`<p class=\"text\">Parágrafo</p>`\n\nE esse CSS:\n\n`.title { color: #fff; background: #111; padding: 12px; }`\n`.text { color: #333; }`\n\nIsso já transforma totalmente a aparência, sem mexer no HTML."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- CSS estiliza o HTML\n- Regra CSS = seletor + { propriedade: valor }\n- Cascata = regras competem\n- Comece usando classes\n\nAgora faça o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 01 (CSS)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "CSS serve principalmente para…",
+        "options": [
+          { "key": "A", "text": "Definir aparência/estilo do HTML" },
+          { "key": "B", "text": "Criar lógica (if/else)" }
+        ],
+        "answer": "A",
+        "explain": "CSS é estilo. Lógica fica no JavaScript."
+      },
+      {
+        "id": 2,
+        "question": "Uma regra CSS é composta por…",
+        "options": [
+          { "key": "A", "text": "Seletor + propriedades/valores" },
+          { "key": "B", "text": "Apenas tags HTML" }
+        ],
+        "answer": "A",
+        "explain": "CSS seleciona elementos e aplica propriedades com valores."
+      },
+      {
+        "id": 3,
+        "question": "O seletor `.card` seleciona…",
+        "options": [
+          { "key": "A", "text": "Elementos com class=\"card\"" },
+          { "key": "B", "text": "Um elemento com id=\"card\"" }
+        ],
+        "answer": "A",
+        "explain": "Ponto (.) é class. Cerquilha (#) é id."
+      },
+      {
+        "id": 4,
+        "question": "O seletor `#menu` seleciona…",
+        "options": [
+          { "key": "A", "text": "Um elemento com id=\"menu\"" },
+          { "key": "B", "text": "Elementos com class=\"menu\"" }
+        ],
+        "answer": "A",
+        "explain": "# é id."
+      },
+      {
+        "id": 5,
+        "question": "Cascata significa que…",
+        "options": [
+          { "key": "A", "text": "Regras podem competir e o navegador decide qual vence" },
+          { "key": "B", "text": "O CSS sempre ignora a ordem do arquivo" }
+        ],
+        "answer": "A",
+        "explain": "Cascata envolve ordem e força dos seletores."
+      },
+      {
+        "id": 6,
+        "question": "Qual é mais recomendado como padrão profissional?",
+        "options": [
+          { "key": "A", "text": "CSS em arquivo externo (.css)" },
+          { "key": "B", "text": "CSS inline em cada elemento" }
+        ],
+        "answer": "A",
+        "explain": "Arquivo externo é organizado, reutilizável e escalável."
+      },
+      {
+        "id": 7,
+        "question": "Qual propriedade muda a cor do texto?",
+        "options": [
+          { "key": "A", "text": "color" },
+          { "key": "B", "text": "background-color" }
+        ],
+        "answer": "A",
+        "explain": "color muda cor do texto; background-color muda o fundo."
+      },
+      {
+        "id": 8,
+        "question": "Qual propriedade dá espaço interno?",
+        "options": [
+          { "key": "A", "text": "padding" },
+          { "key": "B", "text": "margin" }
+        ],
+        "answer": "A",
+        "explain": "padding é espaço interno; margin é espaço externo."
+      },
+      {
+        "id": 9,
+        "question": "Qual é a melhor regra prática para começar a estilizar?",
+        "options": [
+          { "key": "A", "text": "Usar classes para a maioria dos estilos" },
+          { "key": "B", "text": "Usar id para tudo" }
+        ],
+        "answer": "A",
+        "explain": "Classes são reutilizáveis e evitam especificidade alta demais."
+      },
+      {
+        "id": 10,
+        "question": "Se duas regras têm mesma força, geralmente vence…",
+        "options": [
+          { "key": "A", "text": "A que aparece por último no CSS" },
+          { "key": "B", "text": "A primeira do arquivo" }
+        ],
+        "answer": "A",
+        "explain": "Com mesma especificidade, a ordem (a última) vence."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Exemplo simples de CSS */\n\n.title {\n  color: #ffffff;\n  background: #111111;\n  padding: 12px;\n  border-radius: 10px;\n}\n\n.text {\n  color: #333333;\n  line-height: 1.6;\n}\n"
+  }
+}

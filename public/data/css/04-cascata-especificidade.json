@@ -1,0 +1,159 @@
+{
+  "id": "04-cascata-especificidade",
+  "title": "Aula 04 — Cascata, herança e especificidade (sem sofrimento)",
+  "steps": [
+    {
+      "title": "O que essa aula resolve (o bug mais comum do CSS)",
+      "body": "O bug nº1 do CSS é:\n\n- “Eu mudei a cor e não mudou!”\n\nQuase sempre é porque:\n1) outra regra venceu (cascata)\n2) o elemento herdou algo\n3) a especificidade é maior em outra regra\n\nHoje você vai dominar esses 3 conceitos.\n\nSe você entender isso, você para de chutar e começa a **diagnosticar**."
+    },
+    {
+      "title": "Cascata: o CSS é uma disputa de regras",
+      "body": "Várias regras podem afetar o mesmo elemento.\n\nExemplo:\n`p { color: blue; }`\n`p { color: red; }`\n\nSe a força for a mesma, a regra mais abaixo (mais recente) vence.\n\nA cascata é basicamente:\n- várias regras “caem” sobre o elemento\n- o navegador escolhe a vencedora"
+    },
+    {
+      "title": "A ordem importa (quando a força é igual)",
+      "body": "Quando dois seletores têm a mesma força, vence o último.\n\nExemplo:\n`p { color: blue; }`\n`p { color: red; }`\n\nResultado: vermelho.\n\nIsso também vale se você tem 2 arquivos:\n- `base.css`\n- `pages.css`\n\nSe `pages.css` vem depois, ele geralmente vence quando a força for igual."
+    },
+    {
+      "title": "Herança: o filho pode “herdar” do pai",
+      "body": "Algumas propriedades passam do pai para o filho.\n\nExemplo:\n`body { color: #333; }`\n\nSe você não definir `color` no `p`, ele herda do body.\n\n✅ Propriedades que normalmente herdam:\n- `color`\n- `font-family`\n- `font-size` (geralmente)\n- `line-height`\n\n⚠️ Propriedades que NÃO herdam (normalmente):\n- `margin`\n- `padding`\n- `border`\n- `background`\n\nRegra simples:\n- texto costuma herdar\n- layout/caixa costuma não herdar"
+    },
+    {
+      "title": "Como desligar herança (quando você quiser)",
+      "body": "Se você quer forçar um valor, você define direto no elemento.\n\nExemplo:\n`body { color: #333; }`\n`.highlight { color: red; }`\n\nAgora `.highlight` não herda mais o `color` do body.\n\nTambém existe:\n- `inherit` (forçar herdar)\n- `initial` (voltar ao padrão)\n\nExemplo:\n`.link { color: inherit; }`"
+    },
+    {
+      "title": "Especificidade: quem tem mais força",
+      "body": "Especificidade é a “força” do seletor.\n\nRegra prática (do mais fraco ao mais forte):\n1) tag: `p`\n2) class: `.card`\n3) id: `#top`\n4) inline: `style=\"...\"` (quase sempre vence)\n\nExemplo:\n`p { color: blue; }`\n`.card p { color: red; }`\n\nDentro de `.card`, vence o vermelho porque `.card p` é mais específico que `p`."
+    },
+    {
+      "title": "Especificidade (jeito mais exato, sem matemática pesada)",
+      "body": "Pense assim:\n\n- cada `#id` pesa MUITO\n- cada `.class` pesa médio\n- cada `tag` pesa pouco\n\nEntão:\n- `#menu a` tende a ganhar de `.menu a`\n- `.menu a` tende a ganhar de `a`\n\nVocê não precisa decorar números agora.\nVocê precisa entender o comportamento."
+    },
+    {
+      "title": "O perigo de usar id para estilo",
+      "body": "Quando você estiliza com id, fica difícil sobrescrever depois.\n\nExemplo:\n`#btn { background: red; }`\n\nDepois você tenta:\n`.btn { background: blue; }`\n\nE não muda, porque id ganha.\n\nRegra prática:\n- use id para JS/âncoras\n- use class para CSS"
+    },
+    {
+      "title": "!important (use como último recurso)",
+      "body": "Você pode forçar uma regra a vencer com `!important`:\n\n`.btn { background: blue !important; }`\n\n⚠️ Problema:\n- vira guerra: o próximo coloca outro `!important`\n- dificulta manutenção\n\nRegra prática:\n- evite\n- prefira corrigir seletor/estrutura\n\n(Em projetos grandes, !important quase sempre vira dor.)"
+    },
+    {
+      "title": "Como diagnosticar no DevTools (método profissional)",
+      "body": "Quando algo não aplica:\n\n1) F12 → Inspect (seleciona o elemento)\n2) Aba Styles\n3) Veja regras aplicadas e regras riscadas\n4) Leia o seletor que venceu\n\nSe uma regra está riscada, o DevTools está te dizendo:\n- “essa perdeu a disputa”\n\nIsso te faz parar de chutar."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Cascata: várias regras competem\n- Ordem importa quando a força é igual\n- Herança: texto geralmente herda\n- Especificidade: id > class > tag\n- Evite id para estilo\n- Evite !important\n- Debug sempre no DevTools\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 04 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar de verdade.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Quando duas regras têm mesma força, vence:",
+        "options": [
+          { "key": "A", "text": "A regra que aparece por último" },
+          { "key": "B", "text": "A regra que aparece primeiro" }
+        ],
+        "answer": "A",
+        "explain": "Com mesma especificidade, a ordem decide."
+      },
+      {
+        "id": 2,
+        "question": "Herança significa:",
+        "options": [
+          { "key": "A", "text": "Algumas propriedades passam do pai para o filho" },
+          { "key": "B", "text": "Toda propriedade passa automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Nem tudo herda: texto geralmente herda; layout geralmente não."
+      },
+      {
+        "id": 3,
+        "question": "Qual costuma herdar?",
+        "options": [
+          { "key": "A", "text": "color" },
+          { "key": "B", "text": "margin" }
+        ],
+        "answer": "A",
+        "explain": "color herda; margin normalmente não."
+      },
+      {
+        "id": 4,
+        "question": "Qual seletor é mais forte?",
+        "options": [
+          { "key": "A", "text": "#id" },
+          { "key": "B", "text": ".class" }
+        ],
+        "answer": "A",
+        "explain": "ID tem especificidade maior que class."
+      },
+      {
+        "id": 5,
+        "question": "Qual é mais fraco?",
+        "options": [
+          { "key": "A", "text": "Seletor por tag (p, a, h1)" },
+          { "key": "B", "text": "Seletor por class (.card, .btn)" }
+        ],
+        "answer": "A",
+        "explain": "Tag é mais fraco que class."
+      },
+      {
+        "id": 6,
+        "question": "Usar id para estilo é perigoso porque:",
+        "options": [
+          { "key": "A", "text": "Dificulta sobrescrever depois (especificidade alta)" },
+          { "key": "B", "text": "Quebra o HTML automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "ID ganha de class/tag e complica manutenção."
+      },
+      {
+        "id": 7,
+        "question": "Inline style (style=\"...\") geralmente:",
+        "options": [
+          { "key": "A", "text": "Tem força muito alta e vence quase tudo" },
+          { "key": "B", "text": "É mais fraco que seletor por tag" }
+        ],
+        "answer": "A",
+        "explain": "Inline é muito específico."
+      },
+      {
+        "id": 8,
+        "question": "!important deve ser:",
+        "options": [
+          { "key": "A", "text": "Último recurso" },
+          { "key": "B", "text": "Usado em tudo para garantir" }
+        ],
+        "answer": "A",
+        "explain": "Important vira guerra e dificulta manutenção."
+      },
+      {
+        "id": 9,
+        "question": "A forma profissional de descobrir por que não aplicou é:",
+        "options": [
+          { "key": "A", "text": "Usar DevTools e ver regras riscadas" },
+          { "key": "B", "text": "Ficar mudando valores no escuro" }
+        ],
+        "answer": "A",
+        "explain": "DevTools mostra exatamente quem venceu."
+      },
+      {
+        "id": 10,
+        "question": "Se `p {color: blue}` e `.card p {color: red}`, dentro de .card fica:",
+        "options": [
+          { "key": "A", "text": "Vermelho" },
+          { "key": "B", "text": "Azul" }
+        ],
+        "answer": "A",
+        "explain": ".card p é mais específico que p."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Exemplo de disputa */\n\np {\n  color: blue;\n}\n\n.card p {\n  color: red;\n}\n\n/* Evite id para estilo */\n/* #btn { background: red; } */\n\n.btn {\n  background: #111;\n  color: #fff;\n  padding: 10px 14px;\n  border-radius: 10px;\n}\n\n.btn:hover {\n  opacity: 0.9;\n}\n"
+  }
+}

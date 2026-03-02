@@ -1,0 +1,155 @@
+{
+  "id": "16-responsivo-2",
+  "title": "Aula 16 — Responsivo 2: layouts práticos (header, cards, sidebar)",
+  "steps": [
+    {
+      "title": "Objetivo da aula",
+      "body": "Agora você já sabe o que é responsivo e como usar `@media`.\n\nNesta aula você vai aplicar em 3 layouts MUITO comuns:\n\n1) Header responsivo (logo + menu)\n2) Cards responsivos (grid que cresce)\n3) Sidebar responsiva (vira seção no mobile)\n\nA ideia é: você copiar o padrão mental e usar em qualquer projeto."
+    },
+    {
+      "title": "Padrão 1: Header responsivo (coluna → linha)",
+      "body": "No mobile:\n- tudo em coluna\n- menu embaixo\n\nNo tablet/desktop:\n- vira linha\n- logo à esquerda\n- menu à direita\n\nPadrão:\n- base: `flex-direction: column`\n- upgrade: `flex-direction: row` + `justify-content: space-between`"
+    },
+    {
+      "title": "Exemplo de CSS do Header (base + upgrades)",
+      "body": "Base (mobile):\n\n`.header { display: flex; flex-direction: column; gap: 12px; }`\n`.nav { display: flex; flex-wrap: wrap; gap: 10px; }`\n\nUpgrade:\n\n`@media (min-width: 768px) {`\n  `.header { flex-direction: row; align-items: center; justify-content: space-between; }`\n`}`"
+    },
+    {
+      "title": "Padrão 2: Cards responsivos (1 → 2 → 3 colunas)",
+      "body": "Cards são o coração de dashboard.\n\nPadrão simples com Grid:\n\n- mobile: 1 coluna\n- tablet: 2 colunas\n- desktop: 3 colunas\n\nVocê muda só `grid-template-columns`."
+    },
+    {
+      "title": "Exemplo de CSS dos Cards",
+      "body": "Base (mobile):\n\n`.cards { display: grid; grid-template-columns: 1fr; gap: 16px; }`\n\nTablet:\n\n`@media (min-width: 768px) { .cards { grid-template-columns: repeat(2, 1fr); } }`\n\nDesktop:\n\n`@media (min-width: 1024px) { .cards { grid-template-columns: repeat(3, 1fr); } }`\n\nDica:\n- se quiser um responsivo mais automático, use o padrão ouro da Aula 14."
+    },
+    {
+      "title": "Padrão 3: Sidebar responsiva (coluna no desktop, stack no mobile)",
+      "body": "Layout típico:\n\nDesktop:\n- sidebar na esquerda\n- conteúdo na direita\n\nMobile:\n- sidebar vai para cima ou vira uma seção antes do conteúdo\n\nO jeito mais claro:\n- mobile: `grid-template-columns: 1fr`\n- desktop: `grid-template-columns: 280px 1fr`"
+    },
+    {
+      "title": "Exemplo de CSS da Sidebar com Grid",
+      "body": "Base (mobile):\n\n`.layout { display: grid; grid-template-columns: 1fr; gap: 16px; }`\n\nDesktop:\n\n`@media (min-width: 1024px) {`\n  `.layout { grid-template-columns: 280px 1fr; align-items: start; }`\n`}`\n\nIsso deixa a sidebar no lado e o conteúdo no resto."
+    },
+    {
+      "title": "O detalhe que dá cara profissional: largura máxima e respiro",
+      "body": "Mesmo responsivo, você precisa de:\n- um container com max-width\n- padding que cresce em telas maiores\n\nPadrão:\n\n`.container { max-width: 1100px; margin: 0 auto; padding: 16px; }`\n\n`@media (min-width: 768px) { .container { padding: 24px; } }`\n`@media (min-width: 1024px) { .container { padding: 32px; } }`\n\nIsso deixa o site \"respirar\" no desktop."
+    },
+    {
+      "title": "Checklist rápido de layout responsivo",
+      "body": "Antes de considerar pronto:\n\n- [ ] Nada estoura na horizontal no mobile\n- [ ] Botões e links são clicáveis (não minúsculos)\n- [ ] Textos não ficam muito largos no desktop\n- [ ] Espaçamento aumenta em telas maiores\n- [ ] Menu não quebra feio (wrap ou menu mobile)\n\nSe passar nesse checklist, tá no caminho certo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Header: coluna no mobile, linha no desktop\n- Cards: 1 → 2 → 3 colunas\n- Sidebar: 1 coluna no mobile, 2 colunas no desktop\n- Container com max-width + padding responsivo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 16 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um padrão comum para header responsivo é:",
+        "options": [
+          { "key": "A", "text": "flex-direction: column no mobile e row no desktop" },
+          { "key": "B", "text": "position: absolute em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Coluna no mobile, linha em telas maiores."
+      },
+      {
+        "id": 2,
+        "question": "Para cards responsivos, o mais comum é alterar:",
+        "options": [
+          { "key": "A", "text": "grid-template-columns nas media queries" },
+          { "key": "B", "text": "font-weight nas media queries" }
+        ],
+        "answer": "A",
+        "explain": "Número de colunas é layout."
+      },
+      {
+        "id": 3,
+        "question": "No mobile, uma boa base para cards é:",
+        "options": [
+          { "key": "A", "text": "1 coluna (1fr)" },
+          { "key": "B", "text": "6 colunas fixas de 200px" }
+        ],
+        "answer": "A",
+        "explain": "Mobile tem pouco espaço: 1 coluna é comum."
+      },
+      {
+        "id": 4,
+        "question": "Sidebar responsiva costuma ser:",
+        "options": [
+          { "key": "A", "text": "1 coluna no mobile e 2 colunas no desktop (280px + 1fr)" },
+          { "key": "B", "text": "Sempre 280px mesmo no celular" }
+        ],
+        "answer": "A",
+        "explain": "No mobile, sidebar lateral geralmente não cabe."
+      },
+      {
+        "id": 5,
+        "question": "Um container profissional costuma ter:",
+        "options": [
+          { "key": "A", "text": "max-width + margin: 0 auto" },
+          { "key": "B", "text": "Apenas width: 100% sem limites" }
+        ],
+        "answer": "A",
+        "explain": "Max-width evita linhas longas no desktop."
+      },
+      {
+        "id": 6,
+        "question": "Padding responsivo significa:",
+        "options": [
+          { "key": "A", "text": "Aumentar o respiro em telas maiores" },
+          { "key": "B", "text": "Zerar padding em telas maiores" }
+        ],
+        "answer": "A",
+        "explain": "Mais espaço no desktop melhora leitura."
+      },
+      {
+        "id": 7,
+        "question": "Se o menu quebra no mobile, uma solução simples é:",
+        "options": [
+          { "key": "A", "text": "flex-wrap: wrap no menu" },
+          { "key": "B", "text": "box-sizing: content-box em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Wrap deixa itens quebrarem sem estourar."
+      },
+      {
+        "id": 8,
+        "question": "Para alinhar logo e menu no desktop, é comum usar:",
+        "options": [
+          { "key": "A", "text": "justify-content: space-between e align-items: center" },
+          { "key": "B", "text": "text-decoration: underline" }
+        ],
+        "answer": "A",
+        "explain": "Isso organiza uma barra horizontal."
+      },
+      {
+        "id": 9,
+        "question": "Um checklist responsivo importante inclui:",
+        "options": [
+          { "key": "A", "text": "Nada estourar horizontalmente no mobile" },
+          { "key": "B", "text": "Ter 10 fontes diferentes" }
+        ],
+        "answer": "A",
+        "explain": "Estouro horizontal é um bug clássico."
+      },
+      {
+        "id": 10,
+        "question": "A ideia principal da aula é:",
+        "options": [
+          { "key": "A", "text": "Repetir padrões (header/cards/sidebar) e aplicar em qualquer projeto" },
+          { "key": "B", "text": "Decorar números mágicos sem entender" }
+        ],
+        "answer": "A",
+        "explain": "Padrões te dão velocidade e consistência."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Layouts responsivos práticos */\n\n.container {\n  max-width: 1100px;\n  margin: 0 auto;\n  padding: 16px;\n}\n\n.header {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n}\n\n.nav {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 10px;\n}\n\n.cards {\n  display: grid;\n  grid-template-columns: 1fr;\n  gap: 16px;\n}\n\n.layout {\n  display: grid;\n  grid-template-columns: 1fr;\n  gap: 16px;\n  align-items: start;\n}\n\n@media (min-width: 768px) {\n  .container { padding: 24px; }\n\n  .header {\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-between;\n  }\n\n  .cards {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n\n@media (min-width: 1024px) {\n  .container { padding: 32px; }\n\n  .cards {\n    grid-template-columns: repeat(3, 1fr);\n  }\n\n  .layout {\n    grid-template-columns: 280px 1fr;\n  }\n}\n"
+  }
+}

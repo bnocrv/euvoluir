@@ -1,0 +1,159 @@
+{
+  "id": "21-animacoes-1",
+  "title": "Aula 21 — Transitions (transição sem gambiarra)",
+  "steps": [
+    {
+      "title": "O que é transition (e o que não é)",
+      "body": "Transition é uma forma simples de deixar mudanças suaves.\n\nEla NÃO cria movimento sozinho.\nEla só suaviza quando uma propriedade muda.\n\nExemplo:\n- sem transition: hover “pula” instantâneo\n- com transition: hover “desliza” suave\n\nHoje você vai aprender:\n- como usar `transition`\n- quais propriedades animar (as seguras)\n- duração e timing\n- padrão profissional para botões e cards\n- erro clássico que deixa lento"
+    },
+    {
+      "title": "O básico: transition tem 3 partes",
+      "body": "Você normalmente define:\n\n- o que animar (`transition-property`)\n- quanto tempo (`transition-duration`)\n- como acelerar (`transition-timing-function`)\n\nAtalho mais usado:\n\n`transition: property duration timing;`\n\nExemplo:\n`.btn { transition: transform 150ms ease, opacity 150ms ease; }`"
+    },
+    {
+      "title": "Exemplo simples: botão com hover suave",
+      "body": "Sem transition:\n- `opacity` muda na hora\n\nCom transition:\n\n`.btn { transition: opacity 150ms ease; }`\n`.btn:hover { opacity: 0.9; }`\n\nAgora fica suave.\n\nRegra:\n- transition vai no estado normal (não no hover)."
+    },
+    {
+      "title": "Quais propriedades animar (as “boas”)",
+      "body": "Para UI moderna e performance boa, prefira animar:\n\n- `opacity`\n- `transform` (translate/scale/rotate)\n\nEssas são as mais seguras e leves.\n\nEvite animar demais:\n- `width`, `height`, `top`, `left`\n\nPor quê?\n- podem causar mais recalculo de layout e ficar pesado.\n\nRegra prática:\n- microinterações: use transform + opacity."
+    },
+    {
+      "title": "transform: o queridinho das microinterações",
+      "body": "Exemplo profissional (botão sobe 1px):\n\n`.btn { transition: transform 150ms ease; }`\n`.btn:hover { transform: translateY(-1px); }`\n\nOu card com leve zoom:\n\n`.card { transition: transform 180ms ease; }`\n`.card:hover { transform: translateY(-2px); }`\n\nIsso dá sensação de qualidade."
+    },
+    {
+      "title": "Timing functions: ease, linear, ease-in-out",
+      "body": "O timing function controla a “curva”:\n\n- `linear`: constante (pode parecer artificial)\n- `ease`: padrão (ok)\n- `ease-in-out`: suave no começo e fim (muito usado)\n\nRegra prática:\n- para UI: `ease` ou `ease-in-out`.\n\nSe quiser nível pro:\n- use `cubic-bezier(...)` (mais tarde)."
+    },
+    {
+      "title": "Duração: curto é melhor",
+      "body": "Transição boa é rápida e sutil.\n\nPadrões comuns:\n- 120ms a 220ms\n\nRegra prática:\n- hover: 150ms\n- abrir/fechar coisas: 200ms a 300ms\n\nSe ficar lento:\n- parece lag, não elegância."
+    },
+    {
+      "title": "transition: all (evite)",
+      "body": "Iniciante faz:\n`transition: all 300ms;`\n\nProblemas:\n- anima coisas que você nem queria\n- pode gerar efeitos estranhos\n- pode custar performance\n\nRegra profissional:\n- declare só o que você quer animar:\n\n`transition: transform 150ms ease, opacity 150ms ease;`"
+    },
+    {
+      "title": "Acessibilidade: respeitar prefers-reduced-motion",
+      "body": "Algumas pessoas preferem menos movimento.\n\nVocê já viu na Aula 20.\n\nPara transitions, um padrão é:\n\n`@media (prefers-reduced-motion: reduce) {`\n  `.btn, .card { transition: none !important; }`\n`}`\n\nIsso evita desconforto."
+    },
+    {
+      "title": "Padrão pro para botões e cards (cola)",
+      "body": "Um padrão simples e bonito:\n\n- botão: hover com opacity + translate\n- card: hover com translate leve\n\nE sempre:\n- transition no estado normal\n- duração curta\n- propriedades específicas"
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Transition suaviza mudanças\n- Declare no estado normal\n- Prefira `transform` e `opacity`\n- Duração curta (150–220ms)\n- Evite `transition: all`\n- Respeite reduced-motion\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 21 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Transition serve para:",
+        "options": [
+          { "key": "A", "text": "Suavizar mudanças de propriedades" },
+          { "key": "B", "text": "Criar banco de dados" }
+        ],
+        "answer": "A",
+        "explain": "Transition só suaviza quando algo muda (hover, focus, classe...)."
+      },
+      {
+        "id": 2,
+        "question": "O lugar correto para declarar transition geralmente é:",
+        "options": [
+          { "key": "A", "text": "No estado normal do elemento" },
+          { "key": "B", "text": "Somente no :hover" }
+        ],
+        "answer": "A",
+        "explain": "Se declarar só no hover, a volta pode ficar instantânea."
+      },
+      {
+        "id": 3,
+        "question": "Propriedades mais seguras para animar em UI são:",
+        "options": [
+          { "key": "A", "text": "transform e opacity" },
+          { "key": "B", "text": "width e height sempre" }
+        ],
+        "answer": "A",
+        "explain": "Transform/opacity são leves e comuns em microinterações."
+      },
+      {
+        "id": 4,
+        "question": "transition: all é:",
+        "options": [
+          { "key": "A", "text": "Geralmente evitado (anima coisas sem querer)" },
+          { "key": "B", "text": "A melhor prática sempre" }
+        ],
+        "answer": "A",
+        "explain": "Melhor declarar só as propriedades desejadas."
+      },
+      {
+        "id": 5,
+        "question": "Uma duração comum para hover é:",
+        "options": [
+          { "key": "A", "text": "150ms a 220ms" },
+          { "key": "B", "text": "3000ms" }
+        ],
+        "answer": "A",
+        "explain": "Hover deve ser rápido e sutil."
+      },
+      {
+        "id": 6,
+        "question": "Timing function controla:",
+        "options": [
+          { "key": "A", "text": "A curva de aceleração da transição" },
+          { "key": "B", "text": "O tamanho da fonte" }
+        ],
+        "answer": "A",
+        "explain": "Ease/linear/ease-in-out mudam a sensação."
+      },
+      {
+        "id": 7,
+        "question": "Um padrão pro de hover em botão pode ser:",
+        "options": [
+          { "key": "A", "text": "transform: translateY(-1px)" },
+          { "key": "B", "text": "position: absolute no botão" }
+        ],
+        "answer": "A",
+        "explain": "Um micro-movimento dá sensação de qualidade."
+      },
+      {
+        "id": 8,
+        "question": "Para reduced-motion, uma boa prática é:",
+        "options": [
+          { "key": "A", "text": "Remover/reduzir transitions via media query" },
+          { "key": "B", "text": "Aumentar ainda mais as animações" }
+        ],
+        "answer": "A",
+        "explain": "Respeita preferências do usuário."
+      },
+      {
+        "id": 9,
+        "question": "Se você coloca transition só no :hover, pode acontecer:",
+        "options": [
+          { "key": "A", "text": "A volta (mouse sair) ficar sem transição" },
+          { "key": "B", "text": "O site parar de funcionar" }
+        ],
+        "answer": "A",
+        "explain": "Por isso transition costuma ficar no estado base."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo de transition em UI é:",
+        "options": [
+          { "key": "A", "text": "Dar feedback suave e melhorar percepção de qualidade" },
+          { "key": "B", "text": "Fazer o CSS substituir o HTML" }
+        ],
+        "answer": "A",
+        "explain": "Microinterações bem feitas deixam tudo mais \"polido\"."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Transitions profissionais (microinterações) */\n\n.btn {\n  transition: transform 150ms ease, opacity 150ms ease;\n}\n\n.btn:hover {\n  transform: translateY(-1px);\n  opacity: 0.95;\n}\n\n.card {\n  transition: transform 180ms ease;\n}\n\n.card:hover {\n  transform: translateY(-2px);\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .btn,\n  .card {\n    transition: none !important;\n  }\n}\n"
+  }
+}

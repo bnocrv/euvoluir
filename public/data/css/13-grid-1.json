@@ -1,0 +1,159 @@
+{
+  "id": "13-grid-1",
+  "title": "Aula 13 — Grid 1: colunas, linhas, gap e template",
+  "steps": [
+    {
+      "title": "Por que Grid existe (e quando usar)",
+      "body": "Flexbox é ótimo para **1 direção** (linha OU coluna).\n\nGrid é ótimo para **2 direções ao mesmo tempo**:\n- colunas E linhas\n\nUse Grid quando você pensa em “grade”:\n- galeria\n- dashboard\n- cards alinhados em colunas\n- layout com áreas\n\nHoje você vai dominar a base do Grid:\n- `display: grid`\n- colunas (`grid-template-columns`)\n- linhas (`grid-template-rows`)\n- `gap`\n- `fr` (fração)\n\nCom isso você já cria layout profissional."
+    },
+    {
+      "title": "Como ligar o Grid (no container)",
+      "body": "Grid começa no **pai**:\n\n`.grid { display: grid; }`\n\nAssim como flex:\n- o container vira grid\n- os filhos viram grid items"
+    },
+    {
+      "title": "grid-template-columns: criando colunas",
+      "body": "Essa é a propriedade mais importante do Grid.\n\nExemplo:\n`.grid { grid-template-columns: 200px 200px 200px; }`\n\nIsso cria 3 colunas fixas.\n\nMas o jeito moderno usa `fr`."
+    },
+    {
+      "title": "fr: a unidade “fração” do Grid",
+      "body": "`fr` significa “uma parte do espaço disponível”.\n\nExemplos:\n- `1fr 1fr` → duas colunas iguais\n- `1fr 2fr` → a segunda é o dobro da primeira\n\nExemplo:\n`.grid { grid-template-columns: 1fr 1fr 1fr; }`\n\nIsso cria 3 colunas iguais que se ajustam ao container."
+    },
+    {
+      "title": "gap: espaço entre linhas e colunas",
+      "body": "Grid também usa `gap`:\n\n`.grid { gap: 16px; }`\n\nVocê pode separar:\n- `column-gap: 24px;`\n- `row-gap: 12px;`\n\nMas na maioria dos casos:\n- `gap` resolve tudo."
+    },
+    {
+      "title": "grid-template-rows: linhas (quando você precisa controlar)",
+      "body": "Por padrão, as linhas crescem conforme o conteúdo.\n\nMas você pode definir:\n\n`.grid { grid-template-rows: 80px 1fr 80px; }`\n\nIsso é comum em layouts tipo:\n- topo\n- conteúdo\n- rodapé\n\nPara cards e listas, muitas vezes você não precisa definir rows."
+    },
+    {
+      "title": "repeat(): menos repetição, mais limpeza",
+      "body": "Se você quer 3 colunas iguais, em vez de escrever:\n- `1fr 1fr 1fr`\n\nVocê escreve:\n- `repeat(3, 1fr)`\n\nExemplo:\n`.grid { grid-template-columns: repeat(3, 1fr); }`\n\nIsso é padrão profissional."
+    },
+    {
+      "title": "Exemplo real: grid de cards (3 colunas)",
+      "body": "Modelo clássico:\n\n`.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }`\n\nE cada `.card` ocupa uma célula.\n\nResultado:\n- alinhamento perfeito em colunas\n- espaçamento consistente\n\nDepois, na Aula 14, você vai aprender a deixar isso responsivo sem sofrimento."
+    },
+    {
+      "title": "A diferença mental (Flex vs Grid)",
+      "body": "Pense assim:\n\n- **Flex**: alinhar itens em uma direção (linha OU coluna)\n- **Grid**: organizar itens em linhas E colunas (grade)\n\nVocê vai usar os dois.\n\nProjeto profissional tem:\n- flex para barras e alinhamentos pequenos\n- grid para layout de páginas e cards."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Usar Grid para tudo e complicar o simples.\n2) Esquecer gap e tentar espaçar com margin em cada item.\n3) Definir colunas fixas (px) e quebrar no mobile.\n\nRegra:\n- use `fr` e `repeat`.\n- use `gap`."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Grid = layout 2D\n- `display: grid` no pai\n- `grid-template-columns` define colunas\n- `fr` divide espaço\n- `gap` espaça\n- `repeat()` evita repetição\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 13 (CSS)",
+    "instructions": "A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Grid é mais indicado para layout:",
+        "options": [
+          { "key": "A", "text": "2D (linhas e colunas)" },
+          { "key": "B", "text": "1D (apenas uma direção)" }
+        ],
+        "answer": "A",
+        "explain": "Grid trabalha bem em duas dimensões."
+      },
+      {
+        "id": 2,
+        "question": "Para ativar Grid, você coloca:",
+        "options": [
+          { "key": "A", "text": "display: grid no container (pai)" },
+          { "key": "B", "text": "display: grid nos filhos" }
+        ],
+        "answer": "A",
+        "explain": "Assim como flex, a ativação é no pai."
+      },
+      {
+        "id": 3,
+        "question": "grid-template-columns serve para:",
+        "options": [
+          { "key": "A", "text": "Definir as colunas do grid" },
+          { "key": "B", "text": "Definir a cor do texto" }
+        ],
+        "answer": "A",
+        "explain": "Essa propriedade cria a grade de colunas."
+      },
+      {
+        "id": 4,
+        "question": "A unidade fr significa:",
+        "options": [
+          { "key": "A", "text": "Fração do espaço disponível" },
+          { "key": "B", "text": "Pixels fixos" }
+        ],
+        "answer": "A",
+        "explain": "fr divide o espaço livre do container."
+      },
+      {
+        "id": 5,
+        "question": "repeat(3, 1fr) cria:",
+        "options": [
+          { "key": "A", "text": "3 colunas iguais" },
+          { "key": "B", "text": "1 coluna com 3 linhas" }
+        ],
+        "answer": "A",
+        "explain": "Repeat repete o padrão 3 vezes."
+      },
+      {
+        "id": 6,
+        "question": "gap serve para:",
+        "options": [
+          { "key": "A", "text": "Criar espaçamento entre colunas e linhas" },
+          { "key": "B", "text": "Criar borda no elemento" }
+        ],
+        "answer": "A",
+        "explain": "Gap é o espaçamento do grid."
+      },
+      {
+        "id": 7,
+        "question": "Em um grid de cards, o mais comum é definir:",
+        "options": [
+          { "key": "A", "text": "grid-template-columns e gap" },
+          { "key": "B", "text": "grid-template-rows fixo para tudo" }
+        ],
+        "answer": "A",
+        "explain": "Para cards, colunas + gap normalmente bastam."
+      },
+      {
+        "id": 8,
+        "question": "Flex é melhor para:",
+        "options": [
+          { "key": "A", "text": "Alinhamentos em uma direção (barra/menu)" },
+          { "key": "B", "text": "Layout em grade 2D complexo" }
+        ],
+        "answer": "A",
+        "explain": "Flex é 1D, ótimo para barras e alinhamentos."
+      },
+      {
+        "id": 9,
+        "question": "Usar muitas colunas fixas em px pode:",
+        "options": [
+          { "key": "A", "text": "Quebrar no mobile" },
+          { "key": "B", "text": "Melhorar automaticamente responsividade" }
+        ],
+        "answer": "A",
+        "explain": "PX fixo pode estourar em telas pequenas."
+      },
+      {
+        "id": 10,
+        "question": "O padrão moderno para colunas iguais é:",
+        "options": [
+          { "key": "A", "text": "repeat(n, 1fr)" },
+          { "key": "B", "text": "Usar float em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Repeat + fr é limpo e escalável."
+      }
+    ]
+  },
+  "extra": {
+    "modelCss": "/* Grid base: cards */\n\n.cards {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 16px;\n}\n\n.card {\n  padding: 16px;\n  border: 1px solid #ddd;\n  border-radius: 14px;\n}\n\n/* Exemplo de colunas diferentes */\n.layout {\n  display: grid;\n  grid-template-columns: 280px 1fr;\n  gap: 16px;\n}\n"
+  }
+}
