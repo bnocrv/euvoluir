@@ -1,0 +1,76 @@
+﻿{
+    "id":  "01-introducao",
+    "title":  "Aula 01 - Introdução prática",
+    "steps":  [
+                  {
+                      "title":  "Visão geral",
+                      "body":  "Nesta aula você inicia a trilha de Word.\n\nObjetivo:\n- Entender os conceitos base\n- Aplicar no contexto da empresa\n- Criar rotina de uso no dia a dia"
+                  },
+                  {
+                      "title":  "Conceitos essenciais",
+                      "body":  "Base da aula:\n- Termos principais\n- Fluxo de trabalho recomendado\n- Erros comuns para evitar no começo"
+                  },
+                  {
+                      "title":  "Primeira prática guiada",
+                      "body":  "Passo a passo sugerido:\n- Abrir o ambiente de trabalho\n- Executar uma tarefa simples\n- Revisar resultado e ajustar"
+                  },
+                  {
+                      "title":  "Resumo",
+                      "body":  "Você concluiu a primeira aula e já tem uma base inicial para evoluir nas próximas etapas da trilha."
+                  }
+              ],
+    "quiz":  {
+                 "title":  "Quiz rápido - Aula 01",
+                 "instructions":  "Responda A ou B para fixar os conceitos principais.",
+                 "questions":  [
+                                   {
+                                       "id":  1,
+                                       "question":  "Qual é o foco desta aula?",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Criar base prática inicial"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Cobrir todos os tópicos avançados"
+                                                       }
+                                                   ],
+                                       "answer":  "A",
+                                       "explain":  "Aula 01 foca em fundamentos e início prático."
+                                   },
+                                   {
+                                       "id":  2,
+                                       "question":  "Qual abordagem gera melhor aprendizado no início?",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Prática com passos simples"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Pular direto para tarefas complexas"
+                                                       }
+                                                   ],
+                                       "answer":  "A",
+                                       "explain":  "Evoluir por etapas reduz erros e melhora retenção."
+                                   },
+                                   {
+                                       "id":  3,
+                                       "question":  "Depois da aula 01, o próximo passo é...",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Continuar a trilha e praticar"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Parar de revisar"
+                                                       }
+                                                   ],
+                                       "answer":  "A",
+                                       "explain":  "Continuidade e prática consolidam o aprendizado."
+                                   }
+                               ]
+             }
+}

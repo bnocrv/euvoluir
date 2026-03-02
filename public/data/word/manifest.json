@@ -1,0 +1,11 @@
+﻿{
+    "courseId":  "word",
+    "title":  "Word - fundamentos para documentos profissionais",
+    "lessons":  [
+                    {
+                        "id":  "01-introducao",
+                        "title":  "Aula 01 - Introdução prática",
+                        "file":  "01-introducao.json"
+                    }
+                ]
+}

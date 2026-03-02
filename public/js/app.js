@@ -1,4 +1,5 @@
 import { createRouter, navigate } from "./router.js";
+import { getSession } from "./auth.js";
 import { LandingPage } from "./pages/landing.js";
 import { LoginPage } from "./pages/login.js";
 import { DashboardPage } from "./pages/dashboard.js";
@@ -7,7 +8,7 @@ import { LessonPage } from "./pages/lesson.js";
 const app = document.querySelector("#app");
 
 const routes = {
-  "/": () => LandingPage(app),
+  "/": () => (getSession() ? navigate("/dashboard") : LandingPage(app)),
   "/login": () => LoginPage(app),
   "/dashboard": () => DashboardPage(app),
   "/course/:courseId": () => LessonPage(app),

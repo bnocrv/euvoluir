@@ -5,7 +5,7 @@ import { getSession, logout } from "../auth.js";
 function getBackTarget(route, session) {
   const parts = route.split("/").filter(Boolean);
 
-  if (route === "/dashboard") return "/";
+  if (route === "/dashboard") return session ? "" : "/";
   if (route === "/login") return session ? "/dashboard" : "/";
   if (parts[0] === "course" && parts.length === 2) return "/dashboard";
   if (parts[0] === "course" && parts.length >= 3) return `/course/${parts[1]}`;

@@ -1,0 +1,11 @@
+﻿{
+    "courseId":  "compras",
+    "title":  "Compras - fundamentos de aquisição e negociação",
+    "lessons":  [
+                    {
+                        "id":  "01-introducao",
+                        "title":  "Aula 01 - Introdução prática",
+                        "file":  "01-introducao.json"
+                    }
+                ]
+}
