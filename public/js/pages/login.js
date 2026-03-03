@@ -1,5 +1,6 @@
 // public/js/pages/login.js
 import { Header, bindHeaderEvents } from "../components/header.js";
+import { Footer } from "../components/footer.js";
 import { login, getSession } from "../auth.js";
 import { navigate } from "../router.js";
 
@@ -35,6 +36,7 @@ export function LoginPage(app) {
           </div>
         </div>
       </main>
+      ${Footer()}
     </div>
   `;
 

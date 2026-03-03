@@ -1,5 +1,6 @@
 // public/js/pages/lesson.js
 import { Header, bindHeaderEvents } from "../components/header.js";
+import { Footer } from "../components/footer.js";
 import { requireAuth } from "../auth.js";
 import { navigate, getRoute } from "../router.js";
 import { loadCourseManifest, loadLesson } from "../api.js";
@@ -139,6 +140,7 @@ function renderCourseLessonsListPage(app, courseId, manifest) {
           </div>
         </div>
       </main>
+      ${Footer()}
     </div>
   `;
 
@@ -325,6 +327,7 @@ export async function LessonPage(app) {
         <button class="mobile-trail-fab" id="btn-toggle-sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Abrir trilha de aulas">></button>
         <div class="mobile-trail-backdrop" id="mobile-trail-backdrop"></div>
       </main>
+      ${Footer()}
     </div>
   `;
 

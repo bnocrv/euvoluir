@@ -1,9 +1,10 @@
-import { createRouter, navigate } from "./router.js";
+﻿import { createRouter, navigate } from "./router.js";
 import { getSession } from "./auth.js";
 import { LandingPage } from "./pages/landing.js";
 import { LoginPage } from "./pages/login.js";
 import { DashboardPage } from "./pages/dashboard.js";
 import { LessonPage } from "./pages/lesson.js";
+import { Footer } from "./components/footer.js";
 
 const app = document.querySelector("#app");
 
@@ -27,6 +28,7 @@ function notFound(path) {
           </div>
         </div>
       </main>
+      ${Footer()}
     </div>
   `;
   app.querySelector("#go-home").addEventListener("click", () => navigate("/"));

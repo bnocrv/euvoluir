@@ -1,5 +1,6 @@
 ﻿// public/js/pages/dashboard.js
 import { Header, bindHeaderEvents } from "../components/header.js";
+import { Footer } from "../components/footer.js";
 import { requireAuth } from "../auth.js";
 import { navigate } from "../router.js";
 
@@ -121,6 +122,7 @@ export function DashboardPage(app) {
           </div>
         </div>
       </main>
+      ${Footer()}
     </div>
   `;
 

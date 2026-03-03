@@ -1,5 +1,6 @@
 // public/js/pages/landing.js
 import { Header, bindHeaderEvents } from "../components/header.js";
+import { Footer } from "../components/footer.js";
 import { navigate } from "../router.js";
 import { getSession } from "../auth.js";
 
@@ -47,6 +48,7 @@ export function LandingPage(app) {
           </section>
         </div>
       </main>
+      ${Footer()}
     </div>
   `;
 
