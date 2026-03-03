@@ -1,0 +1,172 @@
+{
+  "id": "37-macros-vba",
+  "title": "Aula 37 — Macros e VBA (introdução): gravar macro, entender código e segurança",
+  "steps": [
+    {
+      "title": "O que é uma macro (bem simples)",
+      "body": "Macro é uma automação.\n\nEla serve para:\n- repetir tarefas\n- evitar trabalho manual\n- padronizar processos\n\nExemplos:\n- formatar um relatório inteiro com 1 clique\n- copiar dados, limpar e gerar uma planilha final\n- criar botões para ações\n\nRegra:\n- macro = “Excel fazendo por você o que você faria no mouse/teclado”."
+    },
+    {
+      "title": "O que é VBA (e como ele entra nisso)",
+      "body": "VBA é a linguagem usada pelo Excel para escrever macros.\n\nVocê pode:\n- gravar uma macro (o Excel gera VBA)\n- editar o código\n- criar macros do zero\n\nRegra:\n- gravar macro é o caminho mais fácil para começar.\n- entender o código te dá controle."
+    },
+    {
+      "title": "Arquivos com macro (XLSM) — regra obrigatória",
+      "body": "Se seu arquivo tem macro, salve como:\n- **.XLSM**\n\nSenão:\n- o Excel pode remover o código\n\nRegra:\n- macro → XLSM (sempre)."
+    },
+    {
+      "title": "Ativar a guia Desenvolvedor (se não aparecer)",
+      "body": "Para trabalhar com macros, você precisa da guia:\n- **Desenvolvedor**\n\nComo ativar (geralmente):\n- Arquivo → Opções → Personalizar Faixa de Opções\n- marcar “Desenvolvedor”\n\nRegra:\n- sem a guia Desenvolvedor, fica difícil gravar e gerenciar macros."
+    },
+    {
+      "title": "Gravar macro (passo a passo) — seu primeiro automação",
+      "body": "1) Desenvolvedor → **Gravar Macro**\n2) Dê um nome (sem espaço):\n- `FormatarRelatorio`\n3) Escolha onde salvar:\n- Esta pasta de trabalho (normal)\n4) (Opcional) Tecla de atalho\n5) OK\n\nAgora faça ações simples:\n- colocar cabeçalho em negrito\n- ajustar largura\n- aplicar formato moeda\n\nDepois:\n6) Desenvolvedor → **Parar Gravação**\n\nRegra:\n- a macro grava exatamente o que você faz."
+    },
+    {
+      "title": "Executar macro (jeitos comuns)",
+      "body": "Você pode rodar macro por:\n\n- Desenvolvedor → Macros → Executar\n- Atalho (se tiver)\n- Botão na planilha (mais amigável)\n\nRegra:\n- para usuário final, botão é mais fácil."
+    },
+    {
+      "title": "Abrir o Editor VBA (VBE) e ver o código",
+      "body": "Para ver o código:\n- **Alt + F11**\n\nVocê vai encontrar:\n- Módulos\n- ThisWorkbook\n- Planilhas\n\nRegra:\n- a macro gravada normalmente fica em um **Módulo**."
+    },
+    {
+      "title": "Lendo um código gravado (o mínimo para entender)",
+      "body": "Quando você grava, o VBA costuma gerar algo assim (conceito):\n\n- selecionar uma planilha\n- selecionar um intervalo\n- aplicar formatação\n\nCoisas que você vai ver muito:\n- `Range(\"A1\")` = célula A1\n- `Range(\"A1:D1\")` = intervalo\n- `.Font.Bold = True` = negrito\n- `.NumberFormat = \"R$ #,##0.00\"` = formato\n\nRegra:\n- VBA é bem “descritivo”: você lê e entende a intenção."
+    },
+    {
+      "title": "Macro gravada tem problemas (e isso é normal)",
+      "body": "Macros gravadas geralmente:\n- usam muito `Select` e `Selection`\n- ficam longas\n- quebram se o usuário estiver em outra planilha\n\nMas elas são ótimas para aprender.\n\nRegra:\n- gravar é o rascunho; melhorar é o avanço."
+    },
+    {
+      "title": "Primeira melhoria: evitar Select (conceito)",
+      "body": "Em vez de:\n- selecionar e depois formatar\n\nVocê pode formatar direto:\n- `Worksheets(\"Relatorio\").Range(\"A1:D1\").Font.Bold = True`\n\nPor que é melhor?\n- mais rápido\n- menos chance de erro\n\nRegra:\n- 'selecionar' é para humanos. Código bom aponta direto."
+    },
+    {
+      "title": "Segurança de macros (muito importante)",
+      "body": "Macros podem ser usadas para coisas maliciosas.\n\nBoas práticas:\n- não habilite macro de arquivo desconhecido\n- use arquivos de fonte confiável\n- prefira salvar em locais confiáveis\n- se for compartilhar, explique o que a macro faz\n\nRegra:\n- macro é poderosa, então segurança é obrigatória."
+    },
+    {
+      "title": "Configurações de macro (visão geral)",
+      "body": "No Excel existe controle de segurança:\n- Central de Confiabilidade\n- Configurações de Macro\n\nVocê pode:\n- desabilitar macros\n- habilitar com aviso\n- habilitar em local confiável\n\nRegra:\n- o ideal é “habilitar com aviso” e só liberar quando confia."
+    },
+    {
+      "title": "Mini prática (120 minutos) — macro de formatação + botão",
+      "body": "1) Crie uma planilha simples com uma tabela (A1:E20).\n\n2) Grave uma macro chamada `FormatarRelatorio` que faça:\n- Cabeçalho (linha 1) em negrito\n- AutoAjuste de colunas\n- Formato moeda na coluna de valor\n- Borda na tabela\n\n3) Pare a gravação.\n\n4) Abra o VBE (Alt+F11) e localize o módulo.\n\n5) Leia o código e identifique pelo menos:\n- quais linhas aplicam negrito\n- quais linhas ajustam colunas\n- quais linhas aplicam formato\n\n6) Insira um botão:\n- Desenvolvedor → Inserir → Botão\n- associe à macro\n\n7) Teste: bagunce a formatação e clique no botão.\n\nObjetivo:\n- gravar, executar, entender o básico do código e entregar com botão."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Macro automatiza tarefas repetitivas\n- VBA é a linguagem das macros\n- Arquivo com macro deve ser XLSM\n- Gravar macro é o jeito mais fácil de começar\n- Alt+F11 abre o editor VBA\n- Macros gravadas têm muito Select (normal)\n- Segurança é obrigatória: só habilite de fonte confiável\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 37 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Macro é:",
+        "options": [
+          { "key": "A", "text": "Uma automação de tarefas no Excel" },
+          { "key": "B", "text": "Um tipo de gráfico" }
+        ],
+        "answer": "A",
+        "explain": "Macro repete ações automaticamente."
+      },
+      {
+        "id": 2,
+        "question": "VBA é:",
+        "options": [
+          { "key": "A", "text": "A linguagem usada para escrever macros no Excel" },
+          { "key": "B", "text": "Um formato de arquivo de imagem" }
+        ],
+        "answer": "A",
+        "explain": "VBA é código para automação."
+      },
+      {
+        "id": 3,
+        "question": "Arquivo com macro deve ser salvo como:",
+        "options": [
+          { "key": "A", "text": "XLSM" },
+          { "key": "B", "text": "XLSX" }
+        ],
+        "answer": "A",
+        "explain": "XLSX pode remover macros."
+      },
+      {
+        "id": 4,
+        "question": "Para gravar macro, você usa a guia:",
+        "options": [
+          { "key": "A", "text": "Desenvolvedor" },
+          { "key": "B", "text": "Revisão" }
+        ],
+        "answer": "A",
+        "explain": "Macros ficam na guia Desenvolvedor."
+      },
+      {
+        "id": 5,
+        "question": "Alt + F11 abre:",
+        "options": [
+          { "key": "A", "text": "O Editor do VBA (VBE)" },
+          { "key": "B", "text": "A janela de impressão" }
+        ],
+        "answer": "A",
+        "explain": "É o atalho do editor."
+      },
+      {
+        "id": 6,
+        "question": "Uma macro gravada normalmente:",
+        "options": [
+          { "key": "A", "text": "Grava exatamente os passos que você fez" },
+          { "key": "B", "text": "Adivinha o que você queria fazer" }
+        ],
+        "answer": "A",
+        "explain": "Ela registra suas ações."
+      },
+      {
+        "id": 7,
+        "question": "Um problema comum de macro gravada é:",
+        "options": [
+          { "key": "A", "text": "Usar muito Select/Selection e ficar frágil" },
+          { "key": "B", "text": "Ser impossível de ler" }
+        ],
+        "answer": "A",
+        "explain": "Select é comum em macro gravada."
+      },
+      {
+        "id": 8,
+        "question": "Uma prática melhor que Select é:",
+        "options": [
+          { "key": "A", "text": "Referenciar o Range diretamente (sem selecionar)" },
+          { "key": "B", "text": "Adicionar mais Select" }
+        ],
+        "answer": "A",
+        "explain": "Direto é mais rápido e robusto."
+      },
+      {
+        "id": 9,
+        "question": "Sobre segurança, o correto é:",
+        "options": [
+          { "key": "A", "text": "Não habilitar macros de arquivos desconhecidos" },
+          { "key": "B", "text": "Habilitar qualquer macro sem pensar" }
+        ],
+        "answer": "A",
+        "explain": "Macro pode ser maliciosa."
+      },
+      {
+        "id": 10,
+        "question": "Uma forma amigável de entregar macro para usuário é:",
+        "options": [
+          { "key": "A", "text": "Criar um botão na planilha para executar" },
+          { "key": "B", "text": "Mandar abrir o VBE e rodar manualmente" }
+        ],
+        "answer": "A",
+        "explain": "Botão é simples e acessível."
+      }
+    ]
+  },
+  "extra": {
+    "receitaBotao": "Receita: botão para macro\n\n1) Guia Desenvolvedor → Inserir\n2) Botão (Controle de Formulário)\n3) Desenhe o botão\n4) Escolha a macro (FormatarRelatorio)\n5) Renomeie o texto do botão\n\nResultado:\nUsuário executa com 1 clique.",
+    "lembreteSeguranca": "Lembrete de segurança\n\n- Macro pode ser perigosa\n- Só habilite de fonte confiável\n- Prefira arquivos em local confiável\n- Explique o que a macro faz antes de compartilhar"
+  }
+}

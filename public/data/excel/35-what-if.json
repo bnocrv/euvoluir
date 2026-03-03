@@ -1,0 +1,168 @@
+{
+  "id": "35-what-if",
+  "title": "Aula 35 — Análise de hipóteses: Atingir Meta, Tabela de Dados e Cenários",
+  "steps": [
+    {
+      "title": "O que é análise de hipóteses (bem simples)",
+      "body": "Análise de hipóteses é usar o Excel para responder:\n\n- “E se eu mudar esse valor?”\n- “Quanto eu preciso vender para bater a meta?”\n- “Qual seria o resultado em cenários diferentes?”\n\nVocê vai usar isso para:\n- metas\n- simulações\n- decisões\n\nRegra:\n- hipótese = mudar entradas e observar o impacto no resultado."
+    },
+    {
+      "title": "Pré-requisito: tem que existir uma fórmula de resultado",
+      "body": "Essas ferramentas precisam de:\n\n- uma célula de entrada (o que você muda)\n- uma célula de resultado (calculada por fórmula)\n\nExemplo:\n- Entrada: Preço (B1)\n- Entrada: Quantidade (B2)\n- Resultado: Receita (B3 = B1*B2)\n\nRegra:\n- sem fórmula de resultado, não existe simulação."
+    },
+    {
+      "title": "Atingir Meta (Goal Seek) — achar o valor necessário",
+      "body": "Atingir Meta resolve:\n- qual valor eu preciso em X para chegar em Y?\n\nExemplo:\n- Quero Receita = 10.000\n- Mudando a Quantidade\n\nCaminho:\n- **Dados → Análise de Hipóteses → Atingir Meta**\n\nVocê define:\n- Definir célula: resultado (ex.: B3)\n- Para valor: 10000\n- Alterando célula: entrada (ex.: B2)\n\nRegra:\n- Atingir Meta muda 1 variável para bater 1 resultado."
+    },
+    {
+      "title": "Quando Atingir Meta funciona bem (e quando não funciona)",
+      "body": "Funciona bem quando:\n- a relação é “contínua” (muda e o resultado muda)\n- a fórmula é estável\n\nPode falhar quando:\n- a fórmula tem limites (ex.: mínimo/máximo)\n- a relação não é linear ou tem várias soluções\n- precisa mudar duas variáveis ao mesmo tempo (aí entra Solver na aula 36)\n\nRegra:\n- Atingir Meta é ótimo para 1 entrada → 1 saída."
+    },
+    {
+      "title": "Tabela de Dados (Data Table) — testar várias hipóteses de uma vez",
+      "body": "Tabela de Dados serve para simular:\n- vários valores de entrada\n- e ver o resultado para cada um\n\nExemplo 1 variável:\n- testar quantidades 10, 20, 30...\n- e ver Receita\n\nCaminho:\n- Dados → Análise de Hipóteses → **Tabela de Dados**\n\nRegra:\n- Tabela de Dados cria uma grade de simulação automática."
+    },
+    {
+      "title": "Tabela de Dados 1 variável (conceito prático)",
+      "body": "Estrutura típica:\n\n- Você coloca valores de teste em uma coluna (ex.: A2:A12)\n- Em B1 você aponta a fórmula do resultado (ex.: =B3)\n- Seleciona a área inteira (A1:B12)\n- Cria Tabela de Dados informando:\n  - Célula de entrada da coluna (ex.: B2)\n\nRegra:\n- você “liga” a lista de testes a uma célula de entrada."
+    },
+    {
+      "title": "Tabela de Dados 2 variáveis (mais poderosa)",
+      "body": "Você consegue simular duas entradas.\n\nExemplo:\n- Linhas: Quantidade\n- Colunas: Preço\n- Resultado: Receita\n\nVocê monta:\n- lista de quantidades na primeira coluna\n- lista de preços na primeira linha\n- canto superior esquerdo aponta para a fórmula do resultado\n\nDepois:\n- Dados → Tabela de Dados\n- informar:\n  - célula de entrada da linha (Preço)\n  - célula de entrada da coluna (Quantidade)\n\nRegra:\n- 2 variáveis = matriz de cenários (muito útil)."
+    },
+    {
+      "title": "Cenários (Scenario Manager) — salvar conjuntos de entradas",
+      "body": "Cenários permitem salvar combinações do tipo:\n- Pessimista\n- Realista\n- Otimista\n\nCada cenário é um conjunto de valores para várias células.\n\nCaminho:\n- Dados → Análise de Hipóteses → **Gerenciador de Cenários**\n\nRegra:\n- Cenário é “pacote de entradas” que você alterna com 1 clique."
+    },
+    {
+      "title": "Exemplo de cenários (mundo real)",
+      "body": "Você tem:\n- Preço (B1)\n- Quantidade (B2)\n- Custo (B3)\n- Lucro (B4 = B1*B2 - B3)\n\nCenários:\n- Pessimista: preço menor, quantidade menor, custo maior\n- Realista: valores médios\n- Otimista: preço maior, quantidade maior, custo menor\n\nRegra:\n- cenários são ótimos para apresentar decisão para outra pessoa."
+    },
+    {
+      "title": "Boas práticas (para simulação ficar confiável)",
+      "body": "1) Separe uma área só para entradas (parâmetros)\n2) Nomeie as entradas (ex.: Preco, Qtd) se quiser clareza\n3) Nunca misture valores digitados dentro de fórmulas\n4) Tenha uma célula de resultado bem definida\n\nRegra:\n- simulação boa = modelo bem montado (entrada → cálculo → resultado)."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Atingir Meta não encontra solução\n- confira se a célula de resultado depende mesmo da entrada\n\n2) Tabela de Dados recalcula lento\n- é normal em planilhas grandes; use com moderação\n\n3) Cenários sobrepõem valores e confundem\n- documente quais células são entradas\n\nRegra:\n- se a ferramenta não funciona, o modelo está mal conectado."
+    },
+    {
+      "title": "Mini prática (120 minutos) — meta de vendas e simulações",
+      "body": "Monte um modelo simples:\n\nEntradas:\n- B1: Preço\n- B2: Quantidade\n- B3: Custo fixo\n\nResultados:\n- B4: Receita = B1*B2\n- B5: Lucro = B4 - B3\n\n1) Atingir Meta:\n- faça o Lucro (B5) virar 5000 alterando Quantidade (B2)\n\n2) Tabela de Dados (1 variável):\n- teste Quantidade 100 a 1000\n- e veja o Lucro\n\n3) Tabela de Dados (2 variáveis):\n- Preço (linha) e Quantidade (coluna)\n- resultado Lucro\n\n4) Cenários:\n- Pessimista / Realista / Otimista mudando Preço, Quantidade e Custo\n\nObjetivo:\n- usar as 3 ferramentas em um modelo real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Análise de hipóteses responde “e se...?”\n- Precisa de entrada + resultado com fórmula\n- Atingir Meta: 1 variável para bater 1 resultado\n- Tabela de Dados: simular vários valores (1 ou 2 variáveis)\n- Cenários: salvar conjuntos de entradas (pessimista/realista/otimista)\n- Modelo bem montado é o que faz tudo funcionar\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 35 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Análise de hipóteses serve para:",
+        "options": [
+          { "key": "A", "text": "Simular mudanças em entradas e ver impacto no resultado" },
+          { "key": "B", "text": "Apenas colorir células" }
+        ],
+        "answer": "A",
+        "explain": "É ferramenta de simulação/decisão."
+      },
+      {
+        "id": 2,
+        "question": "Atingir Meta ajusta:",
+        "options": [
+          { "key": "A", "text": "Uma variável para alcançar um resultado" },
+          { "key": "B", "text": "Dez variáveis ao mesmo tempo" }
+        ],
+        "answer": "A",
+        "explain": "Para várias variáveis, entra o Solver."
+      },
+      {
+        "id": 3,
+        "question": "Para usar Atingir Meta você precisa de:",
+        "options": [
+          { "key": "A", "text": "Uma célula resultado com fórmula que depende de uma entrada" },
+          { "key": "B", "text": "Apenas uma célula com texto" }
+        ],
+        "answer": "A",
+        "explain": "Sem dependência, não tem como ajustar."
+      },
+      {
+        "id": 4,
+        "question": "Tabela de Dados serve para:",
+        "options": [
+          { "key": "A", "text": "Testar vários valores e ver o resultado automaticamente" },
+          { "key": "B", "text": "Proteger planilha" }
+        ],
+        "answer": "A",
+        "explain": "Ela gera uma grade de simulações."
+      },
+      {
+        "id": 5,
+        "question": "Tabela de Dados pode simular:",
+        "options": [
+          { "key": "A", "text": "1 ou 2 variáveis" },
+          { "key": "B", "text": "Apenas 1 variável sempre" }
+        ],
+        "answer": "A",
+        "explain": "Existe versão de 2 variáveis (linhas e colunas)."
+      },
+      {
+        "id": 6,
+        "question": "Cenários servem para:",
+        "options": [
+          { "key": "A", "text": "Salvar conjuntos de valores para várias entradas" },
+          { "key": "B", "text": "Somar valores por critérios" }
+        ],
+        "answer": "A",
+        "explain": "Você alterna entre Pessimista/Realista/Otimista."
+      },
+      {
+        "id": 7,
+        "question": "Uma boa prática em simulação é:",
+        "options": [
+          { "key": "A", "text": "Separar uma área só para entradas (parâmetros)" },
+          { "key": "B", "text": "Misturar números dentro das fórmulas" }
+        ],
+        "answer": "A",
+        "explain": "Entradas claras deixam o modelo confiável."
+      },
+      {
+        "id": 8,
+        "question": "Se Atingir Meta não funciona, uma causa comum é:",
+        "options": [
+          { "key": "A", "text": "O resultado não depende da célula que você está tentando alterar" },
+          { "key": "B", "text": "A célula está em negrito" }
+        ],
+        "answer": "A",
+        "explain": "Sem ligação, não há como encontrar solução."
+      },
+      {
+        "id": 9,
+        "question": "Tabela de Dados pode deixar a planilha mais lenta porque:",
+        "options": [
+          { "key": "A", "text": "Ela força muitos recálculos" },
+          { "key": "B", "text": "Ela apaga fórmulas" }
+        ],
+        "answer": "A",
+        "explain": "Simulação em grade recalcula muitas vezes."
+      },
+      {
+        "id": 10,
+        "question": "Regra mental correta é:",
+        "options": [
+          { "key": "A", "text": "Entrada → cálculo → resultado (modelo bem conectado)" },
+          { "key": "B", "text": "Resultado → entrada sem fórmula" }
+        ],
+        "answer": "A",
+        "explain": "Sem conexão, não existe hipótese."
+      }
+    ]
+  },
+  "extra": {
+    "receitaAtingirMeta": "Receita: Atingir Meta\n\nDados → Análise de Hipóteses → Atingir Meta\n\n- Definir célula: resultado (com fórmula)\n- Para valor: meta desejada\n- Alterando célula: entrada (variável)\n\nUse quando:\n1 variável precisa bater 1 resultado.",
+    "modeloBase": "Modelo base para simulações\n\nEntradas:\n- Preço\n- Quantidade\n- Custo\n\nResultados:\n- Receita = Preço*Quantidade\n- Lucro = Receita - Custo\n\nCom isso você usa:\n- Atingir Meta\n- Tabela de Dados\n- Cenários"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "36-solver",
+  "title": "Aula 36 — Solver: otimização na prática (melhor resultado com restrições)",
+  "steps": [
+    {
+      "title": "O que é o Solver (bem simples)",
+      "body": "Solver é uma ferramenta de **otimização**.\n\nEle responde perguntas do tipo:\n- “Qual o melhor resultado possível?”\n- “Como maximizar lucro?”\n- “Como minimizar custo?”\n\nMas com uma condição importante:\n- você tem **restrições** (limites)\n\nRegra:\n- Atingir Meta (aula 35) ajusta 1 variável.\n- Solver ajusta várias variáveis com restrições."
+    },
+    {
+      "title": "Quando usar Solver (casos reais)",
+      "body": "Use Solver quando você tem:\n\n- várias decisões ao mesmo tempo\n- um objetivo (max/min/igual)\n- limites\n\nExemplos:\n- mix de produtos para maximizar lucro com estoque limitado\n- escala de funcionários com horas mínimas/máximas\n- orçamento com limites de gasto\n- transporte/roteirização simples\n\nRegra:\n- se tem 'melhor possível' + limites, é Solver."
+    },
+    {
+      "title": "Pré-requisito: modelo bem montado (entrada → cálculo → objetivo)",
+      "body": "Você precisa definir:\n\n1) **Células variáveis** (o Solver pode mexer)\n- ex.: quantidade de cada produto\n\n2) **Célula objetivo** (resultado que você quer max/min)\n- ex.: lucro total\n\n3) **Restrições** (limites)\n- ex.: quantidade <= estoque\n- ex.: orçamento <= 5000\n- ex.: quantidade inteira (não pode 2,5 unidades)\n\nRegra:\n- Solver não cria o modelo; ele otimiza o modelo que você já montou."
+    },
+    {
+      "title": "Ativar o Solver (quando não aparece)",
+      "body": "Às vezes o Solver não aparece no menu.\n\nNo Excel, ele é um suplemento.\n\nCaminho típico:\n- Arquivo → Opções → Suplementos\n- Gerenciar: Suplementos do Excel → Ir\n- marcar **Solver Add-in**\n\nDepois ele aparece em:\n- **Dados → Solver**\n\nRegra:\n- sem ativar o suplemento, não tem Solver."
+    },
+    {
+      "title": "Partes do Solver (o formulário)",
+      "body": "No Solver você configura:\n\n- **Definir objetivo**: qual célula quer otimizar\n- **Para**:\n  - Máx (maximizar)\n  - Mín (minimizar)\n  - Valor (igualar a um número)\n- **Alterando as células variáveis**: as entradas\n- **Sujeito às restrições**: regras/limites\n\nRegra:\n- objetivo + variáveis + restrições = problema completo."
+    },
+    {
+      "title": "Exemplo didático 1: maximizar lucro com estoque limitado",
+      "body": "Você vende 2 produtos:\n\n- Produto A: lucro por unidade = 10\n- Produto B: lucro por unidade = 15\n\nVocê tem estoque máximo:\n- A <= 100\n- B <= 80\n\nE uma limitação de produção (exemplo):\n- A + B <= 150\n\nModelo:\n- Variáveis: qtd_A (B2), qtd_B (B3)\n- Lucro total (B5) = 10*qtd_A + 15*qtd_B\n\nSolver:\n- Objetivo: B5 (Máx)\n- Variáveis: B2:B3\n- Restrições:\n  - B2 <= 100\n  - B3 <= 80\n  - B2 + B3 <= 150\n  - B2, B3 inteiros (opcional)\n\nRegra:\n- Solver vai encontrar a combinação que dá maior lucro sem quebrar limites."
+    },
+    {
+      "title": "Restrições comuns (as que você vai usar sempre)",
+      "body": "Tipos comuns:\n\n- <= (menor ou igual)\n- >= (maior ou igual)\n- = (igual)\n\nE restrições especiais:\n- **inteiro** (não aceita decimal)\n- **binário (0 ou 1)** (sim/não)\n- não-negatividade (>= 0)\n\nRegra:\n- quase todo problema real tem >=0 e inteiros."
+    },
+    {
+      "title": "Inteiro e binário (quando faz sentido)",
+      "body": "Inteiro:\n- quando não faz sentido vender 2,5 unidades\n\nBinário (0/1):\n- quando é decisão liga/desliga\n\nExemplos:\n- escolher abrir ou não uma loja\n- escolher usar ou não uma rota\n\nRegra:\n- use binário para decisões 'sim/não'."
+    },
+    {
+      "title": "Métodos de resolução (sem aprofundar demais)",
+      "body": "O Solver tem métodos (dependendo da versão):\n\n- **Simplex LP**: problemas lineares (muito comum)\n- **GRG Nonlinear**: problemas não lineares\n- **Evolutionary**: problemas mais complexos\n\nRegra prática:\n- se suas fórmulas são somas e multiplicações simples (lineares), Simplex LP costuma funcionar bem."
+    },
+    {
+      "title": "Como saber se seu problema é linear (regra simples)",
+      "body": "Geralmente é linear quando:\n- você tem soma de termos do tipo (constante * variável)\n- e restrições também são somas\n\nExemplo linear:\n- lucro = 10*A + 15*B\n- A+B <= 150\n\nNão linear quando:\n- tem potência, produto entre variáveis, raiz, etc.\n\nRegra:\n- se tem variável multiplicando variável, tende a virar não linear."
+    },
+    {
+      "title": "Erros comuns (e como resolver)",
+      "body": "1) Solver não encontra solução\n- restrições impossíveis (contraditórias)\n\n2) Solver dá solução decimal\n- você esqueceu a restrição de inteiro\n\n3) Resultado “estranho”\n- objetivo ou variáveis selecionadas erradas\n\n4) Valores negativos\n- falta restrição >=0\n\nRegra:\n- se a solução parece absurda, revise objetivo, variáveis e restrições."
+    },
+    {
+      "title": "Mini prática (120 minutos) — mix de produtos com limite de orçamento",
+      "body": "Monte este modelo:\n\nVariáveis:\n- B2 = qtd_A\n- B3 = qtd_B\n\nParâmetros:\n- lucro_A = 10\n- lucro_B = 15\n- custo_A = 4\n- custo_B = 6\n\nCálculos:\n- Lucro total (B5) = 10*B2 + 15*B3\n- Custo total (B6) = 4*B2 + 6*B3\n\nRestrições:\n- B2 <= 100\n- B3 <= 80\n- B2 + B3 <= 150\n- B6 <= 700 (orçamento)\n- B2 e B3 inteiros\n- B2, B3 >= 0\n\nSolver:\n- Objetivo: B5 (Máx)\n- Variáveis: B2:B3\n- Restrições acima\n\nObjetivo:\n- entender otimização com restrições reais."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Solver otimiza (máx/mín/valor) com várias variáveis\n- Você precisa: objetivo + variáveis + restrições\n- Restrições comuns: <=, >=, =, inteiro, binário, >=0\n- Simplex LP costuma ser o método para problemas lineares\n- Se a solução estiver estranha, revise seleção e restrições\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 36 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Solver é usado para:",
+        "options": [
+          { "key": "A", "text": "Otimizar um resultado (máx/mín) com restrições" },
+          { "key": "B", "text": "Somar colunas automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ele resolve problemas de otimização."
+      },
+      {
+        "id": 2,
+        "question": "A diferença principal entre Atingir Meta e Solver é:",
+        "options": [
+          { "key": "A", "text": "Solver pode mexer em várias variáveis com restrições" },
+          { "key": "B", "text": "Atingir Meta é mais complexo que Solver" }
+        ],
+        "answer": "A",
+        "explain": "Atingir Meta é 1 variável; Solver é multi-variável."
+      },
+      {
+        "id": 3,
+        "question": "Para usar Solver você precisa de:",
+        "options": [
+          { "key": "A", "text": "Objetivo + variáveis + restrições" },
+          { "key": "B", "text": "Apenas uma cor bonita" }
+        ],
+        "answer": "A",
+        "explain": "Sem essas partes, não há problema definido."
+      },
+      {
+        "id": 4,
+        "question": "Se o Solver dá uma solução com 2,5 unidades e isso não faz sentido, você deve:",
+        "options": [
+          { "key": "A", "text": "Adicionar restrição de inteiro" },
+          { "key": "B", "text": "Desligar a planilha" }
+        ],
+        "answer": "A",
+        "explain": "Inteiro impede valores decimais."
+      },
+      {
+        "id": 5,
+        "question": "Uma restrição binária significa:",
+        "options": [
+          { "key": "A", "text": "A variável só pode ser 0 ou 1" },
+          { "key": "B", "text": "A variável pode ser qualquer número" }
+        ],
+        "answer": "A",
+        "explain": "É decisão liga/desliga."
+      },
+      {
+        "id": 6,
+        "question": "Se o Solver retorna valores negativos e isso não pode, você deve:",
+        "options": [
+          { "key": "A", "text": "Adicionar restrição >= 0" },
+          { "key": "B", "text": "Colocar borda na célula" }
+        ],
+        "answer": "A",
+        "explain": "Não-negatividade impede negativos."
+      },
+      {
+        "id": 7,
+        "question": "Simplex LP é indicado geralmente para:",
+        "options": [
+          { "key": "A", "text": "Problemas lineares (somas e multiplicações simples)" },
+          { "key": "B", "text": "Somente gráficos" }
+        ],
+        "answer": "A",
+        "explain": "LP = programação linear."
+      },
+      {
+        "id": 8,
+        "question": "Se o Solver não encontra solução, um motivo comum é:",
+        "options": [
+          { "key": "A", "text": "Restrições contraditórias (impossíveis)" },
+          { "key": "B", "text": "A célula estar em itálico" }
+        ],
+        "answer": "A",
+        "explain": "Restrições podem impedir qualquer solução."
+      },
+      {
+        "id": 9,
+        "question": "Antes de rodar o Solver, é boa prática:",
+        "options": [
+          { "key": "A", "text": "Conferir se objetivo e variáveis estão selecionados corretamente" },
+          { "key": "B", "text": "Mesclar células de entrada" }
+        ],
+        "answer": "A",
+        "explain": "Erro de seleção causa resultado absurdo."
+      },
+      {
+        "id": 10,
+        "question": "Uma regra mental correta é:",
+        "options": [
+          { "key": "A", "text": "Solver otimiza com limites; se parece absurdo, revise restrições" },
+          { "key": "B", "text": "Solver sempre dá a resposta perfeita sem depender do modelo" }
+        ],
+        "answer": "A",
+        "explain": "Solver depende totalmente do modelo e restrições."
+      }
+    ]
+  },
+  "extra": {
+    "modeloBaseSolver": "Modelo base (template)\n\nVariáveis: x1, x2, x3...\nObjetivo: Max/Mín em uma célula (ex.: Lucro)\nRestrições:\n- limites (<=, >=)\n- não-negatividade (>=0)\n- inteiros (se necessário)\n\nDica:\nSe a solução vier fracionada e não faz sentido, marque 'inteiro'.",
+    "checklistAntesDeRodar": "Checklist antes de Rodar\n\n- Objetivo correto?\n- Variáveis corretas?\n- Restrições completas?\n  - limites\n  - >=0\n  - inteiro/binário (se necessário)\n- Fórmulas do objetivo dependem das variáveis?\n\nSe sim, rodar Solver."
+  }
+}

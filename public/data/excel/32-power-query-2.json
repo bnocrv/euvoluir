@@ -1,0 +1,172 @@
+{
+  "id": "32-power-query-2",
+  "title": "Aula 32 — Power Query 2: mesclar/anexar consultas e atualizar automaticamente",
+  "steps": [
+    {
+      "title": "Objetivo da aula (o que muda do nível 1 para o 2)",
+      "body": "Na aula 31 você aprendeu:\n- importar\n- transformar\n- carregar\n- atualizar\n\nAgora você vai aprender as duas coisas mais poderosas do Power Query:\n\n1) **Anexar (Append)**\n- juntar tabelas uma embaixo da outra (mesmas colunas)\n\n2) **Mesclar (Merge)**\n- juntar tabelas “lado a lado” (tipo PROCX), usando uma chave\n\nE também:\n- como atualizar tudo sem refazer\n\nRegra:\n- Append = empilhar.\n- Merge = procurar e trazer colunas."
+    },
+    {
+      "title": "Anexar (Append) — juntar tabelas iguais (empilhar)",
+      "body": "Use Anexar quando você tem várias tabelas com o mesmo formato.\n\nExemplo real:\n- Vendas_Jan\n- Vendas_Fev\n- Vendas_Mar\n\nTodas têm colunas:\nData | Vendedor | Produto | Valor | Status\n\nVocê quer:\n- uma tabela única com tudo.\n\nRegra:\n- Anexar = “somar linhas” (uma tabela abaixo da outra)."
+    },
+    {
+      "title": "Como anexar consultas (passo a passo)",
+      "body": "No Power Query:\n\n1) Abra o editor (Dados → Consultas e Conexões → Editar)\n2) Guia **Início** → **Anexar Consultas**\n3) Escolha:\n- Anexar consultas (2)\n- ou Anexar consultas como nova (melhor)\n4) Selecione as consultas\n5) OK\n\nResultado:\n- uma consulta final com todas as linhas.\n\nRegra:\n- use “como nova” para não bagunçar as consultas originais."
+    },
+    {
+      "title": "Cuidados no Append (colunas precisam bater)",
+      "body": "Para anexar bem:\n- as colunas devem existir com o mesmo nome\n- os tipos devem ser compatíveis\n\nSe uma tabela tiver coluna faltando:\n- o Power Query cria coluna com nulo\n\nSe nomes forem diferentes:\n- vira bagunça (colunas duplicadas)\n\nRegra:\n- padronize cabeçalhos antes de anexar."
+    },
+    {
+      "title": "Mesclar (Merge) — trazer dados de outra tabela pela chave",
+      "body": "Mesclar é o equivalente “Power Query” de:\n- PROCX\n- ÍNDICE+CORRESP\n\nVocê tem:\n- Tabela A: Pedidos (com CodProduto)\n- Tabela B: CadastroProdutos (CodProduto → Produto, Preço)\n\nVocê quer:\n- trazer Produto e Preço para a tabela de pedidos.\n\nRegra:\n- Merge = “buscar e juntar colunas” por uma chave."
+    },
+    {
+      "title": "Como mesclar consultas (passo a passo)",
+      "body": "1) No editor, selecione a consulta principal (ex.: Pedidos)\n2) Início → **Mesclar Consultas** (Merge)\n3) Escolha a segunda tabela (ex.: CadastroProdutos)\n4) Clique na coluna chave em ambas (ex.: CodProduto)\n5) Escolha o tipo de junção (Join)\n6) OK\n\nDepois:\n- aparece uma coluna com 'Tabela'\n- você clica no ícone de expandir (setinhas)\n- escolhe quais colunas quer trazer (Produto, Preço)\n\nRegra:\n- merge sempre tem 2 fases: mesclar (criar link) e expandir (trazer colunas)."
+    },
+    {
+      "title": "Tipos de junção (Join) — o que cada um significa na prática",
+      "body": "Os mais importantes:\n\n1) **Left Outer (Esquerda)**\n- mantém todas as linhas da tabela principal\n- traz dados da segunda quando encontrar\n- (mais usado)\n\n2) **Inner (Interna)**\n- só mantém linhas que existem nas duas\n\n3) **Right Outer (Direita)**\n- mantém a segunda (menos comum)\n\nRegra:\n- 90% dos casos de relatório: Left Outer."
+    },
+    {
+      "title": "Chave e tipo (texto vs número) — o motivo nº1 de merge falhar",
+      "body": "Se o merge não encontra nada, quase sempre é porque:\n\n- uma tabela tem CodProduto como número\n- a outra tem CodProduto como texto\n\nExemplo:\n- 00123 (texto) ≠ 123 (número)\n\nSolução:\n- antes do merge, garanta o mesmo tipo nas duas colunas (Texto ou Número)\n\nRegra:\n- merge é sensível a tipo e espaços (igual PROCX)."
+    },
+    {
+      "title": "Atualização automática (o ciclo completo)",
+      "body": "Quando você cria um pipeline:\n- fonte → limpeza → anexar → mesclar → tabela final\n\nDepois, para atualizar:\n- Dados → **Atualizar Tudo**\n\nEle refaz tudo na ordem.\n\nRegra:\n- Power Query vira um “ETL” (extrair, transformar, carregar) dentro do Excel."
+    },
+    {
+      "title": "De arquivo e De pasta (visão geral para crescer depois)",
+      "body": "Além de tabela do Excel, você pode importar:\n\n- De Texto/CSV\n- De Pasta (pega vários arquivos e anexa)\n\nIsso é muito usado para:\n- juntar vários meses automaticamente\n\nRegra:\n- 'De Pasta' + Append é um combo clássico para relatórios mensais."
+    },
+    {
+      "title": "Boas práticas de organização (para não virar caos)",
+      "body": "Organize consultas em camadas:\n\n1) **Staging (bruto)**\n- consulta que só importa e faz limpeza mínima\n\n2) **Transform (tratado)**\n- padroniza colunas, tipos, remove lixo\n\n3) **Final (modelo)**\n- anexado/mesclado pronto para relatório\n\nRegra:\n- separar consultas evita quebrar tudo quando precisar mudar um passo."
+    },
+    {
+      "title": "Erros comuns (e como resolver)",
+      "body": "1) Merge não encontra (muito nulo)\n- tipo diferente na chave\n- espaços extras\n\n2) Append criou colunas duplicadas\n- cabeçalhos diferentes entre tabelas\n\n3) Mudou nome de coluna na fonte\n- etapa quebra; ajuste a etapa ou padronize fonte\n\n4) Atualizar e “sumiu” linha\n- pode ser filtro/remoção em etapas\n\nRegra:\n- quando der problema, olhe as Etapas aplicadas e descubra em qual passo quebrou."
+    },
+    {
+      "title": "Mini prática (120 minutos) — pipeline completo (anexar + mesclar)",
+      "body": "Você vai montar 3 tabelas fonte (Ctrl+T):\n\nA) `tbVendas_Jan` e B) `tbVendas_Fev` (mesmas colunas):\n- Data | CodProduto | Qtd | Valor\n\nC) `tbProdutos`:\n- CodProduto | Produto | Categoria\n\nPassos:\n\n1) Crie consultas para tbVendas_Jan e tbVendas_Fev (Dados → De Tabela/Intervalo)\n- ajuste tipos (Data como Data, Valor como Número)\n\n2) Anexe as duas como uma nova consulta `Vendas_All`.\n\n3) Mescle `Vendas_All` com `tbProdutos` pela chave CodProduto (Left Outer).\n\n4) Expanda e traga Produto e Categoria.\n\n5) Fechar e Carregar a tabela final.\n\n6) Adicione uma linha nova em tbVendas_Fev e clique Atualizar Tudo.\n\nObjetivo:\n- sentir o poder: relatório final atualiza com 1 clique."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Anexar (Append) empilha tabelas (mesmas colunas)\n- Mesclar (Merge) junta tabelas por chave (tipo PROCX)\n- Left Outer é o join mais comum\n- Tipos na chave precisam bater (texto vs número)\n- Pipeline: importar → limpar → anexar → mesclar → carregar\n- Atualizar Tudo refaz tudo automaticamente\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 32 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Anexar (Append) serve para:",
+        "options": [
+          { "key": "A", "text": "Juntar tabelas iguais uma embaixo da outra (empilhar linhas)" },
+          { "key": "B", "text": "Buscar preço em outra tabela (lookup)" }
+        ],
+        "answer": "A",
+        "explain": "Append = somar linhas."
+      },
+      {
+        "id": 2,
+        "question": "Mesclar (Merge) serve para:",
+        "options": [
+          { "key": "A", "text": "Juntar tabelas por uma chave, trazendo colunas (tipo PROCX)" },
+          { "key": "B", "text": "Mudar a cor das células" }
+        ],
+        "answer": "A",
+        "explain": "Merge = juntar por chave e expandir colunas."
+      },
+      {
+        "id": 3,
+        "question": "No merge, depois de mesclar você normalmente precisa:",
+        "options": [
+          { "key": "A", "text": "Expandir a coluna de tabela para trazer as colunas desejadas" },
+          { "key": "B", "text": "Mesclar de novo sempre" }
+        ],
+        "answer": "A",
+        "explain": "Mesclar cria o link; expandir traz os campos."
+      },
+      {
+        "id": 4,
+        "question": "Left Outer (Esquerda) significa:",
+        "options": [
+          { "key": "A", "text": "Mantém todas as linhas da tabela principal" },
+          { "key": "B", "text": "Mantém só o que existir nas duas tabelas" }
+        ],
+        "answer": "A",
+        "explain": "Inner é que mantém só o que bate nas duas."
+      },
+      {
+        "id": 5,
+        "question": "Um motivo comum para merge falhar é:",
+        "options": [
+          { "key": "A", "text": "Tipo diferente na chave (texto vs número) ou espaços" },
+          { "key": "B", "text": "A planilha estar em negrito" }
+        ],
+        "answer": "A",
+        "explain": "Chave precisa bater exatamente."
+      },
+      {
+        "id": 6,
+        "question": "Append pode criar colunas duplicadas quando:",
+        "options": [
+          { "key": "A", "text": "As tabelas têm cabeçalhos com nomes diferentes" },
+          { "key": "B", "text": "As tabelas têm as mesmas colunas" }
+        ],
+        "answer": "A",
+        "explain": "Nomes diferentes viram colunas separadas."
+      },
+      {
+        "id": 7,
+        "question": "Depois de montar o pipeline, para atualizar você usa:",
+        "options": [
+          { "key": "A", "text": "Atualizar Tudo" },
+          { "key": "B", "text": "Ctrl+Z" }
+        ],
+        "answer": "A",
+        "explain": "Refresh reaplica as etapas."
+      },
+      {
+        "id": 8,
+        "question": "Importar 'De Pasta' é útil porque:",
+        "options": [
+          { "key": "A", "text": "Permite juntar vários arquivos automaticamente (combo com Append)" },
+          { "key": "B", "text": "Apaga duplicados automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "É usado para consolidar vários arquivos."
+      },
+      {
+        "id": 9,
+        "question": "Boa prática de organização de consultas é:",
+        "options": [
+          { "key": "A", "text": "Separar em Staging (bruto), Transform (tratado), Final (modelo)" },
+          { "key": "B", "text": "Fazer tudo em uma consulta gigante sem etapas claras" }
+        ],
+        "answer": "A",
+        "explain": "Camadas facilitam manutenção."
+      },
+      {
+        "id": 10,
+        "question": "Uma regra mental correta é:",
+        "options": [
+          { "key": "A", "text": "Append empilha; Merge traz colunas por chave" },
+          { "key": "B", "text": "Merge empilha; Append faz lookup" }
+        ],
+        "answer": "A",
+        "explain": "Essa distinção evita confusão."
+      }
+    ]
+  },
+  "extra": {
+    "mapaRapido": "Mapa rápido (Power Query)\n\n- Append (Anexar) = empilhar linhas (mesmas colunas)\n- Merge (Mesclar) = juntar por chave (tipo PROCX)\n- Join mais comum: Left Outer\n- Passo obrigatório no merge: Expandir\n\nDica:\nSe merge não bate, confira tipo da chave (Texto vs Número) e espaços.",
+    "pipelineModelo": "Pipeline modelo (camadas)\n\n1) Staging: importar + tipos\n2) Transform: limpar, padronizar colunas\n3) Final: anexar + mesclar + calcular o que precisar\n4) Carregar: tabela pronta para dinâmica/dashboard\n\nAtualização:\nDados → Atualizar Tudo"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "34-power-pivot-dax",
+  "title": "Aula 34 — Power Pivot e DAX (introdução): medidas vs colunas, SUMX e CALCULATE",
+  "steps": [
+    {
+      "title": "O que é Power Pivot e por que ele existe",
+      "body": "Power Pivot é o motor de BI dentro do Excel.\n\nEle permite:\n- trabalhar com **modelo de dados** (várias tabelas relacionadas)\n- criar **medidas** (cálculos) mais poderosas do que fórmulas comuns\n- fazer relatórios que escalam melhor\n\nE a linguagem de cálculo dele é:\n- **DAX**\n\nRegra:\n- Power Pivot + DAX é o “Excel versão BI”."
+    },
+    {
+      "title": "DAX em 1 frase (bem simples)",
+      "body": "DAX é uma linguagem para criar cálculos em modelos de dados.\n\nVocê usa DAX para criar:\n- **Medidas** (cálculos para relatórios)\n- **Colunas calculadas** (cálculos linha a linha dentro de uma tabela)\n\nRegra:\n- Medida = resultado depende do filtro do relatório.\n- Coluna calculada = resultado fixo por linha."
+    },
+    {
+      "title": "Medida vs Coluna calculada (a diferença que mais importa)",
+      "body": "Vamos comparar:\n\n**Coluna calculada**\n- é criada dentro de uma tabela\n- calcula para cada linha\n- fica armazenada\n\nExemplo:\n- TotalLinha = Qtd * Valor (para cada venda)\n\n**Medida**\n- não fica linha a linha\n- calcula na hora, dependendo do que você está vendo\n\nExemplo:\n- TotalVendas = soma do Valor (respeitando filtros)\n\nRegra:\n- se é para relatório (KPI), quase sempre é medida."
+    },
+    {
+      "title": "Contexto de filtro (o conceito mais importante do DAX)",
+      "body": "No DAX, tudo depende do contexto.\n\nExemplo:\n- Você coloca Categoria (Produtos) na tabela dinâmica\n- A medida TotalVendas muda para cada categoria\n\nPor quê?\n- Porque o relatório está filtrando o modelo naquele momento.\n\nRegra:\n- medida “responde” aos filtros (categoria, mês, vendedor...)."
+    },
+    {
+      "title": "Criando sua primeira medida: Total de Vendas",
+      "body": "Suponha que sua tabela fato seja `tbVendas` e tem a coluna `Valor`.\n\nMedida DAX:\n- `Total Vendas := SUM(tbVendas[Valor])`\n\nO que acontece:\n- se você filtrar por mês, a medida muda\n- se você filtrar por produto, a medida muda\n\nRegra:\n- SUM em DAX é parecido com SOMA, mas dentro do modelo."
+    },
+    {
+      "title": "Quando SUM não é suficiente (entra o SUMX)",
+      "body": "SUM soma uma coluna.\n\nMas às vezes você precisa somar um cálculo por linha.\n\nExemplo:\n- Total = Qtd * Preco (por venda)\n\nSe você não tem uma coluna pronta com Total, você pode usar:\n- `SUMX`\n\nMedida:\n- `Total Receita := SUMX(tbVendas; tbVendas[Qtd] * tbVendas[Preco])`\n\nRegra:\n- SUMX = “somar uma expressão linha a linha”."
+    },
+    {
+      "title": "CALCULATE (a função que muda o filtro do cálculo)",
+      "body": "CALCULATE é a função mais importante do DAX.\n\nEla permite:\n- calcular uma medida sob um filtro específico\n\nExemplo:\n- calcular vendas apenas com Status = \"Atrasado\":\n\n`Vendas Atrasadas := CALCULATE([Total Vendas]; tbVendas[Status] = \"Atrasado\")`\n\nRepare:\n- [Total Vendas] é uma medida\n- CALCULATE cria um filtro extra para ela\n\nRegra:\n- CALCULATE = “Total Vendas, mas com uma condição”."
+    },
+    {
+      "title": "Exemplo: % Atrasado (KPI clássico de dashboard)",
+      "body": "Você quer:\n- %Atrasado = Vendas Atrasadas / Total Vendas\n\nMedidas:\n\n1) `Total Vendas := SUM(tbVendas[Valor])`\n\n2) `Vendas Atrasadas := CALCULATE([Total Vendas]; tbVendas[Status] = \"Atrasado\")`\n\n3) `% Atrasado := DIVIDE([Vendas Atrasadas]; [Total Vendas]; 0)`\n\nPor que DIVIDE?\n- evita erro de divisão por zero\n\nRegra:\n- DIVIDE é o “SEERRO da divisão” no DAX."
+    },
+    {
+      "title": "Onde criar medidas (visão prática)",
+      "body": "Normalmente você cria medidas no Power Pivot.\n\nFluxo comum:\n- Adicionar tabelas ao Modelo de Dados\n- Abrir Power Pivot\n- Criar Medidas\n\nDepois você usa essas medidas em:\n- Tabela Dinâmica baseada no Modelo de Dados\n\nRegra:\n- medida DAX vive no modelo e pode ser reutilizada em vários relatórios."
+    },
+    {
+      "title": "Boas práticas (pra não virar bagunça)",
+      "body": "1) Crie uma tabela só para medidas (opcional, mas ajuda)\n2) Nomeie medidas com clareza:\n- Total Vendas\n- Ticket Médio\n- % Atrasado\n3) Prefira medidas a colunas quando for KPI\n4) Modele bem (aula 33) antes de inventar DAX\n\nRegra:\n- DAX fica fácil quando o modelo é bom."
+    },
+    {
+      "title": "Erros comuns (e como pensar)",
+      "body": "1) Criar coluna calculada para tudo\n- arquivo cresce e fica pesado\n\n2) Confundir soma de coluna com soma de expressão\n- use SUMX quando precisa de cálculo por linha\n\n3) Esquecer que filtro muda o resultado\n- medida responde a contexto\n\n4) Divisão por zero\n- use DIVIDE\n\nRegra:\n- DAX é sobre contexto e filtros."
+    },
+    {
+      "title": "Mini prática (120 minutos) — KPIs com DAX no modelo",
+      "body": "Pré:\n- Tenha `tbVendas` no modelo com colunas: Data, CodProduto, Qtd, Preco (ou Valor), Status.\n\nPassos:\n\n1) Crie medida:\n- `Total Vendas := SUM(tbVendas[Valor])`\n\n2) Se não tiver Valor, crie:\n- `Total Receita := SUMX(tbVendas; tbVendas[Qtd] * tbVendas[Preco])`\n\n3) Crie:\n- `Vendas Atrasadas := CALCULATE([Total Vendas]; tbVendas[Status] = \"Atrasado\")`\n\n4) Crie:\n- `% Atrasado := DIVIDE([Vendas Atrasadas]; [Total Vendas]; 0)`\n\n5) Crie uma Tabela Dinâmica do Modelo:\n- Linhas: Categoria (da dimensão Produtos, se tiver)\n- Valores: Total Vendas, % Atrasado\n\n6) Teste filtros:\n- por mês (Timeline)\n- por vendedor\n\nObjetivo:\n- ver medidas mudando com o contexto e entender SUMX/CALCULATE."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Power Pivot usa DAX para cálculos no modelo\n- Medida ≠ Coluna calculada\n- Medida responde ao filtro do relatório (contexto)\n- SUM soma uma coluna\n- SUMX soma uma expressão linha a linha\n- CALCULATE aplica filtros ao cálculo\n- DIVIDE evita divisão por zero\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 34 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Power Pivot é usado para:",
+        "options": [
+          { "key": "A", "text": "Trabalhar com modelo de dados e medidas DAX" },
+          { "key": "B", "text": "Apenas desenhar bordas" }
+        ],
+        "answer": "A",
+        "explain": "Ele é o motor de BI do Excel."
+      },
+      {
+        "id": 2,
+        "question": "DAX é:",
+        "options": [
+          { "key": "A", "text": "Uma linguagem de cálculo para modelos de dados" },
+          { "key": "B", "text": "Um tipo de arquivo do Excel" }
+        ],
+        "answer": "A",
+        "explain": "DAX cria medidas e colunas calculadas."
+      },
+      {
+        "id": 3,
+        "question": "Medida é melhor para:",
+        "options": [
+          { "key": "A", "text": "KPIs e cálculos que mudam com filtros do relatório" },
+          { "key": "B", "text": "Guardar texto fixo por linha" }
+        ],
+        "answer": "A",
+        "explain": "Medidas respondem ao contexto."
+      },
+      {
+        "id": 4,
+        "question": "Coluna calculada é:",
+        "options": [
+          { "key": "A", "text": "Cálculo armazenado linha a linha na tabela" },
+          { "key": "B", "text": "Um filtro visual" }
+        ],
+        "answer": "A",
+        "explain": "Ela existe por linha e fica gravada."
+      },
+      {
+        "id": 5,
+        "question": "SUM em DAX:",
+        "options": [
+          { "key": "A", "text": "Soma uma coluna" },
+          { "key": "B", "text": "Soma uma expressão por linha automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Para expressão por linha, use SUMX."
+      },
+      {
+        "id": 6,
+        "question": "SUMX é usado quando:",
+        "options": [
+          { "key": "A", "text": "Você precisa somar um cálculo linha a linha (Qtd*Preço)" },
+          { "key": "B", "text": "Você quer renomear uma planilha" }
+        ],
+        "answer": "A",
+        "explain": "SUMX itera linhas e soma a expressão."
+      },
+      {
+        "id": 7,
+        "question": "CALCULATE serve para:",
+        "options": [
+          { "key": "A", "text": "Calcular uma medida sob filtros específicos" },
+          { "key": "B", "text": "Criar gráficos de pizza" }
+        ],
+        "answer": "A",
+        "explain": "Ele altera o contexto do cálculo."
+      },
+      {
+        "id": 8,
+        "question": "DIVIDE é recomendado porque:",
+        "options": [
+          { "key": "A", "text": "Evita erro de divisão por zero e permite valor padrão" },
+          { "key": "B", "text": "Deixa o Excel mais colorido" }
+        ],
+        "answer": "A",
+        "explain": "DIVIDE é mais seguro que /. "
+      },
+      {
+        "id": 9,
+        "question": "A ideia mais importante do DAX é:",
+        "options": [
+          { "key": "A", "text": "Contexto de filtro (o resultado muda conforme filtros)" },
+          { "key": "B", "text": "Fonte do texto (Arial ou Calibri)" }
+        ],
+        "answer": "A",
+        "explain": "Medidas respondem ao contexto."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa prática geral é:",
+        "options": [
+          { "key": "A", "text": "Modelar bem (fato/dimensão) e preferir medidas para KPIs" },
+          { "key": "B", "text": "Criar colunas calculadas para tudo" }
+        ],
+        "answer": "A",
+        "explain": "Medidas são mais eficientes e flexíveis para relatórios."
+      }
+    ]
+  },
+  "extra": {
+    "medidasExemplo": "Medidas exemplo (DAX)\n\nTotal Vendas := SUM(tbVendas[Valor])\n\nTotal Receita := SUMX(tbVendas; tbVendas[Qtd] * tbVendas[Preco])\n\nVendas Atrasadas := CALCULATE([Total Vendas]; tbVendas[Status] = \"Atrasado\")\n\n% Atrasado := DIVIDE([Vendas Atrasadas]; [Total Vendas]; 0)\n",
+    "mapaMental": "Mapa mental rápido\n\n- Medida: calcula na hora e respeita filtros\n- Coluna calculada: calcula por linha e fica armazenada\n- SUM: soma coluna\n- SUMX: soma expressão por linha\n- CALCULATE: aplica filtro no cálculo\n- DIVIDE: divisão segura\n"
+  }
+}

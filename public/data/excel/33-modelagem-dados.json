@@ -1,0 +1,172 @@
+{
+  "id": "33-modelagem-dados",
+  "title": "Aula 33 — Modelagem de dados: relacionamentos e tabelas fato/dimensão (base do BI)",
+  "steps": [
+    {
+      "title": "Por que modelagem de dados existe (bem simples)",
+      "body": "Quando seus dados crescem, você percebe que:\n- tem várias tabelas (vendas, produtos, clientes, calendário)\n- repetir informações em todas as tabelas dá erro\n- lookup pra todo lado vira bagunça\n\nModelagem de dados resolve isso criando:\n- tabelas separadas por função\n- relacionamentos entre elas\n\nRegra:\n- modelagem é organizar dados para análise sem duplicar tudo."
+    },
+    {
+      "title": "A ideia central: uma base grande vira um 'modelo'",
+      "body": "Um modelo de dados é:\n- um conjunto de tabelas\n- com relacionamentos\n- que permitem análises cruzadas\n\nExemplo:\n- você tem Vendas (com CodProduto)\n- e Produtos (com CodProduto)\n\nRelacionamento:\n- Vendas se conecta em Produtos pela chave CodProduto\n\nRegra:\n- relacionamento substitui muita “gambiarra” de PROCV."
+    },
+    {
+      "title": "Tabelas fato vs dimensão (o conceito mais importante)",
+      "body": "Existem dois tipos clássicos:\n\n1) **Fato** (o que aconteceu)\n- muitas linhas\n- eventos/transações\n- exemplos: Vendas, Movimentações, Pedidos\n- colunas típicas: Data, CodProduto, Qtd, Valor\n\n2) **Dimensão** (quem/qual/o quê)\n- menos linhas\n- cadastro/atributos\n- exemplos: Produtos, Clientes, Vendedores, Calendário\n- colunas típicas: CodProduto, Nome, Categoria\n\nRegra:\n- Fato = movimento.\n- Dimensão = cadastro."
+    },
+    {
+      "title": "Exemplo simples de estrela (Star Schema)",
+      "body": "O modelo mais comum é 'estrela':\n\n- no centro: Fato (Vendas)\n- ao redor: Dimensões (Produtos, Clientes, Calendário)\n\nVendas tem chaves:\n- CodProduto\n- CodCliente\n- Data\n\nE cada dimensão explica essas chaves.\n\nRegra:\n- estrela é o padrão do BI porque é simples e rápido para analisar."
+    },
+    {
+      "title": "Relacionamentos (como eles funcionam na prática)",
+      "body": "Relacionamento é a ligação entre duas tabelas por uma chave.\n\nExemplo:\n- Produtos[CodProduto] (cadastro)\n- Vendas[CodProduto] (movimento)\n\nQuando está bem modelado:\n- você consegue fazer relatório de vendas por Categoria do produto\n- sem trazer a Categoria para dentro da tabela Vendas\n\nRegra:\n- relacionamento permite usar campos de dimensões para filtrar/agrup ar fatos."
+    },
+    {
+      "title": "Chave única (por que dimensão precisa de código sem repetição)",
+      "body": "Na dimensão, o campo de chave deve ser único.\n\nExemplo:\n- Produtos[CodProduto] não pode ter repetição\n\nSe repetir:\n- relacionamento fica ambíguo\n- relatório pode dar erro ou resultado errado\n\nRegra:\n- dimensão = 1 linha por código."
+    },
+    {
+      "title": "Cardinalidade (1 para muitos) — sem complicar",
+      "body": "O relacionamento mais comum é:\n- **1 para muitos (1:*)**\n\nSignifica:\n- 1 produto no cadastro\n- aparece em muitas vendas\n\nEntão:\n- Produtos (1)\n- Vendas (muitos)\n\nRegra:\n- dimensão (1) → fato (muitos)."
+    },
+    {
+      "title": "Direção do filtro (cuidado básico)",
+      "body": "Normalmente o filtro deve fluir:\n- Dimensão → Fato\n\nIsso garante:\n- quando você filtra Categoria na dimensão Produtos, as Vendas são filtradas corretamente.\n\nRegra:\n- evite filtro “em duas direções” sem necessidade (pode causar confusão e lentidão)."
+    },
+    {
+      "title": "Como criar relacionamento no Excel (visão prática)",
+      "body": "Você pode criar relacionamento quando:\n- você tem tabelas no Excel\n- e adiciona ao Modelo de Dados\n\nCaminhos comuns:\n- Dados → Ferramentas de Dados → **Relacionamentos**\n- ou ao criar Tabela Dinâmica marcando “Adicionar estes dados ao Modelo de Dados”\n\nDepois:\n- criar novo relacionamento e escolher:\n  - tabela/coluna (chave)\n  - tabela relacionada/coluna\n\nRegra:\n- primeiro tenha as tabelas bem definidas e com colunas de chave consistentes."
+    },
+    {
+      "title": "Calendário (dimensão obrigatória em relatórios sérios)",
+      "body": "Em análises por tempo, é comum criar uma dimensão Calendário.\n\nEla permite:\n- ano\n- mês\n- trimestre\n- semana\n\nMesmo que a tabela fato tenha data, o calendário dá campos prontos e consistentes.\n\nRegra:\n- relatório por tempo robusto quase sempre usa uma dimensão calendário."
+    },
+    {
+      "title": "Por que isso prepara o terreno para Power Pivot e DAX",
+      "body": "Quando você modela bem:\n- as tabelas dinâmicas ficam mais poderosas\n- você consegue medidas avançadas (DAX)\n- você reduz colunas repetidas\n\nA próxima aula (34) entra nisso.\n\nRegra:\n- DAX funciona bem quando o modelo está bem feito."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Usar uma única tabela gigante com tudo repetido\n- dá inconsistência e aumenta tamanho\n\n2) Dimensão com chave repetida\n- relacionamento quebra\n\n3) Chaves com tipos diferentes\n- texto vs número (00123 vs 123)\n\n4) Falta de tabela calendário\n- análises por mês/ano ficam limitadas\n\nRegra:\n- modelo bom começa com chaves consistentes."
+    },
+    {
+      "title": "Mini prática (120 minutos) — montar um modelo simples de vendas",
+      "body": "Crie 3 tabelas (Ctrl+T) e nomeie:\n\n1) `tbVendas` (Fato)\n- Data | CodProduto | CodVendedor | Qtd | Valor\n\n2) `tbProdutos` (Dimensão)\n- CodProduto | Produto | Categoria\n\n3) `tbVendedores` (Dimensão)\n- CodVendedor | Vendedor | Regiao\n\nPassos:\n\nA) Garanta que as chaves em dimensões não repetem.\n\nB) Garanta que tipos batem (CodProduto como Texto ou Número em todas).\n\nC) Crie relacionamentos:\n- tbProdutos[CodProduto] (1) → tbVendas[CodProduto] (muitos)\n- tbVendedores[CodVendedor] (1) → tbVendas[CodVendedor] (muitos)\n\nD) Crie uma Tabela Dinâmica usando Modelo de Dados.\n\nE) Teste:\n- Linhas: Categoria (da tbProdutos)\n- Valores: Soma de Valor (da tbVendas)\n\nObjetivo:\n- provar que você consegue analisar fatos usando campos de dimensões via relacionamento."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Modelagem organiza várias tabelas com relacionamentos\n- Fato = transações (muitas linhas)\n- Dimensão = cadastros (poucas linhas)\n- Relacionamento comum: 1 para muitos (dimensão → fato)\n- Chave na dimensão precisa ser única\n- Tipos de chave devem bater\n- Dimensão calendário melhora análises de tempo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 33 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Modelagem de dados serve para:",
+        "options": [
+          { "key": "A", "text": "Organizar tabelas e relacionamentos para análise sem duplicar tudo" },
+          { "key": "B", "text": "Apenas colocar cor nas células" }
+        ],
+        "answer": "A",
+        "explain": "Ela estrutura dados para análise correta."
+      },
+      {
+        "id": 2,
+        "question": "Tabela fato representa:",
+        "options": [
+          { "key": "A", "text": "Eventos/transações (vendas, pedidos, movimentações)" },
+          { "key": "B", "text": "Cadastros (produtos, clientes)" }
+        ],
+        "answer": "A",
+        "explain": "Fato é movimento, geralmente muitas linhas."
+      },
+      {
+        "id": 3,
+        "question": "Tabela dimensão representa:",
+        "options": [
+          { "key": "A", "text": "Cadastros/atributos (produto, cliente, vendedor)" },
+          { "key": "B", "text": "Somente cálculos" }
+        ],
+        "answer": "A",
+        "explain": "Dimensão descreve as chaves."
+      },
+      {
+        "id": 4,
+        "question": "O relacionamento mais comum é:",
+        "options": [
+          { "key": "A", "text": "1 para muitos (dimensão → fato)" },
+          { "key": "B", "text": "muitos para muitos sempre" }
+        ],
+        "answer": "A",
+        "explain": "Um produto aparece em muitas vendas."
+      },
+      {
+        "id": 5,
+        "question": "Na dimensão, a chave deve ser:",
+        "options": [
+          { "key": "A", "text": "Única (sem repetição)" },
+          { "key": "B", "text": "Repetida várias vezes" }
+        ],
+        "answer": "A",
+        "explain": "Chave repetida quebra relacionamento."
+      },
+      {
+        "id": 6,
+        "question": "Um benefício de relacionamento é:",
+        "options": [
+          { "key": "A", "text": "Usar campos da dimensão (Categoria) para analisar a fato (Vendas)" },
+          { "key": "B", "text": "Obrigar você a fazer PROCV em tudo" }
+        ],
+        "answer": "A",
+        "explain": "Relacionamento substitui muita duplicação."
+      },
+      {
+        "id": 7,
+        "question": "Um erro comum que quebra relacionamento é:",
+        "options": [
+          { "key": "A", "text": "Chave com tipo diferente (texto vs número)" },
+          { "key": "B", "text": "Título do relatório grande" }
+        ],
+        "answer": "A",
+        "explain": "00123 (texto) não é 123 (número)."
+      },
+      {
+        "id": 8,
+        "question": "A direção de filtro mais comum é:",
+        "options": [
+          { "key": "A", "text": "Dimensão filtra a fato" },
+          { "key": "B", "text": "Fato filtra a dimensão sempre" }
+        ],
+        "answer": "A",
+        "explain": "Categoria (dimensão) filtra vendas (fato)."
+      },
+      {
+        "id": 9,
+        "question": "Uma dimensão calendário é útil porque:",
+        "options": [
+          { "key": "A", "text": "Cria campos prontos de ano/mês/trimestre de forma consistente" },
+          { "key": "B", "text": "Transforma números em texto" }
+        ],
+        "answer": "A",
+        "explain": "Relatórios de tempo ficam mais robustos."
+      },
+      {
+        "id": 10,
+        "question": "A modelagem bem feita prepara o terreno para:",
+        "options": [
+          { "key": "A", "text": "Power Pivot e DAX (medidas avançadas)" },
+          { "key": "B", "text": "Apagar fórmulas automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "DAX depende de um modelo bem estruturado."
+      }
+    ]
+  },
+  "extra": {
+    "mapaFatoDimensao": "Mapa rápido\n\nFato:\n- muitas linhas\n- transações (Vendas)\n- tem chaves + métricas (Qtd, Valor)\n\nDimensão:\n- poucas linhas\n- cadastros (Produtos, Vendedores)\n- tem chave única + atributos (Categoria)\n\nRelacionamento:\n- Dimensão (1) → Fato (muitos)\n",
+    "checklistModelo": "Checklist antes de criar relacionamentos\n\n- Chave da dimensão é única?\n- Tipos de chave batem (texto/número)?\n- Sem espaços extras na chave?\n- Base (fato) tem as chaves correspondentes?\n- Tenho calendário se vou analisar por tempo?\n"
+  }
+}

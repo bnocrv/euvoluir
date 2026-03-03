@@ -1,0 +1,172 @@
+{
+  "id": "38-projeto-final",
+  "title": "Aula 38 — Projeto final: planilha profissional completa (tabela + validação + dinâmica + dashboard)",
+  "steps": [
+    {
+      "title": "Objetivo do projeto final (o que você vai construir)",
+      "body": "Você vai construir uma solução completa, do jeito profissional:\n\n- Base de dados (Tabela Ctrl+T)\n- Validação de dados (anti-erro)\n- Limpeza/organização (boas práticas)\n- Relatórios (Tabelas Dinâmicas)\n- Dashboard (KPIs + gráficos + filtros)\n\nRegra:\n- projeto final é juntar tudo que você aprendeu em um fluxo único."
+    },
+    {
+      "title": "Arquitetura do arquivo (abas recomendadas)",
+      "body": "Crie abas com nomes claros:\n\n1) `01_Base`\n- onde ficam os dados (tbVendas)\n\n2) `02_Apoio`\n- listas para validação (produtos, status, vendedores)\n\n3) `03_Relatorios`\n- tabelas dinâmicas (resumos)\n\n4) `04_Dashboard`\n- painel final (KPIs, gráficos, filtros)\n\n(5) `99_Config` (opcional)\n- parâmetros e metas\n\nRegra:\n- separar por função deixa o arquivo escalável e fácil de manter."
+    },
+    {
+      "title": "Passo 1 — Criar a Base (Tabela Ctrl+T)",
+      "body": "Na aba `01_Base`, crie uma tabela com cabeçalho:\n\n- Data\n- Vendedor\n- Produto\n- Categoria (opcional)\n- Qtd\n- ValorUnit\n- Total\n- Status\n\nBoas práticas:\n- Total = `=[@Qtd]*[@ValorUnit]` (referência estruturada)\n\nDepois:\n- selecione tudo e Ctrl+T\n- nomeie como `tbVendas`\n\nRegra:\n- base é sagrada: sem mesclar, sem linhas em branco no meio."
+    },
+    {
+      "title": "Passo 2 — Criar listas de apoio (para validação)",
+      "body": "Na aba `02_Apoio`, crie listas:\n\n- ListaProdutos\n- ListaVendedores\n- ListaStatus (OK, Pendente, Atrasado)\n\nSe quiser mais profissional:\n- transforme as listas em Tabela (Ctrl+T) e nomeie.\n\nRegra:\n- validação por lista evita digitação diferente (e relatórios errados)."
+    },
+    {
+      "title": "Passo 3 — Aplicar Validação de Dados na base",
+      "body": "Na `01_Base`, aplique validação:\n\n- Produto: lista de produtos (02_Apoio)\n- Vendedor: lista de vendedores\n- Status: OK/Pendente/Atrasado\n- Qtd: número inteiro >= 1\n- Data: data válida (opcional limitar período)\n\nRegra:\n- base preenchível + validação = planilha vira sistema."
+    },
+    {
+      "title": "Passo 4 — Preparar a base para relatório (limpeza e consistência)",
+      "body": "Checklist de base:\n\n- Data é data real\n- ValorUnit é número/moeda\n- Qtd é inteiro\n- Total calculado\n- Produto/Vendedor sem espaços extras\n\nSe tiver dados importados:\n- use ARRUMAR e Colar Valores\n\nRegra:\n- relatório bom depende de base limpa."
+    },
+    {
+      "title": "Passo 5 — Criar Tabelas Dinâmicas (Relatórios)",
+      "body": "Na aba `03_Relatorios`, crie pelo menos 3 tabelas dinâmicas a partir de `tbVendas`:\n\nA) Total por Produto\n- Produto → Linhas\n- Total → Valores (Soma)\n\nB) Total por Vendedor\n- Vendedor → Linhas\n- Total → Valores\n\nC) Tendência por mês\n- Data → Linhas (agrupada por meses/anos)\n- Total → Valores\n\nD) (Opcional) Atrasados por status\n- Status → Linhas\n- Contagem de registros\n\nRegra:\n- dinâmicas são seus “motores de resumo” para o dashboard."
+    },
+    {
+      "title": "Passo 6 — Criar gráficos (de preferência dinâmicos)",
+      "body": "Com base nas dinâmicas:\n\n- Gráfico de linha: Total por mês\n- Gráfico de barras: Top 10 produtos\n- Gráfico de colunas: Total por vendedor\n\nBoas práticas:\n- sem 3D\n- eixo com moeda\n- ranking ordenado\n\nRegra:\n- gráfico é visual do resumo, não da base bruta."
+    },
+    {
+      "title": "Passo 7 — Montar o Dashboard (KPIs + gráficos + filtros)",
+      "body": "Na aba `04_Dashboard`, monte:\n\nTopo:\n- título + período\n\nCards (KPIs):\n- Faturamento (Soma do Total)\n- Pedidos (Contagem)\n- Ticket Médio (Faturamento/Pedidos)\n- % Atrasados (Atrasados/Total)\n\nGráficos:\n- Linha (tendência)\n- Barra (Top produtos)\n- Coluna (por vendedor)\n\nRegra:\n- KPIs grandes e claros; gráficos para detalhar."
+    },
+    {
+      "title": "Passo 8 — Segmentações e Linha do Tempo (controle do painel)",
+      "body": "Insira:\n- Segmentação: Produto, Vendedor, Status\n- Linha do Tempo: Data\n\nConecte a todas as dinâmicas:\n- Conexões de Relatório\n\nRegra:\n- filtro deve controlar tudo para manter coerência."
+    },
+    {
+      "title": "Passo 9 — Proteção e entrega (o toque final profissional)",
+      "body": "Se for compartilhar:\n\n- destrave apenas as células de entrada na base (se houver)\n- proteja planilha para impedir quebrar fórmulas\n- proteja estrutura (opcional)\n- salve na nuvem para histórico de versões\n\nRegra:\n- proteção + histórico evitam retrabalho."
+    },
+    {
+      "title": "Checklist final (antes de considerar pronto)",
+      "body": "✅ Base\n- [ ] tbVendas (Ctrl+T) com cabeçalhos\n- [ ] Total calculado e correto\n- [ ] validações funcionando\n\n✅ Relatórios\n- [ ] dinâmicas atualizam (Refresh)\n- [ ] campos agrupados (mês/ano)\n\n✅ Dashboard\n- [ ] KPIs claros com unidade\n- [ ] filtros conectados a tudo\n- [ ] visual limpo (sem poluição)\n\n✅ Entrega\n- [ ] proteção aplicada\n- [ ] arquivo salvo como versão final\n\nRegra:\n- se qualquer item falhar, o usuário final vai sofrer."
+    },
+    {
+      "title": "Mini prática (projeto guiado) — roteiro completo",
+      "body": "Siga este roteiro:\n\n1) Crie as abas (01_Base, 02_Apoio, 03_Relatorios, 04_Dashboard)\n2) Monte tbVendas (Ctrl+T) e fórmula Total\n3) Crie listas em 02_Apoio e aplique validação\n4) Preencha 200 linhas de dados (pode ser simulado)\n5) Crie 3 dinâmicas e 3 gráficos\n6) Monte 4 KPIs no dashboard\n7) Insira segmentações e timeline e conecte a todas as dinâmicas\n8) Proteja e teste como usuário\n\nObjetivo:\n- entregar uma planilha pronta para uso real."
+    },
+    {
+      "title": "Resumo do curso (o que você leva daqui)",
+      "body": "- Você aprendeu base profissional (Ctrl+T, validação, proteção)\n- Você aprendeu análise (funções, procura, matrizes)\n- Você aprendeu relatórios (dinâmicas, filtros visuais)\n- Você aprendeu automação (Power Query, Solver, macros)\n- Você aprendeu a montar dashboard com padrão de mercado\n\nSe você consegue fazer esse projeto do zero, você já está acima da média no Excel."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Projeto final (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "No projeto final, a base deve ser:",
+        "options": [
+          { "key": "A", "text": "Uma Tabela (Ctrl+T) com dados limpos e cabeçalhos claros" },
+          { "key": "B", "text": "Células mescladas e linhas em branco no meio" }
+        ],
+        "answer": "A",
+        "explain": "Tabela estruturada é a base de tudo."
+      },
+      {
+        "id": 2,
+        "question": "Validação de dados serve para:",
+        "options": [
+          { "key": "A", "text": "Evitar erro de digitação e padronizar entradas" },
+          { "key": "B", "text": "Deixar a planilha mais colorida" }
+        ],
+        "answer": "A",
+        "explain": "Validação transforma planilha em sistema confiável."
+      },
+      {
+        "id": 3,
+        "question": "Relatórios (tabelas dinâmicas) devem ficar:",
+        "options": [
+          { "key": "A", "text": "Em uma aba separada (ex.: 03_Relatorios)" },
+          { "key": "B", "text": "Misturados no meio da base" }
+        ],
+        "answer": "A",
+        "explain": "Separação melhora manutenção."
+      },
+      {
+        "id": 4,
+        "question": "Dashboard deve conter:",
+        "options": [
+          { "key": "A", "text": "KPIs + gráficos + filtros (segmentações/timeline)" },
+          { "key": "B", "text": "Somente a base completa" }
+        ],
+        "answer": "A",
+        "explain": "Dashboard é visão resumida para decisão."
+      },
+      {
+        "id": 5,
+        "question": "Segmentações/timeline precisam ser:",
+        "options": [
+          { "key": "A", "text": "Conectadas a todas as dinâmicas do painel" },
+          { "key": "B", "text": "Usadas em apenas um gráfico aleatório" }
+        ],
+        "answer": "A",
+        "explain": "Coerência do painel depende disso."
+      },
+      {
+        "id": 6,
+        "question": "O KPI Ticket Médio é:",
+        "options": [
+          { "key": "A", "text": "Faturamento / Pedidos" },
+          { "key": "B", "text": "Pedidos / Faturamento" }
+        ],
+        "answer": "A",
+        "explain": "Ticket médio é receita média por pedido."
+      },
+      {
+        "id": 7,
+        "question": "Uma boa prática visual no dashboard é:",
+        "options": [
+          { "key": "A", "text": "Consistência de formatos e layout em grade" },
+          { "key": "B", "text": "Cada gráfico com um estilo diferente e muitos efeitos" }
+        ],
+        "answer": "A",
+        "explain": "Consistência dá cara profissional."
+      },
+      {
+        "id": 8,
+        "question": "Se a base muda, as tabelas dinâmicas precisam:",
+        "options": [
+          { "key": "A", "text": "Atualizar (Refresh)" },
+          { "key": "B", "text": "Ser apagadas e refeitas" }
+        ],
+        "answer": "A",
+        "explain": "Refresh traz novos dados."
+      },
+      {
+        "id": 9,
+        "question": "Para entregar com segurança, é recomendado:",
+        "options": [
+          { "key": "A", "text": "Proteger fórmulas e deixar editável só o necessário" },
+          { "key": "B", "text": "Deixar tudo destravado para qualquer um mexer" }
+        ],
+        "answer": "A",
+        "explain": "Proteção evita quebrar o arquivo."
+      },
+      {
+        "id": 10,
+        "question": "A regra geral do projeto final é:",
+        "options": [
+          { "key": "A", "text": "Separar base, relatórios e dashboard para manter profissional" },
+          { "key": "B", "text": "Misturar tudo para ficar mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "Separação é padrão de mercado."
+      }
+    ]
+  },
+  "extra": {
+    "roteiroCurto": "Roteiro curto (se você quiser repetir depois)\n\n1) Base (Ctrl+T) + Total\n2) Apoio + Validação\n3) Dinâmicas (Produto, Vendedor, Mês)\n4) Gráficos (Linha, Barra, Coluna)\n5) Dashboard (4 KPIs)\n6) Segmentações + Timeline (conectadas)\n7) Proteção + teste\n",
+    "modeloKpis": "Modelo de KPIs\n\n- Faturamento = Soma(Total)\n- Pedidos = Contagem de registros\n- Ticket Médio = Faturamento / Pedidos\n- % Atrasados = Atrasados / Pedidos (ou / Total, conforme sua regra)\n\nDica:\nSempre deixe unidade clara (R$ / %)."
+  }
+}

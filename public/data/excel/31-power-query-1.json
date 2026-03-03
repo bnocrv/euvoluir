@@ -1,0 +1,180 @@
+{
+  "id": "31-power-query-1",
+  "title": "Aula 31 — Power Query 1: conceitos, importar e transformar (sem “quebrar” a planilha)",
+  "steps": [
+    {
+      "title": "O que é Power Query (bem simples)",
+      "body": "Power Query é um recurso do Excel para **importar e transformar dados** de forma automática.\n\nPense assim:\n- em vez de você limpar dados “na mão” toda semana,\n- você cria um passo a passo (uma receita)\n- e depois só clica em **Atualizar**.\n\nRegra:\n- Power Query transforma limpeza em processo repetível."
+    },
+    {
+      "title": "Quando usar Power Query (casos reais)",
+      "body": "Use Power Query quando:\n- você recebe um CSV todo dia/semana\n- você copia e cola dados repetidamente\n- você precisa limpar sempre do mesmo jeito\n- você junta arquivos (várias lojas, vários meses)\n\nExemplos:\n- vendas do sistema exportadas em CSV\n- planilha de estoque diária\n- relatório mensal por arquivos\n\nRegra:\n- se você faz a mesma limpeza mais de 2 vezes, Power Query vale a pena."
+    },
+    {
+      "title": "A ideia-chave: Power Query não altera sua base original",
+      "body": "Isso é muito importante:\n\n- Power Query lê a fonte (arquivo/tabela)\n- cria uma consulta (query)\n- aplica transformações\n- gera uma saída (tabela carregada)\n\nEle não precisa destruir sua base original.\n\nRegra:\n- Power Query é seguro porque trabalha por “cópia transformada”."
+    },
+    {
+      "title": "Onde fica (caminho no Excel)",
+      "body": "Você usa principalmente a guia:\n- **Dados**\n\nOpções comuns:\n- Obter Dados (De Arquivo, De Pasta, De Tabela/Intervalo)\n- Consultas e Conexões\n- Atualizar Tudo\n\nRegra:\n- tudo de Power Query começa em Dados → Obter Dados."
+    },
+    {
+      "title": "Conceitos básicos (pra não se perder)",
+      "body": "Termos que você vai ver:\n\n- **Fonte**: de onde os dados vêm\n- **Consulta (Query)**: a “receita” de transformação\n- **Etapas aplicadas**: a lista de passos (como um histórico)\n- **Carregar**: mandar o resultado para uma planilha ou modelo\n\nRegra:\n- Etapas aplicadas = seu passo a passo documentado."
+    },
+    {
+      "title": "Importar a partir de uma Tabela do Excel (o jeito mais fácil para começar)",
+      "body": "Se você já tem uma base em Excel:\n\n1) transforme em Tabela (Ctrl+T)\n2) clique na tabela\n3) Dados → **De Tabela/Intervalo**\n\nIsso abre o Editor do Power Query.\n\nRegra:\n- começar com Tabela é o treino mais simples e controlado."
+    },
+    {
+      "title": "Editor do Power Query (o que olhar primeiro)",
+      "body": "No editor, observe:\n\n- painel esquerdo: consultas\n- painel central: prévia dos dados\n- painel direito: **Etapas aplicadas**\n\nVocê faz transformações e elas viram etapas.\n\nRegra:\n- se você errar, dá para remover a etapa (sem pânico)."
+    },
+    {
+      "title": "Transformações essenciais (as mais usadas no início)",
+      "body": "As primeiras transformações que resolvem 80%:\n\n- Remover colunas\n- Remover linhas\n- Remover duplicatas\n- Dividir coluna (por delimitador)\n- Substituir valores\n- Alterar tipo de dados (número, data, texto)\n- Formatar texto (tirar espaços, maiúsculas/minúsculas)\n\nRegra:\n- no Power Query, 'tipo de dados' é muito importante para não dar erro depois."
+    },
+    {
+      "title": "Alterar tipo de dados (o passo que evita dor)",
+      "body": "Power Query tenta adivinhar o tipo:\n- Texto, Número, Data...\n\nSe errar, você pode corrigir:\n- clique no ícone do tipo (ABC/123) na coluna\n- escolha o tipo correto\n\nRegra:\n- coluna de data precisa ser Data.\n- coluna de valor precisa ser Número/Decimal."
+    },
+    {
+      "title": "Dividir coluna por delimitador (o equivalente ao Texto para Colunas, só que automático)",
+      "body": "Se você tem \"PED-2026-000123\":\n\n- Transformar → Dividir Coluna → Por Delimitador\n- escolha \"-\"\n\nVocê consegue separar em colunas.\n\nRegra:\n- Power Query faz isso e grava como etapa, para repetir depois."
+    },
+    {
+      "title": "Remover duplicatas (dentro do Power Query)",
+      "body": "Você pode remover duplicatas e isso vira etapa.\n\n- selecione a coluna chave\n- Remover Linhas → Remover Duplicatas\n\nRegra:\n- escolha a chave certa (igual na aula 30)."
+    },
+    {
+      "title": "Carregar resultado (para onde vai a saída?)",
+      "body": "Quando terminar:\n\n- Início → **Fechar e Carregar**\n\nOpções:\n- carregar em uma nova planilha\n- carregar em uma tabela existente\n- carregar só como conexão (mais avançado)\n\nRegra:\n- no começo, carregue como Tabela em nova planilha."
+    },
+    {
+      "title": "Atualizar (o motivo de usar Power Query)",
+      "body": "Quando a fonte muda:\n- você não refaz tudo\n\nVocê só:\n- Dados → **Atualizar Tudo**\n\nO Power Query repete as etapas.\n\nRegra:\n- Power Query = automatizar limpeza repetitiva."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Tipo de dados errado\n- dá erro em cálculos e datas\n\n2) Passo que depende de conteúdo “instável”\n- exemplo: remover linhas fixas que mudam de posição\n\n3) Renomear/alterar colunas na fonte e quebrar etapas\n- etapas dependem do nome da coluna\n\nRegra:\n- mantenha cabeçalhos consistentes e ajuste tipos."
+    },
+    {
+      "title": "Mini prática (90 minutos) — sua primeira consulta de limpeza automática",
+      "body": "1) Crie uma tabela (Ctrl+T) com colunas:\n- Codigo (ex.: PED-2026-000123)\n- Nome (com espaços extras)\n- Valor (como texto em algumas linhas)\n\n2) Dados → De Tabela/Intervalo (abre Power Query)\n\n3) Faça transformações:\n- Dividir Codigo por \"-\" em 3 colunas\n- Limpar Nome (remover espaços)\n- Alterar tipo de Valor para número\n- Remover duplicatas por Codigo\n\n4) Fechar e Carregar em nova planilha.\n\n5) Agora altere a tabela fonte (adicione linhas) e clique Atualizar Tudo.\n\nObjetivo:\n- entender a lógica receita → atualizar."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Power Query importa e transforma dados com etapas repetíveis\n- Ideal para rotinas de limpeza repetitiva\n- Trabalha sem destruir a base original\n- Editor mostra Etapas aplicadas\n- Transformações comuns: dividir coluna, remover duplicatas, substituir, tipos\n- Fechar e Carregar cria a tabela de saída\n- Atualizar Tudo reaplica as etapas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 31 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Power Query serve principalmente para:",
+        "options": [
+          { "key": "A", "text": "Importar e transformar dados com passos automáticos" },
+          { "key": "B", "text": "Desenhar gráficos 3D" }
+        ],
+        "answer": "A",
+        "explain": "Ele automatiza limpeza e transformação."
+      },
+      {
+        "id": 2,
+        "question": "Uma grande vantagem do Power Query é:",
+        "options": [
+          { "key": "A", "text": "Você cria uma receita e depois só atualiza" },
+          { "key": "B", "text": "Você precisa limpar tudo manualmente sempre" }
+        ],
+        "answer": "A",
+        "explain": "Atualizar reaplica as etapas."
+      },
+      {
+        "id": 3,
+        "question": "Power Query altera a base original diretamente?",
+        "options": [
+          { "key": "A", "text": "Não, ele gera uma saída transformada" },
+          { "key": "B", "text": "Sim, ele apaga sua tabela" }
+        ],
+        "answer": "A",
+        "explain": "Ele trabalha como consulta/saída."
+      },
+      {
+        "id": 4,
+        "question": "O caminho comum para começar é:",
+        "options": [
+          { "key": "A", "text": "Dados → Obter Dados (ou De Tabela/Intervalo)" },
+          { "key": "B", "text": "Inserir → SmartArt" }
+        ],
+        "answer": "A",
+        "explain": "Tudo começa na guia Dados."
+      },
+      {
+        "id": 5,
+        "question": "Etapas aplicadas são:",
+        "options": [
+          { "key": "A", "text": "A lista de transformações feitas na consulta" },
+          { "key": "B", "text": "As cores do tema do Excel" }
+        ],
+        "answer": "A",
+        "explain": "É o passo a passo do Power Query."
+      },
+      {
+        "id": 6,
+        "question": "Um passo crítico para evitar erros é:",
+        "options": [
+          { "key": "A", "text": "Definir o tipo correto das colunas (data, número, texto)" },
+          { "key": "B", "text": "Mesclar células" }
+        ],
+        "answer": "A",
+        "explain": "Tipo errado quebra cálculos e datas."
+      },
+      {
+        "id": 7,
+        "question": "Dividir coluna no Power Query é parecido com:",
+        "options": [
+          { "key": "A", "text": "Texto para Colunas (só que automático e repetível)" },
+          { "key": "B", "text": "Formatar bordas" }
+        ],
+        "answer": "A",
+        "explain": "É a versão “receita” do Texto para Colunas."
+      },
+      {
+        "id": 8,
+        "question": "Para mandar o resultado para a planilha você usa:",
+        "options": [
+          { "key": "A", "text": "Fechar e Carregar" },
+          { "key": "B", "text": "Salvar como PDF" }
+        ],
+        "answer": "A",
+        "explain": "Isso cria a tabela de saída."
+      },
+      {
+        "id": 9,
+        "question": "Para reaplicar as etapas quando a fonte muda você usa:",
+        "options": [
+          { "key": "A", "text": "Atualizar Tudo" },
+          { "key": "B", "text": "Ctrl+Z" }
+        ],
+        "answer": "A",
+        "explain": "Refresh reaplica a receita."
+      },
+      {
+        "id": 10,
+        "question": "Quando Power Query é mais indicado?",
+        "options": [
+          { "key": "A", "text": "Quando você faz a mesma importação/limpeza repetidamente" },
+          { "key": "B", "text": "Quando você quer só colorir células" }
+        ],
+        "answer": "A",
+        "explain": "Ele automatiza rotinas repetitivas."
+      }
+    ]
+  },
+  "extra": {
+    "receitaPrimeiraQuery": "Receita: primeira consulta (rápida)\n\n1) Transforme a base em Tabela (Ctrl+T)\n2) Dados → De Tabela/Intervalo\n3) Faça transformações (tipo, dividir, duplicatas)\n4) Fechar e Carregar\n5) Depois: Atualizar Tudo\n\nResultado:\nLimpeza automática repetível.",
+    "dicaTipos": "Dica de ouro: tipos\n\n- Data tem que ser Data\n- Valor tem que ser Número/Decimal\n- Código com zeros (00123) muitas vezes deve ser Texto\n\nSe o tipo estiver errado, o resto do processo sofre."
+  }
+}
