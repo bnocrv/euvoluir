@@ -38,7 +38,10 @@ body{
   color: var(--text);
   position: relative;
   background:
-    linear-gradient(180deg, #141619 0%, #101112 55%, #0d0e10 100%);
+    radial-gradient(1200px 620px at -8% -18%, rgba(216,19,36,.26), transparent 62%),
+    radial-gradient(920px 520px at 106% -16%, rgba(207,213,220,.14), transparent 64%),
+    radial-gradient(980px 520px at 50% 118%, rgba(125,135,147,.22), transparent 68%),
+    linear-gradient(180deg, #181b20 0%, #111316 46%, #0c0d0f 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -49,11 +52,17 @@ body::before{
   inset: 0;
   pointer-events: none;
   background-image:
-    radial-gradient(900px 500px at 10% -8%, rgba(216,19,36,.12), transparent 62%),
-    radial-gradient(760px 420px at 88% -12%, rgba(255,255,255,.05), transparent 65%);
+    radial-gradient(820px 420px at 14% -6%, rgba(216,19,36,.18), transparent 62%),
+    radial-gradient(700px 380px at 82% -10%, rgba(243,245,247,.09), transparent 66%),
+    radial-gradient(780px 440px at 52% 112%, rgba(207,213,220,.08), transparent 68%),
+    repeating-linear-gradient(
+      120deg,
+      rgba(255,255,255,.012) 0 1px,
+      transparent 1px 24px
+    );
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  opacity: .9;
+  background-size: 100% 100%, 100% 100%, 100% 100%, 120% 120%;
+  opacity: .92;
 }
 
 a{ color: inherit; text-decoration: none; }
