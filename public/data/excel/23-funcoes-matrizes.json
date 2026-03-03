@@ -1,0 +1,164 @@
+{
+  "id": "23-funcoes-matrizes",
+  "title": "Aula 23 — Matrizes dinâmicas: FILTRAR, CLASSIFICAR, ÚNICO e SEQUÊNCIA (Excel moderno)",
+  "steps": [
+    {
+      "title": "O que são matrizes dinâmicas (explicação simples)",
+      "body": "Matriz dinâmica é quando uma fórmula não devolve só 1 célula.\nEla devolve uma **lista inteira** e “espalha” o resultado automaticamente.\n\nExemplo:\n- você filtra vendas do produto X e o Excel devolve várias linhas\n\nA fórmula ocupa uma célula (a primeira) e o resultado “derramará” para baixo/lado.\n\nRegra:\n- matrizes dinâmicas deixam relatórios muito mais rápidos, sem copiar fórmula linha a linha."
+    },
+    {
+      "title": "O conceito do 'derramamento' (spill)",
+      "body": "Quando uma fórmula de matriz retorna vários valores:\n- o Excel preenche as células ao redor automaticamente\n\nSe o espaço estiver ocupado, aparece um erro (normalmente):\n- “#DERRAMAMENTO!” (ou equivalente)\n\nRegra:\n- deixe a área de saída livre para a matriz derramar."
+    },
+    {
+      "title": "FILTRAR (trazer só o que interessa)",
+      "body": "FILTRAR devolve apenas as linhas que atendem uma condição.\n\nSintaxe:\n- `=FILTRAR(matriz; incluir; [se_vazio])`\n\nExemplo:\n- A2:E200 é a base (Data, Vendedor, Produto, Valor, Status)\n- Quer filtrar só Status = \"Atrasado\" (coluna E):\n\n`=FILTRAR(A2:E200; E2:E200=\"Atrasado\"; \"Sem resultados\")`\n\nRegra:\n- o argumento \"incluir\" precisa gerar VERDADEIRO/FALSO para cada linha."
+    },
+    {
+      "title": "FILTRAR com mais de uma condição (usando * e +)",
+      "body": "Para combinar condições, um truque comum é:\n\n- AND (E): multiplica `*`\n- OR (OU): soma `+`\n\nExemplo (E):\n- Status = \"Atrasado\" E Valor > 1000\n\n`=FILTRAR(A2:E200; (E2:E200=\"Atrasado\")*(D2:D200>1000); \"Sem resultados\")`\n\nExemplo (OU):\n- Status = \"Atrasado\" OU Valor > 1000\n\n`=FILTRAR(A2:E200; (E2:E200=\"Atrasado\")+(D2:D200>1000); \"Sem resultados\")`\n\nRegra:\n- em matrizes, * funciona como E, + funciona como OU."
+    },
+    {
+      "title": "CLASSIFICAR (ordenar o resultado sem mexer na base)",
+      "body": "CLASSIFICAR ordena uma matriz.\n\nSintaxe:\n- `=CLASSIFICAR(matriz; [índice_ordenar]; [ordem]; [por_coluna])`\n\nExemplo:\n- ordenar a base A2:E200 pelo Valor (coluna 4 da matriz):\n\n`=CLASSIFICAR(A2:E200; 4; -1)`\n\n(ordem -1 = decrescente, 1 = crescente)\n\nRegra:\n- CLASSIFICAR cria uma visão ordenada sem alterar os dados originais."
+    },
+    {
+      "title": "ÚNICO (lista sem repetidos)",
+      "body": "ÚNICO devolve valores únicos (sem duplicados).\n\nSintaxe:\n- `=ÚNICO(matriz)`\n\nExemplo:\n- lista única de produtos (coluna C):\n\n`=ÚNICO(C2:C200)`\n\nUso real:\n- criar listas para validação de dados\n- criar dimensão de produtos/vendedores\n\nRegra:\n- ÚNICO é perfeito para construir listas automaticamente."
+    },
+    {
+      "title": "SEQUÊNCIA (gerar números automáticos)",
+      "body": "SEQUÊNCIA cria uma sequência de números.\n\nSintaxe:\n- `=SEQUÊNCIA(linhas; [colunas]; [início]; [passo])`\n\nExemplos:\n- 10 números de 1 a 10:\n`=SEQUÊNCIA(10)`\n\n- 5 linhas, começando em 100, passo 10:\n`=SEQUÊNCIA(5;1;100;10)`\n\nRegra:\n- SEQUÊNCIA substitui aquele preenchimento manual em muitos casos."
+    },
+    {
+      "title": "Combinando funções (o poder de verdade)",
+      "body": "Você pode combinar:\n\n1) filtrar\n2) ordenar\n3) pegar únicos\n\nExemplo:\n- pegar lista única de produtos que estão com status Atrasado:\n\n`=ÚNICO(FILTRAR(C2:C200; E2:E200=\"Atrasado\"; \"\"))`\n\nExemplo:\n- filtrar atrasados e ordenar por Valor decrescente:\n\n`=CLASSIFICAR(FILTRAR(A2:E200; E2:E200=\"Atrasado\"; \"\"); 4; -1)`\n\nRegra:\n- pense em etapas: Filtrar → (opcional) Único → (opcional) Classificar."
+    },
+    {
+      "title": "Referenciar o resultado derramado (o símbolo #)",
+      "body": "Se a sua matriz começa em G2, você pode referenciar tudo com:\n- `G2#`\n\nIsso significa:\n- \"a área inteira derramada a partir de G2\"\n\nUso real:\n- usar a saída do FILTRAR em outro cálculo\n\nRegra:\n- `#` é um atalho para pegar o resultado inteiro."
+    },
+    {
+      "title": "Erros comuns (e como resolver rápido)",
+      "body": "1) #DERRAMAMENTO!\n- tem algo ocupando as células de saída\n- limpe o espaço\n\n2) \"incluir\" com tamanho diferente\n- exemplo: matriz tem 200 linhas, incluir tem 199\n- ajuste intervalos\n\n3) Base com linhas em branco no meio\n- pode confundir o que você espera\n\nRegra:\n- matrizes exigem intervalos alinhados e área livre."
+    },
+    {
+      "title": "Mini prática (60 minutos) — mini painel moderno sem tabela dinâmica",
+      "body": "Crie uma base em A1:E41:\n- Data | Vendedor | Produto | Valor | Status\n\n1) Em G2, liste só atrasados:\n- `=FILTRAR(A2:E41; E2:E41=\"Atrasado\"; \"Sem atrasados\")`\n\n2) Em M2, ordene o resultado de G2 por Valor decrescente:\n- `=CLASSIFICAR(G2#; 4; -1)`\n\n3) Em S2, liste produtos únicos:\n- `=ÚNICO(C2:C41)`\n\n4) Em U2, produtos únicos apenas dos atrasados:\n- `=ÚNICO(FILTRAR(C2:C41; E2:E41=\"Atrasado\"; \"\"))`\n\n5) Em W2, gere uma sequência 1..20:\n- `=SEQUÊNCIA(20)`\n\nObjetivo:\n- dominar derramamento e combinar FILTRAR + CLASSIFICAR + ÚNICO."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Matrizes dinâmicas derramam resultados automaticamente\n- FILTRAR cria uma visão por condição\n- CLASSIFICAR ordena sem mexer na base\n- ÚNICO cria listas sem repetidos\n- SEQUÊNCIA gera números automaticamente\n- * funciona como E e + como OU em condições\n- Use G2# para referenciar o resultado derramado\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 23 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Uma matriz dinâmica é quando a fórmula:",
+        "options": [
+          { "key": "A", "text": "Devolve vários valores e derrama em várias células" },
+          { "key": "B", "text": "Só funciona em uma célula sempre" }
+        ],
+        "answer": "A",
+        "explain": "Ela retorna uma lista/grade e ocupa células automaticamente."
+      },
+      {
+        "id": 2,
+        "question": "O erro #DERRAMAMENTO! acontece quando:",
+        "options": [
+          { "key": "A", "text": "O espaço de saída está ocupado" },
+          { "key": "B", "text": "A célula está em negrito" }
+        ],
+        "answer": "A",
+        "explain": "A área precisa estar livre para o resultado derramar."
+      },
+      {
+        "id": 3,
+        "question": "FILTRAR serve para:",
+        "options": [
+          { "key": "A", "text": "Retornar apenas linhas/itens que atendem uma condição" },
+          { "key": "B", "text": "Arredondar números automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "FILTRAR cria uma visão por critério."
+      },
+      {
+        "id": 4,
+        "question": "CLASSIFICAR serve para:",
+        "options": [
+          { "key": "A", "text": "Ordenar uma matriz sem alterar a base original" },
+          { "key": "B", "text": "Remover duplicatas permanentemente" }
+        ],
+        "answer": "A",
+        "explain": "É uma ordenação “virtual”."
+      },
+      {
+        "id": 5,
+        "question": "ÚNICO serve para:",
+        "options": [
+          { "key": "A", "text": "Retornar uma lista sem valores repetidos" },
+          { "key": "B", "text": "Somar por critérios" }
+        ],
+        "answer": "A",
+        "explain": "Ele remove duplicados na saída."
+      },
+      {
+        "id": 6,
+        "question": "SEQUÊNCIA serve para:",
+        "options": [
+          { "key": "A", "text": "Gerar números automaticamente (1,2,3...)" },
+          { "key": "B", "text": "Buscar preço em outra tabela" }
+        ],
+        "answer": "A",
+        "explain": "Ela cria listas/grades numéricas."
+      },
+      {
+        "id": 7,
+        "question": "Em condições de matriz, para fazer E (AND) você usa:",
+        "options": [
+          { "key": "A", "text": "*" },
+          { "key": "B", "text": "&" }
+        ],
+        "answer": "A",
+        "explain": "* multiplica VERDADEIRO/FALSO e funciona como E."
+      },
+      {
+        "id": 8,
+        "question": "Em condições de matriz, para fazer OU (OR) você usa:",
+        "options": [
+          { "key": "A", "text": "+" },
+          { "key": "B", "text": "^" }
+        ],
+        "answer": "A",
+        "explain": "+ soma condições e funciona como OU."
+      },
+      {
+        "id": 9,
+        "question": "O símbolo # (ex.: G2#) significa:",
+        "options": [
+          { "key": "A", "text": "Referenciar toda a área derramada a partir de G2" },
+          { "key": "B", "text": "Transformar a célula em texto" }
+        ],
+        "answer": "A",
+        "explain": "É referência do resultado inteiro do spill."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa prática ao usar matrizes é:",
+        "options": [
+          { "key": "A", "text": "Manter intervalos alinhados e área de saída livre" },
+          { "key": "B", "text": "Mesclar células na área de saída" }
+        ],
+        "answer": "A",
+        "explain": "Mesclagem e células ocupadas quebram o derramamento."
+      }
+    ]
+  },
+  "extra": {
+    "receitasProntas": "Receitas prontas\n\nFiltrar atrasados:\n=FILTRAR(A2:E200;E2:E200=\"Atrasado\";\"Sem resultados\")\n\nFiltrar com 2 condições (E):\n=FILTRAR(A2:E200;(E2:E200=\"Atrasado\")*(D2:D200>1000);\"Sem\")\n\nOrdenar por Valor (coluna 4) desc:\n=CLASSIFICAR(A2:E200;4;-1)\n\nÚnicos:\n=ÚNICO(C2:C200)\n\nSequência 1..10:\n=SEQUÊNCIA(10)\n\nReferenciar derramado:\n=G2#\n",
+    "dicasRapidas": "Dicas rápidas\n\n- Se der #DERRAMAMENTO!: limpe o espaço\n- Se a condição não funcionar: confira se os intervalos têm o mesmo tamanho\n- Combine: ÚNICO(FILTRAR(...)) e CLASSIFICAR(FILTRAR(...))\n"
+  }
+}

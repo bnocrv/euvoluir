@@ -1,0 +1,172 @@
+{
+  "id": "29-dashboard-basico",
+  "title": "Aula 29 — Dashboard básico: layout, consistência e painel de indicadores",
+  "steps": [
+    {
+      "title": "O que é um dashboard (bem simples)",
+      "body": "Dashboard é uma planilha feita para **tomar decisão rápido**.\n\nEle normalmente tem:\n- poucos indicadores (KPIs)\n- alguns gráficos\n- filtros (segmentações/timeline)\n- e um layout limpo\n\nRegra:\n- dashboard não é base de dados.\n- dashboard é a “tela de painel” em cima da base."
+    },
+    {
+      "title": "Arquitetura profissional (3 camadas)",
+      "body": "Um arquivo de dashboard bem organizado separa:\n\n1) **Base** (dados)\n- tbVendas, tbEstoque...\n\n2) **Modelo/Relatórios** (tabelas dinâmicas, medidas)\n- dinâmicas, resumos\n\n3) **Dashboard** (visual)\n- cards, gráficos, filtros\n\nRegra:\n- misturar base com dashboard vira bagunça e quebra manutenção."
+    },
+    {
+      "title": "Defina as perguntas do painel (antes do visual)",
+      "body": "Antes de criar qualquer gráfico, defina 3 a 6 perguntas:\n\nExemplos:\n- Qual o total vendido no período?\n- Qual o ticket médio?\n- Quais os Top 5 produtos?\n- Qual vendedor lidera?\n- Quantos atrasados existem?\n\nRegra:\n- dashboard é um conjunto de perguntas importantes, não um monte de gráfico."
+    },
+    {
+      "title": "KPIs (cards): os 4 mais comuns para começar",
+      "body": "Cards são números grandes e claros.\n\nKPIs comuns:\n- **Faturamento (Soma de Valor)**\n- **Quantidade de pedidos (Contagem)**\n- **Ticket médio (Faturamento / Pedidos)**\n- **% Atrasados (Atrasados / Total)**\n\nRegra:\n- KPIs devem ser poucos e muito visíveis."
+    },
+    {
+      "title": "De onde vêm os KPIs (tabela dinâmica ou fórmulas)",
+      "body": "Você pode construir KPIs de duas formas:\n\n1) **Tabela Dinâmica**\n- mais rápido de montar\n- combina bem com segmentações\n\n2) **Fórmulas** (SOMASES, CONT.SE.S, matrizes dinâmicas)\n- mais controle\n\nRegra:\n- para dashboard básico, use Tabela Dinâmica + segmentação. É o caminho mais rápido e robusto."
+    },
+    {
+      "title": "Layout (o que deixa com cara de profissional)",
+      "body": "Um layout simples que funciona:\n\nTopo:\n- Título do painel + período\n\nLinha 1:\n- 3 ou 4 cards (KPIs)\n\nLinha 2:\n- 1 gráfico principal (tendência no tempo)\n\nLinha 3:\n- 1 gráfico de ranking (Top produtos)\n- 1 gráfico por categoria (ex.: vendedor)\n\nLateral (ou topo):\n- segmentações + timeline\n\nRegra:\n- leia de cima para baixo: primeiro KPIs, depois detalhes."
+    },
+    {
+      "title": "Consistência visual (padrões simples)",
+      "body": "Consistência é o que deixa o painel limpo.\n\nRegras simples:\n- mesma fonte\n- tamanhos de card iguais\n- alinhamento em grade\n- mesmos formatos (R$, %, casas decimais)\n- mesma regra de cores (sem carnaval)\n\nRegra:\n- se cada parte tem um estilo, vira bagunça visual."
+    },
+    {
+      "title": "Segmentações e Linha do Tempo (os controles do painel)",
+      "body": "Dashboard bom precisa de controle:\n\n- Segmentação: Produto, Vendedor, Status\n- Timeline: Data\n\nBoa prática:\n- conecte filtros a todas as tabelas dinâmicas do painel\n\nRegra:\n- filtro deve controlar tudo, senão o painel fica incoerente."
+    },
+    {
+      "title": "Gráficos recomendados para dashboard básico",
+      "body": "Para começar, use:\n\n1) **Linha**: faturamento por dia/mês\n2) **Barra horizontal**: Top 10 produtos\n3) **Coluna**: vendas por vendedor\n\nRegra:\n- 3 gráficos bem escolhidos valem mais que 10 gráficos aleatórios."
+    },
+    {
+      "title": "Texto e contexto (título + período + unidade)",
+      "body": "Um painel precisa deixar claro:\n- o que é\n- de que período\n- em que unidade\n\nExemplo:\n- \"Dashboard de Vendas — Março/2026\"\n- \"Valores em R$\"\n\nRegra:\n- se o painel não tem período, a pessoa não sabe o que está olhando."
+    },
+    {
+      "title": "Proteção e entrega (painel para outras pessoas)",
+      "body": "Se você vai compartilhar:\n- proteja células que não devem ser mexidas\n- deixe editável só o que precisa\n- preferir nuvem para histórico de versões\n\nRegra:\n- dashboard entregue sem proteção vira planilha quebrada em poucos dias."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Base junto com dashboard\n- vira confusão\n\n2) Filtros não conectados\n- gráficos mostram coisas diferentes\n\n3) KPIs demais\n- ninguém lê\n\n4) Sem período/unidade\n- interpretação errada\n\n5) Visual poluído\n- muita cor, muito rótulo\n\nRegra:\n- dashboard bom é minimalista e consistente."
+    },
+    {
+      "title": "Mini prática (90 minutos) — montar seu primeiro dashboard completo",
+      "body": "Use `tbVendas` (Data | Vendedor | Produto | Valor | Status).\n\n1) Crie 3 tabelas dinâmicas (em uma aba \"Relatorios\"):\n\nA) KPI: Soma de Valor e Contagem de pedidos\n- use Valores: Soma(Valor) e Contagem(Produto)\n\nB) Tendência:\n- Data em Linhas (agrupada por mês)\n- Valor em Valores\n\nC) Ranking:\n- Produto em Linhas\n- Valor em Valores\n- ordenar maior→menor e Top 10\n\nD) Vendedor:\n- Vendedor em Linhas\n- Valor em Valores\n\n2) Crie a aba \"Dashboard\".\n\n3) Monte:\n- 4 cards: Faturamento, Pedidos, Ticket médio (Faturamento/Pedidos), % Atrasados\n- 1 gráfico de linha (tendência)\n- 1 gráfico de barras (Top 10)\n- 1 gráfico de colunas (por vendedor)\n\n4) Insira Segmentações (Produto, Vendedor, Status) e Timeline (Data).\n\n5) Conecte segmentações a todas as dinâmicas.\n\nObjetivo:\n- construir um painel coerente com KPIs + gráficos + filtros."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Dashboard é painel de decisão (não base)\n- Arquitetura em 3 camadas: Base → Relatórios → Dashboard\n- KPIs poucos e claros\n- Layout em grade e consistência visual\n- Segmentações/timeline conectadas a tudo\n- 3 gráficos bons > 10 gráficos ruins\n- Sempre mostrar período e unidade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 29 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Dashboard é:",
+        "options": [
+          { "key": "A", "text": "Um painel para tomar decisão rápido, com KPIs e gráficos" },
+          { "key": "B", "text": "A base de dados completa com tudo misturado" }
+        ],
+        "answer": "A",
+        "explain": "Dashboard é visual e resumido."
+      },
+      {
+        "id": 2,
+        "question": "Uma arquitetura profissional separa:",
+        "options": [
+          { "key": "A", "text": "Base, Relatórios/Modelo e Dashboard" },
+          { "key": "B", "text": "Tudo na mesma aba" }
+        ],
+        "answer": "A",
+        "explain": "Separar facilita manutenção."
+      },
+      {
+        "id": 3,
+        "question": "KPIs (cards) devem ser:",
+        "options": [
+          { "key": "A", "text": "Poucos e muito visíveis" },
+          { "key": "B", "text": "Muitos para mostrar que é completo" }
+        ],
+        "answer": "A",
+        "explain": "KPIs demais vira ruído."
+      },
+      {
+        "id": 4,
+        "question": "Um filtro bom no dashboard deve:",
+        "options": [
+          { "key": "A", "text": "Controlar todas as dinâmicas/gráficos do painel" },
+          { "key": "B", "text": "Controlar só um gráfico e deixar o resto diferente" }
+        ],
+        "answer": "A",
+        "explain": "Coerência é essencial."
+      },
+      {
+        "id": 5,
+        "question": "Consistência visual significa:",
+        "options": [
+          { "key": "A", "text": "Padrões de fonte, alinhamento, formatos e tamanho" },
+          { "key": "B", "text": "Cada gráfico com um estilo aleatório" }
+        ],
+        "answer": "A",
+        "explain": "Consistência dá aparência profissional."
+      },
+      {
+        "id": 6,
+        "question": "Um painel deve sempre indicar:",
+        "options": [
+          { "key": "A", "text": "Período e unidade (R$, %, etc.)" },
+          { "key": "B", "text": "A cor favorita do autor" }
+        ],
+        "answer": "A",
+        "explain": "Sem período/unidade, a leitura fica insegura."
+      },
+      {
+        "id": 7,
+        "question": "Para dashboard básico, quais gráficos costumam funcionar bem?",
+        "options": [
+          { "key": "A", "text": "Linha (tempo), Barra (ranking), Coluna (categorias)" },
+          { "key": "B", "text": "Só pizza com muitas fatias" }
+        ],
+        "answer": "A",
+        "explain": "São os mais claros para essas perguntas."
+      },
+      {
+        "id": 8,
+        "question": "Misturar base com dashboard costuma:",
+        "options": [
+          { "key": "A", "text": "Virar bagunça e dificultar manutenção" },
+          { "key": "B", "text": "Deixar mais profissional" }
+        ],
+        "answer": "A",
+        "explain": "Separar camadas evita problemas."
+      },
+      {
+        "id": 9,
+        "question": "Uma boa regra para dashboard é:",
+        "options": [
+          { "key": "A", "text": "3 gráficos bons > 10 gráficos ruins" },
+          { "key": "B", "text": "Quanto mais gráfico, melhor" }
+        ],
+        "answer": "A",
+        "explain": "Menos ruído, mais decisão."
+      },
+      {
+        "id": 10,
+        "question": "Para compartilhar um dashboard com segurança, é bom:",
+        "options": [
+          { "key": "A", "text": "Proteger o que não deve ser editado e usar histórico de versões" },
+          { "key": "B", "text": "Enviar sem testar e sem proteção" }
+        ],
+        "answer": "A",
+        "explain": "Isso evita quebrar o painel em poucos dias."
+      }
+    ]
+  },
+  "extra": {
+    "layoutModelo": "Layout modelo (simples)\n\nTopo: Título + período + filtros\nLinha 1: 3-4 KPIs (cards)\nLinha 2: Gráfico de linha (tendência)\nLinha 3: Barra (Top 10) + Coluna (por vendedor)\n\nRegra:\nKPIs primeiro, detalhes depois.",
+    "kpisSugeridos": "KPIs sugeridos (início)\n\n- Faturamento = Soma(Valor)\n- Pedidos = Contagem\n- Ticket médio = Faturamento / Pedidos\n- % Atrasados = Atrasados / Total\n\nDica:\nDeixe números grandes e com unidade (R$ / %)."
+  }
+}

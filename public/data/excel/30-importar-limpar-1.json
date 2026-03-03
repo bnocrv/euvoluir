@@ -1,0 +1,172 @@
+{
+  "id": "30-importar-limpar-1",
+  "title": "Aula 30 — Importar e limpar dados 1: texto para colunas, remover duplicatas e TRIM",
+  "steps": [
+    {
+      "title": "Por que limpeza de dados é uma habilidade obrigatória",
+      "body": "No mundo real, dados vêm “sujos”:\n- nomes com espaços extras\n- colunas misturadas (ex.: \"Produto - Tamanho - Cor\")\n- duplicados\n- códigos com formatação diferente\n\nSe você não limpa, você sofre com:\n- PROCV/PROCX que não acha\n- Tabela Dinâmica errada\n- gráficos enganosos\n\nRegra:\n- antes de analisar, limpe."
+    },
+    {
+      "title": "3 problemas que vamos resolver hoje",
+      "body": "Nesta aula você vai dominar:\n\n1) **Texto para Colunas** (separar uma coluna em várias)\n2) **Remover Duplicatas** (limpar repetidos)\n3) **TRIM/ARRUMAR** (tirar espaços extras)\n\nRegra:\n- essas 3 ferramentas resolvem grande parte da bagunça do dia a dia."
+    },
+    {
+      "title": "Texto para Colunas (separar dados que vieram juntos)",
+      "body": "Quando usar:\n- tudo veio numa coluna e você precisa separar\n\nExemplos:\n- \"Bruno;Carvalho;SP\"\n- \"Produto - M - Azul\"\n- \"03/03/2026 14:30\"\n\nCaminho:\n- **Dados → Texto para Colunas**\n\nRegra:\n- isso transforma uma coluna “misturada” em colunas organizadas."
+    },
+    {
+      "title": "Texto para Colunas — Delimitado (o caso mais comum)",
+      "body": "Delimitado significa:\n- tem um separador (vírgula, ponto e vírgula, espaço, hífen, tab)\n\nPasso a passo:\n1) selecione a coluna\n2) Dados → Texto para Colunas\n3) escolha **Delimitado**\n4) marque o separador (ex.: ; ou , ou espaço)\n5) veja a prévia\n6) concluir\n\nRegra:\n- sempre confira a prévia antes de finalizar."
+    },
+    {
+      "title": "Texto para Colunas — Largura fixa (caso de códigos)",
+      "body": "Largura fixa é quando os dados têm posições fixas.\n\nExemplo:\n- \"20260303BRUNO\"\n- ano (4), mês (2), dia (2), nome (resto)\n\nPasso a passo:\n1) selecione a coluna\n2) Texto para Colunas\n3) escolha **Largura fixa**\n4) coloque as quebras na régua\n5) concluir\n\nRegra:\n- largura fixa é ótima para códigos padronizados."
+    },
+    {
+      "title": "Cuidado: Texto para Colunas pode sobrescrever dados",
+      "body": "Quando você separa, o Excel preenche colunas ao lado.\n\nSe tiver coisa ali:\n- ele pode sobrescrever\n\nBoa prática:\n- sempre faça em uma área vazia\n- ou copie a coluna para outro lugar antes\n\nRegra:\n- antes de usar Texto para Colunas, olhe se as colunas à direita estão livres."
+    },
+    {
+      "title": "Remover Duplicatas (limpar repetidos com segurança)",
+      "body": "Quando usar:\n- cadastro com itens repetidos\n- lista importada\n- clientes repetidos\n\nCaminho:\n- **Dados → Remover Duplicatas**\n\nPasso a passo:\n1) selecione a tabela\n2) Dados → Remover Duplicatas\n3) marque quais colunas definem duplicado\n4) OK\n\nRegra:\n- duplicado depende da coluna escolhida (não é mágica)."
+    },
+    {
+      "title": "Duplicado por uma coluna vs duplicado por várias colunas",
+      "body": "Exemplo:\n- Se você marcar só \"CPF\":\n  - duplica quando CPF repete\n\n- Se você marcar \"CPF\" + \"Data\":\n  - só é duplicado se CPF e Data forem iguais ao mesmo tempo\n\nRegra:\n- escolha colunas que representam a “chave” do registro."
+    },
+    {
+      "title": "TRIM/ARRUMAR (tirar espaços extras que quebram tudo)",
+      "body": "Espaço extra é um inimigo silencioso:\n- \"ABC\" ≠ \"ABC \"\n\nNo Excel PT-BR a função TRIM é:\n- **ARRUMAR(texto)**\n\nExemplo:\n- A2: \"  Bruno   Carvalho  \"\n- `=ARRUMAR(A2)` → \"Bruno Carvalho\"\n\nRegra:\n- ARRUMAR remove espaços no começo, no fim e reduz espaços duplos no meio."
+    },
+    {
+      "title": "Como transformar o resultado de ARRUMAR em valor final (sem fórmula)",
+      "body": "Se você usa `=ARRUMAR(A2)`, o resultado fica como fórmula.\n\nPara “fixar”:\n1) copie a coluna de resultados\n2) Colar Especial → **Valores**\n\nRegra:\n- limpar com fórmula e depois colar valores é prática padrão."
+    },
+    {
+      "title": "Limpeza típica em 4 passos (receita)",
+      "body": "Quando dados chegam bagunçados, siga:\n\n1) Separar colunas (Texto para Colunas)\n2) Tirar espaços (ARRUMAR)\n3) Padronizar (maiúsculas/minúsculas se precisar — veremos depois)\n4) Remover duplicatas\n\nRegra:\n- primeiro estrutura, depois limpeza fina."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Texto para colunas sobrescreveu dados\n- solução: Ctrl+Z e faça em área vazia\n\n2) Remover duplicatas apagou demais\n- solução: desfazer e marque colunas corretas\n\n3) PROCV/PROCX não acha por causa de espaço\n- solução: ARRUMAR\n\n4) Dados viraram texto\n- cuidado ao importar (CSV) e ao separar\n\nRegra:\n- sempre faça limpeza em uma cópia, não no original."
+    },
+    {
+      "title": "Mini prática (75 minutos) — limpar um arquivo “real”",
+      "body": "Crie uma coluna A com dados assim (10 linhas):\n- \"  PED-2026-000123 ; Bruno   Carvalho ; Atrasado  \"\n- \"PED-2026-000124 ; Ana Silva ; OK\"\n- repita alguns códigos para ter duplicados\n\nObjetivos:\n\n1) Use Texto para Colunas (delimitado por ;) para separar em:\n- Código | Nome | Status\n\n2) Use ARRUMAR em Nome e Status.\n\n3) Fixe os resultados com Colar Especial → Valores.\n\n4) Remova duplicatas pelo Código.\n\n5) Verifique se agora suas buscas (PROCX/ÍNDICE) funcionariam.\n\nObjetivo:\n- aplicar as 3 ferramentas em um cenário parecido com importação real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Antes de analisar, limpe dados\n- Texto para Colunas separa informação misturada (delimitado ou largura fixa)\n- Cuidado com sobrescrever colunas ao lado\n- Remover Duplicatas depende das colunas marcadas\n- ARRUMAR remove espaços extras que quebram procura e relatórios\n- Para finalizar limpeza: Colar Especial → Valores\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 30 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Texto para Colunas serve para:",
+        "options": [
+          { "key": "A", "text": "Separar uma coluna em várias usando separador ou posição" },
+          { "key": "B", "text": "Criar gráficos automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ele transforma coluna “misturada” em estrutura."
+      },
+      {
+        "id": 2,
+        "question": "O caso mais comum do Texto para Colunas é:",
+        "options": [
+          { "key": "A", "text": "Delimitado (por ;, , espaço, etc.)" },
+          { "key": "B", "text": "Sempre largura fixa" }
+        ],
+        "answer": "A",
+        "explain": "A maioria dos dados tem separador."
+      },
+      {
+        "id": 3,
+        "question": "Um cuidado ao usar Texto para Colunas é:",
+        "options": [
+          { "key": "A", "text": "Ele pode sobrescrever dados nas colunas à direita" },
+          { "key": "B", "text": "Ele apaga a planilha inteira" }
+        ],
+        "answer": "A",
+        "explain": "Por isso é bom usar em área vazia."
+      },
+      {
+        "id": 4,
+        "question": "Remover Duplicatas funciona baseado em:",
+        "options": [
+          { "key": "A", "text": "Quais colunas você marca como critério" },
+          { "key": "B", "text": "A cor da célula" }
+        ],
+        "answer": "A",
+        "explain": "Duplicado depende da chave escolhida."
+      },
+      {
+        "id": 5,
+        "question": "ARRUMAR serve para:",
+        "options": [
+          { "key": "A", "text": "Remover espaços extras no texto" },
+          { "key": "B", "text": "Arredondar números" }
+        ],
+        "answer": "A",
+        "explain": "Ele limpa espaços no começo, fim e excesso no meio."
+      },
+      {
+        "id": 6,
+        "question": "\"ABC\" e \"ABC \" são:",
+        "options": [
+          { "key": "A", "text": "Diferentes para o Excel (espaço conta)" },
+          { "key": "B", "text": "Iguais sempre" }
+        ],
+        "answer": "A",
+        "explain": "Espaço extra quebra procura e comparação."
+      },
+      {
+        "id": 7,
+        "question": "Depois de usar ARRUMAR com fórmula, para 'fixar' você deve:",
+        "options": [
+          { "key": "A", "text": "Colar Especial → Valores" },
+          { "key": "B", "text": "Mesclar células" }
+        ],
+        "answer": "A",
+        "explain": "Isso transforma o resultado em texto final, sem fórmula."
+      },
+      {
+        "id": 8,
+        "question": "Uma boa prática ao limpar dados é:",
+        "options": [
+          { "key": "A", "text": "Trabalhar em uma cópia antes de mexer no original" },
+          { "key": "B", "text": "Aplicar remover duplicatas sem pensar" }
+        ],
+        "answer": "A",
+        "explain": "Cópia evita perda irreversível."
+      },
+      {
+        "id": 9,
+        "question": "Se PROCV/PROCX não encontra, um motivo comum é:",
+        "options": [
+          { "key": "A", "text": "Espaços extras e tipos diferentes (texto vs número)" },
+          { "key": "B", "text": "A célula estar em negrito" }
+        ],
+        "answer": "A",
+        "explain": "Textos sujos e tipos diferentes são campeões de #N/D."
+      },
+      {
+        "id": 10,
+        "question": "A ordem de limpeza mais comum é:",
+        "options": [
+          { "key": "A", "text": "Separar colunas → limpar espaços → padronizar → remover duplicatas" },
+          { "key": "B", "text": "Criar gráfico → depois limpar" }
+        ],
+        "answer": "A",
+        "explain": "Primeiro estrutura, depois limpeza fina."
+      }
+    ]
+  },
+  "extra": {
+    "receitaExpress": "Receita express de limpeza\n\n1) Texto para Colunas (separar)\n2) ARRUMAR (tirar espaços)\n3) Colar Especial → Valores (fixar)\n4) Remover Duplicatas (com chave certa)\n\nResultado:\nBase limpa para PROCX, Dinâmica e Dashboard.",
+    "atalhosUteis": "Atalhos úteis\n\n- Ctrl + Z: desfazer (salva vidas)\n- Ctrl + Alt + V: Colar Especial\n\nDica:\nSempre confira se há espaço à direita antes de Texto para Colunas."
+  }
+}

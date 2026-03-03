@@ -27,7 +27,8 @@ html, body { height: 100%; }
   --max: 1200px;
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --display: "Orbitron", "Segoe UI", sans-serif;
-  --sans: "Exo 2", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --heading: "Manrope", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --sans: "Manrope", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
 }
 
 body{
@@ -59,8 +60,8 @@ a{ color: inherit; text-decoration: none; }
 button, input, textarea { font: inherit; }
 code, pre { font-family: var(--mono); }
 h1, h2, h3, .lesson-title{
-  font-family: var(--display);
-  letter-spacing: .5px;
+  font-family: var(--heading);
+  letter-spacing: .2px;
 }
 
 ::selection{ background: rgba(216,19,36,.35); }

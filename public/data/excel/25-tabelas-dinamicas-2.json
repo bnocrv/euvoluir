@@ -1,0 +1,172 @@
+{
+  "id": "25-tabelas-dinamicas-2",
+  "title": "Aula 25 — Tabela dinâmica 2: agrupamentos, campos calculados e configurações",
+  "steps": [
+    {
+      "title": "O que você vai aprender nesta aula (subir de nível)",
+      "body": "Na aula 24 você criou tabelas dinâmicas e arrastou campos.\n\nAgora você vai aprender recursos que deixam a tabela dinâmica “profissional”:\n- agrupar datas (mês/ano)\n- agrupar números (faixas)\n- mostrar valores como % do total\n- configurar layout e subtotais\n- campo calculado (introdução)\n\nRegra:\n- tabela dinâmica boa não é só cálculo: é leitura e interpretação."
+    },
+    {
+      "title": "Agrupar datas (por mês, trimestre, ano) — o mais usado",
+      "body": "Se você tem uma coluna Data na base, você consegue agrupar.\n\nPasso a passo:\n1) Coloque Data em Linhas (na tabela dinâmica)\n2) Clique em qualquer data na tabela\n3) Botão direito → **Agrupar…**\n4) Escolha:\n- Meses\n- Anos\n- (Trimestres, Dias)\n\nResultado:\n- seu relatório vira “por mês” ou “por ano” automaticamente.\n\nRegra:\n- se não aparece 'Agrupar', a Data pode estar como texto na base."
+    },
+    {
+      "title": "Agrupar números (faixas de valores)",
+      "body": "Você pode agrupar valores em faixas.\n\nExemplo:\n- Valor de venda agrupado em: 0-500, 500-1000, 1000-1500…\n\nPasso a passo:\n1) Coloque Valor em Linhas\n2) Clique em um número\n3) Botão direito → Agrupar\n4) Defina:\n- Início\n- Fim\n- Intervalo (tamanho da faixa)\n\nRegra:\n- isso vira uma distribuição (quase um histograma) dentro da dinâmica."
+    },
+    {
+      "title": "Configurações do Campo de Valor (Soma, Média, Contagem...)",
+      "body": "Você pode mudar como o Excel resume:\n\n1) Clique em um valor da área Valores\n2) Botão direito → **Configurações do Campo de Valor**\n\nOpções comuns:\n- Soma\n- Contagem\n- Média\n- Máximo/Mínimo\n\nUso real:\n- Soma: faturamento\n- Contagem: número de pedidos\n- Média: ticket médio\n\nRegra:\n- 'Valores' sempre tem 2 coisas: como resumir e como mostrar."
+    },
+    {
+      "title": "Mostrar valores como (percentuais e comparações)",
+      "body": "Além de somar, você pode mostrar:\n- % do total geral\n- % do total da coluna\n- % do total da linha\n- Diferença de / % diferença de\n\nComo:\n- Configurações do Campo de Valor → guia **Mostrar valores como**\n\nExemplo real:\n- “Produto X representa quantos % do total vendido?”\n\nRegra:\n- isso cria análise sem precisar fórmula extra."
+    },
+    {
+      "title": "Ordenar do maior para o menor (ranking automático)",
+      "body": "Ranking clássico:\n- produtos mais vendidos\n\nComo fazer:\n- clique em um valor de soma\n- ordenar do Maior para o Menor\n\nRegra:\n- sempre ordene pelo campo de valor (soma) para ranking."
+    },
+    {
+      "title": "Filtro de Top 10 (Top N) — foco no que importa",
+      "body": "Você pode filtrar para mostrar só os maiores.\n\nExemplo:\n- Top 5 produtos por valor\n\nComo:\n- filtro no campo Produto → **Filtros de valor** → Top 10\n- escolha Top 5, por Soma de Valor\n\nRegra:\n- Top N ajuda a tirar ruído e focar no principal."
+    },
+    {
+      "title": "Layout: forma compacta vs tabular (leitura)",
+      "body": "Tabela dinâmica tem estilos de layout.\n\nCaminho:\n- guia Design → Layout do Relatório\n\nOpções:\n- Forma compacta (padrão)\n- Forma de estrutura de tópicos\n- Forma tabular\n\nDica:\n- Tabular é mais “tabela de verdade” e facilita copiar/ler.\n\nRegra:\n- para relatório profissional, Tabular costuma ficar melhor."
+    },
+    {
+      "title": "Subtotais e totais gerais (quando usar)",
+      "body": "Você pode ligar/desligar:\n- subtotais\n- totais gerais (linhas/colunas)\n\nCaminho:\n- Design → Subtotais / Totais Gerais\n\nUso real:\n- às vezes você quer um relatório “limpo” sem subtotais\n\nRegra:\n- subtotais ajudam análise; mas em excesso poluem."
+    },
+    {
+      "title": "Campo calculado (introdução) — cuidado e contexto",
+      "body": "Campo calculado cria um cálculo dentro da tabela dinâmica.\n\nExemplo:\n- você quer criar “Valor com Taxa” = Valor * 1,1\n\nComo (geralmente):\n- Analisar Tabela Dinâmica → Campos, Itens e Conjuntos → Campo Calculado\n\nCuidado:\n- campo calculado tem limitações (não é tão poderoso quanto medidas/DAX)\n\nRegra:\n- use campo calculado para coisas simples; para avançado, o caminho é Power Pivot/DAX (aula 34)."
+    },
+    {
+      "title": "Atualizar e manter consistente (refresh e fonte de dados)",
+      "body": "Lembrete:\n- se a base mudou, atualize.\n\nMelhor prática:\n- base em Tabela (Ctrl+T) para não “perder linhas novas”.\n\nRegra:\n- dinâmica sem refresh = relatório desatualizado."
+    },
+    {
+      "title": "Erros comuns (e soluções rápidas)",
+      "body": "1) Não consigo agrupar datas\n- data está como texto na base\n\n2) Totais estranhos\n- valor está como texto (vira contagem)\n\n3) Relatório poluído\n- mude layout para Tabular e ajuste subtotais\n\n4) Top 10 não funciona como esperado\n- confira se está filtrando por Soma de Valor\n\nRegra:\n- quase tudo se resolve checando a base e as configurações do campo."
+    },
+    {
+      "title": "Mini prática (70 minutos) — relatório mensal com ranking e %",
+      "body": "1) Crie uma base com 80 linhas:\n- Data | Vendedor | Produto | Valor | Qtd\n\n2) Transforme em Tabela (Ctrl+T) e chame `tbVendas`.\n\n3) Crie uma Tabela Dinâmica.\n\nA) Vendas por mês:\n- Data → Linhas\n- agrupar por Meses e Anos\n- Valor → Valores (Soma)\n\nB) Participação por produto (%):\n- Produto → Linhas\n- Valor → Valores\n- Mostrar valores como → % do Total Geral\n\nC) Top 5 produtos:\n- no Produto, aplique Top 10 → Top 5 por Soma de Valor\n- ordene do maior para o menor\n\nD) Layout:\n- Design → Forma Tabular\n- ajuste totais/subtotais como preferir\n\nObjetivo:\n- usar agrupamento, % do total, Top N e layout profissional."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Agrupar datas (mês/ano) é essencial para relatórios de tempo\n- Agrupar números cria faixas\n- Configurações do Campo de Valor muda soma/média/contagem\n- 'Mostrar valores como' cria % e comparações\n- Top N e ordenação ajudam ranking\n- Layout Tabular melhora leitura\n- Campo calculado é útil para cálculos simples\n- Atualizar sempre que a base mudar\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 25 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Agrupar datas na Tabela Dinâmica serve para:",
+        "options": [
+          { "key": "A", "text": "Ver resultados por mês/ano/trimestre automaticamente" },
+          { "key": "B", "text": "Apagar datas repetidas" }
+        ],
+        "answer": "A",
+        "explain": "Agrupar transforma datas em períodos."
+      },
+      {
+        "id": 2,
+        "question": "Se a opção 'Agrupar' não aparece para datas, provavelmente:",
+        "options": [
+          { "key": "A", "text": "A coluna Data está como texto na base" },
+          { "key": "B", "text": "O Excel não suporta datas" }
+        ],
+        "answer": "A",
+        "explain": "Data como texto impede agrupamento correto."
+      },
+      {
+        "id": 3,
+        "question": "Configurações do Campo de Valor serve para:",
+        "options": [
+          { "key": "A", "text": "Trocar Soma, Contagem, Média etc." },
+          { "key": "B", "text": "Mudar o nome das abas" }
+        ],
+        "answer": "A",
+        "explain": "É onde você define o tipo de resumo."
+      },
+      {
+        "id": 4,
+        "question": "Mostrar valores como '% do Total Geral' serve para:",
+        "options": [
+          { "key": "A", "text": "Ver participação percentual de cada item no total" },
+          { "key": "B", "text": "Converter valor em texto" }
+        ],
+        "answer": "A",
+        "explain": "É análise de participação."
+      },
+      {
+        "id": 5,
+        "question": "Top 10 (Top N) é útil para:",
+        "options": [
+          { "key": "A", "text": "Mostrar apenas os maiores itens (ex.: Top 5 produtos)" },
+          { "key": "B", "text": "Somar todas as colunas automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ele filtra para os maiores por um critério."
+      },
+      {
+        "id": 6,
+        "question": "O layout Tabular é recomendado porque:",
+        "options": [
+          { "key": "A", "text": "Fica mais parecido com tabela e melhora leitura/cópia" },
+          { "key": "B", "text": "Impede atualização" }
+        ],
+        "answer": "A",
+        "explain": "Tabular dá estrutura de tabela tradicional."
+      },
+      {
+        "id": 7,
+        "question": "Campo calculado na Tabela Dinâmica serve para:",
+        "options": [
+          { "key": "A", "text": "Criar cálculos simples dentro da dinâmica" },
+          { "key": "B", "text": "Criar gráficos 3D automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ele cria um campo com fórmula simples."
+      },
+      {
+        "id": 8,
+        "question": "Agrupar números em faixas é útil para:",
+        "options": [
+          { "key": "A", "text": "Ver distribuição (0-500, 500-1000...)" },
+          { "key": "B", "text": "Criar lista suspensa" }
+        ],
+        "answer": "A",
+        "explain": "Faixas ajudam a entender distribuição."
+      },
+      {
+        "id": 9,
+        "question": "Se a base muda, você deve:",
+        "options": [
+          { "key": "A", "text": "Atualizar (Refresh) a Tabela Dinâmica" },
+          { "key": "B", "text": "Ignorar porque atualiza sozinho sempre" }
+        ],
+        "answer": "A",
+        "explain": "Sem refresh, o relatório fica desatualizado."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa prática para evitar perder linhas novas na fonte é:",
+        "options": [
+          { "key": "A", "text": "Transformar a base em Tabela (Ctrl+T)" },
+          { "key": "B", "text": "Mesclar células no meio da base" }
+        ],
+        "answer": "A",
+        "explain": "Tabela cresce automaticamente e mantém a fonte correta."
+      }
+    ]
+  },
+  "extra": {
+    "receitaAgruparData": "Receita: agrupar por mês/ano\n\n1) Data em Linhas\n2) Clique em uma data\n3) Botão direito → Agrupar\n4) Marque Meses e Anos\n\nSe não der:\n- a coluna Data está como texto na base.",
+    "receitaPercentual": "Receita: % do total\n\n1) Campo Valor em Valores\n2) Configurações do Campo de Valor\n3) Mostrar valores como → % do Total Geral\n\nUso:\n- participação por produto/vendedor."
+  }
+}

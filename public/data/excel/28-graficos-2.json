@@ -1,0 +1,176 @@
+{
+  "id": "28-graficos-2",
+  "title": "Aula 28 — Gráficos 2: formatação, rótulos, eixos e boas práticas (sem poluir)",
+  "steps": [
+    {
+      "title": "Objetivo da aula (deixar gráfico apresentável e claro)",
+      "body": "Na aula 27 você aprendeu a escolher o gráfico certo.\n\nAgora você vai aprender a deixar o gráfico:\n- legível\n- com rótulos certos\n- com eixos bem configurados\n- sem poluição visual\n\nRegra:\n- formatação boa não é enfeite: é facilitar leitura."
+    },
+    {
+      "title": "Elementos do gráfico (mapa rápido)",
+      "body": "Um gráfico tem elementos principais:\n\n- **Título do gráfico**: o que está sendo mostrado\n- **Eixos** (X e Y): categorias e valores\n- **Legenda**: o que cada cor/série significa\n- **Rótulos de dados**: valores em cima das barras/linhas\n- **Linhas de grade**: ajudam a ler valores\n\nRegra:\n- você não precisa usar todos; só os que ajudam."
+    },
+    {
+      "title": "Título bom (o que escrever)",
+      "body": "Título deve responder:\n- o quê\n- de quê\n- em qual período (se tiver)\n\nExemplos:\n- \"Vendas por produto — Março/2026\"\n- \"Faturamento diário — última semana\"\n\nRegra:\n- título bom evita a pessoa perguntar “o que é isso?”."
+    },
+    {
+      "title": "Rótulos de dados (quando mostrar valores no gráfico)",
+      "body": "Rótulos de dados mostram os números direto no gráfico.\n\nQuando usar:\n- quando são poucas barras/pontos\n- quando o número exato é importante\n\nQuando evitar:\n- quando tem muita categoria (vira poluição)\n\nComo:\n- selecione o gráfico\n- clique no botão + (Elementos do gráfico)\n- marque **Rótulos de Dados**\n\nRegra:\n- rótulo é para clareza, não para lotar de número."
+    },
+    {
+      "title": "Eixos: formato de número (moeda, %, milhares)",
+      "body": "Um erro comum é:\n- o gráfico mostrar números sem contexto\n\nO que ajustar:\n- eixo Y com formato de moeda (R$)\n- porcentagens com %\n- milhares com separador\n\nComo:\n- clique no eixo → Formatar Eixo\n- Número → escolha o formato\n\nRegra:\n- eixo bem formatado evita interpretação errada."
+    },
+    {
+      "title": "Unidade e escala do eixo (não enganar sem querer)",
+      "body": "Você pode ajustar:\n- mínimo\n- máximo\n- unidade\n\nCuidado:\n- mexer no mínimo pode “exagerar” diferença visual\n\nRegra:\n- se for comparação de grandezas, começar em 0 costuma ser mais honesto (especialmente em barras/colunas)."
+    },
+    {
+      "title": "Linhas de grade (gridlines) — use com moderação",
+      "body": "Linhas de grade ajudam a ler, mas podem poluir.\n\nBoas práticas:\n- mantenha grade leve\n- às vezes só a grade principal basta\n\nComo:\n- Elementos do gráfico → Linhas de grade\n\nRegra:\n- se a grade chama mais atenção que os dados, tem grade demais."
+    },
+    {
+      "title": "Legenda (quando manter e quando remover)",
+      "body": "Legenda é útil quando:\n- tem mais de uma série\n- precisa identificar cores\n\nPode remover quando:\n- só tem uma série e o título já explica\n\nRegra:\n- se a legenda não adiciona informação, ela é peso."
+    },
+    {
+      "title": "Ordenação e Top N (deixar mensagem clara)",
+      "body": "Para gráficos de ranking:\n- ordenar do maior para o menor\n- usar Top 5/Top 10\n\nIsso deixa a mensagem direta:\n- “os principais” aparecem\n\nRegra:\n- não force o leitor a procurar o maior no meio de 30 barras."
+    },
+    {
+      "title": "Cuidado com 3D, sombras e efeitos",
+      "body": "Efeitos 3D e sombras:\n- costumam piorar leitura\n- podem distorcer percepção\n\nRegra:\n- gráfico profissional é simples, não cheio de efeitos."
+    },
+    {
+      "title": "Gráfico com Tabela Dinâmica (gráfico dinâmico)",
+      "body": "Você pode criar gráfico a partir de Tabela Dinâmica.\n\nVantagens:\n- muda com filtros/segmentações\n- ótimo para dashboards\n\nComo:\n- clique na Tabela Dinâmica\n- Inserir → Gráfico Dinâmico\n\nRegra:\n- para painel interativo, gráfico dinâmico é o caminho."
+    },
+    {
+      "title": "Checklist de boas práticas (rápido e útil)",
+      "body": "Antes de entregar um gráfico:\n\n- título explica o que é?\n- unidade está clara (R$, %, qty)?\n- ranking está ordenado?\n- tem rótulo demais?\n- legenda é necessária?\n- sem 3D?\n\nRegra:\n- clareza > beleza."
+    },
+    {
+      "title": "Erros comuns (e como corrigir)",
+      "body": "1) Texto pequeno e ilegível\n- aumentar tamanho da fonte\n\n2) Rótulos sobrepostos\n- remover ou usar menos categorias\n\n3) Eixo sem formato (moeda/%/milhar)\n- formatar eixo\n\n4) Gráfico cheio de itens\n- usar Top N, agrupar ou filtrar\n\nRegra:\n- se está poluído, corte coisas."
+    },
+    {
+      "title": "Mini prática (70 minutos) — antes e depois (gráfico profissional)",
+      "body": "Use um resumo (pode ser de tabela dinâmica):\n- Produto | Total Vendas\n\n1) Crie um gráfico de barras (ranking).\n\n2) Faça melhorias:\n- ordene do maior para o menor\n- título: \"Top 10 produtos — Vendas (R$)\"\n- eixo Y formatado como moeda\n- remova 3D (se tiver)\n- rótulos de dados (se couber)\n- remova legenda se for inútil\n\n3) Crie um gráfico de linha com Data | Total:\n- título com período\n- eixo Y moeda\n- grade leve\n\nObjetivo:\n- treinar escolhas de formatação que aumentam a clareza."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Elementos: título, eixos, legenda, rótulos, grade\n- Formate eixos (moeda, %, milhar)\n- Cuidado com escala (em barras, começar em 0 normalmente é melhor)\n- Use rótulos com moderação\n- Ordene ranking e use Top N\n- Evite 3D e efeitos\n- Gráfico dinâmico é ótimo para dashboards\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 28 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um bom título de gráfico deve:",
+        "options": [
+          { "key": "A", "text": "Explicar claramente o que está sendo mostrado (e período, se houver)" },
+          { "key": "B", "text": "Ser apenas 'Gráfico 1'" }
+        ],
+        "answer": "A",
+        "explain": "Título bom evita dúvida."
+      },
+      {
+        "id": 2,
+        "question": "Rótulos de dados são melhores quando:",
+        "options": [
+          { "key": "A", "text": "Há poucas categorias e o número exato importa" },
+          { "key": "B", "text": "Há 50 categorias e você quer encher de número" }
+        ],
+        "answer": "A",
+        "explain": "Muitos rótulos viram poluição."
+      },
+      {
+        "id": 3,
+        "question": "Formatar o eixo Y como moeda serve para:",
+        "options": [
+          { "key": "A", "text": "Deixar a unidade clara (R$)" },
+          { "key": "B", "text": "Mudar o valor real dos dados" }
+        ],
+        "answer": "A",
+        "explain": "Formato no eixo não muda o dado, só a leitura."
+      },
+      {
+        "id": 4,
+        "question": "Em gráficos de barras/colunas, começar o eixo em 0 geralmente:",
+        "options": [
+          { "key": "A", "text": "Evita exagerar diferenças e é mais honesto" },
+          { "key": "B", "text": "Sempre atrapalha" }
+        ],
+        "answer": "A",
+        "explain": "Escala pode distorcer percepção."
+      },
+      {
+        "id": 5,
+        "question": "Linhas de grade devem ser:",
+        "options": [
+          { "key": "A", "text": "Usadas com moderação para ajudar leitura" },
+          { "key": "B", "text": "Sempre o elemento mais forte do gráfico" }
+        ],
+        "answer": "A",
+        "explain": "Grade demais polui."
+      },
+      {
+        "id": 6,
+        "question": "Legenda pode ser removida quando:",
+        "options": [
+          { "key": "A", "text": "Não adiciona informação (ex.: uma única série bem explicada)" },
+          { "key": "B", "text": "Ela é obrigatória em todos os gráficos" }
+        ],
+        "answer": "A",
+        "explain": "Se não ajuda, é ruído."
+      },
+      {
+        "id": 7,
+        "question": "Ordenar do maior para o menor em ranking ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Deixa a mensagem clara e imediata" },
+          { "key": "B", "text": "Deixa mais confuso" }
+        ],
+        "answer": "A",
+        "explain": "Ranking deve destacar o principal."
+      },
+      {
+        "id": 8,
+        "question": "Efeitos 3D em gráficos geralmente:",
+        "options": [
+          { "key": "A", "text": "Prejudicam leitura e podem distorcer percepção" },
+          { "key": "B", "text": "Sempre melhoram clareza" }
+        ],
+        "answer": "A",
+        "explain": "3D é mais estética do que informação."
+      },
+      {
+        "id": 9,
+        "question": "Gráfico dinâmico é útil porque:",
+        "options": [
+          { "key": "A", "text": "Responde a filtros/segmentações da Tabela Dinâmica" },
+          { "key": "B", "text": "Apaga dados automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ele muda junto com o relatório."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa regra geral é:",
+        "options": [
+          { "key": "A", "text": "Clareza > enfeite" },
+          { "key": "B", "text": "Enfeite > clareza" }
+        ],
+        "answer": "A",
+        "explain": "Gráfico é comunicação."
+      }
+    ]
+  },
+  "extra": {
+    "checklistEntrega": "Checklist de entrega (gráfico)\n\n- Título claro (o quê + período)\n- Unidade clara no eixo (R$, %, qty)\n- Ranking ordenado + Top N se necessário\n- Rótulos só se couber (sem poluir)\n- Legenda só se precisar\n- Sem 3D/efeitos\n- Grade leve\n",
+    "atalhoDeQualidade": "Atalho de qualidade\n\nSe o gráfico está confuso, faça 3 cortes:\n1) reduza categorias (Top 10)\n2) remova rótulos/legenda desnecessários\n3) ajuste eixo e título\n\nQuase sempre resolve."
+  }
+}

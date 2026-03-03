@@ -1,0 +1,176 @@
+{
+  "id": "24-tabelas-dinamicas-1",
+  "title": "Aula 24 — Tabela dinâmica 1: criar, arrastar campos e resumir dados do jeito certo",
+  "steps": [
+    {
+      "title": "O que é Tabela Dinâmica (bem simples)",
+      "body": "Tabela Dinâmica é uma ferramenta para **resumir dados rapidamente** sem você ficar fazendo SOMASES/CONT.SE.S na mão.\n\nEla pega uma base (lista) e permite você responder perguntas como:\n- total por produto\n- total por vendedor\n- total por mês\n- quantidade por status\n\nTudo isso só arrastando campos.\n\nRegra:\n- Tabela Dinâmica é o “relatório automático” do Excel."
+    },
+    {
+      "title": "Pré-requisito: sua base precisa estar limpa",
+      "body": "Para a Tabela Dinâmica funcionar bem, sua base deve ter:\n- cabeçalhos claros (uma linha)\n- colunas consistentes\n- sem linhas em branco no meio\n- sem células mescladas\n\nMelhor ainda:\n- transformar a base em **Tabela (Ctrl+T)**\n\nRegra:\n- Tabela Dinâmica ama dados organizados."
+    },
+    {
+      "title": "A lógica da Tabela Dinâmica (4 áreas)",
+      "body": "Quando você cria uma Tabela Dinâmica, você trabalha com 4 áreas:\n\n- **Linhas**: como você quer agrupar (ex.: Produto)\n- **Colunas**: outro tipo de agrupamento (ex.: Mês)\n- **Valores**: o que você quer calcular (ex.: Soma de Valor)\n- **Filtros**: um filtro geral (ex.: Vendedor)\n\nRegra:\n- Linhas/Colunas = “como agrupa”.\n- Valores = “o que mede”."
+    },
+    {
+      "title": "Como criar a Tabela Dinâmica (passo a passo)",
+      "body": "1) Clique em qualquer célula dentro da base\n2) Vá em **Inserir → Tabela Dinâmica**\n3) Confirme o intervalo (ou o nome da Tabela, se for Ctrl+T)\n4) Escolha onde colocar:\n- nova planilha (recomendado)\n- ou planilha existente\n5) OK\n\nRegra:\n- use “Nova planilha” para não misturar base com relatório."
+    },
+    {
+      "title": "O painel de campos (arrastar e soltar)",
+      "body": "Depois de criar, aparece o painel:\n- Campos da Tabela Dinâmica\n\nVocê vai arrastar:\n- Produto para Linhas\n- Valor para Valores\n\nE pronto: você já tem um relatório.\n\nRegra:\n- o segredo é testar combinações: arrasta, olha, troca."
+    },
+    {
+      "title": "Exemplo 1: Total por Produto (o clássico)",
+      "body": "Base:\n- Data | Vendedor | Produto | Valor\n\nTabela dinâmica:\n- Produto → Linhas\n- Valor → Valores\n\nResultado:\n- soma do Valor por Produto\n\nRegra:\n- sempre confira se o Valor está como “Soma” (às vezes vira Contagem)."
+    },
+    {
+      "title": "Soma vs Contagem (por que às vezes dá errado)",
+      "body": "Se a coluna Valor tiver texto ou estiver “suja”, a Tabela Dinâmica pode entender como texto.\nAí em vez de SOMA, ela coloca:\n- **Contagem de Valor**\n\nComo corrigir:\n- clique no campo em Valores\n- Configurações do Campo de Valor\n- escolher **Soma**\n\nSe não deixar somar:\n- o dado não é número de verdade\n\nRegra:\n- “contagem quando deveria ser soma” é sinal de dado sujo."
+    },
+    {
+      "title": "Exemplo 2: Total por Vendedor e Produto (matriz)",
+      "body": "Quer ver vendedor x produto.\n\n- Vendedor → Linhas\n- Produto → Colunas\n- Valor → Valores\n\nResultado:\n- uma matriz com soma de vendas\n\nRegra:\n- Linhas + Colunas = relatório 2D (muito poderoso)."
+    },
+    {
+      "title": "Exemplo 3: Contagem por Status",
+      "body": "Se você quer quantidade de pedidos por Status:\n\n- Status → Linhas\n- Pedido (ou qualquer campo) → Valores\n\nDepois em Valores:\n- Configurações → **Contagem**\n\nRegra:\n- para contar registros, use Contagem."
+    },
+    {
+      "title": "Ordenar e filtrar dentro da Tabela Dinâmica",
+      "body": "Você pode:\n- ordenar do maior para o menor\n- filtrar itens específicos\n\nDica:\n- clique em um item (ex.: um produto)\n- use ordenar/filtro ali\n\nRegra:\n- Tabela Dinâmica tem filtro próprio, independente do filtro da base."
+    },
+    {
+      "title": "Atualizar (refresh) — obrigatório lembrar",
+      "body": "Se você mudar a base de dados, a Tabela Dinâmica não atualiza sozinha (na maioria dos casos).\n\nVocê precisa:\n- clicar na tabela dinâmica\n- **Atualizar** (Refresh)\n\nAtalho comum:\n- **Alt + F5** (atualiza a tabela dinâmica selecionada)\n\nRegra:\n- dado mudou? Atualize."
+    },
+    {
+      "title": "Boas práticas (para não virar bagunça)",
+      "body": "1) Base em uma planilha, relatório em outra\n2) Nomeie a base como Tabela (Ctrl+T)\n3) Cabeçalhos claros e sem vazios\n4) Evite colunas “misturadas” (ex.: \"10 un\")\n5) Formate valores como moeda depois\n\nRegra:\n- Tabela Dinâmica é fácil, mas depende muito da qualidade da base."
+    },
+    {
+      "title": "Erros comuns (e como resolver)",
+      "body": "1) Intervalo errado (base não pega tudo)\n- melhor: use Tabela (Ctrl+T)\n\n2) Soma vira contagem\n- dado não é número (está como texto)\n\n3) Não atualiza\n- esqueceu de Atualizar\n\n4) Cabeçalho duplicado ou vazio\n- tabela dinâmica confunde campos\n\nRegra:\n- se algo parece estranho, volte e confira a base."
+    },
+    {
+      "title": "Mini prática (60 minutos) — seu primeiro relatório dinâmico",
+      "body": "1) Monte uma base com 50 linhas:\n- Data | Vendedor | Produto | Valor | Status\n\n2) Transforme em Tabela (Ctrl+T) e chame `tbVendas`.\n\n3) Crie Tabela Dinâmica em nova planilha.\n\n4) Faça 3 relatórios:\n\nA) Total por Produto\n- Produto → Linhas\n- Valor → Valores (Soma)\n\nB) Total por Vendedor e Produto\n- Vendedor → Linhas\n- Produto → Colunas\n- Valor → Valores\n\nC) Contagem por Status\n- Status → Linhas\n- Produto (ou Pedido) → Valores (Contagem)\n\n5) Adicione 5 linhas na base e use Atualizar.\n\nObjetivo:\n- aprender a montar relatórios só arrastando campos."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Tabela Dinâmica resume dados rapidamente\n- Precisa de base limpa (melhor: Ctrl+T)\n- 4 áreas: Linhas, Colunas, Valores, Filtros\n- Soma vs Contagem depende do tipo do dado\n- Atualizar (Refresh) é obrigatório quando a base muda\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 24 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Tabela Dinâmica serve para:",
+        "options": [
+          { "key": "A", "text": "Resumir dados rapidamente por grupos (produto, vendedor etc.)" },
+          { "key": "B", "text": "Desenhar bordas em células" }
+        ],
+        "answer": "A",
+        "explain": "Ela cria relatórios por agrupamento."
+      },
+      {
+        "id": 2,
+        "question": "Uma boa prática antes de criar Tabela Dinâmica é:",
+        "options": [
+          { "key": "A", "text": "Organizar a base e, se possível, transformar em Tabela (Ctrl+T)" },
+          { "key": "B", "text": "Mesclar células no cabeçalho" }
+        ],
+        "answer": "A",
+        "explain": "Base limpa evita erro e intervalo quebrado."
+      },
+      {
+        "id": 3,
+        "question": "As 4 áreas são:",
+        "options": [
+          { "key": "A", "text": "Linhas, Colunas, Valores, Filtros" },
+          { "key": "B", "text": "Fonte, Cor, Borda, Sombra" }
+        ],
+        "answer": "A",
+        "explain": "É a estrutura lógica da Tabela Dinâmica."
+      },
+      {
+        "id": 4,
+        "question": "Para ver total por Produto, você coloca:",
+        "options": [
+          { "key": "A", "text": "Produto em Linhas e Valor em Valores" },
+          { "key": "B", "text": "Produto em Valores e Valor em Linhas" }
+        ],
+        "answer": "A",
+        "explain": "Linhas agrupa, Valores soma/conta."
+      },
+      {
+        "id": 5,
+        "question": "Se 'Valor' vira Contagem em vez de Soma, provavelmente:",
+        "options": [
+          { "key": "A", "text": "A coluna Valor está como texto ou tem dados sujos" },
+          { "key": "B", "text": "O Excel não sabe somar" }
+        ],
+        "answer": "A",
+        "explain": "Texto não soma, então ele conta."
+      },
+      {
+        "id": 6,
+        "question": "Para atualizar após mudar a base, você deve:",
+        "options": [
+          { "key": "A", "text": "Atualizar (Refresh) a Tabela Dinâmica" },
+          { "key": "B", "text": "Fechar e abrir o Excel" }
+        ],
+        "answer": "A",
+        "explain": "Refresh traz os novos dados."
+      },
+      {
+        "id": 7,
+        "question": "Linhas e Colunas juntas na Tabela Dinâmica servem para:",
+        "options": [
+          { "key": "A", "text": "Criar um relatório 2D (matriz)" },
+          { "key": "B", "text": "Apagar duplicados" }
+        ],
+        "answer": "A",
+        "explain": "Ex.: Vendedor (linhas) x Produto (colunas)."
+      },
+      {
+        "id": 8,
+        "question": "Para contar registros por Status, você deve usar em Valores:",
+        "options": [
+          { "key": "A", "text": "Contagem" },
+          { "key": "B", "text": "Soma" }
+        ],
+        "answer": "A",
+        "explain": "Contagem é para quantidade de itens."
+      },
+      {
+        "id": 9,
+        "question": "Uma Tabela Dinâmica é melhor mantida quando:",
+        "options": [
+          { "key": "A", "text": "Base e relatório ficam em planilhas separadas" },
+          { "key": "B", "text": "Tudo fica misturado na mesma área" }
+        ],
+        "answer": "A",
+        "explain": "Separar base e relatório evita bagunça."
+      },
+      {
+        "id": 10,
+        "question": "Inserir → Tabela Dinâmica normalmente começa por:",
+        "options": [
+          { "key": "A", "text": "Clicar dentro da base de dados" },
+          { "key": "B", "text": "Selecionar uma cor do tema" }
+        ],
+        "answer": "A",
+        "explain": "Assim o Excel identifica a fonte de dados."
+      }
+    ]
+  },
+  "extra": {
+    "receitaRapida": "Receita rápida: primeira Tabela Dinâmica\n\n1) Base limpa (melhor: Ctrl+T)\n2) Inserir → Tabela Dinâmica\n3) Produto → Linhas\n4) Valor → Valores (Soma)\n5) Atualizar quando a base mudar\n",
+    "atalhos": "Atalhos úteis\n\n- Alt + F5: atualiza a Tabela Dinâmica selecionada\n\nDica:\nSe a soma virar contagem, corrija o tipo do dado na base (número de verdade)."
+  }
+}

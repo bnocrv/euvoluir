@@ -1,0 +1,168 @@
+{
+  "id": "27-graficos-1",
+  "title": "Aula 27 — Gráficos 1: escolher o gráfico certo (coluna, linha, pizza, barras)",
+  "steps": [
+    {
+      "title": "Por que escolher o gráfico certo importa",
+      "body": "Gráfico é para responder uma pergunta visualmente.\n\nSe você escolhe o gráfico errado:\n- confunde\n- passa a mensagem errada\n- dá trabalho e não ajuda\n\nHoje você vai aprender a escolher entre os principais:\n- Coluna\n- Barra\n- Linha\n- Pizza\n\nRegra:\n- gráfico bom é o que responde a pergunta com clareza, não o mais “bonito”."
+    },
+    {
+      "title": "A regra mais importante: que pergunta você quer responder?",
+      "body": "Perguntas comuns:\n\n1) Comparar categorias (produto A vs B)\n→ Coluna ou Barra\n\n2) Ver evolução no tempo (por dia/mês)\n→ Linha (ou coluna)\n\n3) Ver participação no total (fatias do todo)\n→ Pizza (com cuidado)\n\n4) Ranking (do maior para o menor)\n→ Barra horizontal\n\nRegra:\n- primeiro a pergunta, depois o tipo de gráfico."
+    },
+    {
+      "title": "Gráfico de Colunas (comparar categorias)",
+      "body": "Use Coluna quando:\n- você quer comparar valores entre categorias\n\nExemplos:\n- vendas por produto\n- estoque por item\n- faturamento por vendedor\n\nDica:\n- funciona melhor quando tem poucas categorias.\n\nRegra:\n- colunas = comparação rápida."
+    },
+    {
+      "title": "Gráfico de Barras (ranking e nomes longos)",
+      "body": "Barras (horizontal) é ótimo quando:\n- você quer ranking\n- os nomes são longos (produtos grandes)\n\nExemplos:\n- Top 10 produtos\n- vendas por categoria com nomes grandes\n\nRegra:\n- se o texto não cabe embaixo, use barra horizontal."
+    },
+    {
+      "title": "Gráfico de Linha (evolução no tempo)",
+      "body": "Linha é perfeito para:\n- evolução no tempo (tendência)\n\nExemplos:\n- vendas por dia\n- faturamento por mês\n- estoque ao longo de semanas\n\nDica:\n- eixo X deve ser data (de verdade) para ficar bom.\n\nRegra:\n- linha = tendência e movimento."
+    },
+    {
+      "title": "Gráfico de Pizza (participação no total) — use com cuidado",
+      "body": "Pizza serve para:\n- mostrar participação no total\n\nMas tem regra:\n- poucas categorias (ideal até 5)\n- valores bem diferentes (senão fica tudo parecido)\n\nQuando NÃO usar:\n- muitas categorias\n- comparar mudanças ao longo do tempo\n\nAlternativa melhor:\n- barra/coluna com %\n\nRegra:\n- pizza é exceção, não padrão."
+    },
+    {
+      "title": "Como criar um gráfico (passo a passo básico)",
+      "body": "1) Selecione os dados (incluindo cabeçalho)\n2) Vá em **Inserir**\n3) Escolha o tipo (Coluna, Linha, Barra, Pizza)\n\nDica:\n- se sua base é Tabela Dinâmica, você pode criar gráfico dinâmico (aula 28/29 vão aprofundar).\n\nRegra:\n- selecionar o intervalo certo é metade do gráfico."
+    },
+    {
+      "title": "Categorias e valores (não misture)",
+      "body": "Um gráfico precisa de:\n- **Categorias** (ex.: Produto, Mês)\n- **Valores** (ex.: Soma de Valor)\n\nSe você selecionar errado:\n- o Excel cria um gráfico confuso\n\nRegra:\n- sempre confirme: “isso é o eixo (categoria) e isso é o número (valor)”."
+    },
+    {
+      "title": "Ordenar dados antes do gráfico (ranking melhor)",
+      "body": "Para ranking:\n- ordene do maior para o menor antes de criar\n\nExemplo:\n- Top produtos\n\nRegra:\n- gráfico não corrige bagunça: ele só desenha o que você deu."
+    },
+    {
+      "title": "Dicas rápidas de legibilidade (sem entrar em estética ainda)",
+      "body": "Para o gráfico ficar claro:\n- dê um título\n- evite excesso de categorias\n- use barras quando o nome é longo\n- use linha para tempo\n\nRegra:\n- clareza vem de simplicidade."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Pizza com 12 fatias\n- vira confusão\n\n2) Linha para comparar categorias sem tempo\n- linha é pra tendência\n\n3) Categoria e valor misturados\n- seleção errada\n\n4) Gráfico “bonito” mas inútil\n- sem pergunta clara\n\nRegra:\n- se o gráfico não responde nada, ele é decoração."
+    },
+    {
+      "title": "Mini prática (60 minutos) — 4 perguntas, 4 gráficos",
+      "body": "Crie uma base simples (ou use sua tbVendas):\n- Produto | Valor\n- Data | Valor\n- Produto | % do total\n\nFaça:\n\n1) Comparar produtos (coluna)\n- vendas por produto\n\n2) Ranking Top 5 (barra)\n- ordenar e usar barra horizontal\n\n3) Evolução por dia/mês (linha)\n- data real + valor\n\n4) Participação no total (pizza)\n- só top 5 produtos\n\nObjetivo:\n- treinar a escolha certa para cada pergunta."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Coluna: comparar categorias\n- Barra: ranking e nomes longos\n- Linha: tendência no tempo\n- Pizza: participação no total (poucas categorias)\n- Primeiro pense na pergunta, depois no gráfico\n- Seleção correta (categoria vs valor) é essencial\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 27 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Para comparar valores entre categorias (Produto A vs B), o mais indicado é:",
+        "options": [
+          { "key": "A", "text": "Coluna ou Barra" },
+          { "key": "B", "text": "Pizza sempre" }
+        ],
+        "answer": "A",
+        "explain": "Coluna/barra são melhores para comparação direta."
+      },
+      {
+        "id": 2,
+        "question": "Para mostrar evolução no tempo (mês a mês), o mais indicado é:",
+        "options": [
+          { "key": "A", "text": "Linha" },
+          { "key": "B", "text": "Pizza" }
+        ],
+        "answer": "A",
+        "explain": "Linha mostra tendência."
+      },
+      {
+        "id": 3,
+        "question": "Barras horizontais são ótimas quando:",
+        "options": [
+          { "key": "A", "text": "Você tem ranking e nomes longos" },
+          { "key": "B", "text": "Você quer mostrar horas do dia" }
+        ],
+        "answer": "A",
+        "explain": "Barras lidam melhor com textos longos."
+      },
+      {
+        "id": 4,
+        "question": "Pizza é recomendada quando:",
+        "options": [
+          { "key": "A", "text": "Você tem poucas categorias e quer participação no total" },
+          { "key": "B", "text": "Você tem 20 categorias e quer comparar tudo" }
+        ],
+        "answer": "A",
+        "explain": "Pizza com muitas fatias confunde."
+      },
+      {
+        "id": 5,
+        "question": "Antes de escolher o gráfico, você deve pensar:",
+        "options": [
+          { "key": "A", "text": "Qual pergunta eu quero responder?" },
+          { "key": "B", "text": "Qual é o gráfico mais colorido?" }
+        ],
+        "answer": "A",
+        "explain": "O tipo de gráfico depende da pergunta."
+      },
+      {
+        "id": 6,
+        "question": "Um gráfico precisa de:",
+        "options": [
+          { "key": "A", "text": "Categorias e valores" },
+          { "key": "B", "text": "Somente cores" }
+        ],
+        "answer": "A",
+        "explain": "Sem categoria e valor, vira confuso."
+      },
+      {
+        "id": 7,
+        "question": "Para ranking, é boa prática:",
+        "options": [
+          { "key": "A", "text": "Ordenar os dados do maior para o menor" },
+          { "key": "B", "text": "Deixar aleatório e confiar no gráfico" }
+        ],
+        "answer": "A",
+        "explain": "O gráfico só desenha o que você deu."
+      },
+      {
+        "id": 8,
+        "question": "Usar linha para comparar categorias sem tempo é:",
+        "options": [
+          { "key": "A", "text": "Geralmente errado (linha é para tendência)" },
+          { "key": "B", "text": "Sempre o melhor" }
+        ],
+        "answer": "A",
+        "explain": "Sem tempo, linha perde sentido."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum em pizza é:",
+        "options": [
+          { "key": "A", "text": "Colocar muitas fatias" },
+          { "key": "B", "text": "Ter poucas categorias" }
+        ],
+        "answer": "A",
+        "explain": "Muitas fatias ficam ilegíveis."
+      },
+      {
+        "id": 10,
+        "question": "Um gráfico bom é aquele que:",
+        "options": [
+          { "key": "A", "text": "Responde a pergunta com clareza" },
+          { "key": "B", "text": "Tem mais efeitos e enfeites" }
+        ],
+        "answer": "A",
+        "explain": "Clareza é o objetivo."
+      }
+    ]
+  },
+  "extra": {
+    "guiaDeEscolha": "Guia rápido de escolha\n\n- Comparar categorias → Coluna / Barra\n- Ranking Top N → Barra horizontal\n- Evolução no tempo → Linha\n- Participação do total → Pizza (até ~5 itens)\n\nDica:\nSe você está em dúvida entre Coluna e Barra, escolha Barra quando os nomes forem longos.",
+    "checklistGrafico": "Checklist antes de criar\n\n- Tenho categorias e valores definidos?\n- Minha pergunta está clara?\n- Tenho poucas categorias (se for pizza)?\n- Dados estão ordenados (se for ranking)?\n- Data é data real (se for linha)?\n"
+  }
+}

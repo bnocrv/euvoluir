@@ -1,0 +1,164 @@
+{
+  "id": "22-somase-contse",
+  "title": "Aula 22 — SOMASE(S) e CONT.SE(S): somar/contar por critérios (relatórios rápidos)",
+  "steps": [
+    {
+      "title": "O problema que SOMASE(S) e CONT.SE(S) resolvem",
+      "body": "Você tem uma lista grande (vendas, estoque, pedidos) e quer responder perguntas como:\n\n- Quanto eu vendi do produto X?\n- Quantos pedidos estão com status \"Atrasado\"?\n- Quanto foi vendido pelo vendedor Bruno no mês 3?\n\nIsso é **somar/contar por critérios**.\n\nRegra:\n- SOMASE(S) = soma com regras.\n- CONT.SE(S) = contagem com regras."
+    },
+    {
+      "title": "CONT.SE (contar com 1 critério)",
+      "body": "Sintaxe:\n- `=CONT.SE(intervalo; critério)`\n\nExemplo:\n- contar quantas vezes aparece \"Atrasado\" em D2:D200:\n`=CONT.SE(D2:D200;\"Atrasado\")`\n\nExemplo com número:\n- contar vendas acima de 1000 em C2:C200:\n`=CONT.SE(C2:C200;\">1000\")`\n\nRegra:\n- critério com comparador vai entre aspas: \">1000\"."
+    },
+    {
+      "title": "SOMASE (somar com 1 critério)",
+      "body": "Sintaxe:\n- `=SOMASE(intervalo; critério; [intervalo_soma])`\n\nComo pensar:\n- intervalo = onde o Excel vai verificar a condição\n- intervalo_soma = o que ele vai somar\n\nExemplo:\n- somar valores (C) quando produto (B) for \"Camisa\":\n`=SOMASE(B2:B200;\"Camisa\";C2:C200)`\n\nRegra:\n- o intervalo do critério e o intervalo de soma precisam ter o mesmo tamanho (mesmas linhas)."
+    },
+    {
+      "title": "Critérios com curingas (texto que contém)",
+      "body": "Você pode usar curingas:\n- `*` = qualquer coisa antes/depois\n- `?` = um caractere\n\nExemplo:\n- contar produtos que contêm \"Cam\":\n`=CONT.SE(B2:B200;\"*Cam*\")`\n\nRegra:\n- `*texto*` é o jeito mais comum de “contém”."
+    },
+    {
+      "title": "CONT.SE.S (contar com vários critérios)",
+      "body": "Sintaxe:\n- `=CONT.SE.S(intervalo_crit1; crit1; intervalo_crit2; crit2; ...)`\n\nExemplo:\n- contar pedidos do vendedor \"Ana\" com status \"Atrasado\":\n`=CONT.SE.S(B2:B200;\"Ana\";D2:D200;\"Atrasado\")`\n\nRegra:\n- CONT.SE.S exige pares (intervalo, critério)."
+    },
+    {
+      "title": "SOMASES (somar com vários critérios)",
+      "body": "Sintaxe:\n- `=SOMASES(intervalo_soma; intervalo_crit1; crit1; intervalo_crit2; crit2; ...)`\n\nRepare a diferença:\n- no SOMASES o primeiro argumento é o intervalo de soma\n\nExemplo:\n- somar valores (C) do vendedor \"Ana\" no mês 3:\n`=SOMASES(C2:C200;B2:B200;\"Ana\";A2:A200;\">=\"&DATA(2026;3;1);A2:A200;\"<=\"&DATA(2026;3;31))`\n\nRegra:\n- SOMASES começa pelo que você quer somar."
+    },
+    {
+      "title": "Critérios com célula (o jeito certo: usar &)",
+      "body": "Se o critério está numa célula (ex.: F1), você não quer digitar texto fixo.\n\nExemplo:\n- F1 tem o produto\n\n`=SOMASE(B2:B200;F1;C2:C200)`\n\nPara critério com comparador:\n- F2 tem um número 1000\n\n`=CONT.SE(C2:C200;\">\"&F2)`\n\nRegra:\n- comparador + célula = use `\" > \"&F2` (com &)."
+    },
+    {
+      "title": "Critérios de data (período por mês) — forma simples",
+      "body": "Para somar por mês, use dois critérios:\n- >= primeiro dia do mês\n- <= último dia do mês\n\nExemplo (mês 3 de 2026):\n- `>=DATA(2026;3;1)`\n- `<=DATA(2026;3;31)`\n\nEm SOMASES:\n`=SOMASES(C2:C200;A2:A200;\">=\"&DATA(2026;3;1);A2:A200;\"<=\"&DATA(2026;3;31))`\n\nRegra:\n- para datas, sempre use DATA() e comparadores com &."
+    },
+    {
+      "title": "SOMASES com Tabela (Ctrl+T) — mais profissional",
+      "body": "Se sua base é Tabela `tbVendas` com colunas:\n- Data\n- Vendedor\n- Produto\n- Valor\n\nExemplo:\n- somar Valor quando Produto = F1:\n`=SOMASES(tbVendas[Valor];tbVendas[Produto];F1)`\n\nVantagem:\n- a tabela cresce e a fórmula acompanha.\n\nRegra:\n- SOMASES + Tabela é combinação perfeita para relatórios rápidos."
+    },
+    {
+      "title": "Erros comuns (e por que acontecem)",
+      "body": "1) Intervalos com tamanhos diferentes\n- critério em B2:B200 e soma em C2:C199 → dá errado\n\n2) Esquecer aspas em critérios com comparador\n- certo: \">1000\"\n\n3) Critério com célula sem &\n- certo: \">\"&F2\n\n4) Datas digitadas como texto\n- filtro e critérios não batem\n\nRegra:\n- se o resultado está estranho, confira intervalos e tipo (texto/número/data)."
+    },
+    {
+      "title": "Mini prática (60 minutos) — relatório rápido sem tabela dinâmica",
+      "body": "Crie uma base com colunas:\n- Data | Vendedor | Produto | Valor | Status\n\nPreencha 40 linhas.\n\nEm uma área de resumo, crie:\n\n1) Quantos pedidos estão Atrasados:\n- `=CONT.SE(E2:E41;\"Atrasado\")`\n\n2) Total vendido do produto escolhido em G1:\n- `=SOMASE(C2:C41;G1;D2:D41)`\n\n3) Total vendido por um vendedor (H1) e produto (G1):\n- `=SOMASES(D2:D41;B2:B41;H1;C2:C41;G1)`\n\n4) Contar pedidos do vendedor (H1) com status \"OK\":\n- `=CONT.SE.S(B2:B41;H1;E2:E41;\"OK\")`\n\nObjetivo:\n- dominar 1 critério e vários critérios (soma e contagem)."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- CONT.SE conta com 1 critério\n- SOMASE soma com 1 critério\n- CONT.SE.S e SOMASES trabalham com vários critérios\n- Comparadores vão entre aspas (\">1000\")\n- Comparador + célula: use & (\">\"&F2)\n- Para mês/período: use >= e <= com DATA()\n- Com Tabela (Ctrl+T), as fórmulas ficam mais robustas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 22 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "CONT.SE serve para:",
+        "options": [
+          { "key": "A", "text": "Contar células que atendem a 1 critério" },
+          { "key": "B", "text": "Somar células por vários critérios" }
+        ],
+        "answer": "A",
+        "explain": "CONT.SE é contagem com um critério."
+      },
+      {
+        "id": 2,
+        "question": "SOMASE serve para:",
+        "options": [
+          { "key": "A", "text": "Somar valores com 1 critério" },
+          { "key": "B", "text": "Contar valores com 2 critérios" }
+        ],
+        "answer": "A",
+        "explain": "SOMASE soma quando a condição é atendida."
+      },
+      {
+        "id": 3,
+        "question": "No SOMASES, o primeiro argumento é:",
+        "options": [
+          { "key": "A", "text": "O intervalo_soma (o que será somado)" },
+          { "key": "B", "text": "O intervalo do critério" }
+        ],
+        "answer": "A",
+        "explain": "SOMASES começa pelo que você quer somar."
+      },
+      {
+        "id": 4,
+        "question": "Um critério numérico com comparador deve ficar:",
+        "options": [
+          { "key": "A", "text": "Entre aspas (ex.: \">1000\")" },
+          { "key": "B", "text": "Sem aspas" }
+        ],
+        "answer": "A",
+        "explain": "Comparadores em critérios são strings."
+      },
+      {
+        "id": 5,
+        "question": "Para usar comparador com valor em célula (F2), o jeito certo é:",
+        "options": [
+          { "key": "A", "text": "\">\"&F2" },
+          { "key": "B", "text": "\">F2\"" }
+        ],
+        "answer": "A",
+        "explain": "Você junta texto com a célula usando &."
+      },
+      {
+        "id": 6,
+        "question": "CONT.SE.S serve para:",
+        "options": [
+          { "key": "A", "text": "Contar com vários critérios" },
+          { "key": "B", "text": "Arredondar números" }
+        ],
+        "answer": "A",
+        "explain": "É contagem com múltiplas condições."
+      },
+      {
+        "id": 7,
+        "question": "SOMASES serve para:",
+        "options": [
+          { "key": "A", "text": "Somar com vários critérios" },
+          { "key": "B", "text": "Buscar em outra tabela" }
+        ],
+        "answer": "A",
+        "explain": "É soma com múltiplas condições."
+      },
+      {
+        "id": 8,
+        "question": "Para somar por mês, uma abordagem comum é:",
+        "options": [
+          { "key": "A", "text": "Usar >= primeiro dia e <= último dia do mês" },
+          { "key": "B", "text": "Usar apenas o nome do mês como texto" }
+        ],
+        "answer": "A",
+        "explain": "Período por data é mais confiável que texto."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum que causa resultado errado é:",
+        "options": [
+          { "key": "A", "text": "Intervalos com tamanhos diferentes" },
+          { "key": "B", "text": "Usar tabela (Ctrl+T)" }
+        ],
+        "answer": "A",
+        "explain": "Os intervalos precisam ter as mesmas linhas."
+      },
+      {
+        "id": 10,
+        "question": "SOMASES + Tabela (Ctrl+T) é bom porque:",
+        "options": [
+          { "key": "A", "text": "A base cresce e a fórmula acompanha automaticamente" },
+          { "key": "B", "text": "Impede você de filtrar" }
+        ],
+        "answer": "A",
+        "explain": "Referências estruturadas tornam tudo mais robusto."
+      }
+    ]
+  },
+  "extra": {
+    "receitasProntas": "Receitas prontas\n\nContar 'Atrasado':\n=CONT.SE(E2:E200;\"Atrasado\")\n\nSomar produto 'Camisa':\n=SOMASE(C2:C200;\"Camisa\";D2:D200)\n\nSomar por vendedor e status:\n=SOMASES(D2:D200;B2:B200;\"Ana\";E2:E200;\"OK\")\n\nContar por vendedor e status:\n=CONT.SE.S(B2:B200;\"Ana\";E2:E200;\"Atrasado\")\n\nComparador com célula:\n=CONT.SE(D2:D200;\">\"&F2)\n",
+    "mapaCuringas": "Curingas (texto)\n\n- *  qualquer sequência\n- ?  um caractere\n\nExemplo:\nContém 'Cam':\n=CONT.SE(C2:C200;\"*Cam*\")\n"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "21-indice-corresp",
+  "title": "Aula 21 — ÍNDICE + CORRESP: procura poderosa e flexível (o “clássico avançado”)",
+  "steps": [
+    {
+      "title": "Por que aprender ÍNDICE + CORRESP se existe PROCX?",
+      "body": "PROCX é ótimo, mas ÍNDICE + CORRESP continua muito útil porque:\n- funciona em versões antigas (onde não existe PROCX)\n- é muito flexível\n- ajuda você a entender o conceito de busca “de verdade”\n\nPense assim:\n- PROCX é a solução moderna.\n- ÍNDICE+CORRESP é o motor clássico que te dá controle.\n\nRegra:\n- se você domina ÍNDICE+CORRESP, você entende qualquer lookup."
+    },
+    {
+      "title": "A ideia central (bem simples): posição + retorno",
+      "body": "ÍNDICE + CORRESP trabalha em 2 passos:\n\n1) **CORRESP** encontra a posição (linha) do item\n2) **ÍNDICE** usa essa posição para devolver o valor desejado\n\nExemplo mental:\n- “Onde está o código 123 na lista?” → CORRESP responde: “na linha 7”\n- “Me dê o preço da linha 7” → ÍNDICE devolve o preço\n\nRegra:\n- CORRESP acha a posição, ÍNDICE devolve o valor."
+    },
+    {
+      "title": "CORRESP (encontrar a posição)",
+      "body": "Sintaxe:\n- `=CORRESP(valor_procurado; matriz_procurada; [tipo])`\n\nO tipo mais importante:\n- `0` = correspondência exata (o mais usado)\n\nExemplo:\n- procurar o código em A2 dentro de Apoio!A:A\n- `=CORRESP(A2;Apoio!$A:$A;0)`\n\nRetorno:\n- um número (posição/linha dentro do intervalo)\n\nRegra:\n- para cadastro/código, use quase sempre `0`."
+    },
+    {
+      "title": "ÍNDICE (devolver um valor pela posição)",
+      "body": "ÍNDICE tem duas formas, mas vamos usar a mais comum:\n\nSintaxe:\n- `=ÍNDICE(matriz; núm_linha; [núm_coluna])`\n\nExemplo:\n- devolver o valor da 7ª linha da coluna de preços:\n- `=ÍNDICE(Apoio!$C:$C; 7)`\n\nRegra:\n- ÍNDICE não procura nada sozinho; ele só pega “o item da posição X”."
+    },
+    {
+      "title": "Juntando os dois (a fórmula completa)",
+      "body": "Cenário:\n- A2 tem o código do produto\n- Cadastro:\n  - Apoio!A:A = Código\n  - Apoio!B:B = Produto\n  - Apoio!C:C = Preço\n\nProduto:\n- `=ÍNDICE(Apoio!$B:$B; CORRESP(A2;Apoio!$A:$A; 0))`\n\nPreço:\n- `=ÍNDICE(Apoio!$C:$C; CORRESP(A2;Apoio!$A:$A; 0))`\n\nRegra:\n- a CORRESP acha a linha; o ÍNDICE pega o valor daquela linha na coluna certa."
+    },
+    {
+      "title": "A grande vantagem: não quebra ao inserir colunas",
+      "body": "No PROCV, você depende do número da coluna (2, 3, 4...).\n\nSe alguém inserir uma coluna no meio:\n- o índice muda\n- e você pode começar a puxar a coluna errada\n\nEm ÍNDICE+CORRESP:\n- você aponta diretamente a coluna de retorno (B:B, C:C...)\n- inserir coluna não muda o alvo (se você continuar apontando certo)\n\nRegra:\n- ÍNDICE+CORRESP é mais resistente a mudanças de layout do cadastro."
+    },
+    {
+      "title": "Tratando 'não encontrado' (#N/D) com SEERRO",
+      "body": "Quando o código não existe, CORRESP devolve #N/D.\n\nVocê pode deixar amigável:\n\n- `=SEERRO(ÍNDICE(Apoio!$B:$B; CORRESP(A2;Apoio!$A:$A;0)); \"Não encontrado\")`\n\nRegra:\n- SEERRO é para relatório ficar limpo, mas sempre entenda por que não achou."
+    },
+    {
+      "title": "Busca à esquerda (coisa que o PROCV não faz)",
+      "body": "ÍNDICE+CORRESP consegue buscar à esquerda porque:\n- você escolhe qualquer coluna para retorno\n\nExemplo:\n- se a chave estivesse na coluna C e você quisesse retornar B, dá.\n\nRegra:\n- PROCV exige chave na primeira coluna; ÍNDICE+CORRESP não."
+    },
+    {
+      "title": "Dica importante: tipos (texto vs número) e espaços",
+      "body": "Se der #N/D e você tem certeza que existe, os culpados comuns são:\n\n1) Código como texto vs número\n- \"00123\" (texto) ≠ 123 (número)\n\n2) Espaço invisível\n- \"ABC\" ≠ \"ABC \"\n\nComo diagnosticar rápido:\n- compare visualmente e teste com `=IGUAL(A2;Apoio!A7)`\n\nRegra:\n- lookup é muito sensível a tipo e espaços."
+    },
+    {
+      "title": "Exemplo mais 'profissional': usando Tabela (Ctrl+T) no cadastro",
+      "body": "Se o cadastro for uma Tabela chamada `tbProdutos` com colunas:\n- CodProduto\n- Produto\n- Preco\n\nA lógica continua igual, só muda a referência.\n\nExemplo Produto:\n- `=ÍNDICE(tbProdutos[Produto]; CORRESP(A2; tbProdutos[CodProduto]; 0))`\n\nRegra:\n- Tabela deixa a fórmula mais legível e o cadastro cresce sem quebrar."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Esquecer o `0` no CORRESP\n- pode virar busca aproximada e dar resultado errado\n\n2) Intervalos com tamanhos diferentes\n- ex.: procurar em A2:A100 e retornar de B2:B1000\n\n3) Usar colunas inteiras sem necessidade em arquivo pesado\n- funciona, mas pode ficar lento em bases enormes\n\nRegra:\n- para busca exata: CORRESP(...; ...; 0). Sempre."
+    },
+    {
+      "title": "Mini prática (60 minutos) — cadastro completo com fallback",
+      "body": "1) Em `99_Apoio`, crie um cadastro:\n- A: CodProduto\n- B: Produto\n- C: Preco\n\nCrie 15 itens (com códigos, nomes, preços).\n\n2) Em outra planilha, crie a área de pedidos:\n- A: CodProduto\n- B: Produto\n- C: Preco\n- D: Qtd\n- E: Total\n\n3) Produto (B2):\n- `=SEERRO(ÍNDICE(Apoio!$B:$B; CORRESP(A2; Apoio!$A:$A; 0)); \"Não encontrado\")`\n\n4) Preço (C2):\n- `=SEERRO(ÍNDICE(Apoio!$C:$C; CORRESP(A2; Apoio!$A:$A; 0)); 0)`\n\n5) Total (E2):\n- `=D2*C2`\n\n6) Teste:\n- um código existente\n- um código inexistente\n- um código com zeros (ex.: 00123) para ver o problema de texto/número\n\nObjetivo:\n- dominar posição (CORRESP) + retorno (ÍNDICE) + tratamento (SEERRO)."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- ÍNDICE+CORRESP é lookup em 2 passos: posição + retorno\n- CORRESP acha a linha (use 0 para exato)\n- ÍNDICE retorna o valor da linha na coluna escolhida\n- É mais robusto que PROCV em mudanças de coluna\n- Dá para tratar #N/D com SEERRO\n- Cuidado com texto vs número e espaços\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 21 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "CORRESP serve para:",
+        "options": [
+          { "key": "A", "text": "Encontrar a posição (linha) de um valor em um intervalo" },
+          { "key": "B", "text": "Somar um intervalo" }
+        ],
+        "answer": "A",
+        "explain": "CORRESP retorna a posição, não o valor final."
+      },
+      {
+        "id": 2,
+        "question": "ÍNDICE serve para:",
+        "options": [
+          { "key": "A", "text": "Retornar um valor de uma matriz pela posição" },
+          { "key": "B", "text": "Buscar sozinho a chave na primeira coluna" }
+        ],
+        "answer": "A",
+        "explain": "ÍNDICE só pega o item da posição informada."
+      },
+      {
+        "id": 3,
+        "question": "Para busca exata em CORRESP, o tipo correto é:",
+        "options": [
+          { "key": "A", "text": "0" },
+          { "key": "B", "text": "1" }
+        ],
+        "answer": "A",
+        "explain": "0 = correspondência exata (padrão para códigos)."
+      },
+      {
+        "id": 4,
+        "question": "ÍNDICE + CORRESP funciona como:",
+        "options": [
+          { "key": "A", "text": "CORRESP acha a linha e ÍNDICE devolve o valor" },
+          { "key": "B", "text": "ÍNDICE acha a linha e CORRESP devolve o valor" }
+        ],
+        "answer": "A",
+        "explain": "Esse é o fluxo: posição primeiro, retorno depois."
+      },
+      {
+        "id": 5,
+        "question": "Uma vantagem de ÍNDICE+CORRESP sobre PROCV é:",
+        "options": [
+          { "key": "A", "text": "Não depende do número da coluna e é mais robusto a mudanças" },
+          { "key": "B", "text": "Ele exige que a chave esteja sempre na primeira coluna" }
+        ],
+        "answer": "A",
+        "explain": "Você escolhe diretamente a coluna de retorno."
+      },
+      {
+        "id": 6,
+        "question": "Se o código não existe, CORRESP geralmente retorna:",
+        "options": [
+          { "key": "A", "text": "#N/D" },
+          { "key": "B", "text": "#DIV/0!" }
+        ],
+        "answer": "A",
+        "explain": "#N/D = não encontrado."
+      },
+      {
+        "id": 7,
+        "question": "Uma forma comum de tratar #N/D é:",
+        "options": [
+          { "key": "A", "text": "Usar SEERRO para mostrar 'Não encontrado'" },
+          { "key": "B", "text": "Mesclar células" }
+        ],
+        "answer": "A",
+        "explain": "SEERRO deixa o relatório legível."
+      },
+      {
+        "id": 8,
+        "question": "Um motivo comum para #N/D mesmo existindo é:",
+        "options": [
+          { "key": "A", "text": "Texto vs número ou espaços invisíveis" },
+          { "key": "B", "text": "A célula estar com cor diferente" }
+        ],
+        "answer": "A",
+        "explain": "Lookups são sensíveis a tipo e espaços."
+      },
+      {
+        "id": 9,
+        "question": "ÍNDICE+CORRESP consegue buscar 'para a esquerda' porque:",
+        "options": [
+          { "key": "A", "text": "Você escolhe qualquer coluna para retorno" },
+          { "key": "B", "text": "O Excel sempre busca da direita para a esquerda" }
+        ],
+        "answer": "A",
+        "explain": "O retorno é independente da posição da chave."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa regra para CORRESP em cadastros é:",
+        "options": [
+          { "key": "A", "text": "Sempre usar o tipo 0 (exato)" },
+          { "key": "B", "text": "Nunca usar o tipo 0" }
+        ],
+        "answer": "A",
+        "explain": "Tipo 0 evita resultados aproximados errados."
+      }
+    ]
+  },
+  "extra": {
+    "receitasProntas": "Receitas prontas\n\nPosição (linha) do código:\n=CORRESP(A2;Apoio!$A:$A;0)\n\nProduto (retorno):\n=ÍNDICE(Apoio!$B:$B;CORRESP(A2;Apoio!$A:$A;0))\n\nPreço (retorno):\n=ÍNDICE(Apoio!$C:$C;CORRESP(A2;Apoio!$A:$A;0))\n\nCom SEERRO:\n=SEERRO(ÍNDICE(Apoio!$B:$B;CORRESP(A2;Apoio!$A:$A;0));\"Não encontrado\")\n",
+    "checklistLookup": "Checklist rápido quando falhar\n\n- CORRESP está com tipo 0?\n- Chave é texto ou número? (00123 vs 123)\n- Tem espaços invisíveis?\n- Intervalos de procurar e retornar são coerentes?\n- O código existe mesmo no cadastro?\n"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "26-segmentacao-linha-tempo",
+  "title": "Aula 26 — Segmentação de dados e Linha do tempo: filtros visuais profissionais",
+  "steps": [
+    {
+      "title": "O que são Segmentação e Linha do Tempo (bem simples)",
+      "body": "Segmentação de dados (Slicer) e Linha do Tempo (Timeline) são filtros visuais.\n\nEm vez de abrir setinhas de filtro, você clica em botões.\n\nIsso deixa:\n- relatório mais rápido de usar\n- painel mais bonito\n- muito melhor para quem não domina Excel\n\nRegra:\n- se você quer relatório para outras pessoas, filtro visual é padrão profissional."
+    },
+    {
+      "title": "Onde elas funcionam melhor",
+      "body": "Elas funcionam muito bem com:\n\n- **Tabela Dinâmica**\n- **Tabela do Excel (Ctrl+T)** (segmentação)\n\nLinha do tempo:\n- é específica para campos de **data** e geralmente usada em Tabela Dinâmica.\n\nRegra:\n- Segmentação = filtros por categoria.\n- Linha do tempo = filtro por data."
+    },
+    {
+      "title": "Segmentação em Tabela Dinâmica (passo a passo)",
+      "body": "1) Clique na Tabela Dinâmica\n2) Vá em **Analisar Tabela Dinâmica** (ou Opções)\n3) Clique em **Inserir Segmentação de Dados**\n4) Marque os campos (ex.: Produto, Vendedor, Status)\n5) OK\n\nResultado:\n- aparecem caixas com botões para filtrar.\n\nRegra:\n- você pode inserir várias segmentações para o mesmo relatório."
+    },
+    {
+      "title": "Como usar a Segmentação (filtro rápido)",
+      "body": "A Segmentação funciona assim:\n- clique em um botão → filtra\n- Ctrl + clique → seleciona múltiplos\n- botão de limpar filtro (ícone de funil) → volta tudo\n\nRegra:\n- é filtro, não é exclusão: só muda a visão."
+    },
+    {
+      "title": "Conectar uma Segmentação a várias Tabelas Dinâmicas (ponto avançado e MUITO útil)",
+      "body": "Você pode ter 2 ou 3 tabelas dinâmicas diferentes no mesmo dashboard.\n\nE quer que um filtro (ex.: Vendedor) afete todas.\n\nComo fazer:\n1) Clique na segmentação\n2) Guia Segmentação (ou Opções)\n3) **Conexões de Relatório** (ou 'Conexões de Tabela Dinâmica')\n4) Marque as tabelas dinâmicas que ela deve controlar\n\nRegra:\n- isso transforma várias dinâmicas em um painel unificado."
+    },
+    {
+      "title": "Linha do tempo (Timeline) — filtro de datas do jeito mais profissional",
+      "body": "Linha do tempo é um filtro visual para datas.\n\nComo inserir:\n1) Clique na Tabela Dinâmica\n2) Analisar Tabela Dinâmica\n3) **Inserir Linha do Tempo**\n4) Escolha o campo de data\n\nEla permite filtrar por:\n- anos\n- trimestres\n- meses\n- dias\n\nRegra:\n- para relatório por período, Timeline é ouro."
+    },
+    {
+      "title": "Se a Linha do Tempo não aparecer, geralmente é por isso",
+      "body": "Causas comuns:\n\n1) Sua coluna de data não é data de verdade (está como texto)\n2) A Tabela Dinâmica não reconheceu o campo como data\n\nSolução:\n- corrija o tipo na base (data real)\n- atualize a Tabela Dinâmica\n\nRegra:\n- data como texto é inimiga de qualquer relatório por período."
+    },
+    {
+      "title": "Ajustar o período da Linha do Tempo (Ano/Mês/Dia)",
+      "body": "No canto da linha do tempo você escolhe:\n- Ano\n- Trimestre\n- Mês\n- Dia\n\nDica:\n- para dashboards, Mês e Ano costumam ser suficientes.\n\nRegra:\n- escolha o nível que faz sentido pro tipo de decisão."
+    },
+    {
+      "title": "Formatar Segmentação (deixar bonito e consistente)",
+      "body": "Você pode formatar:\n- estilo\n- número de colunas de botões\n- tamanho\n\nComo:\n- clique na segmentação\n- guia Segmentação → Estilos\n- ajuste Colunas (para ficar mais compacto)\n\nRegra:\n- dashboard bom tem filtros alinhados e do mesmo tamanho."
+    },
+    {
+      "title": "Boas práticas de dashboard com filtros visuais",
+      "body": "1) Coloque filtros no topo ou na lateral\n2) Use poucos filtros (os mais importantes)\n3) Nomeie claramente (Produto, Vendedor, Status)\n4) Conecte segmentações a todas as dinâmicas do painel\n5) Tenha um botão 'limpar' sempre visível (ícone do funil na segmentação)\n\nRegra:\n- filtro demais confunde. Filtro bom orienta."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Segmentação filtrando só uma dinâmica\n- esqueceu de Conexões de Relatório\n\n2) Linha do tempo não aparece\n- data é texto\n\n3) Filtros gigantes e desalinhados\n- ajuste tamanho e número de colunas\n\n4) Base muda e painel não atualiza\n- atualize as dinâmicas\n\nRegra:\n- painel profissional = filtros conectados e layout limpo."
+    },
+    {
+      "title": "Mini prática (70 minutos) — mini dashboard com filtros",
+      "body": "1) Use sua base `tbVendas` (Data | Vendedor | Produto | Valor | Status).\n\n2) Crie 2 Tabelas Dinâmicas:\n\nA) Total por Produto\n- Produto → Linhas\n- Valor → Valores\n\nB) Total por Vendedor\n- Vendedor → Linhas\n- Valor → Valores\n\n3) Insira Segmentações:\n- Produto\n- Vendedor\n- Status\n\n4) Conecte as segmentações às 2 dinâmicas:\n- Segmentação → Conexões de Relatório → marque as duas.\n\n5) Insira Linha do Tempo:\n- campo Data\n\n6) Teste:\n- filtre por um vendedor e veja as duas tabelas mudarem\n- filtre por um período na linha do tempo\n\nObjetivo:\n- criar filtros visuais conectados (padrão de dashboard)."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Segmentação e Linha do Tempo são filtros visuais\n- Funcionam muito bem com Tabela Dinâmica (e segmentação também com Tabela Ctrl+T)\n- Segmentação filtra por categorias; Linha do Tempo filtra por data\n- Conexões de Relatório conectam uma segmentação a várias dinâmicas\n- Se Timeline não aparece, data provavelmente está como texto\n- Dashboard bom = filtros alinhados, poucos e conectados\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 26 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Segmentação de dados serve para:",
+        "options": [
+          { "key": "A", "text": "Filtrar de forma visual com botões" },
+          { "key": "B", "text": "Somar valores automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "É um filtro visual."
+      },
+      {
+        "id": 2,
+        "question": "Linha do Tempo (Timeline) é usada para:",
+        "options": [
+          { "key": "A", "text": "Filtrar por data (período)" },
+          { "key": "B", "text": "Filtrar por cor da célula" }
+        ],
+        "answer": "A",
+        "explain": "Timeline é filtro de datas."
+      },
+      {
+        "id": 3,
+        "question": "Um uso profissional é:",
+        "options": [
+          { "key": "A", "text": "Conectar segmentações a várias tabelas dinâmicas" },
+          { "key": "B", "text": "Criar uma segmentação para cada coluna, mesmo sem necessidade" }
+        ],
+        "answer": "A",
+        "explain": "Conectar cria um painel unificado."
+      },
+      {
+        "id": 4,
+        "question": "Ctrl + clique em uma segmentação serve para:",
+        "options": [
+          { "key": "A", "text": "Selecionar múltiplos itens" },
+          { "key": "B", "text": "Salvar a planilha" }
+        ],
+        "answer": "A",
+        "explain": "É seleção múltipla no filtro."
+      },
+      {
+        "id": 5,
+        "question": "Se Timeline não aparece, a causa comum é:",
+        "options": [
+          { "key": "A", "text": "Data está como texto na base" },
+          { "key": "B", "text": "O Excel não suporta datas" }
+        ],
+        "answer": "A",
+        "explain": "Data precisa ser data real."
+      },
+      {
+        "id": 6,
+        "question": "O botão de limpar filtro na segmentação serve para:",
+        "options": [
+          { "key": "A", "text": "Voltar a mostrar todos os dados" },
+          { "key": "B", "text": "Apagar a base de dados" }
+        ],
+        "answer": "A",
+        "explain": "Limpar filtro não apaga nada."
+      },
+      {
+        "id": 7,
+        "question": "Segmentação funciona bem com:",
+        "options": [
+          { "key": "A", "text": "Tabela Dinâmica (e também com Tabela Ctrl+T)" },
+          { "key": "B", "text": "Apenas com gráficos" }
+        ],
+        "answer": "A",
+        "explain": "Ela é filtro visual para tabelas/dinâmicas."
+      },
+      {
+        "id": 8,
+        "question": "Para fazer uma segmentação controlar duas dinâmicas, você usa:",
+        "options": [
+          { "key": "A", "text": "Conexões de Relatório" },
+          { "key": "B", "text": "Salvar como" }
+        ],
+        "answer": "A",
+        "explain": "É o painel de ligação da segmentação."
+      },
+      {
+        "id": 9,
+        "question": "Boa prática em dashboard é:",
+        "options": [
+          { "key": "A", "text": "Poucos filtros, alinhados e com significado claro" },
+          { "key": "B", "text": "Muitos filtros espalhados e de tamanhos diferentes" }
+        ],
+        "answer": "A",
+        "explain": "Menos ruído, mais clareza."
+      },
+      {
+        "id": 10,
+        "question": "Segmentação e Timeline mudam a base de dados?",
+        "options": [
+          { "key": "A", "text": "Não, elas só filtram a visualização" },
+          { "key": "B", "text": "Sim, elas apagam linhas" }
+        ],
+        "answer": "A",
+        "explain": "É filtro, não exclusão."
+      }
+    ]
+  },
+  "extra": {
+    "receitaConectar": "Receita: conectar segmentação a várias dinâmicas\n\n1) Clique na segmentação\n2) Guia Segmentação → Conexões de Relatório\n3) Marque todas as Tabelas Dinâmicas do painel\n\nResultado:\n- um filtro controla o dashboard inteiro.",
+    "checklistTimeline": "Checklist da Linha do Tempo\n\n- Campo é data real (não texto)?\n- Tabela Dinâmica atualizada?\n- Campo de data está na fonte correta?\n\nSe sim, a Timeline aparece e você filtra por Ano/Mês/Dia."
+  }
+}
