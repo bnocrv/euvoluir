@@ -1,0 +1,172 @@
+{
+  "id": "12-validacao-dados",
+  "title": "Aula 12 — Validação de dados: listas suspensas, regras e mensagens (anti-erro)",
+  "steps": [
+    {
+      "title": "O que é validação de dados (bem simples)",
+      "body": "Validação de dados é uma regra que **controla o que pode ser digitado** em uma célula.\n\nEla serve para evitar erros do tipo:\n- escrever produto com nome diferente (Camisa / camisa / CAMISA)\n- digitar data inválida\n- colocar texto onde deveria ser número\n- permitir só opções (OK, Atrasado, Pendente)\n\nPense assim:\n- é um “porteiro” na célula.\n\nRegra:\n- validação não é frescura: é o que faz a planilha virar sistema confiável."
+    },
+    {
+      "title": "Onde fica (caminho no Excel)",
+      "body": "Você encontra em:\n- **Dados → Validação de Dados**\n\nLá você configura:\n- tipo de regra\n- mensagem de entrada (dica)\n- alerta de erro (bloquear ou avisar)\n\nRegra:\n- selecione as células primeiro, depois crie a validação."
+    },
+    {
+      "title": "Tipos de validação mais usados (o kit do mundo real)",
+      "body": "Os tipos mais comuns:\n\n1) **Lista** (lista suspensa)\n2) **Número inteiro** (ex.: 1 a 100)\n3) **Decimal** (ex.: 0 a 1)\n4) **Data** (entre datas)\n5) **Hora**\n6) **Comprimento do texto** (ex.: no máximo 10 caracteres)\n7) **Personalizado** (fórmula) — mais avançado\n\nRegra:\n- 80% dos casos do dia a dia é: Lista + Número + Data."
+    },
+    {
+      "title": "Lista suspensa (o recurso mais usado)",
+      "body": "A lista suspensa garante que a pessoa escolha valores padronizados.\n\nExemplo: Status\n- OK\n- Pendente\n- Atrasado\n\nComo fazer:\n1) selecione o intervalo (ex.: D2:D200)\n2) Dados → Validação de Dados\n3) Permitir: **Lista**\n4) Fonte:\n- pode ser digitado: `OK;Pendente;Atrasado` (dependendo do separador)\n- ou apontar para um intervalo (melhor)\n\nRegra:\n- para lista profissional, use intervalo (uma lista em uma planilha Apoio)."
+    },
+    {
+      "title": "Lista por intervalo (jeito profissional e escalável)",
+      "body": "O jeito certo é ter uma planilha `99_Apoio` com listas.\n\nExemplo:\n- Apoio!A1:A3 = OK, Pendente, Atrasado\n\nA validação aponta para:\n- `=Apoio!$A$1:$A$3`\n\nVantagens:\n- se você adiciona um item na lista, não precisa editar todas as validações\n\nRegra:\n- lista fixa no apoio = manutenção fácil."
+    },
+    {
+      "title": "Validar número (quantidade mínima/máxima)",
+      "body": "Exemplo: Qtd deve ser de 1 a 1000.\n\n1) selecione C2:C200\n2) Validação de Dados\n3) Permitir: **Número inteiro**\n4) Dados: **entre**\n5) Mínimo: 1\n6) Máximo: 1000\n\nRegra:\n- isso impede digitar 0, negativo ou texto em quantidade."
+    },
+    {
+      "title": "Validar datas (evitar data impossível e limitar período)",
+      "body": "Exemplo: Data de entrega deve estar entre hoje e 90 dias.\n\n1) selecione B2:B200\n2) Permitir: **Data**\n3) Dados: entre\n4) Início: `=HOJE()`\n5) Fim: `=HOJE()+90`\n\nRegra:\n- isso impede “32/13/2026” e ajuda a manter período correto."
+    },
+    {
+      "title": "Mensagem de entrada (a dica que evita dúvida)",
+      "body": "Na janela de validação existe a aba:\n- **Mensagem de entrada**\n\nEla aparece quando a célula é selecionada.\n\nExemplo:\nTítulo: Status\nMensagem: \"Escolha OK, Pendente ou Atrasado\"\n\nRegra:\n- mensagens transformam validação em experiência de uso."
+    },
+    {
+      "title": "Alerta de erro (avisar ou bloquear?)",
+      "body": "Na aba **Alerta de erro**, você decide como o Excel reage.\n\nTipos:\n- **Parar**: bloqueia e não deixa continuar (mais rígido)\n- **Aviso**: alerta, mas você pode continuar\n- **Informação**: só informa\n\nRegra:\n- para campos críticos (Qtd, Data, Status), use **Parar**."
+    },
+    {
+      "title": "Validação personalizada (com fórmula) — um gostinho do avançado",
+      "body": "Você pode criar regras com fórmula.\n\nExemplo: impedir duplicado em Pedido (coluna A).\n\nSelecione A2:A200 e use:\n- Permitir: **Personalizado**\n- Fórmula:\n  `=CONT.SE($A$2:$A$200;A2)=1`\n\nO que isso significa:\n- conta quantas vezes A2 aparece no intervalo\n- só aceita se for 1 (ou seja, não duplicado)\n\nRegra:\n- validação personalizada é poderosa para “não deixar errar”."
+    },
+    {
+      "title": "Copiar validação (aplicar sem refazer)",
+      "body": "Depois de criar validação em uma célula:\n\n- copie a célula\n- cole no intervalo\n\nOu use:\n- Colar Especial → **Validação** (em algumas versões)\n\nRegra:\n- validação é reaproveitável. Não refaça 200 vezes."
+    },
+    {
+      "title": "Erros comuns (e como consertar)",
+      "body": "1) Lista não abre\n- confira se a célula não está protegida\n- confira se a validação está em Lista\n\n2) Lista por intervalo não funciona\n- pode estar apontando para intervalo errado\n- pode faltar $ no intervalo\n\n3) Importar dados “por cima” quebra validação\n- colagem pode substituir as regras\n\n4) Usuário cola valores inválidos\n- validação tenta impedir, mas colagens podem contornar em alguns cenários\n\nRegra:\n- use validação + proteção quando o arquivo for para outras pessoas."
+    },
+    {
+      "title": "Mini prática (35 minutos) — planilha de pedidos sem erro",
+      "body": "Monte uma tabela:\n- Pedido | Data | Produto | Qtd | Status\n\n1) Crie uma planilha `99_Apoio` e liste:\n- A1:A3 = OK, Pendente, Atrasado\n- B1:B5 = lista de produtos (5 itens)\n\n2) Aplique validações:\n- Produto (C2:C200): Lista apontando para Apoio!B1:B5\n- Status (E2:E200): Lista apontando para Apoio!A1:A3\n- Qtd (D2:D200): Número inteiro entre 1 e 1000\n- Data (B2:B200): entre HOJE() e HOJE()+90\n\n3) Configure mensagens de entrada em Produto e Status.\n\n4) Configure alerta Parar em Qtd e Data.\n\nObjetivo:\n- criar uma base que quase não deixa a pessoa errar."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Validação controla o que pode ser digitado (anti-erro)\n- Dados → Validação de Dados\n- Lista suspensa é a mais usada (prefira intervalo no Apoio)\n- Valide números (min/max) e datas (período)\n- Mensagem de entrada orienta\n- Alerta Parar bloqueia erro\n- Personalizado (fórmula) permite regras avançadas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 12 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Validação de dados serve para:",
+        "options": [
+          { "key": "A", "text": "Controlar o que pode ser digitado em uma célula" },
+          { "key": "B", "text": "Criar gráficos automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ela evita erros de digitação e padroniza entradas."
+      },
+      {
+        "id": 2,
+        "question": "O caminho para validação é:",
+        "options": [
+          { "key": "A", "text": "Dados → Validação de Dados" },
+          { "key": "B", "text": "Inserir → Tabela Dinâmica" }
+        ],
+        "answer": "A",
+        "explain": "A validação fica na guia Dados."
+      },
+      {
+        "id": 3,
+        "question": "A validação do tipo Lista é usada para:",
+        "options": [
+          { "key": "A", "text": "Criar lista suspensa com opções padronizadas" },
+          { "key": "B", "text": "Somar valores automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ela cria uma lista para escolher valores."
+      },
+      {
+        "id": 4,
+        "question": "O jeito mais profissional de criar lista é:",
+        "options": [
+          { "key": "A", "text": "Apontar para um intervalo (planilha Apoio)" },
+          { "key": "B", "text": "Digitar as opções manualmente em cada validação" }
+        ],
+        "answer": "A",
+        "explain": "Intervalo é mais fácil de manter e atualizar."
+      },
+      {
+        "id": 5,
+        "question": "Alerta de erro do tipo Parar:",
+        "options": [
+          { "key": "A", "text": "Bloqueia a entrada inválida" },
+          { "key": "B", "text": "Ignora e salva mesmo assim" }
+        ],
+        "answer": "A",
+        "explain": "Parar impede a digitação inválida."
+      },
+      {
+        "id": 6,
+        "question": "Validar número inteiro entre 1 e 1000 ajuda a:",
+        "options": [
+          { "key": "A", "text": "Impedir 0, negativos e textos em quantidade" },
+          { "key": "B", "text": "Criar um gráfico de barras" }
+        ],
+        "answer": "A",
+        "explain": "A validação garante faixa correta."
+      },
+      {
+        "id": 7,
+        "question": "Uma validação de data pode usar:",
+        "options": [
+          { "key": "A", "text": "HOJE() e HOJE()+90 para limitar o período" },
+          { "key": "B", "text": "SOMA() para limitar datas" }
+        ],
+        "answer": "A",
+        "explain": "HOJE() gera a data atual e permite regra dinâmica."
+      },
+      {
+        "id": 8,
+        "question": "Mensagem de entrada serve para:",
+        "options": [
+          { "key": "A", "text": "Mostrar uma dica quando a célula é selecionada" },
+          { "key": "B", "text": "Bloquear a célula automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ela orienta o usuário do que preencher."
+      },
+      {
+        "id": 9,
+        "question": "Validação personalizada usa:",
+        "options": [
+          { "key": "A", "text": "Uma fórmula para criar regras avançadas" },
+          { "key": "B", "text": "Apenas cores e ícones" }
+        ],
+        "answer": "A",
+        "explain": "Personalizado permite regras como não permitir duplicados."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa prática é:",
+        "options": [
+          { "key": "A", "text": "Usar validação em campos críticos para reduzir erros" },
+          { "key": "B", "text": "Deixar tudo livre e corrigir depois" }
+        ],
+        "answer": "A",
+        "explain": "Prevenir erro é melhor do que limpar depois."
+      }
+    ]
+  },
+  "extra": {
+    "receitaListaApoio": "Receita: lista suspensa profissional\n\n1) Crie planilha 99_Apoio\n2) Escreva a lista em uma coluna (ex.: A1:A10)\n3) Selecione o campo (ex.: Status)\n4) Dados → Validação → Lista\n5) Fonte: =99_Apoio!$A$1:$A$10\n\nResultado:\n- padroniza e evita erro de digitação.",
+    "formulaAntiDuplicado": "Validação para impedir duplicado (exemplo)\n\nIntervalo: A2:A200\nTipo: Personalizado\nFórmula:\n=CONT.SE($A$2:$A$200;A2)=1\n\nIdeia:\n- só permite se a contagem daquele valor for 1."
+  }
+}

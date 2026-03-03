@@ -1,76 +1,152 @@
 ﻿{
-    "id":  "01-introducao",
-    "title":  "Aula 01 - Introdução prática",
-    "steps":  [
-                  {
-                      "title":  "Visão geral",
-                      "body":  "Nesta aula você inicia a trilha de Excel.\n\nObjetivo:\n- Entender os conceitos base\n- Aplicar no contexto da empresa\n- Criar rotina de uso no dia a dia"
-                  },
-                  {
-                      "title":  "Conceitos essenciais",
-                      "body":  "Base da aula:\n- Termos principais\n- Fluxo de trabalho recomendado\n- Erros comuns para evitar no começo"
-                  },
-                  {
-                      "title":  "Primeira prática guiada",
-                      "body":  "Passo a passo sugerido:\n- Abrir o ambiente de trabalho\n- Executar uma tarefa simples\n- Revisar resultado e ajustar"
-                  },
-                  {
-                      "title":  "Resumo",
-                      "body":  "Você concluiu a primeira aula e já tem uma base inicial para evoluir nas próximas etapas da trilha."
-                  }
-              ],
-    "quiz":  {
-                 "title":  "Quiz rápido - Aula 01",
-                 "instructions":  "Responda A ou B para fixar os conceitos principais.",
-                 "questions":  [
-                                   {
-                                       "id":  1,
-                                       "question":  "Qual é o foco desta aula?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Criar base prática inicial"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Cobrir todos os tópicos avançados"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Aula 01 foca em fundamentos e início prático."
-                                   },
-                                   {
-                                       "id":  2,
-                                       "question":  "Qual abordagem gera melhor aprendizado no início?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Prática com passos simples"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Pular direto para tarefas complexas"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Evoluir por etapas reduz erros e melhora retenção."
-                                   },
-                                   {
-                                       "id":  3,
-                                       "question":  "Depois da aula 01, o próximo passo é...",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Continuar a trilha e praticar"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Parar de revisar"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Continuidade e prática consolidam o aprendizado."
-                                   }
-                               ]
-             }
+  "id": "01-introducao",
+  "title": "Aula 01 — O que é o Excel + para que serve (visão geral e casos reais)",
+  "steps": [
+    {
+      "title": "O que é o Excel (explicação bem simples)",
+      "body": "O Excel é um programa para trabalhar com **planilhas**.\n\nUma planilha é uma grade com:\n- **colunas** (A, B, C...)\n- **linhas** (1, 2, 3...)\n- **células** (A1, B2, C3...)\n\nDentro das células você coloca dados (números, texto, datas) e o Excel ajuda a:\n- organizar\n- calcular\n- analisar\n- apresentar resultados."
+    },
+    {
+      "title": "Para que serve (o tripé do Excel)",
+      "body": "O Excel serve principalmente para 3 coisas:\n\n1) **Organizar dados**\n- listas, cadastros, controles\n\n2) **Calcular automaticamente**\n- somas, médias, percentuais, regras\n\n3) **Analisar e mostrar**\n- filtros, tabelas dinâmicas, gráficos e dashboards\n\nRegra:\n- se você precisa decidir com base em números, Excel é uma ferramenta-chave."
+    },
+    {
+      "title": "A linguagem do Excel: dados, fórmulas e funções",
+      "body": "No Excel existem 3 níveis:\n\n- **Dados**: o que você digita (ex.: 10, \"Bruno\", 03/03/2026)\n- **Fórmulas**: contas que você escreve (ex.: `=A1+B1`)\n- **Funções**: fórmulas prontas com nome (ex.: `=SOMA(A1:A10)`)\n\nPense assim:\n- fórmula = você monta a conta\n- função = o Excel já tem a conta pronta"
+    },
+    {
+      "title": "O que é uma célula (e por que isso é o núcleo do Excel)",
+      "body": "Célula é onde tudo acontece.\n\nUma célula pode ter:\n- um **valor** (100)\n- um **texto** (\"Pedido\")\n- uma **data** (03/03/2026)\n- uma **fórmula** (`=C2*D2`)\n\nDetalhe importante:\n- a célula pode **mostrar** uma coisa (ex.: R$ 10,00)\n- mas por trás continua sendo um número (10)\n\nRegra:\n- se você entende célula e referência, você aprende Excel muito mais rápido."
+    },
+    {
+      "title": "Casos reais (onde o Excel resolve de verdade)",
+      "body": "Exemplos bem comuns no trabalho:\n\n1) **Controle de estoque**\n- entradas/saídas\n- saldo automático\n\n2) **Relatório de vendas**\n- total por dia, vendedor, produto\n- meta e % de atingimento\n\n3) **Controle financeiro**\n- gastos do mês\n- projeção\n\n4) **Listas com regras**\n- cadastro com validação\n- evitar erro de digitação\n\n5) **Conferência de informações**\n- comparar listas\n- achar duplicados\n- localizar inconsistências"
+    },
+    {
+      "title": "Como o Excel “pensa” (o conceito que destrava o resto)",
+      "body": "O Excel gosta de dados em formato de **tabela**:\n\n- cada **linha** = um registro (ex.: uma venda)\n- cada **coluna** = uma característica (data, produto, quantidade...)\n\nExemplo (vendas):\n- Linha 2: venda do dia 03/03\n- Colunas: Data | Produto | Qtd | Valor\n\nRegra:\n- quanto mais organizado, mais fácil fazer filtro, dinâmica e gráfico."
+    },
+    {
+      "title": "Erros comuns de iniciante (e por que dão problema)",
+      "body": "1) Misturar tudo na mesma coluna\n- ex.: colocar \"10 un\" em vez de 10\n- isso vira texto e quebra cálculo\n\n2) Usar cor como se fosse dado\n- cor é só visual, não é regra\n\n3) Somar no olho\n- dá erro e não atualiza\n\n4) Fazer relatório em cima de dados bagunçados\n- depois fica impossível automatizar\n\nRegra:\n- dado limpo primeiro, visual depois."
+    },
+    {
+      "title": "Mini prática (15 minutos) — sua primeira planilha útil",
+      "body": "Vamos montar uma planilha simples de compras:\n\n1) Na linha 1, crie:\n- A1: Item\n- B1: Qtd\n- C1: Valor unit\n- D1: Total\n\n2) Preencha 5 linhas (A2:C6) com exemplos.\n\n3) Na célula D2 digite:\n- `=B2*C2`\n\n4) Copie a fórmula até D6 (arrastando).\n\n5) Mude a quantidade de um item e veja o total atualizar.\n\nObjetivo:\n- entender que o Excel calcula e atualiza automaticamente."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Excel = planilhas para organizar, calcular e analisar\n- Tudo gira em torno de células (A1, B2...)\n- Fórmulas começam com `=`\n- Funções são fórmulas prontas (SOMA, MÉDIA...)\n- Excel funciona melhor quando os dados estão em formato de tabela\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 01 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O Excel é usado principalmente para:",
+        "options": [
+          { "key": "A", "text": "Organizar, calcular e analisar dados em planilhas" },
+          { "key": "B", "text": "Editar vídeos e fotos profissionalmente" }
+        ],
+        "answer": "A",
+        "explain": "Excel é ferramenta de planilhas e dados."
+      },
+      {
+        "id": 2,
+        "question": "Uma célula é:",
+        "options": [
+          { "key": "A", "text": "O cruzamento de uma coluna com uma linha (ex.: A1)" },
+          { "key": "B", "text": "O nome do arquivo do Excel" }
+        ],
+        "answer": "A",
+        "explain": "A célula é a unidade básica da planilha."
+      },
+      {
+        "id": 3,
+        "question": "Uma fórmula no Excel geralmente começa com:",
+        "options": [
+          { "key": "A", "text": "Sinal de igual (=)" },
+          { "key": "B", "text": "Sinal de exclamação (!)" }
+        ],
+        "answer": "A",
+        "explain": "O Excel entende que é cálculo quando começa com =."
+      },
+      {
+        "id": 4,
+        "question": "Função é:",
+        "options": [
+          { "key": "A", "text": "Uma fórmula pronta com nome (ex.: SOMA)" },
+          { "key": "B", "text": "Uma cor de célula" }
+        ],
+        "answer": "A",
+        "explain": "Funções são recursos prontos do Excel."
+      },
+      {
+        "id": 5,
+        "question": "Em uma tabela bem organizada, cada linha normalmente representa:",
+        "options": [
+          { "key": "A", "text": "Um registro (ex.: uma venda)" },
+          { "key": "B", "text": "Um botão do Excel" }
+        ],
+        "answer": "A",
+        "explain": "Linhas = registros; colunas = características."
+      },
+      {
+        "id": 6,
+        "question": "Colocar \"10 un\" em uma coluna de quantidade pode ser ruim porque:",
+        "options": [
+          { "key": "A", "text": "Pode virar texto e quebrar cálculos" },
+          { "key": "B", "text": "Melhora a precisão do Excel" }
+        ],
+        "answer": "A",
+        "explain": "Misturar texto com número atrapalha fórmulas."
+      },
+      {
+        "id": 7,
+        "question": "O preenchimento automático serve para:",
+        "options": [
+          { "key": "A", "text": "Copiar padrões e fórmulas rapidamente" },
+          { "key": "B", "text": "Desinstalar o Excel" }
+        ],
+        "answer": "A",
+        "explain": "Ele acelera repetição e sequência de dados."
+      },
+      {
+        "id": 8,
+        "question": "Organizar dados em colunas bem definidas ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Facilita filtros, tabelas dinâmicas e gráficos" },
+          { "key": "B", "text": "Impede o Excel de calcular" }
+        ],
+        "answer": "A",
+        "explain": "Excel trabalha melhor com estrutura consistente."
+      },
+      {
+        "id": 9,
+        "question": "Se você muda um valor que participa de uma fórmula, o Excel:",
+        "options": [
+          { "key": "A", "text": "Atualiza o resultado automaticamente" },
+          { "key": "B", "text": "Nunca muda o resultado" }
+        ],
+        "answer": "A",
+        "explain": "O Excel recalcula conforme os dados mudam."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa regra para trabalhar bem é:",
+        "options": [
+          { "key": "A", "text": "Manter dados limpos e usar formatação só para visual" },
+          { "key": "B", "text": "Guardar informações importantes apenas por cor" }
+        ],
+        "answer": "A",
+        "explain": "Cor ajuda na leitura, mas dado precisa ser confiável."
+      }
+    ]
+  },
+  "extra": {
+    "checklist": "Checklist rápido — Aula 01 (Excel)\n\n- Sei o que é planilha, linha, coluna e célula\n- Sei que fórmulas começam com =\n- Sei diferenciar fórmula e função\n- Entendi o formato tabela (linhas = registros; colunas = características)\n- Fiz a prática do Total = Qtd * Valor unit\n",
+    "miniTemplate": "Template pronto (lista de compras)\n\nItem | Qtd | Valor unit | Total\n\nFórmula Total (linha 2):\n=B2*C2\n\nDica:\nDepois você pode transformar em Tabela (Ctrl+T) para ficar profissional."
+  }
 }

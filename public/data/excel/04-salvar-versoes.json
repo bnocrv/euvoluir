@@ -1,0 +1,164 @@
+{
+  "id": "04-salvar-versoes",
+  "title": "Aula 04 — Salvar, abrir e versões (XLSX, OneDrive, histórico e recuperação)",
+  "steps": [
+    {
+      "title": "Por que essa aula é crítica (o risco real)",
+      "body": "Você pode fazer a melhor planilha do mundo… e perder tudo em 1 minuto.\n\nIsso acontece muito por:\n- salvou no lugar errado\n- sobrescreveu o arquivo certo com uma versão errada\n- o Excel travou\n- alguém mexeu e bagunçou\n\nObjetivo da aula:\n- trabalhar com Excel de um jeito **seguro e profissional**."
+    },
+    {
+      "title": "Tipos de arquivo do Excel (o que muda na prática)",
+      "body": "Os formatos mais comuns:\n\n- **.XLSX**: padrão moderno (recomendado)\n- **.XLS**: antigo (compatibilidade; evite se puder)\n- **.XLSM**: permite **macros** (VBA)\n- **.CSV**: arquivo de texto (muito usado em sistemas)\n\nRegra prática:\n- planilha normal → **XLSX**\n- planilha com macro → **XLSM**\n- trocar dados com sistema → **CSV** (com cuidado na importação)"
+    },
+    {
+      "title": "Salvar vs Salvar como (diferença que evita desastre)",
+      "body": "**Salvar (Ctrl+S)**\n- atualiza o arquivo atual\n- risco: se você mudou algo errado, já ficou gravado\n\n**Salvar como (F12 / Arquivo → Salvar como)**\n- cria uma cópia (ou salva em outro local/nome)\n- perfeito para criar versões\n\nRegra:\n- Vai fazer uma mudança grande? Faça **Salvar como** e crie uma versão antes."
+    },
+    {
+      "title": "Nomear arquivos do jeito certo (padrão que funciona)",
+      "body": "Evite:\n- `planilha final.xlsx`\n- `planilha final final.xlsx`\n\nUse data no padrão que ordena certo:\n- `Controle_Estoque_2026-03-03.xlsx`\n\nSe precisar de várias versões no mesmo dia:\n- `Controle_Estoque_2026-03-03_v01.xlsx`\n- `Controle_Estoque_2026-03-03_v02.xlsx`\n\nRegra:\n- data no formato **AAAA-MM-DD** deixa tudo organizado automaticamente."
+    },
+    {
+      "title": "Onde salvar (local x nuvem) e por que isso muda tudo",
+      "body": "Você pode salvar:\n\n1) **No computador (local)**\n- funciona offline\n- risco: problema no PC pode virar perda\n\n2) **Na nuvem (OneDrive/SharePoint)**\n- backup\n- **histórico de versões**\n- colaboração (coautoria)\n\nRegra:\n- arquivo importante e que muda sempre → prefira **nuvem** quando possível."
+    },
+    {
+      "title": "AutoSave x AutoRecover (não confunda)",
+      "body": "São coisas diferentes:\n\n- **AutoSave (Salvamento Automático)**\n  - salva continuamente\n  - geralmente funciona quando o arquivo está na nuvem\n\n- **AutoRecover (Recuperação automática)**\n  - cria cópias temporárias\n  - ajuda quando o Excel trava ou cai energia\n\nRegra:\n- AutoSave previne perda.\n- AutoRecover tenta te salvar quando já deu ruim."
+    },
+    {
+      "title": "Histórico de versões (a melhor proteção quando está na nuvem)",
+      "body": "Quando o arquivo está no OneDrive/SharePoint, normalmente existe:\n- histórico de versões\n- opção de restaurar uma versão anterior\n\nPor que isso é ouro?\n- alguém bagunçou e salvou? você volta no tempo.\n\nRegra:\n- arquivo compartilhado sem histórico = risco alto."
+    },
+    {
+      "title": "Abrir e evitar confusão de cópias (erro super comum)",
+      "body": "Problema típico:\n- você tem 3 arquivos parecidos e abre o errado.\n\nBoas práticas:\n- veja o **nome na barra de título**\n- centralize tudo em uma pasta padrão\n- evite “soltar” arquivos na Área de Trabalho\n\nRegra:\n- Área de Trabalho é ótima para atalhos, ruim para arquivos críticos."
+    },
+    {
+      "title": "Como recuperar após travamento (passo mental)",
+      "body": "Se travar:\n\n1) Abra o Excel novamente\n2) Procure o painel de **Recuperação de Documentos** (geralmente aparece)\n3) Abra a versão recuperada\n4) Faça **Salvar como** com outro nome\n\nRegra:\n- na recuperação, o primeiro passo é proteger a cópia: **Salvar como**."
+    },
+    {
+      "title": "CSV (por que às vezes “vem tudo em uma coluna”)",
+      "body": "CSV é texto com separadores.\n\nProblemas comuns:\n- separador errado (vírgula vs ponto e vírgula)\n- acentos (codificação)\n- datas virando texto\n\nRegra:\n- para abrir CSV do jeito certo, use:\n  **Dados → De Texto/CSV**\n\nIsso permite escolher separador e formato correto."
+    },
+    {
+      "title": "Mini prática (15 minutos) — treinar versão segura",
+      "body": "1) Crie um arquivo e salve como:\n- `Treino_Excel_2026-03-03_v01.xlsx`\n\n2) Faça mudanças (qualquer coisa).\n\n3) Agora use **Salvar como** e crie:\n- `Treino_Excel_2026-03-03_v02.xlsx`\n\n4) Na v02, apague um bloco de dados de propósito.\n\n5) Feche e reabra as duas versões.\n\nObjetivo:\n- sentir na prática a diferença entre salvar e salvar como.\n- aprender a testar sem medo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- XLSX é padrão; XLSM é para macros; CSV é para sistemas\n- Ctrl+S salva o arquivo atual\n- Salvar como cria versão e evita sobrescrever\n- Nuvem dá histórico de versões e colaboração\n- AutoSave ≠ AutoRecover\n- Para CSV, prefira importar em Dados → De Texto/CSV\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 04 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O formato padrão moderno do Excel é:",
+        "options": [
+          { "key": "A", "text": "XLSX" },
+          { "key": "B", "text": "DOCX" }
+        ],
+        "answer": "A",
+        "explain": "XLSX é o formato recomendado para planilhas comuns."
+      },
+      {
+        "id": 2,
+        "question": "Arquivo com macro normalmente deve ser salvo como:",
+        "options": [
+          { "key": "A", "text": "XLSM" },
+          { "key": "B", "text": "XLSX sempre" }
+        ],
+        "answer": "A",
+        "explain": "Macros exigem XLSM para manter o VBA."
+      },
+      {
+        "id": 3,
+        "question": "Ctrl+S faz:",
+        "options": [
+          { "key": "A", "text": "Salva o arquivo atual" },
+          { "key": "B", "text": "Cria uma cópia com outro nome" }
+        ],
+        "answer": "A",
+        "explain": "Salvar atualiza o arquivo em que você está."
+      },
+      {
+        "id": 4,
+        "question": "Salvar como é indicado quando:",
+        "options": [
+          { "key": "A", "text": "Você quer criar uma versão antes de mudanças grandes" },
+          { "key": "B", "text": "Você quer mudar a cor da célula" }
+        ],
+        "answer": "A",
+        "explain": "Salvar como evita sobrescrever o original."
+      },
+      {
+        "id": 5,
+        "question": "Um bom padrão de nome com data é:",
+        "options": [
+          { "key": "A", "text": "Controle_2026-03-03.xlsx" },
+          { "key": "B", "text": "controle final final.xlsx" }
+        ],
+        "answer": "A",
+        "explain": "AAAA-MM-DD ordena certo e evita confusão."
+      },
+      {
+        "id": 6,
+        "question": "Salvar na nuvem costuma ajudar com:",
+        "options": [
+          { "key": "A", "text": "Histórico de versões e colaboração" },
+          { "key": "B", "text": "Aumentar o tamanho do teclado" }
+        ],
+        "answer": "A",
+        "explain": "Histórico de versões é uma das maiores vantagens."
+      },
+      {
+        "id": 7,
+        "question": "AutoSave é:",
+        "options": [
+          { "key": "A", "text": "Salvamento contínuo (geralmente na nuvem)" },
+          { "key": "B", "text": "Um tipo de gráfico" }
+        ],
+        "answer": "A",
+        "explain": "AutoSave salva enquanto você trabalha."
+      },
+      {
+        "id": 8,
+        "question": "AutoRecover ajuda quando:",
+        "options": [
+          { "key": "A", "text": "O Excel trava ou cai energia" },
+          { "key": "B", "text": "Você quer alinhar texto" }
+        ],
+        "answer": "A",
+        "explain": "Ele tenta recuperar cópias temporárias do trabalho."
+      },
+      {
+        "id": 9,
+        "question": "CSV pode dar problema porque:",
+        "options": [
+          { "key": "A", "text": "Separador/acentos/datas podem vir errados" },
+          { "key": "B", "text": "Não pode ser aberto no Excel" }
+        ],
+        "answer": "A",
+        "explain": "CSV depende de separador e codificação; por isso importar é melhor."
+      },
+      {
+        "id": 10,
+        "question": "Ao recuperar um arquivo após travamento, uma boa prática é:",
+        "options": [
+          { "key": "A", "text": "Fazer Salvar como antes de continuar" },
+          { "key": "B", "text": "Trabalhar sem salvar para evitar erro" }
+        ],
+        "answer": "A",
+        "explain": "Salvar como protege a versão recuperada e evita sobrescrever."
+      }
+    ]
+  },
+  "extra": {
+    "receitaVersoes": "Receita simples de versões (use sempre)\n\n1) Antes de mudanças grandes:\n   Salvar como → _v02\n2) Mudança deu ruim?\n   Volte para a versão anterior.\n3) Arquivo importante?\n   Prefira nuvem (histórico de versões).\n",
+    "padraoNome": "Padrão de nome recomendado\n\n- Nome_YYYY-MM-DD.xlsx\n- Nome_YYYY-MM-DD_v01.xlsx\n\nExemplos:\n- Relatorio_Vendas_2026-03-03.xlsx\n- Relatorio_Vendas_2026-03-03_v02.xlsx\n"
+  }
+}

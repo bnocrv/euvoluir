@@ -1,0 +1,159 @@
+{
+  "id": "04-digitacao-atalhos",
+  "title": "Aula 04 — Digitação eficiente: atalhos essenciais e seleção de texto",
+  "steps": [
+    {
+      "title": "Por que aprender atalhos (de verdade)",
+      "body": "Atalho não é “coisa de nerd”.\n\nÉ economia de tempo e energia:\n- menos tirar a mão do teclado\n- menos caçar botão\n- mais foco no texto\n\nSe você aprender poucos atalhos bem escolhidos, seu ritmo muda rápido."
+    },
+    {
+      "title": "A regra nº 1 do Word: primeiro selecione, depois aplique",
+      "body": "No Word, quase tudo funciona assim:\n\n1) selecione o texto\n2) aplique a ação (negrito, fonte, alinhamento, etc.)\n\nSe você não seleciona, o Word pode:\n- aplicar só no ponto do cursor\n- aplicar só no próximo texto que você digitar\n\nPor isso: seleção é base de tudo."
+    },
+    {
+      "title": "Seleção com o mouse (o básico bem feito)",
+      "body": "Seleções comuns:\n\n- Arrastar com o mouse: seleciona um trecho\n- Duplo clique na palavra: seleciona a palavra\n- Triplo clique no parágrafo: seleciona o parágrafo\n- Clique na margem esquerda (barra do lado):\n  - 1 clique: seleciona a linha\n  - 2 cliques: seleciona o parágrafo\n  - 3 cliques: seleciona o documento inteiro (em algumas versões)\n\nDica:\n- a margem esquerda é um “atalho” de seleção."
+    },
+    {
+      "title": "Seleção com teclado (muito mais rápida)",
+      "body": "O combo mais importante:\n\n- **Shift + setas**: seleciona letra por letra\n- **Ctrl + Shift + setas**: seleciona palavra por palavra\n\nExemplo:\n- Ctrl + Shift + → seleciona a próxima palavra\n- Ctrl + Shift + ← seleciona a palavra anterior\n\nIsso é perfeito para corrigir texto sem usar mouse."
+    },
+    {
+      "title": "Atalhos essenciais (top 10 para viver bem no Word)",
+      "body": "Esses 10 já mudam seu jogo:\n\n1) **Ctrl + S** → salvar\n2) **Ctrl + Z** → desfazer\n3) **Ctrl + Y** → refazer\n4) **Ctrl + C** → copiar\n5) **Ctrl + V** → colar\n6) **Ctrl + X** → recortar\n7) **Ctrl + A** → selecionar tudo\n8) **Ctrl + B** → negrito\n9) **Ctrl + I** → itálico\n10) **Ctrl + U** → sublinhado\n\nDica:\n- use Ctrl+S como “reflexo” a cada mudança importante."
+    },
+    {
+      "title": "Navegação rápida no texto (sem rolar a página)",
+      "body": "Atalhos de movimentação:\n\n- **Ctrl + ← / →**: pula palavra por palavra\n- **Home**: vai para o início da linha\n- **End**: vai para o fim da linha\n- **Ctrl + Home**: vai para o início do documento\n- **Ctrl + End**: vai para o fim do documento\n\nPor que isso é bom?\n- você edita mais rápido\n- evita se perder em documento grande"
+    },
+    {
+      "title": "Quebra de linha vs novo parágrafo (um erro comum)",
+      "body": "No Word:\n\n- **Enter** cria um **novo parágrafo**\n- **Shift + Enter** cria uma **quebra de linha** (linha nova, mesmo parágrafo)\n\nQuando usar Shift+Enter?\n- endereços\n- listas simples dentro do mesmo bloco\n- linhas que devem ficar “coladas” no mesmo parágrafo\n\nCuidado:\n- usar Enter para tudo pode bagunçar espaçamentos e estilos."
+    },
+    {
+      "title": "Copiar e colar sem bagunçar formatação (conceito)",
+      "body": "Quando você cola texto, ele pode trazer:\n- fonte diferente\n- espaçamento estranho\n- estilos misturados\n\nPor isso existe “colar” de jeitos diferentes.\n\nIdeia principal:\n- às vezes você quer colar **só o texto**, sem formatação.\n\n(Depois, em aula de formatação e estilos, isso vira ainda mais importante.)"
+    },
+    {
+      "title": "Localizar rápido (atalho que salva em documento longo)",
+      "body": "**Ctrl + F** abre a busca.\n\nUse para:\n- achar uma palavra\n- pular direto para um trecho\n\nExemplo:\n- procure “Conclusão”\n- o Word te leva pra lá\n\nDica:\n- em documento grande, Ctrl+F é melhor do que rolar."
+    },
+    {
+      "title": "Mini prática (12 minutos) — treino de seleção e atalhos",
+      "body": "Abra um documento e digite 3 parágrafos curtos.\n\nAgora faça:\n1) Selecione 1 palavra com duplo clique\n2) Selecione 1 parágrafo com triplo clique\n3) Selecione uma frase usando Shift + setas\n4) Selecione palavras inteiras usando Ctrl + Shift + →\n5) Aplique:\n   - Ctrl+B (negrito)\n   - Ctrl+I (itálico)\n   - Ctrl+U (sublinhado)\n6) Copie e cole um trecho (Ctrl+C / Ctrl+V)\n7) Use Ctrl+F e procure uma palavra\n8) Salve com Ctrl+S\n\nObjetivo:\n- fazer o corpo aprender (mão no teclado)."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Word é: selecione → aplique\n- Shift seleciona; Ctrl+Shift seleciona por palavras\n- Atalhos básicos aceleram tudo\n- Shift+Enter ≠ Enter\n- Ctrl+F ajuda muito em documento longo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 04 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "No Word, a regra mais comum é:",
+        "options": [
+          { "key": "A", "text": "Selecionar primeiro e depois aplicar a ação" },
+          { "key": "B", "text": "Aplicar a ação e depois escolher o texto" }
+        ],
+        "answer": "A",
+        "explain": "A maioria das formatações e comandos depende da seleção do texto."
+      },
+      {
+        "id": 2,
+        "question": "Duplo clique em uma palavra faz:",
+        "options": [
+          { "key": "A", "text": "Seleciona a palavra" },
+          { "key": "B", "text": "Seleciona o documento inteiro" }
+        ],
+        "answer": "A",
+        "explain": "Duplo clique seleciona a palavra; triplo clique seleciona o parágrafo."
+      },
+      {
+        "id": 3,
+        "question": "Ctrl + Shift + → seleciona:",
+        "options": [
+          { "key": "A", "text": "Uma palavra de cada vez" },
+          { "key": "B", "text": "Uma letra de cada vez" }
+        ],
+        "answer": "A",
+        "explain": "Shift+setas seleciona letra; Ctrl+Shift+setas seleciona por palavras."
+      },
+      {
+        "id": 4,
+        "question": "Ctrl + S serve para:",
+        "options": [
+          { "key": "A", "text": "Salvar" },
+          { "key": "B", "text": "Sublinhar" }
+        ],
+        "answer": "A",
+        "explain": "Salvar é Ctrl+S. Sublinhar é Ctrl+U."
+      },
+      {
+        "id": 5,
+        "question": "Ctrl + A faz:",
+        "options": [
+          { "key": "A", "text": "Selecionar tudo" },
+          { "key": "B", "text": "Alinhar ao centro" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl+A seleciona todo o conteúdo do documento."
+      },
+      {
+        "id": 6,
+        "question": "Enter cria:",
+        "options": [
+          { "key": "A", "text": "Um novo parágrafo" },
+          { "key": "B", "text": "Uma quebra de linha no mesmo parágrafo" }
+        ],
+        "answer": "A",
+        "explain": "Enter cria parágrafo novo; Shift+Enter cria quebra de linha."
+      },
+      {
+        "id": 7,
+        "question": "Shift + Enter é útil quando você quer:",
+        "options": [
+          { "key": "A", "text": "Pular para outra linha sem criar novo parágrafo" },
+          { "key": "B", "text": "Criar um novo capítulo automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Shift+Enter mantém o mesmo parágrafo, só muda a linha."
+      },
+      {
+        "id": 8,
+        "question": "Ctrl + Home leva você:",
+        "options": [
+          { "key": "A", "text": "Ao início do documento" },
+          { "key": "B", "text": "Ao fim do documento" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl+Home vai para o começo; Ctrl+End vai para o final."
+      },
+      {
+        "id": 9,
+        "question": "Ctrl + F serve para:",
+        "options": [
+          { "key": "A", "text": "Localizar (buscar) texto" },
+          { "key": "B", "text": "Formatar como título automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl+F abre a busca e ajuda a navegar no documento."
+      },
+      {
+        "id": 10,
+        "question": "Atalhos são importantes porque:",
+        "options": [
+          { "key": "A", "text": "Aceleram tarefas e reduzem uso do mouse" },
+          { "key": "B", "text": "Só existem para enfeitar o teclado" }
+        ],
+        "answer": "A",
+        "explain": "Com atalhos você ganha tempo e foco, principalmente em edição."
+      }
+    ]
+  },
+  "extra": {
+    "modelCheatSheet": "Cola de atalhos (pra memorizar)\n\nEdição:\n- Ctrl+S salvar\n- Ctrl+Z desfazer\n- Ctrl+Y refazer\n- Ctrl+C copiar\n- Ctrl+V colar\n- Ctrl+X recortar\n- Ctrl+A selecionar tudo\n\nFormatação:\n- Ctrl+B negrito\n- Ctrl+I itálico\n- Ctrl+U sublinhado\n\nSeleção:\n- Shift+setas seleciona\n- Ctrl+Shift+setas seleciona por palavras\n\nNavegação:\n- Home/End início/fim da linha\n- Ctrl+Home/Ctrl+End início/fim do documento\n\nBusca:\n- Ctrl+F localizar\n\nDica de ouro:\n- Enter = novo parágrafo\n- Shift+Enter = quebra de linha (mesmo parágrafo)\n"
+  }
+}

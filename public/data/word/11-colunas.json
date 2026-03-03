@@ -1,0 +1,163 @@
+{
+  "id": "11-colunas",
+  "title": "Aula 11 — Colunas (layout tipo revista) + quebras de coluna",
+  "steps": [
+    {
+      "title": "O que são colunas no Word",
+      "body": "Colunas dividem o texto em “faixas” verticais, como jornal ou revista.\n\nExemplo visual (ideia):\n[ Coluna 1 ]  [ Coluna 2 ]\n\nVocê usa colunas quando:\n- quer um layout mais compacto\n- quer leitura tipo revista\n- quer organizar texto em partes lado a lado\n\nImportante:\n- colunas NÃO são a mesma coisa que tabela.\n- colunas são para texto fluindo; tabela é para dados."
+    },
+    {
+      "title": "Quando usar colunas (e quando não usar)",
+      "body": "Use colunas para:\n- newsletters\n- folhetos\n- textos curtos em duas colunas\n- documentos com aparência “editorial”\n\nEvite colunas para:\n- planilhas/valores (use tabela)\n- documentos longos de trabalho onde o padrão é texto contínuo\n\nRegra:\n- colunas são um estilo de layout, não uma regra para tudo."
+    },
+    {
+      "title": "Onde configurar colunas",
+      "body": "Normalmente em:\n- **Layout → Colunas**\n\nVocê pode escolher:\n- 1 coluna (padrão)\n- 2 colunas\n- 3 colunas\n- Mais colunas… (ajuste fino)\n\nAtalho mental:\n- “texto em formato de revista” → Layout → Colunas."
+    },
+    {
+      "title": "Como o texto se comporta em colunas",
+      "body": "Quando você ativa 2 colunas:\n- o texto enche a coluna 1 de cima para baixo\n- depois continua na coluna 2\n\nOu seja:\n- o Word mantém um fluxo.\n\nIsso é ótimo para leitura, mas pode confundir quem espera “lado a lado” fixo.\n\nSe você quer algo fixo lado a lado (tipo: coluna A e B com dados), use TABELA."
+    },
+    {
+      "title": "Espaçamento entre colunas e linha no meio",
+      "body": "Nas opções avançadas de colunas você controla:\n- largura das colunas\n- espaço entre elas\n- linha separadora\n\nBoa prática:\n- deixe um espaço confortável entre colunas\n- linha separadora é opcional (use só se fizer sentido visual)."
+    },
+    {
+      "title": "Aplicar colunas no documento inteiro ou só em uma parte",
+      "body": "Aqui entra a grande sacada:\n\nSe você aplicar colunas no documento inteiro, tudo vira coluna.\n\nSe você quer colunas só em um trecho (ex.: uma seção “Resumo”):\n- use **seções**.\n\nRegra prática:\n- colunas em apenas uma parte = seção antes e seção depois (igual ao caso da paisagem)."
+    },
+    {
+      "title": "Quebra de coluna: controlar onde a próxima coluna começa",
+      "body": "Às vezes você quer forçar o texto a ir para a próxima coluna.\n\nExemplo:\n- você terminou um bloco\n- quer começar outro bloco já na coluna 2\n\nSolução:\n- **Quebra de coluna**.\n\nDiferença:\n- Enter não faz isso direito.\n- quebra de coluna é uma marca de layout."
+    },
+    {
+      "title": "Como inserir quebra de coluna",
+      "body": "Caminho comum:\n- **Layout → Quebras → Coluna**\n\nDica:\n- ative ¶ para ver a marca.\n\nRegra:\n- use quebra de coluna quando você quer “pular” para a próxima coluna de forma limpa."
+    },
+    {
+      "title": "Colunas e imagens/tabelas (cuidado)",
+      "body": "Em colunas, alguns elementos podem ficar chatos:\n- imagens grandes podem estourar a coluna\n- tabelas largas não cabem\n\nSoluções:\n- reduzir imagem\n- usar quebra de seção e colocar a imagem/tabela fora das colunas\n\nRegra:\n- colunas funcionam melhor com texto e elementos pequenos."
+    },
+    {
+      "title": "Mostrar marcas (¶) ajuda MUITO em colunas",
+      "body": "Quando você usa colunas e quebras:\n- muita coisa é invisível\n\nPor isso:\n- ative ¶ para ver quebras de seção e de coluna.\n\nSe algo “pula” estranho:\n- quase sempre é uma quebra no lugar errado."
+    },
+    {
+      "title": "Mini prática (20 minutos) — mini “revista” com quebra de coluna",
+      "body": "Faça assim:\n\n1) Crie um documento e digite um título.\n2) Digite 2 parágrafos longos (qualquer texto).\n3) Vá em Layout → Colunas → 2.\n\nAgora controle:\n4) No meio do texto, coloque o cursor antes de um subtítulo (ou palavra).\n5) Layout → Quebras → Coluna.\n\nResultado esperado:\n- a parte após a quebra começa no topo da coluna 2.\n\nExtra:\n6) Ative ¶ e veja a marca da quebra de coluna.\n\nObjetivo:\n- entender fluxo e controle de colunas."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Colunas criam layout tipo jornal/revista\n- Texto flui: enche a coluna 1 e depois vai para a 2\n- Para colunas em um trecho só: use seções\n- Quebra de coluna força ir para a próxima coluna\n- ¶ ajuda a enxergar o que está acontecendo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 11 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Colunas no Word servem para:",
+        "options": [
+          { "key": "A", "text": "Dividir o texto em faixas verticais tipo jornal" },
+          { "key": "B", "text": "Criar fórmulas como no Excel" }
+        ],
+        "answer": "A",
+        "explain": "Colunas são um recurso de layout para texto fluindo em faixas."
+      },
+      {
+        "id": 2,
+        "question": "Colunas são melhores para:",
+        "options": [
+          { "key": "A", "text": "Textos em layout editorial (newsletter, folheto)" },
+          { "key": "B", "text": "Tabelas com muitos números e dados" }
+        ],
+        "answer": "A",
+        "explain": "Dados estruturados ficam melhores em tabelas, não em colunas de texto."
+      },
+      {
+        "id": 3,
+        "question": "Para configurar colunas, você usa principalmente a guia:",
+        "options": [
+          { "key": "A", "text": "Layout" },
+          { "key": "B", "text": "Revisão" }
+        ],
+        "answer": "A",
+        "explain": "Layout reúne recursos que mexem na “folha” e no fluxo do texto."
+      },
+      {
+        "id": 4,
+        "question": "Quando você ativa 2 colunas, o texto geralmente:",
+        "options": [
+          { "key": "A", "text": "Enche a coluna 1 e depois continua na coluna 2" },
+          { "key": "B", "text": "Se divide automaticamente em duas partes iguais linha a linha" }
+        ],
+        "answer": "A",
+        "explain": "O Word trabalha com fluxo de texto (de cima para baixo na coluna)."
+      },
+      {
+        "id": 5,
+        "question": "Se você quer colunas só em uma parte do documento, você deve usar:",
+        "options": [
+          { "key": "A", "text": "Seções para isolar o trecho" },
+          { "key": "B", "text": "Vários espaços e Enter" }
+        ],
+        "answer": "A",
+        "explain": "Seções permitem aplicar layout diferente apenas em um trecho."
+      },
+      {
+        "id": 6,
+        "question": "Quebra de coluna serve para:",
+        "options": [
+          { "key": "A", "text": "Forçar o texto a ir para a próxima coluna" },
+          { "key": "B", "text": "Aumentar o tamanho da fonte" }
+        ],
+        "answer": "A",
+        "explain": "Ela controla o fluxo do texto entre colunas."
+      },
+      {
+        "id": 7,
+        "question": "Para inserir uma quebra de coluna, você procura em:",
+        "options": [
+          { "key": "A", "text": "Layout → Quebras → Coluna" },
+          { "key": "B", "text": "Inserir → Imagens" }
+        ],
+        "answer": "A",
+        "explain": "Quebras são recursos de layout."
+      },
+      {
+        "id": 8,
+        "question": "Colunas e imagens grandes:",
+        "options": [
+          { "key": "A", "text": "Podem dar problema; às vezes é melhor sair das colunas com seções" },
+          { "key": "B", "text": "Sempre ficam perfeitas sem ajustes" }
+        ],
+        "answer": "A",
+        "explain": "Imagens/tabelas largas podem não caber na largura de uma coluna."
+      },
+      {
+        "id": 9,
+        "question": "O botão ¶ ajuda em colunas porque:",
+        "options": [
+          { "key": "A", "text": "Mostra marcas invisíveis como quebras de coluna e seção" },
+          { "key": "B", "text": "Muda o documento para modo paisagem automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Sem ¶ você não vê quebras, e fica difícil corrigir layout."
+      },
+      {
+        "id": 10,
+        "question": "Se você quer duas informações lado a lado de forma fixa (coluna A e B), é melhor usar:",
+        "options": [
+          { "key": "A", "text": "Tabela" },
+          { "key": "B", "text": "Colunas de layout" }
+        ],
+        "answer": "A",
+        "explain": "Tabela mantém estrutura fixa; colunas são fluxo de texto."
+      }
+    ]
+  },
+  "extra": {
+    "modelColumnsRecipe": "Receita rápida: trecho em 2 colunas (sem bagunçar o resto)\n\n1) No fim da parte ANTERIOR:\n   Layout → Quebras → Seção (Próxima página)\n2) No fim do trecho que será em colunas:\n   Layout → Quebras → Seção (Próxima página)\n3) Clique dentro do trecho do meio:\n   Layout → Colunas → 2\n\nPara controlar onde a coluna 2 começa:\n- Layout → Quebras → Coluna\n\nChecklist:\n- Ativar ¶ para ver quebras de seção e de coluna\n- Se imagem/tabela estourar: tirar do trecho em colunas\n"
+  }
+}

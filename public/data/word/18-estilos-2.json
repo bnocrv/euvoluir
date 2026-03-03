@@ -1,0 +1,163 @@
+{
+  "id": "18-estilos-2",
+  "title": "Aula 18 — Estilos 2: criar/alterar estilos e padronizar o documento",
+  "steps": [
+    {
+      "title": "O salto de produtividade: editar o estilo, não cada trecho",
+      "body": "Na aula 17 você entendeu por que estilos existem.\n\nAgora vem o poder real:\n- você muda o estilo 1 vez\n- o documento inteiro atualiza\n\nIsso evita:\n- “arrumar título por título”\n- inconsistência\n- retrabalho\n\nRegra:\n- documento longo sem estilos bem ajustados vira caos."
+    },
+    {
+      "title": "Como pensar em padrão (antes de mexer)",
+      "body": "Antes de editar estilos, defina um padrão simples:\n\n- Normal (corpo): tamanho 11/12, entrelinhas 1,15, espaçamento depois 6 pt\n- Título 1: maior, negrito, espaçamento antes 12 pt, depois 6 pt\n- Título 2: um pouco menor que Título 1, negrito leve\n- Título 3: menor ainda, pode ser negrito ou não\n\nRegra:\n- poucos padrões, bem consistentes."
+    },
+    {
+      "title": "A forma mais comum de alterar um estilo",
+      "body": "Conceito:\n\n1) você encontra o estilo (Normal, Título 1, etc.)\n2) escolhe “Modificar”\n3) define fonte, tamanho, cor, parágrafo\n\nO que você pode controlar no estilo:\n- fonte\n- tamanho\n- negrito/itálico\n- espaçamento (antes/depois)\n- entrelinhas\n- recuos\n\nRegra:\n- estilo bom inclui parágrafo (não só fonte)."
+    },
+    {
+      "title": "Atualizar o estilo baseado em um trecho (cuidado)",
+      "body": "Existe um jeito de atualizar estilo “puxando” formatação de um trecho.\n\nFunciona assim:\n- você formata um título do jeito que quer\n- manda o estilo “aprender” aquele formato\n\nCuidado:\n- se você fez alguma formatação errada sem perceber, o erro vira padrão.\n\nRegra:\n- para iniciantes, é mais seguro usar “Modificar” e ajustar conscientemente."
+    },
+    {
+      "title": "Normal: o estilo mais importante para acertar primeiro",
+      "body": "Se o Normal estiver certo:\n- o documento fica bom automaticamente\n\nSugestão de Normal (padrão profissional):\n- tamanho 11 ou 12\n- entrelinhas 1,15\n- espaçamento depois 6 pt\n- alinhamento: esquerda (ou justificado, se for exigência)\n\nRegra:\n- ajuste Normal antes de ajustar títulos."
+    },
+    {
+      "title": "Título 1/2/3: padrão visual + padrão estrutural",
+      "body": "Boas práticas:\n\nTítulo 1 (capítulo):\n- maior\n- negrito\n- espaçamento antes maior (ex.: 12 ou 18 pt)\n\nTítulo 2 (seção):\n- menor que Título 1\n- negrito\n\nTítulo 3 (subseção):\n- menor\n- pode ser negrito leve\n\nRegra:\n- hierarquia deve ser visível: Título 1 chama mais atenção que Título 2."
+    },
+    {
+      "title": "“Manter com o próximo” e controle de quebras (truque profissional)",
+      "body": "Alguns documentos ficam feios quando:\n- um título fica sozinho no fim da página\n- e o texto começa na página seguinte\n\nExiste uma opção de parágrafo chamada (geralmente):\n- **Manter com o próximo**\n\nIdeia:\n- o título “gruda” no parágrafo seguinte\n\nRegra:\n- em títulos, isso melhora muito o visual do documento."
+    },
+    {
+      "title": "Evitar formatação manual por cima do estilo (o que quebra padrão)",
+      "body": "Quando você aplica um estilo e depois muda manualmente:\n- fonte de um título\n- cor de outro\n- espaçamento diferente\n\nVocê cria “exceções” que viram bagunça.\n\nRegra:\n- se a aparência do estilo está ruim, corrija o estilo.\n- não corrija cada caso manualmente."
+    },
+    {
+      "title": "Criar um novo estilo (quando vale a pena)",
+      "body": "Você cria novo estilo quando:\n- precisa de um tipo de parágrafo repetido\n- que não é exatamente Normal nem Título\n\nExemplos:\n- “Citação” (texto recuado)\n- “Observação” (bloco com espaçamento diferente)\n- “Checklist” (parágrafo com recuo específico)\n\nRegra:\n- se você repetiu a mesma formatação manual 3 vezes, já vale criar estilo."
+    },
+    {
+      "title": "Aplicar em documentos futuros (modelo/template)",
+      "body": "Quando seu padrão está bom, você quer reutilizar.\n\nDuas ideias:\n- salvar como modelo (aula 24)\n- criar um documento base e duplicar\n\nRegra:\n- padrão bom é reutilizável.\n- isso economiza muito tempo no trabalho."
+    },
+    {
+      "title": "Mini prática (25 minutos) — padronizar em 10 minutos",
+      "body": "Crie um documento com:\n- 2 Títulos 1\n- 4 Títulos 2\n- parágrafos Normais\n\nAgora:\n1) Modifique o estilo Normal:\n- tamanho 12\n- entrelinhas 1,15\n- espaçamento depois 6 pt\n\n2) Modifique o estilo Título 1:\n- tamanho 16\n- negrito\n- espaçamento antes 12 pt, depois 6 pt\n- ativar “Manter com o próximo”\n\n3) Modifique o estilo Título 2:\n- tamanho 14\n- negrito\n- espaçamento antes 10 pt, depois 4 pt\n\nObjetivo:\n- ver o documento inteiro mudar sem retrabalho."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Modificar estilos = atualizar documento inteiro\n- Ajuste Normal primeiro\n- Ajuste Título 1/2/3 com hierarquia clara\n- Use “Manter com o próximo” para títulos não ficarem soltos\n- Evite formatação manual por cima do estilo\n- Se repetir formatação, crie um novo estilo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 18 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A grande vantagem de modificar um estilo é:",
+        "options": [
+          { "key": "A", "text": "O documento inteiro atualiza de uma vez" },
+          { "key": "B", "text": "Você precisa arrumar cada trecho manualmente" }
+        ],
+        "answer": "A",
+        "explain": "Estilo é padrão; mudar o padrão atualiza tudo que usa ele."
+      },
+      {
+        "id": 2,
+        "question": "O estilo mais importante para ajustar primeiro costuma ser:",
+        "options": [
+          { "key": "A", "text": "Normal" },
+          { "key": "B", "text": "Título 3" }
+        ],
+        "answer": "A",
+        "explain": "Normal é o corpo do texto e impacta o documento inteiro."
+      },
+      {
+        "id": 3,
+        "question": "Boa prática com estilos é:",
+        "options": [
+          { "key": "A", "text": "Corrigir o estilo em vez de corrigir título por título" },
+          { "key": "B", "text": "Formatar cada título na mão de um jeito diferente" }
+        ],
+        "answer": "A",
+        "explain": "Ajustar o estilo mantém padrão e evita bagunça."
+      },
+      {
+        "id": 4,
+        "question": "Formatação manual por cima do estilo costuma:",
+        "options": [
+          { "key": "A", "text": "Criar exceções e quebrar consistência" },
+          { "key": "B", "text": "Tornar o documento automaticamente mais organizado" }
+        ],
+        "answer": "A",
+        "explain": "Exceções manuais geram inconsistência e retrabalho."
+      },
+      {
+        "id": 5,
+        "question": "Título 1, 2 e 3 devem:",
+        "options": [
+          { "key": "A", "text": "Ter hierarquia visível (Título 1 mais forte que Título 2)" },
+          { "key": "B", "text": "Ter exatamente o mesmo tamanho e aparência" }
+        ],
+        "answer": "A",
+        "explain": "Hierarquia ajuda leitura e estrutura."
+      },
+      {
+        "id": 6,
+        "question": "“Manter com o próximo” é útil para:",
+        "options": [
+          { "key": "A", "text": "Evitar título solto no fim da página" },
+          { "key": "B", "text": "Transformar título em imagem" }
+        ],
+        "answer": "A",
+        "explain": "Ele “gruda” o título ao parágrafo seguinte, melhorando o layout."
+      },
+      {
+        "id": 7,
+        "question": "Criar um novo estilo vale a pena quando:",
+        "options": [
+          { "key": "A", "text": "Você repete a mesma formatação várias vezes" },
+          { "key": "B", "text": "Você nunca vai usar aquela formatação de novo" }
+        ],
+        "answer": "A",
+        "explain": "Repetição é sinal de que deve virar padrão (estilo)."
+      },
+      {
+        "id": 8,
+        "question": "Atualizar um estilo baseado em um trecho formatado pode ser arriscado porque:",
+        "options": [
+          { "key": "A", "text": "Você pode transformar um erro em padrão" },
+          { "key": "B", "text": "O Word para de funcionar" }
+        ],
+        "answer": "A",
+        "explain": "Se o trecho estiver com algo errado, o estilo “aprende” errado."
+      },
+      {
+        "id": 9,
+        "question": "Um estilo bem feito deve controlar também:",
+        "options": [
+          { "key": "A", "text": "Configurações de parágrafo (espaçamento, recuo)" },
+          { "key": "B", "text": "Somente a cor do texto" }
+        ],
+        "answer": "A",
+        "explain": "Parágrafo define consistência real (entrelinhas, antes/depois...)."
+      },
+      {
+        "id": 10,
+        "question": "Para reaproveitar padrões em outros documentos, uma boa ideia é:",
+        "options": [
+          { "key": "A", "text": "Salvar um modelo/template ou duplicar um documento base" },
+          { "key": "B", "text": "Começar do zero toda vez" }
+        ],
+        "answer": "A",
+        "explain": "Reutilização economiza tempo e mantém padrão profissional."
+      }
+    ]
+  },
+  "extra": {
+    "modelStylePreset": "Preset sugerido de estilos (simples e profissional)\n\nNORMAL (corpo):\n- Tamanho: 12\n- Entrelinhas: 1,15\n- Depois do parágrafo: 6 pt\n- Alinhamento: esquerda (ou justificado se exigido)\n\nTÍTULO 1 (capítulo):\n- Tamanho: 16\n- Negrito\n- Antes: 12 pt / Depois: 6 pt\n- Manter com o próximo: ligado\n\nTÍTULO 2 (seção):\n- Tamanho: 14\n- Negrito\n- Antes: 10 pt / Depois: 4 pt\n\nRegra anti-bagunça:\n- Evite ajustar título por título.\n- Ajuste o estilo.\n"
+  }
+}

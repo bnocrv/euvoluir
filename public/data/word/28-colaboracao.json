@@ -1,0 +1,163 @@
+{
+  "id": "28-colaboracao",
+  "title": "Aula 28 — Colaboração: OneDrive, coautoria, versões e boas práticas",
+  "steps": [
+    {
+      "title": "Por que colaboração é diferente de “mandar arquivo no WhatsApp”",
+      "body": "Quando você manda arquivo por mensagem, acontece isso:\n- “versão final.docx”\n- “versão final agora vai.docx”\n- “versão final revisada (2).docx”\n\nResultado:\n- ninguém sabe qual é a última\n- alterações se perdem\n- vira bagunça\n\nColaboração no Word (com OneDrive/SharePoint) resolve:\n- várias pessoas editando o mesmo arquivo\n- histórico de versões\n- comentários e revisão no mesmo lugar\n\nRegra:\n- documento importante deve ter fonte única (um arquivo central)."
+    },
+    {
+      "title": "OneDrive/SharePoint: a ideia da nuvem",
+      "body": "Quando você salva na nuvem:\n- o arquivo fica online\n- você acessa de qualquer lugar\n- dá para compartilhar com link\n- dá para ver versões anteriores\n\nEm empresas, muitas vezes é SharePoint.\nPara pessoa física, OneDrive.\n\nRegra:\n- colaboração real começa com arquivo na nuvem."
+    },
+    {
+      "title": "Coautoria: duas pessoas editando ao mesmo tempo",
+      "body": "Coautoria (co-authoring) permite:\n- você e outra pessoa editarem o mesmo documento simultaneamente\n\nO que costuma acontecer:\n- você vê o cursor/seleção da outra pessoa\n- as mudanças entram quase em tempo real\n\nVantagem:\n- evita “juntar” versões depois\n- reduz conflito\n\nRegra:\n- para funcionar bem, todos precisam estar no mesmo arquivo na nuvem."
+    },
+    {
+      "title": "Compartilhamento: link com permissões",
+      "body": "Compartilhar não é “mandar cópia”.\nÉ dar acesso ao mesmo arquivo.\n\nPermissões comuns:\n- **Pode editar** (colabora)\n- **Pode exibir** (só leitura)\n\nBoa prática:\n- se a pessoa só precisa ler/aprovar, dê acesso de exibição.\n- se precisa corrigir, dê acesso de edição.\n\nRegra:\n- dê o menor acesso necessário."
+    },
+    {
+      "title": "Comentários + @menções (organizar a revisão)",
+      "body": "Em colaboração, comentário vira tarefa.\n\nBoas práticas:\n- comentar em cima do trecho\n- ser objetivo\n- usar @menção para chamar alguém (se disponível)\n\nExemplo de comentário bom:\n- “Trocar ‘pedido’ por ‘solicitação’ neste parágrafo.”\n\nRegra:\n- comentário bom já diz a ação."
+    },
+    {
+      "title": "Controlar Alterações em equipe (quando usar)",
+      "body": "Em coautoria, às vezes vocês editam direto.\n\nMas em documentos formais (contratos, políticas):\n- é comum usar **Controlar Alterações** para registrar o que mudou.\n\nRegra:\n- coautoria é para editar junto.\n- Track Changes é para aprovar mudanças com controle."
+    },
+    {
+      "title": "Histórico de versões (o “desfazer do mundo real”)",
+      "body": "Com arquivo na nuvem, geralmente existe histórico de versões.\n\nIsso é útil quando:\n- alguém apagou algo sem querer\n- você precisa comparar “antes e depois”\n- uma mudança deu ruim\n\nRegra:\n- histórico de versões dá segurança para colaborar sem medo."
+    },
+    {
+      "title": "Conflitos e problemas comuns (e como evitar)",
+      "body": "Problemas comuns:\n\n1) Duas pessoas editando offline e depois juntando\n- vira conflito\n\n2) Copiar e colar trechos grandes\n- pode bagunçar formatação\n\n3) Cada um muda estilos e padrões\n- documento fica inconsistente\n\nSoluções:\n- trabalhar no mesmo arquivo\n- definir padrão (estilos) antes\n- usar comentários para sugerir mudanças grandes\n\nRegra:\n- colaboração precisa de regras simples."
+    },
+    {
+      "title": "Boas práticas de nome e organização (para equipe)",
+      "body": "Mesmo com nuvem, nome e pasta importam.\n\nSugestão:\n- Pasta por projeto\n- Um arquivo central\n- Nome claro\n\nExemplo:\n- `2026-03 - Procedimento Expedição - v1.docx`\n\nRegra:\n- evite múltiplos arquivos concorrentes.\n- use histórico de versões em vez de criar 10 cópias."
+    },
+    {
+      "title": "Fluxo recomendado (do rascunho ao final)",
+      "body": "Um fluxo simples e profissional:\n\n1) Criar arquivo na nuvem\n2) Definir estilos/padrão\n3) Escrever conteúdo\n4) Revisar com comentários\n5) (Se formal) usar Controlar Alterações\n6) Aceitar/rejeitar e limpar comentários\n7) Atualizar campos (sumário, referências)\n8) Exportar PDF final\n\nRegra:\n- “final” é quando está limpo e consistente."
+    },
+    {
+      "title": "Mini prática (20 minutos) — colaboração simulada",
+      "body": "Faça isso (mesmo sozinho dá pra treinar):\n\n1) Salve um documento no OneDrive.\n2) Compartilhe com “pode exibir” para testar (pode ser para outro email seu).\n3) Abra o documento pelo link em outro dispositivo/navegador.\n4) Faça uma pequena edição e veja sincronizar.\n5) Insira 2 comentários como se fosse revisão.\n6) Confira se aparece histórico/versões (se disponível na sua conta).\n\nObjetivo:\n- entender o conceito: arquivo central + acesso + controle."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Colaboração real é um arquivo central na nuvem\n- Coautoria permite editar junto\n- Compartilhar é dar acesso (não mandar cópia)\n- Comentários organizam revisão\n- Track Changes dá controle formal\n- Histórico de versões salva quando algo dá ruim\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 28 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Colaboração no Word funciona melhor quando:",
+        "options": [
+          { "key": "A", "text": "Existe um arquivo central na nuvem (OneDrive/SharePoint)" },
+          { "key": "B", "text": "Cada pessoa tem sua própria cópia e depois junta tudo" }
+        ],
+        "answer": "A",
+        "explain": "Arquivo central evita conflito e versões paralelas."
+      },
+      {
+        "id": 2,
+        "question": "Coautoria significa:",
+        "options": [
+          { "key": "A", "text": "Duas ou mais pessoas editando o mesmo arquivo ao mesmo tempo" },
+          { "key": "B", "text": "Criar duas capas diferentes para o documento" }
+        ],
+        "answer": "A",
+        "explain": "É edição simultânea no mesmo documento."
+      },
+      {
+        "id": 3,
+        "question": "Compartilhar por link com permissões é melhor porque:",
+        "options": [
+          { "key": "A", "text": "Todo mundo trabalha na mesma fonte, com controle de acesso" },
+          { "key": "B", "text": "Gera várias cópias com nomes diferentes" }
+        ],
+        "answer": "A",
+        "explain": "Permissões controlam quem edita e quem só visualiza."
+      },
+      {
+        "id": 4,
+        "question": "“Pode exibir” significa:",
+        "options": [
+          { "key": "A", "text": "A pessoa só lê, não altera o conteúdo" },
+          { "key": "B", "text": "A pessoa pode apagar partes do documento" }
+        ],
+        "answer": "A",
+        "explain": "É permissão de leitura."
+      },
+      {
+        "id": 5,
+        "question": "Comentários são úteis porque:",
+        "options": [
+          { "key": "A", "text": "Permitem revisar e discutir trechos sem bagunçar o texto" },
+          { "key": "B", "text": "Substituem o sumário automático" }
+        ],
+        "answer": "A",
+        "explain": "Comentário cria observação ligada ao trecho."
+      },
+      {
+        "id": 6,
+        "question": "Controlar Alterações é mais indicado quando:",
+        "options": [
+          { "key": "A", "text": "Você precisa aprovar mudanças formalmente (documento sensível)" },
+          { "key": "B", "text": "Você quer só mudar a cor do texto" }
+        ],
+        "answer": "A",
+        "explain": "Track Changes registra mudanças para aceitar/rejeitar."
+      },
+      {
+        "id": 7,
+        "question": "Histórico de versões é importante porque:",
+        "options": [
+          { "key": "A", "text": "Permite voltar a versões anteriores se algo der errado" },
+          { "key": "B", "text": "Impede qualquer alteração no documento" }
+        ],
+        "answer": "A",
+        "explain": "Ele dá segurança e rastreabilidade."
+      },
+      {
+        "id": 8,
+        "question": "Um erro comum em equipe é:",
+        "options": [
+          { "key": "A", "text": "Cada pessoa editar offline e depois tentar juntar" },
+          { "key": "B", "text": "Todos editarem o mesmo arquivo na nuvem" }
+        ],
+        "answer": "A",
+        "explain": "Offline cria conflitos e várias versões concorrentes."
+      },
+      {
+        "id": 9,
+        "question": "Boa prática de colaboração inclui:",
+        "options": [
+          { "key": "A", "text": "Definir padrão (estilos) antes e usar comentários para mudanças grandes" },
+          { "key": "B", "text": "Cada um mudar fonte e espaçamento do jeito que quiser" }
+        ],
+        "answer": "A",
+        "explain": "Padrão evita inconsistência visual."
+      },
+      {
+        "id": 10,
+        "question": "“Compartilhar” é melhor entendido como:",
+        "options": [
+          { "key": "A", "text": "Dar acesso ao mesmo arquivo (não mandar cópia)" },
+          { "key": "B", "text": "Enviar uma nova versão para cada pessoa" }
+        ],
+        "answer": "A",
+        "explain": "Compartilhar correto reduz duplicação e confusão."
+      }
+    ]
+  },
+  "extra": {
+    "modelCollabPlaybook": "Playbook de colaboração (sem caos)\n\n1) Arquivo central na nuvem (OneDrive/SharePoint)\n2) Compartilhar com permissões:\n- Pode exibir (leitura)\n- Pode editar (colaboração)\n3) Revisão:\n- Comentários curtos e objetivos\n- (Formal) Controlar Alterações\n4) Segurança:\n- Usar histórico de versões (não criar 10 cópias)\n5) Finalização:\n- Aceitar/rejeitar alterações\n- Remover comentários\n- Atualizar campos\n- Exportar PDF\n\nRegra de ouro:\n- Um arquivo central. Uma verdade.\n"
+  }
+}

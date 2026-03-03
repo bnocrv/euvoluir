@@ -1,0 +1,163 @@
+{
+  "id": "27-revisao",
+  "title": "Aula 27 — Revisão: comentários, Controlar Alterações e aceitação",
+  "steps": [
+    {
+      "title": "Por que a guia Revisão é essencial em documento profissional",
+      "body": "Documento profissional quase nunca é feito por 1 pessoa só.\n\nNormalmente existe:\n- revisão\n- correções\n- sugestões\n- aprovação\n\nA guia **Revisão** do Word existe para isso:\n- comentar sem bagunçar o texto\n- registrar alterações (sem perder o original)\n- aceitar/rejeitar mudanças com controle\n\nRegra:\n- sem isso, revisão vira “troca de mensagens” e cópias de arquivo."
+    },
+    {
+      "title": "Comentários: para sugerir sem reescrever o texto",
+      "body": "Comentário é uma anotação presa a um trecho.\n\nUse para:\n- sugerir mudança\n- fazer pergunta\n- marcar ponto de dúvida\n\nVantagem:\n- o texto original continua intacto.\n\nBoa prática:\n- comentário curto e objetivo\n- se possível, diga o que fazer (não só “ruim”)."
+    },
+    {
+      "title": "Inserir e responder comentários (fluxo real)",
+      "body": "Fluxo típico:\n\n1) Selecione um trecho (ou coloque o cursor)\n2) Revisão → **Novo Comentário**\n3) Escreva a observação\n4) Quem revisa pode **responder** no mesmo comentário\n\nRegra:\n- comentários viram “conversa” dentro do documento (bem útil)."
+    },
+    {
+      "title": "Resolver comentários (limpeza antes da entrega)",
+      "body": "Comentário não deve ir para a versão final, na maioria dos casos.\n\nEntão você:\n- resolve (marca como concluído)\n- ou exclui\n\nRegra:\n- antes do PDF final, revise se ainda existem comentários."
+    },
+    {
+      "title": "Controlar Alterações (Track Changes): o que é",
+      "body": "Controlar Alterações faz o Word registrar tudo que muda:\n- texto adicionado\n- texto removido\n- formatação alterada\n\nVantagem:\n- você vê o que mudou\n- pode aprovar ou rejeitar\n\nRegra:\n- para revisão com outras pessoas, Track Changes é padrão."
+    },
+    {
+      "title": "Ativar/Desativar Controlar Alterações (com cuidado)",
+      "body": "Quando está ativado:\n- qualquer edição vira uma marcação\n\nCuidado:\n- muita gente esquece ligado e depois o documento fica todo marcado.\n\nRegra:\n- antes de editar, verifique se está ligado.\n- antes de entregar, verifique se foi “aceito/rejeitado” tudo."
+    },
+    {
+      "title": "Como o Word mostra as alterações (entender o visual)",
+      "body": "O Word costuma mostrar:\n- texto inserido sublinhado/colorido\n- texto removido riscado\n- balões na lateral (dependendo da configuração)\n\nDica:\n- existem modos de visualização:\n  - simples\n  - todas as marcações\n  - sem marcações\n\nRegra:\n- “Sem marcações” não remove mudanças, só esconde a visualização."
+    },
+    {
+      "title": "Aceitar e rejeitar alterações (o controle real)",
+      "body": "Quando você recebe um documento revisado:\n- você decide o que entra.\n\nOpções:\n- **Aceitar** (incorpora a mudança)\n- **Rejeitar** (volta ao original)\n\nVocê pode:\n- aceitar/rejeitar uma por uma (melhor)\n- aceitar tudo (só se tiver certeza)\n\nRegra:\n- revisão boa é aceitar/rejeitar com atenção."
+    },
+    {
+      "title": "Revisar por partes (navegar pelas alterações)",
+      "body": "Em documento grande, você não quer caçar alteração na mão.\n\nO Word permite:\n- ir para a próxima alteração\n- ir para a anterior\n\nRegra:\n- navegue pelas alterações como uma lista.\n\nDica:\n- combine isso com o painel de navegação e o sumário para revisar seções por capítulo."
+    },
+    {
+      "title": "Erros comuns (que causam confusão entre pessoas)",
+      "body": "1) Editar sem Track Changes e depois ninguém sabe o que mudou.\n2) Deixar Track Changes ligado e esquecer.\n3) Enviar versão final com comentários e marcações.\n4) Usar “Sem marcações” achando que removeu (mas só escondeu).\n\nRegra:\n- a versão final deve estar limpa: sem comentários e com alterações aceitas/rejeitadas."
+    },
+    {
+      "title": "Mini prática (30 minutos) — revisão completa",
+      "body": "Faça assim:\n\n1) Crie um documento com 2 páginas.\n2) Ative Controlar Alterações.\n3) Faça mudanças:\n- adicione uma frase\n- apague outra\n- altere uma palavra\n\n4) Insira 2 comentários em trechos diferentes.\n5) Troque o modo de visualização:\n- todas as marcações\n- sem marcações\n\n6) Agora aceite uma alteração e rejeite outra.\n7) Resolva/exclua os comentários.\n\nObjetivo:\n- dominar o ciclo: comentar → registrar mudança → aceitar/rejeitar → limpar."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Comentários são para sugestões e conversa no documento\n- Controlar Alterações registra tudo que muda\n- Visualização pode esconder, mas não remove mudanças\n- Aceitar/rejeitar é o controle final\n- Antes de entregar: documento limpo (sem comentários e marcações)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 27 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Comentários servem para:",
+        "options": [
+          { "key": "A", "text": "Fazer observações sem alterar o texto diretamente" },
+          { "key": "B", "text": "Trocar a fonte do documento inteiro" }
+        ],
+        "answer": "A",
+        "explain": "Comentário é anotação ligada a um trecho."
+      },
+      {
+        "id": 2,
+        "question": "Controlar Alterações (Track Changes) serve para:",
+        "options": [
+          { "key": "A", "text": "Registrar edições para aceitar/rejeitar depois" },
+          { "key": "B", "text": "Apagar automaticamente o texto antigo" }
+        ],
+        "answer": "A",
+        "explain": "Ele registra inserções, remoções e mudanças."
+      },
+      {
+        "id": 3,
+        "question": "Se você muda para “Sem marcações”, isso:",
+        "options": [
+          { "key": "A", "text": "Apenas esconde as marcações (não aceita nem remove)" },
+          { "key": "B", "text": "Aceita todas as alterações automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "É só visualização; as alterações continuam lá."
+      },
+      {
+        "id": 4,
+        "question": "Aceitar uma alteração significa:",
+        "options": [
+          { "key": "A", "text": "Incorporar a mudança no texto final" },
+          { "key": "B", "text": "Voltar ao texto antigo" }
+        ],
+        "answer": "A",
+        "explain": "Aceitar torna a alteração parte do documento."
+      },
+      {
+        "id": 5,
+        "question": "Rejeitar uma alteração significa:",
+        "options": [
+          { "key": "A", "text": "Descartar a mudança e manter o original" },
+          { "key": "B", "text": "Salvar o documento como PDF" }
+        ],
+        "answer": "A",
+        "explain": "Rejeitar remove a mudança proposta."
+      },
+      {
+        "id": 6,
+        "question": "Uma boa prática antes de gerar o PDF final é:",
+        "options": [
+          { "key": "A", "text": "Remover/Resolver comentários e aceitar/rejeitar alterações" },
+          { "key": "B", "text": "Deixar todas as marcações para ficar transparente" }
+        ],
+        "answer": "A",
+        "explain": "Versão final geralmente deve estar limpa."
+      },
+      {
+        "id": 7,
+        "question": "Um erro comum é:",
+        "options": [
+          { "key": "A", "text": "Achar que “Sem marcações” removeu as alterações" },
+          { "key": "B", "text": "Aceitar/rejeitar mudanças com atenção" }
+        ],
+        "answer": "A",
+        "explain": "“Sem marcações” só altera a visualização."
+      },
+      {
+        "id": 8,
+        "question": "Track Changes deve ser usado quando:",
+        "options": [
+          { "key": "A", "text": "Você quer revisão com histórico do que mudou" },
+          { "key": "B", "text": "Você quer desenhar uma imagem" }
+        ],
+        "answer": "A",
+        "explain": "Ele é padrão para revisão colaborativa."
+      },
+      {
+        "id": 9,
+        "question": "É melhor aceitar/rejeitar alterações:",
+        "options": [
+          { "key": "A", "text": "Uma por uma (quando você quer controle)" },
+          { "key": "B", "text": "Sempre tudo de uma vez sem olhar" }
+        ],
+        "answer": "A",
+        "explain": "Assim você evita aceitar mudanças erradas."
+      },
+      {
+        "id": 10,
+        "question": "Se você esquece Track Changes ligado, pode acontecer:",
+        "options": [
+          { "key": "A", "text": "O documento ficar todo marcado sem você perceber" },
+          { "key": "B", "text": "O Word impedir qualquer digitação" }
+        ],
+        "answer": "A",
+        "explain": "Por isso é importante checar o estado do recurso."
+      }
+    ]
+  },
+  "extra": {
+    "modelReviewChecklist": "Checklist de revisão (versão final limpa)\n\n1) Comentários:\n- revisar/responder\n- resolver ou excluir\n\n2) Controlar Alterações:\n- verificar se está ligado/desligado no momento certo\n- navegar pelas alterações\n- aceitar/rejeitar com atenção\n\n3) Visualização:\n- “Sem marcações” só esconde\n- para finalizar, precisa aceitar/rejeitar de verdade\n\n4) Antes do PDF:\n- sem comentários\n- sem alterações pendentes\n\nRegra de ouro:\n- documento final = limpo.\n"
+  }
+}

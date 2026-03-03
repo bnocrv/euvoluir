@@ -1,0 +1,172 @@
+{
+  "id": "10-tabelas-excel",
+  "title": "Aula 10 — Tabelas do Excel (Ctrl+T): estrutura, estilo, referências e totalizadores",
+  "steps": [
+    {
+      "title": "O que é uma Tabela do Excel (e por que isso muda tudo)",
+      "body": "Tabela do Excel (Ctrl+T) não é “desenhar borda”.\n\nÉ uma estrutura inteligente para dados.\n\nQuando você transforma um intervalo em Tabela, o Excel passa a:\n- entender que aquilo é uma base de dados\n- criar filtros automaticamente\n- expandir fórmulas sozinho quando você adiciona linhas\n- manter formatos consistentes\n- permitir referências mais fáceis (com nome de coluna)\n\nRegra:\n- se seus dados são uma lista (cadastro, vendas, estoque), quase sempre deve virar Tabela."
+    },
+    {
+      "title": "Quando usar Tabela (casos reais)",
+      "body": "Use Tabela quando você tem:\n- lista de vendas\n- cadastro de produtos\n- controle de estoque\n- lançamentos financeiros\n- qualquer base que cresce com o tempo\n\nNão é ideal quando:\n- é um layout de relatório “bonito” com células mescladas e textos soltos\n\nRegra:\n- Tabela é para **dados**. Relatório/dash é outra parte."
+    },
+    {
+      "title": "Como criar uma Tabela (Ctrl+T do jeito certo)",
+      "body": "Passo a passo:\n\n1) Clique em qualquer célula dentro dos dados\n2) Pressione **Ctrl + T**\n3) Confira o intervalo\n4) Marque **Minha tabela tem cabeçalhos** (se a primeira linha for cabeçalho)\n5) OK\n\nResultado:\n- cabeçalho com filtro\n- linhas alternadas\n- e uma Tabela com nome\n\nRegra:\n- Tabela precisa de cabeçalho (nomes de colunas claros)."
+    },
+    {
+      "title": "Nome da Tabela (isso é importante!)",
+      "body": "Quando você cria uma Tabela, ela ganha um nome (ex.: Tabela1).\n\nVocê deve renomear:\n1) clique na Tabela\n2) guia **Design da Tabela** (ou 'Estrutura da Tabela')\n3) campo **Nome da Tabela**\n\nExemplos de bons nomes:\n- `tbVendas`\n- `tbEstoque`\n- `tbCadastroProdutos`\n\nRegra:\n- nome bom ajuda em fórmulas, Power Query e Tabela Dinâmica."
+    },
+    {
+      "title": "Estilos de Tabela (visual sem bagunça)",
+      "body": "A Tabela já vem com estilo, mas você pode ajustar:\n- cor\n- linhas alternadas\n- linha de cabeçalho\n\nCaminho:\n- clique na Tabela → Design da Tabela → Estilos\n\nRegra:\n- estilo é visual. A vantagem real está na estrutura."
+    },
+    {
+      "title": "Tabela cresce sozinha (a mágica prática)",
+      "body": "Quando você digita na linha logo abaixo da Tabela:\n- o Excel expande a Tabela automaticamente\n\nE quando você tem uma fórmula na coluna:\n- ao adicionar uma nova linha, o Excel copia a fórmula\n\nRegra:\n- isso evita aquele trabalho de “arrastar fórmula até o fim” toda hora."
+    },
+    {
+      "title": "Referências estruturadas (fórmulas com nome de coluna)",
+      "body": "Em vez de usar `=C2*D2`, dentro de Tabela você pode ver algo como:\n- `=[@Qtd]*[@Valor]`\n\nO que significa:\n- `[@Qtd]` é o valor da coluna Qtd na linha atual\n\nE para a coluna inteira:\n- `=SOMA(tbVendas[Total])`\n\nVantagens:\n- fica mais legível\n- quebra menos quando você move colunas\n\nRegra:\n- referência estruturada é “fórmula que se lê”."
+    },
+    {
+      "title": "Cabeçalhos e nomes de coluna (sem isso vira dor)",
+      "body": "Cabeçalho bom é:\n- curto\n- sem ambiguidades\n- sem células vazias\n\nEvite:\n- “Valor” e “Valor” repetido\n- cabeçalho em branco\n- mesclar células no cabeçalho\n\nRegra:\n- nomes de colunas são parte do sistema da Tabela."
+    },
+    {
+      "title": "Filtros e classificação já vêm prontos",
+      "body": "Ao criar Tabela, o Excel ativa filtros no cabeçalho.\n\nVocê consegue:\n- filtrar por texto, número, data\n- ordenar A→Z, menor→maior\n\nRegra:\n- filtro em Tabela é mais estável do que filtro em intervalo solto."
+    },
+    {
+      "title": "Linha de Totais (soma, média, contagem sem fórmula)",
+      "body": "A Tabela tem um recurso chamado **Linha de Totais**.\n\nComo ativar:\n- clique na Tabela\n- Design da Tabela → marque **Linha de Totais**\n\nEla cria uma linha no final com um menu em cada coluna:\n- Soma\n- Média\n- Contagem\n- Máximo/Mínimo\n\nRegra:\n- ótimo para conferir total rápido sem escrever fórmula."
+    },
+    {
+      "title": "Remover duplicatas e segmentar depois (combina muito)",
+      "body": "Tabela é a base perfeita para:\n- Remover Duplicatas (Dados → Remover Duplicatas)\n- Tabela Dinâmica\n- Segmentação de Dados\n- Power Query\n\nRegra:\n- primeiro organize como Tabela, depois evolua para relatórios."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Achar que Tabela é só borda\n- não é: é estrutura\n\n2) Cabeçalho ruim\n- quebra referências e relatórios\n\n3) Mesclar células dentro da Tabela\n- atrapalha filtros e crescimento\n\n4) Colocar subtítulo/linha em branco dentro da Tabela\n- Tabela é dados contínuos (sem “buracos”)\n\nRegra:\n- Tabela = base limpa e contínua."
+    },
+    {
+      "title": "Mini prática (35 minutos) — transformar uma lista em base profissional",
+      "body": "1) Crie uma lista com colunas:\n- Data | Produto | Qtd | Valor | Total\n\n2) Preencha 20 linhas.\n\n3) Crie a Tabela:\n- clique dentro da lista\n- Ctrl+T\n- confirme cabeçalhos\n\n4) Renomeie a tabela para `tbVendas`.\n\n5) Na coluna Total, crie a fórmula (na própria tabela):\n- `=[@Qtd]*[@Valor]`\n\n6) Ative Linha de Totais e escolha:\n- Soma em Total\n- Contagem em Produto\n\n7) Adicione 3 novas linhas abaixo da Tabela e veja:\n- a Tabela crescer\n- a fórmula preencher sozinha\n\nObjetivo:\n- sentir a diferença de trabalhar com intervalo solto vs Tabela."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Tabela (Ctrl+T) transforma lista em base inteligente\n- Ganha filtros, estilo, crescimento automático e fórmulas que se repetem\n- Renomear tabela é boa prática\n- Referência estruturada deixa fórmulas mais legíveis\n- Linha de Totais dá resumo rápido\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 10 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Tabela do Excel (Ctrl+T) é:",
+        "options": [
+          { "key": "A", "text": "Uma estrutura inteligente para dados (não só borda)" },
+          { "key": "B", "text": "Apenas um enfeite de bordas" }
+        ],
+        "answer": "A",
+        "explain": "Ela traz filtros, expansão automática e referências estruturadas."
+      },
+      {
+        "id": 2,
+        "question": "Ctrl+T serve para:",
+        "options": [
+          { "key": "A", "text": "Transformar um intervalo em Tabela" },
+          { "key": "B", "text": "Abrir Formatar Células" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl+1 abre Formatar Células; Ctrl+T cria Tabela."
+      },
+      {
+        "id": 3,
+        "question": "Uma boa prática é renomear Tabela para algo como:",
+        "options": [
+          { "key": "A", "text": "tbVendas, tbEstoque" },
+          { "key": "B", "text": "Tabela final final" }
+        ],
+        "answer": "A",
+        "explain": "Nomes claros ajudam fórmulas e relatórios."
+      },
+      {
+        "id": 4,
+        "question": "Uma vantagem da Tabela é:",
+        "options": [
+          { "key": "A", "text": "Ela cresce automaticamente quando você adiciona linhas" },
+          { "key": "B", "text": "Ela impede o Excel de filtrar" }
+        ],
+        "answer": "A",
+        "explain": "Ao digitar abaixo, a Tabela se expande."
+      },
+      {
+        "id": 5,
+        "question": "Referência estruturada ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Fica mais legível e quebra menos ao mover colunas" },
+          { "key": "B", "text": "Deixa a planilha mais lenta" }
+        ],
+        "answer": "A",
+        "explain": "Você usa nomes de coluna em vez de endereços."
+      },
+      {
+        "id": 6,
+        "question": "Linha de Totais serve para:",
+        "options": [
+          { "key": "A", "text": "Inserir somas/médias/contagens com menu" },
+          { "key": "B", "text": "Mesclar células automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "É um recurso rápido de resumo no final da Tabela."
+      },
+      {
+        "id": 7,
+        "question": "Cabeçalho de coluna em Tabela deve ser:",
+        "options": [
+          { "key": "A", "text": "Claro, único e sem mesclagem" },
+          { "key": "B", "text": "Em branco para ficar limpo" }
+        ],
+        "answer": "A",
+        "explain": "Cabeçalho faz parte da estrutura e das referências."
+      },
+      {
+        "id": 8,
+        "question": "Mesclar células dentro da Tabela:",
+        "options": [
+          { "key": "A", "text": "Pode atrapalhar filtros, expansão e manutenção" },
+          { "key": "B", "text": "É obrigatório para funcionar" }
+        ],
+        "answer": "A",
+        "explain": "Mesclar quebra várias ferramentas do Excel."
+      },
+      {
+        "id": 9,
+        "question": "Ao criar Tabela, o Excel já coloca:",
+        "options": [
+          { "key": "A", "text": "Filtros no cabeçalho automaticamente" },
+          { "key": "B", "text": "Uma macro pronta" }
+        ],
+        "answer": "A",
+        "explain": "Os filtros aparecem nos cabeçalhos."
+      },
+      {
+        "id": 10,
+        "question": "Tabela é mais indicada para:",
+        "options": [
+          { "key": "A", "text": "Base de dados que cresce (vendas, estoque, cadastro)" },
+          { "key": "B", "text": "Layout de relatório cheio de células mescladas" }
+        ],
+        "answer": "A",
+        "explain": "Relatório e base são coisas diferentes."
+      }
+    ]
+  },
+  "extra": {
+    "receitaCtrlT": "Receita rápida (Ctrl+T)\n\n1) Clique dentro dos dados\n2) Ctrl + T\n3) Marque \"Minha tabela tem cabeçalhos\"\n4) Renomeie a Tabela (ex.: tbVendas)\n5) Use Linha de Totais quando precisar\n\nRegra:\nTabela é base limpa e contínua (sem linhas em branco no meio).",
+    "exemplosReferencias": "Exemplos de referências estruturadas\n\nLinha atual:\n- =[@Qtd]*[@Valor]\n\nColuna inteira:\n- =SOMA(tbVendas[Total])\n\nVantagem:\nMais legível e mais resistente a mudanças de layout."
+  }
+}

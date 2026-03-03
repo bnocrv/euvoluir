@@ -1,0 +1,164 @@
+{
+  "id": "16-funcoes-matematicas",
+  "title": "Aula 16 — Funções essenciais: SOMA, MÉDIA, MÍNIMO, MÁXIMO, ARRED e CONT",
+  "steps": [
+    {
+      "title": "O que é uma função (ligando com a aula anterior)",
+      "body": "Função é uma fórmula pronta do Excel.\n\nEla sempre tem:\n- um nome (ex.: SOMA)\n- parênteses ( )\n- argumentos (o que ela vai usar)\n\nExemplo:\n- `=SOMA(A1:A10)`\n\nRegra:\n- função é um “atalho” para cálculos comuns, sem você montar tudo na mão."
+    },
+    {
+      "title": "Como ler um intervalo (A1:A10) — isso é fundamental",
+      "body": "Intervalo significa \"de... até...\".\n\n- `A1:A10` = da célula A1 até A10\n- `A1:C1` = da A1 até C1 (na mesma linha)\n\nDica:\n- `:` é “até”.\n\nRegra:\n- quase toda função básica usa intervalos."
+    },
+    {
+      "title": "SOMA (somar rápido e certo)",
+      "body": "A função mais clássica:\n\n- `=SOMA(A1:A10)`\n\nVocê pode somar várias partes:\n- `=SOMA(A1:A10; C1:C10; E1)`\n\nUso real:\n- total de vendas\n- total de quantidade\n\nRegra:\n- SOMA é mais confiável do que somar no olho."
+    },
+    {
+      "title": "MÉDIA (a média dos valores)",
+      "body": "Calcula a média:\n\n- `=MÉDIA(A1:A10)`\n\nUso real:\n- média de vendas por dia\n- média de tempo\n\nCuidado:\n- se tem valores errados (texto, zeros indevidos), a média fica enganosa.\n\nRegra:\n- média só faz sentido se os dados estiverem limpos."
+    },
+    {
+      "title": "MÍNIMO e MÁXIMO (extremos)",
+      "body": "Encontrar o menor e o maior:\n\n- `=MÍNIMO(A1:A10)`\n- `=MÁXIMO(A1:A10)`\n\nUso real:\n- menor venda, maior venda\n- menor prazo, maior prazo\n- menor estoque, maior estoque\n\nRegra:\n- ótimo para detectar valores fora do padrão."
+    },
+    {
+      "title": "CONT e CONT.VALORES (contar é mais sutil do que parece)",
+      "body": "Existem contagens diferentes:\n\n- `=CONT(A1:A10)`\n  - conta apenas **números**\n\n- `=CONT.VALORES(A1:A10)`\n  - conta células **não vazias** (texto ou número)\n\nExemplo:\n- se A1 tem \"Oi\" e A2 tem 10\n- CONT conta 1 (só o 10)\n- CONT.VALORES conta 2 (Oi e 10)\n\nRegra:\n- para saber “quantos números”, use CONT.\n- para saber “quantos preenchidos”, use CONT.VALORES."
+    },
+    {
+      "title": "ARRED (arredondar para evitar 'quebras' e centavos infinitos)",
+      "body": "ARRED arredonda para um número de casas.\n\nSintaxe:\n- `=ARRED(número; núm_dígitos)`\n\nExemplos:\n- `=ARRED(10,567;2)` → 10,57\n- `=ARRED(1234; -2)` → 1200 (arredonda para centenas)\n\nUso real:\n- preços e dinheiro\n- relatórios onde você quer padronizar casas decimais\n\nRegra:\n- formatação mostra casas, mas ARRED muda o valor (use quando necessário)."
+    },
+    {
+      "title": "Diferença importante: formatar vs arredondar",
+      "body": "Isso confunde muito:\n\n- **Formato** (Aula 06)\n  - muda só a aparência\n\n- **ARRED**\n  - muda o valor calculado\n\nExemplo:\n- 10,567 formatado com 2 casas aparece 10,57\n- mas por trás pode continuar 10,567\n\nCom ARRED:\n- o valor vira realmente 10,57\n\nRegra:\n- se você precisa que o cálculo use o arredondado, use ARRED."
+    },
+    {
+      "title": "SOMA + AutoSoma (atalho) — quando usar cada um",
+      "body": "Você pode:\n- escrever `=SOMA(...)`\n- ou usar AutoSoma (Alt+=) e o Excel monta\n\nRegra:\n- AutoSoma é rápido, mas sempre confira o intervalo sugerido."
+    },
+    {
+      "title": "Boas práticas com funções básicas",
+      "body": "1) Prefira intervalos completos (ex.: A2:A100) em vez de somar célula por célula\n2) Evite misturar texto em colunas numéricas\n3) Se tiver células vazias, pense se isso é normal ou erro\n4) Use Tabela (Ctrl+T) quando a base cresce\n\nRegra:\n- função boa depende de dados consistentes."
+    },
+    {
+      "title": "Mini prática (35 minutos) — mini relatório de vendas",
+      "body": "Crie uma coluna de valores (A2:A16) com 15 vendas.\n\nAgora calcule:\n\n1) Total:\n- em B2: `=SOMA(A2:A16)`\n\n2) Média:\n- em B3: `=MÉDIA(A2:A16)`\n\n3) Maior:\n- em B4: `=MÁXIMO(A2:A16)`\n\n4) Menor:\n- em B5: `=MÍNIMO(A2:A16)`\n\n5) Quantidade de números:\n- em B6: `=CONT(A2:A16)`\n\n6) Arredondar a média para 2 casas:\n- em B7: `=ARRED(B3;2)`\n\nObjetivo:\n- criar um resumo básico com funções essenciais."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Funções são fórmulas prontas\n- Intervalo A1:A10 significa “de A1 até A10”\n- SOMA soma valores\n- MÉDIA calcula a média\n- MÍNIMO/MÁXIMO acham extremos\n- CONT conta números; CONT.VALORES conta preenchidos\n- ARRED muda o valor (não é só visual)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 16 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Uma função no Excel é:",
+        "options": [
+          { "key": "A", "text": "Uma fórmula pronta com nome e parênteses" },
+          { "key": "B", "text": "Uma cor de célula" }
+        ],
+        "answer": "A",
+        "explain": "Função é um recurso pronto do Excel."
+      },
+      {
+        "id": 2,
+        "question": "A notação A1:A10 significa:",
+        "options": [
+          { "key": "A", "text": "Intervalo de A1 até A10" },
+          { "key": "B", "text": "A1 dividido por A10" }
+        ],
+        "answer": "A",
+        "explain": "Dois pontos (:) indicam intervalo."
+      },
+      {
+        "id": 3,
+        "question": "A função para somar valores é:",
+        "options": [
+          { "key": "A", "text": "SOMA" },
+          { "key": "B", "text": "MÉDIA" }
+        ],
+        "answer": "A",
+        "explain": "SOMA soma; MÉDIA calcula média."
+      },
+      {
+        "id": 4,
+        "question": "A função para calcular média é:",
+        "options": [
+          { "key": "A", "text": "MÉDIA" },
+          { "key": "B", "text": "MÍNIMO" }
+        ],
+        "answer": "A",
+        "explain": "MÉDIA retorna a média dos valores."
+      },
+      {
+        "id": 5,
+        "question": "MÍNIMO e MÁXIMO servem para:",
+        "options": [
+          { "key": "A", "text": "Encontrar menor e maior valor do intervalo" },
+          { "key": "B", "text": "Converter texto em número" }
+        ],
+        "answer": "A",
+        "explain": "Elas retornam extremos do conjunto."
+      },
+      {
+        "id": 6,
+        "question": "CONT conta:",
+        "options": [
+          { "key": "A", "text": "Apenas números" },
+          { "key": "B", "text": "Qualquer célula preenchida (texto ou número)" }
+        ],
+        "answer": "A",
+        "explain": "CONT ignora texto; CONT.VALORES conta tudo que não está vazio."
+      },
+      {
+        "id": 7,
+        "question": "CONT.VALORES conta:",
+        "options": [
+          { "key": "A", "text": "Células não vazias (texto ou número)" },
+          { "key": "B", "text": "Apenas zeros" }
+        ],
+        "answer": "A",
+        "explain": "Ela conta preenchidos, independentemente do tipo."
+      },
+      {
+        "id": 8,
+        "question": "ARRED é diferente de formatação porque:",
+        "options": [
+          { "key": "A", "text": "ARRED muda o valor calculado" },
+          { "key": "B", "text": "ARRED só muda a cor" }
+        ],
+        "answer": "A",
+        "explain": "Formatar muda aparência; ARRED muda o número."
+      },
+      {
+        "id": 9,
+        "question": "Alt + = é:",
+        "options": [
+          { "key": "A", "text": "AutoSoma" },
+          { "key": "B", "text": "Abrir Validação de Dados" }
+        ],
+        "answer": "A",
+        "explain": "Alt+= cria uma soma sugerindo intervalo."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa prática ao usar funções é:",
+        "options": [
+          { "key": "A", "text": "Manter dados numéricos limpos e consistentes" },
+          { "key": "B", "text": "Misturar texto e número na mesma coluna" }
+        ],
+        "answer": "A",
+        "explain": "Dados consistentes evitam erros e resultados enganosos."
+      }
+    ]
+  },
+  "extra": {
+    "resumoFuncoes": "Resumo rápido das funções\n\n- SOMA(intervalo) → total\n- MÉDIA(intervalo) → média\n- MÍNIMO(intervalo) → menor\n- MÁXIMO(intervalo) → maior\n- CONT(intervalo) → conta números\n- CONT.VALORES(intervalo) → conta preenchidos\n- ARRED(número;casas) → arredonda de verdade\n",
+    "exemplosProntos": "Exemplos prontos\n\nTotal:\n=SOMA(A2:A100)\n\nMédia:\n=MÉDIA(A2:A100)\n\nMaior e menor:\n=MÁXIMO(A2:A100)\n=MÍNIMO(A2:A100)\n\nContagens:\n=CONT(A2:A100)\n=CONT.VALORES(A2:A100)\n\nArredondar:\n=ARRED(MÉDIA(A2:A100);2)\n"
+  }
+}

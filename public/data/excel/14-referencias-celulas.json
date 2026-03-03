@@ -1,0 +1,164 @@
+{
+  "id": "14-referencias-celulas",
+  "title": "Aula 14 — Referências de células: relativa, absoluta ($) e mista (o pulo do gato)",
+  "steps": [
+    {
+      "title": "Por que essa aula é o 'pulo do gato' do Excel",
+      "body": "Muita gente sabe fazer uma fórmula.\nMas trava quando copia a fórmula para baixo/lado.\n\nO motivo quase sempre é:\n- não entender **referência relativa/absoluta/mista**.\n\nHoje você vai aprender:\n- como o Excel “move” as referências ao copiar\n- quando usar `$`\n- como pensar para nunca mais errar isso\n\nRegra:\n- entender referências = desbloquear 50% das fórmulas do Excel."
+    },
+    {
+      "title": "O que é referência (bem simples)",
+      "body": "Referência é quando uma fórmula aponta para uma célula.\n\nExemplo:\n- em C2 você escreve: `=A2+B2`\n\nA2 e B2 são referências.\n\nRegra:\n- fórmula é um cálculo; referência é “de onde vem o valor”."
+    },
+    {
+      "title": "Referência relativa (o padrão)",
+      "body": "Relativa significa:\n- quando você copia a fórmula, a referência “anda junto”.\n\nExemplo:\n- em C2: `=A2+B2`\n- copie para C3 → vira `=A3+B3`\n\nO Excel pensa:\n- “aqui eu somei as células da mesma linha”\n\nRegra:\n- relativa é ótima para cálculos linha a linha."
+    },
+    {
+      "title": "Referência absoluta (com $) — não pode mudar",
+      "body": "Absoluta significa:\n- a referência fica fixa, não muda ao copiar.\n\nVocê fixa com `$`.\n\nExemplo:\n- `=$A$1` sempre aponta para A1\n\nCaso real:\n- você tem uma taxa em A1 (ex.: 0,1)\n- quer multiplicar a coluna inteira por essa taxa\n\nFórmula em B2:\n- `=A2*$A$1`\n\nAo copiar para baixo:\n- A2 vira A3, A4...\n- mas $A$1 fica A1\n\nRegra:\n- absoluta é para valores “constantes” (taxa, parâmetro, tabela fixa)."
+    },
+    {
+      "title": "Referência mista (fixa só coluna ou só linha)",
+      "body": "Mista significa:\n- fixa uma parte e deixa a outra variar.\n\nExistem dois tipos:\n\n1) **Coluna fixa, linha varia**\n- `$A2`\n- a coluna A não muda, mas a linha muda\n\n2) **Linha fixa, coluna varia**\n- `A$2`\n- a linha 2 não muda, mas a coluna muda\n\nRegra:\n- referência mista é muito usada em tabelas e cálculos 2D."
+    },
+    {
+      "title": "Como trocar rápido (F4 é seu amigo)",
+      "body": "Quando você está editando a referência na fórmula:\n- selecione a referência (ex.: A1)\n- aperte **F4**\n\nEle alterna:\n- A1 → $A$1 → A$1 → $A1 → A1\n\nRegra:\n- F4 economiza muito tempo (principalmente em fórmulas grandes)."
+    },
+    {
+      "title": "Exemplo clássico 1: taxa fixa para várias linhas",
+      "body": "Situação:\n- Coluna A = Valor\n- Célula D1 = Taxa (ex.: 10%)\n- Coluna B = Valor com taxa\n\nEm B2:\n- `=A2*$D$1`\n\nCopie para baixo.\n\nPor que $D$1?\n- a taxa é um parâmetro fixo\n\nRegra:\n- parâmetro fixo → absoluta."
+    },
+    {
+      "title": "Exemplo clássico 2: tabela de multiplicação (mista)",
+      "body": "Você quer uma tabela 10x10.\n\n- Linha 1 tem os números 1..10 (B1:K1)\n- Coluna A tem os números 1..10 (A2:A11)\n- A área de resultado é B2:K11\n\nNa célula B2, use:\n- `=$A2*B$1`\n\nExplicação:\n- `$A2`: fixa a coluna A (sempre pega o número da esquerda), linha varia\n- `B$1`: fixa a linha 1 (sempre pega o número do topo), coluna varia\n\nRegra:\n- tabela 2D geralmente usa referência mista."
+    },
+    {
+      "title": "O erro mais comum: fórmula certa, referência errada",
+      "body": "Você pode saber a função, mas errar o $.\n\nExemplo:\n- você quer multiplicar por taxa fixa\n- mas usa `=A2*D1` (sem $)\n\nAo copiar:\n- vira A3*D2, A4*D3...\n- e a taxa muda (errado)\n\nRegra:\n- quando o resultado “vira doido”, suspeite primeiro do $."
+    },
+    {
+      "title": "Como 'enxergar' referências (técnica mental)",
+      "body": "Antes de copiar uma fórmula, pergunte:\n\n1) Esse valor tem que mudar por linha?\n- sim → relativo\n\n2) Esse valor tem que ser sempre o mesmo?\n- sim → absoluto ($A$1)\n\n3) Esse valor tem que ficar preso na coluna ou na linha?\n- sim → mista ($A2 ou A$2)\n\nRegra:\n- referência é decisão: muda ou fica fixa?"
+    },
+    {
+      "title": "Mini prática (40 minutos) — treinar até virar automático",
+      "body": "Parte A — taxa fixa\n\n1) Em A1:A10 coloque valores.\n2) Em D1 coloque 10%.\n3) Em B1 escreva \"Com taxa\".\n4) Em B2 digite: `=A2*$D$1`\n5) Copie até B10.\n6) Mude a taxa em D1 e veja tudo atualizar.\n\nParte B — tabela 2D\n\n1) Em A2:A11 coloque 1..10.\n2) Em B1:K1 coloque 1..10.\n3) Em B2 digite: `=$A2*B$1`\n4) Copie para toda a área B2:K11.\n\nObjetivo:\n- entender de verdade quando usar relativo, absoluto e misto."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Relativa (A1): muda ao copiar\n- Absoluta ($A$1): não muda\n- Mista ($A1 / A$1): fixa só coluna ou só linha\n- F4 alterna os tipos rapidamente\n- Erros de fórmula copiando quase sempre são erros de referência\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 14 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Referência relativa significa que:",
+        "options": [
+          { "key": "A", "text": "A referência muda ao copiar a fórmula" },
+          { "key": "B", "text": "A referência nunca muda" }
+        ],
+        "answer": "A",
+        "explain": "Relativa acompanha o movimento (linha/coluna) ao copiar."
+      },
+      {
+        "id": 2,
+        "question": "$A$1 é uma referência:",
+        "options": [
+          { "key": "A", "text": "Absoluta (coluna e linha fixas)" },
+          { "key": "B", "text": "Relativa" }
+        ],
+        "answer": "A",
+        "explain": "O $ fixa coluna e linha."
+      },
+      {
+        "id": 3,
+        "question": "$A2 significa:",
+        "options": [
+          { "key": "A", "text": "Coluna fixa, linha variando" },
+          { "key": "B", "text": "Linha fixa, coluna variando" }
+        ],
+        "answer": "A",
+        "explain": "O $ está na coluna, então a coluna não muda."
+      },
+      {
+        "id": 4,
+        "question": "A$2 significa:",
+        "options": [
+          { "key": "A", "text": "Linha fixa, coluna variando" },
+          { "key": "B", "text": "Coluna fixa, linha variando" }
+        ],
+        "answer": "A",
+        "explain": "O $ está na linha, então a linha não muda."
+      },
+      {
+        "id": 5,
+        "question": "A tecla que alterna tipos de referência é:",
+        "options": [
+          { "key": "A", "text": "F4" },
+          { "key": "B", "text": "F1" }
+        ],
+        "answer": "A",
+        "explain": "F4 alterna entre relativo, absoluto e misto."
+      },
+      {
+        "id": 6,
+        "question": "Para multiplicar uma coluna por uma taxa fixa em D1, você deve usar:",
+        "options": [
+          { "key": "A", "text": "=$D$1 (referência absoluta)" },
+          { "key": "B", "text": "=D1 (referência relativa)" }
+        ],
+        "answer": "A",
+        "explain": "A taxa não pode “andar” ao copiar."
+      },
+      {
+        "id": 7,
+        "question": "Na tabela de multiplicação, a fórmula `=$A2*B$1` usa referência mista porque:",
+        "options": [
+          { "key": "A", "text": "Precisa fixar a coluna A e a linha 1" },
+          { "key": "B", "text": "Precisa fixar tudo sempre" }
+        ],
+        "answer": "A",
+        "explain": "Uma parte fixa e a outra varia ao copiar para lados diferentes."
+      },
+      {
+        "id": 8,
+        "question": "Se o resultado fica errado ao copiar, a primeira suspeita deve ser:",
+        "options": [
+          { "key": "A", "text": "Referência ($) colocada errado" },
+          { "key": "B", "text": "O Excel está com problema" }
+        ],
+        "answer": "A",
+        "explain": "Quase sempre é referência mal fixada."
+      },
+      {
+        "id": 9,
+        "question": "Referência absoluta é indicada para:",
+        "options": [
+          { "key": "A", "text": "Parâmetros fixos (taxa, meta, tabela base)" },
+          { "key": "B", "text": "Tudo sempre, sem pensar" }
+        ],
+        "answer": "A",
+        "explain": "Constantes devem ficar fixas."
+      },
+      {
+        "id": 10,
+        "question": "Uma regra mental correta é:",
+        "options": [
+          { "key": "A", "text": "Se tem que ficar igual, fixa com $; se tem que variar, deixa relativo" },
+          { "key": "B", "text": "Sempre fixe tudo com $" }
+        ],
+        "answer": "A",
+        "explain": "Fixar tudo quebra a lógica de copiar fórmulas."
+      }
+    ]
+  },
+  "extra": {
+    "mapaDoCifrao": "Mapa do $ (rápido)\n\n- A1  = relativo (muda linha e coluna)\n- $A$1 = absoluto (nada muda)\n- $A1 = fixa coluna (linha muda)\n- A$1 = fixa linha (coluna muda)\n\nAtalho:\n- selecione a referência na fórmula e aperte F4.",
+    "receitaTaxaFixa": "Receita: aplicar taxa fixa\n\n- Taxa em D1\n- Valores em A2:A100\n- Fórmula em B2:\n  =A2*$D$1\n\nCopie para baixo.\n\nResultado:\n- A2 vira A3...\n- $D$1 permanece D1."
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "id": "03-salvar-organizar",
+  "title": "Aula 03 — Salvar, abrir e organizar arquivos (DOCX, OneDrive, versões)",
+  "steps": [
+    {
+      "title": "Por que “salvar e organizar” é parte do trabalho (não é detalhe)",
+      "body": "No Word, a maior dor de cabeça não é digitar.\nÉ:\n- perder arquivo\n- salvar por cima\n- mandar versão errada\n- não achar onde está\n\nOrganização evita retrabalho.\nE retrabalho é tempo perdido."
+    },
+    {
+      "title": "Salvar vs Salvar Como (diferença que salva vidas)",
+      "body": "Dois comandos parecidos, mas com objetivos diferentes:\n\n1) **Salvar**\n- atualiza o MESMO arquivo\n- mantém nome e local\n\n2) **Salvar Como**\n- cria uma CÓPIA com outro nome e/ou outro local\n- usado para versões\n\nRegra prática:\n- se você quer criar uma nova versão: use **Salvar Como**."
+    },
+    {
+      "title": "Formatos mais comuns (o que usar em cada caso)",
+      "body": "Você vai ver esses formatos:\n\n- **.DOCX** (padrão do Word)\n  - use para editar depois\n\n- **.PDF** (arquivo final)\n  - use para enviar/entregar/imprimir\n  - mantém layout mais “travado”\n\n- **.DOC** (antigo)\n  - evite, só use se alguém exigir\n\nRegra:\n- “vou continuar mexendo” → DOCX\n- “já está pronto para enviar” → PDF"
+    },
+    {
+      "title": "Onde salvar: PC vs OneDrive (e o que muda)",
+      "body": "Existem dois jeitos comuns:\n\n1) **Este computador**\n- fica no seu PC\n- funciona offline\n- se o PC der problema, você pode perder\n\n2) **OneDrive** (nuvem da Microsoft)\n- salva na nuvem\n- dá para abrir em outros dispositivos\n- facilita compartilhar e colaborar\n- costuma ter histórico de versões\n\nRegra prática:\n- documento importante e que pode ter revisão: prefira OneDrive."
+    },
+    {
+      "title": "Como nomear arquivos (padrão profissional simples)",
+      "body": "Nome de arquivo bom é aquele que você entende rápido.\n\nUm padrão excelente:\n\n`AAAA-MM-DD - Assunto - Versao.docx`\n\nExemplos:\n- `2026-03-03 - Relatorio Estoque - v01.docx`\n- `2026-03-03 - Contrato Cliente X - v02.docx`\n\nDica:\n- evite nomes tipo: `documento final final agora vai.docx`"
+    },
+    {
+      "title": "Pastas: o jeito mais simples de não se perder",
+      "body": "Crie uma estrutura previsível.\n\nExemplo (bem prático):\n- Documentos/\n  - 2026/\n    - 03-Marco/\n      - Relatorios/\n      - Contratos/\n      - Templates/\n\nRegra:\n- menos pastas do que você imagina\n- mas o suficiente para separar por tipo e por ano/mês"
+    },
+    {
+      "title": "Abrir documentos (o caminho certo)",
+      "body": "Duas formas seguras:\n\n1) Dentro do Word: **Arquivo → Abrir**\n- mostra recentes\n- mostra OneDrive\n\n2) Pelo Explorador de Arquivos\n- duplo clique no DOCX\n\nDica:\n- se você abrir pelo Word, você enxerga melhor “Recentes” e locais na nuvem."
+    },
+    {
+      "title": "Recuperação automática (o que fazer quando trava)",
+      "body": "Se o Word travar ou fechar do nada:\n- ao abrir de novo, ele costuma mostrar **Recuperação de Documentos**\n\nRegra importante:\n- abra a recuperação\n- salve imediatamente com outro nome: `RECUPERADO - ...`\n\nPor quê?\n- para não perder o arquivo recuperado se algo der errado."
+    },
+    {
+      "title": "Versões (como evitar “mandei o arquivo errado”)",
+      "body": "Existem 2 jeitos de lidar com versões:\n\nA) Versão no nome do arquivo (funciona sempre)\n- v01, v02, v03\n\nB) Histórico de versões (OneDrive)\n- ótimo quando você usa nuvem\n\nRegra prática:\n- mesmo com OneDrive, ainda é útil versionar no nome quando vai enviar para alguém."
+    },
+    {
+      "title": "Exportar para PDF (o “final” oficial)",
+      "body": "Quando o documento está pronto:\n- exporte para PDF\n\nPor que PDF?\n- mantém fonte/layout mais estável\n- evita a pessoa mexer sem querer\n\nRegra:\n- envie PDF quando for entrega final.\n- guarde o DOCX para futuras edições."
+    },
+    {
+      "title": "Mini prática (10 minutos) — criando e organizando versões",
+      "body": "Faça isso agora:\n\n1) Crie um documento e escreva:\n- Título: “Relatório de Teste”\n- 3 linhas de texto\n\n2) Salve como:\n`2026-03-03 - Relatorio de Teste - v01.docx`\n\n3) Faça uma mudança (adicione mais 2 linhas)\n\n4) Use **Salvar Como** e crie:\n`2026-03-03 - Relatorio de Teste - v02.docx`\n\nObjetivo:\n- sentir na prática a diferença entre Salvar e Salvar Como."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- **Salvar** atualiza o mesmo arquivo\n- **Salvar Como** cria cópia (ótimo para versões)\n- DOCX para editar, PDF para enviar\n- OneDrive ajuda com colaboração e histórico\n- Nome e pastas evitam bagunça\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 03 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A principal diferença entre Salvar e Salvar Como é:",
+        "options": [
+          { "key": "A", "text": "Salvar atualiza o mesmo arquivo; Salvar Como cria uma cópia/novo arquivo" },
+          { "key": "B", "text": "Salvar apaga o arquivo; Salvar Como imprime" }
+        ],
+        "answer": "A",
+        "explain": "Salvar mantém nome e local; Salvar Como cria outro arquivo (ótimo para versões)."
+      },
+      {
+        "id": 2,
+        "question": "Se você vai continuar editando depois, o melhor formato é:",
+        "options": [
+          { "key": "A", "text": "DOCX" },
+          { "key": "B", "text": "PDF" }
+        ],
+        "answer": "A",
+        "explain": "DOCX é editável; PDF é mais “final”, travado para envio."
+      },
+      {
+        "id": 3,
+        "question": "Para enviar como versão final (sem bagunçar layout), é melhor:",
+        "options": [
+          { "key": "A", "text": "PDF" },
+          { "key": "B", "text": "DOC (antigo)" }
+        ],
+        "answer": "A",
+        "explain": "PDF costuma preservar melhor o layout e evita alterações acidentais."
+      },
+      {
+        "id": 4,
+        "question": "OneDrive é útil porque:",
+        "options": [
+          { "key": "A", "text": "Permite salvar na nuvem e facilita versões/colaboração" },
+          { "key": "B", "text": "Só funciona se você nunca usar internet" }
+        ],
+        "answer": "A",
+        "explain": "Nuvem ajuda a acessar em vários lugares e costuma ter histórico de versões."
+      },
+      {
+        "id": 5,
+        "question": "Um nome profissional de arquivo geralmente tem:",
+        "options": [
+          { "key": "A", "text": "Data + assunto + versão" },
+          { "key": "B", "text": "“final final agora sim”" }
+        ],
+        "answer": "A",
+        "explain": "Data/assunto/versão deixa fácil achar e evita confusão."
+      },
+      {
+        "id": 6,
+        "question": "Versionar com v01, v02 ajuda a:",
+        "options": [
+          { "key": "A", "text": "Evitar enviar a versão errada" },
+          { "key": "B", "text": "Deixar o Word mais lento" }
+        ],
+        "answer": "A",
+        "explain": "Você bate o olho e sabe qual é a versão correta."
+      },
+      {
+        "id": 7,
+        "question": "Se o Word travar, uma boa prática é:",
+        "options": [
+          { "key": "A", "text": "Abrir a recuperação e salvar com outro nome (RECUPERADO)" },
+          { "key": "B", "text": "Ignorar e não salvar nada" }
+        ],
+        "answer": "A",
+        "explain": "Salvar com outro nome protege o arquivo recuperado."
+      },
+      {
+        "id": 8,
+        "question": "Abrir pelo menu Arquivo → Abrir é útil porque:",
+        "options": [
+          { "key": "A", "text": "Mostra recentes e locais na nuvem (OneDrive)" },
+          { "key": "B", "text": "Impede abrir arquivos do computador" }
+        ],
+        "answer": "A",
+        "explain": "O Word mostra rapidamente arquivos recentes e o OneDrive."
+      },
+      {
+        "id": 9,
+        "question": "O formato .DOC é:",
+        "options": [
+          { "key": "A", "text": "Antigo; geralmente deve ser evitado" },
+          { "key": "B", "text": "O formato mais moderno e recomendado" }
+        ],
+        "answer": "A",
+        "explain": "DOCX é o padrão moderno; DOC é legado."
+      },
+      {
+        "id": 10,
+        "question": "Se você quer criar uma nova versão sem mexer na anterior, use:",
+        "options": [
+          { "key": "A", "text": "Salvar Como" },
+          { "key": "B", "text": "Fechar sem salvar" }
+        ],
+        "answer": "A",
+        "explain": "Salvar Como cria um novo arquivo (v02) mantendo o v01 intacto."
+      }
+    ]
+  },
+  "extra": {
+    "modelTemplate": "Padrão de organização (copie e use)\n\nNOME DO ARQUIVO:\nAAAA-MM-DD - Assunto - v01.docx\nAAAA-MM-DD - Assunto - v02.docx\n\nPASTAS (exemplo):\nDocumentos/\n  2026/\n    03-Marco/\n      Relatorios/\n      Contratos/\n      Templates/\n\nREGRAS RÁPIDAS:\n- Editar depois → DOCX\n- Enviar final → PDF\n- Nova versão → Salvar Como + v02\n"
+  }
+}

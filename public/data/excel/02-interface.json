@@ -1,0 +1,164 @@
+{
+  "id": "02-interface",
+  "title": "Aula 02 — Interface: faixa de opções, barra de fórmulas, guias e atalhos de navegação",
+  "steps": [
+    {
+      "title": "Objetivo da aula (o que você vai dominar hoje)",
+      "body": "Hoje você vai aprender a se localizar no Excel e trabalhar mais rápido.\n\nNo fim da aula você deve conseguir:\n- identificar as partes principais da tela\n- saber onde procurar comandos\n- navegar rápido por células e planilhas\n- usar atalhos essenciais\n\nRegra:\n- dominar a interface faz você aprender fórmulas e relatórios com muito menos esforço."
+    },
+    {
+      "title": "Mapa da tela (as partes principais)",
+      "body": "As áreas mais importantes do Excel são:\n\n1) **Barra de Título**\n- mostra o nome do arquivo\n\n2) **Barra de Acesso Rápido**\n- salvar, desfazer, refazer (e você pode personalizar)\n\n3) **Faixa de Opções (Ribbon)**\n- as abas: Página Inicial, Inserir, Layout da Página, Fórmulas, Dados, Revisão...\n\n4) **Barra de Fórmulas**\n- onde você vê/edita o conteúdo da célula\n\n5) **Caixa de Nome**\n- mostra o endereço da célula (A1, C15...)\n\n6) **Área da planilha (grade)**\n- onde ficam os dados\n\n7) **Guias de planilha** (as abas embaixo)\n- Plan1, Plan2...\n\n8) **Barra de Status** (rodapé)\n- soma/média rápida do que você selecionou + zoom"
+    },
+    {
+      "title": "Faixa de opções (Ribbon): como pensar para não se perder",
+      "body": "A faixa de opções é dividida em **abas** com grupos de comandos.\n\nAs mais usadas no começo:\n- **Página Inicial**: formatação, alinhamento, estilos, edição\n- **Inserir**: tabelas e gráficos\n- **Fórmulas**: funções e auditoria\n- **Dados**: filtros, importação, limpeza\n\nRegra mental:\n- Aparência do texto/célula → Página Inicial / Layout da Página\n- Gráfico/tabela → Inserir\n- Cálculo → Fórmulas\n- Organização/limpeza → Dados"
+    },
+    {
+      "title": "Barra de fórmulas: o “raio-X” da célula",
+      "body": "A barra de fórmulas mostra o que a célula **realmente tem**.\n\nExemplo:\n- A célula pode mostrar: `R$ 10,00`\n- Mas na barra você vê: `10`\n\nE se for fórmula:\n- A célula mostra: `50`\n- Na barra aparece: `=B2*C2`\n\nRegra:\n- Se algo estiver estranho, olhe a barra de fórmulas antes de mexer no resto."
+    },
+    {
+      "title": "Caixa de Nome: o GPS (ir direto para uma célula)",
+      "body": "A Caixa de Nome fica perto da barra de fórmulas.\n\nVocê pode:\n- ver onde está (ex.: D8)\n- digitar um endereço para ir direto (ex.: `H200` → Enter)\n\nDica:\n- Isso salva muito tempo em planilhas grandes."
+    },
+    {
+      "title": "Como selecionar rápido (sem arrastar com o mouse)",
+      "body": "Seleção básica:\n- **Shift + setas**: seleciona célula a célula\n\nSeleção rápida:\n- **Ctrl + Shift + setas**: seleciona até o fim do bloco de dados\n\nSelecionar linha/coluna:\n- **Shift + Espaço**: seleciona a linha\n- **Ctrl + Espaço**: seleciona a coluna\n\nSelecionar tudo:\n- **Ctrl + A**: seleciona a região de dados (apertar de novo pode selecionar tudo)\n\nRegra:\n- Ctrl+Shift+Setas é um dos atalhos mais úteis do Excel."
+    },
+    {
+      "title": "Como navegar rápido (o atalho que mais economiza tempo)",
+      "body": "Navegação rápida:\n- **Ctrl + setas**: pula até o fim do bloco (ou até a próxima “parede” de dados)\n\nAtalhos de posição:\n- **Ctrl + Home**: vai para A1\n- **Ctrl + End**: vai para a última célula considerada usada\n\nRegra:\n- Ctrl+Setas navega.\n- Ctrl+Shift+Setas seleciona."
+    },
+    {
+      "title": "Editar célula: digitar vs F2 (diferença importante)",
+      "body": "Quando você começa a digitar em uma célula:\n- o Excel **substitui** o conteúdo.\n\nPara editar sem apagar:\n- use **F2**.\n\nRegra:\n- Digitar direto = sobrescreve.\n- F2 = edita."
+    },
+    {
+      "title": "Atalhos essenciais do dia a dia (kit básico)",
+      "body": "Esses aqui valem ouro:\n\n- **Ctrl + S**: salvar\n- **Ctrl + Z**: desfazer\n- **Ctrl + Y**: refazer\n- **Ctrl + C / Ctrl + V**: copiar/colar\n- **Ctrl + X**: recortar\n- **Ctrl + F**: localizar\n- **Ctrl + H**: substituir\n\nDica:\n- localizar/substituir é uma arma muito forte (vamos aprofundar mais pra frente)."
+    },
+    {
+      "title": "Zoom e barra de status (informação rápida)",
+      "body": "Na barra de status (embaixo), quando você seleciona números, o Excel costuma mostrar:\n- soma\n- média\n- contagem\n\nE no canto direito:\n- controle de **zoom**.\n\nRegra:\n- Barra de status é um “mini relatório” rápido sem precisar fórmula."
+    },
+    {
+      "title": "Mini prática (20 minutos) — treino de navegação e seleção",
+      "body": "1) Em uma planilha nova, crie um bloco de dados em A1:E20 (qualquer valores).\n\n2) Treine navegação:\n- Ctrl+Home\n- Ctrl+End\n- Ctrl+Setas\n\n3) Treine seleção:\n- Shift+Setas\n- Ctrl+Shift+Setas\n- Ctrl+Espaço (coluna)\n- Shift+Espaço (linha)\n\n4) Treine edição:\n- digite em uma célula com conteúdo (observe que substitui)\n- use F2 para editar sem apagar\n\nObjetivo:\n- ganhar controle e parar de depender do mouse."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Você conhece o mapa da tela do Excel\n- Ribbon (abas) = onde ficam os comandos\n- Barra de fórmulas = mostra o conteúdo real e as fórmulas\n- Caixa de Nome = GPS para ir direto a uma célula\n- Ctrl+Setas navega; Ctrl+Shift+Setas seleciona\n- F2 edita sem sobrescrever\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 02 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A Barra de Fórmulas serve para:",
+        "options": [
+          { "key": "A", "text": "Ver e editar o conteúdo real da célula (valor ou fórmula)" },
+          { "key": "B", "text": "Trocar a cor do mouse" }
+        ],
+        "answer": "A",
+        "explain": "Ela mostra exatamente o que existe dentro da célula, principalmente fórmulas."
+      },
+      {
+        "id": 2,
+        "question": "A Caixa de Nome é útil para:",
+        "options": [
+          { "key": "A", "text": "Ir direto para uma célula digitando o endereço (ex.: H200)" },
+          { "key": "B", "text": "Criar gráficos automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ela funciona como um GPS: você digita e vai direto."
+      },
+      {
+        "id": 3,
+        "question": "Ctrl + setas faz:",
+        "options": [
+          { "key": "A", "text": "Navegar até o fim do bloco de dados" },
+          { "key": "B", "text": "Salvar como" }
+        ],
+        "answer": "A",
+        "explain": "É o atalho de navegação rápida mais usado."
+      },
+      {
+        "id": 4,
+        "question": "Ctrl + Shift + setas faz:",
+        "options": [
+          { "key": "A", "text": "Selecionar até o fim do bloco de dados" },
+          { "key": "B", "text": "Mudar o idioma do Excel" }
+        ],
+        "answer": "A",
+        "explain": "É a versão de seleção do Ctrl+Setas."
+      },
+      {
+        "id": 5,
+        "question": "Ctrl + Home normalmente leva você para:",
+        "options": [
+          { "key": "A", "text": "A1" },
+          { "key": "B", "text": "A última célula usada" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl+Home volta para o início."
+      },
+      {
+        "id": 6,
+        "question": "Ctrl + End normalmente leva você para:",
+        "options": [
+          { "key": "A", "text": "A última célula considerada usada" },
+          { "key": "B", "text": "A1" }
+        ],
+        "answer": "A",
+        "explain": "Ele vai para o “fim” da área usada."
+      },
+      {
+        "id": 7,
+        "question": "Se você digita diretamente em uma célula que já tem conteúdo:",
+        "options": [
+          { "key": "A", "text": "Você substitui o conteúdo antigo" },
+          { "key": "B", "text": "Você sempre edita sem apagar" }
+        ],
+        "answer": "A",
+        "explain": "Para editar sem substituir, use F2."
+      },
+      {
+        "id": 8,
+        "question": "A tecla F2 serve para:",
+        "options": [
+          { "key": "A", "text": "Editar o conteúdo da célula sem apagar tudo" },
+          { "key": "B", "text": "Criar uma planilha nova" }
+        ],
+        "answer": "A",
+        "explain": "F2 entra no modo de edição."
+      },
+      {
+        "id": 9,
+        "question": "Shift + Espaço seleciona:",
+        "options": [
+          { "key": "A", "text": "A linha inteira" },
+          { "key": "B", "text": "A coluna inteira" }
+        ],
+        "answer": "A",
+        "explain": "Shift+Espaço seleciona linha; Ctrl+Espaço seleciona coluna."
+      },
+      {
+        "id": 10,
+        "question": "Qual regra ajuda a lembrar os atalhos principais?",
+        "options": [
+          { "key": "A", "text": "Ctrl+Setas navega; Ctrl+Shift+Setas seleciona" },
+          { "key": "B", "text": "Ctrl+Setas imprime; Ctrl+Shift+Setas apaga" }
+        ],
+        "answer": "A",
+        "explain": "Essa regra evita confusão e acelera o trabalho."
+      }
+    ]
+  },
+  "extra": {
+    "atalhosEssenciais": "Atalhos essenciais — Aula 02\n\nNavegar:\n- Ctrl + Setas\n- Ctrl + Home\n- Ctrl + End\n\nSelecionar:\n- Shift + Setas\n- Ctrl + Shift + Setas\n- Ctrl + Espaço (coluna)\n- Shift + Espaço (linha)\n\nEditar:\n- F2 (edita sem sobrescrever)\n\nDica:\nTreine 5 minutos por dia até virar automático.",
+    "mapaMental": "Mapa mental da interface\n\n- Comandos: Faixa de Opções (abas)\n- Conteúdo real: Barra de Fórmulas\n- Onde estou / ir direto: Caixa de Nome\n- Dados: grade (células)\n- Info rápida: Barra de status (soma/média)\n"
+  }
+}

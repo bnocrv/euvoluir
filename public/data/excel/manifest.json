@@ -1,11 +1,44 @@
 ﻿{
-    "courseId":  "excel",
-    "title":  "Excel - fundamentos para planilhas e análise",
-    "lessons":  [
-                    {
-                        "id":  "01-introducao",
-                        "title":  "Aula 01 - Introdução prática",
-                        "file":  "01-introducao.json"
-                    }
-                ]
+  "courseId": "excel",
+  "title": "Microsoft Excel — do básico ao avançado (planilhas profissionais, análise de dados e produtividade)",
+  "lessons": [
+    { "id": "01-introducao", "title": "Aula 01 — O que é o Excel + para que serve (visão geral e casos reais)", "file": "01-introducao.json" },
+    { "id": "02-interface", "title": "Aula 02 — Interface: faixa de opções, barra de fórmulas, guias e atalhos de navegação", "file": "02-interface.json" },
+    { "id": "03-pastas-planilhas", "title": "Aula 03 — Pastas e planilhas: criar, renomear, mover, cores e organização profissional", "file": "03-pastas-planilhas.json" },
+    { "id": "04-salvar-versoes", "title": "Aula 04 — Salvar, abrir e versões (XLSX, OneDrive, histórico e recuperação)", "file": "04-salvar-versoes.json" },
+    { "id": "05-digitacao-selecao", "title": "Aula 05 — Digitação eficiente: seleção, preenchimento automático e listas", "file": "05-digitacao-selecao.json" },
+    { "id": "06-formatacao-basica", "title": "Aula 06 — Formatação básica: número, moeda, porcentagem, datas e texto", "file": "06-formatacao-basica.json" },
+    { "id": "07-ajuste-layout", "title": "Aula 07 — Ajuste de planilha: larguras, alturas, quebra de linha e alinhamento", "file": "07-ajuste-layout.json" },
+    { "id": "08-formatacao-condicional-1", "title": "Aula 08 — Formatação condicional 1: regras prontas (cores, ícones e destaques)", "file": "08-formatacao-condicional-1.json" },
+    { "id": "09-formatacao-condicional-2", "title": "Aula 09 — Formatação condicional 2: regras com fórmula (quando o Excel “pensa”)", "file": "09-formatacao-condicional-2.json" },
+    { "id": "10-tabelas-excel", "title": "Aula 10 — Tabelas do Excel (Ctrl+T): estrutura, estilo, referências e totalizadores", "file": "10-tabelas-excel.json" },
+    { "id": "11-classificar-filtrar", "title": "Aula 11 — Classificar e filtrar (simples e avançado) sem bagunçar os dados", "file": "11-classificar-filtrar.json" },
+    { "id": "12-validacao-dados", "title": "Aula 12 — Validação de dados: listas suspensas, regras e mensagens (anti-erro)", "file": "12-validacao-dados.json" },
+    { "id": "13-proteger-compartilhar", "title": "Aula 13 — Proteger células/planilhas e compartilhar com segurança (o que travar e por quê)", "file": "13-proteger-compartilhar.json" },
+    { "id": "14-referencias-celulas", "title": "Aula 14 — Referências de células: relativa, absoluta ($) e mista (o pulo do gato)", "file": "14-referencias-celulas.json" },
+    { "id": "15-formulas-basico-1", "title": "Aula 15 — Fórmulas do zero: operador, ordem de cálculo e erros comuns (#N/D, #VALOR!)", "file": "15-formulas-basico-1.json" },
+    { "id": "16-funcoes-matematicas", "title": "Aula 16 — Funções essenciais: SOMA, MÉDIA, MÍNIMO, MÁXIMO, ARRED e CONT", "file": "16-funcoes-matematicas.json" },
+    { "id": "17-funcoes-logicas", "title": "Aula 17 — Funções lógicas: SE, E, OU, SEERRO (regras do mundo real)", "file": "17-funcoes-logicas.json" },
+    { "id": "18-funcoes-texto", "title": "Aula 18 — Funções de texto: ESQUERDA/DIREITA, EXT.TEXTO, PROCURAR, SUBSTITUIR, TEXTO", "file": "18-funcoes-texto.json" },
+    { "id": "19-funcoes-data-hora", "title": "Aula 19 — Datas e horas: HOJE, AGORA, DIATRABALHO, MÊS, ANO e diferenças", "file": "19-funcoes-data-hora.json" },
+    { "id": "20-procv-procx", "title": "Aula 20 — Procura de dados: PROCV vs PROCX (e quando usar cada um)", "file": "20-procv-procx.json" },
+    { "id": "21-indice-corresp", "title": "Aula 21 — ÍNDICE + CORRESP: procura poderosa e flexível (o “clássico avançado”)", "file": "21-indice-corresp.json" },
+    { "id": "22-somase-contse", "title": "Aula 22 — SOMASE(S) e CONT.SE(S): somar/contar por critérios (relatórios rápidos)", "file": "22-somase-contse.json" },
+    { "id": "23-funcoes-matrizes", "title": "Aula 23 — Matrizes dinâmicas: FILTRAR, CLASSIFICAR, ÚNICO e SEQUÊNCIA (Excel moderno)", "file": "23-funcoes-matrizes.json" },
+    { "id": "24-tabelas-dinamicas-1", "title": "Aula 24 — Tabela dinâmica 1: criar, arrastar campos e resumir dados do jeito certo", "file": "24-tabelas-dinamicas-1.json" },
+    { "id": "25-tabelas-dinamicas-2", "title": "Aula 25 — Tabela dinâmica 2: agrupamentos, campos calculados e configurações", "file": "25-tabelas-dinamicas-2.json" },
+    { "id": "26-segmentacao-linha-tempo", "title": "Aula 26 — Segmentação de dados e Linha do tempo: filtros visuais profissionais", "file": "26-segmentacao-linha-tempo.json" },
+    { "id": "27-graficos-1", "title": "Aula 27 — Gráficos 1: escolher o gráfico certo (coluna, linha, pizza, barras)", "file": "27-graficos-1.json" },
+    { "id": "28-graficos-2", "title": "Aula 28 — Gráficos 2: formatação, rótulos, eixos e boas práticas (sem poluir)", "file": "28-graficos-2.json" },
+    { "id": "29-dashboard-basico", "title": "Aula 29 — Dashboard básico: layout, consistência e painel de indicadores", "file": "29-dashboard-basico.json" },
+    { "id": "30-importar-limpar-1", "title": "Aula 30 — Importar e limpar dados 1: texto para colunas, remover duplicatas e TRIM", "file": "30-importar-limpar-1.json" },
+    { "id": "31-power-query-1", "title": "Aula 31 — Power Query 1: conceitos, importar e transformar (sem “quebrar” a planilha)", "file": "31-power-query-1.json" },
+    { "id": "32-power-query-2", "title": "Aula 32 — Power Query 2: mesclar/anexar consultas e atualizar automaticamente", "file": "32-power-query-2.json" },
+    { "id": "33-modelagem-dados", "title": "Aula 33 — Modelagem de dados: relacionamentos e tabelas fato/dimensão (base do BI)", "file": "33-modelagem-dados.json" },
+    { "id": "34-power-pivot-dax", "title": "Aula 34 — Power Pivot e DAX (introdução): medidas vs colunas, SUMX e CALCULATE", "file": "34-power-pivot-dax.json" },
+    { "id": "35-what-if", "title": "Aula 35 — Análise de hipóteses: Atingir Meta, Tabela de Dados e Cenários", "file": "35-what-if.json" },
+    { "id": "36-solver", "title": "Aula 36 — Solver: otimização na prática (melhor resultado com restrições)", "file": "36-solver.json" },
+    { "id": "37-macros-vba", "title": "Aula 37 — Macros e VBA (introdução): gravar macro, entender código e segurança", "file": "37-macros-vba.json" },
+    { "id": "38-projeto-final", "title": "Aula 38 — Projeto final: planilha profissional completa (tabela + validação + dinâmica + dashboard)", "file": "38-projeto-final.json" }
+  ]
 }

@@ -1,0 +1,164 @@
+{
+  "id": "20-procv-procx",
+  "title": "Aula 20 — Procura de dados: PROCV vs PROCX (e quando usar cada um)",
+  "steps": [
+    {
+      "title": "O problema que PROCV/PROCX resolvem (bem simples)",
+      "body": "Você tem duas tabelas.\n\nExemplo:\n- Tabela A (Pedidos): Código do produto\n- Tabela B (Cadastro): Código do produto → Nome → Preço\n\nVocê quer que, ao digitar o código no pedido, o Excel traga automaticamente:\n- o nome do produto\n- o preço\n\nIsso é **procura** (lookup).\n\nRegra:\n- PROCV/PROCX servem para “buscar informação em outra tabela” usando uma chave (código)."
+    },
+    {
+      "title": "Conceito-chave: chave de busca",
+      "body": "Chave de busca é o valor que identifica o registro.\n\nExemplos de chaves:\n- código do produto\n- CPF\n- número do pedido\n- SKU\n\nRegra:\n- chave boa não repete. Se repetir, a procura pode trazer resultado errado (ou o primeiro que achar)."
+    },
+    {
+      "title": "PROCV (o clássico) — como ele funciona",
+      "body": "PROCV significa “procura vertical”.\n\nSintaxe:\n`=PROCV(valor_procurado; matriz_tabela; núm_índice_coluna; [procurar_intervalo])`\n\nExemplo:\n- Código está em A2\n- Cadastro está em Apoio!A:C\n  - Coluna A: Código\n  - Coluna B: Produto\n  - Coluna C: Preço\n\nPara trazer Produto:\n`=PROCV(A2;Apoio!$A:$C;2;FALSO)`\n\nPara trazer Preço:\n`=PROCV(A2;Apoio!$A:$C;3;FALSO)`\n\nRegra:\n- no PROCV, a chave precisa estar na **primeira coluna** da matriz."
+    },
+    {
+      "title": "O argumento mais importante do PROCV: FALSO (exato)",
+      "body": "O último argumento é:\n- VERDADEIRO (aproximado)\n- FALSO (exato)\n\nPara 99% dos casos de cadastro/código, você quer:\n- **FALSO** (busca exata)\n\nRegra:\n- se você esquecer o FALSO, pode dar resultado errado sem você perceber."
+    },
+    {
+      "title": "Limitações do PROCV (por que PROCX existe)",
+      "body": "PROCV tem limitações clássicas:\n\n1) Só busca para a direita\n- não dá para buscar uma coluna à esquerda do código\n\n2) Depende do número da coluna\n- se você inserir uma coluna no meio, o índice muda\n\n3) Pode ser mais frágil em manutenção\n\nRegra:\n- PROCV funciona, mas PROCX é mais moderno e flexível."
+    },
+    {
+      "title": "PROCX (o moderno) — mais simples de manter",
+      "body": "PROCX é a versão moderna.\n\nSintaxe:\n`=PROCX(valor_procurado; matriz_procurada; matriz_retorno; [se_não_encontrado]; [modo_correspondência]; [modo_pesquisa])`\n\nExemplo (mesmo cenário):\n- Código em A2\n- Chave (códigos) em Apoio!A:A\n- Retorno (Produto) em Apoio!B:B\n\nProduto:\n`=PROCX(A2;Apoio!$A:$A;Apoio!$B:$B;\"Não encontrado\")`\n\nPreço:\n`=PROCX(A2;Apoio!$A:$A;Apoio!$C:$C;0)`\n\nRegra:\n- PROCX separa “onde procurar” e “o que retornar”, então não depende de número de coluna."
+    },
+    {
+      "title": "Vantagens do PROCX (por que você vai preferir)",
+      "body": "PROCX resolve dores do PROCV:\n\n- busca para a direita e para a esquerda\n- não quebra se inserir colunas (porque você aponta colunas por nome/intervalo)\n- já tem argumento de “se não encontrado”\n- permite modos de correspondência (exata, aproximada, curingas)\n\nRegra:\n- se seu Excel tem PROCX, use PROCX na maioria dos casos."
+    },
+    {
+      "title": "Quando usar PROCV (ainda faz sentido)",
+      "body": "Use PROCV quando:\n- você está em um Excel antigo sem PROCX\n- você já tem uma planilha grande toda em PROCV e não quer migrar agora\n- o caso é simples e você domina bem\n\nRegra:\n- saber PROCV é necessário, mas PROCX é o padrão moderno."
+    },
+    {
+      "title": "Erros comuns (e como diagnosticar)",
+      "body": "1) #N/D (não encontrado)\n- código não existe no cadastro\n- ou existe mas está com espaço/formatos diferentes\n\n2) Chave como texto vs número\n- 00123 pode virar 123\n\n3) Intervalo errado (matriz)\n- não incluiu a coluna certa\n\n4) Esquecer FALSO no PROCV\n- risco de busca aproximada errada\n\nRegra:\n- quando der #N/D, primeiro compare o valor e o tipo (texto/número)."
+    },
+    {
+      "title": "Melhor prática: usar tabela (Ctrl+T) no cadastro",
+      "body": "Se seu cadastro virar uma Tabela (Ctrl+T), você ganha:\n- expansão automática\n- referência estruturada\n\nE o mais importante:\n- você evita intervalos fixos pequenos (ex.: A1:C100) que quebram quando cresce.\n\nRegra:\n- procura funciona melhor com cadastros estruturados."
+    },
+    {
+      "title": "Mini prática (50 minutos) — cadastro e busca automática",
+      "body": "1) Crie planilha `99_Apoio` com um cadastro:\n- A: CodProduto\n- B: Produto\n- C: Preco\n\nColoque 10 produtos.\n\n2) Transforme em Tabela (Ctrl+T) e renomeie para `tbProdutos`.\n\n3) Em outra planilha, crie uma área de pedido:\n- A: CodProduto\n- B: Produto\n- C: Preco\n- D: Qtd\n- E: Total\n\n4) Na coluna Produto use PROCX:\n- `=PROCX(A2;tbProdutos[CodProduto];tbProdutos[Produto];\"Não encontrado\")`\n\n5) Na coluna Preço use PROCX:\n- `=PROCX(A2;tbProdutos[CodProduto];tbProdutos[Preco];0)`\n\n6) Total:\n- `=D2*C2`\n\n7) Teste:\n- digite um código que existe\n- digite um código que não existe\n\nObjetivo:\n- entender busca por chave e tratamento de não encontrado."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Procura serve para trazer dados de outra tabela por uma chave\n- PROCV é o clássico: chave na primeira coluna, busca para a direita, use FALSO\n- PROCX é o moderno: separa coluna de busca e coluna de retorno, mais robusto\n- #N/D significa não encontrado (verifique tipo e espaços)\n- Cadastros em Tabela (Ctrl+T) deixam tudo mais profissional\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 20 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "PROCV/PROCX servem para:",
+        "options": [
+          { "key": "A", "text": "Buscar um valor em outra tabela usando uma chave" },
+          { "key": "B", "text": "Criar gráficos automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Eles fazem procura (lookup) em cadastros/tabelas."
+      },
+      {
+        "id": 2,
+        "question": "No PROCV, a chave deve estar:",
+        "options": [
+          { "key": "A", "text": "Na primeira coluna da matriz_tabela" },
+          { "key": "B", "text": "Em qualquer coluna, tanto faz" }
+        ],
+        "answer": "A",
+        "explain": "PROCV sempre procura na primeira coluna do intervalo."
+      },
+      {
+        "id": 3,
+        "question": "No PROCV, para busca exata você deve usar:",
+        "options": [
+          { "key": "A", "text": "FALSO" },
+          { "key": "B", "text": "VERDADEIRO" }
+        ],
+        "answer": "A",
+        "explain": "FALSO = correspondência exata (mais comum para códigos)."
+      },
+      {
+        "id": 4,
+        "question": "Uma limitação do PROCV é:",
+        "options": [
+          { "key": "A", "text": "Só busca para a direita" },
+          { "key": "B", "text": "Ele não funciona com números" }
+        ],
+        "answer": "A",
+        "explain": "Ele não busca colunas à esquerda da chave."
+      },
+      {
+        "id": 5,
+        "question": "PROCX é mais robusto porque:",
+        "options": [
+          { "key": "A", "text": "Você escolhe separadamente onde procurar e o que retornar" },
+          { "key": "B", "text": "Ele exige sempre o número da coluna" }
+        ],
+        "answer": "A",
+        "explain": "Isso evita quebrar ao inserir colunas."
+      },
+      {
+        "id": 6,
+        "question": "Uma vantagem do PROCX é:",
+        "options": [
+          { "key": "A", "text": "Ele permite definir 'se não encontrado' diretamente" },
+          { "key": "B", "text": "Ele impede filtros" }
+        ],
+        "answer": "A",
+        "explain": "Você pode retornar \"Não encontrado\" ou 0."
+      },
+      {
+        "id": 7,
+        "question": "#N/D significa:",
+        "options": [
+          { "key": "A", "text": "Não encontrado" },
+          { "key": "B", "text": "Divisão por zero" }
+        ],
+        "answer": "A",
+        "explain": "É o erro clássico de procura."
+      },
+      {
+        "id": 8,
+        "question": "Um motivo comum para #N/D é:",
+        "options": [
+          { "key": "A", "text": "Código com tipo diferente (texto vs número) ou espaços" },
+          { "key": "B", "text": "A célula estar colorida" }
+        ],
+        "answer": "A",
+        "explain": "Diferença de tipo e espaços escondidos causam falha na busca."
+      },
+      {
+        "id": 9,
+        "question": "Quando você tem PROCX disponível, a melhor prática geralmente é:",
+        "options": [
+          { "key": "A", "text": "Preferir PROCX na maioria dos casos" },
+          { "key": "B", "text": "Evitar qualquer procura" }
+        ],
+        "answer": "A",
+        "explain": "PROCX é mais flexível e mais fácil de manter."
+      },
+      {
+        "id": 10,
+        "question": "Usar Tabela (Ctrl+T) no cadastro ajuda porque:",
+        "options": [
+          { "key": "A", "text": "O cadastro cresce sem quebrar intervalos e facilita referências" },
+          { "key": "B", "text": "Apaga duplicados automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Tabela é estrutura e manutenção mais segura."
+      }
+    ]
+  },
+  "extra": {
+    "receitasProntas": "Receitas prontas\n\nPROCV (exato):\n=PROCV(A2;Apoio!$A:$C;2;FALSO)\n\nPROCX (com 'não encontrado'):\n=PROCX(A2;Apoio!$A:$A;Apoio!$B:$B;\"Não encontrado\")\n\nDica:\nUse PROCX quando disponível. PROCV exige FALSO para busca exata.",
+    "checklistNaoEncontrado": "Checklist quando der #N/D\n\n1) O código existe mesmo no cadastro?\n2) Tem espaço antes/depois? (texto sujo)\n3) É texto ou número? (00123 vs 123)\n4) Intervalo de procura está certo?\n5) No PROCV, você colocou FALSO?\n"
+  }
+}

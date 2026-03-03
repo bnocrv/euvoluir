@@ -1,0 +1,163 @@
+{
+  "id": "24-modelos",
+  "title": "Aula 24 — Modelos (templates): criar, reutilizar e manter padrão profissional",
+  "steps": [
+    {
+      "title": "Por que modelos (templates) são um “atalho de qualidade”",
+      "body": "Modelo é um documento-base que já vem pronto com:\n- estilos (Normal, Título 1/2/3)\n- margens e configuração de página\n- cabeçalho/rodapé (paginação, data)\n- tabelas e padrões visuais\n\nEm vez de começar do zero toda vez, você começa do padrão.\n\nRegra:\n- modelo bom economiza tempo e evita erro."
+    },
+    {
+      "title": "O que é um template na prática",
+      "body": "Pense em dois níveis:\n\n1) Documento base (um .docx que você duplica)\n- simples e funciona sempre\n\n2) Modelo de verdade (.dotx / .dotm)\n- feito para criar novos documentos a partir dele\n- você abre e ele já cria um documento novo baseado no modelo\n\nRegra:\n- se você quer algo simples: use documento base.\n- se você quer padrão formal e reutilizável: use template."
+    },
+    {
+      "title": "Quando vale a pena ter um modelo",
+      "body": "Vale MUITO quando você cria documentos repetidos, por exemplo:\n- relatórios semanais/mensais\n- atas de reunião\n- documentos de procedimento (SOP)\n- cartas/declarações\n- propostas comerciais\n\nRegra:\n- se você fez o mesmo tipo de documento 3 vezes, já vale criar um modelo."
+    },
+    {
+      "title": "O que um modelo profissional normalmente inclui",
+      "body": "Checklist do que costuma existir:\n\n- Configuração de página (A4, margens)\n- Estilos ajustados (Normal e Títulos)\n- Cabeçalho/rodapé:\n  - “Página X de Y”\n  - nome do documento ou setor\n  - data (se fizer sentido)\n- Estrutura inicial:\n  - capa (opcional)\n  - sumário (opcional)\n  - seções prontas (Introdução, Objetivo, Procedimento)\n- Tabela padrão (quando necessário)\n\nRegra:\n- modelo é sobre consistência, não sobre enfeite."
+    },
+    {
+      "title": "Criar um modelo começando do jeito certo",
+      "body": "Fluxo recomendado:\n\n1) Crie um documento vazio\n2) Ajuste:\n- Layout (A4, margens)\n- Estilos (Normal, Título 1/2/3)\n- Cabeçalho/rodapé (páginas)\n\n3) Crie uma estrutura mínima (títulos e seções)\n4) Salve como modelo/template\n\nRegra:\n- modelo bom nasce do básico bem feito: página + estilos + cabeçalho."
+    },
+    {
+      "title": "Campos no modelo (para automatizar e evitar edição manual)",
+      "body": "Modelos ficam poderosos quando usam campos:\n- data automática\n- nome do arquivo\n- título do documento (propriedade)\n- página X de Y\n\nVantagem:\n- você cria um novo documento e ele já vem “se auto preenchendo”.\n\nRegra:\n- modelos + campos = padrão com pouca manutenção."
+    },
+    {
+      "title": "Propriedades do documento (Título/Autor) no modelo",
+      "body": "Uma técnica profissional:\n\n- no modelo, você coloca no cabeçalho um campo “Título”.\n- quando criar um documento novo, você define o Título nas propriedades.\n- o cabeçalho atualiza.\n\nIsso evita:\n- editar cabeçalho manualmente em cada documento.\n\nRegra:\n- tudo que repete, automatize."
+    },
+    {
+      "title": "Versão do modelo (controle para não virar bagunça)",
+      "body": "Modelos também precisam de versão.\n\nPor quê?\n- você melhora um estilo\n- muda um cabeçalho\n- ajusta margens\n\nSe você não controla:\n- cada pessoa usa um modelo diferente\n- padrão vira bagunça\n\nSugestão simples:\n- coloque no rodapé: “Modelo v1.0”\n- ou mantenha nome do arquivo com versão: `Modelo-Relatorio-v1.docx`\n\nRegra:\n- padrão sem versão vira caos."
+    },
+    {
+      "title": "Reutilização: como usar o modelo no dia a dia",
+      "body": "Jeitos práticos:\n\nA) Documento base:\n- mantenha em uma pasta “Templates”\n- ao criar novo, faça uma cópia e renomeie\n\nB) Template (.dotx):\n- ao abrir, ele cria um documento novo baseado nele\n\nRegra:\n- nunca escreva diretamente em cima do arquivo modelo.\n- modelo é “molde”, não produto final."
+    },
+    {
+      "title": "Manutenção do modelo (melhorar com o tempo)",
+      "body": "Um modelo bom melhora com uso.\n\nRotina saudável:\n- quando você percebe um erro/padrão ruim\n- ajuste no modelo\n- atualize a versão\n\nExemplo:\n- mudou a fonte padrão da empresa\n- ajusta Normal no modelo\n\nRegra:\n- o modelo é o “centro” do padrão, não cada documento isolado."
+    },
+    {
+      "title": "Mini prática (30 minutos) — modelo de relatório pronto",
+      "body": "Crie um modelo de relatório assim:\n\n1) Layout:\n- A4\n- margens normais\n\n2) Estilos:\n- Normal: 12, 1,15, depois 6 pt\n- Título 1: 16 negrito, antes 12 pt, depois 6 pt\n\n3) Cabeçalho/rodapé:\n- Rodapé: Página X de Y\n- Cabeçalho: (campo) Título do documento\n\n4) Estrutura:\n- Título 1: 1. Introdução\n- Título 1: 2. Dados\n- Título 1: 3. Conclusão\n\n5) Salve como:\n- `Modelo-Relatorio-v1.docx` (documento base)\n\nObjetivo:\n- ter um modelo reutilizável em 1 arquivo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Template/modelo economiza tempo e cria consistência\n- Inclui: página, estilos, cabeçalho/rodapé, estrutura\n- Campos deixam o modelo automático\n- Controle versão do modelo\n- Use o modelo como molde (faça cópia), não como documento final\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 24 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Modelo (template) serve para:",
+        "options": [
+          { "key": "A", "text": "Reutilizar um padrão pronto e evitar começar do zero" },
+          { "key": "B", "text": "Aumentar o tamanho do monitor" }
+        ],
+        "answer": "A",
+        "explain": "Modelo dá consistência e economiza tempo."
+      },
+      {
+        "id": 2,
+        "question": "Um modelo profissional normalmente inclui:",
+        "options": [
+          { "key": "A", "text": "Estilos, configuração de página e cabeçalho/rodapé" },
+          { "key": "B", "text": "Apenas uma imagem grande na capa" }
+        ],
+        "answer": "A",
+        "explain": "O valor do modelo está no padrão de layout e estrutura."
+      },
+      {
+        "id": 3,
+        "question": "Criar modelo vale a pena quando:",
+        "options": [
+          { "key": "A", "text": "Você faz documentos repetidos do mesmo tipo" },
+          { "key": "B", "text": "Você nunca mais vai usar aquele formato" }
+        ],
+        "answer": "A",
+        "explain": "Repetição justifica padronização."
+      },
+      {
+        "id": 4,
+        "question": "Campos no modelo são úteis porque:",
+        "options": [
+          { "key": "A", "text": "Automatizam data, páginas e propriedades (menos edição manual)" },
+          { "key": "B", "text": "Impedem o documento de ser salvo" }
+        ],
+        "answer": "A",
+        "explain": "Campos reduzem erro e retrabalho."
+      },
+      {
+        "id": 5,
+        "question": "Boa prática é:",
+        "options": [
+          { "key": "A", "text": "Fazer cópia do modelo para criar documentos novos" },
+          { "key": "B", "text": "Escrever diretamente em cima do arquivo modelo sempre" }
+        ],
+        "answer": "A",
+        "explain": "Modelo é molde; o documento final deve ser uma cópia."
+      },
+      {
+        "id": 6,
+        "question": "Controle de versão do modelo é importante porque:",
+        "options": [
+          { "key": "A", "text": "Evita que cada pessoa use um padrão diferente" },
+          { "key": "B", "text": "Deixa o Word mais colorido" }
+        ],
+        "answer": "A",
+        "explain": "Versão mantém consistência e facilita manutenção."
+      },
+      {
+        "id": 7,
+        "question": "Um documento base (.docx) como modelo:",
+        "options": [
+          { "key": "A", "text": "Funciona bem se você copiar e renomear" },
+          { "key": "B", "text": "Só funciona se estiver em PDF" }
+        ],
+        "answer": "A",
+        "explain": "Documento base é simples e prático para muita gente."
+      },
+      {
+        "id": 8,
+        "question": "Usar propriedades (Título/Autor) no cabeçalho é bom porque:",
+        "options": [
+          { "key": "A", "text": "Você muda o título uma vez e o cabeçalho atualiza" },
+          { "key": "B", "text": "Você precisa editar o cabeçalho manualmente toda vez" }
+        ],
+        "answer": "A",
+        "explain": "Campos de propriedades automatizam informações repetidas."
+      },
+      {
+        "id": 9,
+        "question": "A manutenção do modelo deve ser feita:",
+        "options": [
+          { "key": "A", "text": "No próprio modelo, para melhorar futuros documentos" },
+          { "key": "B", "text": "Só em cada documento final, sem tocar no modelo" }
+        ],
+        "answer": "A",
+        "explain": "O modelo é a fonte do padrão; melhorar nele melhora todos os próximos."
+      },
+      {
+        "id": 10,
+        "question": "A ideia principal de modelos é:",
+        "options": [
+          { "key": "A", "text": "Consistência + produtividade" },
+          { "key": "B", "text": "Enfeitar o documento com muitos efeitos" }
+        ],
+        "answer": "A",
+        "explain": "Modelo é ferramenta de padrão, não decoração."
+      }
+    ]
+  },
+  "extra": {
+    "modelTemplateChecklist": "Checklist de template profissional\n\n1) Layout:\n- A4\n- margens definidas\n\n2) Estilos:\n- Normal (corpo) ajustado\n- Título 1/2/3 ajustados\n\n3) Cabeçalho/Rodapé:\n- Página X de Y\n- Campo Título (propriedade)\n- Data (se fizer sentido)\n\n4) Estrutura inicial:\n- seções prontas (Introdução, Dados, Conclusão)\n\n5) Reutilização:\n- NÃO edite o modelo como documento final\n- Faça cópia e renomeie\n\n6) Versão:\n- nome do arquivo com v1/v2 ou um campo “Modelo v1.0”\n"
+  }
+}

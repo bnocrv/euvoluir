@@ -1,0 +1,164 @@
+{
+  "id": "03-pastas-planilhas",
+  "title": "Aula 03 — Pastas e planilhas: criar, renomear, mover, cores e organização profissional",
+  "steps": [
+    {
+      "title": "Pasta de trabalho vs planilha (a diferença que evita confusão)",
+      "body": "No Excel existem duas coisas:\n\n- **Pasta de trabalho (Workbook)**: é o arquivo inteiro (ex.: `Controle.xlsx`)\n- **Planilhas (Worksheets)**: são as abas dentro do arquivo (ex.: `Vendas`, `Estoque`)\n\nPense assim:\n- Pasta de trabalho = um caderno\n- Planilhas = as folhas do caderno\n\nRegra:\n- A organização do Excel começa **pelos nomes das abas**."
+    },
+    {
+      "title": "Criar, inserir e excluir planilhas (sem medo)",
+      "body": "Criar nova planilha:\n- clique no **+** ao lado das abas\n\nExcluir planilha (cuidado):\n- botão direito na aba → **Excluir**\n\nRegra:\n- Excluir apaga a planilha inteira. Se tiver dúvida, **copie** antes."
+    },
+    {
+      "title": "Renomear planilhas (padrão profissional de nomes)",
+      "body": "Renomear:\n- duplo clique na aba\n- ou botão direito → **Renomear**\n\nBoas práticas:\n- nomes curtos e claros: `Cadastro`, `Lançamentos`, `Relatório`\n- evite `Planilha1`, `Planilha2`\n- se forem muitas abas, use números:\n  - `01_Cadastro`\n  - `02_Lancamentos`\n  - `03_Resumo`\n  - `99_Apoio`\n\nRegra:\n- Se você precisa abrir aba por aba para entender, os nomes estão ruins."
+    },
+    {
+      "title": "Mover e reordenar abas (organização visual)",
+      "body": "Mover:\n- arraste a aba para esquerda/direita\n\nDica:\n- coloque **dados de entrada** no começo\n- relatórios no meio/final\n- apoio por último\n\nRegra:\n- ordem boa = fluxo de trabalho mais lógico."
+    },
+    {
+      "title": "Duplicar planilha (Ctrl + arrastar) — o atalho mais útil aqui",
+      "body": "Para copiar uma planilha:\n- segure **Ctrl**\n- arraste a aba\n\nVocê vai ver um ícone de + indicando cópia.\n\nPor que isso é ótimo?\n- você cria modelos\n- replica um layout\n- testa sem destruir o original\n\nRegra:\n- Antes de mudanças grandes, copie a planilha."
+    },
+    {
+      "title": "Cor na guia da planilha (quando faz sentido)",
+      "body": "Você pode colocar cor na aba:\n- botão direito → **Cor da guia**\n\nUse cores para **categorizar**, por exemplo:\n- azul = dados (cadastro/lançamentos)\n- verde = relatórios\n- cinza = apoio\n\nNão use cor como “dado” (tipo status oficial), porque:\n- cor muda fácil\n- não dá para calcular com cor (de forma confiável)\n\nRegra:\n- Cor é só organização visual."
+    },
+    {
+      "title": "Ocultar e reexibir planilhas (limpar a tela sem apagar)",
+      "body": "Ocultar:\n- botão direito na aba → **Ocultar**\n\nReexibir:\n- botão direito em qualquer aba → **Reexibir…**\n\nQuando usar:\n- planilhas de apoio (listas, parâmetros)\n- áreas que o usuário não precisa ver sempre\n\nRegra:\n- Ocultar não é segurança. Para segurança de verdade, existe proteção."
+    },
+    {
+      "title": "Mover ou copiar para outro arquivo (quando você quer reaproveitar)",
+      "body": "Para enviar uma planilha para outro arquivo:\n\n1) botão direito na aba → **Mover ou Copiar…**\n2) escolha o arquivo de destino\n3) marque **Criar uma cópia** se quiser duplicar\n\nDica:\n- é assim que você cria um “template” e usa em vários arquivos."
+    },
+    {
+      "title": "Modelo de organização (o padrão que funciona em 90% dos casos)",
+      "body": "Separe o arquivo por função:\n\n1) **Dados (entrada)**\n- onde você digita/importa\n\n2) **Apoio**\n- listas, parâmetros, tabelas auxiliares\n\n3) **Relatórios (saída)**\n- tabelas dinâmicas, gráficos, dashboard\n\nExemplo simples:\n- `01_Cadastro`\n- `02_Lancamentos`\n- `03_Resumo`\n- `04_Relatorios`\n- `99_Apoio`\n\nRegra:\n- não misture entrada com relatório na mesma área."
+    },
+    {
+      "title": "Navegar entre planilhas sem mouse (atalhos)",
+      "body": "Atalhos:\n\n- **Ctrl + Page Down**: próxima planilha\n- **Ctrl + Page Up**: planilha anterior\n\nDica:\n- quando o arquivo tem muitas abas, isso acelera muito."
+    },
+    {
+      "title": "Mini prática (20 minutos) — criar estrutura profissional antes de digitar dados",
+      "body": "Crie um arquivo chamado: `Controle_Exemplo.xlsx`\n\n1) Crie 5 planilhas e renomeie:\n- `01_Cadastro`\n- `02_Lancamentos`\n- `03_Resumo`\n- `04_Relatorios`\n- `99_Apoio`\n\n2) (Opcional) coloque cores:\n- azul nas duas primeiras\n- verde nas de relatório\n- cinza na de apoio\n\n3) Navegue usando:\n- Ctrl+PageUp / Ctrl+PageDown\n\nObjetivo:\n- criar o hábito: **estrutura primeiro, dados depois**."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Pasta de trabalho = arquivo; planilhas = abas\n- Renomear e ordenar abas evita erro\n- Ctrl + arrastar duplica planilha\n- Cores ajudam a categorizar (não são dado)\n- Separar dados/apoi o/relatórios é padrão profissional\n- Ctrl+PageUp/PageDown troca abas rápido\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 03 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A pasta de trabalho (workbook) é:",
+        "options": [
+          { "key": "A", "text": "O arquivo inteiro do Excel (ex.: Controle.xlsx)" },
+          { "key": "B", "text": "Uma única célula (ex.: A1)" }
+        ],
+        "answer": "A",
+        "explain": "Workbook é o arquivo. Dentro dele existem planilhas."
+      },
+      {
+        "id": 2,
+        "question": "Planilhas são:",
+        "options": [
+          { "key": "A", "text": "As abas dentro do arquivo" },
+          { "key": "B", "text": "As cores do tema" }
+        ],
+        "answer": "A",
+        "explain": "Planilhas são as folhas/abas do arquivo."
+      },
+      {
+        "id": 3,
+        "question": "Um jeito rápido de duplicar uma planilha é:",
+        "options": [
+          { "key": "A", "text": "Segurar Ctrl e arrastar a aba" },
+          { "key": "B", "text": "Apertar Esc 3 vezes" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl + arrastar cria uma cópia."
+      },
+      {
+        "id": 4,
+        "question": "Renomear planilhas é importante para:",
+        "options": [
+          { "key": "A", "text": "Evitar se perder e reduzir erros" },
+          { "key": "B", "text": "Aumentar o tamanho do arquivo" }
+        ],
+        "answer": "A",
+        "explain": "Nomes claros deixam o arquivo fácil de entender."
+      },
+      {
+        "id": 5,
+        "question": "Cor da guia é melhor usada para:",
+        "options": [
+          { "key": "A", "text": "Categorizar (dados, relatório, apoio)" },
+          { "key": "B", "text": "Guardar informação crítica como único método" }
+        ],
+        "answer": "A",
+        "explain": "Cor é visual, não regra de negócio."
+      },
+      {
+        "id": 6,
+        "question": "Ocultar uma planilha significa:",
+        "options": [
+          { "key": "A", "text": "Esconder sem apagar" },
+          { "key": "B", "text": "Excluir para sempre" }
+        ],
+        "answer": "A",
+        "explain": "Ocultar não apaga; dá para reexibir."
+      },
+      {
+        "id": 7,
+        "question": "Ctrl + Page Down faz:",
+        "options": [
+          { "key": "A", "text": "Vai para a próxima planilha" },
+          { "key": "B", "text": "Apaga uma coluna" }
+        ],
+        "answer": "A",
+        "explain": "É atalho para trocar aba para frente."
+      },
+      {
+        "id": 8,
+        "question": "Separar planilhas em Dados / Apoio / Relatórios ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Organiza e facilita manutenção" },
+          { "key": "B", "text": "Impede o Excel de salvar" }
+        ],
+        "answer": "A",
+        "explain": "Organização reduz bagunça e erros."
+      },
+      {
+        "id": 9,
+        "question": "Mover ou Copiar… serve para:",
+        "options": [
+          { "key": "A", "text": "Levar uma planilha para outro arquivo ou duplicar" },
+          { "key": "B", "text": "Criar um gráfico de pizza" }
+        ],
+        "answer": "A",
+        "explain": "Esse menu move/copia planilhas entre arquivos."
+      },
+      {
+        "id": 10,
+        "question": "Um erro comum que vira bagunça é:",
+        "options": [
+          { "key": "A", "text": "Misturar dados de entrada com relatórios no mesmo lugar" },
+          { "key": "B", "text": "Usar nomes claros nas abas" }
+        ],
+        "answer": "A",
+        "explain": "Misturar entrada e saída aumenta erro e dificulta automação."
+      }
+    ]
+  },
+  "extra": {
+    "estruturaRecomendada": "Estrutura recomendada (modelo)\n\n- 01_Cadastro (base)\n- 02_Lancamentos (movimentações)\n- 03_Resumo (KPIs)\n- 04_Relatorios (dinâmicas e gráficos)\n- 99_Apoio (listas e parâmetros)\n\nRegra:\nDados primeiro, relatórios depois.",
+    "atalhosAbas": "Atalhos de abas\n\n- Ctrl + Page Up: planilha anterior\n- Ctrl + Page Down: próxima planilha\n\nDica:\nSe o teclado não tiver PageUp/PageDown, use Fn junto (depende do notebook)."
+  }
+}

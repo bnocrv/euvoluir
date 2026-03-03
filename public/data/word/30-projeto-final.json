@@ -1,0 +1,175 @@
+{
+  "id": "30-projeto-final",
+  "title": "Aula 30 — Projeto final: documento longo profissional (estilos + seções + sumário)",
+  "steps": [
+    {
+      "title": "O objetivo do projeto final (o que você vai conseguir fazer)",
+      "body": "Você vai montar um documento longo completo, com padrão profissional.\n\nEle vai ter:\n- estilos bem configurados\n- seções (capa diferente do corpo)\n- numeração correta\n- sumário automático\n- figuras/tabelas com legenda\n- revisão final + exportação PDF\n\nRegra:\n- esse projeto é a prova de que você domina o Word de verdade."
+    },
+    {
+      "title": "O tema do projeto (simples e útil)",
+      "body": "Tema sugerido (prático):\n**“Procedimento Operacional — Expedição”**\n\nMas você pode trocar para qualquer assunto.\n\nO importante é a estrutura:\n- capítulos\n- seções\n- sumário\n- padrão\n\nRegra:\n- não precisa ser texto perfeito. Precisa aplicar as ferramentas certas."
+    },
+    {
+      "title": "Estrutura do documento (modelo)",
+      "body": "Monte com esta estrutura:\n\n- Capa\n- Sumário\n- 1. Introdução\n- 2. Objetivo\n- 3. Escopo\n- 4. Materiais e Ferramentas\n- 5. Procedimento\n  - 5.1 Separação\n  - 5.2 Conferência\n  - 5.3 Embalagem\n  - 5.4 Expedição/Despacho\n- 6. Checklist final\n- 7. Anexos\n\nRegra:\n- use Título 1 para capítulos e Título 2 para subcapítulos."
+    },
+    {
+      "title": "Passo 1 — Configurar página (base)",
+      "body": "Antes do texto:\n\n- Layout: A4\n- margens: normal (ou padrão exigido)\n\nRegra:\n- documento longo começa com página bem configurada."
+    },
+    {
+      "title": "Passo 2 — Configurar estilos (Normal e Títulos)",
+      "body": "Defina um padrão (exemplo):\n\n- Normal: 12, entrelinhas 1,15, depois 6 pt\n- Título 1: 16 negrito, antes 12 pt, depois 6 pt, manter com o próximo\n- Título 2: 14 negrito, antes 10 pt, depois 4 pt\n\nRegra:\n- ajuste o estilo, não formate título por título."
+    },
+    {
+      "title": "Passo 3 — Criar seções (capa diferente do restante)",
+      "body": "Você vai precisar de seções para:\n- capa sem numeração\n- corpo com numeração\n\nEstratégia:\n- Seção 1: Capa\n- Seção 2: Sumário + corpo\n\nRegra:\n- a “mágica” da numeração correta quase sempre envolve seções."
+    },
+    {
+      "title": "Passo 4 — Cabeçalho/rodapé com numeração correta",
+      "body": "No corpo (Seção 2):\n- rodapé com “Página X de Y”\n\nNa capa (Seção 1):\n- sem número\n\nCuidados:\n- desligar “Vincular ao Anterior” quando necessário\n\nRegra:\n- numeração digitada manualmente é proibida em documento profissional."
+    },
+    {
+      "title": "Passo 5 — Escrever o conteúdo usando títulos (estrutura)",
+      "body": "Agora você cria os capítulos.\n\nChecklist:\n- cada capítulo principal = Título 1\n- cada subcapítulo = Título 2\n- parágrafos = Normal\n- listas = lista de verdade (marcador/numeração)\n\nRegra:\n- se o Painel de Navegação mostra a estrutura certinha, você está indo bem."
+    },
+    {
+      "title": "Passo 6 — Inserir pelo menos 1 tabela e 1 figura com legenda",
+      "body": "Requisitos:\n\n- 1 tabela (ex.: “Tabela 1 — Checklist de separação”)\n- 1 imagem/print (ex.: “Figura 1 — Tela do sistema”)\n\nFaça:\n- inserir legenda automática\n- depois, no texto, inserir referência cruzada\n\nExemplo:\n“Conforme a Tabela 1...”\n“Como mostrado na Figura 1...”\n\nRegra:\n- legenda + referência cruzada = documento que se mantém sozinho."
+    },
+    {
+      "title": "Passo 7 — Gerar sumário automático",
+      "body": "Depois que os títulos existem:\n- Referências → Sumário → Automático\n\nDica:\n- sumário normalmente fica após a capa.\n- use quebra de página quando necessário.\n\nRegra:\n- sumário automático só funciona bem com estilos."
+    },
+    {
+      "title": "Passo 8 — Revisão e limpeza (versão final)",
+      "body": "Se você usou comentários/Track Changes:\n- aceite/rejeite alterações\n- remova/resolva comentários\n\nRitual:\n- Ctrl+A → atualizar campos\n- conferir sumário\n- conferir referências cruzadas\n- conferir paginação\n\nRegra:\n- final = limpo + atualizado."
+    },
+    {
+      "title": "Passo 9 — Acessibilidade e PDF",
+      "body": "Antes do PDF:\n- verificar títulos com estilos\n- listas reais\n- alt text na imagem (se fizer sentido)\n- contraste legível\n\nDepois:\n- exportar/salvar como PDF\n\nRegra:\n- PDF final deve refletir exatamente o documento atualizado."
+    },
+    {
+      "title": "Critérios de sucesso (autoavaliação)",
+      "body": "Seu documento está “aprovado” se:\n\n1) Títulos aparecem no Painel de Navegação\n2) Sumário atualiza páginas corretamente\n3) Capa não tem numeração; corpo tem\n4) Existe 1 figura com legenda + referência cruzada\n5) Existe 1 tabela com legenda + referência cruzada\n6) Estilos mantêm consistência (Normal/Títulos)\n7) Ctrl+A atualizar campos não quebra nada\n8) PDF final está limpo (sem marcações)\n\nSe isso tudo acontece, você domina o fluxo profissional."
+    },
+    {
+      "title": "Mini prática (60–90 min) — execução do projeto",
+      "body": "Faça o documento completo seguindo os passos.\n\nMeta mínima:\n- capa\n- sumário\n- 7 capítulos (Título 1)\n- pelo menos 4 subcapítulos (Título 2)\n- 1 tabela + legenda + referência cruzada\n- 1 imagem + legenda + referência cruzada\n- paginação correta com seções\n- exportar PDF final\n\nObjetivo:\n- juntar tudo em um único trabalho real."
+    },
+    {
+      "title": "Resumo do curso (o que você domina agora)",
+      "body": "- Você sabe formatar sem gambiarra\n- Controla página, seções, cabeçalho/rodapé\n- Usa estilos para estrutura\n- Gera sumário automático\n- Usa legendas e referências cruzadas\n- Faz revisão com comentários/Track Changes\n- Colabora com versões\n- Exporta PDF final com checklist\n\nSe quiser, você pode me pedir:\n- um modelo pronto de documento longo (estrutura)\n- um exercício extra focado em seções/numeração (o ponto mais difícil)"
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 30 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O projeto final serve para:",
+        "options": [
+          { "key": "A", "text": "Juntar estilos + seções + sumário em um documento longo profissional" },
+          { "key": "B", "text": "Aprender a fazer planilhas no Excel" }
+        ],
+        "answer": "A",
+        "explain": "É a integração de tudo que você aprendeu no curso de Word."
+      },
+      {
+        "id": 2,
+        "question": "Sumário automático depende principalmente de:",
+        "options": [
+          { "key": "A", "text": "Títulos marcados com estilos (Título 1/2/3)" },
+          { "key": "B", "text": "Títulos em negrito manual" }
+        ],
+        "answer": "A",
+        "explain": "Estilos dão estrutura para o Word montar o índice."
+      },
+      {
+        "id": 3,
+        "question": "Para capa sem número e corpo com número, você usa:",
+        "options": [
+          { "key": "A", "text": "Seções (com quebras de seção)" },
+          { "key": "B", "text": "Vários Enter até a página ficar certa" }
+        ],
+        "answer": "A",
+        "explain": "Seções permitem cabeçalho/rodapé e numeração diferentes."
+      },
+      {
+        "id": 4,
+        "question": "“Página X de Y” deve ser feito com:",
+        "options": [
+          { "key": "A", "text": "Campos automáticos (não digitado na mão)" },
+          { "key": "B", "text": "Números digitados manualmente em cada página" }
+        ],
+        "answer": "A",
+        "explain": "Campos atualizam automaticamente quando páginas mudam."
+      },
+      {
+        "id": 5,
+        "question": "Legenda e referência cruzada são importantes porque:",
+        "options": [
+          { "key": "A", "text": "Mantêm figura/tabela e citações internas atualizadas" },
+          { "key": "B", "text": "Só servem para enfeitar o documento" }
+        ],
+        "answer": "A",
+        "explain": "Evita ter que renumerar e corrigir tudo manualmente."
+      },
+      {
+        "id": 6,
+        "question": "Boa prática ao finalizar é:",
+        "options": [
+          { "key": "A", "text": "Ctrl+A e atualizar campos antes do PDF" },
+          { "key": "B", "text": "Exportar PDF sem atualizar nada" }
+        ],
+        "answer": "A",
+        "explain": "Isso garante sumário, paginação e referências corretas."
+      },
+      {
+        "id": 7,
+        "question": "Estilos ajudam porque:",
+        "options": [
+          { "key": "A", "text": "Criam consistência e permitem mudar o documento todo de uma vez" },
+          { "key": "B", "text": "Fazem o Word abrir mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "O ganho real é padrão e manutenção fácil."
+      },
+      {
+        "id": 8,
+        "question": "A versão final profissional deve estar:",
+        "options": [
+          { "key": "A", "text": "Sem comentários e sem alterações pendentes" },
+          { "key": "B", "text": "Cheia de marcações e comentários" }
+        ],
+        "answer": "A",
+        "explain": "Final geralmente precisa estar limpo para entrega."
+      },
+      {
+        "id": 9,
+        "question": "Um critério de sucesso do projeto é:",
+        "options": [
+          { "key": "A", "text": "Títulos aparecem no Painel de Navegação e sumário funciona" },
+          { "key": "B", "text": "Você usou muitas cores diferentes no texto" }
+        ],
+        "answer": "A",
+        "explain": "Isso prova estrutura correta e uso de estilos."
+      },
+      {
+        "id": 10,
+        "question": "Exportar para PDF deve ser feito depois de:",
+        "options": [
+          { "key": "A", "text": "Atualizar campos e conferir tudo" },
+          { "key": "B", "text": "Esconder marcações sem aceitar/rejeitar" }
+        ],
+        "answer": "A",
+        "explain": "PDF final deve refletir documento atualizado e limpo."
+      }
+    ]
+  },
+  "extra": {
+    "modelProjectChecklist": "Projeto final — checklist (cola)\n\nEstrutura:\n- Título 1/2 aplicados corretamente\n- Painel de Navegação mostrando capítulos\n\nSeções e numeração:\n- Seção 1: capa (sem número)\n- Seção 2: corpo (Página X de Y)\n- “Vincular ao Anterior” ajustado quando necessário\n\nConteúdo obrigatório:\n- 1 tabela + legenda + referência cruzada\n- 1 imagem + legenda + referência cruzada\n- listas reais (não hífen)\n\nSumário:\n- Referências → Sumário automático\n\nFinalização:\n1) Remover comentários\n2) Aceitar/rejeitar alterações\n3) Ctrl+A → atualizar campos\n4) Verificar acessibilidade (alt text, estrutura)\n5) Exportar PDF final\n"
+  }
+}

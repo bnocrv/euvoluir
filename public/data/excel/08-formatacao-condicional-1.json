@@ -1,0 +1,168 @@
+{
+  "id": "08-formatacao-condicional-1",
+  "title": "Aula 08 — Formatação condicional 1: regras prontas (cores, ícones e destaques)",
+  "steps": [
+    {
+      "title": "O que é formatação condicional (bem simples)",
+      "body": "Formatação condicional é quando o Excel muda a aparência de uma célula **automaticamente**, baseado em uma regra.\n\nExemplo:\n- Se o valor for menor que 0 → pinta de vermelho\n- Se for maior que 1000 → pinta de verde\n\nPense assim:\n- É um “semáforo” que o Excel acende sozinho.\n\nRegra:\n- Formatação condicional é para **enxergar padrões e problemas rápido**."
+    },
+    {
+      "title": "Onde fica (caminho no Excel)",
+      "body": "Você encontra em:\n- **Página Inicial → Formatação Condicional**\n\nLá tem:\n- regras prontas\n- barras de dados\n- escalas de cor\n- conjuntos de ícones\n- gerenciar regras\n\nRegra:\n- Primeiro você seleciona o intervalo, depois cria a regra."
+    },
+    {
+      "title": "Destaque de células (regras prontas mais usadas)",
+      "body": "As regras mais comuns são:\n\n- **Maior que / Menor que**\n- **Entre**\n- **Igual a**\n- **Texto que contém**\n- **Data ocorrendo** (hoje, ontem, próximos 7 dias)\n- **Valores duplicados**\n\nExemplos reais:\n- estoque abaixo do mínimo\n- vendas acima da meta\n- pedidos duplicados\n\nRegra:\n- comece com regras prontas antes de usar fórmulas (aula 09)."
+    },
+    {
+      "title": "Duplicados (um dos usos mais práticos)",
+      "body": "Como destacar duplicados:\n\n1) selecione a coluna (ex.: lista de CPF, pedido, código)\n2) Página Inicial → Formatação Condicional\n3) **Regras de Realce → Valores Duplicados**\n\nO Excel marca duplicados automaticamente.\n\nRegra:\n- isso é ótimo para auditoria e limpeza de dados."
+    },
+    {
+      "title": "Barras de dados (visual tipo “medidor”)",
+      "body": "Barras de dados desenham uma barra dentro da célula proporcional ao valor.\n\nComo usar:\n- selecione os números\n- Formatação Condicional → **Barras de Dados**\n\nQuando é útil:\n- comparar volumes (vendas, quantidades)\n\nRegra:\n- barra de dados é comparação rápida sem gráfico."
+    },
+    {
+      "title": "Escalas de cor (mapa de calor simples)",
+      "body": "Escala de cor pinta as células do menor para o maior.\n\nComo usar:\n- selecione o intervalo\n- Formatação Condicional → **Escalas de Cor**\n\nQuando é útil:\n- notas, desempenho, ranking\n\nCuidado:\n- se tiver valores muito fora do padrão, eles “dominarem” o mapa.\n\nRegra:\n- use escala de cor quando os valores têm a mesma unidade e fazem sentido comparar."
+    },
+    {
+      "title": "Conjunto de ícones (setinhas e semáforos)",
+      "body": "Ícones são bons para status:\n- setas (↑ → ↓)\n- semáforos\n- bandeiras\n\nComo usar:\n- selecione números\n- Formatação Condicional → **Conjuntos de Ícones**\n\nUso típico:\n- atingimento de meta\n- nível de estoque\n- SLA (no prazo / atenção / atrasado)\n\nRegra:\n- ícones são para leitura rápida, mas precisam de regra coerente."
+    },
+    {
+      "title": "A regra mais importante: a seleção (aplica onde?)",
+      "body": "Formatação condicional depende do intervalo selecionado.\n\nErro comum:\n- você seleciona só uma célula e aplica\n- depois acha que “não funciona” na coluna toda\n\nRegra:\n- sempre selecione o intervalo completo antes de criar a regra.\n\nDica:\n- se for coluna com dados variáveis, selecione uma área maior (ex.: A2:A500) ou use Tabela (Ctrl+T) depois."
+    },
+    {
+      "title": "Gerenciar regras (onde você corrige bagunça)",
+      "body": "Se ficar confuso, vá em:\n- Formatação Condicional → **Gerenciar Regras**\n\nLá você consegue:\n- ver todas as regras\n- mudar intervalo\n- editar\n- apagar\n- mudar prioridade\n\nRegra:\n- quando tiver mais de 2 regras, gerenciar regras vira obrigatório."
+    },
+    {
+      "title": "Ordem e prioridade (quando várias regras brigam)",
+      "body": "Se duas regras se aplicam à mesma célula, pode haver conflito.\n\nNo Gerenciar Regras:\n- você pode mudar a ordem\n- e marcar “Parar se Verdadeiro” (Stop If True) em alguns cenários\n\nRegra:\n- regra de alerta (vermelho) geralmente deve ter prioridade sobre regra “bonita”."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Aplicar no intervalo errado\n- solução: Gerenciar Regras e ajustar\n\n2) Copiar/colar e trazer formatação condicional escondida\n- solução: limpar regras ou colar valores\n\n3) Exagerar nas cores\n- vira carnaval e ninguém entende\n\n4) Usar ícones sem critério\n- ícone tem que significar algo\n\nRegra:\n- use pouca cor, com significado claro."
+    },
+    {
+      "title": "Mini prática (30 minutos) — semáforo de estoque e auditoria",
+      "body": "Monte uma tabela com colunas:\n- Produto | Estoque | Mínimo\n\nPreencha 10 itens.\n\n1) Regra 1 (alerta):\n- selecione Estoque (ex.: B2:B11)\n- Formatação Condicional → Regras de Realce → **Menor que**\n- coloque o valor 5 (ou use seu mínimo padrão)\n- escolha um destaque vermelho\n\n2) Regra 2 (duplicados):\n- selecione Produto (A2:A11)\n- Regras de Realce → **Valores Duplicados**\n\n3) Barra de dados:\n- aplique em Estoque para comparar visualmente\n\n4) Vá em Gerenciar Regras e confira se está tudo no intervalo certo.\n\nObjetivo:\n- aprender regras prontas + gestão de regras."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Formatação condicional muda aparência com base em regras\n- Regras prontas: maior/menor/entre/duplicados/texto/data\n- Barras de dados, escalas de cor e ícones ajudam leitura rápida\n- Seleção correta do intervalo é a parte mais importante\n- Gerenciar Regras é onde você ajusta, apaga e organiza prioridade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 08 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Formatação condicional serve para:",
+        "options": [
+          { "key": "A", "text": "Mudar automaticamente a aparência com base em uma regra" },
+          { "key": "B", "text": "Apagar células automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ela destaca padrões e problemas sem você formatar manualmente."
+      },
+      {
+        "id": 2,
+        "question": "O caminho comum é:",
+        "options": [
+          { "key": "A", "text": "Página Inicial → Formatação Condicional" },
+          { "key": "B", "text": "Inserir → Cabeçalho" }
+        ],
+        "answer": "A",
+        "explain": "Ela fica na guia Página Inicial."
+      },
+      {
+        "id": 3,
+        "question": "Um erro comum é:",
+        "options": [
+          { "key": "A", "text": "Aplicar a regra no intervalo errado" },
+          { "key": "B", "text": "Usar o Excel com teclado" }
+        ],
+        "answer": "A",
+        "explain": "Se o intervalo estiver errado, parece que “não funciona”."
+      },
+      {
+        "id": 4,
+        "question": "Valores Duplicados é útil para:",
+        "options": [
+          { "key": "A", "text": "Auditar listas e achar itens repetidos" },
+          { "key": "B", "text": "Criar gráficos 3D" }
+        ],
+        "answer": "A",
+        "explain": "É uma regra pronta ótima para limpeza."
+      },
+      {
+        "id": 5,
+        "question": "Barras de dados servem para:",
+        "options": [
+          { "key": "A", "text": "Comparar valores visualmente sem gráfico" },
+          { "key": "B", "text": "Trocar o formato do arquivo" }
+        ],
+        "answer": "A",
+        "explain": "A barra fica proporcional ao valor na célula."
+      },
+      {
+        "id": 6,
+        "question": "Escala de cor é:",
+        "options": [
+          { "key": "A", "text": "Um mapa de calor do menor ao maior" },
+          { "key": "B", "text": "Um tipo de fórmula" }
+        ],
+        "answer": "A",
+        "explain": "Ela pinta com gradiente para destacar extremos."
+      },
+      {
+        "id": 7,
+        "question": "Conjuntos de ícones são úteis para:",
+        "options": [
+          { "key": "A", "text": "Status (bom/ok/ruim) e leitura rápida" },
+          { "key": "B", "text": "Converter Excel em PDF" }
+        ],
+        "answer": "A",
+        "explain": "Ícones funcionam como semáforo quando a regra é bem definida."
+      },
+      {
+        "id": 8,
+        "question": "Antes de criar a regra, você deve:",
+        "options": [
+          { "key": "A", "text": "Selecionar o intervalo correto" },
+          { "key": "B", "text": "Fechar o arquivo" }
+        ],
+        "answer": "A",
+        "explain": "A regra se aplica ao que está selecionado."
+      },
+      {
+        "id": 9,
+        "question": "Para editar/apagar regras, você usa:",
+        "options": [
+          { "key": "A", "text": "Gerenciar Regras" },
+          { "key": "B", "text": "Salvar como" }
+        ],
+        "answer": "A",
+        "explain": "Gerenciar Regras é o painel de controle das condicionais."
+      },
+      {
+        "id": 10,
+        "question": "Boa prática em formatação condicional é:",
+        "options": [
+          { "key": "A", "text": "Usar poucas cores com significado claro" },
+          { "key": "B", "text": "Usar todas as cores possíveis" }
+        ],
+        "answer": "A",
+        "explain": "Excesso de cor vira ruído e atrapalha leitura."
+      }
+    ]
+  },
+  "extra": {
+    "receitaSemaforoSimples": "Receita: semáforo simples (estoque)\n\n- Menor que X → vermelho (alerta)\n- Entre X e Y → amarelo (atenção)\n- Maior que Y → verde (ok)\n\nDica:\nComece com regras prontas. Fórmula condicional vem na próxima aula.",
+    "atalhoMental": "Atalho mental\n\n1) Selecione intervalo\n2) Crie a regra\n3) Confira em Gerenciar Regras\n\nSe algo falhar, quase sempre é o intervalo."
+  }
+}

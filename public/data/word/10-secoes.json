@@ -1,0 +1,163 @@
+{
+  "id": "10-secoes",
+  "title": "Aula 10 — Seções: quando usar e como separar formatos no mesmo arquivo",
+  "steps": [
+    {
+      "title": "O que são seções (explicação bem simples)",
+      "body": "Seção é como se o documento fosse dividido em “blocos independentes”.\n\nCada seção pode ter configurações próprias, como:\n- orientação (retrato/paisagem)\n- margens\n- cabeçalho e rodapé\n- numeração de páginas\n- colunas\n\nPense assim:\n- **Quebra de página** muda de página.\n- **Quebra de seção** muda de “configuração”."
+    },
+    {
+      "title": "Quando você PRECISA usar seções (casos reais)",
+      "body": "Você precisa de seções quando quer algo diferente em uma parte do documento.\n\nCasos clássicos:\n1) Uma página no meio em **paisagem** para uma tabela larga\n2) Capa sem número e o resto com numeração\n3) Cabeçalho diferente por capítulo\n4) Documento com uma parte em **duas colunas** (tipo revista)\n\nRegra:\n- se você tentou mudar Layout e “bagunçou o documento inteiro”, faltou seção."
+    },
+    {
+      "title": "Tipos de quebra de seção (os que mais importam)",
+      "body": "O Word costuma oferecer:\n\n- **Próxima página**: começa a nova seção na página seguinte (mais usado)\n- **Contínua**: muda a seção no meio da página (útil para colunas)\n- (Existem outras, mas essas duas resolvem a maioria)\n\nRegra prática:\n- para mudar orientação/margem em uma parte: use **Próxima página**."
+    },
+    {
+      "title": "Quebra de página vs quebra de seção (não confunda)",
+      "body": "Diferença direta:\n\n- **Quebra de página** (Ctrl+Enter)\n  - só pula para outra página\n  - não cria configurações separadas\n\n- **Quebra de seção**\n  - cria um “novo bloco” com configurações próprias\n\nExemplo:\n- você quer 1 página em paisagem.\nSe usar só quebra de página e mudar para paisagem, pode virar o documento inteiro.\nCom seção, só aquela parte muda."
+    },
+    {
+      "title": "Como inserir uma quebra de seção",
+      "body": "Caminho comum:\n- **Layout → Quebras → Quebras de seção**\n\nEscolha:\n- Próxima página (mais comum)\n- Contínua (casos específicos)\n\nDica:\n- depois de inserir, ative o botão **¶** para enxergar a quebra."
+    },
+    {
+      "title": "Exemplo clássico: só 1 página em paisagem no meio",
+      "body": "Você precisa de 3 partes:\n\n1) Seção A (retrato)\n2) Seção B (paisagem) — a página da tabela\n3) Seção C (retrato) — volta ao normal\n\nPassos (conceito):\n- coloque uma quebra de seção antes da página que vai virar paisagem\n- coloque outra quebra de seção depois\n- mude a orientação só dentro da Seção B\n\nRegra:\n- para “isolar” uma parte, você usa 2 quebras de seção."
+    },
+    {
+      "title": "Cabeçalho/rodapé em seções (o ponto que mais confunde)",
+      "body": "Quando você cria uma nova seção, o Word pode ligar os cabeçalhos/rodapés.\n\nExiste uma opção chamada (normalmente):\n- **Vincular ao Anterior** (ou “Link to Previous”)\n\nSe estiver ligado:\n- mudar o cabeçalho da seção muda também a anterior.\n\nSe desligar:\n- cada seção pode ter seu próprio cabeçalho/rodapé.\n\nRegra:\n- se você quer cabeçalho diferente por seção, desligue “Vincular ao Anterior”."
+    },
+    {
+      "title": "Numeração de páginas por seção (começar em 1 ou continuar)",
+      "body": "Em documentos profissionais, é comum:\n- capa sem número\n- numeração aparecer depois\n\nCom seções você controla:\n- continuar numeração\n- reiniciar em 1\n\nRegra:\n- se a numeração ficou estranha, verifique:\n  - seções\n  - vincular ao anterior\n  - formato de número de página (continuar/reiniciar)"
+    },
+    {
+      "title": "Como identificar seções (use as marcas ¶)",
+      "body": "Sem marcas, você não enxerga as seções.\n\nAtive:\n- **Página Inicial → ¶**\n\nVocê vai ver algo como:\n- “Quebra de seção (Próxima página)”\n\nDica:\n- quando o documento está “maluco”, 90% das vezes é quebra a mais ou a menos."
+    },
+    {
+      "title": "Erros comuns com seções",
+      "body": "1) Inserir só 1 quebra de seção e esquecer a segunda (a parte não fica isolada).\n2) Mudar cabeçalho e afetar tudo porque “Vincular ao Anterior” está ligado.\n3) Confundir quebra de página com quebra de seção.\n4) Apagar quebras sem entender (e perder o layout).\n\nRegra:\n- sempre trabalhe com ¶ ligado quando estiver mexendo com seções."
+    },
+    {
+      "title": "Mini prática (20 minutos) — retrato → paisagem → retrato",
+      "body": "Faça assim:\n\n1) Crie um documento com 3 páginas (use Ctrl+Enter duas vezes).\n2) Clique no final da página 1.\n3) Layout → Quebras → Seção (Próxima página).\n4) Clique no final da página 2.\n5) Layout → Quebras → Seção (Próxima página).\n\nAgora:\n6) Clique em qualquer lugar da página 2.\n7) Layout → Orientação → **Paisagem**.\n\nResultado esperado:\n- página 1: retrato\n- página 2: paisagem\n- página 3: retrato\n\n8) Ative ¶ e confirme as quebras.\n\nObjetivo:\n- entender seções na prática (o caso mais útil)."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Seções permitem formatos diferentes no mesmo arquivo\n- Quebra de seção cria “blocos” com configurações próprias\n- Para isolar uma parte: geralmente você usa 2 quebras de seção\n- Cabeçalho/rodapé por seção: cuidado com “Vincular ao Anterior”\n- Use ¶ para enxergar e controlar o layout\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 10 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Seções servem para:",
+        "options": [
+          { "key": "A", "text": "Permitir configurações diferentes em partes do documento" },
+          { "key": "B", "text": "Trocar a cor do mouse" }
+        ],
+        "answer": "A",
+        "explain": "Seções criam blocos independentes (margem, orientação, cabeçalho...)."
+      },
+      {
+        "id": 2,
+        "question": "Quebra de página (Ctrl+Enter) faz:",
+        "options": [
+          { "key": "A", "text": "Pula para a próxima página sem mudar configurações" },
+          { "key": "B", "text": "Cria uma nova seção com configurações separadas" }
+        ],
+        "answer": "A",
+        "explain": "Quebra de página só muda a página; seção muda as configurações."
+      },
+      {
+        "id": 3,
+        "question": "Para ter só 1 página em paisagem no meio, normalmente você precisa de:",
+        "options": [
+          { "key": "A", "text": "Duas quebras de seção (antes e depois da página)" },
+          { "key": "B", "text": "Apertar Enter muitas vezes" }
+        ],
+        "answer": "A",
+        "explain": "Uma seção isolada normalmente exige uma quebra antes e outra depois."
+      },
+      {
+        "id": 4,
+        "question": "“Quebra de seção (Próxima página)” é usada quando:",
+        "options": [
+          { "key": "A", "text": "Você quer começar uma nova seção na página seguinte" },
+          { "key": "B", "text": "Você quer apagar o documento inteiro" }
+        ],
+        "answer": "A",
+        "explain": "Ela inicia a nova seção já na página seguinte."
+      },
+      {
+        "id": 5,
+        "question": "Se ao mudar o cabeçalho da seção 2 o cabeçalho da seção 1 muda também, provavelmente:",
+        "options": [
+          { "key": "A", "text": "“Vincular ao Anterior” está ligado" },
+          { "key": "B", "text": "O teclado está com Caps Lock" }
+        ],
+        "answer": "A",
+        "explain": "Link to Previous faz as seções compartilharem cabeçalho/rodapé."
+      },
+      {
+        "id": 6,
+        "question": "Se você quer cabeçalho diferente por seção, você deve:",
+        "options": [
+          { "key": "A", "text": "Desligar “Vincular ao Anterior” na seção" },
+          { "key": "B", "text": "Inserir um monte de espaços no cabeçalho" }
+        ],
+        "answer": "A",
+        "explain": "Desligar o vínculo permite cabeçalhos independentes."
+      },
+      {
+        "id": 7,
+        "question": "O botão ¶ (Mostrar/Ocultar) ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Mostra as quebras de seção e outros elementos invisíveis" },
+          { "key": "B", "text": "Transforma o texto em PDF automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Sem ¶ você não enxerga quebras, e fica difícil corrigir layout."
+      },
+      {
+        "id": 8,
+        "question": "Quebra de seção “Contínua” é útil quando:",
+        "options": [
+          { "key": "A", "text": "Você quer mudar configuração sem pular para outra página" },
+          { "key": "B", "text": "Você quer criar mais páginas em branco" }
+        ],
+        "answer": "A",
+        "explain": "Ela muda a seção no mesmo local, sem ir para a página seguinte."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum com seções é:",
+        "options": [
+          { "key": "A", "text": "Esquecer de colocar a segunda quebra para isolar a parte" },
+          { "key": "B", "text": "Usar a régua do Word" }
+        ],
+        "answer": "A",
+        "explain": "Sem a segunda quebra, a mudança pode continuar no resto do documento."
+      },
+      {
+        "id": 10,
+        "question": "Se você mudou a orientação e o documento inteiro virou paisagem, o mais provável é:",
+        "options": [
+          { "key": "A", "text": "Você não isolou a parte com seções" },
+          { "key": "B", "text": "O Word não suporta paisagem" }
+        ],
+        "answer": "A",
+        "explain": "Paisagem funciona, mas precisa estar isolada na seção correta."
+      }
+    ]
+  },
+  "extra": {
+    "modelSectionRecipe": "Receita pronta: 1 página em paisagem no meio\n\n1) No fim da página ANTERIOR:\n   Layout → Quebras → Seção (Próxima página)\n2) No fim da página que será paisagem:\n   Layout → Quebras → Seção (Próxima página)\n3) Clique na página do meio:\n   Layout → Orientação → Paisagem\n\nChecklist:\n- Ativar ¶ para ver as duas quebras\n- Se cabeçalho/rodapé mudar em tudo: desligar “Vincular ao Anterior”\n"
+  }
+}

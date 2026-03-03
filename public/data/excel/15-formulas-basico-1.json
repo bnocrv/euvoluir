@@ -1,0 +1,232 @@
+{
+    "id": "15-formulas-basico-1",
+    "title": "Aula 15 — Fórmulas do zero: operador, ordem de cálculo e erros comuns (#N/D, #VALOR!)",
+    "steps": [
+        {
+            "title": "O que é uma fórmula (bem simples)",
+            "body": "Fórmula é quando você manda o Excel **calcular** algo.\n\nToda fórmula começa com:\n- **=**\n\nExemplos:\n- `=2+2`\n- `=A1+B1`\n- `=C2*D2`\n\nRegra:\n- se não tem `=`, o Excel entende como texto/valor digitado, não como cálculo."
+        },
+        {
+            "title": "Operadores básicos (as 'contas' que o Excel entende)",
+            "body": "Os operadores mais usados:\n\n- `+` soma\n- `-` subtração\n- `*` multiplicação\n- `/` divisão\n- `^` potência\n- `%` porcentagem\n\nExemplos:\n- `=10*2` → 20\n- `=10/2` → 5\n- `=2^3` → 8\n\nRegra:\n- o Excel usa símbolos, não palavras (não é “vezes”, é `*`)."
+        },
+        {
+            "title": "Ordem de cálculo (por que o Excel às vezes 'parece errado')",
+            "body": "O Excel segue a ordem matemática:\n\n1) Parênteses\n2) Potência\n3) Multiplicação e divisão\n4) Soma e subtração\n\nExemplo:\n- `=2+3*4` → 14 (não 20)\n\nSe você quer 20:\n- `=(2+3)*4`\n\nRegra:\n- quando a conta é importante, use parênteses para deixar explícito."
+        },
+        {
+            "title": "Referências de célula (ligando com a aula anterior)",
+            "body": "Você pode usar células no lugar de números.\n\nExemplo:\n- A2 = 2\n- B2 = 3\n- C2 = `=A2+B2` → 5\n\nO poder do Excel é:\n- você muda A2 ou B2\n- e o resultado atualiza sozinho\n\nRegra:\n- fórmulas tornam a planilha “viva”."
+        },
+        {
+            "title": "Copiar fórmula (e por que referência importa)",
+            "body": "Quando você copia uma fórmula, as referências podem mudar.\n\nExemplo:\n- C2: `=A2*B2`\n- copie para C3 → vira `=A3*B3`\n\nIsso é bom para cálculo por linha.\n\nRegra:\n- se a fórmula funciona em uma linha, copiar costuma resolver o resto (com referências corretas)."
+        },
+        {
+            "title": "AutoSoma (atalho para somar rápido)",
+            "body": "Para somar um intervalo rapidamente:\n\n- selecione a célula abaixo da coluna\n- use **Alt + =** (AutoSoma)\n\nO Excel sugere o intervalo.\n\nRegra:\n- AutoSoma é ótimo, mas sempre confira se o intervalo sugerido está certo."
+        },
+        {
+            "title": "Entendendo erros (não é o Excel te odiando)",
+            "body": "Erros são mensagens úteis: o Excel está te dizendo o que aconteceu.\n\nOs mais comuns:\n- `#DIV/0!`\n- `#VALOR!`\n- `#N/D`\n- `#REF!`\n- `#NOME?`\n\nRegra:\n- aprenda a ler erro como diagnóstico."
+        },
+        {
+            "title": "Erro #DIV/0! (divisão por zero)",
+            "body": "Acontece quando você divide por zero ou por célula vazia.\n\nExemplo:\n- `=10/0` → #DIV/0!\n- `=A2/B2` e B2 está vazio → #DIV/0!\n\nComo resolver:\n- garantir que o divisor não seja 0\n- ou tratar com SEERRO (aula 17)\n\nRegra:\n- divisor não pode ser zero."
+        },
+        {
+            "title": "Erro #VALOR! (tipo errado: texto onde deveria ser número)",
+            "body": "Acontece quando o Excel tenta calcular e encontra texto.\n\nExemplo:\n- A2 = \"10 un\" (texto)\n- `=A2*2` → #VALOR!\n\nComo resolver:\n- deixar número como número (10) e unidade em outra coluna\n- ou limpar texto\n\nRegra:\n- cálculo precisa de números limpos."
+        },
+        {
+            "title": "Erro #N/D (não encontrado)",
+            "body": "Acontece muito em PROCV/PROCX (aula 20), mas pode aparecer quando algo não existe.\n\nTradução:\n- \"não achei o que você pediu\"\n\nRegra:\n- #N/D não é “quebrou”, é “não encontrou”."
+        },
+        {
+            "title": "Erro #REF! (referência quebrada)",
+            "body": "Acontece quando uma fórmula aponta para algo que foi apagado.\n\nExemplo:\n- você tinha `=A2+B2`\n- apagou a coluna B\n- vira #REF!\n\nRegra:\n- #REF! normalmente aparece após excluir linhas/colunas usadas em fórmulas."
+        },
+        {
+            "title": "Erro #NOME? (nome errado / função escrita errada)",
+            "body": "Acontece quando o Excel não entende o texto da fórmula.\n\nExemplos:\n- `=SOMAA(A1:A10)` (função errada) → #NOME?\n- `=MEUVALOR+1` (nome que não existe) → #NOME?\n\nRegra:\n- #NOME? quase sempre é erro de digitação (ou idioma da função)."
+        },
+        {
+            "title": "Mini prática (35 minutos) — treinar fórmula e entender erros",
+            "body": "Parte A — ordem de cálculo\n\n1) Em A1 digite: `=2+3*4` (veja 14)\n2) Em A2 digite: `=(2+3)*4` (veja 20)\n\nParte B — fórmulas com células\n\n1) B1=10, C1=2\n2) D1: `=B1/C1` (ok)\n3) Coloque C1=0 e veja #DIV/0!\n\nParte C — #VALOR!\n\n1) B2 digite: `10 un`\n2) C2: `=B2*2` (vai dar #VALOR!)\n3) Troque B2 para 10 e veja funcionar\n\nObjetivo:\n- entender parênteses, e reconhecer o que cada erro significa."
+        },
+        {
+            "title": "Resumo da aula",
+            "body": "- Fórmulas começam com `=`\n- Operadores: + - * / ^ %\n- Ordem: () → ^ → */ → +-\n- Alt+= faz AutoSoma\n- Erros comuns:\n  - #DIV/0! divisor zero\n  - #VALOR! tipo errado (texto)\n  - #N/D não encontrado\n  - #REF! referência quebrada\n  - #NOME? função/nome errado\n\nAgora fixe com o quiz."
+        }
+    ],
+    "quiz": {
+        "title": "Quiz (10 perguntas) — Aula 15 (Excel)",
+        "instructions": "Marque A ou B. Leia a explicação para fixar.",
+        "questions": [
+            {
+                "id": 1,
+                "question": "Uma fórmula no Excel deve começar com:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Sinal de igual (=)"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Sinal de dois pontos (:)"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Sem =, não é cálculo."
+            },
+            {
+                "id": 2,
+                "question": "O operador de multiplicação no Excel é:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "*"
+                    },
+                    {
+                        "key": "B",
+                        "text": "x"
+                    }
+                ],
+                "answer": "A",
+                "explain": "O Excel usa * para multiplicar."
+            },
+            {
+                "id": 3,
+                "question": "O Excel calcula `=2+3*4` como:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "14"
+                    },
+                    {
+                        "key": "B",
+                        "text": "20"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Multiplicação vem antes da soma."
+            },
+            {
+                "id": 4,
+                "question": "Para forçar 20 em (2+3)*4, você usa:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Parênteses"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Espaços"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Parênteses mudam a prioridade."
+            },
+            {
+                "id": 5,
+                "question": "Alt + = serve para:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "AutoSoma"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Fechar o Excel"
+                    }
+                ],
+                "answer": "A",
+                "explain": "É um atalho rápido para somar."
+            },
+            {
+                "id": 6,
+                "question": "#DIV/0! significa:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Divisão por zero (ou divisor vazio)"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Nome de função errado"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Dividir por 0 gera esse erro."
+            },
+            {
+                "id": 7,
+                "question": "#VALOR! normalmente acontece quando:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Há texto onde deveria haver número"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Há número demais na célula"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Texto quebra operações matemáticas."
+            },
+            {
+                "id": 8,
+                "question": "#REF! normalmente significa:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Referência apagada/quebrada"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Número não encontrado"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Acontece ao excluir células/colunas usadas na fórmula."
+            },
+            {
+                "id": 9,
+                "question": "#NOME? geralmente é:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Função escrita errada ou nome desconhecido"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Erro de divisão"
+                    }
+                ],
+                "answer": "A",
+                "explain": "O Excel não reconhece o nome digitado."
+            },
+            {
+                "id": 10,
+                "question": "Uma boa regra ao ver erro é:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Interpretar o erro como diagnóstico do problema"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Apagar a planilha inteira"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Erros mostram o que precisa corrigir."
+            }
+        ]
+    },
+    "extra": {
+        "tabelaErros": "Mapa rápido de erros\n\n- #DIV/0!  → divisão por zero\n- #VALOR!  → tipo errado (texto em conta)\n- #N/D     → não encontrado\n- #REF!    → referência quebrada\n- #NOME?   → nome/função errado\n\nDica:\nQuando ver erro, pergunte: 'o que eu pedi e por que não dá para fazer?'",
+        "receitaParenteses": "Receita: usar parênteses sem medo\n\nSe a conta é importante, deixe explícito:\n- Sem parênteses: =A+B*C\n- Com parênteses: =(A+B)*C\n\nIsso evita interpretação errada e facilita manutenção."
+    }
+}

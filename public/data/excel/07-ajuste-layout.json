@@ -1,0 +1,168 @@
+{
+  "id": "07-ajuste-layout",
+  "title": "Aula 07 — Ajuste de planilha: larguras, alturas, quebra de linha e alinhamento",
+  "steps": [
+    {
+      "title": "Objetivo da aula (deixar legível e profissional)",
+      "body": "Hoje você vai aprender a fazer sua planilha ficar:\n- fácil de ler\n- bem alinhada\n- com cara de documento profissional\n\nVocê vai dominar:\n- ajustar largura/altura\n- AutoAjuste\n- quebrar linha dentro da célula\n- alinhamento e orientação\n\nRegra:\n- planilha boa não é só cálculo: é **comunicação**."
+    },
+    {
+      "title": "Largura de coluna e altura de linha (o básico)",
+      "body": "Colunas e linhas têm tamanho.\n\nComo ajustar com o mouse:\n- coloque o mouse na borda entre letras (A|B)\n- arraste para aumentar/diminuir\n\nMesma ideia para linhas:\n- borda entre números (1|2)\n\nRegra:\n- ajuste tamanho para caber o conteúdo sem cortar."
+    },
+    {
+      "title": "AutoAjuste (o jeito mais rápido de arrumar)",
+      "body": "AutoAjuste é quando o Excel ajusta sozinho.\n\nComo fazer:\n- dê **duplo clique** na borda da coluna (A|B)\n- ele ajusta a largura para caber o maior texto\n\nPara várias colunas:\n- selecione várias colunas\n- duplo clique em qualquer borda selecionada\n\nRegra:\n- AutoAjuste é a primeira limpeza antes de formatar."
+    },
+    {
+      "title": "Quebra de linha automática (Wrap Text) — caber sem alargar",
+      "body": "Quando o texto é grande, você tem duas opções:\n\n1) aumentar a coluna\n2) quebrar a linha dentro da célula\n\nA quebra automática é:\n- **Página Inicial → Quebrar Texto Automaticamente**\n\nO Excel faz o texto “pular linha” dentro da célula e ajusta a altura.\n\nRegra:\n- para títulos/observações longas, Wrap Text é melhor do que colunas gigantes."
+    },
+    {
+      "title": "Quebra de linha manual dentro da célula (atalho)",
+      "body": "Para pular linha dentro da mesma célula:\n- **Alt + Enter**\n\nExemplo em A1:\n\"Endereço:\" (Alt+Enter)\n\"Rua X, 123\"\n\nRegra:\n- Alt+Enter é perfeito para notas e cabeçalhos."
+    },
+    {
+      "title": "Alinhamento (horizontal e vertical) — o que muda na leitura",
+      "body": "Na guia Página Inicial você controla alinhamento:\n\nHorizontal:\n- esquerda\n- centro\n- direita\n\nVertical:\n- topo\n- meio\n- baixo\n\nBoas práticas:\n- texto: geralmente à esquerda\n- números: geralmente à direita\n- títulos: centro (com moderação)\n\nRegra:\n- alinhamento consistente dá cara profissional."
+    },
+    {
+      "title": "Mesclar células (cuidado! quando usar e quando evitar)",
+      "body": "Mesclar junta várias células em uma.\n\nIsso parece útil para título, mas tem um problema:\n- atrapalha filtros\n- atrapalha tabelas\n- atrapalha copiar/colar\n\nAlternativa melhor para título em várias colunas:\n- **Centralizar na Seleção** (vamos fazer no Ctrl+1)\n\nRegra:\n- evite mesclar em tabelas de dados.\n- se for usar, use só em títulos e com cuidado."
+    },
+    {
+      "title": "Centralizar na seleção (melhor que mesclar para títulos)",
+      "body": "Para ter um título “no meio” sem mesclar:\n\n1) selecione as células do título (ex.: A1:E1)\n2) Ctrl+1 (Formatar Células)\n3) guia Alinhamento\n4) Horizontal: **Centralizar na seleção**\n\nVantagem:\n- visual igual ao mesclar\n- mas não quebra a tabela\n\nRegra:\n- título bonito sem estragar o arquivo."
+    },
+    {
+      "title": "Orientação do texto (girar texto para cabeçalho curto)",
+      "body": "Às vezes você tem cabeçalho comprido e coluna estreita.\n\nVocê pode:\n- girar o texto (45°, 90°)\n\nCaminho:\n- Página Inicial → Alinhamento → Orientação\n\nRegra:\n- use rotação para cabeçalhos, não para dados."
+    },
+    {
+      "title": "Recursos rápidos de leitura (congelar e destacar cabeçalho)",
+      "body": "Quando a planilha é grande, você quer o cabeçalho sempre visível.\n\nRecurso:\n- **Exibir → Congelar Painéis**\n\nExemplo:\n- congelar a primeira linha (cabeçalho)\n\nRegra:\n- planilha de dados sem cabeçalho fixo vira sofrimento."
+    },
+    {
+      "title": "Erros comuns de layout (e como evitar)",
+      "body": "1) Colunas estreitas com #######\n- isso é falta de espaço (normalmente em datas/valores)\n\n2) Colunas gigantes por causa de um texto longo\n- use Wrap Text\n\n3) Mesclar dentro da tabela\n- quebra filtros e tabelas\n\n4) Cabeçalho não fixo\n- você se perde na leitura\n\nRegra:\n- layout deve facilitar leitura e não atrapalhar ferramentas."
+    },
+    {
+      "title": "Mini prática (25 minutos) — deixar uma tabela apresentável",
+      "body": "1) Crie uma tabela com colunas:\n- Data | Produto | Descrição | Qtd | Valor | Total\n\n2) Coloque uma descrição longa em algumas linhas.\n\n3) Faça:\n- AutoAjuste das colunas\n- Wrap Text na coluna Descrição\n- Alinhamento: texto à esquerda, números à direita\n- Cabeçalho em negrito e centralizado\n\n4) Congele o cabeçalho:\n- Exibir → Congelar Painéis → Congelar Linha Superior\n\n5) (Opcional) Título:\n- A1:F1 com um título\n- use Centralizar na Seleção (sem mesclar)\n\nObjetivo:\n- transformar dados crus em planilha legível."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Ajuste largura/altura para leitura\n- AutoAjuste com duplo clique\n- Wrap Text quebra texto sem alargar demais\n- Alt+Enter quebra linha manual na célula\n- Alinhamento consistente deixa profissional\n- Evite mesclar em tabelas (prefira Centralizar na Seleção)\n- Congelar painéis mantém cabeçalho visível\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 07 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "AutoAjuste de coluna é feito normalmente com:",
+        "options": [
+          { "key": "A", "text": "Duplo clique na borda da coluna (A|B)" },
+          { "key": "B", "text": "Apertar Esc" }
+        ],
+        "answer": "A",
+        "explain": "Duplo clique ajusta a largura para caber o maior conteúdo."
+      },
+      {
+        "id": 2,
+        "question": "Wrap Text (Quebrar texto automaticamente) serve para:",
+        "options": [
+          { "key": "A", "text": "Quebrar linha dentro da célula sem alargar a coluna" },
+          { "key": "B", "text": "Apagar texto automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ele faz o texto ocupar mais linhas dentro da mesma célula."
+      },
+      {
+        "id": 3,
+        "question": "Alt + Enter faz:",
+        "options": [
+          { "key": "A", "text": "Quebra de linha dentro da mesma célula" },
+          { "key": "B", "text": "Salvar o arquivo" }
+        ],
+        "answer": "A",
+        "explain": "É o atalho para pular linha dentro da célula."
+      },
+      {
+        "id": 4,
+        "question": "Mesclar células em uma tabela de dados é ruim porque:",
+        "options": [
+          { "key": "A", "text": "Atrapalha filtros, tabelas e copiar/colar" },
+          { "key": "B", "text": "Deixa a planilha mais rápida" }
+        ],
+        "answer": "A",
+        "explain": "Mesclar quebra várias ferramentas do Excel."
+      },
+      {
+        "id": 5,
+        "question": "Uma alternativa melhor para título centralizado sem mesclar é:",
+        "options": [
+          { "key": "A", "text": "Centralizar na Seleção" },
+          { "key": "B", "text": "Colocar vários espaços até ficar no meio" }
+        ],
+        "answer": "A",
+        "explain": "Centralizar na seleção dá o mesmo visual sem quebrar a estrutura."
+      },
+      {
+        "id": 6,
+        "question": "O símbolo ####### em uma célula geralmente significa:",
+        "options": [
+          { "key": "A", "text": "A coluna está estreita para mostrar o valor" },
+          { "key": "B", "text": "A célula está com vírus" }
+        ],
+        "answer": "A",
+        "explain": "Aumentar a coluna ou ajustar formato resolve."
+      },
+      {
+        "id": 7,
+        "question": "Para deixar o cabeçalho visível ao rolar a planilha, usamos:",
+        "options": [
+          { "key": "A", "text": "Exibir → Congelar Painéis" },
+          { "key": "B", "text": "Inserir → Gráfico" }
+        ],
+        "answer": "A",
+        "explain": "Congelar painéis prende linha/coluna na tela."
+      },
+      {
+        "id": 8,
+        "question": "Boa prática de alinhamento é:",
+        "options": [
+          { "key": "A", "text": "Texto à esquerda e números à direita (na maioria dos casos)" },
+          { "key": "B", "text": "Tudo no centro sempre" }
+        ],
+        "answer": "A",
+        "explain": "Esse padrão facilita leitura e comparação de números."
+      },
+      {
+        "id": 9,
+        "question": "Rotação de texto é mais indicada para:",
+        "options": [
+          { "key": "A", "text": "Cabeçalhos de coluna" },
+          { "key": "B", "text": "Todos os dados da tabela" }
+        ],
+        "answer": "A",
+        "explain": "Rotação nos dados dificulta leitura; em cabeçalhos ajuda."
+      },
+      {
+        "id": 10,
+        "question": "Qual sequência faz sentido para melhorar layout rápido?",
+        "options": [
+          { "key": "A", "text": "AutoAjuste → Wrap Text onde precisa → alinhamento → congelar cabeçalho" },
+          { "key": "B", "text": "Mesclar tudo → colocar espaços → deixar sem cabeçalho fixo" }
+        ],
+        "answer": "A",
+        "explain": "Essa ordem melhora leitura sem quebrar estrutura."
+      }
+    ]
+  },
+  "extra": {
+    "receitaLayout": "Receita rápida de layout (use sempre)\n\n1) AutoAjuste de colunas (duplo clique)\n2) Wrap Text em colunas de descrição\n3) Texto à esquerda, números à direita\n4) Cabeçalho: negrito + alinhado\n5) Exibir → Congelar Linha Superior\n\nResultado: planilha limpa e profissional.",
+    "atalhosDaAula": "Atalhos da aula\n\n- Alt + Enter: quebra linha dentro da célula\n- Ctrl + 1: Formatar Células (Centralizar na seleção fica aqui)\n\nDica:\nEvite mesclar em tabelas de dados."
+  }
+}

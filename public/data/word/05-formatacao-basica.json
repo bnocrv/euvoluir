@@ -1,0 +1,163 @@
+{
+  "id": "05-formatacao-basica",
+  "title": "Aula 05 — Formatação básica: fonte, tamanho, cor, negrito e espaçamento",
+  "steps": [
+    {
+      "title": "O que é “formatação” no Word",
+      "body": "Formatação é como o texto APARECE.\n\nExemplos:\n- fonte (tipo de letra)\n- tamanho\n- cor\n- negrito/itálico/sublinhado\n- espaçamento (linha e parágrafo)\n\nImportante:\n- formatação não muda o conteúdo (as palavras), muda a apresentação."
+    },
+    {
+      "title": "Regra nº 1: formate o mínimo necessário",
+      "body": "Documento profissional não é “enfeitado”.\n\nRegras simples:\n- poucas fontes (ideal: 1 ou 2 no máximo)\n- tamanhos coerentes (título maior, corpo menor)\n- cor quase sempre preta (ou cinza escuro)\n\nA ideia é:\n- facilitar leitura\n- passar seriedade\n- manter consistência."
+    },
+    {
+      "title": "Fonte (tipo) e tamanho: o básico que mais dá ruim",
+      "body": "Fonte é o “desenho” da letra.\n\nBoas práticas:\n- use fontes comuns e bem legíveis\n- evite fontes “diferentonas” em documento de trabalho\n\nTamanho:\n- texto normal costuma ficar entre 11 e 12\n- títulos podem ser 14, 16, 18 (depende)\n\nDica:\n- se você copiar/colar de internet, pode vir fonte diferente.\n- por isso, consistência é essencial."
+    },
+    {
+      "title": "Negrito, itálico e sublinhado (quando usar)",
+      "body": "Use cada um com intenção:\n\n- **Negrito**: destacar palavras-chave (com moderação)\n- *Itálico*: termos estrangeiros, nomes de obras, ênfase leve\n- _Sublinhado_: evite (muita gente confunde com link)\n\nRegra prática:\n- se tudo está em negrito, nada está em destaque."
+    },
+    {
+      "title": "Cor do texto (cuidado para não virar carnaval)",
+      "body": "Cor é para casos específicos:\n- destacar algo muito importante\n- avisos (ex.: vermelho para alerta)\n\nEm documento profissional:\n- 90% do texto em preto\n- use cor só quando existe um motivo\n\nDica:\n- se for imprimir, cores claras podem sumir."
+    },
+    {
+      "title": "Pincel de Formatação (copiar aparência)",
+      "body": "O Pincel de Formatação copia a formatação de um lugar e aplica em outro.\n\nUse quando:\n- um trecho ficou “certo”\n- outro trecho precisa ficar igual\n\nComo pensar:\n- é como “copiar o estilo” e colar.\n\nDica:\n- clique uma vez para aplicar uma vez\n- clique duas vezes para aplicar várias vezes (até apertar Esc)."
+    },
+    {
+      "title": "Limpar formatação (voltar ao normal)",
+      "body": "Quando a formatação fica toda confusa (muito comum ao colar texto), use:\n- **Limpar toda a formatação**\n\nIsso costuma:\n- remover fonte diferente\n- tirar negrito/itálico/sublinhado\n- voltar para o padrão do documento\n\nRegra:\n- primeiro limpe, depois formate do jeito certo."
+    },
+    {
+      "title": "Espaçamento de linha (dentro do parágrafo)",
+      "body": "Espaçamento de linha é a distância entre as linhas do texto.\n\nValores comuns:\n- 1,0 (bem junto)\n- 1,15 (muito usado)\n- 1,5 (muito usado em trabalhos)\n- 2,0 (bem espaçado)\n\nDica:\n- espaçamento maior melhora leitura.\n- mas exagero deixa o documento longo demais."
+    },
+    {
+      "title": "Espaçamento antes/depois (o jeito certo de separar blocos)",
+      "body": "Aqui está o segredo profissional:\n\nPara separar parágrafos, NÃO use ENTER extra.\nUse:\n- Espaçamento **Antes** e **Depois** do parágrafo.\n\nVantagens:\n- documento fica consistente\n- se você mudar a regra, muda tudo de uma vez\n- evita “buracos” estranhos no meio do texto"
+    },
+    {
+      "title": "Onde fica isso no Word (atalho mental)",
+      "body": "Quase tudo desta aula fica em:\n- **Página Inicial → Fonte** (fonte, tamanho, cor, negrito)\n- **Página Inicial → Parágrafo** (espaçamento, alinhamento)\n\nRegra:\n- “aparência do texto” → Página Inicial."
+    },
+    {
+      "title": "Mini prática (15 minutos) — transformar texto cru em texto limpo",
+      "body": "Faça isso:\n\n1) Digite:\nTÍTULO\nUm parágrafo de 4 linhas.\nOutro parágrafo de 4 linhas.\n\n2) Selecione o título e aplique:\n- fonte igual ao texto\n- tamanho maior (ex.: 16)\n- negrito\n\n3) No corpo do texto, defina:\n- tamanho 12 (ou 11)\n- espaçamento de linha 1,15 (ou 1,5)\n\n4) Separe os parágrafos usando:\n- espaçamento Depois (ex.: 6 pt)\n\nObjetivo:\n- aprender a separar parágrafo sem dar Enter extra."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Formatação é aparência (fonte, tamanho, cor)\n- Negrito/itálico com moderação\n- Prefira separar parágrafos com espaçamento antes/depois\n- Pincel copia aparência; Limpar formatação resolve bagunça\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 05 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Formatação no Word é:",
+        "options": [
+          { "key": "A", "text": "A aparência do texto (fonte, tamanho, cor)" },
+          { "key": "B", "text": "Trocar as palavras por sinônimos automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Formatação muda como o texto aparece, não o conteúdo em si."
+      },
+      {
+        "id": 2,
+        "question": "Boa prática profissional é:",
+        "options": [
+          { "key": "A", "text": "Usar poucas fontes e manter consistência" },
+          { "key": "B", "text": "Usar uma fonte diferente em cada parágrafo" }
+        ],
+        "answer": "A",
+        "explain": "Consistência deixa o documento mais legível e sério."
+      },
+      {
+        "id": 3,
+        "question": "Negrito deve ser usado:",
+        "options": [
+          { "key": "A", "text": "Para destacar palavras-chave com moderação" },
+          { "key": "B", "text": "Em tudo, para o texto ficar mais forte" }
+        ],
+        "answer": "A",
+        "explain": "Se tudo está em negrito, nada se destaca."
+      },
+      {
+        "id": 4,
+        "question": "Sublinhado em documento comum:",
+        "options": [
+          { "key": "A", "text": "Geralmente é melhor evitar, pode parecer link" },
+          { "key": "B", "text": "É obrigatório em qualquer texto" }
+        ],
+        "answer": "A",
+        "explain": "Sublinhado é mais usado para links/ênfase específica; não é padrão moderno."
+      },
+      {
+        "id": 5,
+        "question": "O Pincel de Formatação serve para:",
+        "options": [
+          { "key": "A", "text": "Copiar a formatação de um trecho e aplicar em outro" },
+          { "key": "B", "text": "Corrigir ortografia automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ele copia a “aparência” (fonte, tamanho, etc.)."
+      },
+      {
+        "id": 6,
+        "question": "Quando o texto colado vem todo bagunçado, uma boa ação é:",
+        "options": [
+          { "key": "A", "text": "Limpar toda a formatação e refazer do jeito certo" },
+          { "key": "B", "text": "Colar mais vezes até acertar" }
+        ],
+        "answer": "A",
+        "explain": "Limpar formatação volta ao padrão do documento."
+      },
+      {
+        "id": 7,
+        "question": "Espaçamento de linha controla:",
+        "options": [
+          { "key": "A", "text": "A distância entre as linhas dentro do parágrafo" },
+          { "key": "B", "text": "A margem da folha" }
+        ],
+        "answer": "A",
+        "explain": "Margem é configuração de página; espaçamento de linha é dentro do parágrafo."
+      },
+      {
+        "id": 8,
+        "question": "O jeito certo de separar parágrafos é:",
+        "options": [
+          { "key": "A", "text": "Usar Espaçamento Antes/Depois do parágrafo" },
+          { "key": "B", "text": "Dar vários ENTER para criar espaço" }
+        ],
+        "answer": "A",
+        "explain": "Espaçamento é consistente e não quebra o layout."
+      },
+      {
+        "id": 9,
+        "question": "Em documentos profissionais, a cor do texto costuma ser:",
+        "options": [
+          { "key": "A", "text": "Preto (ou bem escuro), com cor só quando necessário" },
+          { "key": "B", "text": "Várias cores para ficar mais bonito" }
+        ],
+        "answer": "A",
+        "explain": "Cor demais prejudica leitura e impressão."
+      },
+      {
+        "id": 10,
+        "question": "A maioria dos comandos de formatação básica fica em:",
+        "options": [
+          { "key": "A", "text": "Página Inicial (Fonte e Parágrafo)" },
+          { "key": "B", "text": "Exibir (Zoom e modos)" }
+        ],
+        "answer": "A",
+        "explain": "Página Inicial concentra fonte, parágrafo e estilos básicos."
+      }
+    ]
+  },
+  "extra": {
+    "modelStyleGuide": "Padrão simples (profissional) para a maioria dos documentos\n\nCorpo do texto:\n- Fonte: uma fonte legível (a mesma no documento todo)\n- Tamanho: 11 ou 12\n- Cor: preto\n- Espaçamento de linha: 1,15 ou 1,5\n- Espaçamento depois do parágrafo: 6 pt (ou 8 pt)\n\nTítulos:\n- Mesmo tipo de fonte do corpo\n- Tamanho maior (ex.: 16)\n- Negrito\n\nEvite:\n- muitas cores\n- sublinhado sem motivo\n- separar parágrafos com ENTER extra\n"
+  }
+}

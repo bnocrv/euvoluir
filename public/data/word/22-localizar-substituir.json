@@ -1,0 +1,167 @@
+{
+  "id": "22-localizar-substituir",
+  "title": "Aula 22 — Localizar/Substituir avançado (quebras, formatação e padrões)",
+  "steps": [
+    {
+      "title": "Por que Localizar/Substituir é uma super ferramenta",
+      "body": "Localizar/Substituir não é só “trocar uma palavra”.\n\nEm documento grande, ela serve para:\n- corrigir padrões de texto (ex.: “vc” → “você”)\n- padronizar termos (ex.: “estoque” → “Estoque”)\n- remover espaços extras\n- trocar formatação em lote\n- encontrar quebras e marcas invisíveis\n\nRegra:\n- quem domina isso evita horas de trabalho manual."
+    },
+    {
+      "title": "Atalhos essenciais (pra virar reflexo)",
+      "body": "Os dois atalhos que você vai usar o tempo todo:\n\n- **Ctrl + F** → Localizar (buscar)\n- **Ctrl + H** → Substituir\n\nDica:\n- Ctrl+F é navegação.\n- Ctrl+H é manutenção em massa."
+    },
+    {
+      "title": "Localizar: mais do que achar palavra",
+      "body": "No Localizar (Ctrl+F) você pode:\n- achar uma palavra\n- navegar entre ocorrências\n- ver uma lista de resultados\n\nBoas práticas:\n- pesquise títulos (“Conclusão”, “Procedimento”)\n- pesquise termos repetidos\n\nRegra:\n- em documento longo, buscar é mais rápido que rolar."
+    },
+    {
+      "title": "Substituir: o cuidado nº 1 (não destruir o documento)",
+      "body": "Substituir pode ser perigoso se você usar “Substituir tudo” sem pensar.\n\nRegra de segurança:\n1) primeiro use **Localizar Próxima**\n2) use **Substituir** algumas vezes\n3) só depois use **Substituir Tudo** (se tiver certeza)\n\nDica:\n- antes de substituições grandes, salve uma versão (v02)."
+    },
+    {
+      "title": "Substituir com maiúsculas/minúsculas (padronização)",
+      "body": "Você pode precisar padronizar nomes:\n- “word” → “Word”\n- “expedição” → “Expedição” (quando for nome do setor)\n\nDica:\n- em alguns casos, a busca pode considerar diferença de maiúsculas.\n\nRegra:\n- cuidado para não trocar casos onde não deveria (ex.: começo de frase já é maiúsculo)."
+    },
+    {
+      "title": "Encontrar e remover espaços duplos (muito comum)",
+      "body": "Problema clássico:\n- alguém digitou dois espaços entre palavras.\n\nSolução:\n- Localizar: dois espaços\n- Substituir por: um espaço\n\nRepita até não achar mais.\n\nRegra:\n- espaço duplo deixa documento feio e pode quebrar justificativa."
+    },
+    {
+      "title": "Substituir quebras de parágrafo e quebras de linha",
+      "body": "Aqui entra a parte “avançada” de verdade.\n\nNo Word existem marcas:\n- parágrafo (Enter)\n- quebra de linha (Shift+Enter)\n\nVocê consegue localizar/substituir essas marcas.\n\nExemplo de uso real:\n- trocar várias quebras de linha em parágrafos, ou o contrário.\n\nRegra:\n- isso é poderoso para limpar texto colado de PDF/site."
+    },
+    {
+      "title": "Substituir formatação (sem mexer nas palavras)",
+      "body": "Você pode trocar formatação em lote.\n\nExemplo:\n- encontrar tudo que está em fonte errada\n- substituir para fonte padrão\n\nOu:\n- encontrar texto em negrito\n- remover negrito\n\nRegra:\n- isso salva quando o documento está com “pedaços” diferentes."
+    },
+    {
+      "title": "Localizar formatação (ex.: tudo que está em itálico)",
+      "body": "Isso é útil para revisão:\n- achar palavras em itálico\n- achar textos marcados\n- achar estilos específicos\n\nExemplo real:\n- procurar tudo que está com cor vermelha (avisos) antes de entregar o documento.\n\nRegra:\n- revisão profissional = usar busca para achar padrões."
+    },
+    {
+      "title": "Cuidado com substituição em documentos com campos automáticos",
+      "body": "Se você tem:\n- sumário\n- referências cruzadas\n- legendas\n\nSubstituir “na marra” pode:\n- mexer em textos que o Word atualiza\n\nRegra:\n- evite mexer manualmente em áreas automáticas.\n- ajuste o conteúdo original e atualize os campos."
+    },
+    {
+      "title": "Mini prática (25 minutos) — limpeza de documento colado",
+      "body": "Faça isso:\n\n1) Cole um texto de internet (qualquer parágrafo).\n2) Agora limpe:\n- remova espaços duplos (\"  \" → \" \")\n- troque “vc” por “você” (se existir)\n\n3) Crie um título e escreva “CAPITULO” errado.\n- use substituir para trocar “CAPITULO” por “CAPÍTULO”\n\n4) Encontre um trecho e deixe em negrito.\n- use localizar por formatação (negrito) para achar.\n\nObjetivo:\n- sentir o poder de manutenção em lote."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Usar “Substituir tudo” sem testar.\n2) Trocar algo que aparece dentro de outra palavra.\n   Ex.: trocar “pro” e quebrar “produto”.\n3) Não salvar versão antes de limpeza grande.\n4) Confundir quebra de linha com parágrafo.\n\nRegra:\n- vá com calma: localizar → substituir uma → depois substituir tudo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Ctrl+F busca; Ctrl+H substitui\n- Faça substituições grandes com segurança (testar antes)\n- Dá para limpar espaços duplos e padronizar termos\n- Dá para localizar/substituir quebras e formatação\n- Ferramenta perfeita para “limpar” texto colado\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 22 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Ctrl + F serve para:",
+        "options": [
+          { "key": "A", "text": "Localizar (buscar) no documento" },
+          { "key": "B", "text": "Inserir uma tabela automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl+F é busca rápida para navegar no texto."
+      },
+      {
+        "id": 2,
+        "question": "Ctrl + H serve para:",
+        "options": [
+          { "key": "A", "text": "Substituir texto (manutenção em massa)" },
+          { "key": "B", "text": "Abrir o Painel de Navegação" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl+H abre a ferramenta de Substituir."
+      },
+      {
+        "id": 3,
+        "question": "Boa prática antes de usar “Substituir tudo” é:",
+        "options": [
+          { "key": "A", "text": "Testar com Localizar Próxima e Substituir algumas vezes" },
+          { "key": "B", "text": "Usar direto sem olhar" }
+        ],
+        "answer": "A",
+        "explain": "Isso evita estragar o documento com troca errada."
+      },
+      {
+        "id": 4,
+        "question": "Remover espaços duplos é feito substituindo:",
+        "options": [
+          { "key": "A", "text": "Dois espaços por um espaço" },
+          { "key": "B", "text": "Uma letra por duas letras" }
+        ],
+        "answer": "A",
+        "explain": "É uma limpeza comum e melhora o visual do texto justificado."
+      },
+      {
+        "id": 5,
+        "question": "Localizar/Substituir pode trabalhar com:",
+        "options": [
+          { "key": "A", "text": "Texto e também formatação" },
+          { "key": "B", "text": "Somente imagens" }
+        ],
+        "answer": "A",
+        "explain": "Você pode buscar negrito, itálico, fonte, etc."
+      },
+      {
+        "id": 6,
+        "question": "Substituir pode ser perigoso porque:",
+        "options": [
+          { "key": "A", "text": "“Substituir tudo” pode trocar coisas que você não queria" },
+          { "key": "B", "text": "Ele sempre apaga o documento" }
+        ],
+        "answer": "A",
+        "explain": "O risco é trocar ocorrências indevidas (dentro de outras palavras, por exemplo)."
+      },
+      {
+        "id": 7,
+        "question": "É possível localizar e substituir quebras (parágrafo/linha)?",
+        "options": [
+          { "key": "A", "text": "Sim, é um uso avançado para limpar texto" },
+          { "key": "B", "text": "Não, o Word não permite" }
+        ],
+        "answer": "A",
+        "explain": "É um recurso poderoso para ajustar texto colado de outras fontes."
+      },
+      {
+        "id": 8,
+        "question": "Um erro comum é substituir uma sequência curta e quebrar palavras maiores, por exemplo:",
+        "options": [
+          { "key": "A", "text": "Trocar “pro” e afetar “produto”" },
+          { "key": "B", "text": "Trocar “Word” e afetar “Word”" }
+        ],
+        "answer": "A",
+        "explain": "Por isso você deve testar e revisar antes de substituir tudo."
+      },
+      {
+        "id": 9,
+        "question": "Em documentos com sumário e referências automáticas, é melhor:",
+        "options": [
+          { "key": "A", "text": "Evitar mexer manualmente em campos automáticos e atualizar" },
+          { "key": "B", "text": "Digitar números do sumário manualmente" }
+        ],
+        "answer": "A",
+        "explain": "Campos automáticos devem ser atualizados, não editados na mão."
+      },
+      {
+        "id": 10,
+        "question": "Localizar/Substituir é especialmente útil para:",
+        "options": [
+          { "key": "A", "text": "Padronizar e corrigir um documento grande rapidamente" },
+          { "key": "B", "text": "Aumentar a memória RAM do computador" }
+        ],
+        "answer": "A",
+        "explain": "É uma ferramenta de manutenção em lote, economiza muito tempo."
+      }
+    ]
+  },
+  "extra": {
+    "modelFindReplacePlaybook": "Playbook (jeito seguro de usar Substituir)\n\n1) Salve uma versão antes (v02) se for mudança grande\n2) Ctrl+H\n3) Faça assim:\n- Localizar Próxima → Substituir (algumas vezes)\n- Só depois: Substituir Tudo (se estiver 100% seguro)\n\nLimpezas comuns:\n- \"  \" (dois espaços) → \" \" (um espaço)\n- Padronizar termos: \"word\" → \"Word\"\n\nRegra anti-desastre:\n- Cuidado com trocas que aparecem dentro de outras palavras.\n"
+  }
+}

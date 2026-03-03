@@ -1,0 +1,164 @@
+{
+  "id": "05-digitacao-selecao",
+  "title": "Aula 05 — Digitação eficiente: seleção, preenchimento automático e listas",
+  "steps": [
+    {
+      "title": "Objetivo da aula (ganhar velocidade de verdade)",
+      "body": "Hoje você vai aprender a fazer no Excel o que muita gente faz lento no mouse.\n\nVocê vai dominar:\n- seleção rápida\n- copiar/colar sem bagunça\n- preenchimento automático (a alça)\n- listas e séries (datas, números, meses)\n\nRegra:\n- Excel é produtividade. Se você digita e arrasta errado, você perde muito tempo."
+    },
+    {
+      "title": "Como digitar do jeito certo (Enter, Tab e o fluxo natural)",
+      "body": "Atalhos básicos de digitação:\n\n- **Enter**: confirma e desce\n- **Tab**: confirma e vai para a direita\n- **Shift + Enter**: confirma e sobe\n- **Shift + Tab**: confirma e vai para a esquerda\n\nRegra prática:\n- Se você está preenchendo uma tabela (linha a linha), Enter faz sentido.\n- Se está preenchendo colunas na mesma linha, Tab é mais rápido."
+    },
+    {
+      "title": "Seleção rápida (o que muda o jogo)",
+      "body": "Você não precisa selecionar arrastando sempre.\n\nSeleção simples:\n- **Shift + setas**: seleciona célula por célula\n\nSeleção por bloco:\n- **Ctrl + Shift + setas**: seleciona até o fim do bloco de dados\n\nSelecionar linha/coluna inteira:\n- **Shift + Espaço**: linha\n- **Ctrl + Espaço**: coluna\n\nSelecionar região/tabela:\n- **Ctrl + A**: seleciona a região de dados (aperta de novo para selecionar tudo)\n\nRegra:\n- Ctrl+Shift+Setas = seleção turbo."
+    },
+    {
+      "title": "Copiar, colar e recortar (comportamento que você precisa entender)",
+      "body": "Atalhos:\n- **Ctrl + C**: copiar\n- **Ctrl + X**: recortar\n- **Ctrl + V**: colar\n\nPonto importante:\n- Quando você copia, o Excel copia **conteúdo + formatação**.\n\nIsso às vezes é ruim.\n\nRegra:\n- Se você quer copiar só valores, use **Colar Especial** (já já)."
+    },
+    {
+      "title": "Colar Especial (o botão que salva sua planilha)",
+      "body": "Colar Especial existe para você escolher o que colar.\n\nOs usos mais comuns:\n\n1) **Colar valores** (tirar fórmulas)\n- você cola só o resultado\n\n2) **Colar fórmulas**\n- cola só as fórmulas\n\n3) **Colar formatos**\n- copia apenas a aparência\n\n4) **Transpor**\n- vira linha em coluna e coluna em linha\n\nCaminho:\n- botão direito → **Colar Especial**\n\nAtalho comum (Windows):\n- **Ctrl + Alt + V** abre o menu do Colar Especial\n\nRegra:\n- Se a planilha “bagunçou”, 80% das vezes foi colagem errada."
+    },
+    {
+      "title": "A alça de preenchimento (o quadradinho mágico)",
+      "body": "No canto inferior direito da célula selecionada existe um quadradinho: a **alça de preenchimento**.\n\nEla serve para:\n- copiar um valor\n- copiar uma fórmula\n- criar uma sequência (1,2,3…)\n- continuar datas (01/01, 02/01…)\n\nExemplo simples:\n- escreva 1 em A1\n- arraste para baixo\n\nO Excel pode:\n- repetir 1,1,1…\n- ou criar 1,2,3…\n\nRegra:\n- O Excel tenta adivinhar o padrão."
+    },
+    {
+      "title": "Como controlar a sequência (o truque do Ctrl)",
+      "body": "Dois comportamentos típicos:\n\n- arrastar um único número → tende a repetir\n- arrastar uma sequência (1 e 2 selecionados) → tende a continuar (3,4,5…)\n\nTruques:\n- Se você quer **continuar sequência**, digite 1 e 2, selecione os dois e arraste.\n- Se você quer **repetir** sem sequência, use Ctrl (depende da versão, mas geralmente alterna o comportamento).\n\nRegra:\n- Para sequência confiável: dê ao Excel dois exemplos (1 e 2)."
+    },
+    {
+      "title": "Preenchimento duplo clique (para copiar até o fim da tabela)",
+      "body": "Um super atalho:\n\nSe você tem uma coluna com dados ao lado:\n- escreva a fórmula\n- coloque o mouse na alça de preenchimento\n- **dê duplo clique**\n\nO Excel preenche até o fim do bloco automaticamente.\n\nRegra:\n- Isso é perfeito para tabelas grandes."
+    },
+    {
+      "title": "Listas e séries prontas (dias, meses, padrões)",
+      "body": "O Excel já conhece várias listas:\n- dias da semana\n- meses\n- datas\n\nExemplos:\n- digite “Jan” e arraste → ele completa meses\n- digite “Segunda” e arraste → ele completa dias\n\nRegra:\n- Se o Excel não completar, talvez esteja como texto diferente (ou abreviação diferente)."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Arrastar fórmula e “quebrar” referência\n- você vai entender isso melhor na aula de referências ($)\n\n2) Colar por cima e destruir formatação\n- use Colar Especial (valores ou formatos)\n\n3) Criar sequência errada (1,1,1…)\n- dê dois exemplos (1 e 2) antes de arrastar\n\n4) Não selecionar o bloco correto antes de colar\n- confira a seleção antes\n\nRegra:\n- Antes de arrastar ou colar, respire e confira o que está selecionado."
+    },
+    {
+      "title": "Mini prática (25 minutos) — treino que vira habilidade",
+      "body": "1) Crie uma tabela com colunas:\n- Data | Produto | Qtd | Valor | Total\n\n2) Preencha:\n- Data: coloque 01/03/2026 e arraste até 10/03/2026\n- Produto: escreva 3 produtos alternando\n- Qtd: crie sequência 1 a 10 (use 1 e 2 para continuar)\n- Valor: coloque valores quaisquer\n\n3) Total:\n- em E2 digite `=C2*D2`\n- duplo clique na alça para preencher até o fim\n\n4) Faça Colar Especial:\n- copie a coluna Total\n- cole como **Valores** em outro lugar\n\nObjetivo:\n- dominar alça, sequência, duplo clique e colar especial."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Enter/Tab controlam o fluxo da digitação\n- Ctrl+Shift+Setas seleciona bloco rápido\n- Colar Especial evita bagunça (Ctrl+Alt+V)\n- Alça de preenchimento copia e cria séries\n- Para sequência: dê 2 exemplos (1 e 2)\n- Duplo clique na alça preenche até o fim\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 05 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A tecla Tab normalmente faz:",
+        "options": [
+          { "key": "A", "text": "Confirma a célula e vai para a direita" },
+          { "key": "B", "text": "Apaga a célula inteira" }
+        ],
+        "answer": "A",
+        "explain": "Tab confirma e anda para a direita; Enter confirma e desce."
+      },
+      {
+        "id": 2,
+        "question": "Ctrl + Shift + setas serve para:",
+        "options": [
+          { "key": "A", "text": "Selecionar até o fim do bloco de dados" },
+          { "key": "B", "text": "Aumentar o zoom" }
+        ],
+        "answer": "A",
+        "explain": "É a seleção turbo por bloco."
+      },
+      {
+        "id": 3,
+        "question": "Shift + Espaço seleciona:",
+        "options": [
+          { "key": "A", "text": "A linha inteira" },
+          { "key": "B", "text": "A coluna inteira" }
+        ],
+        "answer": "A",
+        "explain": "Linha = Shift+Espaço; coluna = Ctrl+Espaço."
+      },
+      {
+        "id": 4,
+        "question": "Ctrl + Espaço seleciona:",
+        "options": [
+          { "key": "A", "text": "A coluna inteira" },
+          { "key": "B", "text": "A linha inteira" }
+        ],
+        "answer": "A",
+        "explain": "É o atalho para selecionar coluna."
+      },
+      {
+        "id": 5,
+        "question": "Colar Especial é importante porque:",
+        "options": [
+          { "key": "A", "text": "Permite colar só valores, só fórmulas, só formatos etc." },
+          { "key": "B", "text": "Deixa o Excel mais colorido" }
+        ],
+        "answer": "A",
+        "explain": "Ele evita colagens que bagunçam a planilha."
+      },
+      {
+        "id": 6,
+        "question": "O atalho comum para abrir Colar Especial é:",
+        "options": [
+          { "key": "A", "text": "Ctrl + Alt + V" },
+          { "key": "B", "text": "Ctrl + P" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl+Alt+V abre o menu do Colar Especial."
+      },
+      {
+        "id": 7,
+        "question": "A alça de preenchimento fica:",
+        "options": [
+          { "key": "A", "text": "No canto inferior direito da célula selecionada" },
+          { "key": "B", "text": "No menu Arquivo" }
+        ],
+        "answer": "A",
+        "explain": "É o quadradinho no canto da seleção."
+      },
+      {
+        "id": 8,
+        "question": "Para criar uma sequência 1,2,3,4… de forma confiável, é melhor:",
+        "options": [
+          { "key": "A", "text": "Digitar 1 e 2, selecionar os dois e arrastar" },
+          { "key": "B", "text": "Digitar só 1 e arrastar sem pensar" }
+        ],
+        "answer": "A",
+        "explain": "Dois exemplos ajudam o Excel a entender o padrão."
+      },
+      {
+        "id": 9,
+        "question": "O duplo clique na alça de preenchimento serve para:",
+        "options": [
+          { "key": "A", "text": "Preencher até o fim do bloco de dados ao lado" },
+          { "key": "B", "text": "Fechar o Excel" }
+        ],
+        "answer": "A",
+        "explain": "Ele copia/estende rapidamente até o fim da tabela."
+      },
+      {
+        "id": 10,
+        "question": "Um erro comum ao colar é:",
+        "options": [
+          { "key": "A", "text": "Colar por cima e destruir formatação ou fórmulas sem querer" },
+          { "key": "B", "text": "Usar Colar Especial corretamente" }
+        ],
+        "answer": "A",
+        "explain": "Colagem errada é uma das maiores causas de bagunça em planilhas."
+      }
+    ]
+  },
+  "extra": {
+    "kitAtalhos": "Kit de atalhos — Aula 05\n\nDigitação:\n- Enter (desce)\n- Tab (direita)\n\nSelecionar:\n- Ctrl + Shift + Setas (bloco)\n- Shift + Espaço (linha)\n- Ctrl + Espaço (coluna)\n\nColar:\n- Ctrl + Alt + V (Colar Especial)\n\nPreencher:\n- arrastar alça\n- duplo clique na alça (até o fim)\n",
+    "receitaColarValores": "Receita: transformar fórmula em valor\n\n1) Copie a área com fórmulas (Ctrl+C)\n2) Clique no destino\n3) Ctrl+Alt+V\n4) Escolha **Valores**\n\nQuando usar:\n- quando você quer “congelar” o resultado e não depender mais da fórmula."
+  }
+}

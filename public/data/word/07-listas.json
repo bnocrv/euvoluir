@@ -1,0 +1,163 @@
+{
+  "id": "07-listas",
+  "title": "Aula 07 — Listas: marcadores, numeração e listas multinível (do jeito certo)",
+  "steps": [
+    {
+      "title": "Por que listas importam (mais do que parece)",
+      "body": "Lista é uma das formas mais rápidas de deixar um documento claro.\n\nVocê usa listas para:\n- passos (procedimentos)\n- itens (checklists)\n- tópicos (resumos)\n- organização de regras\n\nMas tem um detalhe:\n- lista feita “na mão” (com hífen e espaços) vira bagunça.\n\nAqui você vai aprender o jeito certo."
+    },
+    {
+      "title": "3 tipos principais de lista",
+      "body": "No Word, existem 3 grupos:\n\n1) **Marcadores** (bolinhas)\n- quando a ordem NÃO importa\n\n2) **Numeração** (1, 2, 3)\n- quando a ordem importa (passos)\n\n3) **Multinível** (1, 1.1, 1.1.1)\n- quando existe hierarquia (tópicos e subtópicos)\n\nRegra simples:\n- sem ordem → marcador\n- com ordem → numeração\n- com níveis → multinível"
+    },
+    {
+      "title": "O erro clássico: fazer lista com hífen (-) e Enter",
+      "body": "Muita gente faz assim:\n- item 1\n- item 2\n\nIsso parece funcionar, mas dá problemas:\n- alinhamento fica irregular\n- copiar/colar quebra\n- não dá para mudar o estilo do conjunto\n- não vira “estrutura” (importante para sumário e organização)\n\nO certo é usar os botões de lista do Word."
+    },
+    {
+      "title": "Como criar lista com marcadores (jeito certo)",
+      "body": "Passo a passo:\n\n1) Selecione os itens (ou coloque o cursor na linha)\n2) Página Inicial → Parágrafo → **Marcadores**\n3) Digite cada item e pressione Enter para criar o próximo\n\nDica:\n- para terminar a lista, pressione Enter duas vezes (ou desligue o botão)."
+    },
+    {
+      "title": "Como criar lista numerada (quando é passo a passo)",
+      "body": "Use numeração quando a sequência importa.\n\nExemplos:\n- receita\n- procedimento\n- instruções de trabalho\n\nPasso a passo:\n- Página Inicial → Parágrafo → **Numeração**\n\nVantagem enorme:\n- se você inserir um passo no meio, o Word renumera tudo sozinho."
+    },
+    {
+      "title": "A tecla TAB e Shift+TAB nas listas (segredo dos níveis)",
+      "body": "Dentro de uma lista:\n\n- **TAB**: cria um nível abaixo (subitem)\n- **Shift + TAB**: volta um nível (sobe)\n\nExemplo mental:\n1. Item\n   a) Subitem\n      i) Sub-subitem\n\nIsso é a base de listas multinível."
+    },
+    {
+      "title": "Listas multinível (quando você precisa de hierarquia)",
+      "body": "Use multinível quando há estrutura tipo:\n\n1. Tema\n   1.1 Subtema\n   1.2 Subtema\n2. Tema\n\nEla é perfeita para:\n- documentos longos\n- manuais\n- políticas internas\n- trabalhos acadêmicos\n\nO Word tem um botão específico:\n- Página Inicial → Parágrafo → **Lista multinível**"
+    },
+    {
+      "title": "Lista multinível “do jeito certo” (pra não virar caos)",
+      "body": "Dois cuidados que evitam 90% dos problemas:\n\n1) NÃO invente formato na mão.\n   Use o botão de lista multinível.\n\n2) Não misture “marcadores” e “numeração” aleatoriamente.\n   Defina um padrão.\n\nRegra prática:\n- se é documento longo, escolha um modelo multinível e mantenha."
+    },
+    {
+      "title": "Continuar numeração vs reiniciar (controle importante)",
+      "body": "Em listas numeradas, você pode:\n- continuar numeração (ex.: segue 4, 5, 6)\n- reiniciar em 1\n\nIsso é útil quando:\n- você tem seções diferentes\n- mas quer que a numeração faça sentido\n\nDica:\n- quando o Word “bagunçar” a numeração, procure a opção de continuar/reiniciar."
+    },
+    {
+      "title": "Espaçamento e alinhamento dentro da lista",
+      "body": "Lista bonita tem:\n- recuo consistente\n- espaçamento equilibrado\n\nSe a lista estiver “espalhada” ou “amontoada”:\n- ajuste o Parágrafo (recuos e espaçamento)\n\nDica:\n- lista não precisa de ENTER extra.\n- use espaçamento antes/depois se precisar separar blocos."
+    },
+    {
+      "title": "Mini prática (15 minutos) — 3 listas e controle de níveis",
+      "body": "Faça isso num documento:\n\n1) Liste 5 compras com **marcadores**.\n\n2) Escreva um procedimento com **numeração** (5 passos).\n\n3) Faça uma lista multinível assim:\n1. Expedição\n   (TAB)\n   1.1 Separação\n   1.2 Conferência\n2. Atendimento\n   2.1 Trocas\n\nUse:\n- TAB para descer nível\n- Shift+TAB para subir\n\nObjetivo:\n- seu cérebro entender “nível”."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Marcadores: quando a ordem não importa\n- Numeração: quando é passo a passo\n- Multinível: quando há hierarquia\n- TAB desce nível, Shift+TAB sobe\n- Evite lista com hífen na mão\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 07 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Você deve usar marcadores quando:",
+        "options": [
+          { "key": "A", "text": "A ordem dos itens não importa" },
+          { "key": "B", "text": "Os itens são passos obrigatórios em sequência" }
+        ],
+        "answer": "A",
+        "explain": "Marcadores são para listas sem ordem. Passos em sequência pedem numeração."
+      },
+      {
+        "id": 2,
+        "question": "Você deve usar numeração quando:",
+        "options": [
+          { "key": "A", "text": "A ordem importa (passo a passo)" },
+          { "key": "B", "text": "É apenas uma lista de itens aleatórios" }
+        ],
+        "answer": "A",
+        "explain": "Numeração é ideal para instruções e procedimentos."
+      },
+      {
+        "id": 3,
+        "question": "Lista multinível é indicada quando:",
+        "options": [
+          { "key": "A", "text": "Você precisa de níveis (tópico e subtópico)" },
+          { "key": "B", "text": "Você quer só colocar cor no texto" }
+        ],
+        "answer": "A",
+        "explain": "Multinível organiza hierarquia (1, 1.1, 1.1.1)."
+      },
+      {
+        "id": 4,
+        "question": "Fazer lista com hífen (-) e espaços é:",
+        "options": [
+          { "key": "A", "text": "Arriscado; o certo é usar os botões de lista do Word" },
+          { "key": "B", "text": "O método mais recomendado para documentos profissionais" }
+        ],
+        "answer": "A",
+        "explain": "Hífen na mão quebra alinhamento e não cria estrutura real."
+      },
+      {
+        "id": 5,
+        "question": "Dentro de uma lista, TAB faz:",
+        "options": [
+          { "key": "A", "text": "Descer um nível (virar subitem)" },
+          { "key": "B", "text": "Apagar o item inteiro" }
+        ],
+        "answer": "A",
+        "explain": "TAB cria subnível; Shift+TAB volta."
+      },
+      {
+        "id": 6,
+        "question": "Shift + TAB em uma lista faz:",
+        "options": [
+          { "key": "A", "text": "Subir um nível (voltar para o item principal)" },
+          { "key": "B", "text": "Transformar em marcador automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Shift+TAB reverte o recuo e sobe o nível."
+      },
+      {
+        "id": 7,
+        "question": "Uma grande vantagem da numeração do Word é:",
+        "options": [
+          { "key": "A", "text": "Ele renumera automaticamente quando você insere itens" },
+          { "key": "B", "text": "Você precisa numerar tudo manualmente" }
+        ],
+        "answer": "A",
+        "explain": "O Word mantém a sequência automaticamente."
+      },
+      {
+        "id": 8,
+        "question": "Se a numeração “bagunçar”, você deve procurar opções de:",
+        "options": [
+          { "key": "A", "text": "Continuar numeração ou reiniciar em 1" },
+          { "key": "B", "text": "Trocar o monitor do computador" }
+        ],
+        "answer": "A",
+        "explain": "Muitas vezes é só ajustar continuar/reiniciar."
+      },
+      {
+        "id": 9,
+        "question": "Para encerrar uma lista rapidamente, geralmente funciona:",
+        "options": [
+          { "key": "A", "text": "Pressionar Enter duas vezes (ou desativar o botão de lista)" },
+          { "key": "B", "text": "Apertar Caps Lock" }
+        ],
+        "answer": "A",
+        "explain": "Enter duas vezes normalmente sai do modo de lista."
+      },
+      {
+        "id": 10,
+        "question": "Documento profissional com listas deve ter:",
+        "options": [
+          { "key": "A", "text": "Padrão consistente de listas e níveis" },
+          { "key": "B", "text": "Cada lista com um formato aleatório diferente" }
+        ],
+        "answer": "A",
+        "explain": "Consistência melhora leitura e evita bagunça no documento."
+      }
+    ]
+  },
+  "extra": {
+    "modelListGuide": "Guia rápido de listas (pra não errar)\n\nEscolha:\n- Marcadores: itens sem ordem\n- Numeração: passos em sequência\n- Multinível: tópicos e subtópicos\n\nAtalhos dentro da lista:\n- TAB: vira subitem (desce nível)\n- Shift+TAB: volta nível (sobe)\n\nRegras anti-bagunça:\n- NÃO faça lista com hífen na mão\n- NÃO use espaços para “alinhar” itens\n- Se precisar de colunas de verdade, use Tabela (aula 12)\n"
+  }
+}

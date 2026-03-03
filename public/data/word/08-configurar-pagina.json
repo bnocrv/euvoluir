@@ -1,0 +1,163 @@
+{
+  "id": "08-configurar-pagina",
+  "title": "Aula 08 — Configurar página: margens, tamanho, orientação e quebras",
+  "steps": [
+    {
+      "title": "Por que configurar página é “o esqueleto” do documento",
+      "body": "Antes de enfeitar o texto, você precisa definir o “corpo” do documento.\n\nConfigurar página define:\n- margens (espaço nas bordas)\n- tamanho do papel (A4, Carta…)\n- orientação (retrato/paisagem)\n- quebras (página, seção)\n\nSe isso está errado, o documento fica estranho, principalmente na impressão/PDF."
+    },
+    {
+      "title": "Onde ficam essas opções no Word",
+      "body": "Normalmente em:\n- **Layout** (ou Layout da Página)\n\nLá você encontra:\n- Margens\n- Orientação\n- Tamanho\n- Quebras\n- Colunas (aula 11)\n\nAtalho mental:\n- “mexer na folha” → guia Layout."
+    },
+    {
+      "title": "Tamanho do papel: A4 x Carta (não confunda)",
+      "body": "Os mais comuns:\n\n- **A4**: padrão no Brasil (e em muitos lugares)\n- **Carta (Letter)**: muito comum nos EUA\n\nProblema clássico:\n- documento feito em Carta impresso em A4 (ou vice-versa) = layout “quebra”.\n\nRegra:\n- se você está no Brasil e vai imprimir/entregar, geralmente use **A4**."
+    },
+    {
+      "title": "Orientação: Retrato vs Paisagem",
+      "body": "Dois modos:\n\n- **Retrato**: “em pé” (padrão)\n- **Paisagem**: “deitado” (ótimo para tabelas largas)\n\nUso típico:\n- relatórios comuns: retrato\n- planilhas/tabelas grandes: paisagem\n\nDica:\n- muitas vezes você só precisa de 1 página em paisagem.\n- para isso, você vai usar **seções** (aula 10)."
+    },
+    {
+      "title": "Margens: o que são e como escolher",
+      "body": "Margens são o espaço entre o conteúdo e a borda da folha.\n\nPor que existem?\n- leitura mais confortável\n- espaço para encadernação/anotações\n- impressão segura (algumas impressoras cortam bordas)\n\nRegra simples:\n- margens “normais” geralmente funcionam.\n- se for trabalho acadêmico, siga o padrão exigido."
+    },
+    {
+      "title": "Cabeçalho/rodapé e margens (uma pegadinha)",
+      "body": "Cabeçalho e rodapé não ficam “fora” do documento.\nEles respeitam as configurações da página.\n\nPor isso:\n- margem muito pequena pode esmagar cabeçalho/rodapé\n- margem muito grande pode deixar pouco espaço útil\n\nDica:\n- primeiro configure página, depois trabalhe cabeçalho/rodapé (aula 09)."
+    },
+    {
+      "title": "Quebra de página (quando você deve usar)",
+      "body": "Quebra de página serve para ir para a próxima página SEM ficar apertando Enter.\n\nUse quando:\n- quer começar um novo capítulo\n- quer que um título sempre inicie em página nova\n\nRegra:\n- NÃO use Enter várias vezes.\n- use **Quebra de Página**.\n\nAtalho útil:\n- **Ctrl + Enter** (quebra de página)."
+    },
+    {
+      "title": "O que é “quebra” (ideia principal)",
+      "body": "Quebra é uma marca invisível que controla layout.\n\nTipos principais (vamos dominar aos poucos):\n- quebra de página (aqui)\n- quebra de seção (aula 10)\n- quebra de coluna (aula 11)\n\nSe você entende quebras, você para de sofrer com layout."
+    },
+    {
+      "title": "Mostrar marcas de formatação (para enxergar o invisível)",
+      "body": "Quebras e espaços extras são “invisíveis”.\n\nPara ver:\n- ative **Mostrar/Ocultar ¶** (na Página Inicial)\n\nIsso mostra:\n- parágrafos\n- quebras\n- espaços\n\nDica:\n- quando o documento estiver “estranho”, ative o ¶ e você encontra a causa."
+    },
+    {
+      "title": "Mini prática (15 minutos) — configurar como um profissional",
+      "body": "Faça isso:\n\n1) Crie um documento novo.\n2) Layout → Tamanho → escolha **A4**.\n3) Layout → Margens → deixe **Normal**.\n4) Digite um título e 2 parágrafos.\n5) Agora crie uma nova página com **Ctrl+Enter**.\n6) Na página 2, digite “Capítulo 2” e mais 1 parágrafo.\n7) Ative o botão **¶** e veja a quebra de página.\n\nObjetivo:\n- aprender a controlar páginas sem gambiarra."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Usar Enter para ir para outra página.\n2) Misturar A4 e Carta sem perceber.\n3) Trocar para paisagem e bagunçar o documento inteiro (sem seções).\n4) Não ver marcas (¶) e não entender por que está estranho.\n\nRegra:\n- página nova = Ctrl+Enter.\n- folha correta = A4 (na maioria dos casos no Brasil)."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Layout controla o “corpo” do documento\n- Defina tamanho (A4), margens e orientação\n- Use quebra de página (Ctrl+Enter), não Enter extra\n- Use ¶ para enxergar marcas invisíveis\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 08 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Configurar página serve para definir:",
+        "options": [
+          { "key": "A", "text": "Margens, tamanho do papel e orientação" },
+          { "key": "B", "text": "A senha do computador" }
+        ],
+        "answer": "A",
+        "explain": "Esses elementos definem o layout da folha (o esqueleto do documento)."
+      },
+      {
+        "id": 2,
+        "question": "No Brasil, o tamanho de papel mais comum é:",
+        "options": [
+          { "key": "A", "text": "A4" },
+          { "key": "B", "text": "Carta (Letter) sempre" }
+        ],
+        "answer": "A",
+        "explain": "A4 é o padrão mais comum; Carta é muito usada nos EUA."
+      },
+      {
+        "id": 3,
+        "question": "Orientação Paisagem é útil quando:",
+        "options": [
+          { "key": "A", "text": "Você tem tabelas largas ou conteúdo horizontal" },
+          { "key": "B", "text": "Você quer deixar o texto mais escuro" }
+        ],
+        "answer": "A",
+        "explain": "Paisagem aumenta a largura disponível na página."
+      },
+      {
+        "id": 4,
+        "question": "Margens existem principalmente para:",
+        "options": [
+          { "key": "A", "text": "Dar espaço de leitura e segurança na impressão" },
+          { "key": "B", "text": "Fazer o Word rodar mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "Sem margem, o texto fica desconfortável e pode ser cortado ao imprimir."
+      },
+      {
+        "id": 5,
+        "question": "Para criar uma nova página sem gambiarra, use:",
+        "options": [
+          { "key": "A", "text": "Quebra de página (Ctrl+Enter)" },
+          { "key": "B", "text": "Vários ENTER até chegar lá" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl+Enter cria uma quebra real, consistente."
+      },
+      {
+        "id": 6,
+        "question": "Quebra de página é:",
+        "options": [
+          { "key": "A", "text": "Uma marca invisível que manda o conteúdo para a próxima página" },
+          { "key": "B", "text": "Um tipo de fonte do Word" }
+        ],
+        "answer": "A",
+        "explain": "É um elemento de layout, não de fonte."
+      },
+      {
+        "id": 7,
+        "question": "Misturar A4 e Carta pode causar:",
+        "options": [
+          { "key": "A", "text": "Layout quebrado na impressão/PDF" },
+          { "key": "B", "text": "O texto virar negrito sozinho" }
+        ],
+        "answer": "A",
+        "explain": "Tamanhos diferentes mudam quebras e encaixe do conteúdo."
+      },
+      {
+        "id": 8,
+        "question": "O botão ¶ (Mostrar/Ocultar) serve para:",
+        "options": [
+          { "key": "A", "text": "Ver marcas como parágrafos e quebras" },
+          { "key": "B", "text": "Mudar o idioma do Windows" }
+        ],
+        "answer": "A",
+        "explain": "Ele mostra elementos invisíveis que explicam o layout."
+      },
+      {
+        "id": 9,
+        "question": "As opções de margens, orientação e tamanho ficam geralmente na guia:",
+        "options": [
+          { "key": "A", "text": "Layout (Layout da Página)" },
+          { "key": "B", "text": "Revisão" }
+        ],
+        "answer": "A",
+        "explain": "Layout é onde você “mexeu na folha”."
+      },
+      {
+        "id": 10,
+        "question": "Quando você quer só 1 página em paisagem no meio do documento, você vai precisar de:",
+        "options": [
+          { "key": "A", "text": "Seções (para separar formatos)" },
+          { "key": "B", "text": "Colar uma imagem gigante" }
+        ],
+        "answer": "A",
+        "explain": "Seções permitem ter formatos diferentes no mesmo arquivo (aula 10)."
+      }
+    ]
+  },
+  "extra": {
+    "modelPageSetupChecklist": "Checklist de configuração de página (padrão)\n\n1) Layout → Tamanho: A4 (na maioria dos casos no Brasil)\n2) Layout → Margens: Normal (ou conforme padrão exigido)\n3) Layout → Orientação: Retrato (padrão)\n4) Nova página: Ctrl+Enter (não use Enter extra)\n5) Se estiver estranho: ativar ¶ para ver quebras\n\nAtalho essencial:\n- Ctrl+Enter = quebra de página\n"
+  }
+}

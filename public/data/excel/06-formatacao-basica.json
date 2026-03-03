@@ -1,0 +1,164 @@
+{
+  "id": "06-formatacao-basica",
+  "title": "Aula 06 — Formatação básica: número, moeda, porcentagem, datas e texto",
+  "steps": [
+    {
+      "title": "Objetivo da aula (o Excel por trás do visual)",
+      "body": "Hoje você vai aprender algo muito importante:\n\n➡️ **Formatação não muda o valor real**, só muda como ele aparece.\n\nExemplo:\n- Valor real: `10`\n- Pode aparecer como: `10`, `10,00`, `R$ 10,00`, `1000%`, `10/03/2026` (dependendo do formato)\n\nNo fim da aula você vai:\n- formatar números, moeda e porcentagem\n- entender datas (o assunto que mais confunde)\n- evitar erros clássicos de “número que virou texto”\n\nRegra:\n- dado certo + formato certo = planilha profissional."
+    },
+    {
+      "title": "Valor real vs formato (o conceito-chave)",
+      "body": "Pense assim:\n\n- **Valor real** = o que o Excel usa pra calcular\n- **Formato** = a “roupa” que o valor veste\n\nExemplo:\n- A1 = 0,25\n- Se você formatar como porcentagem, aparece: 25%\n\nRegra:\n- se você formata 0,25 como 25%, o valor continua 0,25 por trás."
+    },
+    {
+      "title": "Tipos de formato mais usados (o kit básico)",
+      "body": "Na guia **Página Inicial → Número**, você encontra:\n\n- Geral (padrão)\n- Número (com casas decimais)\n- Moeda / Contábil\n- Porcentagem\n- Data\n- Hora\n- Texto\n\nRegra:\n- escolha o formato de acordo com o significado do dado."
+    },
+    {
+      "title": "Número (casas decimais e separadores)",
+      "body": "Formato **Número** é usado para quantidades e valores comuns.\n\nO que você controla:\n- casas decimais\n- separador de milhar\n\nExemplos:\n- 1500 pode virar 1.500\n- 3 pode virar 3,00\n\nDica:\n- para quantidade de itens, normalmente 0 casas.\n- para valores, geralmente 2 casas."
+    },
+    {
+      "title": "Moeda vs Contábil (diferença simples)",
+      "body": "Os dois mostram dinheiro, mas com comportamentos diferentes:\n\n- **Moeda**\n  - símbolo perto do número\n  - mais “livre”\n\n- **Contábil**\n  - alinha símbolos e casas decimais\n  - fica mais “organizado” em relatórios\n\nRegra:\n- para relatório bonito (financeiro), Contábil costuma ficar melhor."
+    },
+    {
+      "title": "Porcentagem (o erro mais comum de iniciante)",
+      "body": "Porcentagem é onde mais dá confusão.\n\nPadrão do Excel:\n- 1 = 100%\n- 0,5 = 50%\n- 0,25 = 25%\n\nErro típico:\n- digitar 50 achando que é 50%\n- e depois formatar como % → vira 5000%\n\nRegra:\n- para 50%, digite **0,5** (ou digite **50%** com o símbolo)."
+    },
+    {
+      "title": "Datas (por que o Excel não “entende” algumas datas)",
+      "body": "O Excel guarda datas como **números**.\n\nExemplo (conceito):\n- 01/01/2026 é um número interno\n- o formato Data só mostra “como data”\n\nProblema comum:\n- você digita uma data e ela vira texto (fica alinhada à esquerda)\n\nPor que acontece?\n- formato regional\n- separador diferente\n- dado importado como texto\n\nRegra:\n- data válida geralmente alinha à direita e funciona em cálculos."
+    },
+    {
+      "title": "Teste rápido: número ou texto?",
+      "body": "Três jeitos simples de identificar:\n\n1) **Alinhamento padrão**\n- número/datas: direita\n- texto: esquerda\n\n2) **Soma**\n- se você tenta somar e dá 0 ou não muda, pode estar como texto\n\n3) **Erro verde** (às vezes aparece)\n- “número armazenado como texto”\n\nRegra:\n- dado como texto quebra fórmulas."
+    },
+    {
+      "title": "Texto (quando usar formato Texto de propósito)",
+      "body": "Formato **Texto** é útil quando você NÃO quer que o Excel interprete.\n\nExemplos:\n- CPF/CNPJ\n- códigos (00123)\n- número de pedido\n- CEP\n\nPorque se você digitar 00123 como número:\n- o Excel vira 123 e perde os zeros.\n\nRegra:\n- códigos que têm zero à esquerda → trate como Texto."
+    },
+    {
+      "title": "Formatação rápida (atalhos e botões úteis)",
+      "body": "Coisas rápidas na Página Inicial:\n- botões: Moeda, %, casas decimais\n\nAtalho muito comum:\n- **Ctrl + 1** abre a janela **Formatar Células**\n\nDentro de Formatar Células você controla tudo:\n- número, alinhamento, fonte, bordas, preenchimento, proteção\n\nRegra:\n- Ctrl+1 é o “painel de controle” da célula."
+    },
+    {
+      "title": "Mini prática (25 minutos) — transformar bagunça em planilha profissional",
+      "body": "1) Digite os valores em uma coluna (A1:A8):\n- 1500\n- 1500,5\n- 0,25\n- 50%\n- 03/03/2026\n- 00123\n- R$ 10,00 (digite como 10 e formate depois)\n- 1234567\n\n2) Agora aplique formatos:\n- 1500 e 1500,5 → Número (2 casas para o segundo)\n- 0,25 → Porcentagem (25%)\n- 50% → deixe como porcentagem\n- 03/03/2026 → Data\n- 00123 → Texto (garantir zeros)\n- 10 → Moeda (R$)\n- 1234567 → Número com separador de milhar\n\n3) Use **Ctrl+1** para ajustar.\n\nObjetivo:\n- enxergar na prática que valor real ≠ aparência."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Formatação muda a aparência, não o valor real\n- Números: casas decimais e separador\n- Moeda vs Contábil: contábil alinha melhor\n- %: 0,5 = 50% (não digite 50 e formate)\n- Datas são números por trás (podem virar texto)\n- Texto é ótimo para códigos com zero à esquerda\n- Ctrl+1 abre Formatar Células\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 06 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Formatação no Excel:",
+        "options": [
+          { "key": "A", "text": "Muda como o valor aparece, mas não muda o valor real" },
+          { "key": "B", "text": "Muda o valor real sempre" }
+        ],
+        "answer": "A",
+        "explain": "Formato é a “roupa” do valor, não o valor em si."
+      },
+      {
+        "id": 2,
+        "question": "No Excel, 1 equivale a:",
+        "options": [
+          { "key": "A", "text": "100% (quando formatado como porcentagem)" },
+          { "key": "B", "text": "1%" }
+        ],
+        "answer": "A",
+        "explain": "Porcentagem é uma forma de mostrar o número: 1 = 100%."
+      },
+      {
+        "id": 3,
+        "question": "Para representar 50%, uma forma correta é:",
+        "options": [
+          { "key": "A", "text": "Digitar 0,5 ou 50%" },
+          { "key": "B", "text": "Digitar 50 e depois formatar como %" }
+        ],
+        "answer": "A",
+        "explain": "50 formatado como % vira 5000%."
+      },
+      {
+        "id": 4,
+        "question": "A diferença entre Moeda e Contábil é que Contábil:",
+        "options": [
+          { "key": "A", "text": "Alinha melhor símbolos e casas decimais em colunas" },
+          { "key": "B", "text": "Transforma dinheiro em porcentagem" }
+        ],
+        "answer": "A",
+        "explain": "Contábil é mais organizado para relatórios."
+      },
+      {
+        "id": 5,
+        "question": "Datas no Excel são armazenadas como:",
+        "options": [
+          { "key": "A", "text": "Números por trás (com formato de data)" },
+          { "key": "B", "text": "Imagens" }
+        ],
+        "answer": "A",
+        "explain": "O Excel guarda um número interno e mostra como data."
+      },
+      {
+        "id": 6,
+        "question": "Um sinal comum de que um número virou texto é:",
+        "options": [
+          { "key": "A", "text": "Ele fica alinhado à esquerda por padrão" },
+          { "key": "B", "text": "Ele sempre fica em negrito" }
+        ],
+        "answer": "A",
+        "explain": "Texto alinha à esquerda; números/datas à direita."
+      },
+      {
+        "id": 7,
+        "question": "Formato Texto é útil para:",
+        "options": [
+          { "key": "A", "text": "Códigos com zero à esquerda (ex.: 00123)" },
+          { "key": "B", "text": "Fazer gráficos automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Se for número, o Excel remove zeros à esquerda."
+      },
+      {
+        "id": 8,
+        "question": "Ctrl + 1 abre:",
+        "options": [
+          { "key": "A", "text": "A janela Formatar Células" },
+          { "key": "B", "text": "O menu Imprimir" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl+1 é o painel de controle da célula."
+      },
+      {
+        "id": 9,
+        "question": "Se você digitar 10 e aplicar formato Moeda, o Excel:",
+        "options": [
+          { "key": "A", "text": "Mostra R$ 10,00 (mas o valor real continua 10)" },
+          { "key": "B", "text": "Muda o valor real para 1000" }
+        ],
+        "answer": "A",
+        "explain": "A aparência muda, o valor permanece."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa regra geral é:",
+        "options": [
+          { "key": "A", "text": "Escolher formato conforme o significado do dado" },
+          { "key": "B", "text": "Deixar tudo como Texto para evitar erros" }
+        ],
+        "answer": "A",
+        "explain": "Tudo como texto quebra cálculos; formato certo é o ideal."
+      }
+    ]
+  },
+  "extra": {
+    "atalhosFormatacao": "Atalhos e dicas — Formatação\n\n- Ctrl + 1: Formatar Células\n\nRegra da porcentagem:\n- 0,5 = 50%\n- 0,25 = 25%\n- 1 = 100%\n\nUse Texto para:\n- CEP, CPF, códigos, pedidos com zero à esquerda.\n",
+    "checklistProfissional": "Checklist profissional\n\n- Quantidades sem casas decimais\n- Valores com 2 casas\n- Datas no formato correto\n- Códigos (com zeros) como Texto\n- Separador de milhar em números grandes\n"
+  }
+}

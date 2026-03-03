@@ -1,0 +1,163 @@
+{
+  "id": "14-imagens",
+  "title": "Aula 14 — Imagens: inserir, cortar, comprimir e qualidade",
+  "steps": [
+    {
+      "title": "Por que imagens dão trabalho no Word (e como evitar dor de cabeça)",
+      "body": "Imagem no Word parece simples: inserir e pronto.\n\nMas na prática, imagem pode:\n- deixar o arquivo pesado\n- ficar estourada (qualidade ruim)\n- desalinha tudo quando você mexe no texto\n\nNesta aula você vai aprender a inserir com controle:\n- tamanho correto\n- corte\n- compressão\n- qualidade e organização"
+    },
+    {
+      "title": "Inserir imagem: de onde vem",
+      "body": "Você pode inserir imagens de:\n- seu computador\n- OneDrive\n- (dependendo da versão) imagens online\n\nCaminho comum:\n- **Inserir → Imagens**\n\nDica:\n- prefira inserir a imagem no tamanho aproximado que você quer e depois ajustar.\n- evite colar print gigante direto sem revisar."
+    },
+    {
+      "title": "Tamanho: a regra mais importante (não distorcer)",
+      "body": "Quando você redimensiona imagem:\n\n- puxe pelos cantos (mantém proporção)\n- não puxe pelas laterais (pode deformar)\n\nRegra:\n- imagem deformada passa sensação de amadorismo.\n\nDica:\n- se você precisar mudar muito o tamanho, vale pensar em qualidade (resolução)."
+    },
+    {
+      "title": "Cortar (crop): foco no que importa",
+      "body": "Cortar serve para remover partes inúteis.\n\nExemplos:\n- tirar bordas vazias\n- remover cabeçalho/rodapé de print\n- focar só no gráfico\n\nVantagem:\n- melhora aparência\n- aumenta legibilidade\n\nRegra:\n- imagem boa é imagem objetiva."
+    },
+    {
+      "title": "Recuo visual: alinhar imagem com o texto",
+      "body": "Mesmo antes da aula de quebra de texto (aula 15), uma dica:\n\nSe a imagem vai ficar no meio do texto:\n- tente alinhar com as margens\n- mantenha tamanhos consistentes entre imagens\n\nRegra:\n- consistência visual deixa o documento mais profissional."
+    },
+    {
+      "title": "Comprimir imagens (controle de tamanho do arquivo)",
+      "body": "O Word pode ficar enorme se você colocar muitas imagens.\n\nCompressão reduz:\n- tamanho do arquivo\n- peso para enviar por WhatsApp/e-mail\n\nMas cuidado:\n- compressão demais pode perder qualidade.\n\nRegra prática:\n- se o documento vai ser enviado e não precisa de qualidade de impressão, comprimir ajuda muito."
+    },
+    {
+      "title": "Qualidade: quando “embaçado” acontece",
+      "body": "Imagem fica ruim por alguns motivos:\n- a imagem original já é baixa resolução\n- você aumentou demais (zoom) e ela estourou\n- compressão foi agressiva\n\nRegra:\n- não existe milagre: imagem pequena aumentada fica feia.\n\nSolução:\n- use imagem com mais resolução\n- ou diminua o tamanho dela no documento."
+    },
+    {
+      "title": "Print de tela: como deixar profissional",
+      "body": "Print é comum em manual e relatório.\n\nBoas práticas:\n- recorte só a área importante\n- evite mostrar barra de tarefas/abas desnecessárias\n- mantenha o mesmo estilo de print no documento todo\n\nDica:\n- numere prints se for um passo a passo (veremos legendas mais tarde)."
+    },
+    {
+      "title": "Alinhamento e posição: o básico antes do avançado",
+      "body": "Antes de “soltar” a imagem no documento, pense:\n\n- imagem centralizada? (bom para figura única)\n- imagem alinhada à esquerda? (bom com texto)\n\nMas:\n- quando você quer texto ao lado da imagem, entra quebra de texto (aula 15).\n\nRegra:\n- primeiro controle tamanho e corte.\n- depois você controla o posicionamento."
+    },
+    {
+      "title": "Remover fundo e correções (quando usar com cuidado)",
+      "body": "Algumas versões do Word têm:\n- remover fundo\n- correções de brilho/contraste\n\nUse com moderação:\n- bom para limpar logos\n- bom para clarear um print\n\nCuidado:\n- exagero deixa artificial.\n\nRegra:\n- se a imagem precisa de edição pesada, é melhor editar fora (Paint, Canva, etc.) e inserir pronta."
+    },
+    {
+      "title": "Mini prática (20 minutos) — imagem leve e bem apresentada",
+      "body": "Faça isso:\n\n1) Insira uma imagem qualquer (pode ser um print).\n2) Redimensione puxando pelos cantos.\n3) Corte para remover partes inúteis.\n4) Centralize a imagem.\n5) Insira uma segunda imagem e deixe com tamanho parecido.\n6) Comprima imagens para reduzir o arquivo.\n\nObjetivo:\n- aprender o ciclo: inserir → ajustar → cortar → padronizar → comprimir."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Inserir imagem é fácil; o difícil é manter qualidade e organização\n- Redimensione pelos cantos (sem distorcer)\n- Corte para focar no essencial\n- Comprima para reduzir tamanho do arquivo (com cuidado)\n- Consistência visual deixa o documento profissional\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 14 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Imagens podem causar problemas no Word porque:",
+        "options": [
+          { "key": "A", "text": "Podem deixar o arquivo pesado e bagunçar layout" },
+          { "key": "B", "text": "Impedem o Word de salvar arquivos" }
+        ],
+        "answer": "A",
+        "explain": "Peso e posicionamento são os maiores desafios com imagens."
+      },
+      {
+        "id": 2,
+        "question": "Para redimensionar sem deformar, você deve:",
+        "options": [
+          { "key": "A", "text": "Puxar pelos cantos (mantém proporção)" },
+          { "key": "B", "text": "Puxar só pelas laterais (sempre mantém proporção)" }
+        ],
+        "answer": "A",
+        "explain": "Cantos preservam a proporção; laterais podem distorcer."
+      },
+      {
+        "id": 3,
+        "question": "Cortar (crop) serve para:",
+        "options": [
+          { "key": "A", "text": "Remover partes desnecessárias e focar no importante" },
+          { "key": "B", "text": "Aumentar a resolução da imagem" }
+        ],
+        "answer": "A",
+        "explain": "Crop remove partes inúteis; não aumenta resolução."
+      },
+      {
+        "id": 4,
+        "question": "Comprimir imagens é útil para:",
+        "options": [
+          { "key": "A", "text": "Diminuir o tamanho do arquivo" },
+          { "key": "B", "text": "Deixar a imagem mais colorida automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Compressão reduz o peso do documento, mas pode afetar qualidade."
+      },
+      {
+        "id": 5,
+        "question": "Se a imagem ficou embaçada, uma causa comum é:",
+        "options": [
+          { "key": "A", "text": "A imagem original era pequena e foi aumentada" },
+          { "key": "B", "text": "Você usou negrito no texto" }
+        ],
+        "answer": "A",
+        "explain": "Imagem pequena ampliada perde qualidade (não tem milagre)."
+      },
+      {
+        "id": 6,
+        "question": "Boa prática com prints de tela é:",
+        "options": [
+          { "key": "A", "text": "Recortar só a área importante e evitar excesso de elementos" },
+          { "key": "B", "text": "Mostrar tudo, incluindo abas e barra de tarefas" }
+        ],
+        "answer": "A",
+        "explain": "Print limpo melhora foco e profissionalismo."
+      },
+      {
+        "id": 7,
+        "question": "Consistência visual em imagens significa:",
+        "options": [
+          { "key": "A", "text": "Manter tamanhos e estilo parecidos ao longo do documento" },
+          { "key": "B", "text": "Cada imagem ter um tamanho completamente diferente" }
+        ],
+        "answer": "A",
+        "explain": "Padronização deixa o documento mais organizado."
+      },
+      {
+        "id": 8,
+        "question": "Comprimir demais imagens pode:",
+        "options": [
+          { "key": "A", "text": "Reduzir a qualidade visual" },
+          { "key": "B", "text": "Aumentar a resolução automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Compressão pode perder detalhes, principalmente para impressão."
+      },
+      {
+        "id": 9,
+        "question": "Correções de brilho/contraste devem ser usadas:",
+        "options": [
+          { "key": "A", "text": "Com moderação, só quando ajuda legibilidade" },
+          { "key": "B", "text": "Sempre no máximo possível" }
+        ],
+        "answer": "A",
+        "explain": "Exagero deixa artificial; o objetivo é clareza."
+      },
+      {
+        "id": 10,
+        "question": "Antes de pensar em texto ao lado da imagem, o mais importante é:",
+        "options": [
+          { "key": "A", "text": "Ajustar tamanho e corte (base da organização)" },
+          { "key": "B", "text": "Colocar a imagem em vermelho" }
+        ],
+        "answer": "A",
+        "explain": "Primeiro você garante qualidade e proporção; depois vem posicionamento avançado (aula 15)."
+      }
+    ]
+  },
+  "extra": {
+    "modelImageChecklist": "Checklist de imagem profissional no Word\n\n1) Inserir (não colar bagunçado)\n2) Redimensionar pelos cantos (sem deformar)\n3) Cortar para remover o que não importa\n4) Padronizar tamanho entre imagens semelhantes\n5) Centralizar/alinha com margens (consistência)\n6) Comprimir imagens (se o arquivo ficar pesado)\n7) Se ficar embaçado: use imagem melhor ou diminua no documento\n\nRegra de ouro:\n- Imagem deve ajudar o leitor, não atrapalhar.\n"
+  }
+}

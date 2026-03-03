@@ -1,0 +1,163 @@
+{
+  "id": "25-mala-direta-1",
+  "title": "Aula 25 — Mala direta 1: conceito, base de dados e campos",
+  "steps": [
+    {
+      "title": "O que é mala direta (explicação bem simples)",
+      "body": "Mala direta é quando você cria UM documento modelo e o Word gera MUITOS documentos personalizados.\n\nExemplos:\n- cartas para vários clientes\n- etiquetas com vários nomes\n- certificados\n- avisos de cobrança\n\nVocê escreve uma vez:\n“Olá, {Nome}”\n\nE o Word troca {Nome} para cada pessoa da lista.\n\nRegra:\n- mala direta é automação de documentos."
+    },
+    {
+      "title": "Quando mala direta vale a pena",
+      "body": "Vale a pena quando:\n- você precisa gerar mais de 5 documentos parecidos\n- você quer evitar copiar/colar nome por nome\n- você quer reduzir erro (nome errado, endereço errado)\n\nRegra:\n- se você está fazendo “copia e cola” repetido, mala direta provavelmente resolve."
+    },
+    {
+      "title": "Os 3 componentes da mala direta",
+      "body": "Pense em 3 peças:\n\n1) **Documento principal** (modelo)\n- a carta base\n\n2) **Lista de destinatários** (base de dados)\n- tabela com Nome, Endereço, etc.\n\n3) **Campos de mesclagem**\n- “marcadores” que o Word troca para cada pessoa\n\nRegra:\n- modelo + lista + campos = mala direta funcionando."
+    },
+    {
+      "title": "Base de dados: o que é (e como deve ser organizada)",
+      "body": "A base é uma tabela.\n\nPode estar em:\n- Excel (mais comum)\n- tabela do próprio Word\n- Outlook/contatos (dependendo do caso)\n\nRegras de ouro da base:\n- **1 linha = 1 pessoa/registro**\n- **1 coluna = 1 informação** (Nome, Rua, Cidade…)\n- cabeçalho na primeira linha (nome das colunas)\n\nExemplo de colunas:\n- Nome\n- Sobrenome\n- Endereço\n- Cidade\n- CEP\n- Email\n\nRegra:\n- base bem feita = mala direta sem dor."
+    },
+    {
+      "title": "Erros comuns na base (que quebram a mala direta)",
+      "body": "Evite:\n\n1) Linhas vazias no meio\n2) Colunas com nomes confusos (tipo “coluna1”)\n3) Misturar duas infos na mesma coluna\n- ex.: “Cidade/UF” tudo junto\n\n4) Cabeçalho com caracteres estranhos\n\nRegra:\n- se você quer automação, precisa de dados limpos."
+    },
+    {
+      "title": "Tipos de mala direta (o que você pode gerar)",
+      "body": "O Word permite gerar:\n- Cartas (texto)\n- Emails\n- Envelopes\n- Etiquetas\n\nNesta aula, foco em:\n- cartas/documentos\n\nRegra:\n- cartas são o caso mais fácil para aprender."
+    },
+    {
+      "title": "Iniciar mala direta (onde fica no Word)",
+      "body": "Normalmente na guia:\n- **Correspondências** (Mailings)\n\nLá você encontra:\n- Iniciar Mala Direta\n- Selecionar Destinatários\n- Inserir Campo de Mesclagem\n- Visualizar Resultados\n- Concluir e Mesclar\n\nAtalho mental:\n- automação de cartas = Correspondências."
+    },
+    {
+      "title": "Selecionar destinatários (ligar o documento à base)",
+      "body": "Depois de iniciar, você precisa dizer ao Word de onde vêm os dados.\n\nVocê pode:\n- usar uma lista existente (Excel)\n- digitar uma nova lista (no Word)\n\nRegra:\n- a lista é a “fonte de verdade” dos dados.\n\nDica:\n- se possível, use Excel: fica mais fácil organizar e revisar."
+    },
+    {
+      "title": "Campos de mesclagem: como pensar neles",
+      "body": "Campo de mesclagem é um marcador.\n\nExemplos:\n- <<Nome>>\n- <<Cidade>>\n- <<CEP>>\n\nQuando você mescla:\n- <<Nome>> vira “Bruno” na carta do Bruno\n- e vira “Ana” na carta da Ana\n\nRegra:\n- o campo deve ter o MESMO nome da coluna na base."
+    },
+    {
+      "title": "Visualizar resultados (teste antes de gerar tudo)",
+      "body": "Antes de imprimir/gerar 200 cartas:\n- visualize os resultados.\n\nIsso permite:\n- ver se os campos estão puxando certo\n- detectar coluna errada\n- ver se tem dados vazios\n\nRegra:\n- sempre visualize antes de concluir."
+    },
+    {
+      "title": "Mini prática (30 minutos) — carta simples com Nome e Cidade",
+      "body": "Faça assim:\n\n1) Crie uma base simples (pode ser no Word mesmo):\nColunas: Nome | Cidade\nRegistros:\n- Bruno | São Paulo\n- Ana | Campinas\n- João | Santos\n\n2) Crie um documento com texto:\n\"Olá, <<Nome>>,\n\nEstamos enviando uma mensagem para você em <<Cidade>>.\"\n\n3) Vá em Correspondências:\n- Iniciar mala direta (Cartas)\n- Selecionar destinatários (usar lista)\n- Inserir campo de mesclagem: Nome e Cidade\n\n4) Visualizar resultados e passe pelos destinatários.\n\nObjetivo:\n- entender o ciclo modelo + base + campos."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Mala direta gera documentos em lote com dados personalizados\n- Tem 3 peças: documento modelo, base (lista), campos\n- Base boa é tabela: 1 linha por pessoa, 1 coluna por informação\n- Campos têm nome igual ao cabeçalho da base\n- Sempre visualize antes de concluir\n\nNa aula 26 a gente vai para filtros, regras (IF) e geração em lote de verdade."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 25 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Mala direta é usada para:",
+        "options": [
+          { "key": "A", "text": "Gerar vários documentos personalizados a partir de um modelo" },
+          { "key": "B", "text": "Criar planilhas com fórmulas" }
+        ],
+        "answer": "A",
+        "explain": "É automação de documentos: um modelo + dados = muitos arquivos."
+      },
+      {
+        "id": 2,
+        "question": "Mala direta vale a pena quando:",
+        "options": [
+          { "key": "A", "text": "Você precisa fazer muitos documentos parecidos" },
+          { "key": "B", "text": "Você vai escrever uma única carta para uma pessoa" }
+        ],
+        "answer": "A",
+        "explain": "O ganho vem do volume (evita copiar/colar repetido)."
+      },
+      {
+        "id": 3,
+        "question": "Os 3 componentes da mala direta são:",
+        "options": [
+          { "key": "A", "text": "Documento modelo + lista de destinatários + campos de mesclagem" },
+          { "key": "B", "text": "Fonte + cor + negrito" }
+        ],
+        "answer": "A",
+        "explain": "Modelo, base e campos formam o sistema."
+      },
+      {
+        "id": 4,
+        "question": "Uma base de dados bem feita segue a regra:",
+        "options": [
+          { "key": "A", "text": "1 linha = 1 pessoa; 1 coluna = 1 informação" },
+          { "key": "B", "text": "Várias pessoas na mesma linha, separadas por vírgula" }
+        ],
+        "answer": "A",
+        "explain": "Isso garante dados limpos e automação estável."
+      },
+      {
+        "id": 5,
+        "question": "Um erro comum que atrapalha a mala direta é:",
+        "options": [
+          { "key": "A", "text": "Misturar duas informações na mesma coluna (Cidade/UF)" },
+          { "key": "B", "text": "Ter cabeçalho claro nas colunas" }
+        ],
+        "answer": "A",
+        "explain": "Separar dados em colunas facilita usar campos corretamente."
+      },
+      {
+        "id": 6,
+        "question": "Os campos de mesclagem:",
+        "options": [
+          { "key": "A", "text": "Puxam valores das colunas da base para o documento" },
+          { "key": "B", "text": "Servem apenas para mudar a cor do texto" }
+        ],
+        "answer": "A",
+        "explain": "Campo é um marcador que o Word substitui por dados."
+      },
+      {
+        "id": 7,
+        "question": "O nome do campo de mesclagem deve corresponder:",
+        "options": [
+          { "key": "A", "text": "Ao nome da coluna (cabeçalho) na base" },
+          { "key": "B", "text": "Ao nome do seu computador" }
+        ],
+        "answer": "A",
+        "explain": "O Word liga o campo ao cabeçalho da coluna."
+      },
+      {
+        "id": 8,
+        "question": "A guia mais usada para mala direta é:",
+        "options": [
+          { "key": "A", "text": "Correspondências" },
+          { "key": "B", "text": "Exibir" }
+        ],
+        "answer": "A",
+        "explain": "Correspondências (Mailings) reúne os comandos de mala direta."
+      },
+      {
+        "id": 9,
+        "question": "Visualizar resultados serve para:",
+        "options": [
+          { "key": "A", "text": "Testar se os campos estão puxando dados corretos antes de gerar tudo" },
+          { "key": "B", "text": "Transformar o documento em PDF automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "É uma checagem de qualidade antes do lote."
+      },
+      {
+        "id": 10,
+        "question": "Uma fonte comum para a lista de destinatários é:",
+        "options": [
+          { "key": "A", "text": "Excel (tabela)" },
+          { "key": "B", "text": "Arquivo de áudio (MP3)" }
+        ],
+        "answer": "A",
+        "explain": "Excel é ótimo para manter dados organizados e revisar."
+      }
+    ]
+  },
+  "extra": {
+    "modelMailMergeBasics": "Mala direta (base sólida)\n\nRegra da base:\n- 1 linha = 1 pessoa/registro\n- 1 coluna = 1 informação\n- primeira linha = cabeçalhos (Nome, Cidade...)\n- sem linhas vazias no meio\n\nFluxo no Word:\n1) Correspondências → Iniciar Mala Direta (Cartas)\n2) Selecionar Destinatários (Excel/Lista)\n3) Inserir Campo de Mesclagem (<<Nome>>, <<Cidade>>...)\n4) Visualizar Resultados (teste)\n5) Concluir e Mesclar (aula 26 aprofunda)\n\nRegra de ouro:\n- Antes do lote, sempre visualize.\n"
+  }
+}

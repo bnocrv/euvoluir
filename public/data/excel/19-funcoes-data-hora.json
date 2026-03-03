@@ -1,0 +1,168 @@
+{
+  "id": "19-funcoes-data-hora",
+  "title": "Aula 19 — Datas e horas: HOJE, AGORA, DIATRABALHO, MÊS, ANO e diferenças",
+  "steps": [
+    {
+      "title": "Por que datas e horas confundem (e por que vale dominar)",
+      "body": "Datas no Excel parecem simples, mas muita gente sofre porque:\n- data às vezes vira texto\n- filtros por mês/ano não aparecem\n- prazos “não batem”\n- hora vira decimal\n\nA chave é lembrar:\n- **data e hora são números por trás**\n\nRegra:\n- se você entende como o Excel guarda data/hora, você para de apanhar."
+    },
+    {
+      "title": "Como o Excel guarda datas e horas (conceito-chave)",
+      "body": "O Excel guarda:\n- **data** como um número inteiro (contando dias)\n- **hora** como parte decimal do dia\n\nExemplo (conceito):\n- 1 dia inteiro = 1\n- meio dia (12:00) = 0,5\n\nPor isso:\n- 03/03/2026 é um número interno\n- 15:00 é um decimal interno\n\nRegra:\n- se a data/hora estiver como texto, nada disso funciona."
+    },
+    {
+      "title": "HOJE() vs AGORA() (diferença direta)",
+      "body": "Duas funções muito usadas:\n\n- `=HOJE()`\n  - retorna a **data de hoje**\n  - sem hora\n\n- `=AGORA()`\n  - retorna **data e hora atuais**\n\nUso real:\n- HOJE(): prazos, vencimentos, relatórios diários\n- AGORA(): registro de horário, controle de tempo\n\nRegra:\n- HOJE muda a cada dia.\n- AGORA muda com o tempo (e ao recalcular)."
+    },
+    {
+      "title": "ANO(), MÊS() e DIA() (extrair partes da data)",
+      "body": "Essas funções tiram pedaços de uma data:\n\n- `=ANO(A2)` → 2026\n- `=MÊS(A2)` → 3\n- `=DIA(A2)` → 3\n\nUso real:\n- criar colunas auxiliares para relatório\n- agrupar por mês/ano\n\nRegra:\n- isso só funciona se A2 for data de verdade (não texto)."
+    },
+    {
+      "title": "DATA() (montar uma data a partir de números)",
+      "body": "DATA monta uma data com:\n- ano, mês, dia\n\nSintaxe:\n- `=DATA(ano; mês; dia)`\n\nExemplo:\n- `=DATA(2026;3;3)` → 03/03/2026\n\nUso real:\n- quando você tem ano em uma coluna, mês em outra e quer formar a data\n\nRegra:\n- DATA ajuda muito quando dados vêm quebrados."
+    },
+    {
+      "title": "Diferença entre subtrair datas (dias) e subtrair horas",
+      "body": "Quando você faz:\n- `=B2-A2`\n\nSe A2 e B2 são datas:\n- o resultado é a quantidade de dias\n\nExemplo:\n- 10/03/2026 - 03/03/2026 = 7\n\nSe forem horários:\n- o resultado é uma fração do dia\n\nRegra:\n- depois de subtrair hora, formate o resultado como Hora (ou [h]:mm)."
+    },
+    {
+      "title": "DIATRABALHO (prazo considerando dias úteis)",
+      "body": "DIATRABALHO calcula a data final pulando finais de semana.\n\nSintaxe:\n- `=DIATRABALHO(data_inicial; dias; [feriados])`\n\nExemplo:\n- entrega 5 dias úteis a partir de hoje:\n  `=DIATRABALHO(HOJE();5)`\n\nSe você tiver feriados em F2:F20:\n- `=DIATRABALHO(HOJE();5;F2:F20)`\n\nRegra:\n- DIATRABALHO é o padrão para prazos reais (trabalho, logística, projetos)."
+    },
+    {
+      "title": "DIAS360 (opcional) e contagem de dias (ideia geral)",
+      "body": "Em alguns cenários financeiros, existe contagem 30/360.\n\nVocê pode ver funções como:\n- DIAS360(data_inicial; data_final)\n\nMas no dia a dia, o mais comum é:\n- subtrair datas (B2-A2)\n\nRegra:\n- primeiro domine a contagem normal; 30/360 é caso específico."
+    },
+    {
+      "title": "Hora: HORA(), MINUTO(), SEGUNDO() (extrair partes)",
+      "body": "Se A2 tem um horário (ex.: 14:35:10):\n\n- `=HORA(A2)` → 14\n- `=MINUTO(A2)` → 35\n- `=SEGUNDO(A2)` → 10\n\nUso real:\n- análises de tempo\n- separar hora de registros\n\nRegra:\n- também depende de A2 ser hora real, não texto."
+    },
+    {
+      "title": "Formato certo para horas acumuladas ([h]:mm)",
+      "body": "Problema comum:\n- você soma horas e passa de 24h\n- e o Excel volta para 0 (porque 24h = 1 dia)\n\nSolução:\n- formatar como **[h]:mm**\n\nExemplo:\n- 30:00 (30 horas) só aparece direito com [h]:mm\n\nRegra:\n- para total de horas, use [h]:mm."
+    },
+    {
+      "title": "Erros comuns (e como identificar rápido)",
+      "body": "1) Data como texto\n- filtro de data não funciona\n- ANO/MÊS dão erro ou resultado estranho\n\n2) Hora como texto\n- soma não funciona direito\n\n3) Misturar data e texto no mesmo campo\n\nTeste rápido:\n- data/hora real geralmente alinha à direita\n- e muda de formato quando você aplica formatação de data/hora\n\nRegra:\n- se não filtra por mês/ano, suspeite de texto."
+    },
+    {
+      "title": "Mini prática (45 minutos) — prazos e dias úteis",
+      "body": "1) Em A2:A6, coloque datas (ex.: 03/03/2026 até 07/03/2026).\n\n2) Em B2, calcule o ano:\n- `=ANO(A2)`\nCopie para baixo.\n\n3) Em C2, calcule o mês:\n- `=MÊS(A2)`\nCopie.\n\n4) Em D2, calcule dias desde a data até hoje:\n- `=HOJE()-A2`\n\n5) Em E2, calcule entrega em 7 dias úteis:\n- `=DIATRABALHO(A2;7)`\n\n6) (Opcional) crie lista de feriados em G2:G5 e use como 3º argumento.\n\nObjetivo:\n- dominar HOJE/ANO/MÊS e DIATRABALHO."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Datas e horas são números por trás\n- HOJE() = data atual; AGORA() = data+hora\n- ANO/MÊS/DIA extraem partes\n- DATA monta data a partir de números\n- Subtrair datas dá dias\n- DIATRABALHO calcula prazos em dias úteis (com feriados)\n- Para horas acumuladas, formate como [h]:mm\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 19 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "No Excel, datas são armazenadas como:",
+        "options": [
+          { "key": "A", "text": "Números (contagem de dias) com formato de data" },
+          { "key": "B", "text": "Imagens" }
+        ],
+        "answer": "A",
+        "explain": "O Excel guarda um número interno e mostra como data."
+      },
+      {
+        "id": 2,
+        "question": "HOJE() retorna:",
+        "options": [
+          { "key": "A", "text": "A data atual (sem hora)" },
+          { "key": "B", "text": "A hora atual (sem data)" }
+        ],
+        "answer": "A",
+        "explain": "HOJE é só data."
+      },
+      {
+        "id": 3,
+        "question": "AGORA() retorna:",
+        "options": [
+          { "key": "A", "text": "Data e hora atuais" },
+          { "key": "B", "text": "Somente o ano atual" }
+        ],
+        "answer": "A",
+        "explain": "AGORA inclui hora."
+      },
+      {
+        "id": 4,
+        "question": "ANO(A2) serve para:",
+        "options": [
+          { "key": "A", "text": "Extrair o ano de uma data" },
+          { "key": "B", "text": "Arredondar um número" }
+        ],
+        "answer": "A",
+        "explain": "Ele retorna o ano (ex.: 2026)."
+      },
+      {
+        "id": 5,
+        "question": "DIATRABALHO serve para:",
+        "options": [
+          { "key": "A", "text": "Calcular uma data pulando fins de semana (e feriados)" },
+          { "key": "B", "text": "Somar textos" }
+        ],
+        "answer": "A",
+        "explain": "Ele calcula prazos em dias úteis."
+      },
+      {
+        "id": 6,
+        "question": "Subtrair duas datas (B2-A2) retorna:",
+        "options": [
+          { "key": "A", "text": "Quantidade de dias entre elas" },
+          { "key": "B", "text": "Uma lista de meses" }
+        ],
+        "answer": "A",
+        "explain": "Datas são números; subtração vira diferença em dias."
+      },
+      {
+        "id": 7,
+        "question": "DATA(2026;3;3) retorna:",
+        "options": [
+          { "key": "A", "text": "03/03/2026 (uma data válida)" },
+          { "key": "B", "text": "O número 2026 como texto" }
+        ],
+        "answer": "A",
+        "explain": "DATA monta uma data a partir de ano/mês/dia."
+      },
+      {
+        "id": 8,
+        "question": "Para somar horas e mostrar mais de 24h corretamente, use formato:",
+        "options": [
+          { "key": "A", "text": "[h]:mm" },
+          { "key": "B", "text": "0,00" }
+        ],
+        "answer": "A",
+        "explain": "[h]:mm permite horas acumuladas."
+      },
+      {
+        "id": 9,
+        "question": "Se o filtro de data não permite escolher por mês/ano, provavelmente:",
+        "options": [
+          { "key": "A", "text": "A coluna está como texto, não como data real" },
+          { "key": "B", "text": "O Excel não suporta filtro" }
+        ],
+        "answer": "A",
+        "explain": "Data como texto não vira filtro de data completo."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa regra é:",
+        "options": [
+          { "key": "A", "text": "Usar DIATRABALHO para prazos reais em dias úteis" },
+          { "key": "B", "text": "Somar dias úteis no olho" }
+        ],
+        "answer": "A",
+        "explain": "DIATRABALHO automatiza e evita erro."
+      }
+    ]
+  },
+  "extra": {
+    "receitasProntas": "Receitas prontas\n\nData de hoje:\n=HOJE()\n\nData e hora agora:\n=AGORA()\n\nAno / mês / dia:\n=ANO(A2)\n=MÊS(A2)\n=DIA(A2)\n\nPrazo em dias úteis:\n=DIATRABALHO(HOJE();7)\n\nPrazo com feriados (F2:F20):\n=DIATRABALHO(HOJE();7;F2:F20)\n\nDiferença em dias:\n=B2-A2\n",
+    "lembreteHoras": "Lembrete sobre horas\n\n- 24h = 1 dia no Excel\n- Para total acumulado (ex.: 30 horas), use formato:\n  [h]:mm\n\nExemplo:\nSe A1=10:00 e A2=20:00, A1+A2 pode precisar de [h]:mm."
+  }
+}

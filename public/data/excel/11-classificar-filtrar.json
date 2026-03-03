@@ -1,0 +1,176 @@
+{
+  "id": "11-classificar-filtrar",
+  "title": "Aula 11 — Classificar e filtrar (simples e avançado) sem bagunçar os dados",
+  "steps": [
+    {
+      "title": "Por que essa aula evita desastre",
+      "body": "Filtrar e classificar parece simples, mas é onde muita gente:\n- bagunça as linhas\n- separa colunas sem querer\n- perde registros\n- cria relatório errado\n\nObjetivo da aula:\n- filtrar e ordenar com segurança\n- entender o que pode dar errado\n\nRegra:\n- em dados, **uma linha é um registro**. Se a linha “desmonta”, acabou a confiança."
+    },
+    {
+      "title": "Pré-regra: seus dados precisam estar em formato de tabela",
+      "body": "Para filtrar/classificar direito, seus dados devem ter:\n- cabeçalho na primeira linha\n- colunas consistentes\n- sem linhas em branco no meio\n\nMelhor ainda:\n- transformar em **Tabela (Ctrl+T)**\n\nRegra:\n- filtro em Tabela é mais seguro e mais estável."
+    },
+    {
+      "title": "Filtrar (o que é e o que NÃO é)",
+      "body": "Filtrar significa:\n- **mostrar só parte** dos dados\n- sem apagar nada\n\nQuando você filtra:\n- as linhas “somem” temporariamente\n- mas continuam lá\n\nRegra:\n- filtro não exclui. Ele só esconde."
+    },
+    {
+      "title": "Como ativar filtro (jeitos comuns)",
+      "body": "Jeitos:\n\n1) Se estiver em Tabela (Ctrl+T)\n- o filtro já aparece no cabeçalho\n\n2) Em intervalo normal\n- **Dados → Filtro**\n- ou atalho **Ctrl + Shift + L**\n\nRegra:\n- o filtro sempre aparece no cabeçalho (setinhas)."
+    },
+    {
+      "title": "Filtrar por texto (contém, começa com, igual)",
+      "body": "No filtro de texto você tem opções tipo:\n- “Igual a”\n- “Contém”\n- “Começa com”\n\nExemplo real:\n- filtrar produtos que contêm \"Camisa\"\n\nRegra:\n- filtro de texto é perfeito para listas de produtos, clientes e status."
+    },
+    {
+      "title": "Filtrar por número (maior que, entre, top 10)",
+      "body": "Em colunas numéricas, você pode:\n- maior/menor que\n- entre\n- acima da média\n- top 10\n\nExemplo real:\n- mostrar só vendas acima de 1000\n\nRegra:\n- filtro numérico é ótimo para encontrar “os maiores” e “os menores”."
+    },
+    {
+      "title": "Filtrar por data (mês, ano, período)",
+      "body": "Quando a coluna é data de verdade, o filtro de data é poderoso:\n- por ano\n- por mês\n- por dia\n- últimos 7 dias\n\nProblema comum:\n- data como texto → filtro de data não aparece\n\nRegra:\n- se não aparece filtro de data, provavelmente não é data real."
+    },
+    {
+      "title": "Classificar (ordenar) — o que acontece com as linhas",
+      "body": "Classificar significa:\n- reordenar os registros\n\nO Excel move a **linha inteira** (todas as colunas) junto.\n\nExemplo:\n- ordenar por Valor do maior para o menor\n\nRegra:\n- se a linha inteira não está sendo movida, sua base está quebrada (ou você selecionou errado)."
+    },
+    {
+      "title": "Como classificar sem separar colunas (o erro nº1)",
+      "body": "O erro clássico:\n- selecionar só uma coluna e ordenar\n- e “desmontar” a relação com as outras colunas\n\nComo evitar:\n- clique em uma célula dentro da base\n- use ordenar a partir do cabeçalho ou do menu\n- aceite “Expandir seleção” quando o Excel perguntar\n\nRegra:\n- nunca ordene só uma coluna sem expandir a seleção."
+    },
+    {
+      "title": "Ordenação por várias colunas (exemplo real)",
+      "body": "Você pode ordenar por níveis.\n\nExemplo:\n- primeiro por **Data** (mais recente)\n- depois por **Produto** (A→Z)\n\nCaminho:\n- **Dados → Classificar**\n- adicionar nível\n\nRegra:\n- múltiplos níveis deixam a lista “organizada” do jeito que você pensa."
+    },
+    {
+      "title": "Filtro avançado (conceito: critérios fora da tabela)",
+      "body": "Filtro avançado é útil quando:\n- você precisa de critérios mais específicos\n- quer extrair resultados para outro lugar\n- quer valores únicos\n\nA ideia:\n- você cria uma área de critérios (com cabeçalhos)\n- e o Excel usa isso como regra\n\nRegra:\n- filtro avançado é mais ‘técnico’, mas muito poderoso para auditoria."
+    },
+    {
+      "title": "Remover filtro vs limpar filtro (diferença)",
+      "body": "Você pode:\n\n- **Limpar filtro**: remove os critérios e mostra tudo novamente\n- **Remover filtro**: desliga o recurso de filtro da base\n\nRegra:\n- quando terminar, normalmente você só precisa limpar (mostrar tudo)."
+    },
+    {
+      "title": "Erros comuns (e como consertar)",
+      "body": "1) Ordenar só uma coluna e bagunçar registros\n- volte (Ctrl+Z) e ordene expandindo seleção\n\n2) Filtro não aparece certo\n- verifique cabeçalho e linhas em branco\n\n3) Data não filtra como data\n- provavelmente está como texto\n\n4) Base com linhas em branco no meio\n- filtro/classificação ficam errados\n\nRegra:\n- se filtro/classificação dão problema, a base está “suja”."
+    },
+    {
+      "title": "Mini prática (30 minutos) — lista de vendas com filtros e ordenação",
+      "body": "Crie uma base com colunas:\n- Data | Vendedor | Produto | Qtd | Valor\n\nPreencha 30 linhas.\n\n1) Transforme em Tabela (Ctrl+T).\n\n2) Filtre:\n- Vendedor = um nome específico\n- Valor > 1000\n\n3) Ordene:\n- Valor do maior para o menor\n\n4) Ordene por níveis:\n- Data (decrescente)\n- Produto (A→Z)\n\n5) Limpe filtros e confirme que tudo volta.\n\nObjetivo:\n- praticar filtro + ordenação sem destruir a base."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Filtrar mostra parte dos dados (não apaga)\n- Atalho do filtro: Ctrl+Shift+L\n- Classificar reordena registros (linha inteira)\n- Nunca ordene só uma coluna sem expandir seleção\n- Dá pra ordenar por vários níveis\n- Se algo dá errado, a base provavelmente tem linhas em branco ou dados como texto\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 11 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Filtrar significa:",
+        "options": [
+          { "key": "A", "text": "Mostrar só parte dos dados sem apagar" },
+          { "key": "B", "text": "Excluir linhas definitivamente" }
+        ],
+        "answer": "A",
+        "explain": "Filtro esconde temporariamente, não exclui."
+      },
+      {
+        "id": 2,
+        "question": "O atalho para ativar/desativar filtro é:",
+        "options": [
+          { "key": "A", "text": "Ctrl + Shift + L" },
+          { "key": "B", "text": "Ctrl + Shift + P" }
+        ],
+        "answer": "A",
+        "explain": "Ctrl+Shift+L liga/desliga o filtro."
+      },
+      {
+        "id": 3,
+        "question": "Classificar significa:",
+        "options": [
+          { "key": "A", "text": "Reordenar os registros" },
+          { "key": "B", "text": "Colorir as células" }
+        ],
+        "answer": "A",
+        "explain": "Ordenação muda a ordem das linhas."
+      },
+      {
+        "id": 4,
+        "question": "Ao ordenar corretamente, o Excel move:",
+        "options": [
+          { "key": "A", "text": "A linha inteira (todas as colunas do registro)" },
+          { "key": "B", "text": "Só a coluna selecionada sempre" }
+        ],
+        "answer": "A",
+        "explain": "Registro é a linha inteira."
+      },
+      {
+        "id": 5,
+        "question": "Um erro clássico é:",
+        "options": [
+          { "key": "A", "text": "Ordenar só uma coluna e desmontar os registros" },
+          { "key": "B", "text": "Usar Tabela (Ctrl+T)" }
+        ],
+        "answer": "A",
+        "explain": "Isso bagunça a relação entre colunas."
+      },
+      {
+        "id": 6,
+        "question": "Se o filtro de data não aparece como data, provavelmente:",
+        "options": [
+          { "key": "A", "text": "A coluna está como texto, não como data real" },
+          { "key": "B", "text": "O Excel não suporta datas" }
+        ],
+        "answer": "A",
+        "explain": "Data como texto não ganha filtro por mês/ano corretamente."
+      },
+      {
+        "id": 7,
+        "question": "Ordenar por vários níveis serve para:",
+        "options": [
+          { "key": "A", "text": "Definir prioridade (ex.: Data e depois Produto)" },
+          { "key": "B", "text": "Aumentar o brilho da tela" }
+        ],
+        "answer": "A",
+        "explain": "Você ordena por uma coluna e depois por outra."
+      },
+      {
+        "id": 8,
+        "question": "Quando o Excel pergunta 'Expandir seleção', o correto normalmente é:",
+        "options": [
+          { "key": "A", "text": "Sim, para não separar colunas" },
+          { "key": "B", "text": "Não, para bagunçar tudo" }
+        ],
+        "answer": "A",
+        "explain": "Expandir mantém o registro inteiro junto."
+      },
+      {
+        "id": 9,
+        "question": "Limpar filtro significa:",
+        "options": [
+          { "key": "A", "text": "Remover os critérios e mostrar tudo" },
+          { "key": "B", "text": "Apagar os dados filtrados" }
+        ],
+        "answer": "A",
+        "explain": "Limpar só volta a mostrar todas as linhas."
+      },
+      {
+        "id": 10,
+        "question": "Se filtro/classificação dão problema, uma causa comum é:",
+        "options": [
+          { "key": "A", "text": "Linhas em branco no meio da base ou dados 'sujos'" },
+          { "key": "B", "text": "Uso de atalhos" }
+        ],
+        "answer": "A",
+        "explain": "Base quebrada = filtro e ordenação instáveis."
+      }
+    ]
+  },
+  "extra": {
+    "receitaAntiBagunca": "Receita anti-bagunça (antes de ordenar)\n\n1) Tenha cabeçalhos claros\n2) Sem linhas em branco no meio\n3) Clique dentro da base (não selecione só 1 coluna)\n4) Ordene pelo menu (Dados → Classificar)\n5) Se perguntar, escolha Expandir seleção\n\nSe bagunçar: Ctrl+Z imediatamente.",
+    "criteriosMaisUsados": "Critérios mais usados (rápido)\n\nFiltro:\n- Texto contém (status, produto)\n- Número > (vendas altas)\n- Data por mês/ano\n\nOrdenação:\n- Maior→menor (valor)\n- A→Z (produto)\n- Vários níveis (Data + Produto)"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "id": "26-mala-direta-2",
+  "title": "Aula 26 — Mala direta 2: filtros, regras IF e geração em lote",
+  "steps": [
+    {
+      "title": "O que muda da aula 25 para esta",
+      "body": "Na aula 25 você aprendeu o básico:\n- modelo + base + campos\n\nAgora a mala direta fica realmente poderosa:\n- filtrar quem vai receber\n- ordenar registros\n- usar regras (IF) para texto condicional\n- gerar o lote (documentos separados, impressão, PDF)\n\nRegra:\n- isso é o que transforma mala direta em automação de verdade."
+    },
+    {
+      "title": "Filtrar destinatários (gerar só para quem interessa)",
+      "body": "Você pode ter uma base com 500 registros, mas querer gerar só 30.\n\nExemplos de filtros:\n- somente clientes da cidade “São Paulo”\n- somente pedidos com status “Pendente”\n- somente quem tem email preenchido\n\nRegra:\n- filtre antes de gerar o lote para evitar trabalho e erro.\n\nDica:\n- se a base está em Excel, também dá para filtrar lá, mas o Word permite filtrar dentro da mala direta."
+    },
+    {
+      "title": "Ordenar destinatários (organização do lote)",
+      "body": "Ordenar é escolher a sequência dos registros.\n\nExemplos:\n- por Nome (A→Z)\n- por Cidade\n- por CEP\n\nPor que isso importa?\n- impressão e conferência\n- distribuição por regiões\n\nRegra:\n- quando o lote é grande, ordem bem definida evita bagunça."
+    },
+    {
+      "title": "Campos com dados vazios (o problema clássico)",
+      "body": "Na vida real, sempre tem dado faltando.\n\nExemplos:\n- pessoa sem “Complemento”\n- empresa sem “Contato”\n\nSe você não tratar isso, o documento sai estranho:\n- “Endereço: Rua X, , São Paulo”\n\nRegra:\n- dados vazios precisam de estratégia.\n\nSoluções:\n- limpar a base\n- ou usar regras (IF) para esconder partes."
+    },
+    {
+      "title": "Regra IF (texto condicional) — ideia simples",
+      "body": "IF significa:\n- SE algo for verdadeiro → mostre uma coisa\n- SENÃO → mostre outra\n\nExemplo mental:\n- Se Sexo = “F” → “Prezada”\n- Senão → “Prezado”\n\nOutro exemplo:\n- Se Complemento estiver vazio → não mostrar “Complemento”\n- Senão → mostrar o complemento\n\nRegra:\n- IF é o que deixa o documento “inteligente”."
+    },
+    {
+      "title": "IF na prática: Saudação (Prezado/Prezada)",
+      "body": "Exemplo de texto:\n\n\"<<Saudacao>> <<Nome>>\"\n\nMas se você não tem uma coluna “Saudacao”, você pode criar lógica:\n\nSe Campo Sexo = “F” → “Prezada”\nSenão → “Prezado”\n\nRegra:\n- quando o texto muda por pessoa, IF resolve."
+    },
+    {
+      "title": "IF na prática: esconder linha quando campo está vazio",
+      "body": "Exemplo:\nVocê tem a linha:\n\"Complemento: <<Complemento>>\"\n\nSe Complemento estiver vazio, você quer esconder essa linha.\n\nA lógica é:\n- SE Complemento = vazio → não mostrar nada\n- SENÃO → mostrar \"Complemento: ...\"\n\nRegra:\n- isso deixa o documento limpo e sem vírgulas sobrando."
+    },
+    {
+      "title": "Boas práticas antes de gerar o lote",
+      "body": "Checklist:\n\n1) Visualizar resultados (sempre)\n2) Conferir:\n- nomes com acentos\n- campos vazios\n- formatação (quebra de linha)\n3) Fazer um teste com 3 registros\n\nRegra:\n- nunca gere 200 documentos sem um teste com 3."
+    },
+    {
+      "title": "Concluir e Mesclar: formas de saída",
+      "body": "No final você escolhe como gerar:\n\n- **Editar documentos individuais**\n  - cria um arquivo com todos os resultados (um após o outro)\n\n- **Imprimir documentos**\n  - manda direto para impressão\n\n- **Enviar mensagens de email** (se configurado)\n\nRegra:\n- para controle e revisão, “Editar documentos individuais” é o mais seguro."
+    },
+    {
+      "title": "Gerar arquivos separados (um por pessoa) — estratégia prática",
+      "body": "O Word muitas vezes gera um documento único com todos.\n\nSe você precisa “um arquivo por pessoa”, estratégias comuns são:\n- gerar tudo em um documento e depois separar\n- ou usar uma coluna que vira nome de arquivo (dependendo do fluxo)\n\nRegra:\n- se você precisa um PDF por pessoa, planeje a organização antes.\n\nDica:\n- em muitos casos, imprimir para PDF em lote e depois separar por páginas é o caminho prático."
+    },
+    {
+      "title": "Erros comuns na mala direta avançada",
+      "body": "1) Não filtrar e gerar documentos desnecessários.\n2) Não testar e descobrir erro só depois de 200 gerados.\n3) Usar IF sem prever campos vazios.\n4) Base bagunçada (colunas misturadas).\n\nRegra:\n- mala direta é tão boa quanto a qualidade dos dados."
+    },
+    {
+      "title": "Mini prática (35 minutos) — filtro + IF + lote pequeno",
+      "body": "Faça assim:\n\n1) Monte uma base com colunas:\n- Nome | Cidade | Sexo | Complemento\n\nRegistros (exemplo):\n- Ana | São Paulo | F | Ap 12\n- Bruno | São Paulo | M | (vazio)\n- Carla | Campinas | F | Casa\n\n2) No documento, faça:\nSaudação com IF:\n- Se Sexo = F → “Prezada”\n- Senão → “Prezado”\n\n3) Faça a linha do complemento condicional:\n- Se Complemento vazio → não mostrar\n- Senão → mostrar “Complemento: ...”\n\n4) Filtre para gerar apenas “Cidade = São Paulo”.\n5) Visualize resultados.\n6) Conclua e mescle gerando “Editar documentos individuais” (só os filtrados).\n\nObjetivo:\n- usar os 3 poderes: filtro + IF + lote."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Filtrar e ordenar organizam quem recebe e em que ordem\n- IF cria texto condicional (saudação, campos vazios)\n- Sempre teste com poucos registros antes do lote\n- Concluir e Mesclar: editar documentos individuais é o mais seguro\n- Qualidade da base é a base da automação\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 26 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Filtrar destinatários serve para:",
+        "options": [
+          { "key": "A", "text": "Gerar documentos apenas para parte da lista (quem interessa)" },
+          { "key": "B", "text": "Trocar a fonte do documento inteiro" }
+        ],
+        "answer": "A",
+        "explain": "Filtro reduz volume e evita gerar documentos desnecessários."
+      },
+      {
+        "id": 2,
+        "question": "Ordenar destinatários ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Define a sequência do lote (organização)" },
+          { "key": "B", "text": "Apaga os campos de mesclagem" }
+        ],
+        "answer": "A",
+        "explain": "Ordem é útil para impressão e distribuição."
+      },
+      {
+        "id": 3,
+        "question": "Campos vazios são um problema porque:",
+        "options": [
+          { "key": "A", "text": "Podem gerar texto estranho e linhas inúteis no resultado" },
+          { "key": "B", "text": "Fazem o Word travar sempre" }
+        ],
+        "answer": "A",
+        "explain": "Sem tratamento, aparece vírgula sobrando ou informação incompleta."
+      },
+      {
+        "id": 4,
+        "question": "IF significa:",
+        "options": [
+          { "key": "A", "text": "Se… então… senão… (texto condicional)" },
+          { "key": "B", "text": "Inserir Fonte (mudar tipografia)" }
+        ],
+        "answer": "A",
+        "explain": "IF cria lógica para variar o texto conforme dados."
+      },
+      {
+        "id": 5,
+        "question": "Um uso comum de IF na mala direta é:",
+        "options": [
+          { "key": "A", "text": "Prezado/Prezada dependendo do campo Sexo" },
+          { "key": "B", "text": "Criar fórmulas matemáticas complexas" }
+        ],
+        "answer": "A",
+        "explain": "Saudação condicional é um exemplo clássico."
+      },
+      {
+        "id": 6,
+        "question": "Para evitar “Complemento: ” vazio no documento final, você pode:",
+        "options": [
+          { "key": "A", "text": "Usar IF para esconder a linha quando o campo estiver vazio" },
+          { "key": "B", "text": "Aumentar a margem do documento" }
+        ],
+        "answer": "A",
+        "explain": "IF permite mostrar ou não mostrar trechos conforme dados."
+      },
+      {
+        "id": 7,
+        "question": "Antes de gerar 200 documentos, a melhor prática é:",
+        "options": [
+          { "key": "A", "text": "Testar com poucos registros e visualizar resultados" },
+          { "key": "B", "text": "Gerar tudo de uma vez e revisar depois" }
+        ],
+        "answer": "A",
+        "explain": "Teste reduz risco de retrabalho em lote."
+      },
+      {
+        "id": 8,
+        "question": "“Editar documentos individuais” é uma saída segura porque:",
+        "options": [
+          { "key": "A", "text": "Você revisa o resultado antes de imprimir/enviar" },
+          { "key": "B", "text": "Ele impede qualquer revisão" }
+        ],
+        "answer": "A",
+        "explain": "Você ganha controle e pode corrigir antes do envio."
+      },
+      {
+        "id": 9,
+        "question": "A qualidade da mala direta depende muito de:",
+        "options": [
+          { "key": "A", "text": "A base de dados estar limpa e bem organizada" },
+          { "key": "B", "text": "A cor do papel do documento" }
+        ],
+        "answer": "A",
+        "explain": "Dados ruins geram documentos ruins. Automação amplifica erros."
+      },
+      {
+        "id": 10,
+        "question": "A mala direta avançada é poderosa principalmente porque:",
+        "options": [
+          { "key": "A", "text": "Permite filtro + lógica IF + geração em lote" },
+          { "key": "B", "text": "Troca o idioma do teclado automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Esses recursos transformam um modelo simples em produção em massa inteligente."
+      }
+    ]
+  },
+  "extra": {
+    "modelMailMergeAdvanced": "Mala direta avançada (playbook)\n\n1) Dados limpos:\n- 1 linha = 1 registro\n- 1 coluna = 1 informação\n- sem vazios bagunçados\n\n2) Antes do lote:\n- Filtrar destinatários\n- Ordenar (se necessário)\n- Visualizar resultados\n- Testar com 3 registros\n\n3) IF (condicional):\n- Saudação: Sexo=F → Prezada | senão → Prezado\n- Campo vazio: se vazio → não mostra | senão → mostra linha\n\n4) Saída:\n- Mais seguro: Concluir e Mesclar → Editar documentos individuais\n\nRegra de ouro:\n- Automação amplifica erro. Teste primeiro.\n"
+  }
+}

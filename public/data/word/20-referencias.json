@@ -1,0 +1,167 @@
+{
+  "id": "20-referencias",
+  "title": "Aula 20 — Referências: notas de rodapé, legendas e referências cruzadas",
+  "steps": [
+    {
+      "title": "O que são “Referências” no Word (visão geral)",
+      "body": "A guia **Referências** do Word serve para coisas que deixam documento longo mais profissional e fácil de navegar.\n\nNesta aula vamos focar em 3 recursos muito usados:\n- **Notas de rodapé** (explicações/observações)\n- **Legendas** (título automático de figuras/tabelas)\n- **Referências cruzadas** (link interno para figura, tabela, seção)\n\nObjetivo:\n- parar de escrever “Figura 3” na mão e depois se perder."
+    },
+    {
+      "title": "Notas de rodapé: o que são e quando usar",
+      "body": "Nota de rodapé é um texto pequeno no fim da página, ligado a um número no corpo.\n\nUse quando:\n- quer explicar um termo sem interromper o texto\n- quer colocar uma observação extra\n- quer indicar uma fonte (dependendo do padrão do seu trabalho)\n\nVantagem:\n- mantém o texto principal limpo.\n\nRegra:\n- nota de rodapé é para complementar, não para escrever outro livro lá embaixo."
+    },
+    {
+      "title": "Inserir nota de rodapé (o jeito certo)",
+      "body": "O Word faz automaticamente:\n- numeração\n- posicionamento no rodapé\n\nCaminho comum:\n- **Referências → Inserir Nota de Rodapé**\n\nDepois disso:\n- você digita a nota\n- e o Word mantém a ligação\n\nDica:\n- se você inserir uma nota no meio, ele renumera tudo automaticamente."
+    },
+    {
+      "title": "Nota de rodapé vs Nota de fim (diferença)",
+      "body": "Existem dois tipos:\n\n- **Nota de rodapé**: aparece no fim da página\n- **Nota de fim**: aparece no fim do documento (ou seção)\n\nQuando usar nota de fim:\n- quando você não quer “poluir” todas as páginas com notas\n\nRegra:\n- para trabalhos acadêmicos, verifique o padrão exigido."
+    },
+    {
+      "title": "Legendas: o que são (figura, tabela, equação)",
+      "body": "Legenda é um título automático para objetos.\n\nExemplos:\n- Figura 1 — Fluxo de separação\n- Tabela 2 — Itens do pedido\n\nPor que usar legenda?\n- numeração automática\n- dá para criar lista de figuras/tabelas depois\n- referências cruzadas ficam fáceis\n\nRegra:\n- se você tem mais de 2 imagens/tabelas importantes, comece a usar legendas."
+    },
+    {
+      "title": "Inserir legenda (passo a passo conceitual)",
+      "body": "A ideia é:\n\n1) Clique na figura/tabela\n2) Vá em **Referências → Inserir Legenda**\n3) Escolha o rótulo:\n- Figura\n- Tabela\n- (ou crie outro)\n4) Escreva o texto da legenda\n\nO Word cuida do “Figura 1”, “Figura 2”...\n\nDica:\n- legenda geralmente fica embaixo da figura e acima da tabela (padrão comum), mas depende da norma."
+    },
+    {
+      "title": "O segredo: legenda + estilo consistente",
+      "body": "Legenda profissional tem padrão:\n- mesma fonte\n- mesmo tamanho\n- mesmo espaçamento\n\nBoa prática:\n- deixar legenda um pouco menor que o texto (às vezes)\n- manter espaçamento consistente antes/depois\n\nRegra:\n- legenda é parte do documento, não um texto jogado."
+    },
+    {
+      "title": "Referência cruzada: o que é (e por que é ouro)",
+      "body": "Referência cruzada é um “link interno” que aponta para:\n- uma figura\n- uma tabela\n- um título (seção)\n- uma nota\n\nExemplo:\n- “Como mostrado na Figura 2...”\n\nSe você inserir outra figura antes, a numeração muda.\nCom referência cruzada:\n- o Word atualiza.\n\nRegra:\n- nunca mais digite “Figura 3” na mão em documento longo."
+    },
+    {
+      "title": "Como inserir referência cruzada (conceito)",
+      "body": "Fluxo padrão:\n\n1) Garanta que existe uma legenda (Figura/Tabela) ou título (Estilos)\n2) Coloque o cursor onde quer citar\n3) Referências → **Referência Cruzada**\n4) Escolha o tipo:\n- Figura, Tabela, Título...\n5) Escolha o item\n6) Insira\n\nDepois, quando mudar, é só atualizar os campos (aula 23 aprofunda isso)."
+    },
+    {
+      "title": "Atualização: por que às vezes a referência não muda",
+      "body": "Referência cruzada e legenda são campos automáticos.\n\nÀs vezes você muda o documento e precisa atualizar.\n\nRegra prática:\n- se algo parece desatualizado, atualize campos.\n\nDica simples:\n- você pode atualizar o documento inteiro de uma vez (mais comum em documentos longos)."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "1) Fazer nota de rodapé manual (digitando número).\n2) Escrever “Figura 1” na mão.\n3) Mudar a ordem das figuras e esquecer de renumerar.\n4) Não usar referência cruzada e depois perder tempo corrigindo.\n\nRegra:\n- use recursos automáticos sempre que possível."
+    },
+    {
+      "title": "Mini prática (25 minutos) — figura com legenda + referência cruzada",
+      "body": "Faça assim:\n\n1) Insira uma imagem (pode ser um print).\n2) Adicione uma legenda:\n- Referências → Inserir Legenda → “Figura”\n- texto: “Fluxo de trabalho”\n\n3) Em um parágrafo acima, escreva:\n“Como mostrado na Figura X, o processo segue etapas.”\n\n4) Agora substitua o “X” por uma **Referência Cruzada** apontando para a figura.\n\n5) Insira outra imagem antes da primeira (para mudar a numeração).\n6) Atualize e confirme que a referência cruzada acompanha.\n\nObjetivo:\n- ver o Word fazer a manutenção automática."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Notas de rodapé adicionam explicações sem bagunçar o texto\n- Legendas numeram figuras/tabelas automaticamente\n- Referência cruzada cria citações internas que se atualizam\n- Se parecer desatualizado, atualize os campos\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 20 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Nota de rodapé é:",
+        "options": [
+          { "key": "A", "text": "Uma observação no fim da página ligada a um número no texto" },
+          { "key": "B", "text": "Um tipo de imagem do Word" }
+        ],
+        "answer": "A",
+        "explain": "Ela serve para explicar algo sem interromper o texto principal."
+      },
+      {
+        "id": 2,
+        "question": "Inserir nota de rodapé pelo Word é melhor porque:",
+        "options": [
+          { "key": "A", "text": "O Word numera e organiza automaticamente" },
+          { "key": "B", "text": "Você precisa renumerar tudo manualmente" }
+        ],
+        "answer": "A",
+        "explain": "Automação evita erro e retrabalho."
+      },
+      {
+        "id": 3,
+        "question": "Nota de fim se diferencia porque:",
+        "options": [
+          { "key": "A", "text": "Vai para o fim do documento (ou seção), não no fim da página" },
+          { "key": "B", "text": "Sempre fica em negrito" }
+        ],
+        "answer": "A",
+        "explain": "É uma alternativa para não espalhar notas em todas as páginas."
+      },
+      {
+        "id": 4,
+        "question": "Legenda em figura/tabela serve para:",
+        "options": [
+          { "key": "A", "text": "Criar título e numeração automática (Figura 1, Tabela 2…)" },
+          { "key": "B", "text": "Mudar a cor da imagem" }
+        ],
+        "answer": "A",
+        "explain": "Legenda dá numeração e padronização, além de permitir referências."
+      },
+      {
+        "id": 5,
+        "question": "Boa prática é:",
+        "options": [
+          { "key": "A", "text": "Não digitar “Figura 3” manualmente; usar legenda" },
+          { "key": "B", "text": "Digitar o número da figura na mão para ter controle" }
+        ],
+        "answer": "A",
+        "explain": "Manual quebra quando a ordem muda; automático se atualiza."
+      },
+      {
+        "id": 6,
+        "question": "Referência cruzada é:",
+        "options": [
+          { "key": "A", "text": "Um link interno para figura/tabela/título que pode atualizar" },
+          { "key": "B", "text": "Um tipo de sublinhado especial" }
+        ],
+        "answer": "A",
+        "explain": "Ela aponta para elementos numerados e mantém consistência."
+      },
+      {
+        "id": 7,
+        "question": "Para fazer referência cruzada para uma figura, normalmente você precisa que a figura tenha:",
+        "options": [
+          { "key": "A", "text": "Legenda" },
+          { "key": "B", "text": "Cor azul" }
+        ],
+        "answer": "A",
+        "explain": "A legenda cria o “alvo” numerado (Figura 1, Figura 2...)."
+      },
+      {
+        "id": 8,
+        "question": "Se você inserir uma figura nova antes, a numeração das figuras:",
+        "options": [
+          { "key": "A", "text": "Pode mudar, e legenda/referência cruzada ajudam a atualizar" },
+          { "key": "B", "text": "Nunca muda, por regra do Word" }
+        ],
+        "answer": "A",
+        "explain": "A ordem muda a numeração, por isso o automático é essencial."
+      },
+      {
+        "id": 9,
+        "question": "Quando referências cruzadas parecem erradas, normalmente é porque:",
+        "options": [
+          { "key": "A", "text": "Os campos não foram atualizados" },
+          { "key": "B", "text": "O teclado está com Num Lock" }
+        ],
+        "answer": "A",
+        "explain": "São campos automáticos; às vezes precisam de atualização."
+      },
+      {
+        "id": 10,
+        "question": "O jeito profissional de manter “Figura X” correto em documento longo é:",
+        "options": [
+          { "key": "A", "text": "Legenda + referência cruzada (automático)" },
+          { "key": "B", "text": "Digitar tudo manualmente e revisar no final" }
+        ],
+        "answer": "A",
+        "explain": "Automático reduz erro e economiza muito tempo."
+      }
+    ]
+  },
+  "extra": {
+    "modelReferencesWorkflow": "Fluxo profissional (figuras/tabelas)\n\n1) Inseriu figura/tabela?\n→ Adicione legenda (Referências → Inserir Legenda)\n\n2) Vai citar no texto?\n→ Use Referência Cruzada (não digite “Figura 3” manual)\n\n3) Mudou a ordem/conteúdo?\n→ Atualize campos (quando algo parecer desatualizado)\n\nNotas:\n- Nota de rodapé: explicação no fim da página\n- Nota de fim: explicação no fim do documento\n\nRegra de ouro:\n- Em documento longo, tudo que pode ser automático deve ser automático.\n"
+  }
+}

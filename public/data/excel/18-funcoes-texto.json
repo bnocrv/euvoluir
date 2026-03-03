@@ -1,0 +1,168 @@
+{
+  "id": "18-funcoes-texto",
+  "title": "Aula 18 — Funções de texto: ESQUERDA/DIREITA, EXT.TEXTO, PROCURAR, SUBSTITUIR, TEXTO",
+  "steps": [
+    {
+      "title": "Por que funções de texto são tão importantes",
+      "body": "No mundo real, dados quase nunca vêm perfeitos.\n\nVocê recebe coisas como:\n- \"PED-2026-000123\"\n- \"Bruno Carvalho\"\n- \"R$ 1.234,56\"\n- \"Produto - Tamanho M - Azul\"\n\nFunções de texto servem para:\n- separar pedaços\n- padronizar\n- extrair códigos\n- preparar dados para relatórios\n\nRegra:\n- quem domina texto limpa dados muito mais rápido."
+    },
+    {
+      "title": "ESQUERDA (pegar os primeiros caracteres)",
+      "body": "Sintaxe:\n- `=ESQUERDA(texto; núm_caract)`\n\nExemplo:\n- A2: \"PED-2026-000123\"\n- `=ESQUERDA(A2;3)` → \"PED\"\n\nUso real:\n- pegar prefixo de código\n- pegar DDD\n\nRegra:\n- ESQUERDA pega do começo."
+    },
+    {
+      "title": "DIREITA (pegar os últimos caracteres)",
+      "body": "Sintaxe:\n- `=DIREITA(texto; núm_caract)`\n\nExemplo:\n- A2: \"PED-2026-000123\"\n- `=DIREITA(A2;6)` → \"000123\"\n\nUso real:\n- pegar número do pedido\n- pegar finais de código\n\nRegra:\n- DIREITA pega do final."
+    },
+    {
+      "title": "EXT.TEXTO (pegar o meio do texto)",
+      "body": "Sintaxe:\n- `=EXT.TEXTO(texto; núm_inicial; núm_caract)`\n\nExemplo:\n- A2: \"PED-2026-000123\"\n- `=EXT.TEXTO(A2;5;4)` → \"2026\"\n\nExplicação:\n- começa na posição 5 e pega 4 caracteres\n\nRegra:\n- EXT.TEXTO é a tesoura do meio."
+    },
+    {
+      "title": "PROCURAR (achar a posição de um texto dentro de outro)",
+      "body": "PROCURAR retorna a posição onde algo aparece.\n\nSintaxe:\n- `=PROCURAR(texto_procurado; dentro_do_texto)`\n\nExemplo:\n- A2: \"Bruno Carvalho\"\n- `=PROCURAR(\" \";A2)` → posição do primeiro espaço\n\nPor que isso é útil?\n- para separar nome e sobrenome\n\nRegra:\n- PROCURAR não extrai, ele aponta a posição."
+    },
+    {
+      "title": "Separar nome e sobrenome (exemplo completo usando PROCURAR + ESQUERDA + DIREITA)",
+      "body": "A2: \"Bruno Carvalho\"\n\n1) posição do espaço:\n- `=PROCURAR(\" \";A2)` → (ex.: 6)\n\n2) Nome (antes do espaço):\n- `=ESQUERDA(A2;PROCURAR(\" \";A2)-1)`\n\n3) Sobrenome (depois do espaço):\n- `=DIREITA(A2;NÚM.CARACT(A2)-PROCURAR(\" \";A2))`\n\nRegra:\n- você usa PROCURAR para descobrir onde cortar."
+    },
+    {
+      "title": "SUBSTITUIR (trocar por posição) vs SUBSTITUIÇÃO (trocar por texto)",
+      "body": "Duas funções parecidas, mas diferentes:\n\n1) **SUBSTITUIR** (posição)\n- troca um trecho começando em uma posição\n- `=SUBSTITUIR(texto; núm_inicial; núm_caract; novo_texto)`\n\n2) **SUBSTITUIÇÃO** (conteúdo)\n- troca um texto por outro em qualquer lugar\n- `=SUBSTITUIÇÃO(texto; texto_antigo; novo_texto; [núm_ocorrência])`\n\nRegra:\n- SUBSTITUIR = cirúrgico por posição.\n- SUBSTITUIÇÃO = trocar palavras/padrões."
+    },
+    {
+      "title": "Exemplo: limpar traços e espaços (SUBSTITUIÇÃO)",
+      "body": "A2: \"PED-2026-000123\"\n\nTirar o traço:\n- `=SUBSTITUIÇÃO(A2;\"-\";\"\")`\n\nResultado:\n- \"PED2026000123\"\n\nRegra:\n- SUBSTITUIÇÃO é muito usada para limpeza rápida."
+    },
+    {
+      "title": "TEXTO (formatar número como texto do jeito que você quer)",
+      "body": "Às vezes você quer transformar número em texto com formato.\n\nSintaxe:\n- `=TEXTO(valor; \"formato\")`\n\nExemplos:\n- `=TEXTO(HOJE();\"dd/mm/aaaa\")` → \"03/03/2026\" (exemplo)\n- `=TEXTO(1234,5;\"0,00\")` → \"1234,50\"\n\nUso real:\n- montar códigos\n- montar mensagens\n\nRegra:\n- TEXTO transforma valor em texto formatado."
+    },
+    {
+      "title": "Cuidado: TEXTO vira texto mesmo (pode atrapalhar cálculo)",
+      "body": "Se você usar TEXTO em um número:\n- o resultado vira texto\n\nIsso pode:\n- impedir soma\n- impedir cálculo\n\nRegra:\n- use TEXTO para apresentação/códigos, não para colunas que você ainda quer calcular."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Contar posição errado no EXT.TEXTO\n- use PROCURAR para achar separadores\n\n2) Texto com espaços extras\n- pode atrapalhar PROCURAR e comparações\n- (na aula 30 você vai limpar isso melhor)\n\n3) Sobrenome com mais de uma palavra\n- \"Bruno da Silva Carvalho\" é mais complexo\n\nRegra:\n- comece resolvendo 80% dos casos (padrão simples)."
+    },
+    {
+      "title": "Mini prática (45 minutos) — extrair e padronizar códigos",
+      "body": "Crie uma coluna A com 10 exemplos:\n- \"PED-2026-000123\"\n- \"PED-2026-000124\"...\n\nTarefas:\n\n1) Extrair prefixo (PED) em B:\n- `=ESQUERDA(A2;3)`\n\n2) Extrair ano (2026) em C:\n- `=EXT.TEXTO(A2;5;4)`\n\n3) Extrair número final (000123) em D:\n- `=DIREITA(A2;6)`\n\n4) Criar código limpo sem traços em E:\n- `=SUBSTITUIÇÃO(A2;\"-\";\"\")`\n\n5) Em outra área, coloque nomes \"Bruno Carvalho\" e separe Nome/Sobrenome usando PROCURAR.\n\nObjetivo:\n- dominar extração (esquerda/meio/direita) + posição (procurar) + limpeza (substituição)."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- ESQUERDA pega o começo\n- DIREITA pega o final\n- EXT.TEXTO pega o meio\n- PROCURAR encontra a posição de um separador\n- SUBSTITUIR (posição) ≠ SUBSTITUIÇÃO (texto)\n- TEXTO formata valor como texto (use com cuidado)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 18 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "ESQUERDA serve para:",
+        "options": [
+          { "key": "A", "text": "Extrair os primeiros caracteres de um texto" },
+          { "key": "B", "text": "Somar números" }
+        ],
+        "answer": "A",
+        "explain": "ESQUERDA pega do começo do texto."
+      },
+      {
+        "id": 2,
+        "question": "DIREITA serve para:",
+        "options": [
+          { "key": "A", "text": "Extrair os últimos caracteres de um texto" },
+          { "key": "B", "text": "Contar células vazias" }
+        ],
+        "answer": "A",
+        "explain": "DIREITA pega do final."
+      },
+      {
+        "id": 3,
+        "question": "EXT.TEXTO serve para:",
+        "options": [
+          { "key": "A", "text": "Extrair um trecho do meio do texto" },
+          { "key": "B", "text": "Criar gráfico" }
+        ],
+        "answer": "A",
+        "explain": "Você define posição inicial e quantidade."
+      },
+      {
+        "id": 4,
+        "question": "PROCURAR retorna:",
+        "options": [
+          { "key": "A", "text": "A posição onde um texto aparece dentro de outro" },
+          { "key": "B", "text": "O texto já cortado" }
+        ],
+        "answer": "A",
+        "explain": "Ele aponta a posição; não extrai sozinho."
+      },
+      {
+        "id": 5,
+        "question": "SUBSTITUIÇÃO é melhor quando:",
+        "options": [
+          { "key": "A", "text": "Você quer trocar um texto por outro (ex.: '-' por vazio)" },
+          { "key": "B", "text": "Você quer calcular média" }
+        ],
+        "answer": "A",
+        "explain": "SUBSTITUIÇÃO troca por conteúdo."
+      },
+      {
+        "id": 6,
+        "question": "SUBSTITUIR é melhor quando:",
+        "options": [
+          { "key": "A", "text": "Você quer trocar um trecho por posição (cirúrgico)" },
+          { "key": "B", "text": "Você quer filtrar tabela" }
+        ],
+        "answer": "A",
+        "explain": "SUBSTITUIR usa posição inicial e quantidade."
+      },
+      {
+        "id": 7,
+        "question": "TEXTO serve para:",
+        "options": [
+          { "key": "A", "text": "Transformar um valor em texto formatado" },
+          { "key": "B", "text": "Transformar texto em número automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "TEXTO retorna texto com formato."
+      },
+      {
+        "id": 8,
+        "question": "Um cuidado ao usar TEXTO é:",
+        "options": [
+          { "key": "A", "text": "O resultado vira texto e pode atrapalhar cálculos" },
+          { "key": "B", "text": "Ele apaga o arquivo" }
+        ],
+        "answer": "A",
+        "explain": "Texto não soma como número sem conversão."
+      },
+      {
+        "id": 9,
+        "question": "Para extrair o ano (2026) de \"PED-2026-000123\" com posição fixa, uma fórmula possível é:",
+        "options": [
+          { "key": "A", "text": "=EXT.TEXTO(A2;5;4)" },
+          { "key": "B", "text": "=DIREITA(A2;4)" }
+        ],
+        "answer": "A",
+        "explain": "Começa no 5º caractere e pega 4."
+      },
+      {
+        "id": 10,
+        "question": "Uma regra mental boa é:",
+        "options": [
+          { "key": "A", "text": "PROCURAR acha onde cortar; ESQUERDA/DIREITA/EXT.TEXTO fazem o corte" },
+          { "key": "B", "text": "ESQUERDA serve para tudo sempre" }
+        ],
+        "answer": "A",
+        "explain": "PROCURAR dá a posição; as outras extraem."
+      }
+    ]
+  },
+  "extra": {
+    "receitasProntas": "Receitas prontas\n\nPrefixo 3 letras:\n=ESQUERDA(A2;3)\n\nÚltimos 6 dígitos:\n=DIREITA(A2;6)\n\nAno no meio (posição fixa):\n=EXT.TEXTO(A2;5;4)\n\nRemover traço:\n=SUBSTITUIÇÃO(A2;\"-\";\"\")\n\nData como texto:\n=TEXTO(HOJE();\"dd/mm/aaaa\")\n",
+    "dicaProcurar": "Dica PROCURAR\n\nSe você tem separador (espaço, '-', '/', '_'), faça:\n- posição = PROCURAR(\"separador\";A2)\n\nDepois use:\n- ESQUERDA(...; posição-1)\n- DIREITA(...; NÚM.CARACT(A2)-posição)\n\nIsso transforma texto bagunçado em colunas organizadas."
+  }
+}

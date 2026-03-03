@@ -1,0 +1,167 @@
+{
+  "id": "23-campos",
+  "title": "Aula 23 — Campos do Word: data automática, páginas, propriedades e atalhos",
+  "steps": [
+    {
+      "title": "O que são “campos” no Word (explicação simples)",
+      "body": "Campo é um pedaço do documento que o Word preenche automaticamente.\n\nExemplos de campos:\n- número da página\n- total de páginas\n- data automática\n- nome do arquivo\n- autor (propriedade)\n- referências cruzadas\n- itens do sumário\n\nPense assim:\n- campo = “valor automático”\n- texto normal = “valor manual”\n\nRegra:\n- em documento profissional, campos evitam erro e retrabalho."
+    },
+    {
+      "title": "Onde campos aparecem sem você perceber",
+      "body": "Muitos recursos do Word são campos por trás:\n- sumário automático\n- legenda (Figura 1, Figura 2)\n- referência cruzada\n- numeração de páginas\n- data/hora automática\n\nPor isso:\n- quando algo parece “desatualizado”, quase sempre é um campo que precisa atualizar."
+    },
+    {
+      "title": "Campos mais usados no dia a dia",
+      "body": "Os “top” de escritório:\n\n1) Página atual\n2) Total de páginas\n3) Data (automática)\n4) Nome do arquivo\n5) Título/Autor (propriedades)\n\nEles ficam ótimos em:\n- cabeçalho e rodapé\n- capa\n- relatórios recorrentes\n\nRegra:\n- se você digita isso na mão, você está abrindo espaço para erro."
+    },
+    {
+      "title": "Data automática (e o cuidado com “atualiza sempre”)",
+      "body": "Existe data que:\n- atualiza ao abrir/imprimir\n\nE existe data fixa (dependendo de como você insere/configura).\n\nUse data automática quando:\n- relatório semanal/mensal\n- documento que sempre precisa mostrar “última atualização”\n\nCuidado:\n- em documento que precisa registrar um dia específico (ex.: assinatura), você pode querer data fixa.\n\nRegra:\n- escolha a intenção: “sempre atualiza” vs “registro fixo”."
+    },
+    {
+      "title": "Página X de Y (campo clássico de rodapé)",
+      "body": "“Página 3 de 12” é feito com campos:\n- página atual\n- total de páginas\n\nVantagem:\n- se o documento cresce, o total muda sozinho.\n\nRegra:\n- rodapé profissional quase sempre usa campos, não números digitados."
+    },
+    {
+      "title": "Propriedades do documento (metadados úteis)",
+      "body": "O Word guarda informações do arquivo, como:\n- Título\n- Autor\n- Empresa\n- Palavras-chave\n\nEssas propriedades podem virar campos.\n\nExemplo:\n- cabeçalho mostrando o “Título” do documento\n\nVantagem:\n- se você mudar o título nas propriedades, o documento atualiza onde estiver usando o campo."
+    },
+    {
+      "title": "Mostrar campos e entender que eles são “objetos”",
+      "body": "Campos não são texto comum.\n\nSinais:\n- às vezes aparecem com fundo cinza ao clicar\n- atualizam\n- você não deve “editar por cima” como se fosse texto\n\nRegra:\n- se um número muda sozinho (página, figura), é campo.\n- trate como automático."
+    },
+    {
+      "title": "Atualizar campos (o comando mais importante desta aula)",
+      "body": "Quando algo está desatualizado:\n- atualize campos.\n\nRegra prática:\n- antes de exportar para PDF, atualize.\n\nDica comum:\n- você pode selecionar tudo (Ctrl+A) e atualizar campos.\n\nIsso atualiza:\n- sumário\n- referências\n- paginação\n- legendas e cruzadas (dependendo do caso)"
+    },
+    {
+      "title": "Atalho mental: Ctrl+A + atualizar (ritual de finalização)",
+      "body": "Um ritual profissional ao finalizar documento:\n\n1) Ctrl+A (selecionar tudo)\n2) Atualizar campos\n3) Conferir sumário e numeração\n4) Exportar para PDF\n\nRegra:\n- isso evita “sumário com página errada” e “figura com número antigo”."
+    },
+    {
+      "title": "Quando atualizar campo não resolve (diagnóstico)",
+      "body": "Se atualizar não resolve, pode ser:\n- título sem estilo (sumário não pega)\n- legenda feita manualmente (não é campo)\n- referência digitada na mão (“Figura 3” manual)\n\nRegra:\n- campos só atualizam o que foi criado como campo.\n- se foi manual, você precisa corrigir a origem (estilos/legendas/referências cruzadas)."
+    },
+    {
+      "title": "Erros comuns com campos",
+      "body": "1) Digitar número de página manual.\n2) Escrever “Página 1 de 10” manual.\n3) Editar sumário na mão.\n4) Não atualizar antes de PDF.\n\nRegra:\n- automático existe para ser usado."
+    },
+    {
+      "title": "Mini prática (25 minutos) — documento que se autoatualiza",
+      "body": "Faça isso:\n\n1) Crie um documento com 3 páginas.\n2) No rodapé, insira:\n- “Página X de Y”\n\n3) No cabeçalho, insira a data automática.\n4) Insira 2 títulos (Título 1) e gere um sumário (aula 19).\n\nAgora teste:\n5) Adicione texto para empurrar conteúdo e mudar páginas.\n6) Faça Ctrl+A e atualize os campos.\n7) Veja:\n- total de páginas mudar\n- sumário ajustar páginas\n\nObjetivo:\n- sentir o Word fazendo manutenção por você."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Campo = conteúdo automático (página, data, total)\n- Muitos recursos do Word são campos por trás\n- Atualizar campos é essencial antes do PDF\n- Ctrl+A + atualizar = ritual profissional\n- Se não atualiza, talvez você fez manual (e precisa corrigir a origem)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 23 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Campo no Word é:",
+        "options": [
+          { "key": "A", "text": "Um valor automático que o Word atualiza (página, data, etc.)" },
+          { "key": "B", "text": "Uma imagem que não pode ser editada" }
+        ],
+        "answer": "A",
+        "explain": "Campos são inserções automáticas do Word."
+      },
+      {
+        "id": 2,
+        "question": "Sumário automático e referências cruzadas são:",
+        "options": [
+          { "key": "A", "text": "Baseados em campos (podem precisar de atualização)" },
+          { "key": "B", "text": "Textos digitados manualmente" }
+        ],
+        "answer": "A",
+        "explain": "Eles usam campos por trás e precisam ser atualizados."
+      },
+      {
+        "id": 3,
+        "question": "“Página X de Y” é feito com:",
+        "options": [
+          { "key": "A", "text": "Campos de página atual e total de páginas" },
+          { "key": "B", "text": "Números digitados manualmente em cada página" }
+        ],
+        "answer": "A",
+        "explain": "Campos mantêm tudo correto automaticamente."
+      },
+      {
+        "id": 4,
+        "question": "Antes de exportar para PDF, é boa prática:",
+        "options": [
+          { "key": "A", "text": "Atualizar campos para evitar páginas/índices errados" },
+          { "key": "B", "text": "Ignorar o sumário e torcer" }
+        ],
+        "answer": "A",
+        "explain": "Atualização evita erros comuns em documento final."
+      },
+      {
+        "id": 5,
+        "question": "Ctrl+A é útil nesse contexto porque:",
+        "options": [
+          { "key": "A", "text": "Seleciona todo o documento para atualizar tudo de uma vez" },
+          { "key": "B", "text": "Apaga o documento inteiro" }
+        ],
+        "answer": "A",
+        "explain": "Selecionar tudo facilita a atualização geral."
+      },
+      {
+        "id": 6,
+        "question": "Data automática é boa quando:",
+        "options": [
+          { "key": "A", "text": "O documento é recorrente e precisa mostrar atualização" },
+          { "key": "B", "text": "Você quer uma data que nunca muda" }
+        ],
+        "answer": "A",
+        "explain": "Relatórios e documentos recorrentes se beneficiam de data dinâmica."
+      },
+      {
+        "id": 7,
+        "question": "Se um “sumário” não atualiza corretamente, uma causa provável é:",
+        "options": [
+          { "key": "A", "text": "Os títulos não estão com estilos (Título 1/2/3)" },
+          { "key": "B", "text": "O mouse está sem pilha" }
+        ],
+        "answer": "A",
+        "explain": "Sem estilos, o Word não sabe o que deve entrar no sumário."
+      },
+      {
+        "id": 8,
+        "question": "Propriedades do documento (como Título/Autor) podem:",
+        "options": [
+          { "key": "A", "text": "Virar campos e aparecer automaticamente no documento" },
+          { "key": "B", "text": "Impedir o documento de salvar" }
+        ],
+        "answer": "A",
+        "explain": "Metadados podem ser inseridos como campos e atualizados."
+      },
+      {
+        "id": 9,
+        "question": "Se você digitou “Figura 3” manualmente, isso:",
+        "options": [
+          { "key": "A", "text": "Não vai atualizar automaticamente; o certo é referência cruzada" },
+          { "key": "B", "text": "Vira campo automático sozinho" }
+        ],
+        "answer": "A",
+        "explain": "O Word só atualiza o que foi criado como campo."
+      },
+      {
+        "id": 10,
+        "question": "A melhor mentalidade em documento profissional é:",
+        "options": [
+          { "key": "A", "text": "Usar campos/automação para reduzir erro e retrabalho" },
+          { "key": "B", "text": "Fazer tudo manual para garantir que dá mais trabalho" }
+        ],
+        "answer": "A",
+        "explain": "Automação existe para manter consistência e economizar tempo."
+      }
+    ]
+  },
+  "extra": {
+    "modelFieldsRitual": "Ritual profissional antes do PDF\n\n1) Ctrl+A (selecionar tudo)\n2) Atualizar campos\n3) Conferir:\n- sumário (páginas)\n- “Página X de Y”\n- referências cruzadas\n- legendas\n4) Exportar para PDF\n\nSe algo não atualiza:\n- provavelmente foi digitado manualmente\n- corrija usando estilos/legendas/referência cruzada\n\nCampos mais úteis:\n- Página atual\n- Total de páginas\n- Data automática\n- Nome do arquivo\n- Propriedades (Título/Autor)\n"
+  }
+}

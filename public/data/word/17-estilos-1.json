@@ -1,0 +1,163 @@
+{
+  "id": "17-estilos-1",
+  "title": "Aula 17 — Estilos 1: por que usar estilos (títulos, corpo, consistência)",
+  "steps": [
+    {
+      "title": "Por que Estilos é o recurso que separa amador de profissional",
+      "body": "Estilos são “regras prontas” de formatação.\n\nEm vez de você formatar na mão (fonte, tamanho, espaçamento) toda hora, você aplica um estilo.\n\nO ganho é enorme:\n- consistência automática\n- mudança rápida (muda 1 vez e o documento todo atualiza)\n- base para sumário automático\n- organização em documentos longos\n\nRegra:\n- se o documento tem várias páginas, Estilos vale MUITO."
+    },
+    {
+      "title": "O que é um estilo (definição simples)",
+      "body": "Um estilo é um “pacote” de formatação.\n\nExemplo:\nEstilo “Título 1” pode ter:\n- fonte 16\n- negrito\n- espaçamento antes 12 pt e depois 6 pt\n\nQuando você aplica “Título 1”, o Word aplica tudo isso de uma vez.\n\nImportante:\n- estilo não é só “a aparência”, ele também dá “significado” (estrutura)."
+    },
+    {
+      "title": "Por que “título só com negrito e fonte grande” é ruim",
+      "body": "Quando você faz um título manualmente:\n- você pode esquecer um detalhe\n- cada título fica diferente\n- não dá para gerar sumário automático direito\n- organizar o documento vira sofrimento\n\nEstilo resolve porque:\n- todos os títulos ficam padronizados\n- o Word entende a hierarquia (Título 1, Título 2, etc.)"
+    },
+    {
+      "title": "Hierarquia: Título 1, Título 2, Título 3",
+      "body": "Pense assim:\n\n- **Título 1**: capítulos principais\n- **Título 2**: seções dentro do capítulo\n- **Título 3**: subseções\n\nExemplo:\nTítulo 1: 1. Introdução\nTítulo 2: 1.1 Objetivo\nTítulo 2: 1.2 Escopo\nTítulo 1: 2. Procedimento\n\nRegra:\n- não pule níveis sem necessidade.\n- mantenha a estrutura lógica."
+    },
+    {
+      "title": "Onde ficam os Estilos",
+      "body": "Normalmente em:\n- **Página Inicial → Estilos**\n\nLá você vê:\n- Normal (corpo do texto)\n- Título 1\n- Título 2\n- Título 3\n\nDica:\n- se você não está vendo, expanda a galeria de estilos ou abra o painel de estilos."
+    },
+    {
+      "title": "Aplicar estilo (o jeito certo)",
+      "body": "Você pode:\n\n- colocar o cursor no parágrafo e clicar no estilo\nOU\n- selecionar vários parágrafos e aplicar de uma vez\n\nRegra:\n- estilo se aplica ao PARÁGRAFO.\n\nIsso é importante:\n- mesmo se você selecionar só uma palavra, o estilo afeta o parágrafo inteiro."
+    },
+    {
+      "title": "Normal (corpo do texto) é o pilar do documento",
+      "body": "O estilo “Normal” é o corpo do texto.\n\nSe o Normal está bem configurado:\n- o documento inteiro já nasce organizado\n\nBoas escolhas para Normal:\n- fonte legível\n- tamanho 11 ou 12\n- entrelinhas 1,15 ou 1,5\n- espaçamento depois (ex.: 6 pt)\n\nRegra:\n- não brigue com o Normal; configure e use."
+    },
+    {
+      "title": "Estilos ajudam o Painel de Navegação (GPS)",
+      "body": "Lembra do Painel de Navegação (aula 02)?\n\nEle fica poderoso quando você usa Estilos.\n\nPorque:\n- títulos aparecem como uma lista\n- você clica e vai direto\n- dá para reorganizar capítulos arrastando\n\nRegra:\n- Estilos + Painel de Navegação = documento longo sem sofrimento."
+    },
+    {
+      "title": "Estilos são base do Sumário automático",
+      "body": "O sumário automático (aula 19) funciona assim:\n- o Word pega os parágrafos com estilo Título 1/2/3\n- monta o índice com páginas\n\nSe você não usa estilos:\n- o Word não sabe o que é título\n- e o sumário não fica confiável\n\nRegra:\n- sem estilos, sumário vira gambiarra."
+    },
+    {
+      "title": "Erros comuns ao começar com Estilos",
+      "body": "1) Continuar formatando títulos manualmente.\n2) Usar Título 1 em tudo.\n3) Pular de Título 1 direto para Título 3.\n4) Aplicar estilo e depois “quebrar” com formatação manual por cima.\n\nRegra:\n- primeiro aplique estilo.\n- depois ajuste o estilo (aula 18) — não ajuste cada título na mão."
+    },
+    {
+      "title": "Mini prática (20 minutos) — documento com estrutura",
+      "body": "Crie um documento com esta estrutura:\n\n1) Aplique **Título 1** em:\n- “1. Introdução”\n- “2. Procedimento”\n\n2) Aplique **Título 2** em:\n- “1.1 Objetivo”\n- “1.2 Escopo”\n- “2.1 Separação”\n- “2.2 Conferência”\n\n3) Embaixo de cada título, escreva 2 parágrafos em **Normal**.\n\n4) Abra o Painel de Navegação (Exibir → Painel de Navegação) e veja os títulos.\n\nObjetivo:\n- sentir o poder da estrutura."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Estilos são pacotes de formatação + estrutura\n- Título 1/2/3 criam hierarquia\n- Normal é a base do corpo do texto\n- Estilos alimentam Painel de Navegação e Sumário\n- O certo é ajustar o estilo, não formatar cada trecho na mão\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 17 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Estilos servem para:",
+        "options": [
+          { "key": "A", "text": "Padronizar formatação e dar estrutura ao documento" },
+          { "key": "B", "text": "Aumentar o volume do computador" }
+        ],
+        "answer": "A",
+        "explain": "Estilos são regras de formatação e também criam estrutura (títulos)."
+      },
+      {
+        "id": 2,
+        "question": "Fazer título só com fonte grande e negrito é ruim porque:",
+        "options": [
+          { "key": "A", "text": "Não cria estrutura e dificulta sumário/consistência" },
+          { "key": "B", "text": "Deixa o Word mais rápido" }
+        ],
+        "answer": "A",
+        "explain": "Sem estilos, o Word não entende o que é título e tudo fica inconsistente."
+      },
+      {
+        "id": 3,
+        "question": "Título 1, Título 2 e Título 3 representam:",
+        "options": [
+          { "key": "A", "text": "Hierarquia de capítulos, seções e subseções" },
+          { "key": "B", "text": "Cores diferentes de texto" }
+        ],
+        "answer": "A",
+        "explain": "Eles organizam o documento em níveis."
+      },
+      {
+        "id": 4,
+        "question": "O estilo “Normal” geralmente é usado para:",
+        "options": [
+          { "key": "A", "text": "Corpo do texto" },
+          { "key": "B", "text": "Somente capa do documento" }
+        ],
+        "answer": "A",
+        "explain": "Normal é o estilo base do conteúdo principal."
+      },
+      {
+        "id": 5,
+        "question": "Um estilo é melhor descrito como:",
+        "options": [
+          { "key": "A", "text": "Um pacote de formatação aplicado de uma vez" },
+          { "key": "B", "text": "Um tipo de arquivo do Word" }
+        ],
+        "answer": "A",
+        "explain": "O estilo reúne várias formatações: fonte, espaçamento, etc."
+      },
+      {
+        "id": 6,
+        "question": "O Painel de Navegação fica muito útil quando você:",
+        "options": [
+          { "key": "A", "text": "Usa estilos de Título (1/2/3)" },
+          { "key": "B", "text": "Desliga todas as ferramentas do Word" }
+        ],
+        "answer": "A",
+        "explain": "Com estilos, títulos aparecem no painel como uma lista de seções."
+      },
+      {
+        "id": 7,
+        "question": "O sumário automático depende de:",
+        "options": [
+          { "key": "A", "text": "Títulos marcados com estilos (Título 1/2/3)" },
+          { "key": "B", "text": "Negrito manual em qualquer texto" }
+        ],
+        "answer": "A",
+        "explain": "O Word usa estilos de título para montar o índice."
+      },
+      {
+        "id": 8,
+        "question": "Estilos se aplicam principalmente a:",
+        "options": [
+          { "key": "A", "text": "Parágrafos (não só palavras soltas)" },
+          { "key": "B", "text": "Apenas uma letra por vez" }
+        ],
+        "answer": "A",
+        "explain": "Estilo é de parágrafo: ele define como aquele bloco se comporta."
+      },
+      {
+        "id": 9,
+        "question": "Boa prática é:",
+        "options": [
+          { "key": "A", "text": "Aplicar estilo e ajustar o estilo (não formatar cada título na mão)" },
+          { "key": "B", "text": "Cada título ser formatado manualmente de um jeito diferente" }
+        ],
+        "answer": "A",
+        "explain": "Ajustar o estilo mantém consistência e economiza tempo."
+      },
+      {
+        "id": 10,
+        "question": "Um erro comum com estilos é:",
+        "options": [
+          { "key": "A", "text": "Usar Título 1 em tudo e perder hierarquia" },
+          { "key": "B", "text": "Usar estilos para criar sumário automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Se tudo é Título 1, você perde a estrutura por níveis."
+      }
+    ]
+  },
+  "extra": {
+    "modelStylesRules": "Regras de ouro dos Estilos (pra virar profissional)\n\n1) Corpo do texto = Estilo Normal\n2) Capítulos = Título 1\n3) Seções = Título 2\n4) Sub-seções = Título 3\n5) Não formate títulos “na mão” (fonte grande + negrito)\n6) Quer mudar aparência? Ajuste o estilo (aula 18)\n7) Estilos alimentam:\n   - Painel de Navegação\n   - Sumário automático\n\nMini estrutura exemplo:\nTítulo 1: 1. Introdução\nTítulo 2: 1.1 Objetivo\nTítulo 2: 1.2 Escopo\n"
+  }
+}

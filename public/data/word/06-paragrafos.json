@@ -1,0 +1,159 @@
+{
+  "id": "06-paragrafos",
+  "title": "Aula 06 — Parágrafos: alinhamento, recuo, espaçamento e tabulação",
+  "steps": [
+    {
+      "title": "Por que parágrafo é mais importante que “fonte bonita”",
+      "body": "Em documento profissional, o que mais muda a leitura não é a fonte.\nÉ o PARÁGRAFO.\n\nParágrafo controla:\n- alinhamento (esquerda/centro/direita/justificado)\n- recuos (começo do texto)\n- espaçamento (antes/depois, entre linhas)\n- tabulação (alinhamento por “pontos”)\n\nDominar parágrafo = documento limpo e consistente."
+    },
+    {
+      "title": "Alinhamento: quando usar cada um",
+      "body": "Os 4 alinhamentos:\n\n- **Esquerda**: padrão para textos comuns (mais legível)\n- **Centro**: títulos curtos, capa (com moderação)\n- **Direita**: raramente (datas/assinaturas em alguns casos)\n- **Justificado**: deixa as laterais retas, comum em relatórios e trabalhos\n\nDica importante:\n- justificado pode criar “buracos” no texto se tiver palavras longas.\n- em muitos casos, alinhado à esquerda fica mais natural."
+    },
+    {
+      "title": "Recuo: o jeito certo de começar parágrafo",
+      "body": "Recuo é onde a linha começa.\n\nTipos comuns:\n- **Recuo da primeira linha**: só a primeira linha entra um pouco\n- **Recuo à esquerda**: o parágrafo inteiro vai para dentro\n- **Recuo à direita**: o parágrafo “encolhe” do lado direito\n\nUso típico:\n- primeira linha com recuo é muito comum em textos longos.\n\nRegra:\n- NÃO use espaços para fazer recuo. Use a ferramenta de recuo."
+    },
+    {
+      "title": "O erro clássico: usar espaços e ENTER para alinhar",
+      "body": "Dois erros que causam bagunça:\n\n1) usar vários espaços para “empurrar” texto\n2) usar ENTER extra para criar distância\n\nPor que é ruim?\n- muda tudo quando a fonte muda\n- quebra em outro computador\n- fica inconsistente\n\nCorreção:\n- recuo e espaçamento são ferramentas do parágrafo."
+    },
+    {
+      "title": "Espaçamento (antes/depois) — separação profissional",
+      "body": "O espaço entre parágrafos deve ser controlado por:\n- Espaçamento **Antes**\n- Espaçamento **Depois**\n\nExemplo prático:\n- Corpo do texto: Depois = 6 pt\n- Títulos: Antes = 12 pt, Depois = 6 pt\n\nVantagem:\n- você cria um padrão bonito e repetível."
+    },
+    {
+      "title": "Entrelinhas (revisão rápida do que vimos)",
+      "body": "Entrelinhas é a distância entre linhas.\n\nPadrões comuns:\n- 1,15 (muito usado)\n- 1,5 (muito usado)\n\nRegra:\n- escolha 1 padrão e mantenha.\n\nDica:\n- se o texto parecer “apertado”, aumente para 1,15 ou 1,5."
+    },
+    {
+      "title": "Tabulação: alinhamento por pontos (muito útil em listas limpas)",
+      "body": "Tabulação (TAB) não é “colocar espaço”.\nÉ criar pontos de alinhamento.\n\nExemplo clássico:\n- Produto<TAB>R$ 10,00\n- Produto maior<TAB>R$ 120,00\n\nCom TAB:\n- os preços ficam alinhados\n\nSem TAB (com espaços):\n- fica torto e quebra fácil."
+    },
+    {
+      "title": "Como criar tabulações do jeito certo",
+      "body": "Passo a passo (conceito):\n\n1) Defina um ponto de tabulação (na régua ou nas configurações)\n2) Aperte TAB entre as partes do texto\n\nDica:\n- se a régua não estiver visível: **Exibir → Régua**\n\nRegra:\n- para alinhamento “em colunas” simples, TAB é excelente.\n- para tabela de verdade, use Tabela (aulas 12 e 13)."
+    },
+    {
+      "title": "O diálogo Parágrafo (onde as coisas ficam “certinhas”)",
+      "body": "Os botões rápidos ajudam, mas o lugar mais confiável é a janela de Parágrafo.\n\nLá você controla:\n- recuos exatos\n- espaçamento exato\n- entrelinhas\n\nRegra:\n- quando você quer padrão profissional, ajuste no Parágrafo.\n\nDica:\n- se algo estiver estranho, abra o Parágrafo e “zera”/corrige."
+    },
+    {
+      "title": "Mini prática (15 minutos) — parágrafo padrão profissional",
+      "body": "Crie um documento e cole/ digite 3 parágrafos.\n\nAgora aplique:\n1) Corpo do texto:\n- alinhamento: esquerda (ou justificado)\n- entrelinhas: 1,15\n- espaçamento depois: 6 pt\n\n2) Recuo da primeira linha:\n- 1,25 cm (ou o padrão do Word)\n\n3) Faça uma lista simples de 3 itens com preço usando TAB:\n- Item A<TAB>R$ 10,00\n- Item B<TAB>R$ 25,00\n- Item C<TAB>R$ 7,50\n\nObjetivo:\n- aprender recuo e espaçamento sem gambiarra."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Parágrafo controla alinhamento, recuo, espaçamento e TAB\n- Evite espaços/ENTER como “alinhamento”\n- Separe parágrafos com espaçamento antes/depois\n- TAB alinha informações melhor que espaços\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 06 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Parágrafo no Word controla principalmente:",
+        "options": [
+          { "key": "A", "text": "Alinhamento, recuos e espaçamento" },
+          { "key": "B", "text": "A instalação do Windows" }
+        ],
+        "answer": "A",
+        "explain": "As opções de parágrafo organizam como o texto se comporta no layout."
+      },
+      {
+        "id": 2,
+        "question": "O alinhamento mais comum para textos é:",
+        "options": [
+          { "key": "A", "text": "À esquerda (ou justificado, dependendo do padrão)" },
+          { "key": "B", "text": "Sempre à direita" }
+        ],
+        "answer": "A",
+        "explain": "Textos comuns geralmente ficam à esquerda; justificado é comum em relatórios."
+      },
+      {
+        "id": 3,
+        "question": "Usar vários espaços para fazer recuo é:",
+        "options": [
+          { "key": "A", "text": "Errado; o certo é usar recuo do parágrafo" },
+          { "key": "B", "text": "A técnica profissional recomendada" }
+        ],
+        "answer": "A",
+        "explain": "Espaços quebram fácil; recuo é consistente e correto."
+      },
+      {
+        "id": 4,
+        "question": "Espaçamento antes/depois serve para:",
+        "options": [
+          { "key": "A", "text": "Separar parágrafos sem usar ENTER extra" },
+          { "key": "B", "text": "Aumentar a margem da folha" }
+        ],
+        "answer": "A",
+        "explain": "Margem é página; espaçamento é parágrafo."
+      },
+      {
+        "id": 5,
+        "question": "Entrelinhas é:",
+        "options": [
+          { "key": "A", "text": "A distância entre as linhas dentro do parágrafo" },
+          { "key": "B", "text": "A distância entre as páginas" }
+        ],
+        "answer": "A",
+        "explain": "Entrelinhas afeta linhas do texto, não páginas."
+      },
+      {
+        "id": 6,
+        "question": "TAB é melhor do que espaços quando você quer:",
+        "options": [
+          { "key": "A", "text": "Alinhar informações em “colunas” simples" },
+          { "key": "B", "text": "Trocar a fonte do documento" }
+        ],
+        "answer": "A",
+        "explain": "TAB cria pontos de alinhamento; espaços são instáveis."
+      },
+      {
+        "id": 7,
+        "question": "Recuo da primeira linha faz:",
+        "options": [
+          { "key": "A", "text": "Só a primeira linha começar mais para dentro" },
+          { "key": "B", "text": "O parágrafo inteiro ir para o centro" }
+        ],
+        "answer": "A",
+        "explain": "Esse recuo é comum em textos longos e deixa visual mais organizado."
+      },
+      {
+        "id": 8,
+        "question": "Abrir a janela Parágrafo é útil porque:",
+        "options": [
+          { "key": "A", "text": "Permite ajustes exatos e consistentes" },
+          { "key": "B", "text": "Apaga todas as páginas do arquivo" }
+        ],
+        "answer": "A",
+        "explain": "Ela é o lugar mais completo para recuos e espaçamentos."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum que bagunça documentos é:",
+        "options": [
+          { "key": "A", "text": "Usar ENTER extra e espaços para alinhar" },
+          { "key": "B", "text": "Usar espaçamento antes/depois corretamente" }
+        ],
+        "answer": "A",
+        "explain": "ENTER e espaços criam inconsistência; espaçamento e recuos resolvem."
+      },
+      {
+        "id": 10,
+        "question": "Para um padrão profissional, o ideal é:",
+        "options": [
+          { "key": "A", "text": "Escolher regras de parágrafo e manter no documento todo" },
+          { "key": "B", "text": "Cada parágrafo ter um formato diferente" }
+        ],
+        "answer": "A",
+        "explain": "Consistência é o que dá aparência profissional."
+      }
+    ]
+  },
+  "extra": {
+    "modelParagraphPreset": "Preset simples de parágrafo (padrão profissional)\n\nCorpo do texto:\n- Alinhamento: Esquerda (ou Justificado)\n- Recuo: primeira linha 1,25 cm\n- Entrelinhas: 1,15\n- Espaçamento: Depois 6 pt\n\nTítulos:\n- Alinhamento: Esquerda\n- Espaçamento: Antes 12 pt / Depois 6 pt\n\nRegra anti-gambiarra:\n- NÃO use espaços para recuo\n- NÃO use ENTER extra para “separar”\n- Use recuos + espaçamento do parágrafo\n\nTAB (alinhamento rápido):\n- Item<TAB>Valor\n- Item maior<TAB>Valor\n"
+  }
+}

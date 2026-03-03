@@ -1,0 +1,163 @@
+{
+  "id": "09-cabecalho-rodape",
+  "title": "Aula 09 — Cabeçalho e rodapé: numeração, data/hora e elementos fixos",
+  "steps": [
+    {
+      "title": "O que são cabeçalho e rodapé (ideia simples)",
+      "body": "Cabeçalho e rodapé são áreas que ficam repetidas nas páginas.\n\n- **Cabeçalho**: parte de cima\n- **Rodapé**: parte de baixo\n\nVocê usa para coisas “fixas”:\n- número de página\n- nome do documento\n- data\n- logo da empresa\n- nome da seção/capítulo\n\nRegra:\n- se aparece em muitas páginas, provavelmente é cabeçalho/rodapé."
+    },
+    {
+      "title": "Por que isso é profissional",
+      "body": "Documento com cabeçalho/rodapé bem feito:\n- parece organizado\n- facilita leitura e referência\n- ajuda quando o documento é impresso\n\nExemplo real:\n- “Página 3 de 12” ajuda a pessoa a não se perder.\n\nÉ um detalhe que dá cara de documento sério."
+    },
+    {
+      "title": "Como entrar no modo de edição do cabeçalho/rodapé",
+      "body": "Você pode:\n\n- Dar **duplo clique** no topo (cabeçalho) ou embaixo (rodapé)\n\nou\n\n- Ir em **Inserir → Cabeçalho / Rodapé**\n\nQuando você entra, o Word abre ferramentas específicas.\n\nDica:\n- para sair, clique duas vezes no corpo do texto ou use “Fechar Cabeçalho e Rodapé”."
+    },
+    {
+      "title": "Número de página (o uso mais comum)",
+      "body": "Para colocar número de página:\n- **Inserir → Número de Página**\n\nVocê escolhe:\n- topo (cabeçalho) ou base (rodapé)\n- alinhamento (esquerda, centro, direita)\n\nBoa prática:\n- em relatórios e documentos longos, use rodapé com número no canto direito ou central."
+    },
+    {
+      "title": "“Página X de Y” (quando faz sentido)",
+      "body": "Em documentos longos, é útil mostrar total:\n- Página 3 de 12\n\nIsso ajuda:\n- imprimir e conferir se está completo\n- citar páginas em reunião\n\nDica:\n- normalmente você encontra esse formato dentro das opções de número de página, ou inserindo campos de página e total."
+    },
+    {
+      "title": "Data e hora automáticas (sem digitar manualmente)",
+      "body": "Você pode inserir data/hora que o Word atualiza.\n\nUse quando:\n- documento é gerado regularmente\n- você quer registrar “data de emissão”\n\nCuidado:\n- existem datas que atualizam sempre ao abrir/imprimir.\n- e existem datas “fixas”.\n\nRegra prática:\n- para relatórios recorrentes, data automática é ótima.\n- para um contrato assinado, normalmente você quer data fixa (dependendo do caso)."
+    },
+    {
+      "title": "Elemento fixo: título do documento / nome do setor",
+      "body": "Exemplos úteis no cabeçalho:\n- “Relatório de Estoque”\n- “Setor de Expedição”\n- “Política Interna — Versão 2”\n\nBoa prática:\n- cabeçalho curto\n- sem poluir\n\nPense assim:\n- cabeçalho é para orientar, não para decorar."
+    },
+    {
+      "title": "Primeira página diferente (capa sem número)",
+      "body": "Muito comum em documentos profissionais:\n- a capa NÃO tem número\n- a numeração começa a aparecer depois\n\nRecurso:\n- “**Primeira página diferente**”\n\nIsso permite:\n- capa limpa\n- documento numerado a partir da página 2 (ou 3, se tiver sumário)."
+    },
+    {
+      "title": "Cabeçalho/rodapé diferente em páginas pares e ímpares",
+      "body": "Isso aparece muito em livros/encadernação:\n- páginas ímpares: número à direita\n- páginas pares: número à esquerda\n\nRecurso:\n- “**Páginas pares e ímpares diferentes**”\n\nSe você não vai imprimir como livro, geralmente não precisa."
+    },
+    {
+      "title": "Cuidado com ‘gambiarra’ no cabeçalho/rodapé",
+      "body": "Erros comuns:\n1) Digitar número de página manualmente\n2) Colocar espaços para alinhar\n3) Fazer cabeçalho gigante que rouba espaço\n\nJeito certo:\n- use as ferramentas do Word\n- use alinhamento e tabulação (ou tabelas simples no cabeçalho, se necessário)\n\nRegra:\n- quanto mais automático, menos chance de erro."
+    },
+    {
+      "title": "Mini prática (15 minutos) — rodapé profissional",
+      "body": "Faça isso:\n\n1) Crie um documento com 2 páginas (Ctrl+Enter para criar a 2ª).\n2) Abra o rodapé (duplo clique embaixo).\n3) Insira:\n- Número de página no canto direito\n- No canto esquerdo, escreva: “Relatório de Teste”\n4) Ative “Primeira página diferente”.\n5) Volte para a página 1 e veja que ela ficou sem número.\n\nObjetivo:\n- aprender a deixar capa limpa e numeração correta."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Cabeçalho/rodapé guardam itens repetidos\n- Numeração automática é padrão profissional\n- Dá para ter capa sem número (Primeira página diferente)\n- Data/hora pode ser automática\n- Evite alinhar com espaços\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 09 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Cabeçalho e rodapé servem para:",
+        "options": [
+          { "key": "A", "text": "Colocar informações repetidas em várias páginas" },
+          { "key": "B", "text": "Trocar a cor do monitor" }
+        ],
+        "answer": "A",
+        "explain": "Eles são áreas de repetição, ideais para numeração, título, data, etc."
+      },
+      {
+        "id": 2,
+        "question": "Uma forma rápida de editar o cabeçalho é:",
+        "options": [
+          { "key": "A", "text": "Dar duplo clique no topo da página" },
+          { "key": "B", "text": "Fechar o Word e abrir de novo" }
+        ],
+        "answer": "A",
+        "explain": "Duplo clique entra direto no modo de edição do cabeçalho."
+      },
+      {
+        "id": 3,
+        "question": "Número de página profissional deve ser:",
+        "options": [
+          { "key": "A", "text": "Inserido automaticamente pelo Word" },
+          { "key": "B", "text": "Digitado manualmente em cada página" }
+        ],
+        "answer": "A",
+        "explain": "Automático evita erros e atualiza sozinho."
+      },
+      {
+        "id": 4,
+        "question": "“Primeira página diferente” é usado para:",
+        "options": [
+          { "key": "A", "text": "Deixar a capa sem numeração (ou com layout diferente)" },
+          { "key": "B", "text": "Apagar a primeira página" }
+        ],
+        "answer": "A",
+        "explain": "Esse recurso permite um cabeçalho/rodapé diferente na 1ª página."
+      },
+      {
+        "id": 5,
+        "question": "Data/hora automáticas são úteis quando:",
+        "options": [
+          { "key": "A", "text": "O documento é gerado/atualizado regularmente" },
+          { "key": "B", "text": "Você quer esconder a data do documento" }
+        ],
+        "answer": "A",
+        "explain": "Data automática facilita documentos recorrentes (relatórios, por exemplo)."
+      },
+      {
+        "id": 6,
+        "question": "Um cabeçalho bom costuma ser:",
+        "options": [
+          { "key": "A", "text": "Curto e informativo" },
+          { "key": "B", "text": "Gigante e cheio de frases longas" }
+        ],
+        "answer": "A",
+        "explain": "Cabeçalho serve para orientar, não para poluir."
+      },
+      {
+        "id": 7,
+        "question": "Alinhar texto no rodapé usando vários espaços é:",
+        "options": [
+          { "key": "A", "text": "Gambiarra; prefira alinhamento e tabulação" },
+          { "key": "B", "text": "A técnica mais estável do Word" }
+        ],
+        "answer": "A",
+        "explain": "Espaços quebram fácil com fonte/zoom diferentes."
+      },
+      {
+        "id": 8,
+        "question": "“Páginas pares e ímpares diferentes” é mais usado em:",
+        "options": [
+          { "key": "A", "text": "Documentos tipo livro/encadernação" },
+          { "key": "B", "text": "Arquivos de áudio" }
+        ],
+        "answer": "A",
+        "explain": "Esse padrão é típico de livros impressos com layout espelhado."
+      },
+      {
+        "id": 9,
+        "question": "Cabeçalho fica:",
+        "options": [
+          { "key": "A", "text": "Na parte de cima da página" },
+          { "key": "B", "text": "Na lateral direita do teclado" }
+        ],
+        "answer": "A",
+        "explain": "Cabeçalho é a área superior; rodapé é a área inferior."
+      },
+      {
+        "id": 10,
+        "question": "A abordagem mais segura no Word é:",
+        "options": [
+          { "key": "A", "text": "Usar recursos automáticos em vez de fazer manualmente" },
+          { "key": "B", "text": "Fazer tudo manual para “ter controle”" }
+        ],
+        "answer": "A",
+        "explain": "Automação reduz erro e melhora consistência, especialmente em documentos longos."
+      }
+    ]
+  },
+  "extra": {
+    "modelHeaderFooterLayout": "Modelo simples (profissional)\n\nRODAPÉ:\n- Esquerda: Nome do documento (ex.: Relatório de Estoque)\n- Direita: Página X (ou Página X de Y)\n\nCONFIG:\n- Primeira página diferente: ligado (se tiver capa)\n- Cabeçalho/rodapé curtos (não roubar espaço)\n\nRegra anti-gambiarra:\n- NÃO digite número manual\n- NÃO alinhe com espaços\n- Use alinhamento/tabulações\n"
+  }
+}

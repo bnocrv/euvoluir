@@ -1,0 +1,167 @@
+{
+  "id": "29-acessibilidade-exportar",
+  "title": "Aula 29 — Acessibilidade + exportar para PDF (checklist profissional)",
+  "steps": [
+    {
+      "title": "Por que acessibilidade importa (mesmo se você nunca pensou nisso)",
+      "body": "Acessibilidade é deixar o documento fácil de usar para mais pessoas.\n\nIsso inclui:\n- quem usa leitor de tela\n- quem tem baixa visão\n- quem tem dislexia\n- quem lê no celular\n\nE também melhora para TODO mundo:\n- documento mais claro\n- estrutura melhor\n- menos confusão\n\nRegra:\n- acessibilidade é sinônimo de clareza e profissionalismo."
+    },
+    {
+      "title": "Estrutura (títulos) é a base da acessibilidade",
+      "body": "O ponto nº 1:\n- usar **Estilos de Título** (Título 1/2/3).\n\nPor quê?\n- leitores de tela navegam por títulos\n- o documento vira “mapa”\n\nSe você faz título manual:\n- o leitor de tela não entende a hierarquia\n\nRegra:\n- estilos não são só aparência; são estrutura."
+    },
+    {
+      "title": "Listas reais (não lista com hífen)",
+      "body": "Para acessibilidade, lista precisa ser lista de verdade.\n\nUse:\n- marcadores\n- numeração\n\nEvite:\n- hífen + espaço na mão\n\nPor quê?\n- o leitor de tela entende itens de lista\n- e a estrutura fica correta\n\nRegra:\n- lista manual é “texto comum”; lista do Word é estrutura."
+    },
+    {
+      "title": "Contraste e legibilidade (não é estética, é leitura)",
+      "body": "Contraste é a diferença entre texto e fundo.\n\nBoas práticas:\n- texto escuro em fundo claro\n- evite cinza muito claro\n- evite texto colorido sem necessidade\n\nTamanho e fonte:\n- fonte legível\n- tamanho confortável (11 ou 12 no corpo)\n\nRegra:\n- se a pessoa precisa forçar a vista, está ruim."
+    },
+    {
+      "title": "Espaçamento e alinhamento (conforto visual)",
+      "body": "Documentos espremidos cansam.\n\nBoas práticas:\n- entrelinhas 1,15 ou 1,5\n- espaçamento depois do parágrafo (ex.: 6 pt)\n- evitar texto muito “grudado”\n\nRegra:\n- espaçamento bem feito melhora leitura para todo mundo."
+    },
+    {
+      "title": "Texto alternativo (Alt Text) em imagens",
+      "body": "Leitor de tela não “vê” imagem.\n\nAlt Text descreve a imagem.\n\nExemplo de alt text bom:\n- “Fluxograma com 3 etapas: Separar, Conferir, Embalar.”\n\nExemplo ruim:\n- “imagem1”\n\nRegra:\n- se a imagem tem informação, ela precisa de descrição."
+    },
+    {
+      "title": "Tabelas acessíveis (cabeçalho e estrutura)",
+      "body": "Tabela acessível tem:\n- cabeçalho claro\n- colunas bem definidas\n\nBoas práticas:\n- primeira linha como cabeçalho\n- repetir cabeçalho em tabelas longas (aula 13)\n- evitar mesclas confusas demais\n\nRegra:\n- tabela deve ser fácil de ler linha por linha."
+    },
+    {
+      "title": "Links claros (não use “clique aqui”)",
+      "body": "Para acessibilidade, o texto do link precisa dizer para onde vai.\n\nRuim:\n- “clique aqui”\n\nBom:\n- “Manual de Procedimento (PDF)”\n\nRegra:\n- link deve ter sentido fora do contexto."
+    },
+    {
+      "title": "Verificador de acessibilidade (o “detector de problemas” do Word)",
+      "body": "O Word costuma ter um verificador que aponta:\n- falta de alt text\n- problemas de estrutura\n- contraste/legibilidade (em alguns casos)\n\nRegra:\n- antes de finalizar, rode o verificador.\n\nDica:\n- ele não é perfeito, mas pega erros comuns."
+    },
+    {
+      "title": "Exportar para PDF (diferença entre exportar e imprimir)",
+      "body": "PDF é o formato final mais comum.\n\nDois jeitos:\n\n1) **Exportar/Salvar como PDF**\n- costuma preservar melhor estrutura\n- pode manter marcadores e links\n\n2) **Imprimir em PDF**\n- em alguns casos “achata” mais\n\nRegra:\n- para entrega profissional, prefira Exportar/Salvar como PDF."
+    },
+    {
+      "title": "Antes do PDF: checklist de finalização (muito importante)",
+      "body": "Antes de gerar PDF:\n\n1) Atualize campos:\n- Ctrl+A → atualizar campos (sumário, páginas, referências)\n\n2) Limpe revisão:\n- sem comentários\n- sem alterações pendentes\n\n3) Verifique quebras estranhas (¶)\n\n4) Rode acessibilidade\n\nRegra:\n- PDF final deve refletir a versão certa e limpa."
+    },
+    {
+      "title": "Mini prática (30 minutos) — PDF profissional e acessível",
+      "body": "Faça assim:\n\n1) Crie um documento com:\n- Título 1 e Título 2\n- uma lista numerada\n- uma imagem\n- uma tabela\n\n2) Adicione Alt Text na imagem.\n3) Garanta cabeçalho na tabela.\n4) Gere sumário automático (se tiver seções).\n\n5) Antes do PDF:\n- Ctrl+A e atualize campos\n- confirme que não há comentários/Track Changes\n- rode verificador de acessibilidade\n\n6) Exporte para PDF.\n\nObjetivo:\n- entregar um arquivo final limpo, atualizado e legível."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Acessibilidade começa com estrutura (estilos de título)\n- Use listas reais, não hífen\n- Contraste e espaçamento melhoram leitura\n- Alt Text em imagens é essencial\n- Tabelas com cabeçalho e estrutura clara\n- Verificador de acessibilidade ajuda\n- Antes do PDF: atualizar campos + limpar revisão\n- Exportar PDF é o formato final profissional\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 29 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Acessibilidade em documento significa:",
+        "options": [
+          { "key": "A", "text": "Tornar o documento mais fácil de usar por mais pessoas" },
+          { "key": "B", "text": "Deixar o documento com mais efeitos visuais" }
+        ],
+        "answer": "A",
+        "explain": "Acessibilidade é clareza, estrutura e usabilidade."
+      },
+      {
+        "id": 2,
+        "question": "Estilos de título são importantes para acessibilidade porque:",
+        "options": [
+          { "key": "A", "text": "Criam estrutura que leitores de tela conseguem navegar" },
+          { "key": "B", "text": "Aumentam o tamanho do arquivo automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Estrutura é essencial para navegação por tecnologias assistivas."
+      },
+      {
+        "id": 3,
+        "question": "Lista acessível deve ser feita com:",
+        "options": [
+          { "key": "A", "text": "Ferramentas de lista (marcadores/numeração)" },
+          { "key": "B", "text": "Hífen digitado manualmente" }
+        ],
+        "answer": "A",
+        "explain": "Lista real vira estrutura reconhecida pelo Word e leitores de tela."
+      },
+      {
+        "id": 4,
+        "question": "Alt Text serve para:",
+        "options": [
+          { "key": "A", "text": "Descrever a imagem para quem não consegue vê-la" },
+          { "key": "B", "text": "Aumentar o brilho do monitor" }
+        ],
+        "answer": "A",
+        "explain": "Leitores de tela usam a descrição para transmitir o conteúdo."
+      },
+      {
+        "id": 5,
+        "question": "Um link acessível é aquele que:",
+        "options": [
+          { "key": "A", "text": "Diz claramente para onde leva (não só 'clique aqui')" },
+          { "key": "B", "text": "Está sempre em vermelho" }
+        ],
+        "answer": "A",
+        "explain": "O texto do link deve ter significado sozinho."
+      },
+      {
+        "id": 6,
+        "question": "Antes de exportar para PDF, é boa prática:",
+        "options": [
+          { "key": "A", "text": "Atualizar campos e limpar revisão (comentários/alterações)" },
+          { "key": "B", "text": "Deixar comentários e alterações para mostrar transparência" }
+        ],
+        "answer": "A",
+        "explain": "Versão final geralmente deve estar limpa e atualizada."
+      },
+      {
+        "id": 7,
+        "question": "Contraste bom significa:",
+        "options": [
+          { "key": "A", "text": "Texto legível contra o fundo (escuro no claro, por exemplo)" },
+          { "key": "B", "text": "Usar várias cores diferentes no texto" }
+        ],
+        "answer": "A",
+        "explain": "Contraste ajuda quem tem baixa visão e melhora leitura geral."
+      },
+      {
+        "id": 8,
+        "question": "Tabela acessível tende a ter:",
+        "options": [
+          { "key": "A", "text": "Cabeçalho claro e estrutura simples" },
+          { "key": "B", "text": "Muitas mesclas confusas e sem cabeçalho" }
+        ],
+        "answer": "A",
+        "explain": "Clareza e cabeçalho ajudam leitura e entendimento."
+      },
+      {
+        "id": 9,
+        "question": "O verificador de acessibilidade do Word:",
+        "options": [
+          { "key": "A", "text": "Ajuda a encontrar erros comuns (alt text, estrutura...)" },
+          { "key": "B", "text": "Substitui a necessidade de revisar o documento" }
+        ],
+        "answer": "A",
+        "explain": "Ele ajuda, mas você ainda precisa revisar o conteúdo."
+      },
+      {
+        "id": 10,
+        "question": "Para entrega profissional, geralmente é melhor:",
+        "options": [
+          { "key": "A", "text": "Exportar/Salvar como PDF (em vez de imprimir em PDF sem revisar)" },
+          { "key": "B", "text": "Mandar somente o DOCX sem atualizar nada" }
+        ],
+        "answer": "A",
+        "explain": "Exportar PDF após checklist garante versão final consistente."
+      }
+    ]
+  },
+  "extra": {
+    "modelFinalChecklist": "Checklist final (acessibilidade + PDF)\n\nEstrutura:\n- Títulos com Estilos (Título 1/2/3)\n- Listas reais (marcadores/numeração)\n\nLegibilidade:\n- fonte legível (11/12)\n- contraste bom\n- entrelinhas 1,15 ou 1,5\n- espaçamento depois do parágrafo (ex.: 6 pt)\n\nImagens/Tabelas:\n- Alt Text em imagens informativas\n- tabelas com cabeçalho e estrutura simples\n\nAntes do PDF:\n1) Ctrl+A → atualizar campos\n2) remover/encerrar comentários\n3) aceitar/rejeitar alterações pendentes\n4) verificar ¶ (quebras estranhas)\n5) rodar verificador de acessibilidade\n6) Exportar/Salvar como PDF\n"
+  }
+}

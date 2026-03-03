@@ -1,0 +1,168 @@
+{
+  "id": "09-formatacao-condicional-2",
+  "title": "Aula 09 — Formatação condicional 2: regras com fórmula (quando o Excel “pensa”)",
+  "steps": [
+    {
+      "title": "Por que usar fórmula na formatação condicional?",
+      "body": "Regras prontas resolvem muita coisa, mas têm limite.\n\nQuando você usa **fórmula**, você cria regras do tipo:\n- pintar a linha inteira se o status for \"Atrasado\"\n- destacar datas vencidas (data < hoje)\n- destacar valores acima da meta de cada vendedor\n- marcar inconsistência entre duas colunas\n\nPense assim:\n- regra pronta = “menu rápido”\n- regra com fórmula = “você decide a lógica”\n\nRegra:\n- se você consegue escrever a regra em português, dá pra virar fórmula."
+    },
+    {
+      "title": "Onde criar regra com fórmula (caminho)",
+      "body": "Caminho:\n- **Página Inicial → Formatação Condicional → Nova Regra**\n- escolha: **Usar uma fórmula para determinar quais células devem ser formatadas**\n\nRegra:\n- primeiro selecione o intervalo que vai receber a formatação."
+    },
+    {
+      "title": "A ideia-chave: a fórmula precisa resultar em VERDADEIRO ou FALSO",
+      "body": "Na formatação condicional, a fórmula não serve para calcular um número.\n\nEla precisa responder:\n- **isso é verdadeiro?**\n- **isso é falso?**\n\nExemplos:\n- `=B2<0`  → verdadeiro quando B2 é negativo\n- `=$D2=\"Atrasado\"` → verdadeiro quando a coluna D tem \"Atrasado\"\n\nRegra:\n- fórmula de condicional = pergunta que retorna VERDADEIRO/FALSO."
+    },
+    {
+      "title": "Referência relativa e absoluta (o segredo para funcionar em várias células)",
+      "body": "A regra normalmente é aplicada a um intervalo (ex.: A2:E100).\n\nO Excel vai “repetir” a fórmula para cada linha/coluna.\n\nVocê controla isso com $:\n\n- `B2` (relativo) → muda ao copiar\n- `$B$2` (absoluto) → nunca muda\n- `$B2` (coluna fixa) → fixa coluna, linha muda\n- `B$2` (linha fixa) → fixa linha, coluna muda\n\nRegra:\n- para pintar linha inteira baseado em uma coluna, você fixa a coluna com `$`."
+    },
+    {
+      "title": "Exemplo 1: pintar a linha inteira quando Status = \"Atrasado\"",
+      "body": "Tabela: A=Pedido, B=Cliente, C=Valor, D=Status\n\nQueremos pintar A2:D100 quando Status (coluna D) for Atrasado.\n\n1) Selecione o intervalo: `A2:D100`\n2) Nova Regra → usar fórmula\n3) Fórmula:\n- `=$D2=\"Atrasado\"`\n4) Escolha um preenchimento (ex.: vermelho claro)\n\nPor que funciona?\n- `$D` fixa a coluna Status\n- `2` (sem $) deixa a linha variar (2,3,4...)\n\nRegra:\n- pintar linha inteira: **fixe a coluna, não fixe a linha**."
+    },
+    {
+      "title": "Exemplo 2: destacar datas vencidas (Data < HOJE())",
+      "body": "Se você tem datas em B (B2:B200) e quer destacar vencidas:\n\n1) selecione `B2:B200`\n2) Nova Regra → usar fórmula\n3) Fórmula:\n- `=B2<HOJE()`\n\nDica:\n- isso funciona melhor se as datas forem datas reais (não texto).\n\nRegra:\n- HOJE() é dinâmico: amanhã a regra se atualiza sozinha."
+    },
+    {
+      "title": "Exemplo 3: destacar inconsistência entre duas colunas",
+      "body": "Exemplo: C=Total, D=Qtd*ValorUnit (conferência)\n\nVocê quer marcar quando C e D são diferentes.\n\n1) selecione `C2:C200`\n2) Nova Regra → usar fórmula\n3) Fórmula:\n- `=C2<>D2`\n\nRegra:\n- `<>` significa “diferente de”."
+    },
+    {
+      "title": "Exemplo 4: destacar células vazias onde NÃO pode ficar vazio",
+      "body": "Exemplo: coluna A (Produto) não pode ficar vazia.\n\n1) selecione `A2:A200`\n2) Nova Regra → usar fórmula\n3) Fórmula:\n- `=A2=\"\"`\n\nDica:\n- isso marca só vazios.\n\nRegra:\n- `\"\"` significa texto vazio."
+    },
+    {
+      "title": "Aplicar a regra na linha inteira (o detalhe que mais confunde)",
+      "body": "Quando você quer colorir a linha inteira, a fórmula costuma olhar só uma coluna.\n\nExemplo:\n- intervalo: `A2:F200`\n- condição: status está na coluna F\n- fórmula: `=$F2=\"OK\"`\n\nRegra:\n- o intervalo é grande, mas a fórmula aponta para a coluna que decide."
+    },
+    {
+      "title": "Gerenciar Regras (corrigir intervalo e prioridade)",
+      "body": "Se algo não funcionar:\n- Formatação Condicional → **Gerenciar Regras**\n\nConfira:\n- a fórmula está correta?\n- o intervalo \"Aplica-se a\" está certo?\n- existe outra regra com prioridade maior?\n\nRegra:\n- 90% dos erros é intervalo errado ou $ colocado errado."
+    },
+    {
+      "title": "Erros comuns (e o motivo real)",
+      "body": "1) Esquecer o $ na coluna\n- pinta células erradas porque a referência “anda”\n\n2) Usar a linha fixa sem querer (ex.: $D$2)\n- só funciona para a linha 2 e falha no resto\n\n3) Escrever texto sem aspas\n- certo: `=\"Atrasado\"`\n- errado: `=Atrasado`\n\n4) Data como texto\n- `B2<HOJE()` não funciona se B2 for texto\n\nRegra:\n- condicional com fórmula é simples, mas exige referência correta."
+    },
+    {
+      "title": "Mini prática (35 minutos) — checklist automático de pedidos",
+      "body": "Monte uma tabela:\n- A: Pedido\n- B: Data Entrega\n- C: Valor\n- D: Status (OK / Atrasado)\n\nPreencha 15 linhas.\n\nCrie 3 regras:\n\n1) Pintar a linha inteira se Status = Atrasado\n- selecione A2:D16\n- fórmula: `=$D2=\"Atrasado\"`\n\n2) Destacar Data Entrega vencida (B2:B16)\n- fórmula: `=B2<HOJE()`\n\n3) Destacar Valor alto (C2:C16) acima de 1000\n- fórmula: `=C2>1000`\n\nDepois vá em Gerenciar Regras e confirme os intervalos.\n\nObjetivo:\n- treinar $ na coluna, datas dinâmicas e múltiplas regras."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Regra com fórmula responde VERDADEIRO/FALSO\n- Nova Regra → Usar fórmula para determinar células\n- $ controla como a referência se comporta\n- Para pintar linha inteira baseado em uma coluna: use `=$ColunaLinha`\n- HOJE() ajuda em prazos e vencimentos\n- Gerenciar Regras é onde você corrige intervalo e prioridade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 09 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Na formatação condicional com fórmula, a fórmula deve retornar:",
+        "options": [
+          { "key": "A", "text": "VERDADEIRO ou FALSO" },
+          { "key": "B", "text": "Sempre um número inteiro" }
+        ],
+        "answer": "A",
+        "explain": "A regra é uma condição lógica."
+      },
+      {
+        "id": 2,
+        "question": "O caminho para regra com fórmula é:",
+        "options": [
+          { "key": "A", "text": "Formatação Condicional → Nova Regra → Usar uma fórmula..." },
+          { "key": "B", "text": "Inserir → Imagens" }
+        ],
+        "answer": "A",
+        "explain": "É em Nova Regra que você escolhe a opção de fórmula."
+      },
+      {
+        "id": 3,
+        "question": "Para pintar a linha inteira baseado na coluna D (Status), a fórmula correta começa com:",
+        "options": [
+          { "key": "A", "text": "=$D2" },
+          { "key": "B", "text": "=D$2" }
+        ],
+        "answer": "A",
+        "explain": "Você fixa a coluna D e deixa a linha variar."
+      },
+      {
+        "id": 4,
+        "question": "A referência $D$2 significa:",
+        "options": [
+          { "key": "A", "text": "Coluna e linha fixas (não mudam)" },
+          { "key": "B", "text": "Coluna fixa e linha variando" }
+        ],
+        "answer": "A",
+        "explain": "$D$2 não muda ao copiar; isso costuma ser erro em regras por linha."
+      },
+      {
+        "id": 5,
+        "question": "Para destacar datas vencidas, uma fórmula comum é:",
+        "options": [
+          { "key": "A", "text": "=B2<HOJE()" },
+          { "key": "B", "text": "=B2+HOJE()" }
+        ],
+        "answer": "A",
+        "explain": "Se a data é menor que hoje, ela está vencida."
+      },
+      {
+        "id": 6,
+        "question": "Para comparar e marcar quando C2 é diferente de D2, usamos:",
+        "options": [
+          { "key": "A", "text": "=C2<>D2" },
+          { "key": "B", "text": "=C2==D2" }
+        ],
+        "answer": "A",
+        "explain": "<> significa “diferente”."
+      },
+      {
+        "id": 7,
+        "question": "Para checar vazio na célula A2, uma fórmula comum é:",
+        "options": [
+          { "key": "A", "text": "=A2=\"\"" },
+          { "key": "B", "text": "=A2=\"VAZIO\"" }
+        ],
+        "answer": "A",
+        "explain": "\"\" representa texto vazio."
+      },
+      {
+        "id": 8,
+        "question": "Se uma regra não está funcionando, o lugar certo para conferir intervalo e prioridade é:",
+        "options": [
+          { "key": "A", "text": "Gerenciar Regras" },
+          { "key": "B", "text": "Salvar como" }
+        ],
+        "answer": "A",
+        "explain": "Gerenciar Regras mostra 'Aplica-se a' e a ordem das regras."
+      },
+      {
+        "id": 9,
+        "question": "Texto na fórmula deve ficar:",
+        "options": [
+          { "key": "A", "text": "Entre aspas (ex.: \"Atrasado\")" },
+          { "key": "B", "text": "Sem aspas" }
+        ],
+        "answer": "A",
+        "explain": "Sem aspas o Excel não entende como texto."
+      },
+      {
+        "id": 10,
+        "question": "O erro mais comum em regra por linha é:",
+        "options": [
+          { "key": "A", "text": "Usar $ errado e apontar para a célula errada ao copiar" },
+          { "key": "B", "text": "Usar HOJE() em vez de AGORA()" }
+        ],
+        "answer": "A",
+        "explain": "O $ controla como a referência se comporta no intervalo."
+      }
+    ]
+  },
+  "extra": {
+    "receitaLinhaInteira": "Receita pronta: pintar a linha inteira por Status\n\nIntervalo:\n- selecione A2:F200\n\nNova Regra (fórmula):\n- =$F2=\"Atrasado\"\n\nRegra:\n- fixe a coluna do Status ($F)\n- deixe a linha variar (2,3,4...)",
+    "checklistErros": "Checklist de erros (rápido)\n\n- Selecionou o intervalo certo antes?\n- O \"Aplica-se a\" está correto?\n- Coluna do critério está com $?\n- Texto está entre aspas?\n- Data é data mesmo (não texto)?\n"
+  }
+}

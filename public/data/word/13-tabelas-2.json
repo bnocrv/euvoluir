@@ -1,0 +1,167 @@
+{
+  "id": "13-tabelas-2",
+  "title": "Aula 13 — Tabelas 2: mesclar células, repetir cabeçalho e formatação avançada",
+  "steps": [
+    {
+      "title": "O que você vai dominar nesta aula",
+      "body": "Agora que você já cria e edita tabelas, vamos para o nível profissional:\n\n- mesclar/dividir células\n- repetir cabeçalho em várias páginas\n- alinhar e distribuir linhas/colunas\n- controlar quebra de linha e tamanho\n- evitar tabelas “tortas”\n\nEsses recursos fazem a tabela ficar estável e bonita mesmo em documento longo."
+    },
+    {
+      "title": "Mesclar células (quando faz sentido)",
+      "body": "Mesclar junta duas ou mais células em uma só.\n\nUse quando:\n- você quer um título que ocupa várias colunas\n- você quer criar “seções” dentro da tabela\n\nExemplo:\n- uma linha de título “RELATÓRIO” ocupando 4 colunas\n\nRegra:\n- mesclar é ótimo para cabeçalhos e agrupamentos.\n- evite mesclar demais em tabelas de dados (pode atrapalhar leitura)."
+    },
+    {
+      "title": "Dividir células (o inverso de mesclar)",
+      "body": "Dividir célula transforma 1 célula em várias.\n\nUse quando:\n- você percebe que colocou duas informações no mesmo espaço\n- precisa separar em duas colunas menores\n\nExemplo:\n- “Cidade/UF” vira duas células: Cidade | UF"
+    },
+    {
+      "title": "Repetir cabeçalho em cada página (essencial em tabela longa)",
+      "body": "Quando a tabela quebra para a página 2, a pessoa perde o contexto.\n\nSolução:\n- repetir a linha do cabeçalho em cada página.\n\nIsso deixa profissional, porque:\n- sempre aparece “Produto | Qtd | Preço…” no topo da tabela\n\nRegra:\n- qualquer tabela longa deveria repetir o cabeçalho."
+    },
+    {
+      "title": "Como repetir a linha de cabeçalho (conceito)",
+      "body": "Você faz assim:\n\n1) Selecione a(s) linha(s) do cabeçalho\n2) Ative a opção de **Repetir linhas de cabeçalho**\n\nDica:\n- dá para repetir mais de uma linha (ex.: título + cabeçalho).\n\nImportante:\n- isso funciona para impressão/PDF também."
+    },
+    {
+      "title": "Distribuir colunas e linhas (para deixar tudo simétrico)",
+      "body": "Se sua tabela ficou com colunas tortas:\n- use distribuir colunas/linhas.\n\nO que isso faz:\n- deixa as colunas com a mesma largura\n- deixa as linhas com a mesma altura\n\nUse quando:\n- você quer layout “limpo”\n\nCuidado:\n- se as colunas precisam de tamanhos diferentes (ex.: coluna Produto maior), não distribua tudo igual."
+    },
+    {
+      "title": "Alinhamento vertical e margens da célula",
+      "body": "Além do alinhamento horizontal, a célula tem alinhamento vertical:\n- topo\n- meio\n- base\n\nIsso importa quando:\n- a linha fica alta (por exemplo, por causa de quebra de texto)\n\nTambém existe “margem interna” da célula (padding).\n- um pouco de espaço interno deixa mais confortável.\n\nRegra:\n- tabela boa é legível e respirável."
+    },
+    {
+      "title": "Quebra de linha dentro da célula (controle de texto)",
+      "body": "Dentro de uma célula:\n- Enter cria novo parágrafo\n\nÀs vezes o texto fica gigante e estoura a tabela.\nSoluções:\n- ajustar largura da coluna\n- reduzir texto\n- controlar espaçamento de parágrafo dentro da célula\n\nDica:\n- textos longos em células precisam de coluna maior ou resumo."
+    },
+    {
+      "title": "Evitar linha quebrar entre páginas (quando necessário)",
+      "body": "Em algumas tabelas, é feio quando uma linha fica metade na página 1 e metade na página 2.\n\nVocê pode:\n- impedir que a linha quebre entre páginas.\n\nUse quando:\n- linhas têm blocos de texto que precisam ficar juntos.\n\nCuidado:\n- se a linha for muito alta, ela pode “empurrar” e deixar buracos.\n\nRegra:\n- use só quando realmente melhora leitura."
+    },
+    {
+      "title": "Estilos de tabela (atalho para aparência consistente)",
+      "body": "O Word tem estilos prontos de tabela.\n\nVantagens:\n- aplica bordas, cores e cabeçalho de uma vez\n- mantém padrão no documento\n\nBoa prática:\n- escolha 1 estilo só e use no documento inteiro.\n\nRegra:\n- consistência > enfeite."
+    },
+    {
+      "title": "Erros comuns em tabelas avançadas",
+      "body": "1) Mesclar células demais e virar um quebra-cabeça.\n2) Não repetir cabeçalho e a tabela ficar sem contexto.\n3) Deixar colunas aleatórias (torta) em documento formal.\n4) Colocar texto gigante em célula estreita.\n\nRegra:\n- tabela profissional é previsível e fácil de ler."
+    },
+    {
+      "title": "Mini prática (25 minutos) — tabela longa com cabeçalho repetido",
+      "body": "Faça assim:\n\n1) Crie uma tabela com 4 colunas:\n- Produto | Qtd | Preço | Observação\n\n2) Preencha com itens até passar para a página 2.\n(Se quiser, copie e cole linhas para encher mais rápido.)\n\n3) Selecione a linha do cabeçalho.\n4) Ative “Repetir linha de cabeçalho”.\n\n5) Crie um título acima da tabela e mescle 4 células na primeira linha para virar:\n“RELATÓRIO DE ITENS”\n\nObjetivo:\n- usar mesclar + repetir cabeçalho no mundo real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Mesclar/dividir células para organizar cabeçalhos e grupos\n- Repetir cabeçalho é essencial em tabela longa\n- Distribuir linhas/colunas ajuda a alinhar\n- Controle quebra de texto e alinhamento vertical\n- Use estilos com consistência\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 13 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Mesclar células serve para:",
+        "options": [
+          { "key": "A", "text": "Juntar várias células em uma" },
+          { "key": "B", "text": "Apagar a tabela inteira" }
+        ],
+        "answer": "A",
+        "explain": "Mesclar cria uma célula maior (muito útil para títulos e agrupamentos)."
+      },
+      {
+        "id": 2,
+        "question": "Dividir célula é útil quando:",
+        "options": [
+          { "key": "A", "text": "Você precisa separar uma informação em duas partes" },
+          { "key": "B", "text": "Você quer deixar o texto em negrito" }
+        ],
+        "answer": "A",
+        "explain": "Dividir célula transforma uma célula em mais células (novas colunas/linhas)."
+      },
+      {
+        "id": 3,
+        "question": "Repetir cabeçalho em tabelas longas é importante porque:",
+        "options": [
+          { "key": "A", "text": "Mantém o contexto em cada página" },
+          { "key": "B", "text": "Aumenta a velocidade do computador" }
+        ],
+        "answer": "A",
+        "explain": "Sem cabeçalho repetido, a página 2 fica sem saber o que cada coluna significa."
+      },
+      {
+        "id": 4,
+        "question": "Distribuir colunas serve para:",
+        "options": [
+          { "key": "A", "text": "Ajustar colunas para larguras iguais (quando faz sentido)" },
+          { "key": "B", "text": "Trocar o idioma do documento" }
+        ],
+        "answer": "A",
+        "explain": "É útil quando a tabela ficou torta e você quer simetria."
+      },
+      {
+        "id": 5,
+        "question": "Alinhamento vertical na célula controla:",
+        "options": [
+          { "key": "A", "text": "Se o texto fica no topo, meio ou base da célula" },
+          { "key": "B", "text": "A cor do papel" }
+        ],
+        "answer": "A",
+        "explain": "É a posição do texto dentro da célula na direção vertical."
+      },
+      {
+        "id": 6,
+        "question": "Mesclar células demais pode ser ruim porque:",
+        "options": [
+          { "key": "A", "text": "A tabela vira um quebra-cabeça e complica leitura/edição" },
+          { "key": "B", "text": "A tabela fica invisível" }
+        ],
+        "answer": "A",
+        "explain": "Mesclas excessivas dificultam manter a tabela como dados claros."
+      },
+      {
+        "id": 7,
+        "question": "Se o texto está estourando a coluna, uma solução é:",
+        "options": [
+          { "key": "A", "text": "Aumentar a largura da coluna ou reduzir o texto" },
+          { "key": "B", "text": "Adicionar vários espaços" }
+        ],
+        "answer": "A",
+        "explain": "Espaços não resolvem; o correto é ajustar coluna/conteúdo."
+      },
+      {
+        "id": 8,
+        "question": "Impedir que a linha quebre entre páginas é útil quando:",
+        "options": [
+          { "key": "A", "text": "A linha tem conteúdo que precisa ficar junto" },
+          { "key": "B", "text": "Você quer criar uma nova tabela automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ajuda leitura, mas use com moderação para não gerar buracos."
+      },
+      {
+        "id": 9,
+        "question": "Estilos de tabela são bons porque:",
+        "options": [
+          { "key": "A", "text": "Aplicam aparência consistente rapidamente" },
+          { "key": "B", "text": "Substituem a necessidade de texto" }
+        ],
+        "answer": "A",
+        "explain": "Eles ajudam padronização e economizam tempo."
+      },
+      {
+        "id": 10,
+        "question": "Boa prática em documento profissional é:",
+        "options": [
+          { "key": "A", "text": "Usar 1 estilo de tabela consistente no documento" },
+          { "key": "B", "text": "Cada tabela ter um estilo aleatório diferente" }
+        ],
+        "answer": "A",
+        "explain": "Consistência melhora leitura e aparência profissional."
+      }
+    ]
+  },
+  "extra": {
+    "modelAdvancedTableChecklist": "Checklist de tabela avançada (profissional)\n\n1) Cabeçalho claro (negrito + sombreamento leve)\n2) Repetir cabeçalho em tabelas longas (cada página)\n3) Números alinhados à direita\n4) Mesclar células só quando ajuda (título/grupo)\n5) Evitar mesclar demais (não virar quebra-cabeça)\n6) Ajustar largura/altura para o conteúdo respirar\n7) Se necessário, impedir quebra de linha entre páginas (com moderação)\n8) Manter 1 estilo consistente no documento\n"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "id": "19-sumario",
+  "title": "Aula 19 — Sumário automático (índice): gerar, atualizar e corrigir",
+  "steps": [
+    {
+      "title": "Por que sumário automático é obrigatório em documento longo",
+      "body": "Sumário manual é sofrimento:\n- você muda uma página e tudo quebra\n- você precisa corrigir número por número\n\nSumário automático resolve porque:\n- o Word calcula as páginas\n- atualiza quando você muda o texto\n- mantém a estrutura\n\nRegra:\n- documento longo sem sumário automático perde profissionalismo."
+    },
+    {
+      "title": "O requisito nº 1 do sumário: títulos com Estilos",
+      "body": "O Word só sabe o que é “capítulo” se você usar Estilos.\n\nVocê precisa usar:\n- Título 1 (capítulos)\n- Título 2 (seções)\n- Título 3 (subseções)\n\nSe você fez títulos “na mão” (negrito + fonte grande), o sumário não fica confiável.\n\nRegra:\n- sem estilos, sumário vira gambiarra."
+    },
+    {
+      "title": "Onde fica o sumário",
+      "body": "Normalmente em:\n- **Referências → Sumário**\n\nVocê verá opções como:\n- sumário automático 1\n- sumário automático 2\n- sumário manual (evite)\n\nAtalho mental:\n- “índice/sumário” → guia Referências."
+    },
+    {
+      "title": "Como gerar o sumário automático (passo a passo)",
+      "body": "Processo simples:\n\n1) Garanta que seus títulos usam Título 1/2/3\n2) Clique onde o sumário deve aparecer (geralmente após a capa)\n3) Referências → Sumário → escolha um modelo automático\n\nPronto.\n\nDica:\n- normalmente o sumário ocupa 1 ou mais páginas, então é comum inserir uma quebra de página antes e depois."
+    },
+    {
+      "title": "Atualizar o sumário (isso é o coração do recurso)",
+      "body": "Depois que você altera o documento, o sumário não muda sozinho o tempo todo.\nVocê precisa atualizar.\n\nExistem 2 tipos de atualização:\n\n1) **Atualizar somente números de página**\n- quando você só mexeu no texto, mas não mudou títulos\n\n2) **Atualizar o índice inteiro**\n- quando você mudou títulos (nome, hierarquia)\n\nRegra:\n- mudou títulos? atualize o índice inteiro."
+    },
+    {
+      "title": "Níveis do sumário (mostrar só o que importa)",
+      "body": "Você pode controlar quantos níveis aparecem.\n\nExemplo:\n- mostrar só Título 1 e Título 2\n- esconder Título 3 se ficar poluído\n\nRegra:\n- quanto mais longo, mais importante escolher bem os níveis.\n\nDica:\n- documento de relatório costuma ficar bom com níveis 1 e 2."
+    },
+    {
+      "title": "Sumário com pontinhos (leaders) e visual profissional",
+      "body": "O padrão do Word com pontinhos é ótimo:\n\nCapítulo 1 .......... 3\nCapítulo 2 .......... 7\n\nIsso ajuda a leitura.\n\nRegra:\n- não tente fazer pontinhos na mão.\n- o Word faz isso automaticamente no modelo do sumário."
+    },
+    {
+      "title": "Corrigindo problemas comuns (diagnóstico rápido)",
+      "body": "Problema A: título não aparece no sumário\nCausa provável:\n- não está com estilo de Título (1/2/3)\n\nProblema B: aparece no nível errado\nCausa provável:\n- título com estilo errado (ex.: Título 2 em vez de Título 1)\n\nProblema C: páginas erradas\nCausa provável:\n- sumário não foi atualizado\n\nRegra:\n- 90% dos problemas são estilo + atualização."
+    },
+    {
+      "title": "Remover um item do sumário (do jeito certo)",
+      "body": "Você NÃO remove item diretamente do sumário.\n\nVocê remove ajustando o documento:\n- tirando o estilo de título daquele parágrafo\n- ou mudando para “Normal”\n\nDepois:\n- atualizar o sumário\n\nRegra:\n- o sumário é reflexo do documento, não algo editado manualmente."
+    },
+    {
+      "title": "Sumário e seções (capa sem número e numeração correta)",
+      "body": "Em documentos profissionais, você pode ter:\n- capa sem número\n- sumário sem número visível\n- texto começando em “Página 1” depois\n\nIsso geralmente envolve:\n- cabeçalho/rodapé (aula 09)\n- seções (aula 10)\n\nRegra:\n- para numeração perfeita (capa, sumário, corpo), você vai combinar seções + numeração."
+    },
+    {
+      "title": "Mini prática (25 minutos) — sumário que se atualiza",
+      "body": "Faça assim:\n\n1) Crie 3 títulos Título 1:\n- 1. Introdução\n- 2. Procedimento\n- 3. Conclusão\n\n2) Dentro de “Procedimento”, crie 3 Títulos 2:\n- 2.1 Separação\n- 2.2 Conferência\n- 2.3 Embalagem\n\n3) Escreva 1 parágrafo em cada seção.\n4) Insira o sumário no topo do documento (Referências → Sumário).\n\nAgora teste:\n5) Crie uma nova página no meio (Ctrl+Enter) e escreva texto extra.\n6) Volte no sumário e atualize:\n- primeiro só páginas\n- depois “índice inteiro” (mude um título e atualize tudo)\n\nObjetivo:\n- ver na prática que o sumário é vivo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Sumário automático depende de Estilos (Título 1/2/3)\n- Gerar: Referências → Sumário\n- Atualizar: páginas ou índice inteiro\n- Problemas comuns: estilo errado ou falta de atualização\n- Não edite o sumário manualmente: edite o documento e atualize\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 19 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Sumário automático é melhor que manual porque:",
+        "options": [
+          { "key": "A", "text": "Atualiza páginas e estrutura sem retrabalho" },
+          { "key": "B", "text": "Impede que você edite o documento" }
+        ],
+        "answer": "A",
+        "explain": "Ele recalcula páginas e facilita manutenção do documento."
+      },
+      {
+        "id": 2,
+        "question": "Para o Word criar sumário automático, você precisa usar:",
+        "options": [
+          { "key": "A", "text": "Estilos de Título (1/2/3)" },
+          { "key": "B", "text": "Negrito manual em qualquer lugar" }
+        ],
+        "answer": "A",
+        "explain": "O Word identifica títulos pelos estilos, não pelo negrito."
+      },
+      {
+        "id": 3,
+        "question": "O sumário fica geralmente na guia:",
+        "options": [
+          { "key": "A", "text": "Referências" },
+          { "key": "B", "text": "Exibir" }
+        ],
+        "answer": "A",
+        "explain": "Referências reúne índice, notas, citações, etc."
+      },
+      {
+        "id": 4,
+        "question": "Se você mudou apenas o texto (não os títulos), o ideal é:",
+        "options": [
+          { "key": "A", "text": "Atualizar somente números de página" },
+          { "key": "B", "text": "Apagar o sumário e criar outro do zero" }
+        ],
+        "answer": "A",
+        "explain": "Não precisa recriar; basta atualizar páginas."
+      },
+      {
+        "id": 5,
+        "question": "Se você mudou nomes/níveis de títulos, você deve:",
+        "options": [
+          { "key": "A", "text": "Atualizar o índice inteiro" },
+          { "key": "B", "text": "Atualizar só números de página" }
+        ],
+        "answer": "A",
+        "explain": "Mudança de títulos exige atualizar o conteúdo do índice."
+      },
+      {
+        "id": 6,
+        "question": "Se um título não aparece no sumário, a causa mais provável é:",
+        "options": [
+          { "key": "A", "text": "Ele não está com estilo de Título (está como Normal)" },
+          { "key": "B", "text": "O computador está sem som" }
+        ],
+        "answer": "A",
+        "explain": "Sumário lê estilos; se não é título, não entra."
+      },
+      {
+        "id": 7,
+        "question": "Você deve editar um item diretamente no sumário?",
+        "options": [
+          { "key": "A", "text": "Não; deve corrigir no documento e atualizar" },
+          { "key": "B", "text": "Sim; sempre escreva os números manualmente" }
+        ],
+        "answer": "A",
+        "explain": "O sumário é gerado automaticamente; editar nele quebra o padrão."
+      },
+      {
+        "id": 8,
+        "question": "Pontinhos entre título e página no sumário:",
+        "options": [
+          { "key": "A", "text": "São gerados automaticamente e não devem ser feitos na mão" },
+          { "key": "B", "text": "Devem ser digitados manualmente" }
+        ],
+        "answer": "A",
+        "explain": "O modelo do sumário já faz isso de forma correta."
+      },
+      {
+        "id": 9,
+        "question": "Controlar níveis do sumário serve para:",
+        "options": [
+          { "key": "A", "text": "Mostrar só níveis 1/2/3 conforme necessidade" },
+          { "key": "B", "text": "Aumentar a margem do documento" }
+        ],
+        "answer": "A",
+        "explain": "Você escolhe quantos níveis aparecem para não poluir."
+      },
+      {
+        "id": 10,
+        "question": "A maioria dos problemas de sumário é resolvida com:",
+        "options": [
+          { "key": "A", "text": "Estilos corretos + atualizar o sumário" },
+          { "key": "B", "text": "Copiar e colar o sumário em outro arquivo" }
+        ],
+        "answer": "A",
+        "explain": "Estilos (estrutura) e atualização (páginas) resolvem quase tudo."
+      }
+    ]
+  },
+  "extra": {
+    "modelTOCChecklist": "Checklist do sumário automático (sem erro)\n\n1) Títulos usando Estilos:\n- Capítulos: Título 1\n- Seções: Título 2\n- Sub-seções: Título 3\n\n2) Inserir sumário:\n- Referências → Sumário → Automático\n\n3) Atualizar:\n- Mudou só texto → atualizar páginas\n- Mudou títulos/níveis → atualizar índice inteiro\n\n4) Problemas comuns:\n- título não aparece → não está em Título 1/2/3\n- nível errado → estilo errado\n- página errada → não atualizou\n\nRegra:\n- Não edite o sumário manualmente.\n- Corrija no documento e atualize.\n"
+  }
+}

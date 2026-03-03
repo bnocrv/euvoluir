@@ -1,0 +1,172 @@
+{
+  "id": "13-proteger-compartilhar",
+  "title": "Aula 13 — Proteger células/planilhas e compartilhar com segurança (o que travar e por quê)",
+  "steps": [
+    {
+      "title": "Por que proteção existe (o problema real)",
+      "body": "Quando uma planilha vai para outra pessoa, os riscos são:\n- alguém apagar uma fórmula sem querer\n- alguém colar por cima e bagunçar tudo\n- alguém mexer no layout\n- alguém alterar uma lista de apoio\n\nProteção no Excel não é “paranoia”. É:\n- manter a planilha confiável\n- evitar retrabalho\n\nRegra:\n- se tem fórmula importante, você precisa pensar em proteção."
+    },
+    {
+      "title": "O que dá para proteger (3 níveis)",
+      "body": "No Excel você pode proteger:\n\n1) **Células** (travar/destravar)\n2) **Planilha** (impede edição em células travadas)\n3) **Pasta de trabalho** (estrutura: criar/renomear/mover abas)\n\nRegra:\n- proteção funciona em camadas: travar célula + proteger planilha."
+    },
+    {
+      "title": "Ideia-chave: toda célula já vem como 'travada' (mas não parece)",
+      "body": "Isso confunde muita gente:\n\n- Por padrão, as células estão marcadas como **Travadas**.\n- Mas isso só tem efeito quando você ativa **Proteger Planilha**.\n\nEntão:\n- travar/destravar = “etiqueta”\n- proteger planilha = “porta trancada”\n\nRegra:\n- se você não protege a planilha, 'travada' não faz nada."
+    },
+    {
+      "title": "Como permitir edição só em alguns campos (padrão profissional)",
+      "body": "Passo a passo clássico:\n\n1) Selecione as células que o usuário pode preencher (ex.: campos de entrada)\n2) Ctrl+1 → guia **Proteção**\n3) Desmarque **Travada** (essas ficam editáveis)\n\n4) Agora vá em:\n- **Revisão → Proteger Planilha**\n\nResultado:\n- só as células destravadas podem ser editadas\n- fórmulas e estrutura ficam protegidas\n\nRegra:\n- destravar antes, proteger depois."
+    },
+    {
+      "title": "Proteger planilha (o que marcar e o que não marcar)",
+      "body": "Em **Revisão → Proteger Planilha**, você escolhe permissões.\n\nPermissões comuns (recomendadas):\n- permitir selecionar células destravadas\n- (opcional) permitir selecionar células travadas\n\nEvite liberar sem pensar:\n- inserir/excluir linhas\n- formatar células\n- ordenar/filtrar (a menos que você precise)\n\nRegra:\n- quanto mais permissões, maior o risco de bagunça."
+    },
+    {
+      "title": "Proteção e Tabela (filtro/ordenar com planilha protegida)",
+      "body": "Se sua base é uma Tabela (Ctrl+T) e você quer permitir filtro:\n- ao proteger planilha, marque a opção **Usar AutoFiltro** (ou semelhante)\n\nAssim a pessoa consegue:\n- filtrar\n- mas não consegue destruir fórmulas travadas\n\nRegra:\n- proteção boa permite uso, mas impede estrago."
+    },
+    {
+      "title": "Proteger estrutura da pasta de trabalho (abas)",
+      "body": "Se você quer impedir alguém de:\n- renomear planilhas\n- mover/ocultar/excluir abas\n\nUse:\n- **Revisão → Proteger Pasta de Trabalho** (Estrutura)\n\nRegra:\n- isso protege a “arquitetura” do arquivo."
+    },
+    {
+      "title": "Senhas: boas práticas (sem drama)",
+      "body": "Senha ajuda, mas lembre:\n- se perder a senha, pode ser um problema grande\n\nBoas práticas:\n- use senha simples de administrar (mas não óbvia)\n- registre em lugar seguro\n- use senha quando realmente necessário\n\nRegra:\n- senha é gestão, não mágica."
+    },
+    {
+      "title": "Compartilhar com segurança (nuvem e versões)",
+      "body": "O jeito mais seguro de compartilhar é na nuvem (OneDrive/SharePoint), porque:\n- tem histórico de versões\n- dá para colaborar\n- você consegue recuperar se alguém estragar\n\nRegra:\n- arquivo compartilhado importante → nuvem + histórico de versões."
+    },
+    {
+      "title": "Permissões na prática (visualizar vs editar)",
+      "body": "Quando você compartilha, pense em 2 níveis:\n\n- **Pode visualizar**: lê e baixa, mas não edita\n- **Pode editar**: altera conteúdo\n\nRegra:\n- se a pessoa só precisa ver o relatório, dê visualizar.\n- edição é só para quem realmente precisa."
+    },
+    {
+      "title": "Proteger não substitui boas práticas (o que ainda precisa)",
+      "body": "Mesmo com proteção:\n- validação de dados continua importante\n- tabelas organizadas continuam importantes\n- versões continuam importantes\n\nRegra:\n- proteção é a última camada, não a única."
+    },
+    {
+      "title": "Erros comuns (e como evitar)",
+      "body": "1) Proteger sem destravar campos de entrada\n- ninguém consegue preencher nada\n\n2) Destravar tudo e achar que protegeu\n- não protege nada\n\n3) Esquecer que travado só funciona com planilha protegida\n\n4) Compartilhar por arquivo solto sem histórico\n- alguém estraga e não tem como voltar\n\nRegra:\n- teste como 'usuário' antes de enviar."
+    },
+    {
+      "title": "Mini prática (35 minutos) — planilha preenchível sem quebrar fórmulas",
+      "body": "Monte uma tabela:\n- Produto | Qtd | Valor | Total\n\n1) Crie fórmula Total (ex.: `=B2*C2` e copie).\n\n2) Deixe editável apenas:\n- Produto, Qtd, Valor\n\nPassos:\n- selecione as colunas Produto/Qtd/Valor\n- Ctrl+1 → Proteção → desmarcar Travada\n\n3) Proteja a planilha:\n- Revisão → Proteger Planilha\n- permita selecionar células destravadas\n\n4) Teste:\n- tente editar Total (deve bloquear)\n- edite Qtd e veja Total atualizar (fórmula intacta)\n\n5) (Opcional) Proteja estrutura da pasta:\n- Revisão → Proteger Pasta de Trabalho (Estrutura)\n\nObjetivo:\n- criar um arquivo que o usuário preenche sem destruir o motor da planilha."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Proteção tem camadas: célula → planilha → pasta\n- Células já vêm 'travadas', mas só funciona ao proteger planilha\n- Fluxo profissional: destravar entradas → proteger planilha\n- Dá para permitir filtro mesmo protegendo\n- Compartilhar na nuvem dá histórico de versões\n- Teste antes de enviar\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 13 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Por padrão, as células no Excel estão marcadas como:",
+        "options": [
+          { "key": "A", "text": "Travadas (Lock)" },
+          { "key": "B", "text": "Destravadas" }
+        ],
+        "answer": "A",
+        "explain": "Mas isso só tem efeito quando a planilha é protegida."
+      },
+      {
+        "id": 2,
+        "question": "A marcação 'Travada' só passa a valer quando você:",
+        "options": [
+          { "key": "A", "text": "Ativa Proteger Planilha" },
+          { "key": "B", "text": "Muda a cor da célula" }
+        ],
+        "answer": "A",
+        "explain": "Travado é etiqueta; proteger planilha é trancar a porta."
+      },
+      {
+        "id": 3,
+        "question": "Para permitir que o usuário edite um campo, você deve:",
+        "options": [
+          { "key": "A", "text": "Desmarcar Travada na célula" },
+          { "key": "B", "text": "Mesclar a célula" }
+        ],
+        "answer": "A",
+        "explain": "Destravar antes de proteger é o padrão profissional."
+      },
+      {
+        "id": 4,
+        "question": "O fluxo correto normalmente é:",
+        "options": [
+          { "key": "A", "text": "Destravar entradas → Proteger planilha" },
+          { "key": "B", "text": "Proteger planilha → depois destravar" }
+        ],
+        "answer": "A",
+        "explain": "Você define o que pode editar e depois tranca o resto."
+      },
+      {
+        "id": 5,
+        "question": "Proteger Pasta de Trabalho (Estrutura) serve para:",
+        "options": [
+          { "key": "A", "text": "Impedir mexer nas abas (mover, renomear, excluir)" },
+          { "key": "B", "text": "Formatar números como moeda" }
+        ],
+        "answer": "A",
+        "explain": "É proteção da estrutura do arquivo."
+      },
+      {
+        "id": 6,
+        "question": "Compartilhar na nuvem é bom porque:",
+        "options": [
+          { "key": "A", "text": "Permite histórico de versões e recuperação" },
+          { "key": "B", "text": "Aumenta a velocidade do teclado" }
+        ],
+        "answer": "A",
+        "explain": "Histórico de versões salva quando alguém bagunça."
+      },
+      {
+        "id": 7,
+        "question": "Uma proteção bem feita:",
+        "options": [
+          { "key": "A", "text": "Permite uso (entrada) e impede estrago (fórmulas)" },
+          { "key": "B", "text": "Bloqueia tudo sempre" }
+        ],
+        "answer": "A",
+        "explain": "Proteção boa é usável."
+      },
+      {
+        "id": 8,
+        "question": "Se você protege a planilha sem destravar campos de entrada:",
+        "options": [
+          { "key": "A", "text": "Ninguém consegue preencher" },
+          { "key": "B", "text": "Fica melhor automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Por isso destravar antes é essencial."
+      },
+      {
+        "id": 9,
+        "question": "Para permitir filtro em planilha protegida, você deve:",
+        "options": [
+          { "key": "A", "text": "Marcar a permissão de AutoFiltro ao proteger" },
+          { "key": "B", "text": "Apagar os filtros" }
+        ],
+        "answer": "A",
+        "explain": "Assim você permite filtrar sem permitir edição perigosa."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa prática antes de enviar a planilha é:",
+        "options": [
+          { "key": "A", "text": "Testar como usuário para ver o que está liberado" },
+          { "key": "B", "text": "Enviar sem testar porque funciona" }
+        ],
+        "answer": "A",
+        "explain": "Teste evita surpresa e retrabalho."
+      }
+    ]
+  },
+  "extra": {
+    "receitaProtecaoProfissional": "Receita: planilha preenchível (padrão)\n\n1) Selecione campos de entrada\n2) Ctrl+1 → Proteção → desmarcar Travada\n3) Revisão → Proteger Planilha\n   - permitir selecionar células destravadas\n   - (opcional) permitir AutoFiltro\n4) Teste: entradas editam, fórmulas bloqueiam\n\nPronto: usuário preenche sem quebrar o arquivo.",
+    "checklistAntesDeEnviar": "Checklist antes de enviar\n\n- Campos de entrada destravados?\n- Fórmulas travadas?\n- Planilha protegida?\n- (Opcional) Estrutura protegida?\n- Validação ativa?\n- Arquivo na nuvem com histórico?\n- Testado como usuário?\n"
+  }
+}

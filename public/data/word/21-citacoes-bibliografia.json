@@ -1,0 +1,167 @@
+{
+  "id": "21-citacoes-bibliografia",
+  "title": "Aula 21 — Citações e bibliografia (ABNT/APA: conceitos e prática)",
+  "steps": [
+    {
+      "title": "O objetivo real desta aula (sem enrolação)",
+      "body": "Citar e fazer bibliografia é onde muita gente se perde porque tenta fazer tudo manual.\n\nA ideia aqui é você entender:\n- o que é citação (no texto)\n- o que é referência/bibliografia (lista no final)\n- como o Word pode ajudar a organizar isso\n\nImportante:\n- ABNT e APA são padrões.\n- o Word ajuda, mas você ainda precisa revisar o formato final conforme a regra exigida."
+    },
+    {
+      "title": "Conceitos básicos: citação x referência",
+      "body": "Pense assim:\n\n- **Citação**: aparece NO TEXTO (ex.: autor e ano)\n- **Referência/Bibliografia**: lista COMPLETA no final (autor, título, editora, etc.)\n\nExemplo simples:\nNo texto: “Segundo Silva (2020) ...”\nNo final: SILVA, A. Título... 2020.\n\nRegra:\n- citação aponta para uma entrada da bibliografia."
+    },
+    {
+      "title": "Citação direta x citação indireta",
+      "body": "Dois tipos comuns:\n\n1) **Citação indireta** (paráfrase)\n- você explica com suas palavras\n- ainda assim precisa citar a fonte\n\n2) **Citação direta** (copiar trecho)\n- você usa as palavras exatas do autor\n- geralmente precisa de regras extras (aspas, página)\n\nRegra:\n- quanto mais você copia, mais risco de ficar “colagem”.\n- use direto só quando for necessário."
+    },
+    {
+      "title": "ABNT vs APA (o que muda em essência)",
+      "body": "Ambas organizam as fontes, mas têm detalhes diferentes.\n\nEm essência:\n- definem como citar no texto\n- definem como montar a lista de referências\n\nDiferença prática:\n- o formato exato (pontuação, maiúsculas, ordem de campos) muda.\n\nRegra:\n- sempre siga a norma exigida pela sua instituição/cliente.\n- o Word pode formatar em estilos (como APA), mas ABNT às vezes exige ajustes manuais."
+    },
+    {
+      "title": "O recurso do Word: Fontes (Sources)",
+      "body": "O Word tem um gerenciador de fontes.\n\nVocê registra uma fonte (livro, artigo, site) com dados como:\n- autor\n- título\n- ano\n- editora\n- URL (se site)\n\nDepois o Word consegue:\n- inserir citação no texto\n- gerar bibliografia automaticamente\n\nOnde fica:\n- **Referências → Citações e Bibliografia**"
+    },
+    {
+      "title": "Registrar uma fonte (o jeito organizado)",
+      "body": "Fluxo:\n\n1) Referências → Inserir Citação → Adicionar Nova Fonte\n2) Escolha o tipo:\n- Livro\n- Artigo\n- Site\n- etc.\n3) Preencha os campos\n\nDica:\n- quanto melhor você preenche, menos correção depois.\n\nRegra:\n- fonte incompleta gera bibliografia incompleta."
+    },
+    {
+      "title": "Inserir citação no texto (sem digitar na mão)",
+      "body": "Depois de cadastrar a fonte:\n\n- Referências → Inserir Citação\n- escolha a fonte\n\nO Word insere a citação no padrão do estilo escolhido.\n\nVantagem:\n- se você trocar o estilo (APA por outro), o Word tenta ajustar.\n\nRegra:\n- quanto mais você usa o sistema, menos retrabalho."
+    },
+    {
+      "title": "Gerar bibliografia (lista no final)",
+      "body": "Quando você já tem fontes cadastradas e usadas:\n\n- Referências → Bibliografia\n- escolha um modelo (Bibliografia / Referências)\n\nO Word gera automaticamente a lista.\n\nImportante:\n- se você inserir uma nova citação depois, precisa atualizar a bibliografia.\n\nRegra:\n- bibliografia é “viva” como o sumário."
+    },
+    {
+      "title": "Atualizar bibliografia e citações",
+      "body": "Assim como sumário e referências cruzadas, isso funciona por campos.\n\nSe algo não mudou:\n- atualize.\n\nRegra prática:\n- ao finalizar o documento, faça uma atualização geral antes de exportar PDF."
+    },
+    {
+      "title": "Boas práticas (para não virar bagunça)",
+      "body": "1) Cadastre fonte assim que usar.\n2) Use sempre Inserir Citação, não digite manual.\n3) Preencha dados completos.\n4) No final, gere/atualize bibliografia.\n5) Revise conforme a norma (ABNT/APA).\n\nRegra:\n- automático ajuda, mas revisão final é sua responsabilidade."
+    },
+    {
+      "title": "Limitações reais (pra você não cair em armadilha)",
+      "body": "O Word ajuda muito, mas:\n- alguns padrões (especialmente ABNT) podem exigir ajustes\n- sites sem autor/data podem ficar estranhos\n- nomes com múltiplos autores precisam estar corretos\n\nRegra:\n- use o Word como base e revise com a norma na mão."
+    },
+    {
+      "title": "Mini prática (25 minutos) — 2 fontes + bibliografia",
+      "body": "Faça isso:\n\n1) Crie um documento com 2 parágrafos.\n2) Cadastre 2 fontes:\n- Fonte A: Livro (autor, título, ano)\n- Fonte B: Site (título, URL, ano/acesso)\n\n3) Insira 1 citação em cada parágrafo.\n4) No final do documento, insira “Referências” (Título 1).\n5) Gere a Bibliografia automática.\n6) Adicione mais uma citação e atualize a bibliografia.\n\nObjetivo:\n- sentir o fluxo completo: cadastrar → citar → listar."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Citação é no texto; bibliografia é a lista no final\n- Direta x indireta: ambas exigem fonte\n- Word tem gerenciador de fontes (Sources)\n- Inserir citação e gerar bibliografia evita retrabalho\n- Em ABNT/APA, revise o resultado final conforme exigência\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 21 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Citação é:",
+        "options": [
+          { "key": "A", "text": "Uma referência dentro do texto apontando para uma fonte" },
+          { "key": "B", "text": "A lista completa de fontes no final do documento" }
+        ],
+        "answer": "A",
+        "explain": "Bibliografia/referências é a lista final; citação aparece no corpo do texto."
+      },
+      {
+        "id": 2,
+        "question": "Bibliografia (ou referências) é:",
+        "options": [
+          { "key": "A", "text": "A lista completa das fontes usadas" },
+          { "key": "B", "text": "Um tipo de parágrafo com recuo" }
+        ],
+        "answer": "A",
+        "explain": "É onde ficam os dados completos das obras/sites."
+      },
+      {
+        "id": 3,
+        "question": "Citação indireta significa:",
+        "options": [
+          { "key": "A", "text": "Explicar com suas palavras, mas citando a fonte" },
+          { "key": "B", "text": "Copiar o texto exato sem citar ninguém" }
+        ],
+        "answer": "A",
+        "explain": "Paráfrase ainda exige referência."
+      },
+      {
+        "id": 4,
+        "question": "Citação direta significa:",
+        "options": [
+          { "key": "A", "text": "Usar as palavras exatas do autor (com regras específicas)" },
+          { "key": "B", "text": "Inventar um resumo sem fonte" }
+        ],
+        "answer": "A",
+        "explain": "Copiar trecho exato exige cuidado com formatação e indicação."
+      },
+      {
+        "id": 5,
+        "question": "O Word ajuda com citações porque:",
+        "options": [
+          { "key": "A", "text": "Permite cadastrar fontes e inserir citações automaticamente" },
+          { "key": "B", "text": "Elimina a necessidade de revisar a norma" }
+        ],
+        "answer": "A",
+        "explain": "Ele automatiza bastante, mas você ainda precisa revisar o padrão exigido."
+      },
+      {
+        "id": 6,
+        "question": "Uma boa prática é:",
+        "options": [
+          { "key": "A", "text": "Cadastrar a fonte assim que for usar" },
+          { "key": "B", "text": "Deixar para lembrar das fontes só no final" }
+        ],
+        "answer": "A",
+        "explain": "Deixar pro final aumenta chance de esquecer dados importantes."
+      },
+      {
+        "id": 7,
+        "question": "Se você inserir novas citações, a bibliografia:",
+        "options": [
+          { "key": "A", "text": "Precisa ser atualizada" },
+          { "key": "B", "text": "Nunca muda" }
+        ],
+        "answer": "A",
+        "explain": "Bibliografia é gerada por campos e reflete as fontes usadas."
+      },
+      {
+        "id": 8,
+        "question": "ABNT e APA são:",
+        "options": [
+          { "key": "A", "text": "Padrões de citação e referências, com regras diferentes" },
+          { "key": "B", "text": "Tipos de arquivo do Word" }
+        ],
+        "answer": "A",
+        "explain": "Cada norma define formato e detalhes de apresentação."
+      },
+      {
+        "id": 9,
+        "question": "O Word pode exigir revisão em ABNT/APA porque:",
+        "options": [
+          { "key": "A", "text": "Alguns detalhes de norma podem precisar de ajuste final" },
+          { "key": "B", "text": "O Word não suporta texto com autores" }
+        ],
+        "answer": "A",
+        "explain": "Automático ajuda muito, mas nem sempre bate 100% com exigências específicas."
+      },
+      {
+        "id": 10,
+        "question": "O fluxo mais organizado é:",
+        "options": [
+          { "key": "A", "text": "Cadastrar fonte → inserir citação → gerar bibliografia → atualizar" },
+          { "key": "B", "text": "Digitar tudo manualmente e rezar para não errar" }
+        ],
+        "answer": "A",
+        "explain": "Esse fluxo reduz erro e economiza tempo."
+      }
+    ]
+  },
+  "extra": {
+    "modelCitationsWorkflow": "Fluxo profissional de citações (sem retrabalho)\n\n1) Usou uma ideia de alguém?\n→ Cadastre a fonte (Referências → Inserir Citação → Adicionar Nova Fonte)\n\n2) Vai citar no texto?\n→ Inserir Citação (não digite manual)\n\n3) No final:\n→ Referências → Bibliografia/Referências\n\n4) Mudou/adiou fonte?\n→ Atualize a bibliografia antes do PDF\n\nRegras rápidas:\n- Citação indireta: suas palavras + fonte\n- Citação direta: palavras exatas + cuidado com regras\n- ABNT/APA: revise o formato final conforme exigido\n"
+  }
+}

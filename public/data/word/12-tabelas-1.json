@@ -1,0 +1,163 @@
+{
+  "id": "12-tabelas-1",
+  "title": "Aula 12 — Tabelas 1: criar, editar, bordas e alinhamento",
+  "steps": [
+    {
+      "title": "Por que tabelas no Word são tão usadas",
+      "body": "Tabela é a forma mais estável de organizar informação em linhas e colunas.\n\nVocê usa tabela para:\n- dados (produto, quantidade, preço)\n- formulários simples\n- comparar informações\n- alinhar conteúdo lado a lado (de forma fixa)\n\nRegra:\n- se você está usando TAB ou espaços para “fazer colunas”, provavelmente deveria ser TABELA."
+    },
+    {
+      "title": "Tabela vs colunas (não confunda)",
+      "body": "Diferença simples:\n\n- **Colunas (layout)**: texto flui como revista\n- **Tabela**: estrutura fixa (linha/coluna)\n\nExemplo:\n- Lista de preços → tabela\n- Newsletter em duas colunas → colunas (aula 11)\n\nRegra:\n- números e comparações = tabela."
+    },
+    {
+      "title": "Como criar uma tabela (3 formas úteis)",
+      "body": "Você pode criar tabela assim:\n\n1) **Inserir → Tabela** e escolher no quadradinho (ex.: 3x5)\n2) Inserir → Tabela → **Inserir Tabela…** (define linhas/colunas com precisão)\n3) **Desenhar Tabela** (mais manual; use só quando realmente precisar)\n\nDica:\n- para começar rápido, o quadradinho é perfeito."
+    },
+    {
+      "title": "Como digitar dentro da tabela (atalhos essenciais)",
+      "body": "Dentro da tabela:\n\n- **TAB**: vai para a próxima célula\n- **Shift + TAB**: volta para a célula anterior\n- **Enter**: quebra linha dentro da célula (novo parágrafo na mesma célula)\n\nRegra:\n- TAB é o “voltar/avançar” das células."
+    },
+    {
+      "title": "Adicionar e remover linhas/colunas",
+      "body": "Você pode:\n\n- adicionar uma linha acima/abaixo\n- adicionar uma coluna à esquerda/direita\n- excluir linha/coluna/tabela\n\nIdeia prática:\n- clique numa célula → use as opções de inserir/excluir\n\nDica:\n- se você apertar TAB na última célula da tabela, o Word costuma criar uma nova linha automaticamente."
+    },
+    {
+      "title": "Redimensionar: largura de coluna e altura de linha",
+      "body": "Você controla o tamanho:\n- arrastando as bordas com o mouse\n- ou usando as opções de layout da tabela\n\nCuidado:\n- se uma coluna fica muito estreita, o texto quebra e fica feio.\n\nRegra:\n- deixe espaço para o conteúdo respirar."
+    },
+    {
+      "title": "Alinhamento do conteúdo na célula",
+      "body": "Uma célula tem alinhamento em duas direções:\n\n- horizontal (esquerda/centro/direita)\n- vertical (topo/meio/base)\n\nExemplo típico:\n- cabeçalho (títulos) no centro\n- números à direita (para comparar melhor)\n- texto à esquerda\n\nDica:\n- alinhamento bem feito deixa a tabela “com cara profissional”."
+    },
+    {
+      "title": "Bordas: quando usar e como não exagerar",
+      "body": "Bordas ajudam a leitura, mas podem poluir.\n\nPadrões comuns:\n- grade completa (tudo com borda) → útil em tabelas pequenas\n- só bordas externas + linha do cabeçalho → visual mais limpo\n\nRegra:\n- borda demais deixa pesado.\n- tabela profissional costuma ser mais “leve”."
+    },
+    {
+      "title": "Sombreamento (cor de fundo) no cabeçalho",
+      "body": "Um truque simples:\n- aplicar um fundo leve no cabeçalho\n- ajuda a separar e ler melhor\n\nBoa prática:\n- use cor bem suave\n- mantenha consistência no documento\n\nRegra:\n- objetivo é legibilidade, não decoração."
+    },
+    {
+      "title": "Autoajuste: quando a tabela deve se adaptar",
+      "body": "O Word pode ajustar:\n- largura das colunas ao conteúdo\n- ou manter largura fixa\n\nQuando usar:\n- conteúdo variável (nomes longos) → pode ajudar autoajuste\n- tabela formal (padrão fixo) → prefira larguras controladas\n\nDica:\n- se a tabela está “pulando” de tamanho, configure para ficar estável."
+    },
+    {
+      "title": "Mini prática (20 minutos) — tabela de estoque simples",
+      "body": "Crie uma tabela com 4 colunas e 6 linhas:\n\nColunas:\n1) Produto\n2) Qtd\n3) Preço\n4) Observação\n\nFaça:\n1) Cabeçalho (linha 1): coloque os títulos\n2) Centralize o cabeçalho\n3) Coloque Qtd e Preço alinhados à direita\n4) Aplique borda externa + linha separando cabeçalho\n5) Coloque sombreamento leve no cabeçalho\n\nObjetivo:\n- criar tabela legível e com padrão."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Tabela é estrutura fixa (melhor para dados)\n- TAB navega pelas células\n- Você pode inserir/excluir linhas e colunas\n- Alinhamento e bordas bem feitas deixam a tabela profissional\n- Cabeçalho com sombreamento ajuda leitura\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 12 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Tabela no Word é melhor quando você precisa:",
+        "options": [
+          { "key": "A", "text": "Organizar dados em linhas e colunas fixas" },
+          { "key": "B", "text": "Fazer texto fluir como revista" }
+        ],
+        "answer": "A",
+        "explain": "Para dados estruturados, tabela é estável; colunas são fluxo editorial."
+      },
+      {
+        "id": 2,
+        "question": "Se você está usando muitos espaços para alinhar coisas lado a lado, provavelmente deveria usar:",
+        "options": [
+          { "key": "A", "text": "Tabela" },
+          { "key": "B", "text": "Mais espaços ainda" }
+        ],
+        "answer": "A",
+        "explain": "Espaços quebram; tabela mantém alinhamento consistente."
+      },
+      {
+        "id": 3,
+        "question": "Dentro de uma tabela, a tecla TAB faz:",
+        "options": [
+          { "key": "A", "text": "Ir para a próxima célula" },
+          { "key": "B", "text": "Apagar a tabela inteira" }
+        ],
+        "answer": "A",
+        "explain": "TAB navega célula a célula; Shift+TAB volta."
+      },
+      {
+        "id": 4,
+        "question": "Shift + TAB dentro da tabela faz:",
+        "options": [
+          { "key": "A", "text": "Voltar para a célula anterior" },
+          { "key": "B", "text": "Criar uma nova coluna automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "É o “voltar” na navegação das células."
+      },
+      {
+        "id": 5,
+        "question": "Um alinhamento típico para números (preço, quantidade) é:",
+        "options": [
+          { "key": "A", "text": "À direita" },
+          { "key": "B", "text": "Sempre centralizado" }
+        ],
+        "answer": "A",
+        "explain": "À direita facilita comparar valores com mais clareza."
+      },
+      {
+        "id": 6,
+        "question": "Bordas em excesso em uma tabela:",
+        "options": [
+          { "key": "A", "text": "Podem poluir e deixar visual pesado" },
+          { "key": "B", "text": "Sempre deixam mais profissional" }
+        ],
+        "answer": "A",
+        "explain": "Muitas bordas deixam a leitura mais cansativa; use com intenção."
+      },
+      {
+        "id": 7,
+        "question": "Sombreamento leve no cabeçalho serve para:",
+        "options": [
+          { "key": "A", "text": "Ajudar a separar o cabeçalho e melhorar leitura" },
+          { "key": "B", "text": "Impedir que a tabela seja copiada" }
+        ],
+        "answer": "A",
+        "explain": "É um recurso visual simples para legibilidade."
+      },
+      {
+        "id": 8,
+        "question": "Se você apertar TAB na última célula da tabela, o Word geralmente:",
+        "options": [
+          { "key": "A", "text": "Cria uma nova linha" },
+          { "key": "B", "text": "Fecha o Word" }
+        ],
+        "answer": "A",
+        "explain": "É um atalho comum para expandir tabela ao preencher."
+      },
+      {
+        "id": 9,
+        "question": "Autoajuste é um recurso para:",
+        "options": [
+          { "key": "A", "text": "Ajustar largura das colunas ao conteúdo (ou manter fixo)" },
+          { "key": "B", "text": "Trocar a cor das margens do papel" }
+        ],
+        "answer": "A",
+        "explain": "Autoajuste controla como a tabela responde ao conteúdo."
+      },
+      {
+        "id": 10,
+        "question": "A forma mais rápida de criar uma tabela pequena é:",
+        "options": [
+          { "key": "A", "text": "Inserir → Tabela e escolher no quadradinho (grade)" },
+          { "key": "B", "text": "Digitar linhas com hífen e espaços" }
+        ],
+        "answer": "A",
+        "explain": "A grade do Word cria a tabela em segundos, com estrutura correta."
+      }
+    ]
+  },
+  "extra": {
+    "modelTableStyle": "Padrão simples de tabela profissional\n\nCabeçalho:\n- Texto centralizado\n- Negrito\n- Sombreamento leve\n\nCorpo:\n- Texto à esquerda\n- Números (Qtd/Preço) à direita\n\nBordas:\n- Preferir borda externa + linha separando cabeçalho\n- Evitar “grade” pesada quando não precisar\n\nAtalhos:\n- TAB: próxima célula\n- Shift+TAB: célula anterior\n- TAB na última célula: cria nova linha\n"
+  }
+}

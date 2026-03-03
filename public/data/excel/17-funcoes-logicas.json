@@ -1,0 +1,164 @@
+{
+  "id": "17-funcoes-logicas",
+  "title": "Aula 17 — Funções lógicas: SE, E, OU, SEERRO (regras do mundo real)",
+  "steps": [
+    {
+      "title": "O que são funções lógicas (bem simples)",
+      "body": "Funções lógicas servem para o Excel tomar decisão.\n\nElas trabalham com a ideia:\n- **VERDADEIRO** ou **FALSO**\n\nExemplo de pergunta:\n- “Esse valor é maior que 100?”\n\nSe for verdadeiro, faço uma coisa.\nSe for falso, faço outra.\n\nRegra:\n- lógica no Excel é “se acontecer X, faça Y”."
+    },
+    {
+      "title": "Comparações básicas (as perguntas que o Excel entende)",
+      "body": "Para montar condições, você usa comparadores:\n\n- `=` igual\n- `<>` diferente\n- `>` maior\n- `<` menor\n- `>=` maior ou igual\n- `<=` menor ou igual\n\nExemplos:\n- `A2>100`\n- `B2=\"OK\"`\n\nRegra:\n- texto precisa de aspas: \"OK\"."
+    },
+    {
+      "title": "SE (a função mais importante da lógica)",
+      "body": "A função SE segue a lógica:\n\n`=SE(teste_lógico; valor_se_verdadeiro; valor_se_falso)`\n\nExemplo simples:\n- se A2 >= 7 então \"Aprovado\", senão \"Reprovado\"\n\n`=SE(A2>=7;\"Aprovado\";\"Reprovado\")`\n\nRegra:\n- SE é a base. Quase tudo de regra começa aqui."
+    },
+    {
+      "title": "SE com números (exemplo real: comissão)",
+      "body": "Exemplo:\n- se a venda (A2) for maior que 1000, comissão é 5%.\n- se não, comissão é 2%.\n\nFórmula:\n`=SE(A2>1000;A2*0,05;A2*0,02)`\n\nRegra:\n- SE pode retornar texto ou número (ou até outra fórmula)."
+    },
+    {
+      "title": "SE aninhado (um SE dentro do outro) — quando usar (com cuidado)",
+      "body": "Às vezes você quer 3 ou mais resultados.\n\nExemplo (nota):\n- >= 7: Aprovado\n- >= 5: Recuperação\n- senão: Reprovado\n\n`=SE(A2>=7;\"Aprovado\";SE(A2>=5;\"Recuperação\";\"Reprovado\"))`\n\nCuidado:\n- muitos SE aninhados ficam difíceis de ler.\n\nRegra:\n- 2 níveis ok, 5 níveis vira bagunça (existem alternativas)."
+    },
+    {
+      "title": "E (todas as condições precisam ser verdadeiras)",
+      "body": "E funciona como:\n- “isso **E** aquilo”\n\n`=E(condição1; condição2; ...)`\n\nExemplo:\n- aprovado se nota >=7 **e** presença >=75%\n\n`=SE(E(A2>=7;B2>=0,75);\"Aprovado\";\"Reprovado\")`\n\nRegra:\n- E = tudo precisa ser verdadeiro."
+    },
+    {
+      "title": "OU (basta uma condição ser verdadeira)",
+      "body": "OU funciona como:\n- “isso **OU** aquilo”\n\n`=OU(condição1; condição2; ...)`\n\nExemplo:\n- desconto se cliente é VIP **ou** compra > 2000\n\n`=SE(OU(B2=\"VIP\";A2>2000);\"Desconto\";\"Sem desconto\")`\n\nRegra:\n- OU = qualquer uma verdadeira já resolve."
+    },
+    {
+      "title": "SEERRO (limpar erros e deixar a planilha apresentável)",
+      "body": "SEERRO serve para:\n- se der erro, mostrar outra coisa.\n\nSintaxe:\n`=SEERRO(valor; valor_se_erro)`\n\nExemplos:\n1) Divisão:\n- `=SEERRO(A2/B2;0)`\n(se B2 estiver 0, em vez de #DIV/0! vira 0)\n\n2) Procura (quando não achar):\n- `=SEERRO(PROCV(...);\"Não encontrado\")`\n\nRegra:\n- SEERRO é ótimo para relatórios, mas não deve esconder problema sem você entender."
+    },
+    {
+      "title": "Ordem de construção (como pensar para não travar)",
+      "body": "Quando for criar uma regra:\n\n1) Escreva a pergunta (teste lógico)\n- Ex.: A2>1000\n\n2) Decida o retorno do verdadeiro\n- Ex.: \"Alta\"\n\n3) Decida o retorno do falso\n- Ex.: \"Normal\"\n\n4) Monte o SE\n- `=SE(A2>1000;\"Alta\";\"Normal\")`\n\nRegra:\n- construa de dentro para fora: pergunta → verdadeiro → falso."
+    },
+    {
+      "title": "Erros comuns (e por que acontecem)",
+      "body": "1) Esquecer aspas em texto\n- errado: `=SE(B2=VIP;...)`\n- certo: `=SE(B2=\"VIP\";...)`\n\n2) Trocar separador (;) e (,)\n- em Excel PT-BR normalmente é `;`\n\n3) Usar % como 75 em vez de 0,75\n- 0,75 = 75%\n\n4) Esconder tudo com SEERRO sem investigar\n\nRegra:\n- se a fórmula está grande, teste por partes."
+    },
+    {
+      "title": "Mini prática (45 minutos) — regras reais de pedidos",
+      "body": "Monte uma tabela:\n- A: Valor\n- B: Status (OK / Pendente)\n- C: Cliente (VIP / Normal)\n- D: Entrega (data)\n\nCrie colunas de cálculo:\n\n1) Categoria do valor (E):\n- `=SE(A2>1000;\"Alta\";\"Normal\")`\n\n2) Alerta (F):\n- se Status é Pendente **e** Entrega < HOJE() → \"Atrasado\"\n- senão \"Em dia\"\n\n`=SE(E(B2=\"Pendente\";D2<HOJE());\"Atrasado\";\"Em dia\")`\n\n3) Desconto (G):\n- se Cliente é VIP **ou** Valor > 2000 → \"Desconto\"\n- senão \"Sem desconto\"\n\n`=SE(OU(C2=\"VIP\";A2>2000);\"Desconto\";\"Sem desconto\")`\n\n4) Divisão segura (H):\n- crie uma coluna Quantidade (H) e uma coluna Preço Médio (I)\n- `=SEERRO(A2/H2;0)`\n\nObjetivo:\n- praticar SE, E, OU e SEERRO em cenários do mundo real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- SE cria decisões: se condição, então X, senão Y\n- E exige todas as condições verdadeiras\n- OU exige só uma condição verdadeira\n- SEERRO substitui erros por um valor/texto\n- Texto vai entre aspas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 17 (Excel)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Funções lógicas trabalham principalmente com:",
+        "options": [
+          { "key": "A", "text": "VERDADEIRO e FALSO" },
+          { "key": "B", "text": "Cores e fontes" }
+        ],
+        "answer": "A",
+        "explain": "Elas avaliam condições."
+      },
+      {
+        "id": 2,
+        "question": "A sintaxe do SE é:",
+        "options": [
+          { "key": "A", "text": "SE(teste; valor_se_verdadeiro; valor_se_falso)" },
+          { "key": "B", "text": "SE(valor; soma; média)" }
+        ],
+        "answer": "A",
+        "explain": "SE sempre tem teste lógico e dois retornos."
+      },
+      {
+        "id": 3,
+        "question": "No Excel, para comparar texto você deve usar:",
+        "options": [
+          { "key": "A", "text": "Aspas (ex.: \"VIP\")" },
+          { "key": "B", "text": "Sem aspas" }
+        ],
+        "answer": "A",
+        "explain": "Sem aspas, o Excel não entende como texto."
+      },
+      {
+        "id": 4,
+        "question": "A função E retorna VERDADEIRO quando:",
+        "options": [
+          { "key": "A", "text": "Todas as condições são verdadeiras" },
+          { "key": "B", "text": "Qualquer uma das condições é verdadeira" }
+        ],
+        "answer": "A",
+        "explain": "E exige todas verdadeiras."
+      },
+      {
+        "id": 5,
+        "question": "A função OU retorna VERDADEIRO quando:",
+        "options": [
+          { "key": "A", "text": "Pelo menos uma condição é verdadeira" },
+          { "key": "B", "text": "Todas as condições são falsas" }
+        ],
+        "answer": "A",
+        "explain": "OU precisa de apenas uma verdadeira."
+      },
+      {
+        "id": 6,
+        "question": "SEERRO serve para:",
+        "options": [
+          { "key": "A", "text": "Substituir um erro por outro valor/texto" },
+          { "key": "B", "text": "Somar automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Ele evita mostrar #DIV/0!, #N/D etc. no relatório."
+      },
+      {
+        "id": 7,
+        "question": "Qual é um exemplo correto de SE com texto?",
+        "options": [
+          { "key": "A", "text": "=SE(B2=\"OK\";\"Liberado\";\"Pendente\")" },
+          { "key": "B", "text": "=SE(B2=OK;Liberado;Pendente)" }
+        ],
+        "answer": "A",
+        "explain": "Texto precisa de aspas, e retornos de texto também."
+      },
+      {
+        "id": 8,
+        "question": "Um erro comum ao usar porcentagem é:",
+        "options": [
+          { "key": "A", "text": "Usar 75 em vez de 0,75 (para 75%)" },
+          { "key": "B", "text": "Usar 0,75 para 75%" }
+        ],
+        "answer": "A",
+        "explain": "75 é 7500% se virar porcentagem."
+      },
+      {
+        "id": 9,
+        "question": "SE aninhado significa:",
+        "options": [
+          { "key": "A", "text": "Um SE dentro do outro" },
+          { "key": "B", "text": "Um gráfico dentro da célula" }
+        ],
+        "answer": "A",
+        "explain": "É usado para mais de dois resultados."
+      },
+      {
+        "id": 10,
+        "question": "Uma boa ordem para montar um SE é:",
+        "options": [
+          { "key": "A", "text": "Pergunta (teste) → verdadeiro → falso" },
+          { "key": "B", "text": "Cor → fonte → borda" }
+        ],
+        "answer": "A",
+        "explain": "Montar por partes evita travar."
+      }
+    ]
+  },
+  "extra": {
+    "receitasProntas": "Receitas prontas\n\n1) Aprovação:\n=SE(A2>=7;\"Aprovado\";\"Reprovado\")\n\n2) Atrasado por status e data:\n=SE(E(B2=\"Pendente\";D2<HOJE());\"Atrasado\";\"Em dia\")\n\n3) Desconto VIP ou valor alto:\n=SE(OU(C2=\"VIP\";A2>2000);\"Desconto\";\"Sem desconto\")\n\n4) Divisão segura:\n=SEERRO(A2/B2;0)\n",
+    "mapaComparadores": "Mapa dos comparadores\n\n=   igual\n<>  diferente\n>   maior\n<   menor\n>=  maior ou igual\n<=  menor ou igual\n\nDica:\nTexto sempre entre aspas: \"OK\", \"VIP\"."
+  }
+}

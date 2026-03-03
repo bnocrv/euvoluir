@@ -1,0 +1,163 @@
+{
+  "id": "15-quebra-de-texto",
+  "title": "Aula 15 — Quebra de texto: quadrado, atrás, na frente e posicionamento",
+  "steps": [
+    {
+      "title": "O que é “quebra de texto” (a ideia central)",
+      "body": "Quando você coloca uma imagem no Word, o texto precisa decidir:\n- passa por cima?\n- fica ao lado?\n- empurra para baixo?\n\n“Quebra de texto” é a regra que diz como o texto se comporta ao redor do objeto.\n\nSe você domina isso:\n- para de sofrer com imagem “pulando”\n- consegue layout limpo e profissional"
+    },
+    {
+      "title": "O modo padrão: “Em linha com o texto”",
+      "body": "Por padrão, a imagem entra como se fosse uma letra gigante.\n\nIsso se chama:\n- **Em linha com o texto**\n\nCaracterísticas:\n- a imagem ocupa uma linha\n- o texto fica acima e abaixo\n- é o modo mais estável (menos bagunça)\n\nQuando usar:\n- documento simples\n- relatórios onde a imagem pode ficar entre parágrafos\n\nRegra:\n- se você quer estabilidade, “Em linha” é ótimo."
+    },
+    {
+      "title": "Quebra “Quadrado” (texto ao redor da imagem)",
+      "body": "Quadrado faz o texto contornar a imagem como um bloco retangular.\n\nVocê usa quando:\n- quer imagem ao lado do texto\n- quer layout de revista\n\nCuidado:\n- se o texto mudar, a imagem pode “reagir” e mudar de lugar.\n\nRegra:\n- Quadrado é muito útil, mas exige atenção ao posicionamento."
+    },
+    {
+      "title": "Quebra “Através” (parecido com quadrado, mas mais flexível)",
+      "body": "Através permite o texto contornar mais “colado” no formato do objeto.\n\nNa prática:\n- para imagens comuns (retangulares), quadrado e através parecem iguais.\n\nQuando aparece diferença:\n- objetos com transparência ou formas irregulares\n\nRegra:\n- comece com Quadrado. Use Através se precisar de ajuste mais fino."
+    },
+    {
+      "title": "Quebra “Superior e inferior” (texto só acima e abaixo)",
+      "body": "Superior e inferior faz:\n- texto fica apenas em cima e embaixo\n- não fica texto nas laterais\n\nÉ ótimo quando:\n- você quer separar a imagem como um bloco central\n- quer evitar texto espremido ao lado\n\nRegra:\n- se o texto ao lado ficou apertado/feio, use Superior e inferior."
+    },
+    {
+      "title": "Quebra “Atrás do texto” e “Na frente do texto” (os perigosos)",
+      "body": "Esses dois são os que mais causam confusão:\n\n- **Atrás do texto**: imagem vira “fundo”\n- **Na frente do texto**: imagem vira “adesivo” por cima\n\nQuando usar:\n- marca d’água (atrás do texto)\n- selo/assinatura digital (na frente), com cuidado\n\nPerigos:\n- você pode não conseguir clicar no texto\n- pode cobrir conteúdo sem perceber\n\nRegra:\n- use esses modos só com intenção clara."
+    },
+    {
+      "title": "Posicionamento: mover a imagem sem bagunçar tudo",
+      "body": "Quando a imagem NÃO está “Em linha”, você pode arrastar.\n\nDicas para mover com controle:\n- mova devagar e observe o texto\n- prefira alinhar com margens\n- use as opções de posição (se disponíveis) para alinhar à esquerda/direita/centro\n\nRegra:\n- layout bom é alinhado e previsível."
+    },
+    {
+      "title": "Fixar posição vs mover com o texto (o segredo de estabilidade)",
+      "body": "Uma escolha importante:\n\n- **Mover com o texto**: a imagem acompanha o parágrafo\n- **Fixar posição na página**: a imagem fica “presa” naquele lugar\n\nQuando usar “Mover com o texto”:\n- imagem ligada a um parágrafo específico\n\nQuando usar “Fixar posição”:\n- layout tipo revista, onde a imagem precisa ficar no lugar\n\nRegra:\n- para documentos comuns, “mover com o texto” costuma ser mais seguro."
+    },
+    {
+      "title": "Âncora (por que a imagem ‘gruda’ em um parágrafo)",
+      "body": "Quando a imagem está fora de linha, ela fica ancorada a um parágrafo.\n\nPense assim:\n- a âncora é o “gancho” que liga imagem a um trecho.\n\nSe você remove ou move o parágrafo:\n- a imagem pode ir junto.\n\nDica:\n- se a imagem está se comportando estranho, procure entender a âncora e o modo de quebra."
+    },
+    {
+      "title": "Boas práticas de layout com imagem + texto",
+      "body": "Para ficar profissional:\n\n1) não aperte o texto demais\n- evite colunas muito estreitas ao lado da imagem\n\n2) use espaçamento\n- deixe “respiro” entre texto e imagem\n\n3) alinhe\n- imagens alinhadas com margem parecem organizadas\n\n4) mantenha consistência\n- se você escolheu Quadrado, use o mesmo padrão no documento todo."
+    },
+    {
+      "title": "Mini prática (25 minutos) — 4 modos na mesma imagem",
+      "body": "Faça isso:\n\n1) Crie um documento com 2 parágrafos longos.\n2) Insira uma imagem no meio.\n\nAgora teste:\n3) Modo A: Em linha com o texto\n- observe: texto acima e abaixo\n\n4) Modo B: Quadrado\n- arraste a imagem para a direita\n- observe o texto ao redor\n\n5) Modo C: Superior e inferior\n- veja como o texto não fica ao lado\n\n6) Modo D: Na frente do texto\n- arraste sobre o texto e veja o risco\n- depois volte para Quadrado\n\nObjetivo:\n- entender na prática o efeito de cada quebra."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Quebra de texto define a relação texto ↔ imagem\n- Em linha com o texto é o mais estável\n- Quadrado é o padrão para texto ao lado\n- Superior e inferior evita texto espremido\n- Atrás/Na frente são perigosos (use com intenção)\n- Fixar posição vs mover com o texto muda estabilidade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 15 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Quebra de texto serve para:",
+        "options": [
+          { "key": "A", "text": "Definir como o texto se comporta ao redor de uma imagem/objeto" },
+          { "key": "B", "text": "Apagar o texto automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "É uma regra de layout: texto ao redor, acima/abaixo, por trás, etc."
+      },
+      {
+        "id": 2,
+        "question": "O modo mais estável (menos bagunça) costuma ser:",
+        "options": [
+          { "key": "A", "text": "Em linha com o texto" },
+          { "key": "B", "text": "Na frente do texto" }
+        ],
+        "answer": "A",
+        "explain": "Em linha se comporta como um caractere grande, com menos surpresas."
+      },
+      {
+        "id": 3,
+        "question": "Quadrado é usado quando você quer:",
+        "options": [
+          { "key": "A", "text": "Texto ao lado contornando a imagem" },
+          { "key": "B", "text": "Texto sempre por cima da imagem" }
+        ],
+        "answer": "A",
+        "explain": "Quadrado faz o texto contornar o bloco da imagem."
+      },
+      {
+        "id": 4,
+        "question": "Superior e inferior significa:",
+        "options": [
+          { "key": "A", "text": "Texto só acima e abaixo (sem texto nas laterais)" },
+          { "key": "B", "text": "Texto só do lado direito" }
+        ],
+        "answer": "A",
+        "explain": "É útil para evitar texto apertado ao lado da imagem."
+      },
+      {
+        "id": 5,
+        "question": "Atrás do texto é útil principalmente para:",
+        "options": [
+          { "key": "A", "text": "Marca d’água/fundo com cuidado" },
+          { "key": "B", "text": "Listas numeradas" }
+        ],
+        "answer": "A",
+        "explain": "Atrás do texto cria efeito de fundo; pode atrapalhar se usado sem intenção."
+      },
+      {
+        "id": 6,
+        "question": "Na frente do texto pode ser perigoso porque:",
+        "options": [
+          { "key": "A", "text": "Pode cobrir conteúdo e dificultar clicar no texto" },
+          { "key": "B", "text": "Transforma a imagem em tabela" }
+        ],
+        "answer": "A",
+        "explain": "Ela vira um “adesivo” por cima do texto e pode esconder informação."
+      },
+      {
+        "id": 7,
+        "question": "Fixar posição na página significa:",
+        "options": [
+          { "key": "A", "text": "A imagem fica presa naquele ponto da página" },
+          { "key": "B", "text": "A imagem sempre vai para o final do documento" }
+        ],
+        "answer": "A",
+        "explain": "Fixar posição mantém a imagem no lugar, mesmo com alterações no texto."
+      },
+      {
+        "id": 8,
+        "question": "Mover com o texto significa:",
+        "options": [
+          { "key": "A", "text": "A imagem acompanha o parágrafo ao qual está ligada" },
+          { "key": "B", "text": "A imagem não pode ser movida" }
+        ],
+        "answer": "A",
+        "explain": "Se o parágrafo sobe/desce, a imagem vai junto."
+      },
+      {
+        "id": 9,
+        "question": "A âncora indica:",
+        "options": [
+          { "key": "A", "text": "Qual parágrafo está “segurando” a imagem" },
+          { "key": "B", "text": "A cor da imagem" }
+        ],
+        "answer": "A",
+        "explain": "Em objetos fora de linha, a âncora liga o objeto a um parágrafo."
+      },
+      {
+        "id": 10,
+        "question": "Boa prática de layout com imagem é:",
+        "options": [
+          { "key": "A", "text": "Evitar texto espremido e manter alinhamento consistente" },
+          { "key": "B", "text": "Usar modos aleatórios para cada imagem" }
+        ],
+        "answer": "A",
+        "explain": "Consistência e respiro melhoram leitura e profissionalismo."
+      }
+    ]
+  },
+  "extra": {
+    "modelWrapGuide": "Guia rápido de quebra de texto\n\nModos mais usados:\n- Em linha com o texto: MAIS estável\n- Quadrado: texto ao lado (padrão de revista)\n- Superior e inferior: imagem como bloco, sem texto nas laterais\n\nModos com cuidado:\n- Atrás do texto: marca d’água\n- Na frente do texto: selo/assinatura (pode cobrir conteúdo)\n\nEstabilidade:\n- Mover com o texto: mais seguro para documentos comuns\n- Fixar posição: útil para layout editorial\n\nDica:\n- Se a imagem “pula”, revise: modo de quebra + âncora\n"
+  }
+}

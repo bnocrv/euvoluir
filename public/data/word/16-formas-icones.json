@@ -1,0 +1,163 @@
+{
+  "id": "16-formas-icones",
+  "title": "Aula 16 — Formas, ícones e SmartArt (diagramas rápidos e limpos)",
+  "steps": [
+    {
+      "title": "Por que usar formas/ícones/SmartArt no Word",
+      "body": "Nem todo documento é só texto.\n\nÀs vezes você precisa:\n- destacar um aviso\n- mostrar um processo (passo a passo visual)\n- criar um fluxograma simples\n- colocar um ícone para guiar o leitor\n\nEsses recursos servem para tornar a informação mais clara — sem precisar de PowerPoint."
+    },
+    {
+      "title": "Formas: o básico (retângulo, seta, círculo)",
+      "body": "Formas são objetos desenháveis:\n- retângulos (caixas)\n- setas (fluxo)\n- círculos (etapas)\n- linhas (separadores)\n\nVocê encontra em:\n- **Inserir → Formas**\n\nUse quando:\n- precisa explicar algo visualmente\n- quer destacar um bloco de texto (ex.: “Atenção”)"
+    },
+    {
+      "title": "Texto dentro de formas (caixa de informação)",
+      "body": "Uma forma pode conter texto.\n\nExemplo:\n- retângulo com fundo suave escrito “IMPORTANTE”\n\nBoa prática:\n- pouco texto (1 a 3 linhas)\n- fonte legível\n- contraste bom (texto escuro em fundo claro)\n\nRegra:\n- forma é para resumo/alerta, não para colocar parágrafo gigante."
+    },
+    {
+      "title": "Ícones: quando usar e por que ajuda",
+      "body": "Ícones ajudam o leitor a entender rápido.\n\nExemplos:\n- ✅ para checklist\n- ⚠️ para atenção\n- 📌 para dica\n\nNo Word, dependendo da versão, você pode inserir ícones em:\n- **Inserir → Ícones**\n\nBoa prática:\n- use poucos e com padrão\n- ícone não substitui texto, ele reforça"
+    },
+    {
+      "title": "Alinhamento e consistência (o que deixa profissional)",
+      "body": "A parte “profissional” não é encher de coisa.\nÉ alinhar bem.\n\nRegras simples:\n- alinhe as formas entre si\n- mantenha tamanhos iguais quando são do mesmo tipo\n- mantenha espaçamento igual entre itens\n\nDica:\n- objetos desalinhados dão sensação de amadorismo."
+    },
+    {
+      "title": "SmartArt: diagrama pronto (rápido e limpo)",
+      "body": "SmartArt é um gerador de diagramas.\n\nVocê escolhe um modelo e só preenche.\n\nExemplos de SmartArt:\n- processo (etapas)\n- hierarquia (organograma)\n- lista com ícones\n- ciclo\n\nOnde fica:\n- **Inserir → SmartArt**\n\nRegra:\n- se você precisa de diagrama rápido e bonito, SmartArt é o caminho."
+    },
+    {
+      "title": "Quando SmartArt é melhor do que desenhar na mão",
+      "body": "Use SmartArt quando:\n- você quer consistência automática\n- quer mudar o layout com 1 clique\n- quer adicionar/remover etapas sem redesenhar tudo\n\nEvite desenhar na mão quando:\n- o diagrama tem muitas caixas e setas\n\nRegra:\n- quanto mais complexo, mais SmartArt vale a pena."
+    },
+    {
+      "title": "Agrupar objetos (para não virar bagunça ao mover)",
+      "body": "Se você criou várias formas e setas, mover uma por uma é um inferno.\n\nSolução:\n- **Agrupar**.\n\nAgrupar faz:\n- tudo virar “um bloco”\n- move junto\n- redimensiona junto\n\nRegra:\n- diagrama com várias peças: sempre agrupe no final."
+    },
+    {
+      "title": "Camadas: trazer para frente / enviar para trás",
+      "body": "Às vezes uma seta fica atrás de uma caixa.\n\nVocê controla “camadas” com:\n- Trazer para frente\n- Enviar para trás\n\nUse quando:\n- elementos se sobrepõem\n\nDica:\n- isso combina com quebra de texto (aula 15) quando objetos estão soltos."
+    },
+    {
+      "title": "Cuidado com excesso de cor e efeitos",
+      "body": "O Word permite sombra, brilho, 3D…\n\nMas documento profissional geralmente pede:\n- simples\n- limpo\n- legível\n\nRegra:\n- se o visual chama mais atenção do que o conteúdo, está exagerado."
+    },
+    {
+      "title": "Mini prática (25 minutos) — processo em 3 etapas",
+      "body": "Faça assim:\n\nOpção A (SmartArt):\n1) Inserir → SmartArt\n2) Escolha um modelo de “Processo” com 3 etapas\n3) Escreva:\n- Separar\n- Conferir\n- Embalar\n\nOpção B (Formas):\n1) Inserir → Formas → 3 retângulos\n2) Escreva o texto em cada um\n3) Inserir → Formas → setas entre eles\n4) Alinhe e distribua os objetos (mesmo tamanho e espaçamento)\n5) Agrupe tudo\n\nObjetivo:\n- criar um diagrama simples, alinhado e estável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Formas criam caixas, setas e destaques\n- Ícones ajudam leitura rápida (com moderação)\n- SmartArt cria diagramas prontos e consistentes\n- Alinhamento + espaçamento iguais deixam profissional\n- Agrupar evita bagunça ao mover\n- Camadas resolvem sobreposição\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 16 (Word)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Formas no Word servem para:",
+        "options": [
+          { "key": "A", "text": "Criar elementos visuais como caixas, setas e destaques" },
+          { "key": "B", "text": "Criar fórmulas de planilha" }
+        ],
+        "answer": "A",
+        "explain": "Formas são objetos gráficos para organização visual."
+      },
+      {
+        "id": 2,
+        "question": "Uma boa prática ao colocar texto em uma forma é:",
+        "options": [
+          { "key": "A", "text": "Usar pouco texto (resumo/alerta)" },
+          { "key": "B", "text": "Colocar um parágrafo enorme dentro da caixa" }
+        ],
+        "answer": "A",
+        "explain": "Forma é para destacar e resumir; parágrafos longos ficam difíceis de ler."
+      },
+      {
+        "id": 3,
+        "question": "Ícones ajudam porque:",
+        "options": [
+          { "key": "A", "text": "Guiam o olhar e reforçam o sentido (checklist, atenção, dica)" },
+          { "key": "B", "text": "Substituem totalmente o texto do documento" }
+        ],
+        "answer": "A",
+        "explain": "Ícone complementa, não substitui o conteúdo."
+      },
+      {
+        "id": 4,
+        "question": "SmartArt é:",
+        "options": [
+          { "key": "A", "text": "Um recurso para criar diagramas prontos e editáveis" },
+          { "key": "B", "text": "Um corretor ortográfico especial" }
+        ],
+        "answer": "A",
+        "explain": "SmartArt oferece layouts prontos (processo, hierarquia, ciclo...)."
+      },
+      {
+        "id": 5,
+        "question": "SmartArt é especialmente bom quando:",
+        "options": [
+          { "key": "A", "text": "Você quer consistência e mudar layout com facilidade" },
+          { "key": "B", "text": "Você quer digitar mais rápido usando atalhos" }
+        ],
+        "answer": "A",
+        "explain": "Ele mantém padrão e facilita reorganizar etapas."
+      },
+      {
+        "id": 6,
+        "question": "Alinhamento e espaçamento iguais são importantes porque:",
+        "options": [
+          { "key": "A", "text": "Deixam o visual limpo e profissional" },
+          { "key": "B", "text": "Fazem o documento ficar maior" }
+        ],
+        "answer": "A",
+        "explain": "Objetos desalinhados passam sensação de amadorismo."
+      },
+      {
+        "id": 7,
+        "question": "Agrupar objetos serve para:",
+        "options": [
+          { "key": "A", "text": "Mover várias formas/setas como um único bloco" },
+          { "key": "B", "text": "Apagar todos os objetos automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Agrupar evita ter que reposicionar peça por peça."
+      },
+      {
+        "id": 8,
+        "question": "Trazer para frente / enviar para trás controla:",
+        "options": [
+          { "key": "A", "text": "A ordem das camadas (sobreposição) dos objetos" },
+          { "key": "B", "text": "O tamanho da fonte do documento" }
+        ],
+        "answer": "A",
+        "explain": "Isso resolve problemas de objetos cobrindo outros."
+      },
+      {
+        "id": 9,
+        "question": "Exagerar em sombras, brilho e 3D:",
+        "options": [
+          { "key": "A", "text": "Pode deixar o documento poluído e menos profissional" },
+          { "key": "B", "text": "Sempre melhora a legibilidade" }
+        ],
+        "answer": "A",
+        "explain": "Documento profissional normalmente pede simplicidade."
+      },
+      {
+        "id": 10,
+        "question": "Se você precisa de um fluxograma simples e rápido, uma boa escolha é:",
+        "options": [
+          { "key": "A", "text": "SmartArt (processo) ou Formas bem alinhadas" },
+          { "key": "B", "text": "Vários espaços e Enter para desenhar no texto" }
+        ],
+        "answer": "A",
+        "explain": "SmartArt/Formas dão estrutura real; espaços/Enter viram gambiarra."
+      }
+    ]
+  },
+  "extra": {
+    "modelDiagramRules": "Regras para diagramas limpos no Word\n\n1) Poucos elementos (clareza > enfeite)\n2) Alinhar objetos (mesma altura/largura quando fizer sentido)\n3) Espaçamento igual entre caixas\n4) Ícones com padrão (não misturar estilos)\n5) No final: agrupar tudo\n6) Se algo cobrir outro: trazer para frente / enviar para trás\n7) Evitar efeitos pesados (3D, sombras exageradas)\n\nModelo rápido (3 etapas):\n[Separar] → [Conferir] → [Embalar]\n"
+  }
+}
