@@ -1,0 +1,168 @@
+{
+  "id": "35-kpis-performance",
+  "title": "Aula 35 — KPIs e performance: medir para melhorar (sem criar incentivos ruins)",
+  "steps": [
+    {
+      "title": "KPI é ferramenta de decisão, não decoração",
+      "body": "KPI existe para:\n- detectar desvio cedo\n- orientar prioridade\n- melhorar resultado\n\nRegra:\n- KPI que ninguém usa é só custo."
+    },
+    {
+      "title": "Poucos KPIs, bem escolhidos",
+      "body": "Bons KPIs:\n- têm dono\n- têm alvo\n- têm frequência\n- têm ação associada\n\nRegra:\n- Se não existe ação, não é KPI: é curiosidade."
+    },
+    {
+      "title": "Leading vs lagging (o que dá controle)",
+      "body": "Lagging: resultado final (ex: lucro, OTIF do mês).\nLeading: antecipa resultado (ex: erro diário, fila, atraso na separação).\n\nRegra:\n- Leading dá controle; lagging dá diagnóstico."
+    },
+    {
+      "title": "Incentivo ruim cria comportamento ruim",
+      "body": "Exemplo:\n- KPI só de quantidade -> atalho -> erro/retrabalho.\n\nRegra:\n- Toda métrica desenha comportamento."
+    },
+    {
+      "title": "Árvore de métricas (do processo ao resultado)",
+      "body": "Exemplo logístico:\n- Resultado: OTIF\n- Processo: lead time, acurácia, taxa de erro\n\nRegra:\n- Se o resultado caiu, você precisa saber qual processo caiu."
+    },
+    {
+      "title": "Ritual de gestão (onde KPI vira ação)",
+      "body": "Rotina simples:\n- olhar semanal\n- top 3 desvios\n- 1 ação por desvio\n- dono e prazo\n\nRegra:\n- KPI sem ritual vira 'painel morto'."
+    },
+    {
+      "title": "Mini prática (45 min) — desenhar 5 KPIs",
+      "body": "Escolha uma área.\n\nDefina:\n- 1 KPI de resultado\n- 3 leading\n- 1 de qualidade\n\nInclua:\n- alvo\n- dono\n- ação\n\nObjetivo:\n- KPI acionável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- KPI é decisão\n- Leading dá controle\n- Métrica desenha comportamento\n- Ritual transforma dado em melhoria\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 35 (Administração)",
+    "instructions": "Marque A, B, C ou D. Foque em ação e incentivo.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "KPI existe principalmente para:",
+        "options": [
+          { "key": "A", "text": "Enfeitar relatório" },
+          { "key": "B", "text": "Orientar decisão e ação" },
+          { "key": "C", "text": "Gerar reunião sem fim" },
+          { "key": "D", "text": "Impressionar visitante" }
+        ],
+        "answer": "B",
+        "explain": "KPI útil muda decisão e prioridade."
+      },
+      {
+        "id": 2,
+        "question": "Um KPI bom deve ter:",
+        "options": [
+          { "key": "A", "text": "Somente número" },
+          { "key": "B", "text": "Dono, alvo e ação associada" },
+          { "key": "C", "text": "Só gráfico" },
+          { "key": "D", "text": "Nenhum responsável" }
+        ],
+        "answer": "B",
+        "explain": "Sem dono e ação, ninguém move."
+      },
+      {
+        "id": 3,
+        "question": "Leading indicator é:",
+        "options": [
+          { "key": "A", "text": "Resultado final do mês" },
+          { "key": "B", "text": "Métrica que antecipa o resultado e permite corrigir cedo" },
+          { "key": "C", "text": "Métrica de vaidade" },
+          { "key": "D", "text": "Algo que não muda" }
+        ],
+        "answer": "B",
+        "explain": "Leading dá controle."
+      },
+      {
+        "id": 4,
+        "question": "Lagging indicator é útil para:",
+        "options": [
+          { "key": "A", "text": "Diagnóstico do resultado" },
+          { "key": "B", "text": "Controle diário" },
+          { "key": "C", "text": "Evitar decisão" },
+          { "key": "D", "text": "Eliminar necessidade de processo" }
+        ],
+        "answer": "A",
+        "explain": "Lagging mostra o que aconteceu."
+      },
+      {
+        "id": 5,
+        "question": "Se você mede só quantidade, o risco é:",
+        "options": [
+          { "key": "A", "text": "Qualidade melhorar sempre" },
+          { "key": "B", "text": "Atalho e aumento de erro/retrabalho" },
+          { "key": "C", "text": "Fila sumir" },
+          { "key": "D", "text": "Custo zerar" }
+        ],
+        "answer": "B",
+        "explain": "Métrica desenha comportamento."
+      },
+      {
+        "id": 6,
+        "question": "Árvore de métricas ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Deixa o painel maior" },
+          { "key": "B", "text": "Conecta resultado a processos para achar causa" },
+          { "key": "C", "text": "Elimina necessidade de análise" },
+          { "key": "D", "text": "Serve só para contador" }
+        ],
+        "answer": "B",
+        "explain": "Você encontra onde o sistema falhou."
+      },
+      {
+        "id": 7,
+        "question": "Ritual de gestão é necessário porque:",
+        "options": [
+          { "key": "A", "text": "KPIs melhoram sozinhos" },
+          { "key": "B", "text": "Sem rotina, KPI vira painel morto" },
+          { "key": "C", "text": "Aumenta ruído" },
+          { "key": "D", "text": "Diminui responsabilidade" }
+        ],
+        "answer": "B",
+        "explain": "Ritual transforma dado em ação."
+      },
+      {
+        "id": 8,
+        "question": "Um bom limite de KPIs no painel principal é:",
+        "options": [
+          { "key": "A", "text": "50" },
+          { "key": "B", "text": "5 a 10" },
+          { "key": "C", "text": "100" },
+          { "key": "D", "text": "0" }
+        ],
+        "answer": "B",
+        "explain": "Poucos e acionáveis reduzem ruído."
+      },
+      {
+        "id": 9,
+        "question": "Um KPI sem ação associada é:",
+        "options": [
+          { "key": "A", "text": "Curiosidade" },
+          { "key": "B", "text": "Controle" },
+          { "key": "C", "text": "Garantia de melhoria" },
+          { "key": "D", "text": "Estratégia" }
+        ],
+        "answer": "A",
+        "explain": "Se não muda nada, não é KPI de gestão."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Toda métrica desenha comportamento" },
+          { "key": "B", "text": "Métrica não influencia pessoas" },
+          { "key": "C", "text": "Leading não serve" },
+          { "key": "D", "text": "Painel enorme é sempre melhor" }
+        ],
+        "answer": "A",
+        "explain": "Incentivo define ação."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Estrutura KPI\n\n- alvo\n- dono\n- ação\n- ritual\n",
+    "pilares": "Pilares\n\n- controle\n- incentivo\n- disciplina\n"
+  }
+}

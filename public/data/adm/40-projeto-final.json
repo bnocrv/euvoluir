@@ -1,0 +1,168 @@
+{
+  "id": "40-etica-compliance",
+  "title": "Aula 40 — Ética e compliance: resultado sem risco escondido (casos reais e cinzentos)",
+  "steps": [
+    {
+      "title": "Ética e compliance não são 'moralismo': são gestão de risco",
+      "body": "Compliance protege:\n- caixa (multas/processos)\n- reputação\n- continuidade\n\nRegra:\n- Atalho antiético costuma cobrar juros depois."
+    },
+    {
+      "title": "O que é compliance na prática",
+      "body": "Compliance é:\n- seguir leis e regras internas\n- ter trilha e transparência\n- evitar conflito de interesse\n\nRegra:\n- Se você não pode explicar, provavelmente não deve fazer."
+    },
+    {
+      "title": "Zona cinzenta: onde o risco mora",
+      "body": "Zona cinzenta:\n- 'todo mundo faz'\n- 'só dessa vez'\n- 'ninguém vai ver'\n\nRegra:\n- Frases que justificam atalho são sinal vermelho."
+    },
+    {
+      "title": "Conflito de interesse (o tipo de problema que parece pequeno)",
+      "body": "Exemplos:\n- contratar fornecedor de amigo sem critério\n- aceitar presente que influencia decisão\n\nRegra:\n- Conflito não precisa ser ilegal para ser destrutivo."
+    },
+    {
+      "title": "Canal de denúncia e cultura",
+      "body": "Cultura forte tem:\n- espaço para reportar\n- investigação justa\n- proteção contra retaliação\n\nRegra:\n- Sem segurança psicológica, problema fica escondido."
+    },
+    {
+      "title": "Como decidir sob pressão (check rápido)",
+      "body": "Pergunte:\n- é legal?\n- é justo?\n- eu assinaria meu nome nisso?\n- se virar público, eu sustentaria?\n\nRegra:\n- Pressa não justifica risco."
+    },
+    {
+      "title": "Mini prática (45 min) — análise de caso cinzento",
+      "body": "Caso:\n- fornecedor oferece 'benefício' para fechar mais rápido.\n\nDecida:\n- qual política aplica\n- qual alternativa limpa\n- como registrar\n\nObjetivo:\n- treinar decisão sob pressão."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Ética/compliance é risco e sustentabilidade\n- Zona cinzenta tem frases padrão\n- Conflito de interesse destrói confiança\n- Check rápido ajuda decidir sob pressão\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 40 (Administração)",
+    "instructions": "Marque A, B, C ou D. Pense em risco e reputação.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Compliance serve principalmente para:",
+        "options": [
+          { "key": "A", "text": "Atrapalhar o negócio" },
+          { "key": "B", "text": "Reduzir risco legal, financeiro e reputacional" },
+          { "key": "C", "text": "Criar burocracia infinita" },
+          { "key": "D", "text": "Substituir resultado" }
+        ],
+        "answer": "B",
+        "explain": "É gestão de risco para continuidade."
+      },
+      {
+        "id": 2,
+        "question": "Um sinal clássico de zona cinzenta é:",
+        "options": [
+          { "key": "A", "text": "“Vamos registrar e seguir política”" },
+          { "key": "B", "text": "“Só dessa vez” / “ninguém vai ver”" },
+          { "key": "C", "text": "“Vamos checar a regra”" },
+          { "key": "D", "text": "“Vamos comparar propostas”" }
+        ],
+        "answer": "B",
+        "explain": "Frases de atalho são alerta."
+      },
+      {
+        "id": 3,
+        "question": "Conflito de interesse é perigoso porque:",
+        "options": [
+          { "key": "A", "text": "Sempre aumenta eficiência" },
+          { "key": "B", "text": "Distorce decisão e destrói confiança" },
+          { "key": "C", "text": "Não tem efeito" },
+          { "key": "D", "text": "Só importa se for crime" }
+        ],
+        "answer": "B",
+        "explain": "Mesmo sem crime, corrompe credibilidade."
+      },
+      {
+        "id": 4,
+        "question": "Se algo é 'legal' mas claramente injusto/abusivo, o risco é:",
+        "options": [
+          { "key": "A", "text": "Nenhum" },
+          { "key": "B", "text": "Reputação e cultura (e possível mudança futura de regra)" },
+          { "key": "C", "text": "Lucro garantido sem custo" },
+          { "key": "D", "text": "Qualidade automática" }
+        ],
+        "answer": "B",
+        "explain": "Reputação e cultura têm custo real."
+      },
+      {
+        "id": 5,
+        "question": "Uma boa decisão sob pressão inclui perguntar:",
+        "options": [
+          { "key": "A", "text": "“Dá para esconder?”" },
+          { "key": "B", "text": "“Se virar público, eu sustentaria?”" },
+          { "key": "C", "text": "“Como acelerar mesmo quebrando regra?”" },
+          { "key": "D", "text": "“Quem vai levar a culpa?”" }
+        ],
+        "answer": "B",
+        "explain": "Teste de publicidade reduz autoengano."
+      },
+      {
+        "id": 6,
+        "question": "Aceitar presente/benefício de fornecedor é problemático quando:",
+        "options": [
+          { "key": "A", "text": "Influencia decisão ou gera obrigação implícita" },
+          { "key": "B", "text": "É registrado e permitido" },
+          { "key": "C", "text": "Não existe política" },
+          { "key": "D", "text": "Você declara o conflito" }
+        ],
+        "answer": "A",
+        "explain": "Risco é distorção e favorecimento."
+      },
+      {
+        "id": 7,
+        "question": "Cultura de denúncia saudável precisa de:",
+        "options": [
+          { "key": "A", "text": "Retaliação para dar exemplo" },
+          { "key": "B", "text": "Proteção contra retaliação e investigação justa" },
+          { "key": "C", "text": "Silêncio" },
+          { "key": "D", "text": "Só punição pública" }
+        ],
+        "answer": "B",
+        "explain": "Sem segurança, ninguém reporta."
+      },
+      {
+        "id": 8,
+        "question": "O maior problema do atalho antiético é:",
+        "options": [
+          { "key": "A", "text": "Ele não funciona" },
+          { "key": "B", "text": "Ele costuma cobrar juros depois (multa, perda, reputação)" },
+          { "key": "C", "text": "Ele sempre é invisível" },
+          { "key": "D", "text": "Ele nunca dá lucro" }
+        ],
+        "answer": "B",
+        "explain": "Passivo futuro é caro."
+      },
+      {
+        "id": 9,
+        "question": "Se 'todo mundo faz' é o argumento, a resposta madura é:",
+        "options": [
+          { "key": "A", "text": "Fazer também" },
+          { "key": "B", "text": "Checar regra, registrar decisão e buscar alternativa limpa" },
+          { "key": "C", "text": "Esconder melhor" },
+          { "key": "D", "text": "Ignorar risco" }
+        ],
+        "answer": "B",
+        "explain": "Padrão correto é política + registro."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Pressa justifica qualquer coisa" },
+          { "key": "B", "text": "Resultado sem ética pode virar prejuízo futuro" },
+          { "key": "C", "text": "Compliance é opcional" },
+          { "key": "D", "text": "Conflito de interesse não importa" }
+        ],
+        "answer": "B",
+        "explain": "Sustentabilidade depende de risco controlado."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Check rápido\n\n- legal?\n- justo?\n- assinaria?\n- se virar público?\n",
+    "pilares": "Pilares\n\n- transparência\n- registro\n- integridade\n"
+  }
+}
