@@ -1,0 +1,58 @@
+{
+  "id": "31-logistica-reversa",
+  "title": "Aula 31 — Logística reversa: devoluções, trocas e reaproveitamento",
+  "steps": [
+    {
+      "title": "O que é logística reversa (bem simples)",
+      "body": "Logística reversa é o caminho de volta do produto.\n\nEm vez de ir para o cliente, ele volta para:\n\n- a loja\n- o centro de distribuição\n- o fornecedor\n\nRegra:\n- Reversa é retorno com controle."
+    },
+    {
+      "title": "Por que logística reversa existe",
+      "body": "Motivos comuns:\n\n- devolução\n- troca\n- defeito\n- arrependimento\n\nRegra:\n- Reversa faz parte do serviço."
+    },
+    {
+      "title": "Impactos na operação",
+      "body": "Reversa impacta:\n\n- custo\n- tempo\n- estoque\n\nRegra:\n- Retorno sem processo vira bagunça e prejuízo."
+    },
+    {
+      "title": "Destino do item devolvido",
+      "body": "Após retornar, pode:\n\n- voltar ao estoque\n- ir para conserto\n- virar descarte\n\nRegra:\n- Nem tudo devolvido volta para venda."
+    },
+    {
+      "title": "Reaproveitamento e sustentabilidade",
+      "body": "Exemplos:\n\n- reembalar e revender\n- reaproveitar peças\n- reciclar\n\nRegra:\n- Reversa bem feita reduz perdas."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n\n- aceitar devolução sem registro\n- não classificar motivo\n- misturar devolvido com estoque bom\n\nRegra:\n- Produto devolvido precisa triagem."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de reversa",
+      "body": "Desenhe um fluxo:\n\n- cliente devolve\n- recebimento reverso\n- triagem\n- destino\n\nObjetivo:\n- ter um caminho claro de retorno."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Logística reversa é o retorno do produto\n- Impacta custo e estoque\n- Precisa triagem e destino definido\n- Reaproveitamento reduz perdas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 31 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Logística reversa é:", "options": [{ "key": "A", "text": "Caminho de volta do produto" }, { "key": "B", "text": "Entrega normal" }], "answer": "A", "explain": "Retorno controlado." },
+      { "id": 2, "question": "Reversa acontece por:", "options": [{ "key": "A", "text": "Devolução e troca" }, { "key": "B", "text": "Somente venda" }], "answer": "A", "explain": "Retorno ao sistema." },
+      { "id": 3, "question": "Reversa impacta:", "options": [{ "key": "A", "text": "Custo e estoque" }, { "key": "B", "text": "Nada" }], "answer": "A", "explain": "Movimenta e custa." },
+      { "id": 4, "question": "Produto devolvido:", "options": [{ "key": "A", "text": "Precisa triagem" }, { "key": "B", "text": "Vai direto pro estoque" }], "answer": "A", "explain": "Pode estar avariado." },
+      { "id": 5, "question": "Destino pode ser:", "options": [{ "key": "A", "text": "Estoque, conserto ou descarte" }, { "key": "B", "text": "Só descarte" }], "answer": "A", "explain": "Depende do estado." },
+      { "id": 6, "question": "Sem processo:", "options": [{ "key": "A", "text": "Vira bagunça e prejuízo" }, { "key": "B", "text": "Vira eficiência" }], "answer": "A", "explain": "Falta controle." },
+      { "id": 7, "question": "Reaproveitar ajuda a:", "options": [{ "key": "A", "text": "Reduzir perdas" }, { "key": "B", "text": "Aumentar perdas" }], "answer": "A", "explain": "Menos descarte." },
+      { "id": 8, "question": "Aceitar devolução sem registro:", "options": [{ "key": "A", "text": "É erro" }, { "key": "B", "text": "É ideal" }], "answer": "A", "explain": "Sem histórico." },
+      { "id": 9, "question": "Misturar devolvido com estoque bom:", "options": [{ "key": "A", "text": "É risco" }, { "key": "B", "text": "É ótimo" }], "answer": "A", "explain": "Pode contaminar qualidade." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Reversa é retorno com controle" }, { "key": "B", "text": "Reversa é sorte" }], "answer": "A", "explain": "Precisa processo." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos\n\n- devolvido\n- recebido (reverso)\n- triado\n- destino definido\n",
+    "pilares": "Pilares\n\n- registro\n- triagem\n- destino\n"
+  }
+}

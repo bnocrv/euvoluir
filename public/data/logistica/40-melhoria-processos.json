@@ -1,0 +1,58 @@
+{
+  "id": "40-melhoria-processos",
+  "title": "Aula 40 — Melhoria contínua na logística (Kaizen e processos)",
+  "steps": [
+    {
+      "title": "O que é melhoria contínua (bem simples)",
+      "body": "Melhoria contínua é melhorar um pouco todo dia.\n\nRegra:\n- Pequena melhoria repetida vira grande resultado."
+    },
+    {
+      "title": "Kaizen (ideia central)",
+      "body": "Kaizen significa:\n\n- melhoria constante\n- com participação do time\n\nRegra:\n- Quem faz o trabalho vê o problema primeiro."
+    },
+    {
+      "title": "Como começar simples",
+      "body": "Passos:\n\n- escolher um problema\n- medir\n- mudar 1 coisa\n- medir de novo\n\nRegra:\n- Melhoria precisa teste."
+    },
+    {
+      "title": "Eliminar desperdício",
+      "body": "Desperdícios comuns:\n\n- caminhada\n- espera\n- retrabalho\n- excesso de movimento\n\nRegra:\n- Desperdício é tudo que não gera valor."
+    },
+    {
+      "title": "Padronizar depois de melhorar",
+      "body": "Quando melhorar:\n\n- documente\n- treine\n- transforme em padrão\n\nRegra:\n- Sem padrão, a melhoria some."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n\n- querer mudar tudo de uma vez\n- não medir antes/depois\n- não envolver o time\n\nRegra:\n- Melhoria grande sem controle vira bagunça."
+    },
+    {
+      "title": "Mini prática (45 min) — Kaizen rápido",
+      "body": "Escolha 1 problema pequeno:\n\n- fila na embalagem\n- demora para achar item\n\nDefina:\n- como medir hoje\n- uma mudança simples\n- como medir depois\n\nObjetivo:\n- criar melhoria real em ciclo curto."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Melhoria contínua é evolução constante\n- Kaizen envolve o time\n- Medir antes/depois é obrigatório\n- Padronize para manter ganho\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 40 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Melhoria contínua é:", "options": [{ "key": "A", "text": "Melhorar um pouco sempre" }, { "key": "B", "text": "Mudar tudo de uma vez" }], "answer": "A", "explain": "Constância." },
+      { "id": 2, "question": "Kaizen significa:", "options": [{ "key": "A", "text": "Melhoria constante" }, { "key": "B", "text": "Pressa" }], "answer": "A", "explain": "Evolução diária." },
+      { "id": 3, "question": "Medir antes e depois:", "options": [{ "key": "A", "text": "É essencial" }, { "key": "B", "text": "É opcional" }], "answer": "A", "explain": "Sem medida não há prova." },
+      { "id": 4, "question": "Desperdício é:", "options": [{ "key": "A", "text": "O que não gera valor" }, { "key": "B", "text": "O que gera valor" }], "answer": "A", "explain": "Não agrega ao cliente." },
+      { "id": 5, "question": "Depois de melhorar, deve:", "options": [{ "key": "A", "text": "Padronizar" }, { "key": "B", "text": "Esquecer" }], "answer": "A", "explain": "Para manter ganho." },
+      { "id": 6, "question": "Querer mudar tudo de uma vez:", "options": [{ "key": "A", "text": "É risco" }, { "key": "B", "text": "É sempre bom" }], "answer": "A", "explain": "Pode virar caos." },
+      { "id": 7, "question": "Envolver o time:", "options": [{ "key": "A", "text": "Ajuda a ver problemas reais" }, { "key": "B", "text": "Atrapalha sempre" }], "answer": "A", "explain": "Quem executa conhece." },
+      { "id": 8, "question": "Sem padrão:", "options": [{ "key": "A", "text": "Melhoria some" }, { "key": "B", "text": "Melhoria fica" }], "answer": "A", "explain": "Volta ao antigo." },
+      { "id": 9, "question": "Caminhada e espera são:", "options": [{ "key": "A", "text": "Desperdícios" }, { "key": "B", "text": "Valor" }], "answer": "A", "explain": "Não agregam." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Pequena melhoria repetida vira grande resultado" }, { "key": "B", "text": "Melhoria não muda nada" }], "answer": "A", "explain": "Efeito composto." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ciclo mínimo\n\n- medir\n- mudar\n- medir\n- padronizar\n",
+    "pilares": "Pilares\n\n- kaizen\n- medição\n- padronização\n"
+  }
+}

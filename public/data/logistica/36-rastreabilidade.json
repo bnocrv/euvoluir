@@ -1,0 +1,58 @@
+{
+  "id": "36-rastreabilidade",
+  "title": "Aula 36 — Rastreabilidade: saber onde está o produto em todo o processo",
+  "steps": [
+    {
+      "title": "O que é rastreabilidade (bem simples)",
+      "body": "Rastreabilidade é conseguir responder:\n\n- onde o produto está\n- por onde passou\n- quem mexeu\n- quando mexeu\n\nRegra:\n- Se não rastreia, não controla."
+    },
+    {
+      "title": "Rastreabilidade no armazém",
+      "body": "No armazém, rastrear significa:\n\n- SKU no endereço certo\n- movimentação registrada\n- status do pedido atualizado\n\nExemplos de status:\n- recebido\n- armazenado\n- separado\n- conferido\n- embalado\n- expedido\n\nRegra:\n- O caminho vira histórico."
+    },
+    {
+      "title": "Rastreabilidade no transporte",
+      "body": "No transporte, rastrear é acompanhar:\n\n- coletado\n- em rota\n- saiu para entrega\n- entregue\n- ocorrência\n\nRegra:\n- Rastreio reduz ansiedade e melhora atendimento."
+    },
+    {
+      "title": "O que você precisa para rastrear bem",
+      "body": "Pilares:\n\n- identificação (SKU/etiqueta)\n- endereçamento\n- registro de movimentos\n- status padronizado\n\nRegra:\n- Rastreabilidade é disciplina de registro."
+    },
+    {
+      "title": "Quando usar lote/série/validade",
+      "body": "Faz sentido quando:\n\n- produto tem validade\n- há risco de recall\n- controle de qualidade é crítico\n\nRegra:\n- Quanto maior o risco, mais detalhe."
+    },
+    {
+      "title": "Erros comuns que quebram rastreabilidade",
+      "body": "Erros:\n\n- mover sem registrar\n- etiqueta ilegível\n- endereço confuso\n- status sem padrão\n\nRegra:\n- Registro falhou, rastreabilidade sumiu."
+    },
+    {
+      "title": "Mini prática (45 min) — fluxo rastreável",
+      "body": "Crie eventos obrigatórios:\n\n- recebido\n- endereçado\n- separado\n- conferido\n- embalado\n- expedido\n\nDefina para cada evento:\n- quem registra\n- onde registra\n\nObjetivo:\n- eliminar o “ninguém sabe onde está”."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Rastreabilidade é localização + histórico\n- Depende de identificação, endereço e registro\n- Interno: movimentos e status\n- Externo: eventos da entrega\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 36 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Rastreabilidade é:", "options": [{ "key": "A", "text": "Saber onde está e o histórico do item" }, { "key": "B", "text": "Somar pedidos" }], "answer": "A", "explain": "É controle por histórico." },
+      { "id": 2, "question": "Rastrear bem exige:", "options": [{ "key": "A", "text": "Registro de movimentações" }, { "key": "B", "text": "Memória das pessoas" }], "answer": "A", "explain": "Registro fica; memória falha." },
+      { "id": 3, "question": "No transporte, rastreio serve para:", "options": [{ "key": "A", "text": "Ver eventos (coletado, rota, entregue)" }, { "key": "B", "text": "Escolher embalagem" }], "answer": "A", "explain": "Mostra jornada externa." },
+      { "id": 4, "question": "Mover sem registrar:", "options": [{ "key": "A", "text": "Quebra a rastreabilidade" }, { "key": "B", "text": "Melhora o controle" }], "answer": "A", "explain": "Sem registro, ninguém sabe." },
+      { "id": 5, "question": "Endereçamento ajuda porque:", "options": [{ "key": "A", "text": "Define lugar do item" }, { "key": "B", "text": "Cria bagunça" }], "answer": "A", "explain": "Lugar definido = rastrear." },
+      { "id": 6, "question": "Lote/série é importante quando:", "options": [{ "key": "A", "text": "Há risco, validade ou recall" }, { "key": "B", "text": "Nunca" }], "answer": "A", "explain": "Mais risco, mais detalhe." },
+      { "id": 7, "question": "Status padronizado serve para:", "options": [{ "key": "A", "text": "Entender em que etapa está" }, { "key": "B", "text": "Confundir" }], "answer": "A", "explain": "Visibilidade do fluxo." },
+      { "id": 8, "question": "Etiqueta ilegível:", "options": [{ "key": "A", "text": "Prejudica rastreio" }, { "key": "B", "text": "Não importa" }], "answer": "A", "explain": "Sem identificação não rastreia." },
+      { "id": 9, "question": "Rastreabilidade reduz:", "options": [{ "key": "A", "text": "Tempo perdido e dúvidas" }, { "key": "B", "text": "Acurácia" }], "answer": "A", "explain": "Menos “cadê?”." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Rastreabilidade é disciplina de registro" }, { "key": "B", "text": "Rastreabilidade é sorte" }], "answer": "A", "explain": "Registro garante histórico." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- recebido\n- endereçado\n- separado\n- conferido\n- embalado\n- expedido\n",
+    "pilares": "Pilares\n\n- identificação\n- endereçamento\n- registro\n- status padronizado\n"
+  }
+}

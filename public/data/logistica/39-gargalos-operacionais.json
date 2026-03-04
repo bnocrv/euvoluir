@@ -1,0 +1,58 @@
+{
+  "id": "39-gargalos-operacionais",
+  "title": "Aula 39 — Identificação de gargalos logísticos",
+  "steps": [
+    {
+      "title": "O que é gargalo (bem simples)",
+      "body": "Gargalo é a etapa mais lenta do processo.\n\nEla limita tudo.\n\nRegra:\n- A velocidade do sistema é a velocidade do gargalo."
+    },
+    {
+      "title": "Exemplos de gargalos",
+      "body": "Exemplos:\n\n- área de embalagem pequena\n- falta de gente na conferência\n- impressora de etiqueta lenta\n- corredor travado\n\nRegra:\n- Gargalo pode ser físico, de pessoas ou de sistema."
+    },
+    {
+      "title": "Como perceber um gargalo",
+      "body": "Sinais:\n\n- fila\n- acúmulo\n- gente esperando\n\nRegra:\n- Onde acumula, ali trava."
+    },
+    {
+      "title": "Medir o gargalo",
+      "body": "Você pode medir:\n\n- tempo por pedido\n- pedidos por hora\n- tamanho da fila\n\nRegra:\n- Medir transforma achismo em fato."
+    },
+    {
+      "title": "Atacar a causa, não o sintoma",
+      "body": "Exemplo:\n\n- fila na embalagem pode ser falta de material\n\nRegra:\n- Resolver causa destrava mais."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n\n- jogar mais pedido no gargalo\n- cobrar velocidade sem ferramenta\n- não medir\n\nRegra:\n- Pressão sem ajuste vira erro."
+    },
+    {
+      "title": "Mini prática (45 min) — achar o gargalo",
+      "body": "Escolha um turno e observe:\n\n- onde forma fila\n- por quê\n\nEscreva:\n- causa provável\n- 1 ação simples\n\nObjetivo:\n- atacar o ponto que limita."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Gargalo é a etapa mais lenta\n- Mostra fila e acúmulo\n- Precisa medir\n- Resolver causa melhora o fluxo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 39 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Gargalo é:", "options": [{ "key": "A", "text": "Etapa mais lenta que limita o processo" }, { "key": "B", "text": "Etapa mais rápida" }], "answer": "A", "explain": "Limita tudo." },
+      { "id": 2, "question": "Sinal de gargalo:", "options": [{ "key": "A", "text": "Fila e acúmulo" }, { "key": "B", "text": "Fluxo liso" }], "answer": "A", "explain": "Acumula no ponto lento." },
+      { "id": 3, "question": "Velocidade do sistema é:", "options": [{ "key": "A", "text": "Velocidade do gargalo" }, { "key": "B", "text": "Velocidade do mais rápido" }], "answer": "A", "explain": "O lento limita." },
+      { "id": 4, "question": "Medir serve para:", "options": [{ "key": "A", "text": "Trocar achismo por fato" }, { "key": "B", "text": "Complicar" }], "answer": "A", "explain": "Dado orienta." },
+      { "id": 5, "question": "Atacar só sintoma:", "options": [{ "key": "A", "text": "Pode não resolver" }, { "key": "B", "text": "Resolve sempre" }], "answer": "A", "explain": "Causa continua." },
+      { "id": 6, "question": "Gargalo pode ser:", "options": [{ "key": "A", "text": "Físico, pessoas ou sistema" }, { "key": "B", "text": "Só do cliente" }], "answer": "A", "explain": "Vários tipos." },
+      { "id": 7, "question": "Jogar mais pedido no gargalo:", "options": [{ "key": "A", "text": "Piora fila" }, { "key": "B", "text": "Some fila" }], "answer": "A", "explain": "Acúmulo cresce." },
+      { "id": 8, "question": "Cobrar velocidade sem ferramenta:", "options": [{ "key": "A", "text": "Gera erro" }, { "key": "B", "text": "Gera perfeição" }], "answer": "A", "explain": "Pressão sem método." },
+      { "id": 9, "question": "Onde acumula:", "options": [{ "key": "A", "text": "Ali trava" }, { "key": "B", "text": "Ali melhora" }], "answer": "A", "explain": "Acúmulo denuncia gargalo." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Resolver causa destrava mais" }, { "key": "B", "text": "Resolver causa não importa" }], "answer": "A", "explain": "Causa é raiz." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos\n\n- observar\n- medir\n- agir\n- medir de novo\n",
+    "pilares": "Pilares\n\n- fila\n- medição\n- causa raiz\n"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "38-gestao-tempo",
+  "title": "Aula 38 — Gestão do tempo na operação logística",
+  "steps": [
+    {
+      "title": "Gestão do tempo (bem simples)",
+      "body": "Gestão do tempo é organizar o trabalho para entregar dentro do prazo.\n\nRegra:\n- Tempo perdido vira atraso."
+    },
+    {
+      "title": "Onde o tempo some",
+      "body": "Ladrões de tempo:\n\n- procurar produto\n- esperar aprovação\n- retrabalho\n- fila em uma etapa\n\nRegra:\n- Onde tem espera, tem desperdício."
+    },
+    {
+      "title": "Prioridade do dia",
+      "body": "Prioridades comuns:\n\n- pedidos com prazo curto\n- pedidos grandes\n- pedidos com transporte saindo\n\nRegra:\n- Prioridade evita correr no final."
+    },
+    {
+      "title": "Padronização ajuda tempo",
+      "body": "Quando o processo é padrão:\n\n- menos dúvida\n- menos erro\n- mais ritmo\n\nRegra:\n- Padrão reduz decisão repetida."
+    },
+    {
+      "title": "Separar planejamento e execução",
+      "body": "Boa prática:\n\n- planejar o lote de pedidos\n- depois executar sem parar\n\nRegra:\n- Troca constante de tarefa custa caro."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n\n- começar sem prioridade\n- parar toda hora\n- refazer por falta de conferência\n\nRegra:\n- Retrabalho é o maior ladrão de tempo."
+    },
+    {
+      "title": "Mini prática (30 min) — mapa do seu tempo",
+      "body": "Escolha uma etapa (ex: separação) e marque por 30 min:\n\n- quanto tempo separou\n- quanto tempo procurou\n- quanto tempo esperou\n\nObjetivo:\n- descobrir o maior ladrão de tempo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Gestão do tempo é cumprir prazo com organização\n- Espera e procura são desperdícios\n- Prioridade e padrão melhoram ritmo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 38 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Gestão do tempo é:", "options": [{ "key": "A", "text": "Organizar para cumprir prazo" }, { "key": "B", "text": "Trabalhar sem plano" }], "answer": "A", "explain": "Organização." },
+      { "id": 2, "question": "Procurar produto é:", "options": [{ "key": "A", "text": "Perda de tempo" }, { "key": "B", "text": "Ganhar tempo" }], "answer": "A", "explain": "Falta de organização." },
+      { "id": 3, "question": "Espera indica:", "options": [{ "key": "A", "text": "Desperdício" }, { "key": "B", "text": "Eficiência" }], "answer": "A", "explain": "Tempo parado." },
+      { "id": 4, "question": "Priorizar pedidos ajuda a:", "options": [{ "key": "A", "text": "Evitar corrida no final" }, { "key": "B", "text": "Criar atraso" }], "answer": "A", "explain": "Planeja o fluxo." },
+      { "id": 5, "question": "Padrão reduz:", "options": [{ "key": "A", "text": "Dúvida e erro" }, { "key": "B", "text": "Controle" }], "answer": "A", "explain": "Mais ritmo." },
+      { "id": 6, "question": "Trocar de tarefa toda hora:", "options": [{ "key": "A", "text": "Custa tempo" }, { "key": "B", "text": "Sempre ajuda" }], "answer": "A", "explain": "Custo de mudança." },
+      { "id": 7, "question": "Retrabalho é:", "options": [{ "key": "A", "text": "Maior ladrão de tempo" }, { "key": "B", "text": "Tempo bem usado" }], "answer": "A", "explain": "Faz duas vezes." },
+      { "id": 8, "question": "Planejar e depois executar:", "options": [{ "key": "A", "text": "Melhora ritmo" }, { "key": "B", "text": "Piora" }], "answer": "A", "explain": "Menos interrupção." },
+      { "id": 9, "question": "Começar sem prioridade:", "options": [{ "key": "A", "text": "Gera confusão" }, { "key": "B", "text": "Gera clareza" }], "answer": "A", "explain": "Trabalho aleatório." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Tempo perdido vira atraso" }, { "key": "B", "text": "Tempo perdido não importa" }], "answer": "A", "explain": "Prazo é consequência." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos\n\n- priorizar\n- executar\n- revisar\n",
+    "pilares": "Pilares\n\n- prioridade\n- padrão\n- evitar retrabalho\n"
+  }
+}

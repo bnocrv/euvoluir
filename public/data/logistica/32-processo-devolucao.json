@@ -1,0 +1,58 @@
+{
+  "id": "32-processo-devolucao",
+  "title": "Aula 32 — Processo de devolução: controle e reintegração ao estoque",
+  "steps": [
+    {
+      "title": "O que é processo de devolução",
+      "body": "Processo de devolução é o passo a passo para receber um produto de volta.\n\nObjetivo:\n\n- registrar\n- avaliar estado\n- decidir destino\n\nRegra:\n- Devolução sem processo vira perda."
+    },
+    {
+      "title": "Entrada da devolução",
+      "body": "Ao receber:\n\n- identificar pedido\n- identificar item\n- registrar data e motivo\n\nRegra:\n- Motivo é dado importante."
+    },
+    {
+      "title": "Triagem do produto",
+      "body": "Na triagem você verifica:\n\n- está novo?\n- está avariado?\n- faltam peças?\n\nRegra:\n- Triagem separa o que volta do que não volta."
+    },
+    {
+      "title": "Classificação por destino",
+      "body": "Destinos comuns:\n\n- volta ao estoque\n- reembalagem\n- conserto\n- descarte\n\nRegra:\n- Destino precisa regra clara."
+    },
+    {
+      "title": "Reintegração ao estoque",
+      "body": "Se voltar ao estoque:\n\n- registrar no sistema\n- endereçar\n- liberar para venda\n\nRegra:\n- Só libera para venda depois de aprovado."
+    },
+    {
+      "title": "Indicadores de devolução",
+      "body": "Você pode medir:\n\n- taxa de devolução\n- principais motivos\n\nRegra:\n- Se devolve muito, tem causa."
+    },
+    {
+      "title": "Mini prática (45 min) — checklist",
+      "body": "Crie um checklist de devolução:\n\n- pedido localizado\n- item conferido\n- motivo registrado\n- triagem feita\n- destino definido\n\nObjetivo:\n- padronizar para não errar."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Devolução precisa registro e triagem\n- Destino define reintegração\n- Só volta ao estoque se aprovado\n- Motivos ajudam a melhorar o processo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 32 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Devolução precisa:", "options": [{ "key": "A", "text": "Registro e triagem" }, { "key": "B", "text": "Sorte" }], "answer": "A", "explain": "Controle evita perda." },
+      { "id": 2, "question": "Registrar motivo:", "options": [{ "key": "A", "text": "Ajuda a identificar causas" }, { "key": "B", "text": "Não serve" }], "answer": "A", "explain": "Dado para melhoria." },
+      { "id": 3, "question": "Triagem verifica:", "options": [{ "key": "A", "text": "Estado do produto" }, { "key": "B", "text": "Preço de venda" }], "answer": "A", "explain": "Condição física." },
+      { "id": 4, "question": "Produto avariado:", "options": [{ "key": "A", "text": "Pode ir para conserto/descarte" }, { "key": "B", "text": "Volta direto para venda" }], "answer": "A", "explain": "Depende da regra." },
+      { "id": 5, "question": "Reintegração ao estoque exige:", "options": [{ "key": "A", "text": "Aprovação e registro" }, { "key": "B", "text": "Ignorar sistema" }], "answer": "A", "explain": "Controle do estoque." },
+      { "id": 6, "question": "Endereçar após devolução:", "options": [{ "key": "A", "text": "Organiza e localiza" }, { "key": "B", "text": "Confunde" }], "answer": "A", "explain": "Mantém rastreabilidade." },
+      { "id": 7, "question": "Taxa de devolução:", "options": [{ "key": "A", "text": "É indicador" }, { "key": "B", "text": "É decoração" }], "answer": "A", "explain": "Mede problema/qualidade." },
+      { "id": 8, "question": "Checklist ajuda porque:", "options": [{ "key": "A", "text": "Padroniza e evita falhas" }, { "key": "B", "text": "Aumenta erro" }], "answer": "A", "explain": "Menos esquecimento." },
+      { "id": 9, "question": "Sem processo:", "options": [{ "key": "A", "text": "Devolução vira perda" }, { "key": "B", "text": "Tudo fica perfeito" }], "answer": "A", "explain": "Perde controle." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Só libera para venda depois de aprovado" }, { "key": "B", "text": "Libera sempre" }], "answer": "A", "explain": "Qualidade primeiro." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos\n\n- recebida\n- triada\n- aprovada/reprovada\n- reintegrada (se aprovada)\n",
+    "pilares": "Pilares\n\n- registro\n- triagem\n- qualidade\n"
+  }
+}

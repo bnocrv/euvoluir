@@ -1,11 +1,53 @@
 ﻿{
-    "courseId":  "adm",
-    "title":  "Administração - fundamentos de rotina e controle",
-    "lessons":  [
-                    {
-                        "id":  "01-introducao",
-                        "title":  "Aula 01 - Introdução prática",
-                        "file":  "01-introducao.json"
-                    }
-                ]
+  "courseId": "adm",
+  "title": "Administração — do básico ao avançado (gestão, estratégia, finanças, pessoas e execução)",
+  "lessons": [
+    { "id": "01-introducao", "title": "Aula 01 — O que é administração e por que ela decide o destino de empresas", "file": "01-introducao.json" },
+    { "id": "02-funcoes-gestor", "title": "Aula 02 — Planejar, organizar, dirigir e controlar (o ciclo da gestão)", "file": "02-funcoes-gestor.json" },
+    { "id": "03-objetivos-metas", "title": "Aula 03 — Objetivos e metas: como definir direção sem se enganar", "file": "03-objetivos-metas.json" },
+    { "id": "04-indicadores-kpis", "title": "Aula 04 — Indicadores (KPIs): medir certo para melhorar de verdade", "file": "04-indicadores-kpis.json" },
+    { "id": "05-processos", "title": "Aula 05 — Processos: desenhar, padronizar e melhorar o trabalho", "file": "05-processos.json" },
+
+    { "id": "06-organograma-papeis", "title": "Aula 06 — Estrutura organizacional: papéis, responsabilidades e organograma", "file": "06-organograma-papeis.json" },
+    { "id": "07-cultura-organizacional", "title": "Aula 07 — Cultura organizacional: o que realmente manda no dia a dia", "file": "07-cultura-organizacional.json" },
+    { "id": "08-tomada-decisao", "title": "Aula 08 — Tomada de decisão: como decidir bem com informação incompleta", "file": "08-tomada-decisao.json" },
+    { "id": "09-comunicacao-gestao", "title": "Aula 09 — Comunicação na gestão: alinhar, cobrar e dar feedback sem ruído", "file": "09-comunicacao-gestao.json" },
+    { "id": "10-lideranca-estilos", "title": "Aula 10 — Liderança: estilos, situações e impacto na performance", "file": "10-lideranca-estilos.json" },
+
+    { "id": "11-motivacao-comportamento", "title": "Aula 11 — Motivação e comportamento: o que faz um time funcionar", "file": "11-motivacao-comportamento.json" },
+    { "id": "12-feedback-avaliacao", "title": "Aula 12 — Feedback e avaliação: construir performance sem destruir relações", "file": "12-feedback-avaliacao.json" },
+    { "id": "13-conflitos-negociacao", "title": "Aula 13 — Conflitos e negociação: transformar atrito em solução", "file": "13-conflitos-negociacao.json" },
+    { "id": "14-etica-compliance", "title": "Aula 14 — Ética e compliance: regras, riscos e decisões difíceis", "file": "14-etica-compliance.json" },
+    { "id": "15-gestao-tempo-prioridades", "title": "Aula 15 — Gestão do tempo e prioridades: foco no que move o resultado", "file": "15-gestao-tempo-prioridades.json" },
+
+    { "id": "16-financas-para-gestores", "title": "Aula 16 — Finanças para gestores: DRE, caixa e o básico que manda", "file": "16-financas-para-gestores.json" },
+    { "id": "17-custos-margem", "title": "Aula 17 — Custos e margem: onde o lucro nasce (e onde ele morre)", "file": "17-custos-margem.json" },
+    { "id": "18-precos-estrategia", "title": "Aula 18 — Precificação: como formar preço com lógica e estratégia", "file": "18-precos-estrategia.json" },
+    { "id": "19-orcamento-planejamento", "title": "Aula 19 — Orçamento: planejar dinheiro sem fantasia", "file": "19-orcamento-planejamento.json" },
+    { "id": "20-fluxo-caixa-capital-giro", "title": "Aula 20 — Fluxo de caixa e capital de giro: sobreviver e crescer", "file": "20-fluxo-caixa-capital-giro.json" },
+
+    { "id": "21-marketing-fundamentos", "title": "Aula 21 — Marketing (de verdade): mercado, valor e posicionamento", "file": "21-marketing-fundamentos.json" },
+    { "id": "22-segmentacao-publico", "title": "Aula 22 — Segmentação e público-alvo: parar de vender para “todo mundo”", "file": "22-segmentacao-publico.json" },
+    { "id": "23-proposta-valor", "title": "Aula 23 — Proposta de valor: por que alguém compraria de você", "file": "23-proposta-valor.json" },
+    { "id": "24-vendas-funil", "title": "Aula 24 — Vendas e funil: processo comercial que dá previsibilidade", "file": "24-vendas-funil.json" },
+    { "id": "25-atendimento-experiencia", "title": "Aula 25 — Atendimento e experiência do cliente: retenção e reputação", "file": "25-atendimento-experiencia.json" },
+
+    { "id": "26-operacoes-fundamentos", "title": "Aula 26 — Operações: produtividade, qualidade e entrega consistente", "file": "26-operacoes-fundamentos.json" },
+    { "id": "27-qualidade-melhoria", "title": "Aula 27 — Qualidade e melhoria contínua: reduzir erro sem travar a operação", "file": "27-qualidade-melhoria.json" },
+    { "id": "28-logistica-cadeia", "title": "Aula 28 — Noções de logística e supply chain: estoque, prazo e custo", "file": "28-logistica-cadeia.json" },
+    { "id": "29-projetos-basico", "title": "Aula 29 — Gestão de projetos: escopo, prazo, risco e execução", "file": "29-projetos-basico.json" },
+    { "id": "30-riscos-controles", "title": "Aula 30 — Riscos e controles: evitar surpresas e apagar incêndio menos", "file": "30-riscos-controles.json" },
+
+    { "id": "31-estrategia-competitiva", "title": "Aula 31 — Estratégia competitiva: como ganhar no mercado (não só trabalhar)", "file": "31-estrategia-competitiva.json" },
+    { "id": "32-planejamento-estrategico", "title": "Aula 32 — Planejamento estratégico: do diagnóstico ao plano executável", "file": "32-planejamento-estrategico.json" },
+    { "id": "33-okrs-bsc", "title": "Aula 33 — OKRs e Balanced Scorecard: traduzir estratégia em execução", "file": "33-okrs-bsc.json" },
+    { "id": "34-governanca", "title": "Aula 34 — Governança: decisões, responsabilidades e prestação de contas", "file": "34-governanca.json" },
+    { "id": "35-gestao-mudanca", "title": "Aula 35 — Gestão da mudança: por que pessoas resistem e como conduzir", "file": "35-gestao-mudanca.json" },
+
+    { "id": "36-dados-analise", "title": "Aula 36 — Dados para gestores: análise, métricas e decisões orientadas", "file": "36-dados-analise.json" },
+    { "id": "37-transformacao-digital", "title": "Aula 37 — Transformação digital: processos, tecnologia e produtividade real", "file": "37-transformacao-digital.json" },
+    { "id": "38-inovacao-modelos", "title": "Aula 38 — Inovação e modelos de negócio: testar, aprender e escalar", "file": "38-inovacao-modelos.json" },
+    { "id": "39-esg-sustentabilidade", "title": "Aula 39 — ESG e sustentabilidade: risco, reputação e eficiência", "file": "39-esg-sustentabilidade.json" },
+    { "id": "40-projeto-final", "title": "Aula 40 — Projeto final: montar um plano de gestão completo (com metas, KPIs e execução)", "file": "40-projeto-final.json" }
+  ]
 }

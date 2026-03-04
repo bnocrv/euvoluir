@@ -1,76 +1,58 @@
 ﻿{
-    "id":  "01-introducao",
-    "title":  "Aula 01 - Introdução prática",
-    "steps":  [
-                  {
-                      "title":  "Visão geral",
-                      "body":  "Nesta aula você inicia a trilha de Administração.\n\nObjetivo:\n- Entender os conceitos base\n- Aplicar no contexto da empresa\n- Criar rotina de uso no dia a dia"
-                  },
-                  {
-                      "title":  "Conceitos essenciais",
-                      "body":  "Base da aula:\n- Termos principais\n- Fluxo de trabalho recomendado\n- Erros comuns para evitar no começo"
-                  },
-                  {
-                      "title":  "Primeira prática guiada",
-                      "body":  "Passo a passo sugerido:\n- Abrir o ambiente de trabalho\n- Executar uma tarefa simples\n- Revisar resultado e ajustar"
-                  },
-                  {
-                      "title":  "Resumo",
-                      "body":  "Você concluiu a primeira aula e já tem uma base inicial para evoluir nas próximas etapas da trilha."
-                  }
-              ],
-    "quiz":  {
-                 "title":  "Quiz rápido - Aula 01",
-                 "instructions":  "Responda A ou B para fixar os conceitos principais.",
-                 "questions":  [
-                                   {
-                                       "id":  1,
-                                       "question":  "Qual é o foco desta aula?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Criar base prática inicial"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Cobrir todos os tópicos avançados"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Aula 01 foca em fundamentos e início prático."
-                                   },
-                                   {
-                                       "id":  2,
-                                       "question":  "Qual abordagem gera melhor aprendizado no início?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Prática com passos simples"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Pular direto para tarefas complexas"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Evoluir por etapas reduz erros e melhora retenção."
-                                   },
-                                   {
-                                       "id":  3,
-                                       "question":  "Depois da aula 01, o próximo passo é...",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Continuar a trilha e praticar"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Parar de revisar"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Continuidade e prática consolidam o aprendizado."
-                                   }
-                               ]
-             }
+  "id": "01-introducao",
+  "title": "Aula 01 — O que é administração e por que ela decide o destino de empresas",
+  "steps": [
+    {
+      "title": "O que é administração (bem direto)",
+      "body": "Administração é organizar recursos para atingir um objetivo.\n\nRecursos podem ser:\n\n- pessoas\n- dinheiro\n- tempo\n- tecnologia\n\nRegra:\n- Empresa sem administração vira improviso."
+    },
+    {
+      "title": "Por que administração existe",
+      "body": "Empresas precisam:\n\n- decidir\n- coordenar pessoas\n- controlar recursos\n\nRegra:\n- Quanto maior a organização, mais importante a gestão."
+    },
+    {
+      "title": "Administração não é mandar",
+      "body": "Administrar não é apenas dar ordens.\n\nEnvolve:\n\n- planejar\n- orientar\n- resolver problemas\n\nRegra:\n- Gestão boa cria direção clara."
+    },
+    {
+      "title": "Resultados dependem de gestão",
+      "body": "Mesmo com bons produtos:\n\n- sem organização\n- sem controle\n\nA empresa pode falhar.\n\nRegra:\n- Gestão transforma esforço em resultado."
+    },
+    {
+      "title": "Áreas da administração",
+      "body": "Gestão envolve várias áreas:\n\n- pessoas\n- finanças\n- operações\n- marketing\n\nRegra:\n- Administração conecta tudo."
+    },
+    {
+      "title": "Erros comuns sobre gestão",
+      "body": "Mitos comuns:\n\n- gestor nasce pronto\n- gestão é só experiência\n\nRegra:\n- Gestão é habilidade que se aprende."
+    },
+    {
+      "title": "Mini prática (30 min)",
+      "body": "Observe sua empresa ou trabalho.\n\nPergunte:\n\n- quem decide?\n- quem organiza?\n- quem controla?\n\nObjetivo:\n- identificar administração na prática."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Administração organiza recursos\n- Gestão transforma esforço em resultado\n- Empresas dependem de decisões estruturadas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 01 (Administração)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Administração é:", "options": [{ "key": "A", "text": "Organizar recursos para atingir objetivos" }, { "key": "B", "text": "Trabalhar sem planejamento" }], "answer": "A", "explain": "Gestão organiza recursos." },
+      { "id": 2, "question": "Administrar envolve:", "options": [{ "key": "A", "text": "Planejar e coordenar" }, { "key": "B", "text": "Improvisar sempre" }], "answer": "A", "explain": "Processo estruturado." },
+      { "id": 3, "question": "Gestão ruim pode:", "options": [{ "key": "A", "text": "Prejudicar resultados" }, { "key": "B", "text": "Garantir sucesso" }], "answer": "A", "explain": "Falta de organização afeta desempenho." },
+      { "id": 4, "question": "Administração conecta:", "options": [{ "key": "A", "text": "Todas as áreas da empresa" }, { "key": "B", "text": "Apenas vendas" }], "answer": "A", "explain": "Gestão integra setores." },
+      { "id": 5, "question": "Gestor faz:", "options": [{ "key": "A", "text": "Tomada de decisão" }, { "key": "B", "text": "Nenhuma decisão" }], "answer": "A", "explain": "Decidir faz parte da gestão." },
+      { "id": 6, "question": "Recursos incluem:", "options": [{ "key": "A", "text": "Pessoas e dinheiro" }, { "key": "B", "text": "Somente máquinas" }], "answer": "A", "explain": "Recursos são variados." },
+      { "id": 7, "question": "Gestão transforma:", "options": [{ "key": "A", "text": "Esforço em resultado" }, { "key": "B", "text": "Resultado em confusão" }], "answer": "A", "explain": "Coordenação gera desempenho." },
+      { "id": 8, "question": "Empresa sem gestão:", "options": [{ "key": "A", "text": "Vira improviso" }, { "key": "B", "text": "Funciona perfeitamente" }], "answer": "A", "explain": "Falta estrutura." },
+      { "id": 9, "question": "Gestão é habilidade:", "options": [{ "key": "A", "text": "Que pode ser aprendida" }, { "key": "B", "text": "Somente inata" }], "answer": "A", "explain": "Pode ser desenvolvida." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Administração cria direção para o trabalho" }, { "key": "B", "text": "Administração não influencia resultado" }], "answer": "A", "explain": "Direção estratégica." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Elementos da administração\n\n- pessoas\n- recursos\n- decisões\n",
+    "pilares": "Pilares\n\n- organização\n- direção\n- controle\n"
+  }
 }

@@ -1,0 +1,58 @@
+{
+  "id": "33-tecnologia-logistica",
+  "title": "Aula 33 — Tecnologia na logística: WMS, ERP e automação",
+  "steps": [
+    {
+      "title": "Por que tecnologia importa",
+      "body": "Tecnologia reduz erro e aumenta controle.\n\nEla ajuda a:\n\n- registrar movimentos\n- dar visibilidade\n- acelerar processos\n\nRegra:\n- Sem sistema, a operação depende de memória."
+    },
+    {
+      "title": "O que é ERP",
+      "body": "ERP é um sistema que integra áreas da empresa.\n\nNa logística, costuma controlar:\n\n- compras\n- estoque\n- pedidos\n\nRegra:\n- ERP integra informação."
+    },
+    {
+      "title": "O que é WMS",
+      "body": "WMS é um sistema focado no armazém.\n\nEle ajuda em:\n\n- endereçamento\n- picking\n- inventário\n\nRegra:\n- WMS organiza a operação do estoque."
+    },
+    {
+      "title": "Leitura por código de barras",
+      "body": "Código de barras ajuda a:\n\n- reduzir erro humano\n- registrar rápido\n\nRegra:\n- Ler é melhor do que digitar."
+    },
+    {
+      "title": "Automação",
+      "body": "Automação pode ser:\n\n- esteiras\n- separação guiada\n- etiquetas automáticas\n\nRegra:\n- Automação tira repetição e aumenta padrão."
+    },
+    {
+      "title": "Erro comum",
+      "body": "Erros:\n\n- usar sistema sem disciplina\n- não treinar o time\n- cadastrar errado\n\nRegra:\n- Sistema bom com dado ruim vira problema."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de tecnologia",
+      "body": "Desenhe seu fluxo:\n\n- pedido\n- estoque\n- expedição\n\nAgora marque:\n- onde o sistema registra\n- onde ainda é manual\n\nObjetivo:\n- enxergar onde tecnologia pode ajudar."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Tecnologia dá registro e visibilidade\n- ERP integra áreas\n- WMS foca no armazém\n- Código de barras reduz erro\n- Disciplina e cadastro correto são essenciais\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 33 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Tecnologia ajuda a:", "options": [{ "key": "A", "text": "Reduzir erro e aumentar controle" }, { "key": "B", "text": "Aumentar bagunça" }], "answer": "A", "explain": "Mais registro e padrão." },
+      { "id": 2, "question": "ERP é:", "options": [{ "key": "A", "text": "Sistema integrado da empresa" }, { "key": "B", "text": "Uma paleteira" }], "answer": "A", "explain": "Integra informação." },
+      { "id": 3, "question": "WMS é:", "options": [{ "key": "A", "text": "Sistema focado no armazém" }, { "key": "B", "text": "Transportadora" }], "answer": "A", "explain": "Gestão do estoque." },
+      { "id": 4, "question": "Código de barras:", "options": [{ "key": "A", "text": "Reduz erro ao registrar" }, { "key": "B", "text": "Aumenta erro sempre" }], "answer": "A", "explain": "Menos digitação." },
+      { "id": 5, "question": "Automação serve para:", "options": [{ "key": "A", "text": "Aumentar padrão e velocidade" }, { "key": "B", "text": "Criar retrabalho" }], "answer": "A", "explain": "Menos repetição." },
+      { "id": 6, "question": "Sistema sem disciplina:", "options": [{ "key": "A", "text": "Não resolve" }, { "key": "B", "text": "Resolve tudo" }], "answer": "A", "explain": "Precisa processo." },
+      { "id": 7, "question": "Cadastro errado:", "options": [{ "key": "A", "text": "Gera erro em cadeia" }, { "key": "B", "text": "Melhora operação" }], "answer": "A", "explain": "Dados ruins." },
+      { "id": 8, "question": "WMS ajuda em:", "options": [{ "key": "A", "text": "Picking e inventário" }, { "key": "B", "text": "Vendas" }], "answer": "A", "explain": "Armazém." },
+      { "id": 9, "question": "ERP ajuda em:", "options": [{ "key": "A", "text": "Compras e pedidos" }, { "key": "B", "text": "Empilhar caixas" }], "answer": "A", "explain": "Processos da empresa." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Sistema bom com dado ruim vira problema" }, { "key": "B", "text": "Dado não importa" }], "answer": "A", "explain": "Qualidade do dado é chave." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Tecnologias (modelo)\n\n- ERP\n- WMS\n- código de barras\n- automação\n",
+    "pilares": "Pilares\n\n- registro\n- visibilidade\n- padronização\n"
+  }
+}

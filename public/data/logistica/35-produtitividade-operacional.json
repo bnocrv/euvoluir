@@ -1,0 +1,58 @@
+{
+  "id": "35-produtitividade-operacional",
+  "title": "Aula 35 — Produtividade operacional: medir e melhorar eficiência",
+  "steps": [
+    {
+      "title": "O que é produtividade (bem simples)",
+      "body": "Produtividade é produzir mais com o mesmo esforço (ou o mesmo com menos esforço).\n\nNa logística, pode ser:\n\n- pedidos por hora\n- itens separados por hora\n\nRegra:\n- Produtividade é ritmo com qualidade."
+    },
+    {
+      "title": "Por que medir produtividade",
+      "body": "Porque ajuda a:\n\n- identificar gargalos\n- planejar equipe\n- melhorar processo\n\nRegra:\n- Sem medida, você só acha que sabe."
+    },
+    {
+      "title": "Exemplos de métricas simples",
+      "body": "Métricas:\n\n- linhas separadas/hora\n- pedidos embalados/hora\n- tempo médio por pedido\n\nRegra:\n- Comece simples e consistente."
+    },
+    {
+      "title": "Qualidade junto com produtividade",
+      "body": "Se aumenta volume mas erra mais:\n\n- a produtividade real cai\n\nRegra:\n- Retrabalho destrói produtividade."
+    },
+    {
+      "title": "O que mais afeta produtividade",
+      "body": "Fatores:\n\n- layout\n- endereçamento\n- treinamento\n- ferramentas\n\nRegra:\n- Produtividade depende do sistema, não só da pessoa."
+    },
+    {
+      "title": "Como melhorar na prática",
+      "body": "Ações:\n\n- reduzir deslocamento\n- padronizar processo\n- treinar\n\nRegra:\n- Melhorias pequenas somam muito."
+    },
+    {
+      "title": "Mini prática (45 min) — medir uma etapa",
+      "body": "Escolha 1 etapa (ex: separação).\n\nMeça por 30 minutos:\n\n- quantos itens/pedidos foram feitos\n\nDepois responda:\n- o que mais atrasou?\n\nObjetivo:\n- achar o desperdício real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Produtividade mede eficiência\n- Precisa de métrica simples\n- Qualidade é parte do resultado\n- Layout e processo influenciam muito\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 35 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Produtividade é:", "options": [{ "key": "A", "text": "Fazer mais com o mesmo esforço" }, { "key": "B", "text": "Fazer com mais erro" }], "answer": "A", "explain": "Eficiência." },
+      { "id": 2, "question": "Medir produtividade serve para:", "options": [{ "key": "A", "text": "Identificar gargalos" }, { "key": "B", "text": "Ignorar processo" }], "answer": "A", "explain": "Mostra travas." },
+      { "id": 3, "question": "Retrabalho:", "options": [{ "key": "A", "text": "Destrói produtividade" }, { "key": "B", "text": "Ajuda produtividade" }], "answer": "A", "explain": "Gasta tempo duas vezes." },
+      { "id": 4, "question": "Produtividade sem qualidade:", "options": [{ "key": "A", "text": "É falsa" }, { "key": "B", "text": "É perfeita" }], "answer": "A", "explain": "Erro vira custo." },
+      { "id": 5, "question": "Métrica simples pode ser:", "options": [{ "key": "A", "text": "Pedidos por hora" }, { "key": "B", "text": "Cor da prateleira" }], "answer": "A", "explain": "Quantificável." },
+      { "id": 6, "question": "Layout afeta produtividade:", "options": [{ "key": "A", "text": "Sim" }, { "key": "B", "text": "Não" }], "answer": "A", "explain": "Caminhada aumenta." },
+      { "id": 7, "question": "Treinamento ajuda:", "options": [{ "key": "A", "text": "Reduzir erro e tempo" }, { "key": "B", "text": "Aumentar erro" }], "answer": "A", "explain": "Processo melhor." },
+      { "id": 8, "question": "Ferramenta correta:", "options": [{ "key": "A", "text": "Aumenta eficiência" }, { "key": "B", "text": "Sempre atrapalha" }], "answer": "A", "explain": "Menos esforço." },
+      { "id": 9, "question": "Produtividade depende só da pessoa:", "options": [{ "key": "A", "text": "Não" }, { "key": "B", "text": "Sim" }], "answer": "A", "explain": "Sistema influencia muito." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Produtividade é ritmo com qualidade" }, { "key": "B", "text": "Produtividade é pressa" }], "answer": "A", "explain": "Qualidade faz parte." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos\n\n- medir\n- identificar gargalo\n- agir\n",
+    "pilares": "Pilares\n\n- métrica\n- qualidade\n- processo\n"
+  }
+}

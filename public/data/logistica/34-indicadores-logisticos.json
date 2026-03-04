@@ -1,0 +1,58 @@
+{
+  "id": "34-indicadores-logisticos",
+  "title": "Aula 34 — Indicadores logísticos (KPIs): medir para melhorar",
+  "steps": [
+    {
+      "title": "O que são KPIs (bem simples)",
+      "body": "KPI é um indicador para medir desempenho.\n\nEle responde:\n\n- está indo bem?\n- onde piorou?\n- onde melhorar?\n\nRegra:\n- O que não mede, não melhora."
+    },
+    {
+      "title": "KPIs comuns na logística",
+      "body": "Exemplos:\n\n- OTIF (entrega no prazo e completa)\n- tempo de separação\n- acurácia de estoque\n- taxa de devolução\n\nRegra:\n- Poucos KPIs bons são melhores que muitos confusos."
+    },
+    {
+      "title": "KPI precisa de definição",
+      "body": "Um KPI precisa:\n\n- fórmula clara\n- fonte do dado\n- frequência\n\nRegra:\n- KPI sem definição vira discussão."
+    },
+    {
+      "title": "KPI precisa de dono",
+      "body": "Defina:\n\n- quem acompanha\n- quem age quando piora\n\nRegra:\n- Sem dono, KPI vira enfeite."
+    },
+    {
+      "title": "Como usar KPI de verdade",
+      "body": "Ciclo:\n\n- medir\n- analisar\n- agir\n- medir de novo\n\nRegra:\n- KPI serve para ação."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n\n- medir demais e agir de menos\n- dado ruim\n- meta impossível\n\nRegra:\n- KPI bom é simples e útil."
+    },
+    {
+      "title": "Mini prática (45 min) — escolher 3 KPIs",
+      "body": "Escolha 3 KPIs:\n\n- 1 de estoque\n- 1 de expedição\n- 1 de entrega\n\nPara cada um escreva:\n- o que mede\n- quem acompanha\n- ação quando piorar\n\nObjetivo:\n- usar KPI como ferramenta."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- KPI mede desempenho\n- Precisa definição e dono\n- Serve para agir e melhorar\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 34 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "KPI é:", "options": [{ "key": "A", "text": "Indicador de desempenho" }, { "key": "B", "text": "Um tipo de caixa" }], "answer": "A", "explain": "Mede desempenho." },
+      { "id": 2, "question": "KPI serve para:", "options": [{ "key": "A", "text": "Melhorar decisões" }, { "key": "B", "text": "Decoracao" }], "answer": "A", "explain": "Medir e agir." },
+      { "id": 3, "question": "KPI precisa:", "options": [{ "key": "A", "text": "Definição clara" }, { "key": "B", "text": "Adivinhação" }], "answer": "A", "explain": "Sem fórmula vira confusão." },
+      { "id": 4, "question": "Sem dono, KPI:", "options": [{ "key": "A", "text": "Vira enfeite" }, { "key": "B", "text": "Resolve tudo" }], "answer": "A", "explain": "Ninguém age." },
+      { "id": 5, "question": "Ciclo correto:", "options": [{ "key": "A", "text": "Medir, analisar, agir" }, { "key": "B", "text": "Medir e ignorar" }], "answer": "A", "explain": "Ação baseada em dado." },
+      { "id": 6, "question": "Dado ruim:", "options": [{ "key": "A", "text": "Estraga KPI" }, { "key": "B", "text": "Não importa" }], "answer": "A", "explain": "Medida errada." },
+      { "id": 7, "question": "Medir demais e agir de menos:", "options": [{ "key": "A", "text": "É erro" }, { "key": "B", "text": "É ideal" }], "answer": "A", "explain": "Indicador sem ação não serve." },
+      { "id": 8, "question": "Poucos KPIs bons:", "options": [{ "key": "A", "text": "É melhor" }, { "key": "B", "text": "É pior" }], "answer": "A", "explain": "Foco e clareza." },
+      { "id": 9, "question": "Meta impossível:", "options": [{ "key": "A", "text": "Desmotiva e distorce" }, { "key": "B", "text": "Ajuda sempre" }], "answer": "A", "explain": "Cria atalho ruim." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "O que não mede, não melhora" }, { "key": "B", "text": "Medir atrapalha" }], "answer": "A", "explain": "Medir guia melhoria." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ciclo (modelo)\n\n- medir\n- analisar\n- agir\n- medir novamente\n",
+    "pilares": "Pilares\n\n- definição\n- dono\n- ação\n"
+  }
+}

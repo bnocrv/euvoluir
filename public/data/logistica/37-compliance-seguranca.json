@@ -1,0 +1,58 @@
+{
+  "id": "37-compliance-seguranca",
+  "title": "Aula 37 — Segurança e compliance no armazém",
+  "steps": [
+    {
+      "title": "Segurança e compliance (bem simples)",
+      "body": "Segurança é proteger pessoas e evitar acidentes.\n\nCompliance é seguir regras e padrões.\n\nRegra:\n- Segurança não é opcional."
+    },
+    {
+      "title": "Riscos comuns no armazém",
+      "body": "Riscos:\n\n- queda de caixa\n- empilhamento errado\n- corredor bloqueado\n- uso errado de equipamentos\n\nRegra:\n- Risco repetido vira acidente."
+    },
+    {
+      "title": "EPIs e disciplina",
+      "body": "EPIs comuns:\n\n- luva\n- bota\n- colete\n- capacete (quando necessário)\n\nRegra:\n- EPI só funciona se for usado."
+    },
+    {
+      "title": "Organização e sinalização",
+      "body": "Boas práticas:\n\n- rotas livres\n- sinalização clara\n- áreas marcadas\n\nRegra:\n- Organização previne acidente."
+    },
+    {
+      "title": "Procedimentos e treinamento",
+      "body": "Exemplos:\n\n- treinamento de empilhadeira\n- padrão de movimentação\n- checklist de área\n\nRegra:\n- Treinamento reduz erro perigoso."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n\n- improviso\n- pressa sem cuidado\n- ignorar regras\n\nRegra:\n- Pressa é inimiga da segurança."
+    },
+    {
+      "title": "Mini prática (45 min) — checklist de segurança",
+      "body": "Crie um checklist simples:\n\n- corredor livre\n- EPIs ok\n- empilhamento correto\n- equipamento em condição\n\nObjetivo:\n- transformar segurança em rotina."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Segurança protege pessoas\n- Compliance é seguir padrão\n- Organização e sinalização previnem acidentes\n- Treinamento é essencial\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 37 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Segurança é:", "options": [{ "key": "A", "text": "Proteger pessoas e evitar acidentes" }, { "key": "B", "text": "Acelerar a qualquer custo" }], "answer": "A", "explain": "Pessoas em primeiro lugar." },
+      { "id": 2, "question": "Compliance é:", "options": [{ "key": "A", "text": "Seguir regras e padrões" }, { "key": "B", "text": "Ignorar processos" }], "answer": "A", "explain": "Padronização e regra." },
+      { "id": 3, "question": "Corredor bloqueado:", "options": [{ "key": "A", "text": "Aumenta risco" }, { "key": "B", "text": "Melhora fluxo" }], "answer": "A", "explain": "Gera acidente e travas." },
+      { "id": 4, "question": "EPI funciona quando:", "options": [{ "key": "A", "text": "É usado" }, { "key": "B", "text": "Fica guardado" }], "answer": "A", "explain": "Uso real protege." },
+      { "id": 5, "question": "Treinamento:", "options": [{ "key": "A", "text": "Reduz erro perigoso" }, { "key": "B", "text": "Não influencia" }], "answer": "A", "explain": "Evita uso incorreto." },
+      { "id": 6, "question": "Pressa sem cuidado:", "options": [{ "key": "A", "text": "Aumenta risco" }, { "key": "B", "text": "É segura" }], "answer": "A", "explain": "Erro e acidente." },
+      { "id": 7, "question": "Sinalização clara:", "options": [{ "key": "A", "text": "Ajuda a prevenir acidentes" }, { "key": "B", "text": "Confunde" }], "answer": "A", "explain": "Orientação e rota." },
+      { "id": 8, "question": "Improviso em movimentação:", "options": [{ "key": "A", "text": "É perigoso" }, { "key": "B", "text": "É ideal" }], "answer": "A", "explain": "Fora do padrão." },
+      { "id": 9, "question": "Checklist ajuda porque:", "options": [{ "key": "A", "text": "Cria rotina de prevenção" }, { "key": "B", "text": "Cria bagunça" }], "answer": "A", "explain": "Prevenção constante." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Segurança não é opcional" }, { "key": "B", "text": "Segurança é opcional" }], "answer": "A", "explain": "Regra básica." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos\n\n- checklist diário\n- treinamento\n- correção de risco\n",
+    "pilares": "Pilares\n\n- EPI\n- organização\n- padrão\n"
+  }
+}
