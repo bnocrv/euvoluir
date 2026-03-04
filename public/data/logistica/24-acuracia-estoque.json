@@ -1,0 +1,54 @@
+{
+  "id": "24-acuracia-estoque",
+  "title": "Aula 24 — Acurácia de estoque: confiabilidade entre sistema e físico",
+  "steps": [
+    {
+      "title": "O que é acurácia",
+      "body": "Acurácia é o nível de confiança entre o estoque do sistema e o estoque real.\n\nRegra:\n- Se sistema e físico batem, a acurácia é alta."
+    },
+    {
+      "title": "Por que acurácia importa",
+      "body": "Sem acurácia:\n\n- separação erra\n- reposição erra\n- decisões erram\n\nRegra:\n- Decisão boa precisa dado confiável."
+    },
+    {
+      "title": "Causas de baixa acurácia",
+      "body": "Principais causas:\n\n- movimentação sem registro\n- erro de separação\n- perda\n\nRegra:\n- Registro é a base do controle."
+    },
+    {
+      "title": "Como melhorar",
+      "body": "Ações:\n\n- inventário cíclico\n- disciplina de registro\n- conferência\n\nRegra:\n- Processo forte melhora acurácia."
+    },
+    {
+      "title": "Meta de acurácia",
+      "body": "Empresas buscam:\n\n- acima de 95%\n\nRegra:\n- Quanto maior, mais confiança."
+    },
+    {
+      "title": "Mini prática",
+      "body": "Conte 5 SKUs e compare com sistema.\n\nCalcule quantos bateram.\n\nObjetivo:\n- medir acurácia real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Acurácia mede confiança do estoque\n- Depende de registro correto\n- Inventário ajuda a melhorar\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 24",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Acurácia significa:", "options": [{ "key": "A", "text": "Sistema bater com físico" }, { "key": "B", "text": "Sistema aleatório" }], "answer": "A", "explain": "Confiabilidade." },
+      { "id": 2, "question": "Sem acurácia:", "options": [{ "key": "A", "text": "Decisões erram" }, { "key": "B", "text": "Decisões melhoram" }], "answer": "A", "explain": "Dados ruins." },
+      { "id": 3, "question": "Mover sem registrar:", "options": [{ "key": "A", "text": "Prejudica acurácia" }, { "key": "B", "text": "Melhora acurácia" }], "answer": "A", "explain": "Sistema fica errado." },
+      { "id": 4, "question": "Inventário ajuda:", "options": [{ "key": "A", "text": "Melhorar acurácia" }, { "key": "B", "text": "Piorar acurácia" }], "answer": "A", "explain": "Correção." },
+      { "id": 5, "question": "Meta comum:", "options": [{ "key": "A", "text": "95% ou mais" }, { "key": "B", "text": "10%" }], "answer": "A", "explain": "Alta confiança." },
+      { "id": 6, "question": "Registro correto:", "options": [{ "key": "A", "text": "Aumenta acurácia" }, { "key": "B", "text": "Diminui acurácia" }], "answer": "A", "explain": "Controle." },
+      { "id": 7, "question": "Erro de separação:", "options": [{ "key": "A", "text": "Pode gerar diferença" }, { "key": "B", "text": "Nunca gera diferença" }], "answer": "A", "explain": "Movimento errado." },
+      { "id": 8, "question": "Perda de produto:", "options": [{ "key": "A", "text": "Afeta acurácia" }, { "key": "B", "text": "Não afeta" }], "answer": "A", "explain": "Quantidade real muda." },
+      { "id": 9, "question": "Acurácia alta significa:", "options": [{ "key": "A", "text": "Confiabilidade" }, { "key": "B", "text": "Confusão" }], "answer": "A", "explain": "Dados confiáveis." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Decisão boa precisa dado confiável" }, { "key": "B", "text": "Dado não importa" }], "answer": "A", "explain": "Base da gestão." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos\n\n- contagem\n- comparação\n- ajuste\n",
+    "pilares": "Pilares\n\n- registro\n- contagem\n- disciplina\n"
+  }
+}

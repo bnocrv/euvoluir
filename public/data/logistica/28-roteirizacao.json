@@ -1,0 +1,58 @@
+{
+  "id": "28-roteirizacao",
+  "title": "Aula 28 — Roteirização de entregas: otimizar rotas e reduzir tempo",
+  "steps": [
+    {
+      "title": "O que é roteirização (bem simples)",
+      "body": "Roteirização é planejar a ordem das entregas.\n\nObjetivo:\n\n- reduzir distância\n- reduzir tempo\n- reduzir custo\n\nRegra:\n- Rota boa economiza tempo e combustível."
+    },
+    {
+      "title": "Por que a ordem importa",
+      "body": "Se a ordem é ruim:\n\n- você anda mais\n- gasta mais\n- atrasa entregas\n\nRegra:\n- Ordem errada vira desperdício."
+    },
+    {
+      "title": "O que considerar na rota",
+      "body": "Fatores:\n\n- distância\n- janelas de entrega\n- trânsito\n- capacidade do veículo\n\nRegra:\n- Rota é mais que “linha reta”."
+    },
+    {
+      "title": "Agrupar entregas por região",
+      "body": "Boa prática:\n\n- separar por bairros\n- separar por cidades\n\nRegra:\n- Agrupar reduz deslocamento repetido."
+    },
+    {
+      "title": "Restrições comuns",
+      "body": "Exemplos:\n\n- horário de cliente\n- restrição de circulação\n- prioridade\n\nRegra:\n- Restrição ignorada vira atraso."
+    },
+    {
+      "title": "Medidas simples para melhorar rota",
+      "body": "Ações:\n\n- evitar voltar para a base sem necessidade\n- planejar ida e volta\n\nRegra:\n- Menos retorno vazio = mais eficiência."
+    },
+    {
+      "title": "Mini prática (45 min) — rota no papel",
+      "body": "Crie 8 pontos de entrega (A a H).\n\nDefina:\n- 2 com horário fixo\n- 1 mais longe\n\nMonte uma rota e explique a lógica.\n\nObjetivo:\n- treinar o raciocínio de rota."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Roteirização é planejar ordem\n- Considera restrições e capacidade\n- Agrupar por região ajuda\n- Rota boa reduz custo e atraso\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 28 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Roteirização é:", "options": [{ "key": "A", "text": "Planejar ordem das entregas" }, { "key": "B", "text": "Guardar estoque" }], "answer": "A", "explain": "Ordem e planejamento." },
+      { "id": 2, "question": "Rota boa reduz:", "options": [{ "key": "A", "text": "Tempo e custo" }, { "key": "B", "text": "Controle" }], "answer": "A", "explain": "Menos deslocamento." },
+      { "id": 3, "question": "Ordem ruim gera:", "options": [{ "key": "A", "text": "Desperdício" }, { "key": "B", "text": "Eficiência" }], "answer": "A", "explain": "Mais ida e volta." },
+      { "id": 4, "question": "Roteirização considera:", "options": [{ "key": "A", "text": "Janelas de entrega" }, { "key": "B", "text": "Cor da embalagem" }], "answer": "A", "explain": "Restrições reais." },
+      { "id": 5, "question": "Agrupar por região:", "options": [{ "key": "A", "text": "Reduz deslocamento" }, { "key": "B", "text": "Aumenta distância" }], "answer": "A", "explain": "Evita repetição." },
+      { "id": 6, "question": "Trânsito influencia rota:", "options": [{ "key": "A", "text": "Sim" }, { "key": "B", "text": "Não" }], "answer": "A", "explain": "Afeta tempo real." },
+      { "id": 7, "question": "Capacidade do veículo importa porque:", "options": [{ "key": "A", "text": "Limita o que pode levar" }, { "key": "B", "text": "Não muda nada" }], "answer": "A", "explain": "Volume e peso limitam." },
+      { "id": 8, "question": "Ignorar restrição:", "options": [{ "key": "A", "text": "Pode gerar atraso" }, { "key": "B", "text": "Gera velocidade" }], "answer": "A", "explain": "Entrega pode falhar." },
+      { "id": 9, "question": "Menos retorno vazio:", "options": [{ "key": "A", "text": "Mais eficiência" }, { "key": "B", "text": "Mais custo" }], "answer": "A", "explain": "Aproveita melhor a viagem." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Rota é mais que linha reta" }, { "key": "B", "text": "Rota é só distância" }], "answer": "A", "explain": "Restrições mudam tudo." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- pedidos agrupados\n- rota montada\n- entregas executadas\n",
+    "pilares": "Pilares\n\n- ordem\n- restrições\n- capacidade\n"
+  }
+}

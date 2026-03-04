@@ -1,0 +1,58 @@
+{
+  "id": "08-processo-separacao",
+  "title": "Aula 08 — Separação de pedidos (picking): como preparar pedidos com eficiência",
+  "steps": [
+    {
+      "title": "O que é separação (picking)",
+      "body": "Separação é pegar no estoque os itens que formam um pedido.\n\nObjetivo:\n\n- pegar o produto correto\n- na quantidade correta\n- no menor tempo possível\n\nRegra:\n- Separação errada vira devolução."
+    },
+    {
+      "title": "De onde vem o pedido",
+      "body": "O pedido pode vir de:\n\n- loja\n- e-commerce\n- reposição interna\n\nRegra:\n- Pedido gera uma lista de separação."
+    },
+    {
+      "title": "Lista de separação (picking list)",
+      "body": "A lista mostra:\n\n- SKU\n- quantidade\n- endereço\n\nRegra:\n- A lista guia o operador no estoque."
+    },
+    {
+      "title": "Tipos de picking",
+      "body": "Principais modelos:\n\n- picking por pedido\n- picking por lote\n- picking por zona\n\nRegra:\n- Cada modelo serve para um tipo de operação."
+    },
+    {
+      "title": "Erros comuns na separação",
+      "body": "Erros frequentes:\n\n- pegar SKU errado\n- quantidade errada\n- endereço errado\n\nRegra:\n- A pressa aumenta erro."
+    },
+    {
+      "title": "Conferência após separar",
+      "body": "Após separar:\n\n- conferir itens\n- validar quantidade\n\nRegra:\n- Conferir antes da embalagem."
+    },
+    {
+      "title": "Mini prática (45 min) — simular picking",
+      "body": "Crie uma lista com:\n\n- 5 SKUs\n- quantidade\n- endereço\n\nSimule a separação no papel.\n\nObjetivo:\n- entender a lógica do picking."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Separação é pegar os itens do pedido\n- Lista de picking guia o operador\n- Existem diferentes modelos\n- Conferência evita erro\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 08 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Separação significa:", "options": [{ "key": "A", "text": "Pegar itens do estoque para um pedido" }, { "key": "B", "text": "Receber mercadoria" }], "answer": "A", "explain": "Separação prepara pedidos." },
+      { "id": 2, "question": "Picking list é:", "options": [{ "key": "A", "text": "Lista de itens do pedido" }, { "key": "B", "text": "Lista de fornecedores" }], "answer": "A", "explain": "Guia a separação." },
+      { "id": 3, "question": "SKU significa:", "options": [{ "key": "A", "text": "Identificação do produto" }, { "key": "B", "text": "Nome do caminhão" }], "answer": "A", "explain": "Código do item." },
+      { "id": 4, "question": "Separação errada gera:", "options": [{ "key": "A", "text": "Devolução" }, { "key": "B", "text": "Lucro" }], "answer": "A", "explain": "Cliente recebe errado." },
+      { "id": 5, "question": "Picking por lote significa:", "options": [{ "key": "A", "text": "Separar vários pedidos juntos" }, { "key": "B", "text": "Separar um por vez" }], "answer": "A", "explain": "Agrupa pedidos." },
+      { "id": 6, "question": "Endereço no estoque serve para:", "options": [{ "key": "A", "text": "Encontrar produto" }, { "key": "B", "text": "Guardar nota fiscal" }], "answer": "A", "explain": "Localização." },
+      { "id": 7, "question": "Quantidade errada é:", "options": [{ "key": "A", "text": "Erro de separação" }, { "key": "B", "text": "Erro de transporte" }], "answer": "A", "explain": "Erro no picking." },
+      { "id": 8, "question": "Conferência serve para:", "options": [{ "key": "A", "text": "Confirmar itens corretos" }, { "key": "B", "text": "Ignorar erros" }], "answer": "A", "explain": "Evita envio errado." },
+      { "id": 9, "question": "Pressa sem controle:", "options": [{ "key": "A", "text": "Aumenta erro" }, { "key": "B", "text": "Melhora qualidade" }], "answer": "A", "explain": "Erro humano cresce." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Separação prepara pedidos" }, { "key": "B", "text": "Separação é transporte" }], "answer": "A", "explain": "É etapa interna." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos\n\n- pedido criado\n- picking iniciado\n- picking finalizado\n",
+    "pilares": "Pilares\n\n- endereço correto\n- lista de picking\n- conferência\n"
+  }
+}

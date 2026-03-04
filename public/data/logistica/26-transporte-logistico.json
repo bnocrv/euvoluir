@@ -1,0 +1,58 @@
+{
+  "id": "26-transporte-logistico",
+  "title": "Aula 26 — Transporte logístico: modais e escolha do melhor transporte",
+  "steps": [
+    {
+      "title": "O que é transporte logístico (bem simples)",
+      "body": "Transporte logístico é mover o produto de um ponto a outro.\n\nEle pode ser:\n\n- dentro da cidade\n- entre cidades\n- entre estados\n\nRegra:\n- Transporte é um dos maiores custos e riscos da logística."
+    },
+    {
+      "title": "Modais de transporte",
+      "body": "Principais modais:\n\n- rodoviário\n- aéreo\n- ferroviário\n- aquaviário\n\nRegra:\n- Cada modal tem custo, velocidade e limite."
+    },
+    {
+      "title": "Rodoviário (o mais comum)",
+      "body": "Vantagens:\n\n- flexível\n- atende muitos destinos\n\nDesvantagens:\n\n- depende de estrada e trânsito\n\nRegra:\n- Rodoviário é o mais usado, mas sofre com variáveis."
+    },
+    {
+      "title": "Aéreo (rápido)",
+      "body": "Vantagens:\n\n- muito rápido\n\nDesvantagens:\n\n- caro\n- limite de volume\n\nRegra:\n- Aéreo é para urgência e valor alto."
+    },
+    {
+      "title": "Ferroviário e aquaviário (grandes volumes)",
+      "body": "Características:\n\n- bom para grandes volumes\n- custo por unidade pode ser menor\n\nLimites:\n\n- menos flexível\n\nRegra:\n- Bom quando há escala e rota definida."
+    },
+    {
+      "title": "Como escolher o melhor modal",
+      "body": "Considere:\n\n- prazo\n- custo\n- risco (avaria/extravio)\n- tipo de produto\n\nRegra:\n- Escolha é equilíbrio: prazo x custo x risco."
+    },
+    {
+      "title": "Mini prática (45 min) — escolher modal",
+      "body": "Escolha 3 cenários:\n\n1) item barato e pesado\n2) item caro e urgente\n3) grande volume para outra região\n\nPara cada um, escolha o modal e diga por quê.\n\nObjetivo:\n- treinar decisão por contexto."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Transporte move o produto\n- Existem modais com perfis diferentes\n- Rodoviário é flexível\n- Aéreo é rápido e caro\n- Ferro/aquaviário é bom para grande volume\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 26 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Transporte logístico é:", "options": [{ "key": "A", "text": "Mover produto de um ponto a outro" }, { "key": "B", "text": "Guardar produto no estoque" }], "answer": "A", "explain": "É deslocamento." },
+      { "id": 2, "question": "Modal rodoviário é:", "options": [{ "key": "A", "text": "Mais comum e flexível" }, { "key": "B", "text": "O mais raro" }], "answer": "A", "explain": "Atende muitos destinos." },
+      { "id": 3, "question": "Aéreo geralmente é:", "options": [{ "key": "A", "text": "Rápido e caro" }, { "key": "B", "text": "Lento e barato" }], "answer": "A", "explain": "Velocidade custa." },
+      { "id": 4, "question": "Ferroviário/aquaviário serve bem para:", "options": [{ "key": "A", "text": "Grandes volumes" }, { "key": "B", "text": "Qualquer entrega urgente" }], "answer": "A", "explain": "Tem escala e rota." },
+      { "id": 5, "question": "Escolha do modal depende de:", "options": [{ "key": "A", "text": "Prazo, custo e risco" }, { "key": "B", "text": "Sorte" }], "answer": "A", "explain": "Decisão técnica." },
+      { "id": 6, "question": "Trânsito afeta mais:", "options": [{ "key": "A", "text": "Rodoviário" }, { "key": "B", "text": "Aquaviário" }], "answer": "A", "explain": "Estradas e cidades." },
+      { "id": 7, "question": "Produto urgente e caro:", "options": [{ "key": "A", "text": "Pode usar aéreo" }, { "key": "B", "text": "Sempre usa aquaviário" }], "answer": "A", "explain": "Prioriza prazo." },
+      { "id": 8, "question": "Transporte é relevante porque:", "options": [{ "key": "A", "text": "É grande custo e risco" }, { "key": "B", "text": "Não influencia" }], "answer": "A", "explain": "Impacta serviço e dinheiro." },
+      { "id": 9, "question": "Modal tem perfil:", "options": [{ "key": "A", "text": "Diferente por custo e velocidade" }, { "key": "B", "text": "Igual para todos" }], "answer": "A", "explain": "Cada um tem trade-off." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Escolha é equilíbrio: prazo x custo x risco" }, { "key": "B", "text": "Só prazo importa" }], "answer": "A", "explain": "Sempre há trade-off." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- coleta\n- transporte\n- entrega\n",
+    "pilares": "Pilares\n\n- modal\n- prazo\n- custo\n- risco\n"
+  }
+}

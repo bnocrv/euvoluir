@@ -1,0 +1,58 @@
+{
+  "id": "10-processo-expedicao",
+  "title": "Aula 10 — Expedição: organização da saída de pedidos",
+  "steps": [
+    {
+      "title": "O que é expedição",
+      "body": "Expedição é a etapa final do armazém.\n\nObjetivo:\n\n- organizar pedidos\n- entregar para transporte\n\nRegra:\n- Expedição conecta estoque ao transporte."
+    },
+    {
+      "title": "O que acontece na expedição",
+      "body": "Atividades comuns:\n\n- receber pedidos embalados\n- conferir\n- organizar por rota\n\nRegra:\n- Organização evita atraso."
+    },
+    {
+      "title": "Conferência final",
+      "body": "Antes de sair:\n\n- validar pedido\n- validar etiqueta\n\nRegra:\n- Última chance de corrigir erro."
+    },
+    {
+      "title": "Organização por rota",
+      "body": "Pedidos são agrupados por:\n\n- transportadora\n- região\n- rota\n\nRegra:\n- Rota bem montada reduz tempo."
+    },
+    {
+      "title": "Carregamento",
+      "body": "Etapas:\n\n- posicionar carga\n- organizar no caminhão\n\nRegra:\n- Carga precisa ficar segura."
+    },
+    {
+      "title": "Registro de saída",
+      "body": "Registrar:\n\n- hora da saída\n- transportadora\n\nRegra:\n- Expedição precisa deixar registro."
+    },
+    {
+      "title": "Mini prática",
+      "body": "Desenhe um fluxo de expedição:\n\n- chegada da embalagem\n- conferência\n- carregamento\n\nObjetivo:\n- visualizar a saída logística."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Expedição é saída do armazém\n- Confere pedidos\n- Organiza por rota\n- Registra saída\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 10 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Expedição é:", "options": [{ "key": "A", "text": "Saída de pedidos" }, { "key": "B", "text": "Recebimento" }], "answer": "A", "explain": "Etapa final interna." },
+      { "id": 2, "question": "Expedição conecta:", "options": [{ "key": "A", "text": "Estoque e transporte" }, { "key": "B", "text": "Cliente e fornecedor" }], "answer": "A", "explain": "Entrega ao transporte." },
+      { "id": 3, "question": "Conferência final serve para:", "options": [{ "key": "A", "text": "Corrigir erro antes de enviar" }, { "key": "B", "text": "Ignorar pedido" }], "answer": "A", "explain": "Última validação." },
+      { "id": 4, "question": "Agrupar por rota:", "options": [{ "key": "A", "text": "Otimiza entrega" }, { "key": "B", "text": "Atrasa entrega" }], "answer": "A", "explain": "Melhora logística." },
+      { "id": 5, "question": "Carregamento errado:", "options": [{ "key": "A", "text": "Pode causar avaria" }, { "key": "B", "text": "Melhora transporte" }], "answer": "A", "explain": "Cargas precisam estabilidade." },
+      { "id": 6, "question": "Registro de saída:", "options": [{ "key": "A", "text": "Controla transporte" }, { "key": "B", "text": "Não serve para nada" }], "answer": "A", "explain": "Controle operacional." },
+      { "id": 7, "question": "Pedido embalado chega de:", "options": [{ "key": "A", "text": "Área de embalagem" }, { "key": "B", "text": "Fornecedor" }], "answer": "A", "explain": "Fluxo interno." },
+      { "id": 8, "question": "Transportadora faz:", "options": [{ "key": "A", "text": "Entrega externa" }, { "key": "B", "text": "Separação" }], "answer": "A", "explain": "Transporte." },
+      { "id": 9, "question": "Expedição desorganizada:", "options": [{ "key": "A", "text": "Gera atraso" }, { "key": "B", "text": "Gera velocidade" }], "answer": "A", "explain": "Caos operacional." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Expedição conecta estoque ao transporte" }, { "key": "B", "text": "Expedição é estoque" }], "answer": "A", "explain": "Etapa de saída." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos\n\n- pedido recebido\n- conferido\n- carregado\n- expedido\n",
+    "pilares": "Pilares\n\n- organização\n- conferência\n- registro\n"
+  }
+}

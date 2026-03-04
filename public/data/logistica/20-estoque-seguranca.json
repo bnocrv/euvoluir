@@ -1,0 +1,58 @@
+{
+  "id": "20-estoque-seguranca",
+  "title": "Aula 20 — Estoque de segurança: proteção contra variação de demanda",
+  "steps": [
+    {
+      "title": "O que é estoque de segurança (bem simples)",
+      "body": "Estoque de segurança é um “extra” para proteger contra imprevistos.\n\nEle existe para:\n\n- variação de demanda\n- atraso do fornecedor\n\nRegra:\n- Estoque de segurança é proteção, não excesso."
+    },
+    {
+      "title": "Quando você precisa dele",
+      "body": "Você precisa mais quando:\n\n- a demanda varia muito\n- o fornecedor atrasa\n- o lead time é alto\n\nRegra:\n- Quanto mais incerteza, mais proteção."
+    },
+    {
+      "title": "O que ele evita",
+      "body": "Evita:\n\n- ruptura\n- cancelamento\n- atraso de pedidos\n\nRegra:\n- Segurança protege o nível de serviço."
+    },
+    {
+      "title": "Cuidado: segurança não é desculpa",
+      "body": "Problema comum:\n\n- criar “segurança” enorme e virar excesso\n\nRegra:\n- Segurança deve ser calculada, não chutada."
+    },
+    {
+      "title": "Como pensar de forma simples",
+      "body": "Forma simples:\n\n- observe variação do consumo\n- observe atraso do fornecedor\n- defina um “colchão” mínimo\n\nRegra:\n- Segurança cobre o inesperado."
+    },
+    {
+      "title": "Onde usar mais estoque de segurança",
+      "body": "Use mais em:\n\n- itens de alto giro\n- itens críticos (não pode faltar)\n\nRegra:\n- Se faltar dói muito, precisa mais proteção."
+    },
+    {
+      "title": "Mini prática (45 min) — escolher itens críticos",
+      "body": "Liste 10 SKUs e marque:\n\n- quais não podem faltar\n\nPara 3 deles escreva:\n- por que são críticos\n- qual risco de falta\n\nObjetivo:\n- entender onde faz sentido ter “colchão”."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Estoque de segurança protege contra incerteza\n- Evita ruptura e atrasos\n- Deve ser calculado (não chute)\n- Use mais em itens críticos\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 20 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Estoque de segurança é:", "options": [{ "key": "A", "text": "Extra para cobrir imprevistos" }, { "key": "B", "text": "Bagunça" }], "answer": "A", "explain": "Proteção contra variação." },
+      { "id": 2, "question": "Serve para evitar:", "options": [{ "key": "A", "text": "Ruptura" }, { "key": "B", "text": "Controle" }], "answer": "A", "explain": "Evita faltar produto." },
+      { "id": 3, "question": "Você precisa mais quando:", "options": [{ "key": "A", "text": "Demanda varia e fornecedor atrasa" }, { "key": "B", "text": "Tudo é estável" }], "answer": "A", "explain": "Incerteza aumenta necessidade." },
+      { "id": 4, "question": "Segurança muito grande vira:", "options": [{ "key": "A", "text": "Excesso" }, { "key": "B", "text": "Eficiência" }], "answer": "A", "explain": "Capital parado." },
+      { "id": 5, "question": "Segurança deve ser:", "options": [{ "key": "A", "text": "Calculada" }, { "key": "B", "text": "Chutada" }], "answer": "A", "explain": "Chute gera erro." },
+      { "id": 6, "question": "Itens críticos:", "options": [{ "key": "A", "text": "Não podem faltar" }, { "key": "B", "text": "Tanto faz" }], "answer": "A", "explain": "Impacto alto." },
+      { "id": 7, "question": "Estoque de segurança protege:", "options": [{ "key": "A", "text": "Nível de serviço" }, { "key": "B", "text": "Avaria" }], "answer": "A", "explain": "Evita atraso e cancelamento." },
+      { "id": 8, "question": "Lead time alto:", "options": [{ "key": "A", "text": "Aumenta risco de falta" }, { "key": "B", "text": "Elimina risco" }], "answer": "A", "explain": "Mais tempo exposto a variação." },
+      { "id": 9, "question": "Incerteza maior:", "options": [{ "key": "A", "text": "Pede mais proteção" }, { "key": "B", "text": "Pede menos" }], "answer": "A", "explain": "Mais risco, mais colchão." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Segurança é proteção, não excesso" }, { "key": "B", "text": "Segurança é excesso" }], "answer": "A", "explain": "É um colchão planejado." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- variação acontece\n- segurança cobre\n- reposição chega\n",
+    "pilares": "Pilares\n\n- incerteza\n- proteção\n- nível de serviço\n"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "27-frete-custos",
+  "title": "Aula 27 — Frete e custos logísticos: como o transporte impacta o preço",
+  "steps": [
+    {
+      "title": "O que é frete (bem simples)",
+      "body": "Frete é o custo do transporte.\n\nEle pode estar:\n\n- embutido no preço\n- cobrado separado\n\nRegra:\n- Frete influencia diretamente a margem."
+    },
+    {
+      "title": "O que compõe o custo do frete",
+      "body": "Componentes comuns:\n\n- combustível\n- pedágio\n- manutenção\n- mão de obra\n- risco (seguro)\n\nRegra:\n- Frete não é só gasolina."
+    },
+    {
+      "title": "Peso e volume",
+      "body": "Frete costuma aumentar com:\n\n- peso\n- volume (cubagem)\n\nRegra:\n- Produto leve e grande pode ser caro por volume."
+    },
+    {
+      "title": "Distância e região",
+      "body": "Quanto maior:\n\n- distância\n- dificuldade de rota\n\nMaior tende a ser o custo.\n\nRegra:\n- Distância geralmente é custo."
+    },
+    {
+      "title": "Prazo x custo",
+      "body": "Quanto mais rápido:\n\n- normalmente mais caro\n\nRegra:\n- Prazo curto costuma custar mais."
+    },
+    {
+      "title": "Como reduzir custo sem destruir serviço",
+      "body": "Ações:\n\n- melhor embalagem (reduz avaria)\n- consolidar cargas\n- roteirizar bem\n\nRegra:\n- Reduzir custo não pode aumentar erro."
+    },
+    {
+      "title": "Mini prática (45 min) — analisar um pedido",
+      "body": "Escolha um pedido típico e estime:\n\n- peso\n- volume\n- distância\n\nAgora responda:\n- qual fator mais pesa no frete?\n\nObjetivo:\n- entender o que “puxa” custo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Frete é custo de transporte\n- Depende de peso, volume, distância e prazo\n- Redução de custo exige processo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 27 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Frete é:", "options": [{ "key": "A", "text": "Custo do transporte" }, { "key": "B", "text": "Custo de armazenagem" }], "answer": "A", "explain": "É o valor para transportar." },
+      { "id": 2, "question": "Frete inclui:", "options": [{ "key": "A", "text": "Combustível e outros custos" }, { "key": "B", "text": "Só gasolina" }], "answer": "A", "explain": "Tem vários componentes." },
+      { "id": 3, "question": "Volume influencia frete porque:", "options": [{ "key": "A", "text": "Ocupa espaço no veículo" }, { "key": "B", "text": "Muda a cor do produto" }], "answer": "A", "explain": "Espaço é limitado." },
+      { "id": 4, "question": "Maior distância tende a:", "options": [{ "key": "A", "text": "Aumentar custo" }, { "key": "B", "text": "Diminuir custo" }], "answer": "A", "explain": "Mais tempo e recursos." },
+      { "id": 5, "question": "Prazo mais curto:", "options": [{ "key": "A", "text": "Pode ser mais caro" }, { "key": "B", "text": "Sempre é mais barato" }], "answer": "A", "explain": "Urgência custa." },
+      { "id": 6, "question": "Cubagem é ligada a:", "options": [{ "key": "A", "text": "Volume" }, { "key": "B", "text": "Validade" }], "answer": "A", "explain": "Espaço ocupado." },
+      { "id": 7, "question": "Consolidar cargas ajuda a:", "options": [{ "key": "A", "text": "Reduzir custo por unidade" }, { "key": "B", "text": "Aumentar viagens" }], "answer": "A", "explain": "Melhor aproveitamento." },
+      { "id": 8, "question": "Reduzir custo aumentando erro:", "options": [{ "key": "A", "text": "É ruim" }, { "key": "B", "text": "É bom" }], "answer": "A", "explain": "Erro vira custo oculto." },
+      { "id": 9, "question": "Seguro pode entrar no frete:", "options": [{ "key": "A", "text": "Sim" }, { "key": "B", "text": "Nunca" }], "answer": "A", "explain": "Risco tem preço." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Produto leve e grande pode ser caro por volume" }, { "key": "B", "text": "Só peso importa" }], "answer": "A", "explain": "Volume conta." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Fatores mínimos\n\n- peso\n- volume\n- distância\n- prazo\n",
+    "pilares": "Pilares\n\n- custo\n- eficiência\n- controle\n"
+  }
+}

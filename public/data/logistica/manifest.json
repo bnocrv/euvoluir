@@ -1,11 +1,231 @@
 ﻿{
-    "courseId":  "logistica",
-    "title":  "Logística - fundamentos operacionais",
-    "lessons":  [
-                    {
-                        "id":  "01-introducao",
-                        "title":  "Aula 01 - Introdução prática",
-                        "file":  "01-introducao.json"
-                    }
-                ]
+    "courseId": "logistica",
+    "title": "Logística — do básico ao avançado (operações, estoque, transporte e eficiência operacional)",
+    "lessons": [
+        {
+            "id": "01-introducao",
+            "title": "Aula 01 — O que é logística e por que ela move o mundo (visão geral)",
+            "file": "01-introducao.json"
+        },
+        {
+            "id": "02-cadeia-suprimentos",
+            "title": "Aula 02 — Cadeia de suprimentos (supply chain): fornecedores, empresa e cliente",
+            "file": "02-cadeia-suprimentos.json"
+        },
+        {
+            "id": "03-fluxo-logistico",
+            "title": "Aula 03 — Fluxo logístico: do fornecedor até o cliente final",
+            "file": "03-fluxo-logistico.json"
+        },
+        {
+            "id": "04-tipos-logistica",
+            "title": "Aula 04 — Tipos de logística: inbound, outbound, reversa e interna",
+            "file": "04-tipos-logistica.json"
+        },
+        {
+            "id": "05-niveis-servico",
+            "title": "Aula 05 — Nível de serviço logístico: prazo, disponibilidade e experiência do cliente",
+            "file": "05-niveis-servico.json"
+        },
+        {
+            "id": "06-processo-recebimento",
+            "title": "Aula 06 — Recebimento de mercadorias: conferência e entrada no estoque",
+            "file": "06-processo-recebimento.json"
+        },
+        {
+            "id": "07-processo-armazenagem",
+            "title": "Aula 07 — Armazenagem: guardar bem para encontrar rápido",
+            "file": "07-processo-armazenagem.json"
+        },
+        {
+            "id": "08-processo-separacao",
+            "title": "Aula 08 — Separação de pedidos (picking): como preparar pedidos com eficiência",
+            "file": "08-processo-separacao.json"
+        },
+        {
+            "id": "09-processo-embalagem",
+            "title": "Aula 09 — Embalagem: proteção, custo e experiência do cliente",
+            "file": "09-processo-embalagem.json"
+        },
+        {
+            "id": "10-processo-expedicao",
+            "title": "Aula 10 — Expedição: organização da saída de pedidos",
+            "file": "10-processo-expedicao.json"
+        },
+        {
+            "id": "11-layout-armazem",
+            "title": "Aula 11 — Layout de armazém: organizar o espaço para reduzir deslocamento",
+            "file": "11-layout-armazem.json"
+        },
+        {
+            "id": "12-enderecamento",
+            "title": "Aula 12 — Endereçamento de estoque: como localizar produtos rapidamente",
+            "file": "12-enderecamento.json"
+        },
+        {
+            "id": "13-zonas-estoque",
+            "title": "Aula 13 — Zonas de estoque: separação por giro, peso e categoria",
+            "file": "13-zonas-estoque.json"
+        },
+        {
+            "id": "14-fluxo-armazem",
+            "title": "Aula 14 — Fluxo dentro do armazém: evitar cruzamentos e gargalos",
+            "file": "14-fluxo-armazem.json"
+        },
+        {
+            "id": "15-equipamentos-movimentacao",
+            "title": "Aula 15 — Equipamentos de movimentação: paleteira, empilhadeira e esteiras",
+            "file": "15-equipamentos-movimentacao.json"
+        },
+        {
+            "id": "16-gestao-estoques",
+            "title": "Aula 16 — Gestão de estoques: por que controlar estoque é essencial",
+            "file": "16-gestao-estoques.json"
+        },
+        {
+            "id": "17-curva-abc",
+            "title": "Aula 17 — Curva ABC: identificar os itens mais importantes do estoque",
+            "file": "17-curva-abc.json"
+        },
+        {
+            "id": "18-giro-estoque",
+            "title": "Aula 18 — Giro de estoque: medir a velocidade de saída dos produtos",
+            "file": "18-giro-estoque.json"
+        },
+        {
+            "id": "19-ponto-reposicao",
+            "title": "Aula 19 — Ponto de reposição: quando comprar antes de faltar",
+            "file": "19-ponto-reposicao.json"
+        },
+        {
+            "id": "20-estoque-seguranca",
+            "title": "Aula 20 — Estoque de segurança: proteção contra variação de demanda",
+            "file": "20-estoque-seguranca.json"
+        },
+        {
+            "id": "21-cobertura-estoque",
+            "title": "Aula 21 — Cobertura de estoque: quantos dias seu estoque dura",
+            "file": "21-cobertura-estoque.json"
+        },
+        {
+            "id": "22-inventario-estoque",
+            "title": "Aula 22 — Inventário de estoque: contar para garantir acurácia",
+            "file": "22-inventario-estoque.json"
+        },
+        {
+            "id": "23-inventario-ciclico",
+            "title": "Aula 23 — Inventário cíclico: manter estoque correto sem parar a operação",
+            "file": "23-inventario-ciclico.json"
+        },
+        {
+            "id": "24-acuracia-estoque",
+            "title": "Aula 24 — Acurácia de estoque: confiabilidade entre sistema e físico",
+            "file": "24-acuracia-estoque.json"
+        },
+        {
+            "id": "25-prevencao-perdas",
+            "title": "Aula 25 — Prevenção de perdas: reduzir extravio e avarias",
+            "file": "25-prevencao-perdas.json"
+        },
+        {
+            "id": "26-transporte-logistico",
+            "title": "Aula 26 — Transporte logístico: modais e escolha do melhor transporte",
+            "file": "26-transporte-logistico.json"
+        },
+        {
+            "id": "27-frete-custos",
+            "title": "Aula 27 — Frete e custos logísticos: como o transporte impacta o preço",
+            "file": "27-frete-custos.json"
+        },
+        {
+            "id": "28-roteirizacao",
+            "title": "Aula 28 — Roteirização de entregas: otimizar rotas e reduzir tempo",
+            "file": "28-roteirizacao.json"
+        },
+        {
+            "id": "29-ultima-milha",
+            "title": "Aula 29 — Last mile (última milha): o desafio final da entrega",
+            "file": "29-ultima-milha.json"
+        },
+        {
+            "id": "30-rastreamento",
+            "title": "Aula 30 — Rastreamento de pedidos: visibilidade e controle da entrega",
+            "file": "30-rastreamento.json"
+        },
+        {
+            "id": "31-logistica-reversa",
+            "title": "Aula 31 — Logística reversa: devoluções, trocas e reaproveitamento",
+            "file": "31-logistica-reversa.json"
+        },
+        {
+            "id": "32-processo-devolucao",
+            "title": "Aula 32 — Processo de devolução: controle e reintegração ao estoque",
+            "file": "32-processo-devolucao.json"
+        },
+        {
+            "id": "33-tecnologia-logistica",
+            "title": "Aula 33 — Tecnologia na logística: WMS, ERP e automação",
+            "file": "33-tecnologia-logistica.json"
+        },
+        {
+            "id": "34-indicadores-logisticos",
+            "title": "Aula 34 — Indicadores logísticos (KPIs): medir para melhorar",
+            "file": "34-indicadores-logisticos.json"
+        },
+        {
+            "id": "35-produtitividade-operacional",
+            "title": "Aula 35 — Produtividade operacional: medir e melhorar eficiência",
+            "file": "35-produtitividade-operacional.json"
+        },
+        {
+            "id": "36-rastreabilidade",
+            "title": "Aula 36 — Rastreabilidade: saber onde está o produto em todo o processo",
+            "file": "36-rastreabilidade.json"
+        },
+        {
+            "id": "37-compliance-seguranca",
+            "title": "Aula 37 — Segurança e compliance no armazém",
+            "file": "37-compliance-seguranca.json"
+        },
+        {
+            "id": "38-gestao-tempo",
+            "title": "Aula 38 — Gestão do tempo na operação logística",
+            "file": "38-gestao-tempo.json"
+        },
+        {
+            "id": "39-gargalos-operacionais",
+            "title": "Aula 39 — Identificação de gargalos logísticos",
+            "file": "39-gargalos-operacionais.json"
+        },
+        {
+            "id": "40-melhoria-processos",
+            "title": "Aula 40 — Melhoria contínua na logística (Kaizen e processos)",
+            "file": "40-melhoria-processos.json"
+        },
+        {
+            "id": "41-planejamento-logistico",
+            "title": "Aula 41 — Planejamento logístico: prever demanda e preparar operação",
+            "file": "41-planejamento-logistico.json"
+        },
+        {
+            "id": "42-operacao-escalavel",
+            "title": "Aula 42 — Escalabilidade logística: crescer sem perder controle",
+            "file": "42-operacao-escalavel.json"
+        },
+        {
+            "id": "43-logistica-ecommerce",
+            "title": "Aula 43 — Logística para e-commerce: desafios e estratégias",
+            "file": "43-logistica-ecommerce.json"
+        },
+        {
+            "id": "44-custos-logisticos",
+            "title": "Aula 44 — Custos logísticos: onde o dinheiro da operação vai",
+            "file": "44-custos-logisticos.json"
+        },
+        {
+            "id": "45-projeto-final",
+            "title": "Aula 45 — Projeto final: desenhando uma operação logística completa",
+            "file": "45-projeto-final.json"
+        }
+    ]
 }

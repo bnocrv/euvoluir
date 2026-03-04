@@ -1,0 +1,58 @@
+{
+  "id": "02-cadeia-suprimentos",
+  "title": "Aula 02 — Cadeia de suprimentos: fornecedores, empresa e cliente",
+  "steps": [
+    {
+      "title": "O que é cadeia de suprimentos",
+      "body": "Cadeia de suprimentos (Supply Chain) é a rede que leva o produto até o cliente.\n\nEla envolve:\n\n- fornecedores\n- fabricantes\n- armazéns\n- transportes\n- clientes\n\nRegra:\n- O cliente é o fim da cadeia."
+    },
+    {
+      "title": "O começo da cadeia",
+      "body": "Tudo começa no fornecedor.\n\nEle fornece:\n\n- matéria prima\n- produtos\n\nRegra:\n- Sem fornecedor não existe cadeia."
+    },
+    {
+      "title": "O papel da empresa",
+      "body": "A empresa transforma ou distribui produtos.\n\nEla faz:\n\n- armazenagem\n- controle de estoque\n- preparação de pedidos\n\nRegra:\n- A empresa organiza o fluxo."
+    },
+    {
+      "title": "O cliente na cadeia",
+      "body": "O cliente final é quem consome o produto.\n\nRegra:\n- Toda cadeia existe para atender o cliente."
+    },
+    {
+      "title": "Exemplo de cadeia",
+      "body": "Exemplo:\n\n- fábrica de roupas\n- centro de distribuição\n- loja\n- cliente\n\nRegra:\n- Cada etapa adiciona valor."
+    },
+    {
+      "title": "Problemas na cadeia",
+      "body": "Problemas comuns:\n\n- atraso do fornecedor\n- transporte lento\n- estoque mal planejado\n\nRegra:\n- Um erro afeta toda cadeia."
+    },
+    {
+      "title": "Mini prática",
+      "body": "Escolha um produto da sua casa.\n\nTente imaginar:\n\n- quem produziu\n- quem transportou\n- quem vendeu\n\nObjetivo:\n- enxergar a cadeia completa."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Cadeia de suprimentos conecta todos os envolvidos\n- Começa no fornecedor\n- Passa pela empresa\n- Termina no cliente\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 02 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Cadeia de suprimentos é:", "options": [{ "key": "A", "text": "Rede que leva produto ao cliente" }, { "key": "B", "text": "Uma loja" }], "answer": "A", "explain": "É o fluxo completo." },
+      { "id": 2, "question": "A cadeia começa:", "options": [{ "key": "A", "text": "No fornecedor" }, { "key": "B", "text": "No cliente" }], "answer": "A", "explain": "Fornecedor inicia o fluxo." },
+      { "id": 3, "question": "O cliente é:", "options": [{ "key": "A", "text": "O fim da cadeia" }, { "key": "B", "text": "O começo" }], "answer": "A", "explain": "Ele recebe o produto." },
+      { "id": 4, "question": "Empresa na cadeia:", "options": [{ "key": "A", "text": "Organiza o fluxo" }, { "key": "B", "text": "Ignora estoque" }], "answer": "A", "explain": "Ela gerencia operações." },
+      { "id": 5, "question": "Fornecedor fornece:", "options": [{ "key": "A", "text": "Produtos ou matéria prima" }, { "key": "B", "text": "Clientes" }], "answer": "A", "explain": "Ele inicia a produção." },
+      { "id": 6, "question": "Atraso do fornecedor:", "options": [{ "key": "A", "text": "Afeta toda cadeia" }, { "key": "B", "text": "Não impacta" }], "answer": "A", "explain": "Tudo depende dele." },
+      { "id": 7, "question": "Cadeia inclui:", "options": [{ "key": "A", "text": "Transporte" }, { "key": "B", "text": "Apenas vendas" }], "answer": "A", "explain": "Transporte é parte essencial." },
+      { "id": 8, "question": "Sem fornecedor:", "options": [{ "key": "A", "text": "Não existe produto" }, { "key": "B", "text": "Tudo funciona igual" }], "answer": "A", "explain": "Ele inicia tudo." },
+      { "id": 9, "question": "Cada etapa:", "options": [{ "key": "A", "text": "Adiciona valor" }, { "key": "B", "text": "Não muda nada" }], "answer": "A", "explain": "Processos agregam valor." },
+      { "id": 10, "question": "Supply chain significa:", "options": [{ "key": "A", "text": "Cadeia de suprimentos" }, { "key": "B", "text": "Entrega rápida" }], "answer": "A", "explain": "É o nome em inglês." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Fluxo básico\n\n- fornecedor\n- empresa\n- transporte\n- cliente\n",
+    "pilares": "Elementos\n\n- fornecedor\n- operação\n- transporte\n- cliente\n"
+  }
+}

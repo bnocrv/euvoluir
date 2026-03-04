@@ -1,0 +1,58 @@
+{
+  "id": "14-fluxo-armazem",
+  "title": "Aula 14 — Fluxo dentro do armazém: evitar cruzamentos e gargalos",
+  "steps": [
+    {
+      "title": "O que é fluxo no armazém",
+      "body": "Fluxo no armazém é como pessoas e produtos se movimentam lá dentro.\n\nRegra:\n- Fluxo bom é previsível e sem conflito."
+    },
+    {
+      "title": "Por que cruzamento é ruim",
+      "body": "Cruzamento gera:\n\n- fila\n- risco de acidente\n- perda de tempo\n\nRegra:\n- Onde cruza, trava."
+    },
+    {
+      "title": "Fluxo ideal (linha)",
+      "body": "Modelo simples:\n\n- entra (recebimento)\n- vai para estoque\n- vai para picking\n- vai para embalagem\n- vai para expedição\n\nRegra:\n- Produto deve seguir para frente."
+    },
+    {
+      "title": "Gargalos no armazém",
+      "body": "Gargalos comuns:\n\n- corredor estreito\n- área de embalagem pequena\n- falta de carrinhos\n- endereços confusos\n\nRegra:\n- Gargalo limita toda a operação."
+    },
+    {
+      "title": "Sinais de gargalo",
+      "body": "Sinais:\n\n- fila constante\n- retrabalho\n- pedidos acumulando\n\nRegra:\n- Acúmulo mostra onde está travando."
+    },
+    {
+      "title": "Como melhorar o fluxo",
+      "body": "Ações simples:\n\n- separar sentido de ida e volta\n- criar áreas claras\n- ajustar layout\n\nRegra:\n- Pequenas mudanças podem destravar muito."
+    },
+    {
+      "title": "Mini prática (45 min) — achar o cruzamento",
+      "body": "Escolha um ponto do armazém e observe:\n\n- quem passa\n- o que cruza\n- por que cruza\n\nDepois proponha 1 ajuste.\n\nObjetivo:\n- reduzir cruzamento e fila."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Fluxo é movimento interno\n- Cruzamento gera fila e risco\n- Gargalo limita tudo\n- Ajustes de layout e sentido melhoram o fluxo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 14 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Fluxo no armazém é:", "options": [{ "key": "A", "text": "Movimento de pessoas e produtos" }, { "key": "B", "text": "Preço do produto" }], "answer": "A", "explain": "É deslocamento interno." },
+      { "id": 2, "question": "Cruzamento causa:", "options": [{ "key": "A", "text": "Fila e risco" }, { "key": "B", "text": "Velocidade" }], "answer": "A", "explain": "Cruzamento trava." },
+      { "id": 3, "question": "Fluxo ideal:", "options": [{ "key": "A", "text": "Segue para frente" }, { "key": "B", "text": "Vai e volta" }], "answer": "A", "explain": "Evita desperdício." },
+      { "id": 4, "question": "Gargalo é:", "options": [{ "key": "A", "text": "Ponto que limita a operação" }, { "key": "B", "text": "Um produto" }], "answer": "A", "explain": "Limita throughput." },
+      { "id": 5, "question": "Fila constante indica:", "options": [{ "key": "A", "text": "Possível gargalo" }, { "key": "B", "text": "Operação perfeita" }], "answer": "A", "explain": "Acúmulo = travamento." },
+      { "id": 6, "question": "Corredor estreito pode:", "options": [{ "key": "A", "text": "Virar gargalo" }, { "key": "B", "text": "Resolver gargalo" }], "answer": "A", "explain": "Limita passagem." },
+      { "id": 7, "question": "Separar sentidos ajuda a:", "options": [{ "key": "A", "text": "Reduzir cruzamentos" }, { "key": "B", "text": "Aumentar fila" }], "answer": "A", "explain": "Menos conflito." },
+      { "id": 8, "question": "Pedidos acumulando:", "options": [{ "key": "A", "text": "Mostram onde trava" }, { "key": "B", "text": "Não significam nada" }], "answer": "A", "explain": "É sinal." },
+      { "id": 9, "question": "Fluxo bom é:", "options": [{ "key": "A", "text": "Previsível" }, { "key": "B", "text": "Aleatório" }], "answer": "A", "explain": "Previsibilidade reduz erro." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Onde cruza, trava" }, { "key": "B", "text": "Cruzar melhora" }], "answer": "A", "explain": "Cruzamento é desperdício." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- entrada\n- armazenagem\n- separação\n- embalagem\n- expedição\n",
+    "pilares": "Pilares\n\n- pouco cruzamento\n- layout funcional\n- recursos suficientes\n"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "05-niveis-servico",
+  "title": "Aula 05 — Nível de serviço logístico: prazo, disponibilidade e experiência do cliente",
+  "steps": [
+    {
+      "title": "O que é nível de serviço (bem simples)",
+      "body": "Nível de serviço é o quanto você cumpre o que promete.\n\nEle responde:\n\n- entregou no prazo?\n- tinha produto disponível?\n- chegou certo e inteiro?\n\nRegra:\n- Promessa sem entrega vira reclamação."
+    },
+    {
+      "title": "Prazo (tempo)",
+      "body": "Prazo é:\n\n- tempo para separar\n- tempo para expedir\n- tempo para entregar\n\nRegra:\n- Prazo é soma de etapas, não só transporte."
+    },
+    {
+      "title": "Disponibilidade (estoque)",
+      "body": "Disponibilidade significa:\n\n- ter estoque do que vende\n- evitar ruptura\n\nExemplo:\n- cliente compra e você cancela por falta\n\nRegra:\n- Sem disponibilidade, nem existe entrega."
+    },
+    {
+      "title": "Qualidade da entrega",
+      "body": "Qualidade inclui:\n\n- item correto\n- quantidade correta\n- embalagem adequada\n- sem avaria\n\nRegra:\n- Entrega errada conta como falha, mesmo rápida."
+    },
+    {
+      "title": "Experiência do cliente",
+      "body": "O cliente percebe:\n\n- informação clara (status)\n- rastreio\n- facilidade de troca\n\nRegra:\n- Cliente quer previsibilidade."
+    },
+    {
+      "title": "Como medir o nível de serviço",
+      "body": "Exemplos de medidas:\n\n- % entregas no prazo\n- % pedidos completos\n- % pedidos sem erro\n- tempo médio do pedido\n\nRegra:\n- Se não mede, você só acha."
+    },
+    {
+      "title": "Mini prática (45 min) — defina 3 metas",
+      "body": "Escolha 3 metas simples:\n\n- % no prazo\n- % sem erro\n- tempo médio de separação\n\nPara cada uma defina:\n- como medir\n- onde registrar\n\nObjetivo:\n- sair do “acho” e ir pro “sei”."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Nível de serviço é cumprir promessa\n- Prazo depende de todas as etapas\n- Disponibilidade é ter produto\n- Qualidade é entregar certo e inteiro\n- Medir é essencial\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 05 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Nível de serviço é:", "options": [{ "key": "A", "text": "Cumprir o que foi prometido" }, { "key": "B", "text": "Apenas baixar custo" }], "answer": "A", "explain": "Serviço é promessa cumprida." },
+      { "id": 2, "question": "Prazo depende de:", "options": [{ "key": "A", "text": "Todas as etapas" }, { "key": "B", "text": "Só do motorista" }], "answer": "A", "explain": "Separação e expedição contam." },
+      { "id": 3, "question": "Disponibilidade significa:", "options": [{ "key": "A", "text": "Ter produto em estoque para vender" }, { "key": "B", "text": "Ter muitos pedidos" }], "answer": "A", "explain": "Sem estoque não atende." },
+      { "id": 4, "question": "Entrega rápida mas errada:", "options": [{ "key": "A", "text": "É falha de serviço" }, { "key": "B", "text": "É sucesso" }], "answer": "A", "explain": "Certo e inteiro é obrigatório." },
+      { "id": 5, "question": "Avaria na entrega impacta:", "options": [{ "key": "A", "text": "Qualidade do serviço" }, { "key": "B", "text": "Nada" }], "answer": "A", "explain": "Produto precisa chegar bem." },
+      { "id": 6, "question": "Cliente valoriza:", "options": [{ "key": "A", "text": "Previsibilidade e informação" }, { "key": "B", "text": "Mistério" }], "answer": "A", "explain": "Status e rastreio ajudam." },
+      { "id": 7, "question": "% entregas no prazo é:", "options": [{ "key": "A", "text": "Um indicador" }, { "key": "B", "text": "Um palpite" }], "answer": "A", "explain": "É KPI de serviço." },
+      { "id": 8, "question": "Cancelar por falta de estoque:", "options": [{ "key": "A", "text": "Queda de disponibilidade" }, { "key": "B", "text": "Aumento de serviço" }], "answer": "A", "explain": "Ruptura prejudica serviço." },
+      { "id": 9, "question": "Medir serve para:", "options": [{ "key": "A", "text": "Melhorar com base em dados" }, { "key": "B", "text": "Complicar" }], "answer": "A", "explain": "Sem medir não melhora." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Promessa sem entrega vira reclamação" }, { "key": "B", "text": "Promessa é suficiente" }], "answer": "A", "explain": "O cliente cobra o combinado." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- pedido criado\n- separado\n- conferido\n- embalado\n- expedido\n- entregue\n",
+    "pilares": "Pilares\n\n- prazo\n- disponibilidade\n- qualidade\n- informação clara\n"
+  }
+}

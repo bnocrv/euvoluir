@@ -1,0 +1,58 @@
+{
+  "id": "29-ultima-milha",
+  "title": "Aula 29 — Last mile (última milha): o desafio final da entrega",
+  "steps": [
+    {
+      "title": "O que é última milha (bem simples)",
+      "body": "Última milha é a parte final da entrega:\n\n- do centro de distribuição\n- até a casa do cliente\n\nRegra:\n- É a etapa mais visível para o cliente."
+    },
+    {
+      "title": "Por que é um desafio",
+      "body": "Desafios comuns:\n\n- muitos destinos\n- pouco volume por entrega\n- trânsito\n- cliente ausente\n\nRegra:\n- Última milha tem alto custo por entrega."
+    },
+    {
+      "title": "O que o cliente espera",
+      "body": "O cliente quer:\n\n- prazo cumprido\n- rastreio\n- entrega sem avaria\n\nRegra:\n- Cliente quer previsibilidade."
+    },
+    {
+      "title": "Falhas comuns",
+      "body": "Falhas:\n\n- atraso\n- tentativa sem sucesso\n- endereço errado\n\nRegra:\n- Cada falha aumenta custo e insatisfação."
+    },
+    {
+      "title": "Estratégias para melhorar",
+      "body": "Ideias:\n\n- roteirização\n- janelas de entrega\n- confirmação de endereço\n\nRegra:\n- Prevenção é mais barata que retrabalho."
+    },
+    {
+      "title": "Pontos de retirada",
+      "body": "Alternativa:\n\n- locker\n- loja como retirada\n\nRegra:\n- Retirada reduz custo da última milha."
+    },
+    {
+      "title": "Mini prática (45 min) — mapear falhas",
+      "body": "Liste 5 problemas reais da entrega final.\n\nPara cada um, escreva:\n- causa\n- ação simples para reduzir\n\nObjetivo:\n- melhorar a última milha na prática."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Última milha é a entrega final\n- Tem alto custo e muita variabilidade\n- É onde o cliente percebe o serviço\n- Estratégias reduzem falhas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 29 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Última milha é:", "options": [{ "key": "A", "text": "Etapa final até o cliente" }, { "key": "B", "text": "Recebimento no estoque" }], "answer": "A", "explain": "Entrega final." },
+      { "id": 2, "question": "É desafiadora porque:", "options": [{ "key": "A", "text": "Muitos destinos e variáveis" }, { "key": "B", "text": "Não tem variáveis" }], "answer": "A", "explain": "Trânsito, cliente, endereço." },
+      { "id": 3, "question": "Cliente espera:", "options": [{ "key": "A", "text": "Previsibilidade" }, { "key": "B", "text": "Mistério" }], "answer": "A", "explain": "Status e prazo." },
+      { "id": 4, "question": "Cliente ausente gera:", "options": [{ "key": "A", "text": "Retrabalho" }, { "key": "B", "text": "Entrega perfeita" }], "answer": "A", "explain": "Nova tentativa custa." },
+      { "id": 5, "question": "Falhas aumentam:", "options": [{ "key": "A", "text": "Custo e reclamação" }, { "key": "B", "text": "Lucro" }], "answer": "A", "explain": "Mais tentativas e atrasos." },
+      { "id": 6, "question": "Roteirização ajuda:", "options": [{ "key": "A", "text": "Reduzir tempo/custo" }, { "key": "B", "text": "Aumentar distância" }], "answer": "A", "explain": "Menos deslocamento." },
+      { "id": 7, "question": "Confirmar endereço:", "options": [{ "key": "A", "text": "Reduz falha" }, { "key": "B", "text": "Aumenta erro" }], "answer": "A", "explain": "Evita devolução." },
+      { "id": 8, "question": "Ponto de retirada:", "options": [{ "key": "A", "text": "Pode reduzir custo" }, { "key": "B", "text": "Sempre aumenta custo" }], "answer": "A", "explain": "Entrega concentrada." },
+      { "id": 9, "question": "Última milha é:", "options": [{ "key": "A", "text": "Muito visível para o cliente" }, { "key": "B", "text": "Invisível" }], "answer": "A", "explain": "É a experiência final." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Prevenção é mais barata que retrabalho" }, { "key": "B", "text": "Retrabalho é ótimo" }], "answer": "A", "explain": "Evita custo extra." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- em rota\n- tentativa\n- entregue\n- devolvido (se falhar)\n",
+    "pilares": "Pilares\n\n- previsibilidade\n- roteirização\n- redução de falhas\n"
+  }
+}

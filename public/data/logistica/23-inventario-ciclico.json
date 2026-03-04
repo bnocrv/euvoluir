@@ -1,0 +1,58 @@
+{
+  "id": "23-inventario-ciclico",
+  "title": "Aula 23 — Inventário cíclico: manter estoque correto sem parar a operação",
+  "steps": [
+    {
+      "title": "O que é inventário cíclico",
+      "body": "Inventário cíclico é contar pequenas partes do estoque regularmente.\n\nRegra:\n- Em vez de contar tudo de uma vez, você conta aos poucos."
+    },
+    {
+      "title": "Por que usar inventário cíclico",
+      "body": "Vantagens:\n\n- não precisa parar a operação\n- corrige erros rapidamente\n\nRegra:\n- Erro descoberto cedo é mais fácil de corrigir."
+    },
+    {
+      "title": "Como escolher o que contar",
+      "body": "Critérios comuns:\n\n- itens A da curva ABC\n- itens com histórico de erro\n\nRegra:\n- Conte mais o que tem mais impacto."
+    },
+    {
+      "title": "Frequência da contagem",
+      "body": "Exemplo:\n\n- itens A: toda semana\n- itens B: mensal\n- itens C: trimestral\n\nRegra:\n- Frequência depende da importância."
+    },
+    {
+      "title": "Passos do inventário cíclico",
+      "body": "Fluxo:\n\n- selecionar item\n- contar\n- comparar\n- ajustar\n\nRegra:\n- Sempre registrar a diferença."
+    },
+    {
+      "title": "Benefícios",
+      "body": "Benefícios:\n\n- maior acurácia\n- menos surpresas\n\nRegra:\n- Pequenas correções evitam grandes problemas."
+    },
+    {
+      "title": "Mini prática",
+      "body": "Escolha 3 endereços e faça uma contagem simples.\n\nCompare com o sistema.\n\nObjetivo:\n- entender o processo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Inventário cíclico conta partes do estoque\n- Permite corrigir erros continuamente\n- Prioriza itens importantes\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 23",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Inventário cíclico significa:", "options": [{ "key": "A", "text": "Contar partes do estoque regularmente" }, { "key": "B", "text": "Contar tudo uma vez por ano" }], "answer": "A", "explain": "Contagem contínua." },
+      { "id": 2, "question": "Vantagem principal:", "options": [{ "key": "A", "text": "Não parar a operação" }, { "key": "B", "text": "Parar tudo" }], "answer": "A", "explain": "Operação continua." },
+      { "id": 3, "question": "Itens A devem ser contados:", "options": [{ "key": "A", "text": "Mais vezes" }, { "key": "B", "text": "Menos vezes" }], "answer": "A", "explain": "Impacto maior." },
+      { "id": 4, "question": "Comparar contagem serve para:", "options": [{ "key": "A", "text": "Encontrar diferença" }, { "key": "B", "text": "Ignorar erro" }], "answer": "A", "explain": "Validação." },
+      { "id": 5, "question": "Inventário cíclico melhora:", "options": [{ "key": "A", "text": "Acurácia" }, { "key": "B", "text": "Bagunça" }], "answer": "A", "explain": "Controle." },
+      { "id": 6, "question": "Itens com histórico de erro:", "options": [{ "key": "A", "text": "Devem ser contados mais" }, { "key": "B", "text": "Ignorados" }], "answer": "A", "explain": "Maior risco." },
+      { "id": 7, "question": "Contagem frequente:", "options": [{ "key": "A", "text": "Detecta erro cedo" }, { "key": "B", "text": "Aumenta erro" }], "answer": "A", "explain": "Correção rápida." },
+      { "id": 8, "question": "Sem inventário cíclico:", "options": [{ "key": "A", "text": "Erro pode crescer" }, { "key": "B", "text": "Erro desaparece" }], "answer": "A", "explain": "Problema acumula." },
+      { "id": 9, "question": "Passo do processo:", "options": [{ "key": "A", "text": "Contar e comparar" }, { "key": "B", "text": "Ignorar" }], "answer": "A", "explain": "Fluxo básico." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Pequenas correções evitam grandes problemas" }, { "key": "B", "text": "Correção não importa" }], "answer": "A", "explain": "Controle contínuo." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos\n\n- seleção\n- contagem\n- comparação\n- ajuste\n",
+    "pilares": "Pilares\n\n- frequência\n- priorização\n- correção\n"
+  }
+}

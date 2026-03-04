@@ -1,0 +1,58 @@
+{
+  "id": "17-curva-abc",
+  "title": "Aula 17 — Curva ABC: identificar os itens mais importantes do estoque",
+  "steps": [
+    {
+      "title": "O que é Curva ABC (bem simples)",
+      "body": "Curva ABC é uma forma de separar itens por importância.\n\nVocê divide em:\n\n- A: poucos itens que representam muito valor\n- B: importância média\n- C: muitos itens com pouco valor\n\nRegra:\n- Nem todo item merece o mesmo foco."
+    },
+    {
+      "title": "Como definir “importância”",
+      "body": "Pode ser por:\n\n- valor de venda\n- valor em estoque\n- quantidade vendida\n\nRegra:\n- Escolha um critério e mantenha padrão."
+    },
+    {
+      "title": "Categoria A",
+      "body": "Itens A:\n\n- pouca quantidade de SKUs\n- grande impacto no resultado\n\nRegra:\n- Itens A precisam de controle mais forte."
+    },
+    {
+      "title": "Categoria B",
+      "body": "Itens B:\n\n- equilíbrio\n- controle intermediário\n\nRegra:\n- B tem atenção moderada."
+    },
+    {
+      "title": "Categoria C",
+      "body": "Itens C:\n\n- muitos itens\n- baixo impacto individual\n\nRegra:\n- C precisa de processo simples."
+    },
+    {
+      "title": "Como usar a ABC na prática",
+      "body": "Exemplos:\n\n- contar A mais vezes no inventário\n- colocar A em local mais acessível\n- comprar A com mais cuidado\n\nRegra:\n- ABC serve para priorizar tempo e energia."
+    },
+    {
+      "title": "Mini prática (45 min) — classificar 10 SKUs",
+      "body": "Pegue 10 SKUs e escolha um critério:\n\n- valor vendido no mês\n\nOrdene do maior para o menor.\n\nMarque:\n- top 2 como A\n- próximos 3 como B\n- resto como C\n\nObjetivo:\n- aprender a priorizar."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- ABC separa itens por importância\n- A = alto impacto\n- B = médio\n- C = baixo\n- Serve para decidir foco de controle\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 17 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Curva ABC serve para:", "options": [{ "key": "A", "text": "Priorizar itens do estoque" }, { "key": "B", "text": "Escolher transportadora" }], "answer": "A", "explain": "Prioriza controle." },
+      { "id": 2, "question": "Itens A são:", "options": [{ "key": "A", "text": "Poucos e muito importantes" }, { "key": "B", "text": "Muitos e pouco importantes" }], "answer": "A", "explain": "Maior impacto." },
+      { "id": 3, "question": "Itens C são:", "options": [{ "key": "A", "text": "Muitos e baixo impacto" }, { "key": "B", "text": "Poucos e alto impacto" }], "answer": "A", "explain": "Baixo valor individual." },
+      { "id": 4, "question": "Critério da ABC pode ser:", "options": [{ "key": "A", "text": "Valor vendido" }, { "key": "B", "text": "Cor da caixa" }], "answer": "A", "explain": "Precisa ser mensurável." },
+      { "id": 5, "question": "Controle mais forte é para:", "options": [{ "key": "A", "text": "Itens A" }, { "key": "B", "text": "Itens C" }], "answer": "A", "explain": "Maior impacto." },
+      { "id": 6, "question": "ABC ajuda a:", "options": [{ "key": "A", "text": "Definir onde gastar esforço" }, { "key": "B", "text": "Ignorar dados" }], "answer": "A", "explain": "Foco e priorização." },
+      { "id": 7, "question": "Inventário mais frequente deve ser em:", "options": [{ "key": "A", "text": "Itens A" }, { "key": "B", "text": "Itens C" }], "answer": "A", "explain": "Porque o impacto é maior." },
+      { "id": 8, "question": "Itens B têm:", "options": [{ "key": "A", "text": "Importância média" }, { "key": "B", "text": "Importância máxima" }], "answer": "A", "explain": "Meio termo." },
+      { "id": 9, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Nem todo item merece o mesmo foco" }, { "key": "B", "text": "Todos têm o mesmo foco" }], "answer": "A", "explain": "Priorizar é essencial." },
+      { "id": 10, "question": "ABC é útil porque:", "options": [{ "key": "A", "text": "Simplifica decisões" }, { "key": "B", "text": "Complica tudo" }], "answer": "A", "explain": "Ajuda a organizar prioridades." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Passos mínimos (modelo)\n\n- escolher critério\n- ordenar itens\n- classificar A/B/C\n",
+    "pilares": "Pilares\n\n- priorização\n- critério claro\n- foco no impacto\n"
+  }
+}

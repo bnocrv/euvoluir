@@ -1,0 +1,58 @@
+{
+  "id": "11-layout-armazem",
+  "title": "Aula 11 — Layout de armazém: organizar o espaço para reduzir deslocamento",
+  "steps": [
+    {
+      "title": "O que é layout (bem simples)",
+      "body": "Layout é como você organiza o espaço do armazém.\n\nEle define:\n\n- onde cada área fica\n- como as pessoas circulam\n- por onde o produto passa\n\nRegra:\n- Layout bom reduz caminhada e tempo."
+    },
+    {
+      "title": "Áreas básicas do armazém",
+      "body": "Áreas comuns:\n\n- recebimento\n- armazenagem\n- picking (separação)\n- embalagem\n- expedição\n\nRegra:\n- O produto precisa “andar para frente”, não ficar voltando."
+    },
+    {
+      "title": "Distância é custo",
+      "body": "Cada metro a mais vira:\n\n- tempo perdido\n- cansaço\n- menor produtividade\n\nRegra:\n- Caminhada é custo escondido."
+    },
+    {
+      "title": "Fluxo sem cruzamento",
+      "body": "Um bom layout evita:\n\n- cruzamento de pessoas\n- cruzamento de pallets\n- ida e volta desnecessária\n\nRegra:\n- Cruzamento gera fila e risco."
+    },
+    {
+      "title": "Onde colocar itens de alto giro",
+      "body": "Itens que saem mais devem ficar:\n\n- perto do picking\n- perto da expedição\n\nRegra:\n- Alto giro deve ficar fácil."
+    },
+    {
+      "title": "Sinais de layout ruim",
+      "body": "Sinais:\n\n- corredor sempre travado\n- gente se esbarrando\n- produto “sumindo”\n- tempo alto de separação\n\nRegra:\n- Se trava todo dia, o problema é estrutural."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa do armazém",
+      "body": "Desenhe o armazém com:\n\n- áreas\n- corredores\n- entrada e saída\n\nMarque:\n- onde tem fila\n- onde tem cruzamento\n\nObjetivo:\n- enxergar onde está o desperdício."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Layout é organização do espaço\n- Distância vira custo\n- Fluxo deve evitar cruzamentos\n- Alto giro perto da saída\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 11 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Layout é:", "options": [{ "key": "A", "text": "Organização do espaço do armazém" }, { "key": "B", "text": "Preço do frete" }], "answer": "A", "explain": "Layout define áreas e fluxo." },
+      { "id": 2, "question": "Layout bom reduz:", "options": [{ "key": "A", "text": "Deslocamento e tempo" }, { "key": "B", "text": "Controle" }], "answer": "A", "explain": "Menos caminhada, mais produtividade." },
+      { "id": 3, "question": "Caminhada é:", "options": [{ "key": "A", "text": "Custo escondido" }, { "key": "B", "text": "Lucro" }], "answer": "A", "explain": "Tempo vira custo." },
+      { "id": 4, "question": "Cruzamento no fluxo:", "options": [{ "key": "A", "text": "Gera fila e risco" }, { "key": "B", "text": "Sempre ajuda" }], "answer": "A", "explain": "Trava a operação." },
+      { "id": 5, "question": "Áreas básicas incluem:", "options": [{ "key": "A", "text": "Recebimento e expedição" }, { "key": "B", "text": "Apenas vendas" }], "answer": "A", "explain": "Operação tem áreas." },
+      { "id": 6, "question": "Alto giro deve ficar:", "options": [{ "key": "A", "text": "Mais acessível" }, { "key": "B", "text": "Mais longe" }], "answer": "A", "explain": "Reduz tempo." },
+      { "id": 7, "question": "Fila constante indica:", "options": [{ "key": "A", "text": "Possível problema de layout" }, { "key": "B", "text": "Tudo perfeito" }], "answer": "A", "explain": "Gargalo físico." },
+      { "id": 8, "question": "Produto voltar para trás:", "options": [{ "key": "A", "text": "É desperdício" }, { "key": "B", "text": "É o ideal" }], "answer": "A", "explain": "Aumenta deslocamento." },
+      { "id": 9, "question": "Corredor travado:", "options": [{ "key": "A", "text": "Reduz produtividade" }, { "key": "B", "text": "Aumenta velocidade" }], "answer": "A", "explain": "Interrompe o fluxo." },
+      { "id": 10, "question": "Uma frase correta é:", "options": [{ "key": "A", "text": "Distância é custo" }, { "key": "B", "text": "Distância não importa" }], "answer": "A", "explain": "Tempo e esforço aumentam." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Áreas mínimas (modelo)\n\n- recebimento\n- armazenagem\n- separação\n- embalagem\n- expedição\n",
+    "pilares": "Pilares\n\n- fluxo contínuo\n- pouco cruzamento\n- alto giro acessível\n"
+  }
+}

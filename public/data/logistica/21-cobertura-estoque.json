@@ -1,0 +1,58 @@
+{
+  "id": "21-cobertura-estoque",
+  "title": "Aula 21 — Cobertura de estoque: quantos dias seu estoque dura",
+  "steps": [
+    {
+      "title": "O que é cobertura de estoque (bem simples)",
+      "body": "Cobertura de estoque mostra por quantos dias o estoque atual consegue atender a demanda.\n\nRegra:\n- Cobertura responde: \"se eu não comprar nada, por quantos dias consigo vender?\""
+    },
+    {
+      "title": "Por que a cobertura importa",
+      "body": "Ela ajuda a entender:\n\n- risco de falta\n- excesso de estoque\n- quando comprar novamente\n\nRegra:\n- Cobertura conecta estoque e demanda."
+    },
+    {
+      "title": "Exemplo simples",
+      "body": "Exemplo:\n\n- estoque atual: 100 unidades\n- venda média: 10 por dia\n\nCobertura = 10 dias.\n\nRegra:\n- Cobertura traduz quantidade em tempo."
+    },
+    {
+      "title": "Cobertura muito baixa",
+      "body": "Riscos:\n\n- ruptura\n- atraso\n\nRegra:\n- Cobertura curta exige reposição rápida."
+    },
+    {
+      "title": "Cobertura muito alta",
+      "body": "Problemas:\n\n- dinheiro parado\n- risco de obsolescência\n\nRegra:\n- Cobertura muito grande pode indicar excesso."
+    },
+    {
+      "title": "Como usar no dia a dia",
+      "body": "Aplicações:\n\n- decidir compras\n- avaliar risco de falta\n- ajustar estoque\n\nRegra:\n- Cobertura transforma estoque em visão de tempo."
+    },
+    {
+      "title": "Mini prática (30 min)",
+      "body": "Escolha 5 SKUs.\n\nAnote:\n- estoque atual\n- venda média diária\n\nCalcule cobertura em dias.\n\nObjetivo:\n- aprender a interpretar estoque como tempo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Cobertura mede quantos dias o estoque dura\n- Depende do consumo médio\n- Muito baixa = risco de falta\n- Muito alta = possível excesso\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 21 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Cobertura mede:", "options": [{ "key": "A", "text": "Quantos dias o estoque dura" }, { "key": "B", "text": "Preço do produto" }], "answer": "A", "explain": "Transforma quantidade em tempo." },
+      { "id": 2, "question": "Cobertura baixa indica:", "options": [{ "key": "A", "text": "Risco de ruptura" }, { "key": "B", "text": "Excesso" }], "answer": "A", "explain": "Estoque pode acabar rápido." },
+      { "id": 3, "question": "Cobertura alta pode indicar:", "options": [{ "key": "A", "text": "Excesso" }, { "key": "B", "text": "Falta" }], "answer": "A", "explain": "Estoque parado." },
+      { "id": 4, "question": "Cobertura depende de:", "options": [{ "key": "A", "text": "Consumo médio" }, { "key": "B", "text": "Cor do produto" }], "answer": "A", "explain": "Demanda média." },
+      { "id": 5, "question": "Cobertura ajuda a:", "options": [{ "key": "A", "text": "Planejar reposição" }, { "key": "B", "text": "Ignorar estoque" }], "answer": "A", "explain": "Planejamento." },
+      { "id": 6, "question": "100 unidades com venda 10/dia:", "options": [{ "key": "A", "text": "Cobertura de 10 dias" }, { "key": "B", "text": "Cobertura de 100 dias" }], "answer": "A", "explain": "100/10 = 10." },
+      { "id": 7, "question": "Cobertura transforma estoque em:", "options": [{ "key": "A", "text": "Tempo" }, { "key": "B", "text": "Peso" }], "answer": "A", "explain": "Visão temporal." },
+      { "id": 8, "question": "Sem olhar cobertura:", "options": [{ "key": "A", "text": "Risco de erro na compra" }, { "key": "B", "text": "Tudo funciona igual" }], "answer": "A", "explain": "Decisão cega." },
+      { "id": 9, "question": "Cobertura conecta:", "options": [{ "key": "A", "text": "Estoque e demanda" }, { "key": "B", "text": "Transporte e cliente" }], "answer": "A", "explain": "Relaciona estoque e saída." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Cobertura traduz quantidade em tempo" }, { "key": "B", "text": "Cobertura não ajuda" }], "answer": "A", "explain": "Visão operacional." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos\n\n- calcular consumo\n- calcular cobertura\n- avaliar reposição\n",
+    "pilares": "Pilares\n\n- estoque\n- consumo\n- tempo\n"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "19-ponto-reposicao",
+  "title": "Aula 19 — Ponto de reposição: quando comprar antes de faltar",
+  "steps": [
+    {
+      "title": "O que é ponto de reposição (bem simples)",
+      "body": "Ponto de reposição é o nível de estoque que dispara uma compra.\n\nEle responde:\n\n- quando pedir novamente\n\nRegra:\n- Repor tarde demais vira ruptura."
+    },
+    {
+      "title": "Por que existe ponto de reposição",
+      "body": "Existe porque:\n\n- o fornecedor demora (lead time)\n- o estoque vai baixando\n\nRegra:\n- Você precisa pedir antes de acabar."
+    },
+    {
+      "title": "O que influencia o ponto de reposição",
+      "body": "Fatores:\n\n- consumo médio (saída)\n- tempo de reposição (lead time)\n- variações\n\nRegra:\n- Quanto mais variável, mais cuidado."
+    },
+    {
+      "title": "Lead time (tempo de reposição)",
+      "body": "Lead time é:\n\n- tempo entre pedir e receber\n\nRegra:\n- Lead time longo exige reposição mais cedo."
+    },
+    {
+      "title": "Erro comum: pedir quando já acabou",
+      "body": "Se você pede quando já acabou:\n\n- perde venda\n- atrasa pedidos\n\nRegra:\n- Reposição precisa antecipação."
+    },
+    {
+      "title": "Como aplicar de forma simples",
+      "body": "Forma simples:\n\n- observe quantos saem por dia\n- veja quantos dias o fornecedor demora\n- calcule o mínimo para cobrir esse tempo\n\nRegra:\n- Repor é proteger o serviço."
+    },
+    {
+      "title": "Mini prática (45 min) — exemplo simples",
+      "body": "Exemplo:\n\n- saem 5 unidades por dia\n- lead time = 6 dias\n\nEntão, você precisa ter pelo menos:\n- 5 x 6 = 30 unidades para cobrir o período\n\nObjetivo:\n- entender a lógica do gatilho."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Ponto de reposição define quando pedir\n- Depende de consumo e lead time\n- Pedir tarde vira ruptura\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 19 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Ponto de reposição é:", "options": [{ "key": "A", "text": "Nível que dispara compra" }, { "key": "B", "text": "Preço do produto" }], "answer": "A", "explain": "É o gatilho." },
+      { "id": 2, "question": "Serve para:", "options": [{ "key": "A", "text": "Evitar faltar produto" }, { "key": "B", "text": "Aumentar erro" }], "answer": "A", "explain": "Evita ruptura." },
+      { "id": 3, "question": "Lead time é:", "options": [{ "key": "A", "text": "Tempo entre pedir e receber" }, { "key": "B", "text": "Tempo de separação" }], "answer": "A", "explain": "Tempo do fornecedor." },
+      { "id": 4, "question": "Lead time longo:", "options": [{ "key": "A", "text": "Exige pedir mais cedo" }, { "key": "B", "text": "Permite pedir mais tarde" }], "answer": "A", "explain": "Para não faltar." },
+      { "id": 5, "question": "Pedir quando acabou:", "options": [{ "key": "A", "text": "Gera ruptura" }, { "key": "B", "text": "Gera controle" }], "answer": "A", "explain": "Falta de produto." },
+      { "id": 6, "question": "Consumo médio influencia:", "options": [{ "key": "A", "text": "O ponto de reposição" }, { "key": "B", "text": "A cor do estoque" }], "answer": "A", "explain": "Se sai mais, repõe antes." },
+      { "id": 7, "question": "Quanto mais variável:", "options": [{ "key": "A", "text": "Mais cuidado no cálculo" }, { "key": "B", "text": "Menos cuidado" }], "answer": "A", "explain": "Variação aumenta risco." },
+      { "id": 8, "question": "Ponto de reposição é:", "options": [{ "key": "A", "text": "Antecipação" }, { "key": "B", "text": "Reação tardia" }], "answer": "A", "explain": "Você se antecipa." },
+      { "id": 9, "question": "Repor protege:", "options": [{ "key": "A", "text": "O nível de serviço" }, { "key": "B", "text": "A bagunça" }], "answer": "A", "explain": "Evita atraso e cancelamento." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Repor tarde demais vira ruptura" }, { "key": "B", "text": "Repor tarde é melhor" }], "answer": "A", "explain": "Antecipação é chave." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- estoque baixa\n- atinge ponto\n- compra gerada\n- recebimento\n",
+    "pilares": "Pilares\n\n- consumo\n- lead time\n- gatilho\n"
+  }
+}

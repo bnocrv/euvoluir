@@ -1,0 +1,58 @@
+{
+  "id": "30-rastreamento",
+  "title": "Aula 30 — Rastreamento de pedidos: visibilidade e controle da entrega",
+  "steps": [
+    {
+      "title": "O que é rastreamento (bem simples)",
+      "body": "Rastreamento é ver o status do pedido durante a entrega.\n\nEle responde:\n\n- onde está\n- em que etapa está\n- o que aconteceu\n\nRegra:\n- Rastreamento reduz dúvida e aumenta confiança."
+    },
+    {
+      "title": "Eventos de rastreio",
+      "body": "Eventos comuns:\n\n- coletado\n- em rota\n- saiu para entrega\n- entregue\n- ocorrência\n\nRegra:\n- Evento é uma marca do caminho."
+    },
+    {
+      "title": "Ocorrências",
+      "body": "Ocorrências típicas:\n\n- atraso\n- endereço incorreto\n- destinatário ausente\n\nRegra:\n- Ocorrência precisa ação rápida."
+    },
+    {
+      "title": "Benefícios do rastreamento",
+      "body": "Benefícios:\n\n- reduz “cadê meu pedido?”\n- melhora atendimento\n- ajuda a identificar falhas\n\nRegra:\n- Visibilidade vira controle."
+    },
+    {
+      "title": "Rastreamento interno e externo",
+      "body": "Você pode rastrear:\n\n- interno: status na separação/expedição\n- externo: status na transportadora\n\nRegra:\n- Um bom controle junta os dois."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n\n- status desatualizado\n- evento confuso\n- falta de padrão\n\nRegra:\n- Status ruim gera mais atendimento e reclamação."
+    },
+    {
+      "title": "Mini prática (45 min) — padrão de status",
+      "body": "Crie um padrão simples de status:\n\n- separado\n- embalado\n- expedido\n- em rota\n- entregue\n\nPara cada status defina:\n- quem atualiza\n- quando atualiza\n\nObjetivo:\n- tirar o “ninguém sabe”."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Rastreamento dá visibilidade\n- Eventos mostram etapas\n- Ocorrências exigem ação\n- Status padronizado reduz reclamação\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 30 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Rastreamento serve para:", "options": [{ "key": "A", "text": "Ver status do pedido" }, { "key": "B", "text": "Escolher produto" }], "answer": "A", "explain": "É visibilidade." },
+      { "id": 2, "question": "Eventos de rastreio são:", "options": [{ "key": "A", "text": "Marcas do caminho" }, { "key": "B", "text": "Enfeites" }], "answer": "A", "explain": "Indicam etapas." },
+      { "id": 3, "question": "Ocorrência precisa:", "options": [{ "key": "A", "text": "Ação rápida" }, { "key": "B", "text": "Ignorar" }], "answer": "A", "explain": "Para evitar piora." },
+      { "id": 4, "question": "Status desatualizado:", "options": [{ "key": "A", "text": "Aumenta dúvidas" }, { "key": "B", "text": "Reduz dúvidas" }], "answer": "A", "explain": "Gera mais contato." },
+      { "id": 5, "question": "Rastreamento reduz:", "options": [{ "key": "A", "text": "\"Cadê meu pedido?\"" }, { "key": "B", "text": "Acurácia" }], "answer": "A", "explain": "Menos ansiedade." },
+      { "id": 6, "question": "Rastreamento interno é:", "options": [{ "key": "A", "text": "Status dentro do armazém" }, { "key": "B", "text": "Só na rua" }], "answer": "A", "explain": "Fluxo interno." },
+      { "id": 7, "question": "Rastreamento externo é:", "options": [{ "key": "A", "text": "Status na transportadora" }, { "key": "B", "text": "Inventário" }], "answer": "A", "explain": "Entrega." },
+      { "id": 8, "question": "Padrão de status ajuda:", "options": [{ "key": "A", "text": "Entender etapas" }, { "key": "B", "text": "Confundir" }], "answer": "A", "explain": "Clareza." },
+      { "id": 9, "question": "Visibilidade vira:", "options": [{ "key": "A", "text": "Controle" }, { "key": "B", "text": "Bagunça" }], "answer": "A", "explain": "Você gerencia melhor." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Rastreamento reduz dúvida e aumenta confiança" }, { "key": "B", "text": "Rastreamento não importa" }], "answer": "A", "explain": "Melhora experiência." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- separado\n- embalado\n- expedido\n- em rota\n- entregue\n",
+    "pilares": "Pilares\n\n- eventos\n- ocorrências\n- status padronizado\n"
+  }
+}

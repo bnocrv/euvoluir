@@ -1,0 +1,58 @@
+{
+  "id": "13-zonas-estoque",
+  "title": "Aula 13 — Zonas de estoque: separação por giro, peso e categoria",
+  "steps": [
+    {
+      "title": "O que são zonas de estoque",
+      "body": "Zonas são “áreas” do estoque separadas por lógica.\n\nExemplos de lógica:\n\n- giro (alto/baixo)\n- peso (leve/pesado)\n- categoria (roupas/acessórios)\n\nRegra:\n- Zona existe para facilitar trabalho."
+    },
+    {
+      "title": "Zona por giro",
+      "body": "Você separa por giro:\n\n- alto giro perto do picking\n- baixo giro mais distante\n\nRegra:\n- Giro alto perto reduz caminhada."
+    },
+    {
+      "title": "Zona por peso/volume",
+      "body": "Separar por peso ajuda:\n\n- evitar empilhar errado\n- facilitar transporte interno\n\nRegra:\n- Pesado precisa local seguro e acessível."
+    },
+    {
+      "title": "Zona por categoria",
+      "body": "Separar por categoria ajuda:\n\n- picking mais rápido\n- menos erro\n\nRegra:\n- Itens parecidos juntos reduzem confusão."
+    },
+    {
+      "title": "Zona de picking vs zona de reserva",
+      "body": "Comum ter:\n\n- picking: onde separa (acessível)\n- reserva: estoque extra (reposição)\n\nRegra:\n- Picking precisa estar sempre abastecido."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n\n- misturar alto giro com baixo giro\n- não repor o picking\n- zona sem sinalização\n\nRegra:\n- Zona sem regra vira só um nome."
+    },
+    {
+      "title": "Mini prática (45 min) — desenhar zonas",
+      "body": "Escolha 3 critérios:\n\n- giro\n- peso\n- categoria\n\nCrie um mapa simples:\n\n- zona A (alto giro)\n- zona B (baixo giro)\n- zona C (pesado)\n\nObjetivo:\n- organizar para reduzir tempo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Zonas separam o estoque por lógica\n- Giro, peso e categoria são critérios\n- Picking e reserva têm funções diferentes\n- Sinalização e reposição mantêm a zona funcionando\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 13 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Zona de estoque é:", "options": [{ "key": "A", "text": "Área separada por lógica" }, { "key": "B", "text": "Um caminhão" }], "answer": "A", "explain": "Zonas organizam o estoque." },
+      { "id": 2, "question": "Alto giro deve ficar:", "options": [{ "key": "A", "text": "Mais perto do picking" }, { "key": "B", "text": "Mais longe" }], "answer": "A", "explain": "Reduz deslocamento." },
+      { "id": 3, "question": "Zona por peso ajuda a:", "options": [{ "key": "A", "text": "Evitar avaria e esforço" }, { "key": "B", "text": "Aumentar confusão" }], "answer": "A", "explain": "Organiza movimentação." },
+      { "id": 4, "question": "Categoria junta itens:", "options": [{ "key": "A", "text": "Parecidos" }, { "key": "B", "text": "Aleatórios" }], "answer": "A", "explain": "Menos erro." },
+      { "id": 5, "question": "Picking é:", "options": [{ "key": "A", "text": "Área de separação" }, { "key": "B", "text": "Área de descarte" }], "answer": "A", "explain": "Onde separa pedidos." },
+      { "id": 6, "question": "Reserva é:", "options": [{ "key": "A", "text": "Estoque extra para repor" }, { "key": "B", "text": "Entrega final" }], "answer": "A", "explain": "Abastece o picking." },
+      { "id": 7, "question": "Não repor o picking:", "options": [{ "key": "A", "text": "Cria ruptura na separação" }, { "key": "B", "text": "Acelera tudo" }], "answer": "A", "explain": "Sem produto, separação para." },
+      { "id": 8, "question": "Zona sem sinalização:", "options": [{ "key": "A", "text": "Aumenta erro" }, { "key": "B", "text": "Não muda nada" }], "answer": "A", "explain": "Sinalização orienta." },
+      { "id": 9, "question": "Misturar giro alto e baixo:", "options": [{ "key": "A", "text": "Piora a eficiência" }, { "key": "B", "text": "Melhora o fluxo" }], "answer": "A", "explain": "Cria caminhada desnecessária." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Zona sem regra vira só um nome" }, { "key": "B", "text": "Zona funciona sem processo" }], "answer": "A", "explain": "Regra sustenta a zona." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- zona definida\n- sinalização aplicada\n- picking abastecido\n- reposição registrada\n",
+    "pilares": "Pilares\n\n- giro\n- peso/volume\n- categoria\n- sinalização\n"
+  }
+}

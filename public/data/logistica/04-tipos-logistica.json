@@ -1,0 +1,62 @@
+{
+  "id": "04-tipos-logistica",
+  "title": "Aula 04 — Tipos de logística: inbound, outbound, reversa e interna",
+  "steps": [
+    {
+      "title": "Por que existem tipos de logística",
+      "body": "A logística muda conforme o sentido do fluxo.\n\nVocê pode ter:\n\n- entrada (inbound)\n- saída (outbound)\n- retorno (reversa)\n- movimentação dentro (interna)\n\nRegra:\n- Cada tipo tem objetivos e controles diferentes."
+    },
+    {
+      "title": "Logística inbound (entrada)",
+      "body": "Inbound é tudo que entra na empresa:\n\n- compra\n- recebimento\n- conferência\n- entrada no estoque\n\nRegra:\n- Inbound bem feito evita erro no resto."
+    },
+    {
+      "title": "Logística outbound (saída)",
+      "body": "Outbound é tudo que sai para o cliente:\n\n- separação\n- conferência\n- embalagem\n- expedição\n- entrega\n\nRegra:\n- Outbound é onde o cliente sente a operação."
+    },
+    {
+      "title": "Logística interna",
+      "body": "Interna é o que acontece dentro do armazém:\n\n- movimentar produto\n- abastecer picking\n- reorganizar endereços\n- inventariar\n\nRegra:\n- Interna boa reduz deslocamento e tempo."
+    },
+    {
+      "title": "Logística reversa",
+      "body": "Reversa é o retorno:\n\n- devolução\n- troca\n- retorno por defeito\n- reaproveitamento\n\nRegra:\n- Reversa precisa de processo claro para não virar bagunça."
+    },
+    {
+      "title": "Exemplo simples com os 4 tipos",
+      "body": "Exemplo:\n\n- Inbound: recebe do fornecedor\n- Interna: guarda e abastece\n- Outbound: separa e expede\n- Reversa: recebe devolução\n\nRegra:\n- É um ciclo completo."
+    },
+    {
+      "title": "Erros comuns em cada tipo",
+      "body": "Erros:\n\n- Inbound: receber sem conferir\n- Outbound: expedir sem validar\n- Interna: mover sem registrar\n- Reversa: misturar devolução com estoque bom\n\nRegra:\n- Cada erro tem um custo escondido."
+    },
+    {
+      "title": "Mini prática (45 min) — classifique processos",
+      "body": "Pegue 10 atividades do seu dia e marque:\n\n- inbound\n- outbound\n- interna\n- reversa\n\nObjetivo:\n- entender onde você gasta tempo e por quê."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Inbound = entrada\n- Outbound = saída\n- Interna = movimentação dentro\n- Reversa = retorno\n- Cada tipo tem controles específicos\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 04 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Inbound é:", "options": [{ "key": "A", "text": "Entrada de produtos na empresa" }, { "key": "B", "text": "Entrega ao cliente" }], "answer": "A", "explain": "Inbound é entrada." },
+      { "id": 2, "question": "Outbound é:", "options": [{ "key": "A", "text": "Saída para o cliente" }, { "key": "B", "text": "Compra do fornecedor" }], "answer": "A", "explain": "Outbound é o fluxo de saída." },
+      { "id": 3, "question": "Logística interna acontece:", "options": [{ "key": "A", "text": "Dentro do armazém" }, { "key": "B", "text": "Na casa do cliente" }], "answer": "A", "explain": "É interna à operação." },
+      { "id": 4, "question": "Logística reversa é:", "options": [{ "key": "A", "text": "Devolução e retorno" }, { "key": "B", "text": "Venda" }], "answer": "A", "explain": "É o caminho de volta." },
+      { "id": 5, "question": "Outbound é onde:", "options": [{ "key": "A", "text": "O cliente sente a operação" }, { "key": "B", "text": "Nada importa" }], "answer": "A", "explain": "Entrega e prazo são percebidos." },
+      { "id": 6, "question": "Receber sem conferir:", "options": [{ "key": "A", "text": "Erro de inbound" }, { "key": "B", "text": "Erro de reversa" }], "answer": "A", "explain": "Conferência é entrada." },
+      { "id": 7, "question": "Mover sem registrar:", "options": [{ "key": "A", "text": "Erro de logística interna" }, { "key": "B", "text": "Erro de outbound" }], "answer": "A", "explain": "Movimentação interna precisa registro." },
+      { "id": 8, "question": "Misturar devolução com estoque bom:", "options": [{ "key": "A", "text": "Erro de reversa" }, { "key": "B", "text": "Melhoria" }], "answer": "A", "explain": "Contamina qualidade e acurácia." },
+      { "id": 9, "question": "Comprar do fornecedor é parte de:", "options": [{ "key": "A", "text": "Inbound" }, { "key": "B", "text": "Outbound" }], "answer": "A", "explain": "É entrada." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Cada tipo tem controles diferentes" }, { "key": "B", "text": "Tudo é igual" }], "answer": "A", "explain": "Fluxos têm objetivos distintos." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- inbound: recebido e conferido\n- interna: movido e registrado\n- outbound: separado e expedido\n- reversa: devolvido e triado\n",
+    "pilares": "Pilares\n\n- processo claro\n- registro\n- separação de áreas\n- status padronizado\n"
+  }
+}

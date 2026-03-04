@@ -1,0 +1,58 @@
+{
+  "id": "03-fluxo-logistico",
+  "title": "Aula 03 — Fluxo logístico: do fornecedor até o cliente final",
+  "steps": [
+    {
+      "title": "O que é fluxo logístico (bem simples)",
+      "body": "Fluxo logístico é o caminho do produto e das informações:\n\n- do fornecedor\n- passando pela empresa\n- até o cliente final\n\nRegra:\n- Fluxo é caminho + controle."
+    },
+    {
+      "title": "Fluxo físico vs fluxo de informação",
+      "body": "Existem dois fluxos que andam juntos:\n\n- Físico: produto se move\n- Informação: registro, status, pedido, nota\n\nRegra:\n- Produto sem registro vira “sumiu”."
+    },
+    {
+      "title": "Etapas típicas do fluxo",
+      "body": "Etapas comuns:\n\n- compra (pedido ao fornecedor)\n- recebimento\n- armazenagem\n- separação\n- conferência\n- embalagem\n- expedição\n- transporte\n- entrega\n\nRegra:\n- Cada etapa precisa deixar um rastro."
+    },
+    {
+      "title": "Exemplo simples (um pedido)",
+      "body": "Exemplo:\n\n- cliente compra\n- sistema gera pedido\n- estoque separa\n- expedição envia\n- transportadora entrega\n\nRegra:\n- O pedido “anda” e o status anda junto."
+    },
+    {
+      "title": "Por que mapear o fluxo ajuda",
+      "body": "Quando você mapeia o fluxo, você:\n\n- identifica gargalos\n- reduz retrabalho\n- diminui tempo de ciclo\n\nRegra:\n- O que você não mede, você não melhora."
+    },
+    {
+      "title": "Erros comuns no fluxo",
+      "body": "Erros que causam caos:\n\n- pular conferência\n- separar errado\n- expedir sem validar\n- não registrar status\n\nRegra:\n- Pular etapa geralmente custa caro depois."
+    },
+    {
+      "title": "Mini prática (45 min) — desenhe o fluxo",
+      "body": "Desenhe o fluxo do seu setor:\n\n- entrada (recebimento)\n- meio (estoque)\n- saída (expedição)\n\nPara cada etapa, escreva:\n- o que entra\n- o que sai\n- qual registro fica\n\nObjetivo:\n- enxergar onde o fluxo quebra."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Fluxo logístico é o caminho do produto + informação\n- Tem etapas internas e externas\n- Cada etapa precisa ter registro\n- Mapear ajuda a achar gargalos\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 03 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Fluxo logístico é:", "options": [{ "key": "A", "text": "Caminho do produto e das informações" }, { "key": "B", "text": "Apenas transporte" }], "answer": "A", "explain": "Fluxo envolve etapas e registros." },
+      { "id": 2, "question": "Fluxo físico é:", "options": [{ "key": "A", "text": "Movimento do produto" }, { "key": "B", "text": "Planilha" }], "answer": "A", "explain": "É o deslocamento real." },
+      { "id": 3, "question": "Fluxo de informação é:", "options": [{ "key": "A", "text": "Registro e status do processo" }, { "key": "B", "text": "Peso do produto" }], "answer": "A", "explain": "Informação garante controle." },
+      { "id": 4, "question": "Sem registro, o risco é:", "options": [{ "key": "A", "text": "Ninguém saber onde está" }, { "key": "B", "text": "Melhorar o controle" }], "answer": "A", "explain": "Sem rastro, não há controle." },
+      { "id": 5, "question": "Etapas comuns incluem:", "options": [{ "key": "A", "text": "Recebimento e expedição" }, { "key": "B", "text": "Apenas vendas" }], "answer": "A", "explain": "Operação tem várias etapas." },
+      { "id": 6, "question": "Mapear o fluxo ajuda a:", "options": [{ "key": "A", "text": "Encontrar gargalos" }, { "key": "B", "text": "Criar confusão" }], "answer": "A", "explain": "Você enxerga onde trava." },
+      { "id": 7, "question": "Pular conferência:", "options": [{ "key": "A", "text": "Pode gerar erro e retrabalho" }, { "key": "B", "text": "Sempre melhora" }], "answer": "A", "explain": "Erro aparece depois." },
+      { "id": 8, "question": "Tempo de ciclo é:", "options": [{ "key": "A", "text": "Tempo do pedido do começo ao fim" }, { "key": "B", "text": "Tempo do almoço" }], "answer": "A", "explain": "É o tempo total do processo." },
+      { "id": 9, "question": "Fluxo externo inclui:", "options": [{ "key": "A", "text": "Transporte e entrega" }, { "key": "B", "text": "Separação interna" }], "answer": "A", "explain": "É depois da expedição." },
+      { "id": 10, "question": "Uma frase correta é:", "options": [{ "key": "A", "text": "Fluxo é caminho + controle" }, { "key": "B", "text": "Fluxo é sorte" }], "answer": "A", "explain": "Controle vem do registro." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- pedido criado\n- recebido\n- armazenado\n- separado\n- conferido\n- embalado\n- expedido\n- entregue\n",
+    "pilares": "Pilares\n\n- fluxo físico\n- fluxo de informação\n- padrão de status\n- disciplina de registro\n"
+  }
+}

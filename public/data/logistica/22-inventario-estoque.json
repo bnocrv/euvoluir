@@ -1,0 +1,58 @@
+{
+  "id": "22-inventario-estoque",
+  "title": "Aula 22 — Inventário de estoque: contar para garantir acurácia",
+  "steps": [
+    {
+      "title": "O que é inventário",
+      "body": "Inventário é a contagem física dos produtos no estoque.\n\nObjetivo:\n\n- verificar quantidade real\n- comparar com o sistema\n\nRegra:\n- Inventário revela erros escondidos."
+    },
+    {
+      "title": "Por que fazer inventário",
+      "body": "Ele ajuda a:\n\n- corrigir diferenças\n- melhorar controle\n\nRegra:\n- Contar é validar o sistema."
+    },
+    {
+      "title": "Inventário geral",
+      "body": "Características:\n\n- conta tudo\n- normalmente para a operação\n\nRegra:\n- Inventário geral exige planejamento."
+    },
+    {
+      "title": "Inventário parcial",
+      "body": "Conta apenas parte do estoque.\n\nRegra:\n- Ajuda a corrigir áreas específicas."
+    },
+    {
+      "title": "Diferença entre físico e sistema",
+      "body": "Diferença pode acontecer por:\n\n- erro de registro\n- perda\n- erro de separação\n\nRegra:\n- Inventário revela a causa."
+    },
+    {
+      "title": "Ajuste de estoque",
+      "body": "Após contagem:\n\n- corrigir no sistema\n- registrar motivo\n\nRegra:\n- Ajuste precisa histórico."
+    },
+    {
+      "title": "Mini prática",
+      "body": "Escolha um endereço do estoque.\n\nConte os itens e compare com o sistema.\n\nObjetivo:\n- verificar acurácia real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Inventário é contagem física\n- Compara com o sistema\n- Revela erros\n- Permite corrigir estoque\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 22",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Inventário é:", "options": [{ "key": "A", "text": "Contagem física do estoque" }, { "key": "B", "text": "Venda de produto" }], "answer": "A", "explain": "Contagem real." },
+      { "id": 2, "question": "Serve para:", "options": [{ "key": "A", "text": "Comparar com sistema" }, { "key": "B", "text": "Escolher embalagem" }], "answer": "A", "explain": "Validação." },
+      { "id": 3, "question": "Inventário geral:", "options": [{ "key": "A", "text": "Conta todo estoque" }, { "key": "B", "text": "Conta só pedidos" }], "answer": "A", "explain": "Contagem total." },
+      { "id": 4, "question": "Inventário parcial:", "options": [{ "key": "A", "text": "Conta apenas parte" }, { "key": "B", "text": "Conta tudo" }], "answer": "A", "explain": "Área específica." },
+      { "id": 5, "question": "Diferença físico x sistema:", "options": [{ "key": "A", "text": "Mostra erro" }, { "key": "B", "text": "É normal sempre" }], "answer": "A", "explain": "Erro ou perda." },
+      { "id": 6, "question": "Erro de registro:", "options": [{ "key": "A", "text": "Pode gerar diferença" }, { "key": "B", "text": "Nunca gera" }], "answer": "A", "explain": "Registro errado." },
+      { "id": 7, "question": "Ajuste de estoque:", "options": [{ "key": "A", "text": "Corrige sistema" }, { "key": "B", "text": "Ignora erro" }], "answer": "A", "explain": "Atualização necessária." },
+      { "id": 8, "question": "Inventário ajuda a:", "options": [{ "key": "A", "text": "Melhorar acurácia" }, { "key": "B", "text": "Aumentar bagunça" }], "answer": "A", "explain": "Controle." },
+      { "id": 9, "question": "Sem inventário:", "options": [{ "key": "A", "text": "Erros ficam escondidos" }, { "key": "B", "text": "Tudo funciona igual" }], "answer": "A", "explain": "Sem validação." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Inventário revela erros escondidos" }, { "key": "B", "text": "Inventário não importa" }], "answer": "A", "explain": "Mostra realidade." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos\n\n- contagem\n- comparação\n- ajuste\n",
+    "pilares": "Pilares\n\n- contagem física\n- sistema\n- acurácia\n"
+  }
+}

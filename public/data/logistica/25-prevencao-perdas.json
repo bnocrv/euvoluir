@@ -1,0 +1,58 @@
+{
+  "id": "25-prevencao-perdas",
+  "title": "Aula 25 — Prevenção de perdas: reduzir extravio e avarias",
+  "steps": [
+    {
+      "title": "O que são perdas",
+      "body": "Perdas são produtos que desaparecem ou ficam inutilizados.\n\nExemplos:\n\n- extravio\n- avaria\n- vencimento\n\nRegra:\n- Perda significa dinheiro perdido."
+    },
+    {
+      "title": "Tipos de perdas",
+      "body": "Tipos comuns:\n\n- operacional\n- avaria\n- erro de registro\n\nRegra:\n- Identificar o tipo ajuda a agir."
+    },
+    {
+      "title": "Extravio",
+      "body": "Extravio é quando o produto some.\n\nCausas:\n\n- erro de processo\n- erro humano\n\nRegra:\n- Rastreabilidade reduz extravio."
+    },
+    {
+      "title": "Avaria",
+      "body": "Avaria é dano físico no produto.\n\nCausas:\n\n- empilhamento errado\n- transporte interno ruim\n\nRegra:\n- Manuseio correto evita avaria."
+    },
+    {
+      "title": "Como prevenir perdas",
+      "body": "Ações:\n\n- registro correto\n- inventário\n- organização\n\nRegra:\n- Processo forte reduz perda."
+    },
+    {
+      "title": "Cultura de cuidado",
+      "body": "Equipe precisa:\n\n- entender impacto\n- cuidar do produto\n\nRegra:\n- Cultura reduz desperdício."
+    },
+    {
+      "title": "Mini prática",
+      "body": "Liste 3 perdas que já aconteceram na operação.\n\nPara cada uma escreva:\n\n- causa\n- ação para evitar\n\nObjetivo:\n- transformar erro em melhoria."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Perda significa prejuízo\n- Pode ser extravio ou avaria\n- Registro e processo reduzem perdas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 25",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Perda significa:", "options": [{ "key": "A", "text": "Produto perdido ou danificado" }, { "key": "B", "text": "Venda alta" }], "answer": "A", "explain": "Prejuízo." },
+      { "id": 2, "question": "Extravio é:", "options": [{ "key": "A", "text": "Produto desaparecido" }, { "key": "B", "text": "Produto vendido" }], "answer": "A", "explain": "Sem localização." },
+      { "id": 3, "question": "Avaria é:", "options": [{ "key": "A", "text": "Produto danificado" }, { "key": "B", "text": "Produto vendido" }], "answer": "A", "explain": "Dano físico." },
+      { "id": 4, "question": "Inventário ajuda a:", "options": [{ "key": "A", "text": "Detectar perdas" }, { "key": "B", "text": "Criar perdas" }], "answer": "A", "explain": "Controle." },
+      { "id": 5, "question": "Registro correto:", "options": [{ "key": "A", "text": "Reduz extravio" }, { "key": "B", "text": "Aumenta extravio" }], "answer": "A", "explain": "Rastreabilidade." },
+      { "id": 6, "question": "Empilhamento errado:", "options": [{ "key": "A", "text": "Pode gerar avaria" }, { "key": "B", "text": "Protege produto" }], "answer": "A", "explain": "Dano físico." },
+      { "id": 7, "question": "Processo organizado:", "options": [{ "key": "A", "text": "Reduz perdas" }, { "key": "B", "text": "Aumenta perdas" }], "answer": "A", "explain": "Menos erro." },
+      { "id": 8, "question": "Cultura de cuidado:", "options": [{ "key": "A", "text": "Ajuda a prevenir perdas" }, { "key": "B", "text": "Não influencia" }], "answer": "A", "explain": "Consciência da equipe." },
+      { "id": 9, "question": "Perda gera:", "options": [{ "key": "A", "text": "Prejuízo financeiro" }, { "key": "B", "text": "Lucro" }], "answer": "A", "explain": "Dinheiro perdido." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Perda significa dinheiro perdido" }, { "key": "B", "text": "Perda não importa" }], "answer": "A", "explain": "Impacto direto." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos\n\n- erro\n- perda\n- análise\n- melhoria\n",
+    "pilares": "Pilares\n\n- controle\n- rastreabilidade\n- cuidado\n"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "06-processo-recebimento",
+  "title": "Aula 06 — Recebimento de mercadorias: conferência e entrada no estoque",
+  "steps": [
+    {
+      "title": "O que é recebimento",
+      "body": "Recebimento é a entrada oficial do produto no armazém.\n\nO objetivo é garantir:\n\n- produto correto\n- quantidade correta\n- qualidade correta\n\nRegra:\n- O erro que entra no recebimento se espalha no estoque."
+    },
+    {
+      "title": "Chegada da mercadoria",
+      "body": "Quando o caminhão chega:\n\n- registrar chegada\n- identificar fornecedor\n- validar documentos\n\nRegra:\n- Tudo começa com registro."
+    },
+    {
+      "title": "Conferência física",
+      "body": "Na conferência você verifica:\n\n- SKU\n- quantidade\n- avarias\n\nRegra:\n- Conferir antes de aceitar."
+    },
+    {
+      "title": "Conferência documental",
+      "body": "Comparar:\n\n- nota fiscal\n- pedido de compra\n- mercadoria entregue\n\nRegra:\n- Documento precisa bater com produto."
+    },
+    {
+      "title": "Registro no sistema",
+      "body": "Após conferência:\n\n- entrada no sistema\n- geração de estoque\n\nRegra:\n- Produto só existe no estoque quando entra no sistema."
+    },
+    {
+      "title": "Destino do produto",
+      "body": "Após registro:\n\n- endereçar\n- levar para armazenagem\n\nRegra:\n- Receber é só o começo."
+    },
+    {
+      "title": "Mini prática",
+      "body": "Desenhe um fluxo de recebimento com:\n\n- chegada\n- conferência\n- registro\n- armazenagem\n\nObjetivo:\n- evitar erro de entrada."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Recebimento valida entrada\n- Conferência física e documental\n- Registro no sistema\n- Depois segue para armazenagem\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 06 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Recebimento é:", "options": [{ "key": "A", "text": "Entrada oficial da mercadoria" }, { "key": "B", "text": "Entrega ao cliente" }], "answer": "A", "explain": "É o começo da operação interna." },
+      { "id": 2, "question": "Conferência verifica:", "options": [{ "key": "A", "text": "SKU e quantidade" }, { "key": "B", "text": "Preço da venda" }], "answer": "A", "explain": "Valida o produto." },
+      { "id": 3, "question": "Nota fiscal serve para:", "options": [{ "key": "A", "text": "Comparar com mercadoria" }, { "key": "B", "text": "Guardar na gaveta" }], "answer": "A", "explain": "Documento precisa bater." },
+      { "id": 4, "question": "Registrar no sistema:", "options": [{ "key": "A", "text": "Cria o estoque" }, { "key": "B", "text": "Não muda nada" }], "answer": "A", "explain": "Sistema controla o estoque." },
+      { "id": 5, "question": "Erro no recebimento:", "options": [{ "key": "A", "text": "Se espalha na operação" }, { "key": "B", "text": "Não impacta" }], "answer": "A", "explain": "Erro inicial vira problema depois." },
+      { "id": 6, "question": "Conferência física verifica:", "options": [{ "key": "A", "text": "Produto real" }, { "key": "B", "text": "Sistema" }], "answer": "A", "explain": "Olhar o produto." },
+      { "id": 7, "question": "Conferência documental verifica:", "options": [{ "key": "A", "text": "Nota e pedido" }, { "key": "B", "text": "Peso do caminhão" }], "answer": "A", "explain": "Comparação de documentos." },
+      { "id": 8, "question": "Avaria significa:", "options": [{ "key": "A", "text": "Produto danificado" }, { "key": "B", "text": "Produto novo" }], "answer": "A", "explain": "Dano físico." },
+      { "id": 9, "question": "Após receber:", "options": [{ "key": "A", "text": "Endereçar para estoque" }, { "key": "B", "text": "Vender direto" }], "answer": "A", "explain": "Vai para armazenagem." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Erro que entra no recebimento se espalha" }, { "key": "B", "text": "Recebimento não importa" }], "answer": "A", "explain": "Entrada define qualidade." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos\n\n- chegada\n- conferência\n- registro\n- endereçamento\n",
+    "pilares": "Pilares\n\n- conferência\n- registro\n- documentação\n- controle\n"
+  }
+}

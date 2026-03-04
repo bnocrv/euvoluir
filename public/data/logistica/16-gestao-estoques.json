@@ -1,0 +1,58 @@
+{
+  "id": "16-gestao-estoques",
+  "title": "Aula 16 — Gestão de estoques: por que controlar estoque é essencial",
+  "steps": [
+    {
+      "title": "O que é gestão de estoque (bem simples)",
+      "body": "Gestão de estoque é controlar:\n\n- o que você tem\n- quanto você tem\n- onde está\n- quando repor\n\nRegra:\n- Estoque sem controle vira falta e excesso."
+    },
+    {
+      "title": "Por que estoque existe",
+      "body": "Estoque existe para:\n\n- atender pedidos sem atraso\n- proteger contra variações\n\nRegra:\n- Estoque é um “pulmão” da operação."
+    },
+    {
+      "title": "Riscos do excesso e da falta",
+      "body": "Dois problemas:\n\n- falta (ruptura): perde venda\n- excesso: prende dinheiro\n\nRegra:\n- O objetivo é equilíbrio."
+    },
+    {
+      "title": "O que precisa ser controlado",
+      "body": "Controle básico:\n\n- SKU\n- quantidade\n- endereço\n- entradas e saídas\n\nRegra:\n- Entrada e saída precisam deixar rastro."
+    },
+    {
+      "title": "Acurácia entre físico e sistema",
+      "body": "Acurácia é:\n\n- sistema bater com o estoque real\n\nRegra:\n- Se não bate, você decide errado."
+    },
+    {
+      "title": "Indicadores simples de estoque",
+      "body": "Exemplos:\n\n- ruptura (faltou?)\n- excesso (sobrou?)\n- giro (sai rápido?)\n\nRegra:\n- Indicador mostra se o estoque está saudável."
+    },
+    {
+      "title": "Mini prática (45 min) — lista de controle",
+      "body": "Escolha 10 SKUs e monte uma lista com:\n\n- SKU\n- quantidade no sistema\n- quantidade física\n- diferença\n\nObjetivo:\n- enxergar o tamanho do erro (se existir)."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Gestão de estoque é controle e decisão\n- Falta perde venda; excesso prende dinheiro\n- Registro e acurácia são essenciais\n- Indicadores ajudam a melhorar\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 16 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Gestão de estoque é:", "options": [{ "key": "A", "text": "Controlar o que tem, quanto tem e onde está" }, { "key": "B", "text": "Só vender" }], "answer": "A", "explain": "Controle para decidir." },
+      { "id": 2, "question": "Falta de estoque causa:", "options": [{ "key": "A", "text": "Perda de venda" }, { "key": "B", "text": "Mais lucro" }], "answer": "A", "explain": "Ruptura impede atender." },
+      { "id": 3, "question": "Excesso de estoque:", "options": [{ "key": "A", "text": "Prende dinheiro" }, { "key": "B", "text": "Sempre é bom" }], "answer": "A", "explain": "Capital parado." },
+      { "id": 4, "question": "Acurácia significa:", "options": [{ "key": "A", "text": "Sistema bater com físico" }, { "key": "B", "text": "Chutar números" }], "answer": "A", "explain": "Confiabilidade." },
+      { "id": 5, "question": "Entrada e saída:", "options": [{ "key": "A", "text": "Devem ser registradas" }, { "key": "B", "text": "Não precisam" }], "answer": "A", "explain": "Sem registro não há controle." },
+      { "id": 6, "question": "SKU é:", "options": [{ "key": "A", "text": "Identificação do item" }, { "key": "B", "text": "Um caminhão" }], "answer": "A", "explain": "Código do produto." },
+      { "id": 7, "question": "Sem acurácia:", "options": [{ "key": "A", "text": "Você decide errado" }, { "key": "B", "text": "Você decide certo" }], "answer": "A", "explain": "Dados ruins geram decisões ruins." },
+      { "id": 8, "question": "Ruptura é:", "options": [{ "key": "A", "text": "Falta de produto" }, { "key": "B", "text": "Excesso" }], "answer": "A", "explain": "Não tem para vender." },
+      { "id": 9, "question": "Estoque funciona como:", "options": [{ "key": "A", "text": "Pulmão da operação" }, { "key": "B", "text": "Enfeite" }], "answer": "A", "explain": "Absorve variações." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Estoque sem controle vira falta e excesso" }, { "key": "B", "text": "Controle não importa" }], "answer": "A", "explain": "Controle evita extremos." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- entrada registrada\n- saída registrada\n- ajuste registrado\n",
+    "pilares": "Pilares\n\n- registro\n- acurácia\n- reposição\n- equilíbrio\n"
+  }
+}

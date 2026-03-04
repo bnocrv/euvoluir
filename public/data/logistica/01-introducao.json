@@ -1,76 +1,58 @@
 ﻿{
-    "id":  "01-introducao",
-    "title":  "Aula 01 - Introdução prática",
-    "steps":  [
-                  {
-                      "title":  "Visão geral",
-                      "body":  "Nesta aula você inicia a trilha de Logística.\n\nObjetivo:\n- Entender os conceitos base\n- Aplicar no contexto da empresa\n- Criar rotina de uso no dia a dia"
-                  },
-                  {
-                      "title":  "Conceitos essenciais",
-                      "body":  "Base da aula:\n- Termos principais\n- Fluxo de trabalho recomendado\n- Erros comuns para evitar no começo"
-                  },
-                  {
-                      "title":  "Primeira prática guiada",
-                      "body":  "Passo a passo sugerido:\n- Abrir o ambiente de trabalho\n- Executar uma tarefa simples\n- Revisar resultado e ajustar"
-                  },
-                  {
-                      "title":  "Resumo",
-                      "body":  "Você concluiu a primeira aula e já tem uma base inicial para evoluir nas próximas etapas da trilha."
-                  }
-              ],
-    "quiz":  {
-                 "title":  "Quiz rápido - Aula 01",
-                 "instructions":  "Responda A ou B para fixar os conceitos principais.",
-                 "questions":  [
-                                   {
-                                       "id":  1,
-                                       "question":  "Qual é o foco desta aula?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Criar base prática inicial"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Cobrir todos os tópicos avançados"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Aula 01 foca em fundamentos e início prático."
-                                   },
-                                   {
-                                       "id":  2,
-                                       "question":  "Qual abordagem gera melhor aprendizado no início?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Prática com passos simples"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Pular direto para tarefas complexas"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Evoluir por etapas reduz erros e melhora retenção."
-                                   },
-                                   {
-                                       "id":  3,
-                                       "question":  "Depois da aula 01, o próximo passo é...",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Continuar a trilha e praticar"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Parar de revisar"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Continuidade e prática consolidam o aprendizado."
-                                   }
-                               ]
-             }
+  "id": "01-introducao-logistica",
+  "title": "Aula 01 — O que é logística e por que ela move o mundo",
+  "steps": [
+    {
+      "title": "O que é logística (bem simples)",
+      "body": "Logística é fazer o produto chegar:\n\n- no lugar certo\n- na hora certa\n- na quantidade certa\n- com o menor custo possível\n\nRegra:\n- Logística é organizar o caminho das coisas."
+    },
+    {
+      "title": "Onde a logística aparece",
+      "body": "Você encontra logística em:\n\n- supermercados\n- farmácias\n- e-commerce\n- fábricas\n- transportadoras\n\nRegra:\n- Sempre que algo precisa se mover, existe logística."
+    },
+    {
+      "title": "Os três fluxos da logística",
+      "body": "Toda operação logística tem três fluxos:\n\n- fluxo de produtos\n- fluxo de informação\n- fluxo financeiro\n\nRegra:\n- Produto sem informação vira bagunça."
+    },
+    {
+      "title": "Exemplo simples",
+      "body": "Produto comprado online:\n\n1 - fornecedor fabrica\n2 - armazém recebe\n3 - produto é guardado\n4 - pedido é separado\n5 - transportadora entrega\n\nRegra:\n- Logística conecta todos esses pontos."
+    },
+    {
+      "title": "Por que logística é importante",
+      "body": "Uma logística boa:\n\n- reduz custos\n- aumenta velocidade\n- melhora experiência do cliente\n\nRegra:\n- Logística ruim vira atraso e prejuízo."
+    },
+    {
+      "title": "Problemas quando logística falha",
+      "body": "Problemas comuns:\n\n- produto atrasado\n- estoque errado\n- cliente insatisfeito\n\nRegra:\n- Logística ruim sempre aparece no cliente."
+    },
+    {
+      "title": "Mini prática (30 min)",
+      "body": "Observe um pedido online e pense:\n\n- de onde ele saiu\n- por onde passou\n- como chegou até você\n\nObjetivo:\n- enxergar o caminho logístico."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Logística organiza o movimento dos produtos\n- Existe em qualquer negócio\n- Conecta fornecedor, empresa e cliente\n- Boa logística reduz custo e aumenta velocidade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 01 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Logística significa:", "options": [{ "key": "A", "text": "Organizar o movimento de produtos" }, { "key": "B", "text": "Apenas vender produtos" }], "answer": "A", "explain": "Logística é movimento e organização." },
+      { "id": 2, "question": "Logística aparece em:", "options": [{ "key": "A", "text": "Vários setores" }, { "key": "B", "text": "Apenas transportadoras" }], "answer": "A", "explain": "Toda empresa precisa." },
+      { "id": 3, "question": "Fluxo de informação serve para:", "options": [{ "key": "A", "text": "Controlar operações" }, { "key": "B", "text": "Não serve para nada" }], "answer": "A", "explain": "Sem informação não há controle." },
+      { "id": 4, "question": "Produto atrasado indica:", "options": [{ "key": "A", "text": "Problema logístico" }, { "key": "B", "text": "Sucesso logístico" }], "answer": "A", "explain": "Atraso é falha operacional." },
+      { "id": 5, "question": "Boa logística:", "options": [{ "key": "A", "text": "Reduz custo" }, { "key": "B", "text": "Aumenta bagunça" }], "answer": "A", "explain": "Eficiência reduz custo." },
+      { "id": 6, "question": "Fluxo de produtos significa:", "options": [{ "key": "A", "text": "Movimento físico dos itens" }, { "key": "B", "text": "Planilhas" }], "answer": "A", "explain": "É o deslocamento real." },
+      { "id": 7, "question": "Logística conecta:", "options": [{ "key": "A", "text": "Fornecedor, empresa e cliente" }, { "key": "B", "text": "Apenas o cliente" }], "answer": "A", "explain": "Ela conecta toda a cadeia." },
+      { "id": 8, "question": "Estoque errado causa:", "options": [{ "key": "A", "text": "Problemas de entrega" }, { "key": "B", "text": "Mais lucro" }], "answer": "A", "explain": "Erro gera atraso." },
+      { "id": 9, "question": "Logística existe quando:", "options": [{ "key": "A", "text": "Algo precisa se mover" }, { "key": "B", "text": "Nada se move" }], "answer": "A", "explain": "Movimento gera logística." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Logística organiza o caminho das coisas" }, { "key": "B", "text": "Logística é sorte" }], "answer": "A", "explain": "Ela é planejamento." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Exemplo simples de fluxo\n\n- produção\n- recebimento\n- armazenagem\n- separação\n- entrega\n",
+    "pilares": "Pilares básicos\n\n- produto\n- informação\n- transporte\n- estoque\n"
+  }
 }

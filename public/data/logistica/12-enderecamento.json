@@ -1,0 +1,58 @@
+{
+  "id": "12-enderecamento",
+  "title": "Aula 12 — Endereçamento de estoque: como localizar produtos rapidamente",
+  "steps": [
+    {
+      "title": "O que é endereçamento (bem simples)",
+      "body": "Endereçamento é dar um “endereço” para cada lugar do estoque.\n\nAssim você sabe:\n\n- onde guardar\n- onde buscar\n\nRegra:\n- Sem endereço, tudo vira “procura”."
+    },
+    {
+      "title": "Como é um endereço de estoque",
+      "body": "Um endereço pode ter:\n\n- rua/corredor\n- coluna\n- nível\n- posição\n\nExemplo:\n- A-03-02-01\n\nRegra:\n- Endereço precisa ser único e claro."
+    },
+    {
+      "title": "Endereçamento fixo vs variável",
+      "body": "Dois jeitos:\n\n- fixo: SKU sempre no mesmo lugar\n- variável: SKU pode mudar conforme espaço\n\nRegra:\n- O melhor é o que sua equipe consegue manter com disciplina."
+    },
+    {
+      "title": "Como endereçamento reduz erro",
+      "body": "Ajuda porque:\n\n- reduz tempo de busca\n- reduz separação errada\n- melhora inventário\n\nRegra:\n- Endereço certo = picking mais rápido."
+    },
+    {
+      "title": "Etiqueta e sinalização",
+      "body": "Você precisa:\n\n- etiqueta do endereço\n- sinalização visível\n- padrão (sempre igual)\n\nRegra:\n- Se não dá pra ler, não dá pra usar."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n\n- endereço duplicado\n- endereço sem padrão\n- etiqueta apagada\n- mover item sem atualizar\n\nRegra:\n- Mudou de lugar? Atualiza no sistema."
+    },
+    {
+      "title": "Mini prática (45 min) — criar padrão",
+      "body": "Crie um padrão simples:\n\n- letra para corredor\n- número para seção\n- número para nível\n- número para posição\n\nExemplo:\n- B-02-03-01\n\nObjetivo:\n- ter um endereço que qualquer pessoa entenda."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Endereçamento é localização do estoque\n- Pode ser fixo ou variável\n- Precisa etiqueta e padrão\n- Sem atualização, o endereço perde valor\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 12 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Endereçamento é:", "options": [{ "key": "A", "text": "Dar endereço para locais do estoque" }, { "key": "B", "text": "Aumentar o frete" }], "answer": "A", "explain": "É localização padronizada." },
+      { "id": 2, "question": "Sem endereço:", "options": [{ "key": "A", "text": "Você perde tempo procurando" }, { "key": "B", "text": "Você acha rápido" }], "answer": "A", "explain": "Virar busca." },
+      { "id": 3, "question": "Endereço precisa ser:", "options": [{ "key": "A", "text": "Único e claro" }, { "key": "B", "text": "Repetido" }], "answer": "A", "explain": "Evita confusão." },
+      { "id": 4, "question": "Endereçamento fixo:", "options": [{ "key": "A", "text": "SKU sempre no mesmo local" }, { "key": "B", "text": "SKU nunca tem local" }], "answer": "A", "explain": "Local fixo." },
+      { "id": 5, "question": "Endereçamento variável:", "options": [{ "key": "A", "text": "SKU pode mudar de local" }, { "key": "B", "text": "SKU não existe" }], "answer": "A", "explain": "Aloca por espaço." },
+      { "id": 6, "question": "Etiqueta ilegível:", "options": [{ "key": "A", "text": "Prejudica o uso" }, { "key": "B", "text": "Ajuda" }], "answer": "A", "explain": "Sem leitura, sem endereço." },
+      { "id": 7, "question": "Mover sem atualizar:", "options": [{ "key": "A", "text": "Quebra o controle" }, { "key": "B", "text": "Melhora o fluxo" }], "answer": "A", "explain": "Sistema fica errado." },
+      { "id": 8, "question": "Padrão serve para:", "options": [{ "key": "A", "text": "Todo mundo entender" }, { "key": "B", "text": "Só o chefe entender" }], "answer": "A", "explain": "Padronização é coletiva." },
+      { "id": 9, "question": "Endereçamento ajuda:", "options": [{ "key": "A", "text": "Inventário e picking" }, { "key": "B", "text": "Bagunça" }], "answer": "A", "explain": "Localização melhora tudo." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Mudou de lugar? Atualiza no sistema" }, { "key": "B", "text": "Mudou? Não precisa atualizar" }], "answer": "A", "explain": "Registro mantém controle." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos (modelo)\n\n- endereço criado\n- etiqueta aplicada\n- item endereçado\n- movimentação registrada\n",
+    "pilares": "Pilares\n\n- padrão\n- etiqueta legível\n- atualização no sistema\n"
+  }
+}

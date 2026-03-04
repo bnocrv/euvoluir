@@ -1,0 +1,58 @@
+{
+  "id": "09-processo-embalagem",
+  "title": "Aula 09 — Embalagem: proteção, custo e experiência do cliente",
+  "steps": [
+    {
+      "title": "O que é embalagem",
+      "body": "Embalagem é preparar o pedido para transporte.\n\nObjetivo:\n\n- proteger o produto\n- facilitar transporte\n- garantir apresentação\n\nRegra:\n- Embalagem ruim vira avaria."
+    },
+    {
+      "title": "Função da embalagem",
+      "body": "A embalagem precisa:\n\n- proteger\n- organizar\n- identificar\n\nRegra:\n- Produto precisa chegar intacto."
+    },
+    {
+      "title": "Tipos de embalagem",
+      "body": "Exemplos:\n\n- caixa de papelão\n- envelope\n- plástico bolha\n- pallet\n\nRegra:\n- Escolher conforme o produto."
+    },
+    {
+      "title": "Proteção do produto",
+      "body": "Proteção inclui:\n\n- enchimento\n- fixação\n- vedação\n\nRegra:\n- Espaço vazio aumenta risco."
+    },
+    {
+      "title": "Identificação da embalagem",
+      "body": "A embalagem deve ter:\n\n- etiqueta\n- código\n- endereço de entrega\n\nRegra:\n- Sem etiqueta não há entrega."
+    },
+    {
+      "title": "Custo da embalagem",
+      "body": "Impacta em:\n\n- custo logístico\n- peso do frete\n\nRegra:\n- Proteger sem exagerar no custo."
+    },
+    {
+      "title": "Mini prática (30 min)",
+      "body": "Escolha um produto frágil.\n\nPense:\n\n- qual embalagem usar\n- qual proteção interna\n\nObjetivo:\n- equilibrar proteção e custo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Embalagem protege o produto\n- Ajuda no transporte\n- Precisa de identificação\n- Impacta custo logístico\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 09 (Logística)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Embalagem serve para:", "options": [{ "key": "A", "text": "Proteger produto" }, { "key": "B", "text": "Substituir transporte" }], "answer": "A", "explain": "Proteção é principal função." },
+      { "id": 2, "question": "Produto frágil precisa:", "options": [{ "key": "A", "text": "Proteção extra" }, { "key": "B", "text": "Nenhuma proteção" }], "answer": "A", "explain": "Evita quebra." },
+      { "id": 3, "question": "Etiqueta serve para:", "options": [{ "key": "A", "text": "Identificar envio" }, { "key": "B", "text": "Decoracao" }], "answer": "A", "explain": "Identificação logística." },
+      { "id": 4, "question": "Espaço vazio na caixa:", "options": [{ "key": "A", "text": "Aumenta risco de dano" }, { "key": "B", "text": "Protege produto" }], "answer": "A", "explain": "Produto se move." },
+      { "id": 5, "question": "Peso da embalagem:", "options": [{ "key": "A", "text": "Impacta frete" }, { "key": "B", "text": "Não importa" }], "answer": "A", "explain": "Frete depende do peso." },
+      { "id": 6, "question": "Plástico bolha serve para:", "options": [{ "key": "A", "text": "Amortecer impacto" }, { "key": "B", "text": "Aumentar peso" }], "answer": "A", "explain": "Proteção." },
+      { "id": 7, "question": "Embalagem ruim causa:", "options": [{ "key": "A", "text": "Avaria" }, { "key": "B", "text": "Entrega perfeita" }], "answer": "A", "explain": "Produto chega danificado." },
+      { "id": 8, "question": "Endereço na caixa:", "options": [{ "key": "A", "text": "Indica destino" }, { "key": "B", "text": "É decoração" }], "answer": "A", "explain": "Guia entrega." },
+      { "id": 9, "question": "Boa embalagem:", "options": [{ "key": "A", "text": "Protege sem custo exagerado" }, { "key": "B", "text": "Usa material infinito" }], "answer": "A", "explain": "Equilíbrio." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Embalagem ruim vira avaria" }, { "key": "B", "text": "Embalagem não importa" }], "answer": "A", "explain": "Proteção é essencial." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos mínimos\n\n- embalagem iniciada\n- embalagem finalizada\n- etiqueta aplicada\n",
+    "pilares": "Pilares\n\n- proteção\n- identificação\n- custo\n"
+  }
+}

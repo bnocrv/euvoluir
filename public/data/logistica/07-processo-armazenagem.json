@@ -1,0 +1,58 @@
+{
+  "id": "07-processo-armazenagem",
+  "title": "Aula 07 — Armazenagem: guardar bem para encontrar rápido",
+  "steps": [
+    {
+      "title": "O que é armazenagem",
+      "body": "Armazenagem é guardar produtos de forma organizada.\n\nObjetivos:\n\n- localizar rápido\n- evitar avaria\n- facilitar separação\n\nRegra:\n- Guardar sem lógica vira caos."
+    },
+    {
+      "title": "Lugar certo para cada item",
+      "body": "Cada SKU precisa ter um endereço.\n\nIsso permite:\n\n- localizar rápido\n- evitar perda\n\nRegra:\n- Produto sem endereço vira procura eterna."
+    },
+    {
+      "title": "Tipos de armazenagem",
+      "body": "Formas comuns:\n\n- prateleiras\n- pallets\n- flow rack\n- estantes\n\nRegra:\n- O layout depende do produto."
+    },
+    {
+      "title": "Organização por giro",
+      "body": "Itens que saem mais ficam:\n\n- mais próximos\n- mais acessíveis\n\nRegra:\n- Giro alto perto da separação."
+    },
+    {
+      "title": "Proteção do produto",
+      "body": "Cuidados:\n\n- empilhamento correto\n- evitar peso excessivo\n- evitar umidade\n\nRegra:\n- Produto mal guardado vira avaria."
+    },
+    {
+      "title": "Movimentação interna",
+      "body": "Para armazenar você usa:\n\n- paleteira\n- empilhadeira\n\nRegra:\n- Movimentação segura evita acidentes."
+    },
+    {
+      "title": "Mini prática",
+      "body": "Observe um estoque e responda:\n\n- onde ficam itens mais vendidos\n- como são organizados\n\nObjetivo:\n- entender lógica do layout."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Armazenagem organiza o estoque\n- Cada item precisa endereço\n- Giro alto perto da saída\n- Proteção evita avarias\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 07",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Armazenagem é:", "options": [{ "key": "A", "text": "Guardar produtos organizados" }, { "key": "B", "text": "Entregar pedidos" }], "answer": "A", "explain": "Organização do estoque." },
+      { "id": 2, "question": "SKU significa:", "options": [{ "key": "A", "text": "Identificação do produto" }, { "key": "B", "text": "Caminhão" }], "answer": "A", "explain": "Código do item." },
+      { "id": 3, "question": "Endereçamento serve para:", "options": [{ "key": "A", "text": "Localizar produtos" }, { "key": "B", "text": "Aumentar bagunça" }], "answer": "A", "explain": "Localização rápida." },
+      { "id": 4, "question": "Itens de alto giro:", "options": [{ "key": "A", "text": "Devem ficar mais próximos" }, { "key": "B", "text": "Mais longe" }], "answer": "A", "explain": "Reduz deslocamento." },
+      { "id": 5, "question": "Empilhamento errado:", "options": [{ "key": "A", "text": "Gera avaria" }, { "key": "B", "text": "Melhora produto" }], "answer": "A", "explain": "Dano físico." },
+      { "id": 6, "question": "Paleteira serve para:", "options": [{ "key": "A", "text": "Mover pallets" }, { "key": "B", "text": "Separar pedidos" }], "answer": "A", "explain": "Movimentação." },
+      { "id": 7, "question": "Produto sem endereço:", "options": [{ "key": "A", "text": "Dificulta achar" }, { "key": "B", "text": "Facilita achar" }], "answer": "A", "explain": "Fica perdido." },
+      { "id": 8, "question": "Layout do armazém:", "options": [{ "key": "A", "text": "Organiza espaço" }, { "key": "B", "text": "Não importa" }], "answer": "A", "explain": "Ajuda fluxo." },
+      { "id": 9, "question": "Armazenagem ruim causa:", "options": [{ "key": "A", "text": "Perda de tempo" }, { "key": "B", "text": "Velocidade" }], "answer": "A", "explain": "Procura aumenta." },
+      { "id": 10, "question": "Frase correta:", "options": [{ "key": "A", "text": "Guardar sem lógica vira caos" }, { "key": "B", "text": "Guardar aleatório é melhor" }], "answer": "A", "explain": "Organização é essencial." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eventos\n\n- endereçar\n- armazenar\n- registrar\n",
+    "pilares": "Pilares\n\n- organização\n- proteção\n- acesso rápido\n"
+  }
+}

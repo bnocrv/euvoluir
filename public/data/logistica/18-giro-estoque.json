@@ -1,0 +1,58 @@
+{
+  "id": "18-giro-estoque",
+  "title": "Aula 18 — Giro de estoque: medir a velocidade de saída dos produtos",
+  "steps": [
+    {
+      "title": "O que é giro de estoque (bem simples)",
+      "body": "Giro de estoque mostra quão rápido o produto sai.\n\nEm outras palavras:\n\n- quanto você vende (ou movimenta)\n- comparado ao quanto mantém em estoque\n\nRegra:\n- Giro alto = sai rápido. Giro baixo = fica parado."
+    },
+    {
+      "title": "Por que giro importa",
+      "body": "Giro ajuda a:\n\n- reduzir dinheiro parado\n- planejar compras\n- evitar vencimento/obsolescência\n\nRegra:\n- Estoque parado costuma virar perda."
+    },
+    {
+      "title": "Sinais de giro baixo",
+      "body": "Sinais:\n\n- produto encalhado\n- pouca saída\n- ocupa espaço\n\nRegra:\n- Espaço ocupado também custa."
+    },
+    {
+      "title": "Sinais de giro alto",
+      "body": "Sinais:\n\n- vende rápido\n- precisa reposição frequente\n\nRegra:\n- Giro alto precisa controle para não faltar."
+    },
+    {
+      "title": "Como usar o giro na operação",
+      "body": "Aplicações:\n\n- posicionar alto giro perto do picking\n- revisar compras de baixo giro\n- fazer promoções de encalhados\n\nRegra:\n- Giro guia decisões de layout e compra."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n\n- comprar sem olhar giro\n- manter encalhado por muito tempo\n- não revisar mix de produtos\n\nRegra:\n- Giro é um alarme: ignore e o problema cresce."
+    },
+    {
+      "title": "Mini prática (45 min) — lista de giro",
+      "body": "Escolha 10 SKUs e marque:\n\n- vende muito\n- vende médio\n- vende pouco\n\nDepois proponha:\n- 1 ação para baixo giro\n- 1 cuidado para alto giro\n\nObjetivo:\n- pensar com base em velocidade de saída."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Giro mostra velocidade de saída\n- Giro alto precisa reposição\n- Giro baixo prende espaço e dinheiro\n- Giro orienta compra e layout\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 18 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Giro de estoque mede:", "options": [{ "key": "A", "text": "Velocidade de saída" }, { "key": "B", "text": "Cor do produto" }], "answer": "A", "explain": "É velocidade de movimentação." },
+      { "id": 2, "question": "Giro alto significa:", "options": [{ "key": "A", "text": "Sai rápido" }, { "key": "B", "text": "Fica parado" }], "answer": "A", "explain": "Alta rotatividade." },
+      { "id": 3, "question": "Giro baixo significa:", "options": [{ "key": "A", "text": "Parado/encalhado" }, { "key": "B", "text": "Vende muito" }], "answer": "A", "explain": "Baixa saída." },
+      { "id": 4, "question": "Giro ajuda a:", "options": [{ "key": "A", "text": "Planejar compras" }, { "key": "B", "text": "Ignorar estoque" }], "answer": "A", "explain": "Planejamento de reposição." },
+      { "id": 5, "question": "Estoque parado:", "options": [{ "key": "A", "text": "Custa espaço e dinheiro" }, { "key": "B", "text": "Não custa nada" }], "answer": "A", "explain": "Custo oculto." },
+      { "id": 6, "question": "Alto giro precisa:", "options": [{ "key": "A", "text": "Evitar falta" }, { "key": "B", "text": "Evitar vender" }], "answer": "A", "explain": "Reposição e controle." },
+      { "id": 7, "question": "Comprar sem olhar giro:", "options": [{ "key": "A", "text": "Pode gerar encalhe" }, { "key": "B", "text": "Sempre dá certo" }], "answer": "A", "explain": "Pode virar excesso." },
+      { "id": 8, "question": "Promoção pode ajudar em:", "options": [{ "key": "A", "text": "Baixo giro" }, { "key": "B", "text": "Reposição" }], "answer": "A", "explain": "Desova encalhado." },
+      { "id": 9, "question": "Giro orienta:", "options": [{ "key": "A", "text": "Layout e compra" }, { "key": "B", "text": "Cor do uniforme" }], "answer": "A", "explain": "Decisões operacionais." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Giro é um alarme" }, { "key": "B", "text": "Giro não serve" }], "answer": "A", "explain": "Mostra problema ou força." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Sinais (modelo)\n\n- alto giro: repor sempre\n- baixo giro: revisar e agir\n",
+    "pilares": "Pilares\n\n- velocidade de saída\n- espaço\n- dinheiro parado\n"
+  }
+}

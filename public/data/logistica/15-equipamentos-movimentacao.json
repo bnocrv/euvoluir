@@ -1,0 +1,58 @@
+{
+  "id": "15-equipamentos-movimentacao",
+  "title": "Aula 15 — Equipamentos de movimentação: paleteira, empilhadeira e esteiras",
+  "steps": [
+    {
+      "title": "Por que equipamentos importam",
+      "body": "Equipamentos existem para mover carga com:\n\n- segurança\n- velocidade\n- menos esforço humano\n\nRegra:\n- Equipamento certo reduz risco e aumenta produtividade."
+    },
+    {
+      "title": "Paleteira (manual ou elétrica)",
+      "body": "Usada para:\n\n- mover pallets curtas distâncias\n- carga média\n\nRegra:\n- Paleteira é o básico do armazém."
+    },
+    {
+      "title": "Empilhadeira",
+      "body": "Usada para:\n\n- levantar pallets\n- trabalhar em altura\n- movimentar carga pesada\n\nRegra:\n- Empilhadeira exige treinamento."
+    },
+    {
+      "title": "Esteiras e roletes",
+      "body": "Servem para:\n\n- mover caixas automaticamente\n- reduzir caminhada\n- acelerar embalagem/expedição\n\nRegra:\n- Esteira reduz deslocamento repetitivo."
+    },
+    {
+      "title": "Carrinhos e gaiolas",
+      "body": "Ajudam em:\n\n- separação\n- reposição\n- transporte interno de caixas\n\nRegra:\n- Ferramenta simples também faz diferença."
+    },
+    {
+      "title": "Segurança no uso",
+      "body": "Regras básicas:\n\n- respeitar carga máxima\n- manter rotas livres\n- usar EPIs\n\nRegra:\n- Segurança vem antes da pressa."
+    },
+    {
+      "title": "Mini prática (30 min) — escolher equipamento",
+      "body": "Escolha 3 situações:\n\n- mover pallet pesado\n- abastecer prateleira alta\n- levar caixas para expedição\n\nPara cada uma, diga:\n- qual equipamento usar\n- por quê\n\nObjetivo:\n- entender a função de cada equipamento."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Equipamentos aumentam segurança e velocidade\n- Paleteira move pallets\n- Empilhadeira trabalha com peso e altura\n- Esteiras reduzem deslocamento\n- Segurança é regra\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 15 (Logística)",
+    "instructions": "Marque A ou B. Leia a explicação para fixar.",
+    "questions": [
+      { "id": 1, "question": "Equipamentos servem para:", "options": [{ "key": "A", "text": "Mover carga com segurança e eficiência" }, { "key": "B", "text": "Aumentar risco" }], "answer": "A", "explain": "Eles reduzem esforço e risco." },
+      { "id": 2, "question": "Paleteira é usada para:", "options": [{ "key": "A", "text": "Mover pallets" }, { "key": "B", "text": "Entregar no cliente" }], "answer": "A", "explain": "Movimentação interna." },
+      { "id": 3, "question": "Empilhadeira serve para:", "options": [{ "key": "A", "text": "Levantar pallets em altura" }, { "key": "B", "text": "Embalagem" }], "answer": "A", "explain": "Trabalho em altura e peso." },
+      { "id": 4, "question": "Esteira ajuda a:", "options": [{ "key": "A", "text": "Reduzir caminhada" }, { "key": "B", "text": "Aumentar deslocamento" }], "answer": "A", "explain": "Automatiza movimento." },
+      { "id": 5, "question": "Empilhadeira exige:", "options": [{ "key": "A", "text": "Treinamento" }, { "key": "B", "text": "Sorte" }], "answer": "A", "explain": "Segurança e técnica." },
+      { "id": 6, "question": "Respeitar carga máxima:", "options": [{ "key": "A", "text": "É regra de segurança" }, { "key": "B", "text": "É opcional" }], "answer": "A", "explain": "Evita acidentes." },
+      { "id": 7, "question": "Carrinhos ajudam em:", "options": [{ "key": "A", "text": "Transporte de caixas" }, { "key": "B", "text": "Produção industrial" }], "answer": "A", "explain": "Movimento interno de volumes menores." },
+      { "id": 8, "question": "Rotas livres servem para:", "options": [{ "key": "A", "text": "Evitar acidentes e travas" }, { "key": "B", "text": "Criar fila" }], "answer": "A", "explain": "Fluxo e segurança." },
+      { "id": 9, "question": "EPI é:", "options": [{ "key": "A", "text": "Equipamento de proteção individual" }, { "key": "B", "text": "Etiqueta de produto" }], "answer": "A", "explain": "Protege o trabalhador." },
+      { "id": 10, "question": "Uma frase correta:", "options": [{ "key": "A", "text": "Segurança vem antes da pressa" }, { "key": "B", "text": "Pressa vem antes de tudo" }], "answer": "A", "explain": "Segurança é prioridade." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Equipamentos (modelo)\n\n- paleteira\n- empilhadeira\n- carrinho\n- esteira\n",
+    "pilares": "Pilares\n\n- segurança\n- adequação ao peso\n- adequação à altura\n"
+  }
+}
