@@ -1,0 +1,168 @@
+{
+  "id": "10-criterios-selecao",
+  "title": "Aula 10 — Critérios de seleção: custo total, risco e capacidade do fornecedor",
+  "steps": [
+    {
+      "title": "Escolher fornecedor é escolher desempenho futuro",
+      "body": "Fornecedor não é apenas 'quem vende'.\nEle vira parte da sua operação.\n\nSe o fornecedor falha:\n- você atrasa entrega\n- você para operação\n- você aumenta retrabalho\n\nRegra:\n- Seleção de fornecedor é decisão de risco operacional."
+    },
+    {
+      "title": "Critérios essenciais (o conjunto mínimo adulto)",
+      "body": "O conjunto mínimo costuma incluir:\n- custo total (não só preço)\n- prazo e confiabilidade\n- qualidade (consistência)\n- capacidade (volume e flexibilidade)\n- saúde básica/compliance (dependendo do caso)\n\nRegra:\n- Critério bom impede “decisão por impulso”."
+    },
+    {
+      "title": "Matriz ponderada (o jeito profissional de decidir)",
+      "body": "Uma matriz ponderada define pesos por critério.\n\nExemplo simples:\n- custo total: 35%\n- prazo/confiabilidade: 25%\n- qualidade: 25%\n- capacidade: 15%\n\nVocê dá nota (1 a 5) e calcula o score.\n\nRegra:\n- Peso deixa a decisão consistente e repetível."
+    },
+    {
+      "title": "Capacidade e flexibilidade (onde muita compra quebra)",
+      "body": "Fornecedor pode ser barato, mas não aguentar pico.\n\nPerguntas práticas:\n- qual capacidade mensal?\n- consegue aumentar 30% em pico?\n- qual tempo de reposição?\n\nRegra:\n- Capacidade insuficiente vira atraso inevitável."
+    },
+    {
+      "title": "Risco de dependência e plano B",
+      "body": "Dois extremos ruins:\n- muitos fornecedores sem controle\n- um fornecedor único sem contingência\n\nEstratégia madura:\n- fornecedor principal + fornecedor alternativo validado\n\nRegra:\n- Plano B não se cria na crise; se cria antes."
+    },
+    {
+      "title": "Decisão defendível (para auditoria e para a operação)",
+      "body": "Você deve conseguir responder:\n- por que esse fornecedor?\n- quais trade-offs aceitos?\n- quais evidências?\n\nRegra:\n- Se a decisão não é defendível, ela não é madura."
+    },
+    {
+      "title": "Mini prática (45 min) — montar uma matriz real",
+      "body": "Escolha um item recorrente.\n\nCrie:\n- 4 critérios\n- pesos\n- notas para 3 fornecedores\n\nObjetivo:\n- decidir com consistência, não com sensação."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Seleção é decisão de desempenho futuro\n- Use critérios mínimos: custo total, prazo, qualidade, capacidade\n- Matriz ponderada torna decisão consistente\n- Tenha plano B validado\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 10 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Selecionar fornecedor é principalmente:",
+        "options": [
+          { "key": "A", "text": "Escolher quem tem a marca mais conhecida" },
+          { "key": "B", "text": "Escolher desempenho futuro e risco operacional" },
+          { "key": "C", "text": "Escolher o mais rápido no WhatsApp" },
+          { "key": "D", "text": "Escolher o mais barato sempre" }
+        ],
+        "answer": "B",
+        "explain": "Fornecedor vira parte da operação; falha vira custo."
+      },
+      {
+        "id": 2,
+        "question": "Critério mínimo adulto de seleção inclui:",
+        "options": [
+          { "key": "A", "text": "Somente preço" },
+          { "key": "B", "text": "Custo total, prazo, qualidade e capacidade" },
+          { "key": "C", "text": "Somente localização" },
+          { "key": "D", "text": "Somente indicação" }
+        ],
+        "answer": "B",
+        "explain": "Isso cobre impacto real na operação."
+      },
+      {
+        "id": 3,
+        "question": "Matriz ponderada serve para:",
+        "options": [
+          { "key": "A", "text": "Decidir por emoção" },
+          { "key": "B", "text": "Decidir com pesos e consistência entre critérios" },
+          { "key": "C", "text": "Eliminar negociação" },
+          { "key": "D", "text": "Eliminar recebimento" }
+        ],
+        "answer": "B",
+        "explain": "Peso define o que é mais importante para a empresa."
+      },
+      {
+        "id": 4,
+        "question": "Um fornecedor barato que não aguenta pico gera:",
+        "options": [
+          { "key": "A", "text": "Atraso inevitável" },
+          { "key": "B", "text": "Qualidade automática" },
+          { "key": "C", "text": "Menos risco" },
+          { "key": "D", "text": "Mais previsibilidade" }
+        ],
+        "answer": "A",
+        "explain": "Capacidade é requisito, não detalhe."
+      },
+      {
+        "id": 5,
+        "question": "Plano B em compras significa:",
+        "options": [
+          { "key": "A", "text": "Trocar de fornecedor toda semana" },
+          { "key": "B", "text": "Ter fornecedor alternativo validado antes da crise" },
+          { "key": "C", "text": "Comprar sem contrato" },
+          { "key": "D", "text": "Comprar sem especificação" }
+        ],
+        "answer": "B",
+        "explain": "Contingência se constrói antes, não durante."
+      },
+      {
+        "id": 6,
+        "question": "Decisão defendível exige:",
+        "options": [
+          { "key": "A", "text": "Somente feeling" },
+          { "key": "B", "text": "Evidências, critérios e trade-offs registrados" },
+          { "key": "C", "text": "Somente amizade" },
+          { "key": "D", "text": "Somente preço unitário" }
+        ],
+        "answer": "B",
+        "explain": "Defendível = auditável e repetível."
+      },
+      {
+        "id": 7,
+        "question": "O risco de fornecedor único sem contingência é:",
+        "options": [
+          { "key": "A", "text": "Ruptura e dependência" },
+          { "key": "B", "text": "Menos risco" },
+          { "key": "C", "text": "Mais concorrência" },
+          { "key": "D", "text": "Mais controle automático" }
+        ],
+        "answer": "A",
+        "explain": "Se ele falha, você para."
+      },
+      {
+        "id": 8,
+        "question": "Um trade-off típico é:",
+        "options": [
+          { "key": "A", "text": "Pagar um pouco mais por prazo e confiabilidade" },
+          { "key": "B", "text": "Ignorar prazo" },
+          { "key": "C", "text": "Ignorar qualidade" },
+          { "key": "D", "text": "Ignorar risco" }
+        ],
+        "answer": "A",
+        "explain": "Operação prefere previsibilidade, não só preço."
+      },
+      {
+        "id": 9,
+        "question": "Capacidade do fornecedor deve ser verificada porque:",
+        "options": [
+          { "key": "A", "text": "Preço resolve tudo" },
+          { "key": "B", "text": "Volume e pico podem quebrar a entrega" },
+          { "key": "C", "text": "Não tem relação com prazo" },
+          { "key": "D", "text": "Só importa para serviços" }
+        ],
+        "answer": "B",
+        "explain": "Sem capacidade, não existe lead time confiável."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Seleção é só preço" },
+          { "key": "B", "text": "Seleção é custo total + risco + capacidade" },
+          { "key": "C", "text": "Seleção dispensa histórico" },
+          { "key": "D", "text": "Seleção dispensa mapa comparativo" }
+        ],
+        "answer": "B",
+        "explain": "Isso sustenta previsibilidade e resultado."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Critérios mínimos\n\n- custo total\n- prazo/confiabilidade\n- qualidade\n- capacidade\n- plano B\n",
+    "pilares": "Pilares\n\n- consistência\n- governança\n- redução de risco\n"
+  }
+}

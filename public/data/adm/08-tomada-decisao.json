@@ -1,0 +1,168 @@
+{
+  "id": "08-tomada-decisao",
+  "title": "Aula 08 — Tomada de decisão: como decidir bem com informação incompleta",
+  "steps": [
+    {
+      "title": "Decisão é escolha com custo",
+      "body": "Decidir é escolher um caminho e abrir mão de outros.\n\nRegra:\n- Toda decisão tem custo, até a de não decidir."
+    },
+    {
+      "title": "Tipos de decisão (isso muda o método)",
+      "body": "3 tipos:\n- Reversível e barata (decide rápido)\n- Reversível e cara (decide com teste)\n- Irreversível e cara (decide com dados + alinhamento)\n\nRegra:\n- Não use o mesmo rigor para tudo."
+    },
+    {
+      "title": "Decidir com pouca informação: reduzir risco",
+      "body": "Ferramentas:\n- definir hipótese (o que precisa ser verdade)\n- teste pequeno (piloto)\n- critério de parada (quando desfaz)\n\nRegra:\n- Bom gestor cria 'seguro' contra decisão errada."
+    },
+    {
+      "title": "Vieses comuns (que pegam gestores experientes)",
+      "body": "Vieses:\n- confirmação (só procura dado que concorda)\n- custo afundado (insiste porque já gastou)\n- urgência falsa (corre sem necessidade)\n\nRegra:\n- Viés é invisível quando você está dentro dele."
+    },
+    {
+      "title": "Decisão e alinhamento",
+      "body": "Duas coisas diferentes:\n- decidir\n- comunicar a decisão e o porquê\n\nRegra:\n- Decisão sem comunicação vira resistência."
+    },
+    {
+      "title": "Documento simples de decisão (1 página)",
+      "body": "Inclua:\n- problema\n- opções\n- critério\n- risco\n- plano de teste\n\nRegra:\n- Decisão boa é explicável."
+    },
+    {
+      "title": "Mini prática (45 min) — decisão com piloto",
+      "body": "Cenário:\n- atrasos cresceram 20%.\n\nProponha 2 ações e escolha 1 para piloto.\nDefina:\n- métrica de sucesso\n- tempo do piloto\n- critério de rollback\n\nObjetivo:\n- decidir com segurança."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Decisão tem custo\n- Rigor depende do tipo\n- Piloto reduz risco\n- Vieses distorcem escolha\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 08 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Qual é um sinal de 'custo afundado'?",
+        "options": [
+          { "key": "A", "text": "Você muda de plano quando dados mudam" },
+          { "key": "B", "text": "Você insiste porque já gastou tempo/dinheiro, mesmo sem retorno" },
+          { "key": "C", "text": "Você testa em pequeno antes" },
+          { "key": "D", "text": "Você define critério de parada" }
+        ],
+        "answer": "B",
+        "explain": "Custo afundado prende você ao passado, não ao melhor próximo passo."
+      },
+      {
+        "id": 2,
+        "question": "Uma decisão reversível e barata deveria ser tratada como:",
+        "options": [
+          { "key": "A", "text": "Comitê longo e burocrático" },
+          { "key": "B", "text": "Decisão rápida com monitoramento" },
+          { "key": "C", "text": "Nunca decidir" },
+          { "key": "D", "text": "Contrato anual irreversível" }
+        ],
+        "answer": "B",
+        "explain": "Decidir rápido e ajustar é melhor do que travar."
+      },
+      {
+        "id": 3,
+        "question": "Qual é a melhor forma de reduzir risco com pouca informação?",
+        "options": [
+          { "key": "A", "text": "Decidir grande de uma vez" },
+          { "key": "B", "text": "Fazer piloto com métrica e critério de rollback" },
+          { "key": "C", "text": "Perguntar opinião de todo mundo sem critério" },
+          { "key": "D", "text": "Esperar certeza total" }
+        ],
+        "answer": "B",
+        "explain": "Piloto transforma incerteza em aprendizado controlado."
+      },
+      {
+        "id": 4,
+        "question": "Viés de confirmação é quando você:",
+        "options": [
+          { "key": "A", "text": "Procura dados que desafiam sua ideia" },
+          { "key": "B", "text": "Procura dados que confirmam sua ideia" },
+          { "key": "C", "text": "Define critério antes de olhar dados" },
+          { "key": "D", "text": "Faz análise de risco" }
+        ],
+        "answer": "B",
+        "explain": "Você filtra evidência para se sentir certo."
+      },
+      {
+        "id": 5,
+        "question": "O pior custo de 'não decidir' é:",
+        "options": [
+          { "key": "A", "text": "Nada acontece" },
+          { "key": "B", "text": "O problema cresce e o time perde confiança" },
+          { "key": "C", "text": "O Excel fica mais bonito" },
+          { "key": "D", "text": "A concorrência para" }
+        ],
+        "answer": "B",
+        "explain": "A indecisão vira atraso, custo e desmotivação."
+      },
+      {
+        "id": 6,
+        "question": "Comunicar a decisão importa porque:",
+        "options": [
+          { "key": "A", "text": "Decisão sem explicação vira resistência" },
+          { "key": "B", "text": "Não importa" },
+          { "key": "C", "text": "Só diretoria precisa saber" },
+          { "key": "D", "text": "Diminui necessidade de métricas" }
+        ],
+        "answer": "A",
+        "explain": "Sem 'porquê', a execução cai."
+      },
+      {
+        "id": 7,
+        "question": "O que diferencia uma decisão grande e arriscada de uma pequena?",
+        "options": [
+          { "key": "A", "text": "A cor do relatório" },
+          { "key": "B", "text": "Reversibilidade e custo de erro" },
+          { "key": "C", "text": "A idade do gestor" },
+          { "key": "D", "text": "O número de reuniões" }
+        ],
+        "answer": "B",
+        "explain": "O método muda com reversibilidade e custo."
+      },
+      {
+        "id": 8,
+        "question": "Urgência falsa costuma acontecer quando:",
+        "options": [
+          { "key": "A", "text": "Existe prazo real e crítico" },
+          { "key": "B", "text": "Você corre para decidir sem clareza de impacto" },
+          { "key": "C", "text": "Você faz piloto" },
+          { "key": "D", "text": "Você mede antes/depois" }
+        ],
+        "answer": "B",
+        "explain": "É pressa sem critério — aumenta erro."
+      },
+      {
+        "id": 9,
+        "question": "O melhor documento de decisão é aquele que:",
+        "options": [
+          { "key": "A", "text": "Ninguém entende" },
+          { "key": "B", "text": "Cabe em 1 página e explicita critério e riscos" },
+          { "key": "C", "text": "Tem 50 slides" },
+          { "key": "D", "text": "Não tem métrica" }
+        ],
+        "answer": "B",
+        "explain": "Clareza e critério permitem execução."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Boa decisão exige certeza total" },
+          { "key": "B", "text": "Boa decisão reduz risco e aprende rápido" },
+          { "key": "C", "text": "Boa decisão ignora vieses" },
+          { "key": "D", "text": "Boa decisão é sempre lenta" }
+        ],
+        "answer": "B",
+        "explain": "Gestão é escolher com incerteza, reduzindo risco."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist de decisão\n\n- hipótese\n- piloto\n- métrica\n- rollback\n",
+    "pilares": "Pilares\n\n- risco\n- critério\n- comunicação\n"
+  }
+}

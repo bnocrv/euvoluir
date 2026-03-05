@@ -1,0 +1,168 @@
+{
+  "id": "25-previdencia-aposentadoria",
+  "title": "Aula 25 — Previdência e aposentadoria: plano de longo prazo, taxas e disciplina",
+  "steps": [
+    {
+      "title": "Aposentadoria é um projeto financeiro de longo prazo",
+      "body": "A pergunta central é:\n- como manter padrão de vida quando parar de trabalhar?\n\nVocê precisa de:\n- tempo\n- consistência\n- controle de custos\n\nRegra:\n- Aposentadoria é mais disciplina do que genialidade."
+    },
+    {
+      "title": "O motor: aporte + tempo + custo",
+      "body": "No longo prazo, o que mais pesa:\n- quanto você aporta\n- por quanto tempo\n- quanto você paga de taxas\n\nRegra:\n- Taxa alta no longo prazo é vazamento permanente."
+    },
+    {
+      "title": "Previdência privada (visão prática, sem propaganda)",
+      "body": "Previdência pode ser útil quando:\n- faz sentido fiscal/planejamento\n- tem taxa razoável\n- tem estratégia consistente\n\nMas pode ser ruim quando:\n- taxas altas\n- produto confuso\n- baixa transparência\n\nRegra:\n- Produto de longo prazo precisa ser simples e barato."
+    },
+    {
+      "title": "Liquidez, carência e regras de resgate",
+      "body": "Antes de contratar, entenda:\n- carência\n- prazos\n- penalidades\n- regras de portabilidade\n\nRegra:\n- Longo prazo é bom, mas você precisa de flexibilidade mínima."
+    },
+    {
+      "title": "Risco x fase da vida (alocação muda com o tempo)",
+      "body": "Ideia prática:\n- quanto mais longe do uso, mais oscilação você pode tolerar\n- quanto mais perto, mais estabilidade\n\nRegra:\n- A carteira muda conforme o objetivo se aproxima."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n- começar tarde\n- parar aportes por ansiedade\n- escolher produto caro e “esquecer”\n\nRegra:\n- O inimigo do longo prazo é a desistência."
+    },
+    {
+      "title": "Mini prática (45 min) — seu plano em 4 linhas",
+      "body": "Escreva:\n- idade alvo\n- valor mensal de aporte inicial\n- regra de aumento anual (ex.: +10%)\n- revisão semestral das taxas e alocação\n\nObjetivo:\n- transformar “vou pensar nisso” em plano real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Aposentadoria é projeto de longo prazo\n- Aporte, tempo e taxa mandam\n- Previdência pode ajudar se for transparente e barata\n- Regras de resgate importam\n- A carteira deve mudar com o tempo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 25 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Aposentadoria é principalmente:",
+        "options": [
+          { "key": "A", "text": "Sorte" },
+          { "key": "B", "text": "Projeto de longo prazo com disciplina" },
+          { "key": "C", "text": "Algo que se resolve no final" },
+          { "key": "D", "text": "Só INSS" }
+        ],
+        "answer": "B",
+        "explain": "Tempo e consistência são o motor."
+      },
+      {
+        "id": 2,
+        "question": "No longo prazo, o que mais pesa?",
+        "options": [
+          { "key": "A", "text": "Nome do produto" },
+          { "key": "B", "text": "Aporte, tempo e taxas" },
+          { "key": "C", "text": "Cor do app" },
+          { "key": "D", "text": "Promessas" }
+        ],
+        "answer": "B",
+        "explain": "Esses fatores dominam o resultado."
+      },
+      {
+        "id": 3,
+        "question": "Taxa alta no longo prazo é:",
+        "options": [
+          { "key": "A", "text": "Detalhe" },
+          { "key": "B", "text": "Vazamento permanente de retorno" },
+          { "key": "C", "text": "Garantia de lucro" },
+          { "key": "D", "text": "Proteção contra risco" }
+        ],
+        "answer": "B",
+        "explain": "Você paga todo ano, composto contra você."
+      },
+      {
+        "id": 4,
+        "question": "Previdência pode ser útil quando:",
+        "options": [
+          { "key": "A", "text": "Taxas são razoáveis e estratégia é clara" },
+          { "key": "B", "text": "Produto é confuso e caro" },
+          { "key": "C", "text": "Não tem regras" },
+          { "key": "D", "text": "Não existe transparência" }
+        ],
+        "answer": "A",
+        "explain": "Longo prazo pede simplicidade e custo baixo."
+      },
+      {
+        "id": 5,
+        "question": "Antes de contratar, é crucial entender:",
+        "options": [
+          { "key": "A", "text": "Carência, resgate, penalidades e portabilidade" },
+          { "key": "B", "text": "Só o retorno do último mês" },
+          { "key": "C", "text": "Só a marca" },
+          { "key": "D", "text": "Só a propaganda" }
+        ],
+        "answer": "A",
+        "explain": "Regras definem sua liberdade futura."
+      },
+      {
+        "id": 6,
+        "question": "Quanto mais perto do objetivo (aposentadoria), a tendência é:",
+        "options": [
+          { "key": "A", "text": "Aceitar mais oscilação" },
+          { "key": "B", "text": "Buscar mais estabilidade" },
+          { "key": "C", "text": "Concentrar tudo" },
+          { "key": "D", "text": "Parar de acompanhar" }
+        ],
+        "answer": "B",
+        "explain": "Você reduz risco de queda perto do uso."
+      },
+      {
+        "id": 7,
+        "question": "Um erro comum é:",
+        "options": [
+          { "key": "A", "text": "Começar cedo" },
+          { "key": "B", "text": "Desistir de aportar por ansiedade" },
+          { "key": "C", "text": "Revisar taxas" },
+          { "key": "D", "text": "Ter plano" }
+        ],
+        "answer": "B",
+        "explain": "Interromper consistência quebra o motor do longo prazo."
+      },
+      {
+        "id": 8,
+        "question": "Produto de longo prazo ideal tende a ser:",
+        "options": [
+          { "key": "A", "text": "Simples e barato" },
+          { "key": "B", "text": "Complexo e caro" },
+          { "key": "C", "text": "Sem transparência" },
+          { "key": "D", "text": "Dependente de sorte" }
+        ],
+        "answer": "A",
+        "explain": "Complexidade e custo viram risco oculto."
+      },
+      {
+        "id": 9,
+        "question": "Uma boa prática é ter:",
+        "options": [
+          { "key": "A", "text": "Regra de aumento anual de aporte e revisão periódica" },
+          { "key": "B", "text": "Aporte aleatório" },
+          { "key": "C", "text": "Nenhuma revisão" },
+          { "key": "D", "text": "Decisão por emoção" }
+        ],
+        "answer": "A",
+        "explain": "Disciplina e revisão evitam desvio."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "O inimigo do longo prazo é desistir" },
+          { "key": "B", "text": "Taxa não importa" },
+          { "key": "C", "text": "Plano não importa" },
+          { "key": "D", "text": "Começar tarde é igual a cedo" }
+        ],
+        "answer": "A",
+        "explain": "Consistência é o fator dominante."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Plano\n\n- idade alvo\n- aporte\n- aumento anual\n- revisão\n",
+    "pilares": "Pilares\n\n- tempo\n- consistência\n- custo\n"
+  }
+}

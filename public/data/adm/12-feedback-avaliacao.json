@@ -1,0 +1,168 @@
+{
+  "id": "12-feedback-avaliacao",
+  "title": "Aula 12 — Feedback e avaliação: construir performance sem destruir relações",
+  "steps": [
+    {
+      "title": "Feedback não é bronca: é ajuste de rumo",
+      "body": "Feedback serve para:\n- reforçar comportamento certo\n- corrigir desvio cedo\n\nRegra:\n- Feedback atrasado vira conflito."
+    },
+    {
+      "title": "Dois tipos: reforço e correção",
+      "body": "Reforço:\n- mantém o padrão\n\nCorreção:\n- reduz erro antes de virar hábito\n\nRegra:\n- Só corrigir cansa; só elogiar ilude."
+    },
+    {
+      "title": "Avaliação: o que medir (e o que NÃO medir)",
+      "body": "Mensure:\n- resultado (entrega)\n- processo (padrão)\n- comportamento (colaboração)\n\nEvite:\n- “gosto pessoal”\n- critérios ocultos\n\nRegra:\n- Critério oculto destrói confiança."
+    },
+    {
+      "title": "SBI + expectativa + acordo",
+      "body": "Formato prático:\n- Situação\n- Comportamento\n- Impacto\n- Expectativa (padrão)\n- Acordo (o que muda)\n\nRegra:\n- Feedback sem acordo vira conversa repetida."
+    },
+    {
+      "title": "O erro mais caro: feedback público de correção",
+      "body": "Correção pública normalmente:\n- humilha\n- cria defesa\n- reduz abertura\n\nRegra:\n- Corrija em privado, reconheça em público."
+    },
+    {
+      "title": "Quando vira problema de performance",
+      "body": "Se após:\n- padrão claro\n- treino\n- acompanhamento\n\nA pessoa segue desviando:\n- vira gestão de performance (PIP informal/ação objetiva)\n\nRegra:\n- Empatia sem limite vira injustiça com o time."
+    },
+    {
+      "title": "Mini prática (45 min) — feedback completo",
+      "body": "Cenário:\n- pessoa está errando etiqueta e gerando devoluções.\n\nEscreva um feedback:\n- com SBI\n- com expectativa\n- com acordo e prazo\n\nObjetivo:\n- corrigir sem virar pessoal."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Feedback é ajuste, não ataque\n- Tenha critério claro\n- Correção em privado, reconhecimento em público\n- Acordo e prazo fecham a conversa\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 12 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O maior problema do feedback atrasado é:",
+        "options": [
+          { "key": "A", "text": "Ele fica mais elegante" },
+          { "key": "B", "text": "O desvio vira hábito e vira conflito" },
+          { "key": "C", "text": "Ele reduz dados" },
+          { "key": "D", "text": "Ele melhora relacionamento" }
+        ],
+        "answer": "B",
+        "explain": "Quanto mais tempo passa, mais emocional fica."
+      },
+      {
+        "id": 2,
+        "question": "Qual é a melhor regra geral?",
+        "options": [
+          { "key": "A", "text": "Corrigir em público para dar exemplo" },
+          { "key": "B", "text": "Corrigir em privado, reconhecer em público" },
+          { "key": "C", "text": "Nunca corrigir" },
+          { "key": "D", "text": "Reconhecer só no fim do mês" }
+        ],
+        "answer": "B",
+        "explain": "Preserva dignidade e reforça cultura."
+      },
+      {
+        "id": 3,
+        "question": "Avaliação injusta normalmente nasce de:",
+        "options": [
+          { "key": "A", "text": "Critérios claros e publicados" },
+          { "key": "B", "text": "Critérios ocultos e opinião pessoal" },
+          { "key": "C", "text": "Métricas consistentes" },
+          { "key": "D", "text": "Acordo de expectativa" }
+        ],
+        "answer": "B",
+        "explain": "Sem critério, vira preferência e ruído."
+      },
+      {
+        "id": 4,
+        "question": "Feedback bom precisa terminar com:",
+        "options": [
+          { "key": "A", "text": "Desabafo" },
+          { "key": "B", "text": "Acordo do que muda + prazo" },
+          { "key": "C", "text": "Promessa vaga" },
+          { "key": "D", "text": "Silêncio" }
+        ],
+        "answer": "B",
+        "explain": "Sem acordo, nada muda."
+      },
+      {
+        "id": 5,
+        "question": "Se a pessoa erra porque não sabe, o primeiro passo é:",
+        "options": [
+          { "key": "A", "text": "Punir" },
+          { "key": "B", "text": "Clarificar padrão e treinar" },
+          { "key": "C", "text": "Expor em público" },
+          { "key": "D", "text": "Ignorar" }
+        ],
+        "answer": "B",
+        "explain": "Sem capacidade, cobrança vira injustiça."
+      },
+      {
+        "id": 6,
+        "question": "Empatia sem limite vira problema porque:",
+        "options": [
+          { "key": "A", "text": "Protege o time" },
+          { "key": "B", "text": "Cria injustiça com quem cumpre padrão" },
+          { "key": "C", "text": "Aumenta produtividade" },
+          { "key": "D", "text": "Reduz erro" }
+        ],
+        "answer": "B",
+        "explain": "Tolerar desvio contínuo penaliza o bom."
+      },
+      {
+        "id": 7,
+        "question": "Qual feedback é mais correto?",
+        "options": [
+          { "key": "A", "text": "Você é irresponsável." },
+          { "key": "B", "text": "Na separação de terça, a etiqueta saiu com endereço errado e isso gerou devolução. A partir de hoje, conferir etiqueta antes de fechar o pacote." },
+          { "key": "C", "text": "Melhore sua atitude." },
+          { "key": "D", "text": "Todo mundo erra mesmo." }
+        ],
+        "answer": "B",
+        "explain": "Fato + impacto + expectativa."
+      },
+      {
+        "id": 8,
+        "question": "O reforço (elogio) é importante porque:",
+        "options": [
+          { "key": "A", "text": "É fofura" },
+          { "key": "B", "text": "Reforça o comportamento certo para repetir" },
+          { "key": "C", "text": "Substitui processo" },
+          { "key": "D", "text": "Elimina a necessidade de métricas" }
+        ],
+        "answer": "B",
+        "explain": "O que é reforçado tende a repetir."
+      },
+      {
+        "id": 9,
+        "question": "A diferença entre corrigir e avaliar é que:",
+        "options": [
+          { "key": "A", "text": "Corrigir é ajuste imediato; avaliar é visão mais ampla e consistente" },
+          { "key": "B", "text": "Corrigir é humilhar; avaliar é elogiar" },
+          { "key": "C", "text": "Não existe diferença" },
+          { "key": "D", "text": "Avaliar é sempre subjetivo" }
+        ],
+        "answer": "A",
+        "explain": "Correção é no desvio; avaliação é no conjunto."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Feedback é ataque pessoal" },
+          { "key": "B", "text": "Feedback é ajuste de rumo com critério" },
+          { "key": "C", "text": "Feedback só serve quando a pessoa erra muito" },
+          { "key": "D", "text": "Feedback deve ser sempre público" }
+        ],
+        "answer": "B",
+        "explain": "Critério e respeito sustentam performance."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Estrutura\n\n- SBI\n- expectativa\n- acordo\n- prazo\n",
+    "pilares": "Pilares\n\n- clareza\n- respeito\n- consistência\n"
+  }
+}

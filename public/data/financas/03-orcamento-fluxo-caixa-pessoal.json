@@ -1,0 +1,168 @@
+{
+  "id": "03-orcamento-fluxo-caixa-pessoal",
+  "title": "Aula 03 — Orçamento e fluxo de caixa pessoal: controlar entrada/saída sem planilha infinita",
+  "steps": [
+    {
+      "title": "Orçamento é um mapa, não uma prisão",
+      "body": "Orçamento serve para:\n- saber para onde o dinheiro vai\n- decidir antes, não depois\n\nRegra:\n- Sem mapa, você só descobre no extrato."
+    },
+    {
+      "title": "A regra simples: entradas - saídas = sobra",
+      "body": "Se não sobra:\n- você está no modo sobrevivência\n\nSe sobra:\n- você escolhe: reserva, dívida, investimento\n\nRegra:\n- O saldo do mês é resultado de decisões repetidas."
+    },
+    {
+      "title": "Categorias (a parte que realmente funciona)",
+      "body": "Sugestão prática:\n- Essencial: moradia, comida, transporte\n- Obrigatório: contas fixas\n- Variável: lazer, delivery, extras\n- Futuro: reserva/investimento\n\nRegra:\n- O dinheiro some no variável, não no essencial."
+    },
+    {
+      "title": "Orçamento por limites (envelope mental)",
+      "body": "Você define teto por categoria.\nEx:\n- lazer: R$ X\n- delivery: R$ Y\n\nRegra:\n- Limite evita que o variável engula o futuro."
+    },
+    {
+      "title": "Como lidar com renda irregular",
+      "body": "Se a renda varia:\n- orce pelo mínimo\n- quando vier extra: priorize reserva/dívida\n\nRegra:\n- Baseie sua vida no pior mês, não no melhor."
+    },
+    {
+      "title": "Automação (o jeito mais fácil de sobrar)",
+      "body": "Faça primeiro:\n- pagar você (reserva/investimento) no dia que recebe\n\nRegra:\n- Se você esperar o fim do mês, o dinheiro evapora."
+    },
+    {
+      "title": "Mini prática (45 min) — orçamento 4 categorias",
+      "body": "Crie 4 categorias só:\n- essencial\n- variável\n- dívidas\n- futuro\n\nDefina teto para variável.\n\nObjetivo:\n- controle simples e consistente."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Orçamento é mapa\n- Categorias revelam vazamentos\n- Limite no variável protege o futuro\n- Automação cria sobra\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 03 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Orçamento serve para:",
+        "options": [
+          { "key": "A", "text": "Punir você" },
+          { "key": "B", "text": "Decidir antes e controlar para onde o dinheiro vai" },
+          { "key": "C", "text": "Eliminar lazer" },
+          { "key": "D", "text": "Ser uma planilha gigante" }
+        ],
+        "answer": "B",
+        "explain": "Orçamento é mapa de decisão."
+      },
+      {
+        "id": 2,
+        "question": "O dinheiro costuma 'sumir' mais em:",
+        "options": [
+          { "key": "A", "text": "Essencial" },
+          { "key": "B", "text": "Variável (extras, delivery, impulso)" },
+          { "key": "C", "text": "Reserva" },
+          { "key": "D", "text": "Salário" }
+        ],
+        "answer": "B",
+        "explain": "Pequenas despesas repetidas viram grandes."
+      },
+      {
+        "id": 3,
+        "question": "Definir teto por categoria ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Cria limite antes do gasto" },
+          { "key": "B", "text": "Aumenta dívida" },
+          { "key": "C", "text": "Elimina necessidade de meta" },
+          { "key": "D", "text": "Dispensa controle" }
+        ],
+        "answer": "A",
+        "explain": "Sem teto, variável come tudo."
+      },
+      {
+        "id": 4,
+        "question": "Se a renda é irregular, o ideal é:",
+        "options": [
+          { "key": "A", "text": "Orçar pelo melhor mês" },
+          { "key": "B", "text": "Orçar pelo mínimo e tratar extra como bônus estratégico" },
+          { "key": "C", "text": "Ignorar orçamento" },
+          { "key": "D", "text": "Comprar mais quando ganha mais" }
+        ],
+        "answer": "B",
+        "explain": "Assim você não se quebra no mês ruim."
+      },
+      {
+        "id": 5,
+        "question": "Automatizar 'pagar você primeiro' significa:",
+        "options": [
+          { "key": "A", "text": "Guardar/investir assim que recebe" },
+          { "key": "B", "text": "Esperar sobrar no fim do mês" },
+          { "key": "C", "text": "Gastar primeiro e guardar depois" },
+          { "key": "D", "text": "Não ter metas" }
+        ],
+        "answer": "A",
+        "explain": "O futuro vira prioridade real."
+      },
+      {
+        "id": 6,
+        "question": "Um orçamento eficiente precisa ter:",
+        "options": [
+          { "key": "A", "text": "100 categorias" },
+          { "key": "B", "text": "Poucas categorias que você realmente usa" },
+          { "key": "C", "text": "Apenas essencial" },
+          { "key": "D", "text": "Apenas lazer" }
+        ],
+        "answer": "B",
+        "explain": "Simplicidade aumenta consistência."
+      },
+      {
+        "id": 7,
+        "question": "Entrada - saída =",
+        "options": [
+          { "key": "A", "text": "Sobra (ou falta) do mês" },
+          { "key": "B", "text": "Lucro garantido" },
+          { "key": "C", "text": "Investimento" },
+          { "key": "D", "text": "Juros" }
+        ],
+        "answer": "A",
+        "explain": "É o resultado do seu sistema financeiro."
+      },
+      {
+        "id": 8,
+        "question": "Um 'envelope' (limite) protege principalmente:",
+        "options": [
+          { "key": "A", "text": "O gasto variável" },
+          { "key": "B", "text": "O aluguel" },
+          { "key": "C", "text": "O salário" },
+          { "key": "D", "text": "O imposto" }
+        ],
+        "answer": "A",
+        "explain": "Variável é onde você consegue ajustar."
+      },
+      {
+        "id": 9,
+        "question": "Se não sobra, a primeira atitude é:",
+        "options": [
+          { "key": "A", "text": "Investir em risco alto" },
+          { "key": "B", "text": "Mapear vazamentos e reduzir variável/renegociar fixos" },
+          { "key": "C", "text": "Ignorar" },
+          { "key": "D", "text": "Pegar mais cartão" }
+        ],
+        "answer": "B",
+        "explain": "Sem sobra, não há base para o próximo passo."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Orçamento é prisão" },
+          { "key": "B", "text": "Orçamento é mapa para decidir e manter consistência" },
+          { "key": "C", "text": "Orçamento só serve para quem ganha muito" },
+          { "key": "D", "text": "Orçamento elimina imprevistos" }
+        ],
+        "answer": "B",
+        "explain": "Você controla o controlável."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Orçamento simples\n\n- essencial\n- variável\n- dívidas\n- futuro\n",
+    "pilares": "Pilares\n\n- categorias\n- limite\n- automação\n"
+  }
+}

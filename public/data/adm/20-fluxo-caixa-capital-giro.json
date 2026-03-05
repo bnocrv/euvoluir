@@ -1,0 +1,168 @@
+{
+  "id": "20-fluxo-caixa-capital-giro",
+  "title": "Aula 20 — Fluxo de caixa e capital de giro: sobreviver e crescer",
+  "steps": [
+    {
+      "title": "Fluxo de caixa: o que entra e sai (e quando)",
+      "body": "Fluxo de caixa é uma agenda de dinheiro.\n\nEle responde:\n- em que dia falta dinheiro\n- em que dia sobra\n\nRegra:\n- Falta de caixa mata operação antes de qualquer 'estratégia'."
+    },
+    {
+      "title": "Capital de giro (em linguagem simples)",
+      "body": "Capital de giro é o dinheiro travado para operar:\n- estoque\n- contas a receber\n- contas a pagar\n\nRegra:\n- Crescer normalmente exige mais capital de giro."
+    },
+    {
+      "title": "Ciclo financeiro (onde o dinheiro fica preso)",
+      "body": "Ciclo simplificado:\n- compra estoque\n- vende\n- recebe\n\nSe você:\n- paga rápido\n- recebe lento\n\nVocê financia o negócio no braço.\n\nRegra:\n- Prazo manda mais do que parece."
+    },
+    {
+      "title": "Alavancas práticas para melhorar caixa",
+      "body": "Alavancas:\n- reduzir estoque parado (giro)\n- negociar prazo com fornecedor\n- antecipar recebíveis (com custo)\n- aumentar % à vista\n\nRegra:\n- Caixa melhora quando você reduz tempo do dinheiro preso."
+    },
+    {
+      "title": "Crescimento que quebra (o caso clássico)",
+      "body": "Cresce venda, mas:\n- compra mais estoque\n- vende a prazo\n- paga fornecedor antes\n\nResultado:\n- caixa negativo.\n\nRegra:\n- Crescimento sem capital de giro é risco."
+    },
+    {
+      "title": "Disciplina do gestor: previsão semanal",
+      "body": "Boa prática:\n- olhar caixa semanalmente\n- planejar pagamentos\n- prever picos (folha, imposto, fornecedor)\n\nRegra:\n- Caixa não é mensal: é diário/semana."
+    },
+    {
+      "title": "Mini prática (45 min) — ciclo de caixa",
+      "body": "Cenário:\n- compra hoje e paga em 7 dias\n- vende hoje e recebe em 30 dias\n\nResponda:\n- quantos dias o dinheiro fica 'no buraco'?\n- o que você faria: prazo fornecedor, promoção à vista, reduzir estoque?\n\nObjetivo:\n- pensar como gestor de sobrevivência."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Caixa é oxigênio\n- Capital de giro é dinheiro preso para operar\n- Prazo de receber/pagar define risco\n- Crescimento exige giro e negociação\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 20 (Administração)",
+    "instructions": "Marque A, B, C ou D. Foque no ciclo financeiro.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Por que crescimento pode quebrar uma empresa?",
+        "options": [
+          { "key": "A", "text": "Porque vender mais sempre reduz caixa" },
+          { "key": "B", "text": "Porque cresce a necessidade de estoque e o dinheiro fica preso no ciclo" },
+          { "key": "C", "text": "Porque despesas fixas somem" },
+          { "key": "D", "text": "Porque margem bruta aumenta sempre" }
+        ],
+        "answer": "B",
+        "explain": "Mais venda geralmente exige mais giro/estoque e prazo."
+      },
+      {
+        "id": 2,
+        "question": "Capital de giro está mais ligado a:",
+        "options": [
+          { "key": "A", "text": "Logo e marketing" },
+          { "key": "B", "text": "Estoque, receber, pagar" },
+          { "key": "C", "text": "Somente lucro" },
+          { "key": "D", "text": "Somente folha" }
+        ],
+        "answer": "B",
+        "explain": "É o dinheiro preso para a operação funcionar."
+      },
+      {
+        "id": 3,
+        "question": "Se você paga fornecedor em 7 dias e recebe do cliente em 30, o efeito é:",
+        "options": [
+          { "key": "A", "text": "Caixa fica folgado" },
+          { "key": "B", "text": "Você financia o ciclo com caixa próprio (desencaixe)" },
+          { "key": "C", "text": "Não muda nada" },
+          { "key": "D", "text": "Margem aumenta" }
+        ],
+        "answer": "B",
+        "explain": "Você paga antes de receber."
+      },
+      {
+        "id": 4,
+        "question": "Qual alavanca melhora caixa mais diretamente?",
+        "options": [
+          { "key": "A", "text": "Aumentar estoque parado" },
+          { "key": "B", "text": "Reduzir estoque parado (aumentar giro)" },
+          { "key": "C", "text": "Aumentar prazo de recebimento" },
+          { "key": "D", "text": "Aumentar retrabalho" }
+        ],
+        "answer": "B",
+        "explain": "Menos dinheiro preso em estoque melhora caixa."
+      },
+      {
+        "id": 5,
+        "question": "Antecipar recebíveis:",
+        "options": [
+          { "key": "A", "text": "É sempre grátis" },
+          { "key": "B", "text": "Melhora caixa agora, mas tem custo" },
+          { "key": "C", "text": "Piora caixa sempre" },
+          { "key": "D", "text": "Não afeta nada" }
+        ],
+        "answer": "B",
+        "explain": "Troca dinheiro no futuro por dinheiro agora."
+      },
+      {
+        "id": 6,
+        "question": "Fluxo de caixa deveria ser acompanhado:",
+        "options": [
+          { "key": "A", "text": "Só no fim do ano" },
+          { "key": "B", "text": "No mínimo semanalmente" },
+          { "key": "C", "text": "Nunca" },
+          { "key": "D", "text": "Somente quando der problema" }
+        ],
+        "answer": "B",
+        "explain": "Caixa é sensível a datas."
+      },
+      {
+        "id": 7,
+        "question": "Se o objetivo é reduzir tempo do dinheiro preso, a melhor ideia é:",
+        "options": [
+          { "key": "A", "text": "Aumentar prazo de recebimento" },
+          { "key": "B", "text": "Negociar maior prazo de pagamento e reduzir estoque" },
+          { "key": "C", "text": "Comprar mais do que vende" },
+          { "key": "D", "text": "Ignorar prazo" }
+        ],
+        "answer": "B",
+        "explain": "Ajusta prazos e reduz capital preso."
+      },
+      {
+        "id": 8,
+        "question": "O que mais costuma 'sumir' no caixa e pegar gestor de surpresa?",
+        "options": [
+          { "key": "A", "text": "Impostos e picos de pagamento (folha/fornecedor)" },
+          { "key": "B", "text": "A cor do produto" },
+          { "key": "C", "text": "A missão da empresa" },
+          { "key": "D", "text": "O slogan" }
+        ],
+        "answer": "A",
+        "explain": "Datas de pagamento importam muito."
+      },
+      {
+        "id": 9,
+        "question": "Se você tem muito estoque parado, o efeito mais provável é:",
+        "options": [
+          { "key": "A", "text": "Caixa mais forte" },
+          { "key": "B", "text": "Caixa travado e risco de perda/obsolescência" },
+          { "key": "C", "text": "Lucro automático" },
+          { "key": "D", "text": "Menos capital de giro" }
+        ],
+        "answer": "B",
+        "explain": "Dinheiro preso e risco de encalhe."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Caixa é detalhe" },
+          { "key": "B", "text": "Caixa é oxigênio; sem ele a operação para" },
+          { "key": "C", "text": "Só lucro importa" },
+          { "key": "D", "text": "Prazo não importa" }
+        ],
+        "answer": "B",
+        "explain": "Sem dinheiro na data certa, trava tudo."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Alavancas de caixa\n\n- giro de estoque\n- prazo pagar/receber\n- antecipação\n",
+    "pilares": "Pilares\n\n- disciplina\n- prazo\n- capital de giro\n"
+  }
+}

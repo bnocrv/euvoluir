@@ -1,0 +1,168 @@
+{
+  "id": "26-impostos-investimentos",
+  "title": "Aula 26 — Impostos em investimentos: o que muda seu retorno de verdade (visão prática)",
+  "steps": [
+    {
+      "title": "Imposto é parte do retorno (não é detalhe)",
+      "body": "Dois investimentos podem ter a mesma taxa “bruta”, mas rendimentos líquidos bem diferentes.\n\nRegra:\n- Retorno que paga conta é o líquido, não o bruto."
+    },
+    {
+      "title": "Três ideias que organizam tudo",
+      "body": "1) Base de cálculo: sobre o que o imposto incide\n2) Momento: quando o imposto é cobrado\n3) Regra do produto: cada produto tem sua lógica\n\nRegra:\n- Você não precisa decorar tudo, mas precisa saber onde está o impacto."
+    },
+    {
+      "title": "Tributação x prazo (por que o tempo importa)",
+      "body": "Em geral, o prazo influencia:\n- quanto imposto você paga\n- quando você paga\n\nImpacto real:\n- sacar cedo pode reduzir seu líquido\n\nRegra:\n- Prazo é estratégia fiscal, não só paciência."
+    },
+    {
+      "title": "Come-cotas e eventos (por que seu saldo muda sem saque)",
+      "body": "Alguns produtos podem antecipar imposto (cobrança periódica).\nIsso reduz:\n- crescimento composto\n\nRegra:\n- Imposto antecipado diminui o efeito “juros sobre juros”."
+    },
+    {
+      "title": "Renda fixa x renda variável (diferença mental)",
+      "body": "Renda fixa:\n- imposto geralmente incide sobre ganho\n- pode ser retido na fonte\n\nRenda variável:\n- imposto pode depender de venda/lucro\n- exige mais controle de operações\n\nRegra:\n- Em renda variável, controle e registro importam tanto quanto escolha."
+    },
+    {
+      "title": "Erro comum: comparar retorno sem comparar imposto",
+      "body": "Erros:\n- comparar apenas taxa bruta\n- esquecer taxas e impostos\n- girar carteira sem necessidade (gera imposto/custo)\n\nRegra:\n- Giro excessivo é “vazamento” de retorno."
+    },
+    {
+      "title": "Mini prática (45 min) — comparar bruto x líquido",
+      "body": "Pegue 2 opções hipotéticas:\n- Opção A: 12% ao ano bruto\n- Opção B: 11% ao ano bruto\n\nSimule:\n- taxas/custos\n- impacto de imposto no resgate\n\nPergunta:\n- qual pode render mais no líquido, dependendo do prazo?\n\nObjetivo:\n- treinar pensar em retorno líquido."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Imposto muda retorno real\n- Entenda base, momento e regra do produto\n- Prazo influencia imposto e composto\n- Compare sempre no líquido (e com custos)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 26 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O retorno que importa para decisões reais é:",
+        "options": [
+          { "key": "A", "text": "Bruto" },
+          { "key": "B", "text": "Líquido (após impostos e custos)" },
+          { "key": "C", "text": "Somente nominal" },
+          { "key": "D", "text": "O do último mês" }
+        ],
+        "answer": "B",
+        "explain": "É o retorno que você realmente recebe."
+      },
+      {
+        "id": 2,
+        "question": "Três ideias que organizam tributação são:",
+        "options": [
+          { "key": "A", "text": "Marketing, marca e hype" },
+          { "key": "B", "text": "Base de cálculo, momento e regra do produto" },
+          { "key": "C", "text": "Cor, design e liquidez" },
+          { "key": "D", "text": "Lucro, prejuízo e meme" }
+        ],
+        "answer": "B",
+        "explain": "Isso explica por que o imposto aparece e como afeta."
+      },
+      {
+        "id": 3,
+        "question": "Prazo importa porque pode:",
+        "options": [
+          { "key": "A", "text": "Não mudar nada" },
+          { "key": "B", "text": "Alterar quanto/quando você paga imposto e o efeito composto" },
+          { "key": "C", "text": "Eliminar custos" },
+          { "key": "D", "text": "Eliminar risco" }
+        ],
+        "answer": "B",
+        "explain": "Tempo muda o imposto e o crescimento do capital."
+      },
+      {
+        "id": 4,
+        "question": "Imposto antecipado tende a:",
+        "options": [
+          { "key": "A", "text": "Aumentar juros sobre juros" },
+          { "key": "B", "text": "Reduzir o efeito do composto" },
+          { "key": "C", "text": "Eliminar volatilidade" },
+          { "key": "D", "text": "Garantir retorno" }
+        ],
+        "answer": "B",
+        "explain": "Menos dinheiro fica rendendo por mais tempo."
+      },
+      {
+        "id": 5,
+        "question": "Um erro comum é:",
+        "options": [
+          { "key": "A", "text": "Comparar no líquido" },
+          { "key": "B", "text": "Comparar só taxa bruta e esquecer imposto/custos" },
+          { "key": "C", "text": "Ter estratégia" },
+          { "key": "D", "text": "Entender prazo" }
+        ],
+        "answer": "B",
+        "explain": "Imposto e custos mudam o vencedor."
+      },
+      {
+        "id": 6,
+        "question": "Girar carteira sem necessidade pode:",
+        "options": [
+          { "key": "A", "text": "Aumentar custos e impostos" },
+          { "key": "B", "text": "Eliminar imposto" },
+          { "key": "C", "text": "Garantir lucro" },
+          { "key": "D", "text": "Reduzir risco sempre" }
+        ],
+        "answer": "A",
+        "explain": "Movimentação gera fricção."
+      },
+      {
+        "id": 7,
+        "question": "Em renda variável, além de escolher ativos, é crucial:",
+        "options": [
+          { "key": "A", "text": "Ter controle e registro de operações" },
+          { "key": "B", "text": "Ignorar histórico" },
+          { "key": "C", "text": "Evitar qualquer planilha" },
+          { "key": "D", "text": "Só seguir notícias" }
+        ],
+        "answer": "A",
+        "explain": "Registro impacta tributação e gestão."
+      },
+      {
+        "id": 8,
+        "question": "“Base de cálculo” significa:",
+        "options": [
+          { "key": "A", "text": "Onde o imposto incide (o ganho, por exemplo)" },
+          { "key": "B", "text": "Seu salário" },
+          { "key": "C", "text": "Sua idade" },
+          { "key": "D", "text": "O prazo do produto" }
+        ],
+        "answer": "A",
+        "explain": "É o valor que serve de base para calcular imposto."
+      },
+      {
+        "id": 9,
+        "question": "A comparação correta entre investimentos deve considerar:",
+        "options": [
+          { "key": "A", "text": "Só retorno do último mês" },
+          { "key": "B", "text": "Retorno líquido e custos" },
+          { "key": "C", "text": "Só nome do emissor" },
+          { "key": "D", "text": "Só liquidez" }
+        ],
+        "answer": "B",
+        "explain": "É a comparação que afeta seu bolso."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Imposto não muda decisão" },
+          { "key": "B", "text": "Imposto pode mudar o vencedor mesmo com taxa bruta menor" },
+          { "key": "C", "text": "Custos são irrelevantes" },
+          { "key": "D", "text": "Prazo não importa" }
+        ],
+        "answer": "B",
+        "explain": "Líquido + prazo pode inverter resultado."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Comparação correta\n\n- bruto x líquido\n- custos\n- prazo\n",
+    "pilares": "Pilares\n\n- retorno líquido\n- fricção\n- estratégia fiscal\n"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "07-consumo-inteligente",
+  "title": "Aula 07 — Consumo inteligente: custo de oportunidade e decisões de compra",
+  "steps": [
+    {
+      "title": "Consumo é decisão de alocação de vida",
+      "body": "Quando você gasta, você troca:\n- dinheiro\n- tempo de trabalho\n- futuro\n\nRegra:\n- Todo gasto é um voto no tipo de vida que você está construindo."
+    },
+    {
+      "title": "Desejo vs necessidade (sem moralismo)",
+      "body": "Necessidade:\n- mantém sua vida funcionando\n\nDesejo:\n- melhora conforto/prazer\n\nRegra:\n- Desejo é ok, desde que caiba no plano."
+    },
+    {
+      "title": "Custo total (não só preço)",
+      "body": "Olhe o custo completo:\n- manutenção\n- juros do parcelamento\n- frete\n- tempo\n\nRegra:\n- Barato no preço pode ser caro no total."
+    },
+    {
+      "title": "Parcelamento: quando é útil e quando é cilada",
+      "body": "Útil quando:\n- sem juros\n- você já teria o dinheiro\n- não compromete sua reserva\n\nCilada quando:\n- vira rotina\n- empurra o mês pra frente\n\nRegra:\n- Parcelar é trazer o futuro para pagar o presente."
+    },
+    {
+      "title": "A regra das 24 horas (anti-impulso)",
+      "body": "Para compras não essenciais:\n- espere 24h\n- revise orçamento\n- compare alternativas\n\nRegra:\n- Impulso é caro; espera é barata."
+    },
+    {
+      "title": "O “teto do variável” é o seu escudo",
+      "body": "Se o variável não tem teto:\n- ele cresce até ocupar tudo\n\nRegra:\n- O variável é o vazamento mais comum."
+    },
+    {
+      "title": "Mini prática (45 min) — checklist de compra",
+      "body": "Antes de comprar, responda:\n- eu compraria à vista?\n- isso atrapalha minha reserva?\n- qual o custo total?\n- existe alternativa mais barata?\n- isso é hábito ou exceção?\n\nObjetivo:\n- decisão com critério."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Gasto troca tempo/futuro\n- Custo total > preço\n- Parcelar traz o futuro para pagar o presente\n- 24h reduz impulso\n- Teto do variável protege o plano\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 07 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um gasto representa também:",
+        "options": [
+          { "key": "A", "text": "Somente dinheiro" },
+          { "key": "B", "text": "Tempo de trabalho e futuro" },
+          { "key": "C", "text": "Nada além do preço" },
+          { "key": "D", "text": "Apenas status" }
+        ],
+        "answer": "B",
+        "explain": "Você troca tempo e oportunidades."
+      },
+      {
+        "id": 2,
+        "question": "Custo total inclui:",
+        "options": [
+          { "key": "A", "text": "Só preço" },
+          { "key": "B", "text": "Manutenção, juros, frete e outros custos" },
+          { "key": "C", "text": "Somente frete" },
+          { "key": "D", "text": "Somente desconto" }
+        ],
+        "answer": "B",
+        "explain": "Preço é só a entrada da conta."
+      },
+      {
+        "id": 3,
+        "question": "Parcelar é:",
+        "options": [
+          { "key": "A", "text": "Trazer o futuro para pagar o presente" },
+          { "key": "B", "text": "Eliminar custo" },
+          { "key": "C", "text": "Garantir que cabe" },
+          { "key": "D", "text": "Sempre vantajoso" }
+        ],
+        "answer": "A",
+        "explain": "Você cria obrigação futura."
+      },
+      {
+        "id": 4,
+        "question": "Parcelamento sem juros pode ser útil quando:",
+        "options": [
+          { "key": "A", "text": "Você não teria como pagar nunca" },
+          { "key": "B", "text": "Você já teria o dinheiro e não compromete reserva" },
+          { "key": "C", "text": "Você está no cheque especial" },
+          { "key": "D", "text": "Você vai pagar mínimo do cartão" }
+        ],
+        "answer": "B",
+        "explain": "A ideia é não criar vulnerabilidade."
+      },
+      {
+        "id": 5,
+        "question": "A regra das 24h serve para:",
+        "options": [
+          { "key": "A", "text": "Acelerar compra" },
+          { "key": "B", "text": "Reduzir impulso e revisar decisão" },
+          { "key": "C", "text": "Aumentar gastos" },
+          { "key": "D", "text": "Evitar comparar preços" }
+        ],
+        "answer": "B",
+        "explain": "Tempo reduz emoção na decisão."
+      },
+      {
+        "id": 6,
+        "question": "Desejo não é errado quando:",
+        "options": [
+          { "key": "A", "text": "Cabe no plano e tem teto" },
+          { "key": "B", "text": "É impulsivo sempre" },
+          { "key": "C", "text": "Substitui a reserva" },
+          { "key": "D", "text": "Vira dívida cara" }
+        ],
+        "answer": "A",
+        "explain": "O problema é virar descontrole."
+      },
+      {
+        "id": 7,
+        "question": "Sem teto do variável, o mais provável é:",
+        "options": [
+          { "key": "A", "text": "O variável diminuir sozinho" },
+          { "key": "B", "text": "O variável crescer e engolir a sobra" },
+          { "key": "C", "text": "A renda aumentar" },
+          { "key": "D", "text": "A reserva aparecer" }
+        ],
+        "answer": "B",
+        "explain": "Variável é onde o gasto se expande."
+      },
+      {
+        "id": 8,
+        "question": "Uma pergunta forte antes de comprar é:",
+        "options": [
+          { "key": "A", "text": "“Eu compraria à vista?”" },
+          { "key": "B", "text": "“Como esconder do orçamento?”" },
+          { "key": "C", "text": "“Como aumentar o limite?”" },
+          { "key": "D", "text": "“Posso pagar o mínimo?”" }
+        ],
+        "answer": "A",
+        "explain": "Ajuda a evitar dívida desnecessária."
+      },
+      {
+        "id": 9,
+        "question": "Barato no preço pode ser caro quando:",
+        "options": [
+          { "key": "A", "text": "Custo total é alto (manutenção/juros)" },
+          { "key": "B", "text": "Tem desconto" },
+          { "key": "C", "text": "É à vista" },
+          { "key": "D", "text": "É pequeno" }
+        ],
+        "answer": "A",
+        "explain": "O total manda, não a etiqueta."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Parcelar sempre resolve" },
+          { "key": "B", "text": "Consumo inteligente é decisão com critério e teto" },
+          { "key": "C", "text": "Só precisa de renda alta" },
+          { "key": "D", "text": "Preço é a única coisa que importa" }
+        ],
+        "answer": "B",
+        "explain": "Critério reduz arrependimento e dívida."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist\n\n- custo total\n- cabe no teto\n- 24h\n",
+    "pilares": "Pilares\n\n- critério\n- teto do variável\n- custo de oportunidade\n"
+  }
+}

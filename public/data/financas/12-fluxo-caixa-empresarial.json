@@ -1,0 +1,168 @@
+{
+  "id": "12-fluxo-caixa-empresarial",
+  "title": "Aula 12 — Fluxo de caixa empresarial: previsibilidade, sazonalidade e sobrevivência",
+  "steps": [
+    {
+      "title": "Fluxo de caixa empresarial é agenda do dinheiro",
+      "body": "Ele responde:\n- quando entra\n- quando sai\n- se falta antes de entrar\n\nRegra:\n- Empresa morre no dia que não paga."
+    },
+    {
+      "title": "Três tempos diferentes que confundem",
+      "body": "1) venda (quando o cliente compra)\n2) recebimento (quando o dinheiro entra)\n3) pagamento (quando você paga custos/fornecedores)\n\nRegra:\n- Se recebimento é depois do pagamento, você precisa de caixa."
+    },
+    {
+      "title": "Previsão: olhar para frente (não só extrato)",
+      "body": "Fluxo de caixa bom tem:\n- contas a pagar previstas\n- contas a receber previstas\n- datas\n\nRegra:\n- O problema não é ter buraco; é descobrir tarde."
+    },
+    {
+      "title": "Sazonalidade (o mês bom e o mês ruim)",
+      "body": "Alguns negócios têm:\n- meses fortes\n- meses fracos\n\nRegra:\n- O mês bom precisa financiar o mês ruim."
+    },
+    {
+      "title": "Controle de prazos: o jogo do capital de giro",
+      "body": "Alavancas:\n- receber mais rápido (reduzir prazo)\n- pagar mais devagar (negociar prazo)\n- reduzir estoque parado\n\nRegra:\n- Prazo é tão importante quanto margem."
+    },
+    {
+      "title": "Sinais de alerta (antes de virar crise)",
+      "body": "Alertas:\n- pagar fornecedor atrasado\n- usar crédito caro para giro\n- antecipar recebíveis toda hora\n\nRegra:\n- Crise de caixa começa pequena."
+    },
+    {
+      "title": "Mini prática (45 min) — fluxo de 30 dias",
+      "body": "Monte uma visão simples:\n- próximas 4 semanas\n\nListe por semana:\n- entradas previstas\n- saídas previstas\n- saldo projetado\n\nObjetivo:\n- prever buraco antes de acontecer."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Caixa é sobrevivência\n- Venda ≠ recebimento ≠ pagamento\n- Previsão evita surpresa\n- Sazonalidade exige reserva/planejamento\n- Prazo é alavanca\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 12 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Fluxo de caixa empresarial é:",
+        "options": [
+          { "key": "A", "text": "Só saldo bancário" },
+          { "key": "B", "text": "Agenda de entradas e saídas com datas" },
+          { "key": "C", "text": "Somente lucro" },
+          { "key": "D", "text": "Somente estoque" }
+        ],
+        "answer": "B",
+        "explain": "Ele antecipa o que vai entrar e sair."
+      },
+      {
+        "id": 2,
+        "question": "Venda, recebimento e pagamento são:",
+        "options": [
+          { "key": "A", "text": "A mesma coisa" },
+          { "key": "B", "text": "Momentos diferentes que afetam o caixa" },
+          { "key": "C", "text": "Somente contabilidade" },
+          { "key": "D", "text": "Irrelevantes" }
+        ],
+        "answer": "B",
+        "explain": "Timing é o centro do caixa."
+      },
+      {
+        "id": 3,
+        "question": "O risco maior é quando:",
+        "options": [
+          { "key": "A", "text": "Recebe antes de pagar" },
+          { "key": "B", "text": "Paga antes de receber" },
+          { "key": "C", "text": "Tem saldo positivo" },
+          { "key": "D", "text": "Tem previsão" }
+        ],
+        "answer": "B",
+        "explain": "Você precisa cobrir o intervalo com caixa."
+      },
+      {
+        "id": 4,
+        "question": "Previsão de caixa serve para:",
+        "options": [
+          { "key": "A", "text": "Descobrir tarde" },
+          { "key": "B", "text": "Ver buracos antes e agir" },
+          { "key": "C", "text": "Eliminar sazonalidade" },
+          { "key": "D", "text": "Aumentar custos" }
+        ],
+        "answer": "B",
+        "explain": "Surpresa é cara."
+      },
+      {
+        "id": 5,
+        "question": "Sazonalidade significa:",
+        "options": [
+          { "key": "A", "text": "Todo mês é igual" },
+          { "key": "B", "text": "Meses fortes e fracos no ano" },
+          { "key": "C", "text": "Só depende de sorte" },
+          { "key": "D", "text": "Só depende de marketing" }
+        ],
+        "answer": "B",
+        "explain": "Receita e caixa variam no calendário."
+      },
+      {
+        "id": 6,
+        "question": "Uma alavanca de caixa é:",
+        "options": [
+          { "key": "A", "text": "Receber mais rápido" },
+          { "key": "B", "text": "Ignorar prazos" },
+          { "key": "C", "text": "Aumentar estoque parado" },
+          { "key": "D", "text": "Aumentar crédito caro" }
+        ],
+        "answer": "A",
+        "explain": "Reduz o intervalo de capital de giro."
+      },
+      {
+        "id": 7,
+        "question": "Um sinal de alerta é:",
+        "options": [
+          { "key": "A", "text": "Saldo projetado com antecedência" },
+          { "key": "B", "text": "Usar crédito caro para girar todo mês" },
+          { "key": "C", "text": "Negociar prazo" },
+          { "key": "D", "text": "Reduzir estoque" }
+        ],
+        "answer": "B",
+        "explain": "Crédito caro contínuo indica fragilidade."
+      },
+      {
+        "id": 8,
+        "question": "Por que prazo é tão importante quanto margem?",
+        "options": [
+          { "key": "A", "text": "Porque prazo muda necessidade de caixa" },
+          { "key": "B", "text": "Porque prazo é estética" },
+          { "key": "C", "text": "Porque margem não existe" },
+          { "key": "D", "text": "Porque prazo elimina custos" }
+        ],
+        "answer": "A",
+        "explain": "Timing define se você precisa financiar o intervalo."
+      },
+      {
+        "id": 9,
+        "question": "Um fluxo de 30 dias por semana ajuda a:",
+        "options": [
+          { "key": "A", "text": "Não ver nada" },
+          { "key": "B", "text": "Antecipar o saldo projetado e agir" },
+          { "key": "C", "text": "Aumentar dívida" },
+          { "key": "D", "text": "Eliminar impostos" }
+        ],
+        "answer": "B",
+        "explain": "Você enxerga o buraco antes."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Empresa quebra por falta de caixa" },
+          { "key": "B", "text": "Empresa quebra por falta de planilha bonita" },
+          { "key": "C", "text": "Lucro garante caixa" },
+          { "key": "D", "text": "Sazonalidade não existe" }
+        ],
+        "answer": "A",
+        "explain": "Liquidez é sobrevivência."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Fluxo 30 dias\n\n- entradas previstas\n- saídas previstas\n- saldo projetado\n",
+    "pilares": "Pilares\n\n- timing\n- previsibilidade\n- prazos\n"
+  }
+}

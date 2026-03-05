@@ -1,0 +1,168 @@
+{
+  "id": "26-operacoes-produtividade",
+  "title": "Aula 26 — Operações e produtividade: fazer mais com qualidade (sem virar caos)",
+  "steps": [
+    {
+      "title": "Produtividade não é correria: é resultado por recurso",
+      "body": "Produtividade é:\n- entregar resultado\n- com tempo/pessoas/custo controlados\n\nRegra:\n- Correria sem padrão aumenta erro e retrabalho."
+    },
+    {
+      "title": "Os 3 inimigos clássicos da produtividade",
+      "body": "Inimigos:\n- espera (fila, aprovação, falta de material)\n- retrabalho (erro, devolução, correção)\n- deslocamento (movimento desnecessário)\n\nRegra:\n- O tempo perdido quase sempre está no processo, não na pessoa."
+    },
+    {
+      "title": "Indicadores operacionais que importam",
+      "body": "Mínimo:\n- throughput (saída por hora/dia)\n- lead time (tempo total)\n- taxa de erro/retrabalho\n- ocupação x fila (capacidade)\n\nRegra:\n- Medir só 'quantidade' incentiva atalho."
+    },
+    {
+      "title": "Capacidade, fila e gargalo",
+      "body": "Se a demanda > capacidade:\n- fila cresce\n- lead time explode\n\nRegra:\n- Gargalo define o ritmo do sistema."
+    },
+    {
+      "title": "Padronização: o segredo não glamouroso",
+      "body": "Padronizar significa:\n- melhor jeito conhecido\n- treinável\n- auditável\n\nRegra:\n- Sem padrão, não existe melhoria: existe opinião."
+    },
+    {
+      "title": "Automação vs processo (ordem certa)",
+      "body": "Automatizar processo ruim:\n- só acelera o erro.\n\nRegra:\n- Primeiro simplifica e padroniza, depois automatiza."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de desperdício",
+      "body": "Escolha um processo (ex: separação de pedidos).\n\nListe:\n- onde espera\n- onde retrabalha\n- onde anda demais\n\nEscolha 1 melhoria simples.\n\nObjetivo:\n- ganho real sem 'milagre'."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Produtividade é resultado com recurso\n- Espera, retrabalho e deslocamento são vilões\n- Gargalo manda no ritmo\n- Padrão vem antes de automação\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 26 (Administração)",
+    "instructions": "Marque A, B, C ou D. Foque em operação real.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Produtividade de verdade é:",
+        "options": [
+          { "key": "A", "text": "Trabalhar mais horas" },
+          { "key": "B", "text": "Entregar mais resultado com recursos controlados" },
+          { "key": "C", "text": "Correr o dia inteiro" },
+          { "key": "D", "text": "Fazer sem medir" }
+        ],
+        "answer": "B",
+        "explain": "Produtividade é eficiência + resultado."
+      },
+      {
+        "id": 2,
+        "question": "Qual desperdício costuma ser maior em operação?",
+        "options": [
+          { "key": "A", "text": "Espera e retrabalho" },
+          { "key": "B", "text": "Talento do time" },
+          { "key": "C", "text": "Marketing" },
+          { "key": "D", "text": "Sorte" }
+        ],
+        "answer": "A",
+        "explain": "Fila e erro comem tempo e custo."
+      },
+      {
+        "id": 3,
+        "question": "Quando demanda é maior que capacidade, tende a acontecer:",
+        "options": [
+          { "key": "A", "text": "Fila diminui" },
+          { "key": "B", "text": "Lead time aumenta" },
+          { "key": "C", "text": "Erro some" },
+          { "key": "D", "text": "Custo zera" }
+        ],
+        "answer": "B",
+        "explain": "Fila cresce e o tempo total explode."
+      },
+      {
+        "id": 4,
+        "question": "Gargalo é importante porque:",
+        "options": [
+          { "key": "A", "text": "Não influencia nada" },
+          { "key": "B", "text": "Define o ritmo do sistema" },
+          { "key": "C", "text": "É só um termo bonito" },
+          { "key": "D", "text": "Só existe em fábrica" }
+        ],
+        "answer": "B",
+        "explain": "O sistema anda na velocidade do gargalo."
+      },
+      {
+        "id": 5,
+        "question": "Medir só quantidade pode causar:",
+        "options": [
+          { "key": "A", "text": "Qualidade sempre melhorar" },
+          { "key": "B", "text": "Atalho e aumento de erro/retrabalho" },
+          { "key": "C", "text": "Fila desaparecer" },
+          { "key": "D", "text": "Capacidade dobrar" }
+        ],
+        "answer": "B",
+        "explain": "Incentivo errado compra o comportamento errado."
+      },
+      {
+        "id": 6,
+        "question": "Padronização é importante porque:",
+        "options": [
+          { "key": "A", "text": "Tira autonomia sempre" },
+          { "key": "B", "text": "Cria base treinável e auditável para melhorar" },
+          { "key": "C", "text": "Elimina necessidade de treinamento" },
+          { "key": "D", "text": "Serve só para burocracia" }
+        ],
+        "answer": "B",
+        "explain": "Sem padrão, não existe melhoria contínua."
+      },
+      {
+        "id": 7,
+        "question": "Automatizar processo ruim tende a:",
+        "options": [
+          { "key": "A", "text": "Corrigir o processo automaticamente" },
+          { "key": "B", "text": "Acelerar erros e desperdícios" },
+          { "key": "C", "text": "Eliminar gargalo" },
+          { "key": "D", "text": "Aumentar qualidade sempre" }
+        ],
+        "answer": "B",
+        "explain": "Você só faz o ruim mais rápido."
+      },
+      {
+        "id": 8,
+        "question": "Melhor ação para reduzir lead time é:",
+        "options": [
+          { "key": "A", "text": "Aumentar WIP (trabalho em andamento)" },
+          { "key": "B", "text": "Reduzir fila e atacar gargalo/esperas" },
+          { "key": "C", "text": "Ignorar fila" },
+          { "key": "D", "text": "Cobrar mais pressa" }
+        ],
+        "answer": "B",
+        "explain": "Menos fila e menos espera reduzem tempo total."
+      },
+      {
+        "id": 9,
+        "question": "Throughput mede:",
+        "options": [
+          { "key": "A", "text": "Tempo total de um pedido" },
+          { "key": "B", "text": "Saída por unidade de tempo (ex: pedidos/dia)" },
+          { "key": "C", "text": "Opinião do gestor" },
+          { "key": "D", "text": "Só custos fixos" }
+        ],
+        "answer": "B",
+        "explain": "É a taxa de produção/saída."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "O tempo perdido está sempre na pessoa" },
+          { "key": "B", "text": "O tempo perdido costuma estar no processo" },
+          { "key": "C", "text": "Padrão atrapalha" },
+          { "key": "D", "text": "Fila não importa" }
+        ],
+        "answer": "B",
+        "explain": "Processo ruim cria desperdício para todos."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "KPIs\n\n- throughput\n- lead time\n- retrabalho\n- gargalo\n",
+    "pilares": "Pilares\n\n- padrão\n- capacidade\n- melhoria\n"
+  }
+}

@@ -1,0 +1,72 @@
+{
+    "id": "06-especificacao-demanda",
+    "title": "Aula 06 — Especificação de demanda: como pedir certo para comprar certo",
+    "steps": [
+        {
+            "title": "A importância da especificação",
+            "body": "Toda compra começa com uma especificação.\n\nSe a especificação for ruim:\n- a cotação será incorreta\n- fornecedores interpretarão diferente\n- o material entregue pode não atender a necessidade\n\nRegra:\n- Especificação ruim gera compra errada."
+        },
+        {
+            "title": "Elementos de uma boa especificação",
+            "body": "Uma especificação eficiente normalmente inclui:\n- descrição clara do item\n- quantidade\n- padrão de qualidade\n- unidade de medida\n- prazo necessário\n\nRegra:\n- Quanto mais clara a especificação, menor o risco de erro."
+        },
+        {
+            "title": "Ambiguidade gera problemas",
+            "body": "Pedidos vagos geram interpretações diferentes.\n\nExemplo ruim:\n- 'comprar caixa grande'\n\nExemplo correto:\n- caixa papelão dupla onda 40x30x30\n\nRegra:\n- Compras exige precisão."
+        },
+        {
+            "title": "Participação da área solicitante",
+            "body": "Nem sempre compras define a especificação.\n\nNormalmente ela vem de:\n- engenharia\n- produção\n- manutenção\n\nRegra:\n- Compras valida a especificação antes de cotar."
+        },
+        {
+            "title": "Padronização de itens",
+            "body": "Empresas maduras criam catálogos de itens padronizados.\n\nIsso reduz:\n- duplicidade\n- erros\n- dificuldade de cotação\n\nRegra:\n- Padronização simplifica compras."
+        },
+        {
+            "title": "Erro comum",
+            "body": "Um erro comum é solicitar itens urgentes sem detalhamento.\n\nIsso gera:\n- retrabalho\n- compras erradas\n\nRegra:\n- Urgência não justifica falta de especificação."
+        },
+        {
+            "title": "Mini prática",
+            "body": "Pegue um item comum da empresa.\n\nEscreva uma especificação completa contendo:\n- descrição\n- dimensão\n- material\n- unidade\n\nObjetivo:\n- desenvolver precisão na solicitação."
+        },
+        {
+            "title": "Resumo da aula",
+            "body": "- Especificação inicia o processo de compras\n- Especificações claras evitam erro\n- Padronização melhora eficiência\n- Ambiguidade aumenta risco\n\nAgora fixe com o quiz."
+        }
+    ],
+    "quiz": {
+        "title": "Quiz (10 perguntas) — Aula 06",
+        "instructions": "Marque A, B, C ou D.",
+        "questions": [
+            {
+                "id": 1,
+                "question": "Uma especificação ruim pode causar:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Compra incorreta"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Aumento automático de qualidade"
+                    },
+                    {
+                        "key": "C",
+                        "text": "Redução de preço"
+                    },
+                    {
+                        "key": "D",
+                        "text": "Entrega imediata"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Descrição incorreta gera fornecimento incorreto."
+            }
+        ]
+    },
+    "extra": {
+        "eventosMinimos": "Elementos\n\n- descrição\n- quantidade\n- qualidade\n- prazo\n",
+        "pilares": "Pilares\n\n- precisão\n- clareza\n- padronização\n"
+    }
+}

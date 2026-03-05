@@ -1,0 +1,168 @@
+{
+  "id": "15-gestao-tempo-prioridades",
+  "title": "Aula 15 — Gestão do tempo e prioridades: foco no que move o resultado",
+  "steps": [
+    {
+      "title": "Tempo é recurso finito (e caro)",
+      "body": "Tempo na gestão é:\n- o seu\n- o do time\n- o do processo\n\nRegra:\n- Se você desperdiça tempo, você desperdiça resultado."
+    },
+    {
+      "title": "Urgente vs importante (sem clichê: com consequência)",
+      "body": "Urgente: prazo curto.\nImportante: impacto alto.\n\nO erro:\n- viver no urgente porque o importante dá trabalho.\n\nRegra:\n- O importante ignorado vira urgente depois."
+    },
+    {
+      "title": "Prioridade de verdade é escolha (não lista)",
+      "body": "Se tudo é prioridade:\n- nada é prioridade.\n\nRegra:\n- Prioridade é cortar, não adicionar."
+    },
+    {
+      "title": "Capacidade (WIP) e gargalo do gestor",
+      "body": "Se você tem 10 tarefas e capacidade para 5:\n- você terá atraso e estresse.\n\nWIP (trabalho em andamento) alto gera:\n- troca de contexto\n- erro\n\nRegra:\n- Limitar WIP aumenta velocidade real."
+    },
+    {
+      "title": "Ritual semanal do gestor (prático)",
+      "body": "Ritual:\n- escolher 3 prioridades da semana\n- bloquear tempo\n- 1 reunião curta de acompanhamento\n\nRegra:\n- Sem ritual, o dia decide por você."
+    },
+    {
+      "title": "Reuniões e mensagens: o buraco negro do tempo",
+      "body": "Boas regras:\n- reunião só com decisão\n- pauta antes\n- mensagem com contexto e pedido claro\n\nRegra:\n- Comunicação ruim vira interrupção infinita."
+    },
+    {
+      "title": "Mini prática (45 min) — triagem do seu trabalho",
+      "body": "Liste 10 tarefas.\n\nClassifique:\n- impacto (alto/baixo)\n- urgência (alta/baixa)\n\nDepois faça:\n- manter 3\n- adiar 3\n- delegar 2\n- eliminar 2\n\nObjetivo:\n- aprender a cortar."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Prioridade é escolha\n- Importante ignorado vira urgente\n- Limitar WIP aumenta velocidade real\n- Ritual protege foco\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 15 (Administração)",
+    "instructions": "Marque A, B, C ou D. Foque em execução real.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O principal problema de tratar tudo como prioridade é:",
+        "options": [
+          { "key": "A", "text": "Aumentar foco" },
+          { "key": "B", "text": "Gerar dispersão e atraso generalizado" },
+          { "key": "C", "text": "Diminuir interrupções" },
+          { "key": "D", "text": "Criar clareza" }
+        ],
+        "answer": "B",
+        "explain": "Sem escolha, vira caos e troca de contexto."
+      },
+      {
+        "id": 2,
+        "question": "Qual frase é mais correta sobre importante vs urgente?",
+        "options": [
+          { "key": "A", "text": "O importante ignorado vira urgente depois" },
+          { "key": "B", "text": "Urgente sempre é importante" },
+          { "key": "C", "text": "Importante pode ser ignorado sem custo" },
+          { "key": "D", "text": "Tudo urgente deve ser feito por você" }
+        ],
+        "answer": "A",
+        "explain": "Problemas não resolvidos viram incêndio."
+      },
+      {
+        "id": 3,
+        "question": "WIP alto (muitas coisas em andamento) tende a:",
+        "options": [
+          { "key": "A", "text": "Aumentar velocidade real" },
+          { "key": "B", "text": "Aumentar troca de contexto e erro" },
+          { "key": "C", "text": "Reduzir estresse" },
+          { "key": "D", "text": "Eliminar retrabalho" }
+        ],
+        "answer": "B",
+        "explain": "Troca de contexto é custo invisível."
+      },
+      {
+        "id": 4,
+        "question": "A ação mais inteligente quando surge uma demanda 'urgente' é:",
+        "options": [
+          { "key": "A", "text": "Aceitar tudo sem mexer em nada" },
+          { "key": "B", "text": "Trocar prioridade explicitamente: o que vai sair para isso entrar?" },
+          { "key": "C", "text": "Reclamar e fazer do mesmo jeito" },
+          { "key": "D", "text": "Fazer escondido" }
+        ],
+        "answer": "B",
+        "explain": "Prioridade é troca explícita."
+      },
+      {
+        "id": 5,
+        "question": "Ritual semanal ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Gera mais reuniões longas" },
+          { "key": "B", "text": "Protege foco e reduz reatividade" },
+          { "key": "C", "text": "Elimina todas as interrupções" },
+          { "key": "D", "text": "Dispensa KPIs" }
+        ],
+        "answer": "B",
+        "explain": "Sem ritual, o dia vira uma fila de urgências."
+      },
+      {
+        "id": 6,
+        "question": "Reunião boa deveria terminar com:",
+        "options": [
+          { "key": "A", "text": "Mais perguntas" },
+          { "key": "B", "text": "Decisão, dono e prazo" },
+          { "key": "C", "text": "Só opinião" },
+          { "key": "D", "text": "Nada definido" }
+        ],
+        "answer": "B",
+        "explain": "Sem isso, vira conversa cara."
+      },
+      {
+        "id": 7,
+        "question": "Qual é um bom motivo para delegar?",
+        "options": [
+          { "key": "A", "text": "Você não quer responsabilidade" },
+          { "key": "B", "text": "A tarefa não exige sua decisão e alguém pode executar com padrão" },
+          { "key": "C", "text": "Você quer punir alguém" },
+          { "key": "D", "text": "Você quer evitar explicar contexto" }
+        ],
+        "answer": "B",
+        "explain": "Delegar é usar capacidade do time e focar no que exige você."
+      },
+      {
+        "id": 8,
+        "question": "Se mensagens viram interrupção infinita, o ajuste mais forte é:",
+        "options": [
+          { "key": "A", "text": "Responder instantaneamente sempre" },
+          { "key": "B", "text": "Padronizar pedido: contexto + objetivo + prazo + decisão necessária" },
+          { "key": "C", "text": "Ignorar todo mundo" },
+          { "key": "D", "text": "Criar mais grupos" }
+        ],
+        "answer": "B",
+        "explain": "Pedido claro reduz ping-pong e ruído."
+      },
+      {
+        "id": 9,
+        "question": "O que mais costuma virar 'urgência falsa'?",
+        "options": [
+          { "key": "A", "text": "Crises reais" },
+          { "key": "B", "text": "Falta de clareza de prioridade e falta de planejamento" },
+          { "key": "C", "text": "Padrões bem definidos" },
+          { "key": "D", "text": "Capacidade sob controle" }
+        ],
+        "answer": "B",
+        "explain": "Sem direção, tudo parece urgente."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Prioridade é adicionar mais coisas" },
+          { "key": "B", "text": "Prioridade é cortar e escolher" },
+          { "key": "C", "text": "Prioridade é fazer tudo sozinho" },
+          { "key": "D", "text": "Prioridade é não dizer não" }
+        ],
+        "answer": "B",
+        "explain": "Foco existe quando você diz não para algo."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ritual\n\n- escolher 3 prioridades\n- limitar WIP\n- acompanhar\n",
+    "pilares": "Pilares\n\n- foco\n- capacidade\n- decisão\n"
+  }
+}

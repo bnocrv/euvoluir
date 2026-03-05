@@ -1,0 +1,108 @@
+{
+  "id": "05-categorias-gastos",
+  "title": "Aula 05 — Categorias de gastos: diretos, indiretos e serviços",
+  "steps": [
+    {
+      "title": "Por que classificar gastos",
+      "body": "Classificar gastos ajuda a entender onde a empresa realmente gasta dinheiro.\n\nSem classificação:\n- não existe visão estratégica\n- compras vira apenas operacional\n\nRegra:\n- O que não é medido não pode ser gerenciado."
+    },
+    {
+      "title": "Gastos diretos",
+      "body": "São compras ligadas diretamente ao produto ou serviço final.\n\nExemplos:\n- matéria-prima\n- componentes\n- embalagens\n\nRegra:\n- Gastos diretos impactam diretamente o custo do produto."
+    },
+    {
+      "title": "Gastos indiretos",
+      "body": "São gastos necessários para operação, mas não entram no produto final.\n\nExemplos:\n- material de escritório\n- manutenção\n- equipamentos\n\nRegra:\n- Indiretos sustentam a operação."
+    },
+    {
+      "title": "Serviços",
+      "body": "Outra categoria importante são serviços contratados.\n\nExemplos:\n- transporte\n- tecnologia\n- consultoria\n\nRegra:\n- Serviços exigem contratos e gestão de desempenho."
+    },
+    {
+      "title": "Gestão por categoria",
+      "body": "Empresas maduras organizam compras por categorias.\n\nIsso permite:\n- negociar melhor\n- analisar fornecedores\n- planejar custos\n\nRegra:\n- Agrupar compras melhora estratégia."
+    },
+    {
+      "title": "Erro comum",
+      "body": "Misturar todos os gastos sem classificação.\n\nConsequência:\n- falta de controle\n- negociações fracas\n\nRegra:\n- Visão por categoria melhora decisões."
+    },
+    {
+      "title": "Mini prática (45 min)",
+      "body": "Liste 10 compras de uma empresa.\n\nClassifique em:\n- direto\n- indireto\n- serviço\n\nObjetivo:\n- entender estrutura de gastos."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Classificar gastos melhora controle\n- Diretos impactam produto\n- Indiretos sustentam operação\n- Serviços exigem gestão\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 05",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Classificar gastos ajuda a:",
+        "options": [
+          {"key": "A", "text": "Entender onde a empresa gasta"},
+          {"key": "B", "text": "Eliminar fornecedores"},
+          {"key": "C", "text": "Reduzir produção"},
+          {"key": "D", "text": "Eliminar estoque"}
+        ],
+        "answer": "A",
+        "explain": "Classificação permite análise estratégica."
+      },
+      {
+        "id": 2,
+        "question": "Gastos diretos estão ligados a:",
+        "options": [
+          {"key": "A", "text": "Produto final"},
+          {"key": "B", "text": "Marketing"},
+          {"key": "C", "text": "RH"},
+          {"key": "D", "text": "Treinamento"}
+        ],
+        "answer": "A",
+        "explain": "Eles compõem o custo do produto."
+      },
+      {
+        "id": 3,
+        "question": "Material de escritório é exemplo de:",
+        "options": [
+          {"key": "A", "text": "Gasto indireto"},
+          {"key": "B", "text": "Gasto direto"},
+          {"key": "C", "text": "Produto final"},
+          {"key": "D", "text": "Marketing"}
+        ],
+        "answer": "A",
+        "explain": "Não compõe o produto."
+      },
+      {
+        "id": 4,
+        "question": "Transporte normalmente é classificado como:",
+        "options": [
+          {"key": "A", "text": "Serviço"},
+          {"key": "B", "text": "Produto"},
+          {"key": "C", "text": "Matéria-prima"},
+          {"key": "D", "text": "Estoque"}
+        ],
+        "answer": "A",
+        "explain": "É uma contratação de serviço."
+      },
+      {
+        "id": 5,
+        "question": "Gestão por categoria ajuda a:",
+        "options": [
+          {"key": "A", "text": "Melhorar negociações"},
+          {"key": "B", "text": "Eliminar fornecedores"},
+          {"key": "C", "text": "Eliminar compras"},
+          {"key": "D", "text": "Eliminar estoque"}
+        ],
+        "answer": "A",
+        "explain": "Categorias organizam estratégia."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Categorias\n\n- diretos\n- indiretos\n- serviços\n",
+    "pilares": "Pilares\n\n- visibilidade\n- controle\n- estratégia\n"
+  }
+}

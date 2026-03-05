@@ -1,0 +1,168 @@
+{
+  "id": "23-proposta-valor",
+  "title": "Aula 23 — Proposta de valor: por que alguém compraria de você",
+  "steps": [
+    {
+      "title": "Proposta de valor é a resposta da compra",
+      "body": "É o motivo racional (e às vezes emocional) para o cliente escolher você.\n\nRegra:\n- Se o cliente não entende o valor, ele só compara preço."
+    },
+    {
+      "title": "Estrutura simples (que funciona)",
+      "body": "Uma boa proposta de valor tem:\n- público\n- dor/objetivo\n- solução\n- prova\n- diferencial\n\nRegra:\n- Diferencial sem prova vira promessa vazia."
+    },
+    {
+      "title": "Diferencial real vs diferencial de marketing",
+      "body": "Diferencial real:\n- algo que você entrega consistentemente\n\nDiferencial falso:\n- frase genérica (\"qualidade\", \"melhor atendimento\") sem evidência\n\nRegra:\n- Se todo mundo pode dizer, não diferencia."
+    },
+    {
+      "title": "Prova: o que reduz risco na cabeça do cliente",
+      "body": "Provas úteis:\n- garantia\n- depoimento\n- prazo cumprido\n- política de troca\n- certificação\n\nRegra:\n- Cliente compra confiança."
+    },
+    {
+      "title": "Mensagem: clareza vence criatividade",
+      "body": "Se a mensagem é bonita mas confusa:\n- conversão cai\n\nRegra:\n- Clareza é performance."
+    },
+    {
+      "title": "Conectar valor com preço",
+      "body": "Se você cobra mais, precisa explicar:\n- por que vale\n- o que reduz risco\n- o que melhora resultado\n\nRegra:\n- Preço alto sem valor percebido vira rejeição."
+    },
+    {
+      "title": "Mini prática (45 min) — teste do concorrente",
+      "body": "Pegue sua frase de valor.\n\nPergunte:\n- um concorrente poderia colar isso no site dele?\n\nSe sim:\n- reescreva com prova e diferencial específico.\n\nObjetivo:\n- tirar frase genérica."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Valor percebido evita guerra de preço\n- Diferencial precisa de prova\n- Clareza aumenta conversão\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 23 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Quando o cliente não entende o valor, ele tende a:",
+        "options": [
+          { "key": "A", "text": "Pagar mais sem questionar" },
+          { "key": "B", "text": "Comparar só por preço" },
+          { "key": "C", "text": "Ignorar concorrentes" },
+          { "key": "D", "text": "Virar fiel automaticamente" }
+        ],
+        "answer": "B",
+        "explain": "Sem valor percebido, sobra preço."
+      },
+      {
+        "id": 2,
+        "question": "Diferencial real é aquele que:",
+        "options": [
+          { "key": "A", "text": "Você promete, mas não mede" },
+          { "key": "B", "text": "Você entrega consistentemente e consegue provar" },
+          { "key": "C", "text": "É uma frase genérica" },
+          { "key": "D", "text": "Só existe na campanha" }
+        ],
+        "answer": "B",
+        "explain": "Consistência e prova tornam diferencial real."
+      },
+      {
+        "id": 3,
+        "question": "Qual item é 'prova' que reduz risco?",
+        "options": [
+          { "key": "A", "text": "“Somos os melhores”" },
+          { "key": "B", "text": "Garantia e política de troca clara" },
+          { "key": "C", "text": "Um slogan criativo" },
+          { "key": "D", "text": "Um post engraçado" }
+        ],
+        "answer": "B",
+        "explain": "Prova reduz medo de errar na compra."
+      },
+      {
+        "id": 4,
+        "question": "Se todo concorrente pode dizer a mesma coisa, então:",
+        "options": [
+          { "key": "A", "text": "Isso é diferencial forte" },
+          { "key": "B", "text": "Isso não diferencia" },
+          { "key": "C", "text": "Isso garante conversão" },
+          { "key": "D", "text": "Isso elimina necessidade de prova" }
+        ],
+        "answer": "B",
+        "explain": "Diferencial precisa ser específico."
+      },
+      {
+        "id": 5,
+        "question": "Mensagem confusa costuma gerar:",
+        "options": [
+          { "key": "A", "text": "Conversão maior" },
+          { "key": "B", "text": "Conversão menor e mais perguntas" },
+          { "key": "C", "text": "Preço mais alto aceito" },
+          { "key": "D", "text": "Menos atrito" }
+        ],
+        "answer": "B",
+        "explain": "Confusão vira fricção."
+      },
+      {
+        "id": 6,
+        "question": "Preço mais alto é mais aceito quando:",
+        "options": [
+          { "key": "A", "text": "Você não explica nada" },
+          { "key": "B", "text": "Existe valor percebido e prova que reduz risco" },
+          { "key": "C", "text": "Você só insiste" },
+          { "key": "D", "text": "Você faz desconto sempre" }
+        ],
+        "answer": "B",
+        "explain": "Valor + prova sustentam premium."
+      },
+      {
+        "id": 7,
+        "question": "Uma proposta de valor bem estruturada começa por:",
+        "options": [
+          { "key": "A", "text": "Público e dor/objetivo" },
+          { "key": "B", "text": "Logo e cores" },
+          { "key": "C", "text": "Sorteio" },
+          { "key": "D", "text": "Frase bonita sem contexto" }
+        ],
+        "answer": "A",
+        "explain": "Sem público e dor, você não tem mensagem."
+      },
+      {
+        "id": 8,
+        "question": "Qual frase é mais fraca como diferencial?",
+        "options": [
+          { "key": "A", "text": "Entrega em 24h na cidade X com taxa de atraso < 2%" },
+          { "key": "B", "text": "Troca facilitada em 7 dias sem burocracia" },
+          { "key": "C", "text": "Somos qualidade e bom atendimento" },
+          { "key": "D", "text": "Rastreamento em tempo real com notificações" }
+        ],
+        "answer": "C",
+        "explain": "Genérico e sem prova."
+      },
+      {
+        "id": 9,
+        "question": "O 'teste do concorrente' serve para:",
+        "options": [
+          { "key": "A", "text": "Copiar concorrente" },
+          { "key": "B", "text": "Ver se sua mensagem é genérica demais" },
+          { "key": "C", "text": "Escolher a cor do site" },
+          { "key": "D", "text": "Ignorar prova" }
+        ],
+        "answer": "B",
+        "explain": "Se qualquer um pode usar, não diferencia."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Cliente compra confiança" },
+          { "key": "B", "text": "Cliente compra slogan" },
+          { "key": "C", "text": "Cliente ignora risco" },
+          { "key": "D", "text": "Cliente nunca compara alternativas" }
+        ],
+        "answer": "A",
+        "explain": "Prova e redução de risco são decisivas."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Componentes\n\n- público\n- dor\n- diferencial\n- prova\n",
+    "pilares": "Pilares\n\n- clareza\n- confiança\n- especificidade\n"
+  }
+}

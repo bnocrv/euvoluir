@@ -1,0 +1,168 @@
+{
+  "id": "06-educacao-credito-score",
+  "title": "Aula 06 — Crédito e score: como funciona, riscos e como usar sem se destruir",
+  "steps": [
+    {
+      "title": "Crédito (bem simples)",
+      "body": "Crédito é:\n- usar dinheiro que não é seu agora\n- e pagar depois\n\nEle pode ajudar (organização) ou destruir (juros).\n\nRegra:\n- Crédito é ferramenta: depende de como você usa."
+    },
+    {
+      "title": "Score não é 'nota de moral'",
+      "body": "Score é um indicador de risco para quem empresta.\nEle tenta responder:\n- essa pessoa paga em dia?\n- qual a chance de atraso?\n\nRegra:\n- Score é sobre comportamento passado, não promessa futura."
+    },
+    {
+      "title": "O que costuma melhorar o score",
+      "body": "Geralmente melhora com:\n- pagar contas em dia\n- manter cadastros atualizados\n- usar crédito com limites (sem estourar)\n- ter histórico (tempo conta)\n\nRegra:\n- Score gosta de previsibilidade."
+    },
+    {
+      "title": "O que costuma derrubar o score",
+      "body": "Cai com:\n- atraso\n- renegociações frequentes\n- uso alto do limite (muito perto do máximo)\n- muitas solicitações de crédito em pouco tempo\n\nRegra:\n- “limite cheio” sinaliza risco."
+    },
+    {
+      "title": "Crédito bom x crédito ruim",
+      "body": "Crédito bom:\n- parcela cabe com folga\n- tem objetivo claro\n- custo total faz sentido\n\nCrédito ruim:\n- parcelar para sobreviver\n- pagar mínimo do cartão\n- usar cheque especial\n\nRegra:\n- Se você precisa de crédito para o básico, é alerta."
+    },
+    {
+      "title": "Cartão de crédito: a regra de ouro",
+      "body": "Cartão saudável:\n- comprar como se fosse débito\n- pagar 100% da fatura\n- usar para concentrar gastos e controlar\n\nRegra:\n- Pagar mínimo é abrir a porta dos juros compostos."
+    },
+    {
+      "title": "Mini prática (45 min) — regra do cartão e limite seguro",
+      "body": "Defina:\n- um limite pessoal (menor que o do banco)\n- regra: fatura sempre integral\n- alerta: se não conseguir pagar integral 2 meses, reduzir uso\n\nObjetivo:\n- transformar cartão em ferramenta e não em armadilha."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Crédito é ferramenta\n- Score mede risco e previsibilidade\n- Atraso e limite estourado derrubam\n- Cartão só funciona pagando integral\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 06 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Crédito é:",
+        "options": [
+          { "key": "A", "text": "Dinheiro grátis" },
+          { "key": "B", "text": "Usar dinheiro agora e pagar depois" },
+          { "key": "C", "text": "Um investimento" },
+          { "key": "D", "text": "Uma obrigação de gastar" }
+        ],
+        "answer": "B",
+        "explain": "Crédito antecipa consumo e cria obrigação futura."
+      },
+      {
+        "id": 2,
+        "question": "Score é principalmente:",
+        "options": [
+          { "key": "A", "text": "Nota de caráter" },
+          { "key": "B", "text": "Indicador de risco de crédito" },
+          { "key": "C", "text": "Uma multa" },
+          { "key": "D", "text": "Um benefício do banco" }
+        ],
+        "answer": "B",
+        "explain": "Ele tenta estimar chance de atraso."
+      },
+      {
+        "id": 3,
+        "question": "O que costuma melhorar score?",
+        "options": [
+          { "key": "A", "text": "Atrasar e renegociar sempre" },
+          { "key": "B", "text": "Pagar em dia e manter estabilidade" },
+          { "key": "C", "text": "Estourar limite" },
+          { "key": "D", "text": "Solicitar crédito toda semana" }
+        ],
+        "answer": "B",
+        "explain": "Score gosta de previsibilidade."
+      },
+      {
+        "id": 4,
+        "question": "Uso alto do limite do cartão (muito perto do máximo) sinaliza:",
+        "options": [
+          { "key": "A", "text": "Risco maior" },
+          { "key": "B", "text": "Organização perfeita" },
+          { "key": "C", "text": "Reserva" },
+          { "key": "D", "text": "Lucro" }
+        ],
+        "answer": "A",
+        "explain": "Para quem empresta, é sinal de aperto."
+      },
+      {
+        "id": 5,
+        "question": "Cartão saudável é:",
+        "options": [
+          { "key": "A", "text": "Pagar o mínimo sempre" },
+          { "key": "B", "text": "Comprar como débito e pagar integralmente" },
+          { "key": "C", "text": "Estourar limite e renegociar" },
+          { "key": "D", "text": "Parcelar tudo para caber" }
+        ],
+        "answer": "B",
+        "explain": "Cartão vira ferramenta quando você não paga juros."
+      },
+      {
+        "id": 6,
+        "question": "Crédito ruim é típico em:",
+        "options": [
+          { "key": "A", "text": "Parcela que cabe com folga" },
+          { "key": "B", "text": "Cheque especial e mínimo do cartão" },
+          { "key": "C", "text": "Compra planejada" },
+          { "key": "D", "text": "Custo total baixo" }
+        ],
+        "answer": "B",
+        "explain": "São as modalidades mais caras."
+      },
+      {
+        "id": 7,
+        "question": "Muitas solicitações de crédito em pouco tempo tendem a:",
+        "options": [
+          { "key": "A", "text": "Aumentar score" },
+          { "key": "B", "text": "Sinalizar risco e derrubar score" },
+          { "key": "C", "text": "Não mudar nada" },
+          { "key": "D", "text": "Garantir aprovação" }
+        ],
+        "answer": "B",
+        "explain": "Parece urgência/necessidade."
+      },
+      {
+        "id": 8,
+        "question": "Se você precisa de crédito para pagar despesas básicas recorrentes, isso é:",
+        "options": [
+          { "key": "A", "text": "Normal e saudável" },
+          { "key": "B", "text": "Sinal de alerta de orçamento/caixa" },
+          { "key": "C", "text": "Prova de riqueza" },
+          { "key": "D", "text": "Estratégia avançada" }
+        ],
+        "answer": "B",
+        "explain": "Você está financiando sobrevivência."
+      },
+      {
+        "id": 9,
+        "question": "A regra de ouro do cartão é:",
+        "options": [
+          { "key": "A", "text": "Pagar o mínimo" },
+          { "key": "B", "text": "Pagar 100% da fatura" },
+          { "key": "C", "text": "Parcelar sempre" },
+          { "key": "D", "text": "Usar limite máximo" }
+        ],
+        "answer": "B",
+        "explain": "Isso corta a origem do juros composto."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Score é destino" },
+          { "key": "B", "text": "Score muda com comportamento consistente" },
+          { "key": "C", "text": "Crédito não tem risco" },
+          { "key": "D", "text": "Limite alto significa que você deve gastar" }
+        ],
+        "answer": "B",
+        "explain": "O histórico e a disciplina influenciam."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Regras\n\n- pagar fatura integral\n- limite pessoal\n- evitar atraso\n",
+    "pilares": "Pilares\n\n- previsibilidade\n- juros\n- disciplina\n"
+  }
+}

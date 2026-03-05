@@ -1,0 +1,168 @@
+{
+  "id": "10-juros-compostos-valor-tempo",
+  "title": "Aula 10 — Valor do dinheiro no tempo: juros compostos, desconto e decisão",
+  "steps": [
+    {
+      "title": "Valor do dinheiro no tempo (bem simples)",
+      "body": "R$ 100 hoje e R$ 100 daqui 1 ano não são iguais.\nPor quê?\n- inflação\n- oportunidade de render\n- risco\n\nRegra:\n- Tempo muda o valor do dinheiro."
+    },
+    {
+      "title": "Juros compostos: o motor do crescimento",
+      "body": "Juros compostos = juros sobre juros.\nNo investimento:\n- acelera com o tempo\n\nRegra:\n- Tempo é o ingrediente mais poderoso."
+    },
+    {
+      "title": "O lado escuro: juros compostos na dívida",
+      "body": "Na dívida, o mesmo motor trabalha contra você:\n- saldo cresce\n- mínimo vira armadilha\n\nRegra:\n- Se você paga mínimo, você financia juros."
+    },
+    {
+      "title": "Desconto (valor presente) sem fórmula pesada",
+      "body": "Pergunta:\n- quanto vale hoje um dinheiro futuro?\n\nSe a alternativa é investir a X% ao mês, então receber no futuro vale menos hoje.\n\nRegra:\n- Comparar opções exige trazer tudo para 'hoje' (mentalmente)."
+    },
+    {
+      "title": "Decisões comuns que dependem do tempo",
+      "body": "Exemplos:\n- pagar à vista vs parcelar\n- quitar dívida vs investir\n- comprar agora vs esperar\n\nRegra:\n- Decisão boa compara custo total e alternativa."
+    },
+    {
+      "title": "O erro clássico: olhar só parcela",
+      "body": "Parcela baixa pode esconder:\n- custo total alto\n- tempo longo\n- juros embutido\n\nRegra:\n- A pergunta certa é: qual o custo total e qual o custo de oportunidade?"
+    },
+    {
+      "title": "Mini prática (45 min) — decisão à vista vs parcelado",
+      "body": "Escolha uma compra real.\nAnote:\n- preço à vista\n- parcelado (n parcelas de R$ x)\n\nCalcule:\n- custo total parcelado\n\nPergunta:\n- a diferença vale a perda de liquidez/risco?\n\nObjetivo:\n- parar de decidir só pela parcela."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Dinheiro tem valor diferente no tempo\n- Juros compostos aceleram (para bem e para mal)\n- Parcela pode enganar: olhe custo total\n- Compare alternativas (oportunidade)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 10 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "R$ 100 hoje e R$ 100 daqui 1 ano não são iguais por causa de:",
+        "options": [
+          { "key": "A", "text": "Inflação e oportunidade de render" },
+          { "key": "B", "text": "Sorte" },
+          { "key": "C", "text": "Cor do dinheiro" },
+          { "key": "D", "text": "Nada muda" }
+        ],
+        "answer": "A",
+        "explain": "Tempo afeta poder de compra e retorno."
+      },
+      {
+        "id": 2,
+        "question": "Juros compostos é:",
+        "options": [
+          { "key": "A", "text": "Juros sobre juros" },
+          { "key": "B", "text": "Um desconto" },
+          { "key": "C", "text": "Um imposto" },
+          { "key": "D", "text": "Uma taxa fixa sem efeito" }
+        ],
+        "answer": "A",
+        "explain": "É o motor do crescimento exponencial."
+      },
+      {
+        "id": 3,
+        "question": "No investimento, o fator mais poderoso é:",
+        "options": [
+          { "key": "A", "text": "O tempo (consistência) " },
+          { "key": "B", "text": "Um palpite" },
+          { "key": "C", "text": "Trocar toda hora" },
+          { "key": "D", "text": "Só aumentar risco" }
+        ],
+        "answer": "A",
+        "explain": "Tempo permite o efeito composto."
+      },
+      {
+        "id": 4,
+        "question": "Na dívida, juros compostos:",
+        "options": [
+          { "key": "A", "text": "Trabalham a seu favor" },
+          { "key": "B", "text": "Trabalham contra você (cresce o saldo)" },
+          { "key": "C", "text": "Somem" },
+          { "key": "D", "text": "Viraram desconto" }
+        ],
+        "answer": "B",
+        "explain": "Saldo cresce com juros sobre juros."
+      },
+      {
+        "id": 5,
+        "question": "Desconto (valor presente) é a ideia de:",
+        "options": [
+          { "key": "A", "text": "Ignorar o futuro" },
+          { "key": "B", "text": "Comparar dinheiro futuro em termos de valor hoje" },
+          { "key": "C", "text": "Comprar só parcelado" },
+          { "key": "D", "text": "Pagar mínimo do cartão" }
+        ],
+        "answer": "B",
+        "explain": "Você compara alternativas na mesma base."
+      },
+      {
+        "id": 6,
+        "question": "O erro clássico em compras parceladas é olhar só:",
+        "options": [
+          { "key": "A", "text": "Custo total" },
+          { "key": "B", "text": "A parcela" },
+          { "key": "C", "text": "A alternativa à vista" },
+          { "key": "D", "text": "A liquidez" }
+        ],
+        "answer": "B",
+        "explain": "Parcela baixa pode esconder juros."
+      },
+      {
+        "id": 7,
+        "question": "Para decidir entre alternativas, você deve comparar:",
+        "options": [
+          { "key": "A", "text": "Custo total e custo de oportunidade" },
+          { "key": "B", "text": "Somente a emoção" },
+          { "key": "C", "text": "Só o prazo" },
+          { "key": "D", "text": "Só o desconto" }
+        ],
+        "answer": "A",
+        "explain": "Decisão boa considera total e alternativa."
+      },
+      {
+        "id": 8,
+        "question": "Se você paga o mínimo do cartão, você está:",
+        "options": [
+          { "key": "A", "text": "Quitando a dívida" },
+          { "key": "B", "text": "Financiando juros" },
+          { "key": "C", "text": "Investindo" },
+          { "key": "D", "text": "Zerando custo" }
+        ],
+        "answer": "B",
+        "explain": "O saldo restante vira juros compostos."
+      },
+      {
+        "id": 9,
+        "question": "Um exemplo de decisão que depende do valor no tempo é:",
+        "options": [
+          { "key": "A", "text": "Pagar à vista vs parcelar" },
+          { "key": "B", "text": "Escolher cor da camisa" },
+          { "key": "C", "text": "Escolher emoji" },
+          { "key": "D", "text": "Escolher papel de parede" }
+        ],
+        "answer": "A",
+        "explain": "Envolve custo total e alternativa."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Tempo não muda o dinheiro" },
+          { "key": "B", "text": "Tempo muda o valor do dinheiro e a decisão" },
+          { "key": "C", "text": "Só a parcela importa" },
+          { "key": "D", "text": "Juros compostos é mito" }
+        ],
+        "answer": "B",
+        "explain": "Tempo altera poder de compra e retorno."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Decisão correta\n\n- custo total\n- alternativa\n- oportunidade\n",
+    "pilares": "Pilares\n\n- tempo\n- composto\n- custo total\n"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "09-inflacao-poder-compra",
+  "title": "Aula 09 — Inflação e poder de compra: por que guardar dinheiro “parado” te empobrece",
+  "steps": [
+    {
+      "title": "Inflação (bem simples)",
+      "body": "Inflação é quando:\n- o preço médio das coisas sobe\n- e seu dinheiro compra menos\n\nRegra:\n- Se preços sobem e seu dinheiro não acompanha, você perde poder de compra."
+    },
+    {
+      "title": "Poder de compra é o que importa (não o número na conta)",
+      "body": "Ter R$ 1.000 na conta não significa nada sozinho.\nA pergunta é:\n- R$ 1.000 compram o quê hoje?\n\nRegra:\n- Valor real = o que você consegue comprar."
+    },
+    {
+      "title": "Dinheiro parado perde valor em silêncio",
+      "body": "Se o dinheiro rende menos que a inflação:\n- você está perdendo\n\nRegra:\n- Perda por inflação é invisível, mas constante."
+    },
+    {
+      "title": "Juros e inflação: a disputa",
+      "body": "Para manter poder de compra:\n- seu rendimento precisa pelo menos empatar com a inflação\n\nRegra:\n- O objetivo mínimo é não perder."
+    },
+    {
+      "title": "Por que isso muda suas decisões",
+      "body": "Inflação muda:\n- preço de comida\n- aluguel\n- transporte\n\nSe você não reajusta orçamento:\n- sobra some\n\nRegra:\n- Orçamento precisa ser vivo."
+    },
+    {
+      "title": "O erro clássico: confundir 'guardar' com 'proteger'",
+      "body": "Guardar:\n- deixar parado\n\nProteger:\n- manter poder de compra (com liquidez/segurança compatíveis)\n\nRegra:\n- Proteger é vencer a inflação (no mínimo empatar)."
+    },
+    {
+      "title": "Mini prática (45 min) — ajuste do seu orçamento pela inflação",
+      "body": "Escolha 5 itens do seu mês:\n- mercado\n- aluguel\n- transporte\n- contas\n- lazer\n\nCompare com 12 meses atrás (aprox.).\n\nObjetivo:\n- ver quais categorias mais te apertaram."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Inflação reduz poder de compra\n- Dinheiro parado pode perder valor\n- Objetivo mínimo: empatar inflação\n- Orçamento precisa acompanhar a realidade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 09 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Inflação é quando:",
+        "options": [
+          { "key": "A", "text": "Salário sempre sobe" },
+          { "key": "B", "text": "Preço médio sobe e o dinheiro compra menos" },
+          { "key": "C", "text": "Tudo fica mais barato" },
+          { "key": "D", "text": "Não muda nada" }
+        ],
+        "answer": "B",
+        "explain": "Inflação reduz poder de compra."
+      },
+      {
+        "id": 2,
+        "question": "Poder de compra significa:",
+        "options": [
+          { "key": "A", "text": "O número na conta" },
+          { "key": "B", "text": "O que o dinheiro consegue comprar" },
+          { "key": "C", "text": "O limite do cartão" },
+          { "key": "D", "text": "O desconto da loja" }
+        ],
+        "answer": "B",
+        "explain": "Valor real é capacidade de compra."
+      },
+      {
+        "id": 3,
+        "question": "Dinheiro parado que rende menos que a inflação:",
+        "options": [
+          { "key": "A", "text": "Ganha poder de compra" },
+          { "key": "B", "text": "Perde poder de compra" },
+          { "key": "C", "text": "Fica igual" },
+          { "key": "D", "text": "Vira investimento" }
+        ],
+        "answer": "B",
+        "explain": "Você empobrece em termos reais."
+      },
+      {
+        "id": 4,
+        "question": "Objetivo mínimo do dinheiro guardado é:",
+        "options": [
+          { "key": "A", "text": "Empatar ou superar a inflação" },
+          { "key": "B", "text": "Perder para inflação" },
+          { "key": "C", "text": "Não render nada" },
+          { "key": "D", "text": "Ser difícil de sacar" }
+        ],
+        "answer": "A",
+        "explain": "Ao menos não perder poder de compra."
+      },
+      {
+        "id": 5,
+        "question": "Um erro comum é confundir:",
+        "options": [
+          { "key": "A", "text": "Guardar com proteger" },
+          { "key": "B", "text": "Trabalho com lazer" },
+          { "key": "C", "text": "Meta com desejo" },
+          { "key": "D", "text": "Fatura com extrato" }
+        ],
+        "answer": "A",
+        "explain": "Proteger envolve vencer inflação com critérios."
+      },
+      {
+        "id": 6,
+        "question": "Inflação afeta seu orçamento porque:",
+        "options": [
+          { "key": "A", "text": "Custos sobem e a sobra pode sumir" },
+          { "key": "B", "text": "Tudo fica constante" },
+          { "key": "C", "text": "Você ganha mais sempre" },
+          { "key": "D", "text": "Não muda categorias" }
+        ],
+        "answer": "A",
+        "explain": "Sem ajuste, seu plano quebra."
+      },
+      {
+        "id": 7,
+        "question": "Se você não ajusta o orçamento ao longo do tempo, o risco é:",
+        "options": [
+          { "key": "A", "text": "Sobra aumentar" },
+          { "key": "B", "text": "Sobra diminuir sem você perceber" },
+          { "key": "C", "text": "Inflação parar" },
+          { "key": "D", "text": "Dívida sumir" }
+        ],
+        "answer": "B",
+        "explain": "O custo de vida sobe e come o saldo."
+      },
+      {
+        "id": 8,
+        "question": "“Perda por inflação” é:",
+        "options": [
+          { "key": "A", "text": "Sempre visível no extrato" },
+          { "key": "B", "text": "Invisível, mas constante" },
+          { "key": "C", "text": "Uma taxa do banco" },
+          { "key": "D", "text": "Um desconto" }
+        ],
+        "answer": "B",
+        "explain": "Você percebe quando vai comprar."
+      },
+      {
+        "id": 9,
+        "question": "Uma boa forma de perceber inflação pessoal é:",
+        "options": [
+          { "key": "A", "text": "Comparar 5 itens do mês com 12 meses atrás" },
+          { "key": "B", "text": "Ignorar preços" },
+          { "key": "C", "text": "Comprar mais parcelado" },
+          { "key": "D", "text": "Aumentar limite" }
+        ],
+        "answer": "A",
+        "explain": "Você enxerga categorias que mais apertaram."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "O número na conta é o que importa" },
+          { "key": "B", "text": "O que importa é o poder de compra" },
+          { "key": "C", "text": "Inflação não existe" },
+          { "key": "D", "text": "Dinheiro parado sempre protege" }
+        ],
+        "answer": "B",
+        "explain": "Valor real é comprar coisas, não olhar saldo."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ajuste do orçamento\n\n- comparar categorias\n- revisar tetos\n",
+    "pilares": "Pilares\n\n- poder de compra\n- proteção\n- orçamento vivo\n"
+  }
+}

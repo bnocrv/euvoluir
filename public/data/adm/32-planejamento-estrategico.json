@@ -1,0 +1,168 @@
+{
+  "id": "32-comunicacao-alinhamento",
+  "title": "Aula 32 — Comunicação e alinhamento: reduzir ruído e retrabalho",
+  "steps": [
+    {
+      "title": "Comunicação ruim é custo (invisível)",
+      "body": "Ruído gera:\n- retrabalho\n- conflito\n- atraso\n- decisão duplicada\n\nRegra:\n- O que não foi comunicado vira suposição."
+    },
+    {
+      "title": "Alinhamento mínimo: objetivo, prioridade, definição de pronto",
+      "body": "Antes de executar, combine:\n- objetivo\n- prioridade (o que vem antes)\n- definição de pronto\n\nRegra:\n- Sem definição de pronto, você discute no final."
+    },
+    {
+      "title": "Canal certo para a mensagem certa",
+      "body": "Exemplos:\n- urgente: canal rápido\n- decisão: registro (ata/nota)\n- informação repetitiva: padrão/documento\n\nRegra:\n- Decisão sem registro vira 'cada um lembra de um jeito'."
+    },
+    {
+      "title": "Ritmos de comunicação (cadência)",
+      "body": "Rituais úteis:\n- diário curto (se operação muda rápido)\n- semanal de status\n- mensal de resultado\n\nRegra:\n- Sem ritmo, só existe incêndio."
+    },
+    {
+      "title": "Reunião boa tem saída, não só fala",
+      "body": "Toda reunião precisa terminar com:\n- decisão\n- dono\n- prazo\n\nRegra:\n- Reunião sem próximo passo é teatro."
+    },
+    {
+      "title": "Conflito saudável vs ruído",
+      "body": "Conflito saudável:\n- debate de ideias\n\nRuído:\n- ataque pessoal\n- discussão sem dados\n\nRegra:\n- Dados e critério desarmam conflito."
+    },
+    {
+      "title": "Mini prática (45 min) — template de decisão",
+      "body": "Crie um template:\n- problema\n- opções\n- critério (custo/prazo/risco)\n- decisão\n- responsável\n- data\n\nObjetivo:\n- reduzir 'decisão de memória'."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Ruído custa caro\n- Definição de pronto evita retrabalho\n- Decisão precisa de registro\n- Reunião precisa de saída\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 32 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Comunicação ruim costuma gerar:",
+        "options": [
+          { "key": "A", "text": "Menos retrabalho" },
+          { "key": "B", "text": "Retrabalho e atraso" },
+          { "key": "C", "text": "Qualidade perfeita" },
+          { "key": "D", "text": "Decisão única sempre" }
+        ],
+        "answer": "B",
+        "explain": "Ruído vira execução errada."
+      },
+      {
+        "id": 2,
+        "question": "Definição de pronto serve para:",
+        "options": [
+          { "key": "A", "text": "Discutir no final se está bom" },
+          { "key": "B", "text": "Combinar critérios antes e evitar briga no fim" },
+          { "key": "C", "text": "Aumentar ambiguidade" },
+          { "key": "D", "text": "Eliminar necessidade de meta" }
+        ],
+        "answer": "B",
+        "explain": "Critério antes reduz conflito depois."
+      },
+      {
+        "id": 3,
+        "question": "Decisão sem registro tende a:",
+        "options": [
+          { "key": "A", "text": "Ser lembrada igual por todos" },
+          { "key": "B", "text": "Virar versões diferentes e retrabalho" },
+          { "key": "C", "text": "Reduzir ruído" },
+          { "key": "D", "text": "Ser melhor" }
+        ],
+        "answer": "B",
+        "explain": "Memória humana diverge."
+      },
+      {
+        "id": 4,
+        "question": "Uma reunião boa termina com:",
+        "options": [
+          { "key": "A", "text": "Mais dúvidas" },
+          { "key": "B", "text": "Decisão/dono/prazo" },
+          { "key": "C", "text": "Somente conversa" },
+          { "key": "D", "text": "Sem ação" }
+        ],
+        "answer": "B",
+        "explain": "Saída concreta é o que importa."
+      },
+      {
+        "id": 5,
+        "question": "Canal correto para decisões é:",
+        "options": [
+          { "key": "A", "text": "Qualquer canal, sem registro" },
+          { "key": "B", "text": "Registro (ata/nota) para referência futura" },
+          { "key": "C", "text": "Só áudio" },
+          { "key": "D", "text": "Só conversa informal" }
+        ],
+        "answer": "B",
+        "explain": "Decisão precisa de trilha."
+      },
+      {
+        "id": 6,
+        "question": "Ritmo de comunicação é importante porque:",
+        "options": [
+          { "key": "A", "text": "Cria só reuniões" },
+          { "key": "B", "text": "Evita que tudo vire incêndio" },
+          { "key": "C", "text": "Elimina necessidade de KPI" },
+          { "key": "D", "text": "Aumenta ruído" }
+        ],
+        "answer": "B",
+        "explain": "Cadência reduz surpresa."
+      },
+      {
+        "id": 7,
+        "question": "Conflito saudável é:",
+        "options": [
+          { "key": "A", "text": "Ataque pessoal" },
+          { "key": "B", "text": "Debate de ideias com critério e dados" },
+          { "key": "C", "text": "Gritaria" },
+          { "key": "D", "text": "Silêncio" }
+        ],
+        "answer": "B",
+        "explain": "Critério e dados desarmam."
+      },
+      {
+        "id": 8,
+        "question": "A frase 'o que não foi comunicado vira suposição' significa:",
+        "options": [
+          { "key": "A", "text": "Comunicação é opcional" },
+          { "key": "B", "text": "As pessoas preenchem vazio com achismo" },
+          { "key": "C", "text": "Decisão não importa" },
+          { "key": "D", "text": "Reunião resolve tudo" }
+        ],
+        "answer": "B",
+        "explain": "Vazio vira interpretação."
+      },
+      {
+        "id": 9,
+        "question": "Se há muito retrabalho por 'entrega fora do esperado', a causa provável é:",
+        "options": [
+          { "key": "A", "text": "Definição de pronto ausente" },
+          { "key": "B", "text": "Muita documentação" },
+          { "key": "C", "text": "Excesso de padrão" },
+          { "key": "D", "text": "KPIs demais" }
+        ],
+        "answer": "A",
+        "explain": "Sem critério, cada um entende diferente."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Reunião sem próximo passo é eficiente" },
+          { "key": "B", "text": "Reunião sem saída é teatro" },
+          { "key": "C", "text": "Registro atrapalha" },
+          { "key": "D", "text": "Ruído não tem custo" }
+        ],
+        "answer": "B",
+        "explain": "Sem ação, nada muda."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Boas práticas\n\n- definição de pronto\n- registro de decisão\n- dono e prazo\n",
+    "pilares": "Pilares\n\n- clareza\n- cadência\n- registro\n"
+  }
+}

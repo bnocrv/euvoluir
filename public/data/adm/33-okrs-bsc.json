@@ -1,0 +1,168 @@
+{
+  "id": "33-tomada-decisao-dados",
+  "title": "Aula 33 — Tomada de decisão com dados: parar de gerir por sensação",
+  "steps": [
+    {
+      "title": "Dados não substituem julgamento — melhoram",
+      "body": "Decisão boa combina:\n- dados (realidade)\n- contexto (restrições)\n- julgamento (experiência)\n\nRegra:\n- Dado sem contexto vira interpretação errada."
+    },
+    {
+      "title": "Pergunta certa antes do KPI",
+      "body": "Antes de medir, defina:\n- qual decisão você quer tomar\n- qual comportamento quer incentivar\n\nRegra:\n- Medir sem decisão gera métrica inútil."
+    },
+    {
+      "title": "Tipos de métrica (o básico que evita autoengano)",
+      "body": "Exemplos:\n- métrica de resultado (ex: OTIF, lucro)\n- métrica de processo (ex: lead time, erro)\n- métrica de vaidade (ex: seguidores)\n\nRegra:\n- Vaidade dá conforto, não dá controle."
+    },
+    {
+      "title": "Causalidade vs correlação",
+      "body": "Correlação: duas coisas andam juntas.\nCausalidade: uma causa a outra.\n\nRegra:\n- Confundir as duas gera decisões ruins."
+    },
+    {
+      "title": "Experimentos simples (A/B mental)",
+      "body": "Para decidir melhor:\n- mude 1 coisa por vez\n- defina métrica antes\n- compare antes/depois\n\nRegra:\n- Sem experimento, você só tem opinião."
+    },
+    {
+      "title": "Dashboards: o que precisa aparecer",
+      "body": "Um dashboard útil tem:\n- 5 a 10 KPIs\n- tendência (últimas semanas)\n- alvo\n- dono\n\nRegra:\n- Painel grande demais vira ruído."
+    },
+    {
+      "title": "Mini prática (45 min) — decisão e KPI",
+      "body": "Escolha 1 decisão real:\n- reduzir atraso\n- reduzir devolução\n- aumentar produtividade\n\nDefina:\n- 1 KPI de resultado\n- 2 KPIs de processo\n- 1 experimento\n\nObjetivo:\n- decisão guiada."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Dados + contexto + julgamento\n- KPI nasce de decisão\n- Vaidade ≠ controle\n- Experimento reduz achismo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 33 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A melhor visão sobre dados é:",
+        "options": [
+          { "key": "A", "text": "Dados substituem experiência" },
+          { "key": "B", "text": "Dados melhoram decisões quando combinados com contexto" },
+          { "key": "C", "text": "Dados são sempre inúteis" },
+          { "key": "D", "text": "Dados servem só para relatório" }
+        ],
+        "answer": "B",
+        "explain": "Dado sem contexto pode enganar."
+      },
+      {
+        "id": 2,
+        "question": "KPI deve nascer de:",
+        "options": [
+          { "key": "A", "text": "Um painel bonito" },
+          { "key": "B", "text": "Uma decisão que você precisa tomar" },
+          { "key": "C", "text": "Uma tendência da internet" },
+          { "key": "D", "text": "Uma opinião" }
+        ],
+        "answer": "B",
+        "explain": "Se não orienta decisão, é ruído."
+      },
+      {
+        "id": 3,
+        "question": "Métrica de vaidade é:",
+        "options": [
+          { "key": "A", "text": "OTIF" },
+          { "key": "B", "text": "Seguidores sem relação com conversão/resultado" },
+          { "key": "C", "text": "Lead time" },
+          { "key": "D", "text": "Taxa de erro" }
+        ],
+        "answer": "B",
+        "explain": "Pode subir sem melhorar o negócio."
+      },
+      {
+        "id": 4,
+        "question": "Correlação significa:",
+        "options": [
+          { "key": "A", "text": "Uma coisa causa a outra" },
+          { "key": "B", "text": "Duas variáveis variam juntas, sem provar causa" },
+          { "key": "C", "text": "Não existe relação" },
+          { "key": "D", "text": "É sempre prova" }
+        ],
+        "answer": "B",
+        "explain": "Andar junto não prova causa."
+      },
+      {
+        "id": 5,
+        "question": "Melhor prática para testar mudança é:",
+        "options": [
+          { "key": "A", "text": "Mudar 10 coisas de uma vez" },
+          { "key": "B", "text": "Mudar 1 coisa, medir antes/depois com KPI definido" },
+          { "key": "C", "text": "Mudar sem medir" },
+          { "key": "D", "text": "Decidir por sensação" }
+        ],
+        "answer": "B",
+        "explain": "Isola efeito e reduz confusão."
+      },
+      {
+        "id": 6,
+        "question": "Um dashboard bom deve:",
+        "options": [
+          { "key": "A", "text": "Ter 50 KPIs" },
+          { "key": "B", "text": "Ter poucos KPIs com alvo, tendência e dono" },
+          { "key": "C", "text": "Ser difícil de entender" },
+          { "key": "D", "text": "Não ter alvo" }
+        ],
+        "answer": "B",
+        "explain": "Poucos, claros e acionáveis."
+      },
+      {
+        "id": 7,
+        "question": "Dado sem contexto pode:",
+        "options": [
+          { "key": "A", "text": "Sempre ajudar" },
+          { "key": "B", "text": "Levar a interpretação errada" },
+          { "key": "C", "text": "Virar causalidade" },
+          { "key": "D", "text": "Eliminar incerteza" }
+        ],
+        "answer": "B",
+        "explain": "Você precisa entender a situação."
+      },
+      {
+        "id": 8,
+        "question": "Se um KPI incentiva atalho (ex: só quantidade), o gestor deve:",
+        "options": [
+          { "key": "A", "text": "Ignorar" },
+          { "key": "B", "text": "Adicionar métrica de qualidade e revisar incentivo" },
+          { "key": "C", "text": "Cobrar mais pressa" },
+          { "key": "D", "text": "Remover qualquer métrica" }
+        ],
+        "answer": "B",
+        "explain": "Métrica desenha comportamento."
+      },
+      {
+        "id": 9,
+        "question": "Experimento serve para:",
+        "options": [
+          { "key": "A", "text": "Confirmar opinião sem medir" },
+          { "key": "B", "text": "Reduzir achismo e aprender com controle" },
+          { "key": "C", "text": "Evitar decisão" },
+          { "key": "D", "text": "Criar ruído" }
+        ],
+        "answer": "B",
+        "explain": "Você aprende causa e efeito melhor."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Vaidade dá controle" },
+          { "key": "B", "text": "KPI sem decisão vira relatório inútil" },
+          { "key": "C", "text": "Correlação prova causa" },
+          { "key": "D", "text": "Painel enorme é sempre melhor" }
+        ],
+        "answer": "B",
+        "explain": "KPI útil muda decisão."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Princípios\n\n- decisão antes do KPI\n- resultado vs processo\n- experimento\n",
+    "pilares": "Pilares\n\n- clareza\n- mensuração\n- aprendizado\n"
+  }
+}

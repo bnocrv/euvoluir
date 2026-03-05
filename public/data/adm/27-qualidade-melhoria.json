@@ -1,0 +1,168 @@
+{
+  "id": "27-qualidade-melhoria",
+  "title": "Aula 27 — Qualidade e melhoria contínua: reduzir erro sem travar o fluxo",
+  "steps": [
+    {
+      "title": "Qualidade é custo evitado",
+      "body": "Qualidade evita:\n- devolução\n- retrabalho\n- reclamação\n- perda de confiança\n\nRegra:\n- Qualidade barata é prevenir, não corrigir."
+    },
+    {
+      "title": "Erro: sintoma, não identidade",
+      "body": "Erro não define pessoa.\nErro revela:\n- falha de processo\n- falha de padrão\n- falha de treinamento\n\nRegra:\n- Culpar pessoa sem corrigir sistema repete o erro."
+    },
+    {
+      "title": "Causa raiz (5 porquês) e Pareto",
+      "body": "Ferramentas simples:\n- Pareto: quais 20% de causas geram 80% dos erros\n- 5 porquês: chegar na causa raiz\n\nRegra:\n- Melhorar sem causa raiz é 'tapar buraco'."
+    },
+    {
+      "title": "Poka-yoke (erro à prova) e checklist",
+      "body": "Poka-yoke = impedir erro.\nExemplos:\n- etiqueta só imprime após conferência\n- campo obrigatório no sistema\n\nRegra:\n- Melhor controle é o que evita erro antes de acontecer."
+    },
+    {
+      "title": "Controle de qualidade sem burocracia",
+      "body": "Escolhas:\n- inspeção 100% em itens críticos\n- inspeção amostral em risco baixo\n\nRegra:\n- Controle precisa ser proporcional ao risco."
+    },
+    {
+      "title": "Qualidade e velocidade não são inimigas sempre",
+      "body": "Quando qualidade melhora:\n- retrabalho cai\n- velocidade real sobe\n\nRegra:\n- Pressa com erro é lentidão disfarçada."
+    },
+    {
+      "title": "Mini prática (45 min) — Pareto do erro",
+      "body": "Liste 10 erros mais comuns e frequência.\n\nFaça:\n- top 3 causas\n- uma ação poka-yoke para o #1\n\nObjetivo:\n- atacar o maior impacto primeiro."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Qualidade reduz custo total\n- Use Pareto e 5 porquês\n- Poka-yoke previne\n- Controle proporcional ao risco\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 27 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Qualidade é melhor vista como:",
+        "options": [
+          { "key": "A", "text": "Burocracia" },
+          { "key": "B", "text": "Custo evitado (retrabalho, devolução, reclamação)" },
+          { "key": "C", "text": "Só estética" },
+          { "key": "D", "text": "Algo opcional" }
+        ],
+        "answer": "B",
+        "explain": "Qualidade reduz custos ocultos."
+      },
+      {
+        "id": 2,
+        "question": "O maior erro de gestão de qualidade é:",
+        "options": [
+          { "key": "A", "text": "Buscar causa raiz" },
+          { "key": "B", "text": "Culpar pessoas e não corrigir processo" },
+          { "key": "C", "text": "Usar checklist" },
+          { "key": "D", "text": "Medir erro" }
+        ],
+        "answer": "B",
+        "explain": "Sem sistema, o erro volta."
+      },
+      {
+        "id": 3,
+        "question": "Pareto serve para:",
+        "options": [
+          { "key": "A", "text": "Escolher a cor do uniforme" },
+          { "key": "B", "text": "Focar nas poucas causas que geram a maioria dos problemas" },
+          { "key": "C", "text": "Eliminar necessidade de dados" },
+          { "key": "D", "text": "Aumentar burocracia" }
+        ],
+        "answer": "B",
+        "explain": "Você foca no maior impacto."
+      },
+      {
+        "id": 4,
+        "question": "5 porquês é útil porque:",
+        "options": [
+          { "key": "A", "text": "Dá respostas rápidas sem pensar" },
+          { "key": "B", "text": "Ajuda a chegar na causa raiz" },
+          { "key": "C", "text": "Serve só para RH" },
+          { "key": "D", "text": "Dispensa ações" }
+        ],
+        "answer": "B",
+        "explain": "Vai além do sintoma."
+      },
+      {
+        "id": 5,
+        "question": "Poka-yoke significa:",
+        "options": [
+          { "key": "A", "text": "Corrigir erro depois" },
+          { "key": "B", "text": "Prevenir/impedir erro" },
+          { "key": "C", "text": "Aumentar inspeção sempre" },
+          { "key": "D", "text": "Ignorar qualidade" }
+        ],
+        "answer": "B",
+        "explain": "É controle que evita o erro."
+      },
+      {
+        "id": 6,
+        "question": "Inspeção 100% faz mais sentido quando:",
+        "options": [
+          { "key": "A", "text": "Risco é baixo" },
+          { "key": "B", "text": "Erro é crítico/caro (segurança, alto custo, cliente premium)" },
+          { "key": "C", "text": "Não há custo de retrabalho" },
+          { "key": "D", "text": "Nunca" }
+        ],
+        "answer": "B",
+        "explain": "Controle proporcional ao risco."
+      },
+      {
+        "id": 7,
+        "question": "Pressa com erro é:",
+        "options": [
+          { "key": "A", "text": "Velocidade real" },
+          { "key": "B", "text": "Lentidão disfarçada (retrabalho)" },
+          { "key": "C", "text": "Qualidade alta" },
+          { "key": "D", "text": "Garantia de lucro" }
+        ],
+        "answer": "B",
+        "explain": "Retrabalho destrói tempo total."
+      },
+      {
+        "id": 8,
+        "question": "Um bom sistema de qualidade deve:",
+        "options": [
+          { "key": "A", "text": "Ser mais pesado que a operação" },
+          { "key": "B", "text": "Ser simples, prevenir erro e ser proporcional ao risco" },
+          { "key": "C", "text": "Não ter padrão" },
+          { "key": "D", "text": "Depender de memória" }
+        ],
+        "answer": "B",
+        "explain": "Controle inteligente não trava o fluxo."
+      },
+      {
+        "id": 9,
+        "question": "Se 2 causas geram 70% dos erros, a melhor ação é:",
+        "options": [
+          { "key": "A", "text": "Atacar as 10 causas ao mesmo tempo" },
+          { "key": "B", "text": "Atacar primeiro as 2 causas com ações preventivas" },
+          { "key": "C", "text": "Ignorar" },
+          { "key": "D", "text": "Trocar todo o time" }
+        ],
+        "answer": "B",
+        "explain": "Foco no maior impacto."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Qualidade e velocidade são sempre inimigas" },
+          { "key": "B", "text": "Qualidade pode aumentar velocidade real ao reduzir retrabalho" },
+          { "key": "C", "text": "Qualidade não afeta custo" },
+          { "key": "D", "text": "Qualidade é só inspeção" }
+        ],
+        "answer": "B",
+        "explain": "Menos erro = mais fluxo."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ferramentas\n\n- Pareto\n- 5 porquês\n- poka-yoke\n",
+    "pilares": "Pilares\n\n- prevenção\n- causa raiz\n- risco\n"
+  }
+}

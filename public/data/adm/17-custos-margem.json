@@ -1,0 +1,168 @@
+{
+  "id": "17-custos-margem",
+  "title": "Aula 17 — Custos e margem: onde o lucro nasce (e onde ele morre)",
+  "steps": [
+    {
+      "title": "Lucro nasce na margem (não no volume)",
+      "body": "Volume ajuda, mas:\n- se a margem é ruim\n- cada venda pode te aproximar do prejuízo\n\nRegra:\n- Vender mais com margem errada acelera o problema."
+    },
+    {
+      "title": "Custo variável x despesa fixa",
+      "body": "Custo variável (por venda):\n- mercadoria\n- embalagem por pedido\n- comissões\n\nDespesa fixa (estrutura):\n- aluguel\n- salários administrativos\n\nRegra:\n- Margem bruta paga a estrutura."
+    },
+    {
+      "title": "Margem bruta e margem de contribuição",
+      "body": "Margem Bruta = Receita - Custo da mercadoria.\n\nMargem de Contribuição = Receita - (Custos variáveis + despesas variáveis).\n\nRegra:\n- Contribuição é o que 'sobra' por pedido para pagar fixo."
+    },
+    {
+      "title": "Ponto de equilíbrio (break-even)",
+      "body": "Ponto de equilíbrio = Despesa fixa / Margem de contribuição (%).\n\nRegra:\n- Se você não sabe seu break-even, você dirige no escuro."
+    },
+    {
+      "title": "Desconto e frete: as duas facas",
+      "body": "Desconto derruba margem.\nFrete “grátis” não é grátis.\n\nRegra:\n- Desconto sem cálculo é lucro indo embora."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n- comparar preço do concorrente sem comparar custos\n- ignorar devoluções/retrabalho como custo\n- manter produto 'queridinho' que não dá margem\n\nRegra:\n- Produto que não contribui rouba caixa e tempo."
+    },
+    {
+      "title": "Mini prática (45 min) — margem por pedido",
+      "body": "Cenário:\n- Preço: 100\n- Custo mercadoria: 55\n- Frete subsidiado: 10\n- Embalagem: 2\n\nCalcule:\n- margem bruta\n- contribuição\n\nObjetivo:\n- ver o impacto do frete e desconto."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Margem sustenta a empresa\n- Diferencie custo e despesa\n- Frete e desconto derrubam contribuição\n- Break-even é obrigatório\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 17 (Administração)",
+    "instructions": "Marque A, B, C ou D. Pense em margem e decisão.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Por que 'vender mais' pode piorar a situação?",
+        "options": [
+          { "key": "A", "text": "Porque vendas sempre geram prejuízo" },
+          { "key": "B", "text": "Porque com margem negativa você aumenta o prejuízo a cada venda" },
+          { "key": "C", "text": "Porque custo não existe" },
+          { "key": "D", "text": "Porque despesas fixas desaparecem" }
+        ],
+        "answer": "B",
+        "explain": "Se contribuição é ruim, volume acelera a perda."
+      },
+      {
+        "id": 2,
+        "question": "Margem bruta paga principalmente:",
+        "options": [
+          { "key": "A", "text": "Despesas fixas e lucro" },
+          { "key": "B", "text": "Somente impostos" },
+          { "key": "C", "text": "Somente frete" },
+          { "key": "D", "text": "Somente marketing" }
+        ],
+        "answer": "A",
+        "explain": "Sem margem, estrutura não se sustenta."
+      },
+      {
+        "id": 3,
+        "question": "Qual é custo variável típico?",
+        "options": [
+          { "key": "A", "text": "Aluguel" },
+          { "key": "B", "text": "Mercadoria vendida" },
+          { "key": "C", "text": "Internet do escritório" },
+          { "key": "D", "text": "Salário administrativo" }
+        ],
+        "answer": "B",
+        "explain": "Varia com o volume vendido."
+      },
+      {
+        "id": 4,
+        "question": "Frete 'grátis' significa que:",
+        "options": [
+          { "key": "A", "text": "Não tem custo" },
+          { "key": "B", "text": "Alguém paga (empresa ou cliente), e afeta margem" },
+          { "key": "C", "text": "Aumenta lucro sempre" },
+          { "key": "D", "text": "Não entra no cálculo" }
+        ],
+        "answer": "B",
+        "explain": "Frete subsidia e derruba contribuição."
+      },
+      {
+        "id": 5,
+        "question": "Produto com alta devolução deve ser tratado como:",
+        "options": [
+          { "key": "A", "text": "Venda perfeita" },
+          { "key": "B", "text": "Custo oculto (retrabalho + frete + perda) que reduz margem" },
+          { "key": "C", "text": "Algo que não impacta finanças" },
+          { "key": "D", "text": "Sempre o melhor para vender" }
+        ],
+        "answer": "B",
+        "explain": "Devolução é custo real."
+      },
+      {
+        "id": 6,
+        "question": "Break-even é importante porque:",
+        "options": [
+          { "key": "A", "text": "Mostra o mínimo para pagar a estrutura" },
+          { "key": "B", "text": "Não serve para nada" },
+          { "key": "C", "text": "Serve só para contador" },
+          { "key": "D", "text": "Só existe em empresa grande" }
+        ],
+        "answer": "A",
+        "explain": "Diz o ponto onde você para de perder."
+      },
+      {
+        "id": 7,
+        "question": "Comparar preço do concorrente sem comparar custos é perigoso porque:",
+        "options": [
+          { "key": "A", "text": "Custos não importam" },
+          { "key": "B", "text": "Você pode baixar preço e matar a margem" },
+          { "key": "C", "text": "Concorrente sempre está errado" },
+          { "key": "D", "text": "Margem aumenta com desconto" }
+        ],
+        "answer": "B",
+        "explain": "Preço sem custo = decisão no escuro."
+      },
+      {
+        "id": 8,
+        "question": "Um desconto pode ser aceitável quando:",
+        "options": [
+          { "key": "A", "text": "Você não calcula nada" },
+          { "key": "B", "text": "Ainda mantém contribuição positiva e objetivo claro (ex: giro/entrada)" },
+          { "key": "C", "text": "Sempre" },
+          { "key": "D", "text": "Nunca" }
+        ],
+        "answer": "B",
+        "explain": "Desconto pode ser estratégia, mas tem que fechar a conta."
+      },
+      {
+        "id": 9,
+        "question": "Margem de contribuição é útil porque:",
+        "options": [
+          { "key": "A", "text": "Mostra o quanto sobra por venda para pagar fixo" },
+          { "key": "B", "text": "É o caixa do mês" },
+          { "key": "C", "text": "É igual a faturamento" },
+          { "key": "D", "text": "Ignora custos variáveis" }
+        ],
+        "answer": "A",
+        "explain": "É margem 'de verdade' por pedido."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Desconto sem cálculo é lucro indo embora" },
+          { "key": "B", "text": "Frete grátis não afeta margem" },
+          { "key": "C", "text": "Volume resolve tudo" },
+          { "key": "D", "text": "Devolução não custa" }
+        ],
+        "answer": "A",
+        "explain": "Desconto mexe direto na contribuição."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Cálculos mínimos\n\n- margem bruta\n- contribuição\n- break-even\n",
+    "pilares": "Pilares\n\n- margem\n- custo\n- disciplina\n"
+  }
+}

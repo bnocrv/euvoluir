@@ -1,0 +1,168 @@
+{
+  "id": "02-papel-comprador",
+  "title": "Aula 02 — Papel do comprador: rotina, responsabilidades e impacto na empresa",
+  "steps": [
+    {
+      "title": "O comprador como ponto de decisão",
+      "body": "O comprador está no centro da decisão entre demanda interna e oferta do mercado.\n\nEle precisa equilibrar:\n- custo\n- prazo\n- qualidade\n- risco do fornecedor\n\nRegra:\n- Comprar não é apenas adquirir produtos, é tomar decisões de risco e custo."
+    },
+    {
+      "title": "Responsabilidades principais",
+      "body": "Entre as principais responsabilidades de compras estão:\n- buscar fornecedores\n- negociar preços e condições\n- garantir prazos de entrega\n- avaliar desempenho de fornecedores\n\nRegra:\n- O comprador gerencia relações comerciais, não apenas pedidos."
+    },
+    {
+      "title": "Rotina típica do setor de compras",
+      "body": "No dia a dia o comprador costuma lidar com:\n- requisições internas\n- análise de mercado\n- negociação\n- emissão de pedidos\n- acompanhamento de entrega\n\nRegra:\n- A maior parte do trabalho envolve coordenação e comunicação."
+    },
+    {
+      "title": "Interface com outras áreas",
+      "body": "Compras interage constantemente com:\n- produção (necessidade de materiais)\n- logística (prazos e entrega)\n- financeiro (pagamentos)\n- qualidade (conformidade)\n\nRegra:\n- Compras funciona como elo entre áreas internas e fornecedores."
+    },
+    {
+      "title": "Perfil profissional do comprador",
+      "body": "Habilidades importantes:\n- análise de custos\n- negociação\n- organização\n- visão sistêmica\n\nRegra:\n- O melhor comprador combina análise técnica e habilidade de relacionamento."
+    },
+    {
+      "title": "Erro comum na função",
+      "body": "Um erro comum é focar apenas em preço.\n\nIsso ignora fatores como:\n- confiabilidade\n- prazo\n- suporte do fornecedor\n\nRegra:\n- Decisão baseada apenas em preço pode aumentar o custo total."
+    },
+    {
+      "title": "Mini prática (45 min)",
+      "body": "Escolha um processo de compra real.\n\nPergunte:\n- quem solicita?\n- quem aprova?\n- quem negocia?\n- quem acompanha entrega?\n\nObjetivo:\n- entender como o papel do comprador conecta todo o fluxo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Comprador toma decisões de custo e risco\n- Atua como elo entre empresa e fornecedores\n- Precisa equilibrar preço, prazo e qualidade\n- Comunicação e análise são habilidades essenciais\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 02",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O comprador precisa equilibrar principalmente:",
+        "options": [
+          {"key": "A", "text": "Preço, prazo e qualidade"},
+          {"key": "B", "text": "Somente preço"},
+          {"key": "C", "text": "Somente marketing"},
+          {"key": "D", "text": "Somente estoque"}
+        ],
+        "answer": "A",
+        "explain": "Esses três fatores definem a eficiência da compra."
+      },
+      {
+        "id": 2,
+        "question": "Uma responsabilidade do comprador é:",
+        "options": [
+          {"key": "A", "text": "Negociar com fornecedores"},
+          {"key": "B", "text": "Produzir mercadorias"},
+          {"key": "C", "text": "Controlar RH"},
+          {"key": "D", "text": "Fazer marketing"}
+        ],
+        "answer": "A",
+        "explain": "Negociação é parte central da função."
+      },
+      {
+        "id": 3,
+        "question": "Compras interage com:",
+        "options": [
+          {"key": "A", "text": "Produção e logística"},
+          {"key": "B", "text": "Apenas marketing"},
+          {"key": "C", "text": "Somente vendas"},
+          {"key": "D", "text": "Nenhuma área"}
+        ],
+        "answer": "A",
+        "explain": "Compras depende da integração com outras áreas."
+      },
+      {
+        "id": 4,
+        "question": "O comprador representa:",
+        "options": [
+          {"key": "A", "text": "A empresa diante do fornecedor"},
+          {"key": "B", "text": "O marketing da empresa"},
+          {"key": "C", "text": "A produção"},
+          {"key": "D", "text": "A contabilidade"}
+        ],
+        "answer": "A",
+        "explain": "Ele é a interface comercial com fornecedores."
+      },
+      {
+        "id": 5,
+        "question": "Focar apenas em preço pode:",
+        "options": [
+          {"key": "A", "text": "Gerar problemas de qualidade ou prazo"},
+          {"key": "B", "text": "Garantir qualidade"},
+          {"key": "C", "text": "Eliminar riscos"},
+          {"key": "D", "text": "Eliminar fornecedores"}
+        ],
+        "answer": "A",
+        "explain": "Preço não representa todo o custo."
+      },
+      {
+        "id": 6,
+        "question": "Uma habilidade essencial do comprador é:",
+        "options": [
+          {"key": "A", "text": "Negociação"},
+          {"key": "B", "text": "Design gráfico"},
+          {"key": "C", "text": "Programação"},
+          {"key": "D", "text": "Marketing digital"}
+        ],
+        "answer": "A",
+        "explain": "Negociação é central para reduzir custos."
+      },
+      {
+        "id": 7,
+        "question": "Acompanhamento de pedidos serve para:",
+        "options": [
+          {"key": "A", "text": "Garantir entrega no prazo"},
+          {"key": "B", "text": "Aumentar marketing"},
+          {"key": "C", "text": "Criar estoque"},
+          {"key": "D", "text": "Fazer vendas"}
+        ],
+        "answer": "A",
+        "explain": "Follow-up garante previsibilidade."
+      },
+      {
+        "id": 8,
+        "question": "Comprador moderno precisa ter:",
+        "options": [
+          {"key": "A", "text": "Visão do negócio"},
+          {"key": "B", "text": "Somente foco em preço"},
+          {"key": "C", "text": "Somente controle de estoque"},
+          {"key": "D", "text": "Somente controle financeiro"}
+        ],
+        "answer": "A",
+        "explain": "Entender o negócio melhora decisões."
+      },
+      {
+        "id": 9,
+        "question": "Uma função importante do comprador é:",
+        "options": [
+          {"key": "A", "text": "Avaliar fornecedores"},
+          {"key": "B", "text": "Produzir produtos"},
+          {"key": "C", "text": "Controlar RH"},
+          {"key": "D", "text": "Fazer propaganda"}
+        ],
+        "answer": "A",
+        "explain": "Avaliação garante confiabilidade."
+      },
+      {
+        "id": 10,
+        "question": "O comprador atua principalmente:",
+        "options": [
+          {"key": "A", "text": "Entre a empresa e o mercado fornecedor"},
+          {"key": "B", "text": "Somente dentro da produção"},
+          {"key": "C", "text": "Somente no marketing"},
+          {"key": "D", "text": "Somente no financeiro"}
+        ],
+        "answer": "A",
+        "explain": "Ele conecta demanda interna com oferta externa."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Atividades\n\n- cotação\n- negociação\n- acompanhamento\n- avaliação\n",
+    "pilares": "Pilares\n\n- análise\n- negociação\n- coordenação\n"
+  }
+}

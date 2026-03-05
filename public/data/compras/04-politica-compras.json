@@ -1,0 +1,108 @@
+{
+  "id": "04-politica-compras",
+  "title": "Aula 04 — Política de compras: regras, alçadas e controle de decisões",
+  "steps": [
+    {
+      "title": "O que é política de compras",
+      "body": "A política de compras é o conjunto de regras que orienta como a empresa compra.\n\nEla define:\n- quem pode solicitar\n- quem pode aprovar\n- como cotar\n- limites de decisão\n\nRegra:\n- Sem política clara, compras vira improviso."
+    },
+    {
+      "title": "Por que empresas criam políticas",
+      "body": "A política existe para reduzir:\n- decisões arbitrárias\n- risco de fraude\n- desperdício\n\nEla também garante:\n- padronização\n- rastreabilidade\n\nRegra:\n- Política não existe para burocracia, mas para controle."
+    },
+    {
+      "title": "Alçadas de aprovação",
+      "body": "Alçada é o limite de valor que cada nível pode aprovar.\n\nExemplo:\n- até R$5.000: supervisor\n- até R$20.000: gerente\n- acima: diretoria\n\nRegra:\n- Quanto maior o valor, maior o nível de aprovação."
+    },
+    {
+      "title": "Padronização de processo",
+      "body": "Uma política define padrões como:\n- número mínimo de cotações\n- documentação exigida\n- cadastro de fornecedores\n\nRegra:\n- Processo padronizado evita decisões improvisadas."
+    },
+    {
+      "title": "Controle e auditoria",
+      "body": "Políticas permitem verificar:\n- quem aprovou\n- por que comprou\n- qual fornecedor foi escolhido\n\nRegra:\n- Transparência reduz risco de erros e fraudes."
+    },
+    {
+      "title": "Erro comum em empresas",
+      "body": "Algumas empresas têm política escrita mas não aplicada.\n\nConsequências:\n- compras fora do processo\n- urgências frequentes\n\nRegra:\n- Política só funciona quando é seguida."
+    },
+    {
+      "title": "Mini prática (45 min)",
+      "body": "Desenhe uma política simples de compras.\n\nDefina:\n- número mínimo de cotações\n- níveis de aprovação\n- documentação necessária\n\nObjetivo:\n- entender como regras estruturam decisões."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Política define regras de compra\n- Alçadas controlam decisões\n- Padronização melhora eficiência\n- Transparência permite auditoria\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 04",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Política de compras define:",
+        "options": [
+          {"key": "A", "text": "Regras de como comprar"},
+          {"key": "B", "text": "Somente preços"},
+          {"key": "C", "text": "Somente estoque"},
+          {"key": "D", "text": "Somente vendas"}
+        ],
+        "answer": "A",
+        "explain": "Ela define regras e responsabilidades."
+      },
+      {
+        "id": 2,
+        "question": "Alçada de aprovação significa:",
+        "options": [
+          {"key": "A", "text": "Limite de decisão por valor"},
+          {"key": "B", "text": "Tipo de fornecedor"},
+          {"key": "C", "text": "Prazo de entrega"},
+          {"key": "D", "text": "Tipo de produto"}
+        ],
+        "answer": "A",
+        "explain": "Define quem pode aprovar determinados valores."
+      },
+      {
+        "id": 3,
+        "question": "Política ajuda a reduzir:",
+        "options": [
+          {"key": "A", "text": "Fraudes e desperdícios"},
+          {"key": "B", "text": "Funcionários"},
+          {"key": "C", "text": "Clientes"},
+          {"key": "D", "text": "Produção"}
+        ],
+        "answer": "A",
+        "explain": "Controle reduz risco."
+      },
+      {
+        "id": 4,
+        "question": "Padronização de processo serve para:",
+        "options": [
+          {"key": "A", "text": "Evitar improviso"},
+          {"key": "B", "text": "Aumentar risco"},
+          {"key": "C", "text": "Eliminar fornecedores"},
+          {"key": "D", "text": "Reduzir produção"}
+        ],
+        "answer": "A",
+        "explain": "Processo padronizado reduz erros."
+      },
+      {
+        "id": 5,
+        "question": "Uma política eficiente permite:",
+        "options": [
+          {"key": "A", "text": "Auditoria de decisões"},
+          {"key": "B", "text": "Eliminar controle"},
+          {"key": "C", "text": "Ignorar fornecedores"},
+          {"key": "D", "text": "Eliminar pedidos"}
+        ],
+        "answer": "A",
+        "explain": "Rastreabilidade melhora governança."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Elementos\n\n- regras\n- aprovação\n- documentação\n",
+    "pilares": "Pilares\n\n- controle\n- transparência\n- padronização\n"
+  }
+}

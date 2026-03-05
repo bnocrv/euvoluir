@@ -1,0 +1,168 @@
+{
+  "id": "02-objetivos-financeiros",
+  "title": "Aula 02 — Objetivos financeiros: metas, prazos e prioridade (curto, médio e longo)",
+  "steps": [
+    {
+      "title": "Objetivo financeiro não é desejo: é meta com prazo",
+      "body": "Desejo: \"quero juntar dinheiro\".\nMeta: \"quero juntar R$ X até data Y\".\n\nRegra:\n- Se não dá pra medir, não dá pra gerenciar."
+    },
+    {
+      "title": "3 horizontes de tempo (o mapa do jogo)",
+      "body": "Curto: 0–12 meses (contas, reserva, quitar dívida cara)\nMédio: 1–5 anos (carro, entrada, especialização)\nLongo: 5+ anos (aposentadoria, patrimônio)\n\nRegra:\n- Objetivo curto não pode depender de investimento arriscado."
+    },
+    {
+      "title": "Prioridade: primeiro parar sangramento",
+      "body": "Ordem típica:\n1) dívida cara\n2) reserva de emergência\n3) investir\n\nRegra:\n- Investir com dívida cara costuma ser matemática contra você."
+    },
+    {
+      "title": "Metas por comportamento (o que você controla)",
+      "body": "Você controla:\n- quanto poupa por mês\n- quanto gasta em categorias\n\nNão controla:\n- rendimento exato do mercado\n\nRegra:\n- Meta boa foca no que você controla."
+    },
+    {
+      "title": "Regras simples para não desistir",
+      "body": "Exemplos:\n- automatizar poupança no dia do pagamento\n- meta mínima (mesmo que pequena)\n- revisão mensal de 20 minutos\n\nRegra:\n- Sistema vence motivação."
+    },
+    {
+      "title": "Como transformar meta grande em plano",
+      "body": "Passos:\n- defina valor e data\n- calcule aporte mensal aproximado\n- defina fonte do dinheiro (cortar, renda extra, troca de hábito)\n\nRegra:\n- Sem fonte, a meta vira fantasia."
+    },
+    {
+      "title": "Mini prática (45 min) — 3 metas + plano",
+      "body": "Crie 3 metas:\n- 1 curta\n- 1 média\n- 1 longa\n\nPara cada:\n- valor\n- data\n- aporte mensal\n- fonte (de onde vem)\n\nObjetivo:\n- sair do vago para o executável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Meta é valor + data\n- Curto/médio/longo têm estratégias diferentes\n- Priorize parar sangramento (dívida cara) e criar reserva\n- Meta deve focar no que você controla\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 02 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Uma meta financeira boa precisa ter:",
+        "options": [
+          { "key": "A", "text": "Somente vontade" },
+          { "key": "B", "text": "Valor e prazo" },
+          { "key": "C", "text": "Uma aposta" },
+          { "key": "D", "text": "Um influencer" }
+        ],
+        "answer": "B",
+        "explain": "Sem valor e data, não há controle."
+      },
+      {
+        "id": 2,
+        "question": "Objetivos de curto prazo devem usar:",
+        "options": [
+          { "key": "A", "text": "Investimentos arriscados" },
+          { "key": "B", "text": "Estratégias conservadoras e líquidas" },
+          { "key": "C", "text": "Apostas" },
+          { "key": "D", "text": "Somente criptomoedas" }
+        ],
+        "answer": "B",
+        "explain": "Curto prazo não tolera volatilidade."
+      },
+      {
+        "id": 3,
+        "question": "A prioridade típica antes de investir é:",
+        "options": [
+          { "key": "A", "text": "Ignorar dívidas" },
+          { "key": "B", "text": "Quitar dívida cara e montar reserva" },
+          { "key": "C", "text": "Comprar coisas" },
+          { "key": "D", "text": "Aumentar limite do cartão" }
+        ],
+        "answer": "B",
+        "explain": "Dívida cara mata qualquer rendimento."
+      },
+      {
+        "id": 4,
+        "question": "Uma meta baseada em comportamento foca em:",
+        "options": [
+          { "key": "A", "text": "O que você controla (aporte, gastos)" },
+          { "key": "B", "text": "A cotação do mercado" },
+          { "key": "C", "text": "Sorte" },
+          { "key": "D", "text": "Boatos" }
+        ],
+        "answer": "A",
+        "explain": "Controle direto reduz frustração."
+      },
+      {
+        "id": 5,
+        "question": "Automatizar a poupança ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Depende de motivação" },
+          { "key": "B", "text": "Transforma em sistema e reduz esquecimento" },
+          { "key": "C", "text": "Aumenta despesas" },
+          { "key": "D", "text": "Elimina necessidade de meta" }
+        ],
+        "answer": "B",
+        "explain": "Sistema vence motivação."
+      },
+      {
+        "id": 6,
+        "question": "Se você define meta sem fonte do dinheiro, a meta tende a:",
+        "options": [
+          { "key": "A", "text": "Virar fantasia" },
+          { "key": "B", "text": "Virar automática" },
+          { "key": "C", "text": "Ser fácil" },
+          { "key": "D", "text": "Não precisar de ajuste" }
+        ],
+        "answer": "A",
+        "explain": "Sem fonte, não há execução."
+      },
+      {
+        "id": 7,
+        "question": "Uma revisão mensal curta é útil para:",
+        "options": [
+          { "key": "A", "text": "Criar culpa" },
+          { "key": "B", "text": "Ajustar rumo e manter consistência" },
+          { "key": "C", "text": "Parar de medir" },
+          { "key": "D", "text": "Apostar mais" }
+        ],
+        "answer": "B",
+        "explain": "Ajuste pequeno evita desastre grande."
+      },
+      {
+        "id": 8,
+        "question": "Objetivo de longo prazo permite:",
+        "options": [
+          { "key": "A", "text": "Nenhuma variação" },
+          { "key": "B", "text": "Aceitar mais risco (com estratégia) por ter tempo" },
+          { "key": "C", "text": "Depender de sorte" },
+          { "key": "D", "text": "Ignorar plano" }
+        ],
+        "answer": "B",
+        "explain": "Tempo absorve volatilidade."
+      },
+      {
+        "id": 9,
+        "question": "Melhor frase:",
+        "options": [
+          { "key": "A", "text": "Meta é desejo" },
+          { "key": "B", "text": "Meta é valor + data + plano" },
+          { "key": "C", "text": "Meta é sorte" },
+          { "key": "D", "text": "Meta é só cortar tudo" }
+        ],
+        "answer": "B",
+        "explain": "Sem plano, não vira ação."
+      },
+      {
+        "id": 10,
+        "question": "A ordem (dívida cara → reserva → investir) faz sentido porque:",
+        "options": [
+          { "key": "A", "text": "Investe e ignora juros" },
+          { "key": "B", "text": "Juros da dívida podem ser maiores que qualquer investimento seguro" },
+          { "key": "C", "text": "Reserva é luxo" },
+          { "key": "D", "text": "Nunca se deve investir" }
+        ],
+        "answer": "B",
+        "explain": "Matemática: dívida cara come retorno."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Plano de meta\n\n- valor\n- data\n- aporte\n- fonte\n",
+    "pilares": "Pilares\n\n- prazos\n- prioridade\n- sistema\n"
+  }
+}

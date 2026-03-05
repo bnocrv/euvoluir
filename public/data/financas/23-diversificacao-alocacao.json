@@ -1,0 +1,168 @@
+{
+  "id": "23-diversificacao-alocacao",
+  "title": "Aula 23 — Diversificação e alocação: como montar uma carteira que aguenta o mundo real",
+  "steps": [
+    {
+      "title": "Diversificar é não depender de uma única sorte",
+      "body": "Diversificação reduz:\n- risco de um ativo/empresa/setor\n- impacto de eventos inesperados\n\nNão elimina risco.\n\nRegra:\n- Diversificação é reduzir a chance de um erro virar desastre."
+    },
+    {
+      "title": "Alocação é mais importante que escolher o “ativo perfeito”",
+      "body": "Alocação é decidir:\n- quanto vai em cada classe (fixa, variável, etc.)\n\nEla determina:\n- risco\n- estabilidade\n- retorno esperado\n\nRegra:\n- Carteira é construção; não é bilhete premiado."
+    },
+    {
+      "title": "O triângulo: risco, retorno e prazo",
+      "body": "Você equilibra:\n- retorno desejado\n- risco tolerável\n- prazo do objetivo\n\nRegra:\n- Prazo longo permite mais oscilação; prazo curto pede estabilidade."
+    },
+    {
+      "title": "Correlação (sem fórmula): não cair tudo junto",
+      "body": "Diversificação funciona melhor quando:\n- os ativos não se mexem igual ao mesmo tempo\n\nRegra:\n- Se tudo cai junto, você não diversificou de verdade."
+    },
+    {
+      "title": "Rebalanceamento: manter a carteira no trilho",
+      "body": "Com o tempo, a carteira “desbalanceia”.\nExemplo:\n- renda variável sobe e vira grande demais\n\nRebalancear é:\n- voltar para a alocação planejada\n\nRegra:\n- Rebalancear é disciplina anti-euforia e anti-pânico."
+    },
+    {
+      "title": "O erro clássico: diversificar demais sem entender",
+      "body": "Diversificar mal é:\n- comprar 20 coisas sem saber por quê\n- duplicar risco sem perceber\n\nRegra:\n- Diversificação boa tem lógica, não quantidade."
+    },
+    {
+      "title": "Mini prática (45 min) — alocação por objetivos",
+      "body": "Crie 3 “caixas”:\n- curto prazo\n- médio prazo\n- longo prazo\n\nPara cada:\n- defina %\n- defina tolerância à oscilação\n- defina regra de rebalanceamento (trimestral ou semestral)\n\nObjetivo:\n- carteira alinhada à vida real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Diversificação reduz risco de desastre\n- Alocação manda mais que “o ativo perfeito”\n- Prazo define risco tolerável\n- Rebalanceamento mantém disciplina\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 23 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Diversificação serve para:",
+        "options": [
+          { "key": "A", "text": "Eliminar qualquer risco" },
+          { "key": "B", "text": "Reduzir chance de um erro virar desastre" },
+          { "key": "C", "text": "Garantir retorno" },
+          { "key": "D", "text": "Aumentar volatilidade" }
+        ],
+        "answer": "B",
+        "explain": "Reduz risco concentrado."
+      },
+      {
+        "id": 2,
+        "question": "Alocação é:",
+        "options": [
+          { "key": "A", "text": "Escolher uma ação perfeita" },
+          { "key": "B", "text": "Decidir quanto vai em cada classe de ativos" },
+          { "key": "C", "text": "Trocar todo dia" },
+          { "key": "D", "text": "Ignorar prazo" }
+        ],
+        "answer": "B",
+        "explain": "É distribuição que define o perfil da carteira."
+      },
+      {
+        "id": 3,
+        "question": "Prazo curto normalmente pede:",
+        "options": [
+          { "key": "A", "text": "Mais oscilação" },
+          { "key": "B", "text": "Mais estabilidade/liquidez" },
+          { "key": "C", "text": "Concentração" },
+          { "key": "D", "text": "Nenhuma regra" }
+        ],
+        "answer": "B",
+        "explain": "Você pode precisar do dinheiro logo."
+      },
+      {
+        "id": 4,
+        "question": "Correlação (no sentido prático) é:",
+        "options": [
+          { "key": "A", "text": "Tudo subir sempre" },
+          { "key": "B", "text": "Ativos se mexerem parecido (cair/subir juntos)" },
+          { "key": "C", "text": "Imposto" },
+          { "key": "D", "text": "Liquidez" }
+        ],
+        "answer": "B",
+        "explain": "Diversificação melhora quando correlação é menor."
+      },
+      {
+        "id": 5,
+        "question": "Rebalanceamento é:",
+        "options": [
+          { "key": "A", "text": "Mudar objetivo todo mês" },
+          { "key": "B", "text": "Voltar para a alocação planejada" },
+          { "key": "C", "text": "Comprar só o que subiu" },
+          { "key": "D", "text": "Vender tudo no pânico" }
+        ],
+        "answer": "B",
+        "explain": "Disciplina para manter risco controlado."
+      },
+      {
+        "id": 6,
+        "question": "Rebalancear ajuda a:",
+        "options": [
+          { "key": "A", "text": "Seguir euforia e pânico" },
+          { "key": "B", "text": "Ser disciplinado contra emoção" },
+          { "key": "C", "text": "Eliminar inflação" },
+          { "key": "D", "text": "Evitar qualquer queda" }
+        ],
+        "answer": "B",
+        "explain": "Você realiza lucro e repõe base com critério."
+      },
+      {
+        "id": 7,
+        "question": "Diversificar demais sem entender pode:",
+        "options": [
+          { "key": "A", "text": "Duplicar risco sem perceber" },
+          { "key": "B", "text": "Eliminar risco" },
+          { "key": "C", "text": "Garantir retorno" },
+          { "key": "D", "text": "Simplificar tudo" }
+        ],
+        "answer": "A",
+        "explain": "Muitos ativos podem ter o mesmo risco por trás."
+      },
+      {
+        "id": 8,
+        "question": "A carteira deve ser alinhada a:",
+        "options": [
+          { "key": "A", "text": "Vida real (objetivos e prazos)" },
+          { "key": "B", "text": "Boatos" },
+          { "key": "C", "text": "Euforia" },
+          { "key": "D", "text": "Apenas taxa do mês" }
+        ],
+        "answer": "A",
+        "explain": "Objetivo manda na alocação."
+      },
+      {
+        "id": 9,
+        "question": "Se “tudo cai junto”, isso sugere:",
+        "options": [
+          { "key": "A", "text": "Diversificação perfeita" },
+          { "key": "B", "text": "Ativos muito correlacionados" },
+          { "key": "C", "text": "Lucro garantido" },
+          { "key": "D", "text": "Sem risco" }
+        ],
+        "answer": "B",
+        "explain": "Você pode estar concentrado sem perceber."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Alocação é secundária" },
+          { "key": "B", "text": "Alocação costuma importar mais que escolher um único ativo" },
+          { "key": "C", "text": "Rebalancear é desperdício" },
+          { "key": "D", "text": "Prazo não importa" }
+        ],
+        "answer": "B",
+        "explain": "A distribuição define risco e retorno."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Estratégia\n\n- alocação por objetivos\n- correlação\n- rebalanceamento\n",
+    "pilares": "Pilares\n\n- robustez\n- disciplina\n- adequação ao prazo\n"
+  }
+}

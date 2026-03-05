@@ -1,0 +1,168 @@
+{
+  "id": "34-gestao-mudanca",
+  "title": "Aula 34 — Gestão da mudança: implementar sem resistência destruir tudo",
+  "steps": [
+    {
+      "title": "Mudança falha mais por gente do que por técnica",
+      "body": "Mudança mexe em:\n- rotina\n- status\n- medo de errar\n\nRegra:\n- Se você ignora o humano, a mudança volta atrás."
+    },
+    {
+      "title": "Por que as pessoas resistem (sem drama)",
+      "body": "Motivos comuns:\n- não entendem o porquê\n- acham que vai piorar\n- não confiam na execução\n\nRegra:\n- Resistência é dado: mostra risco."
+    },
+    {
+      "title": "3 coisas que precisam estar claras",
+      "body": "Antes de mudar:\n- por que (problema)\n- o que muda (comportamento/processo)\n- como mede sucesso\n\nRegra:\n- Sem métrica, vira opinião sobre se 'deu certo'."
+    },
+    {
+      "title": "Piloto antes de escala",
+      "body": "Piloto serve para:\n- testar\n- ajustar\n- treinar multiplicador\n\nRegra:\n- Escalar sem piloto escala erro."
+    },
+    {
+      "title": "Treinamento e suporte no início",
+      "body": "Boas práticas:\n- treinamento curto + prática\n- material simples\n- canal de dúvidas\n\nRegra:\n- Treinar é parte do projeto, não bônus."
+    },
+    {
+      "title": "Gatilhos de adoção (o que faz pegar)",
+      "body": "Adoção aumenta com:\n- liderança usando primeiro\n- regra clara (o padrão novo)\n- feedback rápido\n\nRegra:\n- Sem consequência, volta ao antigo."
+    },
+    {
+      "title": "Mini prática (45 min) — plano de mudança",
+      "body": "Escolha uma mudança (ex: novo padrão de conferência).\n\nDefina:\n- porquê\n- piloto (onde e por quanto tempo)\n- métrica de sucesso\n- suporte e canal\n\nObjetivo:\n- mudança com adoção."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Mudança é humana\n- Resistência é sinal, não inimigo\n- Piloto antes de escalar\n- Treinamento e regra clara\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 34 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Mudanças falham mais por:",
+        "options": [
+          { "key": "A", "text": "Falta de planilha" },
+          { "key": "B", "text": "Adoção humana e rotina, não só técnica" },
+          { "key": "C", "text": "Excesso de KPI" },
+          { "key": "D", "text": "Cor errada do uniforme" }
+        ],
+        "answer": "B",
+        "explain": "Adoção é o gargalo real."
+      },
+      {
+        "id": 2,
+        "question": "Resistência geralmente indica:",
+        "options": [
+          { "key": "A", "text": "Má intenção sempre" },
+          { "key": "B", "text": "Risco: falta de clareza, medo, baixa confiança" },
+          { "key": "C", "text": "Que o projeto está perfeito" },
+          { "key": "D", "text": "Que não precisa comunicar" }
+        ],
+        "answer": "B",
+        "explain": "Resistência é dado do sistema."
+      },
+      {
+        "id": 3,
+        "question": "Três coisas que precisam estar claras são:",
+        "options": [
+          { "key": "A", "text": "Por que, o que muda, como mede sucesso" },
+          { "key": "B", "text": "Logo, slogan, post" },
+          { "key": "C", "text": "Pressão, pressa, punição" },
+          { "key": "D", "text": "Somente prazo" }
+        ],
+        "answer": "A",
+        "explain": "Clareza reduz medo e ruído."
+      },
+      {
+        "id": 4,
+        "question": "Piloto é importante porque:",
+        "options": [
+          { "key": "A", "text": "Atraso é bom" },
+          { "key": "B", "text": "Permite testar e ajustar antes de escalar" },
+          { "key": "C", "text": "Elimina necessidade de métrica" },
+          { "key": "D", "text": "Garante adoção sem comunicação" }
+        ],
+        "answer": "B",
+        "explain": "Você aprende barato antes de expandir."
+      },
+      {
+        "id": 5,
+        "question": "Escalar sem piloto tende a:",
+        "options": [
+          { "key": "A", "text": "Escalar erro junto" },
+          { "key": "B", "text": "Eliminar resistência" },
+          { "key": "C", "text": "Reduzir risco" },
+          { "key": "D", "text": "Aumentar qualidade automaticamente" }
+        ],
+        "answer": "A",
+        "explain": "Erro em escala custa caro."
+      },
+      {
+        "id": 6,
+        "question": "Treinamento deve ser tratado como:",
+        "options": [
+          { "key": "A", "text": "Parte do projeto" },
+          { "key": "B", "text": "Algo opcional" },
+          { "key": "C", "text": "Perda de tempo" },
+          { "key": "D", "text": "Só para novatos" }
+        ],
+        "answer": "A",
+        "explain": "Sem treino, não há adoção."
+      },
+      {
+        "id": 7,
+        "question": "Um gatilho forte de adoção é:",
+        "options": [
+          { "key": "A", "text": "Liderança não usar" },
+          { "key": "B", "text": "Regra clara e liderança usando primeiro" },
+          { "key": "C", "text": "Silêncio" },
+          { "key": "D", "text": "Deixar opcional por meses" }
+        ],
+        "answer": "B",
+        "explain": "Exemplo e padrão aceleram comportamento."
+      },
+      {
+        "id": 8,
+        "question": "Sem métrica de sucesso, a mudança tende a:",
+        "options": [
+          { "key": "A", "text": "Ser avaliada por opinião" },
+          { "key": "B", "text": "Ser clara" },
+          { "key": "C", "text": "Melhorar sempre" },
+          { "key": "D", "text": "Gerar menos ruído" }
+        ],
+        "answer": "A",
+        "explain": "Sem critério, vira disputa."
+      },
+      {
+        "id": 9,
+        "question": "Uma boa abordagem inicial é:",
+        "options": [
+          { "key": "A", "text": "Impor sem explicar" },
+          { "key": "B", "text": "Explicar o porquê, pilotar, treinar, medir" },
+          { "key": "C", "text": "Trocar tudo de uma vez" },
+          { "key": "D", "text": "Não comunicar" }
+        ],
+        "answer": "B",
+        "explain": "Sequência reduz risco de rejeição."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Mudança é só técnica" },
+          { "key": "B", "text": "Mudança é humana e precisa de adoção" },
+          { "key": "C", "text": "Resistência é inimigo" },
+          { "key": "D", "text": "Piloto é perda de tempo" }
+        ],
+        "answer": "B",
+        "explain": "Sem adoção, nada muda."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Plano de mudança\n\n- porquê\n- piloto\n- métrica\n- suporte\n",
+    "pilares": "Pilares\n\n- adoção\n- clareza\n- consistência\n"
+  }
+}

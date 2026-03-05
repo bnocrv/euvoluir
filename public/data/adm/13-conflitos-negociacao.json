@@ -1,0 +1,168 @@
+{
+  "id": "13-conflitos-negociacao",
+  "title": "Aula 13 — Conflitos e negociação: transformar atrito em solução",
+  "steps": [
+    {
+      "title": "Conflito não é problema; conflito mal gerido é",
+      "body": "Conflito aparece quando:\n- objetivos competem\n- recursos são limitados\n- informação é diferente\n\nRegra:\n- Sem conflito, muitas vezes só tem silêncio e problema escondido."
+    },
+    {
+      "title": "Tipos de conflito (pra escolher a estratégia)",
+      "body": "Comum:\n- conflito de prioridade\n- conflito de processo\n- conflito de relacionamento\n\nRegra:\n- Se você tratar conflito de processo como pessoal, você piora tudo."
+    },
+    {
+      "title": "Negociação: posição vs interesse",
+      "body": "Posição é o que a pessoa pede.\nInteresse é o porquê.\n\nExemplo:\n- posição: \"preciso expedir hoje\"\n- interesse: \"cliente premium com prazo crítico\"\n\nRegra:\n- Resolver interesse abre mais soluções."
+    },
+    {
+      "title": "BATNA (seu plano B) e limites",
+      "body": "BATNA = melhor alternativa se não houver acordo.\n\nRegra:\n- Quem tem BATNA clara negocia sem desespero."
+    },
+    {
+      "title": "Como mediar conflito entre áreas",
+      "body": "Passos:\n- alinhar objetivo comum (cliente/resultado)\n- trazer dados (prazo, erro, custo)\n- definir regra de priorização\n\nRegra:\n- Sem regra, toda exceção vira briga."
+    },
+    {
+      "title": "Erros que explodem conflitos",
+      "body": "Erros:\n- buscar culpado\n- discutir sem dados\n- usar rótulo (\"sempre\", \"nunca\")\n\nRegra:\n- Linguagem absoluta vira guerra."
+    },
+    {
+      "title": "Mini prática (45 min) — mediação real",
+      "body": "Cenário:\n- Comercial promete entrega em 24h sem consultar logística.\n- Logística diz que é impossível.\n\nCrie:\n- regra de priorização\n- regra de exceção\n- regra de comunicação\n\nObjetivo:\n- reduzir conflito recorrente."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Conflito é natural\n- Diferencie posição de interesse\n- Dados + regra reduzem briga\n- BATNA e limites melhoram negociação\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 13 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O maior erro ao mediar conflito entre áreas é:",
+        "options": [
+          { "key": "A", "text": "Buscar o objetivo comum" },
+          { "key": "B", "text": "Transformar um conflito de processo em conflito pessoal" },
+          { "key": "C", "text": "Definir regra de priorização" },
+          { "key": "D", "text": "Trazer dados" }
+        ],
+        "answer": "B",
+        "explain": "Quando vira pessoal, a solução some."
+      },
+      {
+        "id": 2,
+        "question": "A diferença entre posição e interesse é:",
+        "options": [
+          { "key": "A", "text": "Posição é o pedido; interesse é o motivo" },
+          { "key": "B", "text": "Posição é o motivo; interesse é o pedido" },
+          { "key": "C", "text": "São iguais" },
+          { "key": "D", "text": "Interesse é sempre financeiro" }
+        ],
+        "answer": "A",
+        "explain": "Entender o motivo abre opções."
+      },
+      {
+        "id": 3,
+        "question": "Você negocia melhor quando:",
+        "options": [
+          { "key": "A", "text": "Não tem plano B" },
+          { "key": "B", "text": "Tem BATNA clara e limites definidos" },
+          { "key": "C", "text": "Aceita tudo para evitar conflito" },
+          { "key": "D", "text": "Grita mais alto" }
+        ],
+        "answer": "B",
+        "explain": "BATNA evita decisões por desespero."
+      },
+      {
+        "id": 4,
+        "question": "Solução durável para conflito recorrente normalmente envolve:",
+        "options": [
+          { "key": "A", "text": "Mais 'boa vontade' apenas" },
+          { "key": "B", "text": "Regra de priorização + regra de exceção + comunicação" },
+          { "key": "C", "text": "Trocar pessoas" },
+          { "key": "D", "text": "Ignorar e esperar passar" }
+        ],
+        "answer": "B",
+        "explain": "Sem regra, a briga volta."
+      },
+      {
+        "id": 5,
+        "question": "Frases como 'você sempre' e 'você nunca' são ruins porque:",
+        "options": [
+          { "key": "A", "text": "São muito curtas" },
+          { "key": "B", "text": "Viraram ataque e bloqueiam solução" },
+          { "key": "C", "text": "Ajudam a negociação" },
+          { "key": "D", "text": "Trazem dados" }
+        ],
+        "answer": "B",
+        "explain": "Rótulo gera defesa, não acordo."
+      },
+      {
+        "id": 6,
+        "question": "Em conflito de prioridade, o melhor começo é:",
+        "options": [
+          { "key": "A", "text": "Decidir no grito" },
+          { "key": "B", "text": "Alinhar objetivo e usar critério (impacto/prazo/cliente)" },
+          { "key": "C", "text": "Fazer reunião sem pauta" },
+          { "key": "D", "text": "Culpar alguém" }
+        ],
+        "answer": "B",
+        "explain": "Critério evita disputa infinita."
+      },
+      {
+        "id": 7,
+        "question": "Conflito pode ser saudável quando:",
+        "options": [
+          { "key": "A", "text": "Traz problemas ocultos para solução" },
+          { "key": "B", "text": "Vira fofoca" },
+          { "key": "C", "text": "Vira ataque" },
+          { "key": "D", "text": "Vira sabotagem" }
+        ],
+        "answer": "A",
+        "explain": "Melhora o sistema."
+      },
+      {
+        "id": 8,
+        "question": "Qual é um bom critério de priorização em operação?",
+        "options": [
+          { "key": "A", "text": "Quem pediu primeiro, sempre" },
+          { "key": "B", "text": "Impacto no cliente + prazo + custo do erro" },
+          { "key": "C", "text": "Quem grita mais" },
+          { "key": "D", "text": "Quem é mais antigo" }
+        ],
+        "answer": "B",
+        "explain": "Critério reduz subjetividade."
+      },
+      {
+        "id": 9,
+        "question": "Se comercial promete prazos sem consultar logística, a solução estrutural é:",
+        "options": [
+          { "key": "A", "text": "Brigar toda vez" },
+          { "key": "B", "text": "Criar SLA, regras de exceção e canal de consulta rápido" },
+          { "key": "C", "text": "Ignorar promessa" },
+          { "key": "D", "text": "Punir cliente" }
+        ],
+        "answer": "B",
+        "explain": "Ajuste de processo e governança."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Conflito deve ser evitado sempre" },
+          { "key": "B", "text": "Conflito bem gerido melhora decisões" },
+          { "key": "C", "text": "Conflito só existe por má intenção" },
+          { "key": "D", "text": "Conflito se resolve com carisma" }
+        ],
+        "answer": "B",
+        "explain": "Conflito pode revelar falhas do sistema."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ferramentas\n\n- posição vs interesse\n- BATNA\n- regra de priorização\n",
+    "pilares": "Pilares\n\n- critério\n- dados\n- objetivo comum\n"
+  }
+}

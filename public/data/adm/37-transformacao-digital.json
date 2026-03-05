@@ -1,0 +1,168 @@
+{
+  "id": "37-concorrencia-preco",
+  "title": "Aula 37 — Concorrência e precificação: parar de brigar só por desconto",
+  "steps": [
+    {
+      "title": "Preço é decisão estratégica, não impulso",
+      "body": "Preço afeta:\n- margem\n- percepção de valor\n- público\n\nRegra:\n- Desconto sem conta vira prejuízo disfarçado."
+    },
+    {
+      "title": "O tripé: custo, valor percebido, concorrência",
+      "body": "Preço precisa respeitar:\n- custo (base mínima)\n- valor percebido (teto psicológico)\n- concorrência (referência)\n\nRegra:\n- Concorrência não define seu preço sozinha."
+    },
+    {
+      "title": "Guerra de preço: quando acontece e por que é perigosa",
+      "body": "Guerra de preço aparece quando:\n- produto é igual\n- diferencial é fraco\n\nPerigo:\n- margem some\n- qualidade cai\n\nRegra:\n- Quem aguenta mais tempo não é quem ganha, é quem sobrevive."
+    },
+    {
+      "title": "Desconto inteligente: regra e objetivo",
+      "body": "Desconto pode fazer sentido para:\n- liquidar estoque\n- adquirir cliente com LTV alto\n- incentivar volume\n\nRegra:\n- Desconto precisa de motivo e limite."
+    },
+    {
+      "title": "Psicologia básica do preço (sem truque barato)",
+      "body": "O cliente interpreta preço como:\n- sinal de qualidade\n- sinal de risco\n\nRegra:\n- Preço baixo demais pode reduzir confiança."
+    },
+    {
+      "title": "Caixa e margem: a conta que mata empresas",
+      "body": "Mesmo com vendas subindo:\n- margem baixa pode não pagar custo fixo\n\nRegra:\n- Crescer com margem ruim acelera a falência."
+    },
+    {
+      "title": "Mini prática (45 min) — regra de desconto",
+      "body": "Defina:\n- margem mínima\n- quando pode dar desconto\n- quem aprova\n- limite por faixa\n\nObjetivo:\n- tirar desconto do improviso."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Preço é estratégico\n- Tripé: custo, valor, concorrência\n- Guerra de preço destrói margem\n- Desconto precisa de regra\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 37 (Administração)",
+    "instructions": "Marque A, B, C ou D. Pense em margem e risco.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Preço é:",
+        "options": [
+          { "key": "A", "text": "Um impulso" },
+          { "key": "B", "text": "Uma decisão estratégica que afeta margem e percepção" },
+          { "key": "C", "text": "Irrelevante" },
+          { "key": "D", "text": "Só copiar concorrente" }
+        ],
+        "answer": "B",
+        "explain": "Preço desenha público e sustentabilidade."
+      },
+      {
+        "id": 2,
+        "question": "O tripé do preço inclui:",
+        "options": [
+          { "key": "A", "text": "Custo, valor percebido, concorrência" },
+          { "key": "B", "text": "Logo, cor, slogan" },
+          { "key": "C", "text": "Sorte, pressão, pressa" },
+          { "key": "D", "text": "Somente concorrência" }
+        ],
+        "answer": "A",
+        "explain": "Você precisa dos 3 para decidir."
+      },
+      {
+        "id": 3,
+        "question": "Concorrência deve definir seu preço:",
+        "options": [
+          { "key": "A", "text": "Sozinha, sempre" },
+          { "key": "B", "text": "Como referência, mas não como única base" },
+          { "key": "C", "text": "Nunca" },
+          { "key": "D", "text": "Apenas quando você está com medo" }
+        ],
+        "answer": "B",
+        "explain": "Você precisa respeitar custo e valor."
+      },
+      {
+        "id": 4,
+        "question": "Guerra de preço é perigosa porque:",
+        "options": [
+          { "key": "A", "text": "Aumenta margem" },
+          { "key": "B", "text": "Destrói margem e pode derrubar qualidade" },
+          { "key": "C", "text": "Elimina concorrente sempre" },
+          { "key": "D", "text": "Não muda nada" }
+        ],
+        "answer": "B",
+        "explain": "Sem margem, o negócio não sustenta."
+      },
+      {
+        "id": 5,
+        "question": "Desconto inteligente deve ter:",
+        "options": [
+          { "key": "A", "text": "Nenhum limite" },
+          { "key": "B", "text": "Motivo, regra e limite" },
+          { "key": "C", "text": "Somente pressão do cliente" },
+          { "key": "D", "text": "Apenas 'porque sim'" }
+        ],
+        "answer": "B",
+        "explain": "Sem regra, vira prejuízo."
+      },
+      {
+        "id": 6,
+        "question": "Preço baixo demais pode:",
+        "options": [
+          { "key": "A", "text": "Aumentar confiança sempre" },
+          { "key": "B", "text": "Reduzir confiança por sinalizar baixa qualidade/risco" },
+          { "key": "C", "text": "Eliminar custo" },
+          { "key": "D", "text": "Aumentar valor percebido" }
+        ],
+        "answer": "B",
+        "explain": "Preço também é sinal."
+      },
+      {
+        "id": 7,
+        "question": "Crescer com margem ruim é perigoso porque:",
+        "options": [
+          { "key": "A", "text": "Aumenta caixa automaticamente" },
+          { "key": "B", "text": "Acelera prejuízo e pode não pagar custo fixo" },
+          { "key": "C", "text": "Não afeta nada" },
+          { "key": "D", "text": "Sempre melhora qualidade" }
+        ],
+        "answer": "B",
+        "explain": "Volume sem margem quebra."
+      },
+      {
+        "id": 8,
+        "question": "Quando desconto faz sentido com mais clareza?",
+        "options": [
+          { "key": "A", "text": "Para liquidar estoque parado com regra" },
+          { "key": "B", "text": "Porque o cliente pediu" },
+          { "key": "C", "text": "Porque concorrente fez" },
+          { "key": "D", "text": "Sem calcular margem" }
+        ],
+        "answer": "A",
+        "explain": "Objetivo claro e controle."
+      },
+      {
+        "id": 9,
+        "question": "A melhor proteção contra guerra de preço é:",
+        "options": [
+          { "key": "A", "text": "Diferencial com prova (valor percebido)" },
+          { "key": "B", "text": "Sorte" },
+          { "key": "C", "text": "Mudar logo" },
+          { "key": "D", "text": "Desconto infinito" }
+        ],
+        "answer": "A",
+        "explain": "Valor percebido sustenta preço."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Desconto sem conta é risco" },
+          { "key": "B", "text": "Concorrente define tudo" },
+          { "key": "C", "text": "Margem não importa" },
+          { "key": "D", "text": "Preço não é estratégia" }
+        ],
+        "answer": "A",
+        "explain": "Sem conta, você compra prejuízo."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Regra de desconto\n\n- margem mínima\n- objetivo\n- limite\n- aprovação\n",
+    "pilares": "Pilares\n\n- margem\n- valor\n- disciplina\n"
+  }
+}

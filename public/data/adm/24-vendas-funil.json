@@ -1,0 +1,168 @@
+{
+  "id": "24-vendas-funil",
+  "title": "Aula 24 — Vendas e funil: processo comercial que dá previsibilidade",
+  "steps": [
+    {
+      "title": "Vendas sem processo vira loteria",
+      "body": "Funil é o caminho do cliente:\n- conhecer\n- considerar\n- comprar\n- recomprar\n\nRegra:\n- Funil dá previsibilidade porque você mede etapas."
+    },
+    {
+      "title": "Etapas e conversões (onde o dinheiro vaza)",
+      "body": "Para cada etapa você mede:\n- volume\n- conversão\n- tempo\n\nRegra:\n- Melhorar 1 etapa pode mudar o resultado total."
+    },
+    {
+      "title": "Lead, oportunidade e cliente (definição prática)",
+      "body": "Lead: contato.\nOportunidade: tem dor + pode pagar + tem prazo.\nCliente: fechou.\n\nRegra:\n- Tratar lead como cliente cria ilusão."
+    },
+    {
+      "title": "Qualificação (BANT simplificado)",
+      "body": "Perguntas:\n- Budget (tem orçamento?)\n- Authority (quem decide?)\n- Need (qual dor?)\n- Timing (quando compra?)\n\nRegra:\n- Sem qualificação, você gasta tempo em falso positivo."
+    },
+    {
+      "title": "Taxas essenciais (para gestor)",
+      "body": "Mínimo:\n- CAC (custo para adquirir)\n- Ticket médio\n- Conversão por etapa\n- Recompra/retensão\n\nRegra:\n- Receita sem CAC e retenção é meia visão."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n- funil sem definição de etapa\n- mexer em anúncio sem olhar conversão\n- desconto para fechar rápido sem cálculo\n\nRegra:\n- Desconto é alavanca de curto prazo, custo de longo."
+    },
+    {
+      "title": "Mini prática (45 min) — diagnóstico de vazamento",
+      "body": "Cenário:\n- 1000 visitas\n- 50 contatos\n- 10 propostas\n- 2 vendas\n\nPergunte:\n- onde está o vazamento maior?\n- o que testar primeiro (mensagem, oferta, qualificação)?\n\nObjetivo:\n- pensar por etapa."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Funil mede etapas e dá previsibilidade\n- Qualificação economiza tempo\n- Conversão por etapa mostra onde agir\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 24 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O maior benefício do funil é:",
+        "options": [
+          { "key": "A", "text": "Deixar tudo mais bonito" },
+          { "key": "B", "text": "Dar previsibilidade ao medir etapas e conversões" },
+          { "key": "C", "text": "Eliminar necessidade de atendimento" },
+          { "key": "D", "text": "Acabar com concorrência" }
+        ],
+        "answer": "B",
+        "explain": "Você enxerga onde melhorar e prever resultado."
+      },
+      {
+        "id": 2,
+        "question": "O que é uma oportunidade (definição prática)?",
+        "options": [
+          { "key": "A", "text": "Qualquer pessoa que viu um anúncio" },
+          { "key": "B", "text": "Quem tem dor/necessidade + capacidade de pagar + prazo" },
+          { "key": "C", "text": "Um seguidor novo" },
+          { "key": "D", "text": "Um like" }
+        ],
+        "answer": "B",
+        "explain": "Oportunidade tem critérios mínimos de compra."
+      },
+      {
+        "id": 3,
+        "question": "Qualificação serve para:",
+        "options": [
+          { "key": "A", "text": "Aumentar trabalho" },
+          { "key": "B", "text": "Evitar gastar tempo com quem não compra" },
+          { "key": "C", "text": "Diminuir clareza" },
+          { "key": "D", "text": "Eliminar métricas" }
+        ],
+        "answer": "B",
+        "explain": "Economia de tempo e foco em potencial real."
+      },
+      {
+        "id": 4,
+        "question": "No cenário: 1000 visitas -> 50 contatos -> 10 propostas -> 2 vendas, o maior gargalo aparente é:",
+        "options": [
+          { "key": "A", "text": "Visitas demais" },
+          { "key": "B", "text": "Conversão visita->contato (5%) pode estar baixa dependendo do canal/segmento" },
+          { "key": "C", "text": "Propostas demais" },
+          { "key": "D", "text": "Nenhum gargalo" }
+        ],
+        "answer": "B",
+        "explain": "Se a mensagem/oferta não converte, o topo vaza."
+      },
+      {
+        "id": 5,
+        "question": "Qual métrica faltando deixa o gestor 'cego' sobre eficiência comercial?",
+        "options": [
+          { "key": "A", "text": "CAC" },
+          { "key": "B", "text": "Cor do site" },
+          { "key": "C", "text": "Número de emojis no post" },
+          { "key": "D", "text": "Quantidade de reuniões" }
+        ],
+        "answer": "A",
+        "explain": "Sem CAC você não sabe o custo para crescer."
+      },
+      {
+        "id": 6,
+        "question": "Desconto para fechar sem calcular margem é perigoso porque:",
+        "options": [
+          { "key": "A", "text": "Sempre aumenta lucro" },
+          { "key": "B", "text": "Pode matar contribuição e criar hábito de desconto" },
+          { "key": "C", "text": "Não muda nada" },
+          { "key": "D", "text": "Sempre melhora retenção" }
+        ],
+        "answer": "B",
+        "explain": "Fecha hoje e quebra a conta amanhã."
+      },
+      {
+        "id": 7,
+        "question": "O que medir por etapa ajuda a fazer?",
+        "options": [
+          { "key": "A", "text": "Escolher onde testar melhoria primeiro" },
+          { "key": "B", "text": "Evitar decisões" },
+          { "key": "C", "text": "Ignorar vazamentos" },
+          { "key": "D", "text": "Aumentar achismo" }
+        ],
+        "answer": "A",
+        "explain": "Você ataca o gargalo real."
+      },
+      {
+        "id": 8,
+        "question": "BANT é útil porque:",
+        "options": [
+          { "key": "A", "text": "É um slogan" },
+          { "key": "B", "text": "Ajuda a qualificar com critérios básicos" },
+          { "key": "C", "text": "Elimina necessidade de oferta" },
+          { "key": "D", "text": "Substitui atendimento" }
+        ],
+        "answer": "B",
+        "explain": "Orçamento, decisão, necessidade e tempo importam."
+      },
+      {
+        "id": 9,
+        "question": "Recompra/retensão é crítica porque:",
+        "options": [
+          { "key": "A", "text": "Não afeta crescimento" },
+          { "key": "B", "text": "Sem retenção você precisa comprar cliente de novo todo mês" },
+          { "key": "C", "text": "Só importa para empresas grandes" },
+          { "key": "D", "text": "É detalhe" }
+        ],
+        "answer": "B",
+        "explain": "Retenção reduz custo e dá previsibilidade."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Vendas sem processo é previsível" },
+          { "key": "B", "text": "Funil transforma vendas em processo mensurável" },
+          { "key": "C", "text": "Funil dispensa produto" },
+          { "key": "D", "text": "Funil é só moda" }
+        ],
+        "answer": "B",
+        "explain": "Processo e métrica reduzem loteria."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Etapas\n\n- visita\n- lead\n- proposta\n- venda\n",
+    "pilares": "Pilares\n\n- conversão\n- qualificação\n- previsibilidade\n"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "18-custo-capital",
+  "title": "Aula 18 — Custo de capital: custo da dívida, custo do capital próprio e WACC (visão prática)",
+  "steps": [
+    {
+      "title": "Custo de capital é a “taxa mínima” do seu dinheiro",
+      "body": "Toda empresa tem um custo para usar dinheiro:\n- de banco (dívida)\n- dos sócios (capital próprio)\n\nRegra:\n- Se um projeto rende menos que o custo de capital, ele destrói valor."
+    },
+    {
+      "title": "Custo da dívida (mais direto)",
+      "body": "É quanto custa pegar dinheiro emprestado:\n- juros\n- taxas\n\nPonto prático:\n- olhe taxa efetiva e custo total\n\nRegra:\n- Dívida barata pode ajudar; dívida cara vira âncora."
+    },
+    {
+      "title": "Custo do capital próprio (o mais esquecido)",
+      "body": "Mesmo sem banco, o dinheiro dos sócios tem custo:\n- poderia estar em outra coisa\n- tem risco do negócio\n\nRegra:\n- “Meu dinheiro não tem custo” é uma ilusão cara."
+    },
+    {
+      "title": "WACC (sem trauma): média ponderada",
+      "body": "WACC é uma média:\n- parte do capital vem de dívida\n- parte vem de capital próprio\n\nA média pondera:\n- quanto de cada fonte\n- quanto custa cada fonte\n\nRegra:\n- WACC é a régua para avaliar projeto."
+    },
+    {
+      "title": "O que muda o custo de capital",
+      "body": "Fatores:\n- risco do negócio\n- estabilidade do caixa\n- nível de endividamento\n- histórico de pagamento\n\nRegra:\n- Empresa previsível paga menos para conseguir dinheiro."
+    },
+    {
+      "title": "Como usar isso na decisão",
+      "body": "Uso prático:\n- compare retorno esperado do projeto com o custo de capital\n- exija “margem de segurança” (não só empatar)\n\nRegra:\n- Retorno esperado precisa compensar risco e custo do dinheiro."
+    },
+    {
+      "title": "Mini prática (45 min) — taxa mínima do seu projeto",
+      "body": "Escolha um projeto.\nAnote:\n- se usar dívida: custo efetivo aproximado\n- se usar caixa/sócio: retorno alternativo (oportunidade)\n\nDefina uma taxa mínima (régua).\n\nObjetivo:\n- parar de aprovar projeto por empolgação."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Custo de capital = taxa mínima\n- Dívida tem custo direto\n- Capital próprio tem custo (oportunidade + risco)\n- WACC é a média ponderada\n- Projeto deve superar essa régua\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 18 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Custo de capital é:",
+        "options": [
+          { "key": "A", "text": "Desconto do fornecedor" },
+          { "key": "B", "text": "Taxa mínima que o dinheiro precisa render" },
+          { "key": "C", "text": "Somente imposto" },
+          { "key": "D", "text": "Somente salário" }
+        ],
+        "answer": "B",
+        "explain": "É a régua mínima para investimento."
+      },
+      {
+        "id": 2,
+        "question": "Um projeto que rende menos que o custo de capital:",
+        "options": [
+          { "key": "A", "text": "Cria valor" },
+          { "key": "B", "text": "Destrói valor" },
+          { "key": "C", "text": "Não muda nada" },
+          { "key": "D", "text": "É sempre aprovado" }
+        ],
+        "answer": "B",
+        "explain": "Você recebe menos do que custa o dinheiro."
+      },
+      {
+        "id": 3,
+        "question": "Custo da dívida é:",
+        "options": [
+          { "key": "A", "text": "Juros e taxas do empréstimo" },
+          { "key": "B", "text": "Lucro do mês" },
+          { "key": "C", "text": "Preço do produto" },
+          { "key": "D", "text": "Renda do cliente" }
+        ],
+        "answer": "A",
+        "explain": "É o custo direto de pegar dinheiro."
+      },
+      {
+        "id": 4,
+        "question": "Capital próprio tem custo porque:",
+        "options": [
+          { "key": "A", "text": "É grátis" },
+          { "key": "B", "text": "Tem oportunidade alternativa e risco" },
+          { "key": "C", "text": "Não existe" },
+          { "key": "D", "text": "É imposto" }
+        ],
+        "answer": "B",
+        "explain": "Você abre mão de alternativas e assume risco."
+      },
+      {
+        "id": 5,
+        "question": "WACC é:",
+        "options": [
+          { "key": "A", "text": "Uma dívida" },
+          { "key": "B", "text": "Média ponderada do custo das fontes de capital" },
+          { "key": "C", "text": "Uma promoção" },
+          { "key": "D", "text": "Uma taxa de imposto" }
+        ],
+        "answer": "B",
+        "explain": "Combina custo de dívida e capital próprio."
+      },
+      {
+        "id": 6,
+        "question": "Empresa mais previsível tende a:",
+        "options": [
+          { "key": "A", "text": "Pagar mais caro" },
+          { "key": "B", "text": "Pagar menos para conseguir dinheiro" },
+          { "key": "C", "text": "Não ter custo" },
+          { "key": "D", "text": "Não precisar de caixa" }
+        ],
+        "answer": "B",
+        "explain": "Risco menor = custo menor."
+      },
+      {
+        "id": 7,
+        "question": "Endividamento alto demais tende a:",
+        "options": [
+          { "key": "A", "text": "Reduzir risco sempre" },
+          { "key": "B", "text": "Aumentar risco e custo de capital" },
+          { "key": "C", "text": "Não mudar nada" },
+          { "key": "D", "text": "Eliminar necessidade de lucro" }
+        ],
+        "answer": "B",
+        "explain": "Mais risco = dinheiro mais caro."
+      },
+      {
+        "id": 8,
+        "question": "A régua para aprovar projetos deveria ser:",
+        "options": [
+          { "key": "A", "text": "Retorno acima do custo de capital (com margem)" },
+          { "key": "B", "text": "Qualquer retorno" },
+          { "key": "C", "text": "Empolgação do time" },
+          { "key": "D", "text": "Desconto no curto prazo" }
+        ],
+        "answer": "A",
+        "explain": "Precisa compensar custo e risco."
+      },
+      {
+        "id": 9,
+        "question": "“Meu dinheiro não tem custo” é:",
+        "options": [
+          { "key": "A", "text": "Certo" },
+          { "key": "B", "text": "Ilusão (há custo de oportunidade e risco)" },
+          { "key": "C", "text": "Lei" },
+          { "key": "D", "text": "Regra de mercado" }
+        ],
+        "answer": "B",
+        "explain": "Todo capital poderia ser alocado em outra coisa."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "WACC é irrelevante" },
+          { "key": "B", "text": "WACC é uma régua útil para comparar projetos" },
+          { "key": "C", "text": "Só dívida importa" },
+          { "key": "D", "text": "Só capital próprio importa" }
+        ],
+        "answer": "B",
+        "explain": "Ajuda a decidir com critério."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Régua do projeto\n\n- custo da dívida\n- custo do próprio\n- taxa mínima\n",
+    "pilares": "Pilares\n\n- custo do dinheiro\n- risco\n- comparação\n"
+  }
+}

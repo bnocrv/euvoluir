@@ -1,0 +1,168 @@
+{
+  "id": "19-orcamento-planejamento",
+  "title": "Aula 19 — Orçamento: planejar dinheiro sem fantasia",
+  "steps": [
+    {
+      "title": "Orçamento não é chute: é ferramenta de decisão",
+      "body": "Orçamento serve para:\n- prever cenário\n- definir limites\n- priorizar investimento\n\nRegra:\n- Orçamento bom não é 'certeza': é mapa."
+    },
+    {
+      "title": "Receita: como projetar sem se enganar",
+      "body": "Evite 'crescer 30%' sem base.\nUse:\n- histórico\n- sazonalidade\n- capacidade operacional\n\nRegra:\n- Venda projetada sem capacidade vira promessa quebrada."
+    },
+    {
+      "title": "Custos e despesas: separar para controlar",
+      "body": "Custo acompanha venda.\nDespesa fixa é estrutura.\n\nRegra:\n- Cortar custo variável sem entender pode afetar qualidade."
+    },
+    {
+      "title": "Orçamento por centro de custo",
+      "body": "Divida por áreas:\n- operações\n- marketing\n- administrativo\n\nRegra:\n- Dono do gasto precisa ver o número."
+    },
+    {
+      "title": "Rolling forecast (o jeito maduro)",
+      "body": "Em vez de fixar 12 meses e fingir que não mudou:\n- revise mensal/trimestral\n\nRegra:\n- Orçamento é vivo."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n- inflar receita\n- esquecer 'pequenos' gastos recorrentes\n- cortar investimento que sustenta receita\n\nRegra:\n- Cortar errado custa mais caro depois."
+    },
+    {
+      "title": "Mini prática (45 min) — orçamento simples",
+      "body": "Monte um orçamento mensal:\n- receita\n- custo (% da receita)\n- despesas fixas\n\nFaça 3 cenários:\n- pessimista\n- base\n- otimista\n\nObjetivo:\n- decidir com cenário, não com torcida."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Orçamento é mapa de decisão\n- Use histórico e capacidade\n- Separe custo e despesa\n- Revisar é maturidade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 19 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Orçamento bom é melhor descrito como:",
+        "options": [
+          { "key": "A", "text": "Certeza do futuro" },
+          { "key": "B", "text": "Mapa para decidir com base em cenário" },
+          { "key": "C", "text": "Planilha para cumprir tabela" },
+          { "key": "D", "text": "Algo que não muda" }
+        ],
+        "answer": "B",
+        "explain": "O futuro muda; orçamento orienta decisões."
+      },
+      {
+        "id": 2,
+        "question": "Projetar receita sem olhar capacidade operacional é risco porque:",
+        "options": [
+          { "key": "A", "text": "Capacidade não afeta entrega" },
+          { "key": "B", "text": "Você promete e não entrega, gerando custo e perda de confiança" },
+          { "key": "C", "text": "Vendas acontecem sozinhas" },
+          { "key": "D", "text": "Despesa fixa some" }
+        ],
+        "answer": "B",
+        "explain": "Crescimento sem execução vira problema."
+      },
+      {
+        "id": 3,
+        "question": "Rolling forecast é melhor porque:",
+        "options": [
+          { "key": "A", "text": "Finge que o mundo não muda" },
+          { "key": "B", "text": "Atualiza projeções conforme dados novos" },
+          { "key": "C", "text": "Elimina necessidade de controle" },
+          { "key": "D", "text": "Dispensa histórico" }
+        ],
+        "answer": "B",
+        "explain": "Orçamento vivo reage à realidade."
+      },
+      {
+        "id": 4,
+        "question": "Separar custo e despesa ajuda a:",
+        "options": [
+          { "key": "A", "text": "Controlar o que varia e o que é estrutura" },
+          { "key": "B", "text": "Confundir a operação" },
+          { "key": "C", "text": "Aumentar gasto" },
+          { "key": "D", "text": "Eliminar necessidade de margem" }
+        ],
+        "answer": "A",
+        "explain": "Você gerencia alavancas diferentes."
+      },
+      {
+        "id": 5,
+        "question": "Erro clássico em orçamento é:",
+        "options": [
+          { "key": "A", "text": "Criar cenários" },
+          { "key": "B", "text": "Inflar receita e esquecer gastos recorrentes" },
+          { "key": "C", "text": "Revisar mensalmente" },
+          { "key": "D", "text": "Definir donos de custo" }
+        ],
+        "answer": "B",
+        "explain": "Torcida não paga conta."
+      },
+      {
+        "id": 6,
+        "question": "Cenário pessimista serve para:",
+        "options": [
+          { "key": "A", "text": "Desanimar o time" },
+          { "key": "B", "text": "Planejar proteção e gatilhos de corte" },
+          { "key": "C", "text": "Ignorar dados" },
+          { "key": "D", "text": "Aumentar gastos" }
+        ],
+        "answer": "B",
+        "explain": "Você decide o que fazer se piorar."
+      },
+      {
+        "id": 7,
+        "question": "Centro de custo ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Ninguém sabe quem gasta" },
+          { "key": "B", "text": "Cada área vê e responde pelo seu gasto" },
+          { "key": "C", "text": "Remove responsabilidade" },
+          { "key": "D", "text": "Oculta números" }
+        ],
+        "answer": "B",
+        "explain": "Dono do gasto enxerga o impacto."
+      },
+      {
+        "id": 8,
+        "question": "Cortar investimento que sustenta receita (ex: qualidade/atendimento) é perigoso porque:",
+        "options": [
+          { "key": "A", "text": "Reduz custo e aumenta receita sempre" },
+          { "key": "B", "text": "Pode derrubar receita futura e aumentar devolução/reclamação" },
+          { "key": "C", "text": "Nunca afeta nada" },
+          { "key": "D", "text": "Só melhora margem" }
+        ],
+        "answer": "B",
+        "explain": "Corte errado causa custo futuro."
+      },
+      {
+        "id": 9,
+        "question": "A melhor base para projetar receita é:",
+        "options": [
+          { "key": "A", "text": "Desejo" },
+          { "key": "B", "text": "Histórico + sazonalidade + plano real" },
+          { "key": "C", "text": "Uma meta aleatória" },
+          { "key": "D", "text": "Opinião da equipe sem dado" }
+        ],
+        "answer": "B",
+        "explain": "Base realista reduz surpresa."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Orçamento é fixo e não revisa" },
+          { "key": "B", "text": "Orçamento é vivo e serve para decidir" },
+          { "key": "C", "text": "Orçamento é só para contabilidade" },
+          { "key": "D", "text": "Orçamento dispensa KPIs" }
+        ],
+        "answer": "B",
+        "explain": "Ele guia ajustes conforme realidade."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Estrutura do orçamento\n\n- receita\n- custos\n- despesas\n- cenários\n",
+    "pilares": "Pilares\n\n- realismo\n- cenário\n- revisão\n"
+  }
+}

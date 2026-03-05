@@ -1,0 +1,168 @@
+{
+  "id": "04-reserva-emergencia",
+  "title": "Aula 04 — Reserva de emergência: quanto, onde guardar e quando usar",
+  "steps": [
+    {
+      "title": "Reserva de emergência é seguro, não investimento",
+      "body": "Reserva serve para:\n- imprevisto (saúde, desemprego, quebra)\n- evitar dívida cara\n\nRegra:\n- Reserva compra tempo e paz."
+    },
+    {
+      "title": "Quanto guardar (regra prática)",
+      "body": "Base comum:\n- 3 a 6 meses do custo de vida essencial\n\nAumente se:\n- renda instável\n- dependentes\n- risco de desemprego\n\nRegra:\n- Quanto mais instável, maior a reserva."
+    },
+    {
+      "title": "Onde guardar (3 critérios obrigatórios)",
+      "body": "Reserva precisa ser:\n- líquida (sacar fácil)\n- segura\n- com rendimento básico\n\nRegra:\n- Se você pode perder valor rápido, não é reserva."
+    },
+    {
+      "title": "Quando usar (definição de emergência)",
+      "body": "Emergência é:\n- algo necessário\n- urgente\n- que você não previu\n\nNão é:\n- promoção\n- viagem impulsiva\n- compra por ansiedade\n\nRegra:\n- Se virar hábito, não é emergência."
+    },
+    {
+      "title": "Como repor (para não virar buraco)",
+      "body": "Se usou:\n- pause extras\n- crie plano de reposição mensal\n\nRegra:\n- Reserva usada sem reposição vira risco permanente."
+    },
+    {
+      "title": "Reserva e dívida: ligação direta",
+      "body": "Sem reserva, qualquer imprevisto vira:\n- cartão\n- cheque especial\n- parcelamento\n\nRegra:\n- Reserva reduz juros pagos ao longo da vida."
+    },
+    {
+      "title": "Mini prática (45 min) — cálculo da sua reserva",
+      "body": "Some seus essenciais do mês:\n- moradia\n- alimentação\n- transporte\n- contas básicas\n\nMultiplique por:\n- 3 (mínimo)\n- 6 (mais seguro)\n\nObjetivo:\n- ter um número-alvo real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Reserva é seguro\n- 3–6 meses do essencial (ajuste pelo risco)\n- Precisa ser líquida e segura\n- Use só para emergência real\n- Repor é obrigatório\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 04 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Reserva de emergência é:",
+        "options": [
+          { "key": "A", "text": "Um investimento para enriquecer" },
+          { "key": "B", "text": "Um seguro financeiro para imprevistos" },
+          { "key": "C", "text": "Dinheiro para promoções" },
+          { "key": "D", "text": "Dinheiro para apostas" }
+        ],
+        "answer": "B",
+        "explain": "Reserva compra tempo e evita dívida."
+      },
+      {
+        "id": 2,
+        "question": "Uma regra prática de tamanho de reserva é:",
+        "options": [
+          { "key": "A", "text": "1 semana de gastos" },
+          { "key": "B", "text": "3 a 6 meses do essencial" },
+          { "key": "C", "text": "2 anos sempre" },
+          { "key": "D", "text": "Não precisa" }
+        ],
+        "answer": "B",
+        "explain": "É uma base comum e adaptável."
+      },
+      {
+        "id": 3,
+        "question": "Quem tem renda instável tende a precisar:",
+        "options": [
+          { "key": "A", "text": "De reserva menor" },
+          { "key": "B", "text": "De reserva maior" },
+          { "key": "C", "text": "De nenhuma reserva" },
+          { "key": "D", "text": "De mais cartão" }
+        ],
+        "answer": "B",
+        "explain": "Mais risco = mais proteção."
+      },
+      {
+        "id": 4,
+        "question": "Reserva deve ser principalmente:",
+        "options": [
+          { "key": "A", "text": "Arriscada para render mais" },
+          { "key": "B", "text": "Líquida e segura" },
+          { "key": "C", "text": "Difícil de sacar" },
+          { "key": "D", "text": "Em qualquer coisa" }
+        ],
+        "answer": "B",
+        "explain": "Você precisa acessar quando precisa."
+      },
+      {
+        "id": 5,
+        "question": "Comprar algo em promoção é:",
+        "options": [
+          { "key": "A", "text": "Emergência" },
+          { "key": "B", "text": "Gasto desejado, não emergência" },
+          { "key": "C", "text": "Obrigação" },
+          { "key": "D", "text": "Imprevisto sempre" }
+        ],
+        "answer": "B",
+        "explain": "Emergência é necessário e não planejado."
+      },
+      {
+        "id": 6,
+        "question": "Se você usou a reserva, o correto é:",
+        "options": [
+          { "key": "A", "text": "Ignorar e seguir" },
+          { "key": "B", "text": "Criar plano de reposição" },
+          { "key": "C", "text": "Aumentar gastos" },
+          { "key": "D", "text": "Pegar empréstimo" }
+        ],
+        "answer": "B",
+        "explain": "Reserva sem reposição vira vulnerabilidade."
+      },
+      {
+        "id": 7,
+        "question": "Sem reserva, imprevisto vira:",
+        "options": [
+          { "key": "A", "text": "Investimento" },
+          { "key": "B", "text": "Dívida cara (cartão/cheque especial)" },
+          { "key": "C", "text": "Lucro" },
+          { "key": "D", "text": "Nada" }
+        ],
+        "answer": "B",
+        "explain": "Você troca imprevisto por juros."
+      },
+      {
+        "id": 8,
+        "question": "A reserva serve para reduzir:",
+        "options": [
+          { "key": "A", "text": "Acurácia de orçamento" },
+          { "key": "B", "text": "Juros pagos ao longo da vida" },
+          { "key": "C", "text": "Renda" },
+          { "key": "D", "text": "Tempo" }
+        ],
+        "answer": "B",
+        "explain": "Evita entrar em dívida cara."
+      },
+      {
+        "id": 9,
+        "question": "Uma emergência real é:",
+        "options": [
+          { "key": "A", "text": "Upgrade de celular" },
+          { "key": "B", "text": "Problema de saúde ou perda de renda" },
+          { "key": "C", "text": "Viagem por impulso" },
+          { "key": "D", "text": "Compra por ansiedade" }
+        ],
+        "answer": "B",
+        "explain": "Necessário e não planejado."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Reserva é para render muito" },
+          { "key": "B", "text": "Reserva é para estar disponível e segura" },
+          { "key": "C", "text": "Reserva deve ser arriscada" },
+          { "key": "D", "text": "Reserva não importa" }
+        ],
+        "answer": "B",
+        "explain": "Objetivo é proteção, não performance."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Critérios\n\n- liquidez\n- segurança\n- rendimento básico\n",
+    "pilares": "Pilares\n\n- proteção\n- previsibilidade\n- anti-dívida\n"
+  }
+}

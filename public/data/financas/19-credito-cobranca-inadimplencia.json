@@ -1,0 +1,168 @@
+{
+  "id": "19-credito-cobranca-inadimplencia",
+  "title": "Aula 19 — Crédito, cobrança e inadimplência: política, risco e recuperação",
+  "steps": [
+    {
+      "title": "Vender a prazo é virar banco",
+      "body": "Quando você vende no prazo, você troca:\n- venda hoje\n- por receber depois\n\nRisco:\n- atraso\n- calote\n\nRegra:\n- Vender a prazo sem controle é financiar o cliente com o seu caixa."
+    },
+    {
+      "title": "Política de crédito: regra antes do problema",
+      "body": "Uma política define:\n- quem pode comprar a prazo\n- limite\n- prazo\n- condições\n\nRegra:\n- Política simples evita discussões e prejuízo."
+    },
+    {
+      "title": "Risco: limite e concentração",
+      "body": "Dois perigos:\n- limite alto para cliente sem histórico\n- concentração (um cliente grande quebrando você)\n\nRegra:\n- Um cliente pode ser ótimo em vendas e péssimo em risco."
+    },
+    {
+      "title": "Cobrança: processo, não briga",
+      "body": "Cobrança boa tem:\n- lembrete antes do vencimento\n- contato logo após vencer\n- negociação com regras\n- registro de acordos\n\nRegra:\n- Cobrança atrasada aumenta inadimplência."
+    },
+    {
+      "title": "Indicadores essenciais",
+      "body": "Mínimos:\n- inadimplência (%)\n- prazo médio de recebimento\n- aging (vencidos por faixa: 1–7, 8–30, 31–60…)\n\nRegra:\n- O que não é medido vira surpresa."
+    },
+    {
+      "title": "Recuperação sem destruir relação",
+      "body": "Princípios:\n- clareza\n- respeito\n- firmeza\n- alternativas (parcelar, desconto por pagamento)\n\nRegra:\n- Objetivo é recuperar caixa, não ganhar discussão."
+    },
+    {
+      "title": "Mini prática (45 min) — política mínima + roteiro",
+      "body": "Crie:\n- regra de limite inicial\n- regra de aumento de limite (após histórico)\n- gatilho de bloqueio (x dias em atraso)\n\nE um roteiro de cobrança:\n- D-2 lembrete\n- D+1 contato\n- D+7 renegociação\n\nObjetivo:\n- reduzir risco e aumentar previsibilidade."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Vender a prazo = risco e caixa preso\n- Política de crédito reduz prejuízo\n- Cobrança é processo com timing\n- Use indicadores (aging, inadimplência)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 19 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Vender a prazo significa:",
+        "options": [
+          { "key": "A", "text": "Receber na hora" },
+          { "key": "B", "text": "Financiar o cliente até o recebimento" },
+          { "key": "C", "text": "Eliminar risco" },
+          { "key": "D", "text": "Aumentar caixa imediatamente" }
+        ],
+        "answer": "B",
+        "explain": "Você vira 'banco' no intervalo."
+      },
+      {
+        "id": 2,
+        "question": "Política de crédito define:",
+        "options": [
+          { "key": "A", "text": "Somente marketing" },
+          { "key": "B", "text": "Quem compra a prazo, limite e prazo" },
+          { "key": "C", "text": "Só desconto" },
+          { "key": "D", "text": "Cor do boleto" }
+        ],
+        "answer": "B",
+        "explain": "É regra de risco e condições."
+      },
+      {
+        "id": 3,
+        "question": "Um risco perigoso é:",
+        "options": [
+          { "key": "A", "text": "Limite baixo inicial" },
+          { "key": "B", "text": "Concentração em um cliente grande" },
+          { "key": "C", "text": "Registrar acordos" },
+          { "key": "D", "text": "Cobrar antes do vencimento" }
+        ],
+        "answer": "B",
+        "explain": "Se ele atrasa, você quebra junto."
+      },
+      {
+        "id": 4,
+        "question": "Cobrança eficiente depende de:",
+        "options": [
+          { "key": "A", "text": "Brigar" },
+          { "key": "B", "text": "Timing e processo (antes e logo após vencer)" },
+          { "key": "C", "text": "Esperar 90 dias" },
+          { "key": "D", "text": "Ignorar registro" }
+        ],
+        "answer": "B",
+        "explain": "Cobrança cedo reduz inadimplência."
+      },
+      {
+        "id": 5,
+        "question": "Aging é:",
+        "options": [
+          { "key": "A", "text": "Idade do cliente" },
+          { "key": "B", "text": "Faixas de atraso dos vencidos (1–7, 8–30...)" },
+          { "key": "C", "text": "Taxa do banco" },
+          { "key": "D", "text": "Uma promoção" }
+        ],
+        "answer": "B",
+        "explain": "Mostra o tamanho/gravidade do atraso."
+      },
+      {
+        "id": 6,
+        "question": "Cobrança atrasada tende a:",
+        "options": [
+          { "key": "A", "text": "Reduzir inadimplência" },
+          { "key": "B", "text": "Aumentar inadimplência" },
+          { "key": "C", "text": "Não mudar nada" },
+          { "key": "D", "text": "Aumentar margem" }
+        ],
+        "answer": "B",
+        "explain": "Quanto mais tempo, menor a chance de recuperar."
+      },
+      {
+        "id": 7,
+        "question": "Um bom gatilho de bloqueio é:",
+        "options": [
+          { "key": "A", "text": "Sempre liberar crédito" },
+          { "key": "B", "text": "Bloquear após X dias de atraso (regra clara)" },
+          { "key": "C", "text": "Bloquear aleatoriamente" },
+          { "key": "D", "text": "Ignorar atraso" }
+        ],
+        "answer": "B",
+        "explain": "Regra reduz risco e conflito."
+      },
+      {
+        "id": 8,
+        "question": "Objetivo da recuperação é:",
+        "options": [
+          { "key": "A", "text": "Ganhar discussão" },
+          { "key": "B", "text": "Recuperar caixa com clareza e firmeza" },
+          { "key": "C", "text": "Humilhar cliente" },
+          { "key": "D", "text": "Aumentar prazo" }
+        ],
+        "answer": "B",
+        "explain": "A meta é dinheiro no caixa."
+      },
+      {
+        "id": 9,
+        "question": "Dois pilares de política de crédito são:",
+        "options": [
+          { "key": "A", "text": "Limite e prazo" },
+          { "key": "B", "text": "Cor e design" },
+          { "key": "C", "text": "Sorte e feeling" },
+          { "key": "D", "text": "Marketing e meme" }
+        ],
+        "answer": "A",
+        "explain": "Eles definem exposição ao risco."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Vender a prazo sempre aumenta caixa" },
+          { "key": "B", "text": "Vender a prazo prende caixa e exige controle" },
+          { "key": "C", "text": "Cobrança não precisa de processo" },
+          { "key": "D", "text": "Indicadores não importam" }
+        ],
+        "answer": "B",
+        "explain": "Prazo é risco e capital de giro."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Política mínima\n\n- limite\n- prazo\n- bloqueio por atraso\n",
+    "pilares": "Pilares\n\n- risco\n- processo\n- indicadores\n"
+  }
+}

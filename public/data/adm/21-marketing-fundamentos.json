@@ -1,0 +1,168 @@
+{
+  "id": "21-marketing-fundamentos",
+  "title": "Aula 21 — Marketing (de verdade): mercado, valor e posicionamento",
+  "steps": [
+    {
+      "title": "Marketing não é post: é entender mercado e criar escolha",
+      "body": "Marketing é:\n- entender quem compra\n- por que compra\n- e como você vira a melhor escolha\n\nRegra:\n- Marketing bom reduz esforço de venda."
+    },
+    {
+      "title": "Mercado, cliente e concorrência (o triângulo básico)",
+      "body": "Você precisa conhecer:\n- cliente: dor, objetivo, restrições\n- concorrente: alternativas reais\n- mercado: preço, padrão, expectativa\n\nRegra:\n- Seu concorrente muitas vezes é a 'não decisão' (cliente não comprar)."
+    },
+    {
+      "title": "Proposta de valor (o centro)",
+      "body": "Proposta de valor responde:\n- para quem\n- qual problema resolve\n- por que você é melhor\n\nRegra:\n- Se não dá pra explicar em 1 frase, está confuso."
+    },
+    {
+      "title": "Posicionamento: escolher o lugar na cabeça do cliente",
+      "body": "Posicionamento é escolha.\n\nVocê pode competir por:\n- preço\n- qualidade\n- velocidade\n- confiança\n- variedade\n\nRegra:\n- Tentar ser tudo ao mesmo tempo normalmente vira nada."
+    },
+    {
+      "title": "Público-alvo não é 'todo mundo'",
+      "body": "Quando você fala com todo mundo:\n- mensagem fica genérica\n- custo de aquisição sobe\n- conversão cai\n\nRegra:\n- Foco é arma competitiva."
+    },
+    {
+      "title": "Oferta é o pacote completo",
+      "body": "Oferta inclui:\n- produto\n- preço\n- prazo\n- garantia\n- atendimento\n\nRegra:\n- O cliente compra o conjunto, não só o item."
+    },
+    {
+      "title": "Mini prática (45 min) — 1 frase de valor",
+      "body": "Escreva:\n\n\"Para (público), nós ajudamos a (resultado) através de (diferencial).\"\n\nDepois corte até ficar claro.\n\nObjetivo:\n- tirar marketing 'bonito' e deixar útil."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Marketing é escolha e clareza\n- Proposta de valor e posicionamento definem conversão\n- Foco reduz custo e aumenta força\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 21 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A melhor definição de marketing, para gestão, é:",
+        "options": [
+          { "key": "A", "text": "Fazer post todo dia" },
+          { "key": "B", "text": "Entender mercado e virar a melhor escolha para um público" },
+          { "key": "C", "text": "Gastar mais em anúncio" },
+          { "key": "D", "text": "Apenas design" }
+        ],
+        "answer": "B",
+        "explain": "Marketing é sobre escolha do cliente, não sobre canal."
+      },
+      {
+        "id": 2,
+        "question": "O erro típico de 'falar com todo mundo' é:",
+        "options": [
+          { "key": "A", "text": "Mensagem fica genérica e conversão cai" },
+          { "key": "B", "text": "Conversão sobe automaticamente" },
+          { "key": "C", "text": "Custo de aquisição some" },
+          { "key": "D", "text": "Concorrência desaparece" }
+        ],
+        "answer": "A",
+        "explain": "Falta de foco dilui mensagem."
+      },
+      {
+        "id": 3,
+        "question": "Proposta de valor responde principalmente:",
+        "options": [
+          { "key": "A", "text": "Quem é o CEO" },
+          { "key": "B", "text": "Para quem é, o que resolve, e por que você é melhor" },
+          { "key": "C", "text": "Qual a cor da marca" },
+          { "key": "D", "text": "Quantos seguidores tem" }
+        ],
+        "answer": "B",
+        "explain": "É a lógica da escolha do cliente."
+      },
+      {
+        "id": 4,
+        "question": "Posicionamento é:",
+        "options": [
+          { "key": "A", "text": "Tentar competir em tudo" },
+          { "key": "B", "text": "Escolher em que você quer ser lembrado e por quê" },
+          { "key": "C", "text": "Copiar concorrente" },
+          { "key": "D", "text": "Baixar preço sempre" }
+        ],
+        "answer": "B",
+        "explain": "Posicionamento é escolha e foco."
+      },
+      {
+        "id": 5,
+        "question": "A 'não decisão' é concorrente quando:",
+        "options": [
+          { "key": "A", "text": "Cliente decide comprar sempre" },
+          { "key": "B", "text": "Cliente prefere adiar, manter como está, ou não agir" },
+          { "key": "C", "text": "Não existe concorrência" },
+          { "key": "D", "text": "Preço é sempre baixo" }
+        ],
+        "answer": "B",
+        "explain": "Muitos clientes escolhem não mudar."
+      },
+      {
+        "id": 6,
+        "question": "Oferta inclui:",
+        "options": [
+          { "key": "A", "text": "Só o produto" },
+          { "key": "B", "text": "Produto + preço + prazo + garantia + atendimento" },
+          { "key": "C", "text": "Só marketing" },
+          { "key": "D", "text": "Só desconto" }
+        ],
+        "answer": "B",
+        "explain": "O cliente compra o pacote completo."
+      },
+      {
+        "id": 7,
+        "question": "Se o marketing é confuso, o efeito mais provável é:",
+        "options": [
+          { "key": "A", "text": "Venda fácil" },
+          { "key": "B", "text": "Venda depende de esforço e explicação infinita" },
+          { "key": "C", "text": "Conversão dobra" },
+          { "key": "D", "text": "Custo cai" }
+        ],
+        "answer": "B",
+        "explain": "Falta de clareza joga custo para vendas."
+      },
+      {
+        "id": 8,
+        "question": "Competir por preço faz sentido quando:",
+        "options": [
+          { "key": "A", "text": "Você não controla custo" },
+          { "key": "B", "text": "Você tem estrutura/custo que sustenta isso e aceita margem menor" },
+          { "key": "C", "text": "Seu diferencial é premium" },
+          { "key": "D", "text": "Você quer alta margem com preço baixo" }
+        ],
+        "answer": "B",
+        "explain": "Preço baixo sem custo controlado é suicídio."
+      },
+      {
+        "id": 9,
+        "question": "O primeiro passo para melhorar marketing é:",
+        "options": [
+          { "key": "A", "text": "Trocar a logo" },
+          { "key": "B", "text": "Entender público, dor e diferencial real" },
+          { "key": "C", "text": "Postar mais" },
+          { "key": "D", "text": "Fazer sorteio" }
+        ],
+        "answer": "B",
+        "explain": "Sem base, canal não resolve."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Marketing é só propaganda" },
+          { "key": "B", "text": "Marketing bom reduz esforço de venda" },
+          { "key": "C", "text": "Marketing não influencia preço" },
+          { "key": "D", "text": "Marketing dispensa produto bom" }
+        ],
+        "answer": "B",
+        "explain": "Clareza e valor facilitam a compra."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist\n\n- público\n- dor\n- diferencial\n- oferta\n",
+    "pilares": "Pilares\n\n- foco\n- valor\n- clareza\n"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "03-ciclo-compras",
+  "title": "Aula 03 — Ciclo de compras: da requisição ao recebimento",
+  "steps": [
+    {
+      "title": "O ciclo completo de compras",
+      "body": "O processo de compras normalmente segue etapas claras:\n\n1) requisição\n2) cotação\n3) análise\n4) pedido\n5) entrega\n\nRegra:\n- Processo estruturado reduz erro e urgência."
+    },
+    {
+      "title": "Requisição de compra",
+      "body": "A requisição é a solicitação interna de compra.\n\nDeve conter:\n- especificação\n- quantidade\n- prazo necessário\n\nRegra:\n- Uma requisição mal feita gera compra errada."
+    },
+    {
+      "title": "Cotação com fornecedores",
+      "body": "Após a requisição, compras busca propostas.\n\nNormalmente envolve:\n- múltiplos fornecedores\n- comparação de condições\n\nRegra:\n- Cotação adequada cria poder de negociação."
+    },
+    {
+      "title": "Análise das propostas",
+      "body": "A comparação deve considerar:\n- preço\n- prazo\n- qualidade\n- confiabilidade\n\nRegra:\n- Comparar apenas preço é análise incompleta."
+    },
+    {
+      "title": "Emissão do pedido de compra",
+      "body": "Depois da decisão, é emitido o pedido formal.\n\nO pedido define:\n- condições comerciais\n- prazos\n- responsabilidades\n\nRegra:\n- Pedido de compra é um documento contratual."
+    },
+    {
+      "title": "Recebimento e conferência",
+      "body": "Quando o material chega, é necessário conferir:\n- quantidade\n- qualidade\n- conformidade\n\nRegra:\n- Conferência evita pagar por erro."
+    },
+    {
+      "title": "Mini prática",
+      "body": "Mapeie o ciclo de compras da sua empresa ou de um caso hipotético.\n\nPergunte:\n- onde surgem atrasos?\n- onde surgem erros?\n\nObjetivo:\n- enxergar gargalos do processo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Compras segue um ciclo estruturado\n- Requisição define a demanda\n- Cotação cria opções\n- Pedido formaliza a negociação\n- Recebimento valida a compra\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 03",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O ciclo de compras começa com:",
+        "options": [
+          {"key": "A", "text": "Requisição"},
+          {"key": "B", "text": "Entrega"},
+          {"key": "C", "text": "Pagamento"},
+          {"key": "D", "text": "Estoque"}
+        ],
+        "answer": "A",
+        "explain": "A requisição inicia a necessidade de compra."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Etapas\n\n- requisição\n- cotação\n- análise\n- pedido\n- recebimento\n",
+    "pilares": "Pilares\n\n- controle\n- rastreabilidade\n- eficiência\n"
+  }
+}

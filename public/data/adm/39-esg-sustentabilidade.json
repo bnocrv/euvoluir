@@ -1,0 +1,168 @@
+{
+  "id": "39-governanca-controles",
+  "title": "Aula 39 — Governança: decisões, limites e responsabilidade (sem travar a empresa)",
+  "steps": [
+    {
+      "title": "Governança não é burocracia: é previsibilidade",
+      "body": "Governança define:\n- quem decide\n- com qual critério\n- com qual registro\n\nRegra:\n- Sem governança, decisão vira política e improviso."
+    },
+    {
+      "title": "Níveis de decisão (o que vai para quem)",
+      "body": "Exemplos:\n- rotina: time decide\n- exceção: líder decide\n- alto impacto (caixa/risco): diretoria decide\n\nRegra:\n- Escalar tudo para cima cria gargalo."
+    },
+    {
+      "title": "Alçadas e limites (controle que protege)",
+      "body": "Defina:\n- limite de desconto\n- limite de compra\n- limite de crédito\n\nRegra:\n- Limite protege empresa e protege o time."
+    },
+    {
+      "title": "Registro e trilha: o que impede confusão",
+      "body": "Registre:\n- decisão\n- motivo\n- dados\n- responsável\n\nRegra:\n- Sem trilha, vira redecisão eterna."
+    },
+    {
+      "title": "Risco e conformidade no dia a dia",
+      "body": "Perguntas:\n- isso é permitido?\n- quem assume o risco?\n- há alternativa com menos risco?\n\nRegra:\n- Resultado sem controle cria passivo."
+    },
+    {
+      "title": "Governança leve: como não travar",
+      "body": "Faça:\n- poucas regras, claras\n- exceção com critério\n- revisão periódica\n\nRegra:\n- Regra demais vira desobediência."
+    },
+    {
+      "title": "Mini prática (45 min) — matriz de alçadas",
+      "body": "Crie uma matriz simples:\n- tipo de decisão\n- limite\n- quem aprova\n- como registra\n\nObjetivo:\n- tirar do 'depende de quem está'."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Governança dá previsibilidade\n- Alçadas evitam gargalo e risco\n- Registro evita redecisão\n- Regra leve e revisável\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 39 (Administração)",
+    "instructions": "Marque A, B, C ou D. Pense em alçada e trilha.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Governança serve principalmente para:",
+        "options": [
+          { "key": "A", "text": "Criar burocracia infinita" },
+          { "key": "B", "text": "Definir decisão, critério e responsabilidade com previsibilidade" },
+          { "key": "C", "text": "Eliminar autonomia do time" },
+          { "key": "D", "text": "Evitar registro" }
+        ],
+        "answer": "B",
+        "explain": "Governança reduz improviso e risco."
+      },
+      {
+        "id": 2,
+        "question": "Escalar toda decisão para a diretoria tende a:",
+        "options": [
+          { "key": "A", "text": "Aumentar velocidade" },
+          { "key": "B", "text": "Criar gargalo e lentidão" },
+          { "key": "C", "text": "Eliminar risco sempre" },
+          { "key": "D", "text": "Aumentar autonomia" }
+        ],
+        "answer": "B",
+        "explain": "Tudo vira fila no topo."
+      },
+      {
+        "id": 3,
+        "question": "Alçadas existem para:",
+        "options": [
+          { "key": "A", "text": "Proteger empresa e time com limites claros" },
+          { "key": "B", "text": "Criar confusão" },
+          { "key": "C", "text": "Substituir processo" },
+          { "key": "D", "text": "Eliminar necessidade de registro" }
+        ],
+        "answer": "A",
+        "explain": "Limites reduzem risco e conflito."
+      },
+      {
+        "id": 4,
+        "question": "Registro de decisão evita:",
+        "options": [
+          { "key": "A", "text": "Aprendizado" },
+          { "key": "B", "text": "Redecisão eterna e versões diferentes" },
+          { "key": "C", "text": "Responsabilidade" },
+          { "key": "D", "text": "Clareza" }
+        ],
+        "answer": "B",
+        "explain": "Tira a decisão do 'achismo de memória'."
+      },
+      {
+        "id": 5,
+        "question": "Uma governança 'leve' é:",
+        "options": [
+          { "key": "A", "text": "Muitas regras complexas" },
+          { "key": "B", "text": "Poucas regras claras, exceção com critério e revisão" },
+          { "key": "C", "text": "Sem regra nenhuma" },
+          { "key": "D", "text": "Só reunião" }
+        ],
+        "answer": "B",
+        "explain": "Regra precisa ser obedecida para funcionar."
+      },
+      {
+        "id": 6,
+        "question": "Resultado sem controle pode gerar:",
+        "options": [
+          { "key": "A", "text": "Passivo e risco futuro" },
+          { "key": "B", "text": "Confiança automática" },
+          { "key": "C", "text": "Zero risco" },
+          { "key": "D", "text": "Nenhum efeito" }
+        ],
+        "answer": "A",
+        "explain": "Você pode pagar depois, com multa ou perda."
+      },
+      {
+        "id": 7,
+        "question": "Um exemplo de decisão de alto impacto é:",
+        "options": [
+          { "key": "A", "text": "Trocar um pequeno checklist" },
+          { "key": "B", "text": "Conceder crédito alto sem garantia" },
+          { "key": "C", "text": "Organizar prateleira" },
+          { "key": "D", "text": "Mudar título de um documento" }
+        ],
+        "answer": "B",
+        "explain": "Impacta caixa e risco financeiro."
+      },
+      {
+        "id": 8,
+        "question": "Se há regra demais, o efeito provável é:",
+        "options": [
+          { "key": "A", "text": "Obediência perfeita" },
+          { "key": "B", "text": "Desobediência e atalhos" },
+          { "key": "C", "text": "Mais velocidade" },
+          { "key": "D", "text": "Menos risco sempre" }
+        ],
+        "answer": "B",
+        "explain": "Regra inviável vira regra ignorada."
+      },
+      {
+        "id": 9,
+        "question": "Uma matriz de alçadas ajuda a:",
+        "options": [
+          { "key": "A", "text": "Esconder decisões" },
+          { "key": "B", "text": "Evitar 'depende de quem está' e padronizar aprovação" },
+          { "key": "C", "text": "Eliminar dono" },
+          { "key": "D", "text": "Criar mais ruído" }
+        ],
+        "answer": "B",
+        "explain": "Padroniza limites e responsabilidades."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Governança é só burocracia" },
+          { "key": "B", "text": "Governança bem feita aumenta previsibilidade sem travar" },
+          { "key": "C", "text": "Registro atrapalha" },
+          { "key": "D", "text": "Alçada elimina autonomia" }
+        ],
+        "answer": "B",
+        "explain": "Boa governança dá fluidez com limite."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Matriz de alçadas\n\n- tipo decisão\n- limite\n- aprovador\n- registro\n",
+    "pilares": "Pilares\n\n- previsibilidade\n- responsabilidade\n- limite\n"
+  }
+}

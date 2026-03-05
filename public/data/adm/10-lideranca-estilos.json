@@ -1,0 +1,168 @@
+{
+  "id": "10-lideranca-estilos",
+  "title": "Aula 10 — Liderança: estilos, situações e impacto na performance",
+  "steps": [
+    {
+      "title": "Liderança não é cargo",
+      "body": "Liderança é influência para execução.\n\nRegra:\n- Você pode ter cargo e não liderar; e liderar sem cargo."
+    },
+    {
+      "title": "Estilos de liderança (o jeito certo de usar isso)",
+      "body": "Estilos comuns:\n- diretivo (comando)\n- coach (desenvolve)\n- participativo (decide com o time)\n- delegador (autonomia)\n\nRegra:\n- Estilo não é identidade. É ferramenta."
+    },
+    {
+      "title": "Liderança situacional (quando mudar o estilo)",
+      "body": "Pense em 2 coisas:\n- competência (sabe fazer?)\n- comprometimento (quer fazer?)\n\nExemplo:\n- iniciante: mais direção\n- experiente: mais autonomia\n\nRegra:\n- Dar autonomia para quem não está pronto é risco; controlar demais quem está pronto é desperdício."
+    },
+    {
+      "title": "Performance do time: sistema > discurso",
+      "body": "Time performa quando tem:\n- objetivo claro\n- recursos\n- processo\n- feedback\n\nRegra:\n- Liderança sem sistema vira motivação de curto prazo."
+    },
+    {
+      "title": "Erro clássico: confundir exigência com agressividade",
+      "body": "Exigência saudável:\n- padrão claro + cobrança justa\n\nAgressividade:\n- humilhação, medo, culpa\n\nRegra:\n- Medo até entrega hoje, mas quebra amanhã."
+    },
+    {
+      "title": "Ritual de gestão do líder (coisa prática)",
+      "body": "Ritual simples:\n- 1:1 curto semanal\n- acompanhamento de 2–3 KPIs\n- feedback rápido\n\nRegra:\n- Liderança é consistência, não evento."
+    },
+    {
+      "title": "Mini prática (45 min) — escolher o estilo certo",
+      "body": "Cenário:\n- Funcionário novo erra separação.\n\nEscolha um estilo para hoje e explique por quê.\nDepois escolha o estilo para daqui 30 dias.\n\nObjetivo:\n- treinar liderança situacional."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Liderança é ferramenta\n- Estilo depende do contexto\n- Sistema sustenta performance\n- Exigência ≠ agressividade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 10 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Liderança é melhor definida como:",
+        "options": [
+          { "key": "A", "text": "Cargo no organograma" },
+          { "key": "B", "text": "Influência para execução" },
+          { "key": "C", "text": "Falar alto" },
+          { "key": "D", "text": "Dar bronca" }
+        ],
+        "answer": "B",
+        "explain": "Liderança existe quando gera execução alinhada."
+      },
+      {
+        "id": 2,
+        "question": "Qual combinação pede estilo mais diretivo no início?",
+        "options": [
+          { "key": "A", "text": "Alta competência e alta autonomia" },
+          { "key": "B", "text": "Baixa competência e alto risco de erro" },
+          { "key": "C", "text": "Alta competência e baixa urgência" },
+          { "key": "D", "text": "Time sênior e processo maduro" }
+        ],
+        "answer": "B",
+        "explain": "Iniciante + risco alto pede direção e padrão."
+      },
+      {
+        "id": 3,
+        "question": "Controlar demais um time experiente tende a:",
+        "options": [
+          { "key": "A", "text": "Aumentar autonomia" },
+          { "key": "B", "text": "Reduzir engajamento e travar velocidade" },
+          { "key": "C", "text": "Eliminar erros para sempre" },
+          { "key": "D", "text": "Aumentar inovação automaticamente" }
+        ],
+        "answer": "B",
+        "explain": "Microgestão vira gargalo e desmotiva."
+      },
+      {
+        "id": 4,
+        "question": "Exigência saudável é:",
+        "options": [
+          { "key": "A", "text": "Humilhar para gerar medo" },
+          { "key": "B", "text": "Padrão claro e cobrança justa, com feedback" },
+          { "key": "C", "text": "Ignorar erro" },
+          { "key": "D", "text": "Cobrar sem explicar o padrão" }
+        ],
+        "answer": "B",
+        "explain": "Exigência é padrão + justiça, não agressão."
+      },
+      {
+        "id": 5,
+        "question": "Qual item sustenta performance de forma mais consistente?",
+        "options": [
+          { "key": "A", "text": "Discurso motivacional" },
+          { "key": "B", "text": "Sistema: objetivo + processo + feedback + recursos" },
+          { "key": "C", "text": "Pressão constante" },
+          { "key": "D", "text": "Mais reuniões longas" }
+        ],
+        "answer": "B",
+        "explain": "Sistema cria repetição de desempenho."
+      },
+      {
+        "id": 6,
+        "question": "Liderança situacional significa:",
+        "options": [
+          { "key": "A", "text": "Ter um estilo fixo para sempre" },
+          { "key": "B", "text": "Ajustar o estilo ao nível do time e ao risco" },
+          { "key": "C", "text": "Evitar decisão" },
+          { "key": "D", "text": "Ser bonzinho sempre" }
+        ],
+        "answer": "B",
+        "explain": "Você troca ferramenta conforme contexto."
+      },
+      {
+        "id": 7,
+        "question": "Delegar bem é:",
+        "options": [
+          { "key": "A", "text": "Dar tarefa sem critério e sumir" },
+          { "key": "B", "text": "Dar contexto, objetivo, padrão e autonomia adequada" },
+          { "key": "C", "text": "Fazer tudo sozinho" },
+          { "key": "D", "text": "Evitar feedback" }
+        ],
+        "answer": "B",
+        "explain": "Delegação boa define o jogo e o nível de autonomia."
+      },
+      {
+        "id": 8,
+        "question": "Medo como ferramenta de gestão:",
+        "options": [
+          { "key": "A", "text": "Entrega curto prazo, mas piora médio/longo" },
+          { "key": "B", "text": "Melhora cultura sempre" },
+          { "key": "C", "text": "Elimina erros definitivamente" },
+          { "key": "D", "text": "Aumenta transparência" }
+        ],
+        "answer": "A",
+        "explain": "Medo cria ocultação e queda de confiança."
+      },
+      {
+        "id": 9,
+        "question": "Ritual simples de liderança que costuma ter alto impacto:",
+        "options": [
+          { "key": "A", "text": "1:1 curto semanal + KPIs + feedback rápido" },
+          { "key": "B", "text": "Só cobrança no fim do mês" },
+          { "key": "C", "text": "Reunião longa diária sem pauta" },
+          { "key": "D", "text": "Nunca medir nada" }
+        ],
+        "answer": "A",
+        "explain": "Consistência + acompanhamento melhora execução."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Estilo de liderança é identidade" },
+          { "key": "B", "text": "Estilo de liderança é ferramenta" },
+          { "key": "C", "text": "Liderança é só carisma" },
+          { "key": "D", "text": "Liderança só existe com cargo" }
+        ],
+        "answer": "B",
+        "explain": "Você escolhe o estilo conforme a situação."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ritual mínimo\n\n- objetivo claro\n- acompanhamento\n- feedback\n",
+    "pilares": "Pilares\n\n- contexto\n- autonomia\n- padrão\n"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "27-plano-financeiro-pessoal",
+  "title": "Aula 27 — Plano financeiro completo: orçamento, reservas, metas e execução",
+  "steps": [
+    {
+      "title": "Plano financeiro é uma máquina simples",
+      "body": "Um plano bom conecta:\n- orçamento (entrada/saída)\n- reservas (segurança)\n- metas (direção)\n- investimentos (motor)\n\nRegra:\n- Sem execução, plano é só um texto bonito."
+    },
+    {
+      "title": "Orçamento: controlar sem sufocar",
+      "body": "Orçamento não é punição.\nÉ mapa.\n\nVocê precisa saber:\n- quanto entra\n- quanto sai\n- quanto sobra\n\nRegra:\n- Quem não mede gastos, decide por sensação (e erra)."
+    },
+    {
+      "title": "Reservas (as 3 camadas)",
+      "body": "Camada 1: reserva de emergência (liquidez)\nCamada 2: reserva de objetivos (curto/médio prazo)\nCamada 3: longo prazo (aposentadoria)\n\nRegra:\n- Não misture emergência com investimento de longo prazo."
+    },
+    {
+      "title": "Metas: transformar vontade em número e data",
+      "body": "Meta boa tem:\n- valor\n- prazo\n- aporte mensal necessário\n\nRegra:\n- Meta sem número vira promessa."
+    },
+    {
+      "title": "Automação (o truque real da execução)",
+      "body": "Automação ajuda porque:\n- tira emoção\n- evita “se sobrar eu guardo”\n\nExemplos:\n- débito automático\n- aporte no dia do pagamento\n\nRegra:\n- O plano vence quando vira hábito automático."
+    },
+    {
+      "title": "Revisão e ajuste (não é fracasso)",
+      "body": "Revisar é normal quando:\n- renda muda\n- custos mudam\n- objetivos mudam\n\nRegra:\n- Plano bom é adaptável, não rígido."
+    },
+    {
+      "title": "Mini prática (45 min) — seu plano em 1 página",
+      "body": "Escreva:\n- renda líquida mensal\n- gastos essenciais\n- gastos flexíveis\n- sobra mensal\n\nDefina:\n- emergência (meta)\n- 1 meta de 12 meses\n- 1 meta de 3–5 anos\n\nE uma regra:\n- % do salário para aportar automaticamente\n\nObjetivo:\n- sair da teoria para a execução."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Plano conecta orçamento, reservas, metas e investimentos\n- 3 camadas de reserva\n- Metas com valor e data\n- Automação é chave\n- Revisar é parte do processo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 27 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um plano financeiro conecta:",
+        "options": [
+          { "key": "A", "text": "Somente investimento" },
+          { "key": "B", "text": "Orçamento, reservas, metas e execução" },
+          { "key": "C", "text": "Somente renda" },
+          { "key": "D", "text": "Somente desejo" }
+        ],
+        "answer": "B",
+        "explain": "É um sistema integrado."
+      },
+      {
+        "id": 2,
+        "question": "Orçamento serve principalmente para:",
+        "options": [
+          { "key": "A", "text": "Punir você" },
+          { "key": "B", "text": "Medir entrada/saída e decidir com dados" },
+          { "key": "C", "text": "Aumentar custos" },
+          { "key": "D", "text": "Ignorar gastos" }
+        ],
+        "answer": "B",
+        "explain": "Sem medir, você decide por sensação."
+      },
+      {
+        "id": 3,
+        "question": "Reserva de emergência precisa de:",
+        "options": [
+          { "key": "A", "text": "Baixa liquidez" },
+          { "key": "B", "text": "Alta liquidez e segurança" },
+          { "key": "C", "text": "Alta volatilidade" },
+          { "key": "D", "text": "Concentração" }
+        ],
+        "answer": "B",
+        "explain": "Emergência pede acesso rápido."
+      },
+      {
+        "id": 4,
+        "question": "Misturar emergência com longo prazo é ruim porque:",
+        "options": [
+          { "key": "A", "text": "Não muda nada" },
+          { "key": "B", "text": "Pode forçar resgate no pior momento" },
+          { "key": "C", "text": "Aumenta liquidez" },
+          { "key": "D", "text": "Garante retorno" }
+        ],
+        "answer": "B",
+        "explain": "Você pode vender na baixa ou com penalidade."
+      },
+      {
+        "id": 5,
+        "question": "Meta boa tem:",
+        "options": [
+          { "key": "A", "text": "Só vontade" },
+          { "key": "B", "text": "Valor, prazo e aporte necessário" },
+          { "key": "C", "text": "Só prazo" },
+          { "key": "D", "text": "Só valor" }
+        ],
+        "answer": "B",
+        "explain": "Isso torna a meta executável."
+      },
+      {
+        "id": 6,
+        "question": "Automação ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Depende de humor" },
+          { "key": "B", "text": "Tira emoção e cria hábito" },
+          { "key": "C", "text": "Elimina necessidade de renda" },
+          { "key": "D", "text": "Aumenta risco" }
+        ],
+        "answer": "B",
+        "explain": "Você não precisa decidir todo mês."
+      },
+      {
+        "id": 7,
+        "question": "“Se sobrar eu guardo” geralmente falha porque:",
+        "options": [
+          { "key": "A", "text": "Sempre sobra" },
+          { "key": "B", "text": "Gasto se adapta e sobra vira zero" },
+          { "key": "C", "text": "Automação é pior" },
+          { "key": "D", "text": "Meta não existe" }
+        ],
+        "answer": "B",
+        "explain": "Sem regra, o gasto ocupa o espaço."
+      },
+      {
+        "id": 8,
+        "question": "Revisar o plano significa:",
+        "options": [
+          { "key": "A", "text": "Fracasso" },
+          { "key": "B", "text": "Adaptar ao cenário (renda/custos/metas)" },
+          { "key": "C", "text": "Parar tudo" },
+          { "key": "D", "text": "Ignorar mudanças" }
+        ],
+        "answer": "B",
+        "explain": "Mudanças exigem ajuste."
+      },
+      {
+        "id": 9,
+        "question": "As 3 camadas de reserva são:",
+        "options": [
+          { "key": "A", "text": "Emergência, objetivos, longo prazo" },
+          { "key": "B", "text": "Ações, cripto, meme" },
+          { "key": "C", "text": "Cartão, cheque, empréstimo" },
+          { "key": "D", "text": "Pix, boleto, dinheiro" }
+        ],
+        "answer": "A",
+        "explain": "Cada camada tem função e prazo."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Plano é só para ricos" },
+          { "key": "B", "text": "Plano bom vira rotina e hábito" },
+          { "key": "C", "text": "Medir gasto é inútil" },
+          { "key": "D", "text": "Meta sem número funciona" }
+        ],
+        "answer": "B",
+        "explain": "Execução é o que transforma o plano em resultado."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Plano 1 página\n\n- renda\n- gastos\n- sobra\n- metas\n- automação\n",
+    "pilares": "Pilares\n\n- execução\n- hábitos\n- clareza\n"
+  }
+}

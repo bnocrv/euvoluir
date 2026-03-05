@@ -1,0 +1,168 @@
+{
+  "id": "05-dividas-juros",
+  "title": "Aula 05 — Dívidas e juros: como sair do buraco e evitar o ciclo (juros compostos na prática)",
+  "steps": [
+    {
+      "title": "Dívida não é vergonha: é um problema matemático + comportamental",
+      "body": "Dívida vira crise quando:\n- juros são altos\n- renda não cobre o mínimo\n\nRegra:\n- Culpa não paga boleto; plano paga."
+    },
+    {
+      "title": "Juros compostos (o motor do problema)",
+      "body": "Juros compostos:\n- juros sobre juros\n\nNa dívida:\n- cresce rápido\n\nNo investimento:\n- também cresce rápido\n\nRegra:\n- Juros trabalham contra ou a favor. Depende de quem está cobrando."
+    },
+    {
+      "title": "Mapa das dívidas (clareza antes de ação)",
+      "body": "Você precisa listar:\n- valor total\n- parcela mínima\n- taxa (aprox.)\n- tipo (cartão, empréstimo, financiamento)\n\nRegra:\n- Se você não sabe o tamanho do buraco, não sabe como sair."
+    },
+    {
+      "title": "Prioridade: quitar a dívida mais cara primeiro",
+      "body": "Estratégia avalanche:\n- pague o mínimo em todas\n- extra vai na de maior juros\n\nAlternativa bola de neve:\n- começa pela menor (motivação)\n\nRegra:\n- Financeiramente, maior juros primeiro costuma ser melhor."
+    },
+    {
+      "title": "Renegociar com inteligência (sem cair em armadilha)",
+      "body": "Ao renegociar:\n- reduza juros\n- alongue prazo com cuidado\n- confirme custo total\n\nRegra:\n- Parcela menor pode esconder custo total maior."
+    },
+    {
+      "title": "Como evitar o ciclo (a causa real)",
+      "body": "Ciclo comum:\n- sem reserva → imprevisto → cartão → juros → aperto → novo cartão\n\nQuebra do ciclo:\n- reserva mínima\n- teto no variável\n- regra de uso do cartão\n\nRegra:\n- Sem mudança de hábito, a dívida volta."
+    },
+    {
+      "title": "Mini prática (45 min) — plano anti-dívida",
+      "body": "Liste suas dívidas:\n- valor\n- juros (aprox.)\n- mínimo\n\nEscolha método:\n- avalanche (juros)\n- bola de neve (motivação)\n\nDefina:\n- valor extra mensal\n- regra para não criar novas dívidas\n\nObjetivo:\n- plano simples e executável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Dívida é matemática + hábito\n- Juros compostos aceleram\n- Liste tudo (clareza)\n- Priorize juros altos (avalanche)\n- Renegocie olhando custo total\n- Quebre o ciclo com reserva e regras\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 05 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Dívida vira crise principalmente quando:",
+        "options": [
+          { "key": "A", "text": "Você tem cartão" },
+          { "key": "B", "text": "Juros são altos e renda não cobre o mínimo" },
+          { "key": "C", "text": "Você investe" },
+          { "key": "D", "text": "Você tem reserva" }
+        ],
+        "answer": "B",
+        "explain": "Juros + falta de caixa aceleram o problema."
+      },
+      {
+        "id": 2,
+        "question": "Juros compostos significa:",
+        "options": [
+          { "key": "A", "text": "Juros simples sempre" },
+          { "key": "B", "text": "Juros sobre juros" },
+          { "key": "C", "text": "Nenhum juros" },
+          { "key": "D", "text": "Desconto" }
+        ],
+        "answer": "B",
+        "explain": "O crescimento acelera com o tempo."
+      },
+      {
+        "id": 3,
+        "question": "O primeiro passo para sair da dívida é:",
+        "options": [
+          { "key": "A", "text": "Fingir que não existe" },
+          { "key": "B", "text": "Mapear todas as dívidas (valor, mínimo, juros)" },
+          { "key": "C", "text": "Comprar algo para aliviar" },
+          { "key": "D", "text": "Pedir mais crédito" }
+        ],
+        "answer": "B",
+        "explain": "Sem clareza, não há plano."
+      },
+      {
+        "id": 4,
+        "question": "A estratégia 'avalanche' prioriza:",
+        "options": [
+          { "key": "A", "text": "A menor dívida" },
+          { "key": "B", "text": "A dívida com maior juros" },
+          { "key": "C", "text": "A mais antiga" },
+          { "key": "D", "text": "A mais bonita" }
+        ],
+        "answer": "B",
+        "explain": "Financeiramente, reduz custo mais rápido."
+      },
+      {
+        "id": 5,
+        "question": "A estratégia 'bola de neve' prioriza:",
+        "options": [
+          { "key": "A", "text": "Maior juros" },
+          { "key": "B", "text": "Menor saldo (ganhar motivação)" },
+          { "key": "C", "text": "Maior saldo" },
+          { "key": "D", "text": "Nada" }
+        ],
+        "answer": "B",
+        "explain": "Ajuda psicologicamente a manter o plano."
+      },
+      {
+        "id": 6,
+        "question": "Na renegociação, uma armadilha comum é:",
+        "options": [
+          { "key": "A", "text": "Reduzir juros" },
+          { "key": "B", "text": "Parcela menor com custo total maior" },
+          { "key": "C", "text": "Conferir contrato" },
+          { "key": "D", "text": "Comparar propostas" }
+        ],
+        "answer": "B",
+        "explain": "Prazo maior pode aumentar custo total."
+      },
+      {
+        "id": 7,
+        "question": "O ciclo da dívida costuma começar com:",
+        "options": [
+          { "key": "A", "text": "Reserva" },
+          { "key": "B", "text": "Falta de reserva e imprevisto" },
+          { "key": "C", "text": "Investimento" },
+          { "key": "D", "text": "Salário alto" }
+        ],
+        "answer": "B",
+        "explain": "Sem proteção, o cartão vira 'reserva'."
+      },
+      {
+        "id": 8,
+        "question": "Uma regra essencial para não voltar à dívida é:",
+        "options": [
+          { "key": "A", "text": "Criar reserva mínima e teto no variável" },
+          { "key": "B", "text": "Comprar mais a prazo" },
+          { "key": "C", "text": "Ignorar gastos pequenos" },
+          { "key": "D", "text": "Aumentar limite" }
+        ],
+        "answer": "A",
+        "explain": "Proteção + limite quebram o ciclo."
+      },
+      {
+        "id": 9,
+        "question": "Juros compostos na dívida trabalham:",
+        "options": [
+          { "key": "A", "text": "A seu favor" },
+          { "key": "B", "text": "Contra você (acelerando o saldo)" },
+          { "key": "C", "text": "Neutro" },
+          { "key": "D", "text": "Só no investimento" }
+        ],
+        "answer": "B",
+        "explain": "Você paga juros sobre juros."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Culpa resolve dívida" },
+          { "key": "B", "text": "Plano + regra de hábito resolvem dívida" },
+          { "key": "C", "text": "Dívida some sozinha" },
+          { "key": "D", "text": "Renegociar sempre é ruim" }
+        ],
+        "answer": "B",
+        "explain": "Matemática e comportamento precisam andar juntos."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Plano anti-dívida\n\n- mapa das dívidas\n- método (avalanche/neve)\n- extra mensal\n- regra anti-nova dívida\n",
+    "pilares": "Pilares\n\n- clareza\n- juros\n- disciplina\n"
+  }
+}

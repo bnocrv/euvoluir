@@ -1,0 +1,168 @@
+{
+  "id": "11-motivacao-comportamento",
+  "title": "Aula 11 — Motivação e comportamento: o que faz um time funcionar",
+  "steps": [
+    {
+      "title": "Motivação: o que ela é na prática",
+      "body": "Motivação é energia direcionada para um resultado.\n\nNa empresa, ela aparece quando a pessoa:\n- entende o que é sucesso\n- sente que consegue fazer\n- percebe que vale a pena\n\nRegra:\n- Ninguém sustenta alta performance em um sistema confuso."
+    },
+    {
+      "title": "3 alavancas que movem comportamento (sem romantizar)",
+      "body": "Em geral, comportamento é puxado por:\n\n1) Clareza: objetivo e padrão\n2) Capacidade: treino, ferramenta, tempo\n3) Incentivo: recompensa, reconhecimento, consequência\n\nRegra:\n- Sem clareza, você não tem performance: você tem improviso."
+    },
+    {
+      "title": "Motivação intrínseca x extrínseca (e o erro de depender só de bônus)",
+      "body": "Extrínseca: dinheiro, prêmio, pressão.\nIntrínseca: autonomia, domínio, propósito.\n\nProblema comum:\n- bônus alto resolve curto prazo, mas pode incentivar atalho.\n\nRegra:\n- Incentivo mal desenhado compra o comportamento errado."
+    },
+    {
+      "title": "Ambiente e cultura moldam mais do que discursos",
+      "body": "Se o ambiente tem:\n- meta impossível\n- falta de ferramenta\n- punição por erro\n\nEntão você terá:\n- atalho\n- ocultação\n- rotatividade\n\nRegra:\n- As pessoas se adaptam ao sistema."
+    },
+    {
+      "title": "Justiça percebida (o fator invisível que explode times)",
+      "body": "Justiça percebida envolve:\n- regras iguais\n- critérios claros\n- feedback consistente\n\nRegra:\n- Quando o time acha injusto, a energia vira resistência."
+    },
+    {
+      "title": "Como aumentar motivação sem 'palestra'",
+      "body": "Ações fortes:\n- clarificar o padrão (o que é bom)\n- remover obstáculo (ferramenta/processo)\n- dar autonomia proporcional à maturidade\n- reconhecer comportamento certo (na hora)\n\nRegra:\n- Motivação cresce quando o trabalho faz sentido e funciona."
+    },
+    {
+      "title": "Mini prática (45 min) — diagnóstico 3 alavancas",
+      "body": "Escolha um problema real (ex: erros na separação).\n\nResponda:\n- Clareza: o padrão está escrito e treinado?\n- Capacidade: a pessoa tem ferramenta/treino?\n- Incentivo: o que está sendo recompensado hoje?\n\nObjetivo:\n- atacar causa raiz, não culpar pessoas."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Motivação depende de clareza, capacidade e incentivo\n- Bônus pode criar atalho se mal desenhado\n- Justiça percebida é crucial\n- Melhorar sistema melhora comportamento\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 11 (Administração)",
+    "instructions": "Marque A, B, C ou D. Pense como gestor.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Seu time está desmotivado e errando mais. Qual primeira checagem mais inteligente?",
+        "options": [
+          { "key": "A", "text": "Fazer uma palestra motivacional" },
+          { "key": "B", "text": "Conferir se existe padrão claro e se a equipe tem ferramenta/treino" },
+          { "key": "C", "text": "Aumentar a pressão imediatamente" },
+          { "key": "D", "text": "Trocar todo mundo" }
+        ],
+        "answer": "B",
+        "explain": "Sem clareza/capacidade, qualquer cobrança vira injusta."
+      },
+      {
+        "id": 2,
+        "question": "Exemplo clássico de incentivo mal desenhado é:",
+        "options": [
+          { "key": "A", "text": "Premiar só volume, ignorando qualidade, e depois reclamar dos erros" },
+          { "key": "B", "text": "Reconhecer quem mantém padrão com qualidade" },
+          { "key": "C", "text": "Treinar e acompanhar os novos" },
+          { "key": "D", "text": "Medir erro e corrigir processo" }
+        ],
+        "answer": "A",
+        "explain": "Você compra velocidade e recebe retrabalho."
+      },
+      {
+        "id": 3,
+        "question": "Quando a justiça percebida cai, o efeito mais comum é:",
+        "options": [
+          { "key": "A", "text": "As pessoas se esforçam mais espontaneamente" },
+          { "key": "B", "text": "A energia vira resistência e queda de colaboração" },
+          { "key": "C", "text": "Os erros desaparecem" },
+          { "key": "D", "text": "A produtividade dobra" }
+        ],
+        "answer": "B",
+        "explain": "Injustiça percebida destrói confiança e cooperação."
+      },
+      {
+        "id": 4,
+        "question": "Extrínseco (bônus) é mais perigoso quando:",
+        "options": [
+          { "key": "A", "text": "Existe KPI de qualidade junto" },
+          { "key": "B", "text": "Só mede volume e o erro é barato" },
+          { "key": "C", "text": "Só mede volume e o erro é caro (devolução, retrabalho, reclamação)" },
+          { "key": "D", "text": "Reconhece comportamento correto" }
+        ],
+        "answer": "C",
+        "explain": "Erro caro + incentivo por volume = atalho caro."
+      },
+      {
+        "id": 5,
+        "question": "Qual afirmação é mais correta?",
+        "options": [
+          { "key": "A", "text": "Motivação resolve falta de processo" },
+          { "key": "B", "text": "Processo bom reduz dependência de motivação momentânea" },
+          { "key": "C", "text": "Time bom não precisa de padrão" },
+          { "key": "D", "text": "Pressão sempre aumenta performance" }
+        ],
+        "answer": "B",
+        "explain": "Sistema consistente sustenta performance."
+      },
+      {
+        "id": 6,
+        "question": "Um gestor quer autonomia para o time. O melhor caminho é:",
+        "options": [
+          { "key": "A", "text": "Dar autonomia total sem padrão" },
+          { "key": "B", "text": "Dar autonomia proporcional à maturidade, com guardrails" },
+          { "key": "C", "text": "Centralizar tudo para sempre" },
+          { "key": "D", "text": "Evitar feedback" }
+        ],
+        "answer": "B",
+        "explain": "Autonomia sem preparo aumenta risco; com guardrails escala."
+      },
+      {
+        "id": 7,
+        "question": "Sinal de que o problema é 'capacidade' e não 'vontade' é:",
+        "options": [
+          { "key": "A", "text": "A pessoa quer fazer, mas não sabe como e erra sempre no mesmo ponto" },
+          { "key": "B", "text": "A pessoa recusa qualquer feedback" },
+          { "key": "C", "text": "A pessoa some do trabalho" },
+          { "key": "D", "text": "A pessoa quebra regras conscientemente" }
+        ],
+        "answer": "A",
+        "explain": "Erro repetido no mesmo ponto costuma ser falta de treino/processo."
+      },
+      {
+        "id": 8,
+        "question": "Qual ação costuma ter efeito mais forte e imediato na motivação?",
+        "options": [
+          { "key": "A", "text": "Mudar o logo" },
+          { "key": "B", "text": "Remover um obstáculo que travava o trabalho (ferramenta/processo)" },
+          { "key": "C", "text": "Aumentar reunião" },
+          { "key": "D", "text": "Ignorar problema" }
+        ],
+        "answer": "B",
+        "explain": "Quando o trabalho flui, a energia melhora."
+      },
+      {
+        "id": 9,
+        "question": "Se o time esconde erro, o diagnóstico mais provável é:",
+        "options": [
+          { "key": "A", "text": "Cultura de medo/punição" },
+          { "key": "B", "text": "Motivação alta" },
+          { "key": "C", "text": "Processo perfeito" },
+          { "key": "D", "text": "Falta de marketing" }
+        ],
+        "answer": "A",
+        "explain": "Medo gera ocultação."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "As pessoas se adaptam ao sistema" },
+          { "key": "B", "text": "Sistema não influencia comportamento" },
+          { "key": "C", "text": "Só dinheiro resolve" },
+          { "key": "D", "text": "Clareza atrapalha" }
+        ],
+        "answer": "A",
+        "explain": "O sistema molda comportamento repetido."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Alavancas\n\n- clareza\n- capacidade\n- incentivo\n",
+    "pilares": "Pilares\n\n- sistema\n- justiça\n- consistência\n"
+  }
+}

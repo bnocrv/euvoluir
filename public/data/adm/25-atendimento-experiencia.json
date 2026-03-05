@@ -1,0 +1,168 @@
+{
+  "id": "25-atendimento-experiencia",
+  "title": "Aula 25 — Atendimento e experiência do cliente: retenção e reputação",
+  "steps": [
+    {
+      "title": "Atendimento é parte da oferta (não pós-venda isolado)",
+      "body": "Atendimento impacta:\n- recompra\n- reclamação\n- reputação\n- custo\n\nRegra:\n- Atendimento ruim destrói marketing bom."
+    },
+    {
+      "title": "Experiência do cliente é a soma do caminho",
+      "body": "Cliente sente experiência em:\n- promessa (site/vendedor)\n- prazo\n- embalagem\n- suporte\n- troca/devolução\n\nRegra:\n- Experiência é consistência."
+    },
+    {
+      "title": "Tempo de resposta e solução (duas métricas diferentes)",
+      "body": "Tempo de resposta: quão rápido você responde.\nTempo de solução: quão rápido resolve.\n\nRegra:\n- Responder rápido e resolver lento irrita mais."
+    },
+    {
+      "title": "Políticas claras reduzem custo",
+      "body": "Política clara de:\n- troca\n- devolução\n- garantia\n\nDiminui:\n- idas e voltas\n- conflito\n\nRegra:\n- Ambiguidade custa caro."
+    },
+    {
+      "title": "Como lidar com erro sem perder o cliente",
+      "body": "3 passos:\n- assumir o problema (sem desculpa longa)\n- explicar solução e prazo\n- compensar se fizer sentido (sem banalizar)\n\nRegra:\n- Cliente tolera erro; não tolera descaso."
+    },
+    {
+      "title": "Evitar 'fábrica de ticket' (resolver causa raiz)",
+      "body": "Se o mesmo problema abre ticket toda semana:\n- a solução é processo, não atendimento.\n\nRegra:\n- Atendimento bom alimenta melhoria do sistema."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de pontos de atrito",
+      "body": "Liste os 5 principais motivos de reclamação.\n\nPara cada um, defina:\n- causa raiz provável\n- ajuste de processo\n- métrica de acompanhamento\n\nObjetivo:\n- reduzir demanda, não só responder."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Atendimento é parte da oferta\n- Resposta ≠ solução\n- Políticas claras reduzem custo\n- Resolver causa raiz diminui reclamação\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 25 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Por que atendimento é estratégico?",
+        "options": [
+          { "key": "A", "text": "Porque só serve para apagar incêndio" },
+          { "key": "B", "text": "Porque afeta retenção, reputação e custo" },
+          { "key": "C", "text": "Porque não impacta vendas" },
+          { "key": "D", "text": "Porque é só simpatia" }
+        ],
+        "answer": "B",
+        "explain": "Atendimento influencia receita futura e custo operacional."
+      },
+      {
+        "id": 2,
+        "question": "Responder rápido e resolver lento tende a:",
+        "options": [
+          { "key": "A", "text": "Aumentar satisfação" },
+          { "key": "B", "text": "Aumentar irritação (cria expectativa sem entrega)" },
+          { "key": "C", "text": "Não mudar nada" },
+          { "key": "D", "text": "Eliminar reclamação" }
+        ],
+        "answer": "B",
+        "explain": "Expectativa sem solução piora frustração."
+      },
+      {
+        "id": 3,
+        "question": "Políticas claras ajudam porque:",
+        "options": [
+          { "key": "A", "text": "Aumentam ambiguidade" },
+          { "key": "B", "text": "Reduzem idas e voltas e conflito" },
+          { "key": "C", "text": "Eliminam necessidade de processo" },
+          { "key": "D", "text": "Servem só para burocracia" }
+        ],
+        "answer": "B",
+        "explain": "Clareza reduz custo de atendimento."
+      },
+      {
+        "id": 4,
+        "question": "Cliente geralmente tolera:",
+        "options": [
+          { "key": "A", "text": "Erro com solução clara" },
+          { "key": "B", "text": "Descaso e silêncio" },
+          { "key": "C", "text": "Mentira" },
+          { "key": "D", "text": "Promessa quebrada repetida" }
+        ],
+        "answer": "A",
+        "explain": "O problema é a forma de lidar, não só o erro."
+      },
+      {
+        "id": 5,
+        "question": "Se o mesmo motivo abre ticket toda semana, o correto é:",
+        "options": [
+          { "key": "A", "text": "Contratar mais atendentes" },
+          { "key": "B", "text": "Resolver causa raiz no processo" },
+          { "key": "C", "text": "Ignorar" },
+          { "key": "D", "text": "Responder mais rápido" }
+        ],
+        "answer": "B",
+        "explain": "Sem causa raiz, você só escala o problema."
+      },
+      {
+        "id": 6,
+        "question": "Experiência do cliente é:",
+        "options": [
+          { "key": "A", "text": "Só atendimento" },
+          { "key": "B", "text": "Soma do caminho: promessa, entrega, suporte, troca" },
+          { "key": "C", "text": "Só marketing" },
+          { "key": "D", "text": "Só preço" }
+        ],
+        "answer": "B",
+        "explain": "É o conjunto da jornada."
+      },
+      {
+        "id": 7,
+        "question": "Qual ação é melhor ao ocorrer um erro de entrega?",
+        "options": [
+          { "key": "A", "text": "Negar até o cliente desistir" },
+          { "key": "B", "text": "Assumir, propor solução e prazo, e cumprir" },
+          { "key": "C", "text": "Prometer e não atualizar" },
+          { "key": "D", "text": "Culpar o cliente" }
+        ],
+        "answer": "B",
+        "explain": "Transparência e execução retêm confiança."
+      },
+      {
+        "id": 8,
+        "question": "Métrica de atendimento que engana sozinha é:",
+        "options": [
+          { "key": "A", "text": "Tempo de resposta" },
+          { "key": "B", "text": "Tempo de solução" },
+          { "key": "C", "text": "Taxa de retrabalho" },
+          { "key": "D", "text": "Satisfação" }
+        ],
+        "answer": "A",
+        "explain": "Resposta rápida sem resolver não garante experiência boa."
+      },
+      {
+        "id": 9,
+        "question": "Atendimento ruim pode:",
+        "options": [
+          { "key": "A", "text": "Ajudar marketing" },
+          { "key": "B", "text": "Destruir reputação e aumentar custo" },
+          { "key": "C", "text": "Aumentar margem" },
+          { "key": "D", "text": "Reduzir devolução" }
+        ],
+        "answer": "B",
+        "explain": "Reclamação e perda de cliente custam caro."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Atendimento é parte da oferta" },
+          { "key": "B", "text": "Atendimento não influencia retenção" },
+          { "key": "C", "text": "Atendimento é só educação" },
+          { "key": "D", "text": "Atendimento não precisa de processo" }
+        ],
+        "answer": "A",
+        "explain": "Atendimento sustenta recompra e confiança."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Pontos de contato\n\n- promessa\n- entrega\n- suporte\n- troca\n",
+    "pilares": "Pilares\n\n- clareza\n- solução\n- causa raiz\n"
+  }
+}

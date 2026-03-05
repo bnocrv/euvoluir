@@ -1,0 +1,168 @@
+{
+  "id": "08-planejamento-impostos",
+  "title": "Aula 08 — Impostos no Brasil (visão prática): IRPF, investimentos e armadilhas comuns",
+  "steps": [
+    {
+      "title": "Imposto é parte do jogo (não opcional)",
+      "body": "Você não precisa virar especialista.\nVocê precisa:\n- saber o básico\n- evitar erros caros\n- manter registro\n\nRegra:\n- O erro comum não é pagar imposto: é pagar multa por bagunça."
+    },
+    {
+      "title": "IRPF: a lógica simples",
+      "body": "No IRPF você declara:\n- rendas\n- bens\n- algumas operações/investimentos\n\nE o sistema compara:\n- o que você ganhou\n- o que você tem\n\nRegra:\n- Declaração é coerência entre renda, patrimônio e movimentação."
+    },
+    {
+      "title": "O que costuma dar problema",
+      "body": "Erros comuns:\n- não guardar comprovantes\n- esquecer rendimentos\n- confundir ganho com movimentação\n- atrasar a declaração\n\nRegra:\n- Sem documento, você perde a discussão."
+    },
+    {
+      "title": "Investimentos e imposto: o princípio",
+      "body": "Em muitos investimentos você paga imposto sobre:\n- rendimento/ganho\n\nNão é sobre:\n- valor total movimentado\n\nRegra:\n- Imposto mira ganho, não 'entra e sai' (na maioria dos casos)."
+    },
+    {
+      "title": "Organização mínima (que salva sua vida)",
+      "body": "Rotina simples:\n- pasta (digital) por ano\n- extratos e informes\n- registro de operações relevantes\n\nRegra:\n- Quem organiza durante o ano não sofre na declaração."
+    },
+    {
+      "title": "Decisão financeira deve considerar imposto",
+      "body": "Ao comparar opções, pergunte:\n- qual retorno líquido (depois de imposto)?\n- há prazo mínimo?\n\nRegra:\n- O que importa é líquido, não bruto."
+    },
+    {
+      "title": "Mini prática (45 min) — kit imposto",
+      "body": "Crie um 'kit do ano':\n- pasta no drive\n- subpastas: renda / bancos / investimentos / recibos\n\nObjetivo:\n- reduzir risco de erro e correria."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Imposto é parte do jogo\n- IRPF busca coerência\n- O risco está na bagunça\n- Imposto costuma focar no ganho\n- Retorno líquido é o que importa\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 08 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O maior erro comum com imposto é:",
+        "options": [
+          { "key": "A", "text": "Organizar documentos" },
+          { "key": "B", "text": "Bagunça e falta de registro, gerando multa/erro" },
+          { "key": "C", "text": "Fazer pasta por ano" },
+          { "key": "D", "text": "Olhar retorno líquido" }
+        ],
+        "answer": "B",
+        "explain": "A bagunça vira erro e penalidade."
+      },
+      {
+        "id": 2,
+        "question": "IRPF é, de forma simples:",
+        "options": [
+          { "key": "A", "text": "Uma loteria" },
+          { "key": "B", "text": "Uma declaração de renda, bens e algumas operações" },
+          { "key": "C", "text": "Um empréstimo" },
+          { "key": "D", "text": "Uma promoção" }
+        ],
+        "answer": "B",
+        "explain": "Você informa sua vida financeira do ano."
+      },
+      {
+        "id": 3,
+        "question": "A declaração busca coerência entre:",
+        "options": [
+          { "key": "A", "text": "Sorte e desejo" },
+          { "key": "B", "text": "Renda, patrimônio e movimentação" },
+          { "key": "C", "text": "Likes e seguidores" },
+          { "key": "D", "text": "Somente gastos" }
+        ],
+        "answer": "B",
+        "explain": "Se não fecha, você vira risco."
+      },
+      {
+        "id": 4,
+        "question": "Sem comprovante, em geral:",
+        "options": [
+          { "key": "A", "text": "Você ganha a discussão" },
+          { "key": "B", "text": "Você fica fraco em contestar" },
+          { "key": "C", "text": "Nada muda" },
+          { "key": "D", "text": "O imposto some" }
+        ],
+        "answer": "B",
+        "explain": "Documento é sua defesa."
+      },
+      {
+        "id": 5,
+        "question": "Imposto em investimentos costuma incidir sobre:",
+        "options": [
+          { "key": "A", "text": "Ganho/rendimento" },
+          { "key": "B", "text": "A cor do aplicativo" },
+          { "key": "C", "text": "O valor total movimentado sempre" },
+          { "key": "D", "text": "O valor do salário" }
+        ],
+        "answer": "A",
+        "explain": "O alvo típico é o ganho."
+      },
+      {
+        "id": 6,
+        "question": "Por que retorno líquido importa?",
+        "options": [
+          { "key": "A", "text": "Porque bruto é sempre igual" },
+          { "key": "B", "text": "Porque é o que você realmente fica depois de imposto/custos" },
+          { "key": "C", "text": "Porque não existe imposto" },
+          { "key": "D", "text": "Porque imposto não muda decisão" }
+        ],
+        "answer": "B",
+        "explain": "Bruto pode enganar comparação."
+      },
+      {
+        "id": 7,
+        "question": "Organização mínima para imposto inclui:",
+        "options": [
+          { "key": "A", "text": "Uma pasta por ano com informes e extratos" },
+          { "key": "B", "text": "Guardar nada" },
+          { "key": "C", "text": "Só fotos do extrato" },
+          { "key": "D", "text": "Apagar e-mails" }
+        ],
+        "answer": "A",
+        "explain": "Isso reduz risco e tempo."
+      },
+      {
+        "id": 8,
+        "question": "Atrasar declaração tende a:",
+        "options": [
+          { "key": "A", "text": "Não ter consequência" },
+          { "key": "B", "text": "Gerar multa e dor de cabeça" },
+          { "key": "C", "text": "Aumentar retorno" },
+          { "key": "D", "text": "Aumentar score" }
+        ],
+        "answer": "B",
+        "explain": "Atraso costuma ter penalidade."
+      },
+      {
+        "id": 9,
+        "question": "Um erro comum é confundir:",
+        "options": [
+          { "key": "A", "text": "Ganho com movimentação" },
+          { "key": "B", "text": "Gasto com investimento" },
+          { "key": "C", "text": "Renda com presente" },
+          { "key": "D", "text": "Imposto com desconto" }
+        ],
+        "answer": "A",
+        "explain": "Movimentar não é igual a lucrar."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Imposto é opcional" },
+          { "key": "B", "text": "O risco maior é a bagunça, não o imposto em si" },
+          { "key": "C", "text": "Retorno bruto é o que importa" },
+          { "key": "D", "text": "Registro atrapalha" }
+        ],
+        "answer": "B",
+        "explain": "Organização reduz erro e penalidade."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Kit do ano\n\n- pasta por ano\n- informes\n- extratos\n- recibos\n",
+    "pilares": "Pilares\n\n- coerência\n- registro\n- retorno líquido\n"
+  }
+}

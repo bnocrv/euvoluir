@@ -1,0 +1,168 @@
+{
+  "id": "22-renda-variavel",
+  "title": "Aula 22 — Renda variável: ações, volatilidade e o que você precisa entender antes de entrar",
+  "steps": [
+    {
+      "title": "Renda variável (bem simples)",
+      "body": "Renda variável é quando o retorno não vem “contratado”.\nEle depende de:\n- preço de compra e venda\n- lucros/dividendos\n- mercado (expectativas)\n\nRegra:\n- Em renda variável, você compra participação e aceita oscilação."
+    },
+    {
+      "title": "Volatilidade não é o inimigo — é o preço do jogo",
+      "body": "Volatilidade = preços sobem e descem.\nEla é ruim quando:\n- você precisa do dinheiro no curto prazo\nEla pode ser neutra/ok quando:\n- você investe com horizonte longo\n\nRegra:\n- Volatilidade vira risco real quando vira venda forçada."
+    },
+    {
+      "title": "O que dá retorno em ações",
+      "body": "Retorno pode vir de:\n- valorização (preço subir)\n- dividendos (parte do lucro distribuída)\n\nMas:\n- preço pode cair mesmo com empresa boa (curto prazo)\n\nRegra:\n- Curto prazo é barulho; longo prazo tende a refletir fundamentos."
+    },
+    {
+      "title": "Risco real (o que você precisa aceitar)",
+      "body": "Riscos comuns:\n- empresa piorar\n- setor entrar em crise\n- mercado reprecificar\n- você comprar caro (euforia)\n\nRegra:\n- O maior risco é você não ter plano e reagir por emoção."
+    },
+    {
+      "title": "Antes de comprar: 4 perguntas objetivas",
+      "body": "1) Por que estou comprando?\n2) Qual meu horizonte (2, 5, 10 anos)?\n3) Qual minha regra de aporte?\n4) Qual meu limite emocional (queda suportável)?\n\nRegra:\n- Sem horizonte, volatilidade vira sofrimento."
+    },
+    {
+      "title": "Estratégia básica (sem promessas mágicas)",
+      "body": "Para iniciantes:\n- começar pequeno\n- diversificar\n- aportar com regularidade\n- evitar “tentar adivinhar topo e fundo”\n\nRegra:\n- Consistência costuma vencer ansiedade."
+    },
+    {
+      "title": "Mini prática (45 min) — política pessoal de renda variável",
+      "body": "Escreva sua política:\n- % máxima do patrimônio em renda variável\n- horizonte mínimo\n- regra de aporte mensal\n- regra de não-venda (exceto por tese quebrada)\n\nObjetivo:\n- tirar a emoção do volante."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Renda variável oscila\n- Retorno vem de valorização e dividendos\n- Risco real é vender por emoção\n- Horizonte e política pessoal reduzem erros\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 22 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Renda variável se caracteriza por:",
+        "options": [
+          { "key": "A", "text": "Retorno contratado e fixo" },
+          { "key": "B", "text": "Retorno incerto e preços oscilantes" },
+          { "key": "C", "text": "Liquidez garantida sem oscilação" },
+          { "key": "D", "text": "Ausência de risco" }
+        ],
+        "answer": "B",
+        "explain": "O retorno depende do mercado e do tempo."
+      },
+      {
+        "id": 2,
+        "question": "Volatilidade vira risco maior quando:",
+        "options": [
+          { "key": "A", "text": "Você tem horizonte longo e plano" },
+          { "key": "B", "text": "Você precisa vender no curto prazo (venda forçada)" },
+          { "key": "C", "text": "Você diversifica" },
+          { "key": "D", "text": "Você aporta regularmente" }
+        ],
+        "answer": "B",
+        "explain": "Venda forçada transforma oscilação em perda."
+      },
+      {
+        "id": 3,
+        "question": "Retorno em ações pode vir de:",
+        "options": [
+          { "key": "A", "text": "Valorização e dividendos" },
+          { "key": "B", "text": "Só juros fixos" },
+          { "key": "C", "text": "Somente imposto" },
+          { "key": "D", "text": "Somente prazo" }
+        ],
+        "answer": "A",
+        "explain": "Preço e distribuição de lucro podem gerar retorno."
+      },
+      {
+        "id": 4,
+        "question": "No curto prazo, o preço pode:",
+        "options": [
+          { "key": "A", "text": "Refletir perfeitamente fundamentos sempre" },
+          { "key": "B", "text": "Oscilar por expectativas e barulho" },
+          { "key": "C", "text": "Nunca cair" },
+          { "key": "D", "text": "Ser controlado" }
+        ],
+        "answer": "B",
+        "explain": "Expectativas dominam no curto prazo."
+      },
+      {
+        "id": 5,
+        "question": "Um risco de renda variável é:",
+        "options": [
+          { "key": "A", "text": "Empresa piorar ou setor entrar em crise" },
+          { "key": "B", "text": "Taxa contratada" },
+          { "key": "C", "text": "Retorno garantido" },
+          { "key": "D", "text": "Liquidez diária sem variação" }
+        ],
+        "answer": "A",
+        "explain": "Negócios mudam e preços reagem."
+      },
+      {
+        "id": 6,
+        "question": "A maior armadilha é:",
+        "options": [
+          { "key": "A", "text": "Ter política escrita" },
+          { "key": "B", "text": "Reagir por emoção sem plano" },
+          { "key": "C", "text": "Aportar com regularidade" },
+          { "key": "D", "text": "Diversificar" }
+        ],
+        "answer": "B",
+        "explain": "Emoção causa compra cara e venda barata."
+      },
+      {
+        "id": 7,
+        "question": "Antes de comprar, uma pergunta essencial é:",
+        "options": [
+          { "key": "A", "text": "Qual meu horizonte?" },
+          { "key": "B", "text": "Qual o meme do dia?" },
+          { "key": "C", "text": "Quantos seguidores tem a empresa?" },
+          { "key": "D", "text": "Qual a cor do aplicativo?" }
+        ],
+        "answer": "A",
+        "explain": "Horizonte define tolerância à oscilação."
+      },
+      {
+        "id": 8,
+        "question": "Estratégia básica para iniciantes inclui:",
+        "options": [
+          { "key": "A", "text": "Tentar adivinhar topo e fundo" },
+          { "key": "B", "text": "Começar pequeno, diversificar e aportar regularmente" },
+          { "key": "C", "text": "Concentrar tudo em 1 ação" },
+          { "key": "D", "text": "Operar sem regra" }
+        ],
+        "answer": "B",
+        "explain": "Regularidade reduz erro e ansiedade."
+      },
+      {
+        "id": 9,
+        "question": "“Sem horizonte, volatilidade vira sofrimento” porque:",
+        "options": [
+          { "key": "A", "text": "Oscilação é sempre prejuízo" },
+          { "key": "B", "text": "Você pode precisar vender na baixa" },
+          { "key": "C", "text": "Dividendos não existem" },
+          { "key": "D", "text": "Mercado não oscila" }
+        ],
+        "answer": "B",
+        "explain": "Curto prazo aumenta chance de vender mal."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Renda variável é garantia de lucro" },
+          { "key": "B", "text": "Renda variável exige plano e tolerância a oscilação" },
+          { "key": "C", "text": "Diversificação não importa" },
+          { "key": "D", "text": "Volatilidade não existe" }
+        ],
+        "answer": "B",
+        "explain": "Plano reduz erro comportamental."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Política pessoal\n\n- % máxima\n- horizonte\n- regra de aporte\n- regra de venda\n",
+    "pilares": "Pilares\n\n- volatilidade\n- horizonte\n- disciplina\n"
+  }
+}

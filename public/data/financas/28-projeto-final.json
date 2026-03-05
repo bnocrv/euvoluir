@@ -1,0 +1,168 @@
+{
+  "id": "28-projeto-final",
+  "title": "Aula 28 — Projeto final: montar uma estratégia financeira completa (caso realista + checklist)",
+  "steps": [
+    {
+      "title": "O objetivo do projeto",
+      "body": "Você vai montar uma estratégia que funcione no mundo real:\n- com renda limitada\n- com imprevistos\n- com metas conflitantes\n\nRegra:\n- Estratégia boa é a que você consegue manter."
+    },
+    {
+      "title": "Caso (realista) — cenário base",
+      "body": "Cenário:\n- renda líquida: R$ 3.500/mês\n- gastos essenciais: R$ 2.300\n- gastos flexíveis: R$ 800\n- sobra média: R$ 400\n- dívida no cartão: R$ 1.200 (juros alto)\n- meta 1: reserva de emergência (R$ 6.000)\n- meta 2: comprar um notebook em 12 meses (R$ 3.000)\n\nRegra:\n- Primeiro, estabilize; depois acelere."
+    },
+    {
+      "title": "Passo 1: cortar vazamentos sem “se torturar”",
+      "body": "Ações:\n- separar essenciais x flexíveis\n- reduzir 1–2 categorias flexíveis com impacto mínimo\n\nRegra:\n- Plano sustentável corta o que dói pouco e rende muito."
+    },
+    {
+      "title": "Passo 2: ordem de prioridade (uma hierarquia clara)",
+      "body": "Ordem sugerida:\n1) matar dívida cara\n2) construir reserva mínima\n3) metas de curto/médio\n4) longo prazo\n\nRegra:\n- Dívida cara é retorno negativo garantido."
+    },
+    {
+      "title": "Passo 3: desenho das contas e automação",
+      "body": "Estrutura simples:\n- Conta 1: gastos do mês\n- Conta 2: reserva\n- Conta 3: metas\n\nAutomação:\n- no dia do salário, enviar % para reserva/meta\n\nRegra:\n- Se não automatiza, você está confiando no humor."
+    },
+    {
+      "title": "Passo 4: investimentos compatíveis com cada caixa",
+      "body": "Caixa emergência:\n- liquidez e segurança\n\nCaixa metas 12 meses:\n- baixa volatilidade\n\nCaixa longo prazo:\n- pode tolerar oscilação (com política)\n\nRegra:\n- Produto deve encaixar no prazo, não no desejo."
+    },
+    {
+      "title": "Entrega do projeto (o que você vai produzir)",
+      "body": "Você vai entregar:\n- orçamento (tabela simples)\n- plano de quitação da dívida\n- meta de reserva (prazo e aporte)\n- meta do notebook (prazo e aporte)\n- política de investimentos (regras)\n\nRegra:\n- Documento simples que você revisa todo mês vence planilha perfeita que você abandona."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Estratégia real prioriza estabilidade\n- Dívida cara primeiro\n- Reserva mínima antes de arriscar\n- Automação é o motor\n- Produto precisa encaixar no prazo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 28 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Estratégia boa é:",
+        "options": [
+          { "key": "A", "text": "A mais complexa" },
+          { "key": "B", "text": "A que você consegue manter no mês ruim" },
+          { "key": "C", "text": "A que promete retorno máximo sempre" },
+          { "key": "D", "text": "A que depende de sorte" }
+        ],
+        "answer": "B",
+        "explain": "Manutenção no tempo é o que gera resultado."
+      },
+      {
+        "id": 2,
+        "question": "No caso, a prioridade 1 recomendada é:",
+        "options": [
+          { "key": "A", "text": "Comprar o notebook primeiro" },
+          { "key": "B", "text": "Matar dívida cara (cartão) primeiro" },
+          { "key": "C", "text": "Investir em alto risco" },
+          { "key": "D", "text": "Ignorar orçamento" }
+        ],
+        "answer": "B",
+        "explain": "Dívida cara é retorno negativo garantido."
+      },
+      {
+        "id": 3,
+        "question": "Separar essenciais x flexíveis serve para:",
+        "options": [
+          { "key": "A", "text": "Se punir" },
+          { "key": "B", "text": "Encontrar onde reduzir com menor dor" },
+          { "key": "C", "text": "Aumentar gastos" },
+          { "key": "D", "text": "Ignorar meta" }
+        ],
+        "answer": "B",
+        "explain": "Corte inteligente é sustentável."
+      },
+      {
+        "id": 4,
+        "question": "Automação é importante porque:",
+        "options": [
+          { "key": "A", "text": "Depende do humor" },
+          { "key": "B", "text": "Tira emoção e cria consistência" },
+          { "key": "C", "text": "Elimina necessidade de renda" },
+          { "key": "D", "text": "Aumenta risco" }
+        ],
+        "answer": "B",
+        "explain": "Consistência vence intenção."
+      },
+      {
+        "id": 5,
+        "question": "Reserva de emergência deve priorizar:",
+        "options": [
+          { "key": "A", "text": "Liquidez e segurança" },
+          { "key": "B", "text": "Volatilidade e emoção" },
+          { "key": "C", "text": "Concentração" },
+          { "key": "D", "text": "Prazo longo sem resgate" }
+        ],
+        "answer": "A",
+        "explain": "Emergência pede acesso rápido."
+      },
+      {
+        "id": 6,
+        "question": "Meta de 12 meses tende a preferir:",
+        "options": [
+          { "key": "A", "text": "Alta oscilação" },
+          { "key": "B", "text": "Baixa volatilidade e previsibilidade" },
+          { "key": "C", "text": "Concentração em um ativo" },
+          { "key": "D", "text": "Apostar em timing" }
+        ],
+        "answer": "B",
+        "explain": "Curto prazo pede estabilidade."
+      },
+      {
+        "id": 7,
+        "question": "A ordem “dívida cara → reserva mínima → metas” existe porque:",
+        "options": [
+          { "key": "A", "text": "É moda" },
+          { "key": "B", "text": "Ela reduz risco e melhora sobrevivência financeira" },
+          { "key": "C", "text": "Ela aumenta juros" },
+          { "key": "D", "text": "Ela ignora imprevistos" }
+        ],
+        "answer": "B",
+        "explain": "Primeiro estabiliza, depois acelera."
+      },
+      {
+        "id": 8,
+        "question": "“Produto deve encaixar no prazo” significa:",
+        "options": [
+          { "key": "A", "text": "Escolher por propaganda" },
+          { "key": "B", "text": "Escolher investimento compatível com quando você vai usar o dinheiro" },
+          { "key": "C", "text": "Escolher o mais arriscado" },
+          { "key": "D", "text": "Ignorar liquidez" }
+        ],
+        "answer": "B",
+        "explain": "Prazo define tolerância a risco e liquidez."
+      },
+      {
+        "id": 9,
+        "question": "Entrega do projeto deve incluir:",
+        "options": [
+          { "key": "A", "text": "Só um texto motivacional" },
+          { "key": "B", "text": "Orçamento, plano de dívida, metas e política de regras" },
+          { "key": "C", "text": "Somente investimentos" },
+          { "key": "D", "text": "Somente renda" }
+        ],
+        "answer": "B",
+        "explain": "Plano completo tem sistema, não só um pedaço."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Planilha perfeita é o que importa" },
+          { "key": "B", "text": "Plano simples revisado todo mês é melhor que perfeição abandonada" },
+          { "key": "C", "text": "Revisar é fracasso" },
+          { "key": "D", "text": "Reserva não importa" }
+        ],
+        "answer": "B",
+        "explain": "O que funciona é o que você mantém."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist do projeto\n\n- orçamento\n- dívida cara\n- reserva\n- metas\n- regras (política)\n",
+    "pilares": "Pilares\n\n- estabilidade\n- automação\n- execução\n"
+  }
+}

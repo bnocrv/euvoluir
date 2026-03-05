@@ -1,0 +1,168 @@
+{
+  "id": "28-logistica-supply",
+  "title": "Aula 28 — Logística e supply chain: prazo, custo e confiabilidade",
+  "steps": [
+    {
+      "title": "Supply chain é uma rede, não um setor",
+      "body": "Supply chain envolve:\n- fornecedor\n- compras\n- estoque\n- operação\n- transporte\n- cliente\n\nRegra:\n- Um elo fraco derruba a experiência inteira."
+    },
+    {
+      "title": "Trade-offs clássicos (não existe milagre)",
+      "body": "Você sempre equilibra:\n- custo\n- prazo\n- nível de serviço\n\nRegra:\n- Melhorar prazo geralmente custa mais (ou exige eficiência real)."
+    },
+    {
+      "title": "Lead time e variabilidade",
+      "body": "Lead time não é só média.\nVariabilidade é o perigo.\n\nRegra:\n- Previsível é melhor que 'rápido às vezes'."
+    },
+    {
+      "title": "Estoque como amortecedor (e como prisão de caixa)",
+      "body": "Estoque protege contra:\n- atraso\n- variação de demanda\n\nMas trava:\n- caixa\n- espaço\n\nRegra:\n- Estoque é seguro e custo ao mesmo tempo."
+    },
+    {
+      "title": "Nível de serviço (o que o cliente sente)",
+      "body": "Componentes:\n- disponibilidade\n- prazo\n- integridade do pedido\n\nRegra:\n- Serviço ruim vira custo em devolução e suporte."
+    },
+    {
+      "title": "Indicadores logísticos úteis para gestor",
+      "body": "Mínimo:\n- OTIF (no prazo e completo)\n- fill rate (atendimento)\n- acurácia de estoque\n- tempo de ciclo do pedido\n\nRegra:\n- KPI sem ação vira relatório."
+    },
+    {
+      "title": "Mini prática (45 min) — escolha de trade-off",
+      "body": "Cenário:\n- cliente premium exige 24h\n- isso aumenta custo de frete em 30%\n\nDecida:\n- quando vale pagar\n- quando não vale\n- qual regra de priorização\n\nObjetivo:\n- governança, não improviso."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Supply é rede\n- Trade-offs: custo x prazo x serviço\n- Variabilidade é risco\n- Estoque protege e prende caixa\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 28 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Supply chain é melhor descrita como:",
+        "options": [
+          { "key": "A", "text": "Só transporte" },
+          { "key": "B", "text": "Rede do fornecedor ao cliente" },
+          { "key": "C", "text": "Só estoque" },
+          { "key": "D", "text": "Só compras" }
+        ],
+        "answer": "B",
+        "explain": "É a rede completa de fluxo."
+      },
+      {
+        "id": 2,
+        "question": "Trade-off clássico em logística é:",
+        "options": [
+          { "key": "A", "text": "Custo, prazo e serviço" },
+          { "key": "B", "text": "Cor do caminhão" },
+          { "key": "C", "text": "Sorte e carisma" },
+          { "key": "D", "text": "Só preço" }
+        ],
+        "answer": "A",
+        "explain": "Você equilibra essas 3 coisas."
+      },
+      {
+        "id": 3,
+        "question": "Variabilidade é perigosa porque:",
+        "options": [
+          { "key": "A", "text": "Não muda nada" },
+          { "key": "B", "text": "Torna planejamento e promessa menos confiáveis" },
+          { "key": "C", "text": "Sempre melhora OTIF" },
+          { "key": "D", "text": "Reduz necessidade de estoque" }
+        ],
+        "answer": "B",
+        "explain": "Incerteza aumenta risco e custo."
+      },
+      {
+        "id": 4,
+        "question": "Estoque é ao mesmo tempo:",
+        "options": [
+          { "key": "A", "text": "Sempre lucro" },
+          { "key": "B", "text": "Proteção e custo (caixa preso)" },
+          { "key": "C", "text": "Só problema" },
+          { "key": "D", "text": "Só segurança sem custo" }
+        ],
+        "answer": "B",
+        "explain": "Protege nível de serviço, mas prende capital."
+      },
+      {
+        "id": 5,
+        "question": "OTIF mede:",
+        "options": [
+          { "key": "A", "text": "Entrega no prazo e completa" },
+          { "key": "B", "text": "Somente preço" },
+          { "key": "C", "text": "Somente marketing" },
+          { "key": "D", "text": "Somente estoque parado" }
+        ],
+        "answer": "A",
+        "explain": "Prazo + completude."
+      },
+      {
+        "id": 6,
+        "question": "Nível de serviço inclui:",
+        "options": [
+          { "key": "A", "text": "Disponibilidade, prazo, integridade do pedido" },
+          { "key": "B", "text": "Só propaganda" },
+          { "key": "C", "text": "Só desconto" },
+          { "key": "D", "text": "Só volume" }
+        ],
+        "answer": "A",
+        "explain": "O cliente sente essas dimensões."
+      },
+      {
+        "id": 7,
+        "question": "KPI sem ação normalmente vira:",
+        "options": [
+          { "key": "A", "text": "Melhoria automática" },
+          { "key": "B", "text": "Relatório bonito sem impacto" },
+          { "key": "C", "text": "Aumento de OTIF" },
+          { "key": "D", "text": "Redução de custo imediata" }
+        ],
+        "answer": "B",
+        "explain": "Medir não é melhorar."
+      },
+      {
+        "id": 8,
+        "question": "Quando faz sentido pagar mais frete por 24h?",
+        "options": [
+          { "key": "A", "text": "Sempre, sem regra" },
+          { "key": "B", "text": "Quando o valor do cliente/risco justifica e há regra clara" },
+          { "key": "C", "text": "Nunca" },
+          { "key": "D", "text": "Quando alguém grita" }
+        ],
+        "answer": "B",
+        "explain": "Exceção precisa de governança."
+      },
+      {
+        "id": 9,
+        "question": "Lead time previsível é melhor porque:",
+        "options": [
+          { "key": "A", "text": "Ajuda promessa e planejamento" },
+          { "key": "B", "text": "Impede controle" },
+          { "key": "C", "text": "Aumenta variabilidade" },
+          { "key": "D", "text": "Reduz necessidade de KPI" }
+        ],
+        "answer": "A",
+        "explain": "Previsibilidade reduz custo total."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Um elo fraco derruba a cadeia inteira" },
+          { "key": "B", "text": "Supply é só transporte" },
+          { "key": "C", "text": "Trade-off não existe" },
+          { "key": "D", "text": "Estoque não afeta caixa" }
+        ],
+        "answer": "A",
+        "explain": "Rede é interdependente."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "KPIs\n\n- OTIF\n- fill rate\n- acurácia\n- ciclo do pedido\n",
+    "pilares": "Pilares\n\n- previsibilidade\n- trade-off\n- governança\n"
+  }
+}

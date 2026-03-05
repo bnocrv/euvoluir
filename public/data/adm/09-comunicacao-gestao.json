@@ -1,0 +1,168 @@
+{
+  "id": "09-comunicacao-gestao",
+  "title": "Aula 09 — Comunicação na gestão: alinhar, cobrar e dar feedback sem ruído",
+  "steps": [
+    {
+      "title": "Comunicação de gestão não é 'falar bem'",
+      "body": "Comunicação de gestão é:\n- alinhar expectativas\n- reduzir ambiguidade\n- acelerar execução\n\nRegra:\n- Falha de comunicação vira falha de operação."
+    },
+    {
+      "title": "Alinhamento: definição de 'pronto' e 'bom'",
+      "body": "Toda tarefa precisa:\n- o que é sucesso\n- até quando\n- padrão de qualidade\n\nRegra:\n- Se o 'pronto' não está definido, o retrabalho é garantido."
+    },
+    {
+      "title": "Cobrança boa: foco em fato e padrão",
+      "body": "Cobrança eficiente:\n- usa dado (prazo, erro, fila)\n- aponta desvio do padrão\n- combina ação e dono\n\nRegra:\n- Cobrar sem padrão vira pessoal."
+    },
+    {
+      "title": "Feedback que melhora (SBI)",
+      "body": "Modelo SBI:\n- Situação (quando/onde)\n- Comportamento (o que fez)\n- Impacto (o que causou)\n\nRegra:\n- Feedback sem exemplo vira ataque."
+    },
+    {
+      "title": "Reuniões: o mínimo necessário",
+      "body": "Boas regras:\n- pauta antes\n- decisão no final\n- dono e prazo\n\nRegra:\n- Reunião sem decisão é custo puro."
+    },
+    {
+      "title": "Comunicação em crise",
+      "body": "Em crise:\n- clareza > detalhe\n- prioridade única\n- status frequente\n\nRegra:\n- Crise piora quando cada um entende uma coisa."
+    },
+    {
+      "title": "Mini prática (45 min) — reescrevendo uma cobrança",
+      "body": "Pegue a frase:\n\"Você sempre atrasa e não dá pra confiar.\"\n\nTransforme em SBI com:\n- situação\n- comportamento\n- impacto\n- pedido claro\n\nObjetivo:\n- cobrar sem virar pessoal."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Comunicação reduz ambiguidade\n- 'Pronto' precisa definição\n- Cobrança é padrão + fato\n- Feedback com exemplo (SBI)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 09 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O que mais reduz retrabalho ao delegar uma tarefa?",
+        "options": [
+          { "key": "A", "text": "Falar rápido para ganhar tempo" },
+          { "key": "B", "text": "Definir claramente o que é 'pronto' e o padrão de qualidade" },
+          { "key": "C", "text": "Delegar sem prazo para evitar pressão" },
+          { "key": "D", "text": "Evitar perguntas" }
+        ],
+        "answer": "B",
+        "explain": "Ambiguidade cria retrabalho quase sempre."
+      },
+      {
+        "id": 2,
+        "question": "Cobrança vira pessoal quando:",
+        "options": [
+          { "key": "A", "text": "É baseada em padrão e dado" },
+          { "key": "B", "text": "É baseada em rótulo e ataque (ex: 'você é irresponsável')" },
+          { "key": "C", "text": "Tem dono e prazo" },
+          { "key": "D", "text": "Define ação concreta" }
+        ],
+        "answer": "B",
+        "explain": "Rótulo ataca identidade; padrão ataca o problema."
+      },
+      {
+        "id": 3,
+        "question": "No modelo SBI, 'I' significa:",
+        "options": [
+          { "key": "A", "text": "Impressão" },
+          { "key": "B", "text": "Impacto" },
+          { "key": "C", "text": "Intenção" },
+          { "key": "D", "text": "Ideia" }
+        ],
+        "answer": "B",
+        "explain": "Impacto conecta comportamento a consequência."
+      },
+      {
+        "id": 4,
+        "question": "Qual feedback está mais próximo do SBI?",
+        "options": [
+          { "key": "A", "text": "Você é desorganizado." },
+          { "key": "B", "text": "Na entrega de ontem, você não atualizou o status e isso gerou retrabalho no atendimento. Próxima vez, atualize ao finalizar." },
+          { "key": "C", "text": "Você sempre faz errado." },
+          { "key": "D", "text": "Melhore." }
+        ],
+        "answer": "B",
+        "explain": "Tem situação, comportamento, impacto e pedido."
+      },
+      {
+        "id": 5,
+        "question": "Reunião útil, no fim, precisa ter:",
+        "options": [
+          { "key": "A", "text": "Mais gente" },
+          { "key": "B", "text": "Decisão, dono e prazo" },
+          { "key": "C", "text": "Mais slides" },
+          { "key": "D", "text": "Mais tempo" }
+        ],
+        "answer": "B",
+        "explain": "Sem decisão vira conversa cara."
+      },
+      {
+        "id": 6,
+        "question": "Em crise, o erro mais comum é:",
+        "options": [
+          { "key": "A", "text": "Comunicar prioridade única" },
+          { "key": "B", "text": "Cada área entender um objetivo diferente" },
+          { "key": "C", "text": "Fazer status frequente" },
+          { "key": "D", "text": "Ser claro" }
+        ],
+        "answer": "B",
+        "explain": "Crise amplifica desalinhamento."
+      },
+      {
+        "id": 7,
+        "question": "Delegar bem significa:",
+        "options": [
+          { "key": "A", "text": "Passar tarefa e sumir" },
+          { "key": "B", "text": "Explicar objetivo, padrão, prazo e forma de acompanhamento" },
+          { "key": "C", "text": "Fazer junto sempre" },
+          { "key": "D", "text": "Não permitir perguntas" }
+        ],
+        "answer": "B",
+        "explain": "Delegar é transferir responsabilidade com contexto e controle."
+      },
+      {
+        "id": 8,
+        "question": "O que é 'alinhamento' de verdade?",
+        "options": [
+          { "key": "A", "text": "Todo mundo concordar com tudo" },
+          { "key": "B", "text": "Todo mundo entender o mesmo objetivo e o mesmo padrão de sucesso" },
+          { "key": "C", "text": "Evitar conflito" },
+          { "key": "D", "text": "Ter um grupo no WhatsApp" }
+        ],
+        "answer": "B",
+        "explain": "Concordar não é necessário; entender é."
+      },
+      {
+        "id": 9,
+        "question": "Por que feedback sem exemplo é perigoso?",
+        "options": [
+          { "key": "A", "text": "Porque é curto" },
+          { "key": "B", "text": "Porque vira opinião e ataque, não aprendizado" },
+          { "key": "C", "text": "Porque não usa planilha" },
+          { "key": "D", "text": "Porque é educado demais" }
+        ],
+        "answer": "B",
+        "explain": "Sem exemplo, a pessoa não sabe o que mudar."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Comunicação é detalhe" },
+          { "key": "B", "text": "Comunicação é parte do sistema de execução" },
+          { "key": "C", "text": "Comunicação é só carisma" },
+          { "key": "D", "text": "Comunicação é só RH" }
+        ],
+        "answer": "B",
+        "explain": "Comunicação reduz erro e acelera execução."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Boas práticas\n\n- definição de pronto\n- dono e prazo\n- SBI no feedback\n",
+    "pilares": "Pilares\n\n- clareza\n- padrão\n- acompanhamento\n"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "16-financas-para-gestores",
+  "title": "Aula 16 — Finanças para gestores: DRE, caixa e o básico que manda",
+  "steps": [
+    {
+      "title": "O objetivo da aula (sem contabilidade chata)",
+      "body": "Você não precisa virar contador.\nVocê precisa saber:\n- o que dá lucro (DRE)\n- o que dá falta de dinheiro (Caixa)\n\nRegra:\n- Dá pra ter lucro e quebrar por falta de caixa."
+    },
+    {
+      "title": "DRE: o filme do resultado",
+      "body": "DRE simplificada:\n\n- Receita\n- (-) Custos (o que varia com a venda)\n= Margem Bruta\n- (-) Despesas (fixas/operacionais)\n= Lucro/Prejuízo\n\nRegra:\n- Margem bruta é o 'motor' do negócio."
+    },
+    {
+      "title": "Caixa: o oxigênio",
+      "body": "Caixa é:\n- entrada e saída de dinheiro\n\nExemplo clássico:\n- vende hoje no cartão (recebe depois)\n- compra estoque à vista (paga agora)\n\nRegra:\n- O caixa quebra antes do lucro."
+    },
+    {
+      "title": "Competência x caixa (onde o gestor se confunde)",
+      "body": "Competência (DRE): registra quando a venda aconteceu.\nCaixa: registra quando o dinheiro entrou/saiu.\n\nRegra:\n- Resultado não paga boleto. Caixa paga."
+    },
+    {
+      "title": "Indicadores essenciais pro gestor",
+      "body": "Indicadores mínimos:\n- Margem bruta (%)\n- Despesa fixa mensal\n- Giro de estoque (ou cobertura)\n- Prazo médio de recebimento/pagamento\n\nRegra:\n- Se você não mede, você descobre tarde."
+    },
+    {
+      "title": "Erros de gestão financeira que são 'normais' (e caros)",
+      "body": "Erros:\n- confundir faturamento com lucro\n- baixar preço sem calcular margem\n- estourar estoque e travar caixa\n\nRegra:\n- A empresa morre por matemática simples ignorada."
+    },
+    {
+      "title": "Mini prática (45 min) — DRE e caixa de bolso",
+      "body": "Faça uma DRE simples do mês (valores fictícios):\n- Receita: 100.000\n- Custo: 60.000\n- Despesa: 30.000\n\nDepois simule caixa:\n- Recebe 70% em 30 dias\n- Paga estoque 80% à vista\n\nObjetivo:\n- enxergar lucro vs caixa."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- DRE mostra lucro; caixa mostra sobrevivência\n- Margem bruta é motor\n- Competência ≠ caixa\n- Indicadores evitam surpresa\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 16 (Administração)",
+    "instructions": "Marque A, B, C ou D. Foque em lógica de gestor.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Uma empresa pode ter lucro e quebrar porque:",
+        "options": [
+          { "key": "A", "text": "Lucro sempre vira dinheiro no mesmo dia" },
+          { "key": "B", "text": "O caixa pode ficar negativo por prazos de recebimento/pagamento" },
+          { "key": "C", "text": "Despesas não existem" },
+          { "key": "D", "text": "Margem bruta não importa" }
+        ],
+        "answer": "B",
+        "explain": "Caixa depende de quando entra e quando sai."
+      },
+      {
+        "id": 2,
+        "question": "Na DRE, custo é melhor entendido como:",
+        "options": [
+          { "key": "A", "text": "Gasto que varia com a venda (mercadoria/insumo)" },
+          { "key": "B", "text": "Qualquer gasto fixo" },
+          { "key": "C", "text": "Impostos sempre" },
+          { "key": "D", "text": "Salários sempre" }
+        ],
+        "answer": "A",
+        "explain": "Custo costuma estar ligado diretamente ao volume vendido."
+      },
+      {
+        "id": 3,
+        "question": "Margem bruta é importante porque:",
+        "options": [
+          { "key": "A", "text": "Mostra quanto sobra para pagar despesas e dar lucro" },
+          { "key": "B", "text": "Não influencia o resultado" },
+          { "key": "C", "text": "É igual a caixa" },
+          { "key": "D", "text": "Serve só para contabilidade" }
+        ],
+        "answer": "A",
+        "explain": "Sem margem bruta, o negócio não sustenta despesas."
+      },
+      {
+        "id": 4,
+        "question": "Competência (DRE) registra:",
+        "options": [
+          { "key": "A", "text": "Quando o dinheiro entrou" },
+          { "key": "B", "text": "Quando a venda/serviço aconteceu" },
+          { "key": "C", "text": "Somente quando é à vista" },
+          { "key": "D", "text": "Somente quando há lucro" }
+        ],
+        "answer": "B",
+        "explain": "DRE mede resultado do período, não o dinheiro."
+      },
+      {
+        "id": 5,
+        "question": "Erro típico de gestor que derruba lucro é:",
+        "options": [
+          { "key": "A", "text": "Baixar preço sem calcular margem" },
+          { "key": "B", "text": "Medir margem bruta" },
+          { "key": "C", "text": "Controlar despesas" },
+          { "key": "D", "text": "Revisar custos" }
+        ],
+        "answer": "A",
+        "explain": "Preço é decisão de margem, não só de volume."
+      },
+      {
+        "id": 6,
+        "question": "Caixa é melhor descrito como:",
+        "options": [
+          { "key": "A", "text": "O resultado contábil do mês" },
+          { "key": "B", "text": "Entradas e saídas de dinheiro ao longo do tempo" },
+          { "key": "C", "text": "Somente lucro" },
+          { "key": "D", "text": "Somente vendas" }
+        ],
+        "answer": "B",
+        "explain": "Caixa é fluxo de dinheiro."
+      },
+      {
+        "id": 7,
+        "question": "Se a empresa compra estoque à vista e vende no cartão para receber em 30 dias, o risco é:",
+        "options": [
+          { "key": "A", "text": "Caixa apertar mesmo com vendas crescendo" },
+          { "key": "B", "text": "Lucro dobrar automaticamente" },
+          { "key": "C", "text": "Despesas sumirem" },
+          { "key": "D", "text": "Margem bruta aumentar sempre" }
+        ],
+        "answer": "A",
+        "explain": "Desencaixe de prazos trava dinheiro."
+      },
+      {
+        "id": 8,
+        "question": "Qual par é mais perigoso?",
+        "options": [
+          { "key": "A", "text": "Alta margem e baixo estoque" },
+          { "key": "B", "text": "Baixa margem e despesas fixas altas" },
+          { "key": "C", "text": "Controle de custos e metas claras" },
+          { "key": "D", "text": "Revisão de preço com dados" }
+        ],
+        "answer": "B",
+        "explain": "Pouca margem não sustenta a estrutura."
+      },
+      {
+        "id": 9,
+        "question": "Faturamento é:",
+        "options": [
+          { "key": "A", "text": "O que sobra depois de todos os gastos" },
+          { "key": "B", "text": "O total vendido (receita), não o lucro" },
+          { "key": "C", "text": "O caixa disponível" },
+          { "key": "D", "text": "A margem bruta" }
+        ],
+        "answer": "B",
+        "explain": "Vender muito não significa lucrar."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Resultado paga boleto" },
+          { "key": "B", "text": "Caixa paga boleto" },
+          { "key": "C", "text": "Margem bruta é irrelevante" },
+          { "key": "D", "text": "Preço pode ser decidido sem números" }
+        ],
+        "answer": "B",
+        "explain": "Sem caixa, a empresa para."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist mínimo\n\n- DRE (receita/custo/despesa)\n- fluxo de caixa\n- margem bruta\n",
+    "pilares": "Pilares\n\n- resultado\n- caixa\n- margem\n"
+  }
+}

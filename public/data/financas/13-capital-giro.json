@@ -1,0 +1,168 @@
+{
+  "id": "13-capital-giro",
+  "title": "Aula 13 — Capital de giro: estoques, prazos e o que quebra empresa de verdade",
+  "steps": [
+    {
+      "title": "Capital de giro (bem simples)",
+      "body": "Capital de giro é o dinheiro necessário para:\n- manter a operação rodando\n- entre pagar e receber\n\nRegra:\n- Se você paga antes de receber, alguém financia esse intervalo (você ou o banco)."
+    },
+    {
+      "title": "Os 3 componentes clássicos",
+      "body": "Capital de giro vive em:\n- estoque\n- contas a receber (clientes)\n- contas a pagar (fornecedores)\n\nRegra:\n- Giro ruim prende dinheiro onde você não consegue usar."
+    },
+    {
+      "title": "O ciclo do dinheiro (ciclo financeiro)",
+      "body": "Sequência típica:\n- compra/produção → estoque → venda → contas a receber → caixa\n\nSe o ciclo é longo:\n- precisa mais capital de giro\n\nRegra:\n- Ciclo longo = maior dependência de caixa."
+    },
+    {
+      "title": "Estoques: o dinheiro parado com fantasia de patrimônio",
+      "body": "Estoque não é dinheiro.\nÉ dinheiro travado em produto.\n\nProblemas:\n- vencimento/moda\n- perda/avaria\n- custo de armazenagem\n\nRegra:\n- Estoque alto pode ser conforto emocional e dor financeira."
+    },
+    {
+      "title": "Prazos: negociações que mudam a empresa",
+      "body": "Melhorar giro pode ser:\n- reduzir prazo de recebimento\n- aumentar prazo de pagamento\n- girar estoque mais rápido\n\nRegra:\n- Uma pequena mudança de prazo pode liberar muito caixa."
+    },
+    {
+      "title": "Sinais de capital de giro ruim",
+      "body": "Sinais:\n- falta caixa mesmo vendendo\n- vive antecipando recebível\n- atrasa fornecedor\n- estoque alto e dinheiro curto\n\nRegra:\n- Se o caixa está sempre no limite, o giro é suspeito."
+    },
+    {
+      "title": "Mini prática (45 min) — diagnóstico de giro",
+      "body": "Responda:\n- em quantos dias você recebe em média?\n- em quantos dias você paga em média?\n- quanto tempo o produto fica em estoque?\n\nObjetivo:\n- ver onde o dinheiro fica preso."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Capital de giro financia o intervalo pagar→receber\n- Estoque, receber e pagar são os 3 blocos\n- Ciclo longo prende caixa\n- Prazos liberam ou travam dinheiro\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 13 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Capital de giro é:",
+        "options": [
+          { "key": "A", "text": "Lucro do mês" },
+          { "key": "B", "text": "Dinheiro para manter operação entre pagar e receber" },
+          { "key": "C", "text": "Somente investimento" },
+          { "key": "D", "text": "Somente imposto" }
+        ],
+        "answer": "B",
+        "explain": "É a energia do dia a dia."
+      },
+      {
+        "id": 2,
+        "question": "Os 3 componentes clássicos do giro são:",
+        "options": [
+          { "key": "A", "text": "Marketing, vendas, RH" },
+          { "key": "B", "text": "Estoque, contas a receber, contas a pagar" },
+          { "key": "C", "text": "Lucro, imposto, empréstimo" },
+          { "key": "D", "text": "Preço, desconto, comissão" }
+        ],
+        "answer": "B",
+        "explain": "É onde o dinheiro fica preso."
+      },
+      {
+        "id": 3,
+        "question": "Ciclo financeiro longo implica:",
+        "options": [
+          { "key": "A", "text": "Menos necessidade de caixa" },
+          { "key": "B", "text": "Mais necessidade de capital de giro" },
+          { "key": "C", "text": "Nenhuma diferença" },
+          { "key": "D", "text": "Menos risco" }
+        ],
+        "answer": "B",
+        "explain": "Você precisa financiar mais tempo."
+      },
+      {
+        "id": 4,
+        "question": "Estoque alto é perigoso porque:",
+        "options": [
+          { "key": "A", "text": "É dinheiro líquido" },
+          { "key": "B", "text": "Prende dinheiro e tem custos/risco de perda" },
+          { "key": "C", "text": "Sempre aumenta caixa" },
+          { "key": "D", "text": "Não tem custo" }
+        ],
+        "answer": "B",
+        "explain": "Estoque não paga conta."
+      },
+      {
+        "id": 5,
+        "question": "Melhorar capital de giro pode envolver:",
+        "options": [
+          { "key": "A", "text": "Receber mais rápido" },
+          { "key": "B", "text": "Pagar mais rápido sempre" },
+          { "key": "C", "text": "Aumentar estoque parado" },
+          { "key": "D", "text": "Ignorar prazos" }
+        ],
+        "answer": "A",
+        "explain": "Reduz o intervalo de financiamento."
+      },
+      {
+        "id": 6,
+        "question": "Atrasar fornecedor todo mês pode ser sinal de:",
+        "options": [
+          { "key": "A", "text": "Giro excelente" },
+          { "key": "B", "text": "Capital de giro apertado" },
+          { "key": "C", "text": "Lucro alto" },
+          { "key": "D", "text": "Estoque baixo" }
+        ],
+        "answer": "B",
+        "explain": "Falta caixa no timing."
+      },
+      {
+        "id": 7,
+        "question": "Antecipar recebíveis com frequência pode indicar:",
+        "options": [
+          { "key": "A", "text": "Caixa sobrando" },
+          { "key": "B", "text": "Dependência de financiamento para girar" },
+          { "key": "C", "text": "Estoque ideal" },
+          { "key": "D", "text": "Nenhum problema" }
+        ],
+        "answer": "B",
+        "explain": "Você paga para trazer dinheiro antes."
+      },
+      {
+        "id": 8,
+        "question": "Uma pequena mudança de prazo pode:",
+        "options": [
+          { "key": "A", "text": "Não afetar nada" },
+          { "key": "B", "text": "Liberar muito caixa dependendo do volume" },
+          { "key": "C", "text": "Eliminar custos fixos" },
+          { "key": "D", "text": "Eliminar imposto" }
+        ],
+        "answer": "B",
+        "explain": "Volume multiplica o efeito do prazo."
+      },
+      {
+        "id": 9,
+        "question": "Dinheiro preso em contas a receber significa:",
+        "options": [
+          { "key": "A", "text": "Dinheiro já no caixa" },
+          { "key": "B", "text": "Dinheiro prometido, mas ainda não recebido" },
+          { "key": "C", "text": "Dinheiro sem risco" },
+          { "key": "D", "text": "Lucro imediato" }
+        ],
+        "answer": "B",
+        "explain": "Você ainda não pode usar."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Vender mais sempre resolve caixa" },
+          { "key": "B", "text": "Você pode vender muito e ainda faltar caixa por ciclo/prazos" },
+          { "key": "C", "text": "Estoque é o mesmo que dinheiro" },
+          { "key": "D", "text": "Prazo não importa" }
+        ],
+        "answer": "B",
+        "explain": "Timing e ciclo definem necessidade de giro."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Diagnóstico\n\n- dias para receber\n- dias para pagar\n- dias em estoque\n",
+    "pilares": "Pilares\n\n- ciclo\n- prazos\n- estoque\n"
+  }
+}

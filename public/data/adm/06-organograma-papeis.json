@@ -1,0 +1,168 @@
+{
+  "id": "06-organograma-papeis",
+  "title": "Aula 06 — Estrutura organizacional: papéis, responsabilidades e organograma",
+  "steps": [
+    {
+      "title": "Estrutura organizacional (bem simples, sem ser bobo)",
+      "body": "Estrutura organizacional é como a empresa divide trabalho e decisão.\n\nEla responde:\n- quem decide o quê\n- quem executa o quê\n- quem responde por resultado\n\nRegra:\n- Estrutura ruim cria ruído, retrabalho e \"ninguém é dono\"."
+    },
+    {
+      "title": "Organograma é só um desenho (o que importa é o comportamento)",
+      "body": "O organograma mostra linhas formais.\n\nMas o que manda no dia a dia é:\n- quem tem informação\n- quem tem poder de decisão\n- quem é cobrado\n\nRegra:\n- Se o desenho diz uma coisa e a cobrança diz outra, a cobrança vence."
+    },
+    {
+      "title": "Papéis x cargos (o erro clássico)",
+      "body": "Cargo é o nome. Papel é a função real.\n\nExemplo:\n- Cargo: Supervisor\n- Papéis: garantir padrão, treinar, remover obstáculos, acompanhar KPI.\n\nRegra:\n- Quando papel não está claro, o time inventa o próprio papel."
+    },
+    {
+      "title": "Responsabilidade, autoridade e prestação de contas",
+      "body": "Trio que precisa andar junto:\n- Responsabilidade: o que você tem que entregar\n- Autoridade: o que você pode decidir\n- Prestação de contas: como você responde pelo resultado\n\nRegra:\n- Dar responsabilidade sem autoridade é receita de frustração."
+    },
+    {
+      "title": "Centralização vs descentralização (trade-off real)",
+      "body": "Centralizar:\n- prós: padrão, controle\n- contras: lentidão, fila de decisão\n\nDescentralizar:\n- prós: velocidade, autonomia\n- contras: risco de variação, decisões desalinhadas\n\nRegra:\n- Não existe perfeito: existe o que combina com seu momento."
+    },
+    {
+      "title": "Como reduzir conflito entre áreas",
+      "body": "Ferramentas práticas:\n- definir dono do processo (ex: expedição) e interfaces (ex: vendas/estoque)\n- criar regra de exceção (quando pode \"furar\" o padrão)\n- alinhar KPIs (não pode cada área ganhar de um jeito)\n\nRegra:\n- Se os incentivos brigam, as áreas brigam."
+    },
+    {
+      "title": "Mini prática (45 min) — RACI rápido",
+      "body": "Escolha um processo real (ex: reposição de estoque, expedição, devolução).\n\nMonte um RACI simples:\n- R (Responsible): quem faz\n- A (Accountable): quem responde pelo resultado\n- C (Consulted): quem é consultado\n- I (Informed): quem precisa ser informado\n\nObjetivo:\n- reduzir o \"eu achei que era com você\"."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Estrutura define decisão e responsabilidade\n- Cargo ≠ papel\n- Responsabilidade precisa de autoridade\n- Centralizar e descentralizar têm trade-offs\n- RACI ajuda a evitar conflito e retrabalho\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 06 (Administração)",
+    "instructions": "Marque A, B, C ou D. Foque na lógica de gestão.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O melhor indicador de que a estrutura está ruim é:",
+        "options": [
+          { "key": "A", "text": "Organograma bonito no PowerPoint" },
+          { "key": "B", "text": "Muitas decisões travadas e conflitos recorrentes entre áreas" },
+          { "key": "C", "text": "Muitos cargos com nomes modernos" },
+          { "key": "D", "text": "Reuniões longas sobre missão e valores" }
+        ],
+        "answer": "B",
+        "explain": "Estrutura ruim aparece como fila de decisão, ruído e briga de interface."
+      },
+      {
+        "id": 2,
+        "question": "Qual cenário mostra responsabilidade sem autoridade?",
+        "options": [
+          { "key": "A", "text": "A pessoa é cobrada por prazo, mas não pode priorizar pedidos nem ajustar equipe" },
+          { "key": "B", "text": "A pessoa tem autonomia para priorizar e é cobrada por resultado" },
+          { "key": "C", "text": "A pessoa define padrões e treina o time" },
+          { "key": "D", "text": "A pessoa tem poder de compra e responde por orçamento" }
+        ],
+        "answer": "A",
+        "explain": "Cobrar sem dar alavanca de decisão vira injustiça e frustração."
+      },
+      {
+        "id": 3,
+        "question": "Quando faz mais sentido centralizar decisões?",
+        "options": [
+          { "key": "A", "text": "Quando qualquer variação é aceitável" },
+          { "key": "B", "text": "Quando a operação precisa de padrão alto e risco de erro é caro" },
+          { "key": "C", "text": "Quando o objetivo é velocidade máxima sem controle" },
+          { "key": "D", "text": "Quando não existe processo definido" }
+        ],
+        "answer": "B",
+        "explain": "Centralização aumenta controle e padrão quando erro é caro."
+      },
+      {
+        "id": 4,
+        "question": "O que geralmente acontece quando cada área tem KPI que 'se vence' às custas da outra?",
+        "options": [
+          { "key": "A", "text": "Alinhamento natural" },
+          { "key": "B", "text": "Áreas cooperam mais" },
+          { "key": "C", "text": "Aparece guerra interna e decisões subótimas para o cliente" },
+          { "key": "D", "text": "Os KPIs deixam de importar" }
+        ],
+        "answer": "C",
+        "explain": "Incentivos conflitantes produzem comportamento conflitante."
+      },
+      {
+        "id": 5,
+        "question": "No RACI, quem é o 'A' (Accountable)?",
+        "options": [
+          { "key": "A", "text": "Quem executa tudo" },
+          { "key": "B", "text": "Quem responde pelo resultado final" },
+          { "key": "C", "text": "Quem é apenas informado" },
+          { "key": "D", "text": "Quem dá opinião informal" }
+        ],
+        "answer": "B",
+        "explain": "Accountable é dono do resultado, não necessariamente o executor."
+      },
+      {
+        "id": 6,
+        "question": "Um organograma mostra:",
+        "options": [
+          { "key": "A", "text": "A cultura real da empresa" },
+          { "key": "B", "text": "O fluxo de caixa" },
+          { "key": "C", "text": "As relações formais e linhas de reporte" },
+          { "key": "D", "text": "A qualidade do produto" }
+        ],
+        "answer": "C",
+        "explain": "Ele descreve a estrutura formal, não o comportamento real."
+      },
+      {
+        "id": 7,
+        "question": "Qual é um bom critério para 'dono do processo'?",
+        "options": [
+          { "key": "A", "text": "Quem tem mais tempo livre" },
+          { "key": "B", "text": "Quem tem mais carisma" },
+          { "key": "C", "text": "Quem consegue influenciar as etapas e é cobrado por resultado" },
+          { "key": "D", "text": "Quem está há mais tempo na empresa" }
+        ],
+        "answer": "C",
+        "explain": "Dono precisa de influência e cobrança coerente."
+      },
+      {
+        "id": 8,
+        "question": "Qual risco típico de descentralizar demais?",
+        "options": [
+          { "key": "A", "text": "Aumento de padronização" },
+          { "key": "B", "text": "Aumento de variação e decisões desalinhadas" },
+          { "key": "C", "text": "Menos velocidade" },
+          { "key": "D", "text": "Menos autonomia" }
+        ],
+        "answer": "B",
+        "explain": "Mais autonomia sem guarda-corpo gera variação e desalinhamento."
+      },
+      {
+        "id": 9,
+        "question": "O erro mais perigoso: confundir cargo com papel porque:",
+        "options": [
+          { "key": "A", "text": "Muda a cor do crachá" },
+          { "key": "B", "text": "Gera lacunas invisíveis no trabalho real" },
+          { "key": "C", "text": "Aumenta o número de reuniões" },
+          { "key": "D", "text": "Melhora a comunicação sempre" }
+        ],
+        "answer": "B",
+        "explain": "Se o papel não existe, ninguém faz — e o problema aparece tarde."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Estrutura não influencia performance" },
+          { "key": "B", "text": "Estrutura define como decisões e responsabilidades funcionam" },
+          { "key": "C", "text": "Estrutura é só estética" },
+          { "key": "D", "text": "Estrutura só importa em empresa grande" }
+        ],
+        "answer": "B",
+        "explain": "Como o trabalho é dividido e decidido impacta diretamente o resultado."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Elementos mínimos\n\n- papéis claros\n- autoridade definida\n- dono do processo\n",
+    "pilares": "Pilares\n\n- responsabilidade\n- autoridade\n- alinhamento\n"
+  }
+}

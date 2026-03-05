@@ -1,0 +1,168 @@
+{
+  "id": "07-cultura-organizacional",
+  "title": "Aula 07 — Cultura organizacional: o que realmente manda no dia a dia",
+  "steps": [
+    {
+      "title": "Cultura (definição útil)",
+      "body": "Cultura é o conjunto de comportamentos que a empresa reforça.\n\nEla aparece em:\n- o que é premiado\n- o que é tolerado\n- o que é punido\n\nRegra:\n- Cultura é o que acontece quando ninguém está olhando."
+    },
+    {
+      "title": "Cultura explícita x cultura real",
+      "body": "Explícita: valores no quadro.\nReal: decisões do dia a dia.\n\nExemplo:\n- valor: \"qualidade\"\n- real: \"entrega a qualquer custo\" (tolerando retrabalho)\n\nRegra:\n- A cultura real é a do comportamento, não do discurso."
+    },
+    {
+      "title": "Como cultura nasce",
+      "body": "Cultura é formada por:\n- liderança (o que o gestor aceita)\n- processos (o que o sistema exige)\n- incentivos (como as pessoas ganham)\n\nRegra:\n- Incentivo errado cria comportamento errado."
+    },
+    {
+      "title": "Subculturas (e por que isso não é 'problema' sempre)",
+      "body": "Áreas podem ter subculturas:\n- logística: ritmo, padrão\n- comercial: urgência, negociação\n\nRegra:\n- Subcultura vira problema quando não existe alinhamento de objetivo."
+    },
+    {
+      "title": "Sinais de cultura tóxica (sem drama, só diagnóstico)",
+      "body": "Sinais:\n- medo de reportar erro\n- culpa em vez de aprendizado\n- metas que incentivam atalho\n\nRegra:\n- Onde há medo, há ocultação."
+    },
+    {
+      "title": "Como mudar cultura de forma prática",
+      "body": "Ferramentas:\n- mudar incentivos\n- reforçar rituais (reuniões curtas, 1:1, pós-mortem)\n- criar padrão de decisão\n\nRegra:\n- Cultura muda quando o sistema muda."
+    },
+    {
+      "title": "Mini prática (45 min) — diagnóstico de cultura",
+      "body": "Responda:\n- que comportamento é recompensado aqui?\n- que comportamento é tolerado?\n- que comportamento é punido?\n\nObjetivo:\n- enxergar cultura real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Cultura é comportamento reforçado\n- Incentivo e liderança moldam cultura\n- Mudança cultural exige mudança de sistema\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 07 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Qual é a definição mais útil de cultura organizacional?",
+        "options": [
+          { "key": "A", "text": "Frases bonitas na parede" },
+          { "key": "B", "text": "Comportamentos que a empresa reforça na prática" },
+          { "key": "C", "text": "O uniforme do time" },
+          { "key": "D", "text": "O tamanho do escritório" }
+        ],
+        "answer": "B",
+        "explain": "Cultura é o que é reforçado e repetido."
+      },
+      {
+        "id": 2,
+        "question": "Se a empresa diz 'qualidade' mas recompensa quem entrega rápido mesmo com erro, a cultura real é:",
+        "options": [
+          { "key": "A", "text": "Qualidade acima de tudo" },
+          { "key": "B", "text": "Entrega a qualquer custo" },
+          { "key": "C", "text": "Inovação" },
+          { "key": "D", "text": "Colaboração" }
+        ],
+        "answer": "B",
+        "explain": "Incentivo define comportamento real."
+      },
+      {
+        "id": 3,
+        "question": "Qual fator mais rápido muda comportamento (e portanto cultura)?",
+        "options": [
+          { "key": "A", "text": "Novo slogan" },
+          { "key": "B", "text": "Palestra motivacional" },
+          { "key": "C", "text": "Mudança em incentivos e regras do jogo" },
+          { "key": "D", "text": "Mudar o logo" }
+        ],
+        "answer": "C",
+        "explain": "Sistema e incentivo dirigem repetição."
+      },
+      {
+        "id": 4,
+        "question": "Subculturas viram problema quando:",
+        "options": [
+          { "key": "A", "text": "As áreas têm especializações diferentes" },
+          { "key": "B", "text": "Existe objetivo e incentivo desalinhado entre áreas" },
+          { "key": "C", "text": "Há organograma" },
+          { "key": "D", "text": "A empresa é pequena" }
+        ],
+        "answer": "B",
+        "explain": "Quando cada um ganha de um jeito, a cooperação cai."
+      },
+      {
+        "id": 5,
+        "question": "Sinal forte de cultura tóxica é:",
+        "options": [
+          { "key": "A", "text": "Erros são reportados e analisados" },
+          { "key": "B", "text": "As pessoas escondem problema por medo" },
+          { "key": "C", "text": "Há reuniões curtas" },
+          { "key": "D", "text": "Existe padrão de processo" }
+        ],
+        "answer": "B",
+        "explain": "Medo cria ocultação e piora o sistema."
+      },
+      {
+        "id": 6,
+        "question": "O que mais influencia cultura no dia a dia?",
+        "options": [
+          { "key": "A", "text": "O que o gestor tolera" },
+          { "key": "B", "text": "A cor do uniforme" },
+          { "key": "C", "text": "O tamanho do crachá" },
+          { "key": "D", "text": "A marca do computador" }
+        ],
+        "answer": "A",
+        "explain": "Tolerância vira padrão."
+      },
+      {
+        "id": 7,
+        "question": "A melhor forma de reduzir 'culpa' e aumentar aprendizado é:",
+        "options": [
+          { "key": "A", "text": "Buscar culpados publicamente" },
+          { "key": "B", "text": "Fazer pós-mortem focado em causa e melhoria do processo" },
+          { "key": "C", "text": "Ignorar o erro" },
+          { "key": "D", "text": "Punir sempre" }
+        ],
+        "answer": "B",
+        "explain": "Aprendizado vem de causa raiz e ajuste de sistema."
+      },
+      {
+        "id": 8,
+        "question": "Cultura explícita e real diferem porque:",
+        "options": [
+          { "key": "A", "text": "As pessoas não leem" },
+          { "key": "B", "text": "O comportamento segue incentivos, não discurso" },
+          { "key": "C", "text": "O organograma é pequeno" },
+          { "key": "D", "text": "A empresa é nova" }
+        ],
+        "answer": "B",
+        "explain": "A regra do jogo determina o comportamento."
+      },
+      {
+        "id": 9,
+        "question": "Qual frase é mais correta?",
+        "options": [
+          { "key": "A", "text": "Cultura se muda com um comunicado" },
+          { "key": "B", "text": "Cultura se muda mudando o sistema" },
+          { "key": "C", "text": "Cultura não muda" },
+          { "key": "D", "text": "Cultura é só RH" }
+        ],
+        "answer": "B",
+        "explain": "Processos + incentivos + liderança mudam repetição."
+      },
+      {
+        "id": 10,
+        "question": "Se uma área otimiza seu KPI causando prejuízo em outra, o problema mais provável é:",
+        "options": [
+          { "key": "A", "text": "Preguiça" },
+          { "key": "B", "text": "KPIs e incentivos desalinhados" },
+          { "key": "C", "text": "Falta de tecnologia" },
+          { "key": "D", "text": "Falta de uniforme" }
+        ],
+        "answer": "B",
+        "explain": "Cultura e estrutura seguem incentivos."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Sinais de cultura\n\n- o que é recompensado\n- o que é tolerado\n- o que é punido\n",
+    "pilares": "Pilares\n\n- incentivos\n- liderança\n- sistema\n"
+  }
+}

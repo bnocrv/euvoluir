@@ -1,0 +1,168 @@
+{
+  "id": "24-fundos-etfs",
+  "title": "Aula 24 — Fundos e ETFs: taxas, gestão, liquidez e como não cair em armadilha",
+  "steps": [
+    {
+      "title": "Fundo e ETF (bem simples)",
+      "body": "Fundo:\n- você compra cotas\n- um gestor decide (ou segue regra)\n\nETF:\n- um “fundo de índice” negociado em bolsa\n- costuma seguir um índice/regra\n\nRegra:\n- Você não compra só ativo: você compra estrutura + regras + custos."
+    },
+    {
+      "title": "Taxas: o retorno que some sem você perceber",
+      "body": "Custos comuns:\n- taxa de administração\n- taxa de performance\n- spreads/tributos dependendo do produto\n\nRegra:\n- Taxa pequena por ano vira grande com o tempo."
+    },
+    {
+      "title": "Gestão ativa vs passiva (prós e contras reais)",
+      "body": "Ativa:\n- tenta bater o mercado\n- pode gerar valor, mas é difícil\n- costuma ter mais taxas\n\nPassiva (ETFs/índices):\n- segue o mercado\n- custo menor\n\nRegra:\n- Você precisa justificar taxa alta com benefício claro."
+    },
+    {
+      "title": "Liquidez e prazo (onde a dor aparece)",
+      "body": "Pergunte:\n- consigo resgatar quando?\n- tem carência?\n- como é a volatilidade?\n\nRegra:\n- Produto bom no papel pode ser ruim para seu prazo."
+    },
+    {
+      "title": "Erros clássicos de iniciante",
+      "body": "Erros:\n- escolher só por rentabilidade passada\n- ignorar taxa e risco\n- comprar sem entender a estratégia\n\nRegra:\n- Rentabilidade passada não é promessa; custo é certeza."
+    },
+    {
+      "title": "Checklist rápido antes de investir",
+      "body": "Checklist:\n- objetivo e prazo\n- estratégia do fundo/ETF\n- taxas e custos\n- liquidez\n- risco (volatilidade)\n\nRegra:\n- Se você não entende a estratégia, você não consegue manter na crise."
+    },
+    {
+      "title": "Mini prática (45 min) — comparar 2 produtos pelo custo total",
+      "body": "Escolha 2 fundos/ETFs hipotéticos:\n- Produto A: taxa 0,3% ao ano\n- Produto B: taxa 2% ao ano + performance\n\nPerguntas:\n- qual tem mais fricção?\n- qual precisa entregar mais para compensar?\n\nObjetivo:\n- treinar olhar custos como parte do retorno."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Fundos/ETFs são estruturas com regras e custos\n- Taxas comem retorno no tempo\n- Ativo x passivo: custo vs potencial\n- Liquidez e prazo mandam\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 24 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Um fundo é:",
+        "options": [
+          { "key": "A", "text": "Compra direta de um único ativo" },
+          { "key": "B", "text": "Compra de cotas de uma carteira gerida por regras/gestor" },
+          { "key": "C", "text": "Um empréstimo" },
+          { "key": "D", "text": "Um imposto" }
+        ],
+        "answer": "B",
+        "explain": "Você compra participação em uma estrutura."
+      },
+      {
+        "id": 2,
+        "question": "ETF geralmente é:",
+        "options": [
+          { "key": "A", "text": "Fundo que segue um índice e negocia em bolsa" },
+          { "key": "B", "text": "Um título prefixado" },
+          { "key": "C", "text": "Um seguro" },
+          { "key": "D", "text": "Uma conta corrente" }
+        ],
+        "answer": "A",
+        "explain": "ETFs costumam ser passivos e negociados em bolsa."
+      },
+      {
+        "id": 3,
+        "question": "Taxas são perigosas porque:",
+        "options": [
+          { "key": "A", "text": "Somem do nada" },
+          { "key": "B", "text": "Comem retorno ao longo do tempo" },
+          { "key": "C", "text": "Aumentam liquidez" },
+          { "key": "D", "text": "Eliminam risco" }
+        ],
+        "answer": "B",
+        "explain": "Custo é certeza; efeito no tempo é grande."
+      },
+      {
+        "id": 4,
+        "question": "Gestão ativa:",
+        "options": [
+          { "key": "A", "text": "Segue índice" },
+          { "key": "B", "text": "Tenta bater o mercado e costuma ter mais taxas" },
+          { "key": "C", "text": "Não tem risco" },
+          { "key": "D", "text": "Não tem custos" }
+        ],
+        "answer": "B",
+        "explain": "Você paga pela tentativa de superar o benchmark."
+      },
+      {
+        "id": 5,
+        "question": "Rentabilidade passada:",
+        "options": [
+          { "key": "A", "text": "É promessa de retorno" },
+          { "key": "B", "text": "Não garante futuro" },
+          { "key": "C", "text": "Elimina risco" },
+          { "key": "D", "text": "Garante liquidez" }
+        ],
+        "answer": "B",
+        "explain": "É informação, não garantia."
+      },
+      {
+        "id": 6,
+        "question": "Antes de investir, é essencial saber:",
+        "options": [
+          { "key": "A", "text": "A cor da plataforma" },
+          { "key": "B", "text": "Estratégia, taxas, liquidez e risco" },
+          { "key": "C", "text": "Nome do gestor apenas" },
+          { "key": "D", "text": "Somente o retorno do último mês" }
+        ],
+        "answer": "B",
+        "explain": "Você compra regras + custos + risco."
+      },
+      {
+        "id": 7,
+        "question": "Um erro clássico é:",
+        "options": [
+          { "key": "A", "text": "Comparar custos" },
+          { "key": "B", "text": "Escolher só por retorno passado e ignorar taxa" },
+          { "key": "C", "text": "Ver liquidez" },
+          { "key": "D", "text": "Entender estratégia" }
+        ],
+        "answer": "B",
+        "explain": "Custo é certo e pode destruir retorno."
+      },
+      {
+        "id": 8,
+        "question": "Produto bom no papel pode ser ruim quando:",
+        "options": [
+          { "key": "A", "text": "Você não tem prazo compatível com a liquidez" },
+          { "key": "B", "text": "Você entende o produto" },
+          { "key": "C", "text": "Taxa é baixa" },
+          { "key": "D", "text": "Estratégia é clara" }
+        ],
+        "answer": "A",
+        "explain": "Liquidez manda no uso real."
+      },
+      {
+        "id": 9,
+        "question": "Taxa alta precisa ser justificada por:",
+        "options": [
+          { "key": "A", "text": "Benefício claro (valor entregue)" },
+          { "key": "B", "text": "Marketing" },
+          { "key": "C", "text": "Nome famoso" },
+          { "key": "D", "text": "Promessa" }
+        ],
+        "answer": "A",
+        "explain": "Senão você só paga caro por pouco."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Custo é detalhe" },
+          { "key": "B", "text": "Custo é parte do retorno e importa muito no longo prazo" },
+          { "key": "C", "text": "Liquidez não importa" },
+          { "key": "D", "text": "Estratégia não importa" }
+        ],
+        "answer": "B",
+        "explain": "Custo composto trabalha contra você."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist\n\n- estratégia\n- taxa\n- liquidez\n- risco\n",
+    "pilares": "Pilares\n\n- custo\n- transparência\n- adequação\n"
+  }
+}

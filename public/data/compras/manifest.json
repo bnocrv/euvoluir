@@ -1,11 +1,43 @@
 ﻿{
-    "courseId":  "compras",
-    "title":  "Compras - fundamentos de aquisição e negociação",
-    "lessons":  [
-                    {
-                        "id":  "01-introducao",
-                        "title":  "Aula 01 - Introdução prática",
-                        "file":  "01-introducao.json"
-                    }
-                ]
+  "courseId": "compras",
+  "title": "Compras — do básico ao avançado (processos, negociação, fornecedores, custos e performance)",
+  "lessons": [
+    { "id": "01-introducao", "title": "Aula 01 — O que é compras e por que influencia lucro, prazo e qualidade", "file": "01-introducao.json" },
+    { "id": "02-papel-comprador", "title": "Aula 02 — Papel do comprador: rotina, responsabilidades e interface com áreas", "file": "02-papel-comprador.json" },
+    { "id": "03-ciclo-compras", "title": "Aula 03 — Ciclo de compras: requisição, cotação, pedido e recebimento", "file": "03-ciclo-compras.json" },
+    { "id": "04-politica-compras", "title": "Aula 04 — Política de compras: regras, alçadas e padronização", "file": "04-politica-compras.json" },
+    { "id": "05-categorias-gastos", "title": "Aula 05 — Categorias de gastos: diretos, indiretos e serviços", "file": "05-categorias-gastos.json" },
+
+    { "id": "06-especificacao-demanda", "title": "Aula 06 — Especificação de demanda: como pedir certo para comprar certo", "file": "06-especificacao-demanda.json" },
+    { "id": "07-requisicao-aprovacao", "title": "Aula 07 — Requisição e aprovação: evitando urgências e compras fora de padrão", "file": "07-requisicao-aprovacao.json" },
+    { "id": "08-cotacao-rfq", "title": "Aula 08 — Cotação (RFQ): como comparar propostas de forma justa", "file": "08-cotacao-rfq.json" },
+    { "id": "09-mapas-comparativos", "title": "Aula 09 — Mapa comparativo: preço, prazo, impostos e condições", "file": "09-mapas-comparativos.json" },
+    { "id": "10-criterios-selecao", "title": "Aula 10 — Critérios de seleção: custo total, risco e capacidade do fornecedor", "file": "10-criterios-selecao.json" },
+
+    { "id": "11-homologacao-fornecedores", "title": "Aula 11 — Homologação de fornecedores: cadastro, documentação e compliance", "file": "11-homologacao-fornecedores.json" },
+    { "id": "12-gestao-fornecedores", "title": "Aula 12 — Gestão de fornecedores: relacionamento, desempenho e desenvolvimento", "file": "12-gestao-fornecedores.json" },
+    { "id": "13-sla-contratos", "title": "Aula 13 — SLA e contratos: como transformar combinados em regra", "file": "13-sla-contratos.json" },
+    { "id": "14-incoterms-no-basico", "title": "Aula 14 — Incoterms no básico (quando afeta compras, frete e risco)", "file": "14-incoterms-no-basico.json" },
+    { "id": "15-gestao-prazos-leadtime", "title": "Aula 15 — Prazos e lead time: previsibilidade do pedido ao recebimento", "file": "15-gestao-prazos-leadtime.json" },
+
+    { "id": "16-negociacao-fundamentos", "title": "Aula 16 — Negociação: fundamentos, preparação e objetivos", "file": "16-negociacao-fundamentos.json" },
+    { "id": "17-batna-zopa", "title": "Aula 17 — BATNA e ZOPA: sua alternativa e a zona de acordo", "file": "17-batna-zopa.json" },
+    { "id": "18-tecnicas-negociacao", "title": "Aula 18 — Técnicas de negociação: ancoragem, concessões e troca de valor", "file": "18-tecnicas-negociacao.json" },
+    { "id": "19-renegociacao-contratos", "title": "Aula 19 — Renegociação e reajustes: manter custo sob controle sem romper relação", "file": "19-renegociacao-contratos.json" },
+    { "id": "20-estrategia-categorias", "title": "Aula 20 — Estratégia por categoria: itens críticos, alavancáveis e rotineiros", "file": "20-estrategia-categorias.json" },
+
+    { "id": "21-custo-total-propriedade", "title": "Aula 21 — TCO: custo total de propriedade (o barato que sai caro)", "file": "21-custo-total-propriedade.json" },
+    { "id": "22-analise-precos", "title": "Aula 22 — Análise de preços: histórico, mercado e variação de custos", "file": "22-analise-precos.json" },
+    { "id": "23-impostos-compras", "title": "Aula 23 — Impostos em compras: como tributos mudam o custo real", "file": "23-impostos-compras.json" },
+    { "id": "24-pagamentos-condicoes", "title": "Aula 24 — Condições de pagamento: prazo, desconto e efeito no caixa", "file": "24-pagamentos-condicoes.json" },
+    { "id": "25-recebimento-conformidade", "title": "Aula 25 — Recebimento e conformidade: conferência, divergências e devolução", "file": "25-recebimento-conformidade.json" },
+
+    { "id": "26-qualidade-e-avaliacao", "title": "Aula 26 — Qualidade: inspeção, não conformidade e ações corretivas", "file": "26-qualidade-e-avaliacao.json" },
+    { "id": "27-riscos-compras", "title": "Aula 27 — Gestão de riscos em compras: ruptura, dependência e contingência", "file": "27-riscos-compras.json" },
+    { "id": "28-kpis-compras", "title": "Aula 28 — KPIs de compras: savings, prazo, nível de serviço e aderência", "file": "28-kpis-compras.json" },
+    { "id": "29-procurement-digital", "title": "Aula 29 — Compras digitais: e-procurement, catálogos e automação", "file": "29-procurement-digital.json" },
+    { "id": "30-auditoria-compliance", "title": "Aula 30 — Auditoria e compliance: trilha de compras, ética e prevenção de fraudes", "file": "30-auditoria-compliance.json" },
+
+    { "id": "31-projeto-final", "title": "Aula 31 — Projeto final: desenhando um processo de compras completo (do pedido ao fornecedor)", "file": "31-projeto-final.json" }
+  ]
 }

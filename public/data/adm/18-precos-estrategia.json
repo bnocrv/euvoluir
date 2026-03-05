@@ -1,0 +1,168 @@
+{
+  "id": "18-precos-estrategia",
+  "title": "Aula 18 — Precificação: como formar preço com lógica e estratégia",
+  "steps": [
+    {
+      "title": "Preço é estratégia + matemática",
+      "body": "Preço não é só 'cobrar mais' ou 'cobrar menos'.\nEle define:\n- posicionamento\n- margem\n- volume\n\nRegra:\n- Preço errado destrói o melhor produto."
+    },
+    {
+      "title": "O que precisa entrar no cálculo",
+      "body": "Checklist:\n- custo do produto\n- impostos\n- frete/subsídio\n- embalagem\n- taxa de cartão/marketplace\n- devolução média (se relevante)\n\nRegra:\n- Esquecer 1 item já pode matar a margem."
+    },
+    {
+      "title": "Markup vs margem (onde muita gente erra)",
+      "body": "Markup: quanto você adiciona sobre o custo.\nMargem: quanto sobra sobre o preço.\n\nRegra:\n- Markup e margem não são a mesma coisa."
+    },
+    {
+      "title": "Preço por valor (não só por custo)",
+      "body": "Preço também depende de:\n- diferencial percebido\n- urgência\n- confiança\n\nRegra:\n- Se você entrega valor maior, pode cobrar melhor."
+    },
+    {
+      "title": "Desconto sem destruir marca",
+      "body": "Boas práticas:\n- desconto com motivo (queima, giro, aquisição)\n- limite claro\n- não treinar cliente a esperar promoção\n\nRegra:\n- Desconto constante vira novo preço."
+    },
+    {
+      "title": "Estratégias comuns (quando usar)",
+      "body": "Exemplos:\n- preço de entrada (aquisição)\n- premium (margem e marca)\n- bundle (aumentar ticket)\n- frete embutido (simplificar)\n\nRegra:\n- Estratégia depende do objetivo."
+    },
+    {
+      "title": "Mini prática (45 min) — preço com taxa e frete",
+      "body": "Cenário:\n- custo: 60\n- taxa: 8% do preço\n- frete subsidiado: 10\n- você quer margem de contribuição de 25% no preço\n\nMonte um preço 'aproximado' que faça sentido.\n\nObjetivo:\n- enxergar o efeito da taxa %."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Preço é matemática e estratégia\n- Considere taxas e custos ocultos\n- Markup ≠ margem\n- Desconto precisa ter objetivo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 18 (Administração)",
+    "instructions": "Marque A, B, C ou D. Pense em lógica e posicionamento.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O erro mais comum em precificação é:",
+        "options": [
+          { "key": "A", "text": "Incluir todos os custos e taxas" },
+          { "key": "B", "text": "Esquecer taxas (cartão/marketplace) e achar que a margem está ok" },
+          { "key": "C", "text": "Revisar preço periodicamente" },
+          { "key": "D", "text": "Definir objetivo do preço" }
+        ],
+        "answer": "B",
+        "explain": "Taxa % come preço de forma silenciosa."
+      },
+      {
+        "id": 2,
+        "question": "Markup e margem:",
+        "options": [
+          { "key": "A", "text": "São a mesma coisa" },
+          { "key": "B", "text": "São diferentes e geram confusão" },
+          { "key": "C", "text": "Só existe em indústria" },
+          { "key": "D", "text": "Não impactam resultado" }
+        ],
+        "answer": "B",
+        "explain": "Um é sobre custo; outro é sobre preço."
+      },
+      {
+        "id": 3,
+        "question": "Desconto constante tende a:",
+        "options": [
+          { "key": "A", "text": "Aumentar percepção de valor" },
+          { "key": "B", "text": "Treinar cliente a esperar promoção" },
+          { "key": "C", "text": "Melhorar margem" },
+          { "key": "D", "text": "Eliminar necessidade de controle" }
+        ],
+        "answer": "B",
+        "explain": "Promoção vira novo preço."
+      },
+      {
+        "id": 4,
+        "question": "Preço por valor significa:",
+        "options": [
+          { "key": "A", "text": "Ignorar custo e cobrar qualquer coisa" },
+          { "key": "B", "text": "Considerar o quanto o cliente percebe de benefício e confiança" },
+          { "key": "C", "text": "Sempre cobrar o mais barato" },
+          { "key": "D", "text": "Sempre copiar o concorrente" }
+        ],
+        "answer": "B",
+        "explain": "Valor percebido define teto de preço."
+      },
+      {
+        "id": 5,
+        "question": "Taxa percentual (ex: 10% do preço) é perigosa porque:",
+        "options": [
+          { "key": "A", "text": "Ela é fixa e previsível" },
+          { "key": "B", "text": "Ela cresce conforme você sobe o preço e reduz margem" },
+          { "key": "C", "text": "Ela aumenta margem" },
+          { "key": "D", "text": "Ela não importa" }
+        ],
+        "answer": "B",
+        "explain": "Taxa % come receita na mesma proporção."
+      },
+      {
+        "id": 6,
+        "question": "Copiar preço do concorrente sem comparar custos é ruim porque:",
+        "options": [
+          { "key": "A", "text": "Concorrente sempre está errado" },
+          { "key": "B", "text": "Sua estrutura de custo pode ser diferente" },
+          { "key": "C", "text": "Preço não influencia vendas" },
+          { "key": "D", "text": "Custo não existe" }
+        ],
+        "answer": "B",
+        "explain": "Mesma etiqueta pode significar margens diferentes."
+      },
+      {
+        "id": 7,
+        "question": "Bundle (combo) costuma ajudar quando objetivo é:",
+        "options": [
+          { "key": "A", "text": "Reduzir ticket médio" },
+          { "key": "B", "text": "Aumentar ticket e diluir custos fixos" },
+          { "key": "C", "text": "Aumentar devolução" },
+          { "key": "D", "text": "Eliminar controle" }
+        ],
+        "answer": "B",
+        "explain": "Combo aumenta valor percebido e ticket."
+      },
+      {
+        "id": 8,
+        "question": "Preço premium faz sentido quando:",
+        "options": [
+          { "key": "A", "text": "Não há diferencial" },
+          { "key": "B", "text": "Existe valor percebido (qualidade, marca, serviço) e público disposto" },
+          { "key": "C", "text": "Você quer só volume" },
+          { "key": "D", "text": "Você não conhece custos" }
+        ],
+        "answer": "B",
+        "explain": "Premium exige entrega e confiança."
+      },
+      {
+        "id": 9,
+        "question": "Qual é uma boa prática de desconto?",
+        "options": [
+          { "key": "A", "text": "Descontar sempre" },
+          { "key": "B", "text": "Desconto com objetivo (giro/aquisição/queima) e prazo" },
+          { "key": "C", "text": "Desconto sem cálculo" },
+          { "key": "D", "text": "Desconto escondido" }
+        ],
+        "answer": "B",
+        "explain": "Sem objetivo, você destrói margem e marca."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Preço é só matemática" },
+          { "key": "B", "text": "Preço é matemática e posicionamento" },
+          { "key": "C", "text": "Preço não afeta lucro" },
+          { "key": "D", "text": "Preço pode ser decidido sem custos" }
+        ],
+        "answer": "B",
+        "explain": "Preço comunica valor e sustenta margem."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist do preço\n\n- custo\n- taxas\n- frete\n- margem alvo\n",
+    "pilares": "Pilares\n\n- estratégia\n- margem\n- disciplina\n"
+  }
+}

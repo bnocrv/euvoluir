@@ -1,0 +1,168 @@
+{
+  "id": "30-riscos-controles",
+  "title": "Aula 30 — Riscos e controles: prevenir perdas, fraudes e colapsos operacionais",
+  "steps": [
+    {
+      "title": "Risco é parte do jogo (o problema é não ver)",
+      "body": "Risco é:\n- algo que pode acontecer\n- e causar perda (dinheiro, cliente, reputação, segurança)\n\nRegra:\n- O risco que você não mede é o que te surpreende."
+    },
+    {
+      "title": "Tipos de risco (mapa rápido)",
+      "body": "Exemplos:\n- operacional (erro, gargalo, falha de processo)\n- financeiro (caixa, crédito)\n- compliance (regra/lei)\n- reputação (cliente)\n\nRegra:\n- Um risco 'pequeno' repetido vira grande."
+    },
+    {
+      "title": "Controles: preventivo, detectivo e corretivo",
+      "body": "Preventivo: evita (padrão, validação, segregação).\nDetectivo: detecta (auditoria, amostra, alerta).\nCorretivo: corrige (plano de ação, retrabalho).\n\nRegra:\n- Preventivo é o mais barato."
+    },
+    {
+      "title": "Segregação de função e trilha (sem paranoia)",
+      "body": "Evita que uma pessoa:\n- crie, aprove e execute sozinha\n\nRegra:\n- Controle protege o time e a empresa."
+    },
+    {
+      "title": "Matriz risco (probabilidade x impacto)",
+      "body": "Classifique riscos:\n- baixo impacto / alta probabilidade\n- alto impacto / baixa probabilidade\n\nRegra:\n- Alto impacto merece plano mesmo se raro."
+    },
+    {
+      "title": "Sinais de alerta (red flags) em operação",
+      "body": "Red flags:\n- muita exceção fora do padrão\n- ajustes manuais sem registro\n- falta de trilha de quem fez\n\nRegra:\n- Onde não tem rastro, nasce problema."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de risco do setor",
+      "body": "Liste 10 riscos do seu processo.\n\nPara cada:\n- probabilidade\n- impacto\n- controle preventivo e detectivo\n\nObjetivo:\n- sair do improviso."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Risco é inevitável; surpresa é opcional\n- Controle preventivo é mais barato\n- Segregação e trilha protegem\n- Matriz risco ajuda priorizar\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 30 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O maior problema com risco é:",
+        "options": [
+          { "key": "A", "text": "Ele existir" },
+          { "key": "B", "text": "Não enxergar/medir e ser surpreendido" },
+          { "key": "C", "text": "Ter controle" },
+          { "key": "D", "text": "Ter padrão" }
+        ],
+        "answer": "B",
+        "explain": "Risco invisível vira surpresa cara."
+      },
+      {
+        "id": 2,
+        "question": "Controle preventivo é:",
+        "options": [
+          { "key": "A", "text": "Algo que evita o erro antes de acontecer" },
+          { "key": "B", "text": "Algo que só corrige depois" },
+          { "key": "C", "text": "Algo que não serve" },
+          { "key": "D", "text": "Algo que só existe no financeiro" }
+        ],
+        "answer": "A",
+        "explain": "Prevenir é mais barato que corrigir."
+      },
+      {
+        "id": 3,
+        "question": "Detectivo é um controle que:",
+        "options": [
+          { "key": "A", "text": "Evita sempre" },
+          { "key": "B", "text": "Detecta problema (auditoria, alerta, amostra)" },
+          { "key": "C", "text": "Não mede nada" },
+          { "key": "D", "text": "É só discurso" }
+        ],
+        "answer": "B",
+        "explain": "Ele encontra desvios para agir."
+      },
+      {
+        "id": 4,
+        "question": "Segregação de função serve para:",
+        "options": [
+          { "key": "A", "text": "Uma pessoa controlar tudo sozinha" },
+          { "key": "B", "text": "Reduzir oportunidade de fraude/erro não percebido" },
+          { "key": "C", "text": "Aumentar exceção" },
+          { "key": "D", "text": "Eliminar rastreabilidade" }
+        ],
+        "answer": "B",
+        "explain": "Reduz risco por desenho do processo."
+      },
+      {
+        "id": 5,
+        "question": "Matriz de risco ajuda a:",
+        "options": [
+          { "key": "A", "text": "Escolher cor do uniforme" },
+          { "key": "B", "text": "Priorizar ações por probabilidade e impacto" },
+          { "key": "C", "text": "Ignorar riscos raros" },
+          { "key": "D", "text": "Eliminar necessidade de controle" }
+        ],
+        "answer": "B",
+        "explain": "Prioriza onde colocar energia."
+      },
+      {
+        "id": 6,
+        "question": "Risco alto impacto e baixa probabilidade merece:",
+        "options": [
+          { "key": "A", "text": "Nenhum plano" },
+          { "key": "B", "text": "Plano de contingência e controle" },
+          { "key": "C", "text": "Só torcida" },
+          { "key": "D", "text": "Ignorar sempre" }
+        ],
+        "answer": "B",
+        "explain": "Se acontecer, destrói muito."
+      },
+      {
+        "id": 7,
+        "question": "Onde não há rastro (log), tende a surgir:",
+        "options": [
+          { "key": "A", "text": "Confiança automática" },
+          { "key": "B", "text": "Problema e fraude mais fácil" },
+          { "key": "C", "text": "Qualidade perfeita" },
+          { "key": "D", "text": "Menos erro" }
+        ],
+        "answer": "B",
+        "explain": "Sem trilha, não há accountability."
+      },
+      {
+        "id": 8,
+        "question": "Red flag operacional é:",
+        "options": [
+          { "key": "A", "text": "Pouca exceção e padrão claro" },
+          { "key": "B", "text": "Muitos ajustes manuais sem registro" },
+          { "key": "C", "text": "Auditoria e alerta" },
+          { "key": "D", "text": "Treinamento e checklist" }
+        ],
+        "answer": "B",
+        "explain": "Manual sem registro é porta para erro e fraude."
+      },
+      {
+        "id": 9,
+        "question": "Qual sequência é mais madura?",
+        "options": [
+          { "key": "A", "text": "Corrigir sempre depois" },
+          { "key": "B", "text": "Prevenir quando possível, detectar o resto, e corrigir rápido" },
+          { "key": "C", "text": "Ignorar e reagir" },
+          { "key": "D", "text": "Depender de memória" }
+        ],
+        "answer": "B",
+        "explain": "Você reduz custo total com prevenção."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Surpresa é inevitável" },
+          { "key": "B", "text": "Risco inevitável; surpresa é opcional com controle" },
+          { "key": "C", "text": "Controle é sempre desperdício" },
+          { "key": "D", "text": "Trilha não importa" }
+        ],
+        "answer": "B",
+        "explain": "Controle reduz surpresa e custo."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Tipos de controle\n\n- preventivo\n- detectivo\n- corretivo\n",
+    "pilares": "Pilares\n\n- rastreabilidade\n- governança\n- prevenção\n"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "29-gestao-projetos",
+  "title": "Aula 29 — Gestão de projetos: tirar ideia do papel sem estourar prazo/custo",
+  "steps": [
+    {
+      "title": "Projeto é mudança com começo e fim",
+      "body": "Projeto não é rotina.\nProjeto é:\n- objetivo claro\n- prazo\n- recursos\n- entrega\n\nRegra:\n- Se não tem entrega definida, é só atividade."
+    },
+    {
+      "title": "Escopo, prazo, custo (o triângulo real)",
+      "body": "Se você muda um lado:\n- os outros mudam.\n\nRegra:\n- Não existe 'faz tudo, rápido e barato' sem perder qualidade."
+    },
+    {
+      "title": "Plano mínimo do projeto (o que evita bagunça)",
+      "body": "Mínimo:\n- objetivo\n- entregáveis\n- responsáveis\n- datas\n- riscos\n\nRegra:\n- Projeto sem dono vira ninguém resolvendo."
+    },
+    {
+      "title": "Quebrar em tarefas e marcos",
+      "body": "Boas práticas:\n- tarefas pequenas\n- marcos (milestones)\n- definição de pronto\n\nRegra:\n- Se não dá pra medir progresso, você não controla."
+    },
+    {
+      "title": "Gestão de risco (não é pessimismo)",
+      "body": "Risco = evento que pode acontecer.\n\nFaça:\n- probabilidade\n- impacto\n- plano de mitigação\n\nRegra:\n- Risco ignorado vira surpresa."
+    },
+    {
+      "title": "Comunicação do projeto (o que mata é ruído)",
+      "body": "Ritual simples:\n- update semanal\n- bloqueios\n- decisão pendente\n\nRegra:\n- Falta de comunicação custa prazo."
+    },
+    {
+      "title": "Mini prática (45 min) — plano mínimo",
+      "body": "Escolha um projeto real (ex: implantar inventário cíclico).\n\nDefina:\n- objetivo\n- 5 entregas\n- dono por entrega\n- 3 riscos e mitigação\n\nObjetivo:\n- tirar do 'vai dar' para o controlável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Projeto é mudança com entrega\n- Triângulo: escopo/prazo/custo\n- Dono e plano mínimo\n- Risco e comunicação evitam surpresa\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 29 (Administração)",
+    "instructions": "Marque A, B, C ou D. Pense em controle de projeto.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Projeto é:",
+        "options": [
+          { "key": "A", "text": "Rotina eterna" },
+          { "key": "B", "text": "Mudança com começo e fim e entrega definida" },
+          { "key": "C", "text": "Qualquer tarefa" },
+          { "key": "D", "text": "Reunião" }
+        ],
+        "answer": "B",
+        "explain": "Projeto tem objetivo e entrega."
+      },
+      {
+        "id": 2,
+        "question": "O triângulo clássico de projeto envolve:",
+        "options": [
+          { "key": "A", "text": "Escopo, prazo, custo" },
+          { "key": "B", "text": "Logo, cor, slogan" },
+          { "key": "C", "text": "Sorte, carisma, pressão" },
+          { "key": "D", "text": "Só prazo" }
+        ],
+        "answer": "A",
+        "explain": "Mudou um, impacta os outros."
+      },
+      {
+        "id": 3,
+        "question": "Um plano mínimo deveria conter:",
+        "options": [
+          { "key": "A", "text": "Só motivação" },
+          { "key": "B", "text": "Objetivo, entregáveis, responsáveis, datas, riscos" },
+          { "key": "C", "text": "Somente brainstorming" },
+          { "key": "D", "text": "Somente orçamento" }
+        ],
+        "answer": "B",
+        "explain": "É o kit para controlar execução."
+      },
+      {
+        "id": 4,
+        "question": "Projeto sem dono tende a:",
+        "options": [
+          { "key": "A", "text": "Andar sozinho" },
+          { "key": "B", "text": "Virar 'ninguém resolve'" },
+          { "key": "C", "text": "Ficar mais barato" },
+          { "key": "D", "text": "Eliminar risco" }
+        ],
+        "answer": "B",
+        "explain": "Responsabilidade difusa mata execução."
+      },
+      {
+        "id": 5,
+        "question": "Quebrar em tarefas pequenas ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Esconde atraso" },
+          { "key": "B", "text": "Permite medir progresso e detectar bloqueio cedo" },
+          { "key": "C", "text": "Aumenta confusão" },
+          { "key": "D", "text": "Dispensa comunicação" }
+        ],
+        "answer": "B",
+        "explain": "Controle depende de visibilidade."
+      },
+      {
+        "id": 6,
+        "question": "Risco em projeto é:",
+        "options": [
+          { "key": "A", "text": "Problema que já aconteceu" },
+          { "key": "B", "text": "Evento que pode acontecer e impactar entrega" },
+          { "key": "C", "text": "Opinião" },
+          { "key": "D", "text": "Algo que não precisa ser tratado" }
+        ],
+        "answer": "B",
+        "explain": "Risco é possibilidade futura."
+      },
+      {
+        "id": 7,
+        "question": "Mitigação é:",
+        "options": [
+          { "key": "A", "text": "Ignorar risco" },
+          { "key": "B", "text": "Ação para reduzir probabilidade/impacto" },
+          { "key": "C", "text": "Culpar alguém" },
+          { "key": "D", "text": "Aumentar escopo" }
+        ],
+        "answer": "B",
+        "explain": "Você reduz chance ou dano."
+      },
+      {
+        "id": 8,
+        "question": "Se pedem mais escopo mantendo prazo e custo iguais, o gestor deve:",
+        "options": [
+          { "key": "A", "text": "Aceitar sem ajustar nada" },
+          { "key": "B", "text": "Negociar: ou aumenta prazo/custo ou reduz outro entregável" },
+          { "key": "C", "text": "Prometer e torcer" },
+          { "key": "D", "text": "Ignorar o pedido" }
+        ],
+        "answer": "B",
+        "explain": "Triângulo não perdoa."
+      },
+      {
+        "id": 9,
+        "question": "Update semanal bom deveria ter:",
+        "options": [
+          { "key": "A", "text": "Só boas notícias" },
+          { "key": "B", "text": "Progresso, bloqueios, decisões pendentes" },
+          { "key": "C", "text": "Só opinião" },
+          { "key": "D", "text": "Só reclamação" }
+        ],
+        "answer": "B",
+        "explain": "O gestor precisa de visibilidade e decisões."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Projeto sem definição de pronto é controlável" },
+          { "key": "B", "text": "Sem medir progresso, você não controla" },
+          { "key": "C", "text": "Risco é pessimismo" },
+          { "key": "D", "text": "Dono não importa" }
+        ],
+        "answer": "B",
+        "explain": "Controle exige critério objetivo."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Plano mínimo\n\n- objetivo\n- entregáveis\n- donos\n- riscos\n",
+    "pilares": "Pilares\n\n- clareza\n- controle\n- comunicação\n"
+  }
+}

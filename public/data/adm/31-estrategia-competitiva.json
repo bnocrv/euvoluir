@@ -1,0 +1,168 @@
+{
+  "id": "31-lideranca-gestao-times",
+  "title": "Aula 31 — Liderança e gestão de times: performance sem microgerenciar",
+  "steps": [
+    {
+      "title": "Liderar não é mandar: é alinhar e remover obstáculos",
+      "body": "Gestão boa:\n- deixa claro o que importa\n- cria padrão de decisão\n- remove bloqueios\n\nRegra:\n- Time bom sem direção vira energia dispersa."
+    },
+    {
+      "title": "Papel do gestor: 3 responsabilidades",
+      "body": "1) Direção: meta e prioridade.\n2) Sistema: processo, recursos, padrão.\n3) Pessoas: desenvolvimento e confiança.\n\nRegra:\n- Gestor não faz tudo: faz o time entregar."
+    },
+    {
+      "title": "Confiança e expectativa (o que reduz conflito)",
+      "body": "Conflito cresce quando:\n- expectativa não foi combinada\n- regra muda no meio\n\nRegra:\n- Expectativa explícita evita cobrança tóxica."
+    },
+    {
+      "title": "Delegação madura (não é largar)",
+      "body": "Delegar bem inclui:\n- definir resultado\n- definir limite (prazo/qualidade)\n- combinar checkpoints\n\nRegra:\n- Delegar sem contexto vira erro previsível."
+    },
+    {
+      "title": "Feedback útil (SBI simplificado)",
+      "body": "SBI:\n- Situação\n- Comportamento\n- Impacto\n\nRegra:\n- Feedback bom fala de comportamento, não de personalidade."
+    },
+    {
+      "title": "Microgerenciamento: por que destrói performance",
+      "body": "Microgerenciar causa:\n- baixa autonomia\n- medo de errar\n- lentidão por aprovação\n\nRegra:\n- Controle excessivo cria gargalo no gestor."
+    },
+    {
+      "title": "Mini prática (45 min) — delegação com check-ins",
+      "body": "Escolha uma atividade recorrente (ex: inventário cíclico).\n\nDefina:\n- resultado esperado\n- padrão de qualidade\n- 2 checkpoints\n- critério de pronto\n\nObjetivo:\n- delegar sem perder controle."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Gestor alinha, estrutura e desenvolve\n- Expectativas explícitas reduzem conflito\n- Delegação precisa de limites e checkpoints\n- Feedback por comportamento\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 31 (Administração)",
+    "instructions": "Marque A, B, C ou D. Foque em liderança prática.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O papel central do gestor é:",
+        "options": [
+          { "key": "A", "text": "Fazer tudo sozinho para garantir" },
+          { "key": "B", "text": "Alinhar direção e remover obstáculos para o time entregar" },
+          { "key": "C", "text": "Controlar cada detalhe" },
+          { "key": "D", "text": "Evitar metas" }
+        ],
+        "answer": "B",
+        "explain": "Gestão é performance via sistema e pessoas."
+      },
+      {
+        "id": 2,
+        "question": "Expectativa não combinada costuma gerar:",
+        "options": [
+          { "key": "A", "text": "Clareza" },
+          { "key": "B", "text": "Conflito e cobrança confusa" },
+          { "key": "C", "text": "Autonomia" },
+          { "key": "D", "text": "Mais confiança" }
+        ],
+        "answer": "B",
+        "explain": "Sem acordo, cada um cria sua regra."
+      },
+      {
+        "id": 3,
+        "question": "Delegar bem inclui:",
+        "options": [
+          { "key": "A", "text": "Só dizer 'faz aí'" },
+          { "key": "B", "text": "Definir resultado, limites e checkpoints" },
+          { "key": "C", "text": "Nunca acompanhar" },
+          { "key": "D", "text": "Mudar o padrão toda hora" }
+        ],
+        "answer": "B",
+        "explain": "Delegação é autonomia com alinhamento."
+      },
+      {
+        "id": 4,
+        "question": "Feedback útil deve focar em:",
+        "options": [
+          { "key": "A", "text": "Personalidade" },
+          { "key": "B", "text": "Comportamento e impacto" },
+          { "key": "C", "text": "Humilhação pública" },
+          { "key": "D", "text": "Reclamação genérica" }
+        ],
+        "answer": "B",
+        "explain": "Comportamento é ajustável e específico."
+      },
+      {
+        "id": 5,
+        "question": "SBI significa:",
+        "options": [
+          { "key": "A", "text": "Situação, comportamento, impacto" },
+          { "key": "B", "text": "Sistema, burocracia, imposição" },
+          { "key": "C", "text": "Sorte, braço, intuição" },
+          { "key": "D", "text": "Slogan, branding, imagem" }
+        ],
+        "answer": "A",
+        "explain": "É um formato simples e objetivo."
+      },
+      {
+        "id": 6,
+        "question": "Microgerenciamento tende a:",
+        "options": [
+          { "key": "A", "text": "Aumentar autonomia" },
+          { "key": "B", "text": "Criar gargalo no gestor e diminuir velocidade" },
+          { "key": "C", "text": "Reduzir fila" },
+          { "key": "D", "text": "Melhorar criatividade sempre" }
+        ],
+        "answer": "B",
+        "explain": "Tudo vira fila de aprovação."
+      },
+      {
+        "id": 7,
+        "question": "Um gestor que faz tudo sozinho geralmente:",
+        "options": [
+          { "key": "A", "text": "Cria time mais forte" },
+          { "key": "B", "text": "Cria dependência e limita crescimento" },
+          { "key": "C", "text": "Elimina risco" },
+          { "key": "D", "text": "Melhora delegação" }
+        ],
+        "answer": "B",
+        "explain": "O time não se desenvolve e o gestor vira gargalo."
+      },
+      {
+        "id": 8,
+        "question": "Checkpoints em delegação servem para:",
+        "options": [
+          { "key": "A", "text": "Punir o time" },
+          { "key": "B", "text": "Detectar desvio cedo e ajustar rumo" },
+          { "key": "C", "text": "Aumentar retrabalho" },
+          { "key": "D", "text": "Evitar autonomia" }
+        ],
+        "answer": "B",
+        "explain": "Corrige no meio, não no fim."
+      },
+      {
+        "id": 9,
+        "question": "Confiança em time aumenta quando:",
+        "options": [
+          { "key": "A", "text": "Regra muda sem avisar" },
+          { "key": "B", "text": "Meta e padrão estão claros e consistentes" },
+          { "key": "C", "text": "Não existe feedback" },
+          { "key": "D", "text": "Só existe cobrança" }
+        ],
+        "answer": "B",
+        "explain": "Consistência reduz medo e ruído."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Gestão é controlar tudo" },
+          { "key": "B", "text": "Gestão é fazer o time entregar com sistema e direção" },
+          { "key": "C", "text": "Delegar é abandonar" },
+          { "key": "D", "text": "Feedback é atacar a pessoa" }
+        ],
+        "answer": "B",
+        "explain": "Gestor constrói performance sustentável."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Rotinas\n\n- metas claras\n- check-ins\n- feedback\n",
+    "pilares": "Pilares\n\n- direção\n- sistema\n- pessoas\n"
+  }
+}

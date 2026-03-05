@@ -1,0 +1,168 @@
+{
+  "id": "36-estrategia-competitiva",
+  "title": "Aula 36 — Estratégia competitiva: escolher como vencer (não só trabalhar mais)",
+  "steps": [
+    {
+      "title": "Estratégia é escolha (e renúncia)",
+      "body": "Estratégia é decidir:\n- onde jogar (mercado/segmento)\n- como vencer (diferencial)\n- o que NÃO fazer\n\nRegra:\n- Sem renúncia, você só tem lista de desejos."
+    },
+    {
+      "title": "Vantagem competitiva: custo ou diferenciação (na prática)",
+      "body": "Dois caminhos comuns:\n- liderança em custo (processo, escala, eficiência)\n- diferenciação (serviço, qualidade, velocidade, marca)\n\nRegra:\n- Tentar ser o mais barato e o mais premium é instável."
+    },
+    {
+      "title": "Trade-offs e coerência (o que sustenta a estratégia)",
+      "body": "Se você promete:\n- premium + prazo rápido\n\nVocê precisa:\n- processo e controle\n- não só 'vontade'\n\nRegra:\n- Estratégia sem operação coerente vira propaganda."
+    },
+    {
+      "title": "Mapa de concorrência (alternativas reais)",
+      "body": "Concorrente é:\n- empresa direta\n- substituto (outra solução)\n- 'não fazer nada'\n\nRegra:\n- Você precisa ganhar do hábito atual do cliente."
+    },
+    {
+      "title": "Posicionamento exige prova",
+      "body": "Se você diz:\n- 'entrega mais rápida'\n\nProva:\n- OTIF, prazos reais, política de compensação\n\nRegra:\n- Estratégia precisa ser mensurável."
+    },
+    {
+      "title": "Crescer mantendo margem (o ponto cego)",
+      "body": "Crescer sem olhar:\n- CAC\n- margem\n- capacidade\n\nvira:\n- crescimento que quebra\n\nRegra:\n- Crescimento ruim é custo disfarçado."
+    },
+    {
+      "title": "Mini prática (45 min) — 1 escolha clara",
+      "body": "Defina:\n- 1 segmento foco\n- 1 diferencial principal\n- 1 coisa que você vai parar de fazer\n- 1 métrica de prova\n\nObjetivo:\n- estratégia com renúncia."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Estratégia é escolha\n- Custo vs diferenciação\n- Concorrente inclui substituto e não decisão\n- Estratégia precisa de operação e prova\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 36 (Administração)",
+    "instructions": "Marque A, B, C ou D. Foque em trade-off e coerência.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Estratégia, no sentido forte, é:",
+        "options": [
+          { "key": "A", "text": "Trabalhar mais" },
+          { "key": "B", "text": "Escolher onde jogar e como vencer, aceitando renúncias" },
+          { "key": "C", "text": "Fazer de tudo para todo mundo" },
+          { "key": "D", "text": "Copiar concorrente" }
+        ],
+        "answer": "B",
+        "explain": "Sem renúncia não há foco estratégico."
+      },
+      {
+        "id": 2,
+        "question": "Um risco de tentar ser 'mais barato' e 'mais premium' ao mesmo tempo é:",
+        "options": [
+          { "key": "A", "text": "Coerência perfeita" },
+          { "key": "B", "text": "Modelo instável e promessa incoerente" },
+          { "key": "C", "text": "Margem sempre aumentar" },
+          { "key": "D", "text": "Competição desaparecer" }
+        ],
+        "answer": "B",
+        "explain": "As operações exigidas são conflitantes."
+      },
+      {
+        "id": 3,
+        "question": "Concorrente inclui:",
+        "options": [
+          { "key": "A", "text": "Apenas empresas diretas" },
+          { "key": "B", "text": "Empresas, substitutos e a não decisão" },
+          { "key": "C", "text": "Apenas quem tem preço baixo" },
+          { "key": "D", "text": "Apenas quem tem mais seguidores" }
+        ],
+        "answer": "B",
+        "explain": "Cliente escolhe entre alternativas, inclusive não comprar."
+      },
+      {
+        "id": 4,
+        "question": "Estratégia sem operação coerente vira:",
+        "options": [
+          { "key": "A", "text": "Vantagem sustentável" },
+          { "key": "B", "text": "Propaganda sem entrega" },
+          { "key": "C", "text": "Otimização" },
+          { "key": "D", "text": "Diferencial real" }
+        ],
+        "answer": "B",
+        "explain": "Promessa sem sistema vira frustração."
+      },
+      {
+        "id": 5,
+        "question": "Prova do posicionamento é importante porque:",
+        "options": [
+          { "key": "A", "text": "Cliente compra só pela frase" },
+          { "key": "B", "text": "Reduz risco e sustenta confiança" },
+          { "key": "C", "text": "Elimina necessidade de processo" },
+          { "key": "D", "text": "Dispensa métricas" }
+        ],
+        "answer": "B",
+        "explain": "Prova reduz dúvida e aumenta conversão."
+      },
+      {
+        "id": 6,
+        "question": "Um exemplo de estratégia de custo é:",
+        "options": [
+          { "key": "A", "text": "Processo eficiente e escala para reduzir custo unitário" },
+          { "key": "B", "text": "Prometer tudo sem medir" },
+          { "key": "C", "text": "Só trocar a logo" },
+          { "key": "D", "text": "Ter slogans" }
+        ],
+        "answer": "A",
+        "explain": "Custo depende de operação e escala."
+      },
+      {
+        "id": 7,
+        "question": "Crescimento 'que quebra' costuma acontecer quando se ignora:",
+        "options": [
+          { "key": "A", "text": "CAC, margem e capacidade" },
+          { "key": "B", "text": "Cor do site" },
+          { "key": "C", "text": "Quantidade de posts" },
+          { "key": "D", "text": "Uniforme" }
+        ],
+        "answer": "A",
+        "explain": "Crescer aumenta carga e custo."
+      },
+      {
+        "id": 8,
+        "question": "Renúncia estratégica significa:",
+        "options": [
+          { "key": "A", "text": "Fazer tudo" },
+          { "key": "B", "text": "Parar de fazer algo para fortalecer foco e entrega" },
+          { "key": "C", "text": "Desistir do negócio" },
+          { "key": "D", "text": "Nunca mudar" }
+        ],
+        "answer": "B",
+        "explain": "Você escolhe onde vencer."
+      },
+      {
+        "id": 9,
+        "question": "Se você promete prazo muito curto, a consequência operacional provável é:",
+        "options": [
+          { "key": "A", "text": "Nenhum impacto" },
+          { "key": "B", "text": "Precisa de capacidade, controle e custo maior (ou eficiência real)" },
+          { "key": "C", "text": "Fila some automaticamente" },
+          { "key": "D", "text": "Qualidade melhora sem processo" }
+        ],
+        "answer": "B",
+        "explain": "Prazo curto exige sistema."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Estratégia é lista de desejos" },
+          { "key": "B", "text": "Estratégia precisa ser mensurável e coerente com operação" },
+          { "key": "C", "text": "Estratégia dispensa métricas" },
+          { "key": "D", "text": "Estratégia é só marketing" }
+        ],
+        "answer": "B",
+        "explain": "Sem prova, vira discurso."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Escolhas\n\n- onde jogar\n- como vencer\n- renúncia\n- métrica de prova\n",
+    "pilares": "Pilares\n\n- foco\n- coerência\n- mensuração\n"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "15-custos-fixos-variaveis",
+  "title": "Aula 15 — Custos fixos e variáveis: estrutura de custo, alavancagem e ponto de equilíbrio",
+  "steps": [
+    {
+      "title": "Custo fixo x custo variável (bem simples)",
+      "body": "Custo fixo:\n- existe mesmo sem vender (aluguel, salários fixos, sistemas)\n\nCusto variável:\n- cresce com a venda (comissão, taxa, frete por pedido, matéria-prima)\n\nRegra:\n- Se vende zero, o fixo continua batendo na porta."
+    },
+    {
+      "title": "Por que isso muda decisões",
+      "body": "Estrutura de custo define:\n- quanta venda você precisa para \"se pagar\"\n- sensibilidade a queda de receita\n\nRegra:\n- Negócio com fixo alto é mais vulnerável a meses ruins."
+    },
+    {
+      "title": "Ponto de equilíbrio (o número que todo gestor deveria saber)",
+      "body": "Ponto de equilíbrio é:\n- quanto você precisa vender para não ter prejuízo\n\nIdeia:\n- contribuição (margem) paga o fixo\n\nRegra:\n- Se você não sabe seu ponto de equilíbrio, você não sabe seu risco."
+    },
+    {
+      "title": "Contribuição: o que realmente paga o fixo",
+      "body": "Contribuição (simplificada):\n- preço - custos variáveis\n\nEssa sobra paga:\n- custos fixos\n- depois vira lucro\n\nRegra:\n- Sem contribuição, volume só aumenta trabalho."
+    },
+    {
+      "title": "Alavancagem operacional (sem jargão)",
+      "body": "Quando o fixo é alto:\n- no mês bom, lucro cresce rápido\n- no mês ruim, prejuízo cresce rápido\n\nRegra:\n- Fixos são amplificador (para bem e para mal)."
+    },
+    {
+      "title": "Como usar isso na prática",
+      "body": "Perguntas úteis:\n- quais fixos podem virar variáveis?\n- onde o variável está vazando?\n- sua contribuição suporta o fixo?\n\nRegra:\n- Melhorar contribuição ou reduzir fixo muda o jogo."
+    },
+    {
+      "title": "Mini prática (45 min) — seu ponto de equilíbrio (estimado)",
+      "body": "Faça uma estimativa:\n- total de custos fixos do mês\n- contribuição média por venda (ou %)\n\nCalcule:\n- quantas vendas (ou receita) precisa para cobrir o fixo\n\nObjetivo:\n- ter um número de risco."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Fixo não depende de venda; variável depende\n- Estrutura define vulnerabilidade\n- Ponto de equilíbrio é venda mínima para não perder\n- Contribuição paga fixo\n- Fixos são amplificador (alavancagem)\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 15 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Custo fixo é aquele que:",
+        "options": [
+          { "key": "A", "text": "Aumenta com cada venda" },
+          { "key": "B", "text": "Existe mesmo se vender zero" },
+          { "key": "C", "text": "Só aparece no mês bom" },
+          { "key": "D", "text": "Não importa" }
+        ],
+        "answer": "B",
+        "explain": "Fixo bate todo mês."
+      },
+      {
+        "id": 2,
+        "question": "Custo variável é aquele que:",
+        "options": [
+          { "key": "A", "text": "Não muda com vendas" },
+          { "key": "B", "text": "Cresce conforme você vende" },
+          { "key": "C", "text": "É sempre aluguel" },
+          { "key": "D", "text": "É sempre salário fixo" }
+        ],
+        "answer": "B",
+        "explain": "Variável acompanha volume."
+      },
+      {
+        "id": 3,
+        "question": "Ponto de equilíbrio é:",
+        "options": [
+          { "key": "A", "text": "O lucro máximo" },
+          { "key": "B", "text": "A venda mínima para não ter prejuízo" },
+          { "key": "C", "text": "A dívida mínima" },
+          { "key": "D", "text": "O desconto máximo" }
+        ],
+        "answer": "B",
+        "explain": "É a linha do 'não perder'."
+      },
+      {
+        "id": 4,
+        "question": "A contribuição (simplificada) é:",
+        "options": [
+          { "key": "A", "text": "Preço - custos variáveis" },
+          { "key": "B", "text": "Preço + custo" },
+          { "key": "C", "text": "Custo fixo - preço" },
+          { "key": "D", "text": "Imposto - lucro" }
+        ],
+        "answer": "A",
+        "explain": "Essa sobra paga o fixo."
+      },
+      {
+        "id": 5,
+        "question": "Negócio com fixo alto tende a ser:",
+        "options": [
+          { "key": "A", "text": "Menos vulnerável" },
+          { "key": "B", "text": "Mais vulnerável a meses ruins" },
+          { "key": "C", "text": "Imune a queda" },
+          { "key": "D", "text": "Sempre lucrativo" }
+        ],
+        "answer": "B",
+        "explain": "O fixo não cai quando a receita cai."
+      },
+      {
+        "id": 6,
+        "question": "Alavancagem operacional significa que fixos:",
+        "options": [
+          { "key": "A", "text": "Amplificam resultado (bom e ruim)" },
+          { "key": "B", "text": "Eliminam risco" },
+          { "key": "C", "text": "Garantem lucro" },
+          { "key": "D", "text": "Não influenciam" }
+        ],
+        "answer": "A",
+        "explain": "O mesmo fixo pode turbinar lucro ou prejuízo."
+      },
+      {
+        "id": 7,
+        "question": "Se a contribuição por venda é negativa, vender mais:",
+        "options": [
+          { "key": "A", "text": "Melhora a situação" },
+          { "key": "B", "text": "Piora (multiplica prejuízo)" },
+          { "key": "C", "text": "Não muda nada" },
+          { "key": "D", "text": "Elimina fixo" }
+        ],
+        "answer": "B",
+        "explain": "Você multiplica perdas."
+      },
+      {
+        "id": 8,
+        "question": "Saber ponto de equilíbrio ajuda a:",
+        "options": [
+          { "key": "A", "text": "Entender risco e meta mínima de receita" },
+          { "key": "B", "text": "Escolher cor do produto" },
+          { "key": "C", "text": "Ignorar custo" },
+          { "key": "D", "text": "Aumentar imposto" }
+        ],
+        "answer": "A",
+        "explain": "Você sabe o mínimo para sobreviver."
+      },
+      {
+        "id": 9,
+        "question": "Um exemplo de variável é:",
+        "options": [
+          { "key": "A", "text": "Comissão por venda" },
+          { "key": "B", "text": "Aluguel" },
+          { "key": "C", "text": "Salário fixo mensal" },
+          { "key": "D", "text": "Assinatura anual" }
+        ],
+        "answer": "A",
+        "explain": "Cresce com as vendas."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Fixos não importam" },
+          { "key": "B", "text": "Estrutura de custo define vulnerabilidade e ponto de equilíbrio" },
+          { "key": "C", "text": "Só receita importa" },
+          { "key": "D", "text": "Ponto de equilíbrio é luxo" }
+        ],
+        "answer": "B",
+        "explain": "Sem isso, você não mede risco."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ponto de equilíbrio\n\n- fixo mensal\n- contribuição média\n- receita/vendas mínimas\n",
+    "pilares": "Pilares\n\n- estrutura de custo\n- contribuição\n- risco\n"
+  }
+}

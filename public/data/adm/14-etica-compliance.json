@@ -1,0 +1,168 @@
+{
+  "id": "14-etica-compliance",
+  "title": "Aula 14 — Ética e compliance: regras, riscos e decisões difíceis",
+  "steps": [
+    {
+      "title": "Ética x compliance (sem confusão)",
+      "body": "Compliance = seguir regras (leis, políticas).\nÉtica = escolher o certo mesmo quando a regra não cobre.\n\nRegra:\n- Compliance é mínimo; ética é direção."
+    },
+    {
+      "title": "Risco real: pequenos atalhos viram padrão",
+      "body": "Atalhos comuns:\n- “só dessa vez”\n- “todo mundo faz”\n- “não vai dar nada”\n\nRegra:\n- Repetição cria cultura de risco."
+    },
+    {
+      "title": "Conflito de interesse",
+      "body": "Conflito acontece quando:\n- benefício pessoal pode influenciar decisão\n\nExemplo:\n- escolher fornecedor por amizade\n\nRegra:\n- Transparência reduz risco."
+    },
+    {
+      "title": "Fraude e controles (sem paranoia, com método)",
+      "body": "Triângulo da fraude:\n- oportunidade\n- pressão\n- racionalização\n\nControles úteis:\n- segregação de função\n- auditoria simples\n- trilha de aprovação\n\nRegra:\n- Controle não é desconfiança: é proteção do sistema."
+    },
+    {
+      "title": "Dilemas típicos",
+      "body": "Dilemas reais:\n- bater meta vs manter padrão\n- encobrir erro vs reportar\n- privilegiar cliente amigo vs regra\n\nRegra:\n- Decisão ética precisa ser sustentável e explicável."
+    },
+    {
+      "title": "Como decidir em dilema",
+      "body": "Perguntas úteis:\n- eu explicaria isso em público?\n- isso vira regra se todo mundo fizer?\n- qual o risco de longo prazo?\n\nRegra:\n- O custo do atalho aparece depois."
+    },
+    {
+      "title": "Mini prática (45 min) — decisão difícil",
+      "body": "Cenário:\n- Para bater meta, alguém propõe ignorar conferência final.\n\nEscreva:\n- risco imediato\n- risco futuro\n- alternativa que preserva padrão\n\nObjetivo:\n- pensar como gestor responsável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Compliance é regra; ética é escolha certa\n- Atalho repetido vira cultura\n- Controles protegem o sistema\n- Dilemas exigem visão de longo prazo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 14 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Qual é a diferença correta?",
+        "options": [
+          { "key": "A", "text": "Ética é seguir regras; compliance é opinião" },
+          { "key": "B", "text": "Compliance é seguir regras; ética é decidir certo quando regra não cobre" },
+          { "key": "C", "text": "São iguais" },
+          { "key": "D", "text": "Compliance é opcional" }
+        ],
+        "answer": "B",
+        "explain": "Compliance é mínimo; ética guia decisões além da regra."
+      },
+      {
+        "id": 2,
+        "question": "O maior perigo do 'só dessa vez' é:",
+        "options": [
+          { "key": "A", "text": "Economizar tempo" },
+          { "key": "B", "text": "Virar padrão e criar cultura de atalho" },
+          { "key": "C", "text": "Aumentar qualidade" },
+          { "key": "D", "text": "Eliminar risco" }
+        ],
+        "answer": "B",
+        "explain": "Repetição normaliza o risco."
+      },
+      {
+        "id": 3,
+        "question": "Conflito de interesse é quando:",
+        "options": [
+          { "key": "A", "text": "Você escolhe o melhor fornecedor com critério" },
+          { "key": "B", "text": "Benefício pessoal pode influenciar a decisão" },
+          { "key": "C", "text": "Você pede cotação" },
+          { "key": "D", "text": "Você registra pedido no sistema" }
+        ],
+        "answer": "B",
+        "explain": "Risco de decisão enviesada."
+      },
+      {
+        "id": 4,
+        "question": "Segregação de função serve para:",
+        "options": [
+          { "key": "A", "text": "Aumentar oportunidade de fraude" },
+          { "key": "B", "text": "Reduzir oportunidade (ninguém controla tudo sozinho)" },
+          { "key": "C", "text": "Criar burocracia sem sentido" },
+          { "key": "D", "text": "Evitar medir" }
+        ],
+        "answer": "B",
+        "explain": "Reduz risco por desenho do processo."
+      },
+      {
+        "id": 5,
+        "question": "Triângulo da fraude inclui:",
+        "options": [
+          { "key": "A", "text": "Sorte, carisma, pressa" },
+          { "key": "B", "text": "Oportunidade, pressão, racionalização" },
+          { "key": "C", "text": "Marketing, vendas, finanças" },
+          { "key": "D", "text": "Tecnologia, RH, logística" }
+        ],
+        "answer": "B",
+        "explain": "Modelo clássico de risco."
+      },
+      {
+        "id": 6,
+        "question": "Ignorar conferência para bater meta tende a:",
+        "options": [
+          { "key": "A", "text": "Reduzir devolução" },
+          { "key": "B", "text": "Aumentar erro e custo no pós-venda" },
+          { "key": "C", "text": "Aumentar acurácia" },
+          { "key": "D", "text": "Eliminar retrabalho" }
+        ],
+        "answer": "B",
+        "explain": "Atalho cria custo futuro."
+      },
+      {
+        "id": 7,
+        "question": "Boa pergunta ética é:",
+        "options": [
+          { "key": "A", "text": "Eu conseguiria explicar isso em público?" },
+          { "key": "B", "text": "Como esconder melhor?" },
+          { "key": "C", "text": "Quem eu culpo?" },
+          { "key": "D", "text": "Dá pra fazer sem registro?" }
+        ],
+        "answer": "A",
+        "explain": "Testa transparência e sustentabilidade."
+      },
+      {
+        "id": 8,
+        "question": "Controle é melhor definido como:",
+        "options": [
+          { "key": "A", "text": "Desconfiança do time" },
+          { "key": "B", "text": "Proteção do sistema e das pessoas" },
+          { "key": "C", "text": "Algo inútil" },
+          { "key": "D", "text": "Algo que só existe em empresa grande" }
+        ],
+        "answer": "B",
+        "explain": "Evita risco e injustiça."
+      },
+      {
+        "id": 9,
+        "question": "Quando a regra não cobre um caso, o gestor deve:",
+        "options": [
+          { "key": "A", "text": "Fazer qualquer coisa" },
+          { "key": "B", "text": "Usar critério ético e criar precedente claro" },
+          { "key": "C", "text": "Ocultar decisão" },
+          { "key": "D", "text": "Ignorar impacto" }
+        ],
+        "answer": "B",
+        "explain": "Ética orienta decisões fora do manual."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Atalho sempre compensa" },
+          { "key": "B", "text": "O custo do atalho aparece depois" },
+          { "key": "C", "text": "Compliance é só burocracia" },
+          { "key": "D", "text": "Controle atrapalha sempre" }
+        ],
+        "answer": "B",
+        "explain": "Risco e custo migram para o futuro."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Controles simples\n\n- segregação\n- trilha de aprovação\n- auditoria amostral\n",
+    "pilares": "Pilares\n\n- transparência\n- sustentabilidade\n- risco\n"
+  }
+}

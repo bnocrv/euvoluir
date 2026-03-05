@@ -1,0 +1,168 @@
+{
+  "id": "38-crescimento-escalabilidade",
+  "title": "Aula 38 — Crescimento e escalabilidade: crescer sem perder controle",
+  "steps": [
+    {
+      "title": "Crescer não é só vender mais",
+      "body": "Crescimento real considera:\n- capacidade\n- caixa\n- qualidade\n- atendimento\n\nRegra:\n- Crescimento sem estrutura vira caos."
+    },
+    {
+      "title": "Escalabilidade: o que cresce sem crescer custo igual",
+      "body": "Escalável é:\n- processo padronizado\n- tecnologia apropriada\n- treinamento\n\nRegra:\n- Escala exige repetibilidade."
+    },
+    {
+      "title": "Gargalos mudam com crescimento",
+      "body": "Hoje o gargalo pode ser:\n- separação\n\nAmanhã:\n- conferência\n- transporte\n\nRegra:\n- Crescimento troca gargalos; não elimina."
+    },
+    {
+      "title": "Caixa: o freio invisível",
+      "body": "Crescer consome caixa via:\n- estoque\n- prazo de pagamento\n- contratação\n\nRegra:\n- Empresa quebra por caixa, não por lucro no papel."
+    },
+    {
+      "title": "Unit economics (sem jargão): cada venda ajuda ou atrapalha?",
+      "body": "Pergunte:\n- cada venda gera contribuição positiva?\n- CAC + custo variável cabe na margem?\n\nRegra:\n- Se cada venda dá prejuízo, crescer piora."
+    },
+    {
+      "title": "O playbook: documentar para replicar",
+      "body": "Playbook inclui:\n- padrão do processo\n- exceções permitidas\n- checklist\n- KPI\n\nRegra:\n- Sem playbook, você escala improviso."
+    },
+    {
+      "title": "Mini prática (45 min) — teste de escala",
+      "body": "Simule crescimento 2x.\n\nListe:\n- 3 gargalos prováveis\n- 2 regras (limites) para manter qualidade\n- 2 KPIs de alerta\n\nObjetivo:\n- crescer com controle."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Crescimento exige capacidade e caixa\n- Escala pede repetibilidade\n- Gargalos mudam\n- Unit economics decide se crescer vale\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 38 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Crescimento sustentável considera:",
+        "options": [
+          { "key": "A", "text": "Só vendas" },
+          { "key": "B", "text": "Capacidade, caixa, qualidade e atendimento" },
+          { "key": "C", "text": "Só seguidores" },
+          { "key": "D", "text": "Só desconto" }
+        ],
+        "answer": "B",
+        "explain": "Vender mais sem estrutura quebra operação."
+      },
+      {
+        "id": 2,
+        "question": "Escalabilidade depende principalmente de:",
+        "options": [
+          { "key": "A", "text": "Repetibilidade e padronização" },
+          { "key": "B", "text": "Improviso" },
+          { "key": "C", "text": "Gritar com o time" },
+          { "key": "D", "text": "Sorte" }
+        ],
+        "answer": "A",
+        "explain": "Escalar é replicar com consistência."
+      },
+      {
+        "id": 3,
+        "question": "Ao crescer, gargalos:",
+        "options": [
+          { "key": "A", "text": "Desaparecem" },
+          { "key": "B", "text": "Mudam de lugar" },
+          { "key": "C", "text": "Nunca existiram" },
+          { "key": "D", "text": "Viraram marketing" }
+        ],
+        "answer": "B",
+        "explain": "O sistema troca o ponto limitante."
+      },
+      {
+        "id": 4,
+        "question": "Por que caixa é crítico no crescimento?",
+        "options": [
+          { "key": "A", "text": "Porque lucro no papel paga tudo" },
+          { "key": "B", "text": "Porque crescimento consome capital (estoque, prazo, contratação)" },
+          { "key": "C", "text": "Porque caixa não muda" },
+          { "key": "D", "text": "Porque KPI substitui caixa" }
+        ],
+        "answer": "B",
+        "explain": "Sem caixa, você para."
+      },
+      {
+        "id": 5,
+        "question": "Unit economics responde:",
+        "options": [
+          { "key": "A", "text": "Se cada venda ajuda ou atrapalha financeiramente" },
+          { "key": "B", "text": "Se a logo é bonita" },
+          { "key": "C", "text": "Se o time está animado" },
+          { "key": "D", "text": "Se concorrente tem mais seguidores" }
+        ],
+        "answer": "A",
+        "explain": "Venda precisa contribuir positivamente."
+      },
+      {
+        "id": 6,
+        "question": "Se cada venda dá prejuízo, crescer:",
+        "options": [
+          { "key": "A", "text": "Melhora a conta" },
+          { "key": "B", "text": "Piora e acelera o problema" },
+          { "key": "C", "text": "Não muda nada" },
+          { "key": "D", "text": "Vira lucro automaticamente" }
+        ],
+        "answer": "B",
+        "explain": "Você multiplica prejuízo."
+      },
+      {
+        "id": 7,
+        "question": "Playbook é importante porque:",
+        "options": [
+          { "key": "A", "text": "Substitui liderança" },
+          { "key": "B", "text": "Permite replicar padrão e treinar rápido" },
+          { "key": "C", "text": "Cria improviso" },
+          { "key": "D", "text": "Elimina necessidade de KPI" }
+        ],
+        "answer": "B",
+        "explain": "Escala exige documentação prática."
+      },
+      {
+        "id": 8,
+        "question": "Um sinal de crescimento caótico é:",
+        "options": [
+          { "key": "A", "text": "KPIs com dono e rotina" },
+          { "key": "B", "text": "Exceções toda hora e queda de qualidade" },
+          { "key": "C", "text": "Processo padronizado" },
+          { "key": "D", "text": "Treinamento" }
+        ],
+        "answer": "B",
+        "explain": "Exceção constante é falta de sistema."
+      },
+      {
+        "id": 9,
+        "question": "Dois KPIs de alerta para crescimento podem ser:",
+        "options": [
+          { "key": "A", "text": "Erro/retrabalho e lead time" },
+          { "key": "B", "text": "Número de emojis" },
+          { "key": "C", "text": "Likes" },
+          { "key": "D", "text": "Cor do uniforme" }
+        ],
+        "answer": "A",
+        "explain": "Mostram qualidade e velocidade do sistema."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Empresa quebra por falta de caixa, não por lucro no papel" },
+          { "key": "B", "text": "Caixa não importa" },
+          { "key": "C", "text": "Escala é improviso" },
+          { "key": "D", "text": "Gargalo some com vontade" }
+        ],
+        "answer": "A",
+        "explain": "Liquidez é sobrevivência."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Teste de escala\n\n- simular 2x\n- gargalos\n- regras\n- KPIs alerta\n",
+    "pilares": "Pilares\n\n- repetibilidade\n- caixa\n- controle\n"
+  }
+}

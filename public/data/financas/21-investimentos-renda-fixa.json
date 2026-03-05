@@ -1,0 +1,168 @@
+{
+  "id": "21-renda-fixa",
+  "title": "Aula 21 — Renda fixa: como funciona, riscos reais e como escolher com critério",
+  "steps": [
+    {
+      "title": "Renda fixa (bem simples)",
+      "body": "Renda fixa é quando as regras do retorno estão definidas antes:\n- taxa (ou indexador)\n- prazo\n- forma de pagamento\n\nNão significa “sem risco”.\n\nRegra:\n- Renda fixa tem previsibilidade, não imunidade."
+    },
+    {
+      "title": "Os 3 riscos que quase ninguém explica direito",
+      "body": "1) Risco de crédito: quem te paga pode falhar\n2) Risco de mercado: preço do título oscila se você vender antes\n3) Risco de liquidez: pode não conseguir sair quando quiser\n\nRegra:\n- O risco aparece quando você precisa do dinheiro antes do plano."
+    },
+    {
+      "title": "Indexadores (o que muda no seu bolso)",
+      "body": "Três jeitos comuns:\n- Prefixado: taxa fixa\n- Pós-fixado: segue uma taxa (ex.: juros)\n- Inflação +: protege poder de compra no longo prazo\n\nRegra:\n- Indexador é o “motor” do rendimento; escolha conforme objetivo."
+    },
+    {
+      "title": "Prazo e marcação a mercado (sem terror)",
+      "body": "Se você segura até o vencimento:\n- tende a receber o combinado\n\nSe você vende antes:\n- o preço varia conforme juros do mercado\n\nRegra:\n- Prazo curto pede liquidez; prazo longo pede estômago."
+    },
+    {
+      "title": "Como escolher (regra de decisão)",
+      "body": "Perguntas:\n- qual objetivo (reserva, curto, longo)?\n- quando vou precisar do dinheiro?\n- aceito oscilação?\n- quem é o emissor (risco de crédito)?\n\nRegra:\n- Escolha começa no prazo do seu objetivo, não na taxa mais alta."
+    },
+    {
+      "title": "Erros clássicos",
+      "body": "Erros:\n- colocar reserva em produto sem liquidez\n- caçar taxa alta ignorando emissor\n- vender antes e se assustar com oscilação\n\nRegra:\n- Taxa alta pode ser preço do risco."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de objetivos e prazos",
+      "body": "Liste 3 objetivos:\n- reserva\n- curto prazo (até 12 meses)\n- longo prazo (2+ anos)\n\nPara cada, defina:\n- prazo\n- necessidade de liquidez\n- tipo de indexador preferível\n\nObjetivo:\n- parar de escolher produto e começar pelo objetivo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Renda fixa = regras definidas, não “zero risco”\n- Riscos: crédito, mercado, liquidez\n- Indexador define comportamento\n- Prazo manda na escolha\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 21 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Renda fixa significa:",
+        "options": [
+          { "key": "A", "text": "Sem risco" },
+          { "key": "B", "text": "Regras de retorno definidas previamente" },
+          { "key": "C", "text": "Lucro garantido acima da inflação" },
+          { "key": "D", "text": "Liquidez diária sempre" }
+        ],
+        "answer": "B",
+        "explain": "O “fixo” é a regra/contrato do retorno."
+      },
+      {
+        "id": 2,
+        "question": "Risco de crédito é:",
+        "options": [
+          { "key": "A", "text": "Oscilação do preço" },
+          { "key": "B", "text": "Quem te paga pode não honrar" },
+          { "key": "C", "text": "Demorar para vender" },
+          { "key": "D", "text": "Inflação subir" }
+        ],
+        "answer": "B",
+        "explain": "É risco do emissor."
+      },
+      {
+        "id": 3,
+        "question": "Risco de mercado aparece principalmente quando:",
+        "options": [
+          { "key": "A", "text": "Você segura até o vencimento" },
+          { "key": "B", "text": "Você vende antes do vencimento" },
+          { "key": "C", "text": "Você nunca investe" },
+          { "key": "D", "text": "Você compra à vista" }
+        ],
+        "answer": "B",
+        "explain": "Preço oscila no meio do caminho."
+      },
+      {
+        "id": 4,
+        "question": "Risco de liquidez é:",
+        "options": [
+          { "key": "A", "text": "Não conseguir vender/usar o dinheiro quando precisa" },
+          { "key": "B", "text": "Pagar imposto" },
+          { "key": "C", "text": "Ter rentabilidade" },
+          { "key": "D", "text": "Ter prazo" }
+        ],
+        "answer": "A",
+        "explain": "Liquidez é facilidade de transformar em dinheiro."
+      },
+      {
+        "id": 5,
+        "question": "Prefixado significa:",
+        "options": [
+          { "key": "A", "text": "Segue inflação" },
+          { "key": "B", "text": "Taxa definida (fixa) antes" },
+          { "key": "C", "text": "Taxa muda todo dia" },
+          { "key": "D", "text": "Não tem taxa" }
+        ],
+        "answer": "B",
+        "explain": "Você conhece a taxa contratada."
+      },
+      {
+        "id": 6,
+        "question": "Inflação+ tende a ser útil para:",
+        "options": [
+          { "key": "A", "text": "Proteger poder de compra no longo prazo" },
+          { "key": "B", "text": "Reserva de emergência com saque imediato sempre" },
+          { "key": "C", "text": "Evitar qualquer oscilação" },
+          { "key": "D", "text": "Comprar por impulso" }
+        ],
+        "answer": "A",
+        "explain": "Ajuda a manter valor real ao longo do tempo."
+      },
+      {
+        "id": 7,
+        "question": "A escolha correta começa por:",
+        "options": [
+          { "key": "A", "text": "Taxa mais alta" },
+          { "key": "B", "text": "Objetivo e prazo do dinheiro" },
+          { "key": "C", "text": "Opinião do influencer" },
+          { "key": "D", "text": "Nome bonito do produto" }
+        ],
+        "answer": "B",
+        "explain": "O prazo do objetivo define o tipo de produto."
+      },
+      {
+        "id": 8,
+        "question": "Erro clássico de iniciante é:",
+        "options": [
+          { "key": "A", "text": "Colocar reserva em produto sem liquidez" },
+          { "key": "B", "text": "Ter liquidez" },
+          { "key": "C", "text": "Ter um plano" },
+          { "key": "D", "text": "Diversificar" }
+        ],
+        "answer": "A",
+        "explain": "Reserva precisa estar disponível."
+      },
+      {
+        "id": 9,
+        "question": "“Taxa alta pode ser preço do risco” significa:",
+        "options": [
+          { "key": "A", "text": "Sempre é golpe" },
+          { "key": "B", "text": "Pode haver risco maior do emissor ou do prazo" },
+          { "key": "C", "text": "Nunca vale a pena" },
+          { "key": "D", "text": "É garantido" }
+        ],
+        "answer": "B",
+        "explain": "Retorno costuma compensar risco."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Renda fixa nunca oscila" },
+          { "key": "B", "text": "Renda fixa pode oscilar no caminho (se vender antes)" },
+          { "key": "C", "text": "Liquidez não importa" },
+          { "key": "D", "text": "Emissor não importa" }
+        ],
+        "answer": "B",
+        "explain": "A oscilação aparece na venda antecipada."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Critérios\n\n- objetivo\n- prazo\n- liquidez\n- emissor\n",
+    "pilares": "Pilares\n\n- previsibilidade\n- risco\n- adequação ao objetivo\n"
+  }
+}

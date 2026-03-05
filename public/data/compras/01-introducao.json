@@ -1,76 +1,168 @@
 ﻿{
-    "id":  "01-introducao",
-    "title":  "Aula 01 - Introdução prática",
-    "steps":  [
-                  {
-                      "title":  "Visão geral",
-                      "body":  "Nesta aula você inicia a trilha de Compras.\n\nObjetivo:\n- Entender os conceitos base\n- Aplicar no contexto da empresa\n- Criar rotina de uso no dia a dia"
-                  },
-                  {
-                      "title":  "Conceitos essenciais",
-                      "body":  "Base da aula:\n- Termos principais\n- Fluxo de trabalho recomendado\n- Erros comuns para evitar no começo"
-                  },
-                  {
-                      "title":  "Primeira prática guiada",
-                      "body":  "Passo a passo sugerido:\n- Abrir o ambiente de trabalho\n- Executar uma tarefa simples\n- Revisar resultado e ajustar"
-                  },
-                  {
-                      "title":  "Resumo",
-                      "body":  "Você concluiu a primeira aula e já tem uma base inicial para evoluir nas próximas etapas da trilha."
-                  }
-              ],
-    "quiz":  {
-                 "title":  "Quiz rápido - Aula 01",
-                 "instructions":  "Responda A ou B para fixar os conceitos principais.",
-                 "questions":  [
-                                   {
-                                       "id":  1,
-                                       "question":  "Qual é o foco desta aula?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Criar base prática inicial"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Cobrir todos os tópicos avançados"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Aula 01 foca em fundamentos e início prático."
-                                   },
-                                   {
-                                       "id":  2,
-                                       "question":  "Qual abordagem gera melhor aprendizado no início?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Prática com passos simples"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Pular direto para tarefas complexas"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Evoluir por etapas reduz erros e melhora retenção."
-                                   },
-                                   {
-                                       "id":  3,
-                                       "question":  "Depois da aula 01, o próximo passo é...",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Continuar a trilha e praticar"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Parar de revisar"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Continuidade e prática consolidam o aprendizado."
-                                   }
-                               ]
-             }
+  "id": "01-introducao",
+  "title": "Aula 01 — O que é compras e por que influencia lucro, prazo e qualidade",
+  "steps": [
+    {
+      "title": "Compras não é “só pedir preço”",
+      "body": "Na operação, compras é o ponto onde a empresa transforma necessidade em fornecimento.\n\nQuando compras funciona bem, o impacto aparece em 3 lugares:\n- lucro (custo menor e menos desperdício)\n- prazo (menos atraso e urgência)\n- qualidade (menos retrabalho, devolução e quebra)\n\nRegra:\n- Compras é a ponte entre o que a empresa precisa e o que o mercado entrega."
+    },
+    {
+      "title": "O triângulo da compra: custo, prazo e qualidade",
+      "body": "Toda compra é um equilíbrio de três forças:\n- custo: preço + custos indiretos\n- prazo: lead time real + confiabilidade\n- qualidade: especificação atendida + consistência\n\nO erro clássico é escolher olhando só um lado.\n\nRegra:\n- Se você melhora um ponto ignorando os outros, o problema aparece depois (e mais caro)."
+    },
+    {
+      "title": "O que é “custo” de verdade (primeira noção de custo total)",
+      "body": "Preço não é custo.\n\nCusto real costuma incluir:\n- frete/entrega\n- perdas por atraso (parada, ruptura, remarcação)\n- retrabalho por qualidade ruim\n- custo administrativo (refazer pedido, cobrança, devolução)\n\nExemplo rápido:\n- Fornecedor barato atrasa 2x por mês → operação vira incêndio.\n\nRegra:\n- Compra barata que cria urgência costuma sair cara."
+    },
+    {
+      "title": "Compras mexe com o caixa (sem você perceber)",
+      "body": "Compras influencia o caixa quando define:\n- prazo de pagamento\n- parcelamento\n- antecipação por desconto\n- volume mínimo\n\nNa prática:\n- comprar bem é comprar com condição que a empresa aguenta.\n\nRegra:\n- Condição comercial é parte do “preço”."
+    },
+    {
+      "title": "O que uma área de compras madura faz",
+      "body": "Compras maduro não vive só apagando incêndio.\nEle trabalha com:\n- planejamento (comprar antes de virar urgência)\n- fornecedores alternativos (plano B)\n- padronização (menos variação = menos erro)\n- dados (histórico, desempenho, custo total)\n\nRegra:\n- Compras bom reduz urgência e aumenta previsibilidade."
+    },
+    {
+      "title": "Erros comuns no começo (para você evitar desde já)",
+      "body": "Erros típicos:\n- aceitar qualquer especificação vaga\n- comprar pelo menor preço sem validar risco\n- não registrar decisão (depois ninguém sabe por quê)\n- depender de 1 fornecedor sem plano B\n\nRegra:\n- O erro em compras não aparece na hora do pedido; aparece na hora do recebimento."
+    },
+    {
+      "title": "Mini prática (45 min) — enxergando compras na vida real",
+      "body": "Escolha 1 item comum da operação (ex.: caixa, fita, uniforme, insumo).\nResponda:\n- qual é o risco se atrasar?\n- qual é o custo escondido se vier errado?\n- existe fornecedor alternativo?\n\nObjetivo:\n- sair do “preço” e começar a ver “impacto”."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Compras impacta lucro, prazo e qualidade\n- Preço ≠ custo\n- Condições impactam caixa\n- Compras maduro reduz urgência\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 01 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Em operação, compras influencia mais diretamente:",
+        "options": [
+          { "key": "A", "text": "Somente o preço" },
+          { "key": "B", "text": "Lucro, prazo e qualidade" },
+          { "key": "C", "text": "Somente marketing" },
+          { "key": "D", "text": "Somente RH" }
+        ],
+        "answer": "B",
+        "explain": "Compras mexe no custo (margem), na confiabilidade do prazo e na qualidade do que chega."
+      },
+      {
+        "id": 2,
+        "question": "A frase “preço não é custo” é verdadeira porque:",
+        "options": [
+          { "key": "A", "text": "Preço sempre inclui frete e retrabalho automaticamente" },
+          { "key": "B", "text": "Custo real pode incluir atrasos, devoluções, retrabalho e custos operacionais" },
+          { "key": "C", "text": "Preço nunca importa" },
+          { "key": "D", "text": "Custo real é só imposto" }
+        ],
+        "answer": "B",
+        "explain": "Custo total aparece quando você soma o que acontece antes/depois do pedido."
+      },
+      {
+        "id": 3,
+        "question": "O triângulo da compra descreve o equilíbrio entre:",
+        "options": [
+          { "key": "A", "text": "Marketing, vendas e RH" },
+          { "key": "B", "text": "Custo, prazo e qualidade" },
+          { "key": "C", "text": "Preço, cor e marca" },
+          { "key": "D", "text": "Volume, moda e tendência" }
+        ],
+        "answer": "B",
+        "explain": "As três forças estão sempre presentes, mesmo quando a empresa finge que não."
+      },
+      {
+        "id": 4,
+        "question": "Qual escolha costuma gerar 'incêndio' operacional?",
+        "options": [
+          { "key": "A", "text": "Comprar com especificação clara" },
+          { "key": "B", "text": "Comprar barato ignorando atraso recorrente" },
+          { "key": "C", "text": "Registrar as decisões" },
+          { "key": "D", "text": "Ter fornecedor alternativo" }
+        ],
+        "answer": "B",
+        "explain": "Atraso recorrente vira urgência e consumo de tempo do time."
+      },
+      {
+        "id": 5,
+        "question": "Condição comercial afeta o caixa porque define:",
+        "options": [
+          { "key": "A", "text": "Apenas a cor do produto" },
+          { "key": "B", "text": "Prazo de pagamento, parcelamento e antecipação" },
+          { "key": "C", "text": "Somente o volume do pedido" },
+          { "key": "D", "text": "Somente o nome do fornecedor" }
+        ],
+        "answer": "B",
+        "explain": "Caixa é tempo: quando o dinheiro sai importa tanto quanto quanto sai."
+      },
+      {
+        "id": 6,
+        "question": "Uma área de compras madura tende a reduzir:",
+        "options": [
+          { "key": "A", "text": "Previsibilidade" },
+          { "key": "B", "text": "Urgência e retrabalho" },
+          { "key": "C", "text": "Registro e histórico" },
+          { "key": "D", "text": "Planejamento" }
+        ],
+        "answer": "B",
+        "explain": "O objetivo é parar de reagir e começar a controlar."
+      },
+      {
+        "id": 7,
+        "question": "Um erro clássico no início é:",
+        "options": [
+          { "key": "A", "text": "Exigir especificação clara" },
+          { "key": "B", "text": "Aceitar pedido vago e correr para cotar" },
+          { "key": "C", "text": "Comparar prazo e qualidade" },
+          { "key": "D", "text": "Ter plano B" }
+        ],
+        "answer": "B",
+        "explain": "Especificação ruim gera cotação incomparável e entrega errada."
+      },
+      {
+        "id": 8,
+        "question": "A consequência típica de erro em compras aparece mais em:",
+        "options": [
+          { "key": "A", "text": "No momento do pedido (sempre)" },
+          { "key": "B", "text": "No recebimento e na operação" },
+          { "key": "C", "text": "No marketing" },
+          { "key": "D", "text": "No RH" }
+        ],
+        "answer": "B",
+        "explain": "Quando chega errado/atrasado é que o impacto estoura."
+      },
+      {
+        "id": 9,
+        "question": "Qual prática aumenta controle sem burocracia inútil?",
+        "options": [
+          { "key": "A", "text": "Registrar decisões e motivos" },
+          { "key": "B", "text": "Comprar sem especificação" },
+          { "key": "C", "text": "Comprar sem aprovação" },
+          { "key": "D", "text": "Depender de um fornecedor" }
+        ],
+        "answer": "A",
+        "explain": "Registro cria histórico e evita repetição de erro."
+      },
+      {
+        "id": 10,
+        "question": "A frase mais correta é:",
+        "options": [
+          { "key": "A", "text": "Compras é só operacional" },
+          { "key": "B", "text": "Compras controla preço e pronto" },
+          { "key": "C", "text": "Compras decide impacto na operação e no resultado" },
+          { "key": "D", "text": "Compras não influencia cliente" }
+        ],
+        "answer": "C",
+        "explain": "O cliente sente prazo, qualidade e disponibilidade — todos afetados por compras."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Tríade operacional\n\n- custo\n- prazo\n- qualidade\n",
+    "pilares": "Pilares do começo do curso\n\n- impacto\n- previsibilidade\n- controle básico\n"
+  }
 }

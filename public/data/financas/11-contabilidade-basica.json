@@ -1,0 +1,168 @@
+{
+  "id": "11-contabilidade-basica",
+  "title": "Aula 11 — Contabilidade básica para finanças: DRE, balanço e caixa sem dor",
+  "steps": [
+    {
+      "title": "Por que contabilidade importa em finanças",
+      "body": "Contabilidade é a linguagem do negócio.\nEla responde:\n- deu lucro?\n- tem patrimônio?\n- tem caixa?\n\nRegra:\n- Quem não entende os relatórios decide no escuro."
+    },
+    {
+      "title": "Os 3 relatórios principais (visão rápida)",
+      "body": "1) DRE: desempenho (resultado do período)\n2) Balanço: fotografia (o que a empresa tem e deve)\n3) Fluxo de caixa: dinheiro entrando/saindo\n\nRegra:\n- DRE mostra lucro; caixa mostra sobrevivência."
+    },
+    {
+      "title": "DRE (sem complicar): receita → custos → lucro",
+      "body": "DRE simplificada:\n- Receita\n- (-) Custos e despesas\n= Lucro (ou prejuízo)\n\nPonto-chave:\n- lucro pode existir sem caixa imediato.\n\nRegra:\n- Venda no prazo aumenta receita, mas não aumenta caixa na hora."
+    },
+    {
+      "title": "Balanço (fotografia): ativos, passivos e patrimônio líquido",
+      "body": "Ativo: o que você tem (caixa, estoque, máquinas, contas a receber)\nPassivo: o que você deve (fornecedores, empréstimos)\nPL: o que sobra (dos sócios)\n\nEquação:\n- Ativo = Passivo + Patrimônio Líquido\n\nRegra:\n- Se você entende isso, você entende estrutura financeira."
+    },
+    {
+      "title": "Fluxo de caixa (realidade do dia)",
+      "body": "Fluxo de caixa é:\n- quando o dinheiro entra\n- quando o dinheiro sai\n\nExemplo:\n- vender hoje e receber em 30 dias não paga o boleto de amanhã.\n\nRegra:\n- Caixa quebra empresas lucrativas."
+    },
+    {
+      "title": "Erros comuns de quem começa",
+      "body": "Erros:\n- confundir lucro com caixa\n- olhar só saldo bancário\n- ignorar contas a receber/pagar\n\nRegra:\n- Finanças boas olham o sistema inteiro, não só o banco."
+    },
+    {
+      "title": "Mini prática (45 min) — ler um caso simples",
+      "body": "Caso:\n- vendeu R$ 10.000 no mês\n- recebeu só R$ 6.000 (resto no prazo)\n- pagou R$ 7.000 de despesas\n\nResponda:\n- teve lucro no mês?\n- teve caixa positivo?\n- o que explica a diferença?\n\nObjetivo:\n- separar DRE de caixa."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- DRE = resultado\n- Balanço = fotografia\n- Caixa = sobrevivência\n- Lucro não garante caixa\n- Equação: Ativo = Passivo + PL\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 11 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "DRE é principalmente:",
+        "options": [
+          { "key": "A", "text": "Fotografia do patrimônio" },
+          { "key": "B", "text": "Resultado do período (receitas, custos e lucro)" },
+          { "key": "C", "text": "Saldo bancário" },
+          { "key": "D", "text": "Lista de clientes" }
+        ],
+        "answer": "B",
+        "explain": "DRE mede desempenho no período."
+      },
+      {
+        "id": 2,
+        "question": "Balanço patrimonial é:",
+        "options": [
+          { "key": "A", "text": "Filme do mês" },
+          { "key": "B", "text": "Fotografia: ativos, passivos e PL em uma data" },
+          { "key": "C", "text": "Somente caixa" },
+          { "key": "D", "text": "Somente lucro" }
+        ],
+        "answer": "B",
+        "explain": "Mostra posição em um ponto no tempo."
+      },
+      {
+        "id": 3,
+        "question": "Fluxo de caixa mostra:",
+        "options": [
+          { "key": "A", "text": "Quando o dinheiro entra e sai" },
+          { "key": "B", "text": "Apenas o lucro" },
+          { "key": "C", "text": "Apenas patrimônio" },
+          { "key": "D", "text": "Apenas impostos" }
+        ],
+        "answer": "A",
+        "explain": "Caixa é timing de entrada/saída."
+      },
+      {
+        "id": 4,
+        "question": "A equação do balanço é:",
+        "options": [
+          { "key": "A", "text": "Receita = Despesa + Lucro" },
+          { "key": "B", "text": "Ativo = Passivo + Patrimônio Líquido" },
+          { "key": "C", "text": "Caixa = Lucro + Estoque" },
+          { "key": "D", "text": "Ativo = Lucro - Dívida" }
+        ],
+        "answer": "B",
+        "explain": "É a base da estrutura patrimonial."
+      },
+      {
+        "id": 5,
+        "question": "Lucro pode existir sem caixa porque:",
+        "options": [
+          { "key": "A", "text": "Caixa é igual sempre" },
+          { "key": "B", "text": "Vendas no prazo contam na receita, mas o dinheiro entra depois" },
+          { "key": "C", "text": "Despesas não existem" },
+          { "key": "D", "text": "Imposto elimina caixa" }
+        ],
+        "answer": "B",
+        "explain": "Competência x pagamento efetivo."
+      },
+      {
+        "id": 6,
+        "question": "Um ativo típico é:",
+        "options": [
+          { "key": "A", "text": "Fornecedores a pagar" },
+          { "key": "B", "text": "Estoque e contas a receber" },
+          { "key": "C", "text": "Empréstimo" },
+          { "key": "D", "text": "Multa" }
+        ],
+        "answer": "B",
+        "explain": "Ativo é recurso que você possui/tem direito."
+      },
+      {
+        "id": 7,
+        "question": "Um passivo típico é:",
+        "options": [
+          { "key": "A", "text": "Caixa" },
+          { "key": "B", "text": "Empréstimos e fornecedores" },
+          { "key": "C", "text": "Máquinas" },
+          { "key": "D", "text": "Contas a receber" }
+        ],
+        "answer": "B",
+        "explain": "Passivo é obrigação."
+      },
+      {
+        "id": 8,
+        "question": "Erro comum de iniciante é:",
+        "options": [
+          { "key": "A", "text": "Separar lucro de caixa" },
+          { "key": "B", "text": "Confundir lucro com caixa e olhar só saldo bancário" },
+          { "key": "C", "text": "Considerar contas a pagar" },
+          { "key": "D", "text": "Considerar contas a receber" }
+        ],
+        "answer": "B",
+        "explain": "Saldo bancário não mostra o sistema todo."
+      },
+      {
+        "id": 9,
+        "question": "Uma empresa pode quebrar mesmo com lucro porque:",
+        "options": [
+          { "key": "A", "text": "Lucro paga boleto automaticamente" },
+          { "key": "B", "text": "Pode faltar caixa no timing das obrigações" },
+          { "key": "C", "text": "Balanço impede" },
+          { "key": "D", "text": "DRE elimina risco" }
+        ],
+        "answer": "B",
+        "explain": "Liquidez é sobrevivência."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "DRE e caixa são a mesma coisa" },
+          { "key": "B", "text": "DRE mede resultado; caixa mede liquidez" },
+          { "key": "C", "text": "Balanço é só para contador" },
+          { "key": "D", "text": "Caixa não importa" }
+        ],
+        "answer": "B",
+        "explain": "São relatórios diferentes e complementares."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Relatórios\n\n- DRE\n- Balanço\n- Fluxo de Caixa\n",
+    "pilares": "Pilares\n\n- resultado\n- patrimônio\n- liquidez\n"
+  }
+}

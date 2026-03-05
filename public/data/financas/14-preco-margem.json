@@ -1,0 +1,168 @@
+{
+  "id": "14-preco-margem",
+  "title": "Aula 14 — Precificação e margem: formar preço sem chute e sem vender prejuízo",
+  "steps": [
+    {
+      "title": "Preço é estratégia + conta",
+      "body": "Preço decide:\n- margem\n- público\n- sobrevivência\n\nRegra:\n- Quem não calcula preço, deixa o cliente (ou concorrente) decidir por ele."
+    },
+    {
+      "title": "Margem (bem simples) e por que ela manda",
+      "body": "Margem bruta simplificada:\n- Preço de venda - custo do produto\n\nMargem serve para pagar:\n- despesas fixas\n- impostos\n- reinvestimento\n\nRegra:\n- Venda sem margem vira volume de problema."
+    },
+    {
+      "title": "Custo total do produto/serviço",
+      "body": "Além do custo de compra/produção, considere:\n- frete\n- perdas/avarias\n- comissões\n- embalagem\n- taxas (cartão, marketplaces)\n\nRegra:\n- Se você esquece um custo, você vende prejuízo sem perceber."
+    },
+    {
+      "title": "Formação de preço: 3 perguntas obrigatórias",
+      "body": "1) Qual meu custo total?\n2) Qual margem mínima?\n3) O mercado aceita (valor percebido)?\n\nRegra:\n- Precificação é cruzar custo, margem e valor."
+    },
+    {
+      "title": "Desconto: onde as empresas se sabotam",
+      "body": "Desconto reduz margem.\nSe margem já é baixa:\n- desconto pode zerar lucro\n\nRegra:\n- Antes de dar desconto, saiba a margem mínima."
+    },
+    {
+      "title": "A armadilha da parcela e do volume",
+      "body": "Vender mais com margem ruim:\n- aumenta trabalho\n- aumenta risco\n- não aumenta lucro\n\nRegra:\n- Volume só ajuda quando cada venda contribui."
+    },
+    {
+      "title": "Mini prática (45 min) — margem mínima e regra de desconto",
+      "body": "Escolha 3 produtos/serviços.\nPara cada:\n- custo total estimado\n- preço atual\n- margem estimada\n- margem mínima\n\nDefina:\n- desconto máximo permitido\n\nObjetivo:\n- parar de precificar no feeling."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Preço precisa de conta\n- Margem paga o resto do negócio\n- Considere custo total\n- Desconto precisa de limite\n- Volume só serve com contribuição positiva\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 14 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Preço é importante porque afeta:",
+        "options": [
+          { "key": "A", "text": "Só marketing" },
+          { "key": "B", "text": "Margem, público e sobrevivência" },
+          { "key": "C", "text": "Só a cor do produto" },
+          { "key": "D", "text": "Nada" }
+        ],
+        "answer": "B",
+        "explain": "Preço define sustentabilidade."
+      },
+      {
+        "id": 2,
+        "question": "Margem bruta (simplificada) é:",
+        "options": [
+          { "key": "A", "text": "Preço - custo do produto" },
+          { "key": "B", "text": "Custo - preço" },
+          { "key": "C", "text": "Preço + custo" },
+          { "key": "D", "text": "Só imposto" }
+        ],
+        "answer": "A",
+        "explain": "Mostra quanto sobra para pagar o resto."
+      },
+      {
+        "id": 3,
+        "question": "Se você esquece um custo (taxa, frete, comissão), você:",
+        "options": [
+          { "key": "A", "text": "Aumenta margem" },
+          { "key": "B", "text": "Pode vender prejuízo sem perceber" },
+          { "key": "C", "text": "Ganha desconto" },
+          { "key": "D", "text": "Elimina despesa fixa" }
+        ],
+        "answer": "B",
+        "explain": "Custo oculto vira prejuízo oculto."
+      },
+      {
+        "id": 4,
+        "question": "Formação de preço precisa cruzar:",
+        "options": [
+          { "key": "A", "text": "Custo, margem e valor percebido" },
+          { "key": "B", "text": "Só concorrência" },
+          { "key": "C", "text": "Só vontade" },
+          { "key": "D", "text": "Só volume" }
+        ],
+        "answer": "A",
+        "explain": "É a base da precificação saudável."
+      },
+      {
+        "id": 5,
+        "question": "Desconto faz o quê com a margem?",
+        "options": [
+          { "key": "A", "text": "Aumenta sempre" },
+          { "key": "B", "text": "Reduz" },
+          { "key": "C", "text": "Não muda" },
+          { "key": "D", "text": "Duplica" }
+        ],
+        "answer": "B",
+        "explain": "Você vende mais barato, sobra menos."
+      },
+      {
+        "id": 6,
+        "question": "Antes de dar desconto, você deve saber:",
+        "options": [
+          { "key": "A", "text": "O meme do dia" },
+          { "key": "B", "text": "A margem mínima aceitável" },
+          { "key": "C", "text": "A cor da embalagem" },
+          { "key": "D", "text": "A opinião do vizinho" }
+        ],
+        "answer": "B",
+        "explain": "Sem limite, desconto vira prejuízo."
+      },
+      {
+        "id": 7,
+        "question": "Vender muito com margem ruim tende a:",
+        "options": [
+          { "key": "A", "text": "Gerar lucro sempre" },
+          { "key": "B", "text": "Multiplicar trabalho e risco sem lucro" },
+          { "key": "C", "text": "Eliminar custos" },
+          { "key": "D", "text": "Melhorar caixa automaticamente" }
+        ],
+        "answer": "B",
+        "explain": "Volume não compensa contribuição negativa."
+      },
+      {
+        "id": 8,
+        "question": "Custo total pode incluir:",
+        "options": [
+          { "key": "A", "text": "Taxas, comissões, embalagem e perdas" },
+          { "key": "B", "text": "Somente o preço de compra" },
+          { "key": "C", "text": "Somente imposto" },
+          { "key": "D", "text": "Somente salário" }
+        ],
+        "answer": "A",
+        "explain": "Muitos custos ficam 'escondidos'."
+      },
+      {
+        "id": 9,
+        "question": "Uma venda boa precisa:",
+        "options": [
+          { "key": "A", "text": "Contribuir (sobra) para pagar despesas e reinvestir" },
+          { "key": "B", "text": "Apenas parecer grande" },
+          { "key": "C", "text": "Ser parcelada" },
+          { "key": "D", "text": "Ser impulsiva" }
+        ],
+        "answer": "A",
+        "explain": "Contribuição positiva sustenta o negócio."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Precificar no feeling é suficiente" },
+          { "key": "B", "text": "Preço precisa de custo total + margem mínima + valor percebido" },
+          { "key": "C", "text": "Desconto sempre resolve" },
+          { "key": "D", "text": "Margem não importa" }
+        ],
+        "answer": "B",
+        "explain": "Sem conta, você vira refém."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Regra de preço\n\n- custo total\n- margem mínima\n- desconto máximo\n",
+    "pilares": "Pilares\n\n- margem\n- custo total\n- disciplina\n"
+  }
+}

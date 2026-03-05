@@ -1,0 +1,168 @@
+{
+  "id": "17-viabilidade-investimentos",
+  "title": "Aula 17 — Viabilidade de projetos: VPL, TIR e payback (como decidir com números)",
+  "steps": [
+    {
+      "title": "Projetos competem por dinheiro (e dinheiro é limitado)",
+      "body": "Quando você escolhe um projeto, você está dizendo NÃO para outro.\n\nRegra:\n- Decisão boa compara projetos pelo retorno e pelo risco."
+    },
+    {
+      "title": "Payback (bem simples): em quanto tempo volta",
+      "body": "Payback é:\n- tempo para recuperar o investimento\n\nPonto forte:\n- fácil de entender\n\nPonto fraco:\n- ignora o que acontece depois que “voltou”\n\nRegra:\n- Payback é triagem, não decisão final."
+    },
+    {
+      "title": "VPL (valor presente líquido) sem trauma",
+      "body": "Ideia:\n- trazer o dinheiro futuro para “valor de hoje”\n- subtrair o investimento inicial\n\nSe VPL > 0:\n- tende a criar valor (na taxa usada)\n\nRegra:\n- VPL é a régua mais sólida quando você tem projeções razoáveis."
+    },
+    {
+      "title": "TIR (taxa interna) em português",
+      "body": "TIR é a taxa de retorno implícita do projeto.\nServe para comparar com:\n- custo de capital\n- alternativas (outros projetos)\n\nRegra:\n- Se TIR é menor que o custo de capital, o projeto destrói valor."
+    },
+    {
+      "title": "O perigo: projeção otimista demais",
+      "body": "Erro comum:\n- superestimar receita\n- subestimar custo\n- esquecer risco e atraso\n\nRegra:\n- Melhor errar para o conservador do que para o sonho."
+    },
+    {
+      "title": "Como decidir no mundo real",
+      "body": "Use um combo:\n- payback (liquidez)\n- VPL (criação de valor)\n- TIR vs custo de capital (comparação)\n\nRegra:\n- Não use 1 métrica sozinha."
+    },
+    {
+      "title": "Mini prática (45 min) — dois projetos, uma escolha",
+      "body": "Compare 2 ideias:\n- investimento inicial\n- ganhos mensais estimados\n- prazo\n\nCalcule:\n- payback aproximado\n\nDepois responda:\n- qual parece mais robusto se receita cair 20%?\n\nObjetivo:\n- pensar em retorno e risco."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Payback = tempo de retorno (triagem)\n- VPL = valor criado hoje (régua forte)\n- TIR = taxa implícita (compare com custo de capital)\n- Projeções conservadoras evitam decisões ruins\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 17 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Payback mede:",
+        "options": [
+          { "key": "A", "text": "Tempo para recuperar o investimento" },
+          { "key": "B", "text": "Lucro total do projeto" },
+          { "key": "C", "text": "Imposto" },
+          { "key": "D", "text": "Custo do capital" }
+        ],
+        "answer": "A",
+        "explain": "É a velocidade de retorno do dinheiro."
+      },
+      {
+        "id": 2,
+        "question": "Uma limitação do payback é:",
+        "options": [
+          { "key": "A", "text": "Ser difícil de calcular" },
+          { "key": "B", "text": "Ignorar ganhos depois do retorno" },
+          { "key": "C", "text": "Ser sempre errado" },
+          { "key": "D", "text": "Considerar risco demais" }
+        ],
+        "answer": "B",
+        "explain": "Ele não mede valor total criado."
+      },
+      {
+        "id": 3,
+        "question": "VPL envolve:",
+        "options": [
+          { "key": "A", "text": "Trazer fluxos futuros para valor presente" },
+          { "key": "B", "text": "Somar parcelas" },
+          { "key": "C", "text": "Ignorar tempo" },
+          { "key": "D", "text": "Olhar só lucro contábil" }
+        ],
+        "answer": "A",
+        "explain": "Ele considera valor do dinheiro no tempo."
+      },
+      {
+        "id": 4,
+        "question": "Se VPL > 0 (na taxa usada), o projeto tende a:",
+        "options": [
+          { "key": "A", "text": "Destruir valor" },
+          { "key": "B", "text": "Criar valor" },
+          { "key": "C", "text": "Ser sempre perfeito" },
+          { "key": "D", "text": "Ser ilegal" }
+        ],
+        "answer": "B",
+        "explain": "Cria valor acima da taxa mínima exigida."
+      },
+      {
+        "id": 5,
+        "question": "TIR é:",
+        "options": [
+          { "key": "A", "text": "Uma despesa" },
+          { "key": "B", "text": "Taxa de retorno implícita do projeto" },
+          { "key": "C", "text": "Um imposto fixo" },
+          { "key": "D", "text": "O prazo do projeto" }
+        ],
+        "answer": "B",
+        "explain": "É a taxa que zera o VPL."
+      },
+      {
+        "id": 6,
+        "question": "Se TIR < custo de capital, o projeto:",
+        "options": [
+          { "key": "A", "text": "Cria valor" },
+          { "key": "B", "text": "Destrói valor (não compensa)" },
+          { "key": "C", "text": "Não tem risco" },
+          { "key": "D", "text": "É sempre aprovado" }
+        ],
+        "answer": "B",
+        "explain": "Rende menos que a taxa mínima exigida."
+      },
+      {
+        "id": 7,
+        "question": "Erro comum em projetos é:",
+        "options": [
+          { "key": "A", "text": "Ser conservador" },
+          { "key": "B", "text": "Projeção otimista demais e custo subestimado" },
+          { "key": "C", "text": "Considerar risco" },
+          { "key": "D", "text": "Comparar alternativas" }
+        ],
+        "answer": "B",
+        "explain": "Isso aprova projetos ruins."
+      },
+      {
+        "id": 8,
+        "question": "No mundo real, é melhor usar:",
+        "options": [
+          { "key": "A", "text": "Só payback" },
+          { "key": "B", "text": "Combo: payback + VPL + TIR" },
+          { "key": "C", "text": "Só intuição" },
+          { "key": "D", "text": "Só marketing" }
+        ],
+        "answer": "B",
+        "explain": "Cada métrica cobre uma fraqueza da outra."
+      },
+      {
+        "id": 9,
+        "question": "Trazer valores futuros para hoje serve para:",
+        "options": [
+          { "key": "A", "text": "Ignorar inflação" },
+          { "key": "B", "text": "Comparar decisões na mesma base" },
+          { "key": "C", "text": "Aumentar custo" },
+          { "key": "D", "text": "Evitar cálculo" }
+        ],
+        "answer": "B",
+        "explain": "Você compara 'maçã com maçã'."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Payback é decisão final sempre" },
+          { "key": "B", "text": "Payback é triagem; VPL/TIR ajudam a decidir" },
+          { "key": "C", "text": "TIR não serve pra nada" },
+          { "key": "D", "text": "VPL ignora o tempo" }
+        ],
+        "answer": "B",
+        "explain": "Payback é parcial; VPL é mais completo."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Métricas\n\n- payback\n- VPL\n- TIR\n",
+    "pilares": "Pilares\n\n- valor no tempo\n- comparação\n- risco\n"
+  }
+}

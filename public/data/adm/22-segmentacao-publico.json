@@ -1,0 +1,168 @@
+{
+  "id": "22-segmentacao-publico",
+  "title": "Aula 22 — Segmentação e público-alvo: parar de vender para “todo mundo”",
+  "steps": [
+    {
+      "title": "Segmentar é escolher onde competir",
+      "body": "Segmentação é dividir o mercado em grupos com necessidades diferentes.\n\nRegra:\n- Segmentação não limita: ela melhora eficiência."
+    },
+    {
+      "title": "Tipos de segmentação (úteis de verdade)",
+      "body": "Exemplos:\n- por necessidade (dor)\n- por comportamento (frequência, ticket)\n- por contexto (urgência, ocasião)\n- por geografia (prazo/logística)\n\nRegra:\n- Segmentar por dor costuma ser mais forte que por idade."
+    },
+    {
+      "title": "ICP (cliente ideal) e anti-ICP",
+      "body": "ICP: cliente que você atende melhor e dá margem.\nAnti-ICP: cliente que dá custo, reclama e não fecha conta.\n\nRegra:\n- Saber quem NÃO atender é maturidade."
+    },
+    {
+      "title": "Segmento bom precisa ser: mensurável e alcançável",
+      "body": "Perguntas:\n- dá pra identificar esse cliente?\n- dá pra alcançá-lo com canal?\n- dá pra entregar com padrão?\n\nRegra:\n- Segmento impossível vira só teoria."
+    },
+    {
+      "title": "Mensagem por segmento",
+      "body": "O que muda por segmento:\n- promessa principal\n- prova (ex: garantia, prazo)\n- oferta (bundle, frete)\n\nRegra:\n- Uma mensagem única não converte todo mundo."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n- segmentar por 'achismo'\n- aceitar todo cliente e virar operação caótica\n- fazer campanha sem saber CAC e conversão por segmento\n\nRegra:\n- Segmento ruim drena caixa."
+    },
+    {
+      "title": "Mini prática (45 min) — seu ICP em 5 linhas",
+      "body": "Descreva:\n- quem é\n- qual dor\n- por que escolhe você\n- qual prova\n- qual anti-ICP\n\nObjetivo:\n- foco real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Segmentar aumenta eficiência\n- ICP e anti-ICP protegem margem\n- Segmento bom é alcançável e mensurável\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 22 (Administração)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Qual segmentação tende a ser mais poderosa para conversão?",
+        "options": [
+          { "key": "A", "text": "Por cor favorita" },
+          { "key": "B", "text": "Por dor/necessidade" },
+          { "key": "C", "text": "Por signo" },
+          { "key": "D", "text": "Por acaso" }
+        ],
+        "answer": "B",
+        "explain": "Dor define urgência e valor percebido."
+      },
+      {
+        "id": 2,
+        "question": "Anti-ICP serve para:",
+        "options": [
+          { "key": "A", "text": "Aumentar reclamação" },
+          { "key": "B", "text": "Evitar clientes que dão custo e não fecham conta" },
+          { "key": "C", "text": "Vender para todo mundo" },
+          { "key": "D", "text": "Subir CAC" }
+        ],
+        "answer": "B",
+        "explain": "Protege margem e operação."
+      },
+      {
+        "id": 3,
+        "question": "Segmento bom precisa ser:",
+        "options": [
+          { "key": "A", "text": "Impossível de identificar" },
+          { "key": "B", "text": "Mensurável e alcançável" },
+          { "key": "C", "text": "Baseado só em opinião" },
+          { "key": "D", "text": "Gigante e genérico" }
+        ],
+        "answer": "B",
+        "explain": "Sem isso, você não consegue operar e medir."
+      },
+      {
+        "id": 4,
+        "question": "O maior risco de 'vender para todo mundo' é:",
+        "options": [
+          { "key": "A", "text": "Mais foco" },
+          { "key": "B", "text": "Mensagem fraca e operação caótica" },
+          { "key": "C", "text": "CAC cair" },
+          { "key": "D", "text": "Conversão subir" }
+        ],
+        "answer": "B",
+        "explain": "Sem foco, tudo fica genérico e caro."
+      },
+      {
+        "id": 5,
+        "question": "Mensagem por segmento muda porque:",
+        "options": [
+          { "key": "A", "text": "Todo mundo compra pelos mesmos motivos" },
+          { "key": "B", "text": "Cada segmento valoriza coisas diferentes" },
+          { "key": "C", "text": "Preço não importa" },
+          { "key": "D", "text": "Oferta não importa" }
+        ],
+        "answer": "B",
+        "explain": "Valor percebido muda por contexto."
+      },
+      {
+        "id": 6,
+        "question": "Segmentação por comportamento inclui:",
+        "options": [
+          { "key": "A", "text": "Frequência e ticket" },
+          { "key": "B", "text": "Altura" },
+          { "key": "C", "text": "Cor do cabelo" },
+          { "key": "D", "text": "Sorte" }
+        ],
+        "answer": "A",
+        "explain": "Comportamento é como compra/usa."
+      },
+      {
+        "id": 7,
+        "question": "O ICP deve ser:",
+        "options": [
+          { "key": "A", "text": "Quem dá margem e você entrega melhor" },
+          { "key": "B", "text": "Qualquer um que aparecer" },
+          { "key": "C", "text": "Quem reclama mais" },
+          { "key": "D", "text": "Quem paga menos" }
+        ],
+        "answer": "A",
+        "explain": "ICP combina valor e viabilidade operacional."
+      },
+      {
+        "id": 8,
+        "question": "Campanha sem medir CAC e conversão por segmento é:",
+        "options": [
+          { "key": "A", "text": "Gestão madura" },
+          { "key": "B", "text": "Decisão no escuro" },
+          { "key": "C", "text": "Otimização" },
+          { "key": "D", "text": "Garantia de lucro" }
+        ],
+        "answer": "B",
+        "explain": "Sem métrica, você não sabe o que funciona."
+      },
+      {
+        "id": 9,
+        "question": "Exemplo de segmentação por contexto é:",
+        "options": [
+          { "key": "A", "text": "Cliente comprando por urgência (presente em 24h)" },
+          { "key": "B", "text": "Cliente por signo" },
+          { "key": "C", "text": "Cliente por cor preferida" },
+          { "key": "D", "text": "Cliente por aleatoriedade" }
+        ],
+        "answer": "A",
+        "explain": "Contexto muda o que o cliente valoriza."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Foco limita crescimento" },
+          { "key": "B", "text": "Foco aumenta eficiência e conversão" },
+          { "key": "C", "text": "Foco não importa" },
+          { "key": "D", "text": "Segmentar é perder cliente" }
+        ],
+        "answer": "B",
+        "explain": "Você cresce melhor quando escolhe onde vencer."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Definições\n\n- ICP\n- anti-ICP\n- segmento\n",
+    "pilares": "Pilares\n\n- foco\n- mensuração\n- viabilidade\n"
+  }
+}
