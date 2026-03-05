@@ -1,76 +1,168 @@
 ﻿{
-    "id":  "01-introducao",
-    "title":  "Aula 01 - Introdução prática",
-    "steps":  [
-                  {
-                      "title":  "Visão geral",
-                      "body":  "Nesta aula você inicia a trilha de Finanças.\n\nObjetivo:\n- Entender os conceitos base\n- Aplicar no contexto da empresa\n- Criar rotina de uso no dia a dia"
-                  },
-                  {
-                      "title":  "Conceitos essenciais",
-                      "body":  "Base da aula:\n- Termos principais\n- Fluxo de trabalho recomendado\n- Erros comuns para evitar no começo"
-                  },
-                  {
-                      "title":  "Primeira prática guiada",
-                      "body":  "Passo a passo sugerido:\n- Abrir o ambiente de trabalho\n- Executar uma tarefa simples\n- Revisar resultado e ajustar"
-                  },
-                  {
-                      "title":  "Resumo",
-                      "body":  "Você concluiu a primeira aula e já tem uma base inicial para evoluir nas próximas etapas da trilha."
-                  }
-              ],
-    "quiz":  {
-                 "title":  "Quiz rápido - Aula 01",
-                 "instructions":  "Responda A ou B para fixar os conceitos principais.",
-                 "questions":  [
-                                   {
-                                       "id":  1,
-                                       "question":  "Qual é o foco desta aula?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Criar base prática inicial"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Cobrir todos os tópicos avançados"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Aula 01 foca em fundamentos e início prático."
-                                   },
-                                   {
-                                       "id":  2,
-                                       "question":  "Qual abordagem gera melhor aprendizado no início?",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Prática com passos simples"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Pular direto para tarefas complexas"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Evoluir por etapas reduz erros e melhora retenção."
-                                   },
-                                   {
-                                       "id":  3,
-                                       "question":  "Depois da aula 01, o próximo passo é...",
-                                       "options":  [
-                                                       {
-                                                           "key":  "A",
-                                                           "text":  "Continuar a trilha e praticar"
-                                                       },
-                                                       {
-                                                           "key":  "B",
-                                                           "text":  "Parar de revisar"
-                                                       }
-                                                   ],
-                                       "answer":  "A",
-                                       "explain":  "Continuidade e prática consolidam o aprendizado."
-                                   }
-                               ]
-             }
+  "id": "01-introducao-financas",
+  "title": "Aula 01 — O que são finanças e por que elas mandam no jogo (conceitos e mentalidade)",
+  "steps": [
+    {
+      "title": "Finanças (bem simples)",
+      "body": "Finanças é tomar decisão sobre dinheiro com 3 perguntas:\n\n- quanto entra?\n- quanto sai?\n- o que sobra (ou falta) e por quê?\n\nRegra:\n- Dinheiro é consequência de decisões repetidas."
+    },
+    {
+      "title": "As 3 camadas de finanças",
+      "body": "Você sempre está em uma (ou mais) camadas:\n\n1) sobrevivência (contas do mês)\n2) estabilidade (reserva e previsibilidade)\n3) crescimento (investir, expandir, multiplicar)\n\nRegra:\n- Sem estabilidade, crescimento vira aposta."
+    },
+    {
+      "title": "Fluxo de caixa é rei (pessoal e empresa)",
+      "body": "Fluxo de caixa é a vida real:\n- entra hoje\n- sai hoje\n\nLucro pode existir no papel e faltar dinheiro no caixa.\n\nRegra:\n- Você quebra por caixa, não por opinião."
+    },
+    {
+      "title": "Risco e retorno (sem romantizar)",
+      "body": "Retorno maior normalmente exige aceitar algum risco:\n- risco de perder\n- risco de demorar\n- risco de variar\n\nRegra:\n- Quando alguém promete retorno alto sem risco, tem pegadinha."
+    },
+    {
+      "title": "Custo de oportunidade (o inimigo invisível)",
+      "body": "Toda escolha de dinheiro tem um 'custo oculto':\n- se você compra X, deixa de investir/guardar em Y\n\nRegra:\n- O preço real é o que você deixa de ganhar."
+    },
+    {
+      "title": "A mentalidade que muda tudo: jogar o jogo longo",
+      "body": "Finanças funcionam melhor com:\n- consistência\n- paciência\n- regras\n\nRegra:\n- Uma boa regra média repetida vence uma decisão genial rara."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa do seu dinheiro",
+      "body": "Sem planilha complexa.\n\nFaça:\n- liste suas 5 maiores entradas (ou fontes)\n- liste suas 10 maiores saídas (despesas)\n- marque: essencial vs ajustável\n\nObjetivo:\n- enxergar onde você realmente decide."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Finanças = decisão sobre entrada, saída e sobra\n- Camadas: sobrevivência, estabilidade, crescimento\n- Caixa manda\n- Risco x retorno e custo de oportunidade\n- Regras simples repetidas vencem\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 01 (Finanças)",
+    "instructions": "Marque A, B, C ou D. Leia a explicação para fixar.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Finanças, no sentido prático, é:",
+        "options": [
+          { "key": "A", "text": "Somar dinheiro no fim do mês" },
+          { "key": "B", "text": "Tomar decisões sobre entrada, saída e sobra (com regra)" },
+          { "key": "C", "text": "Comprar ações" },
+          { "key": "D", "text": "Só cortar gastos" }
+        ],
+        "answer": "B",
+        "explain": "Finanças é gestão e decisão recorrente."
+      },
+      {
+        "id": 2,
+        "question": "As camadas de finanças são melhor descritas como:",
+        "options": [
+          { "key": "A", "text": "Sobrevivência, estabilidade, crescimento" },
+          { "key": "B", "text": "Gastar, gastar, gastar" },
+          { "key": "C", "text": "Sorte, fé, esperança" },
+          { "key": "D", "text": "Compras, viagens, luxo" }
+        ],
+        "answer": "A",
+        "explain": "Você evolui quando estabiliza e cria previsibilidade."
+      },
+      {
+        "id": 3,
+        "question": "Fluxo de caixa é importante porque:",
+        "options": [
+          { "key": "A", "text": "Mostra só o lucro" },
+          { "key": "B", "text": "Mostra o dinheiro disponível na vida real (entradas/saídas)" },
+          { "key": "C", "text": "Serve só para banco" },
+          { "key": "D", "text": "Não muda decisões" }
+        ],
+        "answer": "B",
+        "explain": "Você pode 'lucrar' e ainda assim ficar sem caixa."
+      },
+      {
+        "id": 4,
+        "question": "Risco x retorno significa que:",
+        "options": [
+          { "key": "A", "text": "Retorno alto sempre é garantido" },
+          { "key": "B", "text": "Retorno maior geralmente exige aceitar algum risco" },
+          { "key": "C", "text": "Risco não existe" },
+          { "key": "D", "text": "Retorno depende de sorte apenas" }
+        ],
+        "answer": "B",
+        "explain": "Risco pode ser perda, volatilidade ou prazo."
+      },
+      {
+        "id": 5,
+        "question": "Custo de oportunidade é:",
+        "options": [
+          { "key": "A", "text": "O desconto da loja" },
+          { "key": "B", "text": "O que você deixa de ganhar ao escolher outra coisa" },
+          { "key": "C", "text": "Um imposto" },
+          { "key": "D", "text": "O valor do frete" }
+        ],
+        "answer": "B",
+        "explain": "Toda escolha elimina alternativas."
+      },
+      {
+        "id": 6,
+        "question": "Uma promessa de 'alto retorno sem risco' costuma ser:",
+        "options": [
+          { "key": "A", "text": "Normal" },
+          { "key": "B", "text": "Sinal de alerta" },
+          { "key": "C", "text": "Garantia do governo" },
+          { "key": "D", "text": "Regra do mercado" }
+        ],
+        "answer": "B",
+        "explain": "Retorno sem risco é suspeito."
+      },
+      {
+        "id": 7,
+        "question": "A melhor mentalidade para finanças é:",
+        "options": [
+          { "key": "A", "text": "Apostar em uma tacada" },
+          { "key": "B", "text": "Jogar o jogo longo com consistência" },
+          { "key": "C", "text": "Mudar de regra todo mês" },
+          { "key": "D", "text": "Nunca planejar" }
+        ],
+        "answer": "B",
+        "explain": "Consistência vence genialidade rara."
+      },
+      {
+        "id": 8,
+        "question": "Você quebra por:",
+        "options": [
+          { "key": "A", "text": "Falta de likes" },
+          { "key": "B", "text": "Falta de caixa (dinheiro disponível)" },
+          { "key": "C", "text": "Falta de planilha bonita" },
+          { "key": "D", "text": "Falta de investimento em ações" }
+        ],
+        "answer": "B",
+        "explain": "Liquidez manda na sobrevivência."
+      },
+      {
+        "id": 9,
+        "question": "Uma regra simples repetida tende a:",
+        "options": [
+          { "key": "A", "text": "Ser pior que tudo" },
+          { "key": "B", "text": "Gerar resultado forte no longo prazo" },
+          { "key": "C", "text": "Não ter efeito" },
+          { "key": "D", "text": "Servir só para ricos" }
+        ],
+        "answer": "B",
+        "explain": "Composto + consistência constroem patrimônio."
+      },
+      {
+        "id": 10,
+        "question": "Uma frase correta é:",
+        "options": [
+          { "key": "A", "text": "Finanças é só investir" },
+          { "key": "B", "text": "Finanças começa no controle do fluxo e nas escolhas" },
+          { "key": "C", "text": "Finanças é só cortar tudo" },
+          { "key": "D", "text": "Finanças é sorte" }
+        ],
+        "answer": "B",
+        "explain": "Investir vem depois de organizar o básico."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Mapa do dinheiro\n\n- entradas\n- saídas\n- essencial vs ajustável\n",
+    "pilares": "Pilares\n\n- fluxo de caixa\n- risco x retorno\n- custo de oportunidade\n"
+  }
 }

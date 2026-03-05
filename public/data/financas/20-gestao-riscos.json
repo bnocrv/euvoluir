@@ -1,0 +1,168 @@
+{
+  "id": "20-gestao-riscos",
+  "title": "Aula 20 — Gestão de riscos financeiros: volatilidade, cenário e proteção",
+  "steps": [
+    {
+      "title": "Risco financeiro não é só “perder dinheiro”",
+      "body": "Risco é qualquer coisa que atrapalhe:\n- pagar contas\n- manter margem\n- manter crescimento\n\nExemplos:\n- queda de vendas\n- aumento de custo\n- câmbio\n- juros\n- inadimplência\n\nRegra:\n- Risco é a diferença entre o plano e a realidade."
+    },
+    {
+      "title": "Três tipos práticos de risco",
+      "body": "1) Risco de caixa: faltar dinheiro no timing\n2) Risco de mercado: demanda/custos mudam\n3) Risco de crédito: cliente não paga\n\nRegra:\n- Se você só olha lucro, você ignora metade do risco."
+    },
+    {
+      "title": "Volatilidade e cenário (por que prever é difícil)",
+      "body": "Cenários mudam:\n- inflação\n- taxa de juros\n- concorrência\n- comportamento do consumidor\n\nRegra:\n- Gestão de risco não é adivinhar; é preparar respostas."
+    },
+    {
+      "title": "Proteção (hedge) no sentido prático",
+      "body": "Proteção pode ser:\n- reserva de caixa\n- contratos com prazo\n- diversificação de fornecedores\n- trava de preço\n- regra de crédito e cobrança\n\nRegra:\n- Proteção reduz impacto, não elimina incerteza."
+    },
+    {
+      "title": "Margem de segurança (a vacina)",
+      "body": "Exemplos:\n- não operar com caixa no zero\n- não vender com margem no limite\n- não depender de um cliente só\n\nRegra:\n- Quem opera no limite quebra com evento pequeno."
+    },
+    {
+      "title": "Checklist de risco (rotina simples)",
+      "body": "Perguntas mensais:\n- e se a receita cair 20%?\n- e se custo subir 10%?\n- e se o maior cliente atrasar 30 dias?\n\nRegra:\n- Se você tem resposta antes, você não entra em pânico depois."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de risco com plano",
+      "body": "Liste 5 riscos do seu contexto.\nPara cada:\n- probabilidade (baixa/média/alta)\n- impacto (baixo/médio/alto)\n- ação preventiva\n- ação de reação (plano B)\n\nObjetivo:\n- transformar medo em plano."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Risco é desvio do plano\n- Tipos: caixa, mercado, crédito\n- Cenários mudam: prepare respostas\n- Proteção e margem de segurança evitam quebra\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 20 (Finanças)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Risco financeiro é:",
+        "options": [
+          { "key": "A", "text": "Só perder dinheiro em investimento" },
+          { "key": "B", "text": "Qualquer fator que atrapalhe caixa, margem ou crescimento" },
+          { "key": "C", "text": "Somente imposto" },
+          { "key": "D", "text": "Somente marketing" }
+        ],
+        "answer": "B",
+        "explain": "Risco é amplo e operacional também."
+      },
+      {
+        "id": 2,
+        "question": "Risco de caixa significa:",
+        "options": [
+          { "key": "A", "text": "Faltar dinheiro no timing das obrigações" },
+          { "key": "B", "text": "Faltar likes" },
+          { "key": "C", "text": "Ter estoque" },
+          { "key": "D", "text": "Ter lucro" }
+        ],
+        "answer": "A",
+        "explain": "Liquidez e timing são o centro."
+      },
+      {
+        "id": 3,
+        "question": "Gestão de risco é mais sobre:",
+        "options": [
+          { "key": "A", "text": "Adivinhar o futuro" },
+          { "key": "B", "text": "Preparar respostas e reduzir impacto" },
+          { "key": "C", "text": "Ignorar cenários" },
+          { "key": "D", "text": "Operar no limite" }
+        ],
+        "answer": "B",
+        "explain": "Você não controla o mundo, controla suas ações."
+      },
+      {
+        "id": 4,
+        "question": "Um exemplo de proteção (hedge) prática é:",
+        "options": [
+          { "key": "A", "text": "Operar com caixa zero" },
+          { "key": "B", "text": "Reserva de caixa e diversificar fornecedores" },
+          { "key": "C", "text": "Depender de um cliente" },
+          { "key": "D", "text": "Vender sem margem" }
+        ],
+        "answer": "B",
+        "explain": "Reduz impacto de choques."
+      },
+      {
+        "id": 5,
+        "question": "Margem de segurança serve para:",
+        "options": [
+          { "key": "A", "text": "Operar no limite" },
+          { "key": "B", "text": "Evitar quebrar com eventos pequenos" },
+          { "key": "C", "text": "Aumentar risco" },
+          { "key": "D", "text": "Eliminar necessidade de caixa" }
+        ],
+        "answer": "B",
+        "explain": "Quem opera no limite é frágil."
+      },
+      {
+        "id": 6,
+        "question": "Um risco de crédito é:",
+        "options": [
+          { "key": "A", "text": "Cliente atrasar ou não pagar" },
+          { "key": "B", "text": "Preço da energia subir" },
+          { "key": "C", "text": "Inflação" },
+          { "key": "D", "text": "Câmbio" }
+        ],
+        "answer": "A",
+        "explain": "É risco de recebimento."
+      },
+      {
+        "id": 7,
+        "question": "Operar com margem muito baixa e caixa no zero aumenta:",
+        "options": [
+          { "key": "A", "text": "Robustez" },
+          { "key": "B", "text": "Fragilidade (quebra com choque pequeno)" },
+          { "key": "C", "text": "Liquidez" },
+          { "key": "D", "text": "Previsibilidade" }
+        ],
+        "answer": "B",
+        "explain": "Sem folga, qualquer variação derruba."
+      },
+      {
+        "id": 8,
+        "question": "Um checklist de cenários (queda 20%, alta 10%) ajuda a:",
+        "options": [
+          { "key": "A", "text": "Criar pânico" },
+          { "key": "B", "text": "Ter resposta antes da crise" },
+          { "key": "C", "text": "Ignorar risco" },
+          { "key": "D", "text": "Aumentar endividamento" }
+        ],
+        "answer": "B",
+        "explain": "Plano reduz improviso."
+      },
+      {
+        "id": 9,
+        "question": "Proteção reduz:",
+        "options": [
+          { "key": "A", "text": "Incerteza e impacto (mas não zera risco)" },
+          { "key": "B", "text": "Necessidade de gestão" },
+          { "key": "C", "text": "Vendas" },
+          { "key": "D", "text": "Clientes" }
+        ],
+        "answer": "A",
+        "explain": "Você reduz dano, não elimina mundo real."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Risco só existe no investimento" },
+          { "key": "B", "text": "Risco existe no caixa, mercado e crédito" },
+          { "key": "C", "text": "Risco é azar" },
+          { "key": "D", "text": "Quem planeja não precisa de reserva" }
+        ],
+        "answer": "B",
+        "explain": "Operação também tem risco financeiro."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Mapa de risco\n\n- probabilidade\n- impacto\n- prevenção\n- reação\n",
+    "pilares": "Pilares\n\n- robustez\n- margem de segurança\n- plano B\n"
+  }
+}

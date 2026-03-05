@@ -1,11 +1,39 @@
 ﻿{
-    "courseId":  "financas",
-    "title":  "Finanças - fundamentos financeiros para operação",
-    "lessons":  [
-                    {
-                        "id":  "01-introducao",
-                        "title":  "Aula 01 - Introdução prática",
-                        "file":  "01-introducao.json"
-                    }
-                ]
+  "courseId": "financas",
+  "title": "Finanças — do básico ao avançado (pessoal, empresarial, análise, investimentos e risco)",
+  "lessons": [
+    { "id": "01-introducao", "title": "Aula 01 — O que são finanças e por que elas mandam no jogo (conceitos e mentalidade)", "file": "01-introducao.json" },
+    { "id": "02-objetivos-financeiros", "title": "Aula 02 — Objetivos financeiros: metas, prazos e prioridade (curto, médio e longo)", "file": "02-objetivos-financeiros.json" },
+    { "id": "03-orcamento-fluxo-caixa-pessoal", "title": "Aula 03 — Orçamento e fluxo de caixa pessoal: controlar entrada/saída sem planilha infinita", "file": "03-orcamento-fluxo-caixa-pessoal.json" },
+    { "id": "04-reserva-emergencia", "title": "Aula 04 — Reserva de emergência: quanto, onde guardar e quando usar", "file": "04-reserva-emergencia.json" },
+    { "id": "05-dividas-juros", "title": "Aula 05 — Dívidas e juros: como sair do buraco e evitar o ciclo (juros compostos na prática)", "file": "05-dividas-juros.json" },
+
+    { "id": "06-educacao-credito-score", "title": "Aula 06 — Crédito e score: como funciona, riscos e como usar sem se destruir", "file": "06-educacao-credito-score.json" },
+    { "id": "07-consumo-inteligente", "title": "Aula 07 — Consumo inteligente: custo de oportunidade e decisões de compra", "file": "07-consumo-inteligente.json" },
+    { "id": "08-planejamento-impostos", "title": "Aula 08 — Impostos no Brasil (visão prática): IRPF, investimentos e armadilhas comuns", "file": "08-planejamento-impostos.json" },
+    { "id": "09-inflacao-poder-compra", "title": "Aula 09 — Inflação e poder de compra: por que guardar dinheiro “parado” te empobrece", "file": "09-inflacao-poder-compra.json" },
+    { "id": "10-juros-compostos-valor-tempo", "title": "Aula 10 — Valor do dinheiro no tempo: juros compostos, desconto e decisão", "file": "10-juros-compostos-valor-tempo.json" },
+
+    { "id": "11-contabilidade-basica", "title": "Aula 11 — Contabilidade básica para finanças: DRE, balanço e caixa sem dor", "file": "11-contabilidade-basica.json" },
+    { "id": "12-fluxo-caixa-empresarial", "title": "Aula 12 — Fluxo de caixa empresarial: previsibilidade, sazonalidade e sobrevivência", "file": "12-fluxo-caixa-empresarial.json" },
+    { "id": "13-capital-giro", "title": "Aula 13 — Capital de giro: estoques, prazos e o que quebra empresa de verdade", "file": "13-capital-giro.json" },
+    { "id": "14-preco-margem", "title": "Aula 14 — Precificação e margem: formar preço sem chute e sem vender prejuízo", "file": "14-preco-margem.json" },
+    { "id": "15-custos-fixos-variaveis", "title": "Aula 15 — Custos fixos e variáveis: estrutura de custo, alavancagem e ponto de equilíbrio", "file": "15-custos-fixos-variaveis.json" },
+
+    { "id": "16-analise-indicadores", "title": "Aula 16 — Indicadores financeiros: liquidez, rentabilidade e endividamento", "file": "16-analise-indicadores.json" },
+    { "id": "17-viabilidade-investimentos", "title": "Aula 17 — Viabilidade de projetos: VPL, TIR e payback (como decidir com números)", "file": "17-viabilidade-investimentos.json" },
+    { "id": "18-custo-capital", "title": "Aula 18 — Custo de capital: custo da dívida, custo do capital próprio e WACC (visão prática)", "file": "18-custo-capital.json" },
+    { "id": "19-credito-cobranca-inadimplencia", "title": "Aula 19 — Crédito, cobrança e inadimplência: política, risco e recuperação", "file": "19-credito-cobranca-inadimplencia.json" },
+    { "id": "20-gestao-riscos", "title": "Aula 20 — Gestão de riscos financeiros: volatilidade, cenário e proteção", "file": "20-gestao-riscos.json" },
+
+    { "id": "21-investimentos-renda-fixa", "title": "Aula 21 — Renda fixa: Selic, CDI, IPCA, marcação a mercado e como comparar", "file": "21-investimentos-renda-fixa.json" },
+    { "id": "22-investimentos-renda-variavel", "title": "Aula 22 — Renda variável: ações, dividendos, múltiplos e tese (sem romantizar)", "file": "22-investimentos-renda-variavel.json" },
+    { "id": "23-diversificacao-alocacao", "title": "Aula 23 — Diversificação e alocação: risco, correlação e carteira com objetivo", "file": "23-diversificacao-alocacao.json" },
+    { "id": "24-fundos-etfs", "title": "Aula 24 — Fundos e ETFs: quando faz sentido, custos e como avaliar", "file": "24-fundos-etfs.json" },
+    { "id": "25-planejamento-aposentadoria", "title": "Aula 25 — Previdência e aposentadoria: plano, taxa e estratégia (PGBL/VGBL na prática)", "file": "25-planejamento-aposentadoria.json" },
+
+    { "id": "26-psicologia-financeira", "title": "Aula 26 — Psicologia financeira: vieses, ansiedade e como não se auto-sabotar", "file": "26-psicologia-financeira.json" },
+    { "id": "27-planejamento-patrimonial", "title": "Aula 27 — Planejamento patrimonial: seguros, sucessão e proteção do patrimônio", "file": "27-planejamento-patrimonial.json" },
+    { "id": "28-projeto-final", "title": "Aula 28 — Projeto final: montar um plano financeiro completo (pessoal ou negócio) com métricas", "file": "28-projeto-final.json" }
+  ]
 }
