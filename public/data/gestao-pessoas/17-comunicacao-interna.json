@@ -1,0 +1,58 @@
+{
+  "id": "17-comunicacao-interna",
+  "title": "Aula 17 — Comunicação interna: alinhamento, rituais e confiança",
+  "steps": [
+    {
+      "title": "Comunicação interna é ferramenta de execução",
+      "body": "Comunicação clara evita ruído e acelera entrega.\n\nRegra:\n- Informação ambígua gera retrabalho e conflito."
+    },
+    {
+      "title": "Mensagens que precisam de padrão",
+      "body": "Padronize comunicação de:\n- metas\n- mudanças de processo\n- decisões de gestão\n- prioridades semanais\n\nRegra:\n- Repetição consistente reduz interpretação errada."
+    },
+    {
+      "title": "Rituais de alinhamento",
+      "body": "Rituais úteis:\n- reunião semanal de prioridades\n- checkpoint rápido diário\n- fechamento com lições aprendidas\n\nRegra:\n- Ritmo fixo cria previsibilidade."
+    },
+    {
+      "title": "Canal certo para cada tipo de mensagem",
+      "body": "Nem toda mensagem vai no mesmo canal.\n\nRegra:\n- Canal inadequado reduz alcance e entendimento."
+    },
+    {
+      "title": "Escuta ativa e feedback de comunicação",
+      "body": "Boa comunicação tem ida e volta.\n\nRegra:\n- Se a equipe não entendeu, a mensagem ainda não foi concluída."
+    },
+    {
+      "title": "Transparência em mudança e crise",
+      "body": "Em contexto de mudança:\n- comunique o que muda\n- explique o porquê\n- detalhe próximos passos\n\nRegra:\n- Silêncio em crise aumenta insegurança e boato."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de comunicação",
+      "body": "Escolha um processo e desenhe:\n- mensagens críticas\n- responsáveis\n- canais\n- frequência\n\nObjetivo:\n- reduzir ruído no fluxo operacional."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Comunicação interna sustenta execução\n- Padrão e ritual aumentam clareza\n- Canal e contexto importam\n- Escuta ativa completa o ciclo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 17 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Comunicação interna eficaz deve:", "options": [ { "key": "A", "text": "Ser eventual e informal" }, { "key": "B", "text": "Apoiar alinhamento e execução" }, { "key": "C", "text": "Ser só top-down" }, { "key": "D", "text": "Evitar feedback" } ], "answer": "B", "explain": "Comunicação serve para coordenar trabalho." },
+      { "id": 2, "question": "Ritual de alinhamento ajuda a:", "options": [ { "key": "A", "text": "Reduzir previsibilidade" }, { "key": "B", "text": "Organizar prioridades com frequência" }, { "key": "C", "text": "Aumentar boato" }, { "key": "D", "text": "Eliminar liderança" } ], "answer": "B", "explain": "Ritmo fixo melhora coordenação." },
+      { "id": 3, "question": "Canal de comunicação deve ser escolhido por:", "options": [ { "key": "A", "text": "Preferência pessoal" }, { "key": "B", "text": "Tipo de mensagem e urgência" }, { "key": "C", "text": "Hábito antigo" }, { "key": "D", "text": "Somente custo" } ], "answer": "B", "explain": "Adequação do canal aumenta entendimento." },
+      { "id": 4, "question": "Mensagem ambígua tende a causar:", "options": [ { "key": "A", "text": "Execução rápida" }, { "key": "B", "text": "Retrabalho e ruído" }, { "key": "C", "text": "Menos conflito" }, { "key": "D", "text": "Alinhamento automático" } ], "answer": "B", "explain": "Ambiguidade gera interpretações diferentes." },
+      { "id": 5, "question": "Escuta ativa na comunicação significa:", "options": [ { "key": "A", "text": "Falar mais que o time" }, { "key": "B", "text": "Confirmar compreensão e ajustar mensagem" }, { "key": "C", "text": "Evitar perguntas" }, { "key": "D", "text": "Encerrar assunto rápido" } ], "answer": "B", "explain": "Comunicação eficaz depende de retorno." },
+      { "id": 6, "question": "Em contexto de mudança, boa prática é:", "options": [ { "key": "A", "text": "Comunicar só no final" }, { "key": "B", "text": "Explicar mudança, motivo e próximos passos" }, { "key": "C", "text": "Evitar transparência" }, { "key": "D", "text": "Deixar sem responsável" } ], "answer": "B", "explain": "Transparência reduz ansiedade e ruído." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Comunicação é responsabilidade só da área de pessoas" }, { "key": "B", "text": "Liderança também é responsável por comunicação clara" }, { "key": "C", "text": "Comunicação não afeta clima" }, { "key": "D", "text": "Comunicação dispensa rotina" } ], "answer": "B", "explain": "Líder traduz prioridade em direção prática." },
+      { "id": 8, "question": "Boato organizacional tende a crescer quando:", "options": [ { "key": "A", "text": "Há comunicação transparente" }, { "key": "B", "text": "Falta informação confiável" }, { "key": "C", "text": "Existe canal definido" }, { "key": "D", "text": "Há checkpoints semanais" } ], "answer": "B", "explain": "Vácuo de informação abre espaço para ruído." },
+      { "id": 9, "question": "Mapa de comunicação ajuda a:", "options": [ { "key": "A", "text": "Ignorar responsabilidades" }, { "key": "B", "text": "Definir quem comunica o quê e quando" }, { "key": "C", "text": "Eliminar reuniões" }, { "key": "D", "text": "Substituir processo" } ], "answer": "B", "explain": "Clareza de fluxo reduz inconsistência." },
+      { "id": 10, "question": "Objetivo da aula 17:", "options": [ { "key": "A", "text": "Criar política salarial" }, { "key": "B", "text": "Estruturar comunicação interna com método" }, { "key": "C", "text": "Definir jornada" }, { "key": "D", "text": "Montar trilha de onboarding" } ], "answer": "B", "explain": "A aula foca comunicação como alavanca de execução." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Fluxo de comunicação\n\n- mensagem\n- canal\n- frequência\n- feedback\n",
+    "pilares": "Pilares\n\n- clareza\n- consistência\n- escuta ativa\n"
+  }
+}

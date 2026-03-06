@@ -1,0 +1,168 @@
+{
+  "id": "30-auditoria-compliance",
+  "title": "Aula 30 — Auditoria e compliance: trilha de compras, ética e prevenção de fraudes",
+  "steps": [
+    {
+      "title": "Compliance em compras protege empresa e pessoas",
+      "body": "Compliance em compras é seguir regra, lei e política interna com evidência.\n\nBenefícios:\n- reduz fraude\n- evita passivo jurídico\n- aumenta confiança entre áreas\n- protege reputação\n\nRegra:\n- Controle bom não trava operação; evita risco evitável."
+    },
+    {
+      "title": "Trilha de auditoria: o que precisa ficar registrado",
+      "body": "Toda compra deve ter rastreabilidade mínima:\n- requisição e aprovação\n- critérios de cotação\n- justificativa de escolha\n- contrato/pedido\n- evidência de recebimento\n\nRegra:\n- Sem trilha, decisão correta fica indefensável."
+    },
+    {
+      "title": "Conflito de interesse e conduta ética",
+      "body": "Situações sensíveis:\n- favorecimento de fornecedor\n- recebimento de vantagem indevida\n- decisão sem critérios transparentes\n\nRegra:\n- Ética em compras exige transparência e segregação de funções."
+    },
+    {
+      "title": "Controles preventivos contra fraude",
+      "body": "Controles essenciais:\n- alçadas de aprovação\n- dupla checagem em pontos críticos\n- rotação de responsabilidade\n- validação de dados cadastrais\n\nRegra:\n- Fraude prospera onde o processo é opaco e sem revisão."
+    },
+    {
+      "title": "Sinais de alerta que merecem investigação",
+      "body": "Red flags comuns:\n- compra repetida sem cotação\n- fornecedor sempre vencedor sem justificativa\n- urgência recorrente sem causa\n- divergência entre pedido e faturamento\n\nRegra:\n- Repetição de exceção é sinal de risco estrutural."
+    },
+    {
+      "title": "Auditoria interna: usar para melhorar, não só punir",
+      "body": "Auditoria bem usada:\n- identifica lacunas de processo\n- orienta ação corretiva\n- fortalece governança\n- reduz reincidência\n\nRegra:\n- Auditoria madura gera aprendizado organizacional."
+    },
+    {
+      "title": "Mini prática (45 min) — checklist de conformidade de uma compra",
+      "body": "Escolha uma compra recente e valide:\n- havia aprovação correta?\n- cotação seguiu regra?\n- escolha foi justificada?\n- recebimento e pagamento estão coerentes?\n\nObjetivo:\n- testar aderência real do processo à política."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Compliance em compras reduz risco jurídico e financeiro\n- Trilha de auditoria deve cobrir decisão ponta a ponta\n- Ética e segregação de função evitam conflito de interesse\n- Auditoria deve gerar correção e prevenção\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 30 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Compliance em compras significa:",
+        "options": [
+          { "key": "A", "text": "Somente seguir preço menor" },
+          { "key": "B", "text": "Seguir regras com rastreabilidade e ética" },
+          { "key": "C", "text": "Somente seguir prazo" },
+          { "key": "D", "text": "Somente cumprir contrato" }
+        ],
+        "answer": "B",
+        "explain": "Compliance combina regra, evidência e conduta."
+      },
+      {
+        "id": 2,
+        "question": "Trilha de auditoria serve para:",
+        "options": [
+          { "key": "A", "text": "Aumentar papelada sem objetivo" },
+          { "key": "B", "text": "Permitir verificar e defender decisões" },
+          { "key": "C", "text": "Eliminar processo" },
+          { "key": "D", "text": "Substituir liderança" }
+        ],
+        "answer": "B",
+        "explain": "Sem trilha, não há comprovação da conformidade."
+      },
+      {
+        "id": 3,
+        "question": "Exemplo de risco ético em compras:",
+        "options": [
+          { "key": "A", "text": "Critério transparente de seleção" },
+          { "key": "B", "text": "Favorecimento sem critério técnico" },
+          { "key": "C", "text": "Alçada respeitada" },
+          { "key": "D", "text": "Registro completo da decisão" }
+        ],
+        "answer": "B",
+        "explain": "Fere isonomia e pode gerar fraude."
+      },
+      {
+        "id": 4,
+        "question": "Controle preventivo eficaz é:",
+        "options": [
+          { "key": "A", "text": "Segregação de funções e aprovação por alçada" },
+          { "key": "B", "text": "Decisão individual sem revisão" },
+          { "key": "C", "text": "Urgência sem justificativa" },
+          { "key": "D", "text": "Cotação opcional sempre" }
+        ],
+        "answer": "A",
+        "explain": "Reduz risco de erro e manipulação."
+      },
+      {
+        "id": 5,
+        "question": "Red flag em compras pode ser:",
+        "options": [
+          { "key": "A", "text": "Fornecedor sempre vencedor sem explicação" },
+          { "key": "B", "text": "Histórico documentado" },
+          { "key": "C", "text": "Conferência no recebimento" },
+          { "key": "D", "text": "Aprovação formal" }
+        ],
+        "answer": "A",
+        "explain": "Padrão recorrente sem justificativa exige investigação."
+      },
+      {
+        "id": 6,
+        "question": "A auditoria interna agrega valor quando:",
+        "options": [
+          { "key": "A", "text": "Gera ação corretiva e prevenção" },
+          { "key": "B", "text": "Só aponta culpa" },
+          { "key": "C", "text": "Não registra achados" },
+          { "key": "D", "text": "Evita melhorias de processo" }
+        ],
+        "answer": "A",
+        "explain": "O foco deve ser fortalecer governança."
+      },
+      {
+        "id": 7,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Compliance atrapalha sempre a operação" },
+          { "key": "B", "text": "Compliance bem desenhado dá segurança sem travar fluxo" },
+          { "key": "C", "text": "Compliance é só para auditor externo" },
+          { "key": "D", "text": "Compliance substitui planejamento" }
+        ],
+        "answer": "B",
+        "explain": "Controle inteligente melhora qualidade da execução."
+      },
+      {
+        "id": 8,
+        "question": "Sem registro de justificativa de escolha, o risco é:",
+        "options": [
+          { "key": "A", "text": "Decisão ficar indefensável em auditoria" },
+          { "key": "B", "text": "Melhorar transparência" },
+          { "key": "C", "text": "Reduzir risco jurídico" },
+          { "key": "D", "text": "Aumentar confiança" }
+        ],
+        "answer": "A",
+        "explain": "A trilha precisa explicar por que a decisão foi tomada."
+      },
+      {
+        "id": 9,
+        "question": "Conflito de interesse deve ser tratado com:",
+        "options": [
+          { "key": "A", "text": "Transparência e mecanismos de controle" },
+          { "key": "B", "text": "Sigilo sem reporte" },
+          { "key": "C", "text": "Aceitação informal" },
+          { "key": "D", "text": "Decisão individual" }
+        ],
+        "answer": "A",
+        "explain": "Governança depende de visibilidade e regra."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo da aula é fortalecer:",
+        "options": [
+          { "key": "A", "text": "Compras sem documentação" },
+          { "key": "B", "text": "Processo auditável, ético e seguro" },
+          { "key": "C", "text": "Exceção recorrente" },
+          { "key": "D", "text": "Decisão sem critério" }
+        ],
+        "answer": "B",
+        "explain": "Compliance sustenta resultado e reputação."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Trilha mínima\n\n- decisão\n- aprovação\n- evidência\n- recebimento/pagamento\n",
+    "pilares": "Pilares\n\n- ética\n- rastreabilidade\n- prevenção\n"
+  }
+}

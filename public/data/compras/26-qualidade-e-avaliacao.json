@@ -1,0 +1,168 @@
+{
+  "id": "26-qualidade-e-avaliacao",
+  "title": "Aula 26 — Qualidade: inspeção, não conformidade e ações corretivas",
+  "steps": [
+    {
+      "title": "Qualidade em compras começa antes do recebimento",
+      "body": "Qualidade não é só inspeção no final.\nEla começa em:\n- especificação clara\n- critério de aceitação definido\n- fornecedor capaz de atender padrão\n\nRegra:\n- Quanto melhor a definição na origem, menor o retrabalho no destino."
+    },
+    {
+      "title": "Inspeção: o que conferir de forma objetiva",
+      "body": "Na prática, inspecionar é comparar o entregue com o acordado:\n- dimensão/quantidade\n- características técnicas\n- condição física\n- documentação\n\nRegra:\n- Inspeção sem critério objetivo vira opinião e conflito."
+    },
+    {
+      "title": "Não conformidade: classificar para agir certo",
+      "body": "Classificação simples ajuda resposta rápida:\n- crítica: afeta segurança/operação\n- maior: afeta uso ou desempenho\n- menor: desvio pontual sem impacto crítico\n\nRegra:\n- Classificação correta define prioridade e prazo de tratativa."
+    },
+    {
+      "title": "Causa raiz: sair do remendo",
+      "body": "Quando o mesmo erro repete, precisa investigar causa:\n- especificação ambígua\n- processo de fornecedor falho\n- transporte inadequado\n- conferência insuficiente\n\nRegra:\n- Sem causa raiz, ação corretiva vira só “apagar incêndio”."
+    },
+    {
+      "title": "Ação corretiva e preventiva (CAPA) no contexto de compras",
+      "body": "Boas ações:\n- corretiva: resolver o problema atual\n- preventiva: evitar repetição\n- prazo e responsável definidos\n- evidência de implementação\n\nRegra:\n- CAPA boa fecha com verificação de eficácia, não só com promessa."
+    },
+    {
+      "title": "Avaliação de fornecedor com foco em qualidade",
+      "body": "Indicadores úteis:\n- taxa de não conformidade\n- reincidência por tipo de falha\n- tempo de resposta a divergência\n- assertividade na ação corretiva\n\nRegra:\n- Fornecedor bom é o que entrega e corrige rápido quando falha."
+    },
+    {
+      "title": "Mini prática (45 min) — montar fluxo de não conformidade",
+      "body": "Escolha um item recorrente com histórico de problema.\n\nDesenhe:\n- como registrar desvio\n- como classificar criticidade\n- quem aprova tratativa\n- como acompanhar ação corretiva\n\nObjetivo:\n- transformar problema repetido em melhoria contínua."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Qualidade começa na especificação\n- Inspeção exige critério objetivo\n- Não conformidade deve ser classificada\n- Ação corretiva precisa atacar causa raiz\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 26 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Qualidade em compras começa principalmente:",
+        "options": [
+          { "key": "A", "text": "No pagamento" },
+          { "key": "B", "text": "Na especificação e critérios de aceitação" },
+          { "key": "C", "text": "Somente no recebimento" },
+          { "key": "D", "text": "Somente na auditoria" }
+        ],
+        "answer": "B",
+        "explain": "Definição clara reduz erro e retrabalho."
+      },
+      {
+        "id": 2,
+        "question": "Inspeção sem critério objetivo tende a:",
+        "options": [
+          { "key": "A", "text": "Gerar alinhamento automático" },
+          { "key": "B", "text": "Virar opinião e conflito" },
+          { "key": "C", "text": "Reduzir custo sempre" },
+          { "key": "D", "text": "Eliminar divergências" }
+        ],
+        "answer": "B",
+        "explain": "Sem padrão claro, cada parte interpreta de um jeito."
+      },
+      {
+        "id": 3,
+        "question": "Classificar não conformidade é importante para:",
+        "options": [
+          { "key": "A", "text": "Definir prioridade e tratativa" },
+          { "key": "B", "text": "Aumentar burocracia" },
+          { "key": "C", "text": "Evitar registro" },
+          { "key": "D", "text": "Trocar fornecedor sempre" }
+        ],
+        "answer": "A",
+        "explain": "A gravidade orienta a velocidade e o tipo de resposta."
+      },
+      {
+        "id": 4,
+        "question": "Causa raiz serve para:",
+        "options": [
+          { "key": "A", "text": "Resolver somente o sintoma" },
+          { "key": "B", "text": "Evitar repetição do problema" },
+          { "key": "C", "text": "Aumentar custo de inspeção" },
+          { "key": "D", "text": "Eliminar negociação" }
+        ],
+        "answer": "B",
+        "explain": "Sem causa raiz, o erro volta."
+      },
+      {
+        "id": 5,
+        "question": "CAPA efetiva exige:",
+        "options": [
+          { "key": "A", "text": "Só e-mail de compromisso" },
+          { "key": "B", "text": "Ação, responsável, prazo e verificação de eficácia" },
+          { "key": "C", "text": "Somente troca imediata" },
+          { "key": "D", "text": "Somente desconto" }
+        ],
+        "answer": "B",
+        "explain": "A eficácia precisa ser comprovada."
+      },
+      {
+        "id": 6,
+        "question": "Indicador útil de qualidade de fornecedor é:",
+        "options": [
+          { "key": "A", "text": "Taxa de não conformidade" },
+          { "key": "B", "text": "Quantidade de reuniões" },
+          { "key": "C", "text": "Tamanho do catálogo" },
+          { "key": "D", "text": "Cor da embalagem" }
+        ],
+        "answer": "A",
+        "explain": "Mede performance real de entrega."
+      },
+      {
+        "id": 7,
+        "question": "Falha crítica normalmente:",
+        "options": [
+          { "key": "A", "text": "Pode esperar semanas" },
+          { "key": "B", "text": "Exige ação imediata" },
+          { "key": "C", "text": "Não precisa registro" },
+          { "key": "D", "text": "Não afeta operação" }
+        ],
+        "answer": "B",
+        "explain": "Impacto alto pede resposta rápida."
+      },
+      {
+        "id": 8,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Qualidade é só responsabilidade do fornecedor" },
+          { "key": "B", "text": "Compras participa ativamente da gestão da qualidade" },
+          { "key": "C", "text": "Qualidade não impacta custo" },
+          { "key": "D", "text": "Qualidade não impacta prazo" }
+        ],
+        "answer": "B",
+        "explain": "Compras define critérios e acompanha conformidade."
+      },
+      {
+        "id": 9,
+        "question": "Reincidência de desvio indica:",
+        "options": [
+          { "key": "A", "text": "Problema estrutural não resolvido" },
+          { "key": "B", "text": "Melhoria contínua" },
+          { "key": "C", "text": "Conformidade plena" },
+          { "key": "D", "text": "Risco zero" }
+        ],
+        "answer": "A",
+        "explain": "Repetição mostra falta de correção efetiva."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo da gestão de qualidade em compras é:",
+        "options": [
+          { "key": "A", "text": "Aceitar desvio para ganhar prazo" },
+          { "key": "B", "text": "Garantir conformidade e reduzir retrabalho" },
+          { "key": "C", "text": "Comprar sempre o mais barato" },
+          { "key": "D", "text": "Eliminar conferência" }
+        ],
+        "answer": "B",
+        "explain": "Qualidade adequada protege operação e custo."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Fluxo de qualidade\n\n- critério de aceitação\n- inspeção\n- não conformidade\n- ação corretiva\n",
+    "pilares": "Pilares\n\n- prevenção\n- causa raiz\n- melhoria contínua\n"
+  }
+}

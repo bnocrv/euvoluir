@@ -1,0 +1,59 @@
+﻿{
+  "id": "03-cultura-organizacional",
+  "title": "Aula 03 — Cultura organizacional: valores, comportamentos e prática",
+  "steps": [
+    {
+      "title": "Cultura é o jeito real de fazer as coisas",
+      "body": "Cultura não é frase na parede.\nÉ comportamento repetido e tolerado no dia a dia.\n\nRegra:\n- O que a liderança permite vira cultura."
+    },
+    {
+      "title": "Valores e comportamentos observáveis",
+      "body": "Valor só funciona quando vira ação concreta.\n\nExemplo:\n- valor: colaboração\n- comportamento: compartilhar informação e apoiar pares\n\nRegra:\n- Valor sem comportamento é discurso vazio."
+    },
+    {
+      "title": "Ritos que fortalecem cultura",
+      "body": "Ritos úteis:\n- reunião de alinhamento\n- feedbacks frequentes\n- reconhecimento público\n- retrospectiva de erros e aprendizados\n\nRegra:\n- Cultura se constrói por repetição consistente."
+    },
+    {
+      "title": "Sinais de cultura desalinhada",
+      "body": "Alertas comuns:\n- mensagem oficial diferente da prática\n- medo de expor problema\n- competição destrutiva entre áreas\n\nRegra:\n- Desalinhamento cultural reduz velocidade e confiança."
+    },
+    {
+      "title": "Papel da gestão de pessoas na cultura",
+      "body": "A área influencia cultura por:\n- critérios de contratação\n- trilhas de liderança\n- avaliação de desempenho\n- reconhecimento\n\nRegra:\n- Sistema de pessoas reforça ou enfraquece a cultura desejada."
+    },
+    {
+      "title": "Cultura e resultado de negócio",
+      "body": "Cultura forte e coerente tende a gerar:\n- menor rotatividade\n- melhor execução\n- mais colaboração\n\nRegra:\n- Cultura é ativo operacional, não tema abstrato."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa cultural",
+      "body": "Liste:\n- 3 comportamentos que a empresa diz valorizar\n- 3 comportamentos que realmente acontecem\n- 2 lacunas prioritárias para fechar\n\nObjetivo:\n- transformar percepção em ação."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Cultura é comportamento praticado\n- Valores precisam virar atitude observável\n- Ritos e liderança sustentam coerência\n- Gestão de pessoas atua como alavanca cultural\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 03 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Cultura organizacional é:", "options": [ { "key": "A", "text": "Somente missão e visão escritas" }, { "key": "B", "text": "Comportamento repetido no dia a dia" }, { "key": "C", "text": "Somente política de gestão de pessoas" }, { "key": "D", "text": "Somente clima" } ], "answer": "B", "explain": "Cultura se manifesta na prática cotidiana." },
+      { "id": 2, "question": "Valor corporativo tem efeito quando:", "options": [ { "key": "A", "text": "Vira comportamento observável" }, { "key": "B", "text": "Fica no mural" }, { "key": "C", "text": "É divulgado uma vez ao ano" }, { "key": "D", "text": "É citado em evento" } ], "answer": "A", "explain": "Valor precisa ser traduzido em conduta." },
+      { "id": 3, "question": "Quem mais influencia cultura?", "options": [ { "key": "A", "text": "Apenas comunicação interna" }, { "key": "B", "text": "Liderança e sistema de gestão" }, { "key": "C", "text": "Apenas novos colaboradores" }, { "key": "D", "text": "Apenas área financeira" } ], "answer": "B", "explain": "Liderança e regras moldam comportamento." },
+      { "id": 4, "question": "Sinal de cultura desalinhada:", "options": [ { "key": "A", "text": "Discurso e prática coerentes" }, { "key": "B", "text": "Medo de apontar problemas" }, { "key": "C", "text": "Feedback frequente" }, { "key": "D", "text": "Ritos consistentes" } ], "answer": "B", "explain": "Ambiente inseguro prejudica aprendizado e execução." },
+      { "id": 5, "question": "Ritos organizacionais servem para:", "options": [ { "key": "A", "text": "Reforçar comportamentos desejados" }, { "key": "B", "text": "Aumentar custo sem retorno" }, { "key": "C", "text": "Substituir liderança" }, { "key": "D", "text": "Evitar conversa difícil" } ], "answer": "A", "explain": "Ritos criam repetição e previsibilidade cultural." },
+      { "id": 6, "question": "Contratação influencia cultura porque:", "options": [ { "key": "A", "text": "Traz comportamentos para dentro da empresa" }, { "key": "B", "text": "Não tem efeito cultural" }, { "key": "C", "text": "Depende só de salário" }, { "key": "D", "text": "É tema apenas jurídico" } ], "answer": "A", "explain": "Perfis admitidos reforçam padrões internos." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Cultura não impacta resultado" }, { "key": "B", "text": "Cultura impacta execução e retenção" }, { "key": "C", "text": "Cultura é irrelevante para líderes" }, { "key": "D", "text": "Cultura se cria em um evento" } ], "answer": "B", "explain": "Comportamento coletivo afeta desempenho." },
+      { "id": 8, "question": "Uma boa prática para cultura é:", "options": [ { "key": "A", "text": "Reconhecer atitudes alinhadas" }, { "key": "B", "text": "Ignorar comportamentos incoerentes" }, { "key": "C", "text": "Mudar valor toda semana" }, { "key": "D", "text": "Tratar cultura só em crises" } ], "answer": "A", "explain": "Reconhecimento reforça exemplo positivo." },
+      { "id": 9, "question": "Cultura forte significa:", "options": [ { "key": "A", "text": "Controle excessivo" }, { "key": "B", "text": "Coerência entre valores e prática" }, { "key": "C", "text": "Ausência de conflito" }, { "key": "D", "text": "Uniformidade total de pensamento" } ], "answer": "B", "explain": "Força cultural vem de consistência." },
+      { "id": 10, "question": "Objetivo da aula 03:", "options": [ { "key": "A", "text": "Ensinar folha de pagamento" }, { "key": "B", "text": "Estruturar compreensão prática de cultura" }, { "key": "C", "text": "Criar plano salarial" }, { "key": "D", "text": "Auditar contratos" } ], "answer": "B", "explain": "A aula foca em cultura como sistema operacional." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Componentes culturais\n\n- valores\n- comportamentos\n- ritos\n- liderança\n",
+    "pilares": "Pilares\n\n- coerência\n- repetição\n- exemplo\n"
+  }
+}
+

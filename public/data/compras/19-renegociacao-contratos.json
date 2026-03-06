@@ -1,0 +1,168 @@
+{
+    "id": "19-renegociacao-contratos",
+    "title": "Aula 19 — Renegociação e reajustes: manter custo sob controle sem romper relação",
+    "steps": [
+        {
+            "title": "Renegociar é inevitável (mercado muda)",
+            "body": "Preço e condição mudam por:\n- inflação e câmbio\n- variação de insumos\n- sazonalidade\n- mudanças de demanda\n\nCompras maduro não espera crise: revisa e negocia com método.\n\nRegra:\n- Renegociação é rotina de gestão, não briga emergencial."
+        },
+        {
+            "title": "Reajuste: quando faz sentido e quando é “empurrão”",
+            "body": "Reajuste legítimo costuma vir com:\n- evidência (índice, matéria-prima, câmbio)\n- impacto demonstrável\n\nReajuste oportunista tem sinais:\n- pedido genérico sem base\n- urgência fabricada\n- ameaça de corte sem discussão\n\nRegra:\n- Reajuste sem evidência é só tentativa."
+        },
+        {
+            "title": "Estratégias para renegociar sem quebrar relacionamento",
+            "body": "Estratégias maduras:\n- discutir custo total, não só unitário\n- propor troca (volume, prazo, logística)\n- renegociar escopo (especificação equivalente)\n- travar preço por período em troca de previsibilidade\n\nRegra:\n- Você negocia melhor quando oferece caminhos, não bloqueios."
+        },
+        {
+            "title": "Quando dizer não (e como dizer sem drama)",
+            "body": "Dizer não é parte da função.\n\nForma adulta:\n- “Com esse custo total eu não aprovo. Se ajustarmos X (frete/pagamento/volume), conseguimos avançar?”\n- “Se não houver alternativa, preciso acionar contingência e cotar mercado.”\n\nRegra:\n- Não é sobre agressividade; é sobre limite e governança."
+        },
+        {
+            "title": "Cláusulas de reajuste (o que ajuda muito)",
+            "body": "Em contratos recorrentes, defina:\n- periodicidade de reajuste\n- índice de referência (quando aplicável)\n- gatilhos (câmbio, matéria-prima)\n- necessidade de aviso prévio\n\nRegra:\n- Reajuste com regra evita renegociação emocional."
+        },
+        {
+            "title": "Erros comuns",
+            "body": "Erros:\n- aceitar reajuste sem evidência\n- atrasar renegociação e virar urgência\n- não registrar acordo novo\n\nRegra:\n- Renegociação sem registro vira “mudança fantasma” e conflito."
+        },
+        {
+            "title": "Mini prática (45 min) — roteiro de renegociação",
+            "body": "Simule um reajuste pedido pelo fornecedor.\nMonte:\n- perguntas de evidência (base, índice, impacto)\n- 3 alternativas (volume, pagamento, logística)\n- limite de aceitação\n\nObjetivo:\n- conduzir reajuste com controle."
+        },
+        {
+            "title": "Resumo da aula",
+            "body": "- Renegociação é rotina quando mercado muda\n- Reajuste precisa de evidência\n- Use troca de valor para manter relação\n- Cláusula de reajuste reduz conflito\n- Registre o novo acordo\n\nAgora fixe com o quiz."
+        }
+    ],
+    "quiz": {
+        "title": "Quiz (10 perguntas) — Aula 19 (Compras)",
+        "instructions": "Marque A, B, C ou D.",
+        "questions": [
+            {
+                "id": 1,
+                "question": "Renegociação em compras é:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Briga emergencial"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Rotina de gestão para acompanhar mercado e risco"
+                    },
+                    {
+                        "key": "C",
+                        "text": "Coisa rara"
+                    },
+                    {
+                        "key": "D",
+                        "text": "Algo que só acontece com fornecedor ruim"
+                    }
+                ],
+                "answer": "B",
+                "explain": "Mercado muda; compras precisa gerenciar."
+            },
+            {
+                "id": 2,
+                "question": "Reajuste legítimo deve vir com:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Ameaça"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Evidência (índice/base/impacto)"
+                    },
+                    {
+                        "key": "C",
+                        "text": "Mensagem genérica"
+                    },
+                    {
+                        "key": "D",
+                        "text": "Silêncio"
+                    }
+                ],
+                "answer": "B",
+                "explain": "Sem evidência, é tentativa oportunista."
+            },
+            {
+                "id": 3,
+                "question": "Uma forma madura de negociar reajuste é:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Aceitar sem questionar"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Buscar troca de valor (volume/pagamento/logística)"
+                    },
+                    {
+                        "key": "C",
+                        "text": "Ignorar custo total"
+                    },
+                    {
+                        "key": "D",
+                        "text": "Fazer blefe"
+                    }
+                ],
+                "answer": "B",
+                "explain": "Troca cria caminhos sem quebrar relação."
+            },
+            {
+                "id": 4,
+                "question": "Cláusula de reajuste ajuda porque:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Evita regra"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Define periodicidade e base, reduzindo conflito"
+                    },
+                    {
+                        "key": "C",
+                        "text": "Elimina negociação"
+                    },
+                    {
+                        "key": "D",
+                        "text": "Elimina fornecedor alternativo"
+                    }
+                ],
+                "answer": "B",
+                "explain": "Regra clara reduz discussão emocional."
+            },
+            {
+                "id": 5,
+                "question": "Aceitar reajuste sem evidência tende a:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Reduzir custo total"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Aumentar custo e enfraquecer governança"
+                    },
+                    {
+                        "key": "C",
+                        "text": "Melhorar prazo"
+                    },
+                    {
+                        "key": "D",
+                        "text": "Eliminar risco"
+                    }
+                ],
+                "answer": "B",
+                "explain": "Você perde critério e incentiva novos pedidos."
+            }
+        ]
+    },
+    "extra": {
+        "eventosMinimos": "Renegociação\n\n- evidência do reajuste\n- alternativas (troca)\n- limite\n- registro do novo acordo\n",
+        "pilares": "Pilares\n\n- governança\n- evidência\n- sustentabilidade\n"
+    }
+}

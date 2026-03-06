@@ -1,0 +1,59 @@
+﻿{
+  "id": "08-triagem-entrevista",
+  "title": "Aula 08 — Triagem e entrevistas: como avaliar com critério",
+  "steps": [
+    {
+      "title": "Triagem filtra aderência com objetividade",
+      "body": "Triagem é a etapa que separa candidatos com maior probabilidade de sucesso.\n\nRegra:\n- Triagem fraca aumenta tempo e custo da seleção."
+    },
+    {
+      "title": "Critérios de triagem por prioridade",
+      "body": "Classifique requisitos em:\n- essenciais\n- desejáveis\n\nRegra:\n- Misturar tudo no mesmo peso distorce decisão."
+    },
+    {
+      "title": "Entrevista estruturada",
+      "body": "Roteiro estruturado inclui:\n- perguntas por competência\n- perguntas situacionais\n- espaço para evidências concretas\n\nRegra:\n- Entrevista sem roteiro tende a viés de impressão."
+    },
+    {
+      "title": "Avaliar comportamento e técnica",
+      "body": "Equilíbrio recomendado:\n- capacidade técnica para a função\n- postura e colaboração\n- alinhamento com valores da equipe\n\nRegra:\n- Contratação boa combina competência e contexto."
+    },
+    {
+      "title": "Tomada de decisão após entrevista",
+      "body": "Use ficha de avaliação padronizada.\nDocumente pontos fortes, riscos e recomendação final.\n\nRegra:\n- Sem registro, feedback e melhoria ficam frágeis."
+    },
+    {
+      "title": "Erros comuns em entrevista",
+      "body": "Erros recorrentes:\n- excesso de conversa informal\n- perguntas desconectadas da vaga\n- decisão baseada em simpatia\n\nRegra:\n- Avaliação exige evidência, não impressão."
+    },
+    {
+      "title": "Mini prática (45 min) — roteiro padrão",
+      "body": "Monte um roteiro para uma vaga real:\n- 5 perguntas técnicas\n- 5 perguntas comportamentais\n- critérios de avaliação por resposta\n\nObjetivo:\n- padronizar entrevistas e reduzir viés."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Triagem deve priorizar critérios essenciais\n- Entrevista estruturada aumenta qualidade da decisão\n- Registro pós-entrevista fortalece governança\n- Evidência vale mais que impressão pessoal\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 08 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Objetivo da triagem:", "options": [ { "key": "A", "text": "Convidar todos para entrevista" }, { "key": "B", "text": "Filtrar aderência com critérios da vaga" }, { "key": "C", "text": "Substituir decisão final" }, { "key": "D", "text": "Eliminar avaliação técnica" } ], "answer": "B", "explain": "Triagem bem feita economiza tempo e melhora qualidade." },
+      { "id": 2, "question": "Separar requisitos essenciais e desejáveis ajuda a:", "options": [ { "key": "A", "text": "Reduzir clareza" }, { "key": "B", "text": "Priorizar melhor a análise" }, { "key": "C", "text": "Aumentar subjetividade" }, { "key": "D", "text": "Dispensar entrevista" } ], "answer": "B", "explain": "Priorização evita decisões distorcidas." },
+      { "id": 3, "question": "Entrevista estruturada é aquela que:", "options": [ { "key": "A", "text": "Segue roteiro por competência" }, { "key": "B", "text": "É totalmente improvisada" }, { "key": "C", "text": "Foca só em conversa informal" }, { "key": "D", "text": "Ignora requisitos da vaga" } ], "answer": "A", "explain": "Estrutura reduz viés e melhora comparabilidade." },
+      { "id": 4, "question": "Decisão baseada em simpatia é risco porque:", "options": [ { "key": "A", "text": "Aumenta objetividade" }, { "key": "B", "text": "Desconsidera evidência de competência" }, { "key": "C", "text": "Melhora previsibilidade" }, { "key": "D", "text": "Reduz erro de contratação" } ], "answer": "B", "explain": "Impressão pessoal não substitui critério técnico." },
+      { "id": 5, "question": "Ficha de avaliação pós-entrevista serve para:", "options": [ { "key": "A", "text": "Registrar evidências e justificar decisão" }, { "key": "B", "text": "Apenas arquivar currículo" }, { "key": "C", "text": "Aumentar tempo sem ganho" }, { "key": "D", "text": "Substituir gestor" } ], "answer": "A", "explain": "Registro fortalece consistência e governança." },
+      { "id": 6, "question": "Frase correta:", "options": [ { "key": "A", "text": "Entrevista não precisa relação com a vaga" }, { "key": "B", "text": "Perguntas devem investigar evidências para a função" }, { "key": "C", "text": "Critério padronizado atrapalha" }, { "key": "D", "text": "Decisão não precisa justificativa" } ], "answer": "B", "explain": "Entrevista existe para validar aderência real." },
+      { "id": 7, "question": "Avaliação completa considera:", "options": [ { "key": "A", "text": "Só experiência anterior" }, { "key": "B", "text": "Técnica e comportamento no contexto da vaga" }, { "key": "C", "text": "Só formação acadêmica" }, { "key": "D", "text": "Só disponibilidade de horário" } ], "answer": "B", "explain": "Aderência depende de múltiplos fatores." },
+      { "id": 8, "question": "Roteiro de entrevista ajuda a:", "options": [ { "key": "A", "text": "Padronizar análise entre candidatos" }, { "key": "B", "text": "Aumentar viés" }, { "key": "C", "text": "Eliminar perguntas de competência" }, { "key": "D", "text": "Ignorar cultura" } ], "answer": "A", "explain": "Comparabilidade é essencial para decisão justa." },
+      { "id": 9, "question": "Erro comum na triagem:", "options": [ { "key": "A", "text": "Usar critérios essenciais" }, { "key": "B", "text": "Não priorizar requisitos" }, { "key": "C", "text": "Registrar decisão" }, { "key": "D", "text": "Envolver gestor" } ], "answer": "B", "explain": "Sem prioridade, o filtro perde eficácia." },
+      { "id": 10, "question": "Objetivo da aula 08:", "options": [ { "key": "A", "text": "Ensinar orçamento de gestão de pessoas" }, { "key": "B", "text": "Estruturar triagem e entrevista com critério" }, { "key": "C", "text": "Definir benefícios" }, { "key": "D", "text": "Tratar desligamento" } ], "answer": "B", "explain": "A aula fortalece qualidade da avaliação de candidatos." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Roteiro mínimo\n\n- triagem\n- perguntas por competência\n- ficha de avaliação\n",
+    "pilares": "Pilares\n\n- objetividade\n- evidência\n- comparabilidade\n"
+  }
+}
+

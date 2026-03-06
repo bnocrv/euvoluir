@@ -193,6 +193,11 @@
 .quiz-feedback{ margin-top: 10px; }
 .quiz-summary{ margin-top: 10px; }
 .quiz-feedback-highlight{ color: rgba(255,255,255,.96); }
+.quiz-option-btn.is-selected{
+  border-color: rgba(225,6,19,.9);
+  background: linear-gradient(180deg, rgba(225,6,19,.38), rgba(225,6,19,.2));
+  box-shadow: 0 0 16px rgba(225,6,19,.35);
+}
 
 .badge.quiz-ok{
   border-color: rgba(34,197,94,.75);

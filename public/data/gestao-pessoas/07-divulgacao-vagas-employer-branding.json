@@ -1,0 +1,59 @@
+﻿{
+  "id": "07-divulgacao-vagas-employer-branding",
+  "title": "Aula 07 — Divulgação de vagas e employer branding",
+  "steps": [
+    {
+      "title": "Divulgar vaga é posicionar a empresa no mercado",
+      "body": "Cada vaga publicada comunica como a empresa trabalha.\n\nRegra:\n- Divulgação ruim afasta bons candidatos antes da entrevista."
+    },
+    {
+      "title": "Employer branding na prática",
+      "body": "Employer branding é a reputação da empresa como lugar para trabalhar.\n\nEle é formado por:\n- experiência de candidatura\n- comunicação transparente\n- coerência entre promessa e realidade\n\nRegra:\n- Marca empregadora forte reduz custo e tempo de contratação."
+    },
+    {
+      "title": "Descrição de vaga que atrai pessoas certas",
+      "body": "Boa descrição inclui:\n- contexto da função\n- responsabilidades reais\n- requisitos essenciais (não excessivos)\n- benefícios e modelo de trabalho\n\nRegra:\n- Clareza gera autoseleção e melhora qualidade do funil."
+    },
+    {
+      "title": "Canais de divulgação e público-alvo",
+      "body": "Use canais conforme perfil:\n- plataformas abertas\n- comunidades técnicas\n- indicações estruturadas\n- redes profissionais\n\nRegra:\n- Canal errado gera volume sem aderência."
+    },
+    {
+      "title": "Tom de comunicação e linguagem inclusiva",
+      "body": "Evite linguagem excludente.\nPriorize texto claro e direto.\n\nRegra:\n- Linguagem inclusiva aumenta diversidade de talentos no funil."
+    },
+    {
+      "title": "Métricas de divulgação",
+      "body": "Acompanhe:\n- taxa de candidatura qualificada\n- custo por candidatura\n- tempo até shortlist\n- origem dos melhores candidatos\n\nRegra:\n- Sem métrica, canal é escolhido por opinião."
+    },
+    {
+      "title": "Mini prática (45 min) — revisão de anúncio",
+      "body": "Pegue uma vaga publicada e revise:\n- clareza do texto\n- requisitos realmente necessários\n- proposta de valor ao candidato\n- canal adequado ao perfil\n\nObjetivo:\n- aumentar qualidade do funil de entrada."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Divulgação de vaga também constrói marca empregadora\n- Descrição clara melhora aderência\n- Canal e linguagem influenciam qualidade do funil\n- Métricas orientam ajustes contínuos\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 07 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Employer branding é:", "options": [ { "key": "A", "text": "Somente campanha de marketing" }, { "key": "B", "text": "Percepção da empresa como empregadora" }, { "key": "C", "text": "Somente salário ofertado" }, { "key": "D", "text": "Somente avaliação de desempenho" } ], "answer": "B", "explain": "Reflete reputação e experiência do candidato." },
+      { "id": 2, "question": "Descrição de vaga eficaz deve ser:", "options": [ { "key": "A", "text": "Genérica e ampla" }, { "key": "B", "text": "Clara e alinhada ao trabalho real" }, { "key": "C", "text": "Longa e técnica sem contexto" }, { "key": "D", "text": "Focada só em requisitos" } ], "answer": "B", "explain": "Clareza melhora aderência do candidato." },
+      { "id": 3, "question": "Canal de divulgação deve ser escolhido por:", "options": [ { "key": "A", "text": "Hábito da equipe apenas" }, { "key": "B", "text": "Perfil da vaga e público-alvo" }, { "key": "C", "text": "Menor custo sempre" }, { "key": "D", "text": "Volume absoluto de candidatos" } ], "answer": "B", "explain": "Aderência do canal importa mais que volume." },
+      { "id": 4, "question": "Linguagem inclusiva em vaga:", "options": [ { "key": "A", "text": "Restringe o funil" }, { "key": "B", "text": "Amplia diversidade de candidatos" }, { "key": "C", "text": "Não muda nada" }, { "key": "D", "text": "Aumenta tempo de contratação sempre" } ], "answer": "B", "explain": "Texto inclusivo amplia alcance qualificado." },
+      { "id": 5, "question": "Sinal de divulgação ineficaz:", "options": [ { "key": "A", "text": "Muitos candidatos sem aderência" }, { "key": "B", "text": "Shortlist rápida e consistente" }, { "key": "C", "text": "Candidaturas alinhadas" }, { "key": "D", "text": "Tempo de seleção controlado" } ], "answer": "A", "explain": "Volume sem qualidade aumenta esforço de triagem." },
+      { "id": 6, "question": "Métrica útil para avaliar canal:", "options": [ { "key": "A", "text": "Origem dos candidatos aprovados" }, { "key": "B", "text": "Tamanho do anúncio" }, { "key": "C", "text": "Quantidade de caracteres" }, { "key": "D", "text": "Cor da postagem" } ], "answer": "A", "explain": "Mostra efetividade real da fonte de candidatos." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Divulgação começa e termina no anúncio" }, { "key": "B", "text": "Experiência do candidato também impacta a marca" }, { "key": "C", "text": "Marca empregadora não afeta contratação" }, { "key": "D", "text": "Bons candidatos aceitam qualquer processo" } ], "answer": "B", "explain": "A jornada completa influencia reputação." },
+      { "id": 8, "question": "Requisitos excessivos no anúncio tendem a:", "options": [ { "key": "A", "text": "Melhorar aderência" }, { "key": "B", "text": "Reduzir candidatos qualificados" }, { "key": "C", "text": "Aumentar diversidade" }, { "key": "D", "text": "Reduzir viés" } ], "answer": "B", "explain": "Excesso pode afastar talentos aptos." },
+      { "id": 9, "question": "Objetivo da divulgação de vaga é:", "options": [ { "key": "A", "text": "Gerar o maior número possível de currículos" }, { "key": "B", "text": "Atrair candidatos aderentes à necessidade real" }, { "key": "C", "text": "Reduzir tempo de entrevista sem critério" }, { "key": "D", "text": "Substituir seleção" } ], "answer": "B", "explain": "Qualidade do funil é foco principal." },
+      { "id": 10, "question": "Objetivo da aula 07:", "options": [ { "key": "A", "text": "Ensinar onboarding" }, { "key": "B", "text": "Estruturar divulgação e marca empregadora" }, { "key": "C", "text": "Definir PDI" }, { "key": "D", "text": "Tratar desligamento" } ], "answer": "B", "explain": "A aula fortalece atração qualificada." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist da vaga\n\n- mensagem\n- requisitos\n- canal\n- métrica\n",
+    "pilares": "Pilares\n\n- clareza\n- inclusão\n- reputação empregadora\n"
+  }
+}
+

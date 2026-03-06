@@ -1,0 +1,59 @@
+﻿{
+  "id": "06-recrutamento-selecao-fundamentos",
+  "title": "Aula 06 — Recrutamento e seleção: fundamentos e processo",
+  "steps": [
+    {
+      "title": "Recrutar bem reduz custo de erro",
+      "body": "Recrutamento e seleção definem a qualidade da entrada no time.\n\nQuando o processo falha:\n- aumenta turnover precoce\n- cresce retrabalho da liderança\n- cai produtividade\n\nRegra:\n- Contratar certo no início custa menos que corrigir depois."
+    },
+    {
+      "title": "Diferença entre recrutar e selecionar",
+      "body": "Recrutar é atrair candidatos.\nSelecionar é decidir quem melhor atende ao contexto da vaga.\n\nRegra:\n- Volume sem critério não melhora contratação."
+    },
+    {
+      "title": "Perfil da vaga: ponto de partida",
+      "body": "Perfil claro deve conter:\n- missão da função\n- entregas esperadas\n- competências técnicas\n- competências comportamentais\n\nRegra:\n- Perfil vago gera entrevista subjetiva."
+    },
+    {
+      "title": "Etapas mínimas do processo",
+      "body": "Fluxo básico:\n- alinhamento da vaga\n- divulgação\n- triagem\n- entrevista\n- decisão e proposta\n\nRegra:\n- Processo simples e consistente é melhor que processo longo sem qualidade."
+    },
+    {
+      "title": "Critérios objetivos de decisão",
+      "body": "Critérios úteis:\n- aderência ao perfil\n- evidência de resultado anterior\n- capacidade de aprendizado\n- alinhamento cultural\n\nRegra:\n- Decisão sem critério aumenta viés e erro."
+    },
+    {
+      "title": "Papel da liderança na seleção",
+      "body": "Gestor imediato participa para:\n- validar escopo real da vaga\n- avaliar aderência técnica do dia a dia\n- alinhar expectativa de entrega\n\nRegra:\n- Seleção sem líder engajado perde precisão."
+    },
+    {
+      "title": "Mini prática (45 min) — checklist de vaga",
+      "body": "Escolha uma vaga real e valide:\n- perfil está claro?\n- critérios estão documentados?\n- etapas estão definidas?\n- quem decide e com base em quê?\n\nObjetivo:\n- profissionalizar decisões de contratação."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Recrutar é atrair; selecionar é decidir com critério\n- Perfil de vaga é base do processo\n- Etapas claras reduzem erro\n- Liderança deve atuar junto na decisão\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 06 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Objetivo central de recrutamento e seleção:", "options": [ { "key": "A", "text": "Preencher vaga rápido sem critério" }, { "key": "B", "text": "Atrair e escolher pessoas aderentes à necessidade da função" }, { "key": "C", "text": "Somente cumprir processo" }, { "key": "D", "text": "Reduzir custo de anúncio" } ], "answer": "B", "explain": "A meta é qualidade da contratação com aderência real." },
+      { "id": 2, "question": "Recrutar significa:", "options": [ { "key": "A", "text": "Selecionar o candidato final" }, { "key": "B", "text": "Atrair candidatos para a vaga" }, { "key": "C", "text": "Aplicar avaliação de desempenho" }, { "key": "D", "text": "Integrar novo colaborador" } ], "answer": "B", "explain": "Recrutamento é etapa de atração." },
+      { "id": 3, "question": "Selecionar significa:", "options": [ { "key": "A", "text": "Escolher com base em critérios definidos" }, { "key": "B", "text": "Publicar vaga em canais" }, { "key": "C", "text": "Montar plano de onboarding" }, { "key": "D", "text": "Criar trilha de treinamento" } ], "answer": "A", "explain": "Seleção é tomada de decisão com evidência." },
+      { "id": 4, "question": "Perfil de vaga vago tende a gerar:", "options": [ { "key": "A", "text": "Mais objetividade" }, { "key": "B", "text": "Entrevista subjetiva e erro de contratação" }, { "key": "C", "text": "Menor retrabalho" }, { "key": "D", "text": "Melhor aderência" } ], "answer": "B", "explain": "Sem clareza, cada avaliador julga por percepção." },
+      { "id": 5, "question": "Um critério de decisão recomendado é:", "options": [ { "key": "A", "text": "Afinidade pessoal apenas" }, { "key": "B", "text": "Evidência de resultado e aderência ao perfil" }, { "key": "C", "text": "Tempo de entrevista" }, { "key": "D", "text": "Facilidade de deslocamento apenas" } ], "answer": "B", "explain": "Critério precisa refletir entrega esperada." },
+      { "id": 6, "question": "Participação do gestor imediato na seleção:", "options": [ { "key": "A", "text": "É irrelevante" }, { "key": "B", "text": "Aumenta precisão da escolha" }, { "key": "C", "text": "Substitui todo o processo" }, { "key": "D", "text": "Só serve para formalidade" } ], "answer": "B", "explain": "Gestor ajuda a validar necessidade real da posição." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Volume de candidatos garante contratação certa" }, { "key": "B", "text": "Critério claro é mais importante que volume" }, { "key": "C", "text": "Entrevista é opcional sempre" }, { "key": "D", "text": "Processo deve ser improvisado" } ], "answer": "B", "explain": "Qualidade da decisão vem de critério, não de quantidade." },
+      { "id": 8, "question": "Custo de contratação errada costuma aparecer em:", "options": [ { "key": "A", "text": "Turnover precoce e baixa produtividade" }, { "key": "B", "text": "Aumento automático de performance" }, { "key": "C", "text": "Redução de retrabalho" }, { "key": "D", "text": "Melhora de clima" } ], "answer": "A", "explain": "Erro de entrada impacta operação e equipe." },
+      { "id": 9, "question": "Etapas mínimas de seleção incluem:", "options": [ { "key": "A", "text": "Divulgação, triagem, entrevista e decisão" }, { "key": "B", "text": "Apenas triagem" }, { "key": "C", "text": "Apenas proposta" }, { "key": "D", "text": "Apenas dinâmica de grupo" } ], "answer": "A", "explain": "Fluxo completo melhora consistência da escolha." },
+      { "id": 10, "question": "Objetivo da aula 06:", "options": [ { "key": "A", "text": "Ensinar desligamento" }, { "key": "B", "text": "Fundamentar processo de recrutamento e seleção" }, { "key": "C", "text": "Definir política de remuneração" }, { "key": "D", "text": "Tratar auditoria de folha" } ], "answer": "B", "explain": "A aula estrutura base para contratar com método." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Etapas essenciais\n\n- perfil\n- atração\n- triagem\n- decisão\n",
+    "pilares": "Pilares\n\n- objetividade\n- aderência\n- parceria com liderança\n"
+  }
+}
+

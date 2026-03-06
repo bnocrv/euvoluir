@@ -1,0 +1,58 @@
+{
+  "id": "30-tecnologia-gestao-pessoas-automacao",
+  "title": "Aula 30 — Tecnologia em gestão de pessoas: sistemas, automação e produtividade",
+  "steps": [
+    {
+      "title": "Tecnologia deve simplificar, não complicar",
+      "body": "Sistemas em gestão de pessoas precisam reduzir retrabalho e aumentar visibilidade.\n\nRegra:\n- Ferramenta sem processo claro digitaliza desorganização."
+    },
+    {
+      "title": "Processos candidatos à automação",
+      "body": "Automação funciona bem em:\n- admissão documental\n- controle de prazos\n- trilhas de treinamento\n- alertas de conformidade\n\nRegra:\n- Automatize o repetitivo e padronizável primeiro."
+    },
+    {
+      "title": "Integração entre sistemas",
+      "body": "Integração evita retrabalho manual entre:\n- cadastro de pessoas\n- ponto/folha\n- desempenho/desenvolvimento\n\nRegra:\n- Sistema isolado reduz valor e aumenta erro de atualização."
+    },
+    {
+      "title": "Dados e dashboards operacionais",
+      "body": "Com tecnologia adequada, a área ganha:\n- indicadores em tempo real\n- histórico comparável\n- alertas preventivos\n\nRegra:\n- Dado acessível acelera decisão."
+    },
+    {
+      "title": "Governança digital e segurança",
+      "body": "Cuidados essenciais:\n- controle de acesso\n- proteção de dados sensíveis\n- trilha de alteração\n\nRegra:\n- Transformação digital sem segurança aumenta risco."
+    },
+    {
+      "title": "Adoção pelos usuários",
+      "body": "Para adoção real:\n- treinamento prático\n- suporte inicial\n- clareza de benefício para usuário\n\nRegra:\n- Ferramenta boa sem adesão continua subutilizada."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de automação",
+      "body": "Escolha um processo e defina:\n- etapa manual atual\n- ganho esperado com automação\n- risco da mudança\n- indicador de sucesso\n\nObjetivo:\n- priorizar automação com valor real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Tecnologia deve apoiar execução e governança\n- Comece pela automação de processos repetitivos\n- Integração de sistemas reduz erro e retrabalho\n- Adoção de usuários é chave para resultado\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 30 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Tecnologia em gestão de pessoas deve priorizar:", "options": [ { "key": "A", "text": "Complexidade do sistema" }, { "key": "B", "text": "Simplicidade e ganho operacional" }, { "key": "C", "text": "Volume de telas" }, { "key": "D", "text": "Somente custo inicial" } ], "answer": "B", "explain": "Valor vem de produtividade e controle." },
+      { "id": 2, "question": "Automação inicial recomendada:", "options": [ { "key": "A", "text": "Processos repetitivos e padronizáveis" }, { "key": "B", "text": "Casos raros e imprevisíveis" }, { "key": "C", "text": "Processos sem regra" }, { "key": "D", "text": "Somente estratégicos complexos" } ], "answer": "A", "explain": "Maior retorno costuma estar no repetitivo." },
+      { "id": 3, "question": "Integração entre sistemas reduz:", "options": [ { "key": "A", "text": "Visibilidade" }, { "key": "B", "text": "Retrabalho manual" }, { "key": "C", "text": "Padronização" }, { "key": "D", "text": "Confiabilidade de dado" } ], "answer": "B", "explain": "Evita digitação duplicada e inconsistência." },
+      { "id": 4, "question": "Dashboard em tempo real ajuda a:", "options": [ { "key": "A", "text": "Tomar decisão mais rápida" }, { "key": "B", "text": "Aumentar atraso de ação" }, { "key": "C", "text": "Eliminar análise" }, { "key": "D", "text": "Substituir liderança" } ], "answer": "A", "explain": "Visibilidade acelera resposta." },
+      { "id": 5, "question": "Segurança de dados em sistemas de pessoas é:", "options": [ { "key": "A", "text": "Opcional" }, { "key": "B", "text": "Obrigatória e crítica" }, { "key": "C", "text": "Só para TI" }, { "key": "D", "text": "Só para auditoria anual" } ], "answer": "B", "explain": "Dados de pessoas exigem proteção rigorosa." },
+      { "id": 6, "question": "Frase correta:", "options": [ { "key": "A", "text": "Sistema bom se sustenta sem treinamento" }, { "key": "B", "text": "Adoção depende de capacitação e suporte" }, { "key": "C", "text": "Usuário não precisa entender benefício" }, { "key": "D", "text": "Automação elimina necessidade de processo" } ], "answer": "B", "explain": "Sem uso real, não há retorno." },
+      { "id": 7, "question": "Risco de sistema isolado:", "options": [ { "key": "A", "text": "Mais integração" }, { "key": "B", "text": "Dados inconsistentes e retrabalho" }, { "key": "C", "text": "Menor erro" }, { "key": "D", "text": "Melhor governança" } ], "answer": "B", "explain": "Silos de informação reduzem qualidade de gestão." },
+      { "id": 8, "question": "Mapa de automação deve considerar:", "options": [ { "key": "A", "text": "Somente tecnologia" }, { "key": "B", "text": "Ganho, risco e indicador de sucesso" }, { "key": "C", "text": "Somente custo da licença" }, { "key": "D", "text": "Somente prazo do projeto" } ], "answer": "B", "explain": "Priorização precisa de visão completa." },
+      { "id": 9, "question": "Automatizar processo sem regra definida tende a:", "options": [ { "key": "A", "text": "Melhorar imediatamente" }, { "key": "B", "text": "Escalar erro existente" }, { "key": "C", "text": "Reduzir risco automaticamente" }, { "key": "D", "text": "Aumentar clareza" } ], "answer": "B", "explain": "Primeiro padronize, depois automatize." },
+      { "id": 10, "question": "Objetivo da aula 30:", "options": [ { "key": "A", "text": "Criar plano de remuneração variável" }, { "key": "B", "text": "Estruturar uso de tecnologia e automação com governança" }, { "key": "C", "text": "Tratar mediação de conflitos" }, { "key": "D", "text": "Definir pesquisa de clima" } ], "answer": "B", "explain": "A aula orienta transformação digital prática." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ciclo digital\n\n- processo\n- automação\n- integração\n- adoção\n",
+    "pilares": "Pilares\n\n- simplicidade\n- segurança\n- valor operacional\n"
+  }
+}

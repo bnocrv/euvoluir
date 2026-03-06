@@ -1,0 +1,58 @@
+{
+  "id": "18-feedback-1a1",
+  "title": "Aula 18 — Feedback e 1:1: conversas que desenvolvem",
+  "steps": [
+    {
+      "title": "Feedback é ferramenta de melhoria contínua",
+      "body": "Feedback eficaz acelera desenvolvimento e corrige desvio cedo.\n\nRegra:\n- Sem feedback, erro repete e performance estagna."
+    },
+    {
+      "title": "1:1 como ritual de gestão",
+      "body": "Reunião 1:1 deve ser frequente, objetiva e orientada a ação.\n\nRegra:\n- 1:1 sem cadência vira conversa reativa."
+    },
+    {
+      "title": "Modelo de feedback claro",
+      "body": "Estrutura simples:\n- contexto\n- comportamento observado\n- impacto\n- próximo passo\n\nRegra:\n- Feedback vago gera defensividade e pouca mudança."
+    },
+    {
+      "title": "Feedback positivo e corretivo",
+      "body": "Ambos são necessários:\n- positivo reforça comportamento certo\n- corretivo ajusta rota\n\nRegra:\n- Só elogio não desenvolve; só crítica desengaja."
+    },
+    {
+      "title": "Escuta e corresponsabilidade",
+      "body": "Conversa de desenvolvimento exige:\n- escuta ativa\n- alinhamento de expectativa\n- acordo de ação\n\nRegra:\n- Sem acordo claro, mudança não se sustenta."
+    },
+    {
+      "title": "Erros comuns em feedback",
+      "body": "Erros frequentes:\n- generalizar sem exemplo\n- adiar conversa importante\n- focar pessoa e não comportamento\n\nRegra:\n- Feedback deve ser específico, respeitoso e acionável."
+    },
+    {
+      "title": "Mini prática (45 min) — roteiro de 1:1",
+      "body": "Monte roteiro com:\n- avanços da semana\n- pontos de melhoria\n- suporte necessário\n- compromisso até próximo encontro\n\nObjetivo:\n- transformar 1:1 em rotina de evolução."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Feedback frequente acelera crescimento\n- 1:1 cria ritmo de desenvolvimento\n- Especificidade aumenta eficácia\n- Acordo de ação garante evolução\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 18 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Feedback eficaz deve ser:", "options": [ { "key": "A", "text": "Genérico e raro" }, { "key": "B", "text": "Específico e orientado a ação" }, { "key": "C", "text": "Somente corretivo" }, { "key": "D", "text": "Somente positivo" } ], "answer": "B", "explain": "Especificidade facilita mudança concreta." },
+      { "id": 2, "question": "Objetivo principal do 1:1:", "options": [ { "key": "A", "text": "Substituir reuniões de equipe" }, { "key": "B", "text": "Acompanhar desenvolvimento individual" }, { "key": "C", "text": "Avaliar folha" }, { "key": "D", "text": "Aplicar punição" } ], "answer": "B", "explain": "1:1 é espaço de evolução e alinhamento." },
+      { "id": 3, "question": "Frase correta:", "options": [ { "key": "A", "text": "Feedback só no fim do semestre" }, { "key": "B", "text": "Feedback frequente reduz desvio de rota" }, { "key": "C", "text": "Feedback causa desengajamento sempre" }, { "key": "D", "text": "Não precisa exemplo concreto" } ], "answer": "B", "explain": "Frequência melhora aprendizagem contínua." },
+      { "id": 4, "question": "Estrutura útil de feedback inclui:", "options": [ { "key": "A", "text": "Contexto, comportamento, impacto e ação" }, { "key": "B", "text": "Opinião ampla e conclusão rápida" }, { "key": "C", "text": "Somente impressão do líder" }, { "key": "D", "text": "Comparação entre pessoas" } ], "answer": "A", "explain": "Estrutura clara reduz ruído e defensividade." },
+      { "id": 5, "question": "Erro comum em feedback:", "options": [ { "key": "A", "text": "Ser específico" }, { "key": "B", "text": "Generalizar sem evidência" }, { "key": "C", "text": "Definir próximo passo" }, { "key": "D", "text": "Escutar o colaborador" } ], "answer": "B", "explain": "Generalização enfraquece a conversa." },
+      { "id": 6, "question": "Feedback positivo é importante porque:", "options": [ { "key": "A", "text": "Substitui o corretivo" }, { "key": "B", "text": "Reforça comportamentos desejados" }, { "key": "C", "text": "Evita qualquer cobrança" }, { "key": "D", "text": "Dispensa acompanhamento" } ], "answer": "B", "explain": "Reforço aumenta repetição de boas práticas." },
+      { "id": 7, "question": "No 1:1, escuta ativa permite:", "options": [ { "key": "A", "text": "Monólogo do gestor" }, { "key": "B", "text": "Compreensão real de obstáculos" }, { "key": "C", "text": "Acelerar sem alinhamento" }, { "key": "D", "text": "Evitar compromisso" } ], "answer": "B", "explain": "Escuta qualifica ação de desenvolvimento." },
+      { "id": 8, "question": "Só crítica sem reconhecimento tende a:", "options": [ { "key": "A", "text": "Engajar automaticamente" }, { "key": "B", "text": "Desgastar relação e motivação" }, { "key": "C", "text": "Melhorar clima sempre" }, { "key": "D", "text": "Aumentar confiança" } ], "answer": "B", "explain": "Equilíbrio entre reforço e ajuste é essencial." },
+      { "id": 9, "question": "Acordo de ação no feedback serve para:", "options": [ { "key": "A", "text": "Encerrar conversa sem compromisso" }, { "key": "B", "text": "Definir mudança concreta até próximo ciclo" }, { "key": "C", "text": "Transferir responsabilidade" }, { "key": "D", "text": "Substituir acompanhamento" } ], "answer": "B", "explain": "Compromisso explícito aumenta execução." },
+      { "id": 10, "question": "Objetivo da aula 18:", "options": [ { "key": "A", "text": "Criar política de benefícios" }, { "key": "B", "text": "Estruturar feedback e 1:1 como rotina de desenvolvimento" }, { "key": "C", "text": "Tratar auditoria interna" }, { "key": "D", "text": "Definir jornada de trabalho" } ], "answer": "B", "explain": "A aula organiza conversas de evolução com método." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ritual de 1:1\n\n- contexto\n- feedback\n- ação\n- revisão\n",
+    "pilares": "Pilares\n\n- frequência\n- especificidade\n- compromisso\n"
+  }
+}

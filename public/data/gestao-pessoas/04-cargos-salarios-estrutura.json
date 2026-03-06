@@ -1,0 +1,59 @@
+﻿{
+  "id": "04-cargos-salarios-estrutura",
+  "title": "Aula 04 — Cargos e salários: estrutura, equidade e clareza",
+  "steps": [
+    {
+      "title": "Por que estrutura de cargos importa",
+      "body": "Sem estrutura, decisões de promoção e salário ficam subjetivas.\n\nRegra:\n- Clareza de papel reduz conflito e aumenta percepção de justiça."
+    },
+    {
+      "title": "Descrição de cargo na prática",
+      "body": "Descrição objetiva inclui:\n- missão do cargo\n- responsabilidades\n- competências exigidas\n- nível de autonomia\n\nRegra:\n- Cargo bem descrito melhora seleção e avaliação."
+    },
+    {
+      "title": "Faixas salariais e critérios",
+      "body": "Faixas devem considerar:\n- complexidade do cargo\n- mercado\n- política interna\n- sustentabilidade financeira\n\nRegra:\n- Faixa sem critério vira negociação caso a caso."
+    },
+    {
+      "title": "Equidade interna e competitividade externa",
+      "body": "Equilíbrio necessário:\n- internamente justo\n- externamente competitivo\n\nRegra:\n- Pagar abaixo do mercado aumenta risco de saída; pagar sem lógica quebra equidade."
+    },
+    {
+      "title": "Promoção e progressão com transparência",
+      "body": "Critérios recomendados:\n- entrega comprovada\n- comportamento alinhado\n- prontidão para nível seguinte\n\nRegra:\n- Promoção sem critério enfraquece credibilidade."
+    },
+    {
+      "title": "Riscos comuns do tema",
+      "body": "Alertas:\n- distorções salariais históricas\n- cargos com escopo confuso\n- exceções não documentadas\n\nRegra:\n- Corrigir distorção exige diagnóstico e plano de transição."
+    },
+    {
+      "title": "Mini prática (45 min) — revisão de um cargo",
+      "body": "Escolha um cargo e revise:\n- descrição atual\n- competências críticas\n- faixa salarial praticada\n- lacunas de coerência\n\nObjetivo:\n- gerar um ajuste inicial baseado em critério."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Estrutura de cargos traz clareza e justiça\n- Faixas salariais exigem método\n- Promoção precisa de critérios transparentes\n- Equidade e competitividade devem andar juntas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 04 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Estrutura de cargos ajuda principalmente a:", "options": [ { "key": "A", "text": "Aumentar subjetividade" }, { "key": "B", "text": "Padronizar critério de função e evolução" }, { "key": "C", "text": "Eliminar avaliação" }, { "key": "D", "text": "Evitar descrição de papel" } ], "answer": "B", "explain": "Clareza de função melhora decisões de pessoas." },
+      { "id": 2, "question": "Descrição de cargo deve conter:", "options": [ { "key": "A", "text": "Somente nome do cargo" }, { "key": "B", "text": "Missão, responsabilidades e competências" }, { "key": "C", "text": "Apenas salário" }, { "key": "D", "text": "Somente formação" } ], "answer": "B", "explain": "Esses elementos orientam contratação e gestão." },
+      { "id": 3, "question": "Faixa salarial sem critério tende a gerar:", "options": [ { "key": "A", "text": "Equidade automática" }, { "key": "B", "text": "Distorção e conflito" }, { "key": "C", "text": "Retenção maior" }, { "key": "D", "text": "Clareza de carreira" } ], "answer": "B", "explain": "Sem método, aumenta percepção de injustiça." },
+      { "id": 4, "question": "Equidade interna significa:", "options": [ { "key": "A", "text": "Mesma remuneração para todos" }, { "key": "B", "text": "Coerência entre cargos de complexidade similar" }, { "key": "C", "text": "Pagar pelo menor custo" }, { "key": "D", "text": "Ignorar escopo do cargo" } ], "answer": "B", "explain": "A referência é a coerência do sistema interno." },
+      { "id": 5, "question": "Competitividade externa considera:", "options": [ { "key": "A", "text": "Mercado de trabalho" }, { "key": "B", "text": "Somente histórico interno" }, { "key": "C", "text": "Somente opinião do gestor" }, { "key": "D", "text": "Somente tempo de casa" } ], "answer": "A", "explain": "Mercado influencia atração e retenção." },
+      { "id": 6, "question": "Promoção saudável deve ter:", "options": [ { "key": "A", "text": "Critério de entrega e prontidão" }, { "key": "B", "text": "Somente indicação informal" }, { "key": "C", "text": "Somente tempo de empresa" }, { "key": "D", "text": "Sem registro" } ], "answer": "A", "explain": "Transparência fortalece confiança no processo." },
+      { "id": 7, "question": "Risco de exceções não documentadas:", "options": [ { "key": "A", "text": "Mais clareza" }, { "key": "B", "text": "Inconsistência e questionamento" }, { "key": "C", "text": "Menor risco jurídico" }, { "key": "D", "text": "Equidade maior" } ], "answer": "B", "explain": "Exceção recorrente quebra governança." },
+      { "id": 8, "question": "Frase correta:", "options": [ { "key": "A", "text": "Cargos e salários não afetam engajamento" }, { "key": "B", "text": "Estrutura clara melhora percepção de justiça" }, { "key": "C", "text": "Faixa salarial é desnecessária" }, { "key": "D", "text": "Promoção não precisa critério" } ], "answer": "B", "explain": "Clareza reduz ruído e melhora confiança." },
+      { "id": 9, "question": "A revisão periódica da estrutura existe para:", "options": [ { "key": "A", "text": "Evitar atualização" }, { "key": "B", "text": "Ajustar mercado e estratégia" }, { "key": "C", "text": "Congelar evolução" }, { "key": "D", "text": "Retirar critérios" } ], "answer": "B", "explain": "Estrutura precisa acompanhar realidade do negócio." },
+      { "id": 10, "question": "Objetivo da aula 04:", "options": [ { "key": "A", "text": "Ensinar legislação de jornada" }, { "key": "B", "text": "Fundamentar cargos e salários com método" }, { "key": "C", "text": "Ensinar entrevistas" }, { "key": "D", "text": "Encerrar trilha" } ], "answer": "B", "explain": "A aula estrutura base de equidade e clareza." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Base de estrutura\n\n- descrição de cargo\n- faixa salarial\n- critérios de promoção\n",
+    "pilares": "Pilares\n\n- equidade interna\n- competitividade externa\n- transparência\n"
+  }
+}
+

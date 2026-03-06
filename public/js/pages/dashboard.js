@@ -77,11 +77,11 @@ export function DashboardPage(app) {
 
             <div class="card pad course-card">
               <div class="row row-between">
-                <h3 class="m-0">RH</h3>
+                <h3 class="m-0">Gestão de Pessoas</h3>
                 <span class="badge">Trilha</span>
               </div>
-              <p class="muted">Processos de pessoas: recrutamento, onboarding e desenvolvimento.</p>
-              <button class="btn primary" id="go-rh">Começar RH</button>
+              <p class="muted">Estratégia, processos e desenvolvimento de pessoas com foco em performance.</p>
+              <button class="btn primary" id="go-gestao-pessoas">Começar Gestão de Pessoas</button>
             </div>
 
             <div class="card pad course-card">
@@ -138,6 +138,6 @@ export function DashboardPage(app) {
   app.querySelector("#go-compras").addEventListener("click", () => navigate("/course/compras"));
   app.querySelector("#go-adm").addEventListener("click", () => navigate("/course/adm"));
   app.querySelector("#go-financas").addEventListener("click", () => navigate("/course/financas"));
-  app.querySelector("#go-rh").addEventListener("click", () => navigate("/course/rh"));
+  app.querySelector("#go-gestao-pessoas").addEventListener("click", () => navigate("/course/gestao-pessoas"));
 }
 

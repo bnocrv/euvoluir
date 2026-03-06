@@ -1,0 +1,59 @@
+﻿{
+  "id": "05-planejamento-forca-trabalho",
+  "title": "Aula 05 — Planejamento de força de trabalho: capacidade e demanda",
+  "steps": [
+    {
+      "title": "Planejar pessoas é planejar capacidade de entrega",
+      "body": "Força de trabalho é a capacidade real que sustenta metas.\n\nRegra:\n- Meta sem pessoas dimensionadas vira atraso e sobrecarga."
+    },
+    {
+      "title": "Demanda futura e sazonalidade",
+      "body": "Planejamento deve considerar:\n- volume esperado\n- sazonalidade\n- novos projetos\n- variação operacional\n\nRegra:\n- Quem prevê demanda reduz urgência de contratação."
+    },
+    {
+      "title": "Headcount e produtividade",
+      "body": "Não é só quantidade de pessoas.\nÉ combinação de:\n- número de posições\n- perfil de competência\n- nível de produtividade\n\nRegra:\n- Contratar sem perfil correto aumenta custo e retrabalho."
+    },
+    {
+      "title": "Análise de gaps de competência",
+      "body": "Perguntas-chave:\n- quais competências faltam para a estratégia?\n- quais áreas estão mais expostas?\n- desenvolve internamente ou contrata no mercado?\n\nRegra:\n- Gap não tratado hoje vira gargalo amanhã."
+    },
+    {
+      "title": "Cenários de planejamento",
+      "body": "Trabalhe com cenários:\n- base\n- otimista\n- restritivo\n\nPara cada cenário, defina:\n- necessidade de pessoas\n- custo estimado\n- plano de contingência\n\nRegra:\n- Cenário evita decisões apressadas em mudança de contexto."
+    },
+    {
+      "title": "Integração com orçamento e liderança",
+      "body": "Planejamento de força de trabalho precisa conversar com:\n- orçamento\n- metas da área\n- disponibilidade de liderança\n\nRegra:\n- Alinhamento interáreas evita plano inviável."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de capacidade atual",
+      "body": "Escolha uma área e levante:\n- demanda atual\n- capacidade disponível\n- lacunas de pessoas/competência\n- ação em 90 dias\n\nObjetivo:\n- transformar percepção em plano acionável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Força de trabalho conecta estratégia com execução\n- Planejamento exige demanda, capacidade e competência\n- Cenários reduzem risco de decisão\n- Integração com orçamento e liderança é obrigatória\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 05 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Planejamento de força de trabalho tem foco em:", "options": [ { "key": "A", "text": "Somente redução de custo" }, { "key": "B", "text": "Capacidade de entrega alinhada à demanda" }, { "key": "C", "text": "Somente recrutamento" }, { "key": "D", "text": "Somente treinamento" } ], "answer": "B", "explain": "O objetivo é equilibrar demanda e capacidade." },
+      { "id": 2, "question": "Sazonalidade no planejamento significa:", "options": [ { "key": "A", "text": "Demanda constante todo mês" }, { "key": "B", "text": "Variação previsível de demanda ao longo do tempo" }, { "key": "C", "text": "Falta de meta" }, { "key": "D", "text": "Rotatividade anual" } ], "answer": "B", "explain": "Antecipar picos e vales melhora decisão de pessoas." },
+      { "id": 3, "question": "Headcount sozinho não basta porque:", "options": [ { "key": "A", "text": "Quantidade resolve tudo" }, { "key": "B", "text": "Perfil e produtividade também importam" }, { "key": "C", "text": "Custo não importa" }, { "key": "D", "text": "Competência é irrelevante" } ], "answer": "B", "explain": "Capacidade é combinação de número e qualidade." },
+      { "id": 4, "question": "Gap de competência é:", "options": [ { "key": "A", "text": "Diferença entre competência necessária e disponível" }, { "key": "B", "text": "Diferença entre salário e mercado" }, { "key": "C", "text": "Diferença entre turnos" }, { "key": "D", "text": "Diferença entre benefícios" } ], "answer": "A", "explain": "Mostra lacunas para executar estratégia." },
+      { "id": 5, "question": "Trabalhar com cenários ajuda a:", "options": [ { "key": "A", "text": "Eliminar incerteza totalmente" }, { "key": "B", "text": "Preparar respostas para contextos diferentes" }, { "key": "C", "text": "Evitar planejamento" }, { "key": "D", "text": "Aumentar improviso" } ], "answer": "B", "explain": "Cenários aumentam prontidão de decisão." },
+      { "id": 6, "question": "Planejamento de pessoas deve integrar:", "options": [ { "key": "A", "text": "Somente gestão de pessoas" }, { "key": "B", "text": "Orçamento, metas e liderança" }, { "key": "C", "text": "Somente financeiro" }, { "key": "D", "text": "Somente operação" } ], "answer": "B", "explain": "A viabilidade depende de alinhamento entre áreas." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Demanda futura não interfere em pessoas" }, { "key": "B", "text": "Prever demanda reduz contratação emergencial" }, { "key": "C", "text": "Planejamento é útil só em empresa grande" }, { "key": "D", "text": "Planejamento substitui liderança" } ], "answer": "B", "explain": "Antecipação reduz custo e urgência." },
+      { "id": 8, "question": "Contratar sem analisar perfil tende a:", "options": [ { "key": "A", "text": "Aumentar assertividade" }, { "key": "B", "text": "Gerar retrabalho e baixa performance" }, { "key": "C", "text": "Reduzir turnover automaticamente" }, { "key": "D", "text": "Melhorar cultura de forma imediata" } ], "answer": "B", "explain": "Erro de perfil custa caro para a operação." },
+      { "id": 9, "question": "Contingência no planejamento serve para:", "options": [ { "key": "A", "text": "Ignorar risco" }, { "key": "B", "text": "Responder rápido a variações inesperadas" }, { "key": "C", "text": "Aumentar burocracia" }, { "key": "D", "text": "Evitar metas" } ], "answer": "B", "explain": "Plano alternativo reduz impacto de mudança." },
+      { "id": 10, "question": "Objetivo da aula 05:", "options": [ { "key": "A", "text": "Ensinar folha e benefícios" }, { "key": "B", "text": "Estruturar planejamento de capacidade de pessoas" }, { "key": "C", "text": "Criar programa de feedback" }, { "key": "D", "text": "Focar apenas em desligamento" } ], "answer": "B", "explain": "A aula consolida base de workforce planning." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Componentes do planejamento\n\n- demanda\n- capacidade\n- competências\n- cenários\n",
+    "pilares": "Pilares\n\n- previsibilidade\n- alinhamento\n- prontidão\n"
+  }
+}
+

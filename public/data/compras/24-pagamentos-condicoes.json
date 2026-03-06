@@ -1,0 +1,168 @@
+{
+  "id": "24-pagamentos-condicoes",
+  "title": "Aula 24 — Condições de pagamento: prazo, desconto e efeito no caixa",
+  "steps": [
+    {
+      "title": "Condição de pagamento é parte do custo",
+      "body": "Preço igual com condição diferente gera resultado diferente no caixa.\n\nExemplos de condição:\n- à vista\n- 28/35/42 dias\n- parcelado\n- desconto por antecipação\n\nRegra:\n- Forma de pagar altera custo financeiro e fôlego operacional."
+    },
+    {
+      "title": "Prazo de pagamento e ciclo de caixa",
+      "body": "Quanto maior previsibilidade entre pagar fornecedor e receber cliente, melhor equilíbrio financeiro.\n\nCompras impacta:\n- necessidade de capital de giro\n- risco de pressão de caixa\n\nRegra:\n- Negociar prazo sem olhar ciclo de caixa pode trocar problema de preço por problema de liquidez."
+    },
+    {
+      "title": "Desconto por antecipação: quando vale",
+      "body": "Aceitar desconto por antecipar pagamento pode ser ótimo, desde que:\n- haja caixa disponível\n- ganho do desconto supere custo financeiro\n\nRegra:\n- Desconto só é ganho real quando não estrangula o caixa."
+    },
+    {
+      "title": "Condição comercial deve casar com risco do fornecedor",
+      "body": "Para fornecedores novos ou críticos, condição pode exigir proteção:\n- pagamento por marcos\n- retenção parcial\n- validação no recebimento\n\nRegra:\n- Condição de pagamento também é instrumento de controle de risco."
+    },
+    {
+      "title": "Negociação de condição: além do número de dias",
+      "body": "Pode negociar:\n- calendário fixo de pagamento\n- gatilho por desempenho\n- escalonamento por volume\n- desconto progressivo\n\nRegra:\n- Melhor condição é a que preserva relação e melhora previsibilidade dos dois lados."
+    },
+    {
+      "title": "Governança: padronizar para evitar exceção infinita",
+      "body": "Boas práticas:\n- matriz de condições por categoria\n- alçada para exceções\n- registro de justificativa\n\nRegra:\n- Sem padrão, cada compra vira negociação isolada e perde eficiência."
+    },
+    {
+      "title": "Mini prática (45 min) — simular três condições",
+      "body": "Escolha um item de compra recorrente.\n\nSimule:\n- condição A: à vista com desconto\n- condição B: 30 dias\n- condição C: 45 dias sem desconto\n\nCompare impacto em custo e caixa.\n\nObjetivo:\n- escolher condição financeiramente sustentável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Condição de pagamento compõe custo real\n- Prazo impacta capital de giro\n- Desconto por antecipação exige análise de caixa\n- Padronização aumenta controle e velocidade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 24 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Condição de pagamento afeta principalmente:",
+        "options": [
+          { "key": "A", "text": "Somente cadastro" },
+          { "key": "B", "text": "Custo financeiro e caixa" },
+          { "key": "C", "text": "Somente imposto" },
+          { "key": "D", "text": "Somente logística" }
+        ],
+        "answer": "B",
+        "explain": "O momento do pagamento muda o impacto financeiro real."
+      },
+      {
+        "id": 2,
+        "question": "Dois fornecedores com mesmo preço podem ter resultados diferentes porque:",
+        "options": [
+          { "key": "A", "text": "Condição de pagamento difere" },
+          { "key": "B", "text": "Nome da empresa difere" },
+          { "key": "C", "text": "Cidade difere" },
+          { "key": "D", "text": "Logo difere" }
+        ],
+        "answer": "A",
+        "explain": "Prazo e desconto alteram custo total e fluxo de caixa."
+      },
+      {
+        "id": 3,
+        "question": "Desconto por antecipação vale quando:",
+        "options": [
+          { "key": "A", "text": "Sempre" },
+          { "key": "B", "text": "Nunca" },
+          { "key": "C", "text": "Ganho supera custo e caixa suporta" },
+          { "key": "D", "text": "Fornecedor exigir" }
+        ],
+        "answer": "C",
+        "explain": "Sem caixa ou sem ganho líquido, desconto pode piorar cenário."
+      },
+      {
+        "id": 4,
+        "question": "Prazo de pagamento está ligado ao:",
+        "options": [
+          { "key": "A", "text": "Ciclo de caixa" },
+          { "key": "B", "text": "Layout do pedido" },
+          { "key": "C", "text": "Nome do comprador" },
+          { "key": "D", "text": "Número do almoxarifado" }
+        ],
+        "answer": "A",
+        "explain": "Pagamentos e recebimentos precisam estar coordenados."
+      },
+      {
+        "id": 5,
+        "question": "Condição de pagamento também pode reduzir risco quando usa:",
+        "options": [
+          { "key": "A", "text": "Pagamento por marcos" },
+          { "key": "B", "text": "Pagamento sem conferência" },
+          { "key": "C", "text": "Pagamento integral antecipado sempre" },
+          { "key": "D", "text": "Sem contrato" }
+        ],
+        "answer": "A",
+        "explain": "Marcos vinculam desembolso à entrega/qualidade."
+      },
+      {
+        "id": 6,
+        "question": "Boa governança de condição inclui:",
+        "options": [
+          { "key": "A", "text": "Matriz padrão e alçada para exceções" },
+          { "key": "B", "text": "Exceção em todas as compras" },
+          { "key": "C", "text": "Sem justificativa" },
+          { "key": "D", "text": "Negociação sem registro" }
+        ],
+        "answer": "A",
+        "explain": "Padronização dá escala e controle."
+      },
+      {
+        "id": 7,
+        "question": "Negociação madura de condições busca:",
+        "options": [
+          { "key": "A", "text": "Somente maior prazo" },
+          { "key": "B", "text": "Previsibilidade e equilíbrio entre as partes" },
+          { "key": "C", "text": "Somente desconto" },
+          { "key": "D", "text": "Somente volume" }
+        ],
+        "answer": "B",
+        "explain": "A relação sustentável reduz ruptura e conflito."
+      },
+      {
+        "id": 8,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Condição de pagamento não afeta compras" },
+          { "key": "B", "text": "Condição é parte da estratégia de compras" },
+          { "key": "C", "text": "Só financeiro decide" },
+          { "key": "D", "text": "Só fornecedor decide" }
+        ],
+        "answer": "B",
+        "explain": "Compras influencia diretamente resultado financeiro da negociação."
+      },
+      {
+        "id": 9,
+        "question": "Risco de negociar sem padrão é:",
+        "options": [
+          { "key": "A", "text": "Perda de eficiência e controle" },
+          { "key": "B", "text": "Mais previsibilidade" },
+          { "key": "C", "text": "Menos exceção" },
+          { "key": "D", "text": "Menor retrabalho" }
+        ],
+        "answer": "A",
+        "explain": "Exceção constante gera ruído e lentidão operacional."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo de analisar condições de pagamento é:",
+        "options": [
+          { "key": "A", "text": "Comprar com maior previsibilidade de custo e caixa" },
+          { "key": "B", "text": "Comprar sem contrato" },
+          { "key": "C", "text": "Pagar sempre à vista" },
+          { "key": "D", "text": "Eliminar conferência" }
+        ],
+        "answer": "A",
+        "explain": "Boa condição combina custo competitivo e saúde financeira."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist de condição\n\n- prazo\n- desconto\n- calendário\n- gatilhos\n",
+    "pilares": "Pilares\n\n- caixa\n- previsibilidade\n- governança\n"
+  }
+}

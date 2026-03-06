@@ -1,0 +1,59 @@
+﻿{
+  "id": "10-periodo-experiencia",
+  "title": "Aula 10 — Período de experiência: acompanhamento e decisão",
+  "steps": [
+    {
+      "title": "Período de experiência é fase de validação",
+      "body": "Serve para validar aderência técnica, comportamental e cultural.\n\nRegra:\n- Não é apenas prazo legal; é janela de decisão com critério."
+    },
+    {
+      "title": "Objetivos claros desde o primeiro dia",
+      "body": "Defina:\n- entregas esperadas\n- critérios de avaliação\n- ritos de acompanhamento\n\nRegra:\n- Sem expectativa explícita, avaliação fica subjetiva."
+    },
+    {
+      "title": "Checkpoints formais",
+      "body": "Boas práticas:\n- checkpoint em 15 dias\n- checkpoint em 30 dias\n- checkpoint em 60/90 dias\n\nRegra:\n- Feedback contínuo reduz surpresa no encerramento do período."
+    },
+    {
+      "title": "Papel do gestor e da gestão de pessoas",
+      "body": "Gestor acompanha performance diária.\nGestão de pessoas garante método, registro e conformidade.\n\nRegra:\n- Decisão de continuidade precisa ser conjunta e documentada."
+    },
+    {
+      "title": "Sinais de risco durante o período",
+      "body": "Alertas comuns:\n- baixa adaptação recorrente\n- dificuldade de entrega mínima\n- conduta desalinhada\n\nRegra:\n- Risco identificado cedo aumenta chance de correção."
+    },
+    {
+      "title": "Decisão: efetivar, prorrogar ou encerrar",
+      "body": "A decisão deve considerar:\n- evidências registradas\n- evolução no período\n- impacto para equipe e operação\n\nRegra:\n- Decidir por impressão pessoal aumenta erro."
+    },
+    {
+      "title": "Mini prática (45 min) — matriz de decisão",
+      "body": "Monte uma matriz com:\n- critérios técnicos\n- critérios comportamentais\n- nota por checkpoint\n- decisão recomendada\n\nObjetivo:\n- padronizar avaliação do período de experiência."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Período de experiência exige método\n- Checkpoints evitam surpresa\n- Registro fortalece decisão\n- Efetivação deve ser baseada em evidência\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 10 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Período de experiência serve para:", "options": [ { "key": "A", "text": "Somente cumprir formalidade" }, { "key": "B", "text": "Validar aderência e performance inicial" }, { "key": "C", "text": "Substituir onboarding" }, { "key": "D", "text": "Evitar feedback" } ], "answer": "B", "explain": "É fase de validação estruturada da contratação." },
+      { "id": 2, "question": "Avaliação sem critérios definidos tende a:", "options": [ { "key": "A", "text": "Aumentar objetividade" }, { "key": "B", "text": "Gerar subjetividade e ruído" }, { "key": "C", "text": "Reduzir conflitos sempre" }, { "key": "D", "text": "Melhorar precisão automaticamente" } ], "answer": "B", "explain": "Critério claro reduz viés de decisão." },
+      { "id": 3, "question": "Checkpoints no período de experiência:", "options": [ { "key": "A", "text": "São dispensáveis" }, { "key": "B", "text": "Permitem correção de rota em tempo" }, { "key": "C", "text": "Servem só para documentação" }, { "key": "D", "text": "Substituem feedback diário" } ], "answer": "B", "explain": "Acompanhamento periódico melhora resultado final." },
+      { "id": 4, "question": "Gestor imediato deve:", "options": [ { "key": "A", "text": "Delegar tudo para gestão de pessoas" }, { "key": "B", "text": "Acompanhar desempenho e dar feedback" }, { "key": "C", "text": "Apenas aprovar decisão final" }, { "key": "D", "text": "Atuar só em problemas graves" } ], "answer": "B", "explain": "Ele observa execução real no dia a dia." },
+      { "id": 5, "question": "Decisão de efetivação deve usar:", "options": [ { "key": "A", "text": "Preferência pessoal" }, { "key": "B", "text": "Evidências e evolução no período" }, { "key": "C", "text": "Somente tempo de casa" }, { "key": "D", "text": "Somente opinião da equipe" } ], "answer": "B", "explain": "Decisão robusta depende de registro e critério." },
+      { "id": 6, "question": "Sinal de risco no período:", "options": [ { "key": "A", "text": "Evolução consistente" }, { "key": "B", "text": "Baixa adaptação recorrente" }, { "key": "C", "text": "Cumprimento de metas iniciais" }, { "key": "D", "text": "Boa integração com time" } ], "answer": "B", "explain": "Reincidência de dificuldade pede ação imediata." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Período de experiência dispensa documentação" }, { "key": "B", "text": "Registro protege decisão e governança" }, { "key": "C", "text": "Feedback só no último dia" }, { "key": "D", "text": "Acompanhamento não impacta retenção" } ], "answer": "B", "explain": "Documentação dá rastreabilidade e consistência." },
+      { "id": 8, "question": "Matriz de decisão é útil porque:", "options": [ { "key": "A", "text": "Aumenta subjetividade" }, { "key": "B", "text": "Padroniza avaliação por critérios" }, { "key": "C", "text": "Substitui liderança" }, { "key": "D", "text": "Elimina necessidade de feedback" } ], "answer": "B", "explain": "Padronização melhora justiça e qualidade da decisão." },
+      { "id": 9, "question": "Gestão de pessoas no período de experiência:", "options": [ { "key": "A", "text": "Apenas arquiva documentos" }, { "key": "B", "text": "Apoia método e conformidade do processo" }, { "key": "C", "text": "Não participa" }, { "key": "D", "text": "Decide sozinha sem gestor" } ], "answer": "B", "explain": "Atua em estrutura, monitoramento e consistência." },
+      { "id": 10, "question": "Objetivo da aula 10:", "options": [ { "key": "A", "text": "Tratar desligamento final" }, { "key": "B", "text": "Estruturar avaliação do período de experiência" }, { "key": "C", "text": "Definir política de bônus" }, { "key": "D", "text": "Criar trilha de liderança" } ], "answer": "B", "explain": "A aula foca em acompanhamento e decisão inicial." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ciclo de experiência\n\n- metas\n- checkpoints\n- evidências\n- decisão\n",
+    "pilares": "Pilares\n\n- clareza\n- acompanhamento\n- objetividade\n"
+  }
+}
+

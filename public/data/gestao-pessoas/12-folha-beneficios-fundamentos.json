@@ -1,0 +1,59 @@
+﻿{
+  "id": "12-folha-beneficios-fundamentos",
+  "title": "Aula 12 — Folha e benefícios: fundamentos para gestão segura",
+  "steps": [
+    {
+      "title": "Folha é precisão, prazo e conformidade",
+      "body": "Folha de pagamento exige acurácia e rotina.\n\nRegra:\n- Erro de folha afeta confiança interna e risco jurídico."
+    },
+    {
+      "title": "Entradas críticas da folha",
+      "body": "Principais insumos:\n- jornada e ponto\n- adicionais e descontos\n- admissões e desligamentos\n- benefícios vigentes\n\nRegra:\n- Qualidade da entrada define qualidade da folha."
+    },
+    {
+      "title": "Fechamento com checklist",
+      "body": "Checklist recomendado:\n- conferência de bases\n- validação de exceções\n- aprovação por responsável\n- prazo de processamento\n\nRegra:\n- Checklist reduz erro recorrente."
+    },
+    {
+      "title": "Benefícios como estratégia de retenção",
+      "body": "Benefícios devem equilibrar:\n- valor para colaborador\n- sustentabilidade de custo\n- competitividade de mercado\n\nRegra:\n- Benefício sem governança aumenta custo sem retorno claro."
+    },
+    {
+      "title": "Comunicação clara com colaboradores",
+      "body": "Transparência sobre folha e benefícios reduz ruído.\n\nRegra:\n- Dúvida não tratada vira insatisfação e retrabalho."
+    },
+    {
+      "title": "Indicadores para gestão de folha e benefícios",
+      "body": "Acompanhe:\n- taxa de erros por fechamento\n- tempo de processamento\n- volume de chamados pós-folha\n- custo de benefícios por colaborador\n\nRegra:\n- Métrica transforma operação reativa em gestão preventiva."
+    },
+    {
+      "title": "Mini prática (45 min) — checklist de fechamento",
+      "body": "Monte checklist da sua rotina com:\n- entrada de dados\n- validação\n- aprovação\n- comunicação final\n\nObjetivo:\n- padronizar fechamento com menor risco."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Folha depende de entrada correta e rotina disciplinada\n- Benefícios precisam de estratégia e controle\n- Checklist reduz falhas\n- Indicadores ajudam melhoria contínua\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 12 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Folha de pagamento exige principalmente:", "options": [ { "key": "A", "text": "Velocidade sem conferência" }, { "key": "B", "text": "Precisão e conformidade" }, { "key": "C", "text": "Somente aprovação final" }, { "key": "D", "text": "Somente sistema" } ], "answer": "B", "explain": "Acurácia e regra são essenciais no processo." },
+      { "id": 2, "question": "Qualidade da folha depende de:", "options": [ { "key": "A", "text": "Entrada de dados correta" }, { "key": "B", "text": "Somente revisão final" }, { "key": "C", "text": "Somente comunicação" }, { "key": "D", "text": "Somente benefício" } ], "answer": "A", "explain": "Erro na origem contamina o fechamento." },
+      { "id": 3, "question": "Checklist no fechamento ajuda a:", "options": [ { "key": "A", "text": "Aumentar falha manual" }, { "key": "B", "text": "Reduzir erro recorrente" }, { "key": "C", "text": "Eliminar necessidade de validação" }, { "key": "D", "text": "Substituir liderança" } ], "answer": "B", "explain": "Padronização reduz omissões." },
+      { "id": 4, "question": "Benefícios bem desenhados devem:", "options": [ { "key": "A", "text": "Ser só os mais baratos" }, { "key": "B", "text": "Equilibrar valor percebido e custo" }, { "key": "C", "text": "Ser iguais em qualquer contexto" }, { "key": "D", "text": "Dispensar comunicação" } ], "answer": "B", "explain": "Sustentabilidade e valor precisam coexistir." },
+      { "id": 5, "question": "Sem comunicação clara de folha e benefícios:", "options": [ { "key": "A", "text": "Diminui dúvida automaticamente" }, { "key": "B", "text": "Aumenta ruído e chamados" }, { "key": "C", "text": "Melhora engajamento" }, { "key": "D", "text": "Reduz retrabalho" } ], "answer": "B", "explain": "Falta de clareza gera insegurança no time." },
+      { "id": 6, "question": "Indicador útil para folha:", "options": [ { "key": "A", "text": "Taxa de erros por fechamento" }, { "key": "B", "text": "Tamanho do holerite" }, { "key": "C", "text": "Número de e-mails internos" }, { "key": "D", "text": "Quantidade de reuniões" } ], "answer": "A", "explain": "Mede qualidade do processo de fechamento." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Benefícios não influenciam retenção" }, { "key": "B", "text": "Benefícios influenciam atração e retenção" }, { "key": "C", "text": "Benefícios dispensam política" }, { "key": "D", "text": "Folha é só atividade operacional" } ], "answer": "B", "explain": "Pacote de valor impacta permanência de talentos." },
+      { "id": 8, "question": "Validação de exceções no fechamento:", "options": [ { "key": "A", "text": "É opcional" }, { "key": "B", "text": "Evita erro crítico de pagamento" }, { "key": "C", "text": "Aumenta risco" }, { "key": "D", "text": "Não gera benefício" } ], "answer": "B", "explain": "Exceções mal tratadas geram distorções relevantes." },
+      { "id": 9, "question": "Volume alto de chamados pós-folha indica:", "options": [ { "key": "A", "text": "Processo saudável" }, { "key": "B", "text": "Possíveis falhas de processo/comunicação" }, { "key": "C", "text": "Melhora da produtividade" }, { "key": "D", "text": "Risco reduzido" } ], "answer": "B", "explain": "É sinal de atenção para revisão do fluxo." },
+      { "id": 10, "question": "Objetivo da aula 12:", "options": [ { "key": "A", "text": "Ensinar processo seletivo" }, { "key": "B", "text": "Estruturar fundamentos de folha e benefícios" }, { "key": "C", "text": "Definir clima organizacional" }, { "key": "D", "text": "Tratar segurança do trabalho" } ], "answer": "B", "explain": "A aula organiza base para gestão segura de folha." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Fechamento de folha\n\n- entradas\n- conferência\n- aprovação\n- comunicação\n",
+    "pilares": "Pilares\n\n- precisão\n- previsibilidade\n- confiança\n"
+  }
+}
+

@@ -1,0 +1,168 @@
+{
+  "id": "23-impostos-compras",
+  "title": "Aula 23 — Impostos em compras: como tributos mudam o custo real",
+  "steps": [
+    {
+      "title": "Tributo altera decisão de compra",
+      "body": "Em compras, imposto não é detalhe contábil.\nEle muda:\n- custo real\n- comparabilidade entre fornecedores\n- impacto no caixa\n\nRegra:\n- Comprar sem considerar tributo distorce o mapa comparativo."
+    },
+    {
+      "title": "Preço bruto vs custo líquido",
+      "body": "Dois fornecedores podem ter o mesmo preço bruto e custo líquido diferente, por causa de:\n- alíquota\n- crédito tributário\n- substituição tributária\n- regime fiscal\n\nRegra:\n- O que decide é custo líquido para a empresa, não só valor da nota."
+    },
+    {
+      "title": "Risco comum: comparar propostas sem equalização fiscal",
+      "body": "Erro clássico:\n- comparar unitário sem ajustar impostos e créditos\n\nConsequência:\n- fornecedor parece barato, mas custa mais no total\n\nRegra:\n- Equalização fiscal é etapa obrigatória da análise."
+    },
+    {
+      "title": "Integração compras + fiscal/contábil",
+      "body": "Compras precisa de apoio técnico para:\n- validar tratamento tributário\n- evitar classificação incorreta\n- prevenir passivo fiscal\n\nRegra:\n- Decisão boa de compras depende de alinhamento com fiscal."
+    },
+    {
+      "title": "Imposto também afeta negociação",
+      "body": "Negociar só preço unitário limita resultado.\nTambém negocie:\n- condição de faturamento\n- composição da proposta\n- previsibilidade tributária\n\nRegra:\n- Negociação madura considera estrutura fiscal da operação."
+    },
+    {
+      "title": "Documentação e compliance tributário",
+      "body": "Boas práticas:\n- registrar premissas fiscais usadas na comparação\n- manter evidência de cálculo\n- revisar mudança de regra/regime\n\nRegra:\n- Sem trilha de decisão, risco fiscal vira risco jurídico e financeiro."
+    },
+    {
+      "title": "Mini prática (45 min) — equalizar duas propostas com imposto",
+      "body": "Pegue duas propostas reais ou simuladas.\n\nMonte colunas:\n- preço bruto\n- tributo incidente\n- crédito aplicável\n- custo líquido final\n\nObjetivo:\n- treinar decisão baseada em custo líquido."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Tributo muda custo real e caixa\n- Comparação sem equalização fiscal é incompleta\n- Compras e fiscal devem decidir juntos\n- Registro técnico reduz risco de passivo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 23 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Em compras, tributos impactam:",
+        "options": [
+          { "key": "A", "text": "Só o fiscal" },
+          { "key": "B", "text": "Custo real e comparabilidade" },
+          { "key": "C", "text": "Só marketing" },
+          { "key": "D", "text": "Só logística" }
+        ],
+        "answer": "B",
+        "explain": "Tributos alteram o custo final da decisão."
+      },
+      {
+        "id": 2,
+        "question": "Comparar apenas preço bruto é:",
+        "options": [
+          { "key": "A", "text": "Suficiente" },
+          { "key": "B", "text": "Incompleto" },
+          { "key": "C", "text": "Melhor prática" },
+          { "key": "D", "text": "Obrigatório" }
+        ],
+        "answer": "B",
+        "explain": "Sem impostos/créditos a análise fica distorcida."
+      },
+      {
+        "id": 3,
+        "question": "Custo líquido considera:",
+        "options": [
+          { "key": "A", "text": "Preço e efeitos tributários" },
+          { "key": "B", "text": "Só preço" },
+          { "key": "C", "text": "Só frete" },
+          { "key": "D", "text": "Só desconto" }
+        ],
+        "answer": "A",
+        "explain": "A decisão deve usar valor economicamente efetivo."
+      },
+      {
+        "id": 4,
+        "question": "Apoio de fiscal/contábil em compras serve para:",
+        "options": [
+          { "key": "A", "text": "Aumentar burocracia" },
+          { "key": "B", "text": "Validar tratamento tributário e reduzir risco" },
+          { "key": "C", "text": "Eliminar negociação" },
+          { "key": "D", "text": "Trocar fornecedor automaticamente" }
+        ],
+        "answer": "B",
+        "explain": "Integração técnica reduz erro e passivo."
+      },
+      {
+        "id": 5,
+        "question": "Sem equalização fiscal, o risco principal é:",
+        "options": [
+          { "key": "A", "text": "Escolher fornecedor por critério distorcido" },
+          { "key": "B", "text": "Entregar mais rápido" },
+          { "key": "C", "text": "Reduzir custo" },
+          { "key": "D", "text": "Melhorar compliance" }
+        ],
+        "answer": "A",
+        "explain": "A decisão fica baseada em valor incomparável."
+      },
+      {
+        "id": 6,
+        "question": "Boa prática documental é:",
+        "options": [
+          { "key": "A", "text": "Registrar premissas e cálculos fiscais" },
+          { "key": "B", "text": "Decidir sem registro" },
+          { "key": "C", "text": "Guardar só e-mail" },
+          { "key": "D", "text": "Ignorar mudanças de regra" }
+        ],
+        "answer": "A",
+        "explain": "Rastreabilidade protege decisão e auditoria."
+      },
+      {
+        "id": 7,
+        "question": "Tributos também entram na negociação quando:",
+        "options": [
+          { "key": "A", "text": "Se discute composição da proposta" },
+          { "key": "B", "text": "Só existe desconto" },
+          { "key": "C", "text": "Não há contrato" },
+          { "key": "D", "text": "Não há fornecedor" }
+        ],
+        "answer": "A",
+        "explain": "Estrutura da proposta altera custo tributário final."
+      },
+      {
+        "id": 8,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Imposto não muda decisão de compras" },
+          { "key": "B", "text": "Imposto muda custo e deve entrar no mapa" },
+          { "key": "C", "text": "Tributo é só assunto de auditoria" },
+          { "key": "D", "text": "Tributo só importa depois da compra" }
+        ],
+        "answer": "B",
+        "explain": "O efeito tributário precisa estar no comparativo."
+      },
+      {
+        "id": 9,
+        "question": "Passivo fiscal pode nascer de:",
+        "options": [
+          { "key": "A", "text": "Classificação incorreta" },
+          { "key": "B", "text": "Conferência correta" },
+          { "key": "C", "text": "Premissa documentada" },
+          { "key": "D", "text": "Regra clara" }
+        ],
+        "answer": "A",
+        "explain": "Erro de enquadramento pode gerar cobrança futura."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo da aula para decisão de compra é:",
+        "options": [
+          { "key": "A", "text": "Comprar pelo menor bruto" },
+          { "key": "B", "text": "Decidir por custo líquido e risco controlado" },
+          { "key": "C", "text": "Eliminar tributos" },
+          { "key": "D", "text": "Ignorar compliance" }
+        ],
+        "answer": "B",
+        "explain": "Boa compra combina custo correto e conformidade."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist fiscal\n\n- preço bruto\n- tributos\n- créditos\n- custo líquido\n",
+    "pilares": "Pilares\n\n- equalização\n- integração com fiscal\n- rastreabilidade\n"
+  }
+}

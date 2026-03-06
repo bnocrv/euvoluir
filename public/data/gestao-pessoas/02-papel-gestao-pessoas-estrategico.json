@@ -1,0 +1,60 @@
+﻿{
+  "id": "02-papel-gestao-pessoas-estrategico",
+  "title": "Aula 02 — Papel estratégico da gestão de pessoas: da rotina ao negócio",
+  "steps": [
+    {
+      "title": "Operacional x estratégico",
+      "body": "Operacional é necessário: admissão, folha, documentos.\nEstratégico é direcionar pessoas para entregar resultado.\n\nRegra:\n- A área precisa fazer os dois, com prioridades claras."
+    },
+    {
+      "title": "Como a área contribui para metas da empresa",
+      "body": "A gestão de pessoas impacta metas por:\n- contratação assertiva\n- redução de turnover\n- aceleração de desempenho\n- formação de liderança\n\nRegra:\n- Meta de negócio sem plano de pessoas vira risco de execução."
+    },
+    {
+      "title": "Parceira das lideranças",
+      "body": "A área deve atuar com líderes em:\n- definição de perfil\n- feedback e desempenho\n- decisões de movimentação\n\nRegra:\n- Gestão de pessoas não substitui líder, potencializa líder."
+    },
+    {
+      "title": "Planejamento anual de pessoas",
+      "body": "Elementos mínimos:\n- mapa de headcount\n- competências críticas\n- trilhas de desenvolvimento\n- indicadores e metas\n\nRegra:\n- Planejamento reduz urgência e melhora previsibilidade."
+    },
+    {
+      "title": "Governança e política",
+      "body": "Políticas claras evitam decisões inconsistentes.\n\nExemplos:\n- critérios de promoção\n- regras de avaliação\n- parâmetros de remuneração\n\nRegra:\n- Sem regra, percepção de injustiça cresce."
+    },
+    {
+      "title": "Principais armadilhas",
+      "body": "Erros comuns:\n- foco só em apagar incêndio\n- baixa conexão com indicadores do negócio\n- comunicação fraca com gestores\n\nRegra:\n- Estratégia depende de rotina de acompanhamento."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de atuação atual",
+      "body": "Liste atividades da área e classifique:\n- operacional\n- tática\n- estratégica\n\nDefina 3 ações para elevar atuação estratégica.\n\nObjetivo:\n- reposicionar foco com método."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Gestão de pessoas estratégica sustenta metas do negócio\n- Lideranças são corresponsáveis pela execução\n- Planejamento e política aumentam consistência\n- Indicadores conectam área ao resultado\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 02 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Atuação estratégica de pessoas significa:", "options": [ { "key": "A", "text": "Somente folha e documentação" }, { "key": "B", "text": "Conectar pessoas às metas do negócio" }, { "key": "C", "text": "Somente recrutamento" }, { "key": "D", "text": "Somente treinamento anual" } ], "answer": "B", "explain": "A dimensão estratégica integra pessoas e resultado." },
+      { "id": 2, "question": "Frase correta:", "options": [ { "key": "A", "text": "Operacional e estratégico se excluem" }, { "key": "B", "text": "Operacional e estratégico devem coexistir" }, { "key": "C", "text": "Estratégico dispensa rotina" }, { "key": "D", "text": "Operacional não importa" } ], "answer": "B", "explain": "Os dois níveis são necessários para sustentação." },
+      { "id": 3, "question": "Parceria com lideranças serve para:", "options": [ { "key": "A", "text": "Transferir responsabilidade do líder" }, { "key": "B", "text": "Aprimorar decisão sobre pessoas" }, { "key": "C", "text": "Evitar feedback" }, { "key": "D", "text": "Apenas cumprir burocracia" } ], "answer": "B", "explain": "A qualidade das decisões melhora com atuação conjunta." },
+      { "id": 4, "question": "Planejamento de pessoas reduz:", "options": [ { "key": "A", "text": "Clareza" }, { "key": "B", "text": "Urgência e improviso" }, { "key": "C", "text": "Indicadores" }, { "key": "D", "text": "Engajamento" } ], "answer": "B", "explain": "Antecipação melhora previsibilidade." },
+      { "id": 5, "question": "Políticas claras ajudam a:", "options": [ { "key": "A", "text": "Aumentar percepção de injustiça" }, { "key": "B", "text": "Padronizar decisões e critérios" }, { "key": "C", "text": "Eliminar liderança" }, { "key": "D", "text": "Evitar comunicação" } ], "answer": "B", "explain": "Governança reduz conflito e subjetividade." },
+      { "id": 6, "question": "Erro comum da área é:", "options": [ { "key": "A", "text": "Acompanhar indicadores" }, { "key": "B", "text": "Viver só apagando incêndio" }, { "key": "C", "text": "Planejar headcount" }, { "key": "D", "text": "Atuar com líderes" } ], "answer": "B", "explain": "Sem planejamento, o time fica reativo." },
+      { "id": 7, "question": "Indicadores na área de pessoas servem para:", "options": [ { "key": "A", "text": "Substituir decisões" }, { "key": "B", "text": "Dar base objetiva para decisões" }, { "key": "C", "text": "Aumentar burocracia" }, { "key": "D", "text": "Ignorar prioridades" } ], "answer": "B", "explain": "Dados dão clareza de causa e impacto." },
+      { "id": 8, "question": "A gestão de pessoas estratégica deve:", "options": [ { "key": "A", "text": "Ficar isolada do negócio" }, { "key": "B", "text": "Atuar integrada às áreas" }, { "key": "C", "text": "Atuar só em contratação" }, { "key": "D", "text": "Atuar só em desligamento" } ], "answer": "B", "explain": "Integração aumenta efetividade." },
+      { "id": 9, "question": "Headcount no planejamento representa:", "options": [ { "key": "A", "text": "Imagem da equipe" }, { "key": "B", "text": "Capacidade de pessoas necessária" }, { "key": "C", "text": "Somente custo de folha" }, { "key": "D", "text": "Clima organizacional" } ], "answer": "B", "explain": "Ajuda a dimensionar estrutura para demanda." },
+      { "id": 10, "question": "Objetivo da aula 02 foi:", "options": [ { "key": "A", "text": "Detalhar legislação trabalhista" }, { "key": "B", "text": "Posicionar gestão de pessoas como função estratégica" }, { "key": "C", "text": "Criar plano de benefícios" }, { "key": "D", "text": "Aplicar auditoria" } ], "answer": "B", "explain": "A aula foca no reposicionamento estratégico da função." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Níveis de atuação\n\n- operacional\n- tático\n- estratégico\n",
+    "pilares": "Pilares\n\n- parceria com liderança\n- governança\n- indicadores\n"
+  }
+}
+
+

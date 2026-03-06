@@ -1,0 +1,47 @@
+﻿{
+  "courseId": "gestao-pessoas",
+  "title": "Gestão de Pessoas — do básico ao avançado (estrutura, liderança, desenvolvimento e performance)",
+  "lessons": [
+    { "id": "01-introducao", "title": "Aula 01 — O que é gestão de pessoas e por que impacta resultado", "file": "01-introducao.json" },
+    { "id": "02-papel-gestao-pessoas-estrategico", "title": "Aula 02 — Papel estratégico da gestão de pessoas: da rotina ao negócio", "file": "02-papel-gestao-pessoas-estrategico.json" },
+    { "id": "03-cultura-organizacional", "title": "Aula 03 — Cultura organizacional: valores, comportamentos e prática", "file": "03-cultura-organizacional.json" },
+    { "id": "04-cargos-salarios-estrutura", "title": "Aula 04 — Cargos e salários: estrutura, equidade e clareza", "file": "04-cargos-salarios-estrutura.json" },
+    { "id": "05-planejamento-forca-trabalho", "title": "Aula 05 — Planejamento de força de trabalho: capacidade e demanda", "file": "05-planejamento-forca-trabalho.json" },
+
+    { "id": "06-recrutamento-selecao-fundamentos", "title": "Aula 06 — Recrutamento e seleção: fundamentos e processo", "file": "06-recrutamento-selecao-fundamentos.json" },
+    { "id": "07-divulgacao-vagas-employer-branding", "title": "Aula 07 — Divulgação de vagas e employer branding", "file": "07-divulgacao-vagas-employer-branding.json" },
+    { "id": "08-triagem-entrevista", "title": "Aula 08 — Triagem e entrevistas: como avaliar com critério", "file": "08-triagem-entrevista.json" },
+    { "id": "09-onboarding-integracao", "title": "Aula 09 — Onboarding e integração: primeiros 90 dias", "file": "09-onboarding-integracao.json" },
+    { "id": "10-periodo-experiencia", "title": "Aula 10 — Período de experiência: acompanhamento e decisão", "file": "10-periodo-experiencia.json" },
+
+    { "id": "11-jornada-ponto-banco-horas", "title": "Aula 11 — Jornada, ponto e banco de horas: controle e conformidade", "file": "11-jornada-ponto-banco-horas.json" },
+    { "id": "12-folha-beneficios-fundamentos", "title": "Aula 12 — Folha e benefícios: fundamentos para gestão segura", "file": "12-folha-beneficios-fundamentos.json" },
+    { "id": "13-legislacao-trabalhista-basica", "title": "Aula 13 — Legislação trabalhista no básico: o que a gestão de pessoas precisa dominar", "file": "13-legislacao-trabalhista-basica.json" },
+    { "id": "14-documentacao-admissao", "title": "Aula 14 — Documentação de admissão e desligamento sem falhas", "file": "14-documentacao-admissao.json" },
+    { "id": "15-saude-seguranca-trabalho", "title": "Aula 15 — Saúde e segurança do trabalho: prevenção e responsabilidade", "file": "15-saude-seguranca-trabalho.json" },
+
+    { "id": "16-clima-organizacional", "title": "Aula 16 — Clima organizacional: diagnóstico e plano de ação", "file": "16-clima-organizacional.json" },
+    { "id": "17-comunicacao-interna", "title": "Aula 17 — Comunicação interna: alinhamento, rituais e confiança", "file": "17-comunicacao-interna.json" },
+    { "id": "18-feedback-1a1", "title": "Aula 18 — Feedback e 1:1: conversas que desenvolvem", "file": "18-feedback-1a1.json" },
+    { "id": "19-avaliacao-desempenho", "title": "Aula 19 — Avaliação de desempenho: critérios, ciclos e justiça", "file": "19-avaliacao-desempenho.json" },
+    { "id": "20-pdi-desenvolvimento", "title": "Aula 20 — PDI e desenvolvimento: evolução com acompanhamento", "file": "20-pdi-desenvolvimento.json" },
+
+    { "id": "21-treinamento-universidade-corporativa", "title": "Aula 21 — Treinamento e educação corporativa com foco em resultado", "file": "21-treinamento-universidade-corporativa.json" },
+    { "id": "22-lideranca-gestao-equipes", "title": "Aula 22 — Liderança e gestão de equipes: papel do líder na gestão de pessoas", "file": "22-lideranca-gestao-equipes.json" },
+    { "id": "23-gestao-conflitos", "title": "Aula 23 — Gestão de conflitos e mediação no ambiente de trabalho", "file": "23-gestao-conflitos.json" },
+    { "id": "24-diversidade-inclusao", "title": "Aula 24 — Diversidade e inclusão: política, prática e impacto", "file": "24-diversidade-inclusao.json" },
+    { "id": "25-engajamento-retencao", "title": "Aula 25 — Engajamento e retenção: reduzir turnover com método", "file": "25-engajamento-retencao.json" },
+
+    { "id": "26-remuneracao-variavel-incentivos", "title": "Aula 26 — Remuneração variável e incentivos: desenho e governança", "file": "26-remuneracao-variavel-incentivos.json" },
+    { "id": "27-people-analytics-kpis", "title": "Aula 27 — People Analytics e KPIs de gestão de pessoas: dados para decidir melhor", "file": "27-people-analytics-kpis.json" },
+    { "id": "28-compliance-etica-gestao-pessoas", "title": "Aula 28 — Compliance e ética em gestão de pessoas: prevenção e conduta", "file": "28-compliance-etica-gestao-pessoas.json" },
+    { "id": "29-riscos-trabalhistas-auditoria", "title": "Aula 29 — Riscos trabalhistas e auditoria interna de gestão de pessoas", "file": "29-riscos-trabalhistas-auditoria.json" },
+    { "id": "30-tecnologia-gestao-pessoas-automacao", "title": "Aula 30 — Tecnologia em gestão de pessoas: sistemas, automação e produtividade", "file": "30-tecnologia-gestao-pessoas-automacao.json" },
+
+    { "id": "31-orcamento-gestao-pessoas-priorizacao", "title": "Aula 31 — Orçamento de gestão de pessoas: priorização, custo e impacto", "file": "31-orcamento-gestao-pessoas-priorizacao.json" },
+    { "id": "32-projeto-final-gestao-pessoas", "title": "Aula 32 — Projeto final: desenhando um plano completo de gestão de pessoas", "file": "32-projeto-final-gestao-pessoas.json" }
+  ]
+}
+
+
+

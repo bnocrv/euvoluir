@@ -1,0 +1,168 @@
+{
+  "id": "29-procurement-digital",
+  "title": "Aula 29 — Compras digitais: e-procurement, catálogos e automação",
+  "steps": [
+    {
+      "title": "Digitalizar compras é ganhar controle e velocidade",
+      "body": "Compras digital não é apenas trocar papel por sistema.\nÉ padronizar fluxo, reduzir erro e aumentar rastreabilidade.\n\nBenefícios típicos:\n- menos retrabalho\n- maior transparência\n- aprovação mais rápida\n- dados para decisão\n\nRegra:\n- Tecnologia sem processo claro só digitaliza confusão."
+    },
+    {
+      "title": "E-procurement: ponta a ponta com trilha",
+      "body": "Fluxo comum em e-procurement:\n- requisição\n- aprovação\n- cotação\n- pedido\n- recebimento\n- pagamento\n\nRegra:\n- Quanto mais integrado o fluxo, menor o risco de compra fora de padrão."
+    },
+    {
+      "title": "Catálogos e contratos padronizados",
+      "body": "Catálogo digital ajuda em compras recorrentes:\n- item padronizado\n- fornecedor homologado\n- preço e condição pré-acordados\n\nRegra:\n- Catálogo reduz variação e acelera compra de baixo risco."
+    },
+    {
+      "title": "Automação: onde começar com baixo risco",
+      "body": "Boas automações iniciais:\n- alerta de renovação contratual\n- aprovação por alçada automática\n- bloqueio de requisição incompleta\n- comparação automática de propostas\n\nRegra:\n- Automatize o repetitivo; mantenha humano no decisório crítico."
+    },
+    {
+      "title": "Dados e analytics para negociação",
+      "body": "Com base digital, compras consegue:\n- histórico por fornecedor/categoria\n- análise de variação de preço\n- compliance em tempo real\n- identificação de oportunidades de savings\n\nRegra:\n- Dado bom transforma negociação em estratégia."
+    },
+    {
+      "title": "Riscos da transformação digital mal conduzida",
+      "body": "Erros comuns:\n- implantar ferramenta sem treinar usuários\n- ignorar integração com financeiro/fiscal\n- criar excesso de etapa e lentidão\n- não definir dono do processo\n\nRegra:\n- Projeto digital falha mais por governança do que por tecnologia."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de digitalização por etapa",
+      "body": "Liste seu fluxo atual e classifique cada etapa:\n- manual\n- parcialmente digital\n- totalmente digital\n\nDefina 3 melhorias de curto prazo com maior impacto.\n\nObjetivo:\n- priorizar digitalização com ganho real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Compras digital une velocidade, controle e dados\n- E-procurement fortalece rastreabilidade\n- Catálogos reduzem variação em compras recorrentes\n- Automação deve focar processo repetitivo e mensurável\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 29 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Principal objetivo de digitalizar compras é:",
+        "options": [
+          { "key": "A", "text": "Apenas trocar papel por tela" },
+          { "key": "B", "text": "Melhorar controle, velocidade e rastreabilidade" },
+          { "key": "C", "text": "Eliminar processo" },
+          { "key": "D", "text": "Eliminar aprovação" }
+        ],
+        "answer": "B",
+        "explain": "Digitalização útil melhora operação e governança."
+      },
+      {
+        "id": 2,
+        "question": "E-procurement normalmente cobre:",
+        "options": [
+          { "key": "A", "text": "Só cotação" },
+          { "key": "B", "text": "Fluxo ponta a ponta de compras" },
+          { "key": "C", "text": "Só pagamento" },
+          { "key": "D", "text": "Só cadastro de fornecedor" }
+        ],
+        "answer": "B",
+        "explain": "A força está na integração das etapas."
+      },
+      {
+        "id": 3,
+        "question": "Catálogo digital é mais indicado para:",
+        "options": [
+          { "key": "A", "text": "Itens recorrentes e padronizados" },
+          { "key": "B", "text": "Projetos únicos sem especificação" },
+          { "key": "C", "text": "Compras emergenciais sem controle" },
+          { "key": "D", "text": "Itens sem fornecedor homologado" }
+        ],
+        "answer": "A",
+        "explain": "Padronização acelera e reduz erro."
+      },
+      {
+        "id": 4,
+        "question": "Automação inicial de baixo risco pode incluir:",
+        "options": [
+          { "key": "A", "text": "Bloqueio de requisição incompleta" },
+          { "key": "B", "text": "Eliminar conferência de recebimento" },
+          { "key": "C", "text": "Aprovação sem regra" },
+          { "key": "D", "text": "Pagamento sem validação" }
+        ],
+        "answer": "A",
+        "explain": "Evita erro de entrada e retrabalho no fluxo."
+      },
+      {
+        "id": 5,
+        "question": "Frase correta sobre tecnologia em compras:",
+        "options": [
+          { "key": "A", "text": "Ferramenta resolve tudo sozinha" },
+          { "key": "B", "text": "Tecnologia precisa de processo e governança" },
+          { "key": "C", "text": "Processo não importa" },
+          { "key": "D", "text": "Treinamento é opcional" }
+        ],
+        "answer": "B",
+        "explain": "Sem processo claro, digitalização não sustenta resultado."
+      },
+      {
+        "id": 6,
+        "question": "Um ganho direto de analytics em compras é:",
+        "options": [
+          { "key": "A", "text": "Histórico para negociação baseada em dados" },
+          { "key": "B", "text": "Eliminar contrato" },
+          { "key": "C", "text": "Eliminar fornecedor" },
+          { "key": "D", "text": "Eliminar risco" }
+        ],
+        "answer": "A",
+        "explain": "Dados aumentam precisão de decisão."
+      },
+      {
+        "id": 7,
+        "question": "Erro comum em transformação digital é:",
+        "options": [
+          { "key": "A", "text": "Treinar usuários" },
+          { "key": "B", "text": "Não integrar áreas envolvidas" },
+          { "key": "C", "text": "Definir dono do processo" },
+          { "key": "D", "text": "Mapear fluxo antes" }
+        ],
+        "answer": "B",
+        "explain": "Integração é essencial para fluxo consistente."
+      },
+      {
+        "id": 8,
+        "question": "Digitalização bem feita tende a:",
+        "options": [
+          { "key": "A", "text": "Aumentar rastreabilidade e compliance" },
+          { "key": "B", "text": "Reduzir transparência" },
+          { "key": "C", "text": "Eliminar indicadores" },
+          { "key": "D", "text": "Substituir liderança" }
+        ],
+        "answer": "A",
+        "explain": "Fluxo estruturado deixa trilha clara de decisão."
+      },
+      {
+        "id": 9,
+        "question": "Melhor critério para priorizar automação é:",
+        "options": [
+          { "key": "A", "text": "Processos repetitivos com alto volume" },
+          { "key": "B", "text": "Processos raros e sem padrão" },
+          { "key": "C", "text": "Somente atividades estratégicas" },
+          { "key": "D", "text": "Somente gosto da equipe" }
+        ],
+        "answer": "A",
+        "explain": "Repetição gera maior retorno da automação."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo final de compras digitais é:",
+        "options": [
+          { "key": "A", "text": "Ter software novo" },
+          { "key": "B", "text": "Melhorar desempenho operacional e decisão" },
+          { "key": "C", "text": "Eliminar toda intervenção humana" },
+          { "key": "D", "text": "Reduzir comunicação entre áreas" }
+        ],
+        "answer": "B",
+        "explain": "Tecnologia é meio para resultado de negócio."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Digitalização por etapa\n\n- entrada\n- aprovação\n- execução\n- controle\n",
+    "pilares": "Pilares\n\n- padronização\n- automação\n- dados\n"
+  }
+}

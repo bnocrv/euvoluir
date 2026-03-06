@@ -1,0 +1,59 @@
+﻿{
+  "id": "11-jornada-ponto-banco-horas",
+  "title": "Aula 11 — Jornada, ponto e banco de horas: controle e conformidade",
+  "steps": [
+    {
+      "title": "Controle de jornada protege empresa e colaborador",
+      "body": "Jornada bem controlada reduz risco legal e melhora previsibilidade operacional.\n\nRegra:\n- Falha de controle vira passivo e desgaste de confiança."
+    },
+    {
+      "title": "Registro de ponto com disciplina",
+      "body": "Boas práticas:\n- marcação correta\n- tratamento rápido de inconsistências\n- transparência com equipe\n\nRegra:\n- Ponto sem rotina gera retrabalho e risco jurídico."
+    },
+    {
+      "title": "Banco de horas: finalidade e limites",
+      "body": "Banco de horas organiza compensação de jornadas variáveis.\n\nRegra:\n- Sem regra de uso e acompanhamento, banco vira passivo oculto."
+    },
+    {
+      "title": "Gestão de horas extras",
+      "body": "Horas extras devem ter:\n- necessidade justificada\n- aprovação conforme política\n- acompanhamento de recorrência\n\nRegra:\n- Hora extra recorrente pode indicar problema de dimensionamento."
+    },
+    {
+      "title": "Papel da liderança no controle de jornada",
+      "body": "Líder precisa:\n- planejar demanda\n- evitar sobrecarga crônica\n- acompanhar desvios de jornada\n\nRegra:\n- Controle de jornada não é só administrativo; é gestão de capacidade."
+    },
+    {
+      "title": "Indicadores úteis de jornada",
+      "body": "Acompanhe:\n- saldo de banco de horas\n- percentual de hora extra por área\n- frequência de ajustes de ponto\n\nRegra:\n- Indicador evita que problema vire padrão."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de jornada por equipe",
+      "body": "Levante para uma equipe:\n- jornada prevista x realizada\n- saldo médio de banco de horas\n- causas de horas extras\n\nObjetivo:\n- identificar onde agir para equilibrar carga."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Jornada e ponto exigem rotina\n- Banco de horas precisa governança\n- Hora extra recorrente é sinal de risco\n- Liderança e gestão de pessoas devem atuar juntas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 11 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Controle de jornada é importante porque:", "options": [ { "key": "A", "text": "Só para fechar folha" }, { "key": "B", "text": "Reduz risco legal e melhora gestão" }, { "key": "C", "text": "Só para auditoria externa" }, { "key": "D", "text": "Não impacta operação" } ], "answer": "B", "explain": "Tem impacto jurídico e operacional direto." },
+      { "id": 2, "question": "Banco de horas sem controle tende a:", "options": [ { "key": "A", "text": "Gerar previsibilidade" }, { "key": "B", "text": "Virar passivo oculto" }, { "key": "C", "text": "Melhorar clima automaticamente" }, { "key": "D", "text": "Eliminar horas extras" } ], "answer": "B", "explain": "Sem governança, saldos e compensações ficam desorganizados." },
+      { "id": 3, "question": "Hora extra recorrente pode indicar:", "options": [ { "key": "A", "text": "Dimensionamento inadequado" }, { "key": "B", "text": "Processo perfeito" }, { "key": "C", "text": "Engajamento alto apenas" }, { "key": "D", "text": "Risco zero" } ], "answer": "A", "explain": "Pode sinalizar carga mal distribuída." },
+      { "id": 4, "question": "Aprovação de hora extra deve:", "options": [ { "key": "A", "text": "Ser opcional" }, { "key": "B", "text": "Seguir política e justificativa" }, { "key": "C", "text": "Ser verbal apenas" }, { "key": "D", "text": "Ser feita no fechamento" } ], "answer": "B", "explain": "Governança reduz abuso e inconsistência." },
+      { "id": 5, "question": "Ponto com inconsistência sem tratamento gera:", "options": [ { "key": "A", "text": "Maior confiança" }, { "key": "B", "text": "Retrabalho e risco trabalhista" }, { "key": "C", "text": "Melhor acurácia" }, { "key": "D", "text": "Menor ruído operacional" } ], "answer": "B", "explain": "Erro acumulado vira problema maior no fechamento." },
+      { "id": 6, "question": "Frase correta:", "options": [ { "key": "A", "text": "Jornada é tema só do departamento pessoal" }, { "key": "B", "text": "Jornada envolve gestão de equipe e capacidade" }, { "key": "C", "text": "Líder não precisa acompanhar horas" }, { "key": "D", "text": "Banco de horas dispensa regra" } ], "answer": "B", "explain": "A liderança tem papel decisivo no equilíbrio de carga." },
+      { "id": 7, "question": "Indicador relevante de jornada:", "options": [ { "key": "A", "text": "Saldo de banco de horas" }, { "key": "B", "text": "Cor da planilha" }, { "key": "C", "text": "Número de e-mails" }, { "key": "D", "text": "Tamanho da equipe apenas" } ], "answer": "A", "explain": "Mostra risco de acúmulo e necessidade de ação." },
+      { "id": 8, "question": "Gestão de jornada eficaz deve:", "options": [ { "key": "A", "text": "Reagir apenas no fechamento" }, { "key": "B", "text": "Acompanhar desvios continuamente" }, { "key": "C", "text": "Ignorar sazonalidade" }, { "key": "D", "text": "Eliminar compensação" } ], "answer": "B", "explain": "Monitoramento contínuo evita acúmulos críticos." },
+      { "id": 9, "question": "Banco de horas serve para:", "options": [ { "key": "A", "text": "Organizar compensação de jornada" }, { "key": "B", "text": "Substituir controle de ponto" }, { "key": "C", "text": "Eliminar legislação" }, { "key": "D", "text": "Dispensar aprovação" } ], "answer": "A", "explain": "É instrumento de gestão de tempo com regra." },
+      { "id": 10, "question": "Objetivo da aula 11:", "options": [ { "key": "A", "text": "Definir política de seleção" }, { "key": "B", "text": "Estruturar gestão de jornada, ponto e banco de horas" }, { "key": "C", "text": "Criar PDI" }, { "key": "D", "text": "Tratar onboarding" } ], "answer": "B", "explain": "A aula foca conformidade e controle operacional." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Controle de jornada\n\n- ponto\n- horas extras\n- banco de horas\n- indicadores\n",
+    "pilares": "Pilares\n\n- conformidade\n- previsibilidade\n- disciplina de gestão\n"
+  }
+}
+

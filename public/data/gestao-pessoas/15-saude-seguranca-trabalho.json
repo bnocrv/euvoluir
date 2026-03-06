@@ -1,0 +1,59 @@
+﻿{
+  "id": "15-saude-seguranca-trabalho",
+  "title": "Aula 15 — Saúde e segurança do trabalho: prevenção e responsabilidade",
+  "steps": [
+    {
+      "title": "Saúde e segurança é prevenção contínua",
+      "body": "Tema de SST protege pessoas, operação e reputação.\n\nRegra:\n- Acidente evitável quase sempre aponta falha de prevenção."
+    },
+    {
+      "title": "Riscos ocupacionais no dia a dia",
+      "body": "Mapeie riscos por atividade e ambiente.\n\nRegra:\n- Risco não mapeado não é gerenciado."
+    },
+    {
+      "title": "Treinamento e conscientização",
+      "body": "Treinamento precisa ser:\n- prático\n- recorrente\n- aderente à realidade da função\n\nRegra:\n- Regra conhecida, mas não praticada, não protege."
+    },
+    {
+      "title": "Uso correto de procedimentos e EPIs",
+      "body": "Segurança depende de comportamento consistente e supervisão ativa.\n\nRegra:\n- Disponibilizar recurso sem rotina de uso não resolve risco."
+    },
+    {
+      "title": "Investigação de incidentes",
+      "body": "Ao ocorrer incidente:\n- registrar fato\n- analisar causa raiz\n- definir ação corretiva\n\nRegra:\n- Sem aprender com incidente, ele tende a se repetir."
+    },
+    {
+      "title": "Cultura de segurança",
+      "body": "Cultura forte de segurança inclui:\n- reporte sem medo\n- correção rápida\n- liderança como exemplo\n\nRegra:\n- Segurança é valor diário, não ação pontual."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa de prevenção",
+      "body": "Escolha uma área e defina:\n- principais riscos\n- controles existentes\n- lacunas de prevenção\n- ação imediata\n\nObjetivo:\n- reduzir exposição com plano prático."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- SST é prevenção e disciplina operacional\n- Mapeamento de risco orienta prioridade\n- Treinamento e rotina sustentam comportamento seguro\n- Incidente precisa gerar aprendizagem\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 15 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Saúde e segurança do trabalho tem foco em:", "options": [ { "key": "A", "text": "Reação apenas após acidente" }, { "key": "B", "text": "Prevenção contínua de riscos" }, { "key": "C", "text": "Somente documentação" }, { "key": "D", "text": "Somente treinamento anual" } ], "answer": "B", "explain": "A base é prevenir antes do incidente." },
+      { "id": 2, "question": "Risco ocupacional não mapeado:", "options": [ { "key": "A", "text": "Fica controlado automaticamente" }, { "key": "B", "text": "Permanece sem gestão adequada" }, { "key": "C", "text": "Reduz exposição" }, { "key": "D", "text": "Melhora segurança" } ], "answer": "B", "explain": "Mapeamento é pré-requisito de controle." },
+      { "id": 3, "question": "Treinamento eficaz em segurança deve ser:", "options": [ { "key": "A", "text": "Só teórico e eventual" }, { "key": "B", "text": "Prático, recorrente e contextual" }, { "key": "C", "text": "Opcional" }, { "key": "D", "text": "Igual para qualquer função" } ], "answer": "B", "explain": "Aderência ao trabalho real aumenta eficácia." },
+      { "id": 4, "question": "Frase correta sobre EPI/procedimentos:", "options": [ { "key": "A", "text": "Disponibilizar já é suficiente" }, { "key": "B", "text": "Uso correto exige rotina e supervisão" }, { "key": "C", "text": "Não precisa acompanhamento" }, { "key": "D", "text": "É tema exclusivo do jurídico" } ], "answer": "B", "explain": "Comportamento seguro precisa gestão ativa." },
+      { "id": 5, "question": "Investigação de incidente deve buscar:", "options": [ { "key": "A", "text": "Culpado imediato apenas" }, { "key": "B", "text": "Causa raiz e ação preventiva" }, { "key": "C", "text": "Fechamento rápido sem análise" }, { "key": "D", "text": "Apenas registro estatístico" } ], "answer": "B", "explain": "Aprendizado evita repetição do evento." },
+      { "id": 6, "question": "Cultura de segurança forte inclui:", "options": [ { "key": "A", "text": "Silêncio sobre risco" }, { "key": "B", "text": "Reporte e correção sem medo" }, { "key": "C", "text": "Ação só após fiscalização" }, { "key": "D", "text": "Foco só em punição" } ], "answer": "B", "explain": "Ambiente seguro depende de confiança e ação." },
+      { "id": 7, "question": "Liderança em SST deve:", "options": [ { "key": "A", "text": "Delegar totalmente para área técnica" }, { "key": "B", "text": "Ser exemplo e cobrar rotina segura" }, { "key": "C", "text": "Atuar só após incidente" }, { "key": "D", "text": "Evitar tema em reuniões" } ], "answer": "B", "explain": "Exemplo da liderança reforça comportamento esperado." },
+      { "id": 8, "question": "Sem ação corretiva após incidente:", "options": [ { "key": "A", "text": "Risco de repetição aumenta" }, { "key": "B", "text": "Risco desaparece" }, { "key": "C", "text": "Segurança melhora sozinha" }, { "key": "D", "text": "Conformidade aumenta automaticamente" } ], "answer": "A", "explain": "Incidente sem aprendizado mantém vulnerabilidade." },
+      { "id": 9, "question": "Mapa de prevenção ajuda a:", "options": [ { "key": "A", "text": "Ignorar prioridade" }, { "key": "B", "text": "Direcionar ações para riscos críticos" }, { "key": "C", "text": "Substituir treinamento" }, { "key": "D", "text": "Eliminar controles" } ], "answer": "B", "explain": "Prioriza recursos no que mais expõe a operação." },
+      { "id": 10, "question": "Objetivo da aula 15:", "options": [ { "key": "A", "text": "Definir política de recrutamento" }, { "key": "B", "text": "Estruturar prevenção em saúde e segurança" }, { "key": "C", "text": "Tratar orçamento de pessoas" }, { "key": "D", "text": "Criar plano de cargos" } ], "answer": "B", "explain": "A aula consolida visão preventiva de SST." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ciclo de prevenção\n\n- mapeamento\n- treinamento\n- controle\n- correção\n",
+    "pilares": "Pilares\n\n- prevenção\n- disciplina\n- aprendizagem contínua\n"
+  }
+}
+

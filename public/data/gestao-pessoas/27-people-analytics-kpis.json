@@ -1,0 +1,58 @@
+{
+  "id": "27-people-analytics-kpis",
+  "title": "Aula 27 — People Analytics e KPIs de gestão de pessoas: dados para decidir melhor",
+  "steps": [
+    {
+      "title": "People Analytics conecta pessoas e resultado",
+      "body": "É o uso estruturado de dados para melhorar decisões sobre pessoas.\n\nRegra:\n- Sem dado confiável, decisão vira impressão."
+    },
+    {
+      "title": "KPIs essenciais de gestão de pessoas",
+      "body": "Exemplos relevantes:\n- turnover\n- absenteísmo\n- tempo de contratação\n- tempo de rampagem\n- engajamento\n\nRegra:\n- KPI útil precisa ter definição e dono."
+    },
+    {
+      "title": "Qualidade de dado antes de análise",
+      "body": "Garanta:\n- cadastro consistente\n- fonte única de verdade\n- atualização periódica\n\nRegra:\n- Dado ruim gera decisão ruim com aparência de precisão."
+    },
+    {
+      "title": "Leitura de tendência, não só fotografia",
+      "body": "Compare evolução por período e por área.\n\nRegra:\n- Número isolado sem histórico pode enganar."
+    },
+    {
+      "title": "Cruzar indicadores para entender causa",
+      "body": "Exemplo:\n- turnover alto + baixa liderança + clima ruim\n\nRegra:\n- Cruzamento de dados melhora diagnóstico de causa raiz."
+    },
+    {
+      "title": "Dashboard enxuto e acionável",
+      "body": "Um bom painel tem:\n- poucos KPIs críticos\n- meta clara\n- frequência de revisão\n- plano de ação associado\n\nRegra:\n- Painel sem ação é só relatório bonito."
+    },
+    {
+      "title": "Mini prática (45 min) — painel mínimo de pessoas",
+      "body": "Monte painel com 5 KPIs:\n- definição\n- fórmula\n- fonte\n- meta\n- ação quando desvia\n\nObjetivo:\n- transformar métrica em gestão."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- People Analytics aumenta qualidade da decisão\n- KPI precisa definição, fonte e dono\n- Tendência vale mais que número isolado\n- Métrica deve gerar ação concreta\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 27 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "People Analytics é:", "options": [ { "key": "A", "text": "Somente relatório mensal" }, { "key": "B", "text": "Uso de dados para decisões de pessoas" }, { "key": "C", "text": "Somente pesquisa de clima" }, { "key": "D", "text": "Somente BI financeiro" } ], "answer": "B", "explain": "Objetivo é melhorar decisão sobre pessoas com evidência." },
+      { "id": 2, "question": "KPI útil precisa:", "options": [ { "key": "A", "text": "Nome bonito" }, { "key": "B", "text": "Definição, fonte e responsável" }, { "key": "C", "text": "Alta complexidade" }, { "key": "D", "text": "Apenas comparação externa" } ], "answer": "B", "explain": "Sem padrão, indicador perde confiabilidade." },
+      { "id": 3, "question": "Dado inconsistente pode causar:", "options": [ { "key": "A", "text": "Decisão mais precisa" }, { "key": "B", "text": "Erro de diagnóstico" }, { "key": "C", "text": "Melhor governança" }, { "key": "D", "text": "Menos risco" } ], "answer": "B", "explain": "Qualidade de dado é pré-requisito de análise." },
+      { "id": 4, "question": "Avaliar tendência significa:", "options": [ { "key": "A", "text": "Olhar um único mês" }, { "key": "B", "text": "Comparar evolução ao longo do tempo" }, { "key": "C", "text": "Usar só benchmark" }, { "key": "D", "text": "Ignorar histórico" } ], "answer": "B", "explain": "Série histórica mostra direção e consistência." },
+      { "id": 5, "question": "Cruzar indicadores ajuda a:", "options": [ { "key": "A", "text": "Aumentar ruído" }, { "key": "B", "text": "Entender causa com mais profundidade" }, { "key": "C", "text": "Eliminar necessidade de ação" }, { "key": "D", "text": "Substituir liderança" } ], "answer": "B", "explain": "Relação entre sinais melhora interpretação." },
+      { "id": 6, "question": "Frase correta:", "options": [ { "key": "A", "text": "Painel deve ter o maior número possível de KPIs" }, { "key": "B", "text": "Painel enxuto e acionável é mais eficiente" }, { "key": "C", "text": "Meta não é necessária" }, { "key": "D", "text": "Indicador não precisa revisão" } ], "answer": "B", "explain": "Excesso sem foco reduz execução." },
+      { "id": 7, "question": "KPI sem plano de ação:", "options": [ { "key": "A", "text": "Gera melhoria automática" }, { "key": "B", "text": "Tem pouco valor prático" }, { "key": "C", "text": "Substitui processo" }, { "key": "D", "text": "Evita decisão" } ], "answer": "B", "explain": "Métrica precisa orientar intervenção." },
+      { "id": 8, "question": "Turnover e absenteísmo são exemplos de:", "options": [ { "key": "A", "text": "Indicadores de pessoas" }, { "key": "B", "text": "Indicadores logísticos" }, { "key": "C", "text": "Indicadores fiscais" }, { "key": "D", "text": "Indicadores de produção apenas" } ], "answer": "A", "explain": "São métricas clássicas de gestão de pessoas." },
+      { "id": 9, "question": "Fonte única de verdade em dados serve para:", "options": [ { "key": "A", "text": "Aumentar divergência" }, { "key": "B", "text": "Reduzir inconsistência de informação" }, { "key": "C", "text": "Eliminar controle" }, { "key": "D", "text": "Evitar dashboard" } ], "answer": "B", "explain": "Consistência de base melhora confiabilidade." },
+      { "id": 10, "question": "Objetivo da aula 27:", "options": [ { "key": "A", "text": "Definir política de remuneração" }, { "key": "B", "text": "Estruturar KPIs e analytics para decisão" }, { "key": "C", "text": "Tratar onboarding" }, { "key": "D", "text": "Criar procedimento de desligamento" } ], "answer": "B", "explain": "A aula foca decisão orientada por dados." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Base de analytics\n\n- KPI\n- fonte\n- meta\n- ação\n",
+    "pilares": "Pilares\n\n- qualidade de dado\n- foco\n- decisão orientada por evidência\n"
+  }
+}

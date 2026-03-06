@@ -1,0 +1,169 @@
+﻿{
+  "id": "01-introducao",
+  "title": "Aula 01 — O que é gestão de pessoas e por que impacta resultado",
+  "steps": [
+    {
+      "title": "Gestão de pessoas é parte da estratégia",
+      "body": "Gestão de pessoas conecta objetivos do negócio com comportamento das equipes.\n\nImpacta:\n- produtividade\n- qualidade\n- retenção\n- experiência do colaborador\n\nRegra:\n- Resultado sustentável depende de gente preparada e alinhada."
+    },
+    {
+      "title": "Os 4 pilares centrais",
+      "body": "Base prática:\n- atrair\n- desenvolver\n- engajar\n- reter\n\nRegra:\n- Pilar isolado não resolve; o ciclo completo precisa funcionar."
+    },
+    {
+      "title": "O erro comum no começo",
+      "body": "Erro típico:\n- tratar gestão de pessoas como tarefa burocrática\n\nConsequência:\n- contratação ruim\n- baixa performance\n- turnover alto\n\nRegra:\n- Gestão de pessoas precisa de método e acompanhamento."
+    },
+    {
+      "title": "Papel da liderança",
+      "body": "Líderes influenciam diretamente:\n- clareza de expectativa\n- feedback\n- desenvolvimento\n\nRegra:\n- Sem liderança ativa, política de pessoas não sai do papel."
+    },
+    {
+      "title": "Jornada do colaborador",
+      "body": "Etapas principais:\n- atração e seleção\n- integração\n- desempenho e desenvolvimento\n- reconhecimento e retenção\n- desligamento estruturado\n\nRegra:\n- Cada etapa ruim cria custo para a próxima."
+    },
+    {
+      "title": "Como medir evolução",
+      "body": "Indicadores iniciais:\n- turnover\n- absenteísmo\n- tempo de fechamento de vaga\n- tempo de rampagem\n\nRegra:\n- Sem indicador, a decisão vira percepção."
+    },
+    {
+      "title": "Mini prática (45 min) — diagnóstico rápido",
+      "body": "Responda:\n- maior dor hoje: atração, desenvolvimento, engajamento ou retenção?\n- qual indicador está mais crítico?\n- qual problema se repete com frequência?\n\nObjetivo:\n- identificar prioridade de ação."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Gestão de pessoas impacta resultado de negócio\n- Atrair, desenvolver, engajar e reter são pilares básicos\n- Liderança é parte central da execução\n- Indicadores dão objetividade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 01 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Gestão de pessoas influencia diretamente:",
+        "options": [
+          { "key": "A", "text": "Somente admissão" },
+          { "key": "B", "text": "Produtividade e retenção" },
+          { "key": "C", "text": "Somente folha" },
+          { "key": "D", "text": "Somente treinamentos" }
+        ],
+        "answer": "B",
+        "explain": "A disciplina impacta desempenho e continuidade do time."
+      },
+      {
+        "id": 2,
+        "question": "Os pilares centrais são:",
+        "options": [
+          { "key": "A", "text": "Atrair, desenvolver, engajar e reter" },
+          { "key": "B", "text": "Contratar, punir, substituir e encerrar" },
+          { "key": "C", "text": "Treinar, pagar e demitir" },
+          { "key": "D", "text": "Controlar, fiscalizar e cobrar" }
+        ],
+        "answer": "A",
+        "explain": "É a base da gestão de pessoas orientada a resultado."
+      },
+      {
+        "id": 3,
+        "question": "Sem liderança ativa, tende a ocorrer:",
+        "options": [
+          { "key": "A", "text": "Maior engajamento espontâneo" },
+          { "key": "B", "text": "Baixa execução das práticas de pessoas" },
+          { "key": "C", "text": "Menos rotatividade automaticamente" },
+          { "key": "D", "text": "Aumento de produtividade imediato" }
+        ],
+        "answer": "B",
+        "explain": "A liderança traduz política em prática diária."
+      },
+      {
+        "id": 4,
+        "question": "Turnover é um indicador de:",
+        "options": [
+          { "key": "A", "text": "Rotatividade" },
+          { "key": "B", "text": "Faturamento" },
+          { "key": "C", "text": "Logística" },
+          { "key": "D", "text": "Vendas" }
+        ],
+        "answer": "A",
+        "explain": "Mostra entrada e saída de pessoas no período."
+      },
+      {
+        "id": 5,
+        "question": "Jornada do colaborador começa em:",
+        "options": [
+          { "key": "A", "text": "Desligamento" },
+          { "key": "B", "text": "Atração e seleção" },
+          { "key": "C", "text": "Avaliação anual" },
+          { "key": "D", "text": "Folha de pagamento" }
+        ],
+        "answer": "B",
+        "explain": "A entrada define a qualidade da trajetória."
+      },
+      {
+        "id": 6,
+        "question": "Sem indicador na gestão de pessoas:",
+        "options": [
+          { "key": "A", "text": "A gestão fica mais objetiva" },
+          { "key": "B", "text": "A gestão vira percepção" },
+          { "key": "C", "text": "A performance melhora sozinha" },
+          { "key": "D", "text": "Não há impacto" }
+        ],
+        "answer": "B",
+        "explain": "Indicador é base para diagnosticar e decidir."
+      },
+      {
+        "id": 7,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Gestão de pessoas é só rotina administrativa" },
+          { "key": "B", "text": "Gestão de pessoas é alavanca de resultado" },
+          { "key": "C", "text": "Não afeta qualidade" },
+          { "key": "D", "text": "Não afeta cultura" }
+        ],
+        "answer": "B",
+        "explain": "A disciplina impacta entrega e sustentabilidade da empresa."
+      },
+      {
+        "id": 8,
+        "question": "O erro comum no início é:",
+        "options": [
+          { "key": "A", "text": "Criar método de acompanhamento" },
+          { "key": "B", "text": "Tratar pessoas como tema apenas burocrático" },
+          { "key": "C", "text": "Definir indicadores" },
+          { "key": "D", "text": "Envolver liderança" }
+        ],
+        "answer": "B",
+        "explain": "Isso reduz o valor estratégico da área."
+      },
+      {
+        "id": 9,
+        "question": "Absenteísmo mede:",
+        "options": [
+          { "key": "A", "text": "Ausências" },
+          { "key": "B", "text": "Vendas" },
+          { "key": "C", "text": "Receita" },
+          { "key": "D", "text": "NPS de cliente" }
+        ],
+        "answer": "A",
+        "explain": "É um termômetro relevante de operação e clima."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo da aula 01 foi:",
+        "options": [
+          { "key": "A", "text": "Fechar política salarial completa" },
+          { "key": "B", "text": "Construir base inicial da disciplina" },
+          { "key": "C", "text": "Executar auditoria trabalhista" },
+          { "key": "D", "text": "Encerrar trilha" }
+        ],
+        "answer": "B",
+        "explain": "A aula abre fundamentos para as próximas etapas."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Pilares básicos\n\n- atrair\n- desenvolver\n- engajar\n- reter\n",
+    "pilares": "Pilares da trilha\n\n- estratégia\n- liderança\n- indicadores\n"
+  }
+}
+

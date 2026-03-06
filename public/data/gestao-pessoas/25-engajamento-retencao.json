@@ -1,0 +1,58 @@
+{
+  "id": "25-engajamento-retencao",
+  "title": "Aula 25 — Engajamento e retenção: reduzir turnover com método",
+  "steps": [
+    {
+      "title": "Engajamento é energia direcionada para entrega",
+      "body": "Engajamento combina motivação, clareza e conexão com propósito.\n\nRegra:\n- Engajamento não se impõe; se constrói no ambiente e na liderança."
+    },
+    {
+      "title": "Fatores que influenciam retenção",
+      "body": "Principais fatores:\n- liderança imediata\n- oportunidade de desenvolvimento\n- reconhecimento\n- equilíbrio de carga\n\nRegra:\n- Retenção sustentável depende de múltiplas alavancas."
+    },
+    {
+      "title": "Leitura de risco de saída",
+      "body": "Sinais importantes:\n- queda de performance sem causa aparente\n- desengajamento em rituais\n- aumento de ausência\n- falta de perspectiva de crescimento\n\nRegra:\n- Sinal ignorado vira saída não planejada."
+    },
+    {
+      "title": "Entrevista de permanência",
+      "body": "Conversa de permanência ajuda a identificar:\n- o que mantém a pessoa na empresa\n- o que pode levá-la a sair\n- quais ajustes fariam diferença\n\nRegra:\n- Ouvir antes da saída custa menos que repor depois."
+    },
+    {
+      "title": "Plano de retenção por segmento crítico",
+      "body": "Estruture ações por público:\n- talentos críticos\n- posições de alta rotatividade\n- novas lideranças\n\nRegra:\n- Ação genérica tem baixo efeito em grupos diferentes."
+    },
+    {
+      "title": "Métricas de engajamento e retenção",
+      "body": "Acompanhe:\n- turnover geral e voluntário\n- tempo médio de permanência\n- engajamento por time\n- taxa de saída em período inicial\n\nRegra:\n- Métrica revela causa e prioriza ação."
+    },
+    {
+      "title": "Mini prática (45 min) — plano anti-turnover",
+      "body": "Escolha uma área com alta saída e defina:\n- causas principais\n- 3 ações de curto prazo\n- indicador semanal de acompanhamento\n\nObjetivo:\n- reduzir saída evitável com foco prático."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Engajamento e retenção são temas de gestão diária\n- Liderança é principal alavanca de permanência\n- Entrevista de permanência antecipa risco\n- Plano segmentado aumenta efetividade da retenção\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 25 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Engajamento no trabalho depende de:", "options": [ { "key": "A", "text": "Somente salário" }, { "key": "B", "text": "Clareza, liderança e contexto de trabalho" }, { "key": "C", "text": "Somente benefício" }, { "key": "D", "text": "Somente política formal" } ], "answer": "B", "explain": "Engajamento é multifatorial e cotidiano." },
+      { "id": 2, "question": "Principal fator de retenção em muitos contextos:", "options": [ { "key": "A", "text": "Cor do escritório" }, { "key": "B", "text": "Qualidade da liderança imediata" }, { "key": "C", "text": "Quantidade de reuniões" }, { "key": "D", "text": "Somente tempo de empresa" } ], "answer": "B", "explain": "Relação com líder impacta permanência diretamente." },
+      { "id": 3, "question": "Sinal de risco de saída pode ser:", "options": [ { "key": "A", "text": "Participação ativa e estável" }, { "key": "B", "text": "Desengajamento progressivo" }, { "key": "C", "text": "Entrega consistente" }, { "key": "D", "text": "Feedback positivo frequente" } ], "answer": "B", "explain": "Mudança de comportamento pode antecipar desligamento." },
+      { "id": 4, "question": "Entrevista de permanência serve para:", "options": [ { "key": "A", "text": "Substituir avaliação de desempenho" }, { "key": "B", "text": "Entender riscos e reforçar vínculo antes da saída" }, { "key": "C", "text": "Formalizar desligamento" }, { "key": "D", "text": "Aplicar advertência" } ], "answer": "B", "explain": "É uma ação preventiva de retenção." },
+      { "id": 5, "question": "Plano de retenção eficaz deve ser:", "options": [ { "key": "A", "text": "Genérico para toda empresa" }, { "key": "B", "text": "Segmentado por perfil e criticidade" }, { "key": "C", "text": "Somente financeiro" }, { "key": "D", "text": "Sem indicador" } ], "answer": "B", "explain": "Públicos diferentes exigem ações diferentes." },
+      { "id": 6, "question": "Turnover voluntário mede:", "options": [ { "key": "A", "text": "Saídas por decisão do colaborador" }, { "key": "B", "text": "Apenas desligamento por desempenho" }, { "key": "C", "text": "Somente transferências internas" }, { "key": "D", "text": "Somente absenteísmo" } ], "answer": "A", "explain": "É indicador central para retenção." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Retenção se resolve só com salário" }, { "key": "B", "text": "Retenção exige liderança, desenvolvimento e reconhecimento" }, { "key": "C", "text": "Engajamento não afeta turnover" }, { "key": "D", "text": "Entrevista de permanência não ajuda" } ], "answer": "B", "explain": "Retenção sustentável é multifatorial." },
+      { "id": 8, "question": "Sem métrica de retenção, a gestão tende a:", "options": [ { "key": "A", "text": "Antecipar risco com precisão" }, { "key": "B", "text": "Agir de forma reativa" }, { "key": "C", "text": "Melhorar automaticamente" }, { "key": "D", "text": "Eliminar turnover" } ], "answer": "B", "explain": "Sem dados, as ações chegam tarde." },
+      { "id": 9, "question": "Tempo médio de permanência ajuda a:", "options": [ { "key": "A", "text": "Entender estabilidade da força de trabalho" }, { "key": "B", "text": "Medir qualidade do treinamento apenas" }, { "key": "C", "text": "Substituir pesquisa de clima" }, { "key": "D", "text": "Eliminar necessidade de liderança" } ], "answer": "A", "explain": "Mostra dinâmica de retenção ao longo do tempo." },
+      { "id": 10, "question": "Objetivo da aula 25:", "options": [ { "key": "A", "text": "Definir política de jornada" }, { "key": "B", "text": "Estruturar engajamento e retenção com método" }, { "key": "C", "text": "Criar plano de admissão" }, { "key": "D", "text": "Tratar auditoria de folha" } ], "answer": "B", "explain": "A aula foca redução de turnover com ação dirigida." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Gestão de retenção\n\n- risco de saída\n- entrevista de permanência\n- plano de ação\n- indicadores\n",
+    "pilares": "Pilares\n\n- liderança\n- desenvolvimento\n- reconhecimento\n"
+  }
+}

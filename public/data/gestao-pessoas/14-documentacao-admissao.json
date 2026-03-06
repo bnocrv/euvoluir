@@ -1,0 +1,59 @@
+﻿{
+  "id": "14-documentacao-admissao",
+  "title": "Aula 14 — Documentação de admissão e desligamento sem falhas",
+  "steps": [
+    {
+      "title": "Documentação é parte da governança",
+      "body": "Admissão e desligamento precisam de trilha documental completa.\n\nRegra:\n- Documento faltante gera retrabalho e risco legal."
+    },
+    {
+      "title": "Admissão com checklist padronizado",
+      "body": "Checklist mínimo:\n- cadastro completo\n- documentos obrigatórios\n- termo e registros necessários\n- integração administrativa\n\nRegra:\n- Padronização evita erro por urgência."
+    },
+    {
+      "title": "Fluxo de validação",
+      "body": "Etapas recomendadas:\n- coleta\n- conferência\n- validação\n- arquivamento seguro\n\nRegra:\n- Coletar sem validar mantém risco oculto."
+    },
+    {
+      "title": "Desligamento: rito e conformidade",
+      "body": "No desligamento, cuide de:\n- comunicação formal\n- documentos e prazos\n- acertos e devoluções\n- encerramento de acessos\n\nRegra:\n- Desligamento desorganizado afeta risco e reputação."
+    },
+    {
+      "title": "Integração com financeiro e liderança",
+      "body": "Admissão/desligamento envolve múltiplas áreas.\n\nRegra:\n- Fluxo integrado evita pendências de pagamento, acesso e compliance."
+    },
+    {
+      "title": "Armazenamento e rastreabilidade",
+      "body": "Documentos devem ter:\n- organização\n- segurança\n- facilidade de localização\n\nRegra:\n- Rastreabilidade rápida reduz risco em auditorias."
+    },
+    {
+      "title": "Mini prática (45 min) — revisão de checklist",
+      "body": "Revise seu fluxo atual e marque:\n- itens faltantes\n- etapas sem responsável\n- prazos sem controle\n\nObjetivo:\n- fechar lacunas críticas no processo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Documentação é controle e proteção\n- Checklists reduzem falhas\n- Admissão e desligamento exigem fluxo integrado\n- Rastreabilidade fortalece governança\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 14 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Checklist de admissão é importante para:", "options": [ { "key": "A", "text": "Aumentar burocracia sem ganho" }, { "key": "B", "text": "Padronizar e reduzir falhas" }, { "key": "C", "text": "Substituir validação" }, { "key": "D", "text": "Evitar integração" } ], "answer": "B", "explain": "Checklist garante consistência no processo." },
+      { "id": 2, "question": "Coleta de documento sem conferência:", "options": [ { "key": "A", "text": "Resolve o processo" }, { "key": "B", "text": "Mantém risco de inconsistência" }, { "key": "C", "text": "Elimina pendências" }, { "key": "D", "text": "Melhora auditoria" } ], "answer": "B", "explain": "Validação é etapa obrigatória." },
+      { "id": 3, "question": "No desligamento, é essencial:", "options": [ { "key": "A", "text": "Encerrar sem documentação" }, { "key": "B", "text": "Cumprir rito, prazos e registros" }, { "key": "C", "text": "Deixar acessos ativos" }, { "key": "D", "text": "Adiar formalização" } ], "answer": "B", "explain": "Processo correto reduz risco e passivo." },
+      { "id": 4, "question": "Integração com financeiro no desligamento evita:", "options": [ { "key": "A", "text": "Pagamento correto" }, { "key": "B", "text": "Pendências de acerto" }, { "key": "C", "text": "Conferência" }, { "key": "D", "text": "Rastreabilidade" } ], "answer": "B", "explain": "Coordenação evita erro operacional." },
+      { "id": 5, "question": "Rastreabilidade documental permite:", "options": [ { "key": "A", "text": "Localização rápida em auditoria" }, { "key": "B", "text": "Mais perda de informação" }, { "key": "C", "text": "Eliminação de prazo" }, { "key": "D", "text": "Redução de controle" } ], "answer": "A", "explain": "Organização reduz risco e tempo de resposta." },
+      { "id": 6, "question": "Frase correta:", "options": [ { "key": "A", "text": "Admissão é só cadastro inicial" }, { "key": "B", "text": "Admissão e desligamento exigem governança documental" }, { "key": "C", "text": "Desligamento não precisa rito" }, { "key": "D", "text": "Documentação é opcional" } ], "answer": "B", "explain": "Processo formal protege empresa e colaborador." },
+      { "id": 7, "question": "Etapa crítica após coleta de documentos:", "options": [ { "key": "A", "text": "Validação" }, { "key": "B", "text": "Ignorar inconsistências" }, { "key": "C", "text": "Somente arquivar" }, { "key": "D", "text": "Fechar processo" } ], "answer": "A", "explain": "Sem validação, erro segue para etapas seguintes." },
+      { "id": 8, "question": "Desligamento desorganizado pode causar:", "options": [ { "key": "A", "text": "Mais confiança do time" }, { "key": "B", "text": "Risco legal e reputacional" }, { "key": "C", "text": "Melhor compliance" }, { "key": "D", "text": "Menos retrabalho" } ], "answer": "B", "explain": "Falhas no rito ampliam exposição da empresa." },
+      { "id": 9, "question": "Objetivo de checklist de desligamento:", "options": [ { "key": "A", "text": "Excluir conferências" }, { "key": "B", "text": "Garantir conclusão de todas as etapas" }, { "key": "C", "text": "Aumentar informalidade" }, { "key": "D", "text": "Substituir política" } ], "answer": "B", "explain": "Checklist reduz esquecimento e pendências." },
+      { "id": 10, "question": "Objetivo da aula 14:", "options": [ { "key": "A", "text": "Definir política de feedback" }, { "key": "B", "text": "Estruturar documentação de admissão e desligamento" }, { "key": "C", "text": "Tratar remuneração variável" }, { "key": "D", "text": "Criar PDI" } ], "answer": "B", "explain": "A aula consolida fluxo documental seguro." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Fluxo documental\n\n- coleta\n- validação\n- registro\n- arquivamento\n",
+    "pilares": "Pilares\n\n- padronização\n- rastreabilidade\n- conformidade\n"
+  }
+}
+

@@ -1,0 +1,168 @@
+{
+  "id": "22-analise-precos",
+  "title": "Aula 22 — Análise de preços: histórico, mercado e variação de custos",
+  "steps": [
+    {
+      "title": "Preço sem contexto é palpite",
+      "body": "Analisar preço é responder 3 perguntas:\n- está alinhado ao histórico?\n- está alinhado ao mercado?\n- variação tem causa explicável?\n\nRegra:\n- Preço só vira informação quando comparado com referência."
+    },
+    {
+      "title": "Base histórica: a primeira referência",
+      "body": "Use histórico por item e fornecedor:\n- último preço\n- média dos últimos meses\n- melhor e pior faixa\n- frequência de reajuste\n\nRegra:\n- Histórico evita aceitar aumento sem justificativa."
+    },
+    {
+      "title": "Mercado e indexadores: a segunda referência",
+      "body": "Além do histórico interno, observe:\n- cotações com outros fornecedores\n- índices relevantes (quando aplicável)\n- sazonalidade\n- variação de insumos-chave\n\nRegra:\n- Mercado valida se o movimento é pontual ou estrutural."
+    },
+    {
+      "title": "Decompor preço: entender o que está subindo",
+      "body": "Quebre preço em componentes:\n- matéria-prima\n- mão de obra\n- logística\n- tributos\n- margem\n\nQuando o fornecedor pede reajuste, peça a decomposição.\n\nRegra:\n- Quem explica composição negocia com menos atrito e mais precisão."
+    },
+    {
+      "title": "Sinais de risco na análise de preço",
+      "body": "Alertas comuns:\n- aumento recorrente sem evidência\n- variação muito acima da referência\n- proposta com custo oculto fora do unitário\n\nRegra:\n- Preço incoerente é risco operacional e financeiro."
+    },
+    {
+      "title": "Como negociar com dados de preço",
+      "body": "Roteiro objetivo:\n- apresente histórico interno\n- mostre referência externa\n- alinhe premissas de custo\n- proponha gatilho de revisão\n\nRegra:\n- Dados mudam a negociação de “opinião” para “critérios”."
+    },
+    {
+      "title": "Mini prática (45 min) — painel simples de variação",
+      "body": "Escolha 1 item recorrente.\n\nMonte tabela com:\n- preço dos últimos 6 meses\n- variação percentual\n- causa provável da variação\n- ação recomendada\n\nObjetivo:\n- separar reajuste justificável de reajuste oportunista."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Preço precisa de referência histórica e de mercado\n- Decompor custo melhora negociação\n- Variação sem causa é sinal de risco\n- Negociação com dados aumenta previsibilidade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 22 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Análise de preço exige principalmente:",
+        "options": [
+          { "key": "A", "text": "Opinião do comprador" },
+          { "key": "B", "text": "Referências históricas e de mercado" },
+          { "key": "C", "text": "Somente desconto" },
+          { "key": "D", "text": "Somente marca" }
+        ],
+        "answer": "B",
+        "explain": "Preço precisa ser comparado para ganhar contexto."
+      },
+      {
+        "id": 2,
+        "question": "O histórico interno ajuda a:",
+        "options": [
+          { "key": "A", "text": "Ignorar reajustes" },
+          { "key": "B", "text": "Aceitar qualquer valor" },
+          { "key": "C", "text": "Validar coerência da variação" },
+          { "key": "D", "text": "Eliminar cotação" }
+        ],
+        "answer": "C",
+        "explain": "Sem histórico, não há base para julgar aumento."
+      },
+      {
+        "id": 3,
+        "question": "Qual é uma referência externa útil?",
+        "options": [
+          { "key": "A", "text": "Índices e cotações comparáveis" },
+          { "key": "B", "text": "Rede social" },
+          { "key": "C", "text": "Palpite" },
+          { "key": "D", "text": "Somente memória" }
+        ],
+        "answer": "A",
+        "explain": "Mercado complementa o histórico interno."
+      },
+      {
+        "id": 4,
+        "question": "Decompor preço em componentes serve para:",
+        "options": [
+          { "key": "A", "text": "Complicar a análise" },
+          { "key": "B", "text": "Entender causa da variação" },
+          { "key": "C", "text": "Trocar fornecedor sem critério" },
+          { "key": "D", "text": "Ignorar imposto" }
+        ],
+        "answer": "B",
+        "explain": "Composição mostra o que realmente subiu."
+      },
+      {
+        "id": 5,
+        "question": "Aumento sem evidência técnica é:",
+        "options": [
+          { "key": "A", "text": "Normal sempre" },
+          { "key": "B", "text": "Sinal de alerta" },
+          { "key": "C", "text": "Melhor prática" },
+          { "key": "D", "text": "Irrelevante" }
+        ],
+        "answer": "B",
+        "explain": "Pode indicar reajuste oportunista ou erro de base."
+      },
+      {
+        "id": 6,
+        "question": "Negociação baseada em dados tende a:",
+        "options": [
+          { "key": "A", "text": "Reduzir subjetividade" },
+          { "key": "B", "text": "Aumentar ruído" },
+          { "key": "C", "text": "Eliminar contrato" },
+          { "key": "D", "text": "Eliminar SLA" }
+        ],
+        "answer": "A",
+        "explain": "Critérios objetivos melhoram qualidade do acordo."
+      },
+      {
+        "id": 7,
+        "question": "Sazonalidade na análise de preço significa:",
+        "options": [
+          { "key": "A", "text": "Variação previsível por período" },
+          { "key": "B", "text": "Erro de cadastro" },
+          { "key": "C", "text": "Fraude sempre" },
+          { "key": "D", "text": "Preço fixo anual" }
+        ],
+        "answer": "A",
+        "explain": "Alguns itens variam por época e demanda."
+      },
+      {
+        "id": 8,
+        "question": "Uma prática correta é:",
+        "options": [
+          { "key": "A", "text": "Registrar causa das variações" },
+          { "key": "B", "text": "Guardar só preço final" },
+          { "key": "C", "text": "Desconsiderar histórico" },
+          { "key": "D", "text": "Comparar itens diferentes" }
+        ],
+        "answer": "A",
+        "explain": "Histórico com causa melhora decisões futuras."
+      },
+      {
+        "id": 9,
+        "question": "Análise de preço sem benchmark externo gera:",
+        "options": [
+          { "key": "A", "text": "Visão parcial" },
+          { "key": "B", "text": "Precisão máxima" },
+          { "key": "C", "text": "Decisão perfeita" },
+          { "key": "D", "text": "Risco zero" }
+        ],
+        "answer": "A",
+        "explain": "Só o histórico interno pode esconder distorções de mercado."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo da análise de preços em compras é:",
+        "options": [
+          { "key": "A", "text": "Comprar sem comparar" },
+          { "key": "B", "text": "Garantir coerência e previsibilidade de custo" },
+          { "key": "C", "text": "Escolher sempre o menor preço" },
+          { "key": "D", "text": "Apenas reduzir prazo" }
+        ],
+        "answer": "B",
+        "explain": "A meta é decisão sustentável e justificada por dados."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist de referência\n\n- histórico\n- benchmark\n- composição\n- justificativa\n",
+    "pilares": "Pilares\n\n- comparação justa\n- evidência\n- disciplina analítica\n"
+  }
+}

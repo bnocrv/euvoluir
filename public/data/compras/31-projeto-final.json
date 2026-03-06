@@ -1,0 +1,168 @@
+{
+  "id": "31-projeto-final",
+  "title": "Aula 31 — Projeto final: desenhando um processo de compras completo (do pedido ao fornecedor)",
+  "steps": [
+    {
+      "title": "Objetivo do projeto final",
+      "body": "Nesta aula você consolida o curso inteiro construindo um fluxo de compras ponta a ponta.\n\nO projeto deve cobrir:\n- entrada da demanda\n- decisão de compra\n- execução e recebimento\n- medição de resultado\n\nRegra:\n- Projeto final bom é executável, não apenas bonito no papel."
+    },
+    {
+      "title": "Escopo: escolha uma categoria real",
+      "body": "Selecione 1 categoria de compra da sua operação:\n- recorrente\n- com impacto relevante\n- com histórico de desafios\n\nRegra:\n- Escopo claro permite profundidade e entrega prática."
+    },
+    {
+      "title": "Desenho do fluxo padrão",
+      "body": "Estruture etapas mínimas:\n- requisição e aprovação\n- especificação e cotação\n- seleção e contratação\n- pedido, recebimento e pagamento\n\nInclua responsáveis e prazos por etapa.\n\nRegra:\n- Processo sem dono e prazo vira intenção, não execução."
+    },
+    {
+      "title": "Critérios de decisão e governança",
+      "body": "Defina regras para escolha e controle:\n- critérios técnicos/comerciais\n- alçadas de aprovação\n- documentação obrigatória\n- tratamento de exceções\n\nRegra:\n- Governança clara evita decisão por improviso."
+    },
+    {
+      "title": "Plano de risco, qualidade e contingência",
+      "body": "No projeto inclua:\n- principais riscos da categoria\n- controles de qualidade no recebimento\n- plano B para ruptura\n- gatilhos de acionamento\n\nRegra:\n- Processo robusto prevê falhas e define resposta antecipada."
+    },
+    {
+      "title": "Painel de KPIs do processo final",
+      "body": "Selecione KPIs que representem desempenho real:\n- savings com metodologia\n- lead time de compra\n- entrega no prazo\n- taxa de não conformidade\n- aderência à política\n\nRegra:\n- Sem KPI, não há evolução estruturada do processo."
+    },
+    {
+      "title": "Mini prática (60 min) — entregar blueprint de compras",
+      "body": "Monte um blueprint de 1 página contendo:\n- fluxo ponta a ponta\n- regras de decisão\n- riscos e contingências\n- KPIs com meta inicial\n- plano de implantação em 30 dias\n\nObjetivo:\n- sair da teoria com um processo pronto para aplicar."
+    },
+    {
+      "title": "Resumo da aula e fechamento do curso",
+      "body": "- Projeto final integra técnica, operação e governança\n- Processo completo conecta custo, prazo, qualidade e compliance\n- Risco e KPI garantem sustentabilidade da melhoria\n- O próximo passo é executar, medir e ajustar continuamente\n\nParabéns por concluir o curso. Agora fixe com o quiz final."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 31 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Objetivo do projeto final é:",
+        "options": [
+          { "key": "A", "text": "Repetir conceitos sem aplicação" },
+          { "key": "B", "text": "Desenhar processo de compras executável ponta a ponta" },
+          { "key": "C", "text": "Focar apenas em preço" },
+          { "key": "D", "text": "Focar apenas em compliance" }
+        ],
+        "answer": "B",
+        "explain": "A ideia é consolidar todo o curso em prática aplicável."
+      },
+      {
+        "id": 2,
+        "question": "Escolher uma categoria real para o projeto ajuda a:",
+        "options": [
+          { "key": "A", "text": "Aumentar abstração" },
+          { "key": "B", "text": "Gerar entrega útil para o negócio" },
+          { "key": "C", "text": "Evitar decisão" },
+          { "key": "D", "text": "Reduzir aprendizagem" }
+        ],
+        "answer": "B",
+        "explain": "Escopo real facilita implementação posterior."
+      },
+      {
+        "id": 3,
+        "question": "Fluxo final de compras deve incluir:",
+        "options": [
+          { "key": "A", "text": "Só cotação e pagamento" },
+          { "key": "B", "text": "Demanda, decisão, execução, recebimento e controle" },
+          { "key": "C", "text": "Só negociação" },
+          { "key": "D", "text": "Só cadastro" }
+        ],
+        "answer": "B",
+        "explain": "Processo completo conecta ponta a ponta."
+      },
+      {
+        "id": 4,
+        "question": "Governança no projeto final significa:",
+        "options": [
+          { "key": "A", "text": "Decidir sem regra" },
+          { "key": "B", "text": "Definir critérios, alçadas e documentação" },
+          { "key": "C", "text": "Eliminar aprovação" },
+          { "key": "D", "text": "Comprar por urgência" }
+        ],
+        "answer": "B",
+        "explain": "Regras claras evitam improviso e risco."
+      },
+      {
+        "id": 5,
+        "question": "Plano de contingência no projeto é necessário para:",
+        "options": [
+          { "key": "A", "text": "Itens sem impacto" },
+          { "key": "B", "text": "Responder a rupturas e eventos críticos" },
+          { "key": "C", "text": "Aumentar burocracia" },
+          { "key": "D", "text": "Substituir negociação" }
+        ],
+        "answer": "B",
+        "explain": "Sem contingência, o processo quebra na primeira crise."
+      },
+      {
+        "id": 6,
+        "question": "KPI no projeto final serve para:",
+        "options": [
+          { "key": "A", "text": "Enfeitar relatório" },
+          { "key": "B", "text": "Medir desempenho e orientar melhoria" },
+          { "key": "C", "text": "Eliminar reunião de acompanhamento" },
+          { "key": "D", "text": "Substituir processo" }
+        ],
+        "answer": "B",
+        "explain": "Medição é a base de evolução contínua."
+      },
+      {
+        "id": 7,
+        "question": "Um projeto bom precisa ter:",
+        "options": [
+          { "key": "A", "text": "Só visão estratégica" },
+          { "key": "B", "text": "Responsáveis e prazos por etapa" },
+          { "key": "C", "text": "Somente indicadores financeiros" },
+          { "key": "D", "text": "Somente software" }
+        ],
+        "answer": "B",
+        "explain": "Execução depende de dono e prazo definidos."
+      },
+      {
+        "id": 8,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Projeto final termina no documento" },
+          { "key": "B", "text": "Projeto final deve virar plano de implantação" },
+          { "key": "C", "text": "Projeto final dispensa revisão" },
+          { "key": "D", "text": "Projeto final não precisa risco" }
+        ],
+        "answer": "B",
+        "explain": "A proposta precisa sair do papel para gerar valor."
+      },
+      {
+        "id": 9,
+        "question": "Integração de custo, prazo, qualidade e compliance no projeto:",
+        "options": [
+          { "key": "A", "text": "É opcional" },
+          { "key": "B", "text": "É essencial para processo sustentável" },
+          { "key": "C", "text": "Só vale para grandes empresas" },
+          { "key": "D", "text": "Só vale para auditoria" }
+        ],
+        "answer": "B",
+        "explain": "Equilíbrio dos pilares garante performance consistente."
+      },
+      {
+        "id": 10,
+        "question": "Próximo passo após concluir o projeto final é:",
+        "options": [
+          { "key": "A", "text": "Arquivar e encerrar" },
+          { "key": "B", "text": "Executar, medir e ajustar continuamente" },
+          { "key": "C", "text": "Trocar todo o time" },
+          { "key": "D", "text": "Ignorar indicadores" }
+        ],
+        "answer": "B",
+        "explain": "Melhoria em compras é ciclo contínuo de execução e aprendizado."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Blueprint final\n\n- fluxo\n- governança\n- risco\n- KPI\n",
+    "pilares": "Pilares\n\n- aplicabilidade\n- integração\n- melhoria contínua\n"
+  }
+}

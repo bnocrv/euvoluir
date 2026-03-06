@@ -1,0 +1,58 @@
+{
+  "id": "22-lideranca-gestao-equipes",
+  "title": "Aula 22 — Liderança e gestão de equipes: papel do líder na gestão de pessoas",
+  "steps": [
+    {
+      "title": "Liderança transforma estratégia em execução",
+      "body": "Líder é elo entre direção da empresa e entrega da equipe.\n\nRegra:\n- Sem liderança ativa, processo de pessoas perde força."
+    },
+    {
+      "title": "Clareza de expectativa",
+      "body": "Equipe performa melhor quando sabe:\n- o que entregar\n- prazo\n- padrão de qualidade\n\nRegra:\n- Expectativa ambígua gera baixa responsabilização."
+    },
+    {
+      "title": "Gestão por rotina e prioridade",
+      "body": "Liderança eficaz organiza:\n- prioridades semanais\n- acompanhamento de execução\n- ajustes de rota\n\nRegra:\n- Falta de cadência aumenta urgência e retrabalho."
+    },
+    {
+      "title": "Desenvolvimento do time no dia a dia",
+      "body": "Líder desenvolve equipe por:\n- feedback frequente\n- delegação com contexto\n- suporte em obstáculos\n\nRegra:\n- Desenvolvimento contínuo reduz dependência do líder."
+    },
+    {
+      "title": "Gestão de desempenho e reconhecimento",
+      "body": "Reconheça entregas consistentes e trate desvios com rapidez.\n\nRegra:\n- Incoerência entre cobrança e reconhecimento desengaja."
+    },
+    {
+      "title": "Riscos comuns de liderança",
+      "body": "Erros recorrentes:\n- microgestão excessiva\n- baixa comunicação\n- postergação de decisão difícil\n\nRegra:\n- Liderança fraca aparece primeiro no clima e depois no resultado."
+    },
+    {
+      "title": "Mini prática (45 min) — agenda de liderança",
+      "body": "Monte agenda semanal com:\n- rituais de alinhamento\n- 1:1 com equipe\n- revisão de indicadores\n- plano de suporte ao time\n\nObjetivo:\n- tornar liderança mais previsível e eficaz."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Liderança é alavanca de performance\n- Clareza e rotina sustentam execução\n- Desenvolvimento do time é responsabilidade do líder\n- Reconhecimento e correção devem ser consistentes\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 22 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Papel central da liderança:", "options": [ { "key": "A", "text": "Apenas controlar tarefas" }, { "key": "B", "text": "Direcionar equipe para entregar resultado" }, { "key": "C", "text": "Substituir gestão de pessoas" }, { "key": "D", "text": "Evitar decisões difíceis" } ], "answer": "B", "explain": "Liderança converte estratégia em prática." },
+      { "id": 2, "question": "Expectativa clara para equipe inclui:", "options": [ { "key": "A", "text": "Somente prazo" }, { "key": "B", "text": "Entrega, prazo e qualidade" }, { "key": "C", "text": "Somente tarefa" }, { "key": "D", "text": "Somente autonomia" } ], "answer": "B", "explain": "Clareza reduz ambiguidade de execução." },
+      { "id": 3, "question": "Gestão por rotina ajuda a:", "options": [ { "key": "A", "text": "Aumentar improviso" }, { "key": "B", "text": "Organizar prioridade e acompanhamento" }, { "key": "C", "text": "Evitar alinhamento" }, { "key": "D", "text": "Eliminar feedback" } ], "answer": "B", "explain": "Cadência dá previsibilidade operacional." },
+      { "id": 4, "question": "Líder desenvolve equipe por meio de:", "options": [ { "key": "A", "text": "Feedback e delegação com contexto" }, { "key": "B", "text": "Só cobrança de meta" }, { "key": "C", "text": "Somente reunião mensal" }, { "key": "D", "text": "Apenas comunicação por e-mail" } ], "answer": "A", "explain": "Desenvolvimento acontece no trabalho real." },
+      { "id": 5, "question": "Frase correta:", "options": [ { "key": "A", "text": "Reconhecimento não impacta engajamento" }, { "key": "B", "text": "Reconhecimento consistente reforça desempenho" }, { "key": "C", "text": "Só corrigir já basta" }, { "key": "D", "text": "Só elogiar já basta" } ], "answer": "B", "explain": "Reforço positivo orienta comportamento esperado." },
+      { "id": 6, "question": "Microgestão excessiva tende a:", "options": [ { "key": "A", "text": "Aumentar autonomia do time" }, { "key": "B", "text": "Reduzir autonomia e gerar dependência" }, { "key": "C", "text": "Melhorar clima sempre" }, { "key": "D", "text": "Eliminar retrabalho" } ], "answer": "B", "explain": "Controle excessivo limita desenvolvimento da equipe." },
+      { "id": 7, "question": "Postergar decisões difíceis na liderança:", "options": [ { "key": "A", "text": "Resolve conflitos naturalmente" }, { "key": "B", "text": "Aumenta risco e desgaste da equipe" }, { "key": "C", "text": "Melhora previsibilidade" }, { "key": "D", "text": "Reduz necessidade de comunicação" } ], "answer": "B", "explain": "Problema acumulado fica mais caro para resolver." },
+      { "id": 8, "question": "Agenda semanal de liderança deve incluir:", "options": [ { "key": "A", "text": "Só reunião operacional" }, { "key": "B", "text": "Alinhamento, 1:1 e revisão de indicadores" }, { "key": "C", "text": "Somente treinamento" }, { "key": "D", "text": "Somente feedback corretivo" } ], "answer": "B", "explain": "Combinação de rituais sustenta gestão completa." },
+      { "id": 9, "question": "Sinal inicial de liderança fraca costuma aparecer em:", "options": [ { "key": "A", "text": "Clima e comunicação" }, { "key": "B", "text": "Apenas orçamento" }, { "key": "C", "text": "Somente tecnologia" }, { "key": "D", "text": "Só folha de pagamento" } ], "answer": "A", "explain": "Clima geralmente piora antes do indicador final." },
+      { "id": 10, "question": "Objetivo da aula 22:", "options": [ { "key": "A", "text": "Definir processo de admissão" }, { "key": "B", "text": "Fortalecer papel do líder na gestão de pessoas" }, { "key": "C", "text": "Tratar legislação trabalhista" }, { "key": "D", "text": "Criar trilha de cursos" } ], "answer": "B", "explain": "A aula posiciona liderança como peça central de execução." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Rotina de liderança\n\n- direção\n- acompanhamento\n- feedback\n- decisão\n",
+    "pilares": "Pilares\n\n- clareza\n- consistência\n- desenvolvimento do time\n"
+  }
+}

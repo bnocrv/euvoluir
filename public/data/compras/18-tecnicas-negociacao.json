@@ -1,0 +1,108 @@
+{
+  "id": "18-tecnicas-negociacao",
+  "title": "Aula 18 — Técnicas de negociação: ancoragem, concessões e troca de valor",
+  "steps": [
+    {
+      "title": "Técnica sem ética vira curto prazo (e dá ruim depois)",
+      "body": "Técnicas existem para estruturar conversa e obter resultado.\n\nMas em compras, o objetivo é sustentável:\n- manter fornecedor saudável\n- evitar quebra de qualidade\n- reduzir risco\n\nRegra:\n- Negociação boa não “esmaga” — equilibra valor e continuidade."
+    },
+    {
+      "title": "Ancoragem (como usar sem ser infantil)",
+      "body": "Ancorar é colocar um ponto de referência.\n\nUso maduro:\n- baseado em mercado/histórico\n- com justificativa objetiva\n\nExemplo:\n- “Historicamente pagamos R$ X com frete incluso. Preciso chegar em R$ Y com a mesma condição.”\n\nRegra:\n- Âncora forte vem de dados, não de chute."
+    },
+    {
+      "title": "Concessões (a regra de ouro: nunca ceda de graça)",
+      "body": "Concessão saudável:\n- você dá algo\n- recebe algo em troca\n\nExemplos:\n- “Se você reduzir 6%, eu fecho contrato trimestral.”\n- “Se você mantiver prazo fixo, posso antecipar parte do pagamento.”\n\nRegra:\n- Concessão sem contrapartida vira padrão para o fornecedor."
+    },
+    {
+      "title": "Troca de valor (o que realmente funciona em compras)",
+      "body": "Trocas típicas:\n- volume por preço\n- previsibilidade por prazo\n- pagamento por desconto\n- simplificação (padronização) por eficiência\n- logística (janela fixa) por custo menor\n\nRegra:\n- Você negocia melhor quando entende o que tem valor para o outro lado."
+    },
+    {
+      "title": "Silêncio e pergunta (técnica simples e poderosa)",
+      "body": "Muita gente perde negociação por falar demais.\n\nDuas práticas:\n- fazer pergunta e esperar\n- repetir o ponto com calma\n\nExemplos:\n- “O que impede você de melhorar 5%?”\n- “Que variável você precisa ajustar para chegar nisso?”\n\nRegra:\n- Pergunta boa abre opção; fala demais fecha."
+    },
+    {
+      "title": "Fechamento e registro (onde a negociação vira resultado)",
+      "body": "Fechou? Registre:\n- preço e impostos\n- prazo e condição de entrega\n- pagamento\n- validade\n- penalidades/garantias\n\nRegra:\n- Acordo sem registro vira “eu entendi diferente”."
+    },
+    {
+      "title": "Mini prática (45 min) — script de concessões",
+      "body": "Crie 5 trocas de valor para um item recorrente.\n\nFormato:\n- “Se você X, eu Y.”\n\nExemplo:\n- “Se você reduzir 4%, eu aumento volume em 20%.”\n\nObjetivo:\n- sair do pedido de desconto vazio."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Técnicas precisam de dados e ética\n- Âncora forte é baseada em histórico/mercado\n- Concessão sempre com contrapartida\n- Troca de valor é o motor real\n- Fechamento exige registro\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 18 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Âncora forte em negociação é:",
+        "options": [
+          { "key": "A", "text": "Um chute agressivo" },
+          { "key": "B", "text": "Um referência baseada em dados (histórico/mercado)" },
+          { "key": "C", "text": "Uma ameaça" },
+          { "key": "D", "text": "Um desconto aleatório" }
+        ],
+        "answer": "B",
+        "explain": "Dados tornam a âncora defendível."
+      },
+      {
+        "id": 2,
+        "question": "Regra de ouro das concessões:",
+        "options": [
+          { "key": "A", "text": "Ceder rápido para fechar" },
+          { "key": "B", "text": "Nunca ceder" },
+          { "key": "C", "text": "Não ceder de graça: sempre com contrapartida" },
+          { "key": "D", "text": "Ceder no começo" }
+        ],
+        "answer": "C",
+        "explain": "Concessão sem troca vira padrão."
+      },
+      {
+        "id": 3,
+        "question": "Troca de valor típica é:",
+        "options": [
+          { "key": "A", "text": "Volume por preço" },
+          { "key": "B", "text": "Promessa por promessa" },
+          { "key": "C", "text": "Ameaça por acordo" },
+          { "key": "D", "text": "Silêncio por silêncio" }
+        ],
+        "answer": "A",
+        "explain": "Volume tem valor econômico para fornecedor."
+      },
+      {
+        "id": 4,
+        "question": "Perguntas ajudam negociação porque:",
+        "options": [
+          { "key": "A", "text": "Abrem opções e revelam limitações do fornecedor" },
+          { "key": "B", "text": "Eliminam registro" },
+          { "key": "C", "text": "Eliminam custo total" },
+          { "key": "D", "text": "Servem só para enrolar" }
+        ],
+        "answer": "A",
+        "explain": "Você entende o que dá para ajustar."
+      },
+      {
+        "id": 5,
+        "question": "Fechamento sem registro gera:",
+        "options": [
+          { "key": "A", "text": "Acordo sólido" },
+          { "key": "B", "text": "Risco de entendimento diferente e conflito" },
+          { "key": "C", "text": "Menos retrabalho" },
+          { "key": "D", "text": "Mais previsibilidade" }
+        ],
+        "answer": "B",
+        "explain": "Registro protege operação e compras."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Técnicas\n\n- ancoragem com dados\n- concessões com troca\n- perguntas e silêncio\n- fechamento e registro\n",
+    "pilares": "Pilares\n\n- método\n- ética\n- sustentabilidade\n"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "25-recebimento-conformidade",
+  "title": "Aula 25 — Recebimento e conformidade: conferência, divergências e devolução",
+  "steps": [
+    {
+      "title": "Compras só termina no recebimento conforme",
+      "body": "Pedido emitido não significa compra concluída.\nA compra só fecha quando o item chega:\n- no prazo\n- na quantidade\n- na qualidade\n- na condição acordada\n\nRegra:\n- Recebimento é parte da performance de compras, não só do almoxarifado."
+    },
+    {
+      "title": "Três conferências básicas no recebimento",
+      "body": "Conferência mínima:\n- documental (pedido, nota, contrato)\n- quantitativa (volume/medida)\n- qualitativa (especificação/conformidade)\n\nRegra:\n- Sem tripla conferência, divergência vira custo escondido."
+    },
+    {
+      "title": "Divergência: agir rápido e padronizado",
+      "body": "Tipos comuns de divergência:\n- quantidade menor/maior\n- item diferente\n- avaria\n- atraso crítico\n\nFluxo recomendado:\n- registrar evidência\n- comunicar fornecedor\n- definir ação (troca, complemento, abatimento, devolução)\n\nRegra:\n- Divergência sem rito vira conflito e perda de prazo."
+    },
+    {
+      "title": "Devolução e tratativa comercial",
+      "body": "Devolução deve ter regra clara:\n- prazo para reportar\n- responsabilidade por coleta/frete\n- impacto no pagamento\n- reposição acordada\n\nRegra:\n- Política de devolução protege caixa e continuidade da operação."
+    },
+    {
+      "title": "Ligação com financeiro: pagar só o que está conforme",
+      "body": "Recebimento influencia liberação financeira.\n\nBoas práticas:\n- bloqueio de pagamento com pendência crítica\n- liberação parcial quando aplicável\n- rastreio entre divergência e ajuste na fatura\n\nRegra:\n- Conformidade no recebimento evita pagar por erro."
+    },
+    {
+      "title": "Indicadores de conformidade para melhorar fornecedor",
+      "body": "Métricas úteis:\n- taxa de entrega no prazo\n- taxa de não conformidade\n- tempo médio de solução de divergência\n- reincidência por tipo de erro\n\nRegra:\n- O que não é medido se repete."
+    },
+    {
+      "title": "Mini prática (45 min) — desenhar fluxo de divergência",
+      "body": "Escolha uma divergência recorrente da empresa.\n\nDesenhe:\n- quem registra\n- quem aprova ação\n- prazo de resposta do fornecedor\n- regra de pagamento\n\nObjetivo:\n- reduzir retrabalho e tempo de resolução."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Compra encerra no recebimento conforme\n- Conferência documental, quantitativa e qualitativa é obrigatória\n- Divergência pede rito rápido e evidência\n- Conformidade conecta compras, operação e financeiro\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 25 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A compra se conclui quando:",
+        "options": [
+          { "key": "A", "text": "Pedido é emitido" },
+          { "key": "B", "text": "Item é recebido conforme" },
+          { "key": "C", "text": "Fornecedor envia proposta" },
+          { "key": "D", "text": "Nota é gerada" }
+        ],
+        "answer": "B",
+        "explain": "Resultado real depende de conformidade no recebimento."
+      },
+      {
+        "id": 2,
+        "question": "Conferência mínima no recebimento inclui:",
+        "options": [
+          { "key": "A", "text": "Só conferência visual" },
+          { "key": "B", "text": "Documental, quantitativa e qualitativa" },
+          { "key": "C", "text": "Só contagem" },
+          { "key": "D", "text": "Só nota fiscal" }
+        ],
+        "answer": "B",
+        "explain": "As três frentes evitam erro técnico e financeiro."
+      },
+      {
+        "id": 3,
+        "question": "Ao detectar divergência, o primeiro passo é:",
+        "options": [
+          { "key": "A", "text": "Ignorar para ganhar tempo" },
+          { "key": "B", "text": "Registrar evidência e acionar fluxo" },
+          { "key": "C", "text": "Pagar e resolver depois" },
+          { "key": "D", "text": "Trocar fornecedor sem análise" }
+        ],
+        "answer": "B",
+        "explain": "Registro rápido sustenta tratativa e decisão."
+      },
+      {
+        "id": 4,
+        "question": "Política de devolução deve definir:",
+        "options": [
+          { "key": "A", "text": "Responsabilidade e prazo de tratativa" },
+          { "key": "B", "text": "Só nome do item" },
+          { "key": "C", "text": "Só telefone" },
+          { "key": "D", "text": "Só aprovação verbal" }
+        ],
+        "answer": "A",
+        "explain": "Sem regra clara, divergência vira conflito prolongado."
+      },
+      {
+        "id": 5,
+        "question": "Recebimento e financeiro se conectam porque:",
+        "options": [
+          { "key": "A", "text": "Pagamento deve refletir conformidade" },
+          { "key": "B", "text": "São áreas independentes" },
+          { "key": "C", "text": "Não existe relação" },
+          { "key": "D", "text": "Pagamento independe de entrega" }
+        ],
+        "answer": "A",
+        "explain": "Evita pagar por item não entregue corretamente."
+      },
+      {
+        "id": 6,
+        "question": "Indicador útil de conformidade é:",
+        "options": [
+          { "key": "A", "text": "Taxa de não conformidade" },
+          { "key": "B", "text": "Tamanho do e-mail" },
+          { "key": "C", "text": "Cor da embalagem" },
+          { "key": "D", "text": "Quantidade de reuniões" }
+        ],
+        "answer": "A",
+        "explain": "Mede qualidade real de entrega do fornecedor."
+      },
+      {
+        "id": 7,
+        "question": "Reincidência alta de erro do fornecedor indica:",
+        "options": [
+          { "key": "A", "text": "Processo sob controle" },
+          { "key": "B", "text": "Necessidade de ação corretiva" },
+          { "key": "C", "text": "Sem impacto" },
+          { "key": "D", "text": "Melhora automática" }
+        ],
+        "answer": "B",
+        "explain": "Problema repetido pede tratativa estrutural."
+      },
+      {
+        "id": 8,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Recebimento é só tarefa operacional" },
+          { "key": "B", "text": "Recebimento influencia custo, prazo e caixa" },
+          { "key": "C", "text": "Recebimento não afeta compras" },
+          { "key": "D", "text": "Recebimento elimina necessidade de contrato" }
+        ],
+        "answer": "B",
+        "explain": "Conformidade fecha o ciclo de compras com qualidade."
+      },
+      {
+        "id": 9,
+        "question": "Sem fluxo padronizado de divergência, tende a ocorrer:",
+        "options": [
+          { "key": "A", "text": "Mais retrabalho e atraso" },
+          { "key": "B", "text": "Mais eficiência" },
+          { "key": "C", "text": "Menos conflito" },
+          { "key": "D", "text": "Risco zero" }
+        ],
+        "answer": "A",
+        "explain": "Padronização reduz tempo de resposta e ruído."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo da gestão de conformidade no recebimento é:",
+        "options": [
+          { "key": "A", "text": "Acelerar pagamento sem validação" },
+          { "key": "B", "text": "Garantir entrega correta e decisão financeira segura" },
+          { "key": "C", "text": "Aceitar qualquer divergência" },
+          { "key": "D", "text": "Eliminar conferência" }
+        ],
+        "answer": "B",
+        "explain": "Protege operação, contrato e caixa da empresa."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Tripla conferência\n\n- documental\n- quantitativa\n- qualitativa\n",
+    "pilares": "Pilares\n\n- conformidade\n- rastreabilidade\n- resposta rápida\n"
+  }
+}

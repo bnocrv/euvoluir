@@ -1,0 +1,58 @@
+{
+  "id": "26-remuneracao-variavel-incentivos",
+  "title": "Aula 26 — Remuneração variável e incentivos: desenho e governança",
+  "steps": [
+    {
+      "title": "Remuneração variável deve reforçar estratégia",
+      "body": "Incentivo eficaz direciona comportamento para o que gera resultado sustentável.\n\nRegra:\n- Se a regra premia o errado, o time otimiza o errado."
+    },
+    {
+      "title": "Diferença entre salário fixo e variável",
+      "body": "Fixo garante previsibilidade.\nVariável reconhece performance e resultado.\n\nRegra:\n- Variável sem critério claro gera percepção de injustiça."
+    },
+    {
+      "title": "Critérios de elegibilidade",
+      "body": "Defina:\n- quem participa\n- metas mínimas\n- período de apuração\n- limites e exceções\n\nRegra:\n- Elegibilidade ambígua gera conflito e contestação."
+    },
+    {
+      "title": "Métricas para compor incentivo",
+      "body": "Boas métricas combinam:\n- resultado quantitativo\n- qualidade da entrega\n- comportamento esperado\n\nRegra:\n- Só volume sem qualidade distorce decisão."
+    },
+    {
+      "title": "Riscos comuns no desenho",
+      "body": "Riscos típicos:\n- meta inalcançável\n- meta fácil demais\n- indicador sem controle da equipe\n\nRegra:\n- Incentivo bom é desafiador, porém viável e controlável."
+    },
+    {
+      "title": "Governança e transparência",
+      "body": "Garanta:\n- regra documentada\n- cálculo auditável\n- comunicação prévia\n- canal para dúvida\n\nRegra:\n- Transparência protege credibilidade do programa."
+    },
+    {
+      "title": "Mini prática (45 min) — desenho de incentivo",
+      "body": "Escolha uma função e monte:\n- objetivo do incentivo\n- indicador principal\n- gatilho de pagamento\n- limite e regra de revisão\n\nObjetivo:\n- criar modelo simples, justo e orientado a resultado."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Incentivo deve alinhar comportamento e estratégia\n- Critérios claros reduzem ruído\n- Métricas equilibradas evitam distorção\n- Governança e transparência são obrigatórias\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 26 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Remuneração variável bem desenhada serve para:", "options": [ { "key": "A", "text": "Aumentar custo sem direção" }, { "key": "B", "text": "Reforçar comportamento alinhado ao resultado" }, { "key": "C", "text": "Substituir gestão de desempenho" }, { "key": "D", "text": "Eliminar salário fixo" } ], "answer": "B", "explain": "O incentivo deve direcionar execução estratégica." },
+      { "id": 2, "question": "Critério de elegibilidade deve ser:", "options": [ { "key": "A", "text": "Informal" }, { "key": "B", "text": "Documentado e transparente" }, { "key": "C", "text": "Alterado sem aviso" }, { "key": "D", "text": "Definido por percepção" } ], "answer": "B", "explain": "Clareza reduz contestação e insegurança." },
+      { "id": 3, "question": "Meta de incentivo inadequada:", "options": [ { "key": "A", "text": "É viável e desafiadora" }, { "key": "B", "text": "É inalcançável ou fácil demais" }, { "key": "C", "text": "É acompanhada periodicamente" }, { "key": "D", "text": "Está alinhada ao cargo" } ], "answer": "B", "explain": "Extremos desengajam ou perdem eficácia." },
+      { "id": 4, "question": "Métrica só de volume pode:", "options": [ { "key": "A", "text": "Gerar qualidade automaticamente" }, { "key": "B", "text": "Incentivar resultado sem qualidade" }, { "key": "C", "text": "Eliminar risco de distorção" }, { "key": "D", "text": "Substituir liderança" } ], "answer": "B", "explain": "Por isso deve haver equilíbrio com qualidade." },
+      { "id": 5, "question": "Frase correta:", "options": [ { "key": "A", "text": "Programa de incentivo não precisa auditoria" }, { "key": "B", "text": "Cálculo auditável aumenta confiança" }, { "key": "C", "text": "Transparência atrapalha adesão" }, { "key": "D", "text": "Incentivo deve mudar mensalmente sem critério" } ], "answer": "B", "explain": "Governança protege credibilidade do programa." },
+      { "id": 6, "question": "Indicador de incentivo deve estar:", "options": [ { "key": "A", "text": "Fora do controle da equipe" }, { "key": "B", "text": "Sob influência real da equipe avaliada" }, { "key": "C", "text": "Sem conexão com função" }, { "key": "D", "text": "Sem periodicidade" } ], "answer": "B", "explain": "Controlabilidade aumenta justiça do modelo." },
+      { "id": 7, "question": "Risco de regra ambígua de incentivo:", "options": [ { "key": "A", "text": "Maior previsibilidade" }, { "key": "B", "text": "Conflito e questionamento" }, { "key": "C", "text": "Melhor percepção de justiça" }, { "key": "D", "text": "Menos retrabalho" } ], "answer": "B", "explain": "Ambiguidade corrói confiança no programa." },
+      { "id": 8, "question": "O fixo e o variável devem:", "options": [ { "key": "A", "text": "Competir entre si" }, { "key": "B", "text": "Cumprir funções complementares" }, { "key": "C", "text": "Ser iguais para todas as funções" }, { "key": "D", "text": "Ignorar estratégia do negócio" } ], "answer": "B", "explain": "Um dá estabilidade, outro direciona performance." },
+      { "id": 9, "question": "Canal de dúvidas no programa de incentivo:", "options": [ { "key": "A", "text": "É dispensável" }, { "key": "B", "text": "Ajuda transparência e adesão" }, { "key": "C", "text": "Aumenta ruído sem benefício" }, { "key": "D", "text": "Só serve em auditoria" } ], "answer": "B", "explain": "Dúvida tratada cedo evita conflito posterior." },
+      { "id": 10, "question": "Objetivo da aula 26:", "options": [ { "key": "A", "text": "Criar política de admissão" }, { "key": "B", "text": "Desenhar remuneração variável com governança" }, { "key": "C", "text": "Tratar onboarding" }, { "key": "D", "text": "Definir trilha de treinamento técnico" } ], "answer": "B", "explain": "A aula estrutura incentivos com justiça e controle." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Desenho de incentivo\n\n- elegibilidade\n- métricas\n- gatilho\n- governança\n",
+    "pilares": "Pilares\n\n- alinhamento estratégico\n- clareza\n- auditabilidade\n"
+  }
+}

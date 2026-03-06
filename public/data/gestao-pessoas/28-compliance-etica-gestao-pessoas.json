@@ -1,0 +1,58 @@
+{
+  "id": "28-compliance-etica-gestao-pessoas",
+  "title": "Aula 28 — Compliance e ética em gestão de pessoas: prevenção e conduta",
+  "steps": [
+    {
+      "title": "Compliance protege pessoas, empresa e liderança",
+      "body": "Compliance em gestão de pessoas é cumprir regras com evidência e ética.\n\nRegra:\n- Processo sem conformidade aumenta risco jurídico e reputacional."
+    },
+    {
+      "title": "Princípios éticos no ciclo de pessoas",
+      "body": "Princípios-chave:\n- respeito\n- imparcialidade\n- confidencialidade\n- transparência\n\nRegra:\n- Ética precisa ser aplicada na rotina, não só declarada."
+    },
+    {
+      "title": "Riscos recorrentes de não conformidade",
+      "body": "Exemplos:\n- decisão sem critério documentado\n- tratamento desigual\n- vazamento de informação sensível\n\nRegra:\n- Risco repetido indica falha de controle."
+    },
+    {
+      "title": "Políticas e trilha de decisão",
+      "body": "Toda decisão sensível deve ter:\n- regra de referência\n- justificativa\n- aprovação adequada\n- evidência registrada\n\nRegra:\n- Sem trilha, decisão correta fica indefensável."
+    },
+    {
+      "title": "Canal de reporte e tratamento",
+      "body": "Canal de denúncia/reporte precisa:\n- segurança\n- confidencialidade\n- apuração imparcial\n\nRegra:\n- Reporte sem confiança não funciona."
+    },
+    {
+      "title": "Formação contínua em ética",
+      "body": "Treinar líderes e equipes em conduta reduz risco de desvio.\n\nRegra:\n- Política sem capacitação vira documento inerte."
+    },
+    {
+      "title": "Mini prática (45 min) — checklist de conformidade",
+      "body": "Escolha um processo de pessoas e valide:\n- regra clara\n- documentação\n- aprovações\n- pontos de risco\n\nObjetivo:\n- fortalecer governança preventiva."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Compliance exige regra + evidência + conduta\n- Ética orienta decisões justas\n- Canal de reporte precisa confiança\n- Treinamento contínuo reduz exposição\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 28 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Compliance em gestão de pessoas significa:", "options": [ { "key": "A", "text": "Cumprir regra com evidência e ética" }, { "key": "B", "text": "Apenas seguir costume" }, { "key": "C", "text": "Só responder auditoria" }, { "key": "D", "text": "Só proteger a empresa" } ], "answer": "A", "explain": "É prática contínua de conformidade e conduta." },
+      { "id": 2, "question": "Decisão sem critério documentado gera:", "options": [ { "key": "A", "text": "Mais segurança" }, { "key": "B", "text": "Risco de contestação e injustiça" }, { "key": "C", "text": "Menos ruído" }, { "key": "D", "text": "Maior confiança" } ], "answer": "B", "explain": "Falta de registro enfraquece governança." },
+      { "id": 3, "question": "Confidencialidade em dados de pessoas:", "options": [ { "key": "A", "text": "É opcional" }, { "key": "B", "text": "É princípio essencial de compliance" }, { "key": "C", "text": "Só vale para diretoria" }, { "key": "D", "text": "Não impacta risco" } ], "answer": "B", "explain": "Proteção de informação é requisito central." },
+      { "id": 4, "question": "Canal de reporte eficaz precisa:", "options": [ { "key": "A", "text": "Exposição pública" }, { "key": "B", "text": "Confiança e apuração imparcial" }, { "key": "C", "text": "Uso eventual sem retorno" }, { "key": "D", "text": "Apenas formulário" } ], "answer": "B", "explain": "Sem confiança, casos não são reportados." },
+      { "id": 5, "question": "Frase correta:", "options": [ { "key": "A", "text": "Ética é tema só do jurídico" }, { "key": "B", "text": "Ética orienta decisões diárias de liderança e equipes" }, { "key": "C", "text": "Ética não afeta clima" }, { "key": "D", "text": "Ética não afeta reputação" } ], "answer": "B", "explain": "Conduta diária define cultura e risco." },
+      { "id": 6, "question": "Política sem capacitação tende a:", "options": [ { "key": "A", "text": "Funcionar melhor" }, { "key": "B", "text": "Ter baixa aplicação prática" }, { "key": "C", "text": "Eliminar risco" }, { "key": "D", "text": "Aumentar transparência" } ], "answer": "B", "explain": "Sem entendimento, a regra não vira comportamento." },
+      { "id": 7, "question": "Trilha de decisão deve conter:", "options": [ { "key": "A", "text": "Somente resultado final" }, { "key": "B", "text": "Regra, justificativa, aprovação e evidência" }, { "key": "C", "text": "Somente opinião do gestor" }, { "key": "D", "text": "Somente e-mail informal" } ], "answer": "B", "explain": "Rastreabilidade fortalece defesa da decisão." },
+      { "id": 8, "question": "Risco de tratamento desigual entre pessoas:", "options": [ { "key": "A", "text": "Melhora engajamento" }, { "key": "B", "text": "Compromete ética e confiança" }, { "key": "C", "text": "Não afeta clima" }, { "key": "D", "text": "Aumenta compliance" } ], "answer": "B", "explain": "Percepção de injustiça impacta cultura e desempenho." },
+      { "id": 9, "question": "Checklist de conformidade ajuda a:", "options": [ { "key": "A", "text": "Ignorar lacunas" }, { "key": "B", "text": "Antecipar risco e corrigir processo" }, { "key": "C", "text": "Aumentar improviso" }, { "key": "D", "text": "Substituir liderança" } ], "answer": "B", "explain": "Prevenção reduz ocorrência de desvio." },
+      { "id": 10, "question": "Objetivo da aula 28:", "options": [ { "key": "A", "text": "Definir plano de bônus" }, { "key": "B", "text": "Fortalecer compliance e ética em gestão de pessoas" }, { "key": "C", "text": "Tratar onboarding" }, { "key": "D", "text": "Criar trilha de vendas" } ], "answer": "B", "explain": "A aula consolida prevenção e conduta responsável." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Base de compliance\n\n- política\n- trilha\n- reporte\n- apuração\n",
+    "pilares": "Pilares\n\n- ética\n- rastreabilidade\n- prevenção\n"
+  }
+}

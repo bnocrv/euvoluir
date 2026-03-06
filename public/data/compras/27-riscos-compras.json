@@ -1,0 +1,168 @@
+{
+  "id": "27-riscos-compras",
+  "title": "Aula 27 — Gestão de riscos em compras: ruptura, dependência e contingência",
+  "steps": [
+    {
+      "title": "Risco em compras é impacto na continuidade",
+      "body": "Risco em compras é tudo que pode interromper custo, prazo ou qualidade.\n\nExemplos:\n- fornecedor parar de entregar\n- aumento abrupto de preço\n- problema logístico\n- mudança regulatória\n\nRegra:\n- Risco não é “se vai acontecer”, é “quando e com qual impacto”."
+    },
+    {
+      "title": "Mapear risco por categoria e criticidade",
+      "body": "Nem todo item tem o mesmo risco.\nClassifique por:\n- impacto na operação\n- dificuldade de substituição\n- tempo de reposição\n- concentração em poucos fornecedores\n\nRegra:\n- Item crítico sem plano alternativo é risco alto por definição."
+    },
+    {
+      "title": "Dependência de fornecedor: o alerta silencioso",
+      "body": "Dependência ocorre quando:\n- 1 fornecedor domina volume\n- conhecimento técnico está concentrado\n- contrato limita alternativas\n\nRegra:\n- Dependência sem estratégia de saída reduz poder de negociação."
+    },
+    {
+      "title": "Matriz de risco: probabilidade x impacto",
+      "body": "Ferramenta simples para priorizar:\n- alta probabilidade e alto impacto: ação imediata\n- baixa probabilidade e alto impacto: plano de contingência\n- alta probabilidade e baixo impacto: padronizar resposta\n\nRegra:\n- Sem priorização, o time trata tudo igual e resolve pouco."
+    },
+    {
+      "title": "Contingência: plano B real, não teórico",
+      "body": "Plano de contingência deve incluir:\n- fornecedor alternativo homologado\n- estoque de segurança para itens críticos\n- rota logística alternativa\n- gatilho claro para ativação\n\nRegra:\n- Plano B só existe se puder ser acionado amanhã."
+    },
+    {
+      "title": "Monitoramento contínuo de risco fornecedor",
+      "body": "Sinais de alerta:\n- atrasos crescentes\n- queda de qualidade\n- instabilidade financeira\n- mudança frequente de condições\n\nRegra:\n- Risco se gerencia por sinais antecipados, não por reação tardia."
+    },
+    {
+      "title": "Mini prática (45 min) — matriz de risco da sua carteira",
+      "body": "Escolha 5 itens ou fornecedores estratégicos.\n\nPreencha:\n- probabilidade do risco\n- impacto na operação\n- mitigação atual\n- ação adicional necessária\n\nObjetivo:\n- transformar percepção de risco em plano executável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Risco de compras afeta continuidade da operação\n- Criticidade e dependência orientam prioridade\n- Matriz risco x impacto ajuda foco\n- Contingência precisa ser prática e acionável\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 27 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Risco em compras pode ser definido como:",
+        "options": [
+          { "key": "A", "text": "Somente atraso logístico" },
+          { "key": "B", "text": "Evento que ameaça custo, prazo ou qualidade" },
+          { "key": "C", "text": "Somente variação de preço" },
+          { "key": "D", "text": "Somente falha documental" }
+        ],
+        "answer": "B",
+        "explain": "Risco afeta desempenho completo da cadeia."
+      },
+      {
+        "id": 2,
+        "question": "Classificar risco por criticidade ajuda a:",
+        "options": [
+          { "key": "A", "text": "Tratar tudo igual" },
+          { "key": "B", "text": "Priorizar onde o impacto é maior" },
+          { "key": "C", "text": "Eliminar planejamento" },
+          { "key": "D", "text": "Aumentar burocracia sem ganho" }
+        ],
+        "answer": "B",
+        "explain": "Foco deve estar no que mais ameaça a operação."
+      },
+      {
+        "id": 3,
+        "question": "Dependência de fornecedor é perigosa quando:",
+        "options": [
+          { "key": "A", "text": "Há múltiplas alternativas ativas" },
+          { "key": "B", "text": "Não existe plano de substituição" },
+          { "key": "C", "text": "Existe homologação paralela" },
+          { "key": "D", "text": "Existe contrato com SLA forte" }
+        ],
+        "answer": "B",
+        "explain": "Sem alternativa, qualquer falha vira ruptura."
+      },
+      {
+        "id": 4,
+        "question": "Na matriz de risco, alta probabilidade e alto impacto pedem:",
+        "options": [
+          { "key": "A", "text": "Acompanhar depois" },
+          { "key": "B", "text": "Ação imediata" },
+          { "key": "C", "text": "Ignorar no curto prazo" },
+          { "key": "D", "text": "Somente registro" }
+        ],
+        "answer": "B",
+        "explain": "É o quadrante mais crítico."
+      },
+      {
+        "id": 5,
+        "question": "Plano de contingência eficaz deve:",
+        "options": [
+          { "key": "A", "text": "Ser genérico" },
+          { "key": "B", "text": "Ter gatilho, responsável e ação acionável" },
+          { "key": "C", "text": "Ficar só no contrato" },
+          { "key": "D", "text": "Ser revisado apenas em crise" }
+        ],
+        "answer": "B",
+        "explain": "Contingência precisa funcionar na prática."
+      },
+      {
+        "id": 6,
+        "question": "Fornecedor alternativo homologado é importante porque:",
+        "options": [
+          { "key": "A", "text": "Aumenta burocracia" },
+          { "key": "B", "text": "Reduz tempo de resposta em ruptura" },
+          { "key": "C", "text": "Elimina necessidade de contrato" },
+          { "key": "D", "text": "Substitui controle de qualidade" }
+        ],
+        "answer": "B",
+        "explain": "Permite reação rápida sem começar do zero."
+      },
+      {
+        "id": 7,
+        "question": "Um sinal precoce de risco fornecedor é:",
+        "options": [
+          { "key": "A", "text": "Queda consistente de qualidade" },
+          { "key": "B", "text": "Entrega estável no prazo" },
+          { "key": "C", "text": "Condição comercial previsível" },
+          { "key": "D", "text": "Conformidade constante" }
+        ],
+        "answer": "A",
+        "explain": "Piora de performance antecipa possível ruptura."
+      },
+      {
+        "id": 8,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Risco só deve ser tratado depois do problema" },
+          { "key": "B", "text": "Gestão de risco é preventiva e contínua" },
+          { "key": "C", "text": "Risco não envolve compras" },
+          { "key": "D", "text": "Risco é igual para todos os itens" }
+        ],
+        "answer": "B",
+        "explain": "Antecipação reduz impacto e custo."
+      },
+      {
+        "id": 9,
+        "question": "Estoque de segurança é mais indicado para:",
+        "options": [
+          { "key": "A", "text": "Itens críticos com lead time sensível" },
+          { "key": "B", "text": "Itens sem impacto na operação" },
+          { "key": "C", "text": "Todos os itens sem critério" },
+          { "key": "D", "text": "Itens sem consumo" }
+        ],
+        "answer": "A",
+        "explain": "Protege continuidade onde ruptura custa caro."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo da gestão de riscos em compras é:",
+        "options": [
+          { "key": "A", "text": "Eliminar qualquer incerteza" },
+          { "key": "B", "text": "Reduzir probabilidade e impacto de eventos críticos" },
+          { "key": "C", "text": "Trocar fornecedor sempre" },
+          { "key": "D", "text": "Comprar sem planejamento" }
+        ],
+        "answer": "B",
+        "explain": "Risco se administra com prevenção e mitigação."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Mapa de risco\n\n- risco identificado\n- probabilidade\n- impacto\n- mitigação\n",
+    "pilares": "Pilares\n\n- prevenção\n- contingência\n- monitoramento\n"
+  }
+}

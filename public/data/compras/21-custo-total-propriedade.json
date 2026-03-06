@@ -1,0 +1,168 @@
+{
+  "id": "21-custo-total-propriedade",
+  "title": "Aula 21 — TCO: custo total de propriedade (o barato que sai caro)",
+  "steps": [
+    {
+      "title": "Preço de compra é só a entrada da conta",
+      "body": "TCO (Total Cost of Ownership) é o custo total de adquirir, usar e sustentar um item/serviço ao longo do tempo.\n\nInclui:\n- preço\n- frete\n- imposto\n- instalação\n- manutenção\n- perdas por falha/atraso\n- descarte/substituição\n\nRegra:\n- Preço baixo não garante custo baixo."
+    },
+    {
+      "title": "Onde o custo escondido aparece na prática",
+      "body": "Custos escondidos comuns:\n- item barato que quebra cedo\n- fornecedor com alta taxa de atraso\n- retrabalho por qualidade inconsistente\n- alto consumo de suporte interno\n\nRegra:\n- Custo escondido quase sempre vira tempo perdido e parada operacional."
+    },
+    {
+      "title": "TCO em compras: decisão de ciclo de vida",
+      "body": "Em vez de olhar só o pedido atual, compras deve olhar ciclo de vida:\n- quanto custa colocar para rodar\n- quanto custa manter\n- quanto custa quando dá problema\n\nRegra:\n- Decisão madura considera o antes, o durante e o depois da compra."
+    },
+    {
+      "title": "Exemplo rápido: fornecedor A vs B",
+      "body": "Fornecedor A:\n- preço menor\n- entrega instável\n- mais devolução\n\nFornecedor B:\n- preço maior\n- entrega previsível\n- menor falha\n\nQuando soma atraso + retrabalho + devolução, B pode sair mais barato no total.\n\nRegra:\n- TCO corrige escolhas distorcidas pelo \"menor preço\"."
+    },
+    {
+      "title": "Modelo simples de cálculo de TCO",
+      "body": "Estrutura básica:\nTCO = preço + logística + tributos + operação + risco\n\nOperação pode incluir:\n- tempo de equipe\n- perdas por interrupção\n- custo de não conformidade\n\nRisco pode incluir:\n- probabilidade de atraso\n- impacto financeiro da ruptura\n\nRegra:\n- Modelo simples e consistente vale mais que modelo complexo sem uso."
+    },
+    {
+      "title": "Quando usar TCO obrigatoriamente",
+      "body": "Use TCO em:\n- itens críticos para operação\n- contratos de maior valor\n- compras com manutenção recorrente\n- decisão entre soluções diferentes\n\nRegra:\n- Quanto maior impacto e recorrência, mais obrigatório é usar TCO."
+    },
+    {
+      "title": "Mini prática (45 min) — montar TCO de um item crítico",
+      "body": "Escolha um item relevante da sua operação.\n\nListe:\n- preço\n- frete/impostos\n- custo de instalação\n- custo de manutenção\n- custo provável de falha/atraso\n\nCompare 2 fornecedores com o mesmo modelo.\n\nObjetivo:\n- decidir por custo total, não por percepção."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- TCO mede custo total no ciclo de vida\n- Custo escondido está em atraso, falha e retrabalho\n- Menor preço pode gerar maior custo final\n- Modelo simples e recorrente melhora decisão\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 21 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "TCO representa:",
+        "options": [
+          { "key": "A", "text": "Somente preço unitário" },
+          { "key": "B", "text": "Custo total de aquisição, uso e sustentação" },
+          { "key": "C", "text": "Somente frete" },
+          { "key": "D", "text": "Somente imposto" }
+        ],
+        "answer": "B",
+        "explain": "TCO soma custos do ciclo de vida, não só do pedido."
+      },
+      {
+        "id": 2,
+        "question": "Qual é um custo escondido clássico?",
+        "options": [
+          { "key": "A", "text": "Atraso recorrente" },
+          { "key": "B", "text": "Preço tabelado" },
+          { "key": "C", "text": "Código do item" },
+          { "key": "D", "text": "Nome da marca" }
+        ],
+        "answer": "A",
+        "explain": "Atraso gera ruptura, urgência e custo indireto."
+      },
+      {
+        "id": 3,
+        "question": "Decisão por TCO olha:",
+        "options": [
+          { "key": "A", "text": "Só o hoje" },
+          { "key": "B", "text": "Somente o contrato" },
+          { "key": "C", "text": "Ciclo de vida da compra" },
+          { "key": "D", "text": "Somente o desconto" }
+        ],
+        "answer": "C",
+        "explain": "Inclui implantação, operação, falhas e manutenção."
+      },
+      {
+        "id": 4,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Menor preço sempre significa menor custo" },
+          { "key": "B", "text": "Preço não importa" },
+          { "key": "C", "text": "Menor preço pode gerar maior custo total" },
+          { "key": "D", "text": "TCO elimina necessidade de cotação" }
+        ],
+        "answer": "C",
+        "explain": "Sem TCO, custo indireto fica fora da decisão."
+      },
+      {
+        "id": 5,
+        "question": "Um componente de TCO é:",
+        "options": [
+          { "key": "A", "text": "Logística" },
+          { "key": "B", "text": "Assinatura de e-mail" },
+          { "key": "C", "text": "Cor do formulário" },
+          { "key": "D", "text": "Layout da planilha" }
+        ],
+        "answer": "A",
+        "explain": "Frete e movimentação impactam custo real."
+      },
+      {
+        "id": 6,
+        "question": "TCO deve ser obrigatório quando:",
+        "options": [
+          { "key": "A", "text": "Item é crítico e recorrente" },
+          { "key": "B", "text": "Compra é irrelevante" },
+          { "key": "C", "text": "Não há impacto operacional" },
+          { "key": "D", "text": "Não existe comparação" }
+        ],
+        "answer": "A",
+        "explain": "Maior impacto exige maior qualidade de decisão."
+      },
+      {
+        "id": 7,
+        "question": "No TCO, risco entra como:",
+        "options": [
+          { "key": "A", "text": "Probabilidade e impacto de falha" },
+          { "key": "B", "text": "Opinião do comprador" },
+          { "key": "C", "text": "Somente prazo contratual" },
+          { "key": "D", "text": "Somente preço de tabela" }
+        ],
+        "answer": "A",
+        "explain": "Risco tem efeito financeiro e operacional mensurável."
+      },
+      {
+        "id": 8,
+        "question": "Comparar fornecedores por TCO ajuda a:",
+        "options": [
+          { "key": "A", "text": "Tomar decisão mais robusta" },
+          { "key": "B", "text": "Ignorar qualidade" },
+          { "key": "C", "text": "Eliminar contrato" },
+          { "key": "D", "text": "Eliminar conferência" }
+        ],
+        "answer": "A",
+        "explain": "A análise considera impacto total e não só preço."
+      },
+      {
+        "id": 9,
+        "question": "Qual prática é mais recomendada?",
+        "options": [
+          { "key": "A", "text": "Modelo simples e repetível" },
+          { "key": "B", "text": "Modelo complexo sem uso" },
+          { "key": "C", "text": "Sem modelo" },
+          { "key": "D", "text": "Decisão por feeling" }
+        ],
+        "answer": "A",
+        "explain": "Consistência melhora comparação e histórico."
+      },
+      {
+        "id": 10,
+        "question": "O objetivo central de TCO é:",
+        "options": [
+          { "key": "A", "text": "Comprar mais rápido" },
+          { "key": "B", "text": "Comprar mais barato no pedido" },
+          { "key": "C", "text": "Comprar com menor custo total" },
+          { "key": "D", "text": "Comprar do fornecedor conhecido" }
+        ],
+        "answer": "C",
+        "explain": "TCO orienta para resultado global da operação."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Blocos do TCO\n\n- aquisição\n- operação\n- manutenção\n- risco\n",
+    "pilares": "Pilares\n\n- visão de ciclo de vida\n- custo total\n- decisão baseada em impacto\n"
+  }
+}

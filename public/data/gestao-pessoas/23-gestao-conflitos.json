@@ -1,0 +1,58 @@
+{
+  "id": "23-gestao-conflitos",
+  "title": "Aula 23 — Gestão de conflitos e mediação no ambiente de trabalho",
+  "steps": [
+    {
+      "title": "Conflito é inevitável; destrutivo é opcional",
+      "body": "Conflitos surgem por diferença de prioridade, comunicação ou expectativa.\n\nRegra:\n- Ignorar conflito pequeno aumenta custo emocional e operacional."
+    },
+    {
+      "title": "Tipos comuns de conflito",
+      "body": "Principais tipos:\n- tarefa (como executar)\n- relacionamento (forma de interação)\n- processo (quem decide e como)\n\nRegra:\n- Tipo de conflito define tipo de intervenção."
+    },
+    {
+      "title": "Diagnóstico antes da mediação",
+      "body": "Antes de agir:\n- ouça as partes\n- identifique fatos e percepções\n- separe causa de sintoma\n\nRegra:\n- Sem diagnóstico, mediação vira opinião contra opinião."
+    },
+    {
+      "title": "Mediação com foco em solução",
+      "body": "Passos práticos:\n- criar espaço seguro\n- alinhar objetivo comum\n- negociar acordos específicos\n\nRegra:\n- Acordo genérico não sustenta mudança."
+    },
+    {
+      "title": "Papel da liderança em conflitos",
+      "body": "Líder deve:\n- agir cedo\n- manter neutralidade\n- reforçar respeito e responsabilidade\n\nRegra:\n- Postergar conflito interpessoal costuma piorar clima do time."
+    },
+    {
+      "title": "Quando escalar o conflito",
+      "body": "Escalonar quando houver:\n- risco ético\n- recorrência sem melhora\n- impacto alto na operação\n\nRegra:\n- Escalar no momento certo evita desgaste prolongado."
+    },
+    {
+      "title": "Mini prática (45 min) — roteiro de mediação",
+      "body": "Escolha um conflito típico e desenhe:\n- partes envolvidas\n- causa central\n- acordo esperado\n- plano de acompanhamento\n\nObjetivo:\n- preparar intervenção estruturada."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Conflito precisa gestão ativa\n- Diagnóstico antecede mediação\n- Acordo deve ser específico e acompanhável\n- Liderança tem papel central na resolução\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 23 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Conflito no trabalho:", "options": [ { "key": "A", "text": "Nunca deve existir" }, { "key": "B", "text": "Pode existir e precisa ser gerido" }, { "key": "C", "text": "Sempre melhora sozinho" }, { "key": "D", "text": "É só problema de RH" } ], "answer": "B", "explain": "Conflito é natural; gestão define impacto." },
+      { "id": 2, "question": "Primeiro passo de mediação eficaz:", "options": [ { "key": "A", "text": "Decidir sem ouvir" }, { "key": "B", "text": "Diagnosticar fatos e causas" }, { "key": "C", "text": "Aplicar punição imediata" }, { "key": "D", "text": "Ignorar tensão inicial" } ], "answer": "B", "explain": "Diagnóstico evita intervenção superficial." },
+      { "id": 3, "question": "Conflito de processo envolve:", "options": [ { "key": "A", "text": "Quem decide e como executa fluxo" }, { "key": "B", "text": "Somente relacionamento pessoal" }, { "key": "C", "text": "Somente meta individual" }, { "key": "D", "text": "Somente remuneração" } ], "answer": "A", "explain": "Conflito de processo é sobre regras e responsabilidade." },
+      { "id": 4, "question": "Acordo de mediação deve ser:", "options": [ { "key": "A", "text": "Genérico para evitar confronto" }, { "key": "B", "text": "Específico e verificável" }, { "key": "C", "text": "Somente verbal" }, { "key": "D", "text": "Sem prazo" } ], "answer": "B", "explain": "Clareza aumenta chance de cumprimento." },
+      { "id": 5, "question": "Liderança em conflito deve:", "options": [ { "key": "A", "text": "Esperar piorar para agir" }, { "key": "B", "text": "Intervir cedo com neutralidade" }, { "key": "C", "text": "Escolher um lado sem ouvir" }, { "key": "D", "text": "Delegar sempre sem acompanhar" } ], "answer": "B", "explain": "Ação precoce reduz desgaste e escalada." },
+      { "id": 6, "question": "Escalar conflito é indicado quando:", "options": [ { "key": "A", "text": "Há risco ético ou impacto alto" }, { "key": "B", "text": "Conflito é pontual e resolvível" }, { "key": "C", "text": "Não houve tentativa de mediação" }, { "key": "D", "text": "É só divergência de opinião simples" } ], "answer": "A", "explain": "Situações críticas exigem nível de decisão maior." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Conflito sempre é negativo" }, { "key": "B", "text": "Conflito bem gerido pode gerar melhoria" }, { "key": "C", "text": "Conflito não afeta clima" }, { "key": "D", "text": "Conflito deve ser ocultado" } ], "answer": "B", "explain": "Discussão estruturada pode melhorar processo e relação." },
+      { "id": 8, "question": "Ignorar conflito recorrente tende a:", "options": [ { "key": "A", "text": "Resolver naturalmente" }, { "key": "B", "text": "Aumentar desgaste da equipe" }, { "key": "C", "text": "Melhorar confiança" }, { "key": "D", "text": "Reduzir ruído" } ], "answer": "B", "explain": "Conflito acumulado afeta clima e execução." },
+      { "id": 9, "question": "Objetivo da mediação é:", "options": [ { "key": "A", "text": "Encontrar culpado" }, { "key": "B", "text": "Construir solução e compromisso" }, { "key": "C", "text": "Adiar decisão" }, { "key": "D", "text": "Encerrar conversa rápido" } ], "answer": "B", "explain": "Mediação busca solução sustentável." },
+      { "id": 10, "question": "Objetivo da aula 23:", "options": [ { "key": "A", "text": "Definir processo de folha" }, { "key": "B", "text": "Estruturar gestão e mediação de conflitos" }, { "key": "C", "text": "Criar plano de cargos" }, { "key": "D", "text": "Tratar onboarding" } ], "answer": "B", "explain": "A aula foca resolução estruturada de conflitos." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Roteiro de mediação\n\n- diagnóstico\n- escuta\n- acordo\n- acompanhamento\n",
+    "pilares": "Pilares\n\n- neutralidade\n- objetividade\n- ação rápida\n"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "24-diversidade-inclusao",
+  "title": "Aula 24 — Diversidade e inclusão: política, prática e impacto",
+  "steps": [
+    {
+      "title": "Diversidade e inclusão são temas de negócio",
+      "body": "Diversidade amplia repertório; inclusão garante participação real.\n\nRegra:\n- Diversidade sem inclusão mantém barreiras internas."
+    },
+    {
+      "title": "Diferença entre diversidade e inclusão",
+      "body": "Diversidade: pluralidade de perfis.\nInclusão: ambiente onde esses perfis têm voz e oportunidade.\n\nRegra:\n- Representatividade sem pertencimento não sustenta resultado."
+    },
+    {
+      "title": "Vieses no ciclo de pessoas",
+      "body": "Vieses podem aparecer em:\n- recrutamento\n- avaliação\n- promoção\n- reconhecimento\n\nRegra:\n- Viés não tratado gera desigualdade de oportunidade."
+    },
+    {
+      "title": "Políticas e práticas inclusivas",
+      "body": "Práticas recomendadas:\n- critérios objetivos de decisão\n- linguagem inclusiva\n- ritos de escuta\n- formação de liderança inclusiva\n\nRegra:\n- Inclusão precisa processo, não apenas discurso."
+    },
+    {
+      "title": "Papel da liderança na inclusão",
+      "body": "Líder deve:\n- garantir espaço de fala\n- intervir em comportamento excludente\n- distribuir oportunidade com critério\n\nRegra:\n- Inclusão acontece no cotidiano da liderança."
+    },
+    {
+      "title": "Métricas de diversidade e inclusão",
+      "body": "Acompanhe:\n- representatividade por nível\n- taxa de promoção por grupo\n- percepção de pertencimento\n- rotatividade segmentada\n\nRegra:\n- Métrica dá visibilidade para ação concreta."
+    },
+    {
+      "title": "Mini prática (45 min) — diagnóstico inicial de inclusão",
+      "body": "Mapeie:\n- onde há baixa representatividade\n- onde há maior percepção de exclusão\n- duas ações imediatas de melhoria\n\nObjetivo:\n- iniciar evolução com foco e evidência."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Diversidade e inclusão fortalecem inovação e desempenho\n- Viés pode afetar todo o ciclo de pessoas\n- Liderança inclusiva é fator crítico\n- Indicadores orientam progresso real\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 24 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Diversidade significa:", "options": [ { "key": "A", "text": "Uniformidade de perfil" }, { "key": "B", "text": "Pluralidade de perfis e perspectivas" }, { "key": "C", "text": "Somente diferença geracional" }, { "key": "D", "text": "Somente política interna" } ], "answer": "B", "explain": "Diversidade amplia repertório da organização." },
+      { "id": 2, "question": "Inclusão significa:", "options": [ { "key": "A", "text": "Apenas presença de perfis diversos" }, { "key": "B", "text": "Ambiente de pertencimento e oportunidade real" }, { "key": "C", "text": "Somente treinamento anual" }, { "key": "D", "text": "Somente comunicação institucional" } ], "answer": "B", "explain": "Incluir é garantir participação efetiva." },
+      { "id": 3, "question": "Viés em gestão de pessoas pode ocorrer em:", "options": [ { "key": "A", "text": "Só no recrutamento" }, { "key": "B", "text": "Recrutamento, avaliação e promoção" }, { "key": "C", "text": "Somente desligamento" }, { "key": "D", "text": "Somente clima" } ], "answer": "B", "explain": "Viés pode atravessar várias etapas do ciclo." },
+      { "id": 4, "question": "Frase correta:", "options": [ { "key": "A", "text": "Diversidade sem inclusão é suficiente" }, { "key": "B", "text": "Diversidade precisa de práticas inclusivas" }, { "key": "C", "text": "Inclusão não depende da liderança" }, { "key": "D", "text": "Viés é irrelevante" } ], "answer": "B", "explain": "Representatividade sem pertencimento não sustenta evolução." },
+      { "id": 5, "question": "Liderança inclusiva deve:", "options": [ { "key": "A", "text": "Evitar conversas difíceis" }, { "key": "B", "text": "Garantir voz e intervir em exclusão" }, { "key": "C", "text": "Manter decisões informais" }, { "key": "D", "text": "Ignorar comportamento do time" } ], "answer": "B", "explain": "Líder define padrão de convivência no time." },
+      { "id": 6, "question": "Métrica de inclusão pode ser:", "options": [ { "key": "A", "text": "Percepção de pertencimento" }, { "key": "B", "text": "Cor da marca" }, { "key": "C", "text": "Tamanho da reunião" }, { "key": "D", "text": "Número de anúncios" } ], "answer": "A", "explain": "Pertencimento é indicador relevante de inclusão real." },
+      { "id": 7, "question": "Critérios objetivos ajudam a:", "options": [ { "key": "A", "text": "Aumentar viés" }, { "key": "B", "text": "Reduzir desigualdade de decisão" }, { "key": "C", "text": "Eliminar necessidade de gestão" }, { "key": "D", "text": "Substituir liderança" } ], "answer": "B", "explain": "Objetividade reduz arbitrariedade e injustiça." },
+      { "id": 8, "question": "Rotatividade segmentada serve para:", "options": [ { "key": "A", "text": "Ocultar dados" }, { "key": "B", "text": "Detectar grupos com maior risco de saída" }, { "key": "C", "text": "Medir somente faturamento" }, { "key": "D", "text": "Substituir pesquisa de clima" } ], "answer": "B", "explain": "Mostra onde agir para retenção inclusiva." },
+      { "id": 9, "question": "Inclusão efetiva depende de:", "options": [ { "key": "A", "text": "Campanha pontual" }, { "key": "B", "text": "Processos consistentes no dia a dia" }, { "key": "C", "text": "Somente comunicação externa" }, { "key": "D", "text": "Somente recrutamento" } ], "answer": "B", "explain": "Mudança sustentável ocorre na rotina." },
+      { "id": 10, "question": "Objetivo da aula 24:", "options": [ { "key": "A", "text": "Criar política de jornada" }, { "key": "B", "text": "Estruturar diversidade e inclusão com prática e métrica" }, { "key": "C", "text": "Definir plano de treinamento técnico" }, { "key": "D", "text": "Tratar desligamento" } ], "answer": "B", "explain": "A aula conecta política com execução e resultado." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Eixos de D&I\n\n- representatividade\n- pertencimento\n- oportunidade\n- acompanhamento\n",
+    "pilares": "Pilares\n\n- equidade\n- inclusão ativa\n- liderança responsável\n"
+  }
+}

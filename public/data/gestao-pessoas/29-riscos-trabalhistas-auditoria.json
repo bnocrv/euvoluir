@@ -1,0 +1,58 @@
+{
+  "id": "29-riscos-trabalhistas-auditoria",
+  "title": "Aula 29 — Riscos trabalhistas e auditoria interna de gestão de pessoas",
+  "steps": [
+    {
+      "title": "Risco trabalhista é risco de gestão",
+      "body": "Riscos trabalhistas surgem de falha de rotina, registro e conformidade.\n\nRegra:\n- Risco ignorado vira custo jurídico e operacional."
+    },
+    {
+      "title": "Principais fontes de risco",
+      "body": "Fontes comuns:\n- jornada e ponto inconsistentes\n- documentação incompleta\n- decisões sem critério\n- pagamentos irregulares\n\nRegra:\n- Reincidência indica necessidade de revisão estrutural."
+    },
+    {
+      "title": "Mapa de risco por processo",
+      "body": "Avalie cada processo por:\n- probabilidade\n- impacto\n- controle existente\n\nRegra:\n- Priorizar risco alto melhora alocação de esforço."
+    },
+    {
+      "title": "Auditoria interna como prevenção",
+      "body": "Auditoria interna deve:\n- verificar aderência a políticas\n- identificar falhas de execução\n- recomendar correções\n\nRegra:\n- Auditoria madura previne, não só aponta erro."
+    },
+    {
+      "title": "Plano de ação após auditoria",
+      "body": "Para cada achado, defina:\n- ação corretiva\n- responsável\n- prazo\n- evidência de fechamento\n\nRegra:\n- Achado sem plano vira repetição garantida."
+    },
+    {
+      "title": "Cultura de controle sem burocracia excessiva",
+      "body": "Controle bom é:\n- proporcional ao risco\n- claro para quem executa\n- integrado à rotina\n\nRegra:\n- Controle que ninguém usa não controla nada."
+    },
+    {
+      "title": "Mini prática (45 min) — matriz de risco trabalhista",
+      "body": "Escolha 1 processo e monte:\n- risco principal\n- causa provável\n- controle atual\n- ação de mitigação\n\nObjetivo:\n- reduzir exposição com ação objetiva."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Risco trabalhista nasce na operação diária\n- Mapa de risco dá foco\n- Auditoria interna deve gerar correção\n- Plano de ação com responsável fecha o ciclo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 29 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Risco trabalhista geralmente nasce de:", "options": [ { "key": "A", "text": "Falha de rotina e conformidade" }, { "key": "B", "text": "Somente mudança de mercado" }, { "key": "C", "text": "Somente tecnologia" }, { "key": "D", "text": "Somente clima" } ], "answer": "A", "explain": "A origem costuma estar no processo interno." },
+      { "id": 2, "question": "Fonte comum de risco trabalhista:", "options": [ { "key": "A", "text": "Ponto inconsistente" }, { "key": "B", "text": "Plano de ação com dono" }, { "key": "C", "text": "Checklist atualizado" }, { "key": "D", "text": "Aprovação formal" } ], "answer": "A", "explain": "Controle de jornada é item crítico de conformidade." },
+      { "id": 3, "question": "Mapa de risco ajuda a:", "options": [ { "key": "A", "text": "Tratar tudo igual" }, { "key": "B", "text": "Priorizar risco por impacto e probabilidade" }, { "key": "C", "text": "Eliminar necessidade de controle" }, { "key": "D", "text": "Aumentar improviso" } ], "answer": "B", "explain": "Foco aumenta eficiência de mitigação." },
+      { "id": 4, "question": "Auditoria interna eficaz deve:", "options": [ { "key": "A", "text": "Somente punir" }, { "key": "B", "text": "Identificar falhas e orientar correção" }, { "key": "C", "text": "Acontecer só quando há crise" }, { "key": "D", "text": "Evitar recomendação" } ], "answer": "B", "explain": "A função preventiva é central." },
+      { "id": 5, "question": "Achado de auditoria sem plano de ação:", "options": [ { "key": "A", "text": "Se resolve sozinho" }, { "key": "B", "text": "Tende a se repetir" }, { "key": "C", "text": "Melhora processo automaticamente" }, { "key": "D", "text": "Reduz risco" } ], "answer": "B", "explain": "Sem execução, o problema permanece." },
+      { "id": 6, "question": "Frase correta:", "options": [ { "key": "A", "text": "Controle eficaz deve ser aplicável à rotina" }, { "key": "B", "text": "Controle eficaz é o mais complexo possível" }, { "key": "C", "text": "Controle só importa no jurídico" }, { "key": "D", "text": "Controle dispensa responsável" } ], "answer": "A", "explain": "Controle útil é o que é executado de fato." },
+      { "id": 7, "question": "Reincidência de erro indica:", "options": [ { "key": "A", "text": "Processo sob controle" }, { "key": "B", "text": "Falha estrutural não resolvida" }, { "key": "C", "text": "Risco baixo" }, { "key": "D", "text": "Conformidade alta" } ], "answer": "B", "explain": "Repetição aponta correção insuficiente." },
+      { "id": 8, "question": "Plano de mitigação deve conter:", "options": [ { "key": "A", "text": "Ação, responsável e prazo" }, { "key": "B", "text": "Só intenção de ajuste" }, { "key": "C", "text": "Só meta geral" }, { "key": "D", "text": "Só evidência histórica" } ], "answer": "A", "explain": "Sem dono e data, a ação não acontece." },
+      { "id": 9, "question": "Probabilidade e impacto em risco servem para:", "options": [ { "key": "A", "text": "Definir prioridade de tratamento" }, { "key": "B", "text": "Aumentar burocracia" }, { "key": "C", "text": "Substituir auditoria" }, { "key": "D", "text": "Eliminar política" } ], "answer": "A", "explain": "Ajuda a agir primeiro no risco crítico." },
+      { "id": 10, "question": "Objetivo da aula 29:", "options": [ { "key": "A", "text": "Criar plano de bônus" }, { "key": "B", "text": "Estruturar gestão de risco e auditoria interna" }, { "key": "C", "text": "Tratar integração de novos colaboradores" }, { "key": "D", "text": "Definir programa de treinamento técnico" } ], "answer": "B", "explain": "A aula consolida prevenção e correção estruturada." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ciclo de auditoria\n\n- risco\n- verificação\n- achado\n- ação corretiva\n",
+    "pilares": "Pilares\n\n- prevenção\n- priorização\n- fechamento de ação\n"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "16-negociacao-fundamentos",
+  "title": "Aula 16 — Negociação: fundamentos, preparação e objetivos",
+  "steps": [
+    {
+      "title": "Negociação em compras não é “apertar preço”",
+      "body": "Negociar em compras é alinhar troca de valor com controle de risco.\n\nVocê negocia:\n- preço (óbvio)\n- prazo (lead time e confiabilidade)\n- qualidade (padrão e critério de aceite)\n- condição (pagamento, descontos, garantias)\n- flexibilidade (picos, urgências reais)\n\nRegra:\n- Desconto sem controle de prazo/qualidade vira economia falsa."
+    },
+    {
+      "title": "O que separa amador de profissional: preparação",
+      "body": "A diferença está antes da reunião.\n\nPreparação mínima:\n- entender a demanda (especificação e impacto)\n- mapear opções (concorrência, alternativos)\n- saber seu volume e recorrência\n- ter histórico (preço, prazos, ocorrências)\n- definir objetivo e limites\n\nRegra:\n- Quem entra sem dados negocia com esperança."
+    },
+    {
+      "title": "Objetivo, meta e limite (3 números que você precisa)",
+      "body": "Antes de negociar, defina:\n- objetivo: onde você quer chegar (ex.: -8% no custo total)\n- meta: o ideal (ex.: -12%)\n- limite: o máximo aceitável (ex.: até -4% ou muda estratégia)\n\nIsso evita aceitar qualquer coisa na pressão.\n\nRegra:\n- Se você não sabe seu limite, o fornecedor define por você."
+    },
+    {
+      "title": "Valor não é só preço: alavancas reais de compras",
+      "body": "Alavancas comuns:\n- volume consolidado (contrato/recorrência)\n- previsibilidade (agenda de compra)\n- pagamento (prazo, antecipação por desconto)\n- redução de variabilidade (padronização)\n- logística (frete, janela de entrega)\n\nRegra:\n- Negociação forte oferece algo real em troca."
+    },
+    {
+      "title": "Estrutura simples de uma negociação eficaz",
+      "body": "Um roteiro prático:\n1) alinhar escopo (o que está sendo negociado)\n2) validar comparabilidade (equalização)\n3) apresentar dados e objetivo\n4) explorar alternativas (troca de valor)\n5) fechar e registrar\n\nRegra:\n- Sem escopo igual, qualquer acordo nasce frágil."
+    },
+    {
+      "title": "Erros comuns (que custam caro)",
+      "body": "Erros:\n- negociar sem concorrência real\n- falar seu limite cedo\n- aceitar promessa sem amarrar condição\n- não registrar acordo\n- ceder sem contrapartida\n\nRegra:\n- Concessão sem troca ensina o fornecedor a pedir mais."
+    },
+    {
+      "title": "Mini prática (45 min) — plano de negociação em 1 página",
+      "body": "Escolha um item recorrente.\nCrie um plano com:\n- objetivo/meta/limite\n- 3 alavancas de valor\n- 3 perguntas que você fará\n- 2 concessões possíveis (com contrapartida)\n\nObjetivo:\n- entrar em negociação com clareza e método."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Negociação é troca de valor com controle de risco\n- Preparação (dados) separa amador de profissional\n- Defina objetivo/meta/limite\n- Use alavancas: volume, previsibilidade, pagamento, logística\n- Concessão só com contrapartida\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 16 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Negociação em compras é principalmente:",
+        "options": [
+          { "key": "A", "text": "Apertar preço a qualquer custo" },
+          { "key": "B", "text": "Troca de valor com controle de prazo, qualidade e risco" },
+          { "key": "C", "text": "Pedir desconto por hábito" },
+          { "key": "D", "text": "Convencer no grito" }
+        ],
+        "answer": "B",
+        "explain": "Preço é parte; risco e desempenho são o resto do impacto."
+      },
+      {
+        "id": 2,
+        "question": "A maior diferença entre amador e profissional está em:",
+        "options": [
+          { "key": "A", "text": "Falar mais" },
+          { "key": "B", "text": "Preparação com dados e objetivos claros" },
+          { "key": "C", "text": "Ser mais simpático" },
+          { "key": "D", "text": "Mandar áudio" }
+        ],
+        "answer": "B",
+        "explain": "Dados e limites evitam decisão por pressão."
+      },
+      {
+        "id": 3,
+        "question": "O trio objetivo/meta/limite serve para:",
+        "options": [
+          { "key": "A", "text": "Travar a negociação" },
+          { "key": "B", "text": "Guiar decisão e evitar aceitar qualquer coisa" },
+          { "key": "C", "text": "Substituir concorrência" },
+          { "key": "D", "text": "Eliminar registro" }
+        ],
+        "answer": "B",
+        "explain": "Sem limite, você perde referência."
+      },
+      {
+        "id": 4,
+        "question": "Uma alavanca de valor real é:",
+        "options": [
+          { "key": "A", "text": "Prometer volume sem histórico" },
+          { "key": "B", "text": "Consolidar volume e dar previsibilidade de compras" },
+          { "key": "C", "text": "Ameaçar sem alternativa" },
+          { "key": "D", "text": "Ignorar logística" }
+        ],
+        "answer": "B",
+        "explain": "Previsibilidade tem valor financeiro para fornecedor."
+      },
+      {
+        "id": 5,
+        "question": "Um erro clássico é:",
+        "options": [
+          { "key": "A", "text": "Registrar acordo" },
+          { "key": "B", "text": "Ceder sem contrapartida" },
+          { "key": "C", "text": "Equalizar propostas" },
+          { "key": "D", "text": "Definir escopo" }
+        ],
+        "answer": "B",
+        "explain": "Você ensina o fornecedor a pedir mais na próxima rodada."
+      },
+      {
+        "id": 6,
+        "question": "Negociar sem concorrência real tende a:",
+        "options": [
+          { "key": "A", "text": "Aumentar seu poder" },
+          { "key": "B", "text": "Reduzir seu poder e aumentar dependência" },
+          { "key": "C", "text": "Eliminar risco" },
+          { "key": "D", "text": "Garantir preço mínimo" }
+        ],
+        "answer": "B",
+        "explain": "Alternativas são a base de poder em compras."
+      },
+      {
+        "id": 7,
+        "question": "Concessão forte é aquela que:",
+        "options": [
+          { "key": "A", "text": "Você dá de graça" },
+          { "key": "B", "text": "Vem acompanhada de troca de valor" },
+          { "key": "C", "text": "Você faz por pressão" },
+          { "key": "D", "text": "Você não registra" }
+        ],
+        "answer": "B",
+        "explain": "Troca é o mecanismo saudável de concessões."
+      },
+      {
+        "id": 8,
+        "question": "O primeiro passo do roteiro prático é:",
+        "options": [
+          { "key": "A", "text": "Fechar preço" },
+          { "key": "B", "text": "Alinhar escopo e comparabilidade" },
+          { "key": "C", "text": "Mostrar seu limite" },
+          { "key": "D", "text": "Ceder rápido" }
+        ],
+        "answer": "B",
+        "explain": "Sem escopo igual, acordo nasce frágil."
+      },
+      {
+        "id": 9,
+        "question": "“Economia falsa” em negociação geralmente acontece quando:",
+        "options": [
+          { "key": "A", "text": "Reduz preço e piora prazo/qualidade" },
+          { "key": "B", "text": "Registra contrato" },
+          { "key": "C", "text": "Equaliza proposta" },
+          { "key": "D", "text": "Monitora desempenho" }
+        ],
+        "answer": "A",
+        "explain": "Depois você paga em retrabalho, urgência e perdas."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Quem não sabe o limite negocia bem" },
+          { "key": "B", "text": "Se você não sabe seu limite, o fornecedor define por você" },
+          { "key": "C", "text": "Dados atrapalham a negociação" },
+          { "key": "D", "text": "Registrar acordo é opcional" }
+        ],
+        "answer": "B",
+        "explain": "Limite é proteção contra pressão."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Plano de negociação\n\n- objetivo/meta/limite\n- alavancas\n- concessões com troca\n",
+    "pilares": "Pilares\n\n- preparo\n- dados\n- troca de valor\n"
+  }
+}

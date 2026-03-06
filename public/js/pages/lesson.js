@@ -74,6 +74,45 @@ function renderCodeBlock(code, lang = "html") {
   `;
 }
 
+function buildQuizInstructions(quiz) {
+  if (!quiz?.questions?.length) return "";
+  return "Marque A ou B.";
+}
+
+function normalizeQuizToAB(quiz) {
+  if (!quiz?.questions?.length) return quiz;
+
+  const questions = quiz.questions.map((q, idx) => {
+    const options = Array.isArray(q.options) ? q.options : [];
+    const correctOriginal =
+      options.find((o) => o.key === q.answer) ||
+      options[0] || { key: "A", text: "Opcao correta" };
+
+    const wrongOriginal =
+      options.find((o) => o.key !== correctOriginal.key) ||
+      options[1] || { key: "B", text: "Opcao alternativa" };
+
+    const correctOnA = idx % 2 === 0;
+    const abOptions = correctOnA
+      ? [
+          { key: "A", text: correctOriginal.text },
+          { key: "B", text: wrongOriginal.text }
+        ]
+      : [
+          { key: "A", text: wrongOriginal.text },
+          { key: "B", text: correctOriginal.text }
+        ];
+
+    return {
+      ...q,
+      options: abOptions,
+      answer: correctOnA ? "A" : "B"
+    };
+  });
+
+  return { ...quiz, questions };
+}
+
 function highlightAllInside(root) {
   if (!window.hljs) return;
 
@@ -240,18 +279,19 @@ export async function LessonPage(app) {
       : "";
 
   const quiz = lesson.quiz;
+  const quizAB = quiz ? normalizeQuizToAB(quiz) : null;
 
-  const quizHTML = quiz
+  const quizHTML = quizAB
     ? `
     <div class="card pad">
       <div class="row row-between">
-        <strong>${esc(quiz.title)}</strong>
-        <span class="badge">${quiz.questions.length} questoes</span>
+        <strong>${esc(quizAB.title)}</strong>
+        <span class="badge">${quizAB.questions.length} questoes</span>
       </div>
-      <div class="mt-10">${renderMD(quiz.instructions)}</div>
+      <div class="mt-10">${renderMD(buildQuizInstructions(quizAB))}</div>
 
       <div class="stack mt-12" id="quiz-questions">
-        ${quiz.questions
+        ${quizAB.questions
           .map(
             (q) => `
           <div class="card soft pad quiz-card">
@@ -262,9 +302,13 @@ export async function LessonPage(app) {
 
             <div class="quiz-question">${renderMD(q.question)}</div>
 
-            <div class="row row-wrap mt-10">
-              <button class="btn" data-q="${q.id}" data-a="A">A) ${esc(q.options[0].text)}</button>
-              <button class="btn" data-q="${q.id}" data-a="B">B) ${esc(q.options[1].text)}</button>
+            <div class="row row-wrap mt-10 quiz-options">
+              ${q.options
+                .map(
+                  (opt) =>
+                    `<button class="btn quiz-option-btn" data-q="${q.id}" data-a="${esc(opt.key)}">${esc(opt.key)}) ${esc(opt.text)}</button>`
+                )
+                .join("")}
             </div>
 
             <div class="muted quiz-feedback" id="qfeedback-${q.id}"></div>
@@ -278,7 +322,7 @@ export async function LessonPage(app) {
 
       <div class="row row-between row-wrap">
         <button class="btn primary" id="btn-finish-quiz">Finalizar quiz</button>
-        <span class="badge" id="quiz-score">0/${quiz.questions.length}</span>
+        <span class="badge" id="quiz-score">0/${quizAB.questions.length}</span>
       </div>
 
       <div class="muted quiz-summary" id="quiz-summary"></div>
@@ -343,7 +387,7 @@ export async function LessonPage(app) {
     LessonPage(app);
   });
 
-  if (quiz) {
+  if (quizAB) {
     const answers = {};
     const buttons = app.querySelectorAll("[data-q][data-a]");
 
@@ -353,7 +397,11 @@ export async function LessonPage(app) {
         const choice = btn.getAttribute("data-a");
         answers[qId] = choice;
 
-        const q = quiz.questions.find((x) => x.id === qId);
+        const sameQuestionButtons = app.querySelectorAll(`[data-q="${qId}"][data-a]`);
+        sameQuestionButtons.forEach((b) => b.classList.remove("is-selected"));
+        btn.classList.add("is-selected");
+
+        const q = quizAB.questions.find((x) => x.id === qId);
         const badge = app.querySelector(`#qbadge-${qId}`);
         const feedback = app.querySelector(`#qfeedback-${qId}`);
 
@@ -371,10 +419,10 @@ export async function LessonPage(app) {
     const finishBtn = app.querySelector("#btn-finish-quiz");
     if (finishBtn) {
       finishBtn.addEventListener("click", () => {
-        const total = quiz.questions.length;
+        const total = quizAB.questions.length;
         let score = 0;
 
-        for (const q of quiz.questions) {
+        for (const q of quizAB.questions) {
           if (answers[q.id] === q.answer) score++;
         }
 

@@ -1,0 +1,168 @@
+{
+  "id": "28-kpis-compras",
+  "title": "Aula 28 — KPIs de compras: savings, prazo, nível de serviço e aderência",
+  "steps": [
+    {
+      "title": "Sem indicador, compras vira percepção",
+      "body": "KPIs mostram se compras está entregando resultado.\nSem eles, decisão vira opinião.\n\nCompras madura mede:\n- eficiência\n- qualidade de entrega\n- impacto financeiro\n- disciplina de processo\n\nRegra:\n- O que não é medido não melhora de forma consistente."
+    },
+    {
+      "title": "KPIs financeiros: savings com critério",
+      "body": "Savings é relevante, mas precisa regra clara:\n- baseline definido\n- período de comparação\n- volume considerado\n- impacto real no resultado\n\nRegra:\n- Savings sem método gera número bonito e decisão ruim."
+    },
+    {
+      "title": "KPIs de prazo e serviço",
+      "body": "Indicadores essenciais:\n- OTD (entrega no prazo)\n- lead time médio por categoria\n- nível de atendimento da requisição\n- tempo de ciclo de compra\n\nRegra:\n- Prazo bom é previsível, não apenas rápido."
+    },
+    {
+      "title": "KPIs de qualidade e conformidade",
+      "body": "Métricas recomendadas:\n- taxa de não conformidade\n- devoluções\n- retrabalho\n- tempo de resolução de pendência\n\nRegra:\n- Qualidade ruim consome savings e destrói produtividade."
+    },
+    {
+      "title": "Aderência ao processo e compliance",
+      "body": "Também medir:\n- percentual de compra fora de contrato\n- compras sem cotação mínima\n- exceções sem aprovação\n- aderência à política\n\nRegra:\n- KPI de governança evita “resultado” construído fora da regra."
+    },
+    {
+      "title": "Painel útil: poucos KPIs, alta ação",
+      "body": "Painel bom é:\n- simples\n- periódico\n- comparável por tendência\n- ligado a plano de ação\n\nRegra:\n- Melhor 8 KPIs usados toda semana do que 40 ignorados."
+    },
+    {
+      "title": "Mini prática (45 min) — desenhar painel de compras",
+      "body": "Monte um painel com:\n- 2 KPIs financeiros\n- 2 de prazo/serviço\n- 2 de qualidade\n- 2 de compliance\n\nDefina para cada KPI:\n- fórmula\n- fonte de dados\n- meta\n- frequência\n\nObjetivo:\n- criar gestão orientada por evidência."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- KPI transforma compras em gestão objetiva\n- Savings precisa metodologia clara\n- Prazo, qualidade e compliance equilibram resultado\n- Painel enxuto aumenta execução\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 28 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Função principal dos KPIs em compras é:",
+        "options": [
+          { "key": "A", "text": "Aumentar burocracia" },
+          { "key": "B", "text": "Medir resultado e orientar ação" },
+          { "key": "C", "text": "Substituir processo" },
+          { "key": "D", "text": "Eliminar análise de risco" }
+        ],
+        "answer": "B",
+        "explain": "KPI conecta desempenho com decisão."
+      },
+      {
+        "id": 2,
+        "question": "Savings confiável exige:",
+        "options": [
+          { "key": "A", "text": "Somente valor final" },
+          { "key": "B", "text": "Baseline e método consistentes" },
+          { "key": "C", "text": "Somente preço unitário" },
+          { "key": "D", "text": "Comparação informal" }
+        ],
+        "answer": "B",
+        "explain": "Sem regra, o número perde credibilidade."
+      },
+      {
+        "id": 3,
+        "question": "OTD é um KPI de:",
+        "options": [
+          { "key": "A", "text": "Compliance" },
+          { "key": "B", "text": "Prazo e nível de serviço" },
+          { "key": "C", "text": "Financeiro puro" },
+          { "key": "D", "text": "Tributação" }
+        ],
+        "answer": "B",
+        "explain": "Mede entrega no prazo acordado."
+      },
+      {
+        "id": 4,
+        "question": "Taxa de não conformidade mede:",
+        "options": [
+          { "key": "A", "text": "Qualidade de entrega" },
+          { "key": "B", "text": "Só preço" },
+          { "key": "C", "text": "Só prazo de pagamento" },
+          { "key": "D", "text": "Só volume comprado" }
+        ],
+        "answer": "A",
+        "explain": "Reflete aderência técnica do fornecimento."
+      },
+      {
+        "id": 5,
+        "question": "KPI de compliance em compras pode ser:",
+        "options": [
+          { "key": "A", "text": "Compra fora de contrato" },
+          { "key": "B", "text": "Cor da planilha" },
+          { "key": "C", "text": "Quantidade de e-mails" },
+          { "key": "D", "text": "Nome do comprador" }
+        ],
+        "answer": "A",
+        "explain": "Mostra aderência às regras definidas."
+      },
+      {
+        "id": 6,
+        "question": "Painel com muitos indicadores sem uso tende a:",
+        "options": [
+          { "key": "A", "text": "Gerar alta execução" },
+          { "key": "B", "text": "Perder foco e ação" },
+          { "key": "C", "text": "Melhorar automaticamente" },
+          { "key": "D", "text": "Eliminar necessidade de reunião" }
+        ],
+        "answer": "B",
+        "explain": "Excesso sem rotina reduz eficácia."
+      },
+      {
+        "id": 7,
+        "question": "KPI útil deve ter:",
+        "options": [
+          { "key": "A", "text": "Fórmula e fonte de dados definidas" },
+          { "key": "B", "text": "Apenas apresentação visual" },
+          { "key": "C", "text": "Só meta qualitativa" },
+          { "key": "D", "text": "Uso eventual" }
+        ],
+        "answer": "A",
+        "explain": "Confiabilidade depende de padrão de medição."
+      },
+      {
+        "id": 8,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Só KPI financeiro importa" },
+          { "key": "B", "text": "Resultado equilibrado mede finanças, prazo, qualidade e compliance" },
+          { "key": "C", "text": "KPI não ajuda decisão" },
+          { "key": "D", "text": "KPI substitui liderança" }
+        ],
+        "answer": "B",
+        "explain": "Compras é sistema, não uma métrica isolada."
+      },
+      {
+        "id": 9,
+        "question": "KPI sem tendência histórica oferece:",
+        "options": [
+          { "key": "A", "text": "Visão pontual limitada" },
+          { "key": "B", "text": "Diagnóstico completo" },
+          { "key": "C", "text": "Risco zero" },
+          { "key": "D", "text": "Ação automática" }
+        ],
+        "answer": "A",
+        "explain": "A evolução no tempo mostra melhoria ou deterioração."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo de um painel de KPIs em compras é:",
+        "options": [
+          { "key": "A", "text": "Controlar o time sem critério" },
+          { "key": "B", "text": "Direcionar prioridades e melhorar desempenho" },
+          { "key": "C", "text": "Substituir estratégia" },
+          { "key": "D", "text": "Aumentar volume de relatórios" }
+        ],
+        "answer": "B",
+        "explain": "KPI é ferramenta de gestão e melhoria contínua."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Estrutura de KPI\n\n- fórmula\n- fonte\n- meta\n- frequência\n",
+    "pilares": "Pilares\n\n- objetividade\n- tendência\n- ação\n"
+  }
+}

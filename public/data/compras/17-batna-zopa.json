@@ -1,0 +1,168 @@
+{
+  "id": "17-batna-zopa",
+  "title": "Aula 17 — BATNA e ZOPA: sua alternativa e a zona de acordo",
+  "steps": [
+    {
+      "title": "Poder de negociação vem de alternativa, não de postura",
+      "body": "Em compras, seu poder aumenta quando você tem alternativa real.\n\nDois conceitos ajudam:\n- BATNA: melhor alternativa se não houver acordo\n- ZOPA: zona onde um acordo é possível\n\nRegra:\n- Quem não tem BATNA negocia aceitando o que aparecer."
+    },
+    {
+      "title": "BATNA (o que você faz se não fechar)",
+      "body": "BATNA pode ser:\n- outro fornecedor pronto\n- estoque suficiente para esperar\n- ajuste de especificação (equivalente)\n- compra menor + complemento depois\n\nBATNA fraca:\n- “se não fechar hoje, eu paro a operação”\n\nRegra:\n- BATNA precisa ser praticável, não imaginária."
+    },
+    {
+      "title": "ZOPA (onde existe acordo possível)",
+      "body": "ZOPA é a sobreposição entre:\n- o máximo que você aceita\n- o mínimo que o fornecedor aceita\n\nVocê não enxerga a ZOPA diretamente.\nVocê estima com:\n- mercado\n- histórico\n- custo do fornecedor (pistas)\n- concorrência\n\nRegra:\n- Boa negociação busca descobrir a ZOPA sem revelar seu limite."
+    },
+    {
+      "title": "Como fortalecer BATNA sem drama",
+      "body": "Ações práticas:\n- manter fornecedor alternativo homologado\n- contratar com 2 fontes em itens críticos\n- padronizar especificações para permitir equivalentes\n- construir lead time e estoque de segurança quando necessário\n\nRegra:\n- BATNA se constrói antes, não na reunião."
+    },
+    {
+      "title": "Como usar BATNA e ZOPA na conversa (sem ameaçar)",
+      "body": "Você não precisa ameaçar.\nVocê conduz com:\n- dados\n- opções\n- perguntas\n\nExemplo de frase madura:\n- “Com esse nível de custo total eu não consigo aprovar. O que dá para ajustar: volume, pagamento ou logística?”\n\nRegra:\n- Opções abrem espaço; ameaça fecha."
+    },
+    {
+      "title": "Erros típicos",
+      "body": "Erros:\n- blefar BATNA (fornecedor percebe)\n- revelar seu limite cedo\n- depender de um único fornecedor\n\nRegra:\n- Blefe destrói confiança e enfraquece você."
+    },
+    {
+      "title": "Mini prática (45 min) — definir BATNA e limites",
+      "body": "Escolha um item.\nDefina:\n- BATNA real (o que você faz)\n- limite máximo (custo total)\n- 2 variáveis para mexer (pagamento, volume, frete)\n\nObjetivo:\n- entrar na negociação com proteção real."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- BATNA = alternativa real\n- ZOPA = zona onde acordo é possível\n- Poder vem de opções e preparo\n- Evite blefe; fortaleça BATNA antes\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 17 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "BATNA é:",
+        "options": [
+          { "key": "A", "text": "O desconto máximo do fornecedor" },
+          { "key": "B", "text": "Sua melhor alternativa se não houver acordo" },
+          { "key": "C", "text": "Um tipo de contrato" },
+          { "key": "D", "text": "Um imposto" }
+        ],
+        "answer": "B",
+        "explain": "BATNA define seu plano real se a negociação falhar."
+      },
+      {
+        "id": 2,
+        "question": "ZOPA é:",
+        "options": [
+          { "key": "A", "text": "Um argumento emocional" },
+          { "key": "B", "text": "A zona onde acordo é possível entre limites das partes" },
+          { "key": "C", "text": "Um tipo de frete" },
+          { "key": "D", "text": "Uma cláusula fiscal" }
+        ],
+        "answer": "B",
+        "explain": "ZOPA é a sobreposição entre máximo aceitável e mínimo aceitável."
+      },
+      {
+        "id": 3,
+        "question": "Uma BATNA fraca é:",
+        "options": [
+          { "key": "A", "text": "Ter fornecedor alternativo homologado" },
+          { "key": "B", "text": "Depender do acordo porque sem ele a operação para" },
+          { "key": "C", "text": "Ter estoque para esperar" },
+          { "key": "D", "text": "Ter equivalente aprovado" }
+        ],
+        "answer": "B",
+        "explain": "Sem alternativa real, você negocia sob pressão."
+      },
+      {
+        "id": 4,
+        "question": "Fortalecer BATNA é feito principalmente:",
+        "options": [
+          { "key": "A", "text": "Durante a ligação, improvisando" },
+          { "key": "B", "text": "Antes, com alternativas e planejamento" },
+          { "key": "C", "text": "Com blefe" },
+          { "key": "D", "text": "Com insistência" }
+        ],
+        "answer": "B",
+        "explain": "Alternativa se constrói no processo, não no improviso."
+      },
+      {
+        "id": 5,
+        "question": "Uma forma madura de usar BATNA na conversa é:",
+        "options": [
+          { "key": "A", "text": "Ameaçar romper sempre" },
+          { "key": "B", "text": "Apresentar limites e abrir opções (volume/pagamento/logística)" },
+          { "key": "C", "text": "Revelar o limite logo" },
+          { "key": "D", "text": "Ignorar dados" }
+        ],
+        "answer": "B",
+        "explain": "Você abre espaço sem criar conflito."
+      },
+      {
+        "id": 6,
+        "question": "Blefar BATNA é ruim porque:",
+        "options": [
+          { "key": "A", "text": "Fortalece confiança" },
+          { "key": "B", "text": "Quando descoberto, destrói credibilidade" },
+          { "key": "C", "text": "Reduz risco" },
+          { "key": "D", "text": "Acelera aprovação" }
+        ],
+        "answer": "B",
+        "explain": "Sem credibilidade, você perde poder."
+      },
+      {
+        "id": 7,
+        "question": "Quem tem alternativa real geralmente:",
+        "options": [
+          { "key": "A", "text": "Negocia com mais calma e consistência" },
+          { "key": "B", "text": "Aceita qualquer condição" },
+          { "key": "C", "text": "Não precisa preparar" },
+          { "key": "D", "text": "Não mede custo total" }
+        ],
+        "answer": "A",
+        "explain": "BATNA dá proteção contra pressão."
+      },
+      {
+        "id": 8,
+        "question": "ZOPA é descoberta por meio de:",
+        "options": [
+          { "key": "A", "text": "Mercado, histórico, concorrência e perguntas" },
+          { "key": "B", "text": "Chute" },
+          { "key": "C", "text": "Ameaças" },
+          { "key": "D", "text": "Emoji" }
+        ],
+        "answer": "A",
+        "explain": "Você estima a zona com evidências."
+      },
+      {
+        "id": 9,
+        "question": "Depender de um fornecedor único afeta BATNA porque:",
+        "options": [
+          { "key": "A", "text": "Fortalece BATNA" },
+          { "key": "B", "text": "Enfraquece BATNA (sem alternativa)" },
+          { "key": "C", "text": "Não muda nada" },
+          { "key": "D", "text": "Elimina ZOPA" }
+        ],
+        "answer": "B",
+        "explain": "Sem alternativa, você perde poder de negociação."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "BATNA é opcional" },
+          { "key": "B", "text": "BATNA é a base do poder de negociação" },
+          { "key": "C", "text": "ZOPA é irrelevante" },
+          { "key": "D", "text": "Blefe sempre funciona" }
+        ],
+        "answer": "B",
+        "explain": "Alternativa real permite negociar sem desespero."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Conceitos\n\n- BATNA (alternativa)\n- ZOPA (zona de acordo)\n",
+    "pilares": "Pilares\n\n- alternativas reais\n- limites\n- negociação sem pressão\n"
+  }
+}

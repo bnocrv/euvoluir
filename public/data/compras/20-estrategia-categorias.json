@@ -1,0 +1,168 @@
+{
+    "id": "20-estrategia-categorias",
+    "title": "Aula 20 — Estratégia por categoria: itens críticos, alavancáveis e rotineiros",
+    "steps": [
+        {
+            "title": "Por que estratégia por categoria é o divisor de águas",
+            "body": "Quando compras trata tudo igual, ela:\n- perde tempo com item pequeno\n- falha em item crítico\n- negocia mal porque não prioriza\n\nEstratégia por categoria é escolher:\n- onde colocar energia\n- qual método usar\n- qual risco aceitar\n\nRegra:\n- Maturidade em compras é priorização com método."
+        },
+        {
+            "title": "A lógica básica (tipo Kraljic sem teorizar demais)",
+            "body": "Você classifica itens por:\n- impacto no negócio (custo/criticidade)\n- risco de fornecimento (mercado, alternativas)\n\nDaí surgem grupos úteis:\n- críticos (alto risco, alto impacto)\n- alavancáveis (baixo risco, alto impacto)\n- rotineiros (baixo risco, baixo impacto)\n- gargalo (alto risco, baixo impacto)\n\nRegra:\n- O tipo do item define a estratégia."
+        },
+        {
+            "title": "Itens críticos (alto risco e alto impacto)",
+            "body": "Estratégia típica:\n- contrato/SLA\n- dual sourcing (2 fontes)\n- plano de contingência\n- estoque de segurança quando necessário\n- relacionamento e gestão ativa\n\nRegra:\n- Para crítico, o objetivo é continuidade e previsibilidade."
+        },
+        {
+            "title": "Itens alavancáveis (alto impacto, baixo risco)",
+            "body": "Aqui você negocia forte porque há mercado.\n\nEstratégias:\n- concorrência estruturada (RFQ)\n- consolidação de volume\n- leilão reverso (quando fizer sentido)\n- contratos por volume\n\nRegra:\n- Para alavancável, o objetivo é reduzir custo total com concorrência."
+        },
+        {
+            "title": "Itens rotineiros (baixo impacto, baixo risco)",
+            "body": "Aqui o foco é eficiência e menos esforço.\n\nEstratégias:\n- catálogo\n- padronização e redução de variedade\n- fornecedor único com controle básico\n- automação (e-procurement)\n\nRegra:\n- Rotineiro não pode consumir tempo de comprador sênior."
+        },
+        {
+            "title": "Itens gargalo (alto risco, baixo impacto)",
+            "body": "São pequenos, mas podem parar a operação.\n\nEstratégias:\n- estoque mínimo\n- alternativos equivalentes\n- simplificação de especificação\n\nRegra:\n- Gargalo é pequeno no gasto, grande no risco."
+        },
+        {
+            "title": "Mini prática (45 min) — classificar 12 itens da sua realidade",
+            "body": "Liste 12 itens/serviços.\nPara cada um, marque:\n- impacto (alto/baixo)\n- risco (alto/baixo)\n\nClassifique em:\n- crítico / alavancável / rotineiro / gargalo\n\nObjetivo:\n- começar a priorizar compras com método."
+        },
+        {
+            "title": "Resumo da aula",
+            "body": "- Estratégia por categoria evita tratar tudo igual\n- Classifique por impacto e risco\n- Crítico: continuidade\n- Alavancável: concorrência e custo total\n- Rotineiro: eficiência\n- Gargalo: evitar parada\n\nAgora fixe com o quiz."
+        }
+    ],
+    "quiz": {
+        "title": "Quiz (10 perguntas) — Aula 20 (Compras)",
+        "instructions": "Marque A, B, C ou D.",
+        "questions": [
+            {
+                "id": 1,
+                "question": "Estratégia por categoria serve para:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Tratar tudo igual"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Priorizar e aplicar método proporcional a risco/impacto"
+                    },
+                    {
+                        "key": "C",
+                        "text": "Eliminar controle"
+                    },
+                    {
+                        "key": "D",
+                        "text": "Eliminar concorrência"
+                    }
+                ],
+                "answer": "B",
+                "explain": "Ela define onde colocar energia e qual abordagem usar."
+            },
+            {
+                "id": 2,
+                "question": "Classificação básica considera:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Cor do produto e marca"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Impacto no negócio e risco de fornecimento"
+                    },
+                    {
+                        "key": "C",
+                        "text": "Número de e-mails"
+                    },
+                    {
+                        "key": "D",
+                        "text": "Humor do solicitante"
+                    }
+                ],
+                "answer": "B",
+                "explain": "Impacto e risco definem estratégia."
+            },
+            {
+                "id": 3,
+                "question": "Itens críticos exigem foco em:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Somente menor preço"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Continuidade, SLA e contingência"
+                    },
+                    {
+                        "key": "C",
+                        "text": "Catálogo"
+                    },
+                    {
+                        "key": "D",
+                        "text": "Automação apenas"
+                    }
+                ],
+                "answer": "B",
+                "explain": "Crítico é risco alto: precisa de controle e plano B."
+            },
+            {
+                "id": 4,
+                "question": "Itens alavancáveis são bons para:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Concorrência e negociação forte com base em mercado"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Ignorar comparação"
+                    },
+                    {
+                        "key": "C",
+                        "text": "Comprar sem RFQ"
+                    },
+                    {
+                        "key": "D",
+                        "text": "Evitar consolidação"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Baixo risco + alto impacto = ótima chance de savings."
+            },
+            {
+                "id": 5,
+                "question": "Itens rotineiros devem focar em:",
+                "options": [
+                    {
+                        "key": "A",
+                        "text": "Eficiência, padronização e automação"
+                    },
+                    {
+                        "key": "B",
+                        "text": "Contratos complexos"
+                    },
+                    {
+                        "key": "C",
+                        "text": "Negociação longa sempre"
+                    },
+                    {
+                        "key": "D",
+                        "text": "Troca de fornecedor toda semana"
+                    }
+                ],
+                "answer": "A",
+                "explain": "Baixo impacto não pode consumir energia excessiva."
+            }
+        ]
+    },
+    "extra": {
+        "eventosMinimos": "Categorias\n\n- crítico\n- alavancável\n- rotineiro\n- gargalo\n",
+        "pilares": "Pilares\n\n- priorização\n- método\n- energia proporcional\n"
+    }
+}

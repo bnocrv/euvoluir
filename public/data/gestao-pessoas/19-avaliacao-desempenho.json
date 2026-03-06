@@ -1,0 +1,58 @@
+{
+  "id": "19-avaliacao-desempenho",
+  "title": "Aula 19 — Avaliação de desempenho: critérios, ciclos e justiça",
+  "steps": [
+    {
+      "title": "Avaliação de desempenho orienta evolução",
+      "body": "Avaliar desempenho não é só medir passado.\nÉ direcionar melhoria futura.\n\nRegra:\n- Sem critério claro, avaliação perde credibilidade."
+    },
+    {
+      "title": "Critérios objetivos e alinhados ao cargo",
+      "body": "Critérios devem refletir:\n- entregas esperadas\n- qualidade da execução\n- comportamento profissional\n\nRegra:\n- Critério genérico gera comparação injusta."
+    },
+    {
+      "title": "Ciclo de avaliação bem definido",
+      "body": "Ciclo recomendado:\n- metas no início\n- acompanhamento periódico\n- fechamento com evidências\n\nRegra:\n- Avaliação anual sem acompanhamento vira fotografia atrasada."
+    },
+    {
+      "title": "Calibração entre líderes",
+      "body": "Calibração reduz distorção entre áreas e gestores.\n\nRegra:\n- Sem calibração, equipes similares podem receber julgamentos diferentes."
+    },
+    {
+      "title": "Feedback de avaliação e próximo passo",
+      "body": "Devolutiva deve incluir:\n- pontos fortes\n- pontos de melhoria\n- plano de desenvolvimento\n\nRegra:\n- Avaliação sem plano de ação não gera evolução."
+    },
+    {
+      "title": "Riscos comuns no processo",
+      "body": "Riscos frequentes:\n- viés de recência\n- viés de afinidade\n- foco em opinião sem evidência\n\nRegra:\n- Estrutura e dados reduzem viés."
+    },
+    {
+      "title": "Mini prática (45 min) — ficha de avaliação",
+      "body": "Monte uma ficha com:\n- critérios objetivos\n- escala de avaliação\n- evidências obrigatórias\n- plano de ação associado\n\nObjetivo:\n- tornar o processo justo e aplicável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Avaliação precisa critério e evidência\n- Ciclo contínuo supera avaliação pontual\n- Calibração melhora justiça\n- Resultado da avaliação deve virar plano\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 19 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Avaliação de desempenho eficaz deve:", "options": [ { "key": "A", "text": "Focar só no passado" }, { "key": "B", "text": "Medir e orientar desenvolvimento" }, { "key": "C", "text": "Ser apenas formalidade" }, { "key": "D", "text": "Ser feita sem critérios" } ], "answer": "B", "explain": "A avaliação deve gerar melhoria contínua." },
+      { "id": 2, "question": "Critérios de avaliação precisam ser:", "options": [ { "key": "A", "text": "Genéricos e subjetivos" }, { "key": "B", "text": "Alinhados às entregas do cargo" }, { "key": "C", "text": "Iguais para qualquer função" }, { "key": "D", "text": "Sem indicadores" } ], "answer": "B", "explain": "Aderência ao cargo aumenta justiça." },
+      { "id": 3, "question": "Ciclo de avaliação sem acompanhamento frequente:", "options": [ { "key": "A", "text": "Aumenta precisão" }, { "key": "B", "text": "Reduz utilidade da devolutiva" }, { "key": "C", "text": "Evita viés" }, { "key": "D", "text": "Melhora engajamento" } ], "answer": "B", "explain": "Sem acompanhamento, feedback chega tarde." },
+      { "id": 4, "question": "Calibração entre líderes serve para:", "options": [ { "key": "A", "text": "Aumentar desigualdade" }, { "key": "B", "text": "Padronizar critérios e reduzir distorções" }, { "key": "C", "text": "Eliminar feedback" }, { "key": "D", "text": "Substituir metas" } ], "answer": "B", "explain": "Comparabilidade melhora justiça no processo." },
+      { "id": 5, "question": "Viés de recência ocorre quando:", "options": [ { "key": "A", "text": "Só eventos recentes pesam na avaliação" }, { "key": "B", "text": "Todo período é considerado com evidência" }, { "key": "C", "text": "Há calibração entre líderes" }, { "key": "D", "text": "Metas são claras" } ], "answer": "A", "explain": "Eventos antigos relevantes podem ser ignorados." },
+      { "id": 6, "question": "Devolutiva de avaliação deve incluir:", "options": [ { "key": "A", "text": "Somente nota final" }, { "key": "B", "text": "Pontos fortes, melhorias e plano de ação" }, { "key": "C", "text": "Somente crítica" }, { "key": "D", "text": "Somente elogio" } ], "answer": "B", "explain": "Sem plano, a avaliação perde efeito prático." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Avaliação justa dispensa evidência" }, { "key": "B", "text": "Evidência reduz subjetividade da avaliação" }, { "key": "C", "text": "Escala de avaliação é irrelevante" }, { "key": "D", "text": "Metas não precisam estar claras" } ], "answer": "B", "explain": "Dados e exemplos aumentam qualidade da decisão." },
+      { "id": 8, "question": "A principal finalidade da avaliação é:", "options": [ { "key": "A", "text": "Punir erros passados" }, { "key": "B", "text": "Aprimorar desempenho futuro" }, { "key": "C", "text": "Reduzir conversas com time" }, { "key": "D", "text": "Substituir 1:1" } ], "answer": "B", "explain": "A avaliação deve orientar evolução." },
+      { "id": 9, "question": "Ficha de avaliação sem critérios objetivos tende a:", "options": [ { "key": "A", "text": "Melhorar justiça" }, { "key": "B", "text": "Aumentar percepção de arbitrariedade" }, { "key": "C", "text": "Reduzir viés automaticamente" }, { "key": "D", "text": "Fortalecer confiança" } ], "answer": "B", "explain": "Subjetividade sem padrão gera questionamento." },
+      { "id": 10, "question": "Objetivo da aula 19:", "options": [ { "key": "A", "text": "Tratar jornada e ponto" }, { "key": "B", "text": "Estruturar avaliação de desempenho com justiça" }, { "key": "C", "text": "Definir plano de benefícios" }, { "key": "D", "text": "Criar trilha de onboarding" } ], "answer": "B", "explain": "A aula foca método de avaliação e desenvolvimento." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ciclo de avaliação\n\n- metas\n- acompanhamento\n- calibração\n- devolutiva\n",
+    "pilares": "Pilares\n\n- critério\n- evidência\n- justiça\n"
+  }
+}

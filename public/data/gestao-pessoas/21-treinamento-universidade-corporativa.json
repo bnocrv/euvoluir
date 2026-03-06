@@ -1,0 +1,58 @@
+{
+  "id": "21-treinamento-universidade-corporativa",
+  "title": "Aula 21 — Treinamento e educação corporativa com foco em resultado",
+  "steps": [
+    {
+      "title": "Treinar é fechar lacuna de competência",
+      "body": "Treinamento eficaz responde a uma necessidade real do negócio.\n\nRegra:\n- Treinamento sem diagnóstico vira custo, não desenvolvimento."
+    },
+    {
+      "title": "Diagnóstico de necessidade de treinamento",
+      "body": "Fontes úteis:\n- avaliação de desempenho\n- indicadores operacionais\n- mudanças de processo\n- feedback de liderança\n\nRegra:\n- Necessidade deve ser priorizada por impacto."
+    },
+    {
+      "title": "Formatos de aprendizagem",
+      "body": "Combine formatos:\n- treinamento formal\n- mentoria\n- prática supervisionada\n- trilhas digitais\n\nRegra:\n- Um formato único raramente atende todos os perfis."
+    },
+    {
+      "title": "Universidade corporativa como sistema",
+      "body": "A educação corporativa organiza:\n- conteúdos por trilha\n- critérios de evolução\n- evidências de conclusão\n\nRegra:\n- Trilhas estruturadas aumentam consistência de desenvolvimento."
+    },
+    {
+      "title": "Aplicação no trabalho",
+      "body": "Aprendizagem só gera valor quando aplicada na rotina.\n\nRegra:\n- Sem prática pós-treinamento, retenção de conhecimento cai rápido."
+    },
+    {
+      "title": "Métricas de efetividade",
+      "body": "Acompanhe:\n- conclusão da trilha\n- evolução de desempenho\n- redução de erro operacional\n- percepção de utilidade\n\nRegra:\n- Medir só presença não mede impacto."
+    },
+    {
+      "title": "Mini prática (45 min) — plano de treinamento",
+      "body": "Escolha uma competência crítica e defina:\n- objetivo\n- público\n- formato\n- indicador de resultado\n\nObjetivo:\n- transformar treinamento em entrega de negócio."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Treinamento precisa diagnóstico e foco\n- Universidade corporativa organiza escala\n- Aplicação prática determina resultado\n- Indicadores mostram efetividade real\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 21 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Treinamento eficaz começa por:", "options": [ { "key": "A", "text": "Agenda disponível" }, { "key": "B", "text": "Diagnóstico de necessidade" }, { "key": "C", "text": "Escolha de plataforma" }, { "key": "D", "text": "Quantidade de vagas" } ], "answer": "B", "explain": "Diagnóstico garante foco no problema certo." },
+      { "id": 2, "question": "Treinamento sem necessidade clara tende a:", "options": [ { "key": "A", "text": "Gerar alto impacto sempre" }, { "key": "B", "text": "Virar custo com pouco resultado" }, { "key": "C", "text": "Aumentar performance imediata" }, { "key": "D", "text": "Reduzir turnover automaticamente" } ], "answer": "B", "explain": "Sem objetivo concreto, o retorno é baixo." },
+      { "id": 3, "question": "Universidade corporativa ajuda a:", "options": [ { "key": "A", "text": "Desorganizar conteúdos" }, { "key": "B", "text": "Estruturar trilhas e evolução" }, { "key": "C", "text": "Eliminar necessidade de liderança" }, { "key": "D", "text": "Substituir avaliação de desempenho" } ], "answer": "B", "explain": "Organização aumenta escala e consistência." },
+      { "id": 4, "question": "Aprendizagem com maior retenção ocorre quando:", "options": [ { "key": "A", "text": "Fica só na teoria" }, { "key": "B", "text": "É aplicada no trabalho" }, { "key": "C", "text": "Acontece uma vez por ano" }, { "key": "D", "text": "Não tem acompanhamento" } ], "answer": "B", "explain": "Aplicação prática consolida competência." },
+      { "id": 5, "question": "Métrica fraca de treinamento é:", "options": [ { "key": "A", "text": "Evolução de desempenho" }, { "key": "B", "text": "Apenas presença" }, { "key": "C", "text": "Redução de erro" }, { "key": "D", "text": "Percepção de utilidade" } ], "answer": "B", "explain": "Presença não garante aprendizado efetivo." },
+      { "id": 6, "question": "Formato de aprendizagem ideal:", "options": [ { "key": "A", "text": "Sempre o mesmo para todos" }, { "key": "B", "text": "Combinação conforme objetivo e perfil" }, { "key": "C", "text": "Apenas vídeo gravado" }, { "key": "D", "text": "Apenas treinamento presencial" } ], "answer": "B", "explain": "Diversidade de formato aumenta aderência." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Treinamento não influencia resultado" }, { "key": "B", "text": "Treinamento deve estar ligado ao negócio" }, { "key": "C", "text": "Treinamento dispensa avaliação" }, { "key": "D", "text": "Treinamento substitui liderança" } ], "answer": "B", "explain": "O objetivo final é impacto na performance." },
+      { "id": 8, "question": "Priorizar necessidade de treinamento por impacto significa:", "options": [ { "key": "A", "text": "Treinar primeiro o tema mais urgente para operação" }, { "key": "B", "text": "Escolher tema mais fácil" }, { "key": "C", "text": "Treinar por ordem alfabética" }, { "key": "D", "text": "Treinar sem critério" } ], "answer": "A", "explain": "Prioridade deve seguir impacto no resultado." },
+      { "id": 9, "question": "Papel do líder após treinamento:", "options": [ { "key": "A", "text": "Encerrar o tema" }, { "key": "B", "text": "Acompanhar aplicação prática" }, { "key": "C", "text": "Ignorar evolução" }, { "key": "D", "text": "Trocar o processo de avaliação" } ], "answer": "B", "explain": "Liderança sustenta transferência para o trabalho." },
+      { "id": 10, "question": "Objetivo da aula 21:", "options": [ { "key": "A", "text": "Definir ponto eletrônico" }, { "key": "B", "text": "Estruturar treinamento com foco em resultado" }, { "key": "C", "text": "Criar política salarial" }, { "key": "D", "text": "Tratar desligamento" } ], "answer": "B", "explain": "A aula organiza educação corporativa orientada a impacto." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Ciclo de treinamento\n\n- diagnóstico\n- trilha\n- aplicação\n- medição\n",
+    "pilares": "Pilares\n\n- foco no negócio\n- prática\n- efetividade\n"
+  }
+}

@@ -1,0 +1,59 @@
+﻿{
+  "id": "13-legislacao-trabalhista-basica",
+  "title": "Aula 13 — Legislação trabalhista no básico: o que a gestão de pessoas precisa dominar",
+  "steps": [
+    {
+      "title": "Legislação no básico evita erros caros",
+      "body": "Conhecimento básico da legislação protege decisões de rotina.\n\nRegra:\n- Ignorar regra trabalhista transforma operação em risco recorrente."
+    },
+    {
+      "title": "Temas essenciais para o dia a dia",
+      "body": "Base mínima:\n- jornada e descanso\n- férias\n- admissões e desligamentos\n- remuneração e adicionais\n\nRegra:\n- Dominar o básico evita passivo previsível."
+    },
+    {
+      "title": "Conformidade documental",
+      "body": "Documentação correta sustenta segurança jurídica.\n\nRegra:\n- Processo sem evidência é difícil de defender em auditoria ou disputa."
+    },
+    {
+      "title": "Interpretação com apoio técnico",
+      "body": "Casos sensíveis exigem alinhamento com jurídico/consultoria.\n\nRegra:\n- Quando há dúvida relevante, validar antes de executar."
+    },
+    {
+      "title": "Riscos comuns de não conformidade",
+      "body": "Riscos recorrentes:\n- jornada sem controle adequado\n- pagamento inconsistente\n- documentação incompleta\n\nRegra:\n- Pequeno desvio repetido vira problema grande."
+    },
+    {
+      "title": "Papel da liderança na conformidade",
+      "body": "Líder precisa cumprir e reforçar regras de jornada, conduta e registro.\n\nRegra:\n- Conformidade é responsabilidade compartilhada."
+    },
+    {
+      "title": "Mini prática (45 min) — checklist legal básico",
+      "body": "Monte checklist com itens críticos de rotina e valide situação atual da equipe.\n\nObjetivo:\n- identificar lacunas de conformidade antes de virar risco."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Base legal reduz risco trabalhista\n- Documentação correta é parte da proteção\n- Dúvida relevante deve ser validada\n- Conformidade é rotina, não evento\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 13 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Domínio básico da legislação trabalhista serve para:", "options": [ { "key": "A", "text": "Aumentar burocracia sem retorno" }, { "key": "B", "text": "Reduzir risco e melhorar decisão de rotina" }, { "key": "C", "text": "Substituir liderança" }, { "key": "D", "text": "Dispensar políticas internas" } ], "answer": "B", "explain": "Base legal previne erro recorrente." },
+      { "id": 2, "question": "Tema essencial no básico legal:", "options": [ { "key": "A", "text": "Jornada e descanso" }, { "key": "B", "text": "Layout do holerite" }, { "key": "C", "text": "Formato de apresentação" }, { "key": "D", "text": "Campanha de endomarketing" } ], "answer": "A", "explain": "É um dos pilares de conformidade trabalhista." },
+      { "id": 3, "question": "Documentação correta é importante porque:", "options": [ { "key": "A", "text": "Só para arquivo" }, { "key": "B", "text": "Sustenta segurança jurídica e rastreabilidade" }, { "key": "C", "text": "É opcional" }, { "key": "D", "text": "Substitui processo" } ], "answer": "B", "explain": "Evidência documental protege a operação." },
+      { "id": 4, "question": "Em caso de dúvida relevante de interpretação:", "options": [ { "key": "A", "text": "Executar e ajustar depois" }, { "key": "B", "text": "Validar com suporte técnico/jurídico" }, { "key": "C", "text": "Ignorar por urgência" }, { "key": "D", "text": "Decidir por hábito" } ], "answer": "B", "explain": "Prevenção reduz custo de correção futura." },
+      { "id": 5, "question": "Risco de jornada sem controle:", "options": [ { "key": "A", "text": "Melhora previsibilidade" }, { "key": "B", "text": "Aumenta passivo trabalhista" }, { "key": "C", "text": "Reduz conflito automaticamente" }, { "key": "D", "text": "Não gera impacto" } ], "answer": "B", "explain": "Controle inadequado é fonte comum de risco." },
+      { "id": 6, "question": "Frase correta:", "options": [ { "key": "A", "text": "Conformidade é tarefa só da área de pessoas" }, { "key": "B", "text": "Conformidade depende de rotina e liderança" }, { "key": "C", "text": "Conformidade só importa em auditoria" }, { "key": "D", "text": "Conformidade não afeta custo" } ], "answer": "B", "explain": "Liderança também responde por execução correta." },
+      { "id": 7, "question": "Desvio pequeno, quando recorrente:", "options": [ { "key": "A", "text": "Perde relevância" }, { "key": "B", "text": "Pode virar risco significativo" }, { "key": "C", "text": "Gera ganho operacional" }, { "key": "D", "text": "Elimina passivo" } ], "answer": "B", "explain": "Repetição aumenta impacto e exposição." },
+      { "id": 8, "question": "Checklist legal básico ajuda a:", "options": [ { "key": "A", "text": "Ignorar exceções" }, { "key": "B", "text": "Antecipar lacunas de conformidade" }, { "key": "C", "text": "Eliminar políticas" }, { "key": "D", "text": "Substituir auditoria" } ], "answer": "B", "explain": "Identifica risco antes de virar problema." },
+      { "id": 9, "question": "Conformidade trabalhista no dia a dia:", "options": [ { "key": "A", "text": "É eventual" }, { "key": "B", "text": "É contínua e operacional" }, { "key": "C", "text": "É só jurídica" }, { "key": "D", "text": "É opcional" } ], "answer": "B", "explain": "Processo correto deve ser permanente." },
+      { "id": 10, "question": "Objetivo da aula 13:", "options": [ { "key": "A", "text": "Definir política de seleção" }, { "key": "B", "text": "Consolidar fundamentos legais para gestão segura" }, { "key": "C", "text": "Tratar onboarding" }, { "key": "D", "text": "Criar plano de carreira" } ], "answer": "B", "explain": "A aula fortalece base de conformidade." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Base legal\n\n- jornada\n- remuneração\n- documentação\n- desligamento\n",
+    "pilares": "Pilares\n\n- prevenção\n- evidência\n- disciplina\n"
+  }
+}
+
