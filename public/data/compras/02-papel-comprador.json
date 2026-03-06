@@ -1,168 +1,168 @@
 {
   "id": "02-papel-comprador",
-  "title": "Aula 02 — Papel do comprador: rotina, responsabilidades e impacto na empresa",
+  "title": "Aula 02 — Papel do comprador: rotina, responsabilidades e interface com áreas",
   "steps": [
     {
-      "title": "O comprador como ponto de decisão",
-      "body": "O comprador está no centro da decisão entre demanda interna e oferta do mercado.\n\nEle precisa equilibrar:\n- custo\n- prazo\n- qualidade\n- risco do fornecedor\n\nRegra:\n- Comprar não é apenas adquirir produtos, é tomar decisões de risco e custo."
+      "title": "O comprador é um 'gestor de consequência'",
+      "body": "Na prática, o comprador não compra “coisas”. Ele compra:\n- previsibilidade (prazo)\n- conformidade (qualidade)\n- condição (caixa)\n- risco controlado (fornecedor)\n\nRegra:\n- O comprador responde pelo que acontece depois do pedido."
     },
     {
-      "title": "Responsabilidades principais",
-      "body": "Entre as principais responsabilidades de compras estão:\n- buscar fornecedores\n- negociar preços e condições\n- garantir prazos de entrega\n- avaliar desempenho de fornecedores\n\nRegra:\n- O comprador gerencia relações comerciais, não apenas pedidos."
+      "title": "Rotina real: o que consome tempo",
+      "body": "O dia a dia de compras tem 3 blocos:\n1) demanda interna (requisições, urgências)\n2) mercado (cotações, follow-up, negociação)\n3) controle (cadastro, pedidos, prazos, histórico)\n\nRegra:\n- Quem só faz o bloco 1 vive apagando incêndio."
     },
     {
-      "title": "Rotina típica do setor de compras",
-      "body": "No dia a dia o comprador costuma lidar com:\n- requisições internas\n- análise de mercado\n- negociação\n- emissão de pedidos\n- acompanhamento de entrega\n\nRegra:\n- A maior parte do trabalho envolve coordenação e comunicação."
+      "title": "Responsabilidades que definem maturidade",
+      "body": "Responsabilidades-chave:\n- validar especificação (comprar certo)\n- garantir competição justa (cotar bem)\n- negociar condições (preço, prazo, entrega)\n- acompanhar fornecedor (não deixar virar surpresa)\n- documentar decisão (compliance e aprendizado)\n\nRegra:\n- Comprador bom reduz surpresa."
     },
     {
-      "title": "Interface com outras áreas",
-      "body": "Compras interage constantemente com:\n- produção (necessidade de materiais)\n- logística (prazos e entrega)\n- financeiro (pagamentos)\n- qualidade (conformidade)\n\nRegra:\n- Compras funciona como elo entre áreas internas e fornecedores."
+      "title": "Interfaces: como compras se conecta com a empresa",
+      "body": "Compras trabalha com:\n- solicitante (o que precisa e por quê)\n- financeiro (orçamento, prazo de pagamento)\n- logística/recebimento (prazo real, divergências)\n- qualidade (conformidade)\n\nRegra:\n- Compras sozinho é frágil; compras integrado é forte."
     },
     {
-      "title": "Perfil profissional do comprador",
-      "body": "Habilidades importantes:\n- análise de custos\n- negociação\n- organização\n- visão sistêmica\n\nRegra:\n- O melhor comprador combina análise técnica e habilidade de relacionamento."
+      "title": "Habilidades práticas do comprador (sem teoria vazia)",
+      "body": "Habilidades que aparecem na operação:\n- comunicação objetiva (reduz ruído)\n- negociação com troca de valor (não só desconto)\n- leitura de risco (dependência, histórico)\n- organização e rastreabilidade (registro)\n\nRegra:\n- O diferencial é consistência, não genialidade."
     },
     {
-      "title": "Erro comum na função",
-      "body": "Um erro comum é focar apenas em preço.\n\nIsso ignora fatores como:\n- confiabilidade\n- prazo\n- suporte do fornecedor\n\nRegra:\n- Decisão baseada apenas em preço pode aumentar o custo total."
+      "title": "O que o comprador NÃO deve fazer",
+      "body": "Evitar:\n- assumir urgência como normal\n- negociar sem critério (ceder sem troca)\n- escolher fornecedor sem evidência\n- aceitar pedido sem especificação\n\nRegra:\n- Se compras aceita bagunça, a bagunça vira padrão."
     },
     {
-      "title": "Mini prática (45 min)",
-      "body": "Escolha um processo de compra real.\n\nPergunte:\n- quem solicita?\n- quem aprova?\n- quem negocia?\n- quem acompanha entrega?\n\nObjetivo:\n- entender como o papel do comprador conecta todo o fluxo."
+      "title": "Mini prática (45 min) — mapa de interfaces",
+      "body": "Escolha uma compra recorrente.\nListe:\n- quem pede\n- quem aprova\n- quem recebe\n- quem reclama quando dá errado\n\nObjetivo:\n- enxergar que compras é centro de comunicação e risco."
     },
     {
       "title": "Resumo da aula",
-      "body": "- Comprador toma decisões de custo e risco\n- Atua como elo entre empresa e fornecedores\n- Precisa equilibrar preço, prazo e qualidade\n- Comunicação e análise são habilidades essenciais\n\nAgora fixe com o quiz."
+      "body": "- Comprador é gestor de consequência\n- Rotina tem demanda, mercado e controle\n- Interface com áreas evita erro\n- Habilidades práticas = comunicação, negociação, registro\n\nAgora fixe com o quiz."
     }
   ],
   "quiz": {
-    "title": "Quiz (10 perguntas) — Aula 02",
+    "title": "Quiz (10 perguntas) — Aula 02 (Compras)",
     "instructions": "Marque A, B, C ou D.",
     "questions": [
       {
         "id": 1,
-        "question": "O comprador precisa equilibrar principalmente:",
+        "question": "Na prática, o comprador “compra” principalmente:",
         "options": [
-          {"key": "A", "text": "Preço, prazo e qualidade"},
-          {"key": "B", "text": "Somente preço"},
-          {"key": "C", "text": "Somente marketing"},
-          {"key": "D", "text": "Somente estoque"}
+          { "key": "A", "text": "Coisas e pronto" },
+          { "key": "B", "text": "Previsibilidade, conformidade e condição comercial" },
+          { "key": "C", "text": "Somente desconto" },
+          { "key": "D", "text": "Somente marca" }
         ],
-        "answer": "A",
-        "explain": "Esses três fatores definem a eficiência da compra."
+        "answer": "B",
+        "explain": "O resultado da compra aparece em prazo, qualidade e caixa."
       },
       {
         "id": 2,
-        "question": "Uma responsabilidade do comprador é:",
+        "question": "O bloco que evita “compras reativas” é principalmente:",
         "options": [
-          {"key": "A", "text": "Negociar com fornecedores"},
-          {"key": "B", "text": "Produzir mercadorias"},
-          {"key": "C", "text": "Controlar RH"},
-          {"key": "D", "text": "Fazer marketing"}
+          { "key": "A", "text": "Somente atender urgência" },
+          { "key": "B", "text": "Mercado + controle (cotar, negociar e registrar)" },
+          { "key": "C", "text": "Ignorar follow-up" },
+          { "key": "D", "text": "Comprar sem pedido formal" }
         ],
-        "answer": "A",
-        "explain": "Negociação é parte central da função."
+        "answer": "B",
+        "explain": "Sem mercado e controle, tudo vira urgência recorrente."
       },
       {
         "id": 3,
-        "question": "Compras interage com:",
+        "question": "Uma responsabilidade que define maturidade do comprador é:",
         "options": [
-          {"key": "A", "text": "Produção e logística"},
-          {"key": "B", "text": "Apenas marketing"},
-          {"key": "C", "text": "Somente vendas"},
-          {"key": "D", "text": "Nenhuma área"}
+          { "key": "A", "text": "Validar especificação antes de cotar" },
+          { "key": "B", "text": "Cotar sem entender o item" },
+          { "key": "C", "text": "Escolher por hábito" },
+          { "key": "D", "text": "Evitar registrar decisão" }
         ],
         "answer": "A",
-        "explain": "Compras depende da integração com outras áreas."
+        "explain": "Comprar certo começa na especificação correta."
       },
       {
         "id": 4,
-        "question": "O comprador representa:",
+        "question": "A interface com financeiro existe para:",
         "options": [
-          {"key": "A", "text": "A empresa diante do fornecedor"},
-          {"key": "B", "text": "O marketing da empresa"},
-          {"key": "C", "text": "A produção"},
-          {"key": "D", "text": "A contabilidade"}
+          { "key": "A", "text": "Definir estratégia de marketing" },
+          { "key": "B", "text": "Alinhar orçamento e condição de pagamento" },
+          { "key": "C", "text": "Escolher cor do produto" },
+          { "key": "D", "text": "Aumentar estoque sem critério" }
         ],
-        "answer": "A",
-        "explain": "Ele é a interface comercial com fornecedores."
+        "answer": "B",
+        "explain": "Condição comercial afeta caixa e precisa caber no orçamento."
       },
       {
         "id": 5,
-        "question": "Focar apenas em preço pode:",
+        "question": "Compras integrado é mais forte porque:",
         "options": [
-          {"key": "A", "text": "Gerar problemas de qualidade ou prazo"},
-          {"key": "B", "text": "Garantir qualidade"},
-          {"key": "C", "text": "Eliminar riscos"},
-          {"key": "D", "text": "Eliminar fornecedores"}
+          { "key": "A", "text": "Centraliza tudo e não fala com ninguém" },
+          { "key": "B", "text": "Reduz ruído e identifica riscos antes de virar problema" },
+          { "key": "C", "text": "Elimina necessidade de especificação" },
+          { "key": "D", "text": "Evita processo" }
         ],
-        "answer": "A",
-        "explain": "Preço não representa todo o custo."
+        "answer": "B",
+        "explain": "Integração dá previsibilidade e reduz retrabalho."
       },
       {
         "id": 6,
-        "question": "Uma habilidade essencial do comprador é:",
+        "question": "Uma habilidade prática crucial é:",
         "options": [
-          {"key": "A", "text": "Negociação"},
-          {"key": "B", "text": "Design gráfico"},
-          {"key": "C", "text": "Programação"},
-          {"key": "D", "text": "Marketing digital"}
+          { "key": "A", "text": "Comunicação objetiva para reduzir ruído" },
+          { "key": "B", "text": "Improvisar sempre" },
+          { "key": "C", "text": "Negociar sem metas" },
+          { "key": "D", "text": "Trocar fornecedor toda semana" }
         ],
         "answer": "A",
-        "explain": "Negociação é central para reduzir custos."
+        "explain": "Ruído vira erro de compra e atraso."
       },
       {
         "id": 7,
-        "question": "Acompanhamento de pedidos serve para:",
+        "question": "O que o comprador NÃO deve normalizar:",
         "options": [
-          {"key": "A", "text": "Garantir entrega no prazo"},
-          {"key": "B", "text": "Aumentar marketing"},
-          {"key": "C", "text": "Criar estoque"},
-          {"key": "D", "text": "Fazer vendas"}
+          { "key": "A", "text": "Registro de decisões" },
+          { "key": "B", "text": "Urgência como padrão" },
+          { "key": "C", "text": "Follow-up de entrega" },
+          { "key": "D", "text": "Critério de seleção" }
         ],
-        "answer": "A",
-        "explain": "Follow-up garante previsibilidade."
+        "answer": "B",
+        "explain": "Urgência recorrente é sintoma de processo fraco."
       },
       {
         "id": 8,
-        "question": "Comprador moderno precisa ter:",
+        "question": "Documentar decisão serve para:",
         "options": [
-          {"key": "A", "text": "Visão do negócio"},
-          {"key": "B", "text": "Somente foco em preço"},
-          {"key": "C", "text": "Somente controle de estoque"},
-          {"key": "D", "text": "Somente controle financeiro"}
+          { "key": "A", "text": "Burocracia sem utilidade" },
+          { "key": "B", "text": "Aprendizado, auditoria e repetição do que funciona" },
+          { "key": "C", "text": "Evitar qualquer mudança" },
+          { "key": "D", "text": "Aumentar custo" }
         ],
-        "answer": "A",
-        "explain": "Entender o negócio melhora decisões."
+        "answer": "B",
+        "explain": "Sem histórico, a empresa repete erro."
       },
       {
         "id": 9,
-        "question": "Uma função importante do comprador é:",
+        "question": "Follow-up de fornecedor é importante porque:",
         "options": [
-          {"key": "A", "text": "Avaliar fornecedores"},
-          {"key": "B", "text": "Produzir produtos"},
-          {"key": "C", "text": "Controlar RH"},
-          {"key": "D", "text": "Fazer propaganda"}
+          { "key": "A", "text": "Entrega sempre acontece sozinha" },
+          { "key": "B", "text": "Evita surpresa e permite reação antes do atraso" },
+          { "key": "C", "text": "Serve só para cobrar desconto" },
+          { "key": "D", "text": "Substitui contrato" }
         ],
-        "answer": "A",
-        "explain": "Avaliação garante confiabilidade."
+        "answer": "B",
+        "explain": "Você quer descobrir problema antes que ele vire ruptura."
       },
       {
         "id": 10,
-        "question": "O comprador atua principalmente:",
+        "question": "Frase mais correta sobre o comprador:",
         "options": [
-          {"key": "A", "text": "Entre a empresa e o mercado fornecedor"},
-          {"key": "B", "text": "Somente dentro da produção"},
-          {"key": "C", "text": "Somente no marketing"},
-          {"key": "D", "text": "Somente no financeiro"}
+          { "key": "A", "text": "Ele apenas executa pedidos" },
+          { "key": "B", "text": "Ele administra custo e risco, com interface entre áreas" },
+          { "key": "C", "text": "Ele só negocia preço" },
+          { "key": "D", "text": "Ele não precisa entender operação" }
         ],
-        "answer": "A",
-        "explain": "Ele conecta demanda interna com oferta externa."
+        "answer": "B",
+        "explain": "Compras é função de valor: custo, prazo, qualidade e risco."
       }
     ]
   },
   "extra": {
-    "eventosMinimos": "Atividades\n\n- cotação\n- negociação\n- acompanhamento\n- avaliação\n",
-    "pilares": "Pilares\n\n- análise\n- negociação\n- coordenação\n"
+    "eventosMinimos": "Rotina base\n\n- validar demanda\n- cotar\n- negociar\n- acompanhar\n- registrar\n",
+    "pilares": "Pilares do comprador\n\n- comunicação\n- critério\n- disciplina\n"
   }
 }

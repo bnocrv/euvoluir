@@ -1,72 +1,168 @@
 {
-    "id": "06-especificacao-demanda",
-    "title": "Aula 06 — Especificação de demanda: como pedir certo para comprar certo",
-    "steps": [
-        {
-            "title": "A importância da especificação",
-            "body": "Toda compra começa com uma especificação.\n\nSe a especificação for ruim:\n- a cotação será incorreta\n- fornecedores interpretarão diferente\n- o material entregue pode não atender a necessidade\n\nRegra:\n- Especificação ruim gera compra errada."
-        },
-        {
-            "title": "Elementos de uma boa especificação",
-            "body": "Uma especificação eficiente normalmente inclui:\n- descrição clara do item\n- quantidade\n- padrão de qualidade\n- unidade de medida\n- prazo necessário\n\nRegra:\n- Quanto mais clara a especificação, menor o risco de erro."
-        },
-        {
-            "title": "Ambiguidade gera problemas",
-            "body": "Pedidos vagos geram interpretações diferentes.\n\nExemplo ruim:\n- 'comprar caixa grande'\n\nExemplo correto:\n- caixa papelão dupla onda 40x30x30\n\nRegra:\n- Compras exige precisão."
-        },
-        {
-            "title": "Participação da área solicitante",
-            "body": "Nem sempre compras define a especificação.\n\nNormalmente ela vem de:\n- engenharia\n- produção\n- manutenção\n\nRegra:\n- Compras valida a especificação antes de cotar."
-        },
-        {
-            "title": "Padronização de itens",
-            "body": "Empresas maduras criam catálogos de itens padronizados.\n\nIsso reduz:\n- duplicidade\n- erros\n- dificuldade de cotação\n\nRegra:\n- Padronização simplifica compras."
-        },
-        {
-            "title": "Erro comum",
-            "body": "Um erro comum é solicitar itens urgentes sem detalhamento.\n\nIsso gera:\n- retrabalho\n- compras erradas\n\nRegra:\n- Urgência não justifica falta de especificação."
-        },
-        {
-            "title": "Mini prática",
-            "body": "Pegue um item comum da empresa.\n\nEscreva uma especificação completa contendo:\n- descrição\n- dimensão\n- material\n- unidade\n\nObjetivo:\n- desenvolver precisão na solicitação."
-        },
-        {
-            "title": "Resumo da aula",
-            "body": "- Especificação inicia o processo de compras\n- Especificações claras evitam erro\n- Padronização melhora eficiência\n- Ambiguidade aumenta risco\n\nAgora fixe com o quiz."
-        }
-    ],
-    "quiz": {
-        "title": "Quiz (10 perguntas) — Aula 06",
-        "instructions": "Marque A, B, C ou D.",
-        "questions": [
-            {
-                "id": 1,
-                "question": "Uma especificação ruim pode causar:",
-                "options": [
-                    {
-                        "key": "A",
-                        "text": "Compra incorreta"
-                    },
-                    {
-                        "key": "B",
-                        "text": "Aumento automático de qualidade"
-                    },
-                    {
-                        "key": "C",
-                        "text": "Redução de preço"
-                    },
-                    {
-                        "key": "D",
-                        "text": "Entrega imediata"
-                    }
-                ],
-                "answer": "A",
-                "explain": "Descrição incorreta gera fornecimento incorreto."
-            }
-        ]
+  "id": "06-especificacao-demanda",
+  "title": "Aula 06 — Especificação de demanda: como pedir certo para comprar certo",
+  "steps": [
+    {
+      "title": "Por que a especificação é o ponto mais subestimado do processo",
+      "body": "A maioria dos problemas de compras não nasce na cotação — nasce antes, na forma como o item foi pedido.\n\nQuando a especificação é ruim, você ganha:\n- propostas incomparáveis (cada fornecedor entende de um jeito)\n- compras erradas (item não atende o uso)\n- retrabalho (troca, devolução, reprocesso)\n- conflito interno (compras 'comprou errado', solicitante 'pediu certo')\n\nRegra:\n- Se a demanda entra ambígua, o resultado sai caro."
     },
-    "extra": {
-        "eventosMinimos": "Elementos\n\n- descrição\n- quantidade\n- qualidade\n- prazo\n",
-        "pilares": "Pilares\n\n- precisão\n- clareza\n- padronização\n"
+    {
+      "title": "A especificação mínima que funciona em operação (sem frescura)",
+      "body": "Uma especificação operacionalmente suficiente costuma ter:\n- descrição objetiva (o que é)\n- característica crítica (o que não pode variar)\n- unidade de medida + quantidade\n- aplicação/uso (para quê)\n- prazo necessário (para quando)\n\nExemplo (ruim → bom):\n- 'caixa grande' → 'caixa papelão dupla onda 40x30x30, carga 15kg, para envio e-commerce'\n\nRegra:\n- Especificação boa não é longa: é precisa."
+    },
+    {
+      "title": "O que é 'característica crítica' (o que pode variar e o que não pode)",
+      "body": "Quase todo item tem coisas negociáveis e coisas inegociáveis.\n\nExemplos:\n- Etiqueta: pode variar marca, mas não pode variar adesivo (se descola, mata o processo)\n- Caixa: pode variar fornecedor, mas não pode variar resistência\n- Uniforme: pode variar modelo, mas não pode variar tecido mínimo exigido\n\nRegra:\n- Característica crítica é aquilo que, se falhar, vira problema operacional."
+    },
+    {
+      "title": "Especificação para produtos x especificação para serviços",
+      "body": "Produto você especifica com:\n- dimensões, materiais, tolerâncias, padrão\n\nServiço você especifica com:\n- escopo, entregáveis, frequência, SLA, critérios de aceite\n\nExemplo de serviço mal especificado:\n- 'fazer manutenção' (isso é um convite ao conflito)\n\nExemplo melhor:\n- 'manutenção preventiva mensal com checklist X, tempo de resposta 4h para corretiva, relatório por visita'\n\nRegra:\n- Serviço sem escopo vira custo sem controle."
+    },
+    {
+      "title": "Como evitar 'gambiarra' na demanda (o pedido viciado)",
+      "body": "Sinais de demanda viciada:\n- solicitante já define marca e fornecedor sem justificativa\n- pedido sempre vem 'pra ontem'\n- não existe histórico do que foi comprado antes\n\nO que compras faz:\n- perguntar 'qual requisito de desempenho?'\n- pedir evidência do porquê da marca\n- sugerir padronização\n\nRegra:\n- Compras maduro não aceita pedido pronto sem critério."
+    },
+    {
+      "title": "Checklist rápido (para usar todo dia)",
+      "body": "Antes de cotar, responda:\n- é claro o que é?\n- está definido o que não pode variar?\n- quantidade e unidade fazem sentido?\n- prazo é realista ou é urgência crônica?\n- existe item equivalente já comprado?\n\nRegra:\n- 2 minutos de checklist economizam horas de retrabalho."
+    },
+    {
+      "title": "Mini prática (45 min) — transformar pedido ruim em especificação forte",
+      "body": "Pegue 3 pedidos 'ruins' típicos:\n- 'preciso de fita'\n- 'compra uma impressora'\n- 'contrata transporte'\n\nReescreva cada um com:\n- descrição objetiva\n- característica crítica\n- quantidade/unidade\n- uso\n- prazo\n\nObjetivo:\n- treinar clareza e reduzir ambiguidade."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Especificação é onde compras ganha ou perde\n- Defina requisitos mínimos + características críticas\n- Produto e serviço têm formas diferentes de especificar\n- Checklist curto evita retrabalho\n\nAgora fixe com o quiz."
     }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 06 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "A maioria dos problemas de compras costuma começar:",
+        "options": [
+          { "key": "A", "text": "No pagamento" },
+          { "key": "B", "text": "Na especificação da demanda" },
+          { "key": "C", "text": "No marketing" },
+          { "key": "D", "text": "No fechamento contábil" }
+        ],
+        "answer": "B",
+        "explain": "Demanda ambígua gera cotação ruim e entrega errada."
+      },
+      {
+        "id": 2,
+        "question": "“Característica crítica” é:",
+        "options": [
+          { "key": "A", "text": "Qualquer detalhe estético" },
+          { "key": "B", "text": "O que não pode falhar sem virar problema operacional" },
+          { "key": "C", "text": "A marca preferida do solicitante" },
+          { "key": "D", "text": "O menor preço possível" }
+        ],
+        "answer": "B",
+        "explain": "Se falhar, vira retrabalho, risco e custo total maior."
+      },
+      {
+        "id": 3,
+        "question": "Especificação de serviço deve priorizar:",
+        "options": [
+          { "key": "A", "text": "Cor do uniforme da equipe" },
+          { "key": "B", "text": "Escopo, entregáveis e critérios de aceite" },
+          { "key": "C", "text": "Somente desconto" },
+          { "key": "D", "text": "Somente marca do fornecedor" }
+        ],
+        "answer": "B",
+        "explain": "Serviço é resultado; sem escopo você não controla."
+      },
+      {
+        "id": 4,
+        "question": "Um sinal de demanda viciada é:",
+        "options": [
+          { "key": "A", "text": "Pedido com requisitos claros" },
+          { "key": "B", "text": "Urgência constante sem justificativa" },
+          { "key": "C", "text": "Uso de checklist" },
+          { "key": "D", "text": "Comparação de equivalentes" }
+        ],
+        "answer": "B",
+        "explain": "Urgência crônica costuma ser sintoma de falta de planejamento."
+      },
+      {
+        "id": 5,
+        "question": "A melhor prática antes de cotar é:",
+        "options": [
+          { "key": "A", "text": "Cotar rápido sem perguntar" },
+          { "key": "B", "text": "Validar clareza e requisitos mínimos" },
+          { "key": "C", "text": "Escolher fornecedor por hábito" },
+          { "key": "D", "text": "Negociar sem entender o item" }
+        ],
+        "answer": "B",
+        "explain": "Sem clareza, você compara coisa diferente."
+      },
+      {
+        "id": 6,
+        "question": "O maior risco de especificação vaga é:",
+        "options": [
+          { "key": "A", "text": "Receber propostas incomparáveis" },
+          { "key": "B", "text": "Aumentar a transparência" },
+          { "key": "C", "text": "Diminuir retrabalho" },
+          { "key": "D", "text": "Eliminar custo total" }
+        ],
+        "answer": "A",
+        "explain": "Sem escopo igual, comparação vira chute."
+      },
+      {
+        "id": 7,
+        "question": "A frase correta é:",
+        "options": [
+          { "key": "A", "text": "Especificação boa precisa ser longa" },
+          { "key": "B", "text": "Especificação boa precisa ser precisa" },
+          { "key": "C", "text": "Especificação não importa" },
+          { "key": "D", "text": "Preço resolve especificação" }
+        ],
+        "answer": "B",
+        "explain": "Não é quantidade de texto, é precisão."
+      },
+      {
+        "id": 8,
+        "question": "Quando compras questiona a marca indicada, o objetivo é:",
+        "options": [
+          { "key": "A", "text": "Criar conflito" },
+          { "key": "B", "text": "Entender requisito real e buscar equivalentes" },
+          { "key": "C", "text": "Ignorar operação" },
+          { "key": "D", "text": "Aumentar burocracia" }
+        ],
+        "answer": "B",
+        "explain": "Requisito é desempenho; marca pode ser substituível."
+      },
+      {
+        "id": 9,
+        "question": "Checklist rápido antes de cotar serve para:",
+        "options": [
+          { "key": "A", "text": "Diminuir controle" },
+          { "key": "B", "text": "Evitar retrabalho e erro de compra" },
+          { "key": "C", "text": "Trocar fornecedor toda hora" },
+          { "key": "D", "text": "Eliminar recebimento" }
+        ],
+        "answer": "B",
+        "explain": "Pouco tempo agora economiza muito depois."
+      },
+      {
+        "id": 10,
+        "question": "Frase mais correta sobre especificação:",
+        "options": [
+          { "key": "A", "text": "É responsabilidade exclusiva de compras sempre" },
+          { "key": "B", "text": "É responsabilidade compartilhada, compras valida e garante comparabilidade" },
+          { "key": "C", "text": "Não precisa existir para itens simples" },
+          { "key": "D", "text": "Pode ser substituída por um WhatsApp" }
+        ],
+        "answer": "B",
+        "explain": "O solicitante define necessidade; compras valida e estrutura."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Especificação mínima\n\n- descrição\n- crítico/innegociável\n- quantidade/unidade\n- uso\n- prazo\n",
+    "pilares": "Pilares\n\n- clareza\n- comparabilidade\n- redução de retrabalho\n"
+  }
 }

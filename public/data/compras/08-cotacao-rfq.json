@@ -1,0 +1,168 @@
+{
+  "id": "08-cotacao-rfq",
+  "title": "Aula 08 — Cotação (RFQ): como comparar propostas de forma justa",
+  "steps": [
+    {
+      "title": "RFQ não é “pedir preço”: é estruturar comparação",
+      "body": "RFQ (Request for Quotation) é o método de pedir propostas com:\n- mesmo escopo\n- mesmas condições\n- mesmo prazo de resposta\n\nO objetivo é simples:\n- transformar conversa em dados comparáveis.\n\nRegra:\n- Sem RFQ estruturado, você compara 'banana com maçã'."
+    },
+    {
+      "title": "O que um RFQ precisa conter (para não gerar proposta lixo)",
+      "body": "Elementos práticos:\n- especificação + características críticas\n- quantidades e unidade\n- local e data desejada de entrega\n- condição de pagamento desejada\n- se inclui frete/impostos\n- prazo para responder\n\nRegra:\n- Proposta ruim quase sempre é reflexo de RFQ incompleto."
+    },
+    {
+      "title": "Como escolher fornecedores para cotar (sem perder tempo)",
+      "body": "Cotar com critério:\n- 1 fornecedor atual (baseline)\n- 1 fornecedor alternativo (comparação)\n- 1 fornecedor “desafio” (novo ou mais competitivo)\n\nRegra:\n- RFQ bom compara o atual com alternativas reais."
+    },
+    {
+      "title": "Equalização: a parte adulta da cotação",
+      "body": "Equalizar é garantir que as propostas estão comparáveis.\n\nVocê precisa alinhar:\n- impostos inclusos ou não\n- frete incluso ou não\n- prazo real (entrega) e não 'prazo prometido'\n- condições (prazo de pagamento)\n\nRegra:\n- Sem equalização, a proposta mais barata pode ser só a mais “mal descrita”."
+    },
+    {
+      "title": "Quando RFQ vira negociação (o ponto certo)",
+      "body": "Depois de receber propostas comparáveis, você negocia:\n- preço com base em volume e contrato\n- prazo com base em previsibilidade\n- condição com base em relacionamento e risco\n\nRegra:\n- Negociar antes de equalizar é negociar no escuro."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n- mandar RFQ diferente para cada fornecedor\n- aceitar proposta sem detalhes (frete, impostos, prazo)\n- comparar preço unitário ignorando custo total\n\nRegra:\n- RFQ é método: se você improvisa, perde o benefício."
+    },
+    {
+      "title": "Mini prática (45 min) — RFQ profissional em 1 página",
+      "body": "Monte um RFQ de um item real (ex.: embalagem).\nInclua:\n- requisitos críticos\n- quantidades\n- entrega\n- pagamento\n- validade da proposta\n\nObjetivo:\n- criar um modelo reutilizável."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- RFQ estrutura comparação\n- Escopo igual = proposta comparável\n- Equalização é obrigatória\n- Negociar depois de equalizar é mais forte\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 08 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O principal objetivo do RFQ é:",
+        "options": [
+          { "key": "A", "text": "Conseguir qualquer preço rápido" },
+          { "key": "B", "text": "Criar propostas comparáveis com mesmo escopo" },
+          { "key": "C", "text": "Evitar concorrência" },
+          { "key": "D", "text": "Eliminar necessidade de especificação" }
+        ],
+        "answer": "B",
+        "explain": "RFQ transforma conversa em comparação justa."
+      },
+      {
+        "id": 2,
+        "question": "Equalização significa:",
+        "options": [
+          { "key": "A", "text": "Escolher o mais barato" },
+          { "key": "B", "text": "Garantir que impostos, frete e condições estão comparáveis" },
+          { "key": "C", "text": "Mandar RFQ diferente para cada fornecedor" },
+          { "key": "D", "text": "Negociar antes de receber proposta" }
+        ],
+        "answer": "B",
+        "explain": "Sem equalizar, a comparação é distorcida."
+      },
+      {
+        "id": 3,
+        "question": "Uma boa prática para escolher fornecedores na cotação é incluir:",
+        "options": [
+          { "key": "A", "text": "Somente o fornecedor atual" },
+          { "key": "B", "text": "Atual + alternativo + desafio" },
+          { "key": "C", "text": "Somente fornecedor novo" },
+          { "key": "D", "text": "Somente fornecedor indicado por amizade" }
+        ],
+        "answer": "B",
+        "explain": "Você cria baseline e alternativas reais."
+      },
+      {
+        "id": 4,
+        "question": "Negociar antes de equalizar é ruim porque:",
+        "options": [
+          { "key": "A", "text": "Você já tem dados completos" },
+          { "key": "B", "text": "Você negocia sem base comparável" },
+          { "key": "C", "text": "Você elimina custos" },
+          { "key": "D", "text": "Você melhora a auditoria" }
+        ],
+        "answer": "B",
+        "explain": "Sem base, você não sabe o que está defendendo."
+      },
+      {
+        "id": 5,
+        "question": "Um RFQ incompleto tende a gerar:",
+        "options": [
+          { "key": "A", "text": "Proposta incompleta e difícil de comparar" },
+          { "key": "B", "text": "Qualidade garantida" },
+          { "key": "C", "text": "Menos retrabalho" },
+          { "key": "D", "text": "Menos risco" }
+        ],
+        "answer": "A",
+        "explain": "Fornecedor responde o que entendeu — e entende diferente."
+      },
+      {
+        "id": 6,
+        "question": "Qual item costuma ser esquecido e distorce comparação?",
+        "options": [
+          { "key": "A", "text": "Frete e impostos" },
+          { "key": "B", "text": "Título do e-mail" },
+          { "key": "C", "text": "Cor do PDF" },
+          { "key": "D", "text": "Fonte da planilha" }
+        ],
+        "answer": "A",
+        "explain": "Custo total depende disso."
+      },
+      {
+        "id": 7,
+        "question": "RFQ estruturado melhora a negociação porque:",
+        "options": [
+          { "key": "A", "text": "Elimina necessidade de contrato" },
+          { "key": "B", "text": "Cria base objetiva para discutir preço e condições" },
+          { "key": "C", "text": "Diminui transparência" },
+          { "key": "D", "text": "Evita recebimento" }
+        ],
+        "answer": "B",
+        "explain": "Negociação com dados é mais forte."
+      },
+      {
+        "id": 8,
+        "question": "Enviar RFQ diferente para cada fornecedor gera:",
+        "options": [
+          { "key": "A", "text": "Comparação justa" },
+          { "key": "B", "text": "Comparação inválida" },
+          { "key": "C", "text": "Auditoria perfeita" },
+          { "key": "D", "text": "Menor risco" }
+        ],
+        "answer": "B",
+        "explain": "Você não sabe se está comparando o mesmo item/escopo."
+      },
+      {
+        "id": 9,
+        "question": "A validade da proposta é importante porque:",
+        "options": [
+          { "key": "A", "text": "Evita mudança de preço depois do acordo" },
+          { "key": "B", "text": "Não muda nada" },
+          { "key": "C", "text": "Elimina imposto" },
+          { "key": "D", "text": "Elimina frete" }
+        ],
+        "answer": "A",
+        "explain": "Você protege a negociação de variação posterior."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "RFQ é só formalidade" },
+          { "key": "B", "text": "RFQ é método para transformar mercado em dados comparáveis" },
+          { "key": "C", "text": "RFQ substitui especificação" },
+          { "key": "D", "text": "RFQ elimina equalização" }
+        ],
+        "answer": "B",
+        "explain": "O valor do RFQ é a comparabilidade."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "RFQ\n\n- escopo igual\n- prazo resposta\n- frete/impostos\n- pagamento\n- validade\n",
+    "pilares": "Pilares\n\n- comparabilidade\n- equalização\n- negociação com dados\n"
+  }
+}

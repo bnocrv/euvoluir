@@ -6,11 +6,11 @@
   overflow: hidden;
   padding: clamp(22px, 4vw, 34px);
   border: 1px solid rgba(255,255,255,.16);
-  border-radius: calc(var(--radius) + 2px);
+  border-radius: var(--radius);
   background:
-    radial-gradient(580px 220px at 14% 0%, rgba(216,19,36,.2), transparent 70%),
-    radial-gradient(500px 250px at 92% 0%, rgba(255,255,255,.06), transparent 74%),
-    linear-gradient(145deg, rgba(31,34,38,.98), rgba(23,25,27,.96));
+    radial-gradient(620px 240px at 14% 0%, rgba(225,6,19,.16), transparent 70%),
+    radial-gradient(500px 250px at 92% 0%, rgba(255,255,255,.035), transparent 74%),
+    linear-gradient(145deg, rgba(12,12,12,.98), rgba(3,3,3,.97));
   box-shadow: 0 24px 44px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.08);
 }
 .hero::before{
@@ -19,13 +19,13 @@
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(115deg, transparent 0 26%, rgba(255,255,255,.05) 26% 27%, transparent 27% 56%, rgba(216,19,36,.12) 56% 57%, transparent 57% 100%);
+    linear-gradient(115deg, transparent 0 26%, rgba(255,255,255,.03) 26% 27%, transparent 27% 56%, rgba(225,6,19,.08) 56% 57%, transparent 57% 100%);
 }
 .hero h1{
   margin: 0;
   font-size: clamp(1.45rem, 3.2vw, 2.35rem);
   line-height: 1.15;
-  text-shadow: 0 0 24px rgba(216,19,36,.2);
+  text-shadow: 0 0 24px rgba(225,6,19,.3);
 }
 .hero p{
   max-width: 72ch;
@@ -37,6 +37,7 @@
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: .8px;
+  text-shadow: 0 0 14px rgba(225,6,19,.2);
 }
 
 /* Dashboard */
@@ -60,27 +61,28 @@
 }
 .landing-option:hover{
   transform: translateY(-2px);
-  border-color: rgba(216,19,36,.75);
-  background: linear-gradient(180deg, rgba(216,19,36,.14), rgba(255,255,255,.05)), var(--surface2);
-  box-shadow: 0 0 20px rgba(216,19,36,.2);
+  border-color: rgba(225,6,19,.85);
+  background: linear-gradient(180deg, rgba(225,6,19,.3), rgba(255,255,255,.03)), var(--surface2);
+  box-shadow: 0 0 24px rgba(225,6,19,.3);
 }
 
 /* Lesson */
 .nav-item{
   display:block;
   padding: 10px 12px;
-  border-radius: 12px;
+  border-radius: 4px;
   border: 1px solid rgba(255,255,255,.18);
   background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(23,25,27,.95));
   transition: background .18s ease, border-color .18s ease;
 }
 .nav-item:hover{
-  background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(23,25,27,.98));
-  border-color: rgba(255,255,255,.38);
+  background: linear-gradient(180deg, rgba(225,6,19,.26), rgba(23,25,27,.98));
+  border-color: rgba(255,255,255,.46);
 }
 .nav-item.active{
-  border-color: rgba(216,19,36,.8);
-  background: linear-gradient(180deg, rgba(216,19,36,.34), rgba(216,19,36,.18));
+  border-color: rgba(225,6,19,.9);
+  background: linear-gradient(180deg, rgba(225,6,19,.38), rgba(225,6,19,.22));
+  box-shadow: 0 0 16px rgba(225,6,19,.24);
 }
 
 .lesson-title{
@@ -103,7 +105,7 @@
   height: 58px;
   border: 1px solid var(--border);
   border-left: 0;
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 4px 4px 0;
   background: var(--surface3);
   color: var(--text);
   align-items: center;
@@ -161,13 +163,14 @@
   font-weight: 700;
 }
 .lesson-state.is-done{
-  border-color: rgba(80,250,123,.52);
-  background: rgba(80,250,123,.18);
+  border-color: rgba(34,197,94,.82);
+  background: rgba(34,197,94,.28);
+  box-shadow: 0 0 12px rgba(34,197,94,.28);
   color: #ffffff;
 }
 .lesson-state.is-pending{
-  border-color: rgba(255,184,108,.52);
-  background: rgba(255,184,108,.14);
+  border-color: rgba(255,255,255,.55);
+  background: rgba(255,255,255,.16);
   color: #ffffff;
 }
 .lesson-state-text{
@@ -192,12 +195,13 @@
 .quiz-feedback-highlight{ color: rgba(255,255,255,.96); }
 
 .badge.quiz-ok{
-  border-color: rgba(80,250,123,.5);
-  background: rgba(80,250,123,.16);
+  border-color: rgba(34,197,94,.75);
+  background: rgba(34,197,94,.26);
+  color: #ffffff;
 }
 .badge.quiz-bad{
-  border-color: rgba(255,85,85,.5);
-  background: rgba(255,85,85,.15);
+  border-color: rgba(225,6,19,.75);
+  background: rgba(225,6,19,.2);
 }
 
 .md p{ margin: 0 0 10px; }
@@ -209,7 +213,7 @@
   font-size: 12.5px;
   padding: 2px 8px;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 4px;
   background: var(--bg-soft);
 }
 
@@ -228,7 +232,7 @@
 .preview{
   width: 100%;
   height: 320px;
-  border-radius: 12px;
+  border-radius: 4px;
   border: 1px solid var(--border);
   background: #fff;
 }
@@ -238,17 +242,17 @@
   gap:10px;
   align-items:flex-start;
   padding: 10px 12px;
-  border-radius: 12px;
+  border-radius: 4px;
   border: 1px solid var(--border);
   background: var(--surface2);
 }
 .test.ok{
-  border-color: rgba(80,250,123,.45);
-  background: rgba(80,250,123,.13);
+  border-color: rgba(34,197,94,.68);
+  background: rgba(34,197,94,.18);
 }
 .test.bad{
-  border-color: rgba(255,85,85,.45);
-  background: rgba(255,85,85,.12);
+  border-color: rgba(225,6,19,.72);
+  background: rgba(225,6,19,.26);
 }
 .test .icon{ width: 18px; text-align:center; }
 .test .msg{ flex:1; font-size: 13px; }

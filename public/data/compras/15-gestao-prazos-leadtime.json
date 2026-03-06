@@ -1,0 +1,168 @@
+{
+  "id": "15-gestao-prazos-leadtime",
+  "title": "Aula 15 — Prazos e lead time: previsibilidade do pedido ao recebimento",
+  "steps": [
+    {
+      "title": "Lead time é o relógio real da operação",
+      "body": "Lead time é o tempo total entre:\n- solicitar/comprar\n- e receber conforme\n\nEle inclui:\n- tempo de aprovação\n- tempo de cotação/negociação\n- tempo de fabricação/separação\n- transporte\n- recebimento e conferência\n\nRegra:\n- Quem controla lead time controla urgência."
+    },
+    {
+      "title": "Promessa vs realidade (onde a operação sofre)",
+      "body": "Fornecedor promete 7 dias, mas entrega em 12.\n\nSe compras acredita na promessa sem histórico:\n- estoque rompe\n- operação vira corrida\n\nRegra:\n- Lead time deve ser medido, não acreditado."
+    },
+    {
+      "title": "Componentes do lead time que você consegue atacar",
+      "body": "Parte interna (empresa):\n- aprovação lenta\n- requisição incompleta\n- retrabalho\n\nParte externa (fornecedor):\n- capacidade\n- atraso recorrente\n- transporte\n\nRegra:\n- Lead time melhora quando você separa causa interna de externa."
+    },
+    {
+      "title": "Previsibilidade: o que importa mais que o “menor prazo”",
+      "body": "Prazo curto e instável é pior que prazo maior e confiável.\n\nExemplo:\n- fornecedor A: 10 dias sempre\n- fornecedor B: 7 dias às vezes, 20 dias às vezes\n\nRegra:\n- Operação prefere prazo confiável, não promessa agressiva."
+    },
+    {
+      "title": "Ferramentas simples para gerir prazo",
+      "body": "Ferramentas práticas:\n- lead time histórico por fornecedor\n- buffer (estoque de segurança quando necessário)\n- follow-up por marcos (produção, expedição, entrega)\n- janela de entrega definida\n\nRegra:\n- Prazo se controla com histórico + rotina, não com cobrança desesperada."
+    },
+    {
+      "title": "Como evitar urgência crônica (ligação com compras e estoque)",
+      "body": "Urgência crônica costuma vir de:\n- lead time ignorado\n- reposição sem ponto de pedido\n- demanda sem planejamento\n\nRegra:\n- Prazos previsíveis alimentam estoque saudável; estoque saudável reduz urgência."
+    },
+    {
+      "title": "Mini prática (45 min) — construir lead time real",
+      "body": "Escolha um item recorrente.\n\nListe os tempos:\n- aprovação interna\n- cotação/decisão\n- fornecedor (produção)\n- transporte\n- recebimento\n\nSome e compare com o que a empresa “acha”.\n\nObjetivo:\n- enxergar o prazo real do processo."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Lead time é o tempo total até receber conforme\n- Promessa não basta: precisa histórico\n- Separe causa interna e externa\n- Previsibilidade vale mais que prazo curto instável\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 15 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Lead time é:",
+        "options": [
+          { "key": "A", "text": "Só o tempo de transporte" },
+          { "key": "B", "text": "O tempo total do pedido até o recebimento conforme" },
+          { "key": "C", "text": "Só o tempo de pagamento" },
+          { "key": "D", "text": "Só o tempo de cotação" }
+        ],
+        "answer": "B",
+        "explain": "Inclui etapas internas e externas até receber conforme."
+      },
+      {
+        "id": 2,
+        "question": "Prazo deve ser baseado principalmente em:",
+        "options": [
+          { "key": "A", "text": "Promessa verbal" },
+          { "key": "B", "text": "Histórico e medição" },
+          { "key": "C", "text": "Sorte" },
+          { "key": "D", "text": "A amizade com fornecedor" }
+        ],
+        "answer": "B",
+        "explain": "Medição dá previsibilidade real."
+      },
+      {
+        "id": 3,
+        "question": "O que é pior para a operação?",
+        "options": [
+          { "key": "A", "text": "Prazo maior e confiável" },
+          { "key": "B", "text": "Prazo curto e instável" },
+          { "key": "C", "text": "Prazo documentado" },
+          { "key": "D", "text": "Prazo com follow-up" }
+        ],
+        "answer": "B",
+        "explain": "Instabilidade gera ruptura e urgência."
+      },
+      {
+        "id": 4,
+        "question": "Para melhorar lead time, você deve:",
+        "options": [
+          { "key": "A", "text": "Misturar causa interna e externa" },
+          { "key": "B", "text": "Separar causas internas e externas e atacar cada uma" },
+          { "key": "C", "text": "Cobrar fornecedor sem dados" },
+          { "key": "D", "text": "Ignorar histórico" }
+        ],
+        "answer": "B",
+        "explain": "Sem diagnóstico, não existe melhoria consistente."
+      },
+      {
+        "id": 5,
+        "question": "Uma ferramenta simples para gerir prazo é:",
+        "options": [
+          { "key": "A", "text": "Lead time histórico por fornecedor" },
+          { "key": "B", "text": "E-mail sem padrão" },
+          { "key": "C", "text": "Cobrança em cima da hora" },
+          { "key": "D", "text": "Compra sem requisição" }
+        ],
+        "answer": "A",
+        "explain": "Histórico transforma prazo em dado, não opinião."
+      },
+      {
+        "id": 6,
+        "question": "Urgência crônica costuma indicar:",
+        "options": [
+          { "key": "A", "text": "Processo saudável" },
+          { "key": "B", "text": "Lead time ignorado e falta de planejamento" },
+          { "key": "C", "text": "Fornecedor perfeito" },
+          { "key": "D", "text": "Estoque perfeito" }
+        ],
+        "answer": "B",
+        "explain": "Urgência diária quase sempre é processo quebrado."
+      },
+      {
+        "id": 7,
+        "question": "Follow-up por marcos ajuda porque:",
+        "options": [
+          { "key": "A", "text": "Descobre problema antes do atraso final" },
+          { "key": "B", "text": "Elimina necessidade de contrato" },
+          { "key": "C", "text": "Elimina recebimento" },
+          { "key": "D", "text": "Elimina imposto" }
+        ],
+        "answer": "A",
+        "explain": "Você reage cedo e reduz impacto."
+      },
+      {
+        "id": 8,
+        "question": "Previsibilidade é importante porque:",
+        "options": [
+          { "key": "A", "text": "Permite planejar estoque e operação" },
+          { "key": "B", "text": "Não muda nada" },
+          { "key": "C", "text": "Elimina custo total" },
+          { "key": "D", "text": "Elimina fornecedores" }
+        ],
+        "answer": "A",
+        "explain": "Planejamento depende de prazo confiável."
+      },
+      {
+        "id": 9,
+        "question": "Lead time inclui tempo de aprovação interna?",
+        "options": [
+          { "key": "A", "text": "Não" },
+          { "key": "B", "text": "Sim" },
+          { "key": "C", "text": "Só às vezes" },
+          { "key": "D", "text": "Nunca" }
+        ],
+        "answer": "B",
+        "explain": "Qualquer tempo até receber conforme compõe lead time."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Lead time se controla com cobrança desesperada" },
+          { "key": "B", "text": "Lead time se controla com medição, rotina e gestão de causas" },
+          { "key": "C", "text": "Lead time não influencia urgência" },
+          { "key": "D", "text": "Lead time é só do fornecedor" }
+        ],
+        "answer": "B",
+        "explain": "Controle exige dados e ação consistente."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Componentes do lead time\n\n- aprovação\n- cotação/decisão\n- produção/separação\n- transporte\n- recebimento\n",
+    "pilares": "Pilares\n\n- previsibilidade\n- histórico\n- gestão por causas\n"
+  }
+}

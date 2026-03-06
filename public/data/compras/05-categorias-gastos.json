@@ -3,106 +3,166 @@
   "title": "Aula 05 — Categorias de gastos: diretos, indiretos e serviços",
   "steps": [
     {
-      "title": "Por que classificar gastos",
-      "body": "Classificar gastos ajuda a entender onde a empresa realmente gasta dinheiro.\n\nSem classificação:\n- não existe visão estratégica\n- compras vira apenas operacional\n\nRegra:\n- O que não é medido não pode ser gerenciado."
+      "title": "Por que categoria importa (e não é só “classificar”)",
+      "body": "Categoria não é só organização contábil.\nÉ estratégia.\n\nQuando você separa gastos por tipo, você consegue:\n- enxergar onde está o dinheiro\n- negociar em bloco (poder de compra)\n- definir estratégia por risco e impacto\n\nRegra:\n- Quem não enxerga o gasto, negocia no escuro."
     },
     {
-      "title": "Gastos diretos",
-      "body": "São compras ligadas diretamente ao produto ou serviço final.\n\nExemplos:\n- matéria-prima\n- componentes\n- embalagens\n\nRegra:\n- Gastos diretos impactam diretamente o custo do produto."
+      "title": "Gastos diretos: o que entra no produto/serviço final",
+      "body": "Diretos são aqueles que impactam diretamente o custo do que a empresa vende.\n\nExemplos:\n- matéria-prima\n- componentes\n- embalagem do produto\n\nNa prática:\n- variação de preço aqui mexe na margem e no preço de venda.\n\nRegra:\n- Direto é onde o centavo vira milhões em escala."
     },
     {
-      "title": "Gastos indiretos",
-      "body": "São gastos necessários para operação, mas não entram no produto final.\n\nExemplos:\n- material de escritório\n- manutenção\n- equipamentos\n\nRegra:\n- Indiretos sustentam a operação."
+      "title": "Gastos indiretos: o que mantém a operação rodando",
+      "body": "Indiretos não entram no produto final, mas sustentam a operação.\n\nExemplos:\n- MRO (manutenção, reparo e operação)\n- EPIs\n- material de escritório\n- limpeza\n\nRegra:\n- Indireto mal gerido vira vazamento constante."
     },
     {
-      "title": "Serviços",
-      "body": "Outra categoria importante são serviços contratados.\n\nExemplos:\n- transporte\n- tecnologia\n- consultoria\n\nRegra:\n- Serviços exigem contratos e gestão de desempenho."
+      "title": "Serviços: onde contrato e desempenho mandam",
+      "body": "Serviço não é 'comprar uma coisa'; é contratar resultado.\n\nExemplos:\n- transporte\n- segurança\n- tecnologia\n- manutenção terceirizada\n\nAqui, o risco comum é:\n- serviço entregue “meia boca” sem critério de medição.\n\nRegra:\n- Em serviços, sem SLA e medição, você paga e não controla."
     },
     {
-      "title": "Gestão por categoria",
-      "body": "Empresas maduras organizam compras por categorias.\n\nIsso permite:\n- negociar melhor\n- analisar fornecedores\n- planejar custos\n\nRegra:\n- Agrupar compras melhora estratégia."
+      "title": "Como a estratégia muda por categoria",
+      "body": "Você não compra tudo do mesmo jeito.\n\nExemplo de diferenças práticas:\n- Direto: foco em qualidade, previsibilidade e custo total\n- Indireto: padronização e redução de variedade\n- Serviços: contrato, SLA e gestão de desempenho\n\nRegra:\n- Categorias diferentes exigem estratégias diferentes."
     },
     {
-      "title": "Erro comum",
-      "body": "Misturar todos os gastos sem classificação.\n\nConsequência:\n- falta de controle\n- negociações fracas\n\nRegra:\n- Visão por categoria melhora decisões."
+      "title": "Erro clássico: pulverizar fornecedores sem necessidade",
+      "body": "Quando a empresa compra o mesmo tipo de item com muitos fornecedores sem critério, surgem:\n- preços inconsistentes\n- qualidade variando\n- perda de poder de negociação\n\nRegra:\n- Consolidação inteligente aumenta controle (sem criar dependência cega)."
     },
     {
-      "title": "Mini prática (45 min)",
-      "body": "Liste 10 compras de uma empresa.\n\nClassifique em:\n- direto\n- indireto\n- serviço\n\nObjetivo:\n- entender estrutura de gastos."
+      "title": "Mini prática (45 min) — mapa de gasto da operação",
+      "body": "Liste 15 itens/serviços que sua operação compra.\nClassifique:\n- direto / indireto / serviço\n\nDepois marque:\n- quais 3 categorias mais pesam no dinheiro?\n\nObjetivo:\n- começar a pensar “por categoria”, não “por pedido”."
     },
     {
       "title": "Resumo da aula",
-      "body": "- Classificar gastos melhora controle\n- Diretos impactam produto\n- Indiretos sustentam operação\n- Serviços exigem gestão\n\nAgora fixe com o quiz."
+      "body": "- Categoria dá visão e estratégia\n- Diretos mexem na margem\n- Indiretos vazam custo se não controlar\n- Serviços exigem SLA e medição\n\nAgora fixe com o quiz."
     }
   ],
   "quiz": {
-    "title": "Quiz (10 perguntas) — Aula 05",
+    "title": "Quiz (10 perguntas) — Aula 05 (Compras)",
     "instructions": "Marque A, B, C ou D.",
     "questions": [
       {
         "id": 1,
-        "question": "Classificar gastos ajuda a:",
+        "question": "Classificar por categoria serve principalmente para:",
         "options": [
-          {"key": "A", "text": "Entender onde a empresa gasta"},
-          {"key": "B", "text": "Eliminar fornecedores"},
-          {"key": "C", "text": "Reduzir produção"},
-          {"key": "D", "text": "Eliminar estoque"}
+          { "key": "A", "text": "Organização estética" },
+          { "key": "B", "text": "Criar visão estratégica e poder de negociação" },
+          { "key": "C", "text": "Eliminar contratos" },
+          { "key": "D", "text": "Comprar mais rápido sempre" }
         ],
-        "answer": "A",
-        "explain": "Classificação permite análise estratégica."
+        "answer": "B",
+        "explain": "Categoria ajuda a enxergar gasto e definir estratégia."
       },
       {
         "id": 2,
-        "question": "Gastos diretos estão ligados a:",
+        "question": "Gastos diretos são aqueles que:",
         "options": [
-          {"key": "A", "text": "Produto final"},
-          {"key": "B", "text": "Marketing"},
-          {"key": "C", "text": "RH"},
-          {"key": "D", "text": "Treinamento"}
+          { "key": "A", "text": "Entram no produto/serviço final" },
+          { "key": "B", "text": "Nunca afetam margem" },
+          { "key": "C", "text": "São só administrativos" },
+          { "key": "D", "text": "Não têm fornecedor" }
         ],
         "answer": "A",
-        "explain": "Eles compõem o custo do produto."
+        "explain": "Eles compõem o custo do que é vendido."
       },
       {
         "id": 3,
-        "question": "Material de escritório é exemplo de:",
+        "question": "MRO (manutenção, reparo e operação) costuma ser:",
         "options": [
-          {"key": "A", "text": "Gasto indireto"},
-          {"key": "B", "text": "Gasto direto"},
-          {"key": "C", "text": "Produto final"},
-          {"key": "D", "text": "Marketing"}
+          { "key": "A", "text": "Direto" },
+          { "key": "B", "text": "Indireto" },
+          { "key": "C", "text": "Imposto" },
+          { "key": "D", "text": "Venda" }
         ],
-        "answer": "A",
-        "explain": "Não compõe o produto."
+        "answer": "B",
+        "explain": "Mantém a operação rodando, mas não entra no produto."
       },
       {
         "id": 4,
-        "question": "Transporte normalmente é classificado como:",
+        "question": "Em serviços, o principal risco de controle é:",
         "options": [
-          {"key": "A", "text": "Serviço"},
-          {"key": "B", "text": "Produto"},
-          {"key": "C", "text": "Matéria-prima"},
-          {"key": "D", "text": "Estoque"}
+          { "key": "A", "text": "Serviço entregue sem critério de medição" },
+          { "key": "B", "text": "Preço sempre cair" },
+          { "key": "C", "text": "Qualidade sempre perfeita" },
+          { "key": "D", "text": "Nenhum risco" }
         ],
         "answer": "A",
-        "explain": "É uma contratação de serviço."
+        "explain": "Sem SLA e indicador, você paga sem governar o resultado."
       },
       {
         "id": 5,
-        "question": "Gestão por categoria ajuda a:",
+        "question": "Estratégia por categoria significa:",
         "options": [
-          {"key": "A", "text": "Melhorar negociações"},
-          {"key": "B", "text": "Eliminar fornecedores"},
-          {"key": "C", "text": "Eliminar compras"},
-          {"key": "D", "text": "Eliminar estoque"}
+          { "key": "A", "text": "Comprar tudo do mesmo jeito" },
+          { "key": "B", "text": "Definir abordagem diferente para diretos, indiretos e serviços" },
+          { "key": "C", "text": "Ignorar risco" },
+          { "key": "D", "text": "Ignorar custo total" }
+        ],
+        "answer": "B",
+        "explain": "Cada tipo tem risco e impacto diferente."
+      },
+      {
+        "id": 6,
+        "question": "Pulverizar fornecedores sem critério tende a gerar:",
+        "options": [
+          { "key": "A", "text": "Preço e qualidade mais consistentes" },
+          { "key": "B", "text": "Inconsistência e perda de poder de negociação" },
+          { "key": "C", "text": "Zero retrabalho" },
+          { "key": "D", "text": "Menos necessidade de controle" }
+        ],
+        "answer": "B",
+        "explain": "Muitos fornecedores sem estratégia = variação e perda de escala."
+      },
+      {
+        "id": 7,
+        "question": "Direto em escala é crítico porque:",
+        "options": [
+          { "key": "A", "text": "Centavos viram impacto grande no ano" },
+          { "key": "B", "text": "Não afeta margem" },
+          { "key": "C", "text": "Não tem risco" },
+          { "key": "D", "text": "É sempre compra pequena" }
         ],
         "answer": "A",
-        "explain": "Categorias organizam estratégia."
+        "explain": "Pequena variação multiplica por volume."
+      },
+      {
+        "id": 8,
+        "question": "Indireto mal gerido vira:",
+        "options": [
+          { "key": "A", "text": "Vazamento constante de custo" },
+          { "key": "B", "text": "Lucro garantido" },
+          { "key": "C", "text": "Redução automática de estoque" },
+          { "key": "D", "text": "Aumento de qualidade do produto final sempre" }
+        ],
+        "answer": "A",
+        "explain": "Pequenos desperdícios repetidos custam caro."
+      },
+      {
+        "id": 9,
+        "question": "Uma boa razão para consolidar fornecedores é:",
+        "options": [
+          { "key": "A", "text": "Aumentar controle e consistência" },
+          { "key": "B", "text": "Criar dependência sem plano B" },
+          { "key": "C", "text": "Eliminar comparação" },
+          { "key": "D", "text": "Evitar contrato" }
+        ],
+        "answer": "A",
+        "explain": "Consolidação inteligente melhora padrão e negociação."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Categoria é só contabilidade" },
+          { "key": "B", "text": "Categoria orienta estratégia e negociação" },
+          { "key": "C", "text": "Serviço não precisa SLA" },
+          { "key": "D", "text": "Indireto não precisa controle" }
+        ],
+        "answer": "B",
+        "explain": "Sem categoria, você não cria estratégia — só reage."
       }
     ]
   },
   "extra": {
-    "eventosMinimos": "Categorias\n\n- diretos\n- indiretos\n- serviços\n",
-    "pilares": "Pilares\n\n- visibilidade\n- controle\n- estratégia\n"
+    "eventosMinimos": "Tipos\n\n- diretos\n- indiretos\n- serviços\n",
+    "pilares": "Pilares\n\n- visão de gasto\n- estratégia\n- controle por tipo\n"
   }
 }

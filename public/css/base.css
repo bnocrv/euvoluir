@@ -3,32 +3,32 @@
 html, body { height: 100%; }
 
 :root{
-  --bg: #101112;
-  --bg-soft: #17191b;
-  --surface: #1f2226;
-  --surface2: #262a2f;
-  --surface3: #2d3238;
-  --border: #41474f;
+  --bg: #000000;
+  --bg-soft: #090909;
+  --surface: #111111;
+  --surface2: #171717;
+  --surface3: #1e1e1e;
+  --border: #3a3a3a;
 
-  --text: #f3f5f7;
-  --muted: #c1c7cf;
+  --text: #ffffff;
+  --muted: #d9d9d9;
 
-  --brand: #d81324;
-  --brand2: #f3f5f7;
-  --danger: #df2b39;
-  --warn: #d69d42;
-  --accent: #7d8793;
-  --cyan: #cfd5dc;
-  --yellow: #e2d38a;
+  --brand: #e10613;
+  --brand2: #ffffff;
+  --danger: #ff2230;
+  --warn: #ffffff;
+  --accent: #bdbdbd;
+  --cyan: #ffffff;
+  --yellow: #ffffff;
 
-  --radius: 14px;
-  --shadow: 0 18px 40px rgba(0,0,0,.35);
+  --radius: 6px;
+  --shadow: 0 24px 44px rgba(0,0,0,.5);
 
   --max: 1200px;
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --display: "Orbitron", "Segoe UI", sans-serif;
-  --heading: "Manrope", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
-  --sans: "Manrope", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --display: "Oswald", "Segoe UI", sans-serif;
+  --heading: "Exo 2", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --sans: "Exo 2", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
 }
 
 body{
@@ -38,10 +38,8 @@ body{
   color: var(--text);
   position: relative;
   background:
-    radial-gradient(1200px 620px at -8% -18%, rgba(216,19,36,.26), transparent 62%),
-    radial-gradient(920px 520px at 106% -16%, rgba(207,213,220,.14), transparent 64%),
-    radial-gradient(980px 520px at 50% 118%, rgba(125,135,147,.22), transparent 68%),
-    linear-gradient(180deg, #181b20 0%, #111316 46%, #0c0d0f 100%);
+    radial-gradient(1600px 900px at 50% -40%, rgba(255,255,255,.045), transparent 70%),
+    linear-gradient(180deg, #030303 0%, #010101 48%, #000000 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -52,17 +50,42 @@ body::before{
   inset: 0;
   pointer-events: none;
   background-image:
-    radial-gradient(820px 420px at 14% -6%, rgba(216,19,36,.18), transparent 62%),
-    radial-gradient(700px 380px at 82% -10%, rgba(243,245,247,.09), transparent 66%),
-    radial-gradient(780px 440px at 52% 112%, rgba(207,213,220,.08), transparent 68%),
+    radial-gradient(900px 420px at 14% -6%, rgba(225,6,19,.1), transparent 62%),
+    radial-gradient(700px 380px at 82% -10%, rgba(255,255,255,.03), transparent 66%),
+    radial-gradient(780px 440px at 52% 112%, rgba(255,255,255,.03), transparent 68%),
     repeating-linear-gradient(
-      120deg,
-      rgba(255,255,255,.012) 0 1px,
-      transparent 1px 24px
+      125deg,
+      rgba(255,255,255,.009) 0 1px,
+      transparent 1px 34px
     );
   background-repeat: no-repeat;
   background-size: 100% 100%, 100% 100%, 100% 100%, 120% 120%;
-  opacity: .92;
+  opacity: .72;
+}
+body::after{
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(112deg, transparent 38%, rgba(225,6,19,.12) 49%, transparent 60%);
+  mix-blend-mode: screen;
+  opacity: .4;
+  transform: translateX(-48%);
+  animation: noir-sweep 9s ease-in-out infinite;
+}
+
+@keyframes noir-sweep{
+  0% { transform: translateX(-58%); opacity: .24; }
+  50% { transform: translateX(14%); opacity: .42; }
+  100% { transform: translateX(-58%); opacity: .24; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  body::after{
+    animation: none;
+    opacity: .16;
+  }
 }
 
 a{ color: inherit; text-decoration: none; }
@@ -70,13 +93,14 @@ button, input, textarea { font: inherit; }
 code, pre { font-family: var(--mono); }
 h1, h2, h3, .lesson-title{
   font-family: var(--heading);
-  letter-spacing: .2px;
+  letter-spacing: .6px;
+  text-transform: uppercase;
 }
 
-::selection{ background: rgba(216,19,36,.35); }
+::selection{ background: rgba(225,6,19,.45); }
 
 :focus-visible{
-  outline: 2px solid rgba(216,19,36,.8);
+  outline: 2px solid rgba(225,6,19,.9);
   outline-offset: 2px;
 }
 

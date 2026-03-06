@@ -32,8 +32,14 @@ export function Header() {
   const left = backTarget
     ? `<button class="btn header-back-link" id="btn-header-back" data-target="${backTarget}" aria-label="Voltar para a tela anterior de navegação">
          <span class="brand-mark" aria-hidden="true">
-           <span class="brand-f">F</span>
-           <span class="brand-f-underline"></span>
+           <span class="brand-mark-inner">
+             <span class="brand-f-glyph">
+               <span class="brand-f-stem"></span>
+               <span class="brand-f-top"></span>
+               <span class="brand-f-mid"></span>
+             </span>
+             <span class="brand-f-underline"></span>
+           </span>
          </span>
          <span class="brand-text">Skills</span>
        </button>`

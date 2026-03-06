@@ -1,60 +1,172 @@
 {
   "id": "03-ciclo-compras",
-  "title": "Aula 03 — Ciclo de compras: da requisição ao recebimento",
+  "title": "Aula 03 — Ciclo de compras: requisição, cotação, pedido e recebimento",
   "steps": [
     {
-      "title": "O ciclo completo de compras",
-      "body": "O processo de compras normalmente segue etapas claras:\n\n1) requisição\n2) cotação\n3) análise\n4) pedido\n5) entrega\n\nRegra:\n- Processo estruturado reduz erro e urgência."
+      "title": "Por que existe um ciclo (e não “comprar quando dá”)",
+      "body": "O ciclo organiza o processo para reduzir erro, custo e urgência.\n\nQuando não existe ciclo, a empresa sofre com:\n- compras fora de padrão\n- retrabalho\n- falta de rastreabilidade\n- conflitos entre áreas\n\nRegra:\n- Ciclo de compras é um controle de risco."
     },
     {
-      "title": "Requisição de compra",
-      "body": "A requisição é a solicitação interna de compra.\n\nDeve conter:\n- especificação\n- quantidade\n- prazo necessário\n\nRegra:\n- Uma requisição mal feita gera compra errada."
+      "title": "Etapa 1: Requisição (o pedido interno certo)",
+      "body": "Requisição bem feita deve conter:\n- o que é (especificação)\n- quanto (quantidade/unidade)\n- para quando (prazo)\n- por que (justificativa/uso)\n\nRegra:\n- Requisição é a base de tudo: se entra errado, sai errado."
     },
     {
-      "title": "Cotação com fornecedores",
-      "body": "Após a requisição, compras busca propostas.\n\nNormalmente envolve:\n- múltiplos fornecedores\n- comparação de condições\n\nRegra:\n- Cotação adequada cria poder de negociação."
+      "title": "Etapa 2: Cotação (comparação justa)",
+      "body": "Cotação boa cria comparação real, não '3 preços aleatórios'.\n\nInclua sempre:\n- mesmo escopo para todos\n- mesmo prazo de resposta\n- mesma condição desejada\n\nRegra:\n- Comparar só preço sem equalizar escopo é erro de método."
     },
     {
-      "title": "Análise das propostas",
-      "body": "A comparação deve considerar:\n- preço\n- prazo\n- qualidade\n- confiabilidade\n\nRegra:\n- Comparar apenas preço é análise incompleta."
+      "title": "Etapa 3: Negociação e decisão",
+      "body": "Decisão madura considera:\n- custo total (frete, impostos, risco)\n- prazo e confiabilidade\n- qualidade e histórico\n- condição de pagamento\n\nRegra:\n- Decidir fornecedor é decidir o tipo de problema que você quer ter (ou evitar)."
     },
     {
-      "title": "Emissão do pedido de compra",
-      "body": "Depois da decisão, é emitido o pedido formal.\n\nO pedido define:\n- condições comerciais\n- prazos\n- responsabilidades\n\nRegra:\n- Pedido de compra é um documento contratual."
+      "title": "Etapa 4: Pedido de compra (documento que evita discussão)",
+      "body": "Pedido precisa deixar claro:\n- item e especificação\n- quantidades\n- preço e impostos\n- prazo e local de entrega\n- condição de pagamento\n\nRegra:\n- Pedido bem escrito protege compras e protege a operação."
     },
     {
-      "title": "Recebimento e conferência",
-      "body": "Quando o material chega, é necessário conferir:\n- quantidade\n- qualidade\n- conformidade\n\nRegra:\n- Conferência evita pagar por erro."
+      "title": "Etapa 5: Recebimento e conformidade (onde a verdade aparece)",
+      "body": "No recebimento você valida:\n- quantidade (faltas/sobras)\n- qualidade (conforme especificação)\n- documento (nota/condições)\n\nRegra:\n- Recebimento é o “controle de qualidade” do processo de compras."
     },
     {
-      "title": "Mini prática",
-      "body": "Mapeie o ciclo de compras da sua empresa ou de um caso hipotético.\n\nPergunte:\n- onde surgem atrasos?\n- onde surgem erros?\n\nObjetivo:\n- enxergar gargalos do processo."
+      "title": "O ciclo fecha com feedback",
+      "body": "Após o recebimento, o processo maduro registra:\n- desempenho do fornecedor\n- ocorrências\n- lições\n\nRegra:\n- Sem feedback, você repete fornecedor ruim por inércia."
+    },
+    {
+      "title": "Mini prática (45 min) — desenhando o ciclo do seu cenário",
+      "body": "Desenhe em 1 folha:\n- quem requisita\n- quem aprova\n- quem cota\n- quem decide\n- quem recebe\n\nDepois marque:\n- onde mais dá erro hoje?\n\nObjetivo:\n- localizar gargalos antes de tentar “melhorar tudo”."
     },
     {
       "title": "Resumo da aula",
-      "body": "- Compras segue um ciclo estruturado\n- Requisição define a demanda\n- Cotação cria opções\n- Pedido formaliza a negociação\n- Recebimento valida a compra\n\nAgora fixe com o quiz."
+      "body": "- Ciclo reduz risco e retrabalho\n- Requisição define demanda\n- Cotação precisa ser comparável\n- Pedido formaliza a decisão\n- Recebimento valida a compra\n\nAgora fixe com o quiz."
     }
   ],
   "quiz": {
-    "title": "Quiz (10 perguntas) — Aula 03",
+    "title": "Quiz (10 perguntas) — Aula 03 (Compras)",
     "instructions": "Marque A, B, C ou D.",
     "questions": [
       {
         "id": 1,
-        "question": "O ciclo de compras começa com:",
+        "question": "A principal função do ciclo de compras é:",
         "options": [
-          {"key": "A", "text": "Requisição"},
-          {"key": "B", "text": "Entrega"},
-          {"key": "C", "text": "Pagamento"},
-          {"key": "D", "text": "Estoque"}
+          { "key": "A", "text": "Burocratizar o processo" },
+          { "key": "B", "text": "Reduzir risco, erro e urgência" },
+          { "key": "C", "text": "Aumentar estoque" },
+          { "key": "D", "text": "Evitar concorrência" }
         ],
-        "answer": "A",
-        "explain": "A requisição inicia a necessidade de compra."
+        "answer": "B",
+        "explain": "O ciclo cria controle e previsibilidade."
+      },
+      {
+        "id": 2,
+        "question": "Requisição bem feita precisa ter, no mínimo:",
+        "options": [
+          { "key": "A", "text": "Só o preço desejado" },
+          { "key": "B", "text": "Especificação, quantidade e prazo" },
+          { "key": "C", "text": "Somente o fornecedor preferido" },
+          { "key": "D", "text": "Somente a urgência" }
+        ],
+        "answer": "B",
+        "explain": "Sem isso, compras não consegue cotar corretamente."
+      },
+      {
+        "id": 3,
+        "question": "Comparar propostas sem equalizar escopo gera:",
+        "options": [
+          { "key": "A", "text": "Comparação justa" },
+          { "key": "B", "text": "Decisão distorcida" },
+          { "key": "C", "text": "Qualidade garantida" },
+          { "key": "D", "text": "Prazo menor" }
+        ],
+        "answer": "B",
+        "explain": "Você não sabe se está comparando a mesma coisa."
+      },
+      {
+        "id": 4,
+        "question": "A decisão madura de fornecedor considera:",
+        "options": [
+          { "key": "A", "text": "Somente preço" },
+          { "key": "B", "text": "Custo total, prazo, qualidade e condição" },
+          { "key": "C", "text": "Somente a marca" },
+          { "key": "D", "text": "Somente a amizade" }
+        ],
+        "answer": "B",
+        "explain": "Decidir é equilibrar impacto real."
+      },
+      {
+        "id": 5,
+        "question": "Pedido de compra protege a operação porque:",
+        "options": [
+          { "key": "A", "text": "Evita registro" },
+          { "key": "B", "text": "Formaliza condições e reduz conflito" },
+          { "key": "C", "text": "Dispensa recebimento" },
+          { "key": "D", "text": "Dispensa cotação" }
+        ],
+        "answer": "B",
+        "explain": "Documento claro evita “não foi isso que combinamos”."
+      },
+      {
+        "id": 6,
+        "question": "O recebimento valida:",
+        "options": [
+          { "key": "A", "text": "Somente o preço" },
+          { "key": "B", "text": "Quantidade, qualidade e conformidade" },
+          { "key": "C", "text": "Somente o fornecedor" },
+          { "key": "D", "text": "Somente a urgência" }
+        ],
+        "answer": "B",
+        "explain": "É a checagem final do processo."
+      },
+      {
+        "id": 7,
+        "question": "Sem feedback pós-recebimento, a empresa:",
+        "options": [
+          { "key": "A", "text": "Aprende mais rápido" },
+          { "key": "B", "text": "Repete erros e mantém fornecedor ruim por inércia" },
+          { "key": "C", "text": "Reduz risco automaticamente" },
+          { "key": "D", "text": "Garante qualidade" }
+        ],
+        "answer": "B",
+        "explain": "Sem histórico, não há melhoria contínua."
+      },
+      {
+        "id": 8,
+        "question": "Qual etapa é “base” do resto do processo?",
+        "options": [
+          { "key": "A", "text": "Recebimento" },
+          { "key": "B", "text": "Requisição" },
+          { "key": "C", "text": "Pagamento" },
+          { "key": "D", "text": "Auditoria" }
+        ],
+        "answer": "B",
+        "explain": "Se a demanda entra errada, todo o ciclo degrada."
+      },
+      {
+        "id": 9,
+        "question": "Um ciclo bem desenhado reduz principalmente:",
+        "options": [
+          { "key": "A", "text": "Registro" },
+          { "key": "B", "text": "Improviso e urgência recorrente" },
+          { "key": "C", "text": "Comparação" },
+          { "key": "D", "text": "Controle" }
+        ],
+        "answer": "B",
+        "explain": "Processo existe para reduzir improviso."
+      },
+      {
+        "id": 10,
+        "question": "Frase mais correta:",
+        "options": [
+          { "key": "A", "text": "Compras é só cotação" },
+          { "key": "B", "text": "Compras é um ciclo com controle do início ao recebimento" },
+          { "key": "C", "text": "Pedido substitui recebimento" },
+          { "key": "D", "text": "Recebimento não tem relação com compras" }
+        ],
+        "answer": "B",
+        "explain": "Compras bom controla o fluxo inteiro."
       }
     ]
   },
   "extra": {
-    "eventosMinimos": "Etapas\n\n- requisição\n- cotação\n- análise\n- pedido\n- recebimento\n",
-    "pilares": "Pilares\n\n- controle\n- rastreabilidade\n- eficiência\n"
+    "eventosMinimos": "Etapas do ciclo\n\n- requisição\n- cotação\n- decisão\n- pedido\n- recebimento\n- feedback\n",
+    "pilares": "Pilares\n\n- comparabilidade\n- rastreabilidade\n- previsibilidade\n"
   }
 }

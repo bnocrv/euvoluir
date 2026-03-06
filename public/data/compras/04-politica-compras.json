@@ -1,108 +1,168 @@
 {
   "id": "04-politica-compras",
-  "title": "Aula 04 — Política de compras: regras, alçadas e controle de decisões",
+  "title": "Aula 04 — Política de compras: regras, alçadas e padronização",
   "steps": [
     {
-      "title": "O que é política de compras",
-      "body": "A política de compras é o conjunto de regras que orienta como a empresa compra.\n\nEla define:\n- quem pode solicitar\n- quem pode aprovar\n- como cotar\n- limites de decisão\n\nRegra:\n- Sem política clara, compras vira improviso."
+      "title": "Política não é burocracia: é proteção",
+      "body": "Política de compras define regras para:\n- reduzir risco de fraude\n- reduzir compras por impulso\n- evitar favoritismo\n- garantir rastreabilidade\n\nRegra:\n- Política existe para dar previsibilidade e proteção, não para travar a operação."
     },
     {
-      "title": "Por que empresas criam políticas",
-      "body": "A política existe para reduzir:\n- decisões arbitrárias\n- risco de fraude\n- desperdício\n\nEla também garante:\n- padronização\n- rastreabilidade\n\nRegra:\n- Política não existe para burocracia, mas para controle."
+      "title": "Alçadas: quem decide o quê (e por quê)",
+      "body": "Alçadas determinam quem aprova conforme:\n- valor\n- criticidade\n- tipo de gasto\n\nExemplo:\n- baixo valor e baixo risco: aprovação simples\n- alto valor ou alto risco: aprovação mais alta\n\nRegra:\n- Quanto maior o impacto, maior o nível de decisão."
     },
     {
-      "title": "Alçadas de aprovação",
-      "body": "Alçada é o limite de valor que cada nível pode aprovar.\n\nExemplo:\n- até R$5.000: supervisor\n- até R$20.000: gerente\n- acima: diretoria\n\nRegra:\n- Quanto maior o valor, maior o nível de aprovação."
+      "title": "Padronização: o que padronizar de verdade",
+      "body": "Padronizar reduz erro e acelera operação.\n\nO que costuma ser padronizado:\n- número mínimo de cotações por faixa\n- critérios de seleção\n- cadastro/homologação\n- modelos de pedido/contrato\n\nRegra:\n- Padronização boa diminui retrabalho e aumenta consistência."
     },
     {
-      "title": "Padronização de processo",
-      "body": "Uma política define padrões como:\n- número mínimo de cotações\n- documentação exigida\n- cadastro de fornecedores\n\nRegra:\n- Processo padronizado evita decisões improvisadas."
+      "title": "Exceções existem, mas precisam de trilha",
+      "body": "Compras urgentes podem acontecer.\n\nPolítica madura não finge que não existe urgência — ela exige:\n- justificativa\n- aprovação excepcional\n- registro do motivo\n\nRegra:\n- Exceção sem registro vira regra."
     },
     {
-      "title": "Controle e auditoria",
-      "body": "Políticas permitem verificar:\n- quem aprovou\n- por que comprou\n- qual fornecedor foi escolhido\n\nRegra:\n- Transparência reduz risco de erros e fraudes."
+      "title": "O que a auditoria procura (e como evitar dor de cabeça)",
+      "body": "Em auditoria, o foco costuma ser:\n- trilha da decisão (quem aprovou)\n- comparações (por que escolheu)\n- conflito de interesse\n- aderência às alçadas\n\nRegra:\n- Se você não consegue explicar a decisão, você não consegue sustentar a decisão."
     },
     {
-      "title": "Erro comum em empresas",
-      "body": "Algumas empresas têm política escrita mas não aplicada.\n\nConsequências:\n- compras fora do processo\n- urgências frequentes\n\nRegra:\n- Política só funciona quando é seguida."
+      "title": "Erros comuns de política mal feita",
+      "body": "Erros:\n- regra complexa demais → ninguém segue\n- regra vaga demais → cada um faz de um jeito\n- política que ignora urgência → operação dribla\n\nRegra:\n- Política boa é clara, aplicável e praticável."
     },
     {
-      "title": "Mini prática (45 min)",
-      "body": "Desenhe uma política simples de compras.\n\nDefina:\n- número mínimo de cotações\n- níveis de aprovação\n- documentação necessária\n\nObjetivo:\n- entender como regras estruturam decisões."
+      "title": "Mini prática (45 min) — política enxuta em 1 página",
+      "body": "Monte uma política simples com:\n- 3 faixas de valor e respectivas aprovações\n- mínimo de cotações por faixa\n- regra de exceção (urgência) com justificativa\n\nObjetivo:\n- criar controle sem travar."
     },
     {
       "title": "Resumo da aula",
-      "body": "- Política define regras de compra\n- Alçadas controlam decisões\n- Padronização melhora eficiência\n- Transparência permite auditoria\n\nAgora fixe com o quiz."
+      "body": "- Política protege contra risco e improviso\n- Alçadas organizam decisão\n- Padronização reduz erro\n- Exceções precisam trilha\n\nAgora fixe com o quiz."
     }
   ],
   "quiz": {
-    "title": "Quiz (10 perguntas) — Aula 04",
+    "title": "Quiz (10 perguntas) — Aula 04 (Compras)",
     "instructions": "Marque A, B, C ou D.",
     "questions": [
       {
         "id": 1,
-        "question": "Política de compras define:",
+        "question": "O objetivo principal da política de compras é:",
         "options": [
-          {"key": "A", "text": "Regras de como comprar"},
-          {"key": "B", "text": "Somente preços"},
-          {"key": "C", "text": "Somente estoque"},
-          {"key": "D", "text": "Somente vendas"}
+          { "key": "A", "text": "Aumentar burocracia" },
+          { "key": "B", "text": "Dar controle, previsibilidade e proteção" },
+          { "key": "C", "text": "Eliminar fornecedores" },
+          { "key": "D", "text": "Eliminar urgência para sempre" }
         ],
-        "answer": "A",
-        "explain": "Ela define regras e responsabilidades."
+        "answer": "B",
+        "explain": "Política boa reduz risco e padroniza decisões."
       },
       {
         "id": 2,
-        "question": "Alçada de aprovação significa:",
+        "question": "Alçadas existem porque:",
         "options": [
-          {"key": "A", "text": "Limite de decisão por valor"},
-          {"key": "B", "text": "Tipo de fornecedor"},
-          {"key": "C", "text": "Prazo de entrega"},
-          {"key": "D", "text": "Tipo de produto"}
+          { "key": "A", "text": "Todos devem aprovar tudo" },
+          { "key": "B", "text": "Decisões de maior impacto exigem nível superior" },
+          { "key": "C", "text": "Compras não deve registrar nada" },
+          { "key": "D", "text": "Preço é o único critério" }
         ],
-        "answer": "A",
-        "explain": "Define quem pode aprovar determinados valores."
+        "answer": "B",
+        "explain": "Impacto maior pede governança maior."
       },
       {
         "id": 3,
-        "question": "Política ajuda a reduzir:",
+        "question": "Padronização bem aplicada tende a:",
         "options": [
-          {"key": "A", "text": "Fraudes e desperdícios"},
-          {"key": "B", "text": "Funcionários"},
-          {"key": "C", "text": "Clientes"},
-          {"key": "D", "text": "Produção"}
+          { "key": "A", "text": "Aumentar retrabalho" },
+          { "key": "B", "text": "Reduzir erro e acelerar operação" },
+          { "key": "C", "text": "Eliminar controle" },
+          { "key": "D", "text": "Eliminar comparações" }
         ],
-        "answer": "A",
-        "explain": "Controle reduz risco."
+        "answer": "B",
+        "explain": "Menos variação = menos falhas e menos ruído."
       },
       {
         "id": 4,
-        "question": "Padronização de processo serve para:",
+        "question": "Exceção sem registro vira:",
         "options": [
-          {"key": "A", "text": "Evitar improviso"},
-          {"key": "B", "text": "Aumentar risco"},
-          {"key": "C", "text": "Eliminar fornecedores"},
-          {"key": "D", "text": "Reduzir produção"}
+          { "key": "A", "text": "Controle" },
+          { "key": "B", "text": "Regra informal" },
+          { "key": "C", "text": "Auditoria automática" },
+          { "key": "D", "text": "Qualidade garantida" }
         ],
-        "answer": "A",
-        "explain": "Processo padronizado reduz erros."
+        "answer": "B",
+        "explain": "Quando ninguém registra, a exceção vira hábito."
       },
       {
         "id": 5,
-        "question": "Uma política eficiente permite:",
+        "question": "Um sinal de política ruim é:",
         "options": [
-          {"key": "A", "text": "Auditoria de decisões"},
-          {"key": "B", "text": "Eliminar controle"},
-          {"key": "C", "text": "Ignorar fornecedores"},
-          {"key": "D", "text": "Eliminar pedidos"}
+          { "key": "A", "text": "Ser clara e curta" },
+          { "key": "B", "text": "Ser tão complexa que ninguém segue" },
+          { "key": "C", "text": "Ter regra de exceção" },
+          { "key": "D", "text": "Ter trilha de decisão" }
         ],
-        "answer": "A",
-        "explain": "Rastreabilidade melhora governança."
+        "answer": "B",
+        "explain": "Se ninguém segue, não existe política na prática."
+      },
+      {
+        "id": 6,
+        "question": "Auditoria normalmente quer ver:",
+        "options": [
+          { "key": "A", "text": "Somente o menor preço" },
+          { "key": "B", "text": "Trilha de aprovação e justificativa da escolha" },
+          { "key": "C", "text": "Somente e-mails soltos" },
+          { "key": "D", "text": "Somente a nota fiscal" }
+        ],
+        "answer": "B",
+        "explain": "Rastreabilidade sustenta a decisão."
+      },
+      {
+        "id": 7,
+        "question": "Uma política madura sobre urgência:",
+        "options": [
+          { "key": "A", "text": "Finge que urgência não existe" },
+          { "key": "B", "text": "Aceita urgência, mas exige justificativa e aprovação excepcional" },
+          { "key": "C", "text": "Libera tudo sem registro" },
+          { "key": "D", "text": "Elimina prazo de entrega" }
+        ],
+        "answer": "B",
+        "explain": "Controle sem travar a realidade."
+      },
+      {
+        "id": 8,
+        "question": "Regra vaga demais gera:",
+        "options": [
+          { "key": "A", "text": "Padronização" },
+          { "key": "B", "text": "Cada um faz de um jeito" },
+          { "key": "C", "text": "Menos risco" },
+          { "key": "D", "text": "Menos custo total" }
+        ],
+        "answer": "B",
+        "explain": "Sem padrão, aumenta erro e conflito."
+      },
+      {
+        "id": 9,
+        "question": "O melhor equilíbrio de política é:",
+        "options": [
+          { "key": "A", "text": "Detalhar tudo ao extremo" },
+          { "key": "B", "text": "Ser clara, aplicável e praticável" },
+          { "key": "C", "text": "Não ter regra" },
+          { "key": "D", "text": "Depender de pessoas-chave" }
+        ],
+        "answer": "B",
+        "explain": "Política boa funciona no dia a dia."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Política serve para travar compras" },
+          { "key": "B", "text": "Política serve para proteger decisão e dar previsibilidade" },
+          { "key": "C", "text": "Política substitui recebimento" },
+          { "key": "D", "text": "Política elimina necessidade de cotação" }
+        ],
+        "answer": "B",
+        "explain": "Ela reduz risco e melhora governança."
       }
     ]
   },
   "extra": {
-    "eventosMinimos": "Elementos\n\n- regras\n- aprovação\n- documentação\n",
-    "pilares": "Pilares\n\n- controle\n- transparência\n- padronização\n"
+    "eventosMinimos": "Governança\n\n- alçada\n- cotação mínima\n- trilha de decisão\n- regra de exceção\n",
+    "pilares": "Pilares\n\n- governança\n- rastreabilidade\n- consistência\n"
   }
 }

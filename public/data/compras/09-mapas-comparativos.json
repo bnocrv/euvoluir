@@ -1,0 +1,168 @@
+{
+  "id": "09-mapas-comparativos",
+  "title": "Aula 09 — Mapa comparativo: preço, prazo, impostos e condições",
+  "steps": [
+    {
+      "title": "Mapa comparativo é a ferramenta que evita decisão por “achismo”",
+      "body": "Mapa comparativo é uma estrutura (normalmente planilha) para colocar propostas lado a lado.\n\nEle serve para:\n- equalizar propostas\n- enxergar custo total\n- registrar racional da decisão\n\nRegra:\n- Se você não consegue explicar a escolha, a escolha é fraca."
+    },
+    {
+      "title": "Os 4 blocos do mapa (o que comparar de verdade)",
+      "body": "Bloco 1 — Preço:\n- unitário, descontos, volumes\n\nBloco 2 — Prazo:\n- lead time prometido vs histórico\n\nBloco 3 — Impostos e frete:\n- incluso ou não, condições\n\nBloco 4 — Condições:\n- pagamento, validade da proposta, garantia\n\nRegra:\n- Preço é só 1 bloco; a decisão é o conjunto."
+    },
+    {
+      "title": "Equalização no mapa (onde muita gente erra)",
+      "body": "Equalização comum:\n- transformar tudo em custo final comparável\n- padronizar condição (ex.: DDP vs FOB, frete incluso ou não)\n- ajustar por impostos\n\nRegra:\n- Se não equaliza, você escolhe o fornecedor que descreveu pior (e pareceu mais barato)."
+    },
+    {
+      "title": "Como incluir risco sem virar subjetivo",
+      "body": "Você pode incluir risco com indicadores simples:\n- histórico de atraso (sim/não ou %)\n- índice de não conformidade\n- capacidade (aguenta volume?)\n\nRegra:\n- Risco pode ser aproximado com evidências, não com opinião."
+    },
+    {
+      "title": "Decisão documentada (compliance e aprendizado)",
+      "body": "Um bom mapa registra:\n- fornecedor escolhido\n- motivo (2–3 bullets objetivos)\n- trade-off aceito (ex.: mais caro, mas prazo confiável)\n\nRegra:\n- Decisão documentada evita “troca de culpa” quando dá problema."
+    },
+    {
+      "title": "Erros comuns",
+      "body": "Erros:\n- comparar só unitário\n- ignorar frete/impostos\n- não registrar condição de pagamento\n- não registrar motivo\n\nRegra:\n- Quem não registra motivo repete erro e perde governança."
+    },
+    {
+      "title": "Mini prática (45 min) — mapa comparativo com 3 fornecedores",
+      "body": "Monte um mapa com colunas:\n- preço unitário\n- frete\n- impostos\n- custo total\n- prazo\n- pagamento\n- observações de risco\n\nObjetivo:\n- aprender a “enxergar custo total”."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Mapa comparativo evita decisão por achismo\n- Compare preço, prazo, impostos/frete e condição\n- Equalização é obrigatória\n- Registre motivo e trade-offs\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 09 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O mapa comparativo existe principalmente para:",
+        "options": [
+          { "key": "A", "text": "Deixar a planilha bonita" },
+          { "key": "B", "text": "Comparar propostas de forma equalizada e registrável" },
+          { "key": "C", "text": "Escolher por amizade" },
+          { "key": "D", "text": "Eliminar concorrência" }
+        ],
+        "answer": "B",
+        "explain": "Ele cria base objetiva e auditável."
+      },
+      {
+        "id": 2,
+        "question": "Comparar apenas preço unitário é falho porque:",
+        "options": [
+          { "key": "A", "text": "Preço não muda nada" },
+          { "key": "B", "text": "Ignora frete, impostos, prazo e condição de pagamento" },
+          { "key": "C", "text": "Elimina custo total" },
+          { "key": "D", "text": "Sempre dá certo" }
+        ],
+        "answer": "B",
+        "explain": "O custo real é a soma de tudo."
+      },
+      {
+        "id": 3,
+        "question": "Equalização no mapa significa:",
+        "options": [
+          { "key": "A", "text": "Tornar propostas comparáveis no mesmo critério" },
+          { "key": "B", "text": "Escolher o menor preço sempre" },
+          { "key": "C", "text": "Ignorar impostos" },
+          { "key": "D", "text": "Ignorar frete" }
+        ],
+        "answer": "A",
+        "explain": "Sem equalizar, a comparação é inválida."
+      },
+      {
+        "id": 4,
+        "question": "Um jeito adulto de incluir risco é usar:",
+        "options": [
+          { "key": "A", "text": "Opinião pessoal" },
+          { "key": "B", "text": "Evidências simples (atraso, não conformidade, capacidade)" },
+          { "key": "C", "text": "Boatos" },
+          { "key": "D", "text": "Sorte" }
+        ],
+        "answer": "B",
+        "explain": "Risco precisa de evidência, mesmo que aproximada."
+      },
+      {
+        "id": 5,
+        "question": "Registrar o motivo da escolha serve para:",
+        "options": [
+          { "key": "A", "text": "Criar burocracia inútil" },
+          { "key": "B", "text": "Governança, auditoria e aprendizado" },
+          { "key": "C", "text": "Evitar negociação" },
+          { "key": "D", "text": "Eliminar recebimento" }
+        ],
+        "answer": "B",
+        "explain": "Você sustenta a decisão e melhora ao longo do tempo."
+      },
+      {
+        "id": 6,
+        "question": "Um erro que distorce custo total é:",
+        "options": [
+          { "key": "A", "text": "Incluir frete e impostos" },
+          { "key": "B", "text": "Ignorar frete e impostos" },
+          { "key": "C", "text": "Registrar condição de pagamento" },
+          { "key": "D", "text": "Registrar prazo" }
+        ],
+        "answer": "B",
+        "explain": "Você escolhe errado por falta de componentes do custo."
+      },
+      {
+        "id": 7,
+        "question": "Trade-off é:",
+        "options": [
+          { "key": "A", "text": "Uma troca entre critérios (ex.: pagar mais para ter prazo confiável)" },
+          { "key": "B", "text": "Um erro de planilha" },
+          { "key": "C", "text": "Uma fraude" },
+          { "key": "D", "text": "Um imposto" }
+        ],
+        "answer": "A",
+        "explain": "Toda decisão real tem troca entre critérios."
+      },
+      {
+        "id": 8,
+        "question": "O mapa comparativo ajuda a evitar:",
+        "options": [
+          { "key": "A", "text": "Decisão por achismo" },
+          { "key": "B", "text": "Registro" },
+          { "key": "C", "text": "Concorrência" },
+          { "key": "D", "text": "Entrega" }
+        ],
+        "answer": "A",
+        "explain": "Ele força decisão com base e justificativa."
+      },
+      {
+        "id": 9,
+        "question": "Se um fornecedor parece muito mais barato, um bom próximo passo é:",
+        "options": [
+          { "key": "A", "text": "Fechar na hora" },
+          { "key": "B", "text": "Verificar equalização: impostos, frete e escopo" },
+          { "key": "C", "text": "Ignorar condição de pagamento" },
+          { "key": "D", "text": "Ignorar prazo" }
+        ],
+        "answer": "B",
+        "explain": "Pode ser diferença de escopo/condição, não de eficiência."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Mapa comparativo substitui recebimento" },
+          { "key": "B", "text": "Mapa comparativo organiza decisão e cria trilha" },
+          { "key": "C", "text": "Mapa comparativo elimina risco" },
+          { "key": "D", "text": "Mapa comparativo serve só para preço" }
+        ],
+        "answer": "B",
+        "explain": "Ele melhora qualidade da decisão e governança."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Colunas típicas\n\n- preço\n- frete\n- impostos\n- custo total\n- prazo\n- pagamento\n- risco\n",
+    "pilares": "Pilares\n\n- equalização\n- custo total\n- justificativa\n"
+  }
+}

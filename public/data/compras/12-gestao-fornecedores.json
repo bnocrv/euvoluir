@@ -1,0 +1,168 @@
+{
+  "id": "12-gestao-fornecedores",
+  "title": "Aula 12 — Gestão de fornecedores: relacionamento, desempenho e desenvolvimento",
+  "steps": [
+    {
+      "title": "Comprar é fácil; manter desempenho é o jogo real",
+      "body": "Depois que o fornecedor entra, a operação depende dele.\n\nGestão de fornecedores serve para:\n- garantir consistência (prazo/qualidade)\n- reduzir variação (menos surpresa)\n- resolver problemas rápido\n- desenvolver fornecedor (melhorar capacidade)\n\nRegra:\n- Fornecedor sem gestão vira risco recorrente."
+    },
+    {
+      "title": "Relacionamento ≠ amizade (relação profissional)",
+      "body": "Relacionamento bom significa:\n- comunicação clara\n- regras claras\n- feedback de desempenho\n- previsibilidade de demanda\n\nNão significa:\n- favoritismo\n- fechar olhos para falha\n\nRegra:\n- Relação profissional protege os dois lados."
+    },
+    {
+      "title": "O que medir (o mínimo que dá resultado)",
+      "body": "Métricas simples que mudam o jogo:\n- On-time delivery (OTD): entregou no prazo?\n- Qualidade: % de não conformidade\n- Lead time real vs prometido\n- Tempo de resposta a ocorrências\n\nRegra:\n- Sem métrica, fornecedor 'promete' e você só descobre quando explode."
+    },
+    {
+      "title": "Gestão por segmentação (nem todo fornecedor merece o mesmo esforço)",
+      "body": "Segmentar evita perder tempo:\n\n- Críticos: alto impacto (foco alto)\n- Estratégicos: parceria e contrato\n- Rotineiros: eficiência e padronização\n- Oportunísticos: compras pontuais\n\nRegra:\n- Gestão boa aplica energia proporcional ao impacto."
+    },
+    {
+      "title": "Desenvolvimento de fornecedor (quando vale a pena)",
+      "body": "Desenvolver significa ajudar o fornecedor a melhorar.\n\nVale a pena quando:\n- fornecedor é crítico\n- trocar é caro/riscado\n- mercado é limitado\n\nFerramentas:\n- plano de ação (5W2H)\n- revisão de processo\n- feedback com dados\n\nRegra:\n- Você desenvolve quando o custo de trocar é maior que o custo de melhorar."
+    },
+    {
+      "title": "Gestão de problemas (ocorrência não pode virar novela)",
+      "body": "Boa prática:\n- registrar ocorrência\n- classificar severidade\n- definir responsável e prazo\n- cobrar evidência de correção\n\nRegra:\n- Problema sem registro vira repetição infinita."
+    },
+    {
+      "title": "Mini prática (45 min) — scorecard simples",
+      "body": "Monte um scorecard com 4 métricas:\n- prazo (OTD)\n- qualidade\n- resposta\n- flexibilidade\n\nDê nota mensal a 3 fornecedores.\n\nObjetivo:\n- começar a gerir por evidência."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Gestão mantém desempenho ao longo do tempo\n- Relacionamento é profissional e baseado em regra\n- Meça prazo, qualidade e resposta\n- Segmente para usar energia onde importa\n- Registre ocorrências e cobre correção\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 12 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Gestão de fornecedores serve principalmente para:",
+        "options": [
+          { "key": "A", "text": "Manter desempenho e reduzir surpresa" },
+          { "key": "B", "text": "Criar amizade" },
+          { "key": "C", "text": "Eliminar métricas" },
+          { "key": "D", "text": "Trocar fornecedor todo mês" }
+        ],
+        "answer": "A",
+        "explain": "O objetivo é consistência: prazo, qualidade e resposta."
+      },
+      {
+        "id": 2,
+        "question": "Relacionamento profissional significa:",
+        "options": [
+          { "key": "A", "text": "Fechar os olhos para falhas" },
+          { "key": "B", "text": "Regras claras + comunicação + feedback" },
+          { "key": "C", "text": "Escolher sempre o mesmo" },
+          { "key": "D", "text": "Evitar contrato" }
+        ],
+        "answer": "B",
+        "explain": "Profissional = previsível e documentado."
+      },
+      {
+        "id": 3,
+        "question": "OTD mede:",
+        "options": [
+          { "key": "A", "text": "Entregas no prazo" },
+          { "key": "B", "text": "Preço unitário" },
+          { "key": "C", "text": "Imposto" },
+          { "key": "D", "text": "Embalagem" }
+        ],
+        "answer": "A",
+        "explain": "On-time delivery é pontualidade."
+      },
+      {
+        "id": 4,
+        "question": "Segmentar fornecedores serve para:",
+        "options": [
+          { "key": "A", "text": "Perder tempo com todos igual" },
+          { "key": "B", "text": "Aplicar esforço proporcional ao impacto" },
+          { "key": "C", "text": "Eliminar métricas" },
+          { "key": "D", "text": "Eliminar concorrência" }
+        ],
+        "answer": "B",
+        "explain": "Crítico recebe mais gestão; rotineiro recebe eficiência."
+      },
+      {
+        "id": 5,
+        "question": "Desenvolver fornecedor vale mais quando:",
+        "options": [
+          { "key": "A", "text": "Fornecedor é crítico e mercado é limitado" },
+          { "key": "B", "text": "É uma compra pontual" },
+          { "key": "C", "text": "Você quer trocar rápido" },
+          { "key": "D", "text": "Não existe risco" }
+        ],
+        "answer": "A",
+        "explain": "Você melhora porque trocar é mais caro/riscado."
+      },
+      {
+        "id": 6,
+        "question": "Problema sem registro tende a:",
+        "options": [
+          { "key": "A", "text": "Desaparecer sozinho" },
+          { "key": "B", "text": "Se repetir" },
+          { "key": "C", "text": "Virar SLA" },
+          { "key": "D", "text": "Virar desconto" }
+        ],
+        "answer": "B",
+        "explain": "Sem evidência e cobrança, nada muda."
+      },
+      {
+        "id": 7,
+        "question": "Scorecard é:",
+        "options": [
+          { "key": "A", "text": "Uma forma de medir desempenho do fornecedor" },
+          { "key": "B", "text": "Um contrato fiscal" },
+          { "key": "C", "text": "Um pedido de compra" },
+          { "key": "D", "text": "Uma nota fiscal" }
+        ],
+        "answer": "A",
+        "explain": "É um painel de métricas/nota por período."
+      },
+      {
+        "id": 8,
+        "question": "Uma métrica útil para qualidade é:",
+        "options": [
+          { "key": "A", "text": "% de não conformidade" },
+          { "key": "B", "text": "Tamanho do e-mail" },
+          { "key": "C", "text": "Número de reuniões" },
+          { "key": "D", "text": "Fonte do relatório" }
+        ],
+        "answer": "A",
+        "explain": "Qualidade precisa ser mensurável."
+      },
+      {
+        "id": 9,
+        "question": "Gestão de fornecedor reduz:",
+        "options": [
+          { "key": "A", "text": "Previsibilidade" },
+          { "key": "B", "text": "Surpresas e retrabalho" },
+          { "key": "C", "text": "Controle" },
+          { "key": "D", "text": "Registro" }
+        ],
+        "answer": "B",
+        "explain": "Menos variação = menos incêndio."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Fornecedor bom não precisa ser medido" },
+          { "key": "B", "text": "Fornecedor deve ser gerido por evidência e impacto" },
+          { "key": "C", "text": "Métrica atrapalha" },
+          { "key": "D", "text": "Scorecard é só burocracia" }
+        ],
+        "answer": "B",
+        "explain": "Métrica dá consistência e melhora contínua."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Scorecard (mínimo)\n\n- OTD\n- qualidade\n- lead time real\n- resposta\n",
+    "pilares": "Pilares\n\n- consistência\n- evidência\n- segmentação\n"
+  }
+}

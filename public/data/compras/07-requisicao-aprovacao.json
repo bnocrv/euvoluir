@@ -1,0 +1,168 @@
+{
+  "id": "07-requisicao-aprovacao",
+  "title": "Aula 07 — Requisição e aprovação: evitando urgências e compras fora de padrão",
+  "steps": [
+    {
+      "title": "Requisição é o “pedido interno” que protege a operação",
+      "body": "Requisição não existe para burocratizar. Ela existe para:\n- registrar necessidade\n- dar rastreabilidade (quem, o quê, quando, por quê)\n- permitir planejamento (evitar urgência crônica)\n- organizar aprovação (controle de gasto)\n\nRegra:\n- Sem requisição, você perde o histórico e repete erro."
+    },
+    {
+      "title": "Aprovação: controle de gasto sem travar a operação",
+      "body": "Aprovação serve para validar:\n- necessidade real\n- prioridade\n- aderência a orçamento\n- risco da compra\n\nAprovação madura é rápida porque:\n- existe política clara\n- existe informação completa\n\nRegra:\n- Aprovação lenta geralmente é sintoma de requisição ruim."
+    },
+    {
+      "title": "Urgência: o que é exceção e o que é falha de processo",
+      "body": "Urgência real:\n- item crítico inesperado\n- risco imediato à operação\n\nUrgência crônica:\n- falta de planejamento\n- estoque sem ponto de reposição\n- solicitante pedindo em cima da hora sempre\n\nRegra:\n- Se é urgente todo dia, não é urgência: é processo quebrado."
+    },
+    {
+      "title": "Como padronizar requisições (sem virar planilha infinita)",
+      "body": "Padronize campos mínimos:\n- item/especificação\n- quantidade/unidade\n- centro de custo/projeto\n- prazo necessário\n- justificativa curta\n\nRegra:\n- Padronizar campos mínimos melhora velocidade e qualidade."
+    },
+    {
+      "title": "Compras fora do padrão: por que acontecem",
+      "body": "Acontecem por:\n- falta de política clara\n- aprovações que demoram\n- 'atalhos' aceitos (WhatsApp, verbal)\n- urgência crônica\n\nRegra:\n- Se o atalho funciona, ele vira o processo real."
+    },
+    {
+      "title": "O papel de compras nesse ponto",
+      "body": "Compras deve:\n- recusar cotação sem requisição (salvo exceção documentada)\n- orientar solicitante sobre especificação\n- sinalizar urgência crônica como problema de processo\n- manter trilha (para auditoria e melhoria)\n\nRegra:\n- Disciplina de processo é o que cria maturidade."
+    },
+    {
+      "title": "Mini prática (45 min) — desenhar um fluxo rápido",
+      "body": "Desenhe um fluxo com no máximo 3 níveis:\n- até baixo valor: aprovação direta do gestor\n- médio valor: gestor + financeiro\n- alto valor/alto risco: diretoria\n\nInclua regra de exceção:\n- urgência com justificativa e aprovação rápida\n\nObjetivo:\n- controle sem travar."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Requisição cria rastreabilidade e planejamento\n- Aprovação valida necessidade e orçamento\n- Urgência crônica é falha de processo\n- Padronização mínima acelera o ciclo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 07 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O objetivo principal da requisição é:",
+        "options": [
+          { "key": "A", "text": "Aumentar burocracia" },
+          { "key": "B", "text": "Registrar necessidade e criar rastreabilidade" },
+          { "key": "C", "text": "Evitar concorrência" },
+          { "key": "D", "text": "Substituir contrato" }
+        ],
+        "answer": "B",
+        "explain": "Sem registro, não há histórico nem controle."
+      },
+      {
+        "id": 2,
+        "question": "Aprovação lenta geralmente indica:",
+        "options": [
+          { "key": "A", "text": "Processo perfeito" },
+          { "key": "B", "text": "Requisição incompleta ou política confusa" },
+          { "key": "C", "text": "Fornecedor ruim" },
+          { "key": "D", "text": "Custo total baixo" }
+        ],
+        "answer": "B",
+        "explain": "Aprovador para porque faltam dados ou regra."
+      },
+      {
+        "id": 3,
+        "question": "Se é urgente todo dia, isso é:",
+        "options": [
+          { "key": "A", "text": "Normal" },
+          { "key": "B", "text": "Sinal de processo quebrado" },
+          { "key": "C", "text": "Sinal de fornecedor ótimo" },
+          { "key": "D", "text": "Sinal de compliance forte" }
+        ],
+        "answer": "B",
+        "explain": "Urgência crônica costuma ser falta de planejamento/controle."
+      },
+      {
+        "id": 4,
+        "question": "Uma requisição mínima deve conter:",
+        "options": [
+          { "key": "A", "text": "Somente preço desejado" },
+          { "key": "B", "text": "Item, quantidade, prazo e justificativa" },
+          { "key": "C", "text": "Somente fornecedor preferido" },
+          { "key": "D", "text": "Somente urgência" }
+        ],
+        "answer": "B",
+        "explain": "Sem isso, compras não consegue atuar com qualidade."
+      },
+      {
+        "id": 5,
+        "question": "Compras fora do padrão acontece porque:",
+        "options": [
+          { "key": "A", "text": "Processo é rápido e claro" },
+          { "key": "B", "text": "Atalhos são aceitos e urgência vira hábito" },
+          { "key": "C", "text": "Existe muita transparência" },
+          { "key": "D", "text": "Existe histórico robusto" }
+        ],
+        "answer": "B",
+        "explain": "O que “funciona” vira padrão, mesmo que ruim."
+      },
+      {
+        "id": 6,
+        "question": "A função da aprovação é principalmente:",
+        "options": [
+          { "key": "A", "text": "Validar necessidade, prioridade e orçamento" },
+          { "key": "B", "text": "Escolher o fornecedor preferido do solicitante" },
+          { "key": "C", "text": "Eliminar recebimento" },
+          { "key": "D", "text": "Eliminar cotação" }
+        ],
+        "answer": "A",
+        "explain": "Aprovação é governança, não preferência pessoal."
+      },
+      {
+        "id": 7,
+        "question": "Uma regra saudável sobre exceção (urgência) é:",
+        "options": [
+          { "key": "A", "text": "Liberar sem registro" },
+          { "key": "B", "text": "Exigir justificativa e aprovação rápida documentada" },
+          { "key": "C", "text": "Proibir qualquer urgência" },
+          { "key": "D", "text": "Ignorar política" }
+        ],
+        "answer": "B",
+        "explain": "Exceção controlada evita virar regra informal."
+      },
+      {
+        "id": 8,
+        "question": "Padronizar campos mínimos tende a:",
+        "options": [
+          { "key": "A", "text": "Acelerar e reduzir erro" },
+          { "key": "B", "text": "Aumentar improviso" },
+          { "key": "C", "text": "Eliminar rastreabilidade" },
+          { "key": "D", "text": "Eliminar orçamento" }
+        ],
+        "answer": "A",
+        "explain": "Menos ruído e mais dados para decidir."
+      },
+      {
+        "id": 9,
+        "question": "O papel de compras diante de requisição incompleta é:",
+        "options": [
+          { "key": "A", "text": "Cotar mesmo assim para não perder tempo" },
+          { "key": "B", "text": "Pedir ajuste e validar especificação antes de cotar" },
+          { "key": "C", "text": "Escolher fornecedor por hábito" },
+          { "key": "D", "text": "Ignorar o solicitante" }
+        ],
+        "answer": "B",
+        "explain": "Isso evita retrabalho e compra errada."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Atalho é bom se resolve rápido" },
+          { "key": "B", "text": "Atalho aceito vira processo real" },
+          { "key": "C", "text": "Processo não precisa de registro" },
+          { "key": "D", "text": "Urgência crônica é normal" }
+        ],
+        "answer": "B",
+        "explain": "Sem disciplina, o processo degrada."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Fluxo mínimo\n\n- requisição\n- aprovação\n- cotação\n- pedido\n",
+    "pilares": "Pilares\n\n- rastreabilidade\n- governança\n- velocidade com clareza\n"
+  }
+}

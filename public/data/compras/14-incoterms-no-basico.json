@@ -1,0 +1,108 @@
+{
+  "id": "14-incoterms-no-basico",
+  "title": "Aula 14 — Incoterms no básico (quando afeta compras, frete e risco)",
+  "steps": [
+    {
+      "title": "Por que compras deveria saber incoterms (mesmo no básico)",
+      "body": "Incoterms definem:\n- quem paga o transporte\n- quem assume risco em cada etapa\n- onde ocorre a transferência de responsabilidade\n\nMesmo em empresas que não importam, o raciocínio é útil:\n- onde termina a responsabilidade do fornecedor?\n- quem responde por avaria/atraso?\n\nRegra:\n- Incoterm é divisão de custo e risco."
+    },
+    {
+      "title": "O erro comum: achar que incoterm é só “frete”",
+      "body": "Incoterm não é só sobre custo.\nÉ sobre:\n- risco\n- responsabilidade\n- ponto de entrega\n\nRegra:\n- Se você não define o ponto de responsabilidade, a avaria vira briga."
+    },
+    {
+      "title": "Os 3 exemplos mais úteis no básico (sem virar aula de comércio exterior)",
+      "body": "FOB (ideia central):\n- responsabilidade do fornecedor até um ponto de embarque\n\nCIF (ideia central):\n- fornecedor contrata e paga frete/seguro até destino\n\nDDP (ideia central):\n- fornecedor entrega “pronto” no destino com custos e responsabilidades maiores\n\nRegra:\n- Quanto mais “entrega completa”, maior o preço — mas menor sua complexidade."
+    },
+    {
+      "title": "Quando isso afeta compras na prática",
+      "body": "Afeta quando você compara propostas.\n\nExemplo:\n- Fornecedor A: preço baixo, frete por sua conta\n- Fornecedor B: preço maior, frete incluso\n\nSem equalizar:\n- você escolhe errado.\n\nRegra:\n- Incoterm/condição de entrega muda custo total."
+    },
+    {
+      "title": "Risco operacional: avaria e responsabilidade",
+      "body": "Pergunta adulta:\n- se quebrar no caminho, quem responde?\n\nSe isso não está claro:\n- recebimento vira conflito\n- financeiro trava pagamento\n\nRegra:\n- Definir responsabilidade evita paralisar a operação."
+    },
+    {
+      "title": "Como usar o básico sem complicar",
+      "body": "Boas práticas:\n- sempre registrar condição de entrega\n- deixar claro se frete está incluso\n- definir ponto de transferência de risco\n\nRegra:\n- O básico bem feito resolve 80% dos conflitos."
+    },
+    {
+      "title": "Mini prática (45 min) — equalização com frete incluso vs não incluso",
+      "body": "Crie um exemplo com 2 propostas:\n- uma com frete incluso\n- outra com frete por sua conta\n\nCalcule custo final e compare.\n\nObjetivo:\n- treinar custo total e evitar decisão distorcida."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Incoterms/condição de entrega dividem custo e risco\n- Não é só frete: é responsabilidade\n- Equalização precisa considerar isso\n- Definir responsabilidade evita conflito no recebimento\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 14 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Incoterms/condição de entrega definem principalmente:",
+        "options": [
+          { "key": "A", "text": "Somente preço" },
+          { "key": "B", "text": "Divisão de custo e risco no transporte" },
+          { "key": "C", "text": "Somente marca" },
+          { "key": "D", "text": "Somente forma de pagamento" }
+        ],
+        "answer": "B",
+        "explain": "O ponto é responsabilidade e custo ao longo do trajeto."
+      },
+      {
+        "id": 2,
+        "question": "O erro comum sobre incoterm é achar que:",
+        "options": [
+          { "key": "A", "text": "É só frete" },
+          { "key": "B", "text": "Define risco" },
+          { "key": "C", "text": "Define responsabilidade" },
+          { "key": "D", "text": "Precisa ser registrado" }
+        ],
+        "answer": "A",
+        "explain": "Ele define custo, risco e responsabilidade."
+      },
+      {
+        "id": 3,
+        "question": "Ao comparar propostas com frete incluso vs não incluso, você deve:",
+        "options": [
+          { "key": "A", "text": "Comparar só o unitário" },
+          { "key": "B", "text": "Equalizar para custo total" },
+          { "key": "C", "text": "Escolher o menor preço sempre" },
+          { "key": "D", "text": "Ignorar condição de entrega" }
+        ],
+        "answer": "B",
+        "explain": "Sem equalização, a decisão fica distorcida."
+      },
+      {
+        "id": 4,
+        "question": "Uma pergunta adulta sobre risco é:",
+        "options": [
+          { "key": "A", "text": "Se quebrar no caminho, quem responde?" },
+          { "key": "B", "text": "Qual a cor do caminhão?" },
+          { "key": "C", "text": "Quantos emojis no e-mail?" },
+          { "key": "D", "text": "Qual a fonte do contrato?" }
+        ],
+        "answer": "A",
+        "explain": "Responsabilidade por avaria evita conflito no recebimento."
+      },
+      {
+        "id": 5,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Condição de entrega não muda custo total" },
+          { "key": "B", "text": "Condição de entrega muda custo total e risco" },
+          { "key": "C", "text": "Incoterm não importa" },
+          { "key": "D", "text": "Incoterm substitui contrato" }
+        ],
+        "answer": "B",
+        "explain": "Ela altera quem paga e quem responde por problemas."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Básico a registrar\n\n- frete incluso?\n- ponto de entrega\n- responsabilidade por avaria\n",
+    "pilares": "Pilares\n\n- custo total\n- risco\n- equalização\n"
+  }
+}

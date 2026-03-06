@@ -1,0 +1,168 @@
+{
+  "id": "11-homologacao-fornecedores",
+  "title": "Aula 11 — Homologação de fornecedores: cadastro, documentação e compliance",
+  "steps": [
+    {
+      "title": "O que é homologar (e por que isso evita dor de cabeça)",
+      "body": "Homologar fornecedor é autorizar alguém a fornecer para sua empresa com base em critérios mínimos.\n\nNão é “desconfiar de todo mundo”. É controlar risco.\n\nSem homologação, os problemas aparecem em:\n- entrega (sumiu, não cumpriu)\n- qualidade (não conformidade repetida)\n- fiscal (nota errada, imposto, bloqueio)\n- reputação/compliance (fraude, conflito de interesse)\n\nRegra:\n- Homologação é filtro de risco antes do problema acontecer."
+    },
+    {
+      "title": "Cadastro vs homologação (não confundir)",
+      "body": "Cadastro é registro administrativo: dados, contato, condição.\n\nHomologação é validação: documentação + capacidade + aderência a regras.\n\nUm fornecedor pode estar cadastrado e ainda não homologado.\n\nRegra:\n- Cadastro registra; homologação autoriza."
+    },
+    {
+      "title": "Documentos mínimos (o que normalmente se pede)",
+      "body": "Varia por empresa e criticidade, mas o básico costuma incluir:\n- CNPJ e dados fiscais\n- certidões essenciais (quando aplicável)\n- dados bancários (com validação)\n- contrato social / responsável\n- política anticorrupção ou termo de ética (em empresas mais maduras)\n\nRegra:\n- Quanto maior o risco/valor, mais rigor no pacote documental."
+    },
+    {
+      "title": "Compliance na prática (sem discurso)",
+      "body": "Compliance em compras significa:\n- trilha da decisão (quem aprovou e por quê)\n- igualdade de informação na cotação\n- prevenção de conflito de interesse (fornecedor “amigo”)\n- impedir pagamentos indevidos e fraudes\n\nRegra:\n- Compliance bom não trava: ele deixa tudo explicável e auditável."
+    },
+    {
+      "title": "Critérios operacionais (o fornecedor aguenta o tranco?)",
+      "body": "Além de documento, você valida capacidade:\n- prazo praticado (não só prometido)\n- estrutura (logística, equipe)\n- histórico de atendimento\n- qualidade/reclamações\n\nFerramentas simples:\n- checklist + prova de capacidade (amostra, visita, pedido piloto)\n\nRegra:\n- Documento regular não garante entrega boa."
+    },
+    {
+      "title": "Homologação por criticidade (níveis)",
+      "body": "Uma forma madura de homologar sem burocratizar tudo:\n\nNível 1 — baixo risco/baixo valor:\n- validação básica e cadastro\n\nNível 2 — médio:\n- documentos + referência + pedido piloto\n\nNível 3 — crítico:\n- auditoria/visita + SLA + plano de contingência\n\nRegra:\n- Não faz sentido homologar “caneta” como se fosse fornecedor crítico."
+    },
+    {
+      "title": "Mini prática (45 min) — checklist de homologação por nível",
+      "body": "Crie um checklist enxuto com 3 níveis.\n\nPara cada nível, defina:\n- documentos mínimos\n- validação operacional (ex.: pedido piloto)\n- quem aprova\n\nObjetivo:\n- controlar risco sem criar burocracia inútil."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Homologação é filtro de risco\n- Cadastro ≠ homologação\n- Documentos variam por criticidade\n- Capacidade operacional precisa ser validada\n- Use níveis para não travar itens simples\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 11 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Homologação de fornecedor serve principalmente para:",
+        "options": [
+          { "key": "A", "text": "Burocratizar compras" },
+          { "key": "B", "text": "Controlar risco antes do problema acontecer" },
+          { "key": "C", "text": "Evitar concorrência" },
+          { "key": "D", "text": "Aumentar estoque" }
+        ],
+        "answer": "B",
+        "explain": "Homologar é filtrar risco financeiro, fiscal e operacional."
+      },
+      {
+        "id": 2,
+        "question": "Cadastro e homologação são a mesma coisa?",
+        "options": [
+          { "key": "A", "text": "Sim" },
+          { "key": "B", "text": "Não. Cadastro registra; homologação autoriza" },
+          { "key": "C", "text": "Sim, se for barato" },
+          { "key": "D", "text": "Depende do humor do comprador" }
+        ],
+        "answer": "B",
+        "explain": "Cadastro é administrativo; homologação é validação e aprovação."
+      },
+      {
+        "id": 3,
+        "question": "Quanto maior risco/valor, a homologação tende a ser:",
+        "options": [
+          { "key": "A", "text": "Mais rigorosa" },
+          { "key": "B", "text": "Menos rigorosa" },
+          { "key": "C", "text": "Inexistente" },
+          { "key": "D", "text": "Baseada em amizade" }
+        ],
+        "answer": "A",
+        "explain": "Governança cresce com impacto."
+      },
+      {
+        "id": 4,
+        "question": "Um fornecedor com documentação ok garante entrega boa?",
+        "options": [
+          { "key": "A", "text": "Sim, sempre" },
+          { "key": "B", "text": "Não. Precisa validar capacidade operacional" },
+          { "key": "C", "text": "Sim, se der desconto" },
+          { "key": "D", "text": "Não importa" }
+        ],
+        "answer": "B",
+        "explain": "Documento regular não garante prazo, qualidade e estrutura."
+      },
+      {
+        "id": 5,
+        "question": "Uma forma madura de não burocratizar tudo é:",
+        "options": [
+          { "key": "A", "text": "Homologar tudo como crítico" },
+          { "key": "B", "text": "Homologar por níveis de criticidade" },
+          { "key": "C", "text": "Não homologar ninguém" },
+          { "key": "D", "text": "Comprar só do conhecido" }
+        ],
+        "answer": "B",
+        "explain": "Níveis permitem rigor proporcional ao risco."
+      },
+      {
+        "id": 6,
+        "question": "Compliance em compras envolve:",
+        "options": [
+          { "key": "A", "text": "Trilha de decisão e prevenção de conflito de interesse" },
+          { "key": "B", "text": "Somente desconto" },
+          { "key": "C", "text": "Somente preço unitário" },
+          { "key": "D", "text": "Somente entrega" }
+        ],
+        "answer": "A",
+        "explain": "É governança: decisão explicável e ética."
+      },
+      {
+        "id": 7,
+        "question": "Pedido piloto na homologação serve para:",
+        "options": [
+          { "key": "A", "text": "Testar capacidade real de entrega/qualidade" },
+          { "key": "B", "text": "Aumentar burocracia" },
+          { "key": "C", "text": "Evitar comparação" },
+          { "key": "D", "text": "Eliminar contrato" }
+        ],
+        "answer": "A",
+        "explain": "Você valida na prática antes de escalar."
+      },
+      {
+        "id": 8,
+        "question": "Um risco de não homologar é:",
+        "options": [
+          { "key": "A", "text": "Auditoria e fiscal virarem surpresa" },
+          { "key": "B", "text": "Redução automática de custo" },
+          { "key": "C", "text": "Qualidade sempre melhor" },
+          { "key": "D", "text": "Menos retrabalho" }
+        ],
+        "answer": "A",
+        "explain": "Sem filtro, os problemas entram no fluxo."
+      },
+      {
+        "id": 9,
+        "question": "Homologação bem feita tende a reduzir:",
+        "options": [
+          { "key": "A", "text": "Rastreabilidade" },
+          { "key": "B", "text": "Risco e retrabalho" },
+          { "key": "C", "text": "Controle" },
+          { "key": "D", "text": "Planejamento" }
+        ],
+        "answer": "B",
+        "explain": "Menos fornecedor problemático = menos incêndio."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "Homologação é desconfiança inútil" },
+          { "key": "B", "text": "Homologação é filtro proporcional ao risco" },
+          { "key": "C", "text": "Homologação substitui recebimento" },
+          { "key": "D", "text": "Homologação elimina necessidade de contrato" }
+        ],
+        "answer": "B",
+        "explain": "É governança na medida certa."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Níveis (exemplo)\n\n- N1: cadastro básico\n- N2: docs + piloto\n- N3: auditoria + SLA + contingência\n",
+    "pilares": "Pilares\n\n- risco proporcional\n- trilha de decisão\n- validação operacional\n"
+  }
+}

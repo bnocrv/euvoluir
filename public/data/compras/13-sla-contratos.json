@@ -1,0 +1,168 @@
+{
+  "id": "13-sla-contratos",
+  "title": "Aula 13 — SLA e contratos: como transformar combinados em regra",
+  "steps": [
+    {
+      "title": "Por que “combinado verbal” vira problema",
+      "body": "Em compras, o que não está definido vira discussão:\n- prazo: “eu achei que era 10 dias”\n- escopo: “isso não estava incluso”\n- qualidade: “isso é padrão do mercado”\n\nContrato e SLA existem para reduzir ambiguidades.\n\nRegra:\n- Contrato bem feito reduz conflito; contrato ruim cria conflito."
+    },
+    {
+      "title": "Contrato vs SLA (papéis diferentes)",
+      "body": "Contrato:\n- define relação jurídica e comercial\n- preço, pagamento, responsabilidade, rescisão, multas\n\nSLA:\n- define nível de serviço (prazo, qualidade, resposta)\n- como medir\n- o que acontece se falhar\n\nRegra:\n- Contrato define a regra do jogo; SLA define o placar."
+    },
+    {
+      "title": "Cláusulas que mais protegem a operação",
+      "body": "Cláusulas operacionais importantes:\n- prazo de entrega e janela\n- aceitação no recebimento (critérios)\n- devolução e reposição\n- penalidades por atraso (quando faz sentido)\n- garantia e suporte\n\nRegra:\n- Operação precisa estar representada no documento."
+    },
+    {
+      "title": "SLA mínimo (o que medir sem complicar)",
+      "body": "Um SLA simples pode ter:\n- prazo (OTD)\n- qualidade (% NC)\n- resposta a ocorrência (tempo)\n- disponibilidade (para serviços)\n\nRegra:\n- SLA bom é mensurável e executável."
+    },
+    {
+      "title": "Como evitar SLA “de papel”",
+      "body": "SLA de papel é quando:\n- ninguém mede\n- ninguém registra ocorrência\n- não existe rotina de revisão\n\nBoa prática:\n- revisar mensalmente fornecedores críticos\n- registrar ocorrências e ações\n\nRegra:\n- SLA sem medição é enfeite."
+    },
+    {
+      "title": "Quando contrato/SLA valem mais a pena",
+      "body": "Vale especialmente para:\n- serviços recorrentes\n- itens críticos\n- alto volume\n- alto risco\n\nRegra:\n- Quanto maior impacto, mais precisa ser a regra."
+    },
+    {
+      "title": "Mini prática (45 min) — SLA simples + critério de aceite",
+      "body": "Escolha um fornecedor de serviço (ex.: transporte).\nCrie um SLA com:\n- prazo\n- taxa de ocorrência\n- tempo de resposta\n\nInclua critério de aceite:\n- quando é considerado entregue/conforme\n\nObjetivo:\n- transformar combinado em medição."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Contrato reduz ambiguidade\n- SLA mede serviço/desempenho\n- Cláusulas operacionais protegem o recebimento\n- SLA precisa ser medido\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 13 (Compras)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Contrato e SLA servem principalmente para:",
+        "options": [
+          { "key": "A", "text": "Criar burocracia" },
+          { "key": "B", "text": "Reduzir ambiguidade e proteger operação" },
+          { "key": "C", "text": "Eliminar recebimento" },
+          { "key": "D", "text": "Evitar concorrência" }
+        ],
+        "answer": "B",
+        "explain": "Documento claro evita conflito e protege o fluxo."
+      },
+      {
+        "id": 2,
+        "question": "A diferença correta é:",
+        "options": [
+          { "key": "A", "text": "Contrato mede desempenho, SLA define preço" },
+          { "key": "B", "text": "Contrato define regras comerciais/jurídicas, SLA define nível de serviço" },
+          { "key": "C", "text": "São a mesma coisa" },
+          { "key": "D", "text": "SLA é só para produtos" }
+        ],
+        "answer": "B",
+        "explain": "Contrato é regra do jogo; SLA é medição do jogo."
+      },
+      {
+        "id": 3,
+        "question": "Uma característica de SLA bom é:",
+        "options": [
+          { "key": "A", "text": "Ser subjetivo" },
+          { "key": "B", "text": "Ser mensurável e executável" },
+          { "key": "C", "text": "Ser enorme" },
+          { "key": "D", "text": "Não ter indicador" }
+        ],
+        "answer": "B",
+        "explain": "Se não mede, não governa."
+      },
+      {
+        "id": 4,
+        "question": "SLA “de papel” acontece quando:",
+        "options": [
+          { "key": "A", "text": "Existe rotina de medição" },
+          { "key": "B", "text": "Ninguém mede e não há revisão" },
+          { "key": "C", "text": "Ocorrências são registradas" },
+          { "key": "D", "text": "Existe critério de aceite" }
+        ],
+        "answer": "B",
+        "explain": "Sem medição, SLA não tem efeito prático."
+      },
+      {
+        "id": 5,
+        "question": "Cláusula operacional importante é:",
+        "options": [
+          { "key": "A", "text": "Critério de aceite no recebimento" },
+          { "key": "B", "text": "Fonte do documento" },
+          { "key": "C", "text": "Cor do PDF" },
+          { "key": "D", "text": "Assinatura com emoji" }
+        ],
+        "answer": "A",
+        "explain": "Aceite define o que é “conforme” e evita discussão."
+      },
+      {
+        "id": 6,
+        "question": "SLA mínimo pode medir:",
+        "options": [
+          { "key": "A", "text": "Prazo, qualidade e resposta a ocorrências" },
+          { "key": "B", "text": "Somente amizade" },
+          { "key": "C", "text": "Somente marca" },
+          { "key": "D", "text": "Somente cor" }
+        ],
+        "answer": "A",
+        "explain": "Esses itens definem desempenho operacional."
+      },
+      {
+        "id": 7,
+        "question": "Contrato/SLA valem mais para:",
+        "options": [
+          { "key": "A", "text": "Itens críticos e serviços recorrentes" },
+          { "key": "B", "text": "Compras pontuais de baixo risco" },
+          { "key": "C", "text": "Qualquer compra mínima" },
+          { "key": "D", "text": "Itens sem impacto" }
+        ],
+        "answer": "A",
+        "explain": "Quanto maior impacto, maior necessidade de regra clara."
+      },
+      {
+        "id": 8,
+        "question": "Critério de aceite serve para:",
+        "options": [
+          { "key": "A", "text": "Definir quando algo é considerado conforme" },
+          { "key": "B", "text": "Eliminar recebimento" },
+          { "key": "C", "text": "Eliminar fiscalização" },
+          { "key": "D", "text": "Eliminar negociação" }
+        ],
+        "answer": "A",
+        "explain": "Aceite reduz disputa e protege operação."
+      },
+      {
+        "id": 9,
+        "question": "Uma consequência de combinado verbal é:",
+        "options": [
+          { "key": "A", "text": "Menos conflito" },
+          { "key": "B", "text": "Discussão sobre escopo e prazo" },
+          { "key": "C", "text": "Menos risco" },
+          { "key": "D", "text": "Mais controle" }
+        ],
+        "answer": "B",
+        "explain": "Sem escrito, cada um lembra de um jeito."
+      },
+      {
+        "id": 10,
+        "question": "Frase correta:",
+        "options": [
+          { "key": "A", "text": "SLA sem medição resolve" },
+          { "key": "B", "text": "Contrato define a regra; SLA mede o desempenho" },
+          { "key": "C", "text": "Contrato elimina necessidade de fornecedor bom" },
+          { "key": "D", "text": "SLA é só para grandes empresas" }
+        ],
+        "answer": "B",
+        "explain": "Regra clara + medição = governança real."
+      }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "SLA mínimo\n\n- OTD (prazo)\n- % NC (qualidade)\n- tempo de resposta\n",
+    "pilares": "Pilares\n\n- clareza\n- mensuração\n- redução de conflito\n"
+  }
+}
