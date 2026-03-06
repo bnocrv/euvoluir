@@ -1,0 +1,58 @@
+{
+  "id": "23-exportacao-formato-entrega",
+  "title": "Aula 23 - Exportacao, formatos e preparacao de entrega",
+  "steps": [
+    {
+      "title": "Formato certo depende do contexto",
+      "body": "Escolha formato de entrega conforme uso: apresentacao ao vivo, envio por email ou arquivo final.\n\nRegra:\n- Um unico formato nao atende todos os cenarios."
+    },
+    {
+      "title": "Quando usar PPTX",
+      "body": "Use PPTX quando o receptor precisa editar ou apresentar com interacoes.\n\nRegra:\n- Enviar editavel sem necessidade aumenta risco de alteracao indevida."
+    },
+    {
+      "title": "Quando usar PDF",
+      "body": "Use PDF para distribuicao, leitura e preservacao de layout.\n\nRegra:\n- PDF nao substitui deck vivo para apresentacao com animacao."
+    },
+    {
+      "title": "Midia e compatibilidade",
+      "body": "Incorpore recursos corretamente e teste em outro dispositivo.\n\nRegra:\n- Funcionar no seu notebook nao garante funcionamento geral."
+    },
+    {
+      "title": "Tamanho do arquivo e performance",
+      "body": "Otimize imagens e videos para evitar lentidao e falhas no envio.\n\nRegra:\n- Arquivo pesado compromete abertura em reunioes."
+    },
+    {
+      "title": "Checklist pre-envio",
+      "body": "Revise nome do arquivo, versao final, links, fontes e permissao de acesso.\n\nRegra:\n- Entrega sem checklist aumenta erro operacional."
+    },
+    {
+      "title": "Mini pratica (45 min) - pacote de entrega",
+      "body": "Prepare um deck em:\n- PPTX final editavel\n- PDF de distribuicao\n- pasta de apoio com midia\n\nObjetivo:\n- garantir entrega tecnica sem surpresa."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Formato de entrega deve ser intencional\n- PPTX e PDF tem papeis diferentes\n- Teste de compatibilidade e obrigatorio\n- Checklist final reduz risco de falha\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 23 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Escolha de formato deve considerar:", "options": [ { "key": "A", "text": "Contexto de uso e objetivo da entrega" }, { "key": "B", "text": "Apenas preferencia pessoal" } ], "answer": "A", "explain": "Formato correto depende da situacao." },
+      { "id": 2, "question": "PPTX e mais indicado quando:", "options": [ { "key": "A", "text": "Ha necessidade de edicao ou apresentacao interativa" }, { "key": "B", "text": "So leitura estatica e necessaria" } ], "answer": "A", "explain": "PPTX preserva recursos editaveis." },
+      { "id": 3, "question": "PDF e adequado para:", "options": [ { "key": "A", "text": "Distribuicao com layout fixo" }, { "key": "B", "text": "Edicao colaborativa com animacoes" } ], "answer": "A", "explain": "PDF e ideal para leitura e compartilhamento." },
+      { "id": 4, "question": "Testar o arquivo em outro dispositivo:", "options": [ { "key": "A", "text": "Ajuda a validar compatibilidade" }, { "key": "B", "text": "E perda de tempo" } ], "answer": "A", "explain": "Ambiente diferente pode revelar falhas ocultas." },
+      { "id": 5, "question": "Arquivo excessivamente pesado:", "options": [ { "key": "A", "text": "Pode travar abertura e envio" }, { "key": "B", "text": "Sempre melhora qualidade percebida" } ], "answer": "A", "explain": "Performance ruim prejudica a entrega." },
+      { "id": 6, "question": "Checklist pre-envio serve para:", "options": [ { "key": "A", "text": "Reduzir erros operacionais" }, { "key": "B", "text": "Adicionar burocracia sem ganho" } ], "answer": "A", "explain": "Checklist protege a fase final." },
+      { "id": 7, "question": "Enviar arquivo editavel sem necessidade:", "options": [ { "key": "A", "text": "Aumenta risco de alteracao indevida" }, { "key": "B", "text": "Sempre e a melhor opcao" } ], "answer": "A", "explain": "Controle de versao e governanca importam." },
+      { "id": 8, "question": "Midia em deck deve ser:", "options": [ { "key": "A", "text": "Verificada junto com links e fontes" }, { "key": "B", "text": "Ignorada no teste final" } ], "answer": "A", "explain": "Midia quebrada impacta experiencia da audiencia." },
+      { "id": 9, "question": "Mensagem central da aula 23:", "options": [ { "key": "A", "text": "Preparar entrega com formato e testes corretos" }, { "key": "B", "text": "Depender apenas do arquivo original" } ], "answer": "A", "explain": "Aula foca robustez na entrega final." },
+      { "id": 10, "question": "Boa pratica de entrega inclui:", "options": [ { "key": "A", "text": "Pacote com versoes adequadas ao uso" }, { "key": "B", "text": "Enviar qualquer versao sem revisao" } ], "answer": "A", "explain": "Preparacao aumenta confiabilidade do material." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Entrega de apresentacao\n\n- formato\n- compatibilidade\n- performance\n- checklist\n",
+    "pilares": "Pilares\n\n- adequacao\n- confiabilidade\n- controle\n"
+  }
+}

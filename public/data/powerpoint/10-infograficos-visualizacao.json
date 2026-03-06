@@ -1,0 +1,58 @@
+{
+  "id": "10-infograficos-visualizacao",
+  "title": "Aula 10 — Infográficos e visualização para simplificar informação",
+  "steps": [
+    {
+      "title": "Infográfico transforma complexidade em clareza",
+      "body": "Quando bem feito, resume processo, comparação ou fluxo em leitura rápida.\n\nRegra:\n- Infográfico ruim complica o que deveria simplificar."
+    },
+    {
+      "title": "Quando usar infográfico",
+      "body": "Use para:\n- etapas de processo\n- relações de causa e efeito\n- resumo de múltiplos dados\n\nRegra:\n- Nem todo conteúdo precisa virar infográfico."
+    },
+    {
+      "title": "Estrutura de um infográfico eficaz",
+      "body": "Inclua:\n- título claro\n- ordem de leitura\n- ícones/códigos visuais consistentes\n\nRegra:\n- Sem ordem visual, a audiência se perde."
+    },
+    {
+      "title": "Redução de texto e foco no essencial",
+      "body": "Use frases curtas e elementos visuais de apoio.\n\nRegra:\n- Texto longo dentro de infográfico anula sua função."
+    },
+    {
+      "title": "Conexões visuais e fluxo",
+      "body": "Setas, blocos e agrupamentos devem indicar sequência lógica.\n\nRegra:\n- Fluxo visual precisa bater com narrativa oral."
+    },
+    {
+      "title": "Teste de compreensão",
+      "body": "Pergunta-chave:\n- alguém entende a mensagem em 10 segundos?\n\nRegra:\n- Se exige explicação longa, simplifique mais."
+    },
+    {
+      "title": "Mini prática (45 min) — converter texto em infográfico",
+      "body": "Pegue um slide textual e transforme em:\n- 4 a 6 blocos visuais\n- conexões claras\n- destaque do ponto principal\n\nObjetivo:\n- treinar síntese visual."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Infográfico é ferramenta de síntese\n- Estrutura e ordem visual são fundamentais\n- Menos texto, mais clareza\n- Teste rápido confirma entendimento\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 10 (PowerPoint)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Infográfico é útil quando:", "options": [ { "key": "A", "text": "Quero simplificar informação complexa" }, { "key": "B", "text": "Quero aumentar texto" }, { "key": "C", "text": "Quero evitar estrutura" }, { "key": "D", "text": "Quero deixar visual aleatório" } ], "answer": "A", "explain": "Função principal é síntese e clareza." },
+      { "id": 2, "question": "Elemento indispensável em infográfico:", "options": [ { "key": "A", "text": "Ordem de leitura" }, { "key": "B", "text": "Animações complexas" }, { "key": "C", "text": "Texto longo" }, { "key": "D", "text": "Múltiplas fontes sem padrão" } ], "answer": "A", "explain": "Sequência visual orienta compreensão." },
+      { "id": 3, "question": "Frase correta:", "options": [ { "key": "A", "text": "Todo slide deve virar infográfico" }, { "key": "B", "text": "Infográfico deve ser usado quando agrega clareza" }, { "key": "C", "text": "Infográfico dispensa mensagem central" }, { "key": "D", "text": "Infográfico deve priorizar decoração" } ], "answer": "B", "explain": "Uso deve ser intencional e funcional." },
+      { "id": 4, "question": "Excesso de texto em infográfico:", "options": [ { "key": "A", "text": "Melhora síntese visual" }, { "key": "B", "text": "Compromete a função de simplificação" }, { "key": "C", "text": "Aumenta foco" }, { "key": "D", "text": "Facilita leitura rápida" } ], "answer": "B", "explain": "Infográfico pede mensagens curtas e objetivas." },
+      { "id": 5, "question": "Conexões visuais (setas/blocos) servem para:", "options": [ { "key": "A", "text": "Mostrar sequência lógica" }, { "key": "B", "text": "Aumentar enfeite" }, { "key": "C", "text": "Eliminar contexto" }, { "key": "D", "text": "Substituir título" } ], "answer": "A", "explain": "Fluxo visual deve orientar interpretação." },
+      { "id": 6, "question": "Teste de compreensão de 10 segundos avalia:", "options": [ { "key": "A", "text": "Se a mensagem está clara" }, { "key": "B", "text": "Se o arquivo está pesado" }, { "key": "C", "text": "Se a animação é complexa" }, { "key": "D", "text": "Se a fonte é rara" } ], "answer": "A", "explain": "Clareza rápida é indicador de qualidade." },
+      { "id": 7, "question": "Boa prática ao converter texto em infográfico:", "options": [ { "key": "A", "text": "Manter todos os parágrafos" }, { "key": "B", "text": "Resumir em blocos visuais com foco" }, { "key": "C", "text": "Retirar título" }, { "key": "D", "text": "Ignorar ordem de leitura" } ], "answer": "B", "explain": "Síntese visual melhora entendimento." },
+      { "id": 8, "question": "Infográfico eficaz deve estar:", "options": [ { "key": "A", "text": "Alinhado à narrativa oral" }, { "key": "B", "text": "Desconectado da fala" }, { "key": "C", "text": "Sem ponto principal" }, { "key": "D", "text": "Com foco em efeitos visuais" } ], "answer": "A", "explain": "Slide e fala devem se complementar." },
+      { "id": 9, "question": "Erro comum em infográfico:", "options": [ { "key": "A", "text": "Hierarquia visual clara" }, { "key": "B", "text": "Falta de fluxo e excesso de elementos" }, { "key": "C", "text": "Título objetivo" }, { "key": "D", "text": "Conexões lógicas" } ], "answer": "B", "explain": "Sem organização, o público se perde." },
+      { "id": 10, "question": "Objetivo da aula 10:", "options": [ { "key": "A", "text": "Criar tabela detalhada" }, { "key": "B", "text": "Simplificar informação com infográficos" }, { "key": "C", "text": "Tratar slide mestre" }, { "key": "D", "text": "Ensinar colaboração em nuvem" } ], "answer": "B", "explain": "A aula foca visualização sintética e funcional." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Infográfico eficaz\n\n- síntese\n- ordem visual\n- conexão lógica\n- destaque\n",
+    "pilares": "Pilares\n\n- clareza\n- objetividade\n- narrativa visual\n"
+  }
+}

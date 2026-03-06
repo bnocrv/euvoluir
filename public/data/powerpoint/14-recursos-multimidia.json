@@ -1,0 +1,58 @@
+{
+  "id": "14-recursos-multimidia",
+  "title": "Aula 14 - Recursos multimidia: video, audio e interacao",
+  "steps": [
+    {
+      "title": "Multimidia como recurso de entendimento",
+      "body": "Video e audio devem ampliar compreensao e engajamento.\n\nRegra:\n- Midia sem contexto vira distração."
+    },
+    {
+      "title": "Quando inserir video",
+      "body": "Use video para demonstracao, prova social ou explicacao visual dificil de descrever.\n\nRegra:\n- Trechos curtos funcionam melhor em apresentacoes."
+    },
+    {
+      "title": "Uso de audio com criterio",
+      "body": "Audio pode apoiar narrativa, depoimentos e ambientacao pontual.\n\nRegra:\n- Audio automatico e alto prejudica experiencia."
+    },
+    {
+      "title": "Configuracoes tecnicas essenciais",
+      "body": "Verifique compatibilidade, tamanho do arquivo e funcionamento offline.\n\nRegra:\n- Testar apenas no ultimo minuto aumenta risco de falha."
+    },
+    {
+      "title": "Interacao: links e navegacao",
+      "body": "Use hiperlinks e botoes para navegar por trilhas, anexos e materiais complementares.\n\nRegra:\n- Navegacao confusa quebra ritmo da apresentacao."
+    },
+    {
+      "title": "Fallback para imprevistos",
+      "body": "Tenha plano B: capturas de tela, resumo textual e versoes alternativas.\n\nRegra:\n- Dependencia de internet sem backup e risco evitavel."
+    },
+    {
+      "title": "Mini pratica (45 min) - slide multimidia robusto",
+      "body": "Monte 3 slides com:\n- 1 video curto com contexto\n- 1 audio de apoio opcional\n- 1 link interativo com rota de retorno\n\nObjetivo:\n- combinar impacto e confiabilidade tecnica."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Multimidia deve servir ao objetivo da mensagem\n- Video e audio pedem curadoria e contexto\n- Interacao precisa ser simples e previsivel\n- Sempre prepare plano de contingencia\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 14 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Recurso multimidia eficaz deve:", "options": [ { "key": "A", "text": "Apoiar o entendimento da mensagem" }, { "key": "B", "text": "Ser usado mesmo sem necessidade" } ], "answer": "A", "explain": "Midia precisa ter funcao didatica clara." },
+      { "id": 2, "question": "Video em apresentacao funciona melhor quando:", "options": [ { "key": "A", "text": "E curto e contextualizado" }, { "key": "B", "text": "E longo e sem introducao" } ], "answer": "A", "explain": "Trechos objetivos mantem foco da audiencia." },
+      { "id": 3, "question": "Audio automatico em volume alto tende a:", "options": [ { "key": "A", "text": "Gerar desconforto e perda de controle" }, { "key": "B", "text": "Melhorar qualquer apresentacao" } ], "answer": "A", "explain": "Controle de inicio e volume e essencial." },
+      { "id": 4, "question": "Antes da apresentacao, deve-se:", "options": [ { "key": "A", "text": "Testar compatibilidade dos arquivos" }, { "key": "B", "text": "Confiar que tudo abrira igual" } ], "answer": "A", "explain": "Teste tecnico evita falhas em tempo real." },
+      { "id": 5, "question": "Links interativos no slide devem:", "options": [ { "key": "A", "text": "Ter navegacao simples e previsivel" }, { "key": "B", "text": "Ser complexos para parecer avancado" } ], "answer": "A", "explain": "Usabilidade e mais importante que complexidade." },
+      { "id": 6, "question": "Ter plano B para midia e importante porque:", "options": [ { "key": "A", "text": "Reduz impacto de falhas tecnicas" }, { "key": "B", "text": "E desnecessario em ambiente corporativo" } ], "answer": "A", "explain": "Contingencia preserva a entrega." },
+      { "id": 7, "question": "Uso de multimidia sem objetivo claro:", "options": [ { "key": "A", "text": "Dispersa a atencao" }, { "key": "B", "text": "Sempre aumenta engajamento" } ], "answer": "A", "explain": "Efeito sem contexto vira ruido." },
+      { "id": 8, "question": "Dependencia total de internet durante apresentacao:", "options": [ { "key": "A", "text": "Aumenta risco operacional" }, { "key": "B", "text": "Nao afeta confiabilidade" } ], "answer": "A", "explain": "Conexao pode falhar e comprometer o fluxo." },
+      { "id": 9, "question": "Melhor abordagem para video em slide:", "options": [ { "key": "A", "text": "Introduzir e comentar o trecho" }, { "key": "B", "text": "Apenas reproduzir sem contexto" } ], "answer": "A", "explain": "Contextualizacao orienta leitura da audiencia." },
+      { "id": 10, "question": "Objetivo da aula 14:", "options": [ { "key": "A", "text": "Usar multimidia com criterio tecnico e narrativo" }, { "key": "B", "text": "Inserir o maximo de recursos possivel" } ], "answer": "A", "explain": "A aula equilibra impacto e confiabilidade." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Multimidia em apresentacoes\n\n- contexto\n- teste tecnico\n- navegacao\n- contingencia\n",
+    "pilares": "Pilares\n\n- funcionalidade\n- objetividade\n- robustez\n"
+  }
+}

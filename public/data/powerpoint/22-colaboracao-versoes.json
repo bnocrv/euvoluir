@@ -1,0 +1,58 @@
+{
+  "id": "22-colaboracao-versoes",
+  "title": "Aula 22 - Colaboracao, comentarios e controle de versoes",
+  "steps": [
+    {
+      "title": "Apresentacoes em equipe exigem processo",
+      "body": "Sem fluxo de colaboracao, surgem conflitos de conteudo e formato.\n\nRegra:\n- Arquivo sem dono e sem regra vira caos."
+    },
+    {
+      "title": "Definicao de papeis no time",
+      "body": "Separe responsabilidades: conteudo, design, revisao e aprovacao.\n\nRegra:\n- Funcoes sobrepostas aumentam retrabalho."
+    },
+    {
+      "title": "Comentarios com contexto",
+      "body": "Comente com clareza: o que mudar, por que e prazo.\n\nRegra:\n- Comentario vago atrasa correcao."
+    },
+    {
+      "title": "Versionamento do arquivo",
+      "body": "Padronize nome e historico de versoes para evitar perda de trabalho.\n\nRegra:\n- Multiplicar arquivos sem criterio causa confusao."
+    },
+    {
+      "title": "Janela de congelamento",
+      "body": "Defina limite para mudancas antes da apresentacao final.\n\nRegra:\n- Alteracoes de ultima hora elevam risco de erro."
+    },
+    {
+      "title": "Ritual de alinhamento rapido",
+      "body": "Faça checkpoints curtos para validar direcao e pendencias.\n\nRegra:\n- Alinhamento tardio encarece ajuste."
+    },
+    {
+      "title": "Mini pratica (45 min) - fluxo colaborativo",
+      "body": "Simule trabalho em equipe com:\n- dono do deck\n- trilha de comentarios\n- duas versoes controladas\n- aprovacao final\n\nObjetivo:\n- reduzir conflito e acelerar entrega."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Colaboracao precisa de regra clara\n- Comentarios devem ser acionaveis\n- Controle de versao evita retrabalho\n- Congelamento final protege qualidade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 22 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Em trabalho colaborativo, o ideal e:", "options": [ { "key": "A", "text": "Definir processo e responsaveis" }, { "key": "B", "text": "Editar sem regra comum" } ], "answer": "A", "explain": "Processo claro reduz conflito e retrabalho." },
+      { "id": 2, "question": "Comentario eficiente deve:", "options": [ { "key": "A", "text": "Indicar mudanca, motivo e prazo" }, { "key": "B", "text": "Ser generico e aberto" } ], "answer": "A", "explain": "Contexto acelera execucao da correcao." },
+      { "id": 3, "question": "Controle de versao ajuda a:", "options": [ { "key": "A", "text": "Evitar perda e confusao de arquivos" }, { "key": "B", "text": "Aumentar duplicidade sem rastreio" } ], "answer": "A", "explain": "Versionamento protege historico e integridade." },
+      { "id": 4, "question": "Sem dono do deck, normalmente ocorre:", "options": [ { "key": "A", "text": "Desalinhamento e atraso" }, { "key": "B", "text": "Melhor coordenacao" } ], "answer": "A", "explain": "Responsabilidade difusa reduz governanca." },
+      { "id": 5, "question": "Congelamento de mudancas e util porque:", "options": [ { "key": "A", "text": "Reduz risco perto da entrega" }, { "key": "B", "text": "Impede qualquer melhoria desde o inicio" } ], "answer": "A", "explain": "Protege estabilidade na fase final." },
+      { "id": 6, "question": "Checkpoint rapido de alinhamento:", "options": [ { "key": "A", "text": "Evita surpresas no fim" }, { "key": "B", "text": "Nao traz ganho para o time" } ], "answer": "A", "explain": "Ajuste cedo custa menos." },
+      { "id": 7, "question": "Padrao de nome para versoes:", "options": [ { "key": "A", "text": "Facilita rastreamento" }, { "key": "B", "text": "E desnecessario" } ], "answer": "A", "explain": "Identificacao clara evita erro operacional." },
+      { "id": 8, "question": "Funcoes separadas no time (conteudo/design/revisao):", "options": [ { "key": "A", "text": "Aumentam eficiencia" }, { "key": "B", "text": "Criam confusao automaticamente" } ], "answer": "A", "explain": "Divisao de papeis melhora fluxo." },
+      { "id": 9, "question": "Alteracoes de ultima hora sem controle:", "options": [ { "key": "A", "text": "Elevam chance de falhas" }, { "key": "B", "text": "Sempre melhoram o resultado" } ], "answer": "A", "explain": "Mudanca tardia sem revisao e arriscada." },
+      { "id": 10, "question": "Objetivo da aula 22:", "options": [ { "key": "A", "text": "Organizar colaboracao e versoes em equipe" }, { "key": "B", "text": "Criar animacoes avancadas" } ], "answer": "A", "explain": "A aula trata de processo colaborativo de entrega." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Fluxo colaborativo\n\n- papeis\n- comentario\n- versao\n- aprovacao\n",
+    "pilares": "Pilares\n\n- governanca\n- rastreabilidade\n- previsibilidade\n"
+  }
+}

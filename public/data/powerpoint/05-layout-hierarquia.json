@@ -1,0 +1,58 @@
+{
+  "id": "05-layout-hierarquia",
+  "title": "Aula 05 — Layout e hierarquia visual: organização do slide",
+  "steps": [
+    {
+      "title": "Layout organiza leitura",
+      "body": "Bom layout orienta onde olhar primeiro, depois e por último.\n\nRegra:\n- Layout confuso aumenta esforço cognitivo da audiência."
+    },
+    {
+      "title": "Hierarquia visual em prática",
+      "body": "Destaque por:\n- tamanho\n- contraste\n- posição\n- peso visual\n\nRegra:\n- O mais importante deve ser o mais visível."
+    },
+    {
+      "title": "Grid e alinhamento",
+      "body": "Use alinhamento consistente entre títulos, textos e elementos.\n\nRegra:\n- Alinhamento irregular passa sensação de desorganização."
+    },
+    {
+      "title": "Espaço em branco como recurso",
+      "body": "Espaço vazio melhora foco e respirabilidade do slide.\n\nRegra:\n- Tentar preencher tudo reduz legibilidade."
+    },
+    {
+      "title": "Número ideal de elementos por slide",
+      "body": "Priorize poucos blocos por tela para leitura rápida.\n\nRegra:\n- Um slide com excesso de elementos perde mensagem."
+    },
+    {
+      "title": "Consistência entre slides",
+      "body": "Mantenha padrão de posição para:\n- títulos\n- blocos de conteúdo\n- elementos visuais\n\nRegra:\n- Consistência reduz esforço de adaptação do público."
+    },
+    {
+      "title": "Mini prática (45 min) — refatoração de slides",
+      "body": "Pegue 3 slides poluídos e ajuste:\n- hierarquia\n- alinhamento\n- espaços\n- foco da mensagem\n\nObjetivo:\n- treinar clareza visual com mínimo de elementos."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Layout direciona leitura\n- Hierarquia visual destaca o essencial\n- Alinhamento e espaço em branco aumentam qualidade\n- Consistência entre slides melhora experiência\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 05 (PowerPoint)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Objetivo do layout no slide:", "options": [ { "key": "A", "text": "Preencher todo espaço" }, { "key": "B", "text": "Organizar leitura e foco" }, { "key": "C", "text": "Adicionar efeitos" }, { "key": "D", "text": "Aumentar volume de texto" } ], "answer": "B", "explain": "Layout eficaz facilita entendimento." },
+      { "id": 2, "question": "Hierarquia visual usa principalmente:", "options": [ { "key": "A", "text": "Tamanho e contraste" }, { "key": "B", "text": "Aleatoriedade" }, { "key": "C", "text": "Quantidade de fontes" }, { "key": "D", "text": "Animações longas" } ], "answer": "A", "explain": "Esses elementos orientam atenção." },
+      { "id": 3, "question": "Frase correta:", "options": [ { "key": "A", "text": "Espaço em branco é desperdício" }, { "key": "B", "text": "Espaço em branco melhora legibilidade" }, { "key": "C", "text": "Slide bom não precisa alinhamento" }, { "key": "D", "text": "Tudo deve ter o mesmo destaque" } ], "answer": "B", "explain": "Respiro visual aumenta compreensão." },
+      { "id": 4, "question": "Alinhamento inconsistente tende a:", "options": [ { "key": "A", "text": "Aumentar percepção de organização" }, { "key": "B", "text": "Gerar sensação de desordem" }, { "key": "C", "text": "Melhorar foco" }, { "key": "D", "text": "Acelerar leitura" } ], "answer": "B", "explain": "Desalinhamento quebra continuidade visual." },
+      { "id": 5, "question": "Excesso de elementos em um slide:", "options": [ { "key": "A", "text": "Facilita entendimento" }, { "key": "B", "text": "Dilui a mensagem principal" }, { "key": "C", "text": "Aumenta clareza" }, { "key": "D", "text": "Reduz esforço cognitivo" } ], "answer": "B", "explain": "Mais elementos competem por atenção." },
+      { "id": 6, "question": "Consistência visual entre slides:", "options": [ { "key": "A", "text": "Dificulta navegação" }, { "key": "B", "text": "Melhora experiência do público" }, { "key": "C", "text": "É irrelevante" }, { "key": "D", "text": "Dispensa roteiro" } ], "answer": "B", "explain": "Padrão facilita leitura contínua." },
+      { "id": 7, "question": "Elementos mais importantes devem:", "options": [ { "key": "A", "text": "Ter menor destaque" }, { "key": "B", "text": "Receber maior destaque visual" }, { "key": "C", "text": "Ficar no rodapé" }, { "key": "D", "text": "Ter mesma prioridade dos demais" } ], "answer": "B", "explain": "Hierarquia indica prioridade da mensagem." },
+      { "id": 8, "question": "Uso de grid em layout ajuda a:", "options": [ { "key": "A", "text": "Desorganizar posições" }, { "key": "B", "text": "Manter alinhamento e padrão" }, { "key": "C", "text": "Eliminar espaço em branco" }, { "key": "D", "text": "Aumentar texto por slide" } ], "answer": "B", "explain": "Grid é base de organização visual." },
+      { "id": 9, "question": "Slide com foco claro costuma ter:", "options": [ { "key": "A", "text": "Muitos pontos centrais" }, { "key": "B", "text": "Uma mensagem principal bem destacada" }, { "key": "C", "text": "Blocos sem relação" }, { "key": "D", "text": "Excesso de animação" } ], "answer": "B", "explain": "Foco único melhora retenção de mensagem." },
+      { "id": 10, "question": "Objetivo da aula 05:", "options": [ { "key": "A", "text": "Ensinar exportação" }, { "key": "B", "text": "Organizar layout e hierarquia visual do slide" }, { "key": "C", "text": "Criar storytelling avançado" }, { "key": "D", "text": "Tratar oratória" } ], "answer": "B", "explain": "A aula foca clareza visual e organização." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Elementos de layout\n\n- hierarquia\n- alinhamento\n- espaço\n- consistência\n",
+    "pilares": "Pilares\n\n- clareza visual\n- foco\n- legibilidade\n"
+  }
+}

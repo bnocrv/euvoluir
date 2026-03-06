@@ -39,16 +39,246 @@
     "title": "Quiz (10 perguntas) — Aula 16 (Gestão de Pessoas)",
     "instructions": "Marque A, B, C ou D.",
     "questions": [
-      { "id": 1, "question": "Clima organizacional representa:", "options": [ { "key": "A", "text": "Somente regras internas" }, { "key": "B", "text": "Percepção das pessoas sobre o ambiente" }, { "key": "C", "text": "Somente salário" }, { "key": "D", "text": "Somente produtividade" } ], "answer": "B", "explain": "Clima é percepção coletiva do cotidiano." },
-      { "id": 2, "question": "Sinal de clima ruim pode ser:", "options": [ { "key": "A", "text": "Colaboração estável" }, { "key": "B", "text": "Conflito e desmotivação recorrentes" }, { "key": "C", "text": "Absenteísmo baixo" }, { "key": "D", "text": "Alinhamento frequente" } ], "answer": "B", "explain": "Conflito repetido costuma indicar deterioração de clima." },
-      { "id": 3, "question": "Diagnóstico de clima mais robusto combina:", "options": [ { "key": "A", "text": "Só pesquisa online" }, { "key": "B", "text": "Pesquisa + escuta + indicadores" }, { "key": "C", "text": "Só opinião da liderança" }, { "key": "D", "text": "Só feeling da área" } ], "answer": "B", "explain": "Combinação de fontes aumenta confiança do diagnóstico." },
-      { "id": 4, "question": "Por que priorizar problemas de clima?", "options": [ { "key": "A", "text": "Para evitar ação" }, { "key": "B", "text": "Para focar no que gera maior impacto" }, { "key": "C", "text": "Para ampliar burocracia" }, { "key": "D", "text": "Para deixar tudo igual" } ], "answer": "B", "explain": "Foco melhora velocidade de resultado." },
-      { "id": 5, "question": "Plano de ação sem responsável tende a:", "options": [ { "key": "A", "text": "Executar mais rápido" }, { "key": "B", "text": "Não sair do papel" }, { "key": "C", "text": "Gerar mais alinhamento" }, { "key": "D", "text": "Melhorar indicador automaticamente" } ], "answer": "B", "explain": "Dono claro é essencial para execução." },
-      { "id": 6, "question": "Liderança impacta clima por meio de:", "options": [ { "key": "A", "text": "Comunicação e comportamento diário" }, { "key": "B", "text": "Somente metas financeiras" }, { "key": "C", "text": "Somente processos administrativos" }, { "key": "D", "text": "Somente reuniões mensais" } ], "answer": "A", "explain": "O comportamento do líder molda o ambiente." },
-      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Clima não influencia resultado" }, { "key": "B", "text": "Clima influencia desempenho e retenção" }, { "key": "C", "text": "Clima é tema secundário" }, { "key": "D", "text": "Clima se resolve sozinho" } ], "answer": "B", "explain": "Há impacto direto em produtividade e permanência." },
-      { "id": 8, "question": "Indicador de clima pode incluir:", "options": [ { "key": "A", "text": "Absenteísmo e turnover" }, { "key": "B", "text": "Só faturamento" }, { "key": "C", "text": "Só margem de lucro" }, { "key": "D", "text": "Só número de reuniões" } ], "answer": "A", "explain": "São sinais objetivos da experiência do time." },
-      { "id": 9, "question": "Segurança psicológica no time tende a:", "options": [ { "key": "A", "text": "Reduzir fala e participação" }, { "key": "B", "text": "Aumentar confiança e colaboração" }, { "key": "C", "text": "Aumentar silêncio sobre erros" }, { "key": "D", "text": "Eliminar necessidade de gestão" } ], "answer": "B", "explain": "Ambiente seguro favorece aprendizagem e cooperação." },
-      { "id": 10, "question": "Objetivo da aula 16:", "options": [ { "key": "A", "text": "Criar plano de remuneração" }, { "key": "B", "text": "Estruturar diagnóstico e ação sobre clima" }, { "key": "C", "text": "Tratar legislação de jornada" }, { "key": "D", "text": "Definir trilha de onboarding" } ], "answer": "B", "explain": "A aula foca clima com método e execução." }
+      {
+        "id": 1,
+        "question": "Clima organizacional representa:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Somente regras internas"
+          },
+          {
+            "key": "B",
+            "text": "Percepção das pessoas sobre o ambiente"
+          },
+          {
+            "key": "C",
+            "text": "Somente salário"
+          },
+          {
+            "key": "D",
+            "text": "Somente produtividade"
+          }
+        ],
+        "answer": "B",
+        "explain": "Clima é percepção coletiva do cotidiano."
+      },
+      {
+        "id": 2,
+        "question": "Sinal de clima ruim pode ser:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Colaboração estável"
+          },
+          {
+            "key": "B",
+            "text": "Conflito e desmotivação recorrentes"
+          },
+          {
+            "key": "C",
+            "text": "Absenteísmo baixo"
+          },
+          {
+            "key": "D",
+            "text": "Alinhamento frequente"
+          }
+        ],
+        "answer": "B",
+        "explain": "Conflito repetido costuma indicar deterioração de clima."
+      },
+      {
+        "id": 3,
+        "question": "Diagnóstico de clima mais robusto combina:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Só pesquisa online"
+          },
+          {
+            "key": "B",
+            "text": "Pesquisa + escuta + indicadores"
+          },
+          {
+            "key": "C",
+            "text": "Só opinião da liderança"
+          },
+          {
+            "key": "D",
+            "text": "Só feeling da área"
+          }
+        ],
+        "answer": "B",
+        "explain": "Combinação de fontes aumenta confiança do diagnóstico."
+      },
+      {
+        "id": 4,
+        "question": "Por que priorizar problemas de clima?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Para evitar ação"
+          },
+          {
+            "key": "B",
+            "text": "Para focar no que gera maior impacto"
+          },
+          {
+            "key": "C",
+            "text": "Para ampliar burocracia"
+          },
+          {
+            "key": "D",
+            "text": "Para deixar tudo igual"
+          }
+        ],
+        "answer": "B",
+        "explain": "Foco melhora velocidade de resultado."
+      },
+      {
+        "id": 5,
+        "question": "Plano de ação sem responsável tende a:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Executar mais rápido"
+          },
+          {
+            "key": "B",
+            "text": "Não sair do papel"
+          },
+          {
+            "key": "C",
+            "text": "Gerar mais alinhamento"
+          },
+          {
+            "key": "D",
+            "text": "Melhorar indicador automaticamente"
+          }
+        ],
+        "answer": "B",
+        "explain": "Dono claro é essencial para execução."
+      },
+      {
+        "id": 6,
+        "question": "Liderança impacta clima por meio de:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Comunicação e comportamento diário"
+          },
+          {
+            "key": "B",
+            "text": "Somente metas financeiras"
+          },
+          {
+            "key": "C",
+            "text": "Somente processos administrativos"
+          },
+          {
+            "key": "D",
+            "text": "Somente reuniões mensais"
+          }
+        ],
+        "answer": "A",
+        "explain": "O comportamento do líder molda o ambiente."
+      },
+      {
+        "id": 7,
+        "question": "Frase correta:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Clima não influencia resultado"
+          },
+          {
+            "key": "B",
+            "text": "Clima influencia desempenho e retenção"
+          },
+          {
+            "key": "C",
+            "text": "Clima é tema secundário"
+          },
+          {
+            "key": "D",
+            "text": "Clima se resolve sozinho"
+          }
+        ],
+        "answer": "B",
+        "explain": "Há impacto direto em produtividade e permanência."
+      },
+      {
+        "id": 8,
+        "question": "Indicador de clima pode incluir:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Absenteísmo e turnover"
+          },
+          {
+            "key": "B",
+            "text": "Só faturamento"
+          },
+          {
+            "key": "C",
+            "text": "Só margem de lucro"
+          },
+          {
+            "key": "D",
+            "text": "Só número de reuniões"
+          }
+        ],
+        "answer": "A",
+        "explain": "São sinais objetivos da experiência do time."
+      },
+      {
+        "id": 9,
+        "question": "Segurança psicológica no time tende a:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Reduzir fala e participação"
+          },
+          {
+            "key": "B",
+            "text": "Aumentar confiança e colaboração"
+          },
+          {
+            "key": "C",
+            "text": "Aumentar silêncio sobre erros"
+          },
+          {
+            "key": "D",
+            "text": "Eliminar necessidade de gestão"
+          }
+        ],
+        "answer": "B",
+        "explain": "Ambiente seguro favorece aprendizagem e cooperação."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo da aula 16:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Criar plano de remuneração"
+          },
+          {
+            "key": "B",
+            "text": "Estruturar diagnóstico e ação sobre clima"
+          },
+          {
+            "key": "C",
+            "text": "Tratar legislação de jornada"
+          },
+          {
+            "key": "D",
+            "text": "Definir trilha de onboarding"
+          }
+        ],
+        "answer": "B",
+        "explain": "A aula foca clima com método e execução."
+      }
     ]
   },
   "extra": {

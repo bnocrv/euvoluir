@@ -1,0 +1,58 @@
+{
+  "id": "16-apresentacao-executiva",
+  "title": "Aula 16 - Apresentacao executiva: sintese e tomada de decisao",
+  "steps": [
+    {
+      "title": "Apresentacao executiva exige objetividade",
+      "body": "Lideranca precisa de contexto curto, analise clara e recomendacao pratica.\n\nRegra:\n- Excesso de detalhe tecnico atrasa decisao."
+    },
+    {
+      "title": "Estrutura recomendada para reunioes de decisao",
+      "body": "Organize em:\n- cenario atual\n- problema/oportunidade\n- alternativas\n- recomendacao\n- impacto esperado\n\nRegra:\n- Sem estrutura, a reuniao perde foco."
+    },
+    {
+      "title": "Slide de resumo executivo",
+      "body": "Inclua um slide com mensagem principal, numero-chave e proximo passo.\n\nRegra:\n- Se o resumo nao estiver claro, o resto tambem nao estara."
+    },
+    {
+      "title": "Dados para decisao, nao para arquivo",
+      "body": "Mostre apenas indicadores que sustentam a recomendacao.\n\nRegra:\n- Dado sem relacao com decisao deve sair."
+    },
+    {
+      "title": "Comparacao de alternativas",
+      "body": "Apresente opcoes com criterios objetivos: custo, prazo, risco e retorno.\n\nRegra:\n- Comparacao vaga reduz confianca da audiencia."
+    },
+    {
+      "title": "Fechamento com pedido explicito",
+      "body": "Finalize indicando exatamente o que deve ser aprovado.\n\nRegra:\n- Fechamento sem pedido concreto gera indefinicao."
+    },
+    {
+      "title": "Mini pratica (45 min) - deck de decisao",
+      "body": "Monte 6 slides:\n- resumo executivo\n- cenario\n- analise\n- opcoes\n- recomendacao\n- decisao solicitada\n\nObjetivo:\n- treinar sintese para lideranca."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Apresentacao executiva deve ser curta e orientada a decisao\n- Resumo inicial acelera entendimento\n- Dados precisam sustentar recomendacao\n- Fechamento exige chamada objetiva\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 16 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Foco principal da apresentacao executiva:", "options": [ { "key": "A", "text": "Ajudar a tomar decisao" }, { "key": "B", "text": "Exibir o maximo de informacao possivel" } ], "answer": "A", "explain": "Executivos precisam clareza para decidir." },
+      { "id": 2, "question": "Resumo executivo no inicio:", "options": [ { "key": "A", "text": "Acelera entendimento da lideranca" }, { "key": "B", "text": "E opcional e pouco relevante" } ], "answer": "A", "explain": "Abre a reuniao com direcao clara." },
+      { "id": 3, "question": "Dado bom para esse contexto:", "options": [ { "key": "A", "text": "Dado ligado diretamente a recomendacao" }, { "key": "B", "text": "Dado curioso sem relacao com decisao" } ], "answer": "A", "explain": "Relevancia e criterio central." },
+      { "id": 4, "question": "Comparar alternativas deve incluir:", "options": [ { "key": "A", "text": "Criterios objetivos como custo e risco" }, { "key": "B", "text": "Opiniao sem criterio definido" } ], "answer": "A", "explain": "Criterios claros aumentam confianca." },
+      { "id": 5, "question": "Excesso de detalhe tecnico costuma:", "options": [ { "key": "A", "text": "Prejudicar velocidade da decisao" }, { "key": "B", "text": "Sempre melhorar a reuniao executiva" } ], "answer": "A", "explain": "Sintese e essencial nesse formato." },
+      { "id": 6, "question": "Fechamento eficaz em reuniao executiva:", "options": [ { "key": "A", "text": "Pedido explicito de aprovacao ou direcao" }, { "key": "B", "text": "Encerrar sem proximo passo" } ], "answer": "A", "explain": "A decisao precisa ser claramente solicitada." },
+      { "id": 7, "question": "Sem estrutura definida, a apresentacao tende a:", "options": [ { "key": "A", "text": "Perder foco e objetividade" }, { "key": "B", "text": "Ficar automaticamente mais clara" } ], "answer": "A", "explain": "Estrutura organiza entendimento e fluxo." },
+      { "id": 8, "question": "Objetivo do slide de opcoes:", "options": [ { "key": "A", "text": "Mostrar caminhos comparaveis para decidir" }, { "key": "B", "text": "Apenas preencher volume de conteudo" } ], "answer": "A", "explain": "Opcao sem comparacao nao orienta decisao." },
+      { "id": 9, "question": "Mensagem principal da aula 16:", "options": [ { "key": "A", "text": "Sintese e direcao para decisao executiva" }, { "key": "B", "text": "Detalhamento tecnico maximo em todos os slides" } ], "answer": "A", "explain": "A aula trata de comunicacao para decisao." },
+      { "id": 10, "question": "Em deck executivo, cada slide deve:", "options": [ { "key": "A", "text": "Contribuir para o argumento final" }, { "key": "B", "text": "Existir sem funcao especifica" } ], "answer": "A", "explain": "Todo slide precisa ter papel claro na recomendacao." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Deck executivo\n\n- sintese\n- criterios\n- recomendacao\n- decisao\n",
+    "pilares": "Pilares\n\n- objetividade\n- relevancia\n- direcionamento\n"
+  }
+}

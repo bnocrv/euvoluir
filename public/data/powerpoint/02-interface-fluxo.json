@@ -1,0 +1,58 @@
+{
+  "id": "02-interface-fluxo",
+  "title": "Aula 02 — Interface, atalhos essenciais e fluxo de trabalho",
+  "steps": [
+    {
+      "title": "Conhecer a interface economiza tempo",
+      "body": "Dominar painel, guias e áreas de edição acelera produção.\n\nRegra:\n- Quem domina interface produz com menos retrabalho."
+    },
+    {
+      "title": "Fluxo básico de criação",
+      "body": "Sequência recomendada:\n- planejar estrutura\n- montar conteúdo\n- ajustar visual\n- revisar\n\nRegra:\n- Ordem correta aumenta produtividade."
+    },
+    {
+      "title": "Atalhos essenciais",
+      "body": "Exemplos úteis:\n- duplicar slide\n- alinhar objetos\n- copiar formatação\n- agrupar elementos\n\nRegra:\n- Atalho reduz esforço repetitivo."
+    },
+    {
+      "title": "Organização de arquivos e versões",
+      "body": "Padronize nomes e versões para evitar perda de trabalho.\n\nRegra:\n- Versionamento simples evita retrabalho e confusão."
+    },
+    {
+      "title": "Padrão visual desde o começo",
+      "body": "Defina tipografia, cores e espaçamento antes de detalhar.\n\nRegra:\n- Padrão cedo evita correção em massa no final."
+    },
+    {
+      "title": "Revisão de consistência",
+      "body": "Checklist de revisão:\n- alinhamento\n- tamanho de fonte\n- contraste\n- sequência narrativa\n\nRegra:\n- Revisão técnica evita falha de percepção."
+    },
+    {
+      "title": "Mini prática (45 min) — produzir com atalhos",
+      "body": "Monte 5 slides aplicando atalhos de duplicação, alinhamento e formatação.\n\nObjetivo:\n- ganhar velocidade com qualidade."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Interface bem usada aumenta produtividade\n- Fluxo ordenado reduz retrabalho\n- Atalhos aceleram tarefas repetitivas\n- Revisão garante consistência\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 02 (PowerPoint)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Dominar interface ajuda a:", "options": [ { "key": "A", "text": "Aumentar retrabalho" }, { "key": "B", "text": "Produzir com mais velocidade e controle" }, { "key": "C", "text": "Eliminar revisão" }, { "key": "D", "text": "Ignorar estrutura" } ], "answer": "B", "explain": "Conhecimento da ferramenta acelera execução." },
+      { "id": 2, "question": "Fluxo recomendado de criação:", "options": [ { "key": "A", "text": "Visual primeiro, objetivo depois" }, { "key": "B", "text": "Estrutura, conteúdo, visual e revisão" }, { "key": "C", "text": "Animação antes de conteúdo" }, { "key": "D", "text": "Exportação antes de editar" } ], "answer": "B", "explain": "Sequência lógica reduz refação." },
+      { "id": 3, "question": "Atalhos no PowerPoint servem para:", "options": [ { "key": "A", "text": "Complicar o processo" }, { "key": "B", "text": "Reduzir esforço em tarefas repetitivas" }, { "key": "C", "text": "Trocar conteúdo automaticamente" }, { "key": "D", "text": "Substituir planejamento" } ], "answer": "B", "explain": "Atalhos aumentam produtividade operacional." },
+      { "id": 4, "question": "Versionamento de arquivo evita:", "options": [ { "key": "A", "text": "Organização" }, { "key": "B", "text": "Confusão e perda de progresso" }, { "key": "C", "text": "Revisão final" }, { "key": "D", "text": "Colaboração" } ], "answer": "B", "explain": "Controle de versão reduz risco de sobrescrita." },
+      { "id": 5, "question": "Definir padrão visual cedo:", "options": [ { "key": "A", "text": "Aumenta retrabalho final" }, { "key": "B", "text": "Facilita consistência de todos os slides" }, { "key": "C", "text": "Dispensa revisão" }, { "key": "D", "text": "Impede criatividade" } ], "answer": "B", "explain": "Base visual reduz ajustes tardios." },
+      { "id": 6, "question": "Revisão de consistência deve verificar:", "options": [ { "key": "A", "text": "Apenas título" }, { "key": "B", "text": "Alinhamento, fonte, contraste e sequência" }, { "key": "C", "text": "Só animação" }, { "key": "D", "text": "Só ortografia" } ], "answer": "B", "explain": "Consistência visual e narrativa é decisiva." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Atalho substitui planejamento" }, { "key": "B", "text": "Atalho acelera execução, mas exige método" }, { "key": "C", "text": "Interface não influencia resultado" }, { "key": "D", "text": "Fluxo não importa" } ], "answer": "B", "explain": "Produtividade depende de ferramenta + processo." },
+      { "id": 8, "question": "Duplicar slide com padrão ajuda a:", "options": [ { "key": "A", "text": "Manter consistência" }, { "key": "B", "text": "Aumentar desalinhamento" }, { "key": "C", "text": "Gerar mais erros visuais" }, { "key": "D", "text": "Reduzir qualidade" } ], "answer": "A", "explain": "Reuso inteligente acelera e padroniza." },
+      { "id": 9, "question": "Organização de fluxo de trabalho evita:", "options": [ { "key": "A", "text": "Clareza" }, { "key": "B", "text": "Urgência de última hora" }, { "key": "C", "text": "Prioridade" }, { "key": "D", "text": "Qualidade" } ], "answer": "B", "explain": "Processo previsível reduz correria final." },
+      { "id": 10, "question": "Objetivo da aula 02:", "options": [ { "key": "A", "text": "Ensinar oratória avançada" }, { "key": "B", "text": "Dominar interface e fluxo produtivo" }, { "key": "C", "text": "Criar storytelling final" }, { "key": "D", "text": "Apresentar dados em gráfico" } ], "answer": "B", "explain": "A aula foca produtividade na operação do PowerPoint." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Fluxo técnico\n\n- planejar\n- montar\n- revisar\n- versionar\n",
+    "pilares": "Pilares\n\n- produtividade\n- consistência\n- controle de versão\n"
+  }
+}

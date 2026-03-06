@@ -1,0 +1,58 @@
+{
+  "id": "18-apresentacao-treinamentos",
+  "title": "Aula 18 - Apresentacoes para treinamento e educacao corporativa",
+  "steps": [
+    {
+      "title": "Treinamento pede didatica, nao apenas conteudo",
+      "body": "Apresentacao de treinamento deve facilitar aprendizado e aplicacao pratica.\n\nRegra:\n- Excesso de teoria sem exercicio reduz retencao."
+    },
+    {
+      "title": "Objetivos de aprendizagem por modulo",
+      "body": "Defina o que a pessoa deve saber e fazer ao final de cada bloco.\n\nRegra:\n- Sem objetivo claro, fica dificil medir resultado."
+    },
+    {
+      "title": "Sequencia didatica recomendada",
+      "body": "Use ciclo:\n- conceito\n- exemplo\n- pratica\n- feedback\n\nRegra:\n- Aprendizado passivo perde efetividade."
+    },
+    {
+      "title": "Slides com foco em compreensao",
+      "body": "Use linguagem simples, exemplos reais e visual limpo.\n\nRegra:\n- Slide denso sobrecarrega o participante."
+    },
+    {
+      "title": "Interacao durante a aula",
+      "body": "Inclua perguntas, mini desafios e discussoes curtas.\n\nRegra:\n- Treinamento sem participacao gera baixa retencao."
+    },
+    {
+      "title": "Avaliacoes e checkpoints",
+      "body": "Aplique verificacoes rapidas para validar entendimento ao longo da aula.\n\nRegra:\n- Avaliar apenas no final dificulta correcao de rota."
+    },
+    {
+      "title": "Mini pratica (45 min) - modulo de treinamento",
+      "body": "Monte 8 slides com:\n- objetivo\n- conceito\n- exemplo\n- exercicio\n- gabarito\n- resumo\n- aplicacao no trabalho\n- proximo modulo\n\nObjetivo:\n- desenhar trilha didatica aplicavel."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Treinamento eficaz combina teoria e pratica\n- Objetivos orientam design da aula\n- Interacao aumenta aprendizado\n- Checkpoints melhoram resultado final\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 18 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Em treinamento corporativo, o foco deve ser:", "options": [ { "key": "A", "text": "Aprendizagem aplicavel" }, { "key": "B", "text": "Somente exposicao teorica" } ], "answer": "A", "explain": "Treinamento precisa gerar mudanca de pratica." },
+      { "id": 2, "question": "Objetivos de aprendizagem servem para:", "options": [ { "key": "A", "text": "Orientar conteudo e avaliacao" }, { "key": "B", "text": "Apenas preencher introducao" } ], "answer": "A", "explain": "Objetivo claro guia todo o modulo." },
+      { "id": 3, "question": "Ciclo didatico eficaz inclui:", "options": [ { "key": "A", "text": "Conceito, exemplo, pratica e feedback" }, { "key": "B", "text": "Somente leitura de slides" } ], "answer": "A", "explain": "Pratica consolida conhecimento." },
+      { "id": 4, "question": "Slides densos em treinamento tendem a:", "options": [ { "key": "A", "text": "Reduzir compreensao" }, { "key": "B", "text": "Aumentar retencao automaticamente" } ], "answer": "A", "explain": "Carga cognitiva alta atrapalha aprendizagem." },
+      { "id": 5, "question": "Interacao em aula corporativa:", "options": [ { "key": "A", "text": "Melhora engajamento e retencao" }, { "key": "B", "text": "E dispensavel" } ], "answer": "A", "explain": "Participacao ativa fixa melhor o conteudo." },
+      { "id": 6, "question": "Checkpoints durante o treino ajudam a:", "options": [ { "key": "A", "text": "Ajustar rota antes do fim" }, { "key": "B", "text": "Aumentar confusao" } ], "answer": "A", "explain": "Monitorar entendimento evita lacunas acumuladas." },
+      { "id": 7, "question": "Exemplo real no slide tem funcao de:", "options": [ { "key": "A", "text": "Conectar teoria com pratica" }, { "key": "B", "text": "Desviar do tema principal" } ], "answer": "A", "explain": "Contexto real facilita aplicacao no trabalho." },
+      { "id": 8, "question": "Treinamento sem exercicio pratico:", "options": [ { "key": "A", "text": "Tende a ter menor fixacao" }, { "key": "B", "text": "Sempre entrega melhor resultado" } ], "answer": "A", "explain": "Aprendizado ativo e mais efetivo." },
+      { "id": 9, "question": "Mensagem central da aula 18:", "options": [ { "key": "A", "text": "Didatica e aplicacao sao essenciais" }, { "key": "B", "text": "Conteudo sozinho resolve treinamento" } ], "answer": "A", "explain": "Aula destaca desenho instrucional pratico." },
+      { "id": 10, "question": "Ao final de cada modulo, o ideal e:", "options": [ { "key": "A", "text": "Confirmar o que foi aprendido e aplicado" }, { "key": "B", "text": "Mudar de tema sem revisao" } ], "answer": "A", "explain": "Fechamento consolida conhecimento." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Treinamento corporativo\n\n- objetivo\n- pratica\n- interacao\n- avaliacao\n",
+    "pilares": "Pilares\n\n- didatica\n- aplicabilidade\n- retencao\n"
+  }
+}

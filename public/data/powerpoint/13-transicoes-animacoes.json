@@ -1,0 +1,58 @@
+{
+  "id": "13-transicoes-animacoes",
+  "title": "Aula 13 - Transicoes e animacoes com intencao",
+  "steps": [
+    {
+      "title": "Movimento deve reforcar mensagem",
+      "body": "Transicoes e animacoes servem para guiar atencao, nao para enfeitar.\n\nRegra:\n- Se o efeito nao ajuda entendimento, retire."
+    },
+    {
+      "title": "Quando usar transicao entre slides",
+      "body": "Use transicao para marcar mudanca de bloco, capitulo ou ritmo.\n\nRegra:\n- Troca de slide comum nao precisa efeito diferente."
+    },
+    {
+      "title": "Quando usar animacao dentro do slide",
+      "body": "Anime para revelar informacao em sequencia e controlar foco.\n\nRegra:\n- Mostrar tudo de uma vez reduz impacto da narrativa."
+    },
+    {
+      "title": "Tipos de animacao mais seguros",
+      "body": "Prefira entradas simples, enfase leve e saidas discretas.\n\nRegra:\n- Efeitos exagerados passam amadorismo."
+    },
+    {
+      "title": "Tempo, atraso e ritmo",
+      "body": "Ajuste duracao para acompanhar sua fala sem correria.\n\nRegra:\n- Animacao lenta demais quebra fluidez; rapida demais atrapalha leitura."
+    },
+    {
+      "title": "Consistencia de efeitos no deck",
+      "body": "Defina um conjunto pequeno de efeitos e repita com criterio.\n\nRegra:\n- Cada slide com efeito diferente gera ruido visual."
+    },
+    {
+      "title": "Mini pratica (45 min) - limpar animacoes",
+      "body": "Pegue um deck com muitos efeitos e:\n- remova exageros\n- padronize 2 ou 3 efeitos\n- ajuste tempos para narrativa\n\nObjetivo:\n- transformar movimento em apoio de comunicacao."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Movimento deve ter funcao clara\n- Transicao marca mudanca de contexto\n- Animacao organiza sequencia de leitura\n- Menos efeitos, mais profissionalismo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 13 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Transicoes e animacoes devem priorizar:", "options": [ { "key": "A", "text": "Clareza da mensagem" }, { "key": "B", "text": "Efeito visual por efeito" } ], "answer": "A", "explain": "Movimento bom guia entendimento e foco." },
+      { "id": 2, "question": "Transicao entre slides e recomendada quando:", "options": [ { "key": "A", "text": "Ha mudanca de bloco ou ritmo" }, { "key": "B", "text": "Em toda troca de slide sem criterio" } ], "answer": "A", "explain": "Transicao deve sinalizar mudanca relevante." },
+      { "id": 3, "question": "Animacao dentro do slide ajuda a:", "options": [ { "key": "A", "text": "Revelar conteudo em sequencia" }, { "key": "B", "text": "Mostrar tudo ao mesmo tempo" } ], "answer": "A", "explain": "Sequencia melhora atencao e compreensao." },
+      { "id": 4, "question": "Efeitos exagerados normalmente:", "options": [ { "key": "A", "text": "Prejudicam percepcao profissional" }, { "key": "B", "text": "Sempre valorizam o slide" } ], "answer": "A", "explain": "Excesso distrai e reduz credibilidade." },
+      { "id": 5, "question": "Sobre duracao de animacoes:", "options": [ { "key": "A", "text": "Deve acompanhar ritmo da fala" }, { "key": "B", "text": "Nao importa para a audiencia" } ], "answer": "A", "explain": "Tempo alinhado evita quebra de fluidez." },
+      { "id": 6, "question": "Padrao de efeitos no deck:", "options": [ { "key": "A", "text": "Aumenta consistencia visual" }, { "key": "B", "text": "Limita qualidade do material" } ], "answer": "A", "explain": "Consistencia reduz ruido e facilita leitura." },
+      { "id": 7, "question": "Melhor pratica para movimento:", "options": [ { "key": "A", "text": "Usar poucos efeitos com intencao" }, { "key": "B", "text": "Variar efeitos em cada slide" } ], "answer": "A", "explain": "Variacao excessiva dispersa a atencao." },
+      { "id": 8, "question": "Animacao sem funcao clara deve ser:", "options": [ { "key": "A", "text": "Removida" }, { "key": "B", "text": "Mantida para impressionar" } ], "answer": "A", "explain": "Tudo no slide precisa ter objetivo comunicacional." },
+      { "id": 9, "question": "Relacao entre fala e animacao:", "options": [ { "key": "A", "text": "Devem estar sincronizadas" }, { "key": "B", "text": "Devem ser independentes" } ], "answer": "A", "explain": "Sincronia reforca mensagem e controle do tempo." },
+      { "id": 10, "question": "Objetivo da aula 13:", "options": [ { "key": "A", "text": "Usar transicoes e animacoes com criterio" }, { "key": "B", "text": "Aumentar quantidade de efeitos" } ], "answer": "A", "explain": "A aula foca intencao e clareza no uso de movimento." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Movimento com intencao\n\n- foco\n- sequencia\n- ritmo\n- consistencia\n",
+    "pilares": "Pilares\n\n- clareza\n- simplicidade\n- controle\n"
+  }
+}

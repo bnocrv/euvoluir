@@ -1,0 +1,58 @@
+{
+  "id": "21-revisao-qualidade",
+  "title": "Aula 21 - Revisao final: checklist de qualidade e consistencia",
+  "steps": [
+    {
+      "title": "Revisao final evita erros visiveis",
+      "body": "Antes de apresentar, revise forma e conteudo com metodo.\n\nRegra:\n- Confiar apenas na memoria aumenta falhas."
+    },
+    {
+      "title": "Checklist visual do deck",
+      "body": "Verifique:\n- alinhamento\n- hierarquia\n- contraste\n- padrao de fontes e cores\n\nRegra:\n- Inconsistencia visual passa falta de cuidado."
+    },
+    {
+      "title": "Checklist de conteudo",
+      "body": "Confirme se cada slide responde a uma pergunta da narrativa.\n\nRegra:\n- Slide sem funcao deve ser removido."
+    },
+    {
+      "title": "Revisao de dados e numeros",
+      "body": "Cheque fontes, datas, unidades e coerencia entre slides.\n\nRegra:\n- Um numero errado compromete credibilidade do material inteiro."
+    },
+    {
+      "title": "Revisao textual",
+      "body": "Corrija ortografia, padrao de termos e pontuacao.\n\nRegra:\n- Erro de texto desvia atencao da mensagem principal."
+    },
+    {
+      "title": "Teste de apresentacao completa",
+      "body": "Passe o deck do inicio ao fim simulando o tempo real.\n\nRegra:\n- Teste parcial nao revela gargalos de ritmo."
+    },
+    {
+      "title": "Mini pratica (45 min) - auditoria de deck",
+      "body": "Aplique um checklist em uma apresentacao existente:\n- visual\n- conteudo\n- dados\n- texto\n- tempo\n\nObjetivo:\n- elevar padrao antes da entrega."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Revisao final e etapa obrigatoria\n- Checklist reduz erro e retrabalho\n- Dados e texto precisam consistencia\n- Simulacao completa melhora confianca\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 21 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Revisao final do deck serve para:", "options": [ { "key": "A", "text": "Reduzir erros antes da apresentacao" }, { "key": "B", "text": "Apenas ocupar tempo no fim" } ], "answer": "A", "explain": "Revisao previne falhas de forma e conteudo." },
+      { "id": 2, "question": "Checklist visual deve verificar:", "options": [ { "key": "A", "text": "Alinhamento, contraste e padrao" }, { "key": "B", "text": "Somente animacoes" } ], "answer": "A", "explain": "Qualidade visual depende de consistencia." },
+      { "id": 3, "question": "Slide sem funcao narrativa clara:", "options": [ { "key": "A", "text": "Deve ser revisto ou removido" }, { "key": "B", "text": "Deve ficar para aumentar volume" } ], "answer": "A", "explain": "Todo slide precisa justificar sua existencia." },
+      { "id": 4, "question": "Erro de numero no deck:", "options": [ { "key": "A", "text": "Prejudica credibilidade" }, { "key": "B", "text": "Nao afeta percepcao da audiencia" } ], "answer": "A", "explain": "Dados errados comprometem confianca." },
+      { "id": 5, "question": "Revisao textual e importante porque:", "options": [ { "key": "A", "text": "Evita ruído e melhora profissionalismo" }, { "key": "B", "text": "Nao altera impacto da mensagem" } ], "answer": "A", "explain": "Texto correto melhora clareza." },
+      { "id": 6, "question": "Simular apresentacao completa ajuda a:", "options": [ { "key": "A", "text": "Validar tempo e fluxo real" }, { "key": "B", "text": "Apenas repetir leitura sem ganho" } ], "answer": "A", "explain": "Teste integral revela problemas de ritmo." },
+      { "id": 7, "question": "Padrao de fonte e cor no deck:", "options": [ { "key": "A", "text": "Reforca unidade visual" }, { "key": "B", "text": "E irrelevante para percepcao" } ], "answer": "A", "explain": "Consistencia transmite cuidado e qualidade." },
+      { "id": 8, "question": "Revisar fontes e datas de dados:", "options": [ { "key": "A", "text": "E parte da qualidade do conteudo" }, { "key": "B", "text": "Pode ser ignorado" } ], "answer": "A", "explain": "Atualidade e origem sustentam argumentacao." },
+      { "id": 9, "question": "Checklist estruturado e melhor que revisao informal porque:", "options": [ { "key": "A", "text": "Reduz pontos cegos" }, { "key": "B", "text": "Aumenta chance de erro" } ], "answer": "A", "explain": "Metodo garante cobertura completa." },
+      { "id": 10, "question": "Objetivo da aula 21:", "options": [ { "key": "A", "text": "Padronizar revisao final de apresentacoes" }, { "key": "B", "text": "Criar novos layouts do zero" } ], "answer": "A", "explain": "A aula foca controle de qualidade antes da entrega." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Checklist final\n\n- visual\n- conteudo\n- dados\n- tempo\n",
+    "pilares": "Pilares\n\n- qualidade\n- consistencia\n- confiabilidade\n"
+  }
+}

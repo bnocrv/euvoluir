@@ -1,0 +1,58 @@
+{
+  "id": "09-graficos-tabelas",
+  "title": "Aula 09 — Gráficos e tabelas: dados claros e comparáveis",
+  "steps": [
+    {
+      "title": "Dado no slide deve responder pergunta",
+      "body": "Antes de inserir gráfico, defina: qual decisão esse dado apoia?\n\nRegra:\n- Dado sem pergunta vira poluição informacional."
+    },
+    {
+      "title": "Escolha correta do tipo de gráfico",
+      "body": "Use conforme objetivo:\n- barras para comparação\n- linha para tendência\n- pizza com parcimônia\n- tabela para detalhe\n\nRegra:\n- Tipo de gráfico errado distorce leitura."
+    },
+    {
+      "title": "Simplificação visual de dados",
+      "body": "Remova excesso de grades, cores e legendas desnecessárias.\n\nRegra:\n- Quanto mais simples, mais rápida a compreensão."
+    },
+    {
+      "title": "Destaque do insight principal",
+      "body": "Use cor e anotação para marcar o ponto crítico.\n\nRegra:\n- Gráfico deve mostrar conclusão, não só número."
+    },
+    {
+      "title": "Uso de tabela com propósito",
+      "body": "Tabela é útil para detalhe comparável, mas exige organização visual.\n\nRegra:\n- Tabela densa sem destaque reduz leitura."
+    },
+    {
+      "title": "Validação de dados",
+      "body": "Cheque fonte, período e consistência antes da apresentação.\n\nRegra:\n- Erro de dado compromete credibilidade da mensagem."
+    },
+    {
+      "title": "Mini prática (45 min) — refazer gráfico confuso",
+      "body": "Pegue um gráfico/tabela real e ajuste:\n- tipo de visual\n- destaque\n- simplificação\n- título com insight\n\nObjetivo:\n- transformar dado em mensagem clara."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Dado precisa contexto e objetivo\n- Tipo de gráfico altera interpretação\n- Simplicidade acelera entendimento\n- Destaque deve guiar o insight principal\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 09 (PowerPoint)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Antes de criar gráfico, você deve definir:", "options": [ { "key": "A", "text": "A cor do fundo" }, { "key": "B", "text": "Qual pergunta o dado responde" }, { "key": "C", "text": "Quantidade de animações" }, { "key": "D", "text": "Fonte do título" } ], "answer": "B", "explain": "Pergunta clara orienta visual correto." },
+      { "id": 2, "question": "Gráfico de linha é mais indicado para:", "options": [ { "key": "A", "text": "Comparação pontual de categorias" }, { "key": "B", "text": "Tendência ao longo do tempo" }, { "key": "C", "text": "Tabela detalhada" }, { "key": "D", "text": "Mostrar total único" } ], "answer": "B", "explain": "Linha favorece leitura temporal." },
+      { "id": 3, "question": "Excesso de elementos no gráfico:", "options": [ { "key": "A", "text": "Melhora foco" }, { "key": "B", "text": "Dificulta leitura" }, { "key": "C", "text": "Aumenta clareza" }, { "key": "D", "text": "Substitui explicação" } ], "answer": "B", "explain": "Ruído visual atrapalha interpretação." },
+      { "id": 4, "question": "Frase correta:", "options": [ { "key": "A", "text": "Todo dado deve ir para tabela" }, { "key": "B", "text": "Visual deve facilitar a decisão da audiência" }, { "key": "C", "text": "Cor não influencia leitura" }, { "key": "D", "text": "Validação de fonte é opcional" } ], "answer": "B", "explain": "Objetivo é comunicar insight com clareza." },
+      { "id": 5, "question": "Título de gráfico eficaz deve:", "options": [ { "key": "A", "text": "Ser genérico" }, { "key": "B", "text": "Antecipar o principal insight" }, { "key": "C", "text": "Mostrar só período" }, { "key": "D", "text": "Evitar contexto" } ], "answer": "B", "explain": "Título orienta interpretação rápida." },
+      { "id": 6, "question": "Tabela em slide é melhor quando:", "options": [ { "key": "A", "text": "Tem foco e destaque de pontos relevantes" }, { "key": "B", "text": "Inclui todos os dados brutos" }, { "key": "C", "text": "Tem fonte muito pequena" }, { "key": "D", "text": "Dispensa leitura guiada" } ], "answer": "A", "explain": "Organização e destaque tornam tabela útil." },
+      { "id": 7, "question": "Validar dados antes da apresentação:", "options": [ { "key": "A", "text": "É opcional" }, { "key": "B", "text": "Protege credibilidade da mensagem" }, { "key": "C", "text": "Só importa em relatório anual" }, { "key": "D", "text": "Aumenta erro" } ], "answer": "B", "explain": "Confiabilidade de dados é essencial." },
+      { "id": 8, "question": "Destaque visual em gráfico deve:", "options": [ { "key": "A", "text": "Marcar o insight principal" }, { "key": "B", "text": "Destacar tudo" }, { "key": "C", "text": "Ser aleatório" }, { "key": "D", "text": "Substituir o título" } ], "answer": "A", "explain": "Destaque orienta atenção para o ponto-chave." },
+      { "id": 9, "question": "Escolha errada do tipo de gráfico pode:", "options": [ { "key": "A", "text": "Melhorar interpretação" }, { "key": "B", "text": "Distorcer entendimento do dado" }, { "key": "C", "text": "Aumentar objetividade" }, { "key": "D", "text": "Eliminar necessidade de contexto" } ], "answer": "B", "explain": "Forma inadequada induz leitura equivocada." },
+      { "id": 10, "question": "Objetivo da aula 09:", "options": [ { "key": "A", "text": "Treinar oratória" }, { "key": "B", "text": "Apresentar dados com clareza e comparabilidade" }, { "key": "C", "text": "Criar templates" }, { "key": "D", "text": "Tratar transições" } ], "answer": "B", "explain": "A aula foca visualização de dados para decisão." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Dados em slides\n\n- pergunta\n- visual correto\n- destaque\n- validação\n",
+    "pilares": "Pilares\n\n- clareza\n- precisão\n- foco no insight\n"
+  }
+}

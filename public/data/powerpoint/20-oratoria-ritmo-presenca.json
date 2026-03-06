@@ -1,0 +1,58 @@
+{
+  "id": "20-oratoria-ritmo-presenca",
+  "title": "Aula 20 - Oratoria, ritmo e presenca durante a fala",
+  "steps": [
+    {
+      "title": "Slide bom precisa de entrega boa",
+      "body": "A qualidade da fala influencia diretamente como o conteudo e percebido.\n\nRegra:\n- Oratoria fraca reduz impacto mesmo com slides fortes."
+    },
+    {
+      "title": "Ritmo e pausas estrategicas",
+      "body": "Alterne intensidade e use pausas para destacar mensagens-chave.\n\nRegra:\n- Falar sem pausa dificulta assimilacao."
+    },
+    {
+      "title": "Tom de voz e variacao",
+      "body": "Evite monotonia variando entonacao conforme objetivo do trecho.\n\nRegra:\n- Tom linear diminui atencao da audiencia."
+    },
+    {
+      "title": "Postura e linguagem corporal",
+      "body": "Mantenha presenca firme, gestos funcionais e contato visual.\n\nRegra:\n- Movimentos excessivos desviam foco da mensagem."
+    },
+    {
+      "title": "Sincronia entre fala e slide",
+      "body": "Comente o essencial de cada slide sem ler texto integralmente.\n\nRegra:\n- Ler slide palavra por palavra reduz autoridade."
+    },
+    {
+      "title": "Gestao de nervosismo",
+      "body": "Respiracao, treino previo e abertura bem memorizada ajudam controle emocional.\n\nRegra:\n- Improvisar sem preparo aumenta ansiedade."
+    },
+    {
+      "title": "Mini pratica (45 min) - apresentacao gravada",
+      "body": "Apresente 5 slides e grave sua fala para revisar:\n- ritmo\n- clareza\n- postura\n- contato visual\n\nObjetivo:\n- ajustar entrega para maior impacto."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Oratoria potencializa o valor do slide\n- Pausas e variacao de voz melhoram compreensao\n- Presenca corporal transmite seguranca\n- Treino e revisao elevam performance\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 20 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Em apresentacoes, oratoria impacta:", "options": [ { "key": "A", "text": "Percepcao de clareza e credibilidade" }, { "key": "B", "text": "Apenas o tempo da reuniao" } ], "answer": "A", "explain": "Forma de entrega altera como a mensagem e recebida." },
+      { "id": 2, "question": "Pausas estrategicas servem para:", "options": [ { "key": "A", "text": "Destacar pontos importantes" }, { "key": "B", "text": "Quebrar totalmente a fluidez" } ], "answer": "A", "explain": "Pausa ajuda assimilacao e enfase." },
+      { "id": 3, "question": "Tom de voz monotono geralmente:", "options": [ { "key": "A", "text": "Diminui atencao da audiencia" }, { "key": "B", "text": "Aumenta engajamento naturalmente" } ], "answer": "A", "explain": "Variacao vocal melhora dinamica da fala." },
+      { "id": 4, "question": "Ler o slide palavra por palavra:", "options": [ { "key": "A", "text": "Reduz conexao e autoridade" }, { "key": "B", "text": "E a melhor tecnica sempre" } ], "answer": "A", "explain": "Apresentador deve interpretar, nao recitar." },
+      { "id": 5, "question": "Linguagem corporal eficaz inclui:", "options": [ { "key": "A", "text": "Postura firme e gestos funcionais" }, { "key": "B", "text": "Movimentacao aleatoria constante" } ], "answer": "A", "explain": "Coerencia corporal reforca mensagem." },
+      { "id": 6, "question": "Para controlar nervosismo, o ideal e:", "options": [ { "key": "A", "text": "Treinar e preparar abertura" }, { "key": "B", "text": "Confiar apenas em improviso" } ], "answer": "A", "explain": "Preparacao reduz inseguranca durante a fala." },
+      { "id": 7, "question": "Sincronia entre fala e slide significa:", "options": [ { "key": "A", "text": "Explicar o essencial no momento certo" }, { "key": "B", "text": "Ignorar totalmente o conteudo visual" } ], "answer": "A", "explain": "Fala e visual devem se complementar." },
+      { "id": 8, "question": "Gravar a propria apresentacao ajuda a:", "options": [ { "key": "A", "text": "Identificar pontos de melhoria" }, { "key": "B", "text": "Aumentar erros sem percepcao" } ], "answer": "A", "explain": "Autorrevisao acelera evolucao." },
+      { "id": 9, "question": "Mensagem central da aula 20:", "options": [ { "key": "A", "text": "Entrega oral e presenca elevam impacto do conteudo" }, { "key": "B", "text": "Slide sozinho garante boa apresentacao" } ], "answer": "A", "explain": "Performance de fala e parte critica do resultado." },
+      { "id": 10, "question": "Apresentador eficaz deve:", "options": [ { "key": "A", "text": "Unir conteudo claro e comunicacao confiante" }, { "key": "B", "text": "Depender apenas de animacoes" } ], "answer": "A", "explain": "Conteudo e entrega precisam andar juntos." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Oratoria em apresentacoes\n\n- ritmo\n- pausa\n- postura\n- sincronia\n",
+    "pilares": "Pilares\n\n- clareza\n- presenca\n- confianca\n"
+  }
+}

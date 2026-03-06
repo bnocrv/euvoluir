@@ -1,11 +1,35 @@
-﻿{
-    "courseId":  "powerpoint",
-    "title":  "PowerPoint - fundamentos para apresentações objetivas",
-    "lessons":  [
-                    {
-                        "id":  "01-introducao",
-                        "title":  "Aula 01 - Introdução prática",
-                        "file":  "01-introducao.json"
-                    }
-                ]
+{
+  "courseId": "powerpoint",
+  "title": "PowerPoint — do básico ao avançado (estrutura, design, narrativa e apresentações profissionais)",
+  "lessons": [
+    { "id": "01-introducao", "title": "Aula 01 — Fundamentos do PowerPoint e visão de apresentação eficaz", "file": "01-introducao.json" },
+    { "id": "02-interface-fluxo", "title": "Aula 02 — Interface, atalhos essenciais e fluxo de trabalho", "file": "02-interface-fluxo.json" },
+    { "id": "03-planejamento-objetivo-publico", "title": "Aula 03 — Planejamento: objetivo, público e mensagem central", "file": "03-planejamento-objetivo-publico.json" },
+    { "id": "04-estrutura-roteiro", "title": "Aula 04 — Estrutura de roteiro: abertura, desenvolvimento e fechamento", "file": "04-estrutura-roteiro.json" },
+    { "id": "05-layout-hierarquia", "title": "Aula 05 — Layout e hierarquia visual: organização do slide", "file": "05-layout-hierarquia.json" },
+
+    { "id": "06-tipografia-legibilidade", "title": "Aula 06 — Tipografia e legibilidade para leitura rápida", "file": "06-tipografia-legibilidade.json" },
+    { "id": "07-paleta-cores-contraste", "title": "Aula 07 — Cores, contraste e consistência visual", "file": "07-paleta-cores-contraste.json" },
+    { "id": "08-imagens-icones", "title": "Aula 08 — Uso de imagens, ícones e recorte visual", "file": "08-imagens-icones.json" },
+    { "id": "09-graficos-tabelas", "title": "Aula 09 — Gráficos e tabelas: dados claros e comparáveis", "file": "09-graficos-tabelas.json" },
+    { "id": "10-infograficos-visualizacao", "title": "Aula 10 — Infográficos e visualização para simplificar informação", "file": "10-infograficos-visualizacao.json" },
+
+    { "id": "11-mestre-slides", "title": "Aula 11 — Slide Mestre: padrão visual e produtividade", "file": "11-mestre-slides.json" },
+    { "id": "12-templates-design-system", "title": "Aula 12 — Templates e design system de apresentação", "file": "12-templates-design-system.json" },
+    { "id": "13-transicoes-animacoes", "title": "Aula 13 — Transições e animações com intenção", "file": "13-transicoes-animacoes.json" },
+    { "id": "14-recursos-multimidia", "title": "Aula 14 — Recursos multimídia: vídeo, áudio e interação", "file": "14-recursos-multimidia.json" },
+    { "id": "15-storytelling-apresentacoes", "title": "Aula 15 — Storytelling aplicado a apresentações corporativas", "file": "15-storytelling-apresentacoes.json" },
+
+    { "id": "16-apresentacao-executiva", "title": "Aula 16 — Apresentação executiva: síntese e tomada de decisão", "file": "16-apresentacao-executiva.json" },
+    { "id": "17-apresentacao-vendas", "title": "Aula 17 — Apresentação comercial e pitch de vendas", "file": "17-apresentacao-vendas.json" },
+    { "id": "18-apresentacao-treinamentos", "title": "Aula 18 — Apresentações para treinamento e educação corporativa", "file": "18-apresentacao-treinamentos.json" },
+    { "id": "19-apresentacao-projetos", "title": "Aula 19 — Status report e apresentação de projetos", "file": "19-apresentacao-projetos.json" },
+    { "id": "20-oratoria-ritmo-presenca", "title": "Aula 20 — Oratória, ritmo e presença durante a fala", "file": "20-oratoria-ritmo-presenca.json" },
+
+    { "id": "21-revisao-qualidade", "title": "Aula 21 — Revisão final: checklist de qualidade e consistência", "file": "21-revisao-qualidade.json" },
+    { "id": "22-colaboracao-versoes", "title": "Aula 22 — Colaboração, comentários e controle de versões", "file": "22-colaboracao-versoes.json" },
+    { "id": "23-exportacao-formato-entrega", "title": "Aula 23 — Exportação, formatos e preparação de entrega", "file": "23-exportacao-formato-entrega.json" },
+    { "id": "24-erros-comuns-boas-praticas", "title": "Aula 24 — Erros comuns em slides e boas práticas avançadas", "file": "24-erros-comuns-boas-praticas.json" },
+    { "id": "25-projeto-final-powerpoint", "title": "Aula 25 — Projeto final: construir uma apresentação completa e profissional", "file": "25-projeto-final-powerpoint.json" }
+  ]
 }

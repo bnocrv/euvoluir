@@ -39,16 +39,246 @@
     "title": "Quiz (10 perguntas) — Aula 20 (Gestão de Pessoas)",
     "instructions": "Marque A, B, C ou D.",
     "questions": [
-      { "id": 1, "question": "Função principal do PDI:", "options": [ { "key": "A", "text": "Arquivar avaliação" }, { "key": "B", "text": "Transformar diagnóstico em ação de desenvolvimento" }, { "key": "C", "text": "Substituir liderança" }, { "key": "D", "text": "Reduzir feedback" } ], "answer": "B", "explain": "PDI traduz avaliação em evolução prática." },
-      { "id": 2, "question": "Componente obrigatório de um PDI:", "options": [ { "key": "A", "text": "Ação concreta com prazo" }, { "key": "B", "text": "Objetivo genérico sem data" }, { "key": "C", "text": "Somente curso externo" }, { "key": "D", "text": "Somente nota de desempenho" } ], "answer": "A", "explain": "Ação e prazo são base de execução." },
-      { "id": 3, "question": "Meta de desenvolvimento eficaz deve ser:", "options": [ { "key": "A", "text": "Abstrata e ampla" }, { "key": "B", "text": "Específica e mensurável" }, { "key": "C", "text": "Sem relação com o cargo" }, { "key": "D", "text": "Sem critério de sucesso" } ], "answer": "B", "explain": "Clareza aumenta chance de cumprimento." },
-      { "id": 4, "question": "Sem acompanhamento do líder, o PDI tende a:", "options": [ { "key": "A", "text": "Executar melhor" }, { "key": "B", "text": "Perder prioridade" }, { "key": "C", "text": "Acelerar automaticamente" }, { "key": "D", "text": "Dispensar revisão" } ], "answer": "B", "explain": "Acompanhamento sustenta execução contínua." },
-      { "id": 5, "question": "Exemplo de ação de desenvolvimento aplicada:", "options": [ { "key": "A", "text": "Projeto desafiador com feedback" }, { "key": "B", "text": "Aguardar próximo ciclo anual" }, { "key": "C", "text": "Não registrar ação" }, { "key": "D", "text": "Evitar mentoria" } ], "answer": "A", "explain": "Aprendizagem no contexto real é mais efetiva." },
-      { "id": 6, "question": "Frase correta:", "options": [ { "key": "A", "text": "PDI é documento estático" }, { "key": "B", "text": "PDI deve ser revisado periodicamente" }, { "key": "C", "text": "PDI é responsabilidade exclusiva do colaborador" }, { "key": "D", "text": "PDI não precisa evidência" } ], "answer": "B", "explain": "Revisão mantém aderência ao contexto." },
-      { "id": 7, "question": "Evidência de evolução no PDI serve para:", "options": [ { "key": "A", "text": "Aumentar subjetividade" }, { "key": "B", "text": "Comprovar progresso com objetividade" }, { "key": "C", "text": "Substituir meta" }, { "key": "D", "text": "Evitar devolutiva" } ], "answer": "B", "explain": "Evidência torna o acompanhamento confiável." },
-      { "id": 8, "question": "PDI muito genérico geralmente:", "options": [ { "key": "A", "text": "Melhora execução" }, { "key": "B", "text": "Dificulta ação prática" }, { "key": "C", "text": "Aumenta clareza" }, { "key": "D", "text": "Reduz necessidade de liderança" } ], "answer": "B", "explain": "Sem especificidade, o plano perde eficácia." },
-      { "id": 9, "question": "Responsabilidade sobre PDI é:", "options": [ { "key": "A", "text": "Só da área de pessoas" }, { "key": "B", "text": "Compartilhada entre colaborador e liderança" }, { "key": "C", "text": "Só do colaborador" }, { "key": "D", "text": "Só da diretoria" } ], "answer": "B", "explain": "A corresponsabilidade melhora consistência." },
-      { "id": 10, "question": "Objetivo da aula 20:", "options": [ { "key": "A", "text": "Tratar comunicação interna" }, { "key": "B", "text": "Estruturar PDI como rotina de desenvolvimento" }, { "key": "C", "text": "Criar plano de benefícios" }, { "key": "D", "text": "Definir política de ponto" } ], "answer": "B", "explain": "A aula foca evolução prática com acompanhamento." }
+      {
+        "id": 1,
+        "question": "Função principal do PDI:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Arquivar avaliação"
+          },
+          {
+            "key": "B",
+            "text": "Transformar diagnóstico em ação de desenvolvimento"
+          },
+          {
+            "key": "C",
+            "text": "Substituir liderança"
+          },
+          {
+            "key": "D",
+            "text": "Reduzir feedback"
+          }
+        ],
+        "answer": "B",
+        "explain": "PDI traduz avaliação em evolução prática."
+      },
+      {
+        "id": 2,
+        "question": "Componente obrigatório de um PDI:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ação concreta com prazo"
+          },
+          {
+            "key": "B",
+            "text": "Objetivo genérico sem data"
+          },
+          {
+            "key": "C",
+            "text": "Somente curso externo"
+          },
+          {
+            "key": "D",
+            "text": "Somente nota de desempenho"
+          }
+        ],
+        "answer": "A",
+        "explain": "Ação e prazo são base de execução."
+      },
+      {
+        "id": 3,
+        "question": "Meta de desenvolvimento eficaz deve ser:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Abstrata e ampla"
+          },
+          {
+            "key": "B",
+            "text": "Específica e mensurável"
+          },
+          {
+            "key": "C",
+            "text": "Sem relação com o cargo"
+          },
+          {
+            "key": "D",
+            "text": "Sem critério de sucesso"
+          }
+        ],
+        "answer": "B",
+        "explain": "Clareza aumenta chance de cumprimento."
+      },
+      {
+        "id": 4,
+        "question": "Sem acompanhamento do líder, o PDI tende a:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Executar melhor"
+          },
+          {
+            "key": "B",
+            "text": "Perder prioridade"
+          },
+          {
+            "key": "C",
+            "text": "Acelerar automaticamente"
+          },
+          {
+            "key": "D",
+            "text": "Dispensar revisão"
+          }
+        ],
+        "answer": "B",
+        "explain": "Acompanhamento sustenta execução contínua."
+      },
+      {
+        "id": 5,
+        "question": "Exemplo de ação de desenvolvimento aplicada:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Projeto desafiador com feedback"
+          },
+          {
+            "key": "B",
+            "text": "Aguardar próximo ciclo anual"
+          },
+          {
+            "key": "C",
+            "text": "Não registrar ação"
+          },
+          {
+            "key": "D",
+            "text": "Evitar mentoria"
+          }
+        ],
+        "answer": "A",
+        "explain": "Aprendizagem no contexto real é mais efetiva."
+      },
+      {
+        "id": 6,
+        "question": "Frase correta:",
+        "options": [
+          {
+            "key": "A",
+            "text": "PDI é documento estático"
+          },
+          {
+            "key": "B",
+            "text": "PDI deve ser revisado periodicamente"
+          },
+          {
+            "key": "C",
+            "text": "PDI é responsabilidade exclusiva do colaborador"
+          },
+          {
+            "key": "D",
+            "text": "PDI não precisa evidência"
+          }
+        ],
+        "answer": "B",
+        "explain": "Revisão mantém aderência ao contexto."
+      },
+      {
+        "id": 7,
+        "question": "Evidência de evolução no PDI serve para:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Aumentar subjetividade"
+          },
+          {
+            "key": "B",
+            "text": "Comprovar progresso com objetividade"
+          },
+          {
+            "key": "C",
+            "text": "Substituir meta"
+          },
+          {
+            "key": "D",
+            "text": "Evitar devolutiva"
+          }
+        ],
+        "answer": "B",
+        "explain": "Evidência torna o acompanhamento confiável."
+      },
+      {
+        "id": 8,
+        "question": "PDI muito genérico geralmente:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Melhora execução"
+          },
+          {
+            "key": "B",
+            "text": "Dificulta ação prática"
+          },
+          {
+            "key": "C",
+            "text": "Aumenta clareza"
+          },
+          {
+            "key": "D",
+            "text": "Reduz necessidade de liderança"
+          }
+        ],
+        "answer": "B",
+        "explain": "Sem especificidade, o plano perde eficácia."
+      },
+      {
+        "id": 9,
+        "question": "Responsabilidade sobre PDI é:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Só da área de pessoas"
+          },
+          {
+            "key": "B",
+            "text": "Compartilhada entre colaborador e liderança"
+          },
+          {
+            "key": "C",
+            "text": "Só do colaborador"
+          },
+          {
+            "key": "D",
+            "text": "Só da diretoria"
+          }
+        ],
+        "answer": "B",
+        "explain": "A corresponsabilidade melhora consistência."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo da aula 20:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tratar comunicação interna"
+          },
+          {
+            "key": "B",
+            "text": "Estruturar PDI como rotina de desenvolvimento"
+          },
+          {
+            "key": "C",
+            "text": "Criar plano de benefícios"
+          },
+          {
+            "key": "D",
+            "text": "Definir política de ponto"
+          }
+        ],
+        "answer": "B",
+        "explain": "A aula foca evolução prática com acompanhamento."
+      }
     ]
   },
   "extra": {

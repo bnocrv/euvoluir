@@ -1,0 +1,58 @@
+{
+  "id": "25-projeto-final-powerpoint",
+  "title": "Aula 25 - Projeto final: construir uma apresentacao completa e profissional",
+  "steps": [
+    {
+      "title": "Objetivo do projeto final",
+      "body": "Consolidar todo o curso em uma apresentacao pronta para uso real.\n\nRegra:\n- Projeto final deve resolver um problema concreto."
+    },
+    {
+      "title": "Escolha do tema e publico",
+      "body": "Defina contexto real (vendas, diretoria, treinamento ou projeto) e audiencia principal.\n\nRegra:\n- Sem publico definido, o deck perde direcionamento."
+    },
+    {
+      "title": "Planejamento da narrativa",
+      "body": "Estruture inicio, desenvolvimento e fechamento com chamada para acao.\n\nRegra:\n- Narrativa solta reduz persuasao."
+    },
+    {
+      "title": "Execucao visual com padrao",
+      "body": "Aplique layout, tipografia, cores e hierarquia consistentes do inicio ao fim.\n\nRegra:\n- Variacao sem criterio compromete unidade."
+    },
+    {
+      "title": "Uso de dados e recursos de apoio",
+      "body": "Inclua graficos, imagens e recursos multimidia somente quando reforcarem mensagem.\n\nRegra:\n- Recurso visual sem funcao enfraquece comunicacao."
+    },
+    {
+      "title": "Revisao final e simulacao",
+      "body": "Revise checklist completo e apresente em tempo real para testar fluxo.\n\nRegra:\n- Entregar sem ensaio aumenta risco de falha."
+    },
+    {
+      "title": "Mini pratica (45 min) - banca simulada",
+      "body": "Apresente o projeto em 10 minutos e receba feedback em:\n- clareza\n- visual\n- narrativa\n- decisao final\n\nObjetivo:\n- validar prontidao profissional."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Projeto final integra tecnica e comunicacao\n- Publico e objetivo orientam o deck\n- Narrativa e design devem ser coerentes\n- Revisao e treino fecham o ciclo de qualidade\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 25 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Projeto final do curso deve:", "options": [ { "key": "A", "text": "Aplicar o aprendizado em caso real" }, { "key": "B", "text": "Ser apenas exercicio teorico sem contexto" } ], "answer": "A", "explain": "Consolidacao acontece em aplicacao pratica." },
+      { "id": 2, "question": "Definir publico da apresentacao e:", "options": [ { "key": "A", "text": "Essencial para direcionar mensagem" }, { "key": "B", "text": "Opcional no projeto final" } ], "answer": "A", "explain": "Publico orienta linguagem e profundidade." },
+      { "id": 3, "question": "Narrativa de projeto final deve conter:", "options": [ { "key": "A", "text": "Inicio, desenvolvimento e fechamento" }, { "key": "B", "text": "Slides sem ordem logica" } ], "answer": "A", "explain": "Estrutura garante coerencia e persuasao." },
+      { "id": 4, "question": "Consistencia visual no deck final:", "options": [ { "key": "A", "text": "Reforca profissionalismo" }, { "key": "B", "text": "Nao afeta percepcao" } ], "answer": "A", "explain": "Unidade visual melhora credibilidade." },
+      { "id": 5, "question": "Recursos visuais devem ser usados quando:", "options": [ { "key": "A", "text": "Ajudam a explicar ou convencer" }, { "key": "B", "text": "Servem apenas para enfeite" } ], "answer": "A", "explain": "Forma deve servir ao conteudo." },
+      { "id": 6, "question": "Simular apresentacao antes da entrega:", "options": [ { "key": "A", "text": "Reduz risco de falhas" }, { "key": "B", "text": "Nao altera resultado final" } ], "answer": "A", "explain": "Treino em tempo real melhora fluidez." },
+      { "id": 7, "question": "Feedback de banca simulada ajuda a:", "options": [ { "key": "A", "text": "Identificar melhorias finais" }, { "key": "B", "text": "Confundir sem utilidade pratica" } ], "answer": "A", "explain": "Feedback estruturado acelera refinamento." },
+      { "id": 8, "question": "Projeto final forte combina:", "options": [ { "key": "A", "text": "Clareza, narrativa e design consistente" }, { "key": "B", "text": "Slides longos e sem foco" } ], "answer": "A", "explain": "Resultado profissional depende do conjunto." },
+      { "id": 9, "question": "Mensagem central da aula 25:", "options": [ { "key": "A", "text": "Integrar tecnicas do curso em entrega completa" }, { "key": "B", "text": "Repetir conceitos sem aplicacao" } ], "answer": "A", "explain": "Aula fecha o curso com aplicacao real." },
+      { "id": 10, "question": "Encerramento ideal do projeto final:", "options": [ { "key": "A", "text": "Chamada para acao ou decisao clara" }, { "key": "B", "text": "Fim sem direcionamento" } ], "answer": "A", "explain": "Toda boa apresentacao termina com encaminhamento." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Projeto final\n\n- problema real\n- narrativa\n- execucao\n- simulacao\n",
+    "pilares": "Pilares\n\n- integracao\n- aplicacao\n- resultado\n"
+  }
+}

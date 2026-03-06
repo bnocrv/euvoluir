@@ -1,0 +1,58 @@
+{
+  "id": "15-storytelling-apresentacoes",
+  "title": "Aula 15 - Storytelling aplicado a apresentacoes corporativas",
+  "steps": [
+    {
+      "title": "Storytelling organiza a mensagem",
+      "body": "Storytelling nao e contar historia longa; e estruturar problema, caminho e resultado.\n\nRegra:\n- Sem narrativa, a apresentacao vira lista de informacoes."
+    },
+    {
+      "title": "Estrutura base: contexto, tensao e resolucao",
+      "body": "Apresente:\n- onde estamos\n- qual o desafio\n- qual proposta resolve\n\nRegra:\n- Saltar direto para solucao reduz convencimento."
+    },
+    {
+      "title": "Personagem e perspectiva",
+      "body": "Defina quem e impactado: cliente, time, lideranca ou operacao.\n\nRegra:\n- Sem ponto de vista humano, a mensagem perde relevancia."
+    },
+    {
+      "title": "Dados dentro da narrativa",
+      "body": "Use dados para sustentar cada etapa da historia.\n\nRegra:\n- Dado solto informa, mas nao necessariamente convence."
+    },
+    {
+      "title": "Ritmo narrativo por slide",
+      "body": "Cada slide deve cumprir uma funcao: situar, provar ou direcionar decisao.\n\nRegra:\n- Slide com muitas ideias ao mesmo tempo enfraquece impacto."
+    },
+    {
+      "title": "Fechamento com chamada para acao",
+      "body": "Termine com proximo passo claro: decisao, aprovacao ou execucao.\n\nRegra:\n- Sem chamada objetiva, a apresentacao termina sem desdobramento."
+    },
+    {
+      "title": "Mini pratica (45 min) - narrativa de projeto",
+      "body": "Monte uma mini historia em 6 slides:\n- contexto\n- problema\n- evidencia\n- proposta\n- beneficio\n- proximo passo\n\nObjetivo:\n- transformar conteudo tecnico em narrativa persuasiva."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Storytelling cria linha logica de convencimento\n- Problema e solucao precisam de contexto\n- Dados devem sustentar a narrativa\n- Fechamento exige chamada para acao\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 15 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Storytelling em apresentacao serve para:", "options": [ { "key": "A", "text": "Organizar mensagem com logica e impacto" }, { "key": "B", "text": "Substituir totalmente dados e analise" } ], "answer": "A", "explain": "Narrativa estrutura entendimento e decisao." },
+      { "id": 2, "question": "Estrutura narrativa basica inclui:", "options": [ { "key": "A", "text": "Contexto, desafio e resolucao" }, { "key": "B", "text": "Apenas conclusao final" } ], "answer": "A", "explain": "Sem contexto e tensao, falta forca de convencimento." },
+      { "id": 3, "question": "Mostrar apenas solucao sem problema:", "options": [ { "key": "A", "text": "Enfraquece justificativa da proposta" }, { "key": "B", "text": "Aumenta clareza automaticamente" } ], "answer": "A", "explain": "A audiencia precisa entender o por que da proposta." },
+      { "id": 4, "question": "Dados em storytelling devem:", "options": [ { "key": "A", "text": "Sustentar cada parte da narrativa" }, { "key": "B", "text": "Aparecer sem conexao com a historia" } ], "answer": "A", "explain": "Dados conectados aumentam credibilidade." },
+      { "id": 5, "question": "Sobre ritmo por slide:", "options": [ { "key": "A", "text": "Cada slide deve ter funcao definida" }, { "key": "B", "text": "Todo slide deve trazer varias ideias ao mesmo tempo" } ], "answer": "A", "explain": "Funcao unica por slide melhora assimilacao." },
+      { "id": 6, "question": "Ponto de vista humano na narrativa:", "options": [ { "key": "A", "text": "Aumenta relevancia da mensagem" }, { "key": "B", "text": "E dispensavel em contexto corporativo" } ], "answer": "A", "explain": "Impacto em pessoas conecta audiencia ao tema." },
+      { "id": 7, "question": "Fechamento efetivo deve conter:", "options": [ { "key": "A", "text": "Chamada para acao clara" }, { "key": "B", "text": "Encerramento sem proximo passo" } ], "answer": "A", "explain": "Apresentacao precisa direcionar decisao." },
+      { "id": 8, "question": "Sem narrativa, uma apresentacao tende a:", "options": [ { "key": "A", "text": "Virar colecao desconexa de informacoes" }, { "key": "B", "text": "Ficar automaticamente mais persuasiva" } ], "answer": "A", "explain": "Coerencia e essencial para convencer." },
+      { "id": 9, "question": "Mini historia em 6 slides ajuda a:", "options": [ { "key": "A", "text": "Transformar tema tecnico em mensagem persuasiva" }, { "key": "B", "text": "Eliminar necessidade de estrutura" } ], "answer": "A", "explain": "Sintese narrativa melhora comunicacao executiva." },
+      { "id": 10, "question": "Objetivo da aula 15:", "options": [ { "key": "A", "text": "Aplicar storytelling em apresentacoes corporativas" }, { "key": "B", "text": "Apenas decorar slides com imagens" } ], "answer": "A", "explain": "A aula foca narrativa para clareza e decisao." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Narrativa em apresentacoes\n\n- contexto\n- desafio\n- evidencia\n- acao\n",
+    "pilares": "Pilares\n\n- coerencia\n- persuasao\n- direcionamento\n"
+  }
+}

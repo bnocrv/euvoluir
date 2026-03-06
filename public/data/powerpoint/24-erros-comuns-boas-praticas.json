@@ -1,0 +1,58 @@
+{
+  "id": "24-erros-comuns-boas-praticas",
+  "title": "Aula 24 - Erros comuns em slides e boas praticas avancadas",
+  "steps": [
+    {
+      "title": "Erros recorrentes comprometem resultado",
+      "body": "Alguns erros se repetem: poluicao visual, excesso de texto e baixa legibilidade.\n\nRegra:\n- Bons slides nao dependem de efeitos, e sim de clareza."
+    },
+    {
+      "title": "Erro 1: slide lotado",
+      "body": "Muita informacao no mesmo quadro reduz foco e retencao.\n\nRegra:\n- Uma ideia principal por slide facilita assimilacao."
+    },
+    {
+      "title": "Erro 2: hierarquia fraca",
+      "body": "Quando tudo parece importante, nada se destaca.\n\nRegra:\n- Use tamanho, contraste e espaco para priorizar leitura."
+    },
+    {
+      "title": "Erro 3: inconsistencia visual",
+      "body": "Fontes, cores e estilos diferentes sem criterio quebram unidade.\n\nRegra:\n- Consistencia transmite profissionalismo."
+    },
+    {
+      "title": "Erro 4: dependencia de leitura literal",
+      "body": "Slide deve apoiar fala, nao substituir apresentador.\n\nRegra:\n- Texto de paragrafo em tela diminui engajamento."
+    },
+    {
+      "title": "Boas praticas avancadas",
+      "body": "Refine com:\n- sintese rigorosa\n- narrativa por bloco\n- revisao por pares\n- teste com audiencia piloto\n\nRegra:\n- Qualidade superior nasce de iteracao."
+    },
+    {
+      "title": "Mini pratica (45 min) - antes e depois",
+      "body": "Escolha 3 slides fracos e refaça aplicando boas praticas.\n\nObjetivo:\n- desenvolver olhar critico e padrao de excelencia."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Erros comuns sao previsiveis e evitaveis\n- Hierarquia e consistencia elevam qualidade\n- Slide deve complementar a fala\n- Iteracao e revisao consolidam resultado\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 24 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Erro comum em slides:", "options": [ { "key": "A", "text": "Excesso de informacao no mesmo slide" }, { "key": "B", "text": "Clareza de mensagem principal" } ], "answer": "A", "explain": "Slide lotado prejudica leitura." },
+      { "id": 2, "question": "Hierarquia visual boa significa:", "options": [ { "key": "A", "text": "Destacar o que e mais importante" }, { "key": "B", "text": "Dar mesmo peso para tudo" } ], "answer": "A", "explain": "Prioridade visual orienta interpretacao." },
+      { "id": 3, "question": "Inconsistencia de fonte e cor:", "options": [ { "key": "A", "text": "Reduz profissionalismo" }, { "key": "B", "text": "Sempre melhora identidade" } ], "answer": "A", "explain": "Coerencia visual e essencial." },
+      { "id": 4, "question": "Slide deve funcionar como:", "options": [ { "key": "A", "text": "Apoio da fala do apresentador" }, { "key": "B", "text": "Texto integral para leitura literal" } ], "answer": "A", "explain": "Apresentacao boa combina visual e oratoria." },
+      { "id": 5, "question": "Uma ideia principal por slide:", "options": [ { "key": "A", "text": "Facilita assimilacao" }, { "key": "B", "text": "Limita qualquer comunicacao" } ], "answer": "A", "explain": "Foco melhora retenção da audiencia." },
+      { "id": 6, "question": "Boas praticas avancadas incluem:", "options": [ { "key": "A", "text": "Revisao por pares e iteracao" }, { "key": "B", "text": "Publicar sem revisar" } ], "answer": "A", "explain": "Qualidade melhora com ciclos de ajuste." },
+      { "id": 7, "question": "Contraste e espaco em branco ajudam a:", "options": [ { "key": "A", "text": "Melhorar legibilidade e foco" }, { "key": "B", "text": "Aumentar confusao visual" } ], "answer": "A", "explain": "Composicao limpa facilita leitura rapida." },
+      { "id": 8, "question": "Teste com audiencia piloto:", "options": [ { "key": "A", "text": "Revela pontos cegos antes da entrega" }, { "key": "B", "text": "Nao agrega valor" } ], "answer": "A", "explain": "Feedback antecipado reduz risco." },
+      { "id": 9, "question": "Mensagem central da aula 24:", "options": [ { "key": "A", "text": "Evitar erros comuns e elevar nivel com boas praticas" }, { "key": "B", "text": "Aumentar efeitos visuais sem criterio" } ], "answer": "A", "explain": "Aula foca excelencia pratica." },
+      { "id": 10, "question": "Refazer slides fracos e util porque:", "options": [ { "key": "A", "text": "Treina julgamento de qualidade" }, { "key": "B", "text": "Nao muda resultado final" } ], "answer": "A", "explain": "Comparacao antes/depois acelera aprendizado." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Qualidade avancada\n\n- foco\n- hierarquia\n- consistencia\n- iteracao\n",
+    "pilares": "Pilares\n\n- clareza\n- disciplina\n- excelencia\n"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "07-paleta-cores-contraste",
+  "title": "Aula 07 — Cores, contraste e consistência visual",
+  "steps": [
+    {
+      "title": "Cor comunica prioridade e emoção",
+      "body": "Cores orientam atenção e reforçam identidade visual.\n\nRegra:\n- Uso aleatório de cor enfraquece mensagem."
+    },
+    {
+      "title": "Paleta enxuta e funcional",
+      "body": "Defina:\n- cor principal\n- cor secundária\n- cor de destaque\n- neutros\n\nRegra:\n- Paleta curta melhora consistência do deck."
+    },
+    {
+      "title": "Contraste para legibilidade",
+      "body": "Texto e elementos precisam contraste suficiente com o fundo.\n\nRegra:\n- Baixo contraste compromete leitura e credibilidade."
+    },
+    {
+      "title": "Uso de cor para hierarquia",
+      "body": "Aplique cor para:\n- destacar ponto crítico\n- separar seções\n- diferenciar categorias\n\nRegra:\n- Se tudo está destacado, nada está destacado."
+    },
+    {
+      "title": "Erros comuns de cor",
+      "body": "Erros frequentes:\n- excesso de cores vivas\n- fundo muito forte\n- combinação sem harmonia\n\nRegra:\n- Cores devem apoiar conteúdo, não competir com ele."
+    },
+    {
+      "title": "Acessibilidade visual",
+      "body": "Considere leitura em diferentes telas e condições de projeção.\n\nRegra:\n- Apresentação boa funciona em ambiente ideal e real."
+    },
+    {
+      "title": "Mini prática (45 min) — ajuste de paleta",
+      "body": "Escolha 5 slides e ajuste:\n- paleta\n- contraste\n- destaque\n\nObjetivo:\n- elevar clareza e unidade visual."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Cor deve reforçar mensagem e estrutura\n- Paleta enxuta melhora consistência\n- Contraste é requisito de leitura\n- Acessibilidade visual amplia eficácia\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 07 (PowerPoint)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Paleta enxuta em apresentações:", "options": [ { "key": "A", "text": "Reduz consistência" }, { "key": "B", "text": "Aumenta unidade visual" }, { "key": "C", "text": "Limita leitura" }, { "key": "D", "text": "Elimina hierarquia" } ], "answer": "B", "explain": "Menos variação facilita coesão visual." },
+      { "id": 2, "question": "Contraste em slide é importante para:", "options": [ { "key": "A", "text": "Legibilidade" }, { "key": "B", "text": "Apenas estética" }, { "key": "C", "text": "Somente branding" }, { "key": "D", "text": "Somente animação" } ], "answer": "A", "explain": "Sem contraste a leitura fica comprometida." },
+      { "id": 3, "question": "Frase correta:", "options": [ { "key": "A", "text": "Quanto mais cores, melhor" }, { "key": "B", "text": "Cor deve ter função na narrativa" }, { "key": "C", "text": "Cor não afeta atenção" }, { "key": "D", "text": "Destaque em todos os elementos" } ], "answer": "B", "explain": "Uso funcional de cor orienta percepção." },
+      { "id": 4, "question": "Erro comum de cor:", "options": [ { "key": "A", "text": "Uso de neutros com contraste" }, { "key": "B", "text": "Excesso de cores vibrantes sem critério" }, { "key": "C", "text": "Destaque pontual" }, { "key": "D", "text": "Paleta definida" } ], "answer": "B", "explain": "Excesso sem regra gera ruído." },
+      { "id": 5, "question": "Cor de destaque deve ser usada para:", "options": [ { "key": "A", "text": "Tudo no slide" }, { "key": "B", "text": "Pontos prioritários" }, { "key": "C", "text": "Plano de fundo principal" }, { "key": "D", "text": "Textos secundários longos" } ], "answer": "B", "explain": "Destaque funciona quando é seletivo." },
+      { "id": 6, "question": "Acessibilidade visual considera:", "options": [ { "key": "A", "text": "Somente tela do criador" }, { "key": "B", "text": "Leitura em diferentes telas/ambientes" }, { "key": "C", "text": "Somente cor da marca" }, { "key": "D", "text": "Somente resolução 4K" } ], "answer": "B", "explain": "Apresentação deve funcionar em contexto real." },
+      { "id": 7, "question": "Se todo elemento estiver destacado:", "options": [ { "key": "A", "text": "A prioridade fica clara" }, { "key": "B", "text": "A hierarquia visual se perde" }, { "key": "C", "text": "A leitura acelera" }, { "key": "D", "text": "O contraste melhora" } ], "answer": "B", "explain": "Destaque precisa contraste com o restante." },
+      { "id": 8, "question": "Objetivo da paleta na apresentação:", "options": [ { "key": "A", "text": "Criar variação aleatória" }, { "key": "B", "text": "Sustentar consistência e foco" }, { "key": "C", "text": "Aumentar texto" }, { "key": "D", "text": "Substituir conteúdo" } ], "answer": "B", "explain": "A paleta organiza percepção visual." },
+      { "id": 9, "question": "Fundo muito intenso com texto claro pode:", "options": [ { "key": "A", "text": "Melhorar leitura sempre" }, { "key": "B", "text": "Cansar a visão e dificultar leitura" }, { "key": "C", "text": "Aumentar objetividade" }, { "key": "D", "text": "Eliminar necessidade de contraste" } ], "answer": "B", "explain": "Fundo agressivo pode comprometer conforto visual." },
+      { "id": 10, "question": "Objetivo da aula 07:", "options": [ { "key": "A", "text": "Tratar roteiro narrativo" }, { "key": "B", "text": "Aprimorar uso de cor e contraste" }, { "key": "C", "text": "Criar gráficos avançados" }, { "key": "D", "text": "Treinar oratória" } ], "answer": "B", "explain": "A aula foca decisões visuais com impacto na leitura." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Sistema de cor\n\n- paleta base\n- contraste\n- destaque\n- neutros\n",
+    "pilares": "Pilares\n\n- legibilidade\n- consistência\n- intenção visual\n"
+  }
+}

@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "09-onboarding-integracao",
   "title": "Aula 09 — Onboarding e integração: primeiros 90 dias",
   "steps": [
@@ -39,16 +39,246 @@
     "title": "Quiz (10 perguntas) — Aula 09 (Gestão de Pessoas)",
     "instructions": "Marque A, B, C ou D.",
     "questions": [
-      { "id": 1, "question": "Onboarding eficaz começa:", "options": [ { "key": "A", "text": "Após 30 dias de trabalho" }, { "key": "B", "text": "Antes do primeiro dia" }, { "key": "C", "text": "Somente na avaliação final" }, { "key": "D", "text": "Somente no treinamento técnico" } ], "answer": "B", "explain": "Preparação prévia melhora experiência e acelera integração." },
-      { "id": 2, "question": "Foco dos primeiros 30 dias:", "options": [ { "key": "A", "text": "Autonomia total imediata" }, { "key": "B", "text": "Contexto, adaptação e primeiras entregas" }, { "key": "C", "text": "Promoção de cargo" }, { "key": "D", "text": "Somente tarefas administrativas" } ], "answer": "B", "explain": "É fase de entendimento e base operacional." },
-      { "id": 3, "question": "No ciclo de 60 dias, espera-se:", "options": [ { "key": "A", "text": "Sem acompanhamento" }, { "key": "B", "text": "Autonomia crescente com ajustes" }, { "key": "C", "text": "Troca de área obrigatória" }, { "key": "D", "text": "Fechar PDI anual" } ], "answer": "B", "explain": "A evolução precisa de acompanhamento contínuo." },
-      { "id": 4, "question": "Ao final de 90 dias, o ideal é:", "options": [ { "key": "A", "text": "Entrega consistente e integração consolidada" }, { "key": "B", "text": "Ausência de feedback" }, { "key": "C", "text": "Sem metas definidas" }, { "key": "D", "text": "Novo processo seletivo" } ], "answer": "A", "explain": "Ciclo inicial deve resultar em estabilização." },
-      { "id": 5, "question": "Responsabilidade no onboarding:", "options": [ { "key": "A", "text": "Somente área de pessoas" }, { "key": "B", "text": "Gestor e área de pessoas de forma conjunta" }, { "key": "C", "text": "Somente colaborador novo" }, { "key": "D", "text": "Somente time administrativo" } ], "answer": "B", "explain": "Integração depende de corresponsabilidade." },
-      { "id": 6, "question": "Um indicador útil de onboarding:", "options": [ { "key": "A", "text": "Tempo até primeira entrega relevante" }, { "key": "B", "text": "Quantidade de e-mails enviados" }, { "key": "C", "text": "Tamanho do manual" }, { "key": "D", "text": "Número de reuniões sem pauta" } ], "answer": "A", "explain": "Mostra velocidade de adaptação com resultado." },
-      { "id": 7, "question": "Sem checkpoints no onboarding, risco comum:", "options": [ { "key": "A", "text": "Desvio silencioso de adaptação" }, { "key": "B", "text": "Melhora automática de performance" }, { "key": "C", "text": "Integração mais rápida sempre" }, { "key": "D", "text": "Menor turnover inicial sempre" } ], "answer": "A", "explain": "Problemas aparecem tarde, com custo maior." },
-      { "id": 8, "question": "Frase correta:", "options": [ { "key": "A", "text": "Onboarding é evento de um dia" }, { "key": "B", "text": "Onboarding é processo com marcos e acompanhamento" }, { "key": "C", "text": "Onboarding não afeta retenção" }, { "key": "D", "text": "Onboarding é opcional para cargos técnicos" } ], "answer": "B", "explain": "Integração eficaz exige continuidade e estrutura." },
-      { "id": 9, "question": "Plano 30-60-90 serve para:", "options": [ { "key": "A", "text": "Aumentar burocracia" }, { "key": "B", "text": "Organizar metas e evolução inicial" }, { "key": "C", "text": "Substituir feedback" }, { "key": "D", "text": "Evitar alinhamento com gestor" } ], "answer": "B", "explain": "Dá previsibilidade ao ciclo inicial." },
-      { "id": 10, "question": "Objetivo da aula 09:", "options": [ { "key": "A", "text": "Ensinar desligamento" }, { "key": "B", "text": "Estruturar onboarding e integração nos 90 dias iniciais" }, { "key": "C", "text": "Definir remuneração variável" }, { "key": "D", "text": "Tratar compliance" } ], "answer": "B", "explain": "A aula padroniza integração com foco em produtividade." }
+      {
+        "id": 1,
+        "question": "Onboarding eficaz começa:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Após 30 dias de trabalho"
+          },
+          {
+            "key": "B",
+            "text": "Antes do primeiro dia"
+          },
+          {
+            "key": "C",
+            "text": "Somente na avaliação final"
+          },
+          {
+            "key": "D",
+            "text": "Somente no treinamento técnico"
+          }
+        ],
+        "answer": "B",
+        "explain": "Preparação prévia melhora experiência e acelera integração."
+      },
+      {
+        "id": 2,
+        "question": "Foco dos primeiros 30 dias:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Autonomia total imediata"
+          },
+          {
+            "key": "B",
+            "text": "Contexto, adaptação e primeiras entregas"
+          },
+          {
+            "key": "C",
+            "text": "Promoção de cargo"
+          },
+          {
+            "key": "D",
+            "text": "Somente tarefas administrativas"
+          }
+        ],
+        "answer": "B",
+        "explain": "É fase de entendimento e base operacional."
+      },
+      {
+        "id": 3,
+        "question": "No ciclo de 60 dias, espera-se:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Sem acompanhamento"
+          },
+          {
+            "key": "B",
+            "text": "Autonomia crescente com ajustes"
+          },
+          {
+            "key": "C",
+            "text": "Troca de área obrigatória"
+          },
+          {
+            "key": "D",
+            "text": "Fechar PDI anual"
+          }
+        ],
+        "answer": "B",
+        "explain": "A evolução precisa de acompanhamento contínuo."
+      },
+      {
+        "id": 4,
+        "question": "Ao final de 90 dias, o ideal é:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Entrega consistente e integração consolidada"
+          },
+          {
+            "key": "B",
+            "text": "Ausência de feedback"
+          },
+          {
+            "key": "C",
+            "text": "Sem metas definidas"
+          },
+          {
+            "key": "D",
+            "text": "Novo processo seletivo"
+          }
+        ],
+        "answer": "A",
+        "explain": "Ciclo inicial deve resultar em estabilização."
+      },
+      {
+        "id": 5,
+        "question": "Responsabilidade no onboarding:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Somente área de pessoas"
+          },
+          {
+            "key": "B",
+            "text": "Gestor e área de pessoas de forma conjunta"
+          },
+          {
+            "key": "C",
+            "text": "Somente colaborador novo"
+          },
+          {
+            "key": "D",
+            "text": "Somente time administrativo"
+          }
+        ],
+        "answer": "B",
+        "explain": "Integração depende de corresponsabilidade."
+      },
+      {
+        "id": 6,
+        "question": "Um indicador útil de onboarding:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Tempo até primeira entrega relevante"
+          },
+          {
+            "key": "B",
+            "text": "Quantidade de e-mails enviados"
+          },
+          {
+            "key": "C",
+            "text": "Tamanho do manual"
+          },
+          {
+            "key": "D",
+            "text": "Número de reuniões sem pauta"
+          }
+        ],
+        "answer": "A",
+        "explain": "Mostra velocidade de adaptação com resultado."
+      },
+      {
+        "id": 7,
+        "question": "Sem checkpoints no onboarding, risco comum:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Desvio silencioso de adaptação"
+          },
+          {
+            "key": "B",
+            "text": "Melhora automática de performance"
+          },
+          {
+            "key": "C",
+            "text": "Integração mais rápida sempre"
+          },
+          {
+            "key": "D",
+            "text": "Menor turnover inicial sempre"
+          }
+        ],
+        "answer": "A",
+        "explain": "Problemas aparecem tarde, com custo maior."
+      },
+      {
+        "id": 8,
+        "question": "Frase correta:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Onboarding é evento de um dia"
+          },
+          {
+            "key": "B",
+            "text": "Onboarding é processo com marcos e acompanhamento"
+          },
+          {
+            "key": "C",
+            "text": "Onboarding não afeta retenção"
+          },
+          {
+            "key": "D",
+            "text": "Onboarding é opcional para cargos técnicos"
+          }
+        ],
+        "answer": "B",
+        "explain": "Integração eficaz exige continuidade e estrutura."
+      },
+      {
+        "id": 9,
+        "question": "Plano 30-60-90 serve para:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Aumentar burocracia"
+          },
+          {
+            "key": "B",
+            "text": "Organizar metas e evolução inicial"
+          },
+          {
+            "key": "C",
+            "text": "Substituir feedback"
+          },
+          {
+            "key": "D",
+            "text": "Evitar alinhamento com gestor"
+          }
+        ],
+        "answer": "B",
+        "explain": "Dá previsibilidade ao ciclo inicial."
+      },
+      {
+        "id": 10,
+        "question": "Objetivo da aula 09:",
+        "options": [
+          {
+            "key": "A",
+            "text": "Ensinar desligamento"
+          },
+          {
+            "key": "B",
+            "text": "Estruturar onboarding e integração nos 90 dias iniciais"
+          },
+          {
+            "key": "C",
+            "text": "Definir remuneração variável"
+          },
+          {
+            "key": "D",
+            "text": "Tratar compliance"
+          }
+        ],
+        "answer": "B",
+        "explain": "A aula padroniza integração com foco em produtividade."
+      }
     ]
   },
   "extra": {
@@ -56,4 +286,3 @@
     "pilares": "Pilares\n\n- preparação\n- acompanhamento\n- integração progressiva\n"
   }
 }
-

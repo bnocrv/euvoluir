@@ -1,0 +1,58 @@
+{
+  "id": "12-templates-design-system",
+  "title": "Aula 12 — Templates e design system de apresentação",
+  "steps": [
+    {
+      "title": "Template é ativo de produtividade",
+      "body": "Template bom acelera criação e mantém padrão visual.\n\nRegra:\n- Sem template, cada apresentação recomeça do zero."
+    },
+    {
+      "title": "Componentes de um design system de slides",
+      "body": "Inclua:\n- paleta oficial\n- tipografia\n- componentes (cards, blocos, gráficos)\n- regras de espaçamento\n\nRegra:\n- Componente padronizado reduz decisão repetitiva."
+    },
+    {
+      "title": "Biblioteca de slides reutilizáveis",
+      "body": "Crie um banco com modelos de:\n- abertura\n- agenda\n- comparativos\n- encerramento\n\nRegra:\n- Reuso inteligente aumenta velocidade com qualidade."
+    },
+    {
+      "title": "Padrão para consistência entre autores",
+      "body": "Quando várias pessoas editam, padrão é essencial para unidade visual.\n\nRegra:\n- Time sem padrão produz decks fragmentados."
+    },
+    {
+      "title": "Governança do template",
+      "body": "Defina responsável por:\n- atualizar componentes\n- aprovar mudanças\n- comunicar versões\n\nRegra:\n- Sem governança, template degrada com o tempo."
+    },
+    {
+      "title": "Adaptação por contexto sem quebrar padrão",
+      "body": "Personalize conteúdo mantendo identidade visual base.\n\nRegra:\n- Flexibilidade com limite preserva qualidade."
+    },
+    {
+      "title": "Mini prática (45 min) — kit inicial de template",
+      "body": "Monte kit com:\n- 6 layouts padrão\n- 1 página de regras visuais\n- 1 biblioteca de componentes\n\nObjetivo:\n- criar base reutilizável para o time."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Template reduz esforço e aumenta consistência\n- Design system organiza componentes visuais\n- Biblioteca de slides acelera produção\n- Governança mantém padrão ao longo do tempo\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 12 (PowerPoint)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Template em apresentações ajuda a:", "options": [ { "key": "A", "text": "Recomeçar todo layout sempre" }, { "key": "B", "text": "Ganhar velocidade e consistência" }, { "key": "C", "text": "Eliminar revisão" }, { "key": "D", "text": "Dispensar roteiro" } ], "answer": "B", "explain": "Template padroniza e acelera produção." },
+      { "id": 2, "question": "Design system de slides inclui:", "options": [ { "key": "A", "text": "Somente logo" }, { "key": "B", "text": "Paleta, tipografia, componentes e regras" }, { "key": "C", "text": "Somente animações" }, { "key": "D", "text": "Somente imagens" } ], "answer": "B", "explain": "Sistema visual completo garante unidade." },
+      { "id": 3, "question": "Biblioteca de slides reutilizáveis serve para:", "options": [ { "key": "A", "text": "Aumentar retrabalho" }, { "key": "B", "text": "Reaproveitar estruturas já validadas" }, { "key": "C", "text": "Substituir conteúdo" }, { "key": "D", "text": "Evitar revisão visual" } ], "answer": "B", "explain": "Reuso reduz tempo e erro." },
+      { "id": 4, "question": "Frase correta:", "options": [ { "key": "A", "text": "Padrão atrapalha colaboração" }, { "key": "B", "text": "Padrão facilita colaboração entre autores" }, { "key": "C", "text": "Template dispensa governança" }, { "key": "D", "text": "Cada autor deve usar estilo próprio" } ], "answer": "B", "explain": "Padrão comum melhora coerência de equipe." },
+      { "id": 5, "question": "Sem governança de template, tende a ocorrer:", "options": [ { "key": "A", "text": "Evolução consistente" }, { "key": "B", "text": "Degradação do padrão visual" }, { "key": "C", "text": "Mais previsibilidade" }, { "key": "D", "text": "Menos variação indevida" } ], "answer": "B", "explain": "Falta de controle abre espaço para desvios." },
+      { "id": 6, "question": "Componentes padronizados (cards/blocos) ajudam a:", "options": [ { "key": "A", "text": "Reduzir decisões repetitivas" }, { "key": "B", "text": "Aumentar improviso" }, { "key": "C", "text": "Eliminar hierarquia" }, { "key": "D", "text": "Aumentar inconsistência" } ], "answer": "A", "explain": "Reuso de componentes acelera e padroniza." },
+      { "id": 7, "question": "Adaptação ao contexto deve:", "options": [ { "key": "A", "text": "Quebrar identidade visual base" }, { "key": "B", "text": "Manter padrão com flexibilidade controlada" }, { "key": "C", "text": "Eliminar templates" }, { "key": "D", "text": "Mudar tipografia sempre" } ], "answer": "B", "explain": "Personalização deve preservar consistência." },
+      { "id": 8, "question": "Kit inicial de template pode conter:", "options": [ { "key": "A", "text": "Somente capa" }, { "key": "B", "text": "Layouts + regras + biblioteca de componentes" }, { "key": "C", "text": "Somente ícones" }, { "key": "D", "text": "Somente agenda" } ], "answer": "B", "explain": "Conjunto completo dá escala ao processo." },
+      { "id": 9, "question": "Objetivo de um template corporativo:", "options": [ { "key": "A", "text": "Padronizar sem perder eficiência" }, { "key": "B", "text": "Aumentar tempo de criação" }, { "key": "C", "text": "Eliminar conteúdo customizado" }, { "key": "D", "text": "Substituir revisão final" } ], "answer": "A", "explain": "A meta é velocidade com identidade visual." },
+      { "id": 10, "question": "Objetivo da aula 12:", "options": [ { "key": "A", "text": "Ensinar storytelling" }, { "key": "B", "text": "Estruturar template e design system de slides" }, { "key": "C", "text": "Tratar exportação" }, { "key": "D", "text": "Criar gráficos" } ], "answer": "B", "explain": "A aula foca padronização em escala." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Kit de template\n\n- layouts\n- componentes\n- regras\n- governança\n",
+    "pilares": "Pilares\n\n- padronização\n- reuso\n- colaboração\n"
+  }
+}

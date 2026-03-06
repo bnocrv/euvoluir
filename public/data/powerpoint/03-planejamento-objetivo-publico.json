@@ -1,0 +1,59 @@
+{
+  "id": "03-planejamento-objetivo-publico",
+  "title": "Aula 03 — Planejamento: objetivo, público e mensagem central",
+  "steps": [
+    {
+      "title": "Toda apresentação começa fora do slide",
+      "body": "Planejamento define foco e evita conteúdo desnecessário.\n\nRegra:\n- Sem plano, o slide fica cheio e sem direção."
+    },
+    {
+      "title": "Objetivo principal da apresentação",
+      "body": "Pergunta-chave:\n- o que você quer que a audiência pense, sinta ou faça?\n\nRegra:\n- Um objetivo claro orienta todas as escolhas."
+    },
+    {
+      "title": "Conhecimento do público",
+      "body": "Entenda:\n- nível técnico\n- interesse\n- tempo disponível\n- contexto da reunião\n\nRegra:\n- Mensagem boa para público errado perde efeito."
+    },
+    {
+      "title": "Mensagem central em uma frase",
+      "body": "Resuma a ideia principal em uma frase simples.\n\nRegra:\n- Se não cabe em uma frase, ainda não está claro."
+    },
+    {
+      "title": "Seleção de conteúdo por relevância",
+      "body": "Inclua apenas o que sustenta a mensagem central.\n\nRegra:\n- Conteúdo irrelevante reduz força da narrativa."
+    },
+    {
+      "title": "Roteiro prévio antes do design",
+      "body": "Escreva sequência de tópicos antes de formatar.\n\nRegra:\n- Roteiro orienta design, não o contrário."
+    },
+    {
+      "title": "Mini prática (45 min) — briefing de apresentação",
+      "body": "Crie briefing com:\n- objetivo\n- público\n- mensagem central\n- tópicos essenciais\n\nObjetivo:\n- iniciar produção com clareza estratégica."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Planejamento define qualidade da entrega\n- Objetivo e público orientam conteúdo\n- Mensagem central simplifica decisão\n- Roteiro vem antes de estética\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 03 (PowerPoint)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Planejamento de apresentação serve para:", "options": [ { "key": "A", "text": "Aumentar volume de slides" }, { "key": "B", "text": "Definir foco e direção da mensagem" }, { "key": "C", "text": "Escolher animações primeiro" }, { "key": "D", "text": "Ignorar público" } ], "answer": "B", "explain": "Planejamento evita dispersão de conteúdo." },
+      { "id": 2, "question": "Objetivo principal da apresentação deve ser:", "options": [ { "key": "A", "text": "Amplo e vago" }, { "key": "B", "text": "Claro e orientado a ação/decisão" }, { "key": "C", "text": "Somente visual" }, { "key": "D", "text": "Opcional" } ], "answer": "B", "explain": "Objetivo claro orienta estrutura e linguagem." },
+      { "id": 3, "question": "Conhecer o público ajuda a:", "options": [ { "key": "A", "text": "Escolher mensagem adequada" }, { "key": "B", "text": "Aumentar complexidade sem necessidade" }, { "key": "C", "text": "Eliminar revisão" }, { "key": "D", "text": "Dispensar roteiro" } ], "answer": "A", "explain": "Adequação ao público aumenta compreensão." },
+      { "id": 4, "question": "Mensagem central em uma frase permite:", "options": [ { "key": "A", "text": "Mais confusão" }, { "key": "B", "text": "Maior clareza do foco" }, { "key": "C", "text": "Mais conteúdo irrelevante" }, { "key": "D", "text": "Menos decisão" } ], "answer": "B", "explain": "Síntese melhora direção narrativa." },
+      { "id": 5, "question": "Conteúdo deve ser escolhido por:", "options": [ { "key": "A", "text": "Quantidade disponível" }, { "key": "B", "text": "Relevância para a mensagem" }, { "key": "C", "text": "Complexidade técnica máxima" }, { "key": "D", "text": "Tempo de criação" } ], "answer": "B", "explain": "Relevância mantém foco e objetividade." },
+      { "id": 6, "question": "Frase correta:", "options": [ { "key": "A", "text": "Design deve vir antes de roteiro" }, { "key": "B", "text": "Roteiro deve vir antes do design" }, { "key": "C", "text": "Público não altera a mensagem" }, { "key": "D", "text": "Objetivo não influencia estrutura" } ], "answer": "B", "explain": "Estrutura guia escolhas visuais." },
+      { "id": 7, "question": "Briefing de apresentação deve incluir:", "options": [ { "key": "A", "text": "Só título e data" }, { "key": "B", "text": "Objetivo, público e tópicos essenciais" }, { "key": "C", "text": "Somente design" }, { "key": "D", "text": "Somente referências externas" } ], "answer": "B", "explain": "Briefing claro acelera produção com qualidade." },
+      { "id": 8, "question": "Sem planejamento, risco comum é:", "options": [ { "key": "A", "text": "Mensagem mais forte" }, { "key": "B", "text": "Slides longos e sem foco" }, { "key": "C", "text": "Menor retrabalho" }, { "key": "D", "text": "Aderência ao público" } ], "answer": "B", "explain": "Falta de foco gera excesso e ruído." },
+      { "id": 9, "question": "Tempo disponível da reunião impacta:", "options": [ { "key": "A", "text": "Quantidade e profundidade do conteúdo" }, { "key": "B", "text": "Somente cor da apresentação" }, { "key": "C", "text": "Somente título" }, { "key": "D", "text": "Nada" } ], "answer": "A", "explain": "Tempo define recorte da mensagem." },
+      { "id": 10, "question": "Objetivo da aula 03:", "options": [ { "key": "A", "text": "Ensinar animações" }, { "key": "B", "text": "Planejar apresentação com objetivo e público" }, { "key": "C", "text": "Criar master slide" }, { "key": "D", "text": "Exportar PDF" } ], "answer": "B", "explain": "A aula reforça base estratégica antes da produção." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Briefing mínimo\n\n- objetivo\n- público\n- mensagem central\n- tópicos\n",
+    "pilares": "Pilares\n\n- foco\n- pertinência\n- clareza de intenção\n"
+  }
+}
+

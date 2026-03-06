@@ -1,0 +1,58 @@
+{
+  "id": "17-apresentacao-vendas",
+  "title": "Aula 17 - Apresentacao comercial e pitch de vendas",
+  "steps": [
+    {
+      "title": "Venda comeca no entendimento da dor",
+      "body": "Pitch comercial eficaz mostra que voce compreende o problema do cliente.\n\nRegra:\n- Falar apenas da solucao sem contexto reduz conexao."
+    },
+    {
+      "title": "Estrutura de pitch consultivo",
+      "body": "Organize em:\n- situacao do cliente\n- impacto da dor\n- proposta\n- prova\n- oferta/proximo passo\n\nRegra:\n- Estrutura linear facilita convencimento."
+    },
+    {
+      "title": "Proposta de valor clara",
+      "body": "Explique beneficio concreto em termos de resultado: tempo, custo, receita ou risco.\n\nRegra:\n- Beneficio vago nao gera acao."
+    },
+    {
+      "title": "Provas e credibilidade",
+      "body": "Use casos, numeros e depoimentos para sustentar a proposta.\n\nRegra:\n- Sem evidencias, a proposta parece promessa."
+    },
+    {
+      "title": "Tratamento de objecoes no slide",
+      "body": "Antecipe duvidas comuns e responda com dados objetivos.\n\nRegra:\n- Ignorar objecoes enfraquece fechamento."
+    },
+    {
+      "title": "Call to action comercial",
+      "body": "Encaminhe para etapa seguinte: diagnostico, proposta formal ou piloto.\n\nRegra:\n- Encerrar sem CTA reduz conversao."
+    },
+    {
+      "title": "Mini pratica (45 min) - pitch em 7 slides",
+      "body": "Monte apresentacao com:\n- dor\n- impacto\n- solucao\n- diferenciais\n- prova\n- investimento\n- proximo passo\n\nObjetivo:\n- criar narrativa comercial persuasiva."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Pitch bom parte da dor do cliente\n- Valor precisa ser mensuravel\n- Provas aumentam credibilidade\n- Fechamento comercial exige CTA claro\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 17 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Em pitch comercial, primeiro passo e:", "options": [ { "key": "A", "text": "Entender e mostrar a dor do cliente" }, { "key": "B", "text": "Apresentar preco logo no inicio" } ], "answer": "A", "explain": "Conexao com a dor aumenta relevancia da proposta." },
+      { "id": 2, "question": "Proposta de valor eficaz deve ser:", "options": [ { "key": "A", "text": "Concreta e ligada a resultado" }, { "key": "B", "text": "Generica e ampla" } ], "answer": "A", "explain": "Cliente decide por impacto percebido." },
+      { "id": 3, "question": "Cases e depoimentos servem para:", "options": [ { "key": "A", "text": "Gerar credibilidade" }, { "key": "B", "text": "Substituir totalmente a proposta" } ], "answer": "A", "explain": "Prova valida o discurso comercial." },
+      { "id": 4, "question": "Objecoes do cliente devem ser:", "options": [ { "key": "A", "text": "Antecipadas e respondidas com dados" }, { "key": "B", "text": "Ignoradas no pitch" } ], "answer": "A", "explain": "Tratar objecoes reduz barreiras de compra." },
+      { "id": 5, "question": "Pitch sem call to action tende a:", "options": [ { "key": "A", "text": "Perder chance de avancar na venda" }, { "key": "B", "text": "Converter mais rapido" } ], "answer": "A", "explain": "Sem proximo passo, o processo trava." },
+      { "id": 6, "question": "Beneficio comercial no slide deve:", "options": [ { "key": "A", "text": "Mostrar ganho de negocio" }, { "key": "B", "text": "Focar apenas em recursos tecnicos" } ], "answer": "A", "explain": "Cliente compra resultado, nao lista de recursos." },
+      { "id": 7, "question": "Estrutura de pitch ajuda porque:", "options": [ { "key": "A", "text": "Organiza argumento de forma persuasiva" }, { "key": "B", "text": "Limita qualquer resultado" } ], "answer": "A", "explain": "Fluxo logico facilita convencimento." },
+      { "id": 8, "question": "Falar da solucao sem dor do cliente:", "options": [ { "key": "A", "text": "Reduz relevancia da apresentacao" }, { "key": "B", "text": "Sempre aumenta interesse" } ], "answer": "A", "explain": "Sem contexto, valor percebido cai." },
+      { "id": 9, "question": "Mensagem central da aula 17:", "options": [ { "key": "A", "text": "Vender com narrativa orientada a valor e prova" }, { "key": "B", "text": "Usar muitos slides sem foco" } ], "answer": "A", "explain": "A aula foca estrutura comercial eficaz." },
+      { "id": 10, "question": "Proximo passo no fim do pitch deve ser:", "options": [ { "key": "A", "text": "Especifico e acionavel" }, { "key": "B", "text": "Indefinido" } ], "answer": "A", "explain": "Acao clara aumenta chance de conversao." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Pitch comercial\n\n- dor\n- valor\n- prova\n- CTA\n",
+    "pilares": "Pilares\n\n- relevancia\n- credibilidade\n- conversao\n"
+  }
+}

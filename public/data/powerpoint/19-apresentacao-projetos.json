@@ -1,0 +1,58 @@
+{
+  "id": "19-apresentacao-projetos",
+  "title": "Aula 19 - Status report e apresentacao de projetos",
+  "steps": [
+    {
+      "title": "Status report deve gerar visibilidade real",
+      "body": "A audiencia precisa entender progresso, riscos e proximos passos.\n\nRegra:\n- Atualizacao vaga impede apoio da lideranca."
+    },
+    {
+      "title": "Estrutura de acompanhamento",
+      "body": "Organize em:\n- objetivo do projeto\n- entregas concluidas\n- entregas em andamento\n- riscos/bloqueios\n- plano de acao\n\nRegra:\n- Sem estrutura, o status parece improvisado."
+    },
+    {
+      "title": "Indicadores essenciais",
+      "body": "Use poucos KPIs: prazo, custo, escopo e qualidade.\n\nRegra:\n- Muitos indicadores sem priorizacao confundem leitura."
+    },
+    {
+      "title": "Risco e bloqueio com plano de mitigacao",
+      "body": "Nao basta listar problema; apresente responsavel e acao.\n\nRegra:\n- Risco sem dono nao e gerenciado."
+    },
+    {
+      "title": "Comunicacao para diferentes stakeholders",
+      "body": "Adapte profundidade para diretoria, cliente e time tecnico.\n\nRegra:\n- Mesmo nivel de detalhe para todos reduz efetividade."
+    },
+    {
+      "title": "Slide de decisoes necessarias",
+      "body": "Registre o que precisa ser definido para manter o cronograma.\n\nRegra:\n- Sem decisao explicita, pendencias se acumulam."
+    },
+    {
+      "title": "Mini pratica (45 min) - report mensal de projeto",
+      "body": "Crie 7 slides com:\n- objetivo\n- status geral\n- KPIs\n- entregas\n- riscos\n- decisoes pendentes\n- proximos passos\n\nObjetivo:\n- comunicar projeto com clareza e governanca."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Status report precisa orientar acao\n- Indicadores devem ser poucos e relevantes\n- Risco pede mitigacao e responsavel\n- Decisoes pendentes devem ser explicitas\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) - Aula 19 (PowerPoint)",
+    "instructions": "Marque A ou B.",
+    "questions": [
+      { "id": 1, "question": "Objetivo principal de um status report:", "options": [ { "key": "A", "text": "Dar visibilidade e orientar decisoes" }, { "key": "B", "text": "Apenas registrar informacoes historicas" } ], "answer": "A", "explain": "Reporte deve apoiar acao de gestao." },
+      { "id": 2, "question": "Estrutura clara de atualizacao:", "options": [ { "key": "A", "text": "Melhora entendimento do projeto" }, { "key": "B", "text": "Nao influencia leitura" } ], "answer": "A", "explain": "Sequencia logica reduz ruído na comunicacao." },
+      { "id": 3, "question": "KPIs em apresentacao de projeto devem ser:", "options": [ { "key": "A", "text": "Relevantes e priorizados" }, { "key": "B", "text": "Numerosos sem filtro" } ], "answer": "A", "explain": "Excesso de KPI dificulta decisao." },
+      { "id": 4, "question": "Risco sem plano de mitigacao:", "options": [ { "key": "A", "text": "Nao ajuda na gestao" }, { "key": "B", "text": "Ja resolve o problema" } ], "answer": "A", "explain": "Risco precisa de acao concreta." },
+      { "id": 5, "question": "Ajustar nivel de detalhe por publico:", "options": [ { "key": "A", "text": "Aumenta efetividade da comunicacao" }, { "key": "B", "text": "Complica sem necessidade" } ], "answer": "A", "explain": "Cada stakeholder precisa de profundidade adequada." },
+      { "id": 6, "question": "Slide de decisoes pendentes serve para:", "options": [ { "key": "A", "text": "Dar clareza sobre o que precisa ser definido" }, { "key": "B", "text": "Ocultar dependencias do projeto" } ], "answer": "A", "explain": "Transparencia de pendencias acelera governanca." },
+      { "id": 7, "question": "Relatorio de projeto eficaz deve mostrar:", "options": [ { "key": "A", "text": "Progresso, riscos e proximos passos" }, { "key": "B", "text": "Apenas tarefas finalizadas" } ], "answer": "A", "explain": "Visao completa permite intervenções corretas." },
+      { "id": 8, "question": "Bloqueio sem responsavel definido:", "options": [ { "key": "A", "text": "Tende a permanecer sem solucao" }, { "key": "B", "text": "Se resolve naturalmente" } ], "answer": "A", "explain": "Responsabilidade clara e indispensavel." },
+      { "id": 9, "question": "Mensagem central da aula 19:", "options": [ { "key": "A", "text": "Status report deve orientar governanca e acao" }, { "key": "B", "text": "Reportar o maximo de dados sem sintese" } ], "answer": "A", "explain": "Aula enfatiza comunicacao gerencial eficiente." },
+      { "id": 10, "question": "Ao final do report, e importante:", "options": [ { "key": "A", "text": "Definir proximos passos objetivos" }, { "key": "B", "text": "Encerrar sem direcionamento" } ], "answer": "A", "explain": "Direcionamento final evita ambiguidade operacional." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Status de projeto\n\n- progresso\n- KPI\n- risco\n- decisao\n",
+    "pilares": "Pilares\n\n- transparencia\n- governanca\n- priorizacao\n"
+  }
+}
