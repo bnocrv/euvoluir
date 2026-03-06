@@ -1,0 +1,58 @@
+{
+  "id": "32-projeto-final-gestao-pessoas",
+  "title": "Aula 32 — Projeto final: desenhando um plano completo de gestão de pessoas",
+  "steps": [
+    {
+      "title": "Objetivo do projeto final",
+      "body": "Consolidar toda a trilha em um plano de gestão de pessoas executável.\n\nRegra:\n- Projeto final bom é aplicável no contexto real da empresa."
+    },
+    {
+      "title": "Escolha do escopo",
+      "body": "Defina recorte claro:\n- uma área/equipe\n- principais dores de pessoas\n- horizonte de 90 dias\n\nRegra:\n- Escopo amplo demais reduz qualidade da execução."
+    },
+    {
+      "title": "Diagnóstico inicial",
+      "body": "Levante:\n- indicadores atuais\n- riscos críticos\n- lacunas de processo\n- percepção de liderança/equipe\n\nRegra:\n- Plano sem diagnóstico vira lista de boas intenções."
+    },
+    {
+      "title": "Desenho do plano de ação",
+      "body": "Estruture iniciativas por frente:\n- atração/seleção\n- desenvolvimento\n- engajamento/retenção\n- compliance/governança\n\nRegra:\n- Toda ação precisa dono, prazo e métrica."
+    },
+    {
+      "title": "Priorização e sequência de execução",
+      "body": "Classifique ações por:\n- impacto\n- urgência\n- esforço\n- dependência entre etapas\n\nRegra:\n- Sequência inteligente acelera ganho de curto prazo."
+    },
+    {
+      "title": "Medição de resultado",
+      "body": "Defina painel final com KPIs:\n- turnover\n- tempo de contratação\n- engajamento\n- aderência a processo\n\nRegra:\n- Projeto sem medição não comprova evolução."
+    },
+    {
+      "title": "Mini prática (60 min) — blueprint final",
+      "body": "Entregue um blueprint contendo:\n- diagnóstico\n- plano 90 dias\n- KPIs e metas\n- riscos e contingência\n\nObjetivo:\n- sair da trilha com plano pronto para execução."
+    },
+    {
+      "title": "Resumo da aula e encerramento do curso",
+      "body": "- Projeto final integra estratégia, processo e liderança\n- Ação com dono e prazo aumenta execução\n- KPI mostra progresso real\n- Evolução contínua depende de revisão e ajuste\n\nParabéns por concluir a trilha. Agora fixe com o quiz final."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 32 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Objetivo do projeto final:", "options": [ { "key": "A", "text": "Repetir teoria sem aplicação" }, { "key": "B", "text": "Construir plano executável de gestão de pessoas" }, { "key": "C", "text": "Focar só em um indicador" }, { "key": "D", "text": "Encerrar sem ação" } ], "answer": "B", "explain": "A proposta final deve ser prática e aplicável." },
+      { "id": 2, "question": "Escopo do projeto deve ser:", "options": [ { "key": "A", "text": "Amplo e indefinido" }, { "key": "B", "text": "Claro e viável para execução" }, { "key": "C", "text": "Sem prazo" }, { "key": "D", "text": "Sem área-alvo" } ], "answer": "B", "explain": "Escopo objetivo aumenta qualidade da entrega." },
+      { "id": 3, "question": "Plano sem diagnóstico tende a:", "options": [ { "key": "A", "text": "Ser mais assertivo" }, { "key": "B", "text": "Perder aderência ao problema real" }, { "key": "C", "text": "Reduzir risco" }, { "key": "D", "text": "Melhorar execução" } ], "answer": "B", "explain": "Diagnóstico é base de decisão." },
+      { "id": 4, "question": "Cada ação do plano deve conter:", "options": [ { "key": "A", "text": "Só nome da iniciativa" }, { "key": "B", "text": "Responsável, prazo e métrica" }, { "key": "C", "text": "Somente custo estimado" }, { "key": "D", "text": "Somente justificativa" } ], "answer": "B", "explain": "Esses elementos tornam execução possível." },
+      { "id": 5, "question": "Priorizar ações por impacto e esforço serve para:", "options": [ { "key": "A", "text": "Aumentar aleatoriedade" }, { "key": "B", "text": "Definir sequência com melhor retorno" }, { "key": "C", "text": "Eliminar planejamento" }, { "key": "D", "text": "Substituir liderança" } ], "answer": "B", "explain": "Ajuda a atacar primeiro o que gera valor." },
+      { "id": 6, "question": "KPI no projeto final é importante porque:", "options": [ { "key": "A", "text": "Serve só para relatório" }, { "key": "B", "text": "Mede progresso e orienta ajuste" }, { "key": "C", "text": "Dispensa revisão" }, { "key": "D", "text": "Elimina necessidade de plano" } ], "answer": "B", "explain": "Sem medição não há gestão de evolução." },
+      { "id": 7, "question": "Blueprint final deve incluir:", "options": [ { "key": "A", "text": "Só cronograma" }, { "key": "B", "text": "Diagnóstico, plano, KPIs e riscos" }, { "key": "C", "text": "Só metas qualitativas" }, { "key": "D", "text": "Só custo de folha" } ], "answer": "B", "explain": "Visão completa melhora governança da execução." },
+      { "id": 8, "question": "Frase correta:", "options": [ { "key": "A", "text": "Projeto final termina no documento" }, { "key": "B", "text": "Projeto final deve virar rotina de execução e revisão" }, { "key": "C", "text": "Projeto final dispensa indicadores" }, { "key": "D", "text": "Projeto final não precisa prioridade" } ], "answer": "B", "explain": "Valor real está na implementação contínua." },
+      { "id": 9, "question": "Plano de 90 dias no projeto final serve para:", "options": [ { "key": "A", "text": "Adiar ações para o longo prazo" }, { "key": "B", "text": "Gerar tração inicial com foco claro" }, { "key": "C", "text": "Excluir riscos" }, { "key": "D", "text": "Substituir diagnóstico" } ], "answer": "B", "explain": "Curto prazo orientado cria ritmo de execução." },
+      { "id": 10, "question": "Objetivo da aula 32:", "options": [ { "key": "A", "text": "Criar política de ponto" }, { "key": "B", "text": "Consolidar trilha em plano completo de gestão de pessoas" }, { "key": "C", "text": "Definir processo de recrutamento apenas" }, { "key": "D", "text": "Tratar só compliance" } ], "answer": "B", "explain": "A aula fecha o curso com aplicação integrada." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Blueprint final\n\n- diagnóstico\n- plano 90 dias\n- KPIs\n- riscos\n",
+    "pilares": "Pilares\n\n- aplicabilidade\n- priorização\n- melhoria contínua\n"
+  }
+}

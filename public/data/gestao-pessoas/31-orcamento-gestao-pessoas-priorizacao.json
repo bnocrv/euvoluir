@@ -1,0 +1,58 @@
+{
+  "id": "31-orcamento-gestao-pessoas-priorizacao",
+  "title": "Aula 31 — Orçamento de gestão de pessoas: priorização, custo e impacto",
+  "steps": [
+    {
+      "title": "Orçamento de pessoas é ferramenta estratégica",
+      "body": "Orçar pessoas não é só controlar gasto.\nÉ alinhar investimento com resultado de negócio.\n\nRegra:\n- Corte sem critério pode reduzir custo no curto prazo e destruir capacidade no médio prazo."
+    },
+    {
+      "title": "Blocos principais do orçamento",
+      "body": "Componentes típicos:\n- folha e encargos\n- benefícios\n- treinamento e desenvolvimento\n- tecnologia de gestão de pessoas\n- ações de engajamento/retensão\n\nRegra:\n- Separar blocos ajuda análise e priorização."
+    },
+    {
+      "title": "Priorização por impacto",
+      "body": "Critérios de priorização:\n- impacto na performance\n- risco de não investir\n- retorno esperado\n- viabilidade de execução\n\nRegra:\n- Prioridade deve seguir impacto, não apenas tradição."
+    },
+    {
+      "title": "Cenários orçamentários",
+      "body": "Monte pelo menos 3 cenários:\n- base\n- restritivo\n- expansão\n\nRegra:\n- Cenário pronto acelera decisão em mudança de contexto."
+    },
+    {
+      "title": "Conexão com indicadores",
+      "body": "Associe orçamento a KPIs como:\n- turnover\n- tempo de contratação\n- engajamento\n- produtividade da equipe\n\nRegra:\n- Sem indicador, orçamento vira lista de despesas."
+    },
+    {
+      "title": "Governança e revisão periódica",
+      "body": "Boa prática:\n- revisão mensal/trimestral\n- ajuste por desvio\n- prestação de contas por iniciativa\n\nRegra:\n- Orçamento vivo melhora previsibilidade e disciplina."
+    },
+    {
+      "title": "Mini prática (45 min) — matriz de prioridade de investimento",
+      "body": "Liste 5 iniciativas de pessoas e classifique por:\n- custo\n- impacto\n- urgência\n- risco de não execução\n\nObjetivo:\n- definir sequência de investimento com lógica clara."
+    },
+    {
+      "title": "Resumo da aula",
+      "body": "- Orçamento de pessoas precisa ligação com estratégia\n- Priorização por impacto melhora alocação\n- Cenários aumentam prontidão\n- Revisão contínua mantém controle e resultado\n\nAgora fixe com o quiz."
+    }
+  ],
+  "quiz": {
+    "title": "Quiz (10 perguntas) — Aula 31 (Gestão de Pessoas)",
+    "instructions": "Marque A, B, C ou D.",
+    "questions": [
+      { "id": 1, "question": "Orçamento de gestão de pessoas deve:", "options": [ { "key": "A", "text": "Ser só controle de gasto" }, { "key": "B", "text": "Alinhar investimento com resultado" }, { "key": "C", "text": "Ignorar indicadores" }, { "key": "D", "text": "Ser feito sem revisão" } ], "answer": "B", "explain": "Orçamento eficaz é direcionador estratégico." },
+      { "id": 2, "question": "Bloco comum do orçamento de pessoas:", "options": [ { "key": "A", "text": "Folha e encargos" }, { "key": "B", "text": "Custos de frete" }, { "key": "C", "text": "Impostos de importação" }, { "key": "D", "text": "Marketing externo" } ], "answer": "A", "explain": "Folha é componente central do orçamento." },
+      { "id": 3, "question": "Priorização por impacto significa:", "options": [ { "key": "A", "text": "Escolher o mais barato sempre" }, { "key": "B", "text": "Investir no que mais move resultado e reduz risco" }, { "key": "C", "text": "Manter histórico sem avaliação" }, { "key": "D", "text": "Evitar mudanças" } ], "answer": "B", "explain": "A lógica é alocar recurso onde o retorno é maior." },
+      { "id": 4, "question": "Trabalhar com cenários ajuda a:", "options": [ { "key": "A", "text": "Aumentar improviso" }, { "key": "B", "text": "Preparar respostas para contextos diferentes" }, { "key": "C", "text": "Eliminar necessidade de decisão" }, { "key": "D", "text": "Substituir análise de dados" } ], "answer": "B", "explain": "Cenário aumenta agilidade de ajuste." },
+      { "id": 5, "question": "Orçamento sem KPI associado tende a:", "options": [ { "key": "A", "text": "Ganhar clareza de retorno" }, { "key": "B", "text": "Perder conexão com resultado" }, { "key": "C", "text": "Aumentar previsibilidade" }, { "key": "D", "text": "Reduzir risco" } ], "answer": "B", "explain": "Sem métrica, não há leitura de efetividade." },
+      { "id": 6, "question": "Revisão periódica do orçamento serve para:", "options": [ { "key": "A", "text": "Evitar ajustes" }, { "key": "B", "text": "Corrigir desvios e realocar recursos" }, { "key": "C", "text": "Aumentar burocracia sem objetivo" }, { "key": "D", "text": "Substituir planejamento" } ], "answer": "B", "explain": "Revisão mantém aderência ao cenário real." },
+      { "id": 7, "question": "Frase correta:", "options": [ { "key": "A", "text": "Corte linear sempre melhora gestão" }, { "key": "B", "text": "Corte sem critério pode prejudicar capacidade" }, { "key": "C", "text": "Orçamento de pessoas não afeta operação" }, { "key": "D", "text": "Orçamento é estático" } ], "answer": "B", "explain": "Decisão sem análise pode gerar efeito negativo." },
+      { "id": 8, "question": "Matriz de prioridade ajuda a:", "options": [ { "key": "A", "text": "Escolher iniciativas por percepção" }, { "key": "B", "text": "Ordenar investimento por critérios objetivos" }, { "key": "C", "text": "Eliminar governança" }, { "key": "D", "text": "Ignorar urgência" } ], "answer": "B", "explain": "Critério claro melhora alocação de orçamento." },
+      { "id": 9, "question": "Indicador que pode estar ligado ao orçamento de pessoas:", "options": [ { "key": "A", "text": "Turnover" }, { "key": "B", "text": "Preço de combustível" }, { "key": "C", "text": "Custo de frete internacional" }, { "key": "D", "text": "Volume de estoque" } ], "answer": "A", "explain": "Turnover é métrica-chave de efetividade de investimento em pessoas." },
+      { "id": 10, "question": "Objetivo da aula 31:", "options": [ { "key": "A", "text": "Definir processo de desligamento" }, { "key": "B", "text": "Estruturar orçamento com priorização e impacto" }, { "key": "C", "text": "Criar trilha de onboarding" }, { "key": "D", "text": "Tratar ponto eletrônico" } ], "answer": "B", "explain": "A aula foca alocação estratégica de recursos de pessoas." }
+    ]
+  },
+  "extra": {
+    "eventosMinimos": "Orçamento de pessoas\n\n- blocos de custo\n- priorização\n- cenários\n- revisão\n",
+    "pilares": "Pilares\n\n- impacto\n- disciplina\n- adaptabilidade\n"
+  }
+}
