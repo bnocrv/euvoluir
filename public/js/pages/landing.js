@@ -22,12 +22,12 @@ export function LandingPage(app) {
       <main class="main">
         <div class="container">
           <section class="hero">
-            <h1>Bem-vindo ao Fina Skills: O canal de estudos da Fina Estampa.</h1>
+            <h1>Bem-vindo ao Fina Estampa: O canal de estudos da Fina Estampa.</h1>
             <p class="muted">
               Uma plataforma exclusiva para nossos colaboradores desenvolverem novas habilidades e crescerem profissionalmente.
             </p>
 
-            <h2 class="landing-about-title mt-16">Sobre o Fina Skills</h2>
+            <h2 class="landing-about-title mt-16">Sobre o Fina Estampa</h2>
 
             <div class="grid-2 mt-14 landing-grid">
               ${highlights
