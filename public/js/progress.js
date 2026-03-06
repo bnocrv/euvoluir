@@ -46,6 +46,14 @@ export function ensureCourseCertificate(courseId, certificateData) {
   return p.certificates[courseId];
 }
 
+export function setCourseCertificate(courseId, certificateData) {
+  const p = getProgress();
+  if (!p.certificates) p.certificates = {};
+  p.certificates[courseId] = certificateData;
+  storage.set(key(), p);
+  return p.certificates[courseId];
+}
+
 export function clearCourseCertificate(courseId) {
   const p = getProgress();
   if (!p.certificates?.[courseId]) return;

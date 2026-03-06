@@ -9,6 +9,7 @@ import {
   markCompleted,
   isCourseCompleted,
   ensureCourseCertificate,
+  setCourseCertificate,
   clearCourseCertificate
 } from "../progress.js";
 
@@ -117,6 +118,29 @@ function buildCertificateCode(session, courseId, issuedAt) {
   const user = (session?.username || "aluno").slice(0, 4).toUpperCase();
   const course = String(courseId || "CURSO").slice(0, 4).toUpperCase();
   return `FS-${course}-${user}-${y}${m}${d}`;
+}
+
+function normalizeCertificateData(certificate, { session, courseId, manifest }) {
+  const issuedAt = certificate?.issuedAt || new Date().toISOString();
+  const studentName = certificate?.studentName || session?.name || "Aluno";
+  const courseTitle = certificate?.courseTitle || manifest?.title || "Curso";
+  const specialization =
+    certificate?.specialization || buildCertificateSpecialization(manifest);
+  const workloadHours = Number.isFinite(Number(certificate?.workloadHours))
+    ? Number(certificate.workloadHours)
+    : estimateWorkloadHours(manifest);
+  const certificateCode =
+    certificate?.certificateCode || buildCertificateCode(session, courseId, issuedAt);
+
+  return {
+    ...certificate,
+    issuedAt,
+    studentName,
+    courseTitle,
+    specialization,
+    workloadHours,
+    certificateCode
+  };
 }
 
 function renderCertificateCard(certificate) {
@@ -568,7 +592,7 @@ function buildLessonNavHTML(manifest, courseId, activeLessonId = null) {
 function renderCourseLessonsListPage(app, session, courseId, manifest) {
   const navHTML = buildLessonNavHTML(manifest, courseId);
   const completedCourse = isCourseCompleted(courseId, manifest);
-  const certificate = completedCourse
+  let certificate = completedCourse
     ? ensureCourseCertificate(courseId, {
         studentName: session.name,
         courseTitle: manifest.title,
@@ -578,6 +602,12 @@ function renderCourseLessonsListPage(app, session, courseId, manifest) {
         issuedAt: new Date().toISOString()
       })
     : null;
+
+  // Backfill de certificados antigos que não tinham todos os campos.
+  if (certificate) {
+    certificate = normalizeCertificateData(certificate, { session, courseId, manifest });
+    setCourseCertificate(courseId, certificate);
+  }
 
   app.innerHTML = `
     <div class="page">
