@@ -1,4 +1,4 @@
-// public/js/pages/lesson.js
+﻿// public/js/pages/lesson.js
 import { Header, bindHeaderEvents } from "../components/header.js";
 import { Footer } from "../components/footer.js";
 import { requireAuth } from "../auth.js";
@@ -65,6 +65,25 @@ function parseCourseRoute(path) {
   return null;
 }
 
+function getCourseBadgeLabel(courseId) {
+  const labels = {
+    word: "Word",
+    excel: "Excel",
+    logistica: "Logística",
+    adm: "Administração",
+    financas: "Finanças",
+    compras: "Compras",
+    "gestao-pessoas": "Gestão de Pessoas",
+    html: "HTML",
+    css: "CSS",
+    js: "JavaScript",
+    powerpoint: "PowerPoint"
+  };
+
+  const base = labels[courseId] || courseId.replaceAll("-", " ");
+  return base.toLocaleUpperCase("pt-BR");
+}
+
 function renderCodeBlock(code, lang = "html") {
   const languageClass = `language-${lang}`;
   return `
@@ -86,11 +105,11 @@ function normalizeQuizToAB(quiz) {
     const options = Array.isArray(q.options) ? q.options : [];
     const correctOriginal =
       options.find((o) => o.key === q.answer) ||
-      options[0] || { key: "A", text: "Opcao correta" };
+      options[0] || { key: "A", text: "Opção correta" };
 
     const wrongOriginal =
       options.find((o) => o.key !== correctOriginal.key) ||
-      options[1] || { key: "B", text: "Opcao alternativa" };
+      options[1] || { key: "B", text: "Opção alternativa" };
 
     const correctOnA = idx % 2 === 0;
     const abOptions = correctOnA
@@ -133,7 +152,7 @@ function buildLessonNavHTML(manifest, courseId, activeLessonId = null) {
       const done = isCompleted(courseId, l.id);
       const statusClass = done ? "is-done" : "is-pending";
       const statusIcon = done ? "&#10003;" : "&bull;";
-      const statusText = done ? "Aula concluida" : "Aula pendente";
+      const statusText = done ? "Aula concluída" : "Aula pendente";
       return `
         <a class="nav-item ${active}" href="#/course/${courseId}/${l.id}">
           <div class="row items-start">
@@ -162,7 +181,7 @@ function renderCourseLessonsListPage(app, courseId, manifest) {
           <div class="card pad">
             <div class="row row-between items-start">
               <div>
-                <span class="badge">${esc(courseId.toUpperCase())}</span>
+                <span class="badge">${esc(getCourseBadgeLabel(courseId))}</span>
                 <h2 class="m-0 mt-10">Aulas disponíveis</h2>
                 <p class="muted mt-8">Escolha uma aula para abrir o conteúdo.</p>
               </div>
@@ -265,7 +284,7 @@ export async function LessonPage(app) {
             <div>
               <strong>Modelo do Projeto (HTML completo)</strong>
               <div class="muted mt-6">
-                Compare com o seu. Nao copie sem entender: labels, ids, names, required e radios com mesmo name.
+                Compare com o seu. Não copie sem entender: labels, ids, names, required e radios com mesmo name.
               </div>
             </div>
             <span class="badge">modelo</span>
@@ -286,7 +305,7 @@ export async function LessonPage(app) {
     <div class="card pad">
       <div class="row row-between">
         <strong>${esc(quizAB.title)}</strong>
-        <span class="badge">${quizAB.questions.length} questoes</span>
+        <span class="badge">${quizAB.questions.length} questões</span>
       </div>
       <div class="mt-10">${renderMD(buildQuizInstructions(quizAB))}</div>
 
@@ -297,7 +316,7 @@ export async function LessonPage(app) {
           <div class="card soft pad quiz-card">
             <div class="row row-between">
               <strong>Q${q.id}.</strong>
-              <span class="badge" id="qbadge-${q.id}">Nao respondida</span>
+              <span class="badge" id="qbadge-${q.id}">Não respondida</span>
             </div>
 
             <div class="quiz-question">${renderMD(q.question)}</div>
@@ -337,7 +356,7 @@ export async function LessonPage(app) {
         <div class="container lesson-shell">
           <aside class="card pad sticky" id="sidebar">
             <div>
-              <div class="badge">${esc(courseId.toUpperCase())}</div>
+              <div class="badge">${esc(getCourseBadgeLabel(courseId))}</div>
               <div class="course-title">${esc(manifest.title)}</div>
               <div class="muted mt-6">Trilha de aulas</div>
             </div>
@@ -352,13 +371,13 @@ export async function LessonPage(app) {
               <div class="row row-between items-start">
                 <div>
                   <h2 class="lesson-title">${esc(lesson.title)}</h2>
-                  <div class="muted mt-6">Leia com calma. No final, faca o quiz para fixar.</div>
+                  <div class="muted mt-6">Leia com calma. No final, faça o quiz para fixar.</div>
                 </div>
               </div>
 
               <div class="row row-wrap mt-12">
                 <button class="btn primary" id="btn-complete">
-                  ${completedNow ? "Marcar aula como pendente" : "Marcar aula como concluida"}
+                  ${completedNow ? "Marcar aula como pendente" : "Marcar aula como concluída"}
                 </button>
               </div>
             </div>
@@ -430,14 +449,15 @@ export async function LessonPage(app) {
 
         const summary = app.querySelector("#quiz-summary");
         if (Object.keys(answers).length < total) {
-          summary.textContent = `Voce respondeu ${Object.keys(answers).length}/${total}. Responda todas para medir seu nivel.`;
+          summary.textContent = `Você respondeu ${Object.keys(answers).length}/${total}. Responda todas para medir seu nível.`;
           return;
         }
 
-        if (score === total) summary.textContent = "Perfeito! Voce fixou muito bem.";
-        else if (score >= 7) summary.textContent = "Muito bom! Reforce as que voce errou e avance.";
-        else summary.textContent = "Normal no comeco. Releia os passos e tente de novo.";
+        if (score === total) summary.textContent = "Perfeito! Você fixou muito bem.";
+        else if (score >= 7) summary.textContent = "Muito bom! Reforce as que você errou e avance.";
+        else summary.textContent = "Normal no começo. Releia os passos e tente de novo.";
       });
     }
   }
 }
+

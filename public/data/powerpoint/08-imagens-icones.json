@@ -1,58 +1,209 @@
-{
-  "id": "08-imagens-icones",
-  "title": "Aula 08 — Uso de imagens, ícones e recorte visual",
-  "steps": [
-    {
-      "title": "Imagem deve reforçar mensagem",
-      "body": "Use imagem para complementar ideia, não para preencher espaço.\n\nRegra:\n- Imagem sem função narrativa é distração."
-    },
-    {
-      "title": "Escolha de imagens com critério",
-      "body": "Priorize:\n- relevância ao tema\n- qualidade visual\n- coerência de estilo\n\nRegra:\n- Banco aleatório de imagens quebra identidade da apresentação."
-    },
-    {
-      "title": "Ícones para simplificar informação",
-      "body": "Ícones ajudam a representar conceitos rapidamente.\n\nRegra:\n- Ícone bom reduz texto, mas não substitui clareza."
-    },
-    {
-      "title": "Recorte e enquadramento",
-      "body": "Ajuste recorte para evidenciar o ponto principal da imagem.\n\nRegra:\n- Enquadramento define foco de leitura visual."
-    },
-    {
-      "title": "Consistência de estilo visual",
-      "body": "Mantenha padrão de:\n- fotografia\n- ilustração\n- ícones\n\nRegra:\n- Mistura excessiva de estilos gera ruído."
-    },
-    {
-      "title": "Direitos de uso e crédito",
-      "body": "Use imagens com licença apropriada e registre fonte quando necessário.\n\nRegra:\n- Uso indevido de imagem pode gerar risco jurídico."
-    },
-    {
-      "title": "Mini prática (45 min) — curadoria visual",
-      "body": "Escolha 8 imagens/ícones para um mini deck e aplique:\n- coerência de estilo\n- recorte\n- contraste com texto\n\nObjetivo:\n- melhorar qualidade visual com intenção."
-    },
-    {
-      "title": "Resumo da aula",
-      "body": "- Imagens e ícones devem apoiar mensagem\n- Recorte e estilo influenciam foco\n- Consistência visual melhora percepção\n- Licença de uso deve ser respeitada\n\nAgora fixe com o quiz."
-    }
-  ],
-  "quiz": {
-    "title": "Quiz (10 perguntas) — Aula 08 (PowerPoint)",
-    "instructions": "Marque A, B, C ou D.",
-    "questions": [
-      { "id": 1, "question": "Imagem em slide deve:", "options": [ { "key": "A", "text": "Ser apenas decorativa" }, { "key": "B", "text": "Reforçar a mensagem principal" }, { "key": "C", "text": "Substituir todo texto" }, { "key": "D", "text": "Ter máxima resolução sempre" } ], "answer": "B", "explain": "Imagem precisa ter função narrativa." },
-      { "id": 2, "question": "Critério importante na escolha de imagem:", "options": [ { "key": "A", "text": "Relevância ao conteúdo" }, { "key": "B", "text": "Quantidade de cores" }, { "key": "C", "text": "Arquivo mais pesado" }, { "key": "D", "text": "Popularidade do banco" } ], "answer": "A", "explain": "Relevância garante aderência à mensagem." },
-      { "id": 3, "question": "Ícones em apresentação ajudam a:", "options": [ { "key": "A", "text": "Complexificar leitura" }, { "key": "B", "text": "Simplificar entendimento de conceitos" }, { "key": "C", "text": "Eliminar estrutura" }, { "key": "D", "text": "Substituir roteiro" } ], "answer": "B", "explain": "Ícones sintetizam informação visualmente." },
-      { "id": 4, "question": "Frase correta:", "options": [ { "key": "A", "text": "Recorte da imagem não influencia foco" }, { "key": "B", "text": "Recorte orienta o ponto de atenção" }, { "key": "C", "text": "Misturar estilos sempre enriquece" }, { "key": "D", "text": "Licença de imagem não importa" } ], "answer": "B", "explain": "Enquadramento direciona leitura visual." },
-      { "id": 5, "question": "Mistura excessiva de estilos visuais:", "options": [ { "key": "A", "text": "Aumenta consistência" }, { "key": "B", "text": "Pode gerar ruído e perda de unidade" }, { "key": "C", "text": "Melhora foco da mensagem" }, { "key": "D", "text": "Reduz esforço cognitivo" } ], "answer": "B", "explain": "Unidade visual depende de coerência de estilo." },
-      { "id": 6, "question": "Direito de uso de imagem:", "options": [ { "key": "A", "text": "É opcional em ambiente corporativo" }, { "key": "B", "text": "Deve ser respeitado para evitar risco jurídico" }, { "key": "C", "text": "Só importa em apresentação pública" }, { "key": "D", "text": "Não afeta projeto interno" } ], "answer": "B", "explain": "Conformidade de uso é parte da governança." },
-      { "id": 7, "question": "Imagem sem relação com o tema:", "options": [ { "key": "A", "text": "Fortalece mensagem" }, { "key": "B", "text": "Dispersa atenção" }, { "key": "C", "text": "Melhora narrativa" }, { "key": "D", "text": "Simplifica conteúdo" } ], "answer": "B", "explain": "Elemento irrelevante aumenta ruído." },
-      { "id": 8, "question": "Boa curadoria visual considera:", "options": [ { "key": "A", "text": "Somente resolução" }, { "key": "B", "text": "Função, estilo e legibilidade" }, { "key": "C", "text": "Somente banco de imagens" }, { "key": "D", "text": "Somente quantidade" } ], "answer": "B", "explain": "Qualidade visual depende de múltiplos critérios." },
-      { "id": 9, "question": "Ícone ideal em slide deve ser:", "options": [ { "key": "A", "text": "Complexo e detalhado" }, { "key": "B", "text": "Claro e compatível com estilo do deck" }, { "key": "C", "text": "Colorido sem padrão" }, { "key": "D", "text": "Sem relação com conteúdo" } ], "answer": "B", "explain": "Clareza e coerência visual são prioridade." },
-      { "id": 10, "question": "Objetivo da aula 08:", "options": [ { "key": "A", "text": "Ensinar atalhos" }, { "key": "B", "text": "Aprimorar uso de imagens e ícones com critério" }, { "key": "C", "text": "Criar slide mestre" }, { "key": "D", "text": "Tratar exportação" } ], "answer": "B", "explain": "A aula foca narrativa visual com qualidade." }
-    ]
-  },
-  "extra": {
-    "eventosMinimos": "Curadoria visual\n\n- relevância\n- recorte\n- estilo\n- licença\n",
-    "pilares": "Pilares\n\n- função narrativa\n- consistência\n- conformidade\n"
-  }
+﻿{
+    "id":  "08-imagens-icones",
+    "title":  "Aula 08 — Uso de imagens, ícones e recorte visual",
+    "steps":  [
+                  {
+                      "title":  "Imagem deve reforçar mensagem",
+                      "body":  "Use imagem para complementar ideia, não para preencher espaço.\n\nRegra:\n- Imagem sem função narrativa é distração."
+                  },
+                  {
+                      "title":  "Escolha de imagens com critério",
+                      "body":  "Priorize:\n- relevância ao tema\n- qualidade visual\n- coerência de estilo\n\nRegra:\n- Banco aleatório de imagens quebra identidade da apresentação."
+                  },
+                  {
+                      "title":  "Ícones para simplificar informação",
+                      "body":  "Ícones ajudam a representar conceitos rapidamente.\n\nRegra:\n- Ícone bom reduz texto, mas não substitui clareza."
+                  },
+                  {
+                      "title":  "Recorte e enquadramento",
+                      "body":  "Ajuste recorte para evidenciar o ponto principal da imagem.\n\nRegra:\n- Enquadramento define foco de leitura visual."
+                  },
+                  {
+                      "title":  "Consistência de estilo visual",
+                      "body":  "Mantenha padrão de:\n- fotografia\n- ilustração\n- ícones\n\nRegra:\n- Mistura excessiva de estilos gera ruído."
+                  },
+                  {
+                      "title":  "Direitos de uso e crédito",
+                      "body":  "Use imagens com licença apropriada e registre fonte quando necessário.\n\nRegra:\n- Uso indevido de imagem pode gerar risco jurídico."
+                  },
+                  {
+                      "title":  "Mini prática (45 min) — curadoria visual",
+                      "body":  "Escolha 8 imagens/ícones para um mini deck e aplique:\n- coerência de estilo\n- recorte\n- contraste com texto\n\nObjetivo:\n- melhorar qualidade visual com intenção."
+                  },
+                  {
+                      "title":  "Resumo da aula",
+                      "body":  "- Imagens e ícones devem apoiar mensagem\n- Recorte e estilo influenciam foco\n- Consistência visual melhora percepção\n- Licença de uso deve ser respeitada\n\nAgora fixe com o quiz."
+                  }
+              ],
+    "quiz":  {
+                 "title":  "Quiz (10 perguntas) — Aula 08 (PowerPoint)",
+                 "instructions":  "Marque A ou B.",
+                 "questions":  [
+                                   {
+                                       "id":  1,
+                                       "question":  "Imagem em slide deve:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Ser apenas decorativa"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Reforçar a mensagem principal"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Imagem precisa ter função narrativa."
+                                   },
+                                   {
+                                       "id":  2,
+                                       "question":  "Critério importante na escolha de imagem:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Relevância ao conteúdo"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Quantidade de cores"
+                                                       }
+                                                   ],
+                                       "answer":  "A",
+                                       "explain":  "Relevância garante aderência à mensagem."
+                                   },
+                                   {
+                                       "id":  3,
+                                       "question":  "Ícones em apresentação ajudam a:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Complexificar leitura"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Simplificar entendimento de conceitos"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Ícones sintetizam informação visualmente."
+                                   },
+                                   {
+                                       "id":  4,
+                                       "question":  "Frase correta:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Recorte da imagem não influencia foco"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Recorte orienta o ponto de atenção"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Enquadramento direciona leitura visual."
+                                   },
+                                   {
+                                       "id":  5,
+                                       "question":  "Mistura excessiva de estilos visuais:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Aumenta consistência"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Pode gerar ruído e perda de unidade"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Unidade visual depende de coerência de estilo."
+                                   },
+                                   {
+                                       "id":  6,
+                                       "question":  "Direito de uso de imagem:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "É opcional em ambiente corporativo"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Deve ser respeitado para evitar risco jurídico"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Conformidade de uso é parte da governança."
+                                   },
+                                   {
+                                       "id":  7,
+                                       "question":  "Imagem sem relação com o tema:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Fortalece mensagem"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Dispersa atenção"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Elemento irrelevante aumenta ruído."
+                                   },
+                                   {
+                                       "id":  8,
+                                       "question":  "Boa curadoria visual considera:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Somente resolução"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Função, estilo e legibilidade"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Qualidade visual depende de múltiplos critérios."
+                                   },
+                                   {
+                                       "id":  9,
+                                       "question":  "Ícone ideal em slide deve ser:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Complexo e detalhado"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Claro e compatível com estilo do deck"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Clareza e coerência visual são prioridade."
+                                   },
+                                   {
+                                       "id":  10,
+                                       "question":  "Objetivo da aula 08:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Ensinar atalhos"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Aprimorar uso de imagens e ícones com critério"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "A aula foca narrativa visual com qualidade."
+                                   }
+                               ]
+             },
+    "extra":  {
+                  "eventosMinimos":  "Curadoria visual\n\n- relevância\n- recorte\n- estilo\n- licença\n",
+                  "pilares":  "Pilares\n\n- função narrativa\n- consistência\n- conformidade\n"
+              }
 }
+

@@ -1,58 +1,209 @@
-{
-  "id": "06-tipografia-legibilidade",
-  "title": "Aula 06 — Tipografia e legibilidade para leitura rápida",
-  "steps": [
-    {
-      "title": "Tipografia é parte da mensagem",
-      "body": "Fonte, tamanho e espaçamento impactam compreensão.\n\nRegra:\n- Se não está legível, não está comunicando."
-    },
-    {
-      "title": "Escolha de fonte para apresentação",
-      "body": "Priorize fontes limpas e consistentes.\nEvite misturar muitas famílias no mesmo deck.\n\nRegra:\n- Poucas fontes, com função clara, aumentam profissionalismo."
-    },
-    {
-      "title": "Tamanho mínimo para leitura confortável",
-      "body": "Textos pequenos dificultam leitura em sala e tela compartilhada.\n\nRegra:\n- Ajuste tamanho considerando distância e dispositivo de exibição."
-    },
-    {
-      "title": "Hierarquia tipográfica",
-      "body": "Diferencie níveis:\n- título\n- subtítulo\n- corpo\n- destaque\n\nRegra:\n- Hierarquia consistente orienta o olhar da audiência."
-    },
-    {
-      "title": "Espaçamento e ritmo visual",
-      "body": "Use espaçamento entre linhas e blocos para evitar densidade excessiva.\n\nRegra:\n- Texto “espremido” reduz retenção de informação."
-    },
-    {
-      "title": "Contraste tipográfico",
-      "body": "Texto precisa contrastar com o fundo.\nEvite combinações de baixa visibilidade.\n\nRegra:\n- Contraste inadequado é erro crítico de slide."
-    },
-    {
-      "title": "Mini prática (45 min) — revisão de tipografia",
-      "body": "Pegue 5 slides e revise:\n- tamanho de fonte\n- contraste\n- hierarquia\n- espaçamento\n\nObjetivo:\n- melhorar legibilidade sem alterar conteúdo."
-    },
-    {
-      "title": "Resumo da aula",
-      "body": "- Tipografia define clareza de leitura\n- Hierarquia visual melhora navegação\n- Contraste e espaçamento evitam ruído\n- Menos variação de fonte gera consistência\n\nAgora fixe com o quiz."
-    }
-  ],
-  "quiz": {
-    "title": "Quiz (10 perguntas) — Aula 06 (PowerPoint)",
-    "instructions": "Marque A, B, C ou D.",
-    "questions": [
-      { "id": 1, "question": "Tipografia em apresentação deve priorizar:", "options": [ { "key": "A", "text": "Estilo acima da leitura" }, { "key": "B", "text": "Legibilidade e consistência" }, { "key": "C", "text": "Muitas fontes diferentes" }, { "key": "D", "text": "Texto pequeno para caber tudo" } ], "answer": "B", "explain": "A função principal é facilitar entendimento." },
-      { "id": 2, "question": "Misturar várias fontes no mesmo deck tende a:", "options": [ { "key": "A", "text": "Melhorar clareza" }, { "key": "B", "text": "Gerar ruído visual" }, { "key": "C", "text": "Aumentar contraste" }, { "key": "D", "text": "Acelerar leitura" } ], "answer": "B", "explain": "Excesso de variação quebra unidade visual." },
-      { "id": 3, "question": "Hierarquia tipográfica existe para:", "options": [ { "key": "A", "text": "Decorar slide" }, { "key": "B", "text": "Guiar leitura por importância" }, { "key": "C", "text": "Aumentar volume de texto" }, { "key": "D", "text": "Reduzir contraste" } ], "answer": "B", "explain": "Define o que o público vê primeiro." },
-      { "id": 4, "question": "Frase correta:", "options": [ { "key": "A", "text": "Contraste é opcional" }, { "key": "B", "text": "Contraste de texto e fundo é essencial" }, { "key": "C", "text": "Fonte menor sempre é melhor" }, { "key": "D", "text": "Espaçamento não influencia leitura" } ], "answer": "B", "explain": "Sem contraste, a mensagem se perde." },
-      { "id": 5, "question": "Espaçamento entre linhas e blocos ajuda a:", "options": [ { "key": "A", "text": "Aumentar densidade de texto" }, { "key": "B", "text": "Criar ritmo e leitura confortável" }, { "key": "C", "text": "Diminuir foco" }, { "key": "D", "text": "Eliminar hierarquia" } ], "answer": "B", "explain": "Respiro visual melhora assimilação." },
-      { "id": 6, "question": "Texto muito pequeno em apresentação:", "options": [ { "key": "A", "text": "Melhora síntese automaticamente" }, { "key": "B", "text": "Dificulta leitura da audiência" }, { "key": "C", "text": "É sinal de design avançado" }, { "key": "D", "text": "Aumenta clareza" } ], "answer": "B", "explain": "A legibilidade cai em sala e projeção." },
-      { "id": 7, "question": "Uso ideal de fontes no deck:", "options": [ { "key": "A", "text": "Uma para cada slide" }, { "key": "B", "text": "Poucas fontes com papéis definidos" }, { "key": "C", "text": "Todas em itálico" }, { "key": "D", "text": "Sem padrão" } ], "answer": "B", "explain": "Consistência fortalece qualidade visual." },
-      { "id": 8, "question": "Objetivo da revisão tipográfica é:", "options": [ { "key": "A", "text": "Mudar conteúdo" }, { "key": "B", "text": "Melhorar leitura e coerência visual" }, { "key": "C", "text": "Aumentar quantidade de texto" }, { "key": "D", "text": "Inserir animações" } ], "answer": "B", "explain": "Ajuste tipográfico melhora comunicação." },
-      { "id": 9, "question": "Quando a tipografia está correta:", "options": [ { "key": "A", "text": "A audiência lê sem esforço excessivo" }, { "key": "B", "text": "A audiência pede zoom no slide" }, { "key": "C", "text": "Há muita variedade de estilo" }, { "key": "D", "text": "Não há contraste" } ], "answer": "A", "explain": "Boa tipografia torna leitura natural." },
-      { "id": 10, "question": "Objetivo da aula 06:", "options": [ { "key": "A", "text": "Ensinar exportação" }, { "key": "B", "text": "Aprimorar tipografia e legibilidade do slide" }, { "key": "C", "text": "Criar gráficos" }, { "key": "D", "text": "Treinar oratória" } ], "answer": "B", "explain": "A aula foca clareza textual." }
-    ]
-  },
-  "extra": {
-    "eventosMinimos": "Base tipográfica\n\n- fonte\n- tamanho\n- contraste\n- espaçamento\n",
-    "pilares": "Pilares\n\n- legibilidade\n- consistência\n- hierarquia\n"
-  }
+﻿{
+    "id":  "06-tipografia-legibilidade",
+    "title":  "Aula 06 — Tipografia e legibilidade para leitura rápida",
+    "steps":  [
+                  {
+                      "title":  "Tipografia é parte da mensagem",
+                      "body":  "Fonte, tamanho e espaçamento impactam compreensão.\n\nRegra:\n- Se não está legível, não está comunicando."
+                  },
+                  {
+                      "title":  "Escolha de fonte para apresentação",
+                      "body":  "Priorize fontes limpas e consistentes.\nEvite misturar muitas famílias no mesmo deck.\n\nRegra:\n- Poucas fontes, com função clara, aumentam profissionalismo."
+                  },
+                  {
+                      "title":  "Tamanho mínimo para leitura confortável",
+                      "body":  "Textos pequenos dificultam leitura em sala e tela compartilhada.\n\nRegra:\n- Ajuste tamanho considerando distância e dispositivo de exibição."
+                  },
+                  {
+                      "title":  "Hierarquia tipográfica",
+                      "body":  "Diferencie níveis:\n- título\n- subtítulo\n- corpo\n- destaque\n\nRegra:\n- Hierarquia consistente orienta o olhar da audiência."
+                  },
+                  {
+                      "title":  "Espaçamento e ritmo visual",
+                      "body":  "Use espaçamento entre linhas e blocos para evitar densidade excessiva.\n\nRegra:\n- Texto “espremido” reduz retenção de informação."
+                  },
+                  {
+                      "title":  "Contraste tipográfico",
+                      "body":  "Texto precisa contrastar com o fundo.\nEvite combinações de baixa visibilidade.\n\nRegra:\n- Contraste inadequado é erro crítico de slide."
+                  },
+                  {
+                      "title":  "Mini prática (45 min) — revisão de tipografia",
+                      "body":  "Pegue 5 slides e revise:\n- tamanho de fonte\n- contraste\n- hierarquia\n- espaçamento\n\nObjetivo:\n- melhorar legibilidade sem alterar conteúdo."
+                  },
+                  {
+                      "title":  "Resumo da aula",
+                      "body":  "- Tipografia define clareza de leitura\n- Hierarquia visual melhora navegação\n- Contraste e espaçamento evitam ruído\n- Menos variação de fonte gera consistência\n\nAgora fixe com o quiz."
+                  }
+              ],
+    "quiz":  {
+                 "title":  "Quiz (10 perguntas) — Aula 06 (PowerPoint)",
+                 "instructions":  "Marque A ou B.",
+                 "questions":  [
+                                   {
+                                       "id":  1,
+                                       "question":  "Tipografia em apresentação deve priorizar:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Estilo acima da leitura"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Legibilidade e consistência"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "A função principal é facilitar entendimento."
+                                   },
+                                   {
+                                       "id":  2,
+                                       "question":  "Misturar várias fontes no mesmo deck tende a:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Melhorar clareza"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Gerar ruído visual"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Excesso de variação quebra unidade visual."
+                                   },
+                                   {
+                                       "id":  3,
+                                       "question":  "Hierarquia tipográfica existe para:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Decorar slide"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Guiar leitura por importância"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Define o que o público vê primeiro."
+                                   },
+                                   {
+                                       "id":  4,
+                                       "question":  "Frase correta:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Contraste é opcional"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Contraste de texto e fundo é essencial"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Sem contraste, a mensagem se perde."
+                                   },
+                                   {
+                                       "id":  5,
+                                       "question":  "Espaçamento entre linhas e blocos ajuda a:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Aumentar densidade de texto"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Criar ritmo e leitura confortável"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Respiro visual melhora assimilação."
+                                   },
+                                   {
+                                       "id":  6,
+                                       "question":  "Texto muito pequeno em apresentação:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Melhora síntese automaticamente"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Dificulta leitura da audiência"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "A legibilidade cai em sala e projeção."
+                                   },
+                                   {
+                                       "id":  7,
+                                       "question":  "Uso ideal de fontes no deck:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Uma para cada slide"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Poucas fontes com papéis definidos"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Consistência fortalece qualidade visual."
+                                   },
+                                   {
+                                       "id":  8,
+                                       "question":  "Objetivo da revisão tipográfica é:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Mudar conteúdo"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Melhorar leitura e coerência visual"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Ajuste tipográfico melhora comunicação."
+                                   },
+                                   {
+                                       "id":  9,
+                                       "question":  "Quando a tipografia está correta:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "A audiência lê sem esforço excessivo"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "A audiência pede zoom no slide"
+                                                       }
+                                                   ],
+                                       "answer":  "A",
+                                       "explain":  "Boa tipografia torna leitura natural."
+                                   },
+                                   {
+                                       "id":  10,
+                                       "question":  "Objetivo da aula 06:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Ensinar exportação"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Aprimorar tipografia e legibilidade do slide"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "A aula foca clareza textual."
+                                   }
+                               ]
+             },
+    "extra":  {
+                  "eventosMinimos":  "Base tipográfica\n\n- fonte\n- tamanho\n- contraste\n- espaçamento\n",
+                  "pilares":  "Pilares\n\n- legibilidade\n- consistência\n- hierarquia\n"
+              }
 }
+

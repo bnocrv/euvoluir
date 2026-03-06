@@ -1,58 +1,209 @@
-{
-  "id": "01-introducao",
-  "title": "Aula 01 — Fundamentos do PowerPoint e visão de apresentação eficaz",
-  "steps": [
-    {
-      "title": "PowerPoint é ferramenta de comunicação, não de decoração",
-      "body": "Apresentação boa facilita entendimento e decisão.\n\nRegra:\n- Slide bonito sem mensagem clara não cumpre objetivo."
-    },
-    {
-      "title": "O papel do slide na apresentação",
-      "body": "Slide deve:\n- apoiar a fala\n- organizar raciocínio\n- destacar pontos essenciais\n\nRegra:\n- Slide não deve competir com o apresentador."
-    },
-    {
-      "title": "Objetivo antes de abrir o arquivo",
-      "body": "Defina antes:\n- para quem é\n- qual decisão/ação espera\n- qual mensagem principal\n\nRegra:\n- Sem objetivo, a apresentação vira coleção de informações."
-    },
-    {
-      "title": "Estrutura básica que funciona",
-      "body": "Modelo simples:\n- contexto\n- problema/oportunidade\n- proposta\n- próximo passo\n\nRegra:\n- Estrutura clara reduz dispersão."
-    },
-    {
-      "title": "Erros comuns de iniciantes",
-      "body": "Erros frequentes:\n- texto em excesso\n- excesso de efeitos\n- falta de hierarquia visual\n\nRegra:\n- Menos elementos, com mais intenção, gera melhor resultado."
-    },
-    {
-      "title": "Checklist inicial de qualidade",
-      "body": "Verifique:\n- legibilidade\n- coerência visual\n- sequência lógica\n- tempo de apresentação\n\nRegra:\n- Revisão final evita desgaste na entrega."
-    },
-    {
-      "title": "Mini prática (45 min) — montar primeiro esqueleto",
-      "body": "Crie 5 slides:\n- capa\n- contexto\n- ponto central\n- proposta\n- fechamento\n\nObjetivo:\n- treinar organização antes do design."
-    },
-    {
-      "title": "Resumo da aula",
-      "body": "- PowerPoint é instrumento de clareza\n- Objetivo e estrutura vêm antes do visual\n- Slide deve apoiar narrativa\n- Checklist simples já eleva qualidade\n\nAgora fixe com o quiz."
-    }
-  ],
-  "quiz": {
-    "title": "Quiz (10 perguntas) — Aula 01 (PowerPoint)",
-    "instructions": "Marque A, B, C ou D.",
-    "questions": [
-      { "id": 1, "question": "Função principal de um slide:", "options": [ { "key": "A", "text": "Decorar a reunião" }, { "key": "B", "text": "Ajudar a comunicar a mensagem" }, { "key": "C", "text": "Substituir a fala" }, { "key": "D", "text": "Mostrar tudo de uma vez" } ], "answer": "B", "explain": "Slide é apoio de comunicação, não fim em si." },
-      { "id": 2, "question": "Antes de criar a apresentação, é essencial definir:", "options": [ { "key": "A", "text": "A cor favorita" }, { "key": "B", "text": "Objetivo e público" }, { "key": "C", "text": "Quantidade de animações" }, { "key": "D", "text": "Somente o título" } ], "answer": "B", "explain": "Objetivo direciona toda a estrutura." },
-      { "id": 3, "question": "Estrutura clara ajuda a:", "options": [ { "key": "A", "text": "Aumentar confusão" }, { "key": "B", "text": "Facilitar entendimento" }, { "key": "C", "text": "Aumentar tempo sem valor" }, { "key": "D", "text": "Evitar mensagem principal" } ], "answer": "B", "explain": "Roteiro consistente melhora compreensão." },
-      { "id": 4, "question": "Erro comum em apresentação:", "options": [ { "key": "A", "text": "Texto em excesso no slide" }, { "key": "B", "text": "Mensagem objetiva" }, { "key": "C", "text": "Sequência lógica" }, { "key": "D", "text": "Revisão final" } ], "answer": "A", "explain": "Excesso de texto reduz foco e leitura." },
-      { "id": 5, "question": "Frase correta:", "options": [ { "key": "A", "text": "Design vem antes da mensagem" }, { "key": "B", "text": "Mensagem e estrutura vêm antes do design" }, { "key": "C", "text": "Animação é prioridade máxima" }, { "key": "D", "text": "Slide deve conter tudo que será falado" } ], "answer": "B", "explain": "Conteúdo orienta decisões visuais." },
-      { "id": 6, "question": "Checklist final serve para:", "options": [ { "key": "A", "text": "Aumentar trabalho sem necessidade" }, { "key": "B", "text": "Garantir qualidade antes da apresentação" }, { "key": "C", "text": "Trocar toda a estrutura" }, { "key": "D", "text": "Ignorar público" } ], "answer": "B", "explain": "Revisão reduz erros evitáveis." },
-      { "id": 7, "question": "Slide eficaz deve ser:", "options": [ { "key": "A", "text": "Carregado de informação" }, { "key": "B", "text": "Claro e orientado à mensagem" }, { "key": "C", "text": "Cheio de efeitos" }, { "key": "D", "text": "Sem hierarquia visual" } ], "answer": "B", "explain": "Clareza é fator chave de eficácia." },
-      { "id": 8, "question": "Ao planejar 5 slides iniciais, você prioriza:", "options": [ { "key": "A", "text": "Roteiro lógico" }, { "key": "B", "text": "Transições complexas" }, { "key": "C", "text": "Banco de imagens primeiro" }, { "key": "D", "text": "Fonte aleatória" } ], "answer": "A", "explain": "Estrutura vem antes de acabamento visual." },
-      { "id": 9, "question": "Público-alvo influencia:", "options": [ { "key": "A", "text": "Somente tamanho da fonte" }, { "key": "B", "text": "Mensagem, linguagem e profundidade" }, { "key": "C", "text": "Somente tempo de reunião" }, { "key": "D", "text": "Nada da apresentação" } ], "answer": "B", "explain": "Adequação ao público aumenta efetividade." },
-      { "id": 10, "question": "Objetivo da aula 01:", "options": [ { "key": "A", "text": "Ensinar animações avançadas" }, { "key": "B", "text": "Construir base de apresentação eficaz" }, { "key": "C", "text": "Criar template corporativo" }, { "key": "D", "text": "Exportar em vídeo" } ], "answer": "B", "explain": "A aula estabelece fundamentos de comunicação com slides." }
-    ]
-  },
-  "extra": {
-    "eventosMinimos": "Base de apresentação\n\n- objetivo\n- público\n- estrutura\n- revisão\n",
-    "pilares": "Pilares\n\n- clareza\n- lógica\n- foco na mensagem\n"
-  }
+﻿{
+    "id":  "01-introducao",
+    "title":  "Aula 01 — Fundamentos do PowerPoint e visão de apresentação eficaz",
+    "steps":  [
+                  {
+                      "title":  "PowerPoint é ferramenta de comunicação, não de decoração",
+                      "body":  "Apresentação boa facilita entendimento e decisão.\n\nRegra:\n- Slide bonito sem mensagem clara não cumpre objetivo."
+                  },
+                  {
+                      "title":  "O papel do slide na apresentação",
+                      "body":  "Slide deve:\n- apoiar a fala\n- organizar raciocínio\n- destacar pontos essenciais\n\nRegra:\n- Slide não deve competir com o apresentador."
+                  },
+                  {
+                      "title":  "Objetivo antes de abrir o arquivo",
+                      "body":  "Defina antes:\n- para quem é\n- qual decisão/ação espera\n- qual mensagem principal\n\nRegra:\n- Sem objetivo, a apresentação vira coleção de informações."
+                  },
+                  {
+                      "title":  "Estrutura básica que funciona",
+                      "body":  "Modelo simples:\n- contexto\n- problema/oportunidade\n- proposta\n- próximo passo\n\nRegra:\n- Estrutura clara reduz dispersão."
+                  },
+                  {
+                      "title":  "Erros comuns de iniciantes",
+                      "body":  "Erros frequentes:\n- texto em excesso\n- excesso de efeitos\n- falta de hierarquia visual\n\nRegra:\n- Menos elementos, com mais intenção, gera melhor resultado."
+                  },
+                  {
+                      "title":  "Checklist inicial de qualidade",
+                      "body":  "Verifique:\n- legibilidade\n- coerência visual\n- sequência lógica\n- tempo de apresentação\n\nRegra:\n- Revisão final evita desgaste na entrega."
+                  },
+                  {
+                      "title":  "Mini prática (45 min) — montar primeiro esqueleto",
+                      "body":  "Crie 5 slides:\n- capa\n- contexto\n- ponto central\n- proposta\n- fechamento\n\nObjetivo:\n- treinar organização antes do design."
+                  },
+                  {
+                      "title":  "Resumo da aula",
+                      "body":  "- PowerPoint é instrumento de clareza\n- Objetivo e estrutura vêm antes do visual\n- Slide deve apoiar narrativa\n- Checklist simples já eleva qualidade\n\nAgora fixe com o quiz."
+                  }
+              ],
+    "quiz":  {
+                 "title":  "Quiz (10 perguntas) — Aula 01 (PowerPoint)",
+                 "instructions":  "Marque A ou B.",
+                 "questions":  [
+                                   {
+                                       "id":  1,
+                                       "question":  "Função principal de um slide:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Decorar a reunião"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Ajudar a comunicar a mensagem"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Slide é apoio de comunicação, não fim em si."
+                                   },
+                                   {
+                                       "id":  2,
+                                       "question":  "Antes de criar a apresentação, é essencial definir:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "A cor favorita"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Objetivo e público"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Objetivo direciona toda a estrutura."
+                                   },
+                                   {
+                                       "id":  3,
+                                       "question":  "Estrutura clara ajuda a:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Aumentar confusão"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Facilitar entendimento"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Roteiro consistente melhora compreensão."
+                                   },
+                                   {
+                                       "id":  4,
+                                       "question":  "Erro comum em apresentação:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Texto em excesso no slide"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Mensagem objetiva"
+                                                       }
+                                                   ],
+                                       "answer":  "A",
+                                       "explain":  "Excesso de texto reduz foco e leitura."
+                                   },
+                                   {
+                                       "id":  5,
+                                       "question":  "Frase correta:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Design vem antes da mensagem"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Mensagem e estrutura vêm antes do design"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Conteúdo orienta decisões visuais."
+                                   },
+                                   {
+                                       "id":  6,
+                                       "question":  "Checklist final serve para:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Aumentar trabalho sem necessidade"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Garantir qualidade antes da apresentação"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Revisão reduz erros evitáveis."
+                                   },
+                                   {
+                                       "id":  7,
+                                       "question":  "Slide eficaz deve ser:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Carregado de informação"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Claro e orientado à mensagem"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Clareza é fator chave de eficácia."
+                                   },
+                                   {
+                                       "id":  8,
+                                       "question":  "Ao planejar 5 slides iniciais, você prioriza:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Roteiro lógico"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Transições complexas"
+                                                       }
+                                                   ],
+                                       "answer":  "A",
+                                       "explain":  "Estrutura vem antes de acabamento visual."
+                                   },
+                                   {
+                                       "id":  9,
+                                       "question":  "Público-alvo influencia:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Somente tamanho da fonte"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Mensagem, linguagem e profundidade"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Adequação ao público aumenta efetividade."
+                                   },
+                                   {
+                                       "id":  10,
+                                       "question":  "Objetivo da aula 01:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Ensinar animações avançadas"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Construir base de apresentação eficaz"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "A aula estabelece fundamentos de comunicação com slides."
+                                   }
+                               ]
+             },
+    "extra":  {
+                  "eventosMinimos":  "Base de apresentação\n\n- objetivo\n- público\n- estrutura\n- revisão\n",
+                  "pilares":  "Pilares\n\n- clareza\n- lógica\n- foco na mensagem\n"
+              }
 }
+

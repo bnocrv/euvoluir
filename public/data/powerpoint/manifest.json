@@ -1,4 +1,4 @@
-{
+﻿{
   "courseId": "powerpoint",
   "title": "PowerPoint — do básico ao avançado (estrutura, design, narrativa e apresentações profissionais)",
   "lessons": [
@@ -33,3 +33,4 @@
     { "id": "25-projeto-final-powerpoint", "title": "Aula 25 — Projeto final: construir uma apresentação completa e profissional", "file": "25-projeto-final-powerpoint.json" }
   ]
 }
+

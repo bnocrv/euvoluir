@@ -1,58 +1,209 @@
-{
-  "id": "11-mestre-slides",
-  "title": "Aula 11 — Slide Mestre: padrão visual e produtividade",
-  "steps": [
-    {
-      "title": "Slide Mestre é a base de consistência",
-      "body": "O Slide Mestre define padrão para todos os slides.\n\nRegra:\n- Ajustar slide a slide é lento e gera inconsistência."
-    },
-    {
-      "title": "Elementos que devem estar no mestre",
-      "body": "Defina no mestre:\n- fontes\n- cores\n- posições de título e conteúdo\n- rodapé/logotipo\n\nRegra:\n- Padrão centralizado reduz erro de formatação."
-    },
-    {
-      "title": "Layouts por tipo de conteúdo",
-      "body": "Crie layouts para:\n- capa\n- conteúdo textual\n- dados (gráfico/tabela)\n- fechamento\n\nRegra:\n- Layout específico acelera produção com qualidade."
-    },
-    {
-      "title": "Atualização global de design",
-      "body": "Mudança no mestre atualiza toda a apresentação ligada ao layout.\n\nRegra:\n- Ajuste global evita retrabalho em dezenas de slides."
-    },
-    {
-      "title": "Boas práticas com tema e variações",
-      "body": "Organize variações de cor e fundo sem perder identidade.\n\nRegra:\n- Variação controlada mantém unidade visual."
-    },
-    {
-      "title": "Erros comuns no uso do mestre",
-      "body": "Erros frequentes:\n- editar direto no slide final\n- quebrar placeholders\n- criar layouts redundantes\n\nRegra:\n- Disciplina no mestre evita “gambiarras” visuais."
-    },
-    {
-      "title": "Mini prática (45 min) — construir um mini mestre",
-      "body": "Crie um tema com:\n- 4 layouts\n- tipografia definida\n- paleta consistente\n\nObjetivo:\n- padronizar base para produção rápida."
-    },
-    {
-      "title": "Resumo da aula",
-      "body": "- Slide Mestre aumenta consistência e produtividade\n- Layouts por objetivo reduzem retrabalho\n- Mudança global simplifica manutenção\n- Padrão visual deve nascer no mestre\n\nAgora fixe com o quiz."
-    }
-  ],
-  "quiz": {
-    "title": "Quiz (10 perguntas) — Aula 11 (PowerPoint)",
-    "instructions": "Marque A, B, C ou D.",
-    "questions": [
-      { "id": 1, "question": "Função principal do Slide Mestre:", "options": [ { "key": "A", "text": "Aplicar padrão global de design" }, { "key": "B", "text": "Criar animações automáticas" }, { "key": "C", "text": "Inserir dados em gráfico" }, { "key": "D", "text": "Exportar apresentação" } ], "answer": "A", "explain": "Mestre centraliza padrão e acelera edição." },
-      { "id": 2, "question": "Editar slide por slide em vez do mestre tende a:", "options": [ { "key": "A", "text": "Aumentar consistência" }, { "key": "B", "text": "Aumentar retrabalho e diferença visual" }, { "key": "C", "text": "Reduzir tempo" }, { "key": "D", "text": "Melhorar atualização global" } ], "answer": "B", "explain": "Sem padrão central, o deck perde unidade." },
-      { "id": 3, "question": "No Slide Mestre, você deve definir:", "options": [ { "key": "A", "text": "Fontes e placeholders padrão" }, { "key": "B", "text": "Só animações" }, { "key": "C", "text": "Só textos do conteúdo final" }, { "key": "D", "text": "Só ícones" } ], "answer": "A", "explain": "Esses elementos estruturam o layout da apresentação." },
-      { "id": 4, "question": "Frase correta:", "options": [ { "key": "A", "text": "Layout único serve para qualquer tipo de conteúdo" }, { "key": "B", "text": "Layouts específicos aumentam produtividade" }, { "key": "C", "text": "Slide mestre é opcional em decks longos" }, { "key": "D", "text": "Mestre não influencia consistência" } ], "answer": "B", "explain": "Cada tipo de conteúdo pede estrutura adequada." },
-      { "id": 5, "question": "Mudança feita no mestre pode:", "options": [ { "key": "A", "text": "Atualizar slides vinculados ao layout" }, { "key": "B", "text": "Apagar conteúdo automaticamente" }, { "key": "C", "text": "Remover gráficos" }, { "key": "D", "text": "Alterar áudio do arquivo" } ], "answer": "A", "explain": "Esse é um dos maiores ganhos de usar mestre." },
-      { "id": 6, "question": "Erro comum no uso do mestre:", "options": [ { "key": "A", "text": "Planejar layouts antes" }, { "key": "B", "text": "Quebrar placeholders sem necessidade" }, { "key": "C", "text": "Padronizar fontes" }, { "key": "D", "text": "Definir paleta" } ], "answer": "B", "explain": "Quebrar estrutura compromete consistência." },
-      { "id": 7, "question": "Variações de tema devem:", "options": [ { "key": "A", "text": "Ser aleatórias" }, { "key": "B", "text": "Manter identidade visual" }, { "key": "C", "text": "Mudar fonte em cada slide" }, { "key": "D", "text": "Eliminar contraste" } ], "answer": "B", "explain": "Variação com controle preserva coerência." },
-      { "id": 8, "question": "Slide Mestre ajuda especialmente em:", "options": [ { "key": "A", "text": "Decks com muitos slides" }, { "key": "B", "text": "Apenas slides únicos" }, { "key": "C", "text": "Somente apresentações sem texto" }, { "key": "D", "text": "Somente apresentações curtas" } ], "answer": "A", "explain": "Escala de edição é o principal benefício." },
-      { "id": 9, "question": "Padrão visual centralizado traz:", "options": [ { "key": "A", "text": "Mais retrabalho" }, { "key": "B", "text": "Mais consistência e velocidade" }, { "key": "C", "text": "Menos legibilidade" }, { "key": "D", "text": "Menor controle" } ], "answer": "B", "explain": "Padronização melhora qualidade e eficiência." },
-      { "id": 10, "question": "Objetivo da aula 11:", "options": [ { "key": "A", "text": "Criar gráficos avançados" }, { "key": "B", "text": "Dominar Slide Mestre para padrão e produtividade" }, { "key": "C", "text": "Treinar oratória" }, { "key": "D", "text": "Exportar PDF" } ], "answer": "B", "explain": "A aula foca uso estratégico do mestre." }
-    ]
-  },
-  "extra": {
-    "eventosMinimos": "Slide Mestre\n\n- tema\n- layouts\n- placeholders\n- atualização global\n",
-    "pilares": "Pilares\n\n- padronização\n- escala\n- manutenção fácil\n"
-  }
+﻿{
+    "id":  "11-mestre-slides",
+    "title":  "Aula 11 — Slide Mestre: padrão visual e produtividade",
+    "steps":  [
+                  {
+                      "title":  "Slide Mestre é a base de consistência",
+                      "body":  "O Slide Mestre define padrão para todos os slides.\n\nRegra:\n- Ajustar slide a slide é lento e gera inconsistência."
+                  },
+                  {
+                      "title":  "Elementos que devem estar no mestre",
+                      "body":  "Defina no mestre:\n- fontes\n- cores\n- posições de título e conteúdo\n- rodapé/logotipo\n\nRegra:\n- Padrão centralizado reduz erro de formatação."
+                  },
+                  {
+                      "title":  "Layouts por tipo de conteúdo",
+                      "body":  "Crie layouts para:\n- capa\n- conteúdo textual\n- dados (gráfico/tabela)\n- fechamento\n\nRegra:\n- Layout específico acelera produção com qualidade."
+                  },
+                  {
+                      "title":  "Atualização global de design",
+                      "body":  "Mudança no mestre atualiza toda a apresentação ligada ao layout.\n\nRegra:\n- Ajuste global evita retrabalho em dezenas de slides."
+                  },
+                  {
+                      "title":  "Boas práticas com tema e variações",
+                      "body":  "Organize variações de cor e fundo sem perder identidade.\n\nRegra:\n- Variação controlada mantém unidade visual."
+                  },
+                  {
+                      "title":  "Erros comuns no uso do mestre",
+                      "body":  "Erros frequentes:\n- editar direto no slide final\n- quebrar placeholders\n- criar layouts redundantes\n\nRegra:\n- Disciplina no mestre evita “gambiarras” visuais."
+                  },
+                  {
+                      "title":  "Mini prática (45 min) — construir um mini mestre",
+                      "body":  "Crie um tema com:\n- 4 layouts\n- tipografia definida\n- paleta consistente\n\nObjetivo:\n- padronizar base para produção rápida."
+                  },
+                  {
+                      "title":  "Resumo da aula",
+                      "body":  "- Slide Mestre aumenta consistência e produtividade\n- Layouts por objetivo reduzem retrabalho\n- Mudança global simplifica manutenção\n- Padrão visual deve nascer no mestre\n\nAgora fixe com o quiz."
+                  }
+              ],
+    "quiz":  {
+                 "title":  "Quiz (10 perguntas) — Aula 11 (PowerPoint)",
+                 "instructions":  "Marque A ou B.",
+                 "questions":  [
+                                   {
+                                       "id":  1,
+                                       "question":  "Função principal do Slide Mestre:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Aplicar padrão global de design"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Criar animações automáticas"
+                                                       }
+                                                   ],
+                                       "answer":  "A",
+                                       "explain":  "Mestre centraliza padrão e acelera edição."
+                                   },
+                                   {
+                                       "id":  2,
+                                       "question":  "Editar slide por slide em vez do mestre tende a:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Aumentar consistência"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Aumentar retrabalho e diferença visual"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Sem padrão central, o deck perde unidade."
+                                   },
+                                   {
+                                       "id":  3,
+                                       "question":  "No Slide Mestre, você deve definir:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Fontes e placeholders padrão"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Só animações"
+                                                       }
+                                                   ],
+                                       "answer":  "A",
+                                       "explain":  "Esses elementos estruturam o layout da apresentação."
+                                   },
+                                   {
+                                       "id":  4,
+                                       "question":  "Frase correta:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Layout único serve para qualquer tipo de conteúdo"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Layouts específicos aumentam produtividade"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Cada tipo de conteúdo pede estrutura adequada."
+                                   },
+                                   {
+                                       "id":  5,
+                                       "question":  "Mudança feita no mestre pode:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Atualizar slides vinculados ao layout"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Apagar conteúdo automaticamente"
+                                                       }
+                                                   ],
+                                       "answer":  "A",
+                                       "explain":  "Esse é um dos maiores ganhos de usar mestre."
+                                   },
+                                   {
+                                       "id":  6,
+                                       "question":  "Erro comum no uso do mestre:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Planejar layouts antes"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Quebrar placeholders sem necessidade"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Quebrar estrutura compromete consistência."
+                                   },
+                                   {
+                                       "id":  7,
+                                       "question":  "Variações de tema devem:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Ser aleatórias"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Manter identidade visual"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Variação com controle preserva coerência."
+                                   },
+                                   {
+                                       "id":  8,
+                                       "question":  "Slide Mestre ajuda especialmente em:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Decks com muitos slides"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Apenas slides únicos"
+                                                       }
+                                                   ],
+                                       "answer":  "A",
+                                       "explain":  "Escala de edição é o principal benefício."
+                                   },
+                                   {
+                                       "id":  9,
+                                       "question":  "Padrão visual centralizado traz:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Mais retrabalho"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Mais consistência e velocidade"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Padronização melhora qualidade e eficiência."
+                                   },
+                                   {
+                                       "id":  10,
+                                       "question":  "Objetivo da aula 11:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Criar gráficos avançados"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Dominar Slide Mestre para padrão e produtividade"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "A aula foca uso estratégico do mestre."
+                                   }
+                               ]
+             },
+    "extra":  {
+                  "eventosMinimos":  "Slide Mestre\n\n- tema\n- layouts\n- placeholders\n- atualização global\n",
+                  "pilares":  "Pilares\n\n- padronização\n- escala\n- manutenção fácil\n"
+              }
 }
+

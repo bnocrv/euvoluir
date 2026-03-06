@@ -1,58 +1,209 @@
-{
-  "id": "04-estrutura-roteiro",
-  "title": "Aula 04 — Estrutura de roteiro: abertura, desenvolvimento e fechamento",
-  "steps": [
-    {
-      "title": "Roteiro é espinha dorsal da apresentação",
-      "body": "Uma boa estrutura facilita compreensão e mantém atenção.\n\nRegra:\n- Sem roteiro, a audiência perde o fio da narrativa."
-    },
-    {
-      "title": "Abertura com contexto e direção",
-      "body": "Abertura deve responder:\n- sobre o que vamos falar\n- por que isso importa\n- o que esperar da apresentação\n\nRegra:\n- Início confuso reduz atenção do restante."
-    },
-    {
-      "title": "Desenvolvimento com sequência lógica",
-      "body": "Organize em blocos:\n- problema/oportunidade\n- análise\n- proposta\n\nRegra:\n- Sequência lógica reduz esforço de interpretação."
-    },
-    {
-      "title": "Fechamento com chamada para ação",
-      "body": "Finalize com:\n- síntese\n- recomendação\n- próximo passo claro\n\nRegra:\n- Fechamento sem ação enfraquece a apresentação."
-    },
-    {
-      "title": "Transições entre blocos",
-      "body": "Use frases-ponte para conectar assuntos.\n\nRegra:\n- Transição clara evita sensação de “pulo” de tema."
-    },
-    {
-      "title": "Tempo por bloco",
-      "body": "Distribua o tempo conforme prioridade da mensagem.\n\nRegra:\n- Roteiro bom considera duração real da fala."
-    },
-    {
-      "title": "Mini prática (45 min) — roteiro de 8 slides",
-      "body": "Monte um roteiro com:\n- 1 abertura\n- 5 desenvolvimento\n- 2 fechamento/ação\n\nObjetivo:\n- treinar lógica de progressão narrativa."
-    },
-    {
-      "title": "Resumo da aula",
-      "body": "- Roteiro orienta compreensão\n- Abertura define contexto\n- Desenvolvimento deve ser progressivo\n- Fechamento precisa direcionar ação\n\nAgora fixe com o quiz."
-    }
-  ],
-  "quiz": {
-    "title": "Quiz (10 perguntas) — Aula 04 (PowerPoint)",
-    "instructions": "Marque A, B, C ou D.",
-    "questions": [
-      { "id": 1, "question": "Função do roteiro na apresentação:", "options": [ { "key": "A", "text": "Apenas organizar cores" }, { "key": "B", "text": "Guiar narrativa e entendimento" }, { "key": "C", "text": "Substituir conteúdo" }, { "key": "D", "text": "Definir animações" } ], "answer": "B", "explain": "Roteiro sustenta lógica e clareza." },
-      { "id": 2, "question": "Abertura eficaz deve:", "options": [ { "key": "A", "text": "Ir direto para detalhes técnicos" }, { "key": "B", "text": "Apresentar contexto e expectativa" }, { "key": "C", "text": "Evitar objetivo" }, { "key": "D", "text": "Começar pelo fechamento" } ], "answer": "B", "explain": "Abertura orienta leitura da audiência." },
-      { "id": 3, "question": "Fechamento forte inclui:", "options": [ { "key": "A", "text": "Resumo sem decisão" }, { "key": "B", "text": "Síntese e próximo passo" }, { "key": "C", "text": "Novo conteúdo principal" }, { "key": "D", "text": "Mudança de tema" } ], "answer": "B", "explain": "Fechamento deve direcionar ação." },
-      { "id": 4, "question": "Transição entre blocos serve para:", "options": [ { "key": "A", "text": "Confundir audiência" }, { "key": "B", "text": "Conectar ideias com fluidez" }, { "key": "C", "text": "Ganhar tempo sem conteúdo" }, { "key": "D", "text": "Aumentar número de slides" } ], "answer": "B", "explain": "Conexão explícita melhora continuidade." },
-      { "id": 5, "question": "Desenvolvimento do roteiro deve ser:", "options": [ { "key": "A", "text": "Aleatório" }, { "key": "B", "text": "Sequencial e progressivo" }, { "key": "C", "text": "Sem relação com objetivo" }, { "key": "D", "text": "Somente visual" } ], "answer": "B", "explain": "Progressão lógica aumenta compreensão." },
-      { "id": 6, "question": "Frase correta:", "options": [ { "key": "A", "text": "Tempo não importa no roteiro" }, { "key": "B", "text": "Roteiro deve considerar tempo de apresentação" }, { "key": "C", "text": "Abertura é opcional" }, { "key": "D", "text": "Fechamento pode ser improvisado sempre" } ], "answer": "B", "explain": "Gestão de tempo é parte da qualidade da entrega." },
-      { "id": 7, "question": "Se o fechamento não traz ação:", "options": [ { "key": "A", "text": "A apresentação ganha força" }, { "key": "B", "text": "A decisão pode ficar indefinida" }, { "key": "C", "text": "O público entende melhor" }, { "key": "D", "text": "Não há impacto" } ], "answer": "B", "explain": "Sem direcionamento, a audiência não sabe o próximo passo." },
-      { "id": 8, "question": "Estrutura abertura-desenvolvimento-fechamento ajuda a:", "options": [ { "key": "A", "text": "Aumentar dispersão" }, { "key": "B", "text": "Organizar narrativa e retenção de mensagem" }, { "key": "C", "text": "Reduzir clareza" }, { "key": "D", "text": "Eliminar objetivo" } ], "answer": "B", "explain": "Modelo clássico facilita assimilação." },
-      { "id": 9, "question": "No roteiro, cada bloco deve:", "options": [ { "key": "A", "text": "Trazer informações desconexas" }, { "key": "B", "text": "Contribuir para a mensagem central" }, { "key": "C", "text": "Ser independente do anterior" }, { "key": "D", "text": "Ter o mesmo peso sempre" } ], "answer": "B", "explain": "Coerência é chave de narrativa." },
-      { "id": 10, "question": "Objetivo da aula 04:", "options": [ { "key": "A", "text": "Tratar tipografia" }, { "key": "B", "text": "Estruturar roteiro de apresentação eficaz" }, { "key": "C", "text": "Ensinar exportação" }, { "key": "D", "text": "Criar gráficos" } ], "answer": "B", "explain": "A aula foca organização narrativa." }
-    ]
-  },
-  "extra": {
-    "eventosMinimos": "Roteiro básico\n\n- abertura\n- desenvolvimento\n- fechamento\n",
-    "pilares": "Pilares\n\n- sequência lógica\n- transição clara\n- chamada para ação\n"
-  }
+﻿{
+    "id":  "04-estrutura-roteiro",
+    "title":  "Aula 04 — Estrutura de roteiro: abertura, desenvolvimento e fechamento",
+    "steps":  [
+                  {
+                      "title":  "Roteiro é espinha dorsal da apresentação",
+                      "body":  "Uma boa estrutura facilita compreensão e mantém atenção.\n\nRegra:\n- Sem roteiro, a audiência perde o fio da narrativa."
+                  },
+                  {
+                      "title":  "Abertura com contexto e direção",
+                      "body":  "Abertura deve responder:\n- sobre o que vamos falar\n- por que isso importa\n- o que esperar da apresentação\n\nRegra:\n- Início confuso reduz atenção do restante."
+                  },
+                  {
+                      "title":  "Desenvolvimento com sequência lógica",
+                      "body":  "Organize em blocos:\n- problema/oportunidade\n- análise\n- proposta\n\nRegra:\n- Sequência lógica reduz esforço de interpretação."
+                  },
+                  {
+                      "title":  "Fechamento com chamada para ação",
+                      "body":  "Finalize com:\n- síntese\n- recomendação\n- próximo passo claro\n\nRegra:\n- Fechamento sem ação enfraquece a apresentação."
+                  },
+                  {
+                      "title":  "Transições entre blocos",
+                      "body":  "Use frases-ponte para conectar assuntos.\n\nRegra:\n- Transição clara evita sensação de “pulo” de tema."
+                  },
+                  {
+                      "title":  "Tempo por bloco",
+                      "body":  "Distribua o tempo conforme prioridade da mensagem.\n\nRegra:\n- Roteiro bom considera duração real da fala."
+                  },
+                  {
+                      "title":  "Mini prática (45 min) — roteiro de 8 slides",
+                      "body":  "Monte um roteiro com:\n- 1 abertura\n- 5 desenvolvimento\n- 2 fechamento/ação\n\nObjetivo:\n- treinar lógica de progressão narrativa."
+                  },
+                  {
+                      "title":  "Resumo da aula",
+                      "body":  "- Roteiro orienta compreensão\n- Abertura define contexto\n- Desenvolvimento deve ser progressivo\n- Fechamento precisa direcionar ação\n\nAgora fixe com o quiz."
+                  }
+              ],
+    "quiz":  {
+                 "title":  "Quiz (10 perguntas) — Aula 04 (PowerPoint)",
+                 "instructions":  "Marque A ou B.",
+                 "questions":  [
+                                   {
+                                       "id":  1,
+                                       "question":  "Função do roteiro na apresentação:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Apenas organizar cores"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Guiar narrativa e entendimento"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Roteiro sustenta lógica e clareza."
+                                   },
+                                   {
+                                       "id":  2,
+                                       "question":  "Abertura eficaz deve:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Ir direto para detalhes técnicos"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Apresentar contexto e expectativa"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Abertura orienta leitura da audiência."
+                                   },
+                                   {
+                                       "id":  3,
+                                       "question":  "Fechamento forte inclui:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Resumo sem decisão"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Síntese e próximo passo"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Fechamento deve direcionar ação."
+                                   },
+                                   {
+                                       "id":  4,
+                                       "question":  "Transição entre blocos serve para:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Confundir audiência"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Conectar ideias com fluidez"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Conexão explícita melhora continuidade."
+                                   },
+                                   {
+                                       "id":  5,
+                                       "question":  "Desenvolvimento do roteiro deve ser:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Aleatório"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Sequencial e progressivo"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Progressão lógica aumenta compreensão."
+                                   },
+                                   {
+                                       "id":  6,
+                                       "question":  "Frase correta:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Tempo não importa no roteiro"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Roteiro deve considerar tempo de apresentação"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Gestão de tempo é parte da qualidade da entrega."
+                                   },
+                                   {
+                                       "id":  7,
+                                       "question":  "Se o fechamento não traz ação:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "A apresentação ganha força"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "A decisão pode ficar indefinida"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Sem direcionamento, a audiência não sabe o próximo passo."
+                                   },
+                                   {
+                                       "id":  8,
+                                       "question":  "Estrutura abertura-desenvolvimento-fechamento ajuda a:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Aumentar dispersão"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Organizar narrativa e retenção de mensagem"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Modelo clássico facilita assimilação."
+                                   },
+                                   {
+                                       "id":  9,
+                                       "question":  "No roteiro, cada bloco deve:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Trazer informações desconexas"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Contribuir para a mensagem central"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "Coerência é chave de narrativa."
+                                   },
+                                   {
+                                       "id":  10,
+                                       "question":  "Objetivo da aula 04:",
+                                       "options":  [
+                                                       {
+                                                           "key":  "A",
+                                                           "text":  "Tratar tipografia"
+                                                       },
+                                                       {
+                                                           "key":  "B",
+                                                           "text":  "Estruturar roteiro de apresentação eficaz"
+                                                       }
+                                                   ],
+                                       "answer":  "B",
+                                       "explain":  "A aula foca organização narrativa."
+                                   }
+                               ]
+             },
+    "extra":  {
+                  "eventosMinimos":  "Roteiro básico\n\n- abertura\n- desenvolvimento\n- fechamento\n",
+                  "pilares":  "Pilares\n\n- sequência lógica\n- transição clara\n- chamada para ação\n"
+              }
 }
+
